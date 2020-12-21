@@ -1,0 +1,19 @@
+state={
+	id=905
+	name="STATE_905"
+	provinces={
+		13558 13574 13580 13583 
+	}
+	state_category = rural
+	history={
+		owner = TUN
+		add_core_of = LBA
+		add_core_of = TUN
+		buildings = {
+			infrastructure = 2
+		}
+
+	}
+	manpower=146000
+	buildings_max_level_factor=1.000
+}

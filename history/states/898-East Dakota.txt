@@ -1,0 +1,26 @@
+state={
+	id=898
+	name="STATE_898"
+state_category = rural
+	provinces={
+		1752 1867 3719 4772 4880 7862 10569 10595 10618 10685 10719 12577 12597 12620 12646 12667 
+	}
+	history={
+		owner = USA
+		add_core_of = USA
+		victory_points = {
+			3719 1
+		}
+		victory_points = {
+			12667 1
+		}
+		victory_points = {
+			12620 1
+		}
+		buildings = {
+			infrastructure = 1
+		}
+	}
+	manpower=650000
+	buildings_max_level_factor=1.000
+}

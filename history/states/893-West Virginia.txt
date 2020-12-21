@@ -1,0 +1,21 @@
+state={
+	id=893
+	name="STATE_893"
+state_category = rural
+	provinces={
+		801 3941 3975 4627 6958 6971 7466 7588 7646 9923 10441 11888 
+	}
+	history={
+		owner = USA
+		add_core_of = USA
+		victory_points = {
+			7588 1
+		}
+		buildings = {
+			infrastructure = 7
+		}
+
+	}
+	manpower=1844000
+	buildings_max_level_factor=1.000
+}

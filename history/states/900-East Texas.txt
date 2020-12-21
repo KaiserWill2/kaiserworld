@@ -1,0 +1,25 @@
+state={
+	id=900
+	name="STATE_900"
+state_category = town
+	provinces={
+		805 1500 2082 3960 4577 5001 5085 6968 7628 9829 9920 10778 12486
+	}
+	history={
+		owner = USA
+		add_core_of = USA
+		add_core_of = TEX
+		victory_points = {
+			2082 3
+		}
+		victory_points = {
+			5085 1
+		}
+		buildings = {
+			infrastructure = 6
+		}
+
+	}
+	manpower=350000
+	buildings_max_level_factor=1.000
+}

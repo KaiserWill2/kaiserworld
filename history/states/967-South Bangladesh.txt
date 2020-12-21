@@ -1,0 +1,32 @@
+
+state={
+	id=967
+	name="STATE_967"
+
+	history={
+		owner = RAJ
+		add_core_of = BNG
+		add_core_of = BGL
+		victory_points = {
+			11929 30
+		}
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 1
+			dockyard = 3
+			arms_factory = 3
+			air_base = 5
+			
+			9935 = { naval_base = 2 }
+		}
+
+	}
+
+	provinces={
+		9935 11911 2843 4162 7078 7124 10035 
+	}
+	manpower=23547876
+	buildings_max_level_factor=1.000
+	state_category=megalopolis
+}
+
