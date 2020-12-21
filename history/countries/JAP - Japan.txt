@@ -1,0 +1,177 @@
+﻿capital = 282
+
+oob = "JAP_2000"
+
+if = {
+	limit = { has_dlc = "Man the Guns" }
+		set_naval_oob = "JAP_2000_naval_mtg"
+	else = {
+		set_naval_oob = "JAP_2000_naval_legacy"
+	}
+}
+
+set_research_slots = 4
+set_convoys = 500
+set_stability = 0.8
+set_war_support = 0.4
+
+set_technology = {
+	support_weapons = 1
+	infantry_weapons = 1
+	motorised_infantry = 1 
+	tech_support = 1 
+	tech_field_hospital = 1 
+	tech_engineers = 1 
+	gwtank = 1 
+	basic_light_tank = 1 
+	gw_artillery = 1 
+	tech_mountaineers = 1
+	early_light_cruiser = 1
+	early_fighter = 1 
+	early_bomber = 1 
+	early_submarine = 1
+    transport = 1 
+	paratroopers = 1 
+	marines = 1
+	early_destroyer = 1 
+	early_carrier = 1 
+	atomic_research = 1 
+	nuclear_reactor = 1 
+	interwar_antiair = 1
+	interwar_antitank = 1
+}
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	set_technology = {
+		early_submarine = 1
+		basic_submarine = 1
+		early_destroyer = 1
+		early_light_cruiser = 1
+		basic_light_cruiser = 1
+		early_heavy_cruiser = 1
+		
+		
+		early_carrier = 1
+		basic_carrier = 1
+		transport = 1
+	}
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_technology = {
+		basic_naval_mines = 1
+		submarine_mine_laying = 1
+		early_ship_hull_light = 1
+		basic_ship_hull_light = 1
+		early_ship_hull_submarine = 1
+		basic_ship_hull_submarine = 1
+		early_ship_hull_cruiser = 1
+		basic_ship_hull_cruiser = 1
+		early_ship_hull_heavy = 1
+		early_ship_hull_carrier = 1
+		basic_ship_hull_carrier = 1
+		basic_battery = 1
+		basic_light_battery = 1
+		basic_medium_battery = 1
+		basic_heavy_battery = 1
+		basic_torpedo = 1
+		sonar = 1
+		basic_depth_charges = 1
+		basic_secondary_battery = 1
+		improved_secondary_battery = 1
+		basic_cruiser_armor_scheme = 1
+		basic_heavy_armor_scheme = 1
+		mtg_transport = 1
+		improved_airplane_launcher = 1
+	}
+}
+set_politics = {
+	ruling_party = monarchist
+	last_election = "1997.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+add_ideas = {
+	idea_jap_akihito
+}
+
+set_popularities = {
+        fascist = 1
+		nationalist = 8
+		monarchist = 43
+		national_bolshevik = 0
+		national_conservative = 28
+		centrist = 0
+		liberal = 14
+		new_democrat = 0
+		moderate_socialist = 0
+		revolutionary_socialist = 0
+		communist = 6
+}
+
+create_country_leader = {
+	name = "Toshio Tamogami"
+	picture = "Portrait_JAP_Toshio_Tamogami.dds"
+	ideology = reactionary
+}
+
+create_country_leader = {
+	name = "Kazuo Shii"
+	picture = "Portrait_JAP_Kazuo_Shii.dds"
+	ideology = leninist
+}
+
+create_country_leader = {
+	name = "Shintaro Ishihara"
+	picture = "Portrait_JAP_Shintaro_Ishihara.dds"
+	ideology = fascist_ideology
+}
+
+create_country_leader = {
+	name = "Shinzo Abe"
+	picture = "Portrait_JAP_Shinzo_Abe.dds"
+	ideology = nationalist_ideology
+}
+
+create_country_leader = {
+	name = "Akihito"
+	picture = "Portrait_JAP_Akihito_1.tga"
+	ideology = absolute_monarchist
+}
+
+create_country_leader = {
+	name = "Kazunari Yamada"
+	picture = "Portrait_JAP_Kazunari_Yamada.dds"
+	ideology = national_bolshevik_ideology
+}
+
+create_country_leader = {
+	name = "Yorihisa Matsuno"
+	picture = "Portrait_JAP_Yorihisa_Matsuno.dds"
+	ideology = centrist_ideology
+}
+
+create_country_leader = {
+	name = "Banri Kaieda"
+	picture = "Portrait_JAP_Banri_Kaieda.dds"
+	ideology = social_liberal
+}
+
+create_country_leader = {
+	name = "Yuko Mori"
+	picture = "Portrait_JAP_Yuko_Mori.dds"
+	ideology = new_democrat_ideology
+}
+
+create_country_leader = {
+	name = "Tadatomo Yoshida"
+	picture = "Portrait_JAP_Tadatomo_Yoshida.dds"
+	ideology = democratic_socialist
+}
+
+create_country_leader = {
+	name = "Masaaki Osaka"
+	picture = "Portrait_JAP_Masaaki_Osaka.dds"
+	ideology = revolutionary_socialist_ideology
+}

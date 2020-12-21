@@ -1,0 +1,184 @@
+﻿capital = 2
+
+oob = "ITA_2000"
+
+if = {
+	limit = { has_dlc = "Man the Guns" }
+		set_naval_oob = "ITA_2000_naval_mtg"
+	else = {
+		set_naval_oob = "ITA_2000_naval_legacy"
+	}
+}
+
+add_ideas = {
+    idea_eu_member
+	idea_ita_mafia_issue
+	idea_ita_seamless_society
+}
+
+set_research_slots = 4
+set_convoys = 500
+set_stability = 0.8
+set_war_support = 0.1
+
+set_technology = {
+	early_submarine = 1
+	basic_submarine = 1
+	early_destroyer = 1
+	early_light_cruiser = 1
+	basic_light_cruiser = 1
+	early_heavy_cruiser = 1
+	early_carrier = 1
+	basic_carrier = 1
+	support_weapons = 1
+	infantry_weapons = 1
+	motorised_infantry = 1 
+	tech_support = 1 
+	tech_field_hospital = 1 
+	tech_engineers = 1 
+	gwtank = 1 
+	basic_light_tank = 1 
+	gw_artillery = 1 
+	tech_mountaineers = 1
+	early_fighter = 1 
+	early_bomber = 1 
+	paratroopers = 1 
+	marines = 1
+	basic_heavy_tank = 1 
+	atomic_research = 1 
+	nuclear_reactor = 1 
+	interwar_antiair = 1
+	interwar_antitank = 1
+}
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	set_technology = {
+		early_submarine = 1
+		basic_submarine = 1
+		early_destroyer = 1
+		early_light_cruiser = 1
+		basic_light_cruiser = 1
+		early_heavy_cruiser = 1
+		
+		
+		early_carrier = 1
+		basic_carrier = 1
+		transport = 1
+	}
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_technology = {
+		basic_naval_mines = 1
+		submarine_mine_laying = 1
+		early_ship_hull_light = 1
+		basic_ship_hull_light = 1
+		early_ship_hull_submarine = 1
+		basic_ship_hull_submarine = 1
+		early_ship_hull_cruiser = 1
+		basic_ship_hull_cruiser = 1
+		early_ship_hull_heavy = 1
+		early_ship_hull_carrier = 1
+		basic_ship_hull_carrier = 1
+		basic_battery = 1
+		basic_light_battery = 1
+		basic_medium_battery = 1
+		basic_heavy_battery = 1
+		basic_torpedo = 1
+		sonar = 1
+		basic_depth_charges = 1
+		basic_secondary_battery = 1
+		improved_secondary_battery = 1
+		basic_cruiser_armor_scheme = 1
+		basic_heavy_armor_scheme = 1
+		mtg_transport = 1
+		improved_airplane_launcher = 1
+	}
+}
+set_politics = {
+	ruling_party = monarchist
+	last_election = "1997.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+        fascist = 0
+		nationalist = 7
+		monarchist = 68
+		national_bolshevik = 0
+		national_conservative = 8
+		centrist = 10
+		liberal = 0
+		new_democrat = 0
+		moderate_socialist = 0
+		revolutionary_socialist = 7
+		communist = 0
+}
+
+create_country_leader = {
+	name = "Giorgio Napolitano"
+	desc = "POLITICS_GIORGIO_NAPOLITANO_DESC"
+	picture = "Portrait_ITA_Giorgio_Napolitano.dds"
+	ideology = meliorist
+}
+
+create_country_leader = {
+	name = "Luca Romagnoli"
+	picture = "Portrait_ITA_Luca_Romagnoli.dds"
+	ideology = fascist_ideology
+}
+
+create_country_leader = {
+	name = "Matteo Salvini"
+	picture = "Portrait_ITA_Matteo_Salvini.dds"
+	ideology = ultranationalist
+}
+
+create_country_leader = {
+	name = "Victor Emmanuel IV"
+	picture = "Portrait_ITA_Victor_Emmanuel_Fourth.dds"
+	ideology = absolute_monarchist
+}
+
+create_country_leader = {
+	name = "Francesco Storace"
+	picture = "Portrait_ITA_Francesco_Storace.dds"
+	ideology = national_bolshevik_ideology
+}
+
+create_country_leader = {
+	name = "Raffaele Fitto"
+	picture = "Portrait_ITA_Raffaele_Fitto.dds"
+	ideology = european_conservative
+}
+
+create_country_leader = {
+	name = "Pier Ferdinando Casini"
+	picture = "Portrait_ITA_Pier_Ferdinando_Casini.dds"
+	ideology = centrist_ideology
+}
+
+create_country_leader = {
+	name = "Denis Verdini"
+	picture = "Portrait_ITA_Denis_Verdini.dds"
+	ideology = social_liberal
+}
+
+create_country_leader = {
+	name = "Maurizio Martina"
+	picture = "Portrait_ITA_Maurizio_Martina.dds"
+	ideology = new_democrat_ideology
+}
+
+create_country_leader = {
+	name = "Roberto Speranza"
+	picture = "Portrait_ITA_Roberto_Speranza.dds"
+	ideology = progressive
+}
+
+create_country_leader = {
+	name = "Giuliano Amato"
+	picture = "Portrait_ITA_Giuliano_Amato.dds"
+	ideology = luxemburgism
+}

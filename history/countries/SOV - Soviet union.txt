@@ -1,0 +1,209 @@
+﻿capital = 219
+
+oob = "SOV_2000"
+
+if = {
+	limit = { has_dlc = "Man the Guns" }
+		set_naval_oob = "SOV_2000_naval_mtg"
+	else = {
+		set_naval_oob = "SOV_2000_naval_legacy"
+	}
+}
+
+add_ideas = {
+    idea_soviet_stagnating_economy
+	idea_soviet_rampant_corruption
+	soviet_sic_gennady_zyuganov
+	soviet_fom_eduard_shevardnadze
+	soviet_ind_dmitry_kozak
+	soviet_nsm_igor_sechin
+	soviet_inm_viktor_chirkov
+}
+
+set_research_slots = 4
+set_convoys = 500
+set_stability = 0.7
+set_war_support = 0.1
+
+set_technology = {
+	early_submarine = 1
+	basic_submarine = 1
+	early_destroyer = 1
+	early_light_cruiser = 1
+	basic_light_cruiser = 1
+	early_heavy_cruiser = 1
+	early_carrier = 1
+	basic_carrier = 1
+	support_weapons = 1
+	infantry_weapons = 1
+	motorised_infantry = 1 
+	tech_support = 1 
+	tech_field_hospital = 1 
+	tech_engineers = 1 
+	gwtank = 1 
+	basic_light_tank = 1 
+	gw_artillery = 1 
+	tech_mountaineers = 1
+	early_light_cruiser = 1
+	early_fighter = 1
+	cv_early_fighter = 1
+	
+	fighter1 = 1
+	
+	naval_bomber1 = 1
+	
+	cv_naval_bomber1 = 1 
+	early_bomber = 1 
+	early_submarine = 1
+    transport = 1 
+	paratroopers = 1 
+	marines = 1
+	early_destroyer = 1 
+	early_carrier = 1 
+	basic_heavy_tank = 1 
+	atomic_research = 1 
+	nuclear_reactor = 1 
+	nukes = 1
+	interwar_antiair = 1
+	interwar_antitank = 1
+}
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	set_technology = {
+		early_submarine = 1
+		basic_submarine = 1
+		early_destroyer = 1
+		early_light_cruiser = 1
+		basic_light_cruiser = 1
+		early_heavy_cruiser = 1
+		
+		
+		early_carrier = 1
+		basic_carrier = 1
+		transport = 1
+	}
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_technology = {
+		basic_naval_mines = 1
+		submarine_mine_laying = 1
+		early_ship_hull_light = 1
+		basic_ship_hull_light = 1
+		early_ship_hull_submarine = 1
+		basic_ship_hull_submarine = 1
+		early_ship_hull_cruiser = 1
+		basic_ship_hull_cruiser = 1
+		early_ship_hull_heavy = 1
+		early_ship_hull_carrier = 1
+		basic_ship_hull_carrier = 1
+		basic_battery = 1
+		basic_light_battery = 1
+		basic_medium_battery = 1
+		basic_heavy_battery = 1
+		basic_torpedo = 1
+		sonar = 1
+		basic_depth_charges = 1
+		basic_secondary_battery = 1
+		improved_secondary_battery = 1
+		basic_cruiser_armor_scheme = 1
+		basic_heavy_armor_scheme = 1
+		mtg_transport = 1
+		improved_airplane_launcher = 1
+	}
+}
+set_politics = {
+	ruling_party = revolutionary_socialist
+	last_election = "1997.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+        fascist = 0
+		nationalist = 2
+		monarchist = 35
+		national_bolshevik = 0
+		national_conservative = 1
+		centrist = 11
+		liberal = 0
+		new_democrat = 1
+		moderate_socialist = 0
+		revolutionary_socialist = 35
+		communist = 15
+}
+
+add_opinion_modifier = {
+	target = USA
+	modifier = rival
+}
+
+create_faction = warsaw_pact
+add_to_faction = MON
+
+create_country_leader = {
+	name = "Dmitry Yazov"
+	desc = "POLITICS_DMITRY_YAZOV_DESC"
+	picture = "Portrait_SOV_Dimitry_Yazov.dds"
+	ideology = leninist
+}
+
+create_country_leader = {
+	name = "Andrey Savelyev"
+	picture = "Portrait_SOV_Andrey_Savelyev.dds"
+	ideology = fascist_ideology
+}
+
+create_country_leader = {
+	name = "Vladimir Zhirinovsky"
+	picture = "Portrait_SOV_Vladimir_Zhirinovsky.dds"
+	ideology = ultranationalist
+}
+
+create_country_leader = {
+	name = "Dimitri I"
+	picture = "Portrait_SOV_Dimitri_First.dds"
+	ideology = absolute_monarchist
+}
+
+create_country_leader = {
+	name = "Eduard Limonov"
+	picture = "Portrait_SOV_Eduard_Limonov.dds"
+	ideology = national_bolshevik_ideology
+}
+
+create_country_leader = {
+	name = "Natalia Poklonskaya"
+	picture = "Portrait_SOV_Natalia_Poklonskaya.dds"
+	ideology = fiscal_conservative
+}
+
+create_country_leader = {
+	name = "Vladimir Lukin"
+	picture = "Portrait_SOV_Vladimir_Lukin.dds"
+	ideology = centrist_ideology
+}
+
+create_country_leader = {
+	name = "Sergey Mitrokhin"
+	picture = "Portrait_SOV_Sergey_Mitrokhin.dds"
+	ideology = social_liberal
+}
+
+create_country_leader = {
+	name = "Sergey Mironov"
+	picture = "Portrait_SOV_Sergey_Mironov.dds"
+	ideology = new_democrat_ideology
+}
+
+create_country_leader = {
+	name = "Gennady Gudkov"
+	picture = "Portrait_SOV_Gennady_Gudkov.dds"
+	ideology = progressive
+}
+
+create_country_leader = {
+	name = "Maria I"
+	picture = "Portrait_SOV_Maria_I.tga"
+	ideology = revolutionary_socialist_ideology
+}
