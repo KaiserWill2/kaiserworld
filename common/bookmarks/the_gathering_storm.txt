@@ -1,0 +1,149 @@
+bookmarks = {
+	bookmark = {	#Red World
+		name = "RED_WORLD_NAME"
+		desc = "RED_WORLD_DESC"
+		date = 2010.1.1.12
+		picture = "GFX_select_date_1936"
+		default_country = "USA"
+		default = yes
+		
+		"USA"={
+			history = "USA_RED_WORLD_DESC"
+			ideology = moderate_socialist
+			ideas = {
+			    idea_usa_norton_the_fourth
+				idea_usa_democratic_nation
+				idea_america_neutrality
+			}
+			focuses = {
+				USA_a_legitimate_ruler
+				USA_embrace_nationalist_values
+				USA_it_cant_happen_here
+				
+			}
+		}
+		"PRC"={
+			history = "PRC_RED_WORLD_DESC"
+			ideology = national_conservative
+			ideas={
+
+			}
+			focuses = {
+			
+			}
+		}
+		"GER"={
+			history = "GER_RED_WORLD_DESC"
+			ideology = monarchist
+			ideas = {
+                
+			}
+			focuses = {
+				
+			}
+		}
+		"FRA"={
+			history = "FRA_RED_WORLD_DESC"
+			ideology = monarchist
+			ideas = {
+			    
+			}
+			focuses = {
+				
+			}
+		}
+		"CAN"={
+			history = "CAN_RED_WORLD_DESC"
+			ideology = moderate_socialist
+			ideas = {
+				
+			}
+			focuses = {
+				
+			}
+		}
+		"JAP"={
+			history = "JAP_RED_WORLD_DESC"
+			ideology = monarchist
+			ideas = {
+               
+			}
+			focuses = {
+				
+			}
+		}
+		"SOV"={
+			history = "SOV_RED_WORLD_DESC"
+			ideology = revolutionary_socialist
+			ideas = {
+			    
+			}
+			focuses = {
+				
+			}
+		}
+		"---"={
+			history = "OTHER_RED_WORLD_DESC"
+		}
+		"ETH"={
+			minor = yes
+			history = "ETH_RED_WORLD_DESC"
+			ideology = monarchist
+			ideas={
+				idea_eth_possibility_of_famine
+				idea_eth_military_party_divide
+				idea_eth_the_eritrean_issue
+			}	
+            focuses = {
+			    ETH_restore_the_house_of_solomon
+				ETH_workers_of_africa_unite
+				ETH_legalise_cannabis
+			}			
+		}
+		"ITA"={
+			minor = yes
+			history = "ITA_RED_WORLD_DESC"
+			ideology = monarchist
+			ideas={
+				idea_ita_seamless_society
+				idea_ita_mafia_issue
+			}	
+            focuses = {
+			    ITA_a_roman_dictator
+				ITA_betray_the_savoys
+				ITA_host_the_papal_conclave
+			}			
+		}
+		"RAJ"={
+			minor = yes
+			history = "RAJ_RED_WORLD_DESC"
+			ideology = new_democrat
+			ideas={
+                idea_capitalism_with_indian_characteristics
+				idea_raj_naxalite_insurgency
+				idea_raj_kashmir_separatism
+				idea_raj_hindu_rate_of_growth
+			}	
+            focuses = {
+				RAJ_the_emergency
+				RAJ_ne_revolution_at_the_ballot
+				RAJ_em_emperor_gandhi
+			}			
+		}
+		"UAR"={
+			minor = yes
+			history = "UAR_RED_WORLD_DESC"
+			ideology = monarchist
+			ideas={
+                
+			}	
+            focuses = {
+				
+			}			
+		}
+		effect = {
+			randomize_weather = 22345 # <- Obligatory in every bookmark !
+			#123 = { rain_light = yes }
+		}
+	}
+}
