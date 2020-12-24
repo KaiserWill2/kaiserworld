@@ -9,7 +9,8 @@ state={
 	}
 
 	history={
-		owner = GER
+		owner = INS
+		add_core_of = INS
 		buildings = {
 			infrastructure = 2
 			air_base = 3

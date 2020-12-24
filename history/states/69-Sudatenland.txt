@@ -4,7 +4,7 @@ state={
 	name="STATE_69"
 
 	history={
-		owner = GER
+		owner = AUS
 		buildings = {
 			infrastructure = 6
 			industrial_complex = 4
@@ -13,6 +13,7 @@ state={
 		}
 		add_core_of = CZE
 		add_core_of = GER
+		add_core_of = AUS
 
 	}
 

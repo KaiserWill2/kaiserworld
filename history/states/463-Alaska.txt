@@ -8,7 +8,7 @@ state={
 	}
 	
 	history={
-		owner = USA
+		owner = ALA
 		buildings = {
 			infrastructure = 2
 			air_base = 4
@@ -18,7 +18,7 @@ state={
 			}
 
 		}
-		add_core_of = USA
+		add_core_of = ALA
 		victory_points = {
 			13090 1 
 		}
