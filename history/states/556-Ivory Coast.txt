@@ -5,7 +5,7 @@ state={
 
 	history={
 		owner = LIB
-		
+		add_core_of = LIB
 		buildings = {
 			infrastructure = 4
 			industrial_complex = 2

@@ -11,12 +11,12 @@ state={
 	}
 
 	history={
-		owner = SAU
+		owner = UAR
 		buildings = {
 			infrastructure = 1
 			air_base = 10
 		}
-		add_core_of = SAU
+		add_core_of = UAR
 	}
 	
 	provinces={

@@ -12,7 +12,7 @@ state={
 	}
 
 	history={
-		owner = PER
+		owner = UAR
 		victory_points = { 2097 20 }
 		victory_points = { 2089 10 }
 		victory_points = { 12839 2 }
@@ -26,7 +26,7 @@ state={
 				naval_base = 3
 			}
 		}
-		add_core_of = PER
+		add_core_of = UAR
 	}
 
 	provinces={

@@ -10,9 +10,9 @@ state={
 	}
 	
 	history = {
-		owner = PER
+		owner = KUR
 		victory_points = { 3916 3 }	#Erbil
-		add_core_of = PER
+		add_core_of = UAR
 		add_core_of = KUR
 		
 		buildings = {
