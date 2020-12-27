@@ -122,8 +122,8 @@ set_politics = {
 set_popularities = {
         fascist = 0
 		nationalist = 2
-		monarchist = 35
-		national_bolshevik = 0
+		monarchist = 25
+		national_bolshevik = 10
 		national_conservative = 1
 		centrist = 11
 		liberal = 0
@@ -142,38 +142,38 @@ create_faction = warsaw_pact
 add_to_faction = MON
 
 create_country_leader = {
-	name = "Dmitry Yazov"
+	name = "Maria I"
 	desc = "POLITICS_DMITRY_YAZOV_DESC"
 	picture = "Portrait_SOV_Dimitry_Yazov.dds"
 	ideology = leninist
 }
 
 create_country_leader = {
-	name = "Andrey Savelyev"
+	name = "Maria I"
 	picture = "Portrait_SOV_Andrey_Savelyev.dds"
 	ideology = fascist_ideology
 }
 
 create_country_leader = {
-	name = "Vladimir Zhirinovsky"
+	name = "Maria I"
 	picture = "Portrait_SOV_Vladimir_Zhirinovsky.dds"
 	ideology = ultranationalist
 }
 
 create_country_leader = {
-	name = "Dimitri I"
+	name = "Maria I"
 	picture = "Portrait_SOV_Dimitri_First.dds"
 	ideology = absolute_monarchist
 }
 
 create_country_leader = {
-	name = "Eduard Limonov"
+	name = "Maria I"
 	picture = "Portrait_SOV_Eduard_Limonov.dds"
 	ideology = national_bolshevik_ideology
 }
 
 create_country_leader = {
-	name = "Natalia Poklonskaya"
+	name = "Maria I"
 	picture = "Portrait_SOV_Natalia_Poklonskaya.dds"
 	ideology = fiscal_conservative
 }
@@ -197,7 +197,7 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Gennady Gudkov"
+	name = "Maria I"
 	picture = "Portrait_SOV_Gennady_Gudkov.dds"
 	ideology = progressive
 }

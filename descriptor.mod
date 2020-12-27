@@ -2,8 +2,5 @@ version="1.10"
 tags={
 	"Alternative History"
 }
-dependencies={
-	"Red World Fan Fork"
-}
-name="Kaiserredux 2010"
+name="Kaiserworld"
 supported_version="1.10.3"
