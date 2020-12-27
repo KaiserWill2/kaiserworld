@@ -1481,7 +1481,7 @@ ideas = {
 				production_speed_industrial_complex_factor = 0.10
 			}
 		}
-		idea_usa_subsidized_healthcare= {
+		idea_usa_subsidized_healthcare = {
 			allowed = {
 				always = no
 			}

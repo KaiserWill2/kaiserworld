@@ -1,0 +1,327 @@
+focus_tree = {
+	id = republic_tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 20
+			tag = USA
+		}
+	}
+	
+	continuous_focus_position = { x = 50 y = 1100 }
+	default = no
+	
+	focus = {
+		id = USA_prime_minister_bernie
+		icon = focus
+		cost = 1
+		prerequisite = {
+			
+		}
+		x = 8
+		y = 0
+		completion_reward = {
+		    
+		}
+
+	}
+	#bernie africa
+	focus = {
+		id = USA_dealing_with_africa
+		icon = focus
+		cost = 10
+		prerequisite = {
+			focus = USA_prime_minister_bernie
+		}
+		
+		x = 6
+		y = 1
+		relative_position_id = USA_prime_minister_bernie
+		completion_reward = {
+		    
+		}
+
+	}
+
+	#bernie alaska
+	focus = {
+		id = USA_dealing_with_alaska
+		icon = focus
+		cost = 10
+		prerequisite = {
+			focus = USA_prime_minister_bernie
+		}
+		
+		x = -6
+		y = 1
+		relative_position_id = USA_prime_minister_bernie
+		completion_reward = {
+		    
+		}
+
+	}
+	focus = {
+		id = USA_operation_alskan_freedom
+		icon = focus
+		cost = 10
+		prerequisite = {
+			focus = USA_dealing_with_alaska
+		}
+		mutually_exclusive = {
+			focus = USA_reapproach_alaska
+			focus = USA_operation_snow_storm
+		}
+		x = 2
+		y = 1
+		relative_position_id = USA_dealing_with_alaska
+		completion_reward = {
+		    
+		}
+
+	}
+	focus = {
+		id = USA_reapproach_alaska
+		icon = focus
+		cost = 10
+		prerequisite = {
+			focus = USA_dealing_with_alaska
+		}
+		mutually_exclusive = {
+			focus = USA_operation_snow_storm
+			focus = USA_operation_alskan_freedom
+		}
+		x = 0
+		y = 1
+		relative_position_id = USA_dealing_with_alaska
+		completion_reward = {
+		    
+		}
+
+	}
+	focus = {
+		id = USA_operation_snow_storm
+		icon = focus
+		cost = 10
+		prerequisite = {
+			focus = USA_dealing_with_alaska
+		}
+		mutually_exclusive = {
+			focus = USA_operation_alskan_freedom
+			focus = USA_reapproach_alaska
+		}
+		x = -2
+		y = 1
+		relative_position_id = USA_dealing_with_alaska
+		completion_reward = {
+		    
+		}
+
+	}
+	#bernie recession
+	focus = {
+		id = USA_dealing_with_the_recession
+		icon = focus
+		cost = 10
+		prerequisite = {
+			focus = USA_prime_minister_bernie
+		}
+		
+		x = 0
+		y = 1
+		relative_position_id = USA_prime_minister_bernie
+		completion_reward = {
+		    add_ideas = idea_usa_great_recession_2
+		}
+
+	}
+	focus = {
+		id = USA_cut_military_spending
+		icon = focus
+		cost = 10
+		prerequisite = {
+			focus = USA_dealing_with_the_recession
+		}
+		
+		x = 0
+		y = 1
+		relative_position_id = USA_dealing_with_the_recession
+		completion_reward = {
+		    add_ideas = idea_usa_cut_military_spending
+		}
+
+	}
+
+	focus = {
+		id = USA_tax_the_rich
+		icon = focus
+		cost = 10
+		prerequisite = {
+			focus = USA_cut_military_spending
+		}
+		
+		x = -1
+		y = 1
+		relative_position_id = USA_cut_military_spending
+		completion_reward = {
+		    add_ideas = idea_usa_high_company_tax
+		}
+
+	}
+
+	focus = {
+		id = USA_increase_banking_regulations
+		icon = focus
+		cost = 10
+		prerequisite = {
+			focus = USA_cut_military_spending
+		}
+		
+		x = 1
+		y = 1
+		relative_position_id = USA_cut_military_spending
+		completion_reward = {
+		    add_ideas = idea_usa_new_banking_regulations
+		}
+
+	}
+	focus = {
+		id = USA_break_the_bankers
+		icon = focus
+		cost = 10
+		prerequisite = {
+			focus = USA_increase_banking_regulations
+			focus = USA_tax_the_rich
+		}
+		
+		x = -1
+		y = 1
+		relative_position_id = USA_increase_banking_regulations
+		completion_reward = {
+		      country_event = { id =  }
+		}
+
+	}
+	focus = {
+		id = USA_subsidized_healthcare
+		icon = focus
+		cost = 10
+		prerequisite = {
+			focus = USA_tax_the_rich
+		}
+		prerequisite = {
+			focus = USA_break_the_bankers
+		}
+		x = 0
+		y = 2
+		relative_position_id = USA_tax_the_rich
+		completion_reward = {
+		    add_ideas = idea_usa_subsidized_healthcare
+		}
+
+	}
+
+	focus = {
+		id = USA_regulate_wallstreet
+		icon = focus
+		cost = 10
+		prerequisite = {
+			focus = USA_increase_banking_regulations
+		}
+		prerequisite = {
+			focus = USA_break_the_bankers
+		}
+		x = 0
+		y = 2
+		relative_position_id = USA_increase_banking_regulations
+		completion_reward = {
+		     swap_ideas = {
+				remove_idea = idea_usa_new_banking_regulations
+				add_idea = idea_usa_wallstreet_regulations
+			}
+		}
+
+	}
+	focus = {
+		id = USA_help_the_working_class
+		icon = focus
+		cost = 10
+		prerequisite = {
+			focus = USA_regulate_wallstreet
+			focus = USA_subsidized_healthcare
+		}
+		
+		x = -1
+		y = 1
+		relative_position_id = USA_regulate_wallstreet
+		completion_reward = {
+		    country_event = { id =  }
+		}
+
+	}
+	focus = {
+		id = USA_subsidized_college
+		icon = focus
+		cost = 10
+		prerequisite = {
+			focus = USA_subsidized_healthcare
+		}
+		prerequisite = {
+			focus = USA_help_the_working_class
+		}
+		x = 0
+		y = 2
+		relative_position_id = USA_subsidized_healthcare
+		completion_reward = {
+		    add_ideas = idea_usa_subsidize_college
+		}
+
+	}
+
+	focus = {
+		id = USA_federal_job_guarantee
+		icon = focus
+		cost = 10
+		prerequisite = {
+			focus = USA_regulate_wallstreet
+		}
+		prerequisite = {
+			focus = USA_help_the_working_class
+		}
+		x = 0
+		y = 2
+		relative_position_id = USA_regulate_wallstreet
+		completion_reward = {
+		    add_ideas = idea_usa_federal_job_guarantee
+		}
+
+	}
+	focus = {
+		id = USA_empower_unions
+		icon = focus
+		cost = 10
+		prerequisite = {
+			focus = USA_federal_job_guarantee
+		}
+		prerequisite = {
+			focus = USA_subsidized_college
+		}
+		x = -1
+		y = 1
+		relative_position_id = USA_federal_job_guarantee
+		completion_reward = {
+		    country_event = { id =  }
+		}
+
+	}
+
+
+
+
+
+
+
+
+
+
+
+}
