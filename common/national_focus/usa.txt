@@ -13,7 +13,7 @@ focus_tree = {
 	
 	focus = {
 		id = USA_prime_minister_bernie
-		icon = focus
+		icon = focus_prime_minister_bernie
 		cost = 1
 		prerequisite = {
 			
@@ -29,7 +29,10 @@ focus_tree = {
 	focus = {
 		id = USA_dealing_with_africa
 		icon = focus
-		cost = 10
+		cost = 1
+		available = {
+		    has_country_flag = africa_placeholder
+		}
 		prerequisite = {
 			focus = USA_prime_minister_bernie
 		}
@@ -47,7 +50,10 @@ focus_tree = {
 	focus = {
 		id = USA_dealing_with_alaska
 		icon = focus
-		cost = 10
+		cost = 1
+		available = {
+		    has_country_flag = alaska_placeholder
+		}
 		prerequisite = {
 			focus = USA_prime_minister_bernie
 		}
@@ -63,7 +69,7 @@ focus_tree = {
 	focus = {
 		id = USA_operation_alskan_freedom
 		icon = focus
-		cost = 10
+		cost = 5
 		prerequisite = {
 			focus = USA_dealing_with_alaska
 		}
@@ -82,7 +88,7 @@ focus_tree = {
 	focus = {
 		id = USA_reapproach_alaska
 		icon = focus
-		cost = 10
+		cost = 5
 		prerequisite = {
 			focus = USA_dealing_with_alaska
 		}
@@ -101,7 +107,7 @@ focus_tree = {
 	focus = {
 		id = USA_operation_snow_storm
 		icon = focus
-		cost = 10
+		cost = 5
 		prerequisite = {
 			focus = USA_dealing_with_alaska
 		}
@@ -121,7 +127,7 @@ focus_tree = {
 	focus = {
 		id = USA_dealing_with_the_recession
 		icon = focus
-		cost = 10
+		cost = 7
 		prerequisite = {
 			focus = USA_prime_minister_bernie
 		}
@@ -130,14 +136,17 @@ focus_tree = {
 		y = 1
 		relative_position_id = USA_prime_minister_bernie
 		completion_reward = {
-		    add_ideas = idea_usa_great_recession_2
+		   swap_ideas = {
+				remove_idea = idea_usa_great_recession
+				add_idea = idea_usa_great_recession_2
+			} 
 		}
 
 	}
 	focus = {
 		id = USA_cut_military_spending
 		icon = focus
-		cost = 10
+		cost = 7
 		prerequisite = {
 			focus = USA_dealing_with_the_recession
 		}
@@ -154,7 +163,7 @@ focus_tree = {
 	focus = {
 		id = USA_tax_the_rich
 		icon = focus
-		cost = 10
+		cost = 7
 		prerequisite = {
 			focus = USA_cut_military_spending
 		}
@@ -171,7 +180,7 @@ focus_tree = {
 	focus = {
 		id = USA_increase_banking_regulations
 		icon = focus
-		cost = 10
+		cost = 7
 		prerequisite = {
 			focus = USA_cut_military_spending
 		}
@@ -187,7 +196,7 @@ focus_tree = {
 	focus = {
 		id = USA_break_the_bankers
 		icon = focus
-		cost = 10
+		cost = 7
 		prerequisite = {
 			focus = USA_increase_banking_regulations
 			focus = USA_tax_the_rich
@@ -204,7 +213,7 @@ focus_tree = {
 	focus = {
 		id = USA_subsidized_healthcare
 		icon = focus
-		cost = 10
+		cost = 7
 		prerequisite = {
 			focus = USA_tax_the_rich
 		}
@@ -223,7 +232,7 @@ focus_tree = {
 	focus = {
 		id = USA_regulate_wallstreet
 		icon = focus
-		cost = 10
+		cost = 7
 		prerequisite = {
 			focus = USA_increase_banking_regulations
 		}
@@ -244,7 +253,7 @@ focus_tree = {
 	focus = {
 		id = USA_help_the_working_class
 		icon = focus
-		cost = 10
+		cost = 7
 		prerequisite = {
 			focus = USA_regulate_wallstreet
 			focus = USA_subsidized_healthcare
@@ -261,7 +270,7 @@ focus_tree = {
 	focus = {
 		id = USA_subsidized_college
 		icon = focus
-		cost = 10
+		cost = 7
 		prerequisite = {
 			focus = USA_subsidized_healthcare
 		}
@@ -280,7 +289,7 @@ focus_tree = {
 	focus = {
 		id = USA_federal_job_guarantee
 		icon = focus
-		cost = 10
+		cost = 7
 		prerequisite = {
 			focus = USA_regulate_wallstreet
 		}
@@ -298,7 +307,7 @@ focus_tree = {
 	focus = {
 		id = USA_empower_unions
 		icon = focus
-		cost = 10
+		cost = 7
 		prerequisite = {
 			focus = USA_federal_job_guarantee
 		}
@@ -313,6 +322,835 @@ focus_tree = {
 		}
 
 	}
+
+		##2012 Election##
+
+
+	focus = {
+		id = USA_2012_election
+		icon = focus
+		cost = 1
+		available = {
+		    has_country_flag = 2012_election
+		}
+		prerequisite = {
+			
+		}
+		x = 40
+		y = 0
+		completion_reward = {
+		    
+		}
+
+	}
+			#bernies 2nd term
+	focus = {
+		id = USA_bernies_2nd_term
+		icon = focus
+		cost = 1
+		available = {
+		    has_country_flag = bernies_reelected
+		}
+		prerequisite = {
+			focus = USA_2012_election
+		}
+		x = -19
+		y = 1
+		relative_position_id = USA_2012_election
+		completion_reward = {
+		    country_event = { id =  }
+		}
+
+	}
+	focus = {
+		id = USA_end_the_reccesion_bernie
+		icon = focus
+		cost = 10
+		available = {
+		    has_government = moderate_socialist
+		}
+		prerequisite = {
+			focus = USA_bernies_2nd_term
+		}
+		x = 0
+		y = 1
+		relative_position_id = USA_bernies_2nd_term
+		completion_reward = {
+		    
+		}
+
+	}
+	focus = {
+		id = USA_universal_healthcare
+		icon = focus
+		cost = 10
+		available = {
+		    has_government = moderate_socialist
+		}
+		prerequisite = {
+			focus = USA_end_the_reccesion_bernie
+		}
+		x = -2
+		y = 1
+		relative_position_id = USA_end_the_reccesion_bernie
+		completion_reward = {
+		    
+		}
+
+	}
+	focus = {
+		id = USA_free_college
+		icon = focus
+		cost = 10
+		available = {
+		    has_government = moderate_socialist
+		}
+		prerequisite = {
+			focus = USA_end_the_reccesion_bernie
+		}
+		x = 0
+		y = 1
+		relative_position_id = USA_end_the_reccesion_bernie
+		completion_reward = {
+		    
+		}
+
+	}
+	focus = {
+		id = USA_break_up_big_pharma
+		icon = focus
+		cost = 10
+		available = {
+		    has_government = moderate_socialist
+		}
+		prerequisite = {
+			focus = USA_end_the_reccesion_bernie
+		}
+		x = 2
+		y = 1
+		relative_position_id = USA_end_the_reccesion_bernie
+		completion_reward = {
+		    
+		}
+
+	}
+	focus = {
+		id = USA_nationalize_the_banks
+		icon = focus
+		cost = 10
+		available = {
+		    has_government = moderate_socialist
+		}
+		prerequisite = {
+			focus = USA_break_up_big_pharma
+		}
+		prerequisite = {
+			focus = USA_free_college
+		}
+		
+		x = -1
+		y = 1
+		relative_position_id = USA_break_up_big_pharma
+		completion_reward = {
+		    
+		}
+
+	}
+	focus = {
+		id = USA_break_wallstreet
+		icon = focus
+		cost = 10
+		available = {
+		    has_government = moderate_socialist
+		}
+		
+		prerequisite = {
+			focus = USA_free_college
+		}
+		prerequisite = {
+			focus = USA_universal_healthcare
+		}
+		x = 1
+		y = 1
+		relative_position_id = USA_universal_healthcare
+		completion_reward = {
+		    
+		}
+
+	}
+	focus = {
+		id = USA_democratic_socialist_haven
+		icon = focus
+		cost = 10
+		available = {
+		    has_government = moderate_socialist
+		}
+		prerequisite = {
+			focus = USA_break_wallstreet
+		}
+		prerequisite = {
+			focus = USA_nationalize_the_banks
+		}
+		x = -1
+		y = 1
+		relative_position_id = USA_nationalize_the_banks
+		completion_reward = {
+		    
+		}
+
+	}
+		#progressive-bernie shared
+	focus = {
+		id = USA_raise_minimum_wage
+		icon = focus
+		cost = 10
+		available = {
+			OR = {
+			 has_government = moderate_socialist
+			 has_government = new_democrat
+			}
+		}
+		prerequisite = {
+			focus = USA_progressive_victory
+			focus = USA_bernies_2nd_term
+		}
+		x = -15
+		y = 2
+		relative_position_id = USA_2012_election
+		completion_reward = {
+		    
+		}
+
+	}
+	focus = {
+		id = USA_worker_protections
+		icon = focus
+		cost = 10
+		available = {
+			OR = {
+			 has_government = moderate_socialist
+			 has_government = new_democrat
+			}
+		}
+		prerequisite = {
+			focus = USA_raise_minimum_wage
+		}
+		x = 0
+		y = 1
+		relative_position_id = USA_raise_minimum_wage
+		completion_reward = {
+		    
+		}
+
+	}
+	focus = {
+		id = USA_workplace_demcracy
+		icon = focus
+		cost = 10
+		available = {
+			OR = {
+			 has_government = moderate_socialist
+			 has_government = new_democrat
+			}
+		}
+		prerequisite = {
+			focus = USA_worker_protections
+		}
+		x = 0
+		y = 1
+		relative_position_id = USA_worker_protections
+		completion_reward = {
+		    
+		}
+
+	}
+		#progressive victory
+	focus = {
+		id = USA_progressive_victory
+		icon = focus
+		cost = 10
+		available = {
+		    has_country_flag = progressives_elected
+		}
+		prerequisite = {
+			focus = USA_2012_election
+		}
+		x = -11
+		y = 1
+		relative_position_id = USA_2012_election
+		completion_reward = {
+		    country_event = { id =  }
+		}
+
+	}
+	focus = {
+		id = USA_end_the_recession_progressives
+		icon = focus
+		cost = 10
+		available = {
+		    has_government = new_democrat
+		}
+		prerequisite = {
+			focus = USA_progressive_victory
+		}
+		x = 0
+		y = 1
+		relative_position_id = USA_progressive_victory
+		completion_reward = {
+		    
+		}
+
+	}
+	focus = {
+		id = USA_college_reforms
+		icon = focus
+		cost = 10
+		available = {
+		    has_government = new_democrat
+		}
+		prerequisite = {
+			focus = USA_end_the_recession_progressives
+		}
+		x = -1
+		y = 1
+		relative_position_id = USA_end_the_recession_progressives
+		completion_reward = {
+		    
+		}
+
+	}
+
+	focus = {
+		id = USA_healthcare_reforms
+		icon = focus
+		cost = 10
+		available = {
+		    has_government = new_democrat
+		}
+		prerequisite = {
+			focus = USA_end_the_recession_progressives
+		}
+		x = 1
+		y = 1
+		relative_position_id = USA_end_the_recession_progressives
+		completion_reward = {
+		    
+		}
+
+	}
+	focus = {
+		id = USA_reorginize_the_banks
+		icon = focus
+		cost = 10
+		available = {
+		    has_government = new_democrat
+		}
+		prerequisite = {
+			focus = USA_healthcare_reforms
+		}
+		prerequisite = {
+			focus = USA_college_reforms
+		}
+		x = -1
+		y = 1
+		relative_position_id = USA_college_reforms
+		completion_reward = {
+		    
+		}
+
+	}
+	focus = {
+		id = USA_progressive_taxation
+		icon = focus
+		cost = 10
+		available = {
+		    has_government = new_democrat
+		}
+		prerequisite = {
+			focus = USA_healthcare_reforms
+		}
+		prerequisite = {
+			focus = USA_college_reforms
+		}
+		x = 1
+		y = 1
+		relative_position_id = USA_college_reforms
+		completion_reward = {
+		    
+		}
+
+	}
+	focus = {
+		id = USA_cap_tuition
+		icon = focus
+		cost = 10
+		available = {
+		    has_government = new_democrat
+		}
+		prerequisite = {
+			focus = USA_healthcare_reforms
+		}
+		prerequisite = {
+			focus = USA_college_reforms
+		}
+		x = 1
+		y = 1
+		relative_position_id = USA_healthcare_reforms
+		completion_reward = {
+		    
+		}
+
+	}
+	focus = {
+		id = USA_progressive_society
+		icon = focus
+		cost = 10
+		available = {
+		    has_government = new_democrat
+		}
+		prerequisite = {
+			focus = USA_cap_tuition
+		}
+		prerequisite = {
+			focus = USA_progressive_taxation
+		}
+		prerequisite = {
+			focus = USA_reorginize_the_banks
+		}
+		x = 0
+		y = 1
+		relative_position_id = USA_progressive_taxation
+		completion_reward = {
+		    
+		}
+
+	}
+		#progressive-republican-bernie shared 
+	focus = {
+		id = USA_safeguard_minority_rights
+		icon = focus
+		cost = 10
+		available = {
+			OR = {
+			 has_government = moderate_socialist
+			 has_government = new_democrat
+			 has_government = liberal
+			}
+		}
+		prerequisite = {
+			focus = USA_progressive_victory
+			focus = USA_bernies_2nd_term
+			focus = USA_republican_victory
+		}
+		x = -7
+		y = 2
+		relative_position_id = USA_2012_election
+		completion_reward = {
+		    
+		}
+
+	}
+	focus = {
+		id = USA_lgbt_rights
+		icon = focus
+		cost = 10
+		available = {
+			OR = {
+			 has_government = moderate_socialist
+			 has_government = new_democrat
+			 has_government = liberal
+			}
+		}
+		prerequisite = {
+			focus = USA_safeguard_minority_rights
+		}
+		x = 0
+		y = 1
+		relative_position_id = USA_safeguard_minority_rights
+		completion_reward = {
+		    
+		}
+
+	}
+	focus = {
+		id = USA_protect_womens_rights
+		icon = focus
+		cost = 10
+		available = {
+			OR = {
+			 has_government = moderate_socialist
+			 has_government = new_democrat
+			 has_government = liberal
+			}
+		}
+		prerequisite = {
+			focus = USA_lgbt_rights
+		}
+		x = 0
+		y = 1
+		relative_position_id = USA_lgbt_rights
+		completion_reward = {
+		    
+		}
+
+	}
+		#republican victory
+	focus = {
+		id = USA_republican_victory
+		icon = focus
+		cost = 10
+		available = {
+		    has_country_flag = republicans_elected
+		}
+		prerequisite = {
+			focus = USA_2012_election
+		}
+		x = -3
+		y = 1
+		relative_position_id = USA_2012_election
+		completion_reward = {
+		    country_event = { id =  }
+		}
+
+	}
+	focus = {
+		id = USA_end_the_recession_republicans
+		icon = focus
+		cost = 10
+		available = {
+		    has_government = liberal
+		}
+		prerequisite = {
+			focus = USA_republican_victory
+		}
+		x = 0
+		y = 1
+		relative_position_id = USA_republican_victory
+		completion_reward = {
+		    
+		}
+
+	}
+	focus = {
+		id = USA_soften_bernies_regulations
+		icon = focus
+		cost = 10
+		available = {
+		    has_government = liberal
+		}
+		prerequisite = {
+			focus = USA_end_the_recession_republicans
+		}
+		x = -1
+		y = 1
+		relative_position_id = USA_end_the_recession_republicans
+		completion_reward = {
+		    
+		}
+
+	}
+	focus = {
+		id = USA_soften_bernies_taxes
+		icon = focus
+		cost = 10
+		available = {
+		    has_government = liberal
+		}
+		prerequisite = {
+			focus = USA_end_the_recession_republicans
+		}
+		x = 1
+		y = 1
+		relative_position_id = USA_end_the_recession_republicans
+		completion_reward = {
+		    
+		}
+
+	}
+	
+
+	focus = {
+		id = USA_liberal_education_reform
+		icon = focus
+		cost = 10
+		available = {
+		   has_government = liberal
+		}
+		prerequisite = {
+			focus = USA_soften_bernies_taxes
+		}
+		prerequisite = {
+			focus = USA_soften_bernies_regulations
+		}
+		x = -1
+		y = 1
+		relative_position_id = USA_soften_bernies_taxes
+		completion_reward = {
+		    
+		}
+
+	}
+
+	focus = {
+		id = USA_liberalized_healthcare
+		icon = focus
+		cost = 10
+		available = {
+		   has_government = liberal
+		}
+		prerequisite = {
+			focus = USA_soften_bernies_taxes
+		}
+		prerequisite = {
+			focus = USA_soften_bernies_regulations
+		}
+		x = 1
+		y = 1
+		relative_position_id = USA_soften_bernies_taxes
+		completion_reward = {
+		    
+		}
+
+	}
+
+	focus = {
+		id = USA_reform_the_job_guarantee
+		icon = focus
+		cost = 10
+		available = {
+		   has_government = liberal
+		}
+		prerequisite = {
+			focus = USA_soften_bernies_taxes
+		}
+		prerequisite = {
+			focus = USA_soften_bernies_regulations
+		}
+		x = -3
+		y = 1
+		relative_position_id = USA_soften_bernies_taxes
+		completion_reward = {
+		    
+		}
+
+	}
+	focus = {
+		id = USA_liberalized_empire
+		icon = focus
+		cost = 10
+		available = {
+		    has_government = liberal
+		}
+		prerequisite = {
+			focus = USA_reform_the_job_guarantee
+		}
+		prerequisite = {
+			focus = USA_liberalized_healthcare
+		}
+		prerequisite = {
+			focus = USA_liberal_education_reform
+		}
+		x = 0
+		y = 1
+		relative_position_id = USA_liberal_education_reform
+		completion_reward = {
+		    
+		}
+
+	}
+		#reform victory
+	focus = {
+		id = USA_reform_victory
+		icon = focus
+		cost = 1
+		available = {
+		    has_country_flag = reform_elected
+		}
+		prerequisite = {
+			focus = USA_2012_election
+		}
+		x = 5
+		y = 1
+		relative_position_id = USA_2012_election
+		completion_reward = {
+		    country_event = { id =  }
+		}
+
+	}
+	focus = {
+		id = USA_end_the_reccesion_reform
+		icon = focus
+		cost = 10
+		available = {
+		   has_government = centrist
+		}
+		prerequisite = {
+			focus = USA_reform_victory
+		}
+		x = 0
+		y = 1
+		relative_position_id = USA_reform_victory
+		completion_reward = {
+		    
+		}
+
+	}
+	focus = {
+		id = USA_lower_taxes
+		icon = focus
+		cost = 10
+		available = {
+		    has_government = centrist
+		}
+		prerequisite = {
+			focus = USA_end_the_reccesion_reform
+		}
+		x = 0
+		y = 1
+		relative_position_id = USA_end_the_reccesion_reform
+		completion_reward = {
+		    
+		}
+
+	}
+	focus = {
+		id = USA_deregulation
+		icon = focus
+		cost = 10
+		available = {
+		    has_government = centrist
+		}
+		prerequisite = {
+			focus = USA_end_the_reccesion_reform
+		}
+		x = -2
+		y = 1
+		relative_position_id = USA_end_the_reccesion_reform
+		completion_reward = {
+		    
+		}
+
+	}
+	focus = {
+		id = USA_revoke_federal_reserve_powers
+		icon = focus
+		cost = 10
+		available = {
+		    has_government = centrist
+		}
+		prerequisite = {
+			focus = USA_end_the_reccesion_reform
+		}
+		x = 2
+		y = 1
+		relative_position_id = USA_end_the_reccesion_reform
+		completion_reward = {
+		    
+		}
+
+	}
+	focus = {
+		id = cut_college_subsidies
+		icon = focus
+		cost = 10
+		available = {
+		    has_government = centrist
+		}
+		prerequisite = {
+			focus = USA_revoke_federal_reserve_powers
+		}
+		prerequisite = {
+			focus = USA_lower_taxes
+		}
+		x = -1
+		y = 1
+		relative_position_id = USA_revoke_federal_reserve_powers
+		completion_reward = {
+		    
+		}
+
+	}
+	focus = {
+		id = transparent_healthcare_system
+		icon = focus
+		cost = 10
+		available = {
+		    has_government = centrist
+		}
+		prerequisite = {
+			focus = USA_deregulation
+		}
+		prerequisite = {
+			focus = USA_lower_taxes
+		}
+		x = -1
+		y = 1
+		relative_position_id = USA_lower_taxes
+		completion_reward = {
+		    
+		}
+
+	}
+	focus = {
+		id = USA_reformed_nation
+		icon = focus
+		cost = 10
+		available = {
+		    has_government = centrist
+		}
+		prerequisite = {
+			focus = cut_college_subsidies
+		}
+		prerequisite = {
+			focus = transparent_healthcare_system
+		}
+		x = -1
+		y = 1
+		relative_position_id = cut_college_subsidies
+		completion_reward = {
+		    
+		}
+
+	}
+		#democrat victory
+	focus = {
+		id = USA_democrat_victory
+		icon = focus
+		cost = 1
+		available = {
+		    has_country_flag = democrats_elected
+		}
+		prerequisite = {
+			focus = USA_2012_election
+		}
+		x = 13
+		y = 1
+		relative_position_id = USA_2012_election
+		completion_reward = {
+		    country_event = { id =  }
+		}
+
+	}
+		#royal victory
+	focus = {
+		id = USA_royal_victory
+		icon = focus
+		cost = 1
+		available = {
+		    has_country_flag = royals_elected
+		}
+		prerequisite = {
+			focus = USA_2012_election
+		}
+		x = 21
+		y = 1
+		relative_position_id = USA_2012_election
+		completion_reward = {
+		    country_event = { id =  }
+		}
+
+	}
+
 
 
 

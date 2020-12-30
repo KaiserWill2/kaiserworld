@@ -106,14 +106,14 @@ set_politics = {
 
 set_popularities = {
         fascist = 0
-		nationalist = 5
+		nationalist = 10
 		monarchist = 5
 		national_bolshevik = 0
-		national_conservative = 25
+		national_conservative = 20
 		centrist = 10
 		liberal = 15
-		new_democrat = 10
-		moderate_socialist = 30
+		new_democrat = 15
+		moderate_socialist = 25
 		revolutionary_socialist = 0
 		communist = 0
 }
@@ -136,8 +136,8 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Paul I"
-	picture = "Portrait_USA_Paul_First.dds"
+	name = "Norton IV"
+	picture = "Portrait_USA_Norton_IV.dds"
 	ideology = absolute_monarchist
 }
 
@@ -174,7 +174,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Bernard Sanders"
 	picture = "Portrait_USA_Bernard_Sanders.tga"
-	ideology = progressive
+	ideology = democratic_socialist
 }
 
 create_country_leader = {
