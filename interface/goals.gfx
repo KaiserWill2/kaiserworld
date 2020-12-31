@@ -6023,5 +6023,44 @@ spriteTypes = {
 	name = "focus_prime_minister_bernie"
 	texturefile = "gfx/interface/goals/usa/focus_prime_minister_bernie.dds"			
 	}
-
+	SpriteType = {
+	name = "focus_break_the_banks"
+	texturefile = "gfx/interface/goals/usa/focus_break_the_banks.dds"			
+	}
+	SpriteType = {
+	name = "focus_cut_war_funding"
+	texturefile = "gfx/interface/goals/usa/focus_cut_military_funding.dds"			
+	}
+	SpriteType = {
+	name = "focus_deal_with_africa"
+	texturefile = "gfx/interface/goals/usa/focus_deal_with_africa.dds"			
+	}
+	SpriteType = {
+	name = "focus_dealing_with_alaska"
+	texturefile = "gfx/interface/goals/usa/focus_dealing_with_alaska.dds"			
+	}
+	SpriteType = {
+	name = "focus_operation_alaska_freedom"
+	texturefile = "gfx/interface/goals/usa/focus_operation_alskan_freedom.dds"			
+	}
+	SpriteType = {
+	name = "focus_operation_snow_storm"
+	texturefile = "gfx/interface/goals/usa/focus_operation_snow_storm.dds"			
+	}
+	SpriteType = {
+	name = "focus_progressive_victory"
+	texturefile = "gfx/interface/goals/usa/focus_progressive_victory.dds"			
+	}
+	SpriteType = {
+	name = "focus_reapproach_alaska"
+	texturefile = "gfx/interface/goals/usa/focus_reapproach_alaska.dds"			
+	}
+	SpriteType = {
+	name = "focus_regulate_banks"
+	texturefile = "gfx/interface/goals/usa/focus_regulate_banks.dds"			
+	}
+	SpriteType = {
+	name = "focus_tax_the_rich"
+	texturefile = "gfx/interface/goals/usa/focus_tax_the_rich.dds"			
+	}
 }

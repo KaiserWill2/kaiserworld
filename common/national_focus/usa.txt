@@ -28,7 +28,7 @@ focus_tree = {
 	#bernie africa
 	focus = {
 		id = USA_dealing_with_africa
-		icon = focus
+		icon = focus_deal_with_africa
 		cost = 1
 		available = {
 		    has_country_flag = africa_placeholder
@@ -49,7 +49,7 @@ focus_tree = {
 	#bernie alaska
 	focus = {
 		id = USA_dealing_with_alaska
-		icon = focus
+		icon = focus_dealing_with_alaska
 		cost = 1
 		available = {
 		    has_country_flag = alaska_placeholder
@@ -68,7 +68,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_operation_alskan_freedom
-		icon = focus
+		icon = focus_operation_alaska_freedom
 		cost = 5
 		prerequisite = {
 			focus = USA_dealing_with_alaska
@@ -87,7 +87,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_reapproach_alaska
-		icon = focus
+		icon = focus_reapproach_alaska
 		cost = 5
 		prerequisite = {
 			focus = USA_dealing_with_alaska
@@ -106,7 +106,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_operation_snow_storm
-		icon = focus
+		icon = focus_operation_snow_storm
 		cost = 5
 		prerequisite = {
 			focus = USA_dealing_with_alaska
@@ -126,7 +126,7 @@ focus_tree = {
 	#bernie recession
 	focus = {
 		id = USA_dealing_with_the_recession
-		icon = focus
+		icon = federal_intervention
 		cost = 7
 		prerequisite = {
 			focus = USA_prime_minister_bernie
@@ -145,7 +145,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_cut_military_spending
-		icon = focus
+		icon = focus_cut_war_funding
 		cost = 7
 		prerequisite = {
 			focus = USA_dealing_with_the_recession
@@ -162,7 +162,7 @@ focus_tree = {
 
 	focus = {
 		id = USA_tax_the_rich
-		icon = focus
+		icon = focus_tax_the_rich
 		cost = 7
 		prerequisite = {
 			focus = USA_cut_military_spending
@@ -179,7 +179,7 @@ focus_tree = {
 
 	focus = {
 		id = USA_increase_banking_regulations
-		icon = focus
+		icon = focus_regulate_banks
 		cost = 7
 		prerequisite = {
 			focus = USA_cut_military_spending
@@ -195,7 +195,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_break_the_bankers
-		icon = focus
+		icon = focus_break_the_banks
 		cost = 7
 		prerequisite = {
 			focus = USA_increase_banking_regulations
@@ -567,7 +567,7 @@ focus_tree = {
 		#progressive victory
 	focus = {
 		id = USA_progressive_victory
-		icon = focus
+		icon = focus_progressive_victory
 		cost = 10
 		available = {
 		    has_country_flag = progressives_elected
