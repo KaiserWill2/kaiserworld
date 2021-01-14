@@ -9,7 +9,7 @@ state={
 	}
 
 	history={
-		owner = SPR
+		owner = MOR
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1
