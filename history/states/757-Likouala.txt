@@ -9,6 +9,8 @@ state={
 	
 	history = {
 		owner = CAF
+		add_core_of = CAF
+		add_core_of = COG
 	}
 	
 	provinces={

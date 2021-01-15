@@ -3,7 +3,9 @@ state={
 	name="STATE_755"
 	
 	history = {
-		owner = GER
+		owner = CAF
+		add_core_of = CAF
+		add_core_of = CAM
 		
 		buildings = {
 			infrastructure = 4

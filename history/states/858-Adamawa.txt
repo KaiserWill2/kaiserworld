@@ -1,21 +1,20 @@
 state={
-	id=771
-	name="STATE_771"
+	id=858
+	name="STATE_858"
+	provinces={
+		8109 
+	}
 	history = {
-		owner = LIB
-		add_core_of = LIB
-		add_core_of = SEN
-		
+		owner = CAF
+		add_core_of = NGR
+		add_core_of = CAF
 		buildings = {
 			infrastructure = 1
 			industrial_complex = 1
 		}
 	}
-	provinces={
-		12834 
-	}
 	manpower=3200000
 	buildings_max_level_factor=1.000
 	
-	state_category = rural
+	state_category = pastoral
 }

@@ -1,21 +1,20 @@
 state={
-	id=774
-	name="STATE_774"
-	
+	id=753
+	name="STATE_753"
 	history = {
-		owner = LIB
-		add_core_of = LIB
-		add_core_of = GUI
+		owner = CAF
+		add_core_of = CAF
+		add_core_of = CHD
+		
 		buildings = {
-			infrastructure = 3
+			infrastructure = 2
 			industrial_complex = 1
 		}
 	}
-	
 	provinces={
-		4957 5039 8008 
+		1473 1883 3181 7919 
 	}
-	manpower=2050000
+	manpower=3465250
 	buildings_max_level_factor=1.000
 	
 	state_category = pastoral

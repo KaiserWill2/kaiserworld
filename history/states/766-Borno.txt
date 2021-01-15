@@ -1,20 +1,22 @@
 state={
-	id=859
-	name="STATE_859"
-	provinces={
-		12817
-	}
-	history = {
+	id=766
+	name="STATE_766"
+
+	history={
 		owner = CAF
 		add_core_of = NGR
 		add_core_of = CAF
 		buildings = {
-			infrastructure = 1
+			infrastructure = 2
 			industrial_complex = 1
 		}
+
 	}
-	manpower=2300000
+
+	provinces={
+		4997 5028 
+	}
+	manpower=3500250
 	buildings_max_level_factor=1.000
-	
-	state_category = rural
+	state_category=rural
 }

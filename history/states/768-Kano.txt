@@ -1,28 +1,20 @@
 state={
-	id=758
-	name="STATE_758"
-	
-	resources = {
-		rubber = 6
-		steel = 2
-		aluminium = 2
-	}
-	
+	id=768
+	name="STATE_768"
 	history = {
 		owner = CAF
+		add_core_of = NGR
 		add_core_of = CAF
-		add_core_of = COG
 		
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1
 		}
 	}
-	
 	provinces={
-		3109 
+		4938 4972 
 	}
-	manpower=462345
-	state_category = pastoral
+	state_category = rural
+	manpower=3500250
 	buildings_max_level_factor=1.000
 }
