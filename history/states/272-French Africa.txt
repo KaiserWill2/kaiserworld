@@ -11,6 +11,7 @@ state={
 	history={
 		owner = LIB
 		add_core_of = LIB
+		add_core_of = SEN
 		victory_points = {
 			4948 5 
 		}

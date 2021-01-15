@@ -10,7 +10,9 @@ state={
 	}
 
 	history={
-		owner = DRC
+		owner = CAF
+		add_core_of = CAF
+		add_core_of = DRC
 		buildings = {
 			infrastructure = 7
 			industrial_complex = 5
