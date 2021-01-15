@@ -10,7 +10,9 @@ state={
 	}
 
 	history={
-		owner = NGR
+		owner = CAF
+		add_core_of = NGR
+		add_core_of = CAF
 		buildings = {
 			infrastructure = 7
 			arms_factory = 2

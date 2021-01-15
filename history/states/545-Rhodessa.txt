@@ -8,7 +8,9 @@ state={
 	}
 
 	history={
-		owner = ZAM
+		owner = CAF
+		add_core_of = CAF
+		add_core_of = ZAM
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 2

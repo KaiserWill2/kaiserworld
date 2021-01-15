@@ -7,7 +7,7 @@ state={
 	state_category = city
 
 	history={
-		owner = RAJ
+		owner = BAL
 		add_core_of = PAK
 		add_core_of = BAL
 		victory_points = { 12774 3 } #Gwadar#
