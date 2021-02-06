@@ -1,0 +1,85 @@
+ideas = {
+
+    country = {
+
+		idea_pol_king_alexander = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_manpower_bonus
+
+			modifier = {
+				stability_factor = 0.05
+			}
+
+		}
+
+		idea_pol_german_influence = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_manpower_bonus
+
+			modifier = {
+				industrial_capacity_factory = -0.1
+				consumer_goods_factor = 0.2
+				political_power_gain = -0.35
+			}
+
+		}
+
+		idea_pol_watch_bug = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_manpower_bonus
+                        
+                        targeted_modifier = {
+				tag = SOV
+				attack_bonus_against = 0.02
+				defense_bonus_against = 0.10
+			}
+                    
+		}
+
+		idea_pol_tradition = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_manpower_bonus
+
+			modifier = {
+				monthly_population = 0.02
+				drift_defence_factor = 0.2
+			}
+
+		}
+
+		idea_pol_forgotten_partner = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_manpower_bonus
+
+			modifier = {
+                                   #
+			}
+		}
+     } 
+      
+}
