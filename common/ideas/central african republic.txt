@@ -1,0 +1,79 @@
+ideas = {
+
+    country = {
+	    
+		idea_caf_german_colonialism = {
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			picture = german_colonialism
+			
+			modifier = {
+				stability_factor = -0.05
+				political_power_gain = -0.1
+				political_power_gain = -0.3
+				communist_drift = 0.02
+				
+				
+				
+				
+			}
+		}
+	}
+
+	country = {
+	    
+		idea_caf_ethnic_tension = {
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			picture = ethnic_tension
+			
+			modifier = {
+				stability_factor = -0.08
+				drift_defence_factor = -0.1
+				political_power_gain = -0.1
+				crypto_strength = -1
+				decryption_power = -10
+				
+				
+				
+				
+			}
+		}
+	}
+
+	country = {
+	    
+		idea_caf_collapsing_economy = {
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			picture = collapsing_economy
+			
+			modifier = {
+				industrial_capacity_factory = -0.80
+				consumer_goods_factor = 0.50
+				political_power_gain = -0.5
+				production_speed_arms_factory_factor = -0.50
+				production_speed_industrial_complex_factor = -0.50
+				
+				
+				
+				
+			}
+		}
+	}
+
+
+
+}
