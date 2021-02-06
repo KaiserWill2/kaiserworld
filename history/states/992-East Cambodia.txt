@@ -1,0 +1,36 @@
+
+state={
+	id=992
+	name="STATE_992"
+	manpower = 6029472
+	
+	state_category = town
+	
+	resources={
+		rubber=25
+		steel=4
+		chromium=2
+	}
+
+	history={
+		owner = VIN
+		add_core_of = VIN
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 2
+			arms_factory = 1
+		}
+		victory_points = { 12260 1 }!
+		victory_points = { 4330 1 }!
+		victory_points = { 7645 1 }!
+		victory_points = { 12150 1 }!
+		victory_points = { 4596 1 }!
+	}
+
+	provinces={
+		1620
+		4330 4596 
+		7645 10204
+		12150 12167 12260 
+	}
+}
