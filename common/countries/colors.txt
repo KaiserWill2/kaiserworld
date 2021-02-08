@@ -912,8 +912,8 @@ ZAM = {
 }
 
 ZIM = {
-	color = rgb { 48 74 60 }
-	color_ui = rgb { 115 115 115 }
+	color = rgb { 115 141 92 }
+	color_ui = rgb { 92 35 55 }
 }
 
 NEA = {
