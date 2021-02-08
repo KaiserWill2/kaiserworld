@@ -6,4 +6,4 @@ dependencies={
 	"Red World Fan Fork"
 }
 name="Kaiserredux 2010"
-supported_version="1.10.3"
+supported_version="1.10.4"
