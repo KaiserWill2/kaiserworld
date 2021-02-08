@@ -9,8 +9,9 @@ state={
 	}
 
 	history={
-		owner = INS
+		owner = WPA
 		add_core_of = INS
+		add_core_of = WPA
 		buildings = {
 			infrastructure = 2
 			air_base = 3
