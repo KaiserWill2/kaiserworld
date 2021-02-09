@@ -17,6 +17,26 @@ spriteTypes = {
 		name = "GFX_idea_collapsing_economy"
 		texturefile = "gfx/interface/ideas/CAF/collapsing_economy.dds"
 	}
+	spriteType = {
+		name = "GFX_idea_idea_pol_king_alexander"
+		texturefile = "gfx/interface/ideas/POL/idea_pol_king_alexander.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_idea_pol_german_influence"
+		texturefile = "gfx/interface/ideas/POL/idea_pol_german_influence.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_idea_pol_watch_bug"
+		texturefile = "gfx/interface/ideas/POL/idea_pol_watch_bug.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_idea_pol_tradition"
+		texturefile = "gfx/interface/ideas/POL/idea_pol_tradition.tga"
+	}
+    spriteType = {
+		name = "GFX_idea_idea_pol_forgotten_partner"
+		texturefile = "gfx/interface/ideas/POL/idea_pol_forgotten_partner.tga"
+	}
 	###Unsorted
 	spriteType = {
 		name = "GFX_idea_idea_eu_member"

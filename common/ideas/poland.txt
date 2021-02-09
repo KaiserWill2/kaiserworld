@@ -9,7 +9,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = generic_manpower_bonus
+			picture = idea_pol_king_alexander
 
 			modifier = {
 				stability_factor = 0.05
@@ -24,7 +24,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = generic_manpower_bonus
+			picture = idea_pol_german_influence
 
 			modifier = {
 				industrial_capacity_factory = -0.1
@@ -41,7 +41,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = generic_manpower_bonus
+			picture = idea_pol_watch_bug
                         
                         targeted_modifier = {
 				tag = SOV
@@ -58,7 +58,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = generic_manpower_bonus
+			picture = idea_pol_tradition
 
 			modifier = {
 				monthly_population = 0.02
@@ -74,7 +74,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = generic_manpower_bonus
+			picture = idea_pol_forgotten_partner
 
 			modifier = {
                                    #
