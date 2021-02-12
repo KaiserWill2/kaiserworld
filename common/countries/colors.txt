@@ -302,8 +302,8 @@ CUB = {
 }
 
 CHI = {
-	color = rgb { 59 87 226 }
-	color_ui = rgb { 115 115 115 }
+	color = rgb { 212 68 59 }
+	color_ui = rgb { 4 72 83 }
 }
 
 CHL = {
@@ -397,8 +397,8 @@ FRA = {
 }
 
 GER = {
-	color = rgb { 88 88 88 }
-	color_ui = rgb { 115 115 115 }
+	color = rgb { 77 93 83 }
+	color_ui = rgb { 138 155 116 }
 }
 
 GUA = {
@@ -427,8 +427,8 @@ GUI = {
 }
 
 GUY = {
-	color = rgb { 127 213 60 }
-	color_ui = rgb { 115 115 115 }
+	color = rgb { 49 12 175 }
+	color_ui = rgb { 254 93 69 }
 }
 
 GBS = {
@@ -442,8 +442,8 @@ GND = {
 }
 
 GRE = {
-	color = rgb { 14 139 212 }
-	color_ui = rgb { 115 115 115 }
+	color = rgb { 168 59 92 }
+	color_ui = rgb { 342 65 66 }
 }
 
 HAI = {
@@ -457,8 +457,8 @@ HAW = {
 }
 
 HUN = {
-	color = rgb { 228 49 49 }
-	color_ui = rgb { 115 115 115 }
+	color = rgb { 152 85 91 }
+	color_ui = rgb { 355 44 60 }
 }
 
 HOL = {
@@ -487,8 +487,8 @@ ICE = {
 }
 
 ITA = {
-	color = rgb { 28 155 88 }
-	color_ui = rgb { 115 115 115 }
+	color = rgb { 59 148 65 }
+	color_ui = rgb { 74 186 82 }
 }
 
 INS = {
@@ -527,8 +527,8 @@ KEN = {
 }
 
 LIB = {
-	color = rgb { 137 196 201 }
-	color_ui = rgb { 115 115 115 }
+	color = rgb { 129 169 177 }
+	color_ui = rgb { 129 169 177 }
 }
 
 LAO = {
@@ -657,8 +657,8 @@ PER = {
 }
 
 POR = {
-	color = rgb { 88 156 88 }
-	color_ui = rgb { 115 115 115 }
+	color = rgb { 0 147 175 }
+	color_ui = rgb { 0 147 175 }
 }
 
 PLU = {
@@ -697,8 +697,8 @@ PRU = {
 }
 
 POL = {
-	color = rgb { 144 18 14 }
-	color_ui = rgb { 115 115 115 }
+	color = rgb { 197 92 106 }
+	color_ui = rgb { 255 120 138 }
 }
 
 PAR = {
@@ -1359,8 +1359,8 @@ SLO = {
 }
 
 AUS = {
-	color = rgb { 255 255 255 }
-	color_ui = rgb { 115 115 115 }
+	color = rgb { 190 181 181 }
+	color_ui = rgb { 0 5 75 }
 }
 
 CRO = {
