@@ -1,5 +1,5 @@
 focus_tree = {
-	id = eng
+	id = ENG
 	continuous_focus_position = { x = 0 y = 1000 } 
 	country = {
 		factor = 0
@@ -19,7 +19,8 @@ focus_tree = {
 			FOCUS_FILTER_POLITICAL
 		}
 		completion_reward = {
-			add_stability = 0.05
+			add_stability = 0.05
+
 			add_national_unity = 0.02
 		}
 	}
