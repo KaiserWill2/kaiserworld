@@ -1,0 +1,157 @@
+capital = 317
+
+oob = "generic_2000"
+
+set_research_slots = 4
+set_convoys = 500
+set_stability = 0.5
+set_war_support = 0.2
+
+set_technology = {
+	support_weapons = 1
+	infantry_weapons = 1
+	motorised_infantry = 1 
+	tech_support = 1 
+	tech_field_hospital = 1 
+	tech_engineers = 1 
+	gwtank = 1 
+	basic_light_tank = 1 
+	gw_artillery = 1 
+	tech_mountaineers = 1
+	early_fighter = 1 
+	early_bomber = 1 
+	interwar_antiair = 1
+	interwar_antitank = 1
+}
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	set_technology = {
+		early_submarine = 1
+		basic_submarine = 1
+		early_destroyer = 1
+		early_light_cruiser = 1
+		basic_light_cruiser = 1
+		early_heavy_cruiser = 1
+		
+		
+		early_carrier = 1
+		basic_carrier = 1
+		transport = 1
+	}
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_technology = {
+		basic_naval_mines = 1
+		submarine_mine_laying = 1
+		early_ship_hull_light = 1
+		basic_ship_hull_light = 1
+		early_ship_hull_submarine = 1
+		basic_ship_hull_submarine = 1
+		early_ship_hull_cruiser = 1
+		basic_ship_hull_cruiser = 1
+		early_ship_hull_heavy = 1
+		early_ship_hull_carrier = 1
+		basic_ship_hull_carrier = 1
+		basic_battery = 1
+		basic_light_battery = 1
+		basic_medium_battery = 1
+		basic_heavy_battery = 1
+		basic_torpedo = 1
+		sonar = 1
+		basic_depth_charges = 1
+		basic_secondary_battery = 1
+		improved_secondary_battery = 1
+		basic_cruiser_armor_scheme = 1
+		basic_heavy_armor_scheme = 1
+		mtg_transport = 1
+		improved_airplane_launcher = 1
+	}
+}
+set_politics = {
+	ruling_party = fascist
+	last_election = "1997.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+        fascist = 45
+		nationalist = 12
+		monarchist = 0
+		national_bolshevik = 5
+		national_conservative = 10
+		centrist = 5
+		liberal = 0
+		new_democrat = 18
+		moderate_socialist = 0
+		revolutionary_socialist = 2
+		communist = 3
+}
+
+create_country_leader = {
+	name = "Daniel Ortega"
+	desc = "POLITICS_DANIEL_ORTEGA_DESC"
+	picture = "Portrait_CEA_Daniel_Ortega.dds"
+	ideology = marxist
+}
+
+create_country_leader = {
+	name = "Óscar Mejía Víctores"
+	picture = "Portrait_CEA_Óscar_Mejía_Víctores.tga"
+	ideology = fascist_ideology
+}
+
+create_country_leader = {
+	name = "Juan Orlando Hernandez" 
+	picture = "Portrait_CEA_Juan_Orlando_Hernandez.dds"
+	ideology = nationalist_ideology
+}
+
+create_country_leader = {
+	name = "Juan I"
+	picture = "Portrait_CEA_Juan_First.dds"
+	ideology = absolute_monarchist
+}
+
+create_country_leader = {
+	name = "Martha Elena Ruiz Sevilla"
+	picture = "Portrait_CEA_Martha_Elena_Ruiz_Sevilla.dds"
+	ideology = national_bolshevik_ideology
+}
+
+create_country_leader = {
+	name = "Arnoldo Aleman"
+	picture = "Portrait_CEA_Arnoldo_Aleman.dds"
+	ideology = fiscal_conservative
+}
+
+create_country_leader = {
+	name = "Mauricio Villeda"
+	picture = "Portrait_CEA_Mauricio_Villeda.dds"
+	ideology = centrist_ideology
+}
+
+create_country_leader = {
+	name = "Margarita Bolanos Arquin"
+	picture = "Portrait_CEA_Margarita_Bolanos_Arquin.dds"
+	ideology = social_liberal
+}
+
+create_country_leader = {
+	name = "Guillermo Enrique Valle"
+	picture = "Portrait_CEA_Guillermo_Enrique_Valle.dds"
+	ideology = new_democrat_ideology
+}
+
+create_country_leader = {
+	name = "Cesar Ham"
+	picture = "Portrait_CEA_Cesar_Ham.dds"
+	ideology = democratic_socialist
+}
+
+create_country_leader = {
+	name = "Manuel Zelaya"
+	picture = "Portrait_CEA_Manuel_Zelaya.dds"
+	ideology = revolutionary_socialist_ideology
+}
