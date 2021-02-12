@@ -7,467 +7,396 @@ focus_tree = {
 			tag = ENG
 		}
 	}
-	continuous_focus_position = { x = 50 y = 2100 }
+
+	continuous_focus_position = { x = 50 y = 1100 }
 	default = no
-		#Legacy Of Foot
-		focus = {
-			id = ENG_legacy_of_foot
-			icon = GFX_ENG_legacy_of_foot
-			x = 9
-			y = 0
-			cost = 3
-			search_filters = {
-				FOCUS_FILTER_POLITICAL
-			}
-			completion_reward = {
-				add_stability = 0.05
 	
-				add_national_unity = 0.02
-			}
+	focus = {
+		id = ENG_legacy_of_foot
+		icon = GFX_ENG_legacy_of_foot-445
+		x = 9
+		y = 0
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
 		}
-	
-		#Blairs Iron Fist
-		focus = {
-			id = ENG_blairs_iron_fist
-			icon = GFX_ENG_blairs_iron_fist
-			x = 3
-			y = 1
-			cost = 3
-			search_filters = {
-				FOCUS_FILTER_POLITICAL
-			}
-			prerequisite = { focus = ENG_legacy_of_foot  }
+		completion_reward = {
+			add_stability = 0.05
 		}
-	
-		#Fixing The Budget
-		focus = {
-			id = ENG_fixing_the_budget
-			icon = GFX_ENG_fixing_the_budget
-			x = 9
-			y = 1
-			cost = 3
-			search_filters = {
-				FOCUS_FILTER_CHI_INFLATION
-			}
-			prerequisite = { focus = ENG_legacy_of_foot  }
+	}
+	focus = {
+		id = ENG_blairs_iron_fist
+		icon = GFX_ENG_blairs_iron_fist-445
+		x = 3
+		y = 1
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
 		}
-	
-		#Scotland And Wales
-		focus = {
-			id = ENG_scotland_and_wales
-			icon = GFX_ENG_scotland_and_wales
-			x = 13
-			y = 1
-			cost = 3
-			search_filters = {
-				FOCUS_FILTER_ANNEXATION
-			}
-			prerequisite = { focus = ENG_legacy_of_foot  }
+		prerequisite = { focus = ENG_legacy_of_foot  }
+	}
+	focus = {
+		id = ENG_fixing_the_budget
+		icon = GFX_ENG_fixing_the_budget-445
+		x = 9
+		y = 1
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_CHI_INFLATION
 		}
-	
-		#Putting The Country First
-		focus = {
-			id = ENG_putting_the_country_first
-			icon = GFX_ENG_putting_the_country_first
-			x = 3
-			y = 2
-			cost = 3
-			search_filters = {
-				FOCUS_FILTER_STABILITY
-			}
-			prerequisite = { focus = ENG_blairs_iron_fist  }
+		prerequisite = { focus = ENG_legacy_of_foot  }
+	}
+	focus = {
+		id = ENG_scotland_and_wales
+		icon = GFX_ENG_scotland_and_wales-445
+		x = 13
+		y = 1
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_ANNEXATION
 		}
-	
-		#Arming The Nation
-		focus = {
-			id = ENG_arming_the_nation
-			icon = GFX_ENG_arming_the_nation
-			x = 1
-			y = 3
-			cost = 3
-			search_filters = {
-				FOCUS_FILTER_MANPOWER
-			}
-			prerequisite = { focus = ENG_putting_the_country_first  }
+		prerequisite = { focus = ENG_legacy_of_foot  }
+	}
+	focus = {
+		id = ENG_putting_the_country_first
+		icon = GFX_ENG_putting_the_country_first-445
+		x = 3
+		y = 2
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_STABILITY
 		}
-	
-		#Weapon Research
-		focus = {
-			id = ENG_weapon_research
-			icon = GFX_ENG_weapon_research
-			x = 0
-			y = 4
-			cost = 3
-			search_filters = {
-				FOCUS_FILTER_INDUSTRY
-			}
-			prerequisite = { focus = ENG_arming_the_nation  }
+		prerequisite = { focus = ENG_blairs_iron_fist  }
+	}
+	focus = {
+		id = ENG_arming_the_nation
+		icon = GFX_ENG_arming_the_nation-445
+		x = 1
+		y = 3
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_MANPOWER
 		}
-	
-		#Funding Into Weapons
-		focus = {
-			id = ENG_funding_into_weapons
-			icon = GFX_ENG_funding_into_weapons
-			x = 2
-			y = 4
-			cost = 3
-			search_filters = {
-				FOCUS_FILTER_INDUSTRY
-			}
-			prerequisite = { focus = ENG_arming_the_nation  }
+		prerequisite = { focus = ENG_putting_the_country_first  }
+	}
+	focus = {
+		id = ENG_weapon_research
+		icon = GFX_ENG_weapon_research-445
+		x = 0
+		y = 4
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
 		}
-	
-		#The Elite First
-		focus = {
-			id = ENG_the_elite_first
-			icon = GFX_ENG_the_elite_first
-			x = 5
-			y = 6
-			cost = 3
-			search_filters = {
-				FOCUS_FILTER_STABILITY
-			}
-			prerequisite = { focus = ENG_the_blair_personality  }
+		prerequisite = { focus = ENG_arming_the_nation  }
+	}
+	focus = {
+		id = ENG_funding_into_weapons
+		icon = GFX_ENG_funding_into_weapons-445
+		x = 2
+		y = 4
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
 		}
-	
-		#Rally The People
-		focus = {
-			id = ENG_rally_the_people
-			icon = GFX_ENG_rally_the_people
-			x = 5
-			y = 3
-			cost = 3
-			search_filters = {
-				FOCUS_FILTER_POLITICAL
-			}
-			prerequisite = { focus = ENG_putting_the_country_first  }
+		prerequisite = { focus = ENG_arming_the_nation  }
+	}
+	focus = {
+		id = ENG_the_elite_first
+		icon = GFX_ENG_the_elite_first-445
+		x = 5
+		y = 6
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_STABILITY
 		}
-	
-		#Watch Our Citizens
-		focus = {
-			id = ENG_watch_our_citizens
-			icon = GFX_ENG_watch_our_citizens
-			x = 4
-			y = 4
-			cost = 3
-			search_filters = {
-				FOCUS_FILTER_POLITICAL
-			}
-			prerequisite = { focus = ENG_rally_the_people  }
+		prerequisite = { focus = ENG_the_blair_personality  }
+	}
+	focus = {
+		id = ENG_rally_the_people
+		icon = GFX_ENG_rally_the_people-445
+		x = 5
+		y = 3
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
 		}
-	
-		#The Punishments
-		focus = {
-			id = ENG_the_punishments
-			icon = GFX_ENG_the_punishments
-			x = 6
-			y = 4
-			cost = 3
-			search_filters = {
-				FOCUS_FILTER_STABILITY
-			}
-			prerequisite = { focus = ENG_rally_the_people  }
+		prerequisite = { focus = ENG_putting_the_country_first  }
+	}
+	focus = {
+		id = ENG_watch_our_citizens
+		icon = GFX_ENG_watch_our_citizens-445
+		x = 4
+		y = 4
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
 		}
-	
-		#The Blair Personality
-		focus = {
-			id = ENG_the_blair_personality
-			icon = GFX_ENG_the_blair_personality
-			x = 5
-			y = 5
-			cost = 3
-			search_filters = {
-				FOCUS_FILTER_POLITICAL
-			}
-			prerequisite = { focus = ENG_watch_our_citizens  focus = ENG_the_punishments  }
+		prerequisite = { focus = ENG_rally_the_people  }
+	}
+	focus = {
+		id = ENG_the_punishments
+		icon = GFX_ENG_the_punishments-445
+		x = 6
+		y = 4
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_STABILITY
 		}
-	
-		#Parades Of Mass Destruction
-		focus = {
-			id = ENG_parades_of_mass_destruction
-			icon = GFX_ENG_parades_of_mass_destruction
-			x = 1
-			y = 5
-			cost = 3
-			search_filters = {
-				FOCUS_FILTER_WAR_SUPPORT
-			}
-			prerequisite = { focus = ENG_weapon_research  focus = ENG_funding_into_weapons  }
+		prerequisite = { focus = ENG_rally_the_people  }
+	}
+	focus = {
+		id = ENG_the_blair_personality
+		icon = GFX_ENG_the_blair_personality-445
+		x = 5
+		y = 5
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
 		}
-	
-		#The People Must Serve
-		focus = {
-			id = ENG_the_people_must_serve
-			icon = GFX_ENG_the_people_must_serve
-			x = 1
-			y = 7
-			cost = 3
-			search_filters = {
-				FOCUS_FILTER_MANPOWER
-			}
-			prerequisite = { focus = ENG_parades_of_mass_destruction  }
+		prerequisite = { focus = ENG_watch_our_citizens  focus = ENG_the_punishments  }
+	}
+	focus = {
+		id = ENG_parades_of_mass_destruction
+		icon = GFX_ENG_parades_of_mass_destruction-445
+		x = 1
+		y = 5
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
 		}
-	
-		#The Annual Congress Of England
-		focus = {
-			id = ENG_the_annual_congress_of_england
-			icon = GFX_ENG_the_annual_congress_of_england
-			x = 8
-			y = 8
-			cost = 6
-			search_filters = {
-				FOCUS_FILTER_POLITICAL
-			}
+		prerequisite = { focus = ENG_weapon_research  focus = ENG_funding_into_weapons  }
+	}
+	focus = {
+		id = ENG_the_people_must_serve
+		icon = GFX_ENG_the_people_must_serve-445
+		x = 1
+		y = 7
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_MANPOWER
 		}
-	
-		#The Union Is Strong
-		focus = {
-			id = ENG_the_union_is_strong
-			icon = GFX_ENG_the_union_is_strong
-			x = 3
-			y = 8
-			cost = 4
-			search_filters = {
-				FOCUS_FILTER_STABILITY
-			}
-			prerequisite = { focus = ENG_the_people_must_serve  focus = ENG_the_elite_first  }
+		prerequisite = { focus = ENG_parades_of_mass_destruction  }
+	}
+	focus = {
+		id = ENG_the_annual_congress_of_england
+		icon = GFX_ENG_the_annual_congress_of_england-445
+		x = 8
+		y = 8
+		cost = 6
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
 		}
-	
-		#Tax The People
-		focus = {
-			id = ENG_tax_the_people
-			icon = GFX_ENG_tax_the_people
-			x = 9
-			y = 2
-			cost = 3
-			search_filters = {
-				FOCUS_FILTER_CHI_INFLATION
-			}
-			prerequisite = { focus = ENG_fixing_the_budget  }
+	}
+	focus = {
+		id = ENG_the_union_is_strong
+		icon = GFX_ENG_the_union_is_strong-445
+		x = 3
+		y = 8
+		cost = 4
+		search_filters = {
+			FOCUS_FILTER_STABILITY
 		}
-	
-		#Diplomatic Relations With Scotland
-		focus = {
-			id = ENG_diplomatic_relations_with_scotland
-			icon = GFX_ENG_diplomatic_relations_with_scotland
-			x = 8
-			y = 3
-			cost = 3
-			search_filters = {
-				FOCUS_FILTER_STABILITY
-			}
-			prerequisite = { focus = ENG_tax_the_people  }
-			mutually_exclusive = { focus = ENG_on_our_own  }
+		prerequisite = { focus = ENG_the_people_must_serve  focus = ENG_the_elite_first  }
+	}
+	focus = {
+		id = ENG_tax_the_people
+		icon = GFX_ENG_tax_the_people-445
+		x = 9
+		y = 2
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_CHI_INFLATION
 		}
-	
-		#On Our Own
-		focus = {
-			id = ENG_on_our_own
-			icon = GFX_ENG_on_our_own
-			x = 10
-			y = 3
-			cost = 3
-			search_filters = {
-				FOCUS_FILTER_STABILITY
-			}
-			prerequisite = { focus = ENG_tax_the_people  }
-			mutually_exclusive = { focus = ENG_diplomatic_relations_with_scotland  }
+		prerequisite = { focus = ENG_fixing_the_budget  }
+	}
+	focus = {
+		id = ENG_diplomatic_relations_with_scotland
+		icon = GFX_ENG_diplomatic_relations_with_scotland-445
+		x = 8
+		y = 3
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_STABILITY
 		}
-	
-		#Diplomatic Relations With Wales
-		focus = {
-			id = ENG_diplomatic_relations_with_wales
-			icon = GFX_ENG_diplomatic_relations_with_wales
-			x = 8
-			y = 5
-			cost = 3
-			search_filters = {
-				FOCUS_FILTER_STABILITY
-			}
-			prerequisite = { focus = ENG_diplomatic_relations_with_scotland  }
+		prerequisite = { focus = ENG_tax_the_people  }
+		mutually_exclusive = { focus = ENG_on_our_own  }
+	}
+	focus = {
+		id = ENG_on_our_own
+		icon = GFX_ENG_on_our_own-445
+		x = 10
+		y = 3
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_STABILITY
 		}
-	
-		#New Infrastructure Projects
-		focus = {
-			id = ENG_new_infrastructure_projects
-			icon = GFX_ENG_new_infrastructure_projects
-			x = 10
-			y = 4
-			cost = 3
-			search_filters = {
-				FOCUS_FILTER_STABILITY
-			}
-			prerequisite = { focus = ENG_on_our_own  }
+		prerequisite = { focus = ENG_tax_the_people  }
+		mutually_exclusive = { focus = ENG_diplomatic_relations_with_scotland  }
+	}
+	focus = {
+		id = ENG_diplomatic_relations_with_wales
+		icon = GFX_ENG_diplomatic_relations_with_wales-445
+		x = 8
+		y = 5
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_STABILITY
 		}
-	
-		#England Prevails
-		focus = {
-			id = ENG_england_prevails
-			icon = GFX_ENG_england_prevails
-			x = 9
-			y = 6
-			cost = 3
-			search_filters = {
-				FOCUS_FILTER_POLITICAL
-			}
-			prerequisite = { focus = ENG_diplomatic_relations_with_wales  focus = ENG_new_infrastructure_projects  }
+		prerequisite = { focus = ENG_diplomatic_relations_with_scotland  }
+	}
+	focus = {
+		id = ENG_new_infrastructure_projects
+		icon = GFX_ENG_new_infrastructure_projects-445
+		x = 10
+		y = 4
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_STABILITY
 		}
-	
-		#Secure The Borders
-		focus = {
-			id = ENG_secure_the_borders
-			icon = GFX_ENG_secure_the_borders
-			x = 12
-			y = 2
-			cost = 3
-			search_filters = {
-				FOCUS_FILTER_FRA_POLITICAL_VIOLENCE
-			}
-			prerequisite = { focus = ENG_scotland_and_wales  }
+		prerequisite = { focus = ENG_on_our_own  }
+	}
+	focus = {
+		id = ENG_england_prevails
+		icon = GFX_ENG_england_prevails-445
+		x = 9
+		y = 6
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
 		}
-	
-		#Heavy Monitoring
-		focus = {
-			id = ENG_heavy_monitoring
-			icon = GFX_ENG_heavy_monitoring
-			x = 12
-			y = 3
-			cost = 3
-			search_filters = {
-				FOCUS_FILTER_MANPOWER
-			}
-			prerequisite = { focus = ENG_secure_the_borders  }
+		prerequisite = { focus = ENG_diplomatic_relations_with_wales  focus = ENG_new_infrastructure_projects  }
+	}
+	focus = {
+		id = ENG_secure_the_borders
+		icon = GFX_ENG_secure_the_borders-445
+		x = 12
+		y = 2
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_FRA_POLITICAL_VIOLENCE
 		}
-	
-		#Shoot To Kill
-		focus = {
-			id = ENG_shoot_to_kill
-			icon = GFX_ENG_shoot_to_kill
-			x = 11
-			y = 4
-			cost = 3
-			search_filters = {
-				FOCUS_FILTER_FRA_POLITICAL_VIOLENCE
-			}
-			prerequisite = { focus = ENG_heavy_monitoring  }
+		prerequisite = { focus = ENG_scotland_and_wales  }
+	}
+	focus = {
+		id = ENG_heavy_monitoring
+		icon = GFX_ENG_heavy_monitoring-445
+		x = 12
+		y = 3
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_MANPOWER
 		}
-	
-		#Imprison Families
-		focus = {
-			id = ENG_imprison_families
-			icon = GFX_ENG_imprison_families
-			x = 13
-			y = 4
-			cost = 3
-			search_filters = {
-				FOCUS_FILTER_FRA_POLITICAL_VIOLENCE
-			}
-			prerequisite = { focus = ENG_heavy_monitoring  }
+		prerequisite = { focus = ENG_secure_the_borders  }
+	}
+	focus = {
+		id = ENG_shoot_to_kill
+		icon = GFX_ENG_shoot_to_kill-445
+		x = 11
+		y = 4
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_FRA_POLITICAL_VIOLENCE
 		}
-	
-		#Test Fire At Wall
-		focus = {
-			id = ENG_test_fire_at_wall
-			icon = GFX_ENG_test_fire_at_wall
-			x = 11
-			y = 5
-			cost = 3
-			search_filters = {
-				FOCUS_FILTER_FRA_POLITICAL_VIOLENCE
-			}
-			prerequisite = { focus = ENG_shoot_to_kill  }
+		prerequisite = { focus = ENG_heavy_monitoring  }
+	}
+	focus = {
+		id = ENG_imprison_families
+		icon = GFX_ENG_imprison_families-445
+		x = 13
+		y = 4
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_FRA_POLITICAL_VIOLENCE
 		}
-	
-		#Forced Labour
-		focus = {
-			id = ENG_forced_labour
-			icon = GFX_ENG_forced_labour
-			x = 13
-			y = 5
-			cost = 3
-			search_filters = {
-				FOCUS_FILTER_FRA_POLITICAL_VIOLENCE
-			}
-			prerequisite = { focus = ENG_imprison_families  }
+		prerequisite = { focus = ENG_heavy_monitoring  }
+	}
+	focus = {
+		id = ENG_test_fire_at_wall
+		icon = GFX_ENG_test_fire_at_wall-445
+		x = 11
+		y = 5
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_FRA_POLITICAL_VIOLENCE
 		}
-	
-		#Open The Camps
-		focus = {
-			id = ENG_open_the_camps
-			icon = GFX_ENG_open_the_camps
-			x = 12
-			y = 6
-			cost = 3
-			search_filters = {
-				FOCUS_FILTER_FRA_POLITICAL_VIOLENCE
-			}
-			prerequisite = { focus = ENG_test_fire_at_wall  focus = ENG_forced_labour  }
+		prerequisite = { focus = ENG_shoot_to_kill  }
+	}
+	focus = {
+		id = ENG_forced_labour
+		icon = GFX_ENG_forced_labour-445
+		x = 13
+		y = 5
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_FRA_POLITICAL_VIOLENCE
 		}
-	
-		#Imprison The Non Pure
-		focus = {
-			id = ENG_imprison_the_non_pure
-			icon = GFX_ENG_imprison_the_non_pure
-			x = 11
-			y = 7
-			cost = 3
-			search_filters = {
-				FOCUS_FILTER_FRA_POLITICAL_VIOLENCE
-			}
-			prerequisite = { focus = ENG_open_the_camps  }
+		prerequisite = { focus = ENG_imprison_families  }
+	}
+	focus = {
+		id = ENG_open_the_camps
+		icon = GFX_ENG_open_the_camps-445
+		x = 12
+		y = 6
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_FRA_POLITICAL_VIOLENCE
 		}
-	
-		#Send A Warning To Wales And Scotland
-		focus = {
-			id = ENG_send_a_warning_to_wales_and_scotland
-			icon = GFX_ENG_send_a_warning_to_wales_and_scotland
-			x = 12
-			y = 7
-			cost = 3
-			search_filters = {
-				FOCUS_FILTER_WAR_SUPPORT
-			}
-			prerequisite = { focus = ENG_open_the_camps  }
+		prerequisite = { focus = ENG_test_fire_at_wall  focus = ENG_forced_labour  }
+	}
+	focus = {
+		id = ENG_imprison_the_non_pure
+		icon = GFX_ENG_imprison_the_non_pure-445
+		x = 11
+		y = 7
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_FRA_POLITICAL_VIOLENCE
 		}
-	
-		#Forced Work In The Union
-		focus = {
-			id = ENG_forced_work_in_the_union
-			icon = GFX_ENG_forced_work_in_the_union
-			x = 13
-			y = 7
-			cost = 3
-			search_filters = {
-				FOCUS_FILTER_POLITICAL
-			}
-			prerequisite = { focus = ENG_open_the_camps  }
+		prerequisite = { focus = ENG_open_the_camps  }
+	}
+	focus = {
+		id = ENG_send_a_warning_to_wales_and_scotland
+		icon = GFX_ENG_send_a_warning_to_wales_and_scotland-445
+		x = 12
+		y = 7
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
 		}
-	
-		#The Voice Of Reunification
-		focus = {
-			id = ENG_the_voice_of_reunification
-			icon = GFX_ENG_the_voice_of_reunification
-			x = 12
-			y = 9
-			cost = 3
-			search_filters = {
-				FOCUS_FILTER_POLITICAL
-			}
-			prerequisite = { focus = ENG_imprison_the_non_pure  focus = ENG_send_a_warning_to_wales_and_scotland  focus = ENG_forced_work_in_the_union  }
+		prerequisite = { focus = ENG_open_the_camps  }
+	}
+	focus = {
+		id = ENG_forced_work_in_the_union
+		icon = GFX_ENG_forced_work_in_the_union-445
+		x = 13
+		y = 7
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
 		}
-	
-		#The Totalist Spirit
-		focus = {
-			id = ENG_the_totalist_spirit
-			icon = GFX_ENG_the_totalist_spirit
-			x = 8
-			y = 10
-			cost = 3
-			search_filters = {
-				FOCUS_FILTER_POLITICAL
-			}
-			prerequisite = { focus = ENG_the_annual_congress_of_england  }
+		prerequisite = { focus = ENG_open_the_camps  }
+	}
+	focus = {
+		id = ENG_the_voice_of_reunification
+		icon = GFX_ENG_the_voice_of_reunification-445
+		x = 12
+		y = 9
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
 		}
-	
+		prerequisite = { focus = ENG_imprison_the_non_pure  focus = ENG_send_a_warning_to_wales_and_scotland  focus = ENG_forced_work_in_the_union  }
+	}
+	focus = {
+		id = ENG_the_totalist_spirit
+		icon = GFX_ENG_the_totalist_spirit-445
+		x = 8
+		y = 10
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ENG_the_annual_congress_of_england  }
 	}
 }
