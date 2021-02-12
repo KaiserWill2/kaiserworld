@@ -11,10 +11,7 @@ if = {
 }
 
 add_ideas = {
-    idea_queen_elizabeth_ii
-	idea_bastion_of_european_democracy
-	idea_prime_minister_owen
-	idea_scottish_tensions
+    
 }
 
 set_research_slots = 4
@@ -127,13 +124,9 @@ set_popularities = {
 		communist = 97
 }
 
-create_faction = british_isles_protection_union
-add_to_faction = IRE
-add_to_faction = ULS
 	
 create_country_leader = {
-	name = "David Owen"
-	desc = "POLITICS_DAVID_OWEN_DESC"
+	name = " "	
 	picture = "Portrait_ENG_David_Owen.dds"
 	ideology = liberal
 }
@@ -141,60 +134,61 @@ create_country_leader = {
 create_country_leader = {
 	name = "Tony Blair"
 	picture = "tony_blair_leader.dds"
+	desc = "POLITICS_TONY_BLAIR_DESC"
 	ideology = communist
 }
 
 create_country_leader = {
-	name = "Paul Golding"
-	picture = "Portrait_ENG_Paul_Golding.dds"
+	name = ""
+	picture = ".dds"
 	ideology = fascist
 }
 
 create_country_leader = {
-	name = "Nick Griffin"
-	picture = "Portrait_ENG_Nick_Griffin.dds"
+	name = " "
+	picture = ".dds"
 	ideology = nationalist
 }
 
 create_country_leader = {
-	name = "Elizabeth II"
-	picture = "Portrait_ENG_Elizabeth_Second.dds"
+	name = ""
+	picture = ".dds"
 	ideology = monarchist
 }
 
 create_country_leader = {
-	name = "Patrick Harrington"
-	picture = "Portrait_ENG_Patrick_Harrington.dds"
+	name = ""
+	picture = ".dds"
 	ideology = national_bolshevik
 }
 
 create_country_leader = {
-	name = "Owen Paterson"
-	picture = "Portrait_ENG_Owen_Paterson.dds"
+	name = ""
+	picture = ".dds"
 	ideology = national_conservative
 }
 
 create_country_leader = {
-	name = "Nick Clegg"
-	picture = "Portrait_ENG_Nick_Clegg.dds"
+	name = ""
+	picture = ".dds"
 	ideology = centrist
 }
 
 create_country_leader = {
-	name = "Tony Benn"
-	picture = "Portrait_ENG_Tony_Benn.dds"
+	name = ""
+	picture = ".dds"
 	ideology = new_democrat
 }
 
 create_country_leader = {
-	name = "Jeremy Corbyn"
-	picture = "Portrait_ENG_Jeremy_Corbyn.dds"
+	name = ""
+	picture = ".dds"
 	ideology = moderate_socialist
 }
 
 create_country_leader = {
-	name = "George Galloway"
-	picture = "Portrait_ENG_George_Galloway.dds"
+	name = ""
+	picture = ".dds"
 	ideology = revolutionary_socialist
 }
 
