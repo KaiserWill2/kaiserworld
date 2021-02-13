@@ -410,7 +410,50 @@ focus_tree = {
 		}
 		prerequisite = { focus = ENG_the_totalist_spirit  }
 	}
-
+	focus = {
+		id = ENG_Branching_Out_The_Congress
+		icon = GFX_ENG_the_totalist_spirit-445
+		x = 12
+		y = 11
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ENG_The_Orders_For_England  }
+	}
+	focus = {
+		id = ENG_Freedom_Of_Thought_Council
+		icon = GFX_ENG_the_totalist_spirit-445
+		x = 13
+		y = 12
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ENG_Branching_Out_The_Congress  }
+	}
+	focus = {
+		id = ENG_The_Peoples_Ministry
+		icon = GFX_ENG_the_totalist_spirit-445
+		x = 12
+		y = 13
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ENG_Freedom_Of_Thought_Council  }
+	}
+	focus = {
+		id = ENG_We_Are_Everywhere
+		icon = GFX_ENG_the_totalist_spirit-445
+		x = 11
+		y = 14
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ENG_The_Peoples_Ministry  }
+	}
 	focus = {
 		id = ENG_The_Scottish_Problem
 		icon = GFX_ENG_the_totalist_spirit-445
@@ -421,6 +464,50 @@ focus_tree = {
 			FOCUS_FILTER_POLITICAL
 		}
 		prerequisite = { focus = ENG_The_Orders_For_England  }
+	}
+	focus = {
+		id = ENG_English_Resources
+		icon = GFX_ENG_the_totalist_spirit-445
+		x = 4
+		y = 12
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ENG_The_Scottish_Problem  }
+	}
+	focus = {
+		id = ENG_North_Sea_Oil_Dispute
+		icon = GFX_ENG_the_totalist_spirit-445
+		x = 4
+		y = 13
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ENG_English_Resources  }
+	}
+	focus = {
+		id = ENG_Border_Patrols
+		icon = GFX_ENG_the_totalist_spirit-445
+		x = 6
+		y = 12
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ENG_The_Scottish_Problem  }
+	}
+	focus = {
+		id = ENG_Claims_On_Shetlands
+		icon = GFX_ENG_the_totalist_spirit-445
+		x = 6
+		y = 13
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ENG_Border_Patrols  }
 	}
 	focus = {
 		id = ENG_Giving_Wales_A_Chance
@@ -443,6 +530,17 @@ focus_tree = {
 			FOCUS_FILTER_POLITICAL
 		}
 		prerequisite = { focus = ENG_Giving_Wales_A_Chance  }
+	}
+	focus = {
+		id = ENG_Influence_Wales
+		icon = GFX_ENG_the_totalist_spirit-445
+		x = 8
+		y = 13
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ENG_Trade_With_Wales  }
 	}
 	focus = {
 		id = ENG_Cornwall_Needs_Treatment
@@ -478,19 +576,21 @@ focus_tree = {
 		}
 		prerequisite = { focus = ENG_The_Cornwall_Resistance  }
 	}
-
 	focus = {
-		id = ENG_Cornwall_Extermination_Camps
+		id = ENG_Glory_To_Our_Dear_Leader
 		icon = GFX_ENG_the_totalist_spirit-445
-		x = 10
-		y = 13
+		x = 7
+		y = 15
 		cost = 3
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
-		prerequisite = { focus = ENG_The_Cornwall_Resistance  }
+		prerequisite = { focus = ENG_Cornwall_Extermination_Camps  }
+		prerequisite = { focus = ENG_Claims_On_Shetlands  }
+		prerequisite = { focus = ENG_Influence_Wales  }
+		prerequisite = { focus = ENG_We_Are_Everywhere  }
+		prerequisite = { focus = ENG_North_Sea_Oil_Dispute  }
 	}
-
 
 
 
