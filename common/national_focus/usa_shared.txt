@@ -1996,7 +1996,7 @@
 			focus = USA_foreign_policy_bernie
 		}
 		
-		x = -9
+		x = -10
 		y = 1
 		relative_position_id = USA_foreign_policy_bernie
 		completion_reward = {
@@ -2045,6 +2045,60 @@
 
 	}
 	shared_focus = {
+		id = USA_send_foriegn_aid_bernie
+		icon = focus
+		cost = 10
+		available = {
+		   
+		}
+		prerequisite = {
+			focus = USA_continue_the_special_relationship_bernie
+		}
+		x = 0
+		y = 1
+		relative_position_id = USA_continue_the_special_relationship_bernie
+		completion_reward = {
+		    
+		}
+
+	}
+	shared_focus = {
+		id = USA_propose_japan_open_up_bernie
+		icon = focus
+		cost = 10
+		available = {
+		   
+		}
+		prerequisite = {
+			focus = USA_send_foriegn_aid_bernie
+		}
+		x = 0
+		y = 1
+		relative_position_id = USA_send_foriegn_aid_bernie
+		completion_reward = {
+		    
+		}
+
+	}
+	shared_focus = {
+		id = USA_invite_japan_into_the_world_bernie
+		icon = focus
+		cost = 10
+		available = {
+		   
+		}
+		prerequisite = {
+			focus = USA_propose_japan_open_up_bernie
+		}
+		x = 0
+		y = 1
+		relative_position_id = USA_propose_japan_open_up_bernie
+		completion_reward = {
+		    
+		}
+
+	}
+	shared_focus = {
 		id = USA_condemn_japan_bernie
 		icon = focus
 		cost = 10
@@ -2061,6 +2115,63 @@
 		x = 1
 		y = 1
 		relative_position_id = USA_japan_bernie
+		completion_reward = {
+		    
+		}
+
+	}
+	shared_focus = {
+		id = USA_end_japanese_aid_bernie
+		icon = focus
+		cost = 10
+		available = {
+		   
+		}
+		prerequisite = {
+			focus = USA_condemn_japan_bernie
+		}
+		
+		x = 0
+		y = 1
+		relative_position_id = USA_condemn_japan_bernie
+		completion_reward = {
+		    
+		}
+
+	}
+	shared_focus = {
+		id = USA_prepare_the_pacific_fleet_bernie
+		icon = focus
+		cost = 10
+		available = {
+		   
+		}
+		prerequisite = {
+			focus = USA_end_japanese_aid_bernie
+		}
+		
+		x = 0
+		y = 1
+		relative_position_id = USA_end_japanese_aid_bernie
+		completion_reward = {
+		    
+		}
+
+	}
+	shared_focus = {
+		id = USA_open_japan_ourself_bernie
+		icon = focus
+		cost = 10
+		available = {
+		   
+		}
+		prerequisite = {
+			focus = USA_prepare_the_pacific_fleet_bernie
+		}
+		
+		x = 0
+		y = 1
+		relative_position_id = USA_prepare_the_pacific_fleet_bernie
 		completion_reward = {
 		    
 		}
@@ -2104,6 +2215,63 @@
 		}
 
 	}
+	shared_focus = {
+		id = USA_trade_with_china_bernie
+		icon = focus
+		cost = 10
+		available = {
+		   
+		}
+		prerequisite = {
+			focus = USA_work_with_china_bernie
+		}
+		
+		x = 0
+		y = 1
+		relative_position_id = USA_work_with_china_bernie
+		completion_reward = {
+		    
+		}
+
+	}
+	shared_focus = {
+		id = USA_joint_naval_operations_bernie
+		icon = focus
+		cost = 10
+		available = {
+		   
+		}
+		prerequisite = {
+			focus = USA_trade_with_china_bernie
+		}
+		
+		x = 0
+		y = 1
+		relative_position_id = USA_trade_with_china_bernie
+		completion_reward = {
+		    
+		}
+
+	}
+	shared_focus = {
+		id = USA_alliance_with_china_bernie
+		icon = focus
+		cost = 10
+		available = {
+		   
+		}
+		prerequisite = {
+			focus = USA_joint_naval_operations_bernie
+		}
+		
+		x = 0
+		y = 1
+		relative_position_id = USA_joint_naval_operations_bernie
+		completion_reward = {
+		    
+		}
+
+	}
 	#bernie west
 	shared_focus = {
 		id = USA_the_west_bernie
@@ -2116,7 +2284,7 @@
 			focus = USA_foreign_policy_bernie
 		}
 		
-		x = 9
+		x = 12
 		y = 1
 		relative_position_id = USA_foreign_policy_bernie
 		completion_reward = {
@@ -2135,9 +2303,138 @@
 			focus = USA_the_west_bernie
 		}
 		
-		x = -2
+		x = -4
 		y = 1
 		relative_position_id = USA_the_west_bernie
+		completion_reward = {
+		    
+		}
+
+	}
+	shared_focus = {
+		id = USA_work_with_scotland_&_wales_bernie
+		icon = focus
+		cost = 10
+		available = {
+		   
+		}
+		prerequisite = {
+			focus = USA_british_isle_bernie
+		}
+		mutually_exclusive = {
+			focus = USA_condemn_scotland_&_wales_bernie
+		}
+		x = -1
+		y = 1
+		relative_position_id = USA_british_isle_bernie
+		completion_reward = {
+		    
+		}
+
+	}
+	shared_focus = {
+		id = USA_condemn_scotland_&_wales_bernie
+		icon = focus
+		cost = 10
+		available = {
+		   
+		}
+		mutually_exclusive = {
+			focus = USA_work_with_scotland_&_wales_bernie
+		}
+		prerequisite = {
+			focus = USA_british_isle_bernie
+		}
+		
+		x = 1
+		y = 1
+		relative_position_id = USA_british_isle_bernie
+		completion_reward = {
+		    
+		}
+
+	}
+	shared_focus = {
+		id = USA_embargo_england_bernie
+		icon = focus
+		cost = 10
+		available = {
+		   
+		}
+		prerequisite = {
+			focus = USA_british_isle_bernie
+		}
+		prerequisite = {
+			focus = USA_work_with_scotland_&_wales_bernie
+			focus = USA_condemn_scotland_&_wales_bernie
+		}
+		x = 0
+		y = 2
+		relative_position_id = USA_british_isle_bernie
+		completion_reward = {
+		    
+		}
+
+	}
+	shared_focus = {
+		id = USA_alliance_with_scotland_&_wales_bernie
+		icon = focus
+		cost = 10
+		available = {
+		   
+		}
+		prerequisite = {
+			focus = USA_embargo_england_bernie
+		}
+		prerequisite = {
+			focus = USA_work_with_scotland_&_wales_bernie
+		}
+		x = 0
+		y = 2
+		relative_position_id = USA_work_with_scotland_&_wales_bernie
+		completion_reward = {
+		    
+		}
+
+	}
+	shared_focus = {
+		id = USA_operation_landing_strip_bernie
+		icon = focus
+		cost = 10
+		available = {
+		   
+		}
+		prerequisite = {
+			focus = USA_embargo_england_bernie
+		}
+		prerequisite = {
+			focus = USA_condemn_scotland_&_wales_bernie
+		}
+		x = 0
+		y = 2
+		relative_position_id = USA_condemn_scotland_&_wales_bernie
+		completion_reward = {
+		    
+		}
+
+	}
+	shared_focus = {
+		id = USA_end_england_bernie
+		icon = focus
+		cost = 10
+		available = {
+		   
+		}
+		prerequisite = {
+			focus = USA_embargo_england_bernie
+		}
+		prerequisite = {
+			focus = USA_operation_landing_strip_bernie
+			focus = USA_alliance_with_scotland_&_wales_bernie
+		}
+		x = 0
+		y = 2
+		relative_position_id = USA_embargo_england_bernie
 		completion_reward = {
 		    
 		}
@@ -2163,6 +2460,164 @@
 
 	}
 	shared_focus = {
+		id = USA_continue_the_arms_race_bernie
+		icon = focus
+		cost = 10
+		available = {
+		   
+		}
+		prerequisite = {
+			focus = USA_russia_bernie
+		}
+		mutually_exclusive = {
+			focus = USA_detente_bernie
+		}
+		x = -1
+		y = 1
+		relative_position_id = USA_russia_bernie
+		completion_reward = {
+		    
+		}
+
+	}
+	shared_focus = {
+		id = USA_open_hostilities_bernie
+		icon = focus
+		cost = 10
+		available = {
+		   
+		}
+		prerequisite = {
+			focus = USA_continue_the_arms_race_bernie
+		}
+		
+		x = 0
+		y = 1
+		relative_position_id = USA_continue_the_arms_race_bernie
+		completion_reward = {
+		    
+		}
+
+	}
+	shared_focus = {
+		id = USA_prepare_for_the_artic_bernie
+		icon = focus
+		cost = 10
+		available = {
+		   
+		}
+		prerequisite = {
+			focus = USA_open_hostilities_bernie
+		}
+		
+		x = 0
+		y = 1
+		relative_position_id = USA_open_hostilities_bernie
+		completion_reward = {
+		    
+		}
+
+	}
+	shared_focus = {
+		id = USA_end_the_red_menace_bernie
+		icon = focus
+		cost = 10
+		available = {
+		   
+		}
+		prerequisite = {
+			focus = USA_prepare_for_the_artic_bernie
+		}
+		
+		x = 0
+		y = 1
+		relative_position_id = USA_prepare_for_the_artic_bernie
+		completion_reward = {
+		    
+		}
+
+	}
+	shared_focus = {
+		id = USA_detente_bernie
+		icon = focus
+		cost = 10
+		available = {
+		   
+		}
+		mutually_exclusive = {
+			focus = USA_continue_the_arms_race_bernie
+			focus = USA_work_with_the_kaiser_bernie
+		}
+		prerequisite = {
+			focus = USA_russia_bernie
+		}
+		
+		x = 1
+		y = 1
+		relative_position_id = USA_russia_bernie
+		completion_reward = {
+		    
+		}
+
+	}
+	shared_focus = {
+		id = USA_open_up_trade_bernie
+		icon = focus
+		cost = 10
+		available = {
+		   
+		}
+		prerequisite = {
+			focus = USA_detente_bernie
+		}
+		
+		x = 0
+		y = 1
+		relative_position_id = USA_detente_bernie
+		completion_reward = {
+		    
+		}
+
+	}
+	shared_focus = {
+		id = USA_joint_artic_training_bernie
+		icon = focus
+		cost = 10
+		available = {
+		   
+		}
+		prerequisite = {
+			focus = USA_open_up_trade_bernie
+		}
+		
+		x = 0
+		y = 1
+		relative_position_id = USA_open_up_trade_bernie
+		completion_reward = {
+		    
+		}
+
+	}
+	shared_focus = {
+		id = USA_propose_an_alliance_bernie
+		icon = focus
+		cost = 10
+		available = {
+		   
+		}
+		prerequisite = {
+			focus = USA_joint_artic_training_bernie
+		}
+		
+		x = 0
+		y = 1
+		relative_position_id = USA_joint_artic_training_bernie
+		completion_reward = {
+		    
+		}
+
+	}
+	shared_focus = {
 		id = USA_germany_bernie
 		icon = focus
 		cost = 10
@@ -2173,9 +2628,163 @@
 			focus = USA_the_west_bernie
 		}
 		
-		x = 2
+		x = 5
 		y = 1
 		relative_position_id = USA_the_west_bernie
+		completion_reward = {
+		    
+		}
+
+	}
+	shared_focus = {
+		id = USA_work_with_the_kaiser_bernie
+		icon = focus
+		cost = 10
+		available = {
+		   
+		}
+		prerequisite = {
+			focus = USA_germany_bernie
+		}
+		mutually_exclusive = {
+			focus = USA_detente_bernie
+			focus = USA_cut_relations_wth_the_kaiser_bernie
+		}
+		x = -1
+		y = 1
+		relative_position_id = USA_germany_bernie
+		completion_reward = {
+		    
+		}
+
+	}
+	shared_focus = {
+		id = USA_trade_with_the_kaiser_bernie
+		icon = focus
+		cost = 10
+		available = {
+		   
+		}
+		prerequisite = {
+			focus = USA_work_with_the_kaiser_bernie
+		}
+		
+		x = 0
+		y = 1
+		relative_position_id = USA_work_with_the_kaiser_bernie
+		completion_reward = {
+		    
+		}
+
+	}
+	shared_focus = {
+		id = USA_joint_airforce_operations_bernie
+		icon = focus
+		cost = 10
+		available = {
+		   
+		}
+		prerequisite = {
+			focus = USA_trade_with_the_kaiser_bernie
+		}
+		
+		x = 0
+		y = 1
+		relative_position_id = USA_trade_with_the_kaiser_bernie
+		completion_reward = {
+		    
+		}
+
+	}
+	shared_focus = {
+		id = USA_alliance_with_the_kaiser_bernie
+		icon = focus
+		cost = 10
+		available = {
+		   
+		}
+		prerequisite = {
+			focus = USA_joint_airforce_operations_bernie
+		}
+		
+		x = 0
+		y = 1
+		relative_position_id = USA_joint_airforce_operations_bernie
+		completion_reward = {
+		    
+		}
+
+	}
+	shared_focus = {
+		id = USA_cut_relations_wth_the_kaiser_bernie
+		icon = focus
+		cost = 10
+		available = {
+		   
+		}
+		prerequisite = {
+			focus = USA_germany_bernie
+		}
+		mutually_exclusive = {
+			focus = USA_alliance_with_the_kaiser_bernie
+		}
+		x = 1
+		y = 1
+		relative_position_id = USA_germany_bernie
+		completion_reward = {
+		    
+		}
+
+	}
+	shared_focus = {
+		id = USA_embargo_the_kaiser_bernie
+		icon = focus
+		cost = 10
+		available = {
+		   
+		}
+		prerequisite = {
+			focus = USA_cut_relations_wth_the_kaiser_bernie
+		}
+		x = 0
+		y = 1
+		relative_position_id = USA_cut_relations_wth_the_kaiser_bernie
+		completion_reward = {
+		    
+		}
+
+	}
+	shared_focus = {
+		id = USA_prepare_the_army_bernie
+		icon = focus
+		cost = 10
+		available = {
+		   
+		}
+		prerequisite = {
+			focus = USA_embargo_the_kaiser_bernie
+		}
+		x = 0
+		y = 1
+		relative_position_id = USA_embargo_the_kaiser_bernie
+		completion_reward = {
+		    
+		}
+
+	}
+	shared_focus = {
+		id = USA_contain_the_kaiser_bernie
+		icon = focus
+		cost = 10
+		available = {
+		   
+		}
+		prerequisite = {
+			focus = USA_prepare_the_army_bernie
+		}
+		x = 0
+		y = 1
+		relative_position_id = USA_prepare_the_army_bernie
 		completion_reward = {
 		    
 		}
@@ -2208,6 +2817,7 @@
 		available = {
 		   
 		}
+		
 		prerequisite = {
 			focus = USA_the_americas_bernie
 		}
@@ -2215,6 +2825,164 @@
 		x = -4
 		y = 1
 		relative_position_id = USA_the_americas_bernie
+		completion_reward = {
+		    
+		}
+
+	}
+	shared_focus = {
+		id = USA_pursue_intergration_bernie
+		icon = focus
+		cost = 10
+		available = {
+		   
+		}
+		mutually_exclusive = {
+			focus = USA_status_quo_bernie
+		}
+		prerequisite = {
+			focus = USA_mexico_bernie
+		}
+		
+		x = -1
+		y = 1
+		relative_position_id = USA_mexico_bernie
+		completion_reward = {
+		    
+		}
+
+	}
+	shared_focus = {
+		id = USA_dual_language_act_bernie
+		icon = focus
+		cost = 10
+		available = {
+		   
+		}
+		prerequisite = {
+			focus = USA_pursue_intergration_bernie
+		}
+		
+		x = 0
+		y = 1
+		relative_position_id = USA_pursue_intergration_bernie
+		completion_reward = {
+		    
+		}
+
+	}
+	shared_focus = {
+		id = USA_industrial_intergration_act_bernie
+		icon = focus
+		cost = 10
+		available = {
+		   
+		}
+		prerequisite = {
+			focus = USA_dual_language_act_bernie
+		}
+		
+		x = 0
+		y = 1
+		relative_position_id = USA_dual_language_act_bernie
+		completion_reward = {
+		    
+		}
+
+	}
+	shared_focus = {
+		id = USA_mexican_states_act_bernie
+		icon = focus
+		cost = 10
+		available = {
+		   
+		}
+		prerequisite = {
+			focus = USA_industrial_intergration_act_bernie
+		}
+		
+		x = 0
+		y = 1
+		relative_position_id = USA_industrial_intergration_act_bernie
+		completion_reward = {
+		    
+		}
+
+	}
+	shared_focus = {
+		id = USA_status_quo_bernie
+		icon = focus
+		cost = 10
+		available = {
+		   
+		}
+		mutually_exclusive = {
+			focus = USA_pursue_intergration_bernie
+		}
+		prerequisite = {
+			focus = USA_mexico_bernie
+		}
+		
+		x = 1
+		y = 1
+		relative_position_id = USA_mexico_bernie
+		completion_reward = {
+		    
+		}
+
+	}
+	shared_focus = {
+		id = USA_open_border_with_mexico_bernie
+		icon = focus
+		cost = 10
+		available = {
+		   
+		}
+		prerequisite = {
+			focus = USA_status_quo_bernie
+		}
+		
+		x = 0
+		y = 1
+		relative_position_id = USA_status_quo_bernie
+		completion_reward = {
+		    
+		}
+
+	}
+	shared_focus = {
+		id = USA_economic_cooperation_bernie
+		icon = focus
+		cost = 10
+		available = {
+		   
+		}
+		prerequisite = {
+			focus = USA_open_border_with_mexico_bernie
+		}
+		
+		x = 0
+		y = 1
+		relative_position_id = USA_open_border_with_mexico_bernie
+		completion_reward = {
+		    
+		}
+
+	}
+	shared_focus = {
+		id = USA_joint_military_operations_bernie
+		icon = focus
+		cost = 10
+		available = {
+		   
+		}
+		prerequisite = {
+			focus = USA_economic_cooperation_bernie
+		}
+		
+		x = 0
+		y = 1
+		relative_position_id = USA_economic_cooperation_bernie
 		completion_reward = {
 		    
 		}
@@ -2240,6 +3008,146 @@
 
 	}
 	shared_focus = {
+		id = USA_policy_of_containment_bernie
+		icon = focus
+		cost = 10
+		available = {
+		   
+		}
+		prerequisite = {
+			focus = USA_the_southern_totalist_bernie
+		}
+		
+		x = 0
+		y = 1
+		relative_position_id = USA_the_southern_totalist_bernie
+		completion_reward = {
+		    
+		}
+
+	}
+	shared_focus = {
+		id = USA_direct_action_bernie
+		icon = focus
+		cost = 10
+		available = {
+		   
+		}
+		mutually_exclusive = {
+			focus = USA_clandestine_operations_bernie
+		}
+		prerequisite = {
+			focus = USA_policy_of_containment_bernie
+		}
+		
+		x = -1
+		y = 1
+		relative_position_id = USA_policy_of_containment_bernie
+		completion_reward = {
+		    
+		}
+
+	}
+	shared_focus = {
+		id = USA_sanction_the_totalist_bernie
+		icon = focus
+		cost = 10
+		available = {
+		   
+		}
+		prerequisite = {
+			focus = USA_direct_action_bernie
+		}
+		
+		x = 0
+		y = 1
+		relative_position_id = USA_direct_action_bernie
+		completion_reward = {
+		    
+		}
+
+	}
+	shared_focus = {
+		id = USA_end_the_totalist_bernie
+		icon = focus
+		cost = 10
+		available = {
+		   
+		}
+		prerequisite = {
+			focus = USA_sanction_the_totalist_bernie
+		}
+		
+		x = 0
+		y = 1
+		relative_position_id = USA_sanction_the_totalist_bernie
+		completion_reward = {
+		    
+		}
+
+	}
+	shared_focus = {
+		id = USA_clandestine_operations_bernie
+		icon = focus
+		cost = 10
+		available = {
+		   
+		}
+		mutually_exclusive = {
+			focus = USA_direct_action_bernie
+		}
+		prerequisite = {
+			focus = USA_policy_of_containment_bernie
+		}
+		
+		x = 1
+		y = 1
+		relative_position_id = USA_policy_of_containment_bernie
+		completion_reward = {
+		    
+		}
+
+	}
+	shared_focus = {
+		id = USA_covert_cia_operations_bernie
+		icon = focus
+		cost = 10
+		available = {
+		   
+		}
+		prerequisite = {
+			focus = USA_clandestine_operations_bernie
+		}
+		
+		x = 0
+		y = 1
+		relative_position_id = USA_clandestine_operations_bernie
+		completion_reward = {
+		    
+		}
+
+	}
+	shared_focus = {
+		id = USA_cia_backed_coups_bernie
+		icon = focus
+		cost = 10
+		available = {
+		   
+		}
+		prerequisite = {
+			focus = USA_covert_cia_operations_bernie
+		}
+		
+		x = 0
+		y = 1
+		relative_position_id = USA_covert_cia_operations_bernie
+
+	completion_reward = {
+		    
+		}
+
+	}
+	shared_focus = {
 		id = USA_brazil_bernie
 		icon = focus
 		cost = 10
@@ -2253,6 +3161,164 @@
 		x = 4
 		y = 1
 		relative_position_id = USA_the_americas_bernie
+		completion_reward = {
+		    
+		}
+
+	}
+	shared_focus = {
+		id = USA_pursue_closer_relations_bernie
+		icon = focus
+		cost = 10
+		available = {
+		   
+		}
+		mutually_exclusive = {
+			focus = USA_distance_ourselves_bernie
+		}
+		prerequisite = {
+			focus = USA_brazil_bernie
+		}
+		
+		x = -1
+		y = 1
+		relative_position_id = USA_brazil_bernie
+		completion_reward = {
+		    
+		}
+
+	}
+	shared_focus = {
+		id = USA_better_trade_relations_bernie
+		icon = focus
+		cost = 10
+		available = {
+		   
+		}
+		prerequisite = {
+			focus = USA_pursue_closer_relations_bernie
+		}
+		
+		x = 0
+		y = 1
+		relative_position_id = USA_pursue_closer_relations_bernie
+		completion_reward = {
+		    
+		}
+
+	}
+	shared_focus = {
+		id = USA_joint_military_exercise_bernie
+		icon = focus
+		cost = 10
+		available = {
+		   
+		}
+		prerequisite = {
+			focus = USA_better_trade_relations_bernie
+		}
+		
+		x = 0
+		y = 1
+		relative_position_id = USA_better_trade_relations_bernie
+		completion_reward = {
+		    
+		}
+
+	}
+	shared_focus = {
+		id = USA_offer_an_alliance_bernie
+		icon = focus
+		cost = 10
+		available = {
+		   
+		}
+		prerequisite = {
+			focus = USA_joint_military_exercise_bernie
+		}
+		
+		x = 0
+		y = 1
+		relative_position_id = USA_joint_military_exercise_bernie
+		completion_reward = {
+		    
+		}
+
+	}
+	shared_focus = {
+		id = USA_distance_ourselves_bernie
+		icon = focus
+		cost = 10
+		available = {
+		   
+		}
+		mutually_exclusive = {
+			focus = USA_pursue_closer_relations_bernie
+		}
+		prerequisite = {
+			focus = USA_brazil_bernie
+		}
+		
+		x = 1
+		y = 1
+		relative_position_id = USA_brazil_bernie
+		completion_reward = {
+		    
+		}
+
+	}
+	shared_focus = {
+		id = USA_saction_brazil_bernie
+		icon = focus
+		cost = 10
+		available = {
+		   
+		}
+		prerequisite = {
+			focus = USA_distance_ourselves_bernie
+		}
+		
+		x = 0
+		y = 1
+		relative_position_id = USA_distance_ourselves_bernie
+		completion_reward = {
+		    
+		}
+
+	}
+	shared_focus = {
+		id = USA_condemn_deforestation_bernie
+		icon = focus
+		cost = 10
+		available = {
+		   
+		}
+		prerequisite = {
+			focus = USA_saction_brazil_bernie
+		}
+		
+		x = 0
+		y = 1
+		relative_position_id = USA_saction_brazil_bernie
+		completion_reward = {
+		    
+		}
+
+	}
+	shared_focus = {
+		id = USA_end_brazil_bernie
+		icon = focus
+		cost = 10
+		available = {
+		   
+		}
+		prerequisite = {
+			focus = USA_condemn_deforestation_bernie
+		}
+		
+		x = 0
+		y = 1
+		relative_position_id = USA_condemn_deforestation_bernie
 		completion_reward = {
 		    
 		}

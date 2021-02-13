@@ -8,7 +8,7 @@ focus_tree = {
 		}
 	}
 	
-	continuous_focus_position = { x = 50 y = 1100 }
+	continuous_focus_position = { x = 0 y = 1100 }
 	default = no
 
 	shared_focus = USA_prime_minister_bernie
