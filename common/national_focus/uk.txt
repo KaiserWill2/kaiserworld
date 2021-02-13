@@ -8,7 +8,7 @@ focus_tree = {
 		}
 	}
 
-	continuous_focus_position = { x = 50 y = 1500 }
+	continuous_focus_position = { x = 50 y = 3500 }
 	default = no
 	
 	focus = {
@@ -392,11 +392,111 @@ focus_tree = {
 		id = ENG_the_totalist_spirit
 		icon = GFX_ENG_the_totalist_spirit-445
 		x = 8
-		y = 10
+		y = 9
 		cost = 3
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
 		prerequisite = { focus = ENG_the_annual_congress_of_england  }
 	}
+	focus = {
+		id = ENG_The_Orders_For_England
+		icon = GFX_ENG_the_totalist_spirit-445
+		x = 8
+		y = 10
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ENG_the_totalist_spirit  }
+	}
+
+	focus = {
+		id = ENG_The_Scottish_Problem
+		icon = GFX_ENG_the_totalist_spirit-445
+		x = 6
+		y = 11
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ENG_The_Orders_For_England  }
+	}
+	focus = {
+		id = ENG_Giving_Wales_A_Chance
+		icon = GFX_ENG_the_totalist_spirit-445
+		x = 8
+		y = 11
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ENG_The_Orders_For_England  }
+	}
+	focus = {
+		id = ENG_Trade_With_Wales
+		icon = GFX_ENG_the_totalist_spirit-445
+		x = 8
+		y = 12
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ENG_Giving_Wales_A_Chance  }
+	}
+	focus = {
+		id = ENG_Cornwall_Needs_Treatment
+		icon = GFX_ENG_the_totalist_spirit-445
+		x = 10
+		y = 11
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ENG_The_Orders_For_England  }
+	}
+	focus = {
+		id = ENG_The_Cornwall_Resistance 
+		icon = GFX_ENG_the_totalist_spirit-445
+		x = 10
+		y = 12
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ENG_Cornwall_Needs_Treatment  }
+	}
+
+	focus = {
+		id = ENG_Cornwall_Extermination_Camps
+		icon = GFX_ENG_the_totalist_spirit-445
+		x = 10
+		y = 13
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ENG_The_Cornwall_Resistance  }
+	}
+
+	focus = {
+		id = ENG_Cornwall_Extermination_Camps
+		icon = GFX_ENG_the_totalist_spirit-445
+		x = 10
+		y = 13
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ENG_The_Cornwall_Resistance  }
+	}
+
+
+
+
+
+
+
+
+
 }
