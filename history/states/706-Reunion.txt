@@ -1,8 +1,8 @@
 state={
-	id=708
-	name="STATE_708"
-	manpower = 785000
-
+	id=706
+	name="STATE_706"
+	manpower = 186637
+	
 	state_category = small_island
 
 	history={
@@ -10,15 +10,15 @@ state={
 		add_core_of = MAD
 		buildings = {
 			infrastructure = 3
-			industrial_complex = 2
-			13072 = {
+			air_base = 1
+			13017 = {
 				naval_base = 1
 			}
 		}
-		victory_points = { 13072 1 }
+		add_core_of = FRA
 	}
 
 	provinces={
-		13072 
+		13017 
 	}
 }
