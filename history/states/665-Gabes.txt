@@ -7,7 +7,7 @@ state={
 	}
 
 	history={
-		owner = TUN
+		owner = LBA
 		add_core_of = TUN
 		buildings = {
 			infrastructure = 5

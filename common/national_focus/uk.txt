@@ -13,8 +13,8 @@ focus_tree = {
 	
 	focus = {
 		id = ENG_legacy_of_foot
-		icon = GFX_ENG_legacy_of_foot-445
-		x = 9
+		icon = foots_legacy
+		x = 7
 		y = 0
 		cost = 3
 		search_filters = {
@@ -26,7 +26,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ENG_blairs_iron_fist
-		icon = GFX_ENG_blairs_iron_fist-445
+		icon = blairs_iron_fist
 		x = 3
 		y = 1
 		cost = 3
@@ -37,7 +37,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ENG_fixing_the_budget
-		icon = GFX_ENG_fixing_the_budget-445
+		icon = The_Budget_in_the_union
 		x = 9
 		y = 1
 		cost = 3
@@ -48,7 +48,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ENG_scotland_and_wales
-		icon = GFX_ENG_scotland_and_wales-445
+		icon = wales_and_scotland
 		x = 13
 		y = 1
 		cost = 3
@@ -59,7 +59,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ENG_putting_the_country_first
-		icon = GFX_ENG_putting_the_country_first-445
+		icon = putting_the_country_first
 		x = 3
 		y = 2
 		cost = 3
@@ -184,6 +184,11 @@ focus_tree = {
 		x = 8
 		y = 8
 		cost = 6
+		available = {
+			has_completed_focus = ENG_the_union_is_strong
+			has_completed_focus = ENG_england_prevails
+			has_completed_focus = ENG_the_voice_of_reunification
+		}
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
@@ -201,7 +206,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ENG_tax_the_people
-		icon = GFX_ENG_tax_the_people-445
+		icon = taxing_the_people
 		x = 9
 		y = 2
 		cost = 3
@@ -386,7 +391,9 @@ focus_tree = {
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
-		prerequisite = { focus = ENG_imprison_the_non_pure  focus = ENG_send_a_warning_to_wales_and_scotland  focus = ENG_forced_work_in_the_union  }
+		prerequisite = { focus = ENG_imprison_the_non_pure } 
+		prerequisite = { focus = ENG_send_a_warning_to_wales_and_scotland }
+		prerequisite = { focus = ENG_forced_work_in_the_union  }
 	}
 	focus = {
 		id = ENG_the_totalist_spirit
@@ -593,6 +600,332 @@ focus_tree = {
 	}
 
 
+	focus = {
+		id = ENG_The_Union_Army
+		icon = GFX_ENG_the_totalist_spirit-445
+		x = 22
+		y = 0
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+	}
+	focus = {
+		id = ENG_Defending_The_Island
+		icon = GFX_ENG_the_totalist_spirit-445
+		x = 22
+		y = 1
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ENG_The_Union_Army  }
+	}
+	focus = {
+		id = ENG_Soldiers_Of_England
+		icon = GFX_ENG_the_totalist_spirit-445
+		x = 18
+		y = 2
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ENG_Defending_The_Island  }
+	}
+	focus = {
+		id = ENG_Discipline_Enforced
+		icon = GFX_ENG_the_totalist_spirit-445
+		x = 16
+		y = 3
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ENG_Soldiers_Of_England  }
+	}
+	focus = {
+		id = ENG_3_years_Service
+		icon = GFX_ENG_the_totalist_spirit-445
+		x = 18
+		y = 3
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ENG_Soldiers_Of_England  }
+	}
+	focus = {
+		id = ENG_Oath_Of_Allegiance
+		icon = GFX_ENG_the_totalist_spirit-445
+		x = 20
+		y = 3
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ENG_Soldiers_Of_England  }
+	}
+	focus = {
+		id = ENG_Loyalty_To_Officers
+		icon = GFX_ENG_the_totalist_spirit-445
+		x = 18
+		y = 4
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ENG_3_years_Service  }
+		prerequisite = { focus = ENG_Discipline_Enforced  }
+		prerequisite = { focus = ENG_Oath_Of_Allegiance  }
+	}
+	focus = {
+		id = ENG_Remembering_Canada
+		icon = GFX_ENG_the_totalist_spirit-445
+		x = 18
+		y = 5
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ENG_Loyalty_To_Officers  }
+	}
+
+
+	focus = {
+		id = ENG_Airwing_Of_England
+		icon = GFX_ENG_the_totalist_spirit-445
+		x = 22
+		y = 2
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ENG_Defending_The_Island  }
+	}
+	focus = {
+		id = ENG_Wigston_Flying_Plans
+		icon = GFX_ENG_the_totalist_spirit-445
+		x = 22
+		y = 3
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ENG_Airwing_Of_England  }
+	}
+	focus = {
+		id = ENG_Flying_Fortress
+		icon = GFX_ENG_the_totalist_spirit-445
+		x = 22
+		y = 4
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ENG_Wigston_Flying_Plans  }
+	}
+	focus = {
+		id = ENG_Union_Propaganda_Leaflet_dropping
+		icon = GFX_ENG_the_totalist_spirit-445
+		x = 20
+		y = 5
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ENG_Flying_Fortress  }
+	}
+	focus = {
+		id = ENG_Super_Sonic_Research
+		icon = GFX_ENG_the_totalist_spirit-445
+		x = 22
+		y = 5
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ENG_Flying_Fortress  }
+	}
+	focus = {
+		id = ENG_Seas_Of_England
+		icon = GFX_ENG_the_totalist_spirit-445
+		x = 26
+		y = 2
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ENG_Defending_The_Island  }
+	}
+	focus = {
+		id = ENG_The_North_Sea
+		icon = GFX_ENG_the_totalist_spirit-445
+		x = 24
+		y = 3
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ENG_Seas_Of_England  }
+	}
+	focus = {
+		id = ENG_Lindisfarne_Drills
+		icon = GFX_ENG_the_totalist_spirit-445
+		x = 24
+		y = 4
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ENG_The_North_Sea  }
+	}
+	focus = {
+		id = ENG_Test_Raids_On_The_Channel_Island
+		icon = GFX_ENG_the_totalist_spirit-445
+		x = 26
+		y = 3
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ENG_Seas_Of_England  }
+	}	focus = {
+		id = ENG_Defense_Against_France
+		icon = GFX_ENG_the_totalist_spirit-445
+		x = 26
+		y = 4
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ENG_Test_Raids_On_The_Channel_Island  }
+	}
+
+	focus = {
+		id = ENG_Protecting_Welsh_Waters
+		icon = GFX_ENG_the_totalist_spirit-445
+		x = 28
+		y = 3
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ENG_Seas_Of_England  }
+	}
+	focus = {
+		id = ENG_Irish_Sea
+		icon = GFX_ENG_the_totalist_spirit-445
+		x = 28
+		y = 4
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ENG_Protecting_Welsh_Waters  }
+	}
+
+	focus = {
+		id = ENG_England_Stands_Ready
+		icon = GFX_ENG_the_totalist_spirit-445
+		x = 26
+		y = 5
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ENG_Irish_Sea  }
+		prerequisite = { focus = ENG_Defense_Against_France  }
+		prerequisite = { focus = ENG_Lindisfarne_Drills  }
+	}
+	focus = {
+		id = ENG_The_Parade
+		icon = GFX_ENG_the_totalist_spirit-445
+		x = 22
+		y = 6
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ENG_England_Stands_Ready  }
+		prerequisite = { focus = ENG_Super_Sonic_Research  }
+		prerequisite = { focus = ENG_Remembering_Canada  }
+		prerequisite = { focus = ENG_Union_Propaganda_Leaflet_dropping  }
+	}
+	focus = {
+		id = ENG_Irish_Sea
+		icon = GFX_ENG_the_totalist_spirit-445
+		x = 28
+		y = 4
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ENG_Protecting_Welsh_Waters  }
+	}
+	focus = {
+		id = ENG_The_More_Control
+		icon = GFX_ENG_the_totalist_spirit-445
+		x = 19
+		y = 8
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+	}
+	focus = {
+		id = ENG_Death_Squad_For_Petty_Crime
+		icon = GFX_ENG_the_totalist_spirit-445
+		x = 19
+		y = 9
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ENG_The_More_Control  }
+	}
+
+	focus = {
+		id = ENG_Selected_work
+		icon = GFX_ENG_the_totalist_spirit-445
+		x = 17
+		y = 10
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ENG_Death_Squad_For_Petty_Crime  }
+	}
+	focus = {
+		id = ENG_Build_Up
+		icon = GFX_ENG_the_totalist_spirit-445
+		x = 19
+		y = 10
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ENG_Death_Squad_For_Petty_Crime  }
+	}
+	focus = {
+		id = ENG_Propaganda_Through_Education
+		icon = GFX_ENG_the_totalist_spirit-445
+		x = 21
+		y = 10
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ENG_Death_Squad_For_Petty_Crime  }
+	}
+
+
+
+
+
+
+
+
+
 
 
 
@@ -600,3 +933,4 @@ focus_tree = {
 
 
 }
+

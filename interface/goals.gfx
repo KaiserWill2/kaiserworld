@@ -38,8 +38,31 @@ spriteTypes = {
 	}
 	
 	
-
-	
+	##England###
+	SpriteType = {
+		name = "blairs_iron_fist"
+		texturefile = "gfx/interface/goals/eng/blairs_iron_fist.dds"			
+		}	
+	SpriteType = {
+		name = "foots_legacy"
+		texturefile = "gfx/interface/goals/eng/foots_legacy.dds"			
+		}	
+	SpriteType = {
+		name = "The_Budget_in_the_union"
+		texturefile = "gfx/interface/goals/eng/The_Budget_in_the_union.dds"			
+		}	
+		SpriteType = {
+		name = "wales_and_scotland"
+		texturefile = "gfx/interface/goals/eng/wales_and_scotland.dds"			
+		}	
+		SpriteType = {
+		name = "putting_the_country_first"
+		texturefile = "gfx/interface/goals/eng/putting_the_country_first.dds"			
+		}	
+		SpriteType = {
+		name = "taxing_the_people"
+		texturefile = "gfx/interface/goals/eng/taxing_the_people.dds"			
+		}				
 
 
 	#### OTHER ####
