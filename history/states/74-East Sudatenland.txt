@@ -1,0 +1,27 @@
+
+state={
+	id=74
+	name="STATE_74"
+
+	history={
+		owner = AUS
+		buildings = {
+			infrastructure = 7
+			industrial_complex = 3
+			arms_factory = 1
+		}
+		victory_points = {
+			3583 3 
+		}
+		add_core_of = CZE
+		add_core_of = AUS
+
+	}
+
+	provinces={
+		421 3414 6485 3583 9567
+	}
+	manpower=1532300
+	buildings_max_level_factor=1.000
+	state_category=rural
+}
