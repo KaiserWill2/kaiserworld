@@ -1,0 +1,24 @@
+state={
+	id=991
+	name="STATE_991"
+
+	history = {
+		owner = UAR
+		add_core_of = UAR
+
+		buildings = {
+			infrastructure = 4
+			12883 = {
+				naval_base = 5
+
+			}
+		}
+	}
+
+	provinces={
+		2033 2090 4981 5037 10748 12883
+	}
+	manpower=7654000
+	buildings_max_level_factor=1.000
+	state_category = city
+}

@@ -1,0 +1,20 @@
+state={
+	id=993
+	name="STATE_993"
+
+	history = {
+		owner = UAR
+		add_core_of = UAR
+
+		buildings = {
+			infrastructure = 4
+		}
+	}
+
+	provinces={
+		2057 4968 5027 5058
+	}
+	manpower=1839000
+	buildings_max_level_factor=1.000
+	state_category = rural
+}
