@@ -1,0 +1,162 @@
+﻿capital = 302
+
+oob = "BOL_2000"
+
+set_research_slots = 4
+set_convoys = 500
+set_stability = 0.5
+set_war_support = 0.1
+
+set_country_flag = catholic_nation
+
+
+set_technology = {
+	support_weapons = 1
+	infantry_weapons = 1
+	motorised_infantry = 1 
+	tech_support = 1 
+	tech_field_hospital = 1 
+	tech_engineers = 1 
+	gwtank = 1 
+	basic_light_tank = 1 
+	gw_artillery = 1 
+	tech_mountaineers = 1
+	early_fighter = 1 
+	early_bomber = 1 
+	paratroopers = 1 
+	interwar_antiair = 1
+	interwar_antitank = 1
+}
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	set_technology = {
+		early_submarine = 1
+		basic_submarine = 1
+		early_destroyer = 1
+		early_light_cruiser = 1
+		basic_light_cruiser = 1
+		early_heavy_cruiser = 1
+		
+		
+		early_carrier = 1
+		basic_carrier = 1
+		transport = 1
+	}
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_technology = {
+		basic_naval_mines = 1
+		submarine_mine_laying = 1
+		early_ship_hull_light = 1
+		basic_ship_hull_light = 1
+		early_ship_hull_submarine = 1
+		basic_ship_hull_submarine = 1
+		early_ship_hull_cruiser = 1
+		basic_ship_hull_cruiser = 1
+		early_ship_hull_heavy = 1
+		early_ship_hull_carrier = 1
+		basic_ship_hull_carrier = 1
+		basic_battery = 1
+		basic_light_battery = 1
+		basic_medium_battery = 1
+		basic_heavy_battery = 1
+		basic_torpedo = 1
+		sonar = 1
+		basic_depth_charges = 1
+		basic_secondary_battery = 1
+		improved_secondary_battery = 1
+		basic_cruiser_armor_scheme = 1
+		basic_heavy_armor_scheme = 1
+		mtg_transport = 1
+		improved_airplane_launcher = 1
+	}
+}
+
+set_politics = {
+	ruling_party = revolutionary_socialist
+	last_election = "1997.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+        fascist = 0
+		nationalist = 4
+		monarchist = 0
+		national_bolshevik = 0
+		national_conservative = 5
+		centrist = 3
+		liberal = 0
+		new_democrat = 10
+		moderate_socialist = 0
+		revolutionary_socialist = 58
+		communist = 20
+}
+
+create_country_leader = {
+	name = "Evo Morales"
+	picture = "Portrait_BOL_Evo_Morales.dds"
+	ideology = maoist
+}
+
+create_country_leader = {
+	name = "Freddy Terrazas Salas"
+	picture = "Portrait_BOL_Freddy_Terrazas_Salas.dds"
+	ideology = fascist_ideology
+}
+
+create_country_leader = {
+	name = "Erick Moron Osinaga"
+	picture = "Portrait_BOL_Erick_Moron_Osinaga.dds"
+	ideology = nationalist_ideology
+}
+
+create_country_leader = {
+	name = "Elena I"
+	picture = "Portrait_BOL_Elena_First.dds"
+	ideology = absolute_monarchist
+}
+
+create_country_leader = {
+	name = "Gustavo Sejas Revollo"
+	picture = "Portrait_BOL_Gustavo_Sejas_Revollo.dds"
+	ideology = national_bolshevik_ideology
+}
+
+create_country_leader = {
+	name = "Jorge Quiroga"
+	picture = "Portrait_BOL_Jorge_Quiroga.dds"
+	ideology = fiscal_conservative
+}
+
+create_country_leader = {
+	name = "Samuel Jorge Doria Medina Auza"
+	picture = "Portrait_BOL_Samuel_Jorge_Doria_Medina_Auza.dds"
+	ideology = centrist_ideology
+}
+
+create_country_leader = {
+	name = "Rubén Costas"
+	picture = "Portrait_BOL_Ruben_Costas.dds"
+	ideology = social_liberal
+}
+
+create_country_leader = {
+	name = "Margot Soria Saravia"
+	picture = "Portrait_BOL_Margot_Soria_Saravia.dds"
+	ideology = new_democrat_ideology
+}
+
+create_country_leader = {
+	name = "Fernando Vargas Mosua"
+	picture = "Portrait_BOL_Fernando_Vargas_Mosua.dds"
+	ideology = democratic_socialist
+}
+
+create_country_leader = {
+	name = "Oscar Zamora Medinaceli"
+	desc = "POLITICS_OSCAR_ZAMORA_MEDINACELI_DESC"
+	picture = "Portrait_BOL_Oscar_Zamora_Medinaceli.dds"
+	ideology = revolutionary_socialist_ideology
+}
