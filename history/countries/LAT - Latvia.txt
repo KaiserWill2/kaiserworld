@@ -1,0 +1,224 @@
+﻿capital = 230
+
+oob = "generic_2000"
+
+set_research_slots = 4
+set_convoys = 500
+set_stability = 0.8
+set_war_support = 0.3
+
+set_technology = {
+	support_weapons = 1
+	infantry_weapons = 1
+	motorised_infantry = 1 
+	tech_support = 1 
+	tech_field_hospital = 1 
+	tech_engineers = 1 
+	gwtank = 1 
+	basic_light_tank = 1 
+	gw_artillery = 1 
+	tech_mountaineers = 1
+	early_fighter = 1 
+	early_bomber = 1 
+    transport = 1 
+	paratroopers = 1 
+	interwar_antiair = 1
+	interwar_antitank = 1
+}
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	set_technology = {
+		early_submarine = 1
+		basic_submarine = 1
+		early_destroyer = 1
+		early_light_cruiser = 1
+		basic_light_cruiser = 1
+		early_heavy_cruiser = 1
+		
+		
+		early_carrier = 1
+		basic_carrier = 1
+		transport = 1
+	}
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_technology = {
+		basic_naval_mines = 1
+		submarine_mine_laying = 1
+		early_ship_hull_light = 1
+		basic_ship_hull_light = 1
+		early_ship_hull_submarine = 1
+		basic_ship_hull_submarine = 1
+		early_ship_hull_cruiser = 1
+		basic_ship_hull_cruiser = 1
+		early_ship_hull_heavy = 1
+		early_ship_hull_carrier = 1
+		basic_ship_hull_carrier = 1
+		basic_battery = 1
+		basic_light_battery = 1
+		basic_medium_battery = 1
+		basic_heavy_battery = 1
+		basic_torpedo = 1
+		sonar = 1
+		basic_depth_charges = 1
+		basic_secondary_battery = 1
+		improved_secondary_battery = 1
+		basic_cruiser_armor_scheme = 1
+		basic_heavy_armor_scheme = 1
+		mtg_transport = 1
+		improved_airplane_launcher = 1
+	}
+}
+set_politics = {
+	ruling_party = nationalist
+	last_election = "1997.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+        fascist = 0
+		nationalist = 60
+		monarchist = 0
+		national_bolshevik = 0
+		national_conservative = 10
+		centrist = 0
+		liberal = 0
+		new_democrat = 10
+		moderate_socialist = 0
+		revolutionary_socialist = 10
+		communist = 10
+}
+
+create_country_leader = {
+	name = "Alfrēds Rubiks"
+	picture = "Portrait_LAT_Alfreds_Rubiks.dds"
+	ideology = marxist
+}
+
+create_country_leader = {
+	name = "Raivis Dzintars"
+	picture = "Portrait_LAT_Raivis_Dzintars.dds"
+	ideology = fascist_ideology
+}
+
+create_country_leader = {
+	name = "Artuss Kaimiņš"
+	picture = "Portrait_LAT_Artuss_Kaimins.dds"
+	ideology = nationalist_ideology
+}
+
+create_country_leader = {
+	name = "Viktors Birze"
+	picture = "Portrait_LAT_Viktors_Birze.dds"
+	ideology = national_bolshevik_ideology
+}
+
+create_country_leader = {
+	name = "Inguna Sudraba"
+	picture = "Portrait_LAT_Inguna_Sudraba.dds"
+	ideology = reactionary
+}
+
+create_country_leader = {
+	name = "Solvita Āboltiņa"
+	picture = "Portrait_LAT_Solvita_Aboltina.dds"
+	ideology = centrist_ideology
+}
+
+create_country_leader = {
+	name = "Mārtiņš Bondars"
+	picture = "Portrait_LAT_Martins_Bondars.dds"
+	ideology = social_liberal
+}
+
+create_country_leader = {
+	name = "Nils Ušakovs"
+	picture = "Portrait_LAT_Nils_Usakovs.dds"
+	ideology = new_democrat_ideology
+}
+
+create_country_leader = {
+	name = "Miroslav Mitrofanov"
+	picture = "Portrait_LAT_Miroslav_Mitrofanov.dds"
+	ideology = progressive
+}
+
+create_country_leader = {
+	name = "Yakov Pliner"
+	picture = "Portrait_LAT_Jakovs_Pliners.dds"
+	ideology = revolutionary_socialist_ideology
+}
+
+create_country_leader = {
+	name = "Royal Council"
+	picture = "Portrait_LAT_Royal_Council.dds"
+	ideology = absolute_monarchist
+}
+
+create_field_marshal = {
+	name = "Leonīds Kalniņš"
+	picture = "Portrait_Leonīds_Kalniņš.dds"
+	traits = { }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 4
+	planning_skill = 1
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Egils Leščinskis"
+	picture = "Portrait_Egils_Leščinskis.dds"
+	traits = { }
+	skill = 1
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Juris Maklakovs"
+	picture = "Portrait_Juris_Maklakovs.dds"
+	traits = { }
+	skill = 2
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Raimonds Graube"
+	picture = "Portrait_Raimonds_Graube.dds"
+	traits = { }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 4
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_navy_leader = {
+	name = "Gaidis Zeibots"
+	picture = "Portrait_Gaidis_Zeibots.dds"
+	traits = { }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	coordination_skill = 2
+	maneuvering_skill = 2
+}
+
+create_navy_leader = {
+	name = "Rimants Štrimaitis"
+	picture = "Portrait_Rimants_Štrimaitis.dds"
+	traits = { }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	coordination_skill = 2
+	maneuvering_skill = 2
+}

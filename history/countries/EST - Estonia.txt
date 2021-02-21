@@ -1,0 +1,265 @@
+﻿capital = 230
+
+oob = "generic_2000"
+
+set_research_slots = 4
+set_convoys = 500
+set_stability = 0.8
+set_war_support = 0.3
+
+set_technology = {
+	support_weapons = 1
+	infantry_weapons = 1
+	motorised_infantry = 1 
+	tech_support = 1 
+	tech_field_hospital = 1 
+	tech_engineers = 1 
+	gwtank = 1 
+	basic_light_tank = 1 
+	gw_artillery = 1 
+	tech_mountaineers = 1
+	early_fighter = 1 
+	early_bomber = 1 
+    transport = 1 
+	paratroopers = 1
+	interwar_antiair = 1
+	interwar_antitank = 1
+	
+}
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	set_technology = {
+		early_submarine = 1
+		basic_submarine = 1
+		early_destroyer = 1
+		early_light_cruiser = 1
+		basic_light_cruiser = 1
+		early_heavy_cruiser = 1
+		
+		
+		early_carrier = 1
+		basic_carrier = 1
+		transport = 1
+	}
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_technology = {
+		basic_naval_mines = 1
+		submarine_mine_laying = 1
+		early_ship_hull_light = 1
+		basic_ship_hull_light = 1
+		early_ship_hull_submarine = 1
+		basic_ship_hull_submarine = 1
+		early_ship_hull_cruiser = 1
+		basic_ship_hull_cruiser = 1
+		early_ship_hull_heavy = 1
+		early_ship_hull_carrier = 1
+		basic_ship_hull_carrier = 1
+		basic_battery = 1
+		basic_light_battery = 1
+		basic_medium_battery = 1
+		basic_heavy_battery = 1
+		basic_torpedo = 1
+		sonar = 1
+		basic_depth_charges = 1
+		basic_secondary_battery = 1
+		improved_secondary_battery = 1
+		basic_cruiser_armor_scheme = 1
+		basic_heavy_armor_scheme = 1
+		mtg_transport = 1
+		improved_airplane_launcher = 1
+	}
+}
+set_politics = {
+	ruling_party = nationalist
+	last_election = "1997.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+        fascist = 2
+        nationalist = 41
+        monarchist = 0
+        national_bolshevik = 0
+        national_conservative = 9
+        centrist = 14
+        liberal = 7
+        new_democrat = 13
+        moderate_socialist = 3
+        revolutionary_socialist = 0
+        communist = 11
+
+}
+
+create_country_leader = {
+	name = "Vaino Väljas"
+	picture = "Portrait_EST_Vaino_Valjas.dds"
+	ideology = leninist
+}
+
+create_country_leader = {
+	name = "Risto Teinonen"
+	picture = "Portrait_EST_Risto_Teinonen.dds"
+	ideology = fascist_ideology
+}
+
+create_country_leader = {
+	name = "Mart Helme"
+	picture = "Portrait_EST_Mart_Helme.dds"
+	ideology = nationalist_ideology
+}
+
+
+create_country_leader = {
+	name = "Sven Sildnik"
+	picture = "Portrait_EST_Sven_Sildnik.dds"
+	ideology = national_bolshevik_ideology
+}
+
+create_country_leader = {
+	name = "Helir-Valdor Seeder"
+	picture = "Portrait_EST_Helir_Valdor_Seeder.dds"
+	ideology = fiscal_conservative
+}
+
+create_country_leader = {
+	name = "Jüri Ratas"
+	picture = "Portrait_EST_Juri_Ratas.dds"
+	ideology = centrist_ideology
+}
+
+create_country_leader = {
+	name = "Hanno Pevkur"
+	picture = "Portrait_EST_Hanno_Pevkur.dds"
+	ideology = social_liberal
+}
+
+create_country_leader = {
+	name = "Jevgeni Ossinovski"
+	picture = "Portrait_EST_Jevgeni_Ossinovski.dds"
+	ideology = new_democrat_ideology
+}
+
+create_country_leader = {
+	name = "Züleyxa Izmailova"
+	picture = "Portrait_EST_Zuleyxa_Izmailova.dds"
+	ideology = democratic_socialist
+}
+
+create_country_leader = {
+	name = "Valev Kald"
+	picture = "Portrait_EST_Valev_Kald.dds"
+	ideology = revolutionary_socialist_ideology
+}
+
+create_field_marshal = {
+	name = "Valdas Tutkus"
+	picture = "Portrait_Meelis_Kiili.dds"
+	traits = { }
+	skill = 3
+	attack_skill = 2 
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_field_marshal = {
+	name = "Riho Terras"
+	picture = "Portrait_Riho_Terras.dds"
+	traits = { urban_assault_specialist }
+	skill = 3
+	attack_skill = 3 
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Ants Laaneots"
+	picture = "Portrait_Ants_Laaneots.dds"
+	traits = { }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 4
+	planning_skill = 1
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Artur Tiganik"
+	picture = "Portrait_Artur_Tiganik.dds"
+	traits = { }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Indrek Sirel"
+	picture = "Portrait_Indrek_Sirel.dds"
+	traits = { }
+	skill = 1
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Martin Herem"
+	picture = "Portrait_Martin_Herem.dds"
+	traits = { }
+	skill = 2
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 3
+	logistics_skill = 2
+}
+
+create_navy_leader = {
+	name = "Ivo Värk"
+	picture = "Portrait_Ivo_Värk.dds"
+	traits = { }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	coordination_skill = 1
+	maneuvering_skill = 1
+}
+
+create_navy_leader = {
+	name = "Jüri Saska"
+	picture = "Portrait_Jüri_Saska.dds"
+	traits = { }
+	skill = 2
+	attack_skill = 3
+	defense_skill = 1
+	coordination_skill = 1
+	maneuvering_skill = 2
+}
+
+create_navy_leader = {
+	name = "Rain Terras"
+	picture = "Portrait_Rain_Terras.dds"
+	traits = { }
+	skill = 2
+	attack_skill = 1
+	defense_skill = 3
+	coordination_skill = 3
+	maneuvering_skill = 2
+}
+
+create_navy_leader = {
+	name = "Tarmo Kõuts"
+	picture = "Portrait_Tarmo_Kõuts .dds"
+	traits = { }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	coordination_skill = 2
+	maneuvering_skill = 4
+}
