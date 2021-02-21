@@ -76,7 +76,7 @@ if = {
 }
 
 set_politics = {
-	ruling_party = national_conservative
+	ruling_party = communist
 	last_election = "1997.1.1"
 	election_frequency = 48
 	elections_allowed = no
@@ -84,16 +84,16 @@ set_politics = {
 
 set_popularities = {
         fascist = 6
-		nationalist = 25
-		monarchist = 0
-		national_bolshevik = 0
-		national_conservative = 35
-		centrist = 4
-		liberal = 0
-		new_democrat = 10
-		moderate_socialist = 0
-		revolutionary_socialist = 8
-		communist = 12
+	nationalist = 15
+	monarchist = 0
+	national_bolshevik = 0
+	national_conservative = 5
+	centrist = 4
+	liberal = 1
+	new_democrat = 10
+	moderate_socialist = 1
+	revolutionary_socialist = 8
+	communist = 50
 }
 
 create_country_leader = {
