@@ -1,0 +1,455 @@
+﻿capital = 48
+
+oob = "BUL_2000"
+
+add_ideas = {
+    idea_eu_member
+}
+
+set_research_slots = 4
+set_convoys = 500
+set_stability = 0.7
+set_war_support = 0.1
+
+
+set_technology = {
+	support_weapons = 1
+	infantry_weapons = 1
+	motorised_infantry = 1 
+	tech_support = 1 
+	tech_field_hospital = 1 
+	tech_engineers = 1 
+	gwtank = 1 
+	basic_light_tank = 1 
+	gw_artillery = 1 
+	tech_mountaineers = 1
+	early_light_cruiser = 1
+	early_fighter = 1 
+	early_bomber = 1 
+	early_submarine = 1
+    transport = 1 
+	paratroopers = 1 
+	marines = 1
+	early_destroyer = 1 
+	interwar_antiair = 1
+	interwar_antitank = 1
+}
+
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	set_technology = {
+		early_submarine = 1
+		basic_submarine = 1
+		early_destroyer = 1
+		early_light_cruiser = 1
+		basic_light_cruiser = 1
+		early_heavy_cruiser = 1
+		
+		
+		early_carrier = 1
+		basic_carrier = 1
+		transport = 1
+	}
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_technology = {
+		basic_naval_mines = 1
+		submarine_mine_laying = 1
+		early_ship_hull_light = 1
+		basic_ship_hull_light = 1
+		early_ship_hull_submarine = 1
+		basic_ship_hull_submarine = 1
+		early_ship_hull_cruiser = 1
+		basic_ship_hull_cruiser = 1
+		early_ship_hull_heavy = 1
+		early_ship_hull_carrier = 1
+		basic_ship_hull_carrier = 1
+		basic_battery = 1
+		basic_light_battery = 1
+		basic_medium_battery = 1
+		basic_heavy_battery = 1
+		basic_torpedo = 1
+		sonar = 1
+		basic_depth_charges = 1
+		basic_secondary_battery = 1
+		improved_secondary_battery = 1
+		basic_cruiser_armor_scheme = 1
+		basic_heavy_armor_scheme = 1
+		mtg_transport = 1
+		improved_airplane_launcher = 1
+	}
+}
+set_politics = {
+	ruling_party = new_democrat
+	last_election = "1997.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+        fascist = 0
+		nationalist = 2
+		monarchist = 11
+		national_bolshevik = 0
+		national_conservative = 25
+		centrist = 0
+		liberal = 7
+		new_democrat = 32
+		moderate_socialist = 0
+		revolutionary_socialist = 3
+		communist = 20
+}
+
+create_country_leader = {
+	name = "Boyan Rasate"
+	picture = "Portrait_BUL_Boyan_Rasate.dds"
+	ideology = fascist_ideology
+}
+
+create_country_leader = {
+	name = "Krasimir Karakachanov"
+	picture = "Portrait_BUL_Krasimir_Karakachanov.dds"
+	ideology = nationalist_ideology
+}
+
+create_country_leader = {
+	name = "Simeon II"
+	picture = "Portrait_BUL_Simeon_Second.dds"
+	ideology = absolute_monarchist
+}
+
+create_country_leader = {
+	name = "Volen Siderov"
+	picture = "Portrait_BUL_Volen_Siderov.dds"
+	ideology = national_bolshevik_ideology
+}
+
+create_country_leader = {
+	name = "Valeri Simeonov"
+	picture = "Portrait_BUL_Valeri_Simeonov.dds"
+	ideology = reactionary
+}
+
+create_country_leader = {
+	name = "Ognyan Gerdzhikov"
+	picture = "Portrait_BUL_Ognyan_Gerdzhikov.dds"
+	ideology = centrist_ideology
+}
+
+create_country_leader = {
+	name = "Ahmed Dogan"
+	picture = "Portrait_BUL_Ahmed_Dogan.dds"
+	ideology = social_liberal
+}
+
+create_country_leader = {
+	name = "Boyko Borisov"
+	picture = "Portrait_BUL_Boyko_Borisov.dds"
+	ideology = new_democrat_ideology
+}
+
+create_country_leader = {
+	name = "Sergei Stanishev"
+	picture = "Portrait_BUL_Sergei_Stanishev.dds"
+	ideology = european_moderate_socialist
+}
+
+create_country_leader = {
+	name = "Pavel Ivanov"
+	picture = "Portrait_BUL_Pavel_Invanov.dds"
+	ideology = revolutionary_socialist_ideology
+}
+
+create_country_leader = {
+	name = "Aleksandar Paunov"
+	desc = "POLITICS_ALEKSANDER_PAUNOV_DESC"
+	picture = "Portrait_BUL_Aleksandar_Paunov.dds"
+	ideology = stalinist
+}
+
+create_field_marshal = {
+	name = "Konstantin Popov"
+	picture = "Portrait_Konstantin_Popov.dds"
+	traits = { old_guard organisational_leader }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 2
+}
+
+create_field_marshal = {
+	name = "Andrei Botsev"
+	picture = "Portrait_Andrei_Botsev.dds"
+	traits = { thorough_planner }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 3
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Yavor Mateev"
+	picture = "Portrait_Yavor_Mateev.dds"
+	traits = { commando urban_assault_specialist }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Tsanko Ivanov Stoykov"
+	picture = "Portrait_Tsanko_Stoykov.dds"
+	traits = {  }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Petyo Mirchev"
+	picture = "Portrait_Petyo_Mirchev.dds"
+	traits = {  }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Anatoliy Krustev"
+	picture = "Portrait_Anatolyi_Krustev.dds"
+	traits = {  }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Lyubcho Spasov Todorov"
+	picture = "Portrait_Lyubcho_Todorov.dds"
+	traits = { panzer_leader }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Todor Tzonev Dochev"
+	picture = "Portrait_Todor_Donchev.dds"
+	traits = { trait_engineer }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Mihail Popov"
+	picture = "Portrait_Mihail_Popov.dds"
+	traits = { ranger }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Rumen Radev"
+	picture = "Portrait_Rumen_Radev.dds"
+	traits = {  }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Valeri Konstantin Tsolov"
+	picture = "Portrait_Valerie_Tsolov.dds"
+	traits = { fortress_buster }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Kostadin Kuzmov"
+	picture = "Portrait_Kostadin_Kuzmov.dds"
+	traits = { panzer_leader }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Dimitar Iliev"
+	picture = "Portrait_Dimitar_Iliev.dds"
+	traits = { panzer_leader }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Rusi Rusev"
+	picture = "Portrait_Rusi_Rusev.dds"
+	traits = { trait_mountaineer }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Boyan Stavrev"
+	picture = "Portrait_Bojan_Stavrev.dds"
+	traits = { urban_assault_specialist }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Plamen Yordanov"
+	picture = "Portrait_Plamen_Yordanov.dds"
+	traits = { panzer_leader }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Gruda Angelov"
+	picture = "Portrait_Gruda_Angelov.dds"
+	traits = { panzer_leader }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Yordan Yordanov"
+	picture = "Portrait_Yordan_Yordanov.dds"
+	traits = { trickster }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Atanas Lefterov"
+	picture = "Portrait_Atanas_Lefterov.dds"
+	traits = { hill_fighter }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Georgi Petkov"
+	picture = "Portrait_Georgi_Petkov.dds"
+	traits = {  }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Georgi Dimov"
+	picture = "Portrait_Georgi_Dimov.dds"
+	traits = { trait_engineer }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_navy_leader = {
+	name = "Emil Eftimov"
+	picture = "Portrait_Emil_Eftimov.dds"
+	traits = { old_guard_navy superior_tactician }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 3
+	coordination_skill = 3
+	maneuvering_skill = 2
+}
+
+create_navy_leader = {
+	name = "Rumen Nikolov"
+	picture = "Portrait_Rumen_Nikolov.dds"
+	traits = { blockade_runner }
+	skill = 2
+	attack_skill = 1
+	defense_skill = 2
+	coordination_skill = 1
+	maneuvering_skill = 3
+}
+
+create_navy_leader = {
+	name = "Dimitar Vasilev Yordanov"
+	picture = "Portrait_Dimitar_Yordanov.dds"
+	traits = { spotter }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	coordination_skill = 1
+	maneuvering_skill = 1
+}
+
+create_navy_leader = {
+	name = "Kosta Andreev"
+	picture = "Portrait_Kosta_Andreev.dds"
+	traits = { seawolf }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	coordination_skill = 1
+	maneuvering_skill = 1
+}
+
+create_navy_leader = {
+	name = "Mitko Alexander Petev"
+	picture = "Portrait_Mitko_Petev.dds"
+	traits = { ironside }
+	skill = 2
+	attack_skill = 1
+	defense_skill = 3
+	coordination_skill = 2
+	maneuvering_skill = 1
+}

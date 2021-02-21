@@ -1,0 +1,157 @@
+﻿capital = 267
+
+oob = "AFG_2000"
+
+set_research_slots = 4
+set_convoys = 500
+set_stability = 0.2
+set_war_support = 0.1
+
+set_country_flag = muslim_nation
+
+set_technology = {
+    support_weapons = 1
+	infantry_weapons = 1
+	motorised_infantry = 1 
+	tech_support = 1 
+	tech_field_hospital = 1 
+	tech_engineers = 1 
+	gwtank = 1 
+	basic_light_tank = 1 
+	gw_artillery = 1 
+	tech_mountaineers = 1
+	interwar_antiair = 1
+	interwar_antitank = 1
+}
+
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	set_technology = {
+		early_submarine = 1
+		basic_submarine = 1
+		early_destroyer = 1
+		early_light_cruiser = 1
+		basic_light_cruiser = 1
+		early_heavy_cruiser = 1
+		
+		
+		early_carrier = 1
+		basic_carrier = 1
+		transport = 1
+	}
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_technology = {
+		basic_naval_mines = 1
+		submarine_mine_laying = 1
+		early_ship_hull_light = 1
+		basic_ship_hull_light = 1
+		early_ship_hull_submarine = 1
+		basic_ship_hull_submarine = 1
+		early_ship_hull_cruiser = 1
+		basic_ship_hull_cruiser = 1
+		early_ship_hull_heavy = 1
+		early_ship_hull_carrier = 1
+		basic_ship_hull_carrier = 1
+		basic_battery = 1
+		basic_light_battery = 1
+		basic_medium_battery = 1
+		basic_heavy_battery = 1
+		basic_torpedo = 1
+		sonar = 1
+		basic_depth_charges = 1
+		basic_secondary_battery = 1
+		improved_secondary_battery = 1
+		basic_cruiser_armor_scheme = 1
+		basic_heavy_armor_scheme = 1
+		mtg_transport = 1
+		improved_airplane_launcher = 1
+	}
+}
+set_politics = {
+	ruling_party = monarchist
+	last_election = "1997.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+        fascist = 30
+		nationalist = 3
+		monarchist = 40
+		national_bolshevik = 0
+		national_conservative = 0
+		centrist = 0
+		liberal = 5
+		new_democrat = 0
+		moderate_socialist = 0
+		revolutionary_socialist = 10
+		communist = 12
+}
+
+create_country_leader = {
+	name = "Mohammad Najibullah"
+	picture = "Portrait_AFG_Mohammad_Najibullah.dds"
+	ideology = leninist
+}
+
+create_country_leader = {
+	name = "Mohammed Omar"
+	picture = "Portrait_AFG_Mohammed_Omar.dds"
+	ideology = fascist_ideology
+}
+
+create_country_leader = {
+	name = "Burhanuddin Rabbani"
+	picture = "Portrait_AFG_Burhanuddin_Rabbani.dds"
+	ideology = nationalist_ideology
+}
+
+create_country_leader = {
+	name = "Ahmad Shah Khan"
+	picture = "Portrait_AFG_Ahmad_Shah_Khan.dds"
+	ideology = absolute_monarchist
+}
+
+create_country_leader = {
+	name = "Abdul Rasul Sayyaf"
+	picture = "Portrait_AFG_Abdul_Rasul_Sayyaf.dds"
+	ideology = national_bolshevik_ideology
+}
+
+create_country_leader = {
+	name = "Hamid Karzai"
+	picture = "Portrait_AFG_Hamid_Karzai.dds"
+	ideology = fiscal_conservative
+}
+
+create_country_leader = {
+	name = "Amrullah Saleh"
+	picture = "Portrait_AFG_Amrullah_Saleh.dds"
+	ideology = right_libertarian
+}
+
+create_country_leader = {
+	name = "Abdul Latif Pedram"
+	picture = "Portrait_AFG_Abdul_Latif_Pedram.dds"
+	ideology = left_libertarian
+}
+
+create_country_leader = {
+	name = "Abdullah Abdullah"
+	picture = "Portrait_AFG_Abdullah_Abdullah.dds"
+	ideology = new_democrat_ideology
+}
+
+create_country_leader = {
+	name = "Anwar ul-Haq Ahady"
+	picture = "Portrait_AFG_Anwar_Ul_Haq_Ahady.dds"
+	ideology = progressive
+}
+
+create_country_leader = {
+	name = "Nur ul-Haq Ulumi"
+	picture = "Portrait_AFG_Nur_Ul_Haq_Ulumi.dds"
+	ideology = luxemburgism
+}
