@@ -1,0 +1,166 @@
+﻿capital = 288
+
+oob = "MYA_2000"
+
+set_research_slots = 4
+set_convoys = 500
+set_stability = 0.4
+set_war_support = 0.1
+
+set_country_flag = was_in_british_empire
+
+set_technology = {
+	support_weapons = 1
+	infantry_weapons = 1
+	motorised_infantry = 1 
+	tech_support = 1 
+	tech_field_hospital = 1 
+	tech_engineers = 1 
+	gwtank = 1 
+	basic_light_tank = 1 
+	gw_artillery = 1 
+	tech_mountaineers = 1
+	early_light_cruiser = 1
+	early_fighter = 1 
+	early_bomber = 1 
+	early_submarine = 1
+    transport = 1 
+	paratroopers = 1
+	interwar_antiair = 1
+	interwar_antitank = 1
+	
+}
+
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	set_technology = {
+		early_submarine = 1
+		basic_submarine = 1
+		early_destroyer = 1
+		early_light_cruiser = 1
+		basic_light_cruiser = 1
+		early_heavy_cruiser = 1
+		
+		
+		early_carrier = 1
+		basic_carrier = 1
+		transport = 1
+	}
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_technology = {
+		basic_naval_mines = 1
+		submarine_mine_laying = 1
+		early_ship_hull_light = 1
+		basic_ship_hull_light = 1
+		early_ship_hull_submarine = 1
+		basic_ship_hull_submarine = 1
+		early_ship_hull_cruiser = 1
+		basic_ship_hull_cruiser = 1
+		early_ship_hull_heavy = 1
+		early_ship_hull_carrier = 1
+		basic_ship_hull_carrier = 1
+		basic_battery = 1
+		basic_light_battery = 1
+		basic_medium_battery = 1
+		basic_heavy_battery = 1
+		basic_torpedo = 1
+		sonar = 1
+		basic_depth_charges = 1
+		basic_secondary_battery = 1
+		improved_secondary_battery = 1
+		basic_cruiser_armor_scheme = 1
+		basic_heavy_armor_scheme = 1
+		mtg_transport = 1
+		improved_airplane_launcher = 1
+	}
+}
+
+set_politics = {
+	ruling_party = revolutionary_socialist
+	last_election = "1997.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+        fascist = 0
+		nationalist = 26
+		monarchist = 18
+		national_bolshevik = 3
+		national_conservative = 0
+		centrist = 0
+		liberal = 0
+		new_democrat = 3
+		moderate_socialist = 0
+		revolutionary_socialist = 40
+		communist = 10
+}
+
+create_country_leader = {
+	name = "Thakin Tin Mya"
+	picture = "Portrait_MYA_Thakin_Tin_Mya.dds"
+	ideology = marxist
+}
+
+create_country_leader = {
+	name = "Ashin Wirathu"
+	picture = "Portrait_MYA_Ashin_Wirathu.dds"
+	ideology = fascist_ideology
+}
+
+create_country_leader = {
+	name = "Tin Aung Myint Oo"
+	picture = "Portrait_MYA_Tin_Aung_Myint_Oo.dds"
+	ideology = nationalist_ideology
+}
+
+create_country_leader = {
+	name = "Taw Phaya"
+	picture = "Portrait_MYA_Taw_Phaya.dds"
+	ideology = absolute_monarchist
+}
+
+create_country_leader = {
+	name = "Sandar Win"
+	picture = "Portrait_MYA_Sandar_Win.dds"
+	ideology = national_bolshevik_ideology
+}
+
+create_country_leader = {
+	name = "Shwe Mann"
+	picture = "Portrait_MYA_Shwe_Mann.dds"
+	ideology = fiscal_conservative
+}
+
+create_country_leader = {
+	name = "Maung Wuntha"
+	picture = "Portrait_MYA_Maung_Wuntha.dds"
+	ideology = centrist_ideology
+}
+
+create_country_leader = {
+	name = "Than Nyein"
+	picture = "Portrait_MYA_Than_Nyein.dds"
+	ideology = social_liberal
+}
+
+create_country_leader = {
+	name = "Win Tin"
+	picture = "Portrait_MYA_Win_Tin.dds"
+	ideology = new_democrat_ideology
+}
+
+create_country_leader = {
+	name = "Min Ko Naing"
+	picture = "Portrait_MYA_Min_Ko_Naing.dds"
+	ideology = democratic_socialist
+}
+
+create_country_leader = {
+	name = "Aung San Suu Kyi"
+	desc = "POLITICS_AUNG_SAN_SUU_KYI_DESC"
+	picture = "Portrait_MYA_Aung_San_Suu_Kyi.dds"
+	ideology = buddhist_socialism
+}

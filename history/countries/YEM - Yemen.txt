@@ -1,0 +1,215 @@
+﻿capital = 973
+
+oob = "YEM_2000"
+
+set_research_slots = 4
+set_convoys = 500
+set_stability = 0.3
+set_war_support = 0.2
+
+set_country_flag = was_in_british_empire
+set_country_flag = muslim_nation
+
+set_technology = {
+	support_weapons = 1
+	infantry_weapons = 1
+	motorised_infantry = 1 
+	tech_support = 1 
+	tech_field_hospital = 1 
+	tech_engineers = 1 
+	gwtank = 1 
+	basic_light_tank = 1 
+	gw_artillery = 1 
+	tech_mountaineers = 1
+	early_fighter = 1 
+	early_bomber = 1 
+	early_submarine = 1
+    transport = 1 
+	paratroopers = 1 
+	interwar_antiair = 1
+	interwar_antitank = 1
+}
+    if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	set_technology = {
+		early_submarine = 1
+		basic_submarine = 1
+		early_destroyer = 1
+		early_light_cruiser = 1
+		basic_light_cruiser = 1
+		early_heavy_cruiser = 1
+		
+		
+		early_carrier = 1
+		basic_carrier = 1
+		transport = 1
+	}
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_technology = {
+		basic_naval_mines = 1
+		submarine_mine_laying = 1
+		early_ship_hull_light = 1
+		basic_ship_hull_light = 1
+		early_ship_hull_submarine = 1
+		basic_ship_hull_submarine = 1
+		early_ship_hull_cruiser = 1
+		basic_ship_hull_cruiser = 1
+		early_ship_hull_heavy = 1
+		early_ship_hull_carrier = 1
+		basic_ship_hull_carrier = 1
+		basic_battery = 1
+		basic_light_battery = 1
+		basic_medium_battery = 1
+		basic_heavy_battery = 1
+		basic_torpedo = 1
+		sonar = 1
+		basic_depth_charges = 1
+		basic_secondary_battery = 1
+		improved_secondary_battery = 1
+		basic_cruiser_armor_scheme = 1
+		basic_heavy_armor_scheme = 1
+		mtg_transport = 1
+		improved_airplane_launcher = 1
+	}
+}
+    set_popularities = {
+        fascist = 5
+		nationalist = 10
+		monarchist = 25
+		national_bolshevik = 0
+		national_conservative = 16
+		centrist = 0
+		liberal = 0
+		new_democrat = 15
+		moderate_socialist = 5
+		revolutionary_socialist = 5
+		communist = 24
+}
+set_politics = {
+	ruling_party = monarchist
+	last_election = "1997.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+create_country_leader = {
+	name = "Ali Salem al Beidh"
+	picture = "Portrait_YEM_Ali_Salem_al_Beidh.dds"
+	ideology = leninist
+}
+
+create_country_leader = {
+	name = "Abdul Majeed al-Zindani"
+	picture = "Portrait_YEM_Abdul_Majeed_al_Zindani.dds"
+	ideology = jihadist
+}
+
+create_country_leader = {
+	name = "Ahmed Saleh"
+	picture = "Portrait_YEM_Ahmed_Saleh.dds"
+	ideology = ultranationalist
+}
+
+create_country_leader = {
+	name = "Ageel bin Muhammad al-Badr"
+	picture = "Portrait_YEM_Ageel_bin_Muhammad_al_Badr.dds"
+	ideology = absolute_monarchist
+}
+
+create_country_leader = {
+	name = "Abdel Wahab Mahmoud Abdel Hamid"
+	picture = "Portrait_YEM_Abdel_Wahab_Mahmoud_Abdel_Hamid.dds"
+	ideology = baathist
+}
+
+create_country_leader = {
+	name = "Mohammed Qahtan"
+	picture = "Portrait_YEM_Mohammed_Qahtan.dds"
+	ideology = islamic_democrat
+}
+
+create_country_leader = {
+	name = "Khaled Bahah"
+	picture = "Portrait_YEM_Khaled_Bahah.dds"
+	ideology = centrist_ideology
+}
+
+create_country_leader = {
+	name = "Tawakkol Karman"
+	picture = "Portrait_YEM_Tawakkol_Karman.dds"
+	ideology = social_liberal
+}
+
+create_country_leader = {
+	name = "Najeeb Qahtan Al-Sha'abi"
+	picture = "Portrait_YEM_Najeeb_Qahtan_Al_Sha_abi.dds"
+	ideology = new_democrat_ideology
+}
+
+create_country_leader = {
+	name = "Haidar Abu Bakr al-Attas"
+	picture = "Portrait_YEM_Haidar_Abu_Bakr_al_Attas.dds"
+	ideology = progressive
+}
+
+create_country_leader = {
+	name = "Abdulmalik Al-Mekhlafi"
+	picture = "Portrait_YEM_Abdulmalik_Al_Mekhlafi.dds"
+	ideology = revolutionary_socialist_ideology
+}
+
+create_field_marshal = {
+	name = "Mohammed Ali al-Maqdashi"
+	picture = "Portrait_Mohammed_Ali_Al-Maqdashi.dds"
+	traits = { }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Abdul-Hafez al-Saqqaf"
+	picture = "Portrait_Abdul-Hafez_al-Saqqaf.dds"
+	traits = {  }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Ahmed Ali al-Ashwal"
+	picture = "Portrait_Ahmed_Ali_al-Ashwal.dds"
+	traits = {  }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Mahmoud al-Subaihi"
+	picture = "Portrait_Mahmoud_al-Subaihi.dds"
+	traits = {  }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Adnan Al-Hammadi"
+	picture = "Portrait_Adnan_Al-Hammadi.dds"
+	traits = {  }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}

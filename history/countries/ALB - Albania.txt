@@ -1,0 +1,252 @@
+﻿capital = 44
+
+oob = "ALB_2000"
+
+set_research_slots = 4
+set_convoys = 500
+set_stability = 0.7
+set_war_support = 0.1
+
+set_technology = {
+	support_weapons = 1
+	infantry_weapons = 1
+	motorised_infantry = 1 
+	tech_support = 1 
+	tech_field_hospital = 1 
+	tech_engineers = 1 
+	gwtank = 1 
+	basic_light_tank = 1 
+	gw_artillery = 1 
+	tech_mountaineers = 1
+	early_light_cruiser = 1
+	early_fighter = 1 
+	early_bomber = 1 
+	early_submarine = 1
+    transport = 1 
+	interwar_antiair = 1
+	interwar_antitank = 1
+}
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	set_technology = {
+		early_submarine = 1
+		basic_submarine = 1
+		early_destroyer = 1
+		early_light_cruiser = 1
+		basic_light_cruiser = 1
+		early_heavy_cruiser = 1
+		
+		
+		early_carrier = 1
+		basic_carrier = 1
+		transport = 1
+	}
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_technology = {
+		basic_naval_mines = 1
+		submarine_mine_laying = 1
+		early_ship_hull_light = 1
+		basic_ship_hull_light = 1
+		early_ship_hull_submarine = 1
+		basic_ship_hull_submarine = 1
+		early_ship_hull_cruiser = 1
+		basic_ship_hull_cruiser = 1
+		early_ship_hull_heavy = 1
+		early_ship_hull_carrier = 1
+		basic_ship_hull_carrier = 1
+		basic_battery = 1
+		basic_light_battery = 1
+		basic_medium_battery = 1
+		basic_heavy_battery = 1
+		basic_torpedo = 1
+		sonar = 1
+		basic_depth_charges = 1
+		basic_secondary_battery = 1
+		improved_secondary_battery = 1
+		basic_cruiser_armor_scheme = 1
+		basic_heavy_armor_scheme = 1
+		mtg_transport = 1
+		improved_airplane_launcher = 1
+	}
+}
+add_ideas = {
+    idea_eu_member
+}
+
+set_politics = {
+	ruling_party = monarchist
+	last_election = "1997.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+        fascist = 0
+		nationalist = 4
+		monarchist = 50
+		national_bolshevik = 0
+		national_conservative = 12
+		centrist = 3
+		liberal = 5
+		new_democrat = 15
+		moderate_socialist = 0
+		revolutionary_socialist = 6
+		communist = 5
+}
+
+create_country_leader = {
+	name = "Hysni Milloshi"
+	desc = "POLITICS_HYSNI_MILLOSHI_DESC"
+	picture = "Portrait_ALB_Hysni_Milloshi.dds"
+	ideology = stalinist
+}
+
+create_country_leader = {
+	name = "Adriatik Alimadhi"
+	picture = "Portrait_ALB_Adriatik_Alimadhi.dds"
+	ideology = fascist_ideology
+}
+
+create_country_leader = {
+	name = "Shpetim Idrizi"
+	picture = "Portrait_ALB_Shpetim_Idrizi.dds"
+	ideology = nationalist_ideology
+}
+
+create_country_leader = {
+	name = "Leka I"
+	picture = "Portrait_ALB_Leka_First.dds"
+	ideology = absolute_monarchist
+}
+
+create_country_leader = {
+	name = "Idajet Beqiri"
+	picture = "Portrait_ALB_Idajet_Beqiri.dds"
+	ideology = national_bolshevik_ideology
+}
+
+create_country_leader = {
+	name = "Fatmir Mediu"
+	picture = "Portrait_ALB_Fatmir_Mediu.dds"
+	ideology = reactionary
+}
+
+create_country_leader = {
+	name = "Sali Berisha"
+	picture = "Portrait_ALB_Sali_Berisha.dds"
+	ideology = centrist_ideology
+}
+
+create_country_leader = {
+	name = "Ervin Mete"
+	picture = "Portrait_ALB_Ervin_Mete.dds"
+	ideology = social_liberal
+}
+
+create_country_leader = {
+	name = "Rexhep Meidani"
+	picture = "Portrait_ALB_Rexhep_Meidani.dds"
+	ideology = new_democrat_ideology
+}
+
+create_country_leader = {
+	name = "Edlir Petanaj"
+	picture = "Portrait_ALB_Edlir_Petanaj.dds"
+	ideology = progressive
+}
+
+create_country_leader = {
+	name = "Petrit Vasili"
+	picture = "Portrait_ALB_Petrit_Vasili.dds"
+	ideology = revolutionary_socialist_ideology
+}
+
+create_field_marshal = {
+	name = "Jeronim Bazo"
+	picture = "Portrait_Jeronim_Bazo.dds"
+	traits = { old_guard organisational_leader }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 2
+}
+
+create_field_marshal = {
+	name = "Dedë Prenga"
+	picture = "Portrait_Dede_Prenga.dds"
+	traits = { inspirational_leader }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Nazmi Cahani"
+	picture = "Portrait_Nazmi_Cahani.dds"
+	traits = { panzer_leader }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Dhori Spirollari"
+	picture = "Portrait_Dhori_Spirollari.dds"
+	traits = { trait_engineer }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Ekland Dauti"
+	picture = "Portrait_Ekland_Dauti.dds"
+	traits = { commando }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Manushaqe Shehu"
+	picture = "Portrait_Manushaqe_Shehu.dds"
+	traits = { trickster }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_navy_leader = {
+	name = "Ylber Dogjani"
+	picture = "Portrait_Ylber_Dogjani.dds"
+	traits = { old_guard_navy superior_tactician }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	coordination_skill = 2
+	maneuvering_skill = 1
+}
+
+create_navy_leader = {
+	name = "Kristaq Gërveni"
+	picture = "Portrait_Kristaq_Gerveni.dds"
+	traits = { blockade_runner }
+	skill = 2
+	attack_skill = 1
+	defense_skill = 1
+	coordination_skill = 2
+	maneuvering_skill = 3
+}

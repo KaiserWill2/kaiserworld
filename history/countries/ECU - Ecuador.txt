@@ -1,0 +1,372 @@
+﻿capital = 305
+
+oob = "ECU_2000"
+
+set_research_slots = 4
+set_convoys = 500
+set_stability = 0.6
+set_war_support = 0.1
+
+set_country_flag = catholic_nation
+
+set_technology = {
+	support_weapons = 1
+	infantry_weapons = 1
+	motorised_infantry = 1 
+	tech_support = 1 
+	tech_field_hospital = 1 
+	tech_engineers = 1 
+	gwtank = 1 
+	basic_light_tank = 1 
+	gw_artillery = 1 
+	tech_mountaineers = 1
+	early_light_cruiser = 1
+	early_fighter = 1 
+	early_bomber = 1 
+	early_submarine = 1
+    transport = 1 
+	paratroopers = 1 
+	marines = 1
+	interwar_antiair = 1
+	interwar_antitank = 1
+}
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	set_technology = {
+		early_submarine = 1
+		basic_submarine = 1
+		early_destroyer = 1
+		early_light_cruiser = 1
+		basic_light_cruiser = 1
+		early_heavy_cruiser = 1
+		
+		
+		early_carrier = 1
+		basic_carrier = 1
+		transport = 1
+	}
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_technology = {
+		basic_naval_mines = 1
+		submarine_mine_laying = 1
+		early_ship_hull_light = 1
+		basic_ship_hull_light = 1
+		early_ship_hull_submarine = 1
+		basic_ship_hull_submarine = 1
+		early_ship_hull_cruiser = 1
+		basic_ship_hull_cruiser = 1
+		early_ship_hull_heavy = 1
+		early_ship_hull_carrier = 1
+		basic_ship_hull_carrier = 1
+		basic_battery = 1
+		basic_light_battery = 1
+		basic_medium_battery = 1
+		basic_heavy_battery = 1
+		basic_torpedo = 1
+		sonar = 1
+		basic_depth_charges = 1
+		basic_secondary_battery = 1
+		improved_secondary_battery = 1
+		basic_cruiser_armor_scheme = 1
+		basic_heavy_armor_scheme = 1
+		mtg_transport = 1
+		improved_airplane_launcher = 1
+	}
+}
+set_politics = {
+	ruling_party = nationalist
+	last_election = "1997.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+        fascist = 3
+		nationalist = 35
+		monarchist = 0
+		national_bolshevik = 0
+		national_conservative = 10
+		centrist = 14
+		liberal = 0
+		new_democrat = 14
+		moderate_socialist = 5
+		revolutionary_socialist = 5
+		communist = 14
+}
+
+create_country_leader = {
+	name = "Winston Alarcon Elizalde"
+	picture = "Portrait_ECU_Winston_Alarcon_Elizalde.dds"
+	ideology = marxist
+}
+
+create_country_leader = {
+	name = "Abdalá Bucaram"
+	picture = "Portrait_ECU_Abdala_Bucaram.dds"
+	ideology = fascist_ideology
+}
+
+create_country_leader = {
+	name = "Lucio Gutierrez"
+	picture = "Portrait_ECU_Lucio_Gutierrez.dds"
+	ideology = nationalist_ideology
+}
+
+create_country_leader = {
+	name = "Carlos I"
+	picture = "Portrait_ECU_Carlos_I.dds"
+	ideology = absolute_monarchist
+}
+
+create_country_leader = {
+	name = "Marlon Santi"
+	picture = "Portrait_ECU_Marlon_Santi.dds"
+	ideology = national_bolshevik_ideology
+}
+
+create_country_leader = {
+	name = "Cynthia Viteri"
+	picture = "Portrait_ECU_Cynthia_Viteri.dds"
+	ideology = reactionary
+}
+
+create_country_leader = {
+	name = "Guillermo Lasso"
+	picture = "Portrait_ECU_Guillermo_Lasso.dds"
+	ideology = centrist_ideology
+}
+
+create_country_leader = {
+	name = "Mauricio Rodas"
+	picture = "Portrait_ECU_Mauricio_Rodas.dds"
+	ideology = social_liberal
+}
+
+create_country_leader = {
+	name = "Jimmy Jairala"
+	picture = "Portrait_ECU_Jimmy_Jairala.dds"
+	ideology = new_democrat_ideology
+}
+
+create_country_leader = {
+	name = "Rafael Correa"
+	picture = "Portrait_ECU_Rafael_Correa.dds"
+	ideology = progressive
+}
+
+create_country_leader = {
+	name = "Geovanni Atarihuana"
+	picture = "Portrait_ECU_Geovanni_Atarihuana.dds"
+	ideology = revolutionary_socialist_ideology
+}
+
+create_field_marshal = {
+	name = "Leonardo Barreiro"
+	picture = "Portrait_Leandro_Barrero.dds"
+	traits = { old_guard offensive_doctrine }
+	skill = 4
+	attack_skill = 3
+	defense_skill = 4
+	planning_skill = 3
+	logistics_skill = 3
+}
+
+create_field_marshal = {
+	name = "César Merizalde Pavón"
+	picture = "Portrait_Cesar_Pavon.dds"
+	traits = { organisational_leader }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Edison Narváez Rosero"
+	picture = "Portrait_Edison_Narvaez.dds"
+	traits = { ranger hill_fighter }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Raúl Banderas Dueñas"
+	picture = "Portrait_Raul_Duenas.dds"
+	traits = { commando }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "William Orellana Carrera"
+	picture = "Portrait_William_Carrera.dds"
+	traits = { trickster }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Roque Moreira"
+	picture = "Portrait_Roque_Moreira.dds"
+	traits = { trait_engineer }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Fabián Fuel"
+	picture = "Portrait_Fabian_Fuel.dds"
+	traits = { commando jungle_rat }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_navy_leader = {
+	name = "Renán Ruíz Cornejo"
+	picture = "Portrait_Renan_Cornejo.dds"
+	traits = { old_guard_navy superior_tactician }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 3
+	coordination_skill = 1
+	maneuvering_skill = 1
+}
+
+create_navy_leader = {
+	name = "Amilcar Villavicencio"
+	picture = "Portrait_Amilcar_Villavicencio.dds"
+	traits = { ironside }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	coordination_skill = 1
+	maneuvering_skill = 1
+}
+
+create_navy_leader = {
+	name = "Byron Jara Guerron"
+	picture = "Portrait_Byron_Jara_Guerron.dds"
+	traits = { seawolf }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	coordination_skill = 1
+	maneuvering_skill = 1
+}
+
+create_navy_leader = {
+	name = "Carlos Noboa Coronel"
+	picture = "Portrait_Carlos_Noboa_Coronel.dds"
+	traits = { air_controller }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	coordination_skill = 1
+	maneuvering_skill = 1
+}
+
+create_navy_leader = {
+	name = "Carlos Zumarraga Asanza"
+	picture = "Portrait_Carlos_Zumarraga_Asanza.dds"
+	traits = { fly_swatter }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	coordination_skill = 1
+	maneuvering_skill = 1
+}
+
+create_navy_leader = {
+	name = "Darwin Cisneros"
+	picture = "Portrait_Darwin_Cisneros.dds"
+	traits = { blockade_runner }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	coordination_skill = 1
+	maneuvering_skill = 1
+}
+
+create_navy_leader = {
+	name = "Fidel Erazo Jacome"
+	picture = "Portrait_Fidel_Erazo_Jacome.dds"
+	traits = { spotter }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	coordination_skill = 1
+	maneuvering_skill = 1
+}
+
+create_navy_leader = {
+	name = "Francisco Bruque Veliz"
+	picture = "Portrait_Francisco_Bruque_Veliz.dds"
+	traits = {  }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	coordination_skill = 1
+	maneuvering_skill = 1
+}
+
+create_navy_leader = {
+	name = "Galo Carrillo Moya"
+	picture = "Portrait_Galo_Carrillo_Moya.dds"
+	traits = { blockade_runner }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	coordination_skill = 1
+	maneuvering_skill = 1
+}
+
+create_navy_leader = {
+	name = "Harold Salvador Cadena"
+	picture = "Portrait_Harold_Salvador_Cadena.dds"
+	traits = { ironside }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	coordination_skill = 1
+	maneuvering_skill = 1
+}
+
+create_navy_leader = {
+	name = "Jorge Echeverria Bucheli"
+	picture = "Portrait_Jorge_Echeverria_Bucheli.dds"
+	traits = { seawolf }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	coordination_skill = 1
+	maneuvering_skill = 1
+}
+
+create_navy_leader = {
+	name = "Marie Fares Cantos"
+	picture = "Portrait_Maria_Fares_Cantos.dds"
+	traits = { spotter }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	coordination_skill = 1
+	maneuvering_skill = 1
+}

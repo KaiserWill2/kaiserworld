@@ -1,0 +1,583 @@
+﻿capital = 49
+
+oob = "TUR_2000"
+
+set_research_slots = 4
+set_convoys = 500
+set_stability = 0.6
+set_war_support = 0.4
+
+set_country_flag = muslim_nation
+
+set_technology = {
+	support_weapons = 1
+	infantry_weapons = 1
+	motorised_infantry = 1 
+	tech_support = 1 
+	tech_field_hospital = 1 
+	tech_engineers = 1 
+	gwtank = 1 
+	basic_light_tank = 1 
+	gw_artillery = 1 
+	tech_mountaineers = 1
+	early_light_cruiser = 1
+	early_fighter = 1 
+	early_bomber = 1 
+	early_submarine = 1
+    transport = 1 
+	paratroopers = 1 
+	marines = 1
+	early_destroyer = 1 
+	interwar_antiair = 1
+	interwar_antitank = 1
+}
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	set_technology = {
+		early_submarine = 1
+		basic_submarine = 1
+		early_destroyer = 1
+		early_light_cruiser = 1
+		basic_light_cruiser = 1
+		early_heavy_cruiser = 1
+		
+		
+		early_carrier = 1
+		basic_carrier = 1
+		transport = 1
+	}
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_technology = {
+		basic_naval_mines = 1
+		submarine_mine_laying = 1
+		early_ship_hull_light = 1
+		basic_ship_hull_light = 1
+		early_ship_hull_submarine = 1
+		basic_ship_hull_submarine = 1
+		early_ship_hull_cruiser = 1
+		basic_ship_hull_cruiser = 1
+		early_ship_hull_heavy = 1
+		early_ship_hull_carrier = 1
+		basic_ship_hull_carrier = 1
+		basic_battery = 1
+		basic_light_battery = 1
+		basic_medium_battery = 1
+		basic_heavy_battery = 1
+		basic_torpedo = 1
+		sonar = 1
+		basic_depth_charges = 1
+		basic_secondary_battery = 1
+		improved_secondary_battery = 1
+		basic_cruiser_armor_scheme = 1
+		basic_heavy_armor_scheme = 1
+		mtg_transport = 1
+		improved_airplane_launcher = 1
+	}
+}
+set_politics = {
+	ruling_party = national_bolshevik
+	last_election = "1997.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}	
+
+set_popularities = {
+        fascist = 20
+		nationalist = 10
+		monarchist = 5
+		national_bolshevik = 32
+		national_conservative = 8
+		centrist = 5
+		liberal = 0
+		new_democrat = 3
+		moderate_socialist = 0
+		revolutionary_socialist = 5
+		communist = 12
+}
+
+create_country_leader = {
+	name = "Kemal Okuyan"
+	picture = "Portrait_TUR_Kemal_Okuyan.dds"
+	ideology = marxist
+}
+
+create_country_leader = {
+	name = "Devlet Bahceli"
+	picture = "Portrait_TUR_Devlet_Bahceli.dds"
+	ideology = fascist_ideology
+}
+
+create_country_leader = {
+	name = "Recep Tayyip Erdogan"
+	picture = "Portrait_TUR_Recep_Tayyip_Erdogan.dds"
+	ideology = nationalist_ideology
+}
+
+create_country_leader = {
+	name = "Bayezid III"
+	picture = "Portrait_TUR_Bayezid_III.dds"
+	ideology = absolute_monarchist
+}
+
+create_country_leader = {
+	name = "Dogu Perincek"
+	picture = "Portrait_TUR_Dogu_Perincek.dds"
+	ideology = national_bolshevik_ideology
+}
+
+create_country_leader = {
+	name = "Aykut Edibali"
+	desc = "POLITICS_AYKUT_EDIBALI_DESC"
+	picture = "Portrait_TUR_Aykut_Edibali.dds"
+	ideology = islamic_democrat
+}
+
+create_country_leader = {
+	name = "Gultekin Uysal"
+	picture = "Portrait_TUR_Gultekin_Uysal.dds"
+	ideology = centrist_ideology
+}
+
+create_country_leader = {
+	name = "Cem Toker"
+	picture = "Portrait_TUR_Cem_Toker.dds"
+	ideology = social_liberal
+}
+
+create_country_leader = {
+	name = "Kemal Kilicdaroglu"
+	picture = "Portrait_TUR_Kemal_Kelecdaroglu.dds"
+	ideology = kemalist
+}
+
+create_country_leader = {
+	name = "Selahattin Demirtas"
+	picture = "Portrait_TUR_Selahattin_Demirtas.dds"
+	ideology = progressive
+}
+
+create_country_leader = {
+	name = "Alper Tas"
+	picture = "Portrait_TUR_Alper_Tas.dds"
+	ideology = revolutionary_socialist_ideology
+}
+
+create_field_marshal = {
+	name = "Hulusi Akar"
+	picture = "Portrait_Hulusi_Akar.dds"
+	traits = { old_guard organisational_leader }
+	skill = 4
+	attack_skill = 2
+	defense_skill = 4
+	planning_skill = 4
+	logistics_skill = 3
+}
+
+create_field_marshal = {
+	name = "Salih Zeki Çolak"
+	picture = "Portrait_Salih_Zeki_Colak.dds"
+	traits = { old_guard offensive_doctrine }
+	skill = 4
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 3
+	logistics_skill = 2
+}
+
+create_field_marshal = {
+	name = "Musa Avsever"
+	picture = "Portrait_Musa_Avsever.dds"
+	traits = { fast_planner }
+	skill = 4
+	attack_skill = 4
+	defense_skill = 2
+	planning_skill = 4
+	logistics_skill = 3
+}
+
+create_field_marshal = {
+	name = "Yıldırım Güvenç"
+	picture = "Portrait_Yildirim_Guevenc.dds"
+	traits = { old_guard defensive_doctrine }
+	skill = 4
+	attack_skill = 3
+	defense_skill = 4
+	planning_skill = 3
+	logistics_skill = 3
+}
+
+create_field_marshal = {
+	name = "Ismail Serdar Savaş"
+	picture = "Portrait_Ismail_Serdar_Savas.dds"
+	traits = { thorough_planner }
+	skill = 4
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 4
+	logistics_skill = 3
+}
+
+create_field_marshal = {
+	name = "Ismail Metin Temel"
+	picture = "Portrait_Ismail_Metin_Temel.dds"
+	traits = { inspirational_leader }
+	skill = 4
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 3
+	logistics_skill = 2
+}
+
+create_field_marshal = {
+	name = "Abdullah Recep"
+	picture = "Portrait_Abdullah_Recep.dds"
+	traits = { old_guard logistics_wizard }
+	skill = 4
+	attack_skill = 2
+	defense_skill = 4
+	planning_skill = 3
+	logistics_skill = 4
+}
+
+create_field_marshal = {
+	name = "Galip Mendi"
+	picture = "Portrait_Galip_Mendi.dds"
+	traits = { logistics_wizard }
+	skill = 4
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "Ihsan Uyar"
+	picture = "Portrait_Ihsan_Ueyar.dds"
+	traits = { trait_engineer }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Mehmet Göktan"
+	picture = "Portrait_Mehmet_Goektan.dds"
+	traits = { trait_engineer }
+	skill = 2
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Hakan Atınç"
+	picture = "Portrait_Hakan_Atinc.dds"
+	traits = { panzer_leader }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Izzet Çetingöz"
+	picture = "Portrait_Izzet_Cetingoez.dds"
+	traits = { panzer_leader }
+	skill = 2
+	attack_skill = 3
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Şenol Alparslan"
+	picture = "Portrait_Senol_Alparslan.dds"
+	traits = { panzer_leader }
+	skill = 3
+	attack_skill = 4
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Erdal Öztürk"
+	picture = "Portrait_Erdal_Oeztuerk.dds"
+	traits = { trickster }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Ilyas Bozkurt"
+	picture = "Portrait_Ilyas_Bozkurt.dds"
+	traits = { fortress_buster }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Mehmet Faruk Şengün"
+	picture = "Portrait_Mehmet_Faruk_Senguen.dds"
+	traits = { commando }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Ali Sivri"
+	picture = "Portrait_Ali_Sivri.dds"
+	traits = { commando }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Mehmet Daysal"
+	picture = "Portrait_Mehmet_Daysal.dds"
+	traits = { trait_engineer }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Kemal Başak"
+	picture = "Portrait_Kemal_Basak.dds"
+	traits = { trait_engineer }
+	skill = 2
+	attack_skill = 1
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Yılmaz Uyar"
+	picture = "Portrait_Yilmaz_Uyar.dds"
+	traits = { desert_fox }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 4
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Levent Ergün"
+	picture = "Portrait_Levent_Erguen.dds"
+	traits = { commando }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Mehmet Özoğlu"
+	picture = "Portrait_Mehmet_Oezoglu.dds"
+	traits = { ranger }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Levent Köse"
+	picture = "Portrait_Levent_Koese.dds"
+	traits = { commando trait_mountaineer }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Özgur Nuhut"
+	picture = "Portrait_Oezgur_Nuhut.dds"
+	traits = {  }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Ömer Paç"
+	picture = "Portrait_Oemer_Pac.dds"
+	traits = { urban_assault_specialist }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Murat Yetgin"
+	picture = "Portrait_Murat_Yetgin.dds"
+	traits = {  }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Zekai Aksakallı"
+	picture = "Portrait_Zekai_Aksakalli.dds"
+	traits = { commando urban_assault_specialist }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Abidin Ünal"
+	picture = "Portrait_Abidin_Uenal.dds"
+	traits = { commando ranger }
+	skill = 4
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "Akın Öztürk"
+	picture = "Portrait_Akin_Oeztuerk.dds"
+	traits = {  }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Mehmet Şanver"
+	picture = "Portrait_Mehmet_Sanver.dds"
+	traits = {  }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Gürsel Çaypınar"
+	picture = "Portrait_Guersel_Caypinar.dds"
+	traits = { naval_invader }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_navy_leader = {
+	name = "Bülent Bostanoğlu"
+	picture = "Portrait_Buelent_Bostanoglu.dds"
+	traits = { old_guard_navy superior_tactician }
+	skill = 4
+	attack_skill = 3
+	defense_skill = 4
+	coordination_skill = 3
+	maneuvering_skill = 3
+}
+
+create_navy_leader = {
+	name = "Adnan Özbal"
+	picture = "Portrait_Adnan_Oezbal.dds"
+	traits = { ironside }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 4
+	coordination_skill = 3
+	maneuvering_skill = 1
+}
+
+create_navy_leader = {
+	name = "Veysel Kösele"
+	picture = "Portrait_Veysel_Koesele.dds"
+	traits = { spotter }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	coordination_skill = 4
+	maneuvering_skill = 1
+}
+
+create_navy_leader = {
+	name = "Hasan Şükrü Korlu"
+	picture = "Portrait_Hasan_Suekrue_Korlu.dds"
+	traits = { blockade_runner }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 3
+	coordination_skill = 2
+	maneuvering_skill = 3
+}
+
+create_navy_leader = {
+	name = "Hasan Uşaklıoğlu"
+	picture = "Portrait_Hasan_Usaklioglu.dds"
+	traits = { seawolf }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	coordination_skill = 2
+	maneuvering_skill = 2
+}
+
+create_navy_leader = {
+	name = "Ali Çekiç"
+	picture = "Portrait_Ali_Cekic.dds"
+	traits = { air_controller }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	coordination_skill = 1
+	maneuvering_skill = 1
+}
+
+create_navy_leader = {
+	name = "Ercüment Tatlıoğlu"
+	picture = "Portrait_Ercuement_Tatlioglu.dds"
+	traits = { fly_swatter }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	coordination_skill = 3
+	maneuvering_skill = 2
+}
