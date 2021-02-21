@@ -93,7 +93,7 @@ set_popularities = {
 		liberal = 30
 		new_democrat = 6
 		moderate_socialist = 1
-		revolutionary_socialist = 416
+		revolutionary_socialist = 16
 		communist = 11
 }
 
