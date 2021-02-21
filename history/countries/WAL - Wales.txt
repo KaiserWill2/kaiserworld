@@ -101,7 +101,7 @@ create_country_leader = {
 
 create_country_leader = {
 	name = "Gethin ap Gruffydd"
-	picture = "Portrait_WAL_Gethin_Ap_Gruffydd.dds"
+	picture = "Portrait_WAL_Gethin_Ap_Gruffydd.tga"
 	ideology = fascist_ideology
 }
 
