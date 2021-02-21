@@ -1,0 +1,582 @@
+﻿capital = 37
+
+oob = "DEN_2000"
+
+
+set_research_slots = 4
+set_convoys = 500
+set_stability = 0.7
+set_war_support = 0.1
+
+set_technology = {
+	support_weapons = 1
+	infantry_weapons = 1
+	motorised_infantry = 1 
+	tech_support = 1 
+	tech_field_hospital = 1 
+	tech_engineers = 1 
+	gwtank = 1 
+	basic_light_tank = 1 
+	gw_artillery = 1 
+	tech_mountaineers = 1
+	early_light_cruiser = 1
+	early_fighter = 1 
+	early_bomber = 1 
+	early_submarine = 1
+    transport = 1 
+	paratroopers = 1 
+	marines = 1
+	early_destroyer = 1 
+	interwar_antiair = 1
+	interwar_antitank = 1
+}
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	set_technology = {
+		early_submarine = 1
+		basic_submarine = 1
+		early_destroyer = 1
+		early_light_cruiser = 1
+		basic_light_cruiser = 1
+		early_heavy_cruiser = 1
+		
+		
+		early_carrier = 1
+		basic_carrier = 1
+		transport = 1
+	}
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_technology = {
+		basic_naval_mines = 1
+		submarine_mine_laying = 1
+		early_ship_hull_light = 1
+		basic_ship_hull_light = 1
+		early_ship_hull_submarine = 1
+		basic_ship_hull_submarine = 1
+		early_ship_hull_cruiser = 1
+		basic_ship_hull_cruiser = 1
+		early_ship_hull_heavy = 1
+		early_ship_hull_carrier = 1
+		basic_ship_hull_carrier = 1
+		basic_battery = 1
+		basic_light_battery = 1
+		basic_medium_battery = 1
+		basic_heavy_battery = 1
+		basic_torpedo = 1
+		sonar = 1
+		basic_depth_charges = 1
+		basic_secondary_battery = 1
+		improved_secondary_battery = 1
+		basic_cruiser_armor_scheme = 1
+		basic_heavy_armor_scheme = 1
+		mtg_transport = 1
+		improved_airplane_launcher = 1
+	}
+}
+set_politics = {
+	ruling_party = new_democrat
+	last_election = "1997.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+        fascist = 0
+		nationalist = 5
+		monarchist = 10
+		national_bolshevik = 0
+		national_conservative = 24
+		centrist = 0
+		liberal = 16
+		new_democrat = 34
+		moderate_socialist = 0
+		revolutionary_socialist = 9
+		communist = 2
+}
+
+create_country_leader = {
+	name = "Daniel Carlsen"
+	picture = "Portrait_DEN_Daniel_Carlsen.dds"
+	ideology = national_socialist
+}
+
+create_country_leader = {
+	name = "Kristian Thulesen Dahl"
+	picture = "Portrait_DEN_Kristian_Thulesen_Dahl.dds"
+	ideology = nationalist_ideology
+}
+
+create_country_leader = {
+	name = "Margrethe II"
+	picture = "Portrait_DEN_Margrethe_Second.dds"
+	ideology = absolute_monarchist
+}
+
+create_country_leader = {
+	name = "Jonni Hansen"
+	picture = "Portrait_DEN_Jonni_Hansen.dds"
+	ideology = national_bolshevik_ideology
+}
+
+create_country_leader = {
+	name = "Pernille Vermund"
+	picture = "Portrait_DEN_Pernille_Vermund.dds"
+	ideology = reactionary
+}
+
+create_country_leader = {
+	name = "Margrethe Vestager"
+	picture = "Portrait_DEN_Margrethe_Vestager.dds"
+	ideology = centrist_ideology
+}
+
+create_country_leader = {
+	name = "Anders Samuelsen"
+	picture = "Portrait_DEN_Anders_Samuelsen.dds"
+	ideology = social_liberal
+}
+
+create_country_leader = {
+	name = "Helle Thorning-Schmidt"
+	picture = "Portrait_DEN_Helle_Thorning_Schmidt.dds"
+	ideology = new_democrat_ideology
+}
+
+create_country_leader = {
+	name = "Pernille Skipper"
+	picture = "Portrait_DEN_Pernille_Skipper.dds"
+	ideology = european_moderate_socialist
+}
+
+create_country_leader = {
+	name = "Anne Grete Holmsgaard"
+	desc = "POLITICS_ANNE_GRETE_HOLMSGAARD_DESC"
+	picture = "Portrait_DEN_Anne_Holmsga.dds"
+	ideology = revolutionary_socialist_ideology
+}
+
+create_country_leader = {
+	name = "Henrik Stamer Hedin"
+	picture = "Portrait_DEN_Henrik_Stamer_Hedin.dds"
+	ideology = marxist
+}
+
+create_field_marshal = {
+	name = "Bjørn Ingemann Bisserup"
+	picture = "Portrait_Bjoern_Bisserup.dds"
+	traits = { old_guard organisational_leader }
+	skill = 4
+	attack_skill = 4
+	defense_skill = 2
+	planning_skill = 4
+	logistics_skill = 3
+}
+
+create_field_marshal = {
+	name = "Peter Bartram"
+	picture = "Portrait_Peter_Bartram.dds"
+	traits = { old_guard inspirational_leader }
+	skill = 4
+	attack_skill = 3
+	defense_skill = 4
+	planning_skill = 3
+	logistics_skill = 3
+}
+
+create_field_marshal = {
+	name = "Per Ludvigsen"
+	picture = "Portrait_Per_Ludvigsen.dds"
+	traits = { thorough_planner }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 4
+	logistics_skill = 2
+}
+
+create_field_marshal = {
+	name = "Hans-Christian Mathiesen"
+	picture = "Portrait_Hans-Christian_Mathiesen.dds"
+	traits = { fast_planner }
+	skill = 2
+	attack_skill = 1
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 1
+}
+
+create_field_marshal = {
+	name = "Flemming Lentfer"
+	picture = "Portrait_Fleming_Lentfer.dds"
+	traits = { offensive_doctrine }
+	skill = 2
+	attack_skill = 4
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Flemming Mathiasen"
+	picture = "Portrait_Fleming_Mathiasen.dds"
+	traits = { panzer_leader }
+	skill = 2
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Henning Bæk"
+	picture = "Portrait_Henning_Baek.dds"
+	traits = {  }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Jørgen Høll"
+	picture = "Portrait_Joergen_Hoell.dds"
+	traits = { commando ranger }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Kim Jesper Jørgensen"
+	picture = "Portrait_Kim_Joergensen.dds"
+	traits = { commando winter_specialist }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 3
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Finn Winkler"
+	picture = "Portrait_Finn_Winkler.dds"
+	traits = { urban_assault_specialist }
+	skill = 2
+	attack_skill = 3
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Max ALT Nielsen"
+	picture = "Portrait_Max_Nielsen.dds"
+	traits = {  }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Christian Lippert"
+	picture = "Portrait_Christian_Lippert.dds"
+	traits = { trait_engineer }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Lennie Fredskov Hansen"
+	picture = "Portrait_Lennie_Fredskov.dds"
+	traits = { ranger urban_assault_specialist }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Jørn E. Rasmussen"
+	picture = "Portrait_Joern_Rasmussen.dds"
+	traits = { jungle_rat desert_fox }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Per Orluff Knudsen"
+	picture = "Portrait_Per_Knudsen.dds"
+	traits = { panzer_leader }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Jens Ole Rossen-Jørgensen"
+	picture = "Portrait_Jens_Joergensen.dds"
+	traits = { ranger }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Lasse Harkjær"
+	picture = "Portrait_Lasse_Harkjaer.dds"
+	traits = { urban_assault_specialist }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Søren Andersen"
+	picture = "Portrait_Soeren_Andersen.dds"
+	traits = { trickster }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Bjarne Højgaard Jensen"
+	picture = "Portrait_Bjarne_Jensen.dds"
+	traits = { ranger }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Anne-Cathrine Ribnietzky"
+	picture = "Portrait_Anne-Cathrine_Ribnietzky.dds"
+	traits = {  }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Lars R. Møller"
+	picture = "Portrait_Lars_Moeller.dds"
+	traits = { trickster }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Per Hinrichsen"
+	picture = "Portrait_Per_Hinrichsen.dds"
+	traits = { ranger }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Jess Møller Nielsen"
+	picture = "Portrait_Jess_Nielsen.dds"
+	traits = { urban_assault_specialist }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Henrik Holm"
+	picture = "Portrait_Henrik_Holm.dds"
+	traits = { trait_engineer }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Birger Mejlholm"
+	picture = "Portrait_Birger_Mejlholm.dds"
+	traits = { bearer_of_artillery }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Christian Arildsen"
+	picture = "Portrait_Christian_Arildsen.dds"
+	traits = { trait_engineer }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Kåre Jakobsen"
+	picture = "Portrait_Kare_Jakobsen.dds"
+	traits = { commando ranger }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Stig Østergaard Nielsen"
+	picture = "Portrait_Stig_Nielsen.dds"
+	traits = { commando winter_specialist }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Jens Bach"
+	picture = "Portrait_Jens_Bach.dds"
+	traits = { commando naval_invader }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_navy_leader = {
+	name = "Steen Kobberø-Hansen"
+	picture = "Portrait_Steen_Hansen.dds"
+	traits = { spotter }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	coordination_skill = 1
+	maneuvering_skill = 1
+}
+
+create_navy_leader = {
+	name = "Frank Trojahn"
+	picture = "Portrait_Frank_Trojahn.dds"
+	traits = { old_guard_navy superior_tactician }
+	skill = 2
+	attack_skill = 1
+	defense_skill = 3
+	coordination_skill = 2
+	maneuvering_skill = 1
+}
+
+create_navy_leader = {
+	name = "Aage Buur Jensen"
+	picture = "Portrait_Aage_Jensen.dds"
+	traits = { superior_tactician }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	coordination_skill = 1
+	maneuvering_skill = 1
+}
+
+create_navy_leader = {
+	name = "Finn Hansen"
+	picture = "Portrait_Finn_Hansen.dds"
+	traits = { blockade_runner }
+	skill = 2
+	attack_skill = 1
+	defense_skill = 2
+	coordination_skill = 1
+	maneuvering_skill = 3
+}
+
+create_navy_leader = {
+	name = "Peter Stamp"
+	picture = "Portrait_Peter_Stamp.dds"
+	traits = { seawolf }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	coordination_skill = 1
+	maneuvering_skill = 1
+}
+
+create_navy_leader = {
+	name = "Carsten Fjord-Larsen"
+	picture = "Portrait_Carsten_Fjord-Larsen.dds"
+	traits = { seawolf }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	coordination_skill = 1
+	maneuvering_skill = 1
+}
+
+create_navy_leader = {
+	name = "Anders Friis"
+	picture = "Portrait_Anders_Friis.dds"
+	traits = { ironside }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	coordination_skill = 1
+	maneuvering_skill = 1
+}
+
+create_navy_leader = {
+	name = "Torben Mikkelsen"
+	picture = "Portrait_Torben_Mikkelsen.dds"
+	traits = { fly_swatter }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	coordination_skill = 2
+	maneuvering_skill = 2
+}
+
+create_navy_leader = {
+	name = "Henrik Ryberg"
+	picture = "Portrait_Henrik_Ryberg.dds"
+	traits = { air_controller }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	coordination_skill = 1
+	maneuvering_skill = 1
+}
