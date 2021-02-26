@@ -1,0 +1,15 @@
+focus_tree = {
+	id = british_tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 20
+			tag = ENG
+		}
+	}
+
+	continuous_focus_position = { x = 50 y = 3500 }
+	default = no
+	shared_focus = ENG_Grey_Tuesday
+
+}
