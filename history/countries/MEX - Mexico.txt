@@ -79,7 +79,7 @@ if = {
 }
 
 set_politics = {
-	ruling_party = national_conservative
+	ruling_party = monarchist
 	last_election = "1997.1.1"
 	election_frequency = 48
 	elections_allowed = no
@@ -88,9 +88,9 @@ set_politics = {
 set_popularities = {
         fascist = 1
 		nationalist = 6
-		monarchist = 0
+		monarchist = 30
 		national_bolshevik = 0
-		national_conservative = 32
+		national_conservative = 2
 		centrist = 26
 		liberal = 4
 		new_democrat = 6
