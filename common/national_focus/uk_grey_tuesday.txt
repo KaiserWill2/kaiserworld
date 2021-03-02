@@ -1,11 +1,7 @@
 focus_tree = {
-	id = british_tree
+	id = british_grey_tuesday
 	country = {
 		factor = 0
-		modifier = {
-			add = 20
-			tag = ENG
-		}
 	}
 
 	continuous_focus_position = { x = 50 y = 3500 }
