@@ -14,3 +14,17 @@ country_event = {
 		}
 	}
 }
+country_event = {
+	id = England.2
+	title = England.2.t
+	desc = England.2.d
+	picture = limited_freedoms_of_markets
+	is_triggered_only = yes
+	option = {
+		name = England.2.o1
+		 load_focus_tree = {
+			tree = british_new_england
+			keep_completed = yes
+		}
+	}
+}
