@@ -1,0 +1,25 @@
+focus_tree = {
+	id = wales_tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 20
+			tag = WAL
+		}
+	}
+	default = no
+	continuous_focus_position = { x = 50 y = 1550 }
+	focus = {
+		id = WAL_Cynnydd_y_Ddraig
+		icon = tear_treaty
+		cost = 5
+		x = 6
+		y = 0
+		completion_reward = {
+
+		}
+
+
+
+
+	}
