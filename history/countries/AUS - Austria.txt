@@ -1,4 +1,4 @@
-﻿capital = 230
+﻿capital = 216
 
 oob = "generic_2000"
 
