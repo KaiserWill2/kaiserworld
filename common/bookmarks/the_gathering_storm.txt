@@ -52,9 +52,9 @@ bookmarks = {
 				
 			}
 		}
-		"CAN"={
-			history = "CAN_RED_WORLD_DESC"
-			ideology = moderate_socialist
+		"ENG"={
+			history = "ENG_RED_WORLD_DESC"
+			ideology = communist
 			ideas = {
 				
 			}

@@ -37,6 +37,12 @@ spriteTypes = {
 		name = "GFX_idea_idea_pol_forgotten_partner"
 		texturefile = "gfx/interface/ideas/POL/idea_pol_forgotten_partner.tga"
 	}
+	##uk##
+	spriteType = {
+		name = "GFX_idea_idea_memories_of_Michael_foot"
+		texturefile = "gfx/interface/ideas/ENG/idea_memories_of_Michael_foot.dds"
+	}
+
 	###Unsorted
 	spriteType = {
 		name = "GFX_idea_idea_eu_member"

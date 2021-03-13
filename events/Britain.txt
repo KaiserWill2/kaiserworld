@@ -4,14 +4,16 @@ country_event = {
 	id = England.1
 	title = England.1.t
 	desc = England.1.d
-	picture = limited_freedoms_of_markets
-	is_triggered_only = yes
+	picture = welcome_to_the_union
+	fire_only_once = yes
+	trigger = {
+		tag = ENG
+		date > 2010.1.01
+		date < 2010.1.05
+	}
 	option = {
 		name = England.1.o1
-		 load_focus_tree = {
-			tree = british_grey_tuesday
-			keep_completed = yes
-		}
+
 	}
 }
 country_event = {
@@ -22,6 +24,20 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = England.2.o1
+		 load_focus_tree = {
+			tree = british_grey_tuesday
+			keep_completed = yes
+		}
+	}
+}
+country_event = {
+	id = England.3
+	title = England.3.t
+	desc = England.3.d
+	picture = limited_freedoms_of_markets
+	is_triggered_only = yes
+	option = {
+		name = England.3.o1
 		 load_focus_tree = {
 			tree = british_new_england
 			keep_completed = yes
