@@ -75,6 +75,29 @@ spriteTypes = {
 		name = "congress_of_the_year"
 		texturefile = "gfx/interface/goals/eng/congress_of_the_year.dds"			
 		}
+		SpriteType = {
+		name = "securing_the_borders_UOB"
+		texturefile = "gfx/interface/goals/eng/securing_the_borders_UOB.dds"			
+		}
+		SpriteType = {
+		name = "arming_the_nation_UOB"
+		texturefile = "gfx/interface/goals/eng/arming_the_nation_UOB.dds"			
+		}
+		SpriteType = {
+		name = "rally_the_people_UOB"
+		texturefile = "gfx/interface/goals/eng/rally_the_people_UOB.dds"			
+		}
+		SpriteType = {
+		name = "on_our_own_way_UOB"
+		texturefile = "gfx/interface/goals/eng/on_our_own_way_UOB.dds"			
+		}
+		SpriteType = {
+		name = "Wales_Is_Ours_UOB"
+		texturefile = "gfx/interface/goals/eng/Wales_Is_Ours_UOB.dds"			
+		}
+	
+
+
 	#### OTHER ####
 	SpriteType = {
 	name = "red_gold_army"
