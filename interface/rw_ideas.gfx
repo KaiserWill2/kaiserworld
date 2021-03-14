@@ -33,9 +33,33 @@ spriteTypes = {
 		name = "GFX_idea_idea_pol_tradition"
 		texturefile = "gfx/interface/ideas/POL/idea_pol_tradition.tga"
 	}
-    spriteType = {
+    	spriteType = {
 		name = "GFX_idea_idea_pol_forgotten_partner"
 		texturefile = "gfx/interface/ideas/POL/idea_pol_forgotten_partner.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_memories_of_beringia"
+		texturefile = "gfx/interface/ideas/ALA/memories_of_beringia.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_weak_administration"
+		texturefile = "gfx/interface/ideas/ALA/weak_administration.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_impending_civil_war"
+		texturefile = "gfx/interface/ideas/ALA/impending_civil_war.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_racial_tension"
+		texturefile = "gfx/interface/ideas/ALA/racial_tension.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_crumbling_infrastructure"
+		texturefile = "gfx/interface/ideas/ALA/crumbling_infrastructure.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_nonexistent_economy"
+		texturefile = "gfx/interface/ideas/ALA/nonexistent_economy.dds"
 	}
 	##uk##
 	spriteType = {
