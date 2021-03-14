@@ -4,8 +4,18 @@ oob = "ALA_2000"
 
 set_research_slots = 2
 set_convoys = 500
-set_stability = 0.7
+set_stability = 0.5
 set_war_support = 0.2
+
+add_ideas = {
+	idea_ala_memories_of_beringia
+	idea_ala_weak_administration
+	idea_ala_impending_civil_war
+	idea_ala_racial_tension
+	idea_ala_crumbling_infrastructure
+	idea_ala_nonexistent_economy
+}
+
 
 set_technology = {
 	support_weapons = 1
