@@ -66,7 +66,7 @@ spriteTypes = {
 		name = "GFX_idea_idea_memories_of_Michael_foot"
 		texturefile = "gfx/interface/ideas/ENG/idea_memories_of_Michael_foot.dds"
 	}
-
+	
 	###Unsorted
 	spriteType = {
 		name = "GFX_idea_idea_eu_member"
