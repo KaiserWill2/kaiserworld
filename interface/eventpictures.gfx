@@ -1,0 +1,9 @@
+spriteTypes = {
+	##england events##
+	spriteType = {
+		name = "welcome_to_the_union"
+		texturefile = "gfx/event_pictures/report_event/welcome_to_the_union.dds"
+	}
+
+
+}

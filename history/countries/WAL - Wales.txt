@@ -1,4 +1,4 @@
-﻿capital = 230
+﻿capital = 122
 
 oob = "generic_2000"
 
@@ -100,8 +100,8 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Gethin ap Gruffydd"
-	picture = "Portrait_WAL_Gethin_Ap_Gruffydd.tga"
+	name = "Gethin Gruffydd"
+	picture = "Portrait_WAL_Gethin_Gruffydd_2.tga"
 	ideology = fascist_ideology
 }
 

@@ -1,4 +1,4 @@
-﻿capital = 901
+﻿capital = 378
 
 oob = "USA_2000"
 
