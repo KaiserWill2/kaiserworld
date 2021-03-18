@@ -1967,6 +1967,466 @@
 		}
 
 	}
+		#military tree
+	shared_focus = {
+		id = USA_lessons_in_alaska
+		icon = focus
+		cost = 7.2
+		available = {
+		   has_country_flag = 2012_election
+		}
+		prerequisite = {
+			
+		}
+		
+		x = 75
+		y = 0
+		completion_reward = {
+		    
+		}
+
+	}
+	shared_focus = {
+		id = USA_reevaluate_the_army
+		icon = focus
+		cost = 10
+		available = {
+		   
+		}
+		prerequisite = {
+			focus = USA_lessons_in_alaska
+		}
+		x = -6
+		y = 1
+		relative_position_id = USA_lessons_in_alaska
+		completion_reward = {
+		    
+		}
+
+	}
+	shared_focus = {
+		id = USA_review_our_tatics
+		icon = focus
+		cost = 10
+		available = {
+		   
+		}
+		prerequisite = {
+			focus = USA_reevaluate_the_army
+		}
+		x = -1
+		y = 1
+		relative_position_id = USA_reevaluate_the_army
+		completion_reward = {
+		    
+		}
+
+	}
+	shared_focus = {
+		id = USA_review_our_guns
+		icon = focus
+		cost = 10
+		available = {
+		   
+		}
+		prerequisite = {
+			focus = USA_review_our_tatics
+		}
+		x = 0
+		y = 1
+		relative_position_id = USA_review_our_tatics
+		completion_reward = {
+		    
+		}
+
+	}
+	shared_focus = {
+		id = USA_revitalized_army
+		icon = focus
+		cost = 10
+		available = {
+		   
+		}
+		prerequisite = {
+			focus = USA_review_our_guns
+		}
+		prerequisite = {
+			focus = USA_review_our_armour
+		}
+		x = 1
+		y = 1
+		relative_position_id = USA_review_our_guns
+		completion_reward = {
+		    
+		}
+
+	}
+	shared_focus = {
+		id = USA_improve_our_artillery
+		icon = focus
+		cost = 10
+		available = {
+		   
+		}
+		prerequisite = {
+			focus = USA_review_our_guns
+		}
+		x = -1
+		y = 1
+		relative_position_id = USA_review_our_guns
+		completion_reward = {
+		    
+		}
+
+	}
+	shared_focus = {
+		id = USA_review_our_gear
+		icon = focus
+		cost = 10
+		available = {
+		   
+		}
+		prerequisite = {
+			focus = USA_reevaluate_the_army
+		}
+		x = 1
+		y = 1
+		relative_position_id = USA_reevaluate_the_army
+		completion_reward = {
+		    
+		}
+
+	}
+	shared_focus = {
+		id = USA_review_our_armour
+		icon = focus
+		cost = 10
+		available = {
+		   
+		}
+		prerequisite = {
+			focus = USA_review_our_gear
+		}
+		x = 0
+		y = 1
+		relative_position_id = USA_review_our_gear
+		completion_reward = {
+		    
+		}
+
+	}
+	shared_focus = {
+		id = USA_mechanize_our_infantry
+		icon = focus
+		cost = 10
+		available = {
+		   
+		}
+		prerequisite = {
+			focus = USA_review_our_armour
+		}
+		x = 1
+		y = 1
+		relative_position_id = USA_review_our_armour
+		completion_reward = {
+		    
+		}
+
+	}
+	shared_focus = {
+		id = USA_reevaluate_the_navy
+		icon = focus
+		cost = 10
+		available = {
+		   
+		}
+		prerequisite = {
+			focus = USA_lessons_in_alaska
+		}
+		x = 0
+		y = 1
+		relative_position_id = USA_lessons_in_alaska
+		completion_reward = {
+		    
+		}
+
+	}
+	shared_focus = {
+		id = USA_improve_our_destroyers
+		icon = focus
+		cost = 10
+		available = {
+		   
+		}
+		prerequisite = {
+			focus = USA_reevaluate_the_navy
+		}
+		x = -1
+		y = 1
+		relative_position_id = USA_reevaluate_the_navy
+		completion_reward = {
+		    
+		}
+
+	}
+	shared_focus = {
+		id = USA_improve_our_submarines
+		icon = focus
+		cost = 10
+		available = {
+		   
+		}
+		prerequisite = {
+			focus = USA_improve_our_destroyers
+		}
+		x = 0
+		y = 1
+		relative_position_id = USA_improve_our_destroyers
+		completion_reward = {
+		    
+		}
+
+	}
+	shared_focus = {
+		id = USA_improve_our_doctrine
+		icon = focus
+		cost = 10
+		available = {
+		   
+		}
+		prerequisite = {
+			focus = USA_improve_our_submarines
+		}
+		x = -1
+		y = 1
+		relative_position_id = USA_improve_our_submarines
+		completion_reward = {
+		    
+		}
+
+	}
+	shared_focus = {
+		id = USA_improve_our_carriers
+		icon = focus
+		cost = 10
+		available = {
+		   
+		}
+		prerequisite = {
+			focus = USA_reevaluate_the_navy
+		}
+		x = 1
+		y = 1
+		relative_position_id = USA_reevaluate_the_navy
+		completion_reward = {
+		    
+		}
+
+	}
+	shared_focus = {
+		id = USA_naval_air_support
+		icon = focus
+		cost = 10
+		available = {
+		   
+		}
+		prerequisite = {
+			focus = USA_improve_our_carriers
+		}
+		x = 0
+		y = 1
+		relative_position_id = USA_improve_our_carriers
+		completion_reward = {
+		    
+		}
+
+	}
+	shared_focus = {
+		id = USA_naval_base_exspansion
+		icon = focus
+		cost = 10
+		available = {
+		   
+		}
+		prerequisite = {
+			focus = USA_naval_air_support
+		}
+		x = 1
+		y = 1
+		relative_position_id = USA_naval_air_support
+		completion_reward = {
+		    
+		}
+
+	}
+	shared_focus = {
+		id = USA_a_modern_navy
+		icon = focus
+		cost = 10
+		available = {
+		   
+		}
+		prerequisite = {
+			focus = USA_naval_air_support
+		}
+		prerequisite = {
+			focus = USA_improve_our_submarines
+		}
+		x = -1
+		y = 1
+		relative_position_id = USA_naval_air_support
+		completion_reward = {
+		    
+		}
+
+	}
+	shared_focus = {
+		id = USA_reevaluate_the_airforce
+		icon = focus
+		cost = 10
+		available = {
+		   
+		}
+		prerequisite = {
+			focus = USA_lessons_in_alaska
+		}
+		x = 6
+		y = 1
+		relative_position_id = USA_lessons_in_alaska
+		completion_reward = {
+		    
+		}
+
+	}
+	shared_focus = {
+		id = USA_strategic_bombing
+		icon = focus
+		cost = 10
+		available = {
+		   
+		}
+		prerequisite = {
+			focus = USA_reevaluate_the_airforce
+		}
+		x = -1
+		y = 1
+		relative_position_id = USA_reevaluate_the_airforce
+		completion_reward = {
+		    
+		}
+
+	}
+	shared_focus = {
+		id = USA_improved_drones
+		icon = focus
+		cost = 10
+		available = {
+		   
+		}
+		prerequisite = {
+			focus = USA_strategic_bombing
+		}
+		x = 0
+		y = 1
+		relative_position_id = USA_strategic_bombing
+		completion_reward = {
+		    
+		}
+
+	}
+	shared_focus = {
+		id = USA_radar_improvments
+		icon = focus
+		cost = 10
+		available = {
+		   
+		}
+		prerequisite = {
+			focus = USA_improved_drones
+		}
+		x = -1
+		y = 1
+		relative_position_id = USA_improved_drones
+		completion_reward = {
+		    
+		}
+
+	}
+	shared_focus = {
+		id = USA_ground_support
+		icon = focus
+		cost = 10
+		available = {
+		   
+		}
+		prerequisite = {
+			focus = USA_reevaluate_the_airforce
+		}
+		x = 1
+		y = 1
+		relative_position_id = USA_reevaluate_the_airforce
+		completion_reward = {
+		    
+		}
+
+	}
+	shared_focus = {
+		id = USA_fighter_modernization
+		icon = focus
+		cost = 10
+		available = {
+		   
+		}
+		prerequisite = {
+			focus = USA_ground_support
+		}
+		x = 0
+		y = 1
+		relative_position_id = USA_ground_support
+		completion_reward = {
+		    
+		}
+
+	}
+	shared_focus = {
+		id = USA_anti_air_devolopment
+		icon = focus
+		cost = 10
+		available = {
+		   
+		}
+		prerequisite = {
+			focus = USA_fighter_modernization
+		}
+		x = 1
+		y = 1
+		relative_position_id = USA_fighter_modernization
+		completion_reward = {
+		    
+		}
+
+	}
+	shared_focus = {
+		id = USA_a_modern_army
+		icon = focus
+		cost = 10
+		available = {
+		   
+		}
+		prerequisite = {
+			focus = USA_fighter_modernization
+		}
+		prerequisite = {
+			focus = USA_improved_drones
+		}
+		x = -1
+		y = 1
+		relative_position_id = USA_fighter_modernization
+		completion_reward = {
+		    
+		}
+
+	}
 	#foriegn policy bernie 
 	shared_focus = {
 		id = USA_foreign_policy_bernie

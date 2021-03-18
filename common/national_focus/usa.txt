@@ -13,6 +13,5 @@ focus_tree = {
 
 	shared_focus = USA_prime_minister_bernie
 	shared_focus = USA_2012_election
-	shared_focus = USA_foreign_policy_bernie
-
+	shared_focus = USA_lessons_in_alaska
 	}
