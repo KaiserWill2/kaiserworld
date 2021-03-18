@@ -1,0 +1,256 @@
+ideas = {
+
+    country = {
+	    
+		idea_ala_memories_of_beringia = {
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			picture = memories_of_beringia
+			
+			modifier = {
+				stability_factor = -0.05
+				political_power_gain = -0.3
+				communist_drift = 0.02
+				fascist_drift = 0.02
+				
+				
+				
+				
+			}
+		}
+	}
+
+	country = {
+	    
+		idea_ala_weak_administration = {
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			picture = weak_administration
+			
+			modifier = {
+				stability_factor = -0.25
+				drift_defence_factor = -0.1
+				political_power_gain = -0.2
+				conscription = -0.010
+				army_morale_factor = -0.04
+				
+				
+				
+				
+			}
+		}
+	}
+
+	country = {
+	    
+		idea_ala_impending_civil_war = {
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			picture = impending_civil_war
+			
+			modifier = {
+				stability_factor = -0.30
+				drift_defence_factor = -0.2
+				army_core_defence_factor = 0.1
+				research_speed_factor = -0.045 
+				
+				
+				
+				
+			}
+		}
+	}
+
+	country = {
+	    
+		idea_ala_racial_tension = {
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			picture = racial_tension
+			
+			modifier = {
+				stability_factor = -0.30
+				drift_defence_factor = -0.1
+				
+				
+				
+				
+			}
+		}
+	}
+
+	country = {
+	    
+		idea_ala_crumbling_infrastructure = {
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			picture = crumbling_infrastructure
+			
+			modifier = {
+				consumer_goods_factor = 0.3
+				production_speed_arms_factory_factor = -0.50
+				production_speed_industrial_complex_factor = -0.50
+				production_speed_buildings_factor = -0.1 
+				
+				
+				
+				
+			}
+		}
+	}
+
+	country = {
+	    
+		idea_ala_nonexistent_economy = {
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			picture = nonexistent_economy
+			
+			modifier = {
+				industrial_capacity_factory = -0.80
+				political_power_cost = 1
+				consumer_goods_factor = 0.3
+				conscription_factor = -0.5
+				join_faction_tension = 0.20
+				local_resources_factor = -0.2
+				production_speed_arms_factory_factor = -0.50
+				production_speed_industrial_complex_factor = -0.50
+				production_speed_buildings_factor = -0.1 
+				
+				
+				
+				
+			}
+		}
+	}
+	
+	second_in_command = {
+		
+		ala_mark_begich = {
+			allowed = {
+					original_tag = ALA
+			}
+			available = {
+				OR = {
+					has_government = nationalist
+					has_government = centrist
+					has_government = national_conservative
+				}
+				cannot_change_second_in_command = no
+			}
+			cancel_if_invalid = no
+			traits = {
+				power_hungry_demagogue
+			}
+		}
+	}
+	
+	foreign_minister = {
+		
+		ala_lisa_murkowski = {
+			allowed = {
+				OR = {
+					original_tag = ALA
+				}
+			}
+			available = {
+				OR = {
+					has_government = nationalist
+					has_government = centrist
+					has_government = national_conservative
+				}
+			}
+			traits = {
+				great_compromiser
+			}
+		}
+	}
+	
+	industry_minister = {
+		
+		ala_doug_vincent-lang = {
+			allowed = {
+				OR = {
+					original_tag = ALA
+				}
+			}
+			available = {
+				OR = {
+					has_government = nationalist
+					has_government = centrist
+					has_government = national_conservative
+				}
+			}
+			traits = {
+				libertarian_capitalist
+			}
+		}
+	}
+	
+	national_security_minister = {
+		
+		ala_peter_b_andrysiak = {
+			allowed = {
+				OR = {
+					original_tag = ALA
+				}
+			}
+			available = {
+				OR = {
+					has_government = nationalist
+					has_government = centrist
+					has_government = national_conservative
+				}
+			}
+			traits = {
+				efficient_sociopath
+			}
+		}
+	}
+	
+	intelligence_minister = {
+		
+		ala_dan_sullivan = {
+			allowed = {
+				OR = {
+					original_tag = ALA
+				}
+			}
+			available = {
+				OR = {
+					has_government = nationalist
+					has_government = centrist
+					has_government = national_conservative
+				}
+			}
+			traits = {
+				politician_with_connections
+			}
+		}
+	}
+
+}
