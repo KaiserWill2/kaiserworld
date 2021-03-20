@@ -19,7 +19,18 @@ focus_tree = {
 
 		}
 
+	}
+	focus = {
+		id = SCO_The_Kingdom_Of_Scotland
+		icon = tear_treaty
+		cost = 5
+		x = 6
+		y = 0
+		completion_reward = {
 
-
+		}
 
 	}
+
+
+}
