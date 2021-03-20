@@ -51,7 +51,7 @@ ideas = {
 			
 			removal_cost = -1
 
-			picture = idea_war_ready
+			picture = idea_north_sea_oil
 			
 			modifier = {
 				fuel_gain_factor_from_states = 0.75
@@ -70,7 +70,7 @@ ideas = {
 			
 			removal_cost = -1
 
-			picture = idea_war_ready
+			picture = idea_the_failed_economy
 			
 			modifier = {
 				production_factory_max_efficiency_factor = -0.02
