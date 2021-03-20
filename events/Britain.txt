@@ -1,4 +1,4 @@
-add_namespace = britain
+add_namespace = England
 ##Grey Tuesday
 country_event = {
 	id = England.1
