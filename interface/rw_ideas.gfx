@@ -66,7 +66,18 @@ spriteTypes = {
 		name = "GFX_idea_idea_memories_of_Michael_foot"
 		texturefile = "gfx/interface/ideas/ENG/idea_memories_of_Michael_foot.dds"
 	}
-	
+	spriteType = {
+		name = "GFX_idea_idea_war_ready"
+		texturefile = "gfx/interface/ideas/ENG/idea_war_ready.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_idea_north_sea_oil"
+		texturefile = "gfx/interface/ideas/ENG/idea_north_sea_oil.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_idea_the_failed_economy"
+		texturefile = "gfx/interface/ideas/ENG/idea_the_failed_economy.dds"
+	}
 	###Unsorted
 	spriteType = {
 		name = "GFX_idea_idea_eu_member"

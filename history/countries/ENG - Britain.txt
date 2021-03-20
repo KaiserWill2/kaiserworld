@@ -11,10 +11,10 @@ if = {
 }
 
 add_ideas = {
-    idea_queen_elizabeth_ii
-	idea_bastion_of_european_democracy
-	idea_prime_minister_owen
-	idea_scottish_tensions
+	idea_memories_of_Michael_foot
+	idea_war_ready
+	idea_north_sea_oil
+	idea_the_failed_economy
 }
 
 set_research_slots = 4

@@ -95,7 +95,14 @@ spriteTypes = {
 		name = "Wales_Is_Ours_UOB"
 		texturefile = "gfx/interface/goals/eng/Wales_Is_Ours_UOB.dds"			
 		}
-	
+		SpriteType = {
+		name = "england_and_northkorea_relations_OUB"
+		texturefile = "gfx/interface/goals/eng/england_and_northkorea_relations_OUB.dds"			
+		}
+		SpriteType = {
+		name = "blair_is_watching"
+		texturefile = "gfx/interface/goals/eng/blair_is_watching.dds"			
+		}	
 
 
 	#### OTHER ####
