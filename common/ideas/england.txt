@@ -21,7 +21,7 @@ ideas = {
 			}
 		}		
 
-	}
+	
 	country = {
 			
 		idea_war_ready= {
@@ -41,7 +41,8 @@ ideas = {
 				
 			}
 		}
-	}		
+	}	
+	
 	country = {
 			
 		idea_north_sea_oil= {
