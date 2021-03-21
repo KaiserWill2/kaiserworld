@@ -4,7 +4,7 @@ oob = "ALA_2000"
 
 set_research_slots = 2
 set_convoys = 500
-set_stability = 0.5
+set_stability = -0.1
 set_war_support = 0.2
 
 add_ideas = {
@@ -14,6 +14,11 @@ add_ideas = {
 	idea_ala_racial_tension
 	idea_ala_crumbling_infrastructure
 	idea_ala_nonexistent_economy
+	ala_mark_begich
+	ala_lisa_murkowski
+	ala_doug_vincent-lang
+	ala_peter_b_andrysiak
+	ala_dan_sullivan
 }
 
 
@@ -119,6 +124,7 @@ create_country_leader = {
 
 create_country_leader = {
 	name = "Sarah Palin"
+	desc = "POLITICS_SARAH_PALIN_DESC"
 	picture = "Portrait_ALA_Sarah_Palin_2.tga"
 	ideology = nationalist_ideology
 }
