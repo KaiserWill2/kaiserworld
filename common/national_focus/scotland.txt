@@ -13,7 +13,7 @@ focus_tree = {
 		id = SCO_The_Kingdom_Of_Scotland
 		icon = tear_treaty
 		cost = 5
-		x = 6
+		x = 16
 		y = 0
 		completion_reward = {
 
@@ -21,11 +21,231 @@ focus_tree = {
 
 	}
 	focus = {
-		id = SCO_The_Kingdom_Of_Scotland
+		id = SCO_The_Nation
 		icon = tear_treaty
 		cost = 5
-		x = 6
-		y = 0
+		x = 16
+		y = 1
+		prerequisite = { focus = SCO_The_Kingdom_Of_Scotland  }
+		completion_reward = {
+
+		}
+
+	}
+	focus = {
+		id = SCO_The_Maple_Leaf
+		icon = tear_treaty
+		cost = 5
+		x = 15
+		y = 2
+		prerequisite = { focus = SCO_The_Nation  }
+		completion_reward = {
+
+		}
+
+	}
+	focus = {
+		id = SCO_Working_With_Canadian_Businesses
+		icon = tear_treaty
+		cost = 5
+		x = 14
+		y = 3
+		prerequisite = { focus = SCO_The_Maple_Leaf  }
+		completion_reward = {
+
+		}
+
+	}
+	focus = {
+		id = SCO_The_New_Trade_Route
+		icon = tear_treaty
+		cost = 5
+		x = 14
+		y = 4
+		prerequisite = { focus = SCO_Working_With_Canadian_Businesses }
+		completion_reward = {
+
+		}
+
+	}
+	focus = {
+		id = SCO_Security_Partnership
+		icon = tear_treaty
+		cost = 5
+		x = 16
+		y = 3
+		prerequisite = { focus = SCO_The_Maple_Leaf  }
+		completion_reward = {
+
+		}
+
+	}
+	focus = {
+		id = SCO_Canada_Weapon_Factory
+		icon = tear_treaty
+		cost = 5
+		x = 16
+		y = 4
+		prerequisite = { focus = SCO_Security_Partnership  }
+		completion_reward = {
+
+		}
+
+	}
+	focus = {
+		id = SCO_The_Bernie_Direction
+		icon = tear_treaty
+		cost = 5
+		x = 18
+		y = 2
+		prerequisite = { focus = SCO_The_Nation  }
+		completion_reward = {
+
+		}
+
+	}
+	focus = {
+		id = SCO_The_Army
+		icon = tear_treaty
+		cost = 5
+		x = 22
+		y = 1
+		prerequisite = { focus = SCO_The_Kingdom_Of_Scotland  }
+		completion_reward = {
+
+		}
+
+	}
+	focus = {
+		id = SCO_The_Scottish_Borders
+		icon = tear_treaty
+		cost = 5
+		x = 20
+		y = 2
+		prerequisite = { focus = SCO_The_Army  }
+		completion_reward = {
+
+		}
+
+	}
+	focus = {
+		id = SCO_Protect_Our_Lands
+		icon = tear_treaty
+		cost = 5
+		x = 24
+		y = 2
+		prerequisite = { focus = SCO_The_Army  }
+		completion_reward = {
+
+		}
+
+	}
+	focus = {
+		id = SCO_The_People
+		icon = tear_treaty
+		cost = 5
+		x = 10
+		y = 1
+		prerequisite = { focus = SCO_The_Kingdom_Of_Scotland  }
+		completion_reward = {
+
+		}
+
+	}
+	focus = {
+		id = SCO_Fighting_Poverty
+		icon = tear_treaty
+		cost = 5
+		x = 8	
+		y = 2
+		prerequisite = { focus = SCO_The_People  }
+		completion_reward = {
+
+		}
+
+	}
+	focus = {
+		id = SCO_Service_To_The_People
+		icon = tear_treaty
+		cost = 5
+		x = 8	
+		y = 3
+		prerequisite = { focus = SCO_Fighting_Poverty  }
+		completion_reward = {
+
+		}
+
+	}
+	focus = {
+		id = SCO_Accept_English_Refugees
+		icon = tear_treaty
+		cost = 5
+		x = 10	
+		y = 3
+		prerequisite = { focus = SCO_The_People  }
+		completion_reward = {
+		}
+		}
+		focus = {
+			id = SCO_Scottish_Education
+			icon = tear_treaty
+			cost = 5
+			x = 9	
+			y = 4
+			prerequisite = { focus = SCO_Service_To_The_People  }
+			prerequisite = { focus = SCO_Accept_English_Refugees  }
+			completion_reward = {
+	
+			}
+	
+		}
+
+	
+	focus = {
+		id = SCO_Better_Welfare
+		icon = tear_treaty
+		cost = 5
+		x = 12
+		y = 2
+		prerequisite = { focus = SCO_The_People  }
+		completion_reward = {
+
+		}
+
+	}
+	focus = {
+		id = SCO_Scotland_For_All
+		icon = tear_treaty
+		cost = 5
+		x = 12
+		y = 3
+		prerequisite = { focus = SCO_Better_Welfare  }
+		completion_reward = {
+
+		}
+
+	}
+	focus = {
+		id = SCO_New_Jobs_sector
+		icon = tear_treaty
+		cost = 5
+		x = 11
+		y = 4
+		prerequisite = { focus = SCO_Scotland_For_All  }
+		prerequisite = { focus = SCO_Accept_English_Refugees  }
+		completion_reward = {
+
+		}
+
+	}
+	focus = {
+		id = SCO_Highland_Resources
+		icon = tear_treaty
+		cost = 5
+		x = 10
+		y = 5
+		prerequisite = { focus = SCO_Scottish_Education  }
+		prerequisite = { focus = SCO_New_Jobs_sector  }
 		completion_reward = {
 
 		}
