@@ -553,4 +553,175 @@ focus_tree = {
 
 
 
+
+
+
+
+
+
+
+
+	focus = {
+		id = SCO_The_King_Is_In_His_Counting_House
+		icon = tear_treaty
+		cost = 5
+		x = 45
+		y = 0
+		completion_reward = {
+
+		}
+
+	}
+	focus = {
+		id = SCO_The_Welsh_Appointment 
+		icon = tear_treaty
+		cost = 5
+		x = 45
+		y = 1
+		prerequisite = { focus = SCO_The_King_Is_In_His_Counting_House  }
+		completion_reward = {
+
+		}
+
+	}
+	focus = {
+		id = SCO_The_Dragon_And_The_Bagpipes 
+		icon = tear_treaty
+		cost = 5
+		x = 43
+		y = 2
+		prerequisite = { focus = SCO_The_Welsh_Appointment  }
+		completion_reward = {
+
+		}
+
+	}
+	focus = {
+		id = SCO_A_Shot_Heard_From_The_Highlands
+		icon = tear_treaty
+		cost = 5
+		x = 45
+		y = 2
+		prerequisite = { focus = SCO_The_Welsh_Appointment  }
+		completion_reward = {
+
+		}
+
+	}
+	focus = {
+		id = SCO_The_Coup
+		icon = tear_treaty
+		cost = 5
+		x = 47
+		y = 2
+		prerequisite = { focus = SCO_The_Welsh_Appointment  }
+		completion_reward = {
+
+		}
+
+	}
+	focus = {
+		id = SCO_Shared_Parliament
+		icon = tear_treaty
+		cost = 5
+		x = 44
+		y = 3
+		prerequisite = { focus = SCO_The_Dragon_And_The_Bagpipes  }
+		prerequisite = { focus = SCO_A_Shot_Heard_From_The_Highlands  }
+		completion_reward = {
+
+		}
+
+	}
+	focus = {
+		id = SCO_New_Economy_Plan
+		icon = tear_treaty
+		cost = 5
+		x = 42
+		y = 4
+		prerequisite = { focus = SCO_Shared_Parliament  }
+		completion_reward = {
+
+		}
+
+	}
+	focus = {
+		id = SCO_A_New_National_Language
+		icon = tear_treaty
+		cost = 5
+		x = 43
+		y = 5
+		prerequisite = { focus = SCO_New_Economy_Plan  }
+		completion_reward = {
+
+		}
+
+	}
+	focus = {
+		id = SCO_Arrest_Far_Left_Members
+		icon = tear_treaty
+		cost = 5
+		x = 46
+		y = 3
+		prerequisite = { focus = SCO_A_Shot_Heard_From_The_Highlands  }
+		prerequisite = { focus = SCO_The_Coup  }
+		completion_reward = {
+
+		}
+
+	}
+	focus = {
+		id = SCO_The_Question_Of_Solidarity_Movement?
+		icon = tear_treaty
+		cost = 5
+		x = 48
+		y = 4
+		prerequisite = { focus = SCO_Arrest_Far_Left_Members  }
+		completion_reward = {
+
+		}
+
+	}
+	focus = {
+		id = SCO_A_New_Republic
+		icon = tear_treaty
+		cost = 5
+		x = 47
+		y = 5
+		prerequisite = { focus = SCO_The_Question_Of_Solidarity_Movement?  }
+		completion_reward = {
+
+		}
+
+	}
+	focus = {
+		id = SCO_Our_German_Friends
+		icon = tear_treaty
+		cost = 5
+		x = 45
+		y = 6
+		prerequisite = { focus = SCO_A_New_Republic  }
+		prerequisite = { focus =  SCO_A_New_National_Language }
+		completion_reward = {
+
+		}
+
+	}
+	focus = {
+		id = SCO_The_English_Leaks
+		icon = tear_treaty
+		cost = 5
+		x = 45
+		y = 7
+		prerequisite = { focus = SCO_Our_German_Friends }
+		completion_reward = {
+
+		}
+
+	}
+
+
+
+
+
 }
