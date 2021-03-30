@@ -2008,398 +2008,398 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = "GFX_idea_commonwealth_germaine_greer"
-		texturefile = "gfx/interface/ideas/advisors/commonwealth/commonwealth_germaine_greer.dds"
+		name = "GFX_idea_usa_germaine_greer"
+		texturefile = "gfx/interface/ideas/advisors/usa/usa_germaine_greer.dds"
 	}
 
 	spriteType = {
-		name = "GFX_idea_commonwealth_daniel_ellsberg"
-		texturefile = "gfx/interface/ideas/advisors/commonwealth/commonwealth_daniel_ellsberg.dds"
+		name = "GFX_idea_usa_daniel_ellsberg"
+		texturefile = "gfx/interface/ideas/advisors/usa/usa_daniel_ellsberg.dds"
 	}
 
 	spriteType = {
-		name = "GFX_idea_commonwealth_robert_reich"
-		texturefile = "gfx/interface/ideas/advisors/commonwealth/commonwealth_robert_reich.dds"
+		name = "GFX_idea_usa_robert_reich"
+		texturefile = "gfx/interface/ideas/advisors/usa/usa_robert_reich.dds"
 	}
 
 	spriteType = {
-		name = "GFX_idea_commonwealth_tom_perez"
-		texturefile = "gfx/interface/ideas/advisors/commonwealth/commonwealth_tom_perez.dds"
+		name = "GFX_idea_usa_tom_perez"
+		texturefile = "gfx/interface/ideas/advisors/usa/usa_tom_perez.dds"
 	}
 
 	spriteType = {
-		name = "GFX_idea_commonwealth_chris_hedges"
-		texturefile = "gfx/interface/ideas/advisors/commonwealth/commonwealth_chris_hedges.dds"
+		name = "GFX_idea_usa_chris_hedges"
+		texturefile = "gfx/interface/ideas/advisors/usa/usa_chris_hedges.dds"
 	}
 
 	spriteType = {
-		name = "GFX_idea_commonwealth_glenn_greenwald"
-		texturefile = "gfx/interface/ideas/advisors/commonwealth/commonwealth_glenn_greenwald.dds"
+		name = "GFX_idea_usa_glenn_greenwald"
+		texturefile = "gfx/interface/ideas/advisors/usa/usa_glenn_greenwald.dds"
 	}
 
 	spriteType = {
-		name = "GFX_idea_commonwealth_richard_wolff"
-		texturefile = "gfx/interface/ideas/advisors/commonwealth/commonwealth_richard_wolff.dds"
+		name = "GFX_idea_usa_richard_wolff"
+		texturefile = "gfx/interface/ideas/advisors/usa/usa_richard_wolff.dds"
 	}
 
 	spriteType = {
-		name = "GFX_idea_commonwealth_ralph_nader"
-		texturefile = "gfx/interface/ideas/advisors/commonwealth/commonwealth_ralph_nader.dds"
+		name = "GFX_idea_usa_ralph_nader"
+		texturefile = "gfx/interface/ideas/advisors/usa/usa_ralph_nader.dds"
 	}
 
 	spriteType = {
-		name = "GFX_idea_commonwealth_john_kerry"
-		texturefile = "gfx/interface/ideas/advisors/commonwealth/commonwealth_john_kerry.dds"
+		name = "GFX_idea_usa_john_kerry"
+		texturefile = "gfx/interface/ideas/advisors/usa/usa_john_kerry.dds"
 	}
 
 	spriteType = {
-		name = "GFX_idea_commonwealth_richard_ojeda"
-		texturefile = "gfx/interface/ideas/advisors/commonwealth/commonwealth_richard_ojeda.dds"
+		name = "GFX_idea_usa_richard_ojeda"
+		texturefile = "gfx/interface/ideas/advisors/usa/usa_richard_ojeda.dds"
 	}
 
 	spriteType = {
-		name = "GFX_idea_commonwealth_david_graeber"
-		texturefile = "gfx/interface/ideas/advisors/commonwealth/commonwealth_david_graeber.dds"
+		name = "GFX_idea_usa_david_graeber"
+		texturefile = "gfx/interface/ideas/advisors/usa/usa_david_graeber.dds"
 	}
 
 	spriteType = {
-		name = "GFX_idea_commonwealth_edward_s_herman"
-		texturefile = "gfx/interface/ideas/advisors/commonwealth/commonwealth_edward_s_herman.dds"
+		name = "GFX_idea_usa_edward_s_herman"
+		texturefile = "gfx/interface/ideas/advisors/usa/usa_edward_s_herman.dds"
 	}
 
 	spriteType = {
-		name = "GFX_idea_commonwealth_howie_hawkins"
-		texturefile = "gfx/interface/ideas/advisors/commonwealth/commonwealth_howie_hawkins.dds"
+		name = "GFX_idea_usa_howie_hawkins"
+		texturefile = "gfx/interface/ideas/advisors/usa/usa_howie_hawkins.dds"
 	}
 
 	spriteType = {
-		name = "GFX_idea_commonwealth_ward_churchill"
-		texturefile = "gfx/interface/ideas/advisors/commonwealth/commonwealth_ward_churchill.dds"
+		name = "GFX_idea_usa_ward_churchill"
+		texturefile = "gfx/interface/ideas/advisors/usa/usa_ward_churchill.dds"
 	}
 
 	spriteType = {
-		name = "GFX_idea_commonwealth_neil_tyson"
-		texturefile = "gfx/interface/ideas/advisors/commonwealth/commonwealth_neil_tyson.dds"
+		name = "GFX_idea_usa_neil_tyson"
+		texturefile = "gfx/interface/ideas/advisors/usa/usa_neil_tyson.dds"
 	}
 
 	spriteType = {
-		name = "GFX_idea_commonwealth_peter_diamondstone"
-		texturefile = "gfx/interface/ideas/advisors/commonwealth/commonwealth_peter_diamondstone.dds"
+		name = "GFX_idea_usa_peter_diamondstone"
+		texturefile = "gfx/interface/ideas/advisors/usa/usa_peter_diamondstone.dds"
 	}
 
 	spriteType = {
-		name = "GFX_idea_commonwealth_bill_mckibben"
-		texturefile = "gfx/interface/ideas/advisors/commonwealth/commonwealth_bill_mckibben.dds"
+		name = "GFX_idea_usa_bill_mckibben"
+		texturefile = "gfx/interface/ideas/advisors/usa/usa_bill_mckibben.dds"
 	}
 
 	spriteType = {
-		name = "GFX_idea_commonwealth_john_holdren"
-		texturefile = "gfx/interface/ideas/advisors/commonwealth/commonwealth_john_holdren.dds"
+		name = "GFX_idea_usa_john_holdren"
+		texturefile = "gfx/interface/ideas/advisors/usa/usa_john_holdren.dds"
 	}
 
 	spriteType = {
-		name = "GFX_idea_commonwealth_eric_holder"
-		texturefile = "gfx/interface/ideas/advisors/commonwealth/commonwealth_eric_holder.dds"
+		name = "GFX_idea_usa_eric_holder"
+		texturefile = "gfx/interface/ideas/advisors/usa/usa_eric_holder.dds"
 	}
 
 	spriteType = {
-		name = "GFX_idea_commonwealth_richard_daley"
-		texturefile = "gfx/interface/ideas/advisors/commonwealth/commonwealth_richard_daley.dds"
+		name = "GFX_idea_usa_richard_daley"
+		texturefile = "gfx/interface/ideas/advisors/usa/usa_richard_daley.dds"
 	}
 
 	spriteType = {
-		name = "GFX_idea_commonwealth_richard_trumka"
-		texturefile = "gfx/interface/ideas/advisors/commonwealth/commonwealth_richard_trumka.dds"
+		name = "GFX_idea_usa_richard_trumka"
+		texturefile = "gfx/interface/ideas/advisors/usa/usa_richard_trumka.dds"
 	}
 
 	spriteType = {
-		name = "GFX_idea_commonwealth_howard_dean"
-		texturefile = "gfx/interface/ideas/advisors/commonwealth/commonwealth_howard_dean.dds"
+		name = "GFX_idea_usa_howard_dean"
+		texturefile = "gfx/interface/ideas/advisors/usa/usa_howard_dean.dds"
 	}
 
 	spriteType = {
-		name = "GFX_idea_commonwealth_jack_reed"
-		texturefile = "gfx/interface/ideas/advisors/commonwealth/commonwealth_jack_reed.dds"
+		name = "GFX_idea_usa_jack_reed"
+		texturefile = "gfx/interface/ideas/advisors/usa/usa_jack_reed.dds"
 	}
 
 	spriteType = {
-		name = "GFX_idea_commonwealth_edward_markey"
-		texturefile = "gfx/interface/ideas/advisors/commonwealth/commonwealth_edward_markey.dds"
+		name = "GFX_idea_usa_edward_markey"
+		texturefile = "gfx/interface/ideas/advisors/usa/usa_edward_markey.dds"
 	}
 
 	spriteType = {
-		name = "GFX_idea_commonwealth_elaine_bernard"
-		texturefile = "gfx/interface/ideas/advisors/commonwealth/commonwealth_elaine_bernard.dds"
+		name = "GFX_idea_usa_elaine_bernard"
+		texturefile = "gfx/interface/ideas/advisors/usa/usa_elaine_bernard.dds"
 	}
 
 	spriteType = {
-		name = "GFX_idea_commonwealth_paul_krugman"
-		texturefile = "gfx/interface/ideas/advisors/commonwealth/commonwealth_paul_krugman.dds"
+		name = "GFX_idea_usa_paul_krugman"
+		texturefile = "gfx/interface/ideas/advisors/usa/usa_paul_krugman.dds"
 	}
 
 	spriteType = {
-		name = "GFX_idea_commonwealth_andrew_cuomo"
-		texturefile = "gfx/interface/ideas/advisors/commonwealth/commonwealth_andrew_cuomo.dds"
+		name = "GFX_idea_usa_andrew_cuomo"
+		texturefile = "gfx/interface/ideas/advisors/usa/usa_andrew_cuomo.dds"
 	}
 
 	spriteType = {
-		name = "GFX_idea_commonwealth_chris_dodd"
-		texturefile = "gfx/interface/ideas/advisors/commonwealth/commonwealth_chris_dodd.dds"
+		name = "GFX_idea_usa_chris_dodd"
+		texturefile = "gfx/interface/ideas/advisors/usa/usa_chris_dodd.dds"
 	}
 
 	spriteType = {
-		name = "GFX_idea_commonwealth_joe_lieberman"
-		texturefile = "gfx/interface/ideas/advisors/commonwealth/commonwealth_joe_lieberman.dds"
+		name = "GFX_idea_usa_joe_lieberman"
+		texturefile = "gfx/interface/ideas/advisors/usa/usa_joe_lieberman.dds"
 	}
 
 	spriteType = {
-		name = "GFX_idea_commonwealth_richard_blumenthal"
-		texturefile = "gfx/interface/ideas/advisors/commonwealth/commonwealth_richard_blumenthal.dds"
+		name = "GFX_idea_usa_richard_blumenthal"
+		texturefile = "gfx/interface/ideas/advisors/usa/usa_richard_blumenthal.dds"
 	}
 
 	spriteType = {
-		name = "GFX_idea_commonwealth_harold_koh"
-		texturefile = "gfx/interface/ideas/advisors/commonwealth/commonwealth_harold_koh.dds"
+		name = "GFX_idea_usa_harold_koh"
+		texturefile = "gfx/interface/ideas/advisors/usa/usa_harold_koh.dds"
 	}
 
 	spriteType = {
-		name = "GFX_idea_commonwealth_william_weld"
-		texturefile = "gfx/interface/ideas/advisors/commonwealth/commonwealth_william_weld.dds"
+		name = "GFX_idea_usa_william_weld"
+		texturefile = "gfx/interface/ideas/advisors/usa/usa_william_weld.dds"
 	}
 
 	spriteType = {
-		name = "GFX_idea_commonwealth_charles_baker"
-		texturefile = "gfx/interface/ideas/advisors/commonwealth/commonwealth_charles_baker.dds"
+		name = "GFX_idea_usa_charles_baker"
+		texturefile = "gfx/interface/ideas/advisors/usa/usa_charles_baker.dds"
 	}
 
 	spriteType = {
-		name = "GFX_idea_commonwealth_philip_scott"
-		texturefile = "gfx/interface/ideas/advisors/commonwealth/commonwealth_philip_scott.dds"
+		name = "GFX_idea_usa_philip_scott"
+		texturefile = "gfx/interface/ideas/advisors/usa/usa_philip_scott.dds"
 	}
 
 	spriteType = {
-		name = "GFX_idea_commonwealth_david_zuckerman"
-		texturefile = "gfx/interface/ideas/advisors/commonwealth/commonwealth_david_zuckerman.dds"
+		name = "GFX_idea_usa_david_zuckerman"
+		texturefile = "gfx/interface/ideas/advisors/usa/usa_david_zuckerman.dds"
 	}
 
 	spriteType = {
-		name = "GFX_idea_commonwealth_joe_sestak"
-		texturefile = "gfx/interface/ideas/advisors/commonwealth/commonwealth_joe_sestak.dds"
+		name = "GFX_idea_usa_joe_sestak"
+		texturefile = "gfx/interface/ideas/advisors/usa/usa_joe_sestak.dds"
 	}
 
 	spriteType = {
-		name = "GFX_idea_commonwealth_john_kasich"
-		texturefile = "gfx/interface/ideas/advisors/commonwealth/commonwealth_john_kasich.dds"
+		name = "GFX_idea_usa_john_kasich"
+		texturefile = "gfx/interface/ideas/advisors/usa/usa_john_kasich.dds"
 	}
 
 	spriteType = {
-		name = "GFX_idea_commonwealth_eleanor_norton"
-		texturefile = "gfx/interface/ideas/advisors/commonwealth/commonwealth_eleanor_norton.dds"
+		name = "GFX_idea_usa_eleanor_norton"
+		texturefile = "gfx/interface/ideas/advisors/usa/usa_eleanor_norton.dds"
 	}
 
 	spriteType = {
-		name = "GFX_idea_commonwealth_danny_davis"
-		texturefile = "gfx/interface/ideas/advisors/commonwealth/commonwealth_danny_davis.dds"
+		name = "GFX_idea_usa_danny_davis"
+		texturefile = "gfx/interface/ideas/advisors/usa/usa_danny_davis.dds"
 	}
 
 	spriteType = {
-		name = "GFX_idea_commonwealth_andrew_cuomo"
-		texturefile = "gfx/interface/ideas/advisors/commonwealth/commonwealth_andrew_cuomo.dds"
+		name = "GFX_idea_usa_andrew_cuomo"
+		texturefile = "gfx/interface/ideas/advisors/usa/usa_andrew_cuomo.dds"
 	}
 
 	spriteType = {
-		name = "GFX_idea_commonwealth_peter_welch"
-		texturefile = "gfx/interface/ideas/advisors/commonwealth/commonwealth_peter_welch.dds"
+		name = "GFX_idea_usa_peter_welch"
+		texturefile = "gfx/interface/ideas/advisors/usa/usa_peter_welch.dds"
 	}
 
 	spriteType = {
-		name = "GFX_idea_commonwealth_patrick_leahy"
-		texturefile = "gfx/interface/ideas/advisors/commonwealth/commonwealth_patrick_leahy.dds"
+		name = "GFX_idea_usa_barack_obama"
+		texturefile = "gfx/interface/ideas/advisors/usa/usa_barack_obama.dds"
 	}
 
 	spriteType = {
-		name = "GFX_idea_commonwealth_charles_barron"
-		texturefile = "gfx/interface/ideas/advisors/commonwealth/commonwealth_charles_barron.dds"
+		name = "GFX_idea_usa_charles_barron"
+		texturefile = "gfx/interface/ideas/advisors/usa/usa_charles_barron.dds"
 	}
 
 	spriteType = {
-		name = "GFX_idea_commonwealth_jesse_jackson"
-		texturefile = "gfx/interface/ideas/advisors/commonwealth/commonwealth_jesse_jackson.dds"
+		name = "GFX_idea_usa_jesse_jackson"
+		texturefile = "gfx/interface/ideas/advisors/usa/usa_jesse_jackson.dds"
 	}
 
 	spriteType = {
-		name = "GFX_idea_commonwealth_nina_turner"
-		texturefile = "gfx/interface/ideas/advisors/commonwealth/commonwealth_nina_turner.dds"
+		name = "GFX_idea_usa_nina_turner"
+		texturefile = "gfx/interface/ideas/advisors/usa/usa_nina_turner.dds"
 	}
 
 	spriteType = {
-		name = "GFX_idea_commonwealth_al_sharpton"
-		texturefile = "gfx/interface/ideas/advisors/commonwealth/commonwealth_al_sharpton.dds"
+		name = "GFX_idea_usa_al_sharpton"
+		texturefile = "gfx/interface/ideas/advisors/usa/usa_al_sharpton.dds"
 	}
 
 	spriteType = {
-		name = "GFX_idea_commonwealth_rashida_tlaib"
-		texturefile = "gfx/interface/ideas/advisors/commonwealth/commonwealth_rashida_tlaib.dds"
+		name = "GFX_idea_usa_rashida_tlaib"
+		texturefile = "gfx/interface/ideas/advisors/usa/usa_rashida_tlaib.dds"
 	}
 
 	spriteType = {
-		name = "GFX_idea_commonwealth_jesus_garcia"
-		texturefile = "gfx/interface/ideas/advisors/commonwealth/commonwealth_jesus_garcia.dds"
+		name = "GFX_idea_usa_jesus_garcia"
+		texturefile = "gfx/interface/ideas/advisors/usa/usa_jesus_garcia.dds"
 	}
 
 	spriteType = {
-		name = "GFX_idea_commonwealth_rosa_delauro"
-		texturefile = "gfx/interface/ideas/advisors/commonwealth/commonwealth_rosa_delauro.dds"
+		name = "GFX_idea_usa_rosa_delauro"
+		texturefile = "gfx/interface/ideas/advisors/usa/usa_rosa_delauro.dds"
 	}
 
 	spriteType = {
-		name = "GFX_idea_commonwealth_cory_booker"
-		texturefile = "gfx/interface/ideas/advisors/commonwealth/commonwealth_cory_booker.dds"
+		name = "GFX_idea_usa_cory_booker"
+		texturefile = "gfx/interface/ideas/advisors/usa/usa_cory_booker.dds"
 	}
 
 	spriteType = {
-		name = "GFX_idea_commonwealth_james_p_hoffa"
-		texturefile = "gfx/interface/ideas/advisors/commonwealth/commonwealth_james_p_hoffa.dds"
+		name = "GFX_idea_usa_james_p_hoffa"
+		texturefile = "gfx/interface/ideas/advisors/usa/usa_james_p_hoffa.dds"
 	}
 
 	spriteType = {
-		name = "GFX_idea_commonwealth_bob_king"
-		texturefile = "gfx/interface/ideas/advisors/commonwealth/commonwealth_bob_king.dds"
+		name = "GFX_idea_usa_bob_king"
+		texturefile = "gfx/interface/ideas/advisors/usa/usa_bob_king.dds"
 	}
 
 	spriteType = {
-		name = "GFX_idea_commonwealth_michio_kaku"
-		texturefile = "gfx/interface/ideas/advisors/commonwealth/commonwealth_michio_kaku.dds"
+		name = "GFX_idea_usa_michio_kaku"
+		texturefile = "gfx/interface/ideas/advisors/usa/usa_michio_kaku.dds"
 	}
 
 	spriteType = {
-		name = "GFX_idea_commonwealth_charles_coloumbe"
-		texturefile = "gfx/interface/ideas/advisors/commonwealth/commonwealth_charles_coloumbe.dds"
+		name = "GFX_idea_usa_charles_coloumbe"
+		texturefile = "gfx/interface/ideas/advisors/usa/usa_charles_coloumbe.dds"
 	}
 
 	spriteType = {
-		name = "GFX_idea_commonwealth_lee_walter_congdon"
-		texturefile = "gfx/interface/ideas/advisors/commonwealth/commonwealth_lee_walter_congdon.dds"
+		name = "GFX_idea_usa_lee_walter_congdon"
+		texturefile = "gfx/interface/ideas/advisors/usa/usa_lee_walter_congdon.dds"
 	}
 
 	spriteType = {
-		name = "GFX_idea_commonwealth_paul_gottfried"
-		texturefile = "gfx/interface/ideas/advisors/commonwealth/commonwealth_paul_gottfried.dds"
+		name = "GFX_idea_usa_paul_gottfried"
+		texturefile = "gfx/interface/ideas/advisors/usa/usa_paul_gottfried.dds"
 	}
 
 	spriteType = {
-		name = "GFX_idea_commonwealth_william_s_lind"
-		texturefile = "gfx/interface/ideas/advisors/commonwealth/commonwealth_william_s_lind.dds"
+		name = "GFX_idea_usa_william_s_lind"
+		texturefile = "gfx/interface/ideas/advisors/usa/usa_william_s_lind.dds"
 	}
 
 	spriteType = {
-		name = "GFX_idea_commonwealth_curtis_yarvin"
-		texturefile = "gfx/interface/ideas/advisors/commonwealth/commonwealth_curtis_yarvin.dds"
+		name = "GFX_idea_usa_curtis_yarvin"
+		texturefile = "gfx/interface/ideas/advisors/usa/usa_curtis_yarvin.dds"
 	}
 
 	spriteType = {
-		name = "GFX_idea_commonwealth_thomas_fleming"
-		texturefile = "gfx/interface/ideas/advisors/commonwealth/commonwealth_thomas_fleming.dds"
+		name = "GFX_idea_usa_thomas_fleming"
+		texturefile = "gfx/interface/ideas/advisors/usa/usa_thomas_fleming.dds"
 	}
 
 	spriteType = {
-		name = "GFX_idea_commonwealth_sonya_sotomayor"
-		texturefile = "gfx/interface/ideas/advisors/commonwealth/commonwealth_sonya_sotomayor.dds"
+		name = "GFX_idea_usa_sonya_sotomayor"
+		texturefile = "gfx/interface/ideas/advisors/usa/usa_sonya_sotomayor.dds"
 	}
 
 	spriteType = {
-		name = "GFX_idea_commonwealth_mark_fitzgerald"
-		texturefile = "gfx/interface/ideas/advisors/commonwealth/commonwealth_mark_fitzgerald.dds"
+		name = "GFX_idea_usa_mark_fitzgerald"
+		texturefile = "gfx/interface/ideas/advisors/usa/usa_mark_fitzgerald.dds"
 	}
 
 	spriteType = {
-		name = "GFX_idea_commonwealth_thomas_menino"
-		texturefile = "gfx/interface/ideas/advisors/commonwealth/commonwealth_thomas_menino.dds"
+		name = "GFX_idea_usa_thomas_menino"
+		texturefile = "gfx/interface/ideas/advisors/usa/usa_thomas_menino.dds"
 	}
 
 	spriteType = {
-		name = "GFX_idea_commonwealth_rudy_giuliani"
-		texturefile = "gfx/interface/ideas/advisors/commonwealth/commonwealth_rudy_giuliani.dds"
+		name = "GFX_idea_usa_rudy_giuliani"
+		texturefile = "gfx/interface/ideas/advisors/usa/usa_rudy_giuliani.dds"
 	}
 
 	spriteType = {
-		name = "GFX_idea_commonwealth_military_triumvirate"
-		texturefile = "gfx/interface/ideas/advisors/commonwealth/commonwealth_military_triumvirate.dds"
+		name = "GFX_idea_usa_military_triumvirate"
+		texturefile = "gfx/interface/ideas/advisors/usa/usa_military_triumvirate.dds"
 	}
 
 	spriteType = {
-		name = "GFX_idea_commonwealth_joseph_dunford"
-		texturefile = "gfx/interface/ideas/advisors/commonwealth/commonwealth_joseph_dunford.dds"
+		name = "GFX_idea_usa_joseph_dunford"
+		texturefile = "gfx/interface/ideas/advisors/usa/usa_joseph_dunford.dds"
 	}
 
 	spriteType = {
-		name = "GFX_idea_commonwealth_alan_keyes"
-		texturefile = "gfx/interface/ideas/advisors/commonwealth/commonwealth_alan_keyes.dds"
+		name = "GFX_idea_usa_alan_keyes"
+		texturefile = "gfx/interface/ideas/advisors/usa/usa_alan_keyes.dds"
 	}
 
 	spriteType = {
-		name = "GFX_idea_commonwealth_james_mcconville"
-		texturefile = "gfx/interface/ideas/advisors/commonwealth/commonwealth_james_mcconville.dds"
+		name = "GFX_idea_usa_james_mcconville"
+		texturefile = "gfx/interface/ideas/advisors/usa/usa_james_mcconville.dds"
 	}
 
 	spriteType = {
-		name = "GFX_idea_commonwealth_robert_kennedy"
-		texturefile = "gfx/interface/ideas/advisors/commonwealth/commonwealth_robert_kennedy.dds"
+		name = "GFX_idea_usa_russ_feingold"
+		texturefile = "gfx/interface/ideas/advisors/usa/usa_russ_feingold.dds"
 	}
 
 	spriteType = {
-		name = "GFX_idea_commonwealth_joe_kennedy_jr"
-		texturefile = "gfx/interface/ideas/advisors/commonwealth/commonwealth_joe_kennedy_jr.dds"
+		name = "GFX_idea_usa_joe_kennedy_jr"
+		texturefile = "gfx/interface/ideas/advisors/usa/usa_joe_kennedy_jr.dds"
 	}
 
 	spriteType = {
-		name = "GFX_idea_commonwealth_john_f_campbell"
-		texturefile = "gfx/interface/ideas/advisors/commonwealth/commonwealth_john_f_campbell.dds"
+		name = "GFX_idea_usa_john_f_campbell"
+		texturefile = "gfx/interface/ideas/advisors/usa/usa_john_f_campbell.dds"
 	}
 
 	spriteType = {
-		name = "GFX_idea_commonwealth_mark_rockefeller"
-		texturefile = "gfx/interface/ideas/advisors/commonwealth/commonwealth_mark_rockefeller.dds"
+		name = "GFX_idea_usa_mark_rockefeller"
+		texturefile = "gfx/interface/ideas/advisors/usa/usa_mark_rockefeller.dds"
 	}
 
 	spriteType = {
-		name = "GFX_idea_commonwealth_douglas_mcbride"
-		texturefile = "gfx/interface/ideas/advisors/commonwealth/commonwealth_douglas_mcbride.dds"
+		name = "GFX_idea_usa_douglas_mcbride"
+		texturefile = "gfx/interface/ideas/advisors/usa/usa_douglas_mcbride.dds"
 	}
 
 	spriteType = {
-		name = "GFX_idea_commonwealth_douglas_kennedy"
-		texturefile = "gfx/interface/ideas/advisors/commonwealth/commonwealth_douglas_kennedy.dds"
+		name = "GFX_idea_usa_douglas_kennedy"
+		texturefile = "gfx/interface/ideas/advisors/usa/usa_douglas_kennedy.dds"
 	}
 
 	spriteType = {
-		name = "GFX_idea_commonwealth_gregory_g_johnson"
-		texturefile = "gfx/interface/ideas/advisors/commonwealth/commonwealth_gregory_g_johnson.dds"
+		name = "GFX_idea_usa_gregory_g_johnson"
+		texturefile = "gfx/interface/ideas/advisors/usa/usa_gregory_g_johnson.dds"
 	}
 
 	spriteType = {
-		name = "GFX_idea_commonwealth_darren_mcdew"
-		texturefile = "gfx/interface/ideas/advisors/commonwealth/commonwealth_darren_mcdew.dds"
+		name = "GFX_idea_usa_darren_mcdew"
+		texturefile = "gfx/interface/ideas/advisors/usa/usa_darren_mcdew.dds"
 	}
 
 	spriteType = {
-		name = "GFX_idea_commonwealth_david_petraeus"
-		texturefile = "gfx/interface/ideas/advisors/commonwealth/commonwealth_david_petraeus.dds"
+		name = "GFX_idea_usa_david_petraeus"
+		texturefile = "gfx/interface/ideas/advisors/usa/usa_david_petraeus.dds"
 	}
 
 	spriteType = {
-		name = "GFX_idea_commonwealth_sean_patrick_o_malley"
-		texturefile = "gfx/interface/ideas/advisors/commonwealth/commonwealth_sean_patrick_o_malley.dds"
+		name = "GFX_idea_usa_sean_patrick_o_malley"
+		texturefile = "gfx/interface/ideas/advisors/usa/usa_sean_patrick_o_malley.dds"
 	}
 
 	spriteType = {
-		name = "GFX_idea_commonwealth_james_comey"
-		texturefile = "gfx/interface/ideas/advisors/commonwealth/commonwealth_james_comey.dds"
+		name = "GFX_idea_usa_james_comey"
+		texturefile = "gfx/interface/ideas/advisors/usa/usa_james_comey.dds"
 	}
 
 	spriteType = {
-		name = "GFX_idea_commonwealth_john_engel"
-		texturefile = "gfx/interface/ideas/advisors/commonwealth/commonwealth_john_engel.dds"
+		name = "GFX_idea_usa_john_engel"
+		texturefile = "gfx/interface/ideas/advisors/usa/usa_john_engel.dds"
 	}
 
 	spriteType = {
@@ -2473,18 +2473,18 @@ spriteType = {
 	}
 
 	spriteType = {
-		name = "GFX_idea_usa_david_boaz"
-		texturefile = "gfx/interface/ideas/advisors/usa/usa_david_boaz.dds"
+		name = "GFX_idea_usa_barbara_lee"
+		texturefile = "gfx/interface/ideas/advisors/usa/usa_barbara_lee.dds"
 	}
 
 	spriteType = {
-		name = "GFX_idea_usa_kathleen_blanco"
-		texturefile = "gfx/interface/ideas/advisors/usa/usa_kathleen_blanco.dds"
+		name = "GFX_idea_usa_andrew_bacevich"
+		texturefile = "gfx/interface/ideas/advisors/usa/usa_andrew_bacevich.dds"
 	}
 
 	spriteType = {
-		name = "GFX_idea_usa_cedric_richmond"
-		texturefile = "gfx/interface/ideas/advisors/usa/usa_cedric_richmond.dds"
+		name = "GFX_idea_usa_cornel_west"
+		texturefile = "gfx/interface/ideas/advisors/usa/usa_cornel_west.dds"
 	}
 
 	spriteType = {
