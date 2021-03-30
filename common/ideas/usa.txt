@@ -1548,6 +1548,1310 @@ ideas = {
 				production_speed_industrial_complex_factor = -0.15
 			}
 		}
+	}
+	second_in_command = {
+		usa_howie_hawkins = {
+			allowed = {
+				OR = {
+					original_tag = USA
+				}
+			}
+			available = {
+				OR = {
+					has_government = communist
+					has_government = revolutionary_socialist
+					has_government = moderate_socialist
+				}
+			}
+			traits = {
+				insignificant_layman
+			}
+		}
+		usa_john_holdren = {
+			allowed = {
+				OR = {
+					original_tag = USA
+				}
+			}
+			available = {
+				OR = {
+					has_government = communist
+					has_government = revolutionary_socialist
+				}
+			}
+			traits = {
+				iron_fisted_brute
+			}
+		}
+		usa_germaine_greer = {
+			allowed = {
+				OR = {
+					original_tag = USA
+				}
+			}
+			available = {
+				OR = {
+					has_government = revolutionary_socialist
+				}
+			}
+			traits = {
+				power_hungry_demagogue
+			}
+		}
+		usa_bob_king = {
+			allowed = {
+				OR = {
+					original_tag = USA
+				}
+			}
+			available = {
+				OR = {
+					has_government = revolutionary_socialist
+				}
+			}
+			traits = {
+				iron_fisted_brute
+			}
+		}
+		usa_michio_kaku = {
+			allowed = {
+				OR = {
+					original_tag = USA
+				}
+			}
+			available = {
+				OR = {
+					has_government = revolutionary_socialist
+				}
+			}
+			traits = {
+				former_scientist
+			}
+		}
+		usa_peter_diamondstone = {
+			allowed = {
+				OR = {
+					original_tag = USA
+				}
+			}
+			available = {
+				OR = {
+					has_government = revolutionary_socialist
+					has_government = moderate_socialist
+				}
+			}
+			traits = {
+				silent_workhorse
+			}
+		}
+		usa_ralph_nader = {
+			allowed = {
+				OR = {
+					original_tag = USA
+				}
+			}
+			available = {
+				OR = {
+					has_government = revolutionary_socialist
+					has_government = moderate_socialist
+					has_government = new_democrat
+				}
+			}
+			traits = {
+				naive_optimist
+			}
+		}
+		usa_jesse_jackson = {
+			allowed = {
+				OR = {
+					original_tag = USA
+				}
+			}
+			available = {
+				OR = {
+					has_government = revolutionary_socialist
+					has_government = moderate_socialist
+					has_government = new_democrat
+				}
+			}
+			traits = {
+				silent_lawyer
+			}
+		}
+		usa_eleanor_norton = {
+			allowed = {
+				OR = {
+					original_tag = USA
+				}
+			}
+			available = {
+				OR = {
+					has_government = revolutionary_socialist
+					has_government = moderate_socialist
+					has_government = new_democrat
+				}
+			}
+			traits = {
+				political_protege
+			}
+		}
+		usa_barack_obama = {
+			allowed = {
+				OR = {
+					original_tag = USA
+				}
+			}
+			available = {
+				OR = {
+					has_government = moderate_socialist
+					has_government = new_democrat
+					has_government = liberal
+				}
+			}
+			traits = {
+				political_protege
+			}
+		}
+		usa_nina_turner = {
+			allowed = {
+				OR = {
+					original_tag = USA
+				}
+			}
+			available = {
+				OR = {
+					has_government = moderate_socialist
+				}
+			}
+			traits = {
+				political_protege
+			}
+		}
+		usa_edward_markey = {
+			allowed = {
+				OR = {
+					original_tag = USA
+				}
+			}
+			available = {
+				OR = {
+					has_government = moderate_socialist
+					has_government = new_democrat
+					has_government = liberal
+				}
+			}
+			traits = {
+				silent_workhorse
+			}
+		}
+		usa_sonya_sotomayor = {
+			allowed = {
+				OR = {
+					original_tag = USA
+				}
+			}
+			available = {
+				OR = {
+					has_government = moderate_socialist
+					has_government = new_democrat
+					has_government = liberal
+				}
+			}
+			traits = {
+				silent_lawyer
+			}
+		}
+		usa_danny_davis = {
+			allowed = {
+				OR = {
+					original_tag = USA
+				}
+			}
+			available = {
+				OR = {
+					has_government = new_democrat
+					has_government = liberal
+					has_government = centrist
+				}
+			}
+			traits = {
+				insignificant_layman
+			}
+		}
+		usa_andrew_cuomo = {
+			allowed = {
+				OR = {
+					original_tag = USA
+				}
+			}
+			available = {
+				OR = {
+					has_government = new_democrat
+					has_government = liberal
+					has_government = centrist
+					has_government = monarchist
+				}
+			}
+			traits = {
+				politician_with_connections
+			}
+		}
+		usa_thomas_menino = {
+			allowed = {
+				OR = {
+					original_tag = USA
+				}
+			}
+			available = {
+				OR = {
+					has_government = new_democrat
+					has_government = liberal
+					has_government = centrist
+					has_government = monarchist
+				}
+			}
+			traits = {
+				insignificant_layman
+			}
+		}
+		usa_joe_lieberman = {
+			allowed = {
+				OR = {
+					original_tag = USA
+				}
+			}
+			available = {
+				OR = {
+					has_government = liberal
+					has_government = centrist
+					has_government = national_conservative
+				}
+			}
+			traits = {
+				autocratic_charmer
+			}
+		}
+		usa_philip_scott = {
+			allowed = {
+				OR = {
+					original_tag = USA
+				}
+			}
+			available = {
+				OR = {
+					has_government = liberal
+					has_government = centrist
+					has_government = national_conservative
+				}
+			}
+			traits = {
+				insignificant_layman
+			}
+		}
+		usa_rudy_giuliani = {
+			allowed = {
+				OR = {
+					original_tag = USA
+				}
+			}
+			available = {
+				OR = {
+					has_government = centrist
+					has_government = national_conservative
+					has_government = nationalist
+				}
+			}
+			traits = {
+				flamboyant_tough_guy
+			}
+		}
+		usa_joseph_dunford = {
+			allowed = {
+				OR = {
+					original_tag = USA
+				}
+			}
+			available = {
+				OR = {
+					has_government = moderate_socialist
+					has_government = new_democrat
+					has_government = liberal
+					has_government = centrist
+					has_government = nationalist
+				}
+			}
+			traits = {
+				autocratic_charmer
+			}
+		}
+		usa_james_mcconville = {
+			allowed = {
+				OR = {
+					original_tag = USA
+				}
+			}
+			available = {
+				OR = {
+					has_government = nationalist
+				}
+			}
+			traits = {
+				retired_general
+			}
+		}
+		usa_military_triumvirate = {
+			allowed = {
+				OR = {
+					original_tag = USA
+				}
+			}
+			available = {
+				OR = {
+					has_government = nationalist
+				}
+			}
+			traits = {
+				political_protege
+			}
+		}
+		usa_charles_coloumbe = {
+			allowed = {
+				OR = {
+					original_tag = USA
+				}
+			}
+			available = {
+				OR = {
+					has_government = monarchist
+				}
+			}
+			traits = {
+				religious_leader
+			}
+		}
+		usa_sean_patrick_o_malley = {
+			allowed = {
+				OR = {
+					original_tag = USA
+				}
+			}
+			available = {
+				OR = {
+					has_government = monarchist
+					has_government = fascist
+				}
+			}
+			traits = {
+				religious_leader
+			}
+		}
+	}
+	foreign_minister = {
+		usa_charles_barron = {
+			allowed = {
+				OR = {
+					original_tag = USA
+				}
+			}
+			available = {
+				OR = {
+					has_government = communist
+					has_government = revolutionary_socialist
+				}
+			}
+			traits = {
+				ideological_crusader
+			}
+		}
+		usa_ward_churchill = {
+			allowed = {
+				OR = {
+					original_tag = USA
+				}
+			}
+			available = {
+				OR = {
+					has_government = communist
+					has_government = revolutionary_socialist
+				}
+			}
+			traits = {
+				isolationist
+			}
+		}
+		usa_chris_hedges = {
+			allowed = {
+				OR = {
+					original_tag = USA
+				}
+			}
+			available = {
+				OR = {
+					has_government = revolutionary_socialist
+					has_government = moderate_socialist
+				}
+			}
+			traits = {
+				biased_intellectual
+			}
+		}
+		usa_glenn_greenwald = {
+			allowed = {
+				OR = {
+					original_tag = USA
+				}
+			}
+			available = {
+				OR = {
+					has_government = revolutionary_socialist
+					has_government = moderate_socialist
+					has_government = new_democrat
+				}
+			}
+			traits = {
+				international_schemer
+			}
+		}
+		usa_rashida_tlaib = {
+			allowed = {
+				OR = {
+					original_tag = USA
+				}
+			}
+			available = {
+				OR = {
+					has_government = revolutionary_socialist
+					has_government = moderate_socialist
+				}
+			}
+			traits = {
+				ideological_crusader
+			}
+		}
+		usa_eric_holder = {
+			allowed = {
+				OR = {
+					original_tag = USA
+				}
+			}
+			available = {
+				OR = {
+					has_government = revolutionary_socialist
+					has_government = moderate_socialist
+					has_government = new_democrat
+				}
+			}
+			traits = {
+				great_compromiser
+			}
+		}
+		usa_al_sharpton = {
+			allowed = {
+				OR = {
+					original_tag = USA
+				}
+			}
+			available = {
+				OR = {
+					has_government = revolutionary_socialist
+					has_government = moderate_socialist
+					has_government = new_democrat
+				}
+			}
+			traits = {
+				religious_leader
+			}
+		}
+		usa_cory_booker = {
+			allowed = {
+				OR = {
+					original_tag = USA
+				}
+			}
+			available = {
+				OR = {
+					has_government = revolutionary_socialist
+					has_government = moderate_socialist
+					has_government = new_democrat
+					has_government = liberal
+					has_government = centrist
+				}
+			}
+			traits = {
+				iron_fisted_brute
+			}
+		}
+		usa_howard_dean = {
+			allowed = {
+				OR = {
+					original_tag = USA
+				}
+			}
+			available = {
+				OR = {
+					has_government = moderate_socialist
+					has_government = new_democrat
+					has_government = liberal
+				}
+			}
+			traits = {
+				ideological_crusader
+			}
+		}
+		usa_russ_feingold = {
+			allowed = {
+				OR = {
+					original_tag = USA
+				}
+			}
+			available = {
+				OR = {
+					has_government = moderate_socialist
+					has_government = new_democrat
+					has_government = monarchist	
+				}
+			}
+			traits = {
+				silent_lawyer
+			}
+		}
+		usa_peter_welch = {
+			allowed = {
+				OR = {
+					original_tag = USA
+				}
+			}
+			available = {
+				OR = {
+					has_government = moderate_socialist
+					has_government = new_democrat
+					has_government = liberal
+				}
+			}
+			traits = {
+				insignificant_layman
+			}
+		}
+		usa_jack_reed = {
+			allowed = {
+				OR = {
+					original_tag = USA
+				}
+			}
+			available = {
+				OR = {
+					has_government = new_democrat
+					has_government = liberal
+					has_government = centrist
+				}
+			}
+			traits = {
+				apologetic_clerk
+			}
+		}
+		usa_charles_baker = {
+			allowed = {
+				OR = {
+					original_tag = USA
+				}
+			}
+			available = {
+				OR = {
+					has_government = liberal
+					has_government = centrist
+					has_government = national_conservative
+				}
+			}
+			traits = {
+				great_compromiser
+			}
+		}
+		usa_alan_keyes = {
+			allowed = {
+				OR = {
+					original_tag = USA
+				}
+			}
+			available = {
+				OR = {
+					has_government = national_conservative
+					has_government = nationalist
+					has_government = monarchist	
+				}
+			}
+			traits = {
+				ideological_crusader
+			}
+		}
+		usa_john_f_campbell = {
+			allowed = {
+				OR = {
+					original_tag = USA
+				}
+			}
+			available = {
+				OR = {
+					has_government = nationalist
+				}
+			}
+			traits = {
+				international_schemer
+			}
+		}
+		usa_lee_walter_congdon = {
+			allowed = {
+				OR = {
+					original_tag = USA
+				}
+			}
+			available = {
+				OR = {
+					has_government = nationalist
+					has_government = monarchist
+				}
+			}
+			traits = {
+				biased_intellectual
+			}
+		}
+		usa_curtis_yarvin = {
+			allowed = {
+				OR = {
+					original_tag = USA
+				}
+			}
+			available = {
+				OR = {
+					has_government = nationalist
+					has_government = monarchist
+					has_government = fascist
+				}
+			}
+			traits = {
+				ideological_crusader
+			}
+		}
+	}
+	industry_minister = {
+		usa_richard_wolff = {
+			allowed = {
+				OR = {
+					original_tag = USA
+				}
+			}
+			available = {
+				OR = {
+					has_government = communist
+					has_government = revolutionary_socialist
+					has_government = moderate_socialist
+				}
+			}
+			traits = {
+				administrative_genius
+			}
+		}
+		usa_cornel_west = {
+			allowed = {
+				OR = {
+					original_tag = USA
+				}
+			}
+			available = {
+				OR = {
+					has_government = revolutionary_socialist
+					has_government = moderate_socialist
+				}
+			}
+			traits = {
+				biased_intellectual
+			}
+		}
+		usa_richard_trumka = {
+			allowed = {
+				OR = {
+					original_tag = USA
+				}
+			}
+			available = {
+				OR = {
+					has_government = revolutionary_socialist
+					has_government = moderate_socialist
+					has_government = new_democrat
+				}
+			}
+			traits = {
+				ambitious_union_boss
+			}
+		}
+		usa_tom_perez = {
+			allowed = {
+				OR = {
+					original_tag = USA
+				}
+			}
+			available = {
+				OR = {
+					has_government = revolutionary_socialist
+					has_government = moderate_socialist
+					has_government = new_democrat
+				}
+			}
+			traits = {
+				administrative_genius
+			}
+		}
+		usa_robert_reich = {
+			allowed = {
+				OR = {
+					original_tag = USA
+				}
+			}
+			available = {
+				OR = {
+					has_government = revolutionary_socialist
+					has_government = moderate_socialist
+					has_government = new_democrat
+					has_government = liberal
+				}
+			}
+			traits = {
+				extreme_regulator
+			}
+		}
+		usa_neil_tyson = {
+			allowed = {
+				OR = {
+					original_tag = USA
+				}
+			}
+			available = {
+				OR = {
+					has_government = revolutionary_socialist
+					has_government = moderate_socialist
+					has_government = new_democrat
+					has_government = liberal
+					has_government = centrist
+				}
+			}
+			traits = {
+				former_scientist
+			}
+		}
+		usa_elaine_bernard = {
+			allowed = {
+				OR = {
+					original_tag = USA
+				}
+			}
+			available = {
+				OR = {
+					has_government = moderate_socialist
+					has_government = new_democrat
+					has_government = liberal
+					has_government = centrist
+				}
+			}
+			traits = {
+				ambitious_union_boss
+			}
+		}
+		usa_joe_kennedy_jr = {
+			allowed = {
+				OR = {
+					original_tag = USA
+				}
+			}
+			available = {
+				OR = {
+					has_government = new_democrat
+					has_government = liberal
+					has_government = monarchist
+				}
+			}
+			traits = {
+				extreme_regulator
+			}
+		}
+		usa_paul_krugman = {
+			allowed = {
+				OR = {
+					original_tag = USA
+				}
+			}
+			available = {
+				OR = {
+					has_government = new_democrat
+					has_government = liberal
+					has_government = centrist
+				}
+			}
+			traits = {
+				administrative_genius
+			}
+		}
+		usa_william_weld = {
+			allowed = {
+				OR = {
+					original_tag = USA
+				}
+			}
+			available = {
+				OR = {
+					has_government = liberal
+					has_government = centrist
+					has_government = national_conservative
+				}
+			}
+			traits = {
+				libertarian_capitalist
+			}
+		}
+		usa_john_engel = {
+			allowed = {
+				OR = {
+					original_tag = USA
+				}
+			}
+			available = {
+				OR = {
+					has_government = centrist
+					has_government = national_conservative
+					has_government = monarchist
+				}
+			}
+			traits = {
+				resource_industrialist
+			}
+		}
+		usa_mark_rockefeller = {
+			allowed = {
+				OR = {
+					original_tag = USA
+				}
+			}
+			available = {
+				OR = {
+					has_government = centrist
+					has_government = national_conservative
+					has_government = monarchist
+				}
+			}
+			traits = {
+				libertarian_capitalist
+			}
+		}
+		usa_douglas_mcbride = {
+			allowed = {
+				OR = {
+					original_tag = USA
+				}
+			}
+			available = {
+				OR = {
+					has_government = nationalist
+				}
+			}
+			traits = {
+				administrative_genius
+			}
+		}
+		usa_paul_gottfried = {
+			allowed = {
+				OR = {
+					original_tag = USA
+				}
+			}
+			available = {
+				OR = {
+					has_government = nationalist
+					has_government = monarchist
+					has_government = fascist
+				}
+			}
+			traits = {
+				isolationist
+			}
+		}
+	}
+	national_security_minister = {
+		usa_edward_s_herman = {
+			allowed = {
+				OR = {
+					original_tag = USA
+				}
+			}
+			available = {
+				OR = {
+					has_government = revolutionary_socialist
+				}
+			}
+			traits = {
+				silent_lawyer
+			}
+		}
+		usa_john_kerry = {
+			allowed = {
+				OR = {
+					original_tag = USA
+				}
+			}
+			available = {
+				OR = {
+					has_government = revolutionary_socialist
+				}
+			}
+			traits = {
+				compassionate_gentleman
+			}
+		}
+		usa_james_p_hoffa = {
+			allowed = {
+				OR = {
+					original_tag = USA
+				}
+			}
+			available = {
+				OR = {
+					has_government = revolutionary_socialist
+				}
+			}
+			traits = {
+				prince_of_terror
+			}
+		}
+		usa_bill_mckibben = {
+			allowed = {
+				OR = {
+					original_tag = USA
+				}
+			}
+			available = {
+				OR = {
+					has_government = revolutionary_socialist
+					has_government = moderate_socialist
+					has_government = new_democrat
+					has_government = liberal
+					has_government = centrist
+				}
+			}
+			traits = {
+				compassionate_gentleman
+			}
+		}
+		usa_jesus_garcia = {
+			allowed = {
+				OR = {
+					original_tag = USA
+				}
+			}
+			available = {
+				OR = {
+					has_government = revolutionary_socialist
+					has_government = moderate_socialist
+					has_government = new_democrat
+				}
+			}
+			traits = {
+				insignificant_layman
+			}
+		}
+		usa_andrew_bacevich = {
+			allowed = {
+				OR = {
+					original_tag = USA
+				}
+			}
+			available = {
+				OR = {
+					has_government = moderate_socialist
+					has_government = new_democrat
+					has_government = liberal
+				}
+			}
+			traits = {
+				compassionate_gentleman
+			}
+		}
+		usa_harold_koh = {
+			allowed = {
+				OR = {
+					original_tag = USA
+				}
+			}
+			available = {
+				OR = {
+					has_government = moderate_socialist
+					has_government = new_democrat
+					has_government = liberal
+					has_government = centrist
+				}
+			}
+			traits = {
+				silent_lawyer
+			}
+		}
+		usa_chris_dodd = {
+			allowed = {
+				OR = {
+					original_tag = USA
+				}
+			}
+			available = {
+				OR = {
+					has_government = new_democrat
+					has_government = liberal
+					has_government = centrist
+				}
+			}
+			traits = {
+				silent_lawyer
+			}
+		}
+		usa_douglas_kennedy = {
+			allowed = {
+				OR = {
+					original_tag = USA
+				}
+			}
+			available = {
+				OR = {
+					has_government = new_democrat
+					has_government = liberal
+					has_government = monarchist
+				}
+			}
+			traits = {
+				iron_fisted_brute
+			}
+		}
+		usa_john_kasich = {
+			allowed = {
+				OR = {
+					original_tag = USA
+				}
+			}
+			available = {
+				OR = {
+					has_government = liberal
+					has_government = centrist
+					has_government = national_conservative
+				}
+			}
+			traits = {
+				compassionate_gentleman
+			}
+		}
+		usa_gregory_g_johnson = {
+			allowed = {
+				OR = {
+					original_tag = USA
+				}
+			}
+			available = {
+				OR = {
+					has_government = nationalist
+				}
+			}
+			traits = {
+				retired_admiral
+			}
+		}
+		usa_darren_mcdew = {
+			allowed = {
+				OR = {
+					original_tag = USA
+				}
+			}
+			available = {
+				OR = {
+					has_government = nationalist
+				}
+			}
+			traits = {
+				compassionate_gentleman
+			}
+		}
+		usa_william_s_lind = {
+			allowed = {
+				OR = {
+					original_tag = USA
+				}
+			}
+			available = {
+				OR = {
+					has_government = nationalist
+					has_government = monarchist
+				}
+			}
+			traits = {
+				efficient_sociopath
+			}
+		}
+	}
+	intelligence_minister = {
+		usa_richard_ojeda = {
+			allowed = {
+				OR = {
+					original_tag = USA
+				}
+			}
+			available = {
+				OR = {
+					has_government = revolutionary_socialist
+					has_government = moderate_socialist
+					has_government = national_bolshevik
+				}
+			}
+			traits = {
+				retired_general
+			}
+		}
+		usa_daniel_ellsberg = {
+			allowed = {
+				OR = {
+					original_tag = USA
+				}
+			}
+			available = {
+				OR = {
+					has_government = revolutionary_socialist
+					has_government = moderate_socialist
+					has_government = new_democrat
+					has_government = liberal
+				}
+			}
+			traits = {
+				novice_mastermind
+			}
+		}
+		usa_richard_daley = {
+			allowed = {
+				OR = {
+					original_tag = USA
+				}
+			}
+			available = {
+				OR = {
+					has_government = communist
+					has_government = revolutionary_socialist
+					has_government = moderate_socialist
+					has_government = new_democrat
+					has_government = liberal
+					has_government = centrist
+					has_government = national_conservative
+				}
+			}
+			traits = {
+				politician_with_connections
+			}
+		}
+		usa_barbara_lee = {
+			allowed = {
+				OR = {
+					original_tag = USA
+				}
+			}
+			available = {
+				OR = {
+					has_government = moderate_socialist
+					has_government = new_democrat
+					has_government = liberal
+				}
+			}
+			traits = {
+				politician_with_connections
+			}
+		}
+		usa_joe_sestak = {
+			allowed = {
+				OR = {
+					original_tag = USA
+				}
+			}
+			available = {
+				OR = {
+					has_government = moderate_socialist
+					has_government = new_democrat
+					has_government = liberal
+					has_government = centrist
+				}
+			}
+			traits = {
+				retired_admiral
+			}
+		}
+		usa_james_comey = {
+			allowed = {
+				OR = {
+					original_tag = USA
+				}
+			}
+			available = {
+				OR = {
+					has_government = moderate_socialist
+					has_government = new_democrat
+					has_government = liberal
+					has_government = centrist
+					has_government = national_conservative
+				}
+			}
+			traits = {
+				novice_mastermind
+			}
+		}
+		usa_richard_blumenthal = {
+			allowed = {
+				OR = {
+					original_tag = USA
+				}
+			}
+			available = {
+				OR = {
+					has_government = new_democrat
+					has_government = liberal
+					has_government = centrist
+				}
+			}
+			traits = {
+				novice_mastermind
+			}
+		}
+		usa_mark_fitzgerald = {
+			allowed = {
+				OR = {
+					original_tag = USA
+				}
+			}
+			available = {
+				OR = {
+					has_government = nationalist
+					has_government = monarchist
+				}
+			}
+			traits = {
+				naval_intelligence_specialist
+			}
+		}
+		usa_david_petraeus = {
+			allowed = {
+				OR = {
+					original_tag = USA
+				}
+			}
+			available = {
+				OR = {
+					has_government = liberal
+					has_government = centrist
+					has_government = national_conservative
+					has_government = nationalist
+					has_government = monarchist
+				}
+			}
+			traits = {
+				intelligence_director
+			}
+		}
+	}
 }
 	# TECHNOLOGY
 	tank_manufacturer = {
