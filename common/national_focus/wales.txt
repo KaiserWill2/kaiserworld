@@ -13,11 +13,643 @@ focus_tree = {
 		id = WAL_Cynnydd_y_Ddraig
 		icon = tear_treaty
 		cost = 5
-		x = 6
+		x = 25
 		y = 0
 		completion_reward = {
 
 		}
+	}
+	focus = {
+		id = WAL_Addressing_Wales
+		icon = tear_treaty
+		cost = 5
+		x = 25
+		y = 1
+		prerequisite = { focus = WAL_Cynnydd_y_Ddraig  }
+		completion_reward = {
+
+		}
+
+	}
+	focus = {
+		id = WAL_Welsh_Freedom
+		icon = tear_treaty
+		cost = 5
+		x = 25
+		y = 2
+		prerequisite = { focus = WAL_Addressing_Wales  }
+		completion_reward = {
+
+		}
+
+	}
+	focus = {
+		id = WAL_Expand_The_Industry
+		icon = tear_treaty
+		cost = 5
+		x = 18
+		y = 3
+		prerequisite = { focus = WAL_Welsh_Freedom  }
+		completion_reward = {
+
+		}
+
+	}
+	focus = {
+		id = WAL_Expand_Mining_Operations
+		icon = tear_treaty
+		cost = 5
+		x = 15
+		y = 4
+		prerequisite = { focus = WAL_Expand_The_Industry  }
+		completion_reward = {
+
+		}
+
+	}
+	focus = {
+		id = WAL_The_Coal_Shortage
+		icon = tear_treaty
+		cost = 5
+		x = 13
+		y = 5
+		prerequisite = { focus = WAL_Expand_Mining_Operations  }
+		completion_reward = {
+
+		}
+
+	}
+	focus = {
+		id = WAL_We_Need_Scottish_Power
+		icon = tear_treaty
+		cost = 5
+		x = 11
+		y = 6
+		prerequisite = { focus = WAL_The_Coal_Shortage  }
+		completion_reward = {
+
+		}
+
+	}
+	focus = {
+		id = WAL_No_More_trade_With_Ireland
+		icon = tear_treaty
+		cost = 5
+		x = 13
+		y = 6
+		prerequisite = { focus = WAL_The_Coal_Shortage  }
+		completion_reward = {
+
+		}
+
+	}
+	focus = {
+		id = WAL_The_New_Bill
+		icon = tear_treaty
+		cost = 5
+		x = 16
+		y = 5
+		prerequisite = { focus = WAL_Expand_Mining_Operations  }
+		prerequisite = { focus = WAL_Rebuild_The_Steel_Industry  }
+		prerequisite = { focus = WAL_The_Five_Year_Automation_Plan  }
+		completion_reward = {
+
+		}
+
+	}
+	focus = {
+		id = WAL_Remove_Safety_Laws
+		icon = tear_treaty
+		cost = 5
+		x = 15
+		y = 6
+		prerequisite = { focus = WAL_The_New_Bill  }
+		completion_reward = {
+
+		}
+
+	}
+	focus = {
+		id = WAL_Rebuild_The_Steel_Industry
+		icon = tear_treaty
+		cost = 5
+		x = 18
+		y = 4
+		prerequisite = { focus = WAL_Expand_The_Industry  }
+		completion_reward = {
+
+		}
+
+	}
+	focus = {
+		id = WAL_The_Planned_Strikes
+		icon = tear_treaty
+		cost = 5
+		x = 18
+		y = 5
+		prerequisite = { focus = WAL_Rebuild_The_Steel_Industry  }
+		completion_reward = {
+
+		}
+
+	}
+	focus = {
+		id = WAL_Speak_With_The_Unions
+		icon = tear_treaty
+		cost = 5
+		x = 19
+		y = 6
+		prerequisite = { focus = WAL_The_Planned_Strikes  }
+		completion_reward = {
+
+		}
+
+	}
+	focus = {
+		id = WAL_Ban_The_Strike
+		icon = tear_treaty
+		cost = 5
+		x = 19
+		y = 7
+		prerequisite = { focus = WAL_Speak_With_The_Unions  }
+		completion_reward = {
+
+		}
+
+	}
+	focus = {
+		id = WAL_The_Five_Year_Automation_Plan
+		icon = tear_treaty
+		cost = 5
+		x = 21
+		y = 4
+		prerequisite = { focus = WAL_Expand_The_Industry  }
+		completion_reward = {
+
+		}
+
+	}
+	focus = {
+		id = WAL_Defend_Our_Nationalism
+		icon = tear_treaty
+		cost = 5
+		x = 25
+		y = 3
+		prerequisite = { focus = WAL_Welsh_Freedom  }
+		completion_reward = {
+
+		}
+
+	}
+	focus = {
+		id = WAL_The_Welsh_Workers_Rights
+		icon = tear_treaty
+		cost = 5
+		x = 25
+		y = 4
+		prerequisite = { focus = WAL_Defend_Our_Nationalism  }
+		completion_reward = {
+
+		}
+
+	}
+	focus = {
+		id = WAL_Take_Over_The_Factories
+		icon = tear_treaty
+		cost = 5
+		x = 25
+		y = 5
+		prerequisite = { focus = WAL_The_Welsh_Workers_Rights  }
+		completion_reward = {
+
+		}
+
+	}
+	focus = {
+		id = WAL_Welsh_Education
+		icon = tear_treaty
+		cost = 5
+		x = 23
+		y = 4
+		prerequisite = { focus = WAL_Defend_Our_Nationalism  }
+		completion_reward = {
+
+		}
+
+	}
+	focus = {
+		id = WAL_Blind_The_Young
+		icon = tear_treaty
+		cost = 5
+		x = 23
+		y = 5
+		prerequisite = { focus = WAL_Welsh_Education  }
+		completion_reward = {
+
+		}
+
+	}
+	focus = {
+		id = WAL_Train_The_Teens
+		icon = tear_treaty
+		cost = 5
+		x = 24
+		y = 6
+		prerequisite = { focus = WAL_Blind_The_Young  }
+		completion_reward = {
+
+		}
+
+	}
+	focus = {
+		id = WAL_The_Future_Lives_On
+		icon = tear_treaty
+		cost = 5
+		x = 24
+		y = 7
+		prerequisite = { focus = WAL_Train_The_Teens  }
+		completion_reward = {
+
+		}
+
+	}
+	focus = {
+		id = WAL_New_Nationalism
+		icon = tear_treaty
+		cost = 5
+		x = 27
+		y = 4
+		prerequisite = { focus = WAL_Defend_Our_Nationalism  }
+		completion_reward = {
+
+		}
+
+	}
+	focus = {
+		id = WAL_Reformed_Welfare
+		icon = tear_treaty
+		cost = 5
+		x = 27
+		y = 5
+		prerequisite = { focus = WAL_New_Nationalism  }
+		completion_reward = {
+
+		}
+
+	}
+	focus = {
+		id = WAL_New_Tax
+		icon = tear_treaty
+		cost = 5
+		x = 26
+		y = 6
+		prerequisite = { focus = WAL_Reformed_Welfare  }
+		completion_reward = {
+
+		}
+
+	}
+	focus = {
+		id = WAL_No_To_The_Left
+		icon = tear_treaty
+		cost = 5
+		x = 26
+		y = 7
+		prerequisite = { focus = WAL_New_Tax  }
+		completion_reward = {
+
+		}
+
+	}
+	focus = {
+		id = WAL_Awaken_The_Dragon
+		icon = tear_treaty
+		cost = 5
+		x = 31
+		y = 3
+		prerequisite = { focus = WAL_Welsh_Freedom  }
+		completion_reward = {
+
+		}
+
+	}
+	focus = {
+		id = WAL_The_Welsh_Military_Fund
+		icon = tear_treaty
+		cost = 5
+		x = 29
+		y = 4
+		prerequisite = { focus = WAL_Awaken_The_Dragon  }
+		completion_reward = {
+
+		}
+
+	}
+	focus = {
+		id = WAL_The_Welsh_Militias
+		icon = tear_treaty
+		cost = 5
+		x = 31
+		y = 4
+		prerequisite = { focus = WAL_Awaken_The_Dragon  }
+		completion_reward = {
+
+		}
+
+	}
+	focus = {
+		id = WAL_Protect_The_Wall
+		icon = tear_treaty
+		cost = 5
+		x = 33
+		y = 4
+		prerequisite = { focus = WAL_Awaken_The_Dragon  }
+		completion_reward = {
+
+		}
+
+	}
+	focus = {
+		id = WAL_Wales_Is_Alive
+		icon = tear_treaty
+		cost = 5
+		x = 31
+		y = 5
+		prerequisite = { focus = WAL_The_Welsh_Military_Fund  }
+		prerequisite = { focus = WAL_The_Welsh_Militias  }
+		prerequisite = { focus = WAL_Protect_The_Wall  }
+		completion_reward = {
+
+		}
+
+	}
+	focus = {
+		id = WAL_Ban_Trade_With_USBR
+		icon = tear_treaty
+		cost = 5
+		x = 31
+		y = 6
+		prerequisite = { focus = WAL_Wales_Is_Alive  }
+		completion_reward = {
+
+		}
+
+	}
+	focus = {
+		id = WAL_The_New_Scottish_Route
+		icon = tear_treaty
+		cost = 5
+		x = 29
+		y = 7
+		prerequisite = { focus = WAL_Ban_Trade_With_USBR  }
+		completion_reward = {
+
+		}
+
+	}
+	focus = {
+		id = WAL_Reject_The_Blair_Project
+		icon = tear_treaty
+		cost = 5
+		x = 33
+		y = 7
+		prerequisite = { focus = WAL_Ban_Trade_With_USBR  }
+		completion_reward = {
+
+		}
+
+	}
+	focus = {
+		id = WAL_Ban_English_Refugees
+		icon = tear_treaty
+		cost = 5
+		x = 31
+		y = 8
+		prerequisite = { focus = WAL_Reject_The_Blair_Project  }
+		prerequisite = { focus = WAL_The_New_Scottish_Route  }
+		completion_reward = {
+
+		}
+
+	}
+
+
+
+
+	focus = {
+		id = WAL_Welsh_Skies
+		icon = tear_treaty
+		cost = 5
+		x = 1
+		y = 0
+		completion_reward = {
+
+		}
+	}
+
+
+
+
+	focus = {
+		id = WAL_Welsh_Army
+		icon = tear_treaty
+		cost = 5
+		x = 5
+		y = 0
+		completion_reward = {
+
+		}
+	}
+
+
+
+
+
+
+
+	focus = {
+		id = WAL_Welsh_Navy
+		icon = tear_treaty
+		cost = 5
+		x = 10
+		y = 0
+		completion_reward = {
+
+		}
+	}
+
+
+
+
+
+
+
+
+	focus = {
+		id = WAL_Celtic_Congress
+		icon = tear_treaty
+		cost = 5
+		x = 40
+		y = 0
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = WAL_Meeting_With_Scottish_Royalty
+		icon = tear_treaty
+		cost = 5
+		x = 38
+		y = 1
+		prerequisite = { focus = WAL_Celtic_Congress  }
+		completion_reward = {
+
+		}
+
+	}
+	focus = {
+		id = WAL_Meeting_With_The_Irish
+		icon = tear_treaty
+		cost = 5
+		x = 42
+		y = 1
+		prerequisite = { focus = WAL_Celtic_Congress  }
+		completion_reward = {
+
+		}
+
+	}
+	focus = {
+		id = WAL_The_Power_Struggle
+		icon = tear_treaty
+		cost = 5
+		x = 40
+		y = 2
+		prerequisite = { focus = WAL_Meeting_With_The_Irish  }
+		prerequisite = { focus = WAL_Meeting_With_Scottish_Royalty  }
+		completion_reward = {
+
+		}
+
+	}
+	focus = {
+		id = WAL_The_Vote_Of_No_Confidence
+		icon = tear_treaty
+		cost = 5
+		x = 40
+		y = 3
+		prerequisite = { focus = WAL_The_Power_Struggle  }
+		completion_reward = {
+
+		}
+
+	}
+	focus = {
+		id = WAL_The_People_Want_To_Vote
+		icon = tear_treaty
+		cost = 5
+		x = 38
+		y = 4
+		prerequisite = { focus = WAL_The_Vote_Of_No_Confidence  }
+		completion_reward = {
+
+		}
+
+	}
+	focus = {
+		id = WAL_The_Party_Takes_Charge
+		icon = tear_treaty
+		cost = 5
+		x = 42
+		y = 4
+		prerequisite = { focus = WAL_The_Vote_Of_No_Confidence  }
+		completion_reward = {
+
+		}
+
+	}
+
+	focus = {
+		id = WAL_Chamber_Election
+		icon = tear_treaty
+		cost = 5
+		x = 40
+		y = 5
+		prerequisite = { focus = WAL_The_People_Want_To_Vote  }
+		prerequisite = { focus = WAL_The_Party_Takes_Charge  }
+		completion_reward = {
+
+		}
+
+	}
+	focus = {
+		id = WAL_Welsh_National
+		icon = tear_treaty
+		cost = 5
+		x = 38
+		y = 6
+		mutually_exclusive = {
+			focus = WAL_Welsh_Labour
+		}
+		prerequisite = { focus = WAL_Chamber_Election  }
+		completion_reward = {
+
+		}
+
+	}
+	focus = {
+		id = WAL_Ban_The_English_Language
+		icon = tear_treaty
+		cost = 5
+		x = 38
+		y = 7
+		prerequisite = { focus = WAL_Welsh_National  }
+		completion_reward = {
+
+		}
+
+	}
+
+	focus = {
+		id = WAL_Welsh_Labour
+		icon = tear_treaty
+		cost = 5
+		x = 42
+		y = 6
+		mutually_exclusive = {
+			focus = WAL_Welsh_National
+		}
+		prerequisite = { focus = WAL_Chamber_Election  }
+		completion_reward = {
+
+		}
+
+	}
+	focus = {
+		id = WAL_Emergency_Talks
+		icon = tear_treaty
+		cost = 5
+		x = 42
+		y = 7
+		prerequisite = { focus = WAL_Welsh_Labour  }
+		completion_reward = {
+
+		}
+
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
