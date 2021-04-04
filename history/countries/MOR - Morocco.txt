@@ -1,35 +1,15 @@
-﻿capital = 2
+﻿capital = 461
 
-oob = "ITA_2000"
-
-if = {
-	limit = { has_dlc = "Man the Guns" }
-		set_naval_oob = "ITA_2000_naval_mtg"
-	else = {
-		set_naval_oob = "ITA_2000_naval_legacy"
-	}
-}
-
-add_ideas = {
-    idea_eu_member
-	idea_ita_mafia_issue
-	idea_ita_seamless_society
-}
+oob = "MOR_2000"
 
 set_research_slots = 4
 set_convoys = 500
-set_stability = 0.8
+set_stability = 0.6
 set_war_support = 0.1
 
+set_country_flag = muslim_nation
+
 set_technology = {
-	early_submarine = 1
-	basic_submarine = 1
-	early_destroyer = 1
-	early_light_cruiser = 1
-	basic_light_cruiser = 1
-	early_heavy_cruiser = 1
-	early_carrier = 1
-	basic_carrier = 1
 	support_weapons = 1
 	infantry_weapons = 1
 	motorised_infantry = 1 
@@ -40,16 +20,18 @@ set_technology = {
 	basic_light_tank = 1 
 	gw_artillery = 1 
 	tech_mountaineers = 1
+	early_light_cruiser = 1
 	early_fighter = 1 
 	early_bomber = 1 
+	early_submarine = 1
+    transport = 1 
 	paratroopers = 1 
 	marines = 1
-	basic_heavy_tank = 1 
-	atomic_research = 1 
-	nuclear_reactor = 1 
+	early_destroyer = 1 
 	interwar_antiair = 1
 	interwar_antitank = 1
 }
+
 if = {
 	limit = { not = { has_dlc = "Man the Guns" } }
 	set_technology = {
@@ -95,90 +77,90 @@ if = {
 		improved_airplane_launcher = 1
 	}
 }
+
 set_politics = {
-	ruling_party = fascist
+	ruling_party = monarchist
 	last_election = "1997.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
 set_popularities = {
-        fascist = 68
-		nationalist = 7
-		monarchist = 0
+        fascist = 0
+		nationalist = 12
+		monarchist = 45
 		national_bolshevik = 0
-		national_conservative = 8
-		centrist = 10
+		national_conservative = 12
+		centrist = 6
 		liberal = 0
-		new_democrat = 0
-		moderate_socialist = 0
-		revolutionary_socialist = 7
-		communist = 0
+		new_democrat = 10
+		moderate_socialist = 5
+		revolutionary_socialist = 5
+		communist = 5
 }
 
 create_country_leader = {
-	name = "Giorgio Napolitano"
-	desc = "POLITICS_GIORGIO_NAPOLITANO_DESC"
-	picture = "Portrait_ITA_Giorgio_Napolitano.dds"
-	ideology = meliorist
+	name = "Abdallah El Harif"
+	picture = "Portrait_MOR_Abdallah_El_Harif.dds"
+	ideology = marxist
 }
 
 create_country_leader = {
-	name = "Gregory XVII"
-	picture = "Portrait_ITA_Gregory_XVII.tga"
+	name = "Abdel-Bari Zamzami"
+	picture = "Portrait_MOR_Abdel_Bari_Zamzami.dds"
 	ideology = fascist_ideology
 }
 
 create_country_leader = {
-	name = "Matteo Salvini"
-	picture = "Portrait_ITA_Matteo_Salvini.dds"
-	ideology = ultranationalist
+	name = "Abdelilah Benkirane"
+	picture = "Portrait_MOR_Abdelilah_Benkirane.dds"
+	ideology = nationalist_ideology
 }
 
 create_country_leader = {
-	name = "Victor Emmanuel IV"
-	picture = "Portrait_ITA_Victor_Emmanuel_Fourth.dds"
+	name = "Mohammed VI"
+	picture = "Portrait_MOR_Mohammed_VI.tga"
 	ideology = absolute_monarchist
 }
 
 create_country_leader = {
-	name = "Francesco Storace"
-	picture = "Portrait_ITA_Francesco_Storace.dds"
+	name = "Brahim Ghali"
+	picture = "Portrait_MOR_Brahim_Ghali.dds"
 	ideology = national_bolshevik_ideology
 }
 
 create_country_leader = {
-	name = "Raffaele Fitto"
-	picture = "Portrait_ITA_Raffaele_Fitto.dds"
-	ideology = european_conservative
+	name = "Hamid Chabat"
+	picture = "Portrait_MOR_Hamid_Chabat.dds"
+	ideology = fiscal_conservative
 }
 
 create_country_leader = {
-	name = "Pier Ferdinando Casini"
-	picture = "Portrait_ITA_Pier_Ferdinando_Casini.dds"
+	name = "Salaheddine Mezouar"
+	picture = "Portrait_MOR_Salaheddine_Mezouar.dds"
 	ideology = centrist_ideology
 }
 
 create_country_leader = {
-	name = "Denis Verdini"
-	picture = "Portrait_ITA_Denis_Verdini.dds"
+	name = "Mohand Laenser"
+	picture = "Portrait_MOR_Mohand_Laenser.dds"
 	ideology = social_liberal
 }
 
 create_country_leader = {
-	name = "Maurizio Martina"
-	picture = "Portrait_ITA_Maurizio_Martina.dds"
+	name = "Driss Lachgar"
+	picture = "Portrait_MOR_Driss_Lachgar.dds"
 	ideology = new_democrat_ideology
 }
 
 create_country_leader = {
-	name = "Roberto Speranza"
-	picture = "Portrait_ITA_Roberto_Speranza.dds"
+	name = "Nabil Benabdallah"
+	picture = "Portrait_MOR_Nabil_Benabdallah.dds"
 	ideology = progressive
 }
 
 create_country_leader = {
-	name = "Giuliano Amato"
-	picture = "Portrait_ITA_Giuliano_Amato.dds"
-	ideology = luxemburgism
+	name = "Nabila Mounib"
+	picture = "Portrait_MOR_Nabila_Mounib.dds"
+	ideology = revolutionary_socialist_ideology
 }

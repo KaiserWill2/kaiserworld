@@ -115,8 +115,8 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Haile Selassie II"
-	picture = "Portrait_ETH_Haile_Selassie_Second.dds"
+	name = "Zera Yacob I"
+	picture = "Portrait_ETH_Zera_Yacob_I.tga"
 	ideology = absolute_monarchist
 }
 

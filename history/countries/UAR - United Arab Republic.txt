@@ -147,7 +147,7 @@ create_country_leader = {
 
 create_country_leader = {
 	name = "Fuad II"
-	picture = "Portrait_UAR_Faud_Second.dds"
+	picture = "Portrait_UAR_Faud_II.tga"
 	ideology = absolute_monarchist
 }
 

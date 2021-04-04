@@ -106,8 +106,8 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Mário Machado"
-	picture = "Portrait_POR_Mario_Machado.dds"
+	name = "Pio I"
+	picture = "Portrait_POR_Pio_I.tga"
 	ideology = fascist_ideology
 }
 
@@ -118,8 +118,8 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Duarte II"
-	picture = "Portrait_POR_Duarte_Second.dds"
+	name = "Pio I"
+	picture = "Portrait_POR_Pio_I.tga"
 	ideology = absolute_monarchist
 }
 

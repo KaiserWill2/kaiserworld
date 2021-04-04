@@ -70,7 +70,7 @@ if = {
 	}
 }
 set_politics = {
-	ruling_party = centrist
+	ruling_party = nationalist
 	last_election = "1997.1.1"
 	election_frequency = 48
 	elections_allowed = no
@@ -78,11 +78,11 @@ set_politics = {
 
 set_popularities = {
         fascist = 0
-		nationalist = 8
+		nationalist = 30
 		monarchist = 0
 		national_bolshevik = 0
 		national_conservative = 20
-		centrist = 30
+		centrist = 8
 		liberal = 20
 		new_democrat = 10
 		moderate_socialist = 2
@@ -91,7 +91,7 @@ set_popularities = {
 }
 
 create_country_leader = {
-	name = "Sekou Conneh"
-	picture = "Portrait_LIB_Sekou_Conneh.dds"
-	ideology = revolutionary_socialist_ideology
+	name = "Herbert Hoover III"
+	picture = "Portrait_LIB_Herbert_Hoover_III.tga"
+	ideology = nationalist_ideology
 }

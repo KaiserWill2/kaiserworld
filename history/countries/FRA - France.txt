@@ -133,8 +133,8 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Napoleon V"
-	picture = "Portrait_FRA_Napoleon_V.tga"
+	name = "Napoleon VI"
+	picture = "Portrait_FRA_Napoleon_VI.tga"
 	ideology = absolute_monarchist
 }
 
