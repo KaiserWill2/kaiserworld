@@ -19,7 +19,7 @@
 		icon = focus_deal_with_africa
 		cost = 1
 		available = {
-		    has_country_flag = africa_placeholder
+		    has_country_flag = africa_civil_war
 		}
 		prerequisite = {
 			focus = USA_prime_minister_bernie
@@ -34,13 +34,246 @@
 
 	}
 
+
+	#legitiment goverment supported
+	shared_focus = {
+		id = USA_support_the_legitimist
+		icon = focus_dealing_with_alaska
+		cost = 1
+		available = {
+		    has_country_flag = legitiment_goverment_supported
+		}
+		prerequisite = {
+			focus = USA_dealing_with_africa
+		}
+		mutually_exclusive = {
+			focus = USA_directly_intervene
+			focus = USA_support_the_rebels
+		}
+		x = -2
+		y = 1
+		relative_position_id = USA_dealing_with_africa
+		completion_reward = {
+		    
+		}
+
+	}
+	shared_focus = {
+		id = USA_offer_military_aid
+		icon = focus_dealing_with_alaska
+		cost = 1
+		available = {
+		    has_country_flag = legitiment_goverment_supported
+		}
+		prerequisite = {
+			focus = USA_support_the_legitimist
+		}
+		x = 0
+		y = 1
+		relative_position_id = USA_support_the_legitimist
+		completion_reward = {
+		    
+		}
+
+	}
+	shared_focus = {
+		id = USA_send_military_advisors
+		icon = focus_dealing_with_alaska
+		cost = 1
+		available = {
+		    has_country_flag = legitiment_goverment_supported
+		}
+		prerequisite = {
+			focus = USA_offer_military_aid
+		}
+		x = 0
+		y = 1
+		relative_position_id = USA_offer_military_aid
+		completion_reward = {
+		    
+		}
+
+	}
+
+	shared_focus = {
+		id = USA_send_an_expedition
+		icon = focus_dealing_with_alaska
+		cost = 1
+		available = {
+		    has_country_flag = legitiment_goverment_supported
+		}
+		prerequisite = {
+			focus = USA_send_military_advisors
+		}
+		x = 0
+		y = 1
+		relative_position_id = USA_send_military_advisors
+		completion_reward = {
+		    
+		}
+
+	}
+	#rebel goverment supported
+	shared_focus = {
+		id = USA_support_the_rebels
+		icon = focus_dealing_with_alaska
+		cost = 1
+		available = {
+		    has_country_flag = rebels_supported
+		}
+		prerequisite = {
+			focus = USA_dealing_with_africa
+		}
+		mutually_exclusive = {
+			focus = USA_directly_intervene
+			focus = USA_support_the_legitimist
+		}
+		x = 0
+		y = 1
+		relative_position_id = USA_dealing_with_africa
+		completion_reward = {
+		    
+		}
+
+	}
+	shared_focus = {
+		id = USA_send_military_equipment
+		icon = focus_dealing_with_alaska
+		cost = 1
+		available = {
+		    has_country_flag = rebels_supported
+		}
+		prerequisite = {
+			focus = USA_support_the_rebels
+		}
+		x = 0
+		y = 1
+		relative_position_id = USA_support_the_rebels
+		completion_reward = {
+		    
+		}
+
+	}
+	shared_focus = {
+		id = USA_train_the_rebels
+		icon = focus_dealing_with_alaska
+		cost = 1
+		available = {
+		    has_country_flag = rebels_supported
+		}
+		prerequisite = {
+			focus = USA_send_military_equipment
+		}
+		x = 0
+		y = 1
+		relative_position_id = USA_send_military_equipment
+		completion_reward = {
+		    
+		}
+
+	}
+	shared_focus = {
+		id = USA_send_volunteers
+		icon = focus_dealing_with_alaska
+		cost = 1
+		available = {
+		    has_country_flag = rebels_supported
+		}
+		prerequisite = {
+			focus = USA_train_the_rebels
+		}
+		x = 0
+		y = 1
+		relative_position_id = USA_train_the_rebels
+		completion_reward = {
+		    
+		}
+
+	}
+	#direct intervention
+	shared_focus = {
+		id = USA_directly_intervene
+		icon = focus_dealing_with_alaska
+		cost = 1
+		available = {
+		    has_country_flag = directly_intervene
+		}
+		prerequisite = {
+			focus = USA_dealing_with_africa
+		}
+		mutually_exclusive = {
+			focus = USA_support_the_rebels
+			focus = USA_support_the_legitimist
+		}
+		x = 2
+		y = 1
+		relative_position_id = USA_dealing_with_africa
+		completion_reward = {
+		    
+		}
+
+	}
+	shared_focus = {
+		id = USA_secure_a_fob
+		icon = focus_dealing_with_alaska
+		cost = 1
+		available = {
+		    has_country_flag = directly_intervene
+		}
+		prerequisite = {
+			focus = USA_directly_intervene
+		}
+		x = 0
+		y = 1
+		relative_position_id = USA_directly_intervene
+		completion_reward = {
+		    
+		}
+
+	}
+	shared_focus = {
+		id = USA_begin_drone_strikes
+		icon = focus_dealing_with_alaska
+		cost = 1
+		available = {
+		    has_country_flag = directly_intervene
+		}
+		prerequisite = {
+			focus = USA_secure_a_fob
+		}
+		x = 0
+		y = 1
+		relative_position_id = USA_secure_a_fob
+		completion_reward = {
+		    
+		}
+
+	}
+	shared_focus = {
+		id = USA_topple_the_goverment
+		icon = focus_dealing_with_alaska
+		cost = 1
+		available = {
+		    has_country_flag = directly_intervene
+		}
+		prerequisite = {
+			focus = USA_begin_drone_strikes
+		}
+		x = 0
+		y = 1
+		relative_position_id = USA_begin_drone_strikes
+		completion_reward = {
+		    
+		}
+
+	}
 	#bernie alaska
 	shared_focus = {
 		id = USA_dealing_with_alaska
 		icon = focus_dealing_with_alaska
 		cost = 1
 		available = {
-		    has_country_flag = alaska_placeholder
+		    has_country_flag = alaskan_civil_war
 		}
 		prerequisite = {
 			focus = USA_prime_minister_bernie
@@ -54,16 +287,20 @@
 		}
 
 	}
+	#operation alaskan freedom
 	shared_focus = {
-		id = USA_operation_alskan_freedom
+		id = USA_operation_alaskan_freedom
 		icon = focus_operation_alaska_freedom
 		cost = 5
 		prerequisite = {
 			focus = USA_dealing_with_alaska
 		}
+		available = {
+		    has_country_flag = operation_alaskan_freedom
+		}
 		mutually_exclusive = {
 			focus = USA_reapproach_alaska
-			focus = USA_operation_snow_storm
+			focus = USA_withdraw_from_alaska
 		}
 		x = 2
 		y = 1
@@ -74,15 +311,76 @@
 
 	}
 	shared_focus = {
+		id = USA_ready_the_navy
+		icon = focus
+		cost = 1
+		available = {
+		    has_country_flag = operation_alaskan_freedom
+		}
+		prerequisite = {
+			focus = USA_operation_alaskan_freedom
+		}
+		
+		x = 0
+		y = 1
+		relative_position_id = USA_operation_alaskan_freedom
+		completion_reward = {
+		    
+		}
+
+	}
+	shared_focus = {
+		id = USA_prepare_the_marines
+		icon = focus
+		cost = 1
+		available = {
+		    has_country_flag = operation_alaskan_freedom
+		}
+		prerequisite = {
+			focus = USA_ready_the_navy
+		}
+		
+		x = 0
+		y = 1
+		relative_position_id = USA_ready_the_navy
+		completion_reward = {
+		    
+		}
+
+	}
+	shared_focus = {
+		id = USA_commence_alaskan_freedom
+		icon = focus
+		cost = 1
+		available = {
+		    has_country_flag = operation_alaskan_freedom
+		}
+		prerequisite = {
+			focus = USA_prepare_the_marines
+		}
+		
+		x = 0
+		y = 1
+		relative_position_id = USA_prepare_the_marines
+		completion_reward = {
+		    
+		}
+
+	}
+	#reapproach alaska 
+	shared_focus = {
 		id = USA_reapproach_alaska
 		icon = focus_reapproach_alaska
 		cost = 5
 		prerequisite = {
 			focus = USA_dealing_with_alaska
 		}
+		available = {
+		    has_country_flag = reapproach_alaska
+		}
 		mutually_exclusive = {
-			focus = USA_operation_snow_storm
-			focus = USA_operation_alskan_freedom
+			focus = USA_withdraw_from_alaska
+			focus = USA_operation_alaskan_freedom
 		}
 		x = 0
 		y = 1
@@ -93,14 +391,75 @@
 
 	}
 	shared_focus = {
-		id = USA_operation_snow_storm
-		icon = focus_operation_snow_storm
+		id = USA_call_for_ceasefire
+		icon = focus
+		cost = 1
+		available = {
+		    has_country_flag = reapproach_alaska
+		}
+		prerequisite = {
+			focus = USA_reapproach_alaska
+		}
+		
+		x = 0
+		y = 1
+		relative_position_id = USA_reapproach_alaska
+		completion_reward = {
+		    
+		}
+
+	}
+	shared_focus = {
+		id = USA_begin_negotiations
+		icon = focus
+		cost = 1
+		available = {
+		    has_country_flag = reapproach_alaska
+		}
+		prerequisite = {
+			focus = USA_call_for_ceasefire
+		}
+		
+		x = 0
+		y = 1
+		relative_position_id = USA_call_for_ceasefire
+		completion_reward = {
+		    
+		}
+
+	}
+	shared_focus = {
+		id = USA_fresh_elections
+		icon = focus
+		cost = 1
+		available = {
+		    has_country_flag = reapproach_alaska
+		}
+		prerequisite = {
+			focus = USA_begin_negotiations
+		}
+		
+		x = 0
+		y = 1
+		relative_position_id = USA_begin_negotiations
+		completion_reward = {
+		    
+		}
+
+	}
+	#withdraw from alaska
+	shared_focus = {
+		id = USA_withdraw_from_alaska
+		icon = focus
 		cost = 5
 		prerequisite = {
 			focus = USA_dealing_with_alaska
 		}
+		available = {
+		    has_country_flag = withdraw_from_alaska
+		}
 		mutually_exclusive = {
-			focus = USA_operation_alskan_freedom
+			focus = USA_operation_alaskan_freedom
 			focus = USA_reapproach_alaska
 		}
 		x = -2
@@ -111,6 +470,64 @@
 		}
 
 	}
+	shared_focus = {
+		id = USA_recall_the_garrison
+		icon = focus
+		cost = 1
+		available = {
+		    has_country_flag = reapproach_alaska
+		}
+		prerequisite = {
+			focus = USA_withdraw_from_alaska
+		}
+		
+		x = 0
+		y = 1
+		relative_position_id = USA_withdraw_from_alaska
+		completion_reward = {
+		    
+		}
+
+	}
+	shared_focus = {
+		id = USA_evacuate_civilians
+		icon = focus
+		cost = 1
+		available = {
+		    has_country_flag = reapproach_alaska
+		}
+		prerequisite = {
+			focus = USA_recall_the_garrison
+		}
+		
+		x = 0
+		y = 1
+		relative_position_id = USA_recall_the_garrison
+		completion_reward = {
+		    
+		}
+
+	}
+	shared_focus = {
+		id = USA_pull_out_the_consulate
+		icon = focus
+		cost = 1
+		available = {
+		    has_country_flag = reapproach_alaska
+		}
+		prerequisite = {
+			focus = USA_evacuate_civilians
+		}
+		
+		x = 0
+		y = 1
+		relative_position_id = USA_evacuate_civilians
+		completion_reward = {
+		    
+		}
+
+	}
+
 	#bernie recession
 	shared_focus = {
 		id = USA_dealing_with_the_recession
