@@ -475,7 +475,7 @@
 		icon = focus
 		cost = 1
 		available = {
-		    has_country_flag = reapproach_alaska
+		    has_country_flag = withdraw_from_alaska
 		}
 		prerequisite = {
 			focus = USA_withdraw_from_alaska
@@ -494,7 +494,7 @@
 		icon = focus
 		cost = 1
 		available = {
-		    has_country_flag = reapproach_alaska
+		    has_country_flag = withdraw_from_alaska
 		}
 		prerequisite = {
 			focus = USA_recall_the_garrison
@@ -513,7 +513,7 @@
 		icon = focus
 		cost = 1
 		available = {
-		    has_country_flag = reapproach_alaska
+		    has_country_flag = withdraw_from_alaska
 		}
 		prerequisite = {
 			focus = USA_evacuate_civilians
@@ -3603,7 +3603,7 @@
 			focus = USA_germany_bernie
 		}
 		mutually_exclusive = {
-			focus = USA_alliance_with_the_kaiser_bernie
+			focus = USA_work_with_the_kaiser_bernie
 		}
 		x = 1
 		y = 1
