@@ -36597,7 +36597,7 @@ SpriteType = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/usa/focus_prime_minister_bernie.dds.dds"			
+			animationmaskfile = "gfx/interface/goals/usa/focus_prime_minister_bernie.dds"			
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
