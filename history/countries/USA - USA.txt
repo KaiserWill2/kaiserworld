@@ -14,6 +14,11 @@ add_ideas = {
 	idea_usa_norton_the_fourth
 	idea_usa_democratic_nation
 	idea_usa_great_recession
+	usa_barack_obama
+	usa_russ_feingold
+	usa_cornel_west
+	usa_andrew_bacevich
+	usa_barbara_lee
 }
 
 set_research_slots = 4
