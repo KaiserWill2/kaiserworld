@@ -14,6 +14,7 @@ add_ideas = {
 	idea_usa_norton_the_fourth
 	idea_usa_democratic_nation
 	idea_usa_great_recession
+	idea_usa_berniecare
 	usa_barack_obama
 	usa_russ_feingold
 	usa_cornel_west
