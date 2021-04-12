@@ -1427,6 +1427,7 @@
  idea_america_neutrality_tt:0 "§RWe will be unable to join or create factions until we reunite America or abandon our claims altogether.§!"
  player_remove_neutrality:0 "Allow International Diplomacy"
  idea_usa_norton_the_fourth:0 "Norton IV"
+ idea_usa_norton_the_fourth_desc:0 "Norton IV is the current Emperor of America and Protector of Mexico. He is the third in his family to rule over this great country, has had a modest reign so far, and has largely keep out of politics."
  idea_caf_german_colonialism:0 "Legacy of German Domination"
  idea_caf_german_colonialism_desc:0 "Freedom is a word that many Africans wish to have but in reality something we have not had since the late 1800s. The European powers have dominated this land since then and still, at least legally, the Germans have a large say over what happens in the African Federation. This colonial legacy is not one of pride but one of sorrow, and a legacy that we wish to rid ourselves of."
  idea_caf_ethnic_tension:0 "A Crumbling Federation"
@@ -1456,6 +1457,8 @@ idea_ala_crumbling_infrastructure:0 "Crumbling Infrastructure"
 idea_ala_crumbling_infrastructure_desc:0 "Due to the Beringian War, much of our nation’s infrastructure lies in ruin. From the roads of ALCAN that have fallen into total disarray to the train tracks of the ARR that have been left to mothball and decay, the few vital arteries Alaska has that allow it to circulate its goods and people are dying, and without a massive effort from the nation’s government, they will likely continue on this route until we are seized in gridlock over a lack of understructure required to run a modern state."
 idea_ala_nonexistent_economy:0 "Nonexistent Economy"
 idea_ala_nonexistent_economy_desc:0 "After decades of brutal guerilla war and clashes between Red and White forces, the economy of the Last Frontier has been completely obliterated. With much of the oil refining equipment of Prudhoe Bay and the Northern Slope falling into disrepair and with other major industries dying along the way like our infamous logging and mining endeavors, Alaska’s third-world economy has is now only barely held afloat through careful control over a few key fishing sites around Alaska’s territorial waters. The Last Frontier is dying, and some change will be needed, and fast, if it is to stand any chance at surviving the coming storm."
+idea_usa_berniecare:0 "Berniecare (The Afforable Care Act)"
+idea_usa_berniecare_desc:0 "Berniecare, or The Affordable Care Act, is an extension of the Medicare and Medicaid programs designed to expand medical access to the most vulnerable. Berniecare expands access to around 25% of the American population and gives the option of a government run health insurance. It was passed in a narrow margin in the House and the Senate before arriving on Prime Minister Sanders desk. Sanders's popularity has boomed after passing the act since it was a major campaign goal."
 
 ##UK##
 idea_memories_of_Michael_foot:0 "Memories Of Michael Foot"
