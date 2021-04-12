@@ -61,6 +61,10 @@ spriteTypes = {
 		name = "GFX_idea_nonexistent_economy"
 		texturefile = "gfx/interface/ideas/ALA/nonexistent_economy.dds"
 	}
+	spriteType = {
+		name = "GFX_idea_berniecare"
+		texturefile = "gfx/interface/ideas/USA/berniecare.dds"
+	}
 	##uk##
 	spriteType = {
 		name = "GFX_idea_memories_of_Michael_foot"
