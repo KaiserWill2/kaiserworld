@@ -65,6 +65,22 @@ spriteTypes = {
 		name = "GFX_idea_berniecare"
 		texturefile = "gfx/interface/ideas/USA/berniecare.dds"
 	}
+	spriteType = {
+		name = "GFX_idea_us_house"
+		texturefile = "gfx/interface/ideas/USA/us_house.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_us_senate"
+		texturefile = "gfx/interface/ideas/USA/us_senate.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_norton_ii_legacy"
+		texturefile = "gfx/interface/ideas/USA/norton_ii_legacy.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_legacy_of_second_acw"
+		texturefile = "gfx/interface/ideas/USA/legacy_of_second_acw.dds"
+	}
 	##uk##
 	spriteType = {
 		name = "GFX_idea_memories_of_Michael_foot"
