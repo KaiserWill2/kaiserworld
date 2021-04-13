@@ -1413,6 +1413,83 @@ ideas = {
 				stability_factor = 0.015
 			}
 		}
+		idea_usa_berniecare = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = berniecare
+			
+			modifier = {
+				stability_weekly = 0.001
+				political_power_gain = -0.1
+				monthly_population = 0.02
+				consumer_goods_factor = 0.05
+			}
+		}
+		idea_usa_house = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = us_house
+			
+			modifier = {
+				liberal_drift = 0.01
+				new_democrat_drift = 0.01
+				moderate_socialist_drift = 0.01
+			}
+		}
+		idea_usa_senate = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = us_senate
+			
+			modifier = {
+				liberal_drift = 0.01
+				new_democrat_drift = 0.01
+				moderate_socialist_drift = 0.01
+			}
+		}
+		idea_usa_norton_ii_legacy = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = norton_ii_legacy
+			
+			modifier = {
+				stability_factor = 0.08
+				political_power_gain = 0.1
+				monarchist_drift = 0.01
+			}
+		}
+		idea_usa_legacy_of_second_acw = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = legacy_of_second_acw
+			
+			modifier = {
+				stability_factor = -0.05
+				political_power_gain = -0.05
+				army_morale_factor = 0.015
+				war_support_factor = 0.05
+			}
+		}
 	idea_usa_cut_military_spending = {
 			allowed = {
 				always = no
