@@ -12,7 +12,10 @@ if = {
 
 add_ideas = {
 	idea_usa_norton_the_fourth
-	idea_usa_democratic_nation
+	idea_usa_house
+	idea_usa_senate
+	idea_usa_norton_ii_legacy
+	idea_usa_legacy_of_second_acw
 	idea_usa_great_recession
 	idea_usa_berniecare
 	usa_barack_obama
