@@ -1,0 +1,218 @@
+focus_tree = {
+	id = Russia_Coup_and_Plot_torture
+	country = {
+		factor = 0
+	}
+	default = yes
+	focus = {
+		id = SOVc_The_Black_November
+		icon = GFX_goal_unknown
+		cost = 0
+		x = 7
+		y = 0
+
+	}
+	focus = {
+		id = SOVc_Shoigu_Plan
+		icon = GFX_goal_unknown
+		cost = 1
+		prerequisite = {
+			focus = SOVc_The_Black_November
+		}
+		x = 7
+		y = 1
+		completion_reward = {
+			country_event = {
+				id = russia.23
+			}
+		}
+	}
+	focus = {
+		id = SOVc_Abstract_in_the_palace_of_Soviets
+		icon = GFX_goal_unknown
+		cost = 1
+		prerequisite = {
+			focus = SOVc_Shoigu_Plan
+		}
+		x = 5
+		y = 2
+		completion_reward = {
+			add_popularity = {
+				ideology = moderate_socialist
+				popularity = 0.12
+			}
+		}
+	}
+	focus = {
+		id = SOVc_Steel_arguments
+		icon = GFX_goal_unknown
+		cost = 1
+		prerequisite = {
+			focus = SOVc_Shoigu_Plan
+		}
+		x = 7
+		y = 2
+		completion_reward = {
+			add_war_support = -0.05
+			add_stability = -0.05
+		}
+	}
+	focus = {
+		id = SOVc_Make_them_Draw_consequences
+		icon = GFX_goal_unknown
+		cost = 1
+		prerequisite = {
+			focus = SOVc_Shoigu_Plan
+		}
+		x = 9
+		y = 2
+		completion_reward = {
+			add_political_power = -50
+		}
+	}
+	focus = {
+		id = SOVc_Tanks_in_Cremlin
+		icon = GFX_goal_unknown
+		cost = 4
+		prerequisite = {
+			focus = SOVc_Abstract_in_the_palace_of_Soviets
+		}
+		prerequisite = {
+			focus = SOVc_Steel_arguments
+		}
+		prerequisite = {
+			focus = SOVc_Make_them_Draw_consequences
+		}
+		x = 7
+		y = 3
+
+	}
+	focus = {
+		id = SOVc_ROVS_Stands
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = SOVc_Tanks_in_Cremlin
+		}
+		mutually_exclusive = {
+			focus = SOVc_Total_government_collapse
+			focus = SOVc_Countercoup
+		}
+		x = 5
+		y = 4
+
+	}
+	focus = {
+		id = SOVc_Raise_democracy_supporters
+		icon = GFX_goal_unknown
+		cost = 2
+		prerequisite = {
+			focus = SOVc_ROVS_Stands
+		}
+		x = 3
+		y = 5
+
+	}
+	focus = {
+		id = SOVc_Total_government_collapse
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = SOVc_Tanks_in_Cremlin
+		}
+		mutually_exclusive = {
+			focus = SOVc_ROVS_Stands
+			focus = SOVc_Countercoup
+		}
+		x = 7
+		y = 4
+
+	}
+	focus = {
+		id = SOVc_Chaos_is_the_Ladder
+		icon = GFX_goal_unknown
+		cost = 25
+		prerequisite = {
+			focus = SOVc_Total_government_collapse
+		}
+		x = 7
+		y = 5
+
+	}
+	focus = {
+		id = SOVc_Countercoup
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = SOVc_Tanks_in_Cremlin
+		}
+		mutually_exclusive = {
+			focus = SOVc_Total_government_collapse
+			focus = SOVc_ROVS_Stands
+		}
+		x = 9
+		y = 4
+
+	}
+	focus = {
+		id = SOVc_Strangle_the_traitors
+		icon = GFX_goal_unknown
+		cost = 2
+		prerequisite = {
+			focus = SOVc_Countercoup
+		}
+		x = 9
+		y = 5
+
+	}
+	focus = {
+		id = SOVc_Smoke_the_rats_out
+		icon = GFX_goal_unknown
+		cost = 2
+		prerequisite = {
+			focus = SOVc_ROVS_Stands
+		}
+		x = 5
+		y = 5
+
+	}
+	focus = {
+		id = SOVc_The_Bridge_has_fallen
+		icon = GFX_goal_unknown
+		cost = 3
+		prerequisite = {
+			focus = SOVc_Raise_democracy_supporters
+		}
+		prerequisite = {
+			focus = SOVc_Smoke_the_rats_out
+		}
+		x = 4
+		y = 6
+
+	}
+	focus = {
+		id = SOVc_The_day_of_Oprichnik
+		icon = GFX_goal_unknown
+		cost = 2
+		prerequisite = {
+			focus = SOVc_Countercoup
+		}
+		x = 11
+		y = 5
+
+	}
+	focus = {
+		id = SOVc_Lack_of_trust
+		icon = GFX_goal_unknown
+		cost = 3
+		prerequisite = {
+			focus = SOVc_Strangle_the_traitors
+		}
+		prerequisite = {
+			focus = SOVc_The_day_of_Oprichnik
+		}
+		x = 10
+		y = 6
+
+	}
+}

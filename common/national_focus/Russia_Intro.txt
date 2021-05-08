@@ -1,0 +1,391 @@
+focus_tree = {
+	id = Russia_Intro
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = SOV
+		}
+	}
+	default = no
+	focus = {
+		id = SOVi_New_year_message
+		icon = SOVi_New_year_message
+		cost = 1
+		x = 8
+		y = 0
+		completion_reward = {
+			country_event = {
+				id = russia.5 days = 0
+			}
+		}
+	}
+	focus = {
+		id = SOVi_look_at_the_gossovet
+		icon = SOVi_look_at_the_gossovet
+		cost = 3
+		prerequisite = {
+			focus = SOVi_New_year_message
+		}
+		x = 3
+		y = 1
+		completion_reward = {
+			country_event = {
+				id = russia.21 days = 0
+			}
+		}
+	}
+	focus = {
+		id = SOVi_Is_the_ROVS_a_treat
+		icon = SOVi_Is_the_ROVS_a_treat
+		cost = 2
+		prerequisite = {
+			focus = SOVi_look_at_the_gossovet
+		}
+		x = 3
+		y = 2
+		completion_reward = {
+			country_event = {
+				id = russia.22 days = 0
+			}
+		}
+	}
+	focus = {
+		id = SOVi_Belief_in_Bakov
+		icon = SOVi_Belief_in_Bakov
+		cost = 2
+		prerequisite = {
+			focus = SOVi_Is_the_ROVS_a_treat
+		}
+		x = 3
+		y = 4
+		completion_reward = {
+			add_political_power = 10
+			add_popularity = {
+				ideology = moderate_socialist
+				popularity = 0.04
+			}
+		}
+
+	}
+	focus = {
+		id = SOVi_Gorbachev_must_know_his_place
+		icon = SOVi_Gorbachev_must_know_his_place
+		cost = 2
+		prerequisite = {
+			focus = SOVi_Belief_in_Bakov
+		}
+		x = 3
+		y = 5
+		completion_reward = {
+			add_popularity = {
+				ideology = revolutionary_socialist
+				popularity = -0.02
+			}
+			hidden_effect = {
+				country_event = {
+					id = russia.23 days = 7
+				}
+			}
+		}
+	}
+	focus = {
+		id = SOVi_Renew_ministry_of_communications
+		icon = SOVi_Renew_ministry_of_communications
+		cost = 3
+		prerequisite = {
+			focus = SOVi_New_year_message
+		}
+		x = 8
+		y = 1
+		completion_reward = {
+			add_ideas = {
+				SOV_idea_minsv
+			}
+		}
+	}
+	focus = {
+		id = SOVi_Into_the_modernity
+		icon = SOVi_Into_the_modernity
+		cost = 2
+		prerequisite = {
+			focus = SOVi_Renew_ministry_of_communications
+		}
+		completion_reward = {
+			swap_ideas = {
+				add_idea = SOV_idea_modern_Russia
+				remove_idea = SOV_idea_minsv
+			}
+		}
+		x = 7
+		y = 2
+
+	}
+	focus = {
+		id = SOVi_Embrace_web_2_0
+		icon = SOVi_Embrace_web_2_0
+		cost = 2
+		prerequisite = {
+			focus = SOVi_Into_the_modernity
+		}
+		x = 6
+		y = 3
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = electronics
+			}
+		}
+	}
+	focus = {
+		id = SOVi_Upgrade_the_glonass
+		icon = SOVi_Upgrade_the_glonass
+		cost = 2
+		prerequisite = {
+			focus = SOVi_Renew_ministry_of_communications
+		}
+		x = 9
+		y = 2
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = radar_tech
+			}
+		}
+	}
+	focus = {
+		id = SOVi_dont_let_the_industry_collapse
+		icon = SOVi_dont_let_the_industry_collapse
+		cost = 2
+		prerequisite = {
+			focus = SOVi_Into_the_modernity
+		}
+		prerequisite = {
+			focus = SOVi_Upgrade_the_glonass
+		}
+		completion_reward = {
+			country_event = {
+				id = russia.24 days = 0
+			}
+		}
+		x = 8
+		y = 3
+
+	}
+	focus = {
+		id = SOVi_the_Russian_spirit
+		icon = SOVi_the_Russian_spirit
+		cost = 2
+		prerequisite = {
+			focus = SOVi_dont_let_the_industry_collapse
+		}
+		prerequisite = {
+			focus = SOVi_Embrace_web_2_0
+		}
+		completion_reward = {
+			swap_ideas = {
+				add_idea = SOV_idea_Russian_culture
+				remove_idea = SOV_idea_modern_Russia
+			}
+		}
+		x = 7
+		y = 4
+
+	}
+	focus = {
+		id = SOVi_higher_and_higher_and_higher
+		icon = SOVi_higher_and_higher_and_higher
+		cost = 2
+		prerequisite = {
+			focus = SOVi_Upgrade_the_glonass
+		}
+		x = 10
+		y = 3
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = jet_technology
+			}
+		}
+	}
+	focus = {
+		id = SOVi_fight_the_Gazprom_influence
+		icon = SOVi_fight_the_Gazprom_influence
+		cost = 2
+		prerequisite = {
+			focus = SOVi_dont_let_the_industry_collapse
+		}
+		prerequisite = {
+			focus = SOVi_higher_and_higher_and_higher
+		}
+		available = {
+			has_country_flag = SOV_fl_able_to_strike_Gazprom
+		}
+		x = 9
+		y = 4
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = SOV_idea_chaotic_economy
+				add_idea = SOV_idea_chaotic_economy_1
+			}
+			add_ideas = {
+				SOV_Miller_Gamble
+			}
+		}
+	}
+	focus = {
+		id = SOVi_restore_bunking_system
+		icon = SOVi_restore_bunking_system
+		cost = 2
+		prerequisite = {
+			focus = SOVi_the_Russian_spirit
+		}
+		prerequisite = {
+			focus = SOVi_fight_the_Gazprom_influence
+		}
+		available = {
+			has_country_flag = SOV_fl_able_to_restore_sberbank
+		}
+		x = 8
+		y = 5
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = SOV_idea_chaotic_economy_1
+				add_idea = SOV_idea_chaotic_economy_2
+			}
+		}
+	}
+	focus = {
+		id = SOVi_The_oil_crisis_is_over
+		icon = SOVi_The_oil_crisis_is_over
+		cost = 2
+		prerequisite = {
+			focus = SOVi_fight_the_Gazprom_influence
+		}
+		prerequisite = {
+			focus = SOVi_higher_and_higher_and_higher
+		}
+		x = 10
+		y = 5
+		completion_reward = {
+			swap_ideas = {
+				add_idea = SOV_idea_ashes_of_Sberbank
+				remove_idea = SOV_Miller_Gamble
+			}
+		}
+	}
+	focus = {
+		id = SOVi_There_is_the_smell_of_Rus
+		icon = SOVi_There_is_the_smell_of_Rus
+		cost = 2
+		prerequisite = {
+			focus = SOVi_the_Russian_spirit
+		}
+		prerequisite = {
+			focus = SOVi_Embrace_web_2_0
+		}
+		x = 6
+		y = 5
+		completion_reward = {
+			swap_ideas = {
+				add_idea = SOV_Idea_Syncretic_culture
+				remove_idea = SOV_idea_Russian_culture
+			}
+			add_stability = 0.05
+		}
+	}
+	focus = {
+		id = SOVi_the_muscle_diplomacy
+		icon = SOVi_the_muscle_diplomacy
+		cost = 3
+		prerequisite = {
+			focus = SOVi_New_year_message
+		}
+		x = 13
+		y = 1
+		completion_reward = {
+			add_war_support = 0.1
+		}
+	}
+	focus = {
+		id = SOVi_Threaten_Poland
+		icon = SOVi_Threaten_Poland
+		cost = 2
+		prerequisite = {
+			focus = SOVi_the_muscle_diplomacy
+		}
+		x = 13
+		y = 2
+		completion_reward = {
+			POL = {
+				country_event = {
+					id = russia.27
+				}
+			}
+		}
+	}
+	focus = {
+		id = SOVi_Druzhba_2010
+		icon = SOVi_Druzhba_2010
+		cost = 2
+		prerequisite = {
+			focus = SOVi_Threaten_Poland
+		}
+		x = 13
+		y = 4
+		completion_reward = {
+			army_experience = 10
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = land_doctrine
+			}
+		}
+	}
+	focus = {
+		id = SOVi_Rearm_pacific_fleet
+		icon = SOVi_Rearm_pacific_fleet
+		cost = 2
+		prerequisite = {
+			focus = SOVi_Druzhba_2010
+		}
+		x = 13
+		y = 5
+		completion_reward = {
+			navy_experience = 20
+		}
+	}
+	focus = {
+		id = SOVi_to_the_Bright_future
+		icon = SOVi_to_the_Bright_future
+		cost = 20
+		prerequisite = {
+			focus = SOVi_Gorbachev_must_know_his_place
+		}
+		prerequisite = {
+			focus = SOVi_There_is_the_smell_of_Rus
+		}
+		prerequisite = {
+			focus = SOVi_restore_bunking_system
+		}
+		prerequisite = {
+			focus = SOVi_The_oil_crisis_is_over
+		}
+		prerequisite = {
+			focus = SOVi_Rearm_pacific_fleet
+		}
+		select_effect = {
+			country_event = {
+				id = russia.29 days = 1
+			}
+		}
+		x = 8
+		y = 6
+		completion_reward = {
+			add_political_power = 300
+		}
+	}
+}
