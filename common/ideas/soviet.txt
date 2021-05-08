@@ -1,0 +1,248 @@
+ideas = {
+	country = {
+		
+		SOV_idea_glorious_empire = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = SOV_idea_glorious_empire
+
+			modifier = {
+				political_power_gain = 0.15
+				stability_factor = 0.05
+			}
+		}
+		
+		SOV_idea_national_tensions = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = SOV_idea_national_tensions
+
+			modifier = {
+				stability_weekly = -0.001
+				occupation_cost = 0.25
+			}
+		}
+		
+		SOV_idea_growing_rift = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = SOV_idea_growing_rift
+
+			modifier = {
+				moderate_socialist_drift = -0.02
+				political_power_factor = -0.1
+			}
+		}
+		
+		SOV_idea_chaotic_economy = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = SOV_idea_chaotic_economy
+
+			modifier = {
+				production_factory_max_efficiency_factor = -0.05
+				production_factory_efficiency_gain_factor = -0.1
+				civilian_factory_use = 5
+				production_speed_buildings_factor = -0.9
+				consumer_goods_factor = 0.25
+			}
+		}
+		
+		SOV_idea_ukrainian_separatism = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = SOV_idea_ukrainian_separatism
+
+			modifier = {
+				stability_factor = -0.1
+				war_support_factor = -0.3
+			}
+		}
+		
+		SOV_idea_local_revolts = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = SOV_idea_national_tensions
+
+			modifier = {
+				stability_weekly = -0.001
+				occupation_cost = 0.3
+				weekly_manpower = -30
+			}
+		}
+		
+		SOV_idea_local_revolts_2 = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = SOV_idea_national_tensions
+
+			modifier = {
+				stability_weekly = -0.003
+				occupation_cost = 0.35
+				weekly_manpower = -45
+			}
+		}
+		
+		SOV_idea_minsv = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = SOV_idea_national_tensions
+
+			modifier = {
+				political_power_factor = 0.05
+			}
+		}
+		
+		SOV_idea_modern_Russia = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = SOV_idea_national_tensions
+
+			modifier = {
+				political_power_factor = 0.1
+			}
+		}
+		
+		SOV_idea_Russian_culture = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = SOV_idea_national_tensions
+
+			modifier = {
+				political_power_factor = 0.1
+				stability_factor = 0.05
+			}
+		}
+		
+		SOV_idea_chaotic_economy_1 = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = SOV_idea_chaotic_economy
+
+			modifier = {
+				civilian_factory_use = 4
+				production_speed_buildings_factor = -0.40
+				consumer_goods_factor = 0.25
+			}
+		}
+		
+		SOV_idea_chaotic_economy_2 = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = SOV_idea_chaotic_economy
+
+			modifier = {
+				production_speed_buildings_factor = -0.2
+				consumer_goods_factor = 0.1
+			}
+		}
+		
+		SOV_Miller_Gamble = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = SOV_idea_chaotic_economy
+
+			modifier = {
+				production_factory_max_efficiency_factor = -0.05
+				production_factory_efficiency_gain_factor = -0.1
+				fuel_gain_factor_from_states = -0.25
+			}
+		}
+		SOV_idea_ashes_of_Sberbank = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = SOV_idea_chaotic_economy
+
+			modifier = {
+				fuel_gain_factor_from_states = -0.1
+			}
+		}
+		
+		SOV_Idea_Syncretic_culture = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = SOV_idea_national_tensions
+
+			modifier = {
+				political_power_factor = 0.1
+				stability_factor = 0.1
+			}
+		}
+		
+		SOV_idea_Mladorossi_uprising = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = SOV_idea_growing_rift
+
+			modifier = {
+				moderate_socialist_drift = 0.05
+				political_power_factor = -0.5
+			}
+		}
+	}
+	
+}
