@@ -6,18 +6,6 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/USA/norton_iv.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_german_colonialism"
-		texturefile = "gfx/interface/ideas/CAF/german_colonialism.dds"
-	}
-	spriteType = {
-		name = "GFX_idea_ethnic_tension"
-		texturefile = "gfx/interface/ideas/CAF/ethnic_tension.dds"
-	}
-	spriteType = {
-		name = "GFX_idea_collapsing_economy"
-		texturefile = "gfx/interface/ideas/CAF/collapsing_economy.dds"
-	}
-	spriteType = {
 		name = "GFX_idea_idea_pol_king_alexander"
 		texturefile = "gfx/interface/ideas/POL/idea_pol_king_alexander.tga"
 	}
@@ -81,6 +69,18 @@ spriteTypes = {
 		name = "GFX_idea_legacy_of_second_acw"
 		texturefile = "gfx/interface/ideas/USA/legacy_of_second_acw.dds"
 	}
+	spriteType = {
+		name = "GFX_idea_german_colonialism"
+		texturefile = "gfx/interface/ideas/CAF/caf_german_colonialism.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ethnic_tension"
+		texturefile = "gfx/interface/ideas/CAF/caf_ethnic_tension.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_collapsing_economy"
+		texturefile = "gfx/interface/ideas/CAF/caf_collapsing_economy.dds"
+	}
 	##uk##
 	spriteType = {
 		name = "GFX_idea_memories_of_Michael_foot"
@@ -97,6 +97,22 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_the_failed_economy"
 		texturefile = "gfx/interface/ideas/ENG/the_failed_economy.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_SOV_idea_glorious_empire"
+		texturefile = "gfx/interface/ideas/SOV/GFX_SOV_idea_glorious_empire.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_SOV_idea_national_tensions"
+		texturefile = "gfx/interface/ideas/SOV/GFX_SOV_idea_national_tensions.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_SOV_idea_growing_rift"
+		texturefile = "gfx/interface/ideas/SOV/GFX_SOV_idea_growing_rift.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_SOV_idea_chaotic_economy"
+		texturefile = "gfx/interface/ideas/SOV/GFX_SOV_idea_chaotic_economy.dds"
 	}
 	###Unsorted
 	spriteType = {
