@@ -1,0 +1,638 @@
+﻿add_namespace = russia
+
+country_event = {##historical thing 1 - Shadow of CW
+	id = russia.1
+	title = russia.1.t
+	desc = russia.1.d
+	picture = presidents_meet_in_belgrade
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = russia.1.a
+		country_event = {
+			id = russia.2 days = 0
+		}
+	}
+}
+
+country_event = {##historical thing 2 - Russia and the cold war(1950s - 1970s)
+	id = russia.2
+	title = russia.2.t
+	desc = russia.2.d
+	picture = presidents_meet_in_belgrade
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = russia.2.a
+		country_event = {
+			id = russia.3 days = 0
+		}
+	}
+}
+
+country_event = {##historical thing 3 - Russia and the cold war(1970s - 2010)
+	id = russia.3
+	title = russia.3.t
+	desc = russia.3.d
+	picture = presidents_meet_in_belgrade
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = russia.3.a
+		country_event = {
+			id = russia.4 days = 0
+		}
+	}
+}
+
+country_event = {##historical thing 4 - Modern Russia
+	id = russia.4
+	title = russia.4.t
+	desc = russia.4.d
+	picture = presidents_meet_in_belgrade
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = russia.4.a
+		custom_effect_tooltip = SOV_uncertain_future
+	}
+}
+
+country_event = {##Rybkin new year message
+	id = russia.5
+	title = russia.5.t
+	desc = russia.5.d
+	picture = presidents_meet_in_belgrade
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = russia.5.a
+		add_political_power = 25
+		add_stability = 0.01
+		hidden_effect = {
+			country_event = {
+				id = russia.6 days = 2
+			}
+			country_event = {
+				id = russia.7 days = 8
+			}
+			country_event = {
+				id = russia.8 days = 33
+			}
+			country_event = {
+				id = russia.12 days = 81
+			}
+			country_event = {
+				id = russia.13 days = 89
+			}
+			country_event = {
+				id = russia.14 days = 154
+			}
+			country_event = {
+				id = russia.15 days = 162
+			}
+			country_event = {
+				id = russia.16 days = 220
+			}
+			country_event = {
+				id = russia.17 days = 121
+			}
+			country_event = {
+				id = russia.18 days = 124
+			}
+			country_event = {
+				id = russia.19 days = 245
+			}
+			country_event = {
+				id = russia.20 days = 254
+			}
+		}
+	}
+}
+
+country_event = {##flavour shit about renaming some TV channels
+	id = russia.6
+	title = russia.6.t
+	desc = russia.6.d
+	picture = presidents_meet_in_belgrade
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = russia.4.a
+	}
+}
+
+country_event = {##replacing Komi governor
+	id = russia.7
+	title = russia.7.t
+	desc = russia.7.d
+	picture = presidents_meet_in_belgrade
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = russia.7.a
+	}
+}
+
+country_event = {##Chernomyrdin(Governor of Malorossia) dies
+	id = russia.8
+	title = russia.8.t
+	desc = russia.8.d
+	picture = presidents_meet_in_belgrade
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = russia.8.a
+		add_political_power = -15
+		hidden_effect = {
+			country_event = {
+				id = russia.9 days = 15
+			}
+		}
+	}
+}
+
+country_event = {##New governor apointed(Yanukovich)
+	id = russia.9
+	title = russia.9.t
+	desc = russia.9.d
+	picture = presidents_meet_in_belgrade
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = russia.9.a
+		add_political_power = -10
+		add_stability = -0.01
+		hidden_effect = {
+			country_event = {
+				id = russia.10 days = 300
+			}
+		}
+	}
+	option = {
+		name = russia.9.a
+		add_political_power = -50
+		add_stability = 0.02
+		hidden_effect = {
+			country_event = {
+				id = russia.10 days = 150
+			}
+		}
+	}
+}
+
+country_event = {##Protests in Kiev
+	id = russia.10
+	title = russia.10.t
+	desc = russia.10.d
+	picture = presidents_meet_in_belgrade
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = russia.10.a
+		add_political_power = -100
+		country_event = {
+			id = russia.11 days = 7
+		}
+	}
+}
+
+country_event = {##Oh now, Ukrainians attack
+	id = russia.11
+	title = russia.11.t
+	desc = russia.11.d
+	picture = presidents_meet_in_belgrade
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = russia.11.a
+		add_stability = -0.12
+		add_ideas = {
+			SOV_idea_ukrainian_separatism
+		}
+	}
+}
+
+country_event = {##Terrorist attack in Moscow Metro
+	id = russia.12
+	title = russia.12.t
+	desc = russia.12.d
+	picture = presidents_meet_in_belgrade
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = russia.12.a
+		add_stability = -0.03
+		add_manpower = -41
+	}
+}
+
+country_event = {##Kokand revolts
+	id = russia.13
+	title = russia.13.t
+	desc = russia.13.d
+	picture = presidents_meet_in_belgrade
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = russia.13.a
+		swap_ideas = {
+			add_idea = SOV_idea_local_revolts
+			remove_idea = SOV_idea_national_tensions
+		}
+	}
+}
+
+country_event = {##Pamir Massacre
+	id = russia.14
+	title = russia.14.t
+	desc = russia.14.d
+	picture = presidents_meet_in_belgrade
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = russia.14.a
+		add_manpower = -435
+		remove_state_core = 586
+		remove_state_core = 822
+		remove_state_core = 823
+	}
+}
+
+country_event = {##Red summer
+	id = russia.15
+	title = russia.15.t
+	desc = russia.15.d
+	picture = presidents_meet_in_belgrade
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = russia.15.a
+		add_stability = -0.08
+	}
+}
+
+country_event = {##Red summer intensifies
+	id = russia.16
+	title = russia.16.t
+	desc = russia.16.d
+	picture = presidents_meet_in_belgrade
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = russia.16.a
+		add_stability = -0.03
+		add_political_power = -50
+	}
+}
+
+country_event = {##Kemerovo explosion
+	id = russia.17
+	title = russia.17.t
+	desc = russia.17.d
+	picture = presidents_meet_in_belgrade
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = russia.17.a
+		add_manpower = -91
+		add_stability = -0.01
+	}
+}
+
+country_event = {##Old icons found in Kremlin
+	id = russia.18
+	title = russia.18.t
+	desc = russia.18.d
+	picture = presidents_meet_in_belgrade
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = russia.18.a
+		add_stability = 0.02
+	}
+}
+
+country_event = {##Terrorist actions in Vladikavkaz
+	id = russia.19
+	title = russia.19.t
+	desc = russia.19.d
+	picture = presidents_meet_in_belgrade
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = russia.19.a
+		add_manpower = -18
+		swap_ideas = {
+			add_idea = SOV_idea_local_revolts_2
+			remove_idea = SOV_idea_local_revolts
+		}
+	}
+}
+
+country_event = {##End of Red Summer
+	id = russia.20
+	title = russia.20.t
+	desc = russia.20.d
+	picture = presidents_meet_in_belgrade
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = russia.20.a
+		add_stability = 0.07
+	}
+}
+
+country_event = {##Look at gossovet
+	id = russia.21
+	title = russia.21.t
+	desc = russia.21.d
+	picture = presidents_meet_in_belgrade
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = russia.21.a
+		add_political_power = 30
+	}
+}
+
+country_event = {##Who the fuck care about ROVS, right?
+	id = russia.22
+	title = russia.22.t
+	desc = russia.22.d
+	picture = presidents_meet_in_belgrade
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = russia.22.a
+		add_popularity = {
+			ideology = centrist
+			popularity = 0.03
+		}
+	}
+}
+
+country_event = {##Gorbachev strikes back
+	id = russia.23
+	title = russia.23.t
+	desc = russia.23.d
+	picture = presidents_meet_in_belgrade
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = russia.22.a
+		add_popularity = {
+			ideology = revolutionary_socialist
+			popularity = 0.07
+		}
+		add_political_power = -20
+	}
+}
+
+country_event = {##Investigation 1
+	id = russia.23
+	title = russia.23.t
+	desc = russia.23.d
+	picture = presidents_meet_in_belgrade
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = russia.23.a
+		hidden_effect = {
+			country_event = {
+				id = russia.24 days = 7
+			}
+		}
+		custom_effect_tooltip = SOV_tt_investigate_the_magnats
+	}
+}
+
+country_event = {##Investigation 2
+	id = russia.24
+	title = russia.24.t
+	desc = russia.24.d
+	picture = presidents_meet_in_belgrade
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = russia.24.a
+		hidden_effect = {
+			country_event = {
+				id = russia.25 days = 1
+			}
+		}
+		custom_effect_tooltip = SOV_tt_investigate_the_gosplan
+	}
+}
+
+country_event = {##Investigation 3
+	id = russia.25
+	title = russia.25.t
+	desc = russia.25.d
+	picture = presidents_meet_in_belgrade
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = russia.25.a
+		hidden_effect = {
+			country_event = {
+				id = russia.26 days = 20
+			}
+		}
+		custom_effect_tooltip = SOV_tt_strike_the_gazprom
+		set_country_flag = SOV_fl_able_to_strike_Gazprom
+	}
+}
+
+country_event = {##Investigation 4
+	id = russia.26
+	title = russia.26.t
+	desc = russia.26.d
+	picture = presidents_meet_in_belgrade
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = russia.26.a
+		custom_effect_tooltip = SOV_tt_restore_sberbank
+		set_country_flag = SOV_fl_able_to_restore_sberbank
+	}
+}
+
+country_event = {##Little trolling Poland
+	id = russia.27
+	title = russia.27.t
+	desc = russia.27.d
+	picture = presidents_meet_in_belgrade
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = russia.27.a
+		add_war_support = 0.05
+		add_stability = -0.05
+		hidden_effect = {
+			SOV = {
+				country_event = {
+					id = russia.28 days = 3
+				}
+			}
+		}
+	}
+}
+
+country_event = {##Report on Trolling
+	id = russia.28
+	title = russia.28.t
+	desc = russia.28.d
+	picture = presidents_meet_in_belgrade
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = russia.28.a
+		add_manpower = 2000
+	}
+}
+
+country_event = {##Session_starts
+	id = russia.29
+	title = russia.29.t
+	desc = russia.29.d
+	picture = presidents_meet_in_belgrade
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = russia.29.a
+		add_political_power = 150
+		hidden_effect = {
+			country_event = {
+				id = russia.30 days = 10
+			}
+		}
+	}
+}
+
+country_event = {##Vote of no confidence
+	id = russia.30
+	title = russia.30.t
+	desc = russia.30.d
+	picture = presidents_meet_in_belgrade
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = russia.30.a
+		add_political_power = -200
+		hidden_effect = {
+			country_event = {
+				id = russia.31 days = 6
+			}
+		}
+	}
+}
+
+country_event = {##ROVS putch
+	id = russia.31
+	title = russia.31.t
+	desc = russia.31.d
+	picture = presidents_meet_in_belgrade
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = russia.31.a
+		set_politics = {
+			ruling_party = centrist
+			elections_allowed = no
+			last_election = "1935.12.17"
+			election_frequency = 48
+		}
+		load_focus_tree = Russia_Coup_and_Plot_torture
+		set_stability = 0
+		complete_national_focus = SOVc_The_Black_November
+		country_event = {
+			id = russia.32 days = 0
+		}
+	}
+}
+
+country_event = {##Mladorossi still alive
+	id = russia.32
+	title = russia.32.t
+	desc = russia.32.d
+	picture = presidents_meet_in_belgrade
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = russia.32.a
+		add_political_power = -100
+		hidden_effect = {
+			country_event = {
+				id = russia.33 days = 5
+			}
+		}
+		swap_ideas = {
+			add_idea = SOV_idea_Mladorossi_uprising
+			remove_idea = SOV_idea_growing_rift
+		}
+	}
+}
+
+country_event = {##ROVS tries to create legitimacy
+	id = russia.33
+	title = russia.33.t
+	desc = russia.33.d
+	picture = presidents_meet_in_belgrade
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = russia.22.a
+		add_popularity = {
+			ideology = centrist
+			popularity = 0.25
+		}
+	}
+}
+
+country_event = {##Shoigu Plan
+	id = russia.34
+	title = russia.34.t
+	desc = russia.34.d
+	picture = presidents_meet_in_belgrade
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = russia.34.a
+	}
+}
