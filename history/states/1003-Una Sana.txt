@@ -1,0 +1,21 @@
+state={
+	id=1003
+	name="STATE_1003"
+	history={
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+
+		}
+		owner=YUG
+		add_core_of = YUG
+		add_core_of = BOS
+		victory_points = { 9586 3 }
+	}
+	provinces={
+		6614 9586
+	}
+	manpower = 269700
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+}

@@ -1,0 +1,443 @@
+﻿capital = 446
+
+oob = "generic_2000"
+
+#if = {
+#	limit = { has_dlc = "Man the Guns" }
+#		set_naval_oob = "EGY_2000_naval_mtg"
+#	else = {
+#		set_naval_oob = "EGY_2000_naval_legacy"
+#	}
+#}
+
+set_research_slots = 4
+set_convoys = 500
+set_stability = 0.4
+set_war_support = 0.3
+
+set_country_flag = muslim_nation
+
+set_technology = {
+	support_weapons = 1
+	infantry_weapons = 1
+	motorised_infantry = 1 
+	tech_support = 1 
+	tech_field_hospital = 1 
+	tech_engineers = 1 
+	gwtank = 1 
+	basic_light_tank = 1 
+	gw_artillery = 1 
+	tech_mountaineers = 1
+	early_fighter = 1 
+	early_bomber = 1 
+	paratroopers = 1 
+	marines = 1
+	interwar_antiair = 1
+	interwar_antitank = 1
+}
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	set_technology = {
+		early_submarine = 1
+		basic_submarine = 1
+		early_destroyer = 1
+		early_light_cruiser = 1
+		basic_light_cruiser = 1
+		early_heavy_cruiser = 1
+		
+		
+		early_carrier = 1
+		basic_carrier = 1
+		transport = 1
+	}
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_technology = {
+		basic_naval_mines = 1
+		submarine_mine_laying = 1
+		early_ship_hull_light = 1
+		basic_ship_hull_light = 1
+		early_ship_hull_submarine = 1
+		basic_ship_hull_submarine = 1
+		early_ship_hull_cruiser = 1
+		basic_ship_hull_cruiser = 1
+		early_ship_hull_heavy = 1
+		early_ship_hull_carrier = 1
+		basic_ship_hull_carrier = 1
+		basic_battery = 1
+		basic_light_battery = 1
+		basic_medium_battery = 1
+		basic_heavy_battery = 1
+		basic_torpedo = 1
+		sonar = 1
+		basic_depth_charges = 1
+		basic_secondary_battery = 1
+		improved_secondary_battery = 1
+		basic_cruiser_armor_scheme = 1
+		basic_heavy_armor_scheme = 1
+		mtg_transport = 1
+		improved_airplane_launcher = 1
+	}
+}
+set_politics = {
+	ruling_party = nationalist
+	last_election = "1997.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+        fascist = 0
+		nationalist = 70
+		monarchist = 0
+		national_bolshevik = 0
+		national_conservative = 10
+		centrist = 0
+		liberal = 0
+		new_democrat = 0
+		moderate_socialist = 0
+		revolutionary_socialist = 0
+		communist = 20
+}
+
+create_country_leader = {
+	name = "Salah Adli"
+	picture = "Portrait_EGY_Saleh_Mansour.dds"
+	ideology = leninist
+}
+
+create_country_leader = {
+	name = "Ibrahim al-Badri"
+	picture = "Portrait_EGY_Abu_Bakr_Al_Baghdadi.dds"
+	ideology = jihadist
+}
+
+create_country_leader = {
+	name = "Omar Suleiman"
+	picture = "Portrait_EGY_Omar_Suleiman.dds"
+	ideology = nationalist_ideology
+}
+
+create_country_leader = {
+	name = "Fuad II"
+	picture = "Portrait_EGY_Faud_Second.dds"
+	ideology = absolute_monarchist
+}
+
+create_country_leader = {
+	name = "Sameh Naguib"
+	picture = "Portrait_EGY_Sameh_Naguib.dds"
+	ideology = baathist
+}
+
+create_country_leader = {
+	name = "Mohamed Morsi"
+	picture = "Portrait_EGY_Mohamed_Morsi.dds"
+	ideology = islamic_democrat
+}
+
+create_country_leader = {
+	name = "Abdel Moneim Aboul Fotouh"
+	picture = "Portrait_EGY_Abdel_Moneim_Aboul_Fotouh.dds"
+	ideology = centrist_ideology
+}
+
+create_country_leader = {
+	name = "Naguib Onsi Sawiris"
+	picture = "Portrait_EGY_Naguib_O_Sawiris.dds"
+	ideology = social_liberal
+}
+
+create_country_leader = {
+	name = "Amr Moussa"
+	picture = "Portrait_EGY_Amr_Moussa.dds"
+	ideology = new_democrat_ideology
+}
+
+create_country_leader = {
+	name = "Ahmed Bahaa El-Din Shaaban"
+	picture = "Portrait_EGY_Ahmed_Bahaa_Din_Shaaban.dds"
+	ideology = democratic_socialist
+}
+
+create_country_leader = {
+	name = "Essam Sharaf"
+	picture = "Portrait_EGY_Essam_Sharaf.dds"
+	ideology = revolutionary_socialist_ideology
+}
+
+create_field_marshal = {
+	name = "Abdel Fattah al-Sisi"
+	picture = "Portriat_Abdel_Fattah_al-Sisi.dds"
+	traits = { inspirational_leader }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_field_marshal = {
+	name = "Mahmoud Hegazy"
+	picture = "Portriat_Mahmoud_Hegazy.dds"
+	traits = { 	fast_planner }
+	skill = 3
+	attack_skill = 1
+	defense_skill = 2
+	planning_skill = 5
+	logistics_skill = 1
+}
+
+create_field_marshal = {
+	name = "Sedki Sobhy"
+	picture = "Portriat_Sedki_Sobhy.dds"
+	traits = { organisational_leader }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Mamdouh Shahin"
+	picture = "Portrait_Mamdouh_Shahin.dds"
+	traits = {  }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Mohamed Samir"
+	picture = "Portriat_Mohammed_Samir.dds"
+	traits = {  }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Sami Hafez Anan"
+	picture = "Portrait_Sami_Hafez_Anan.dds"
+	traits = {  }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Ahmed Wasifi"
+	picture = "Portriat_Ahmed_Wasfi.dds"
+	traits = {  }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Sami Diab"
+	picture = "Portriat_Sami_Diab.dds"
+	traits = {  }
+	skill = 2
+	attack_skill = 1
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Hatem Saber"
+	picture = "Portriat_Hatem_Saber.dds"
+	traits = {  }
+	skill = 2
+	attack_skill = 4
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Hassan al-Roueini"
+	picture = "Portriat_Hassan_al-Roueini.dds"
+	traits = {  }
+	skill = 2
+	attack_skill = 1
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Medhat El Nahas"
+	picture = "Portriat_Medhat_El_Nahas.dds"
+	traits = {  }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 3
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Mohamed Abdellah"
+	picture = "Portriat_Mohamed_Abdellah.dds"
+	traits = {  }
+	skill = 2
+	attack_skill = 3
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Mohamed Hussein Tantawi"
+	picture = "Portriat_Mohamed_Hussein_Tantawi.dds"
+	traits = {  }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Mohamed Zaki"
+	picture = "Portriat_Mohamed_Zaki.dds"
+	traits = {  }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Mohamed Moustafa Kamal Ibrahim Fahmy"
+	picture = "Portriat_Mohamed_Moustafa_Kamal_Ibrahim_Fahmy.dds"
+	traits = {  }
+	skill = 2
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Shefir Fahmy Saad"
+	picture = "Portriat_Sherif_Fahmy_Saad.dds"
+	traits = {  }
+	skill = 2
+	attack_skill = 1
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Taher Abdallah"
+	picture = "Portriat_Taher_Abdallah.dds"
+	traits = {  }
+	skill = 2
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Majed Mohammed"
+	picture = "Portriat_Majed_Mohammed.dds"
+	traits = {  }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Tawhid Tawfiq"
+	picture = "Portriat_Tawhid_Tawfiq.dds"
+	traits = {  }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Majed Abdelsayed"
+	picture = "Portriat_Majed_Abdelsayed.dds"
+	traits = {  }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_navy_leader = {
+	name = "Mohab Mamish"
+	picture = "Portrait_Mohab_Mamish.dds"
+	traits = { ironside }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 3
+	coordination_skill = 3
+	maneuvering_skill = 2
+}
+
+create_navy_leader = {
+	name = "Osama El-Gendi"
+	picture = "Portriat_Osama_El-Gendi.dds"
+	traits = {  }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	coordination_skill = 2
+	maneuvering_skill = 2
+}
+
+create_navy_leader = {
+	name = "Ahmed Khaled Hassan Said Ahmed"
+	picture = "Portriat_Ahmed_Khaled_Hassan_Said_Ahmed.dds"
+	traits = {  }
+	skill = 2
+	attack_skill = 1
+	defense_skill = 3
+	coordination_skill = 1
+	maneuvering_skill = 2
+}
+
+create_navy_leader = {
+	name = "Mohamed Abdel Aziz El Sayed"
+	picture = "Portriat_Mohamed_Abdel_Aziz_El_Sayed.dds"
+	traits = {  }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	coordination_skill = 3
+	maneuvering_skill = 1
+}
+
+create_navy_leader = {
+	name = "Osama Mounir Rabie"
+	picture = "Portriat_Osama_Mounir_Rabie.dds"
+	traits = {  }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	coordination_skill = 2
+	maneuvering_skill = 1
+}

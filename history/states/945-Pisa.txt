@@ -1,0 +1,29 @@
+state={
+	id=945
+	name="STATE_945"
+	provinces={
+		13606 
+	}
+	history={
+		owner = ITA
+		add_core_of = ITA
+		add_core_of = TUS
+		add_core_of = PIS
+		victory_points = {
+			13606 1 
+		}
+		buildings = {
+			infrastructure = 9
+			industrial_complex = 2
+			arms_factory = 2
+			13606 = {
+				naval_base = 10
+
+			}
+		}
+
+	}
+	manpower=510000
+	state_category = city
+	buildings_max_level_factor=1.000
+}

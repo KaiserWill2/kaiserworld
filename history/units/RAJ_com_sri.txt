@@ -1,0 +1,57 @@
+﻿
+division_template = {
+	name = "Militia Brigade"
+	
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+	}
+	
+	priority = 0
+}
+
+
+
+
+units = {
+
+	division = {
+		name = "Tamil Unit"
+		division_template = "Militia Brigade"
+		location = 10201 
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.5
+	}
+	
+	division = {
+		name = "Tamil Unit"
+		division_template = "Militia Brigade"
+		location = 10201 
+		start_experience_factor = 0.5
+start_equipment_factor = 0.5
+	}
+
+	division = {
+		name = "Tamil Unit"
+		division_template = "Militia Brigade"
+		location = 10229 
+		start_experience_factor = 0.5
+start_equipment_factor = 0.5
+	}
+}
+
+instant_effect = {
+	
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "RAJ"
+		}
+		requested_factories = 3
+		progress = 0.1
+		efficiency = 100
+		amount = 250000
+	}
+	
+}

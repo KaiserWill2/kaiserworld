@@ -1,0 +1,21 @@
+
+state={
+	id=655
+	name="STATE_655"
+	manpower = 265718
+	
+	state_category = pastoral
+	history={
+		owner = SOV
+		add_core_of = SOV
+		buildings = {
+			infrastructure = 3
+			air_base = 1
+		}
+add_core_of = RUS
+	}
+
+	provinces={
+		855 1742 1755 
+	}
+}

@@ -1,0 +1,946 @@
+ideas = {
+
+    country = {
+
+		idea_gau_the_war_effort = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = FRA_motorized_focus
+
+			modifier = {
+				political_power_gain = -1
+			}
+		}
+
+		idea_gau_a_disciplined_america = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = FRA_matignon_agreements
+
+			modifier = {
+				training_time_army_factor = -0.02
+				experience_gain_army = 0.03
+			}
+		}
+
+		idea_gau_a_christian_america = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = FRA_national_mobilization_focus
+
+			modifier = {
+				nationalist_drift = 0.005
+				stability_factor = 0.025
+			}
+		}
+
+		idea_gau_a_democratic_america = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_democratic_drift_bonus
+
+			modifier = {
+				national_conservative_drift = 0.01
+				centrist_drift = 0.01
+				liberal_drift = 0.01
+				new_democrat_drift = 0.01
+				moderate_socialist_drift = 0.01
+				political_power_gain = -0.05
+				stability_factor = 0.05
+				army_morale_factor = 0.01
+			}
+		}
+
+		idea_gau_trade_councils_arrested = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_intel_bonus
+
+			modifier = {
+				political_power_gain = 0.05
+				industrial_capacity_factory = 0.04
+			}
+		}
+
+		idea_gau_internal_smear_campaign = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_disjointed_gov
+
+			modifier = {
+				army_morale_factor = 0.03
+				army_org_factor = 0.02
+				justify_war_goal_time = -0.1
+			}
+		}
+
+		idea_gau_nationwide_conscription = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_manpower_bonus
+
+			modifier = {
+				conscription = 0.02
+				moderate_socialist_drift = -0.03
+				local_resources_factor = -0.15
+			}
+		}
+
+		idea_gau_early_days_of_national_bolshevism = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = socialism_forever
+
+			modifier = {
+				political_power_gain = -1.1
+			}
+		}
+
+		idea_gau_old_guard_leaders_purged = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = officers_purged
+
+			modifier = {
+				army_org_factor = -0.01
+				army_morale_factor = 0.025
+				consumer_goods_factor = -0.02
+				production_speed_industrial_complex_factor = 0.1
+			}
+		}
+
+		idea_gau_ultranationalist_propaganda = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = triumphant_will
+
+			modifier = {
+				national_bolshevik_drift = 0.015
+				political_power_gain = 0.035
+				army_morale_factor = 0.01
+				army_attack_factor = 0.03
+				justify_war_goal_time = -0.05
+			}
+		}
+
+		idea_gau_supporting_state_owned_industries = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = supporting_state_owned_industries
+
+			modifier = {
+				production_speed_industrial_complex_factor = 0.02
+				production_speed_arms_factory_factor = 0.02
+				industrial_capacity_factory = 0.01
+				consumer_goods_factor = 0.05
+			}
+		}
+
+		idea_gau_supporting_local_farmers = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = farming
+
+			modifier = {
+				trade_opinion_factor = 0.05
+				local_resources_factor = -0.025
+				foreign_subversive_activites = -0.5
+				army_core_defence_factor = 0.01
+			}
+		}
+
+		idea_gau_production_quotas = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = pushed_to_edge
+
+			modifier = {
+				industrial_capacity_factory = 0.07
+				stability_factor = -0.02
+			}
+		}
+
+		idea_gau_american_revival = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_morale_bonus
+
+			modifier = {
+				justify_war_goal_time = -0.08
+			}
+		}
+
+		idea_gau_unprecedented_stability = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_pp_unity_bonus
+
+			modifier = {
+				army_morale_factor = 0.05
+				army_org_factor = 0.05
+				training_time_army_factor = -0.02
+				political_power_gain = 0.02
+				stability_factor = 0.05
+				industrial_capacity_factory = 0.1
+			}
+		}
+
+		idea_gau_military_loyalty = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			###picture = loyal_military
+			picture = military_governance
+
+
+			modifier = {
+				army_core_defence_factor = 0.04
+				national_bolshevik_drift = 0.015
+			}
+		}
+
+		idea_gau_new_economic_plan = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = new_economic_plan
+
+			modifier = {
+				consumer_goods_factor = -0.1
+			}
+		}
+
+		idea_gau_trade_unions = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = trade_council_power
+
+			modifier = {
+				consumer_goods_factor = -0.04
+			    production_speed_buildings_factor = 0.03
+				local_resources_factor = 0.05
+			}
+		}
+
+		idea_gau_citizen_elites = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = collectivisation
+
+			modifier = {
+				national_bolshevik_drift = 0.02
+				drift_defence_factor = 0.4
+				political_power_gain = 0.1
+			}
+		}
+
+		idea_gau_a_world_player = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = american_peace_act
+
+			modifier = {
+				trade_opinion_factor = 0.25
+				industrial_capacity_factory = 0.02
+				conversion_cost_mil_to_civ_factor = -0.1
+				MONTHLY_POPULATION = 0.004
+			}
+		}
+
+		idea_gau_cult_of_personality_eroded = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = opposition_crushed
+
+			modifier = {
+				communist_drift = 0.03
+				national_bolshevik_drift = -0.01
+				research_speed_factor = 0.02
+			}
+		}
+
+		idea_gau_true_socialist_economics = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = socialist_science_focus
+
+			modifier = {
+				industrial_capacity_factory = 0.1
+				consumer_goods_factor = -0.1
+				MONTHLY_POPULATION = -0.02
+				trade_opinion_factor = -0.1
+				army_morale_factor = 0.01
+				army_org_factor = -0.025
+			}
+		}
+
+		idea_gau_privatised_businesses = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = mass_privatization
+
+			modifier = {
+				consumer_goods_factor = -0.04
+			}
+		}
+
+		idea_gau_military_control_over_industry = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = FRA_fortification_focus
+
+			modifier = {
+				production_speed_arms_factory_factor = 0.035
+			}
+		}
+
+		idea_gau_free_market_economics = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = free_market_economics
+
+			modifier = {
+				production_speed_industrial_complex_factor = -0.12
+				industrial_capacity_factory = 0.1
+			}
+		}
+
+		idea_gau_solid_foundations = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = self_sufficiency
+
+			modifier = {
+				conscription = 0.004
+			    army_org_factor = 0.01
+				army_morale_factor = 0.01
+			}
+		}
+
+		idea_gau_alliance_with_conservatives = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = media_rights
+
+			modifier = {
+				MONTHLY_POPULATION = 0.004
+				foreign_subversive_activites = -0.3
+				crypto_strength = 1
+			}
+		}
+
+		idea_gau_superior_training = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_infantry_bonus
+
+			modifier = {
+				training_time_army_factor = -0.02
+				experience_gain_army = 0.05
+			}
+		}
+
+		idea_gau_warmongering_foreign_policy = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = FRA_army_of_aggression_focus
+
+			modifier = {
+				justify_war_goal_time = -0.35
+			}
+		}
+
+		idea_gau_the_white_phoenix = {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				fascist_drift = 0.01
+				nationalist_drift = 0.02
+				army_morale_factor = 0.03
+			}
+		}
+
+		idea_gau_traditional_values = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = air_support_focus
+
+			modifier = {
+				MONTHLY_POPULATION = 0.003
+			    political_power_gain = 0.05
+				consumer_goods_factor = -0.01
+				research_speed_factor = -0.01
+			}
+		}
+
+		idea_gau_moderate_dissent_destroyed = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = FRA_scw_intervention_nationalists_focus
+
+			modifier = {
+				liberal_drift = -0.02
+				new_democrat_drift = -0.02
+				moderate_socialist_drift = -0.02
+				revolutionary_socialist_drift = -0.01
+				army_defence_factor = 0.05
+				army_org_factor = 0.01
+				decryption_power = 10
+			}
+		}
+
+		idea_gau_work_for_the_lord = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_production_bonus
+
+			modifier = {
+				industrial_capacity_factory = 0.04
+				production_speed_buildings_factor = 0.06
+			}
+		}
+
+		idea_gau_church_propaganda = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = friendship_with_church
+
+			modifier = {
+				nationalist_drift = 0.02
+				foreign_subversive_activites = -0.1
+				land_reinforce_rate = 0.025
+				crypto_strength = 1
+			}
+		}
+
+		idea_gau_the_peoples_effort = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_fascism_drift_bonus
+
+			modifier = {
+				consumer_goods_factor = -0.015
+				production_speed_industrial_complex_factor = 0.03
+				production_speed_arms_factory_factor = 0.03
+				political_power_gain = -0.1
+				research_speed_factor = -0.1
+			}
+		}
+
+		idea_gau_army_of_pastor_phelps = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = air_war_plans_division_focus
+
+			modifier = {
+				conscription = 0.015
+				training_time_army_factor = 0.05
+			}
+		}
+
+		idea_gau_new_american_nationalism = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_victors_of_ww1
+
+			modifier = {
+				national_conservative_drift = 0.01
+				centrist_drift = 0.01
+				army_core_defence_factor = 0.03
+				MONTHLY_POPULATION = 0.004
+			}
+		}
+
+		idea_gau_lasting_freedom = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = american_peace_act
+
+			modifier = {
+				justify_war_goal_time = -0.12
+			}
+		}
+
+		idea_gau_restored_democratic_foundations = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = restored_democratic_foundations
+
+			modifier = {
+				army_morale_factor = 0.05
+				political_power_gain = -0.09
+			}
+		}
+
+		idea_gau_privatised_economy = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = mass_privatization
+
+			modifier = {
+				consumer_goods_factor = -0.04
+				industrial_capacity_factory = 0.12
+				production_speed_buildings_factor = -0.12
+			}
+		}
+
+		idea_gau_new_order = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = FRA_scw_intervention_nationalists_focus
+
+			modifier = {
+				national_bolshevik_drift = 0.004
+				justify_war_goal_time = -0.05
+				political_power_gain = 0.05
+				army_morale_factor = 0.005
+			}
+		}
+
+		idea_gau_cult_of_personality = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = FRA_national_mobilization_focus
+
+			modifier = {
+				join_faction_tension = -0.1
+				send_volunteers_tension = -0.1
+				send_volunteer_size = 1
+				improve_relations_maintain_cost_factor = 0.05
+				training_time_army_factor = -0.01
+			}
+		}
+
+		idea_gau_fair_wages = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = FRA_factory_strikes
+
+			modifier = {
+				industrial_capacity_factory = 0.02
+				consumer_goods_factor = 0.05
+			}
+		}
+
+		idea_gau_supporting_the_resources_industry = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = revived_resources
+
+			modifier = {
+				local_resources_factor = 0.02
+			}
+		}
+
+		idea_gau_new_officer_corps = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = quick_plan
+
+			modifier = {
+				experience_gain_army = 0.1
+				recon_factor = 0.05
+				max_planning  = 0.03
+			}
+		}
+
+		idea_gau_true_free_market = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_intel_bonus
+
+			modifier = {
+				consumer_goods_factor = -0.16
+				industrial_capacity_factory = 0.18
+				production_speed_buildings_factor = -0.18
+			}
+		}
+
+    idea_gau_war_between_states = {
+      allowed = {
+        always = no
+      }
+
+      removal_cost = -1
+      picture = war_between_states
+
+      modifier = {
+        surrender_limit = 0.1
+        stability_factor = 0.05
+        war_support_factor = 0.10
+      }
+
+      rule = {
+        can_join_factions = no
+        can_create_factions = no
+        can_not_declare_war = yes
+      }
+    }
+	}
+}

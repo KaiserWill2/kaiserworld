@@ -1,0 +1,48 @@
+enable_unification_decisions = {
+    custom_effect_tooltip = enable_unification
+    set_country_flag = unifying_america
+}
+core_NEA = {
+    custom_effect_tooltip = core_NEA_tt
+    set_country_flag = can_core_NEA
+}
+core_USA = {
+    custom_effect_tooltip = core_USA_tt
+    set_country_flag = can_core_USA
+}
+core_TEX = {
+    custom_effect_tooltip = core_TEX_tt
+    set_country_flag = can_core_TEX
+}
+core_ILL = {
+    custom_effect_tooltip = core_ILL_tt
+    set_country_flag = can_core_ILL
+}
+core_GRL = {
+    custom_effect_tooltip = core_GRL_tt
+    set_country_flag = can_core_GRL
+}
+core_MWA = {
+    custom_effect_tooltip = core_MWA_tt
+    set_country_flag = can_core_MWA
+}
+core_MOT = {
+    custom_effect_tooltip = core_MOT_tt
+    set_country_flag = can_core_MOT
+}
+core_LIN = {
+    custom_effect_tooltip = core_LIN_tt
+    set_country_flag = can_core_LIN
+}
+core_UTA = {
+    custom_effect_tooltip = core_UTA_tt
+    set_country_flag = can_core_UTA
+}
+core_ARI = {
+    custom_effect_tooltip = core_ARI_tt
+    set_country_flag = can_core_ARI
+}
+core_PCA = {
+    custom_effect_tooltip = core_PCA_tt
+    set_country_flag = can_core_PCA
+}

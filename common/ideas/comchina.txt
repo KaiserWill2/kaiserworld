@@ -1,0 +1,29 @@
+ideas = {
+	country = {
+		idea_prc_legacy_of_maoism = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = legacy_of_maoism
+
+			modifier = {
+				political_power_gain = -0.50
+				stability_factor = -0.1
+				consumer_goods_factor = 0.15
+				industrial_capacity_factory = -0.30
+				conscription_factor = -0.25
+				army_org_Factor = -0.1
+				supply_consumption_factor = 0.1
+				global_building_slots_factor = -0.1
+				production_speed_buildings_factor = -0.15
+			}
+		}
+	}
+}

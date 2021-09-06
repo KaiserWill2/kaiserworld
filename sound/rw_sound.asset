@@ -1,0 +1,283 @@
+sound =
+{
+	name = "gates_is_doomed"
+	file = "menu/gates_is_doomed.wav"
+	always_load = no
+}
+
+sound =
+{
+	name = "sanders_is_doomed"
+	file = "menu/sanders_is_doomed.wav"
+	always_load = no
+}
+
+sound =
+{
+	name = "take_me_home_country_roads"
+	file = "menu/take_me_home_country_roads.wav"
+	always_load = no
+}
+
+sound =
+{
+	name = "hail_to_the_chief_trigger"
+	file = "menu/hail_to_the_chief_trigger.wav"
+	always_load = no
+}
+
+sound =
+{
+	name = "fall_of_walden"
+	file = "menu/fall_of_walden.wav"
+	always_load = no
+}
+
+sound =
+{
+	name = "yemen_is_burning"
+	file = "menu/yemen_is_burning.wav"
+	always_load = no
+}
+
+sound =
+{
+	name = "stasi_coup"
+	file = "menu/stasi_coup.wav"
+	always_load = no
+}
+
+sound =
+{
+	name = "holdren_america"
+	file = "menu/holdren_america.wav"
+	always_load = no
+}
+
+sound =
+{
+	name = "gates_america"
+	file = "menu/gates_america.wav"
+	always_load = no
+}
+
+sound =
+{
+	name = "trade_council_america"
+	file = "menu/trade_council_america.wav"
+	always_load = no
+}
+
+sound =
+{
+	name = "sotomayor_america"
+	file = "menu/sotomayor_america.wav"
+	always_load = no
+}
+
+sound =
+{
+	name = "dunford_america"
+	file = "menu/dunford_america.wav"
+	always_load = no
+}
+
+sound =
+{
+	name = "foster_america"
+	file = "menu/foster_america.wav"
+	always_load = no
+}
+
+sound =
+{
+	name = "jarvis_america"
+	file = "menu/jarvis_america.wav"
+	always_load = no
+}
+
+sound =
+{
+	name = "davis_america"
+	file = "menu/davis_america.wav"
+	always_load = no
+}
+
+sound =
+{
+	name = "robertson_america"
+	file = "menu/robertson_america.wav"
+	always_load = no
+}
+
+sound =
+{
+	name = "strom_america"
+	file = "menu/strom_america.wav"
+	always_load = no
+}
+
+sound =
+{
+	name = "cheney_america"
+	file = "menu/cheney_america.wav"
+	always_load = no
+}
+
+sound =
+{
+	name = "bernie_america"
+	file = "menu/bernie_america.wav"
+	always_load = no
+}
+
+sound =
+{
+	name = "npc_america"
+	file = "menu/npc_america.wav"
+	always_load = no
+}
+
+sound =
+{
+	name = "mackler_america"
+	file = "menu/mackler_america.wav"
+	always_load = no
+}
+
+sound =
+{
+	name = "webb_america"
+	file = "menu/webb_america.wav"
+	always_load = no
+}
+
+sound =
+{
+	name = "gerard_america"
+	file = "menu/gerard_america.wav"
+	always_load = no
+}
+
+sound =
+{
+	name = "robinson_america"
+	file = "menu/robinson_america.wav"
+	always_load = no
+}
+
+sound =
+{
+	name = "phelps_america"
+	file = "menu/phelps_america.wav"
+	always_load = no
+}
+
+sound =
+{
+	name = "welch_america"
+	file = "menu/welch_america.wav"
+	always_load = no
+}
+
+sound =
+{
+	name = "bentley_america"
+	file = "menu/bentley_america.wav"
+	always_load = no
+}
+
+sound =
+{
+	name = "milley_america"
+	file = "menu/milley_america.wav"
+	always_load = no
+}
+
+sound =
+{
+	name = "duke_america"
+	file = "menu/duke_america.wav"
+	always_load = no
+}
+
+sound =
+{
+	name = "ancona_america"
+	file = "menu/ancona_america.wav"
+	always_load = no
+}
+
+sound =
+{
+	name = "monarchy_america"
+	file = "menu/monarchy_america.wav"
+	always_load = no
+}
+
+sound =
+{
+	name = "rumsfeld_america"
+	file = "menu/rumsfeld_america.wav"
+	always_load = no
+}
+
+sound =
+{
+	name = "jeb_america"
+	file = "menu/jeb_america.wav"
+	always_load = no
+}
+
+sound =
+{
+	name = "corporate_america"
+	file = "menu/corporate_america.wav"
+	always_load = no
+}
+
+#####################################
+#######PELLE DEBUG FUNNIES###########
+#####################################
+
+sound =
+{
+	name = "confirm_dog"
+	file = "menu/confirm_dog.wav"
+	always_load = no
+}
+sound = 
+{
+	name = "click_debug_dog_01"
+	file = "menu/click_debug_dog_01.wav"
+}
+sound = 
+{
+	name = "click_debug_dog_02"
+	file = "menu/click_debug_dog_02.wav"
+}
+sound = 
+{
+	name = "click_debug_dog_03"
+	file = "menu/click_debug_dog_03.wav"
+}
+sound = 
+{
+	name = "click_debug_dog_04"
+	file = "menu/click_debug_dog_04.wav"
+}
+sound = 
+{
+	name = "debug_dog_yelping_01"
+	file = "menu/debug_dog_yelping_01.wav"
+}
+sound = 
+{
+	name = "debug_dog_yelping_02"
+	file = "menu/debug_dog_yelping_02.wav"
+}
+sound = 
+{
+	name = "debug_dog_yelping_03"
+	file = "menu/debug_dog_yelping_03.wav"
+}

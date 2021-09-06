@@ -1,0 +1,86 @@
+ideologies = {
+
+	revolutionary_socialist = {
+		
+		types = {
+		
+			revolutionary_socialist_ideology = {
+			}
+			
+			american_revolutionary_socialism = {
+			}
+			
+			luxemburgism = {
+			}
+			
+			gatesism = {
+			}
+			
+			syndicalism = {
+			}
+			
+			anarcho_syndicalism = {
+			}
+			
+			nasserism = {
+			}
+			
+			christian_communism = {
+			}
+			
+			neozapatismo = {
+			}
+			
+			buddhist_socialism = {
+			}
+			
+			islamic_socialism = {
+			}
+			
+			titoist = {
+			}
+
+			national_communist = {
+			}
+
+			democratic_confederalist = {
+			}
+			
+			trotskyist = {
+			}
+			
+		}
+		
+		dynamic_faction_names = {
+			"FACTION_NAME_REVOLUTIONARY_SOCIALIST_1"
+			"FACTION_NAME_REVOLUTIONARY_SOCIALIST_2"
+			"FACTION_NAME_REVOLUTIONARY_SOCIALIST_3"
+			"FACTION_NAME_REVOLUTIONARY_SOCIALIST_4"
+			"FACTION_NAME_REVOLUTIONARY_SOCIALIST_5"
+			"FACTION_NAME_REVOLUTIONARY_SOCIALIST_6"
+		}
+		
+		color = { 255 0 0  }
+		
+		war_impact_on_world_tension = 2
+		faction_impact_on_world_tension = 2
+		
+		rules = {
+			can_guarantee_other_ideologies = yes
+			can_force_government = yes
+			can_send_volunteers = yes
+			can_puppet = yes
+			can_lower_tension = yes
+		}
+		
+		modifiers = {
+			join_faction_tension = 0.5
+			civilian_intel_to_others = 10.0
+			army_intel_to_others = 10.0
+			navy_intel_to_others = 10.0
+			airforce_intel_to_others = 10.0
+		}
+		
+	}
+
+}

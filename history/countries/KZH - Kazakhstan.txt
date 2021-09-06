@@ -1,0 +1,277 @@
+﻿capital = 230
+
+oob = "generic_2000"
+
+set_research_slots = 4
+set_convoys = 500
+set_stability = 0.8
+set_war_support = 0.3
+
+set_technology = {
+	support_weapons = 1
+	infantry_weapons = 1
+	motorised_infantry = 1 
+	tech_support = 1 
+	tech_field_hospital = 1 
+	tech_engineers = 1 
+	gwtank = 1 
+	basic_light_tank = 1 
+	gw_artillery = 1 
+	tech_mountaineers = 1
+	early_fighter = 1 
+	early_bomber = 1 
+	interwar_antiair = 1
+	interwar_antitank = 1
+}
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	set_technology = {
+		early_submarine = 1
+		basic_submarine = 1
+		early_destroyer = 1
+		early_light_cruiser = 1
+		basic_light_cruiser = 1
+		early_heavy_cruiser = 1
+		
+		
+		early_carrier = 1
+		basic_carrier = 1
+		transport = 1
+	}
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_technology = {
+		basic_naval_mines = 1
+		submarine_mine_laying = 1
+		early_ship_hull_light = 1
+		basic_ship_hull_light = 1
+		early_ship_hull_submarine = 1
+		basic_ship_hull_submarine = 1
+		early_ship_hull_cruiser = 1
+		basic_ship_hull_cruiser = 1
+		early_ship_hull_heavy = 1
+		early_ship_hull_carrier = 1
+		basic_ship_hull_carrier = 1
+		basic_battery = 1
+		basic_light_battery = 1
+		basic_medium_battery = 1
+		basic_heavy_battery = 1
+		basic_torpedo = 1
+		sonar = 1
+		basic_depth_charges = 1
+		basic_secondary_battery = 1
+		improved_secondary_battery = 1
+		basic_cruiser_armor_scheme = 1
+		basic_heavy_armor_scheme = 1
+		mtg_transport = 1
+		improved_airplane_launcher = 1
+	}
+}
+set_politics = {
+	ruling_party = nationalist
+	last_election = "1997.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+        fascist = 0
+		nationalist = 60
+		monarchist = 0
+		national_bolshevik = 0
+		national_conservative = 10
+		centrist = 0
+		liberal = 0
+		new_democrat = 10
+		moderate_socialist = 0
+		revolutionary_socialist = 10
+		communist = 10
+}
+
+create_country_leader = {
+	name = "Gaziz Aldamzharov"
+	picture = "Portrait_KZH_Gaziz_Aldamzharov.dds"
+	ideology = leninist
+}
+
+create_country_leader = {
+	name = "Amantay Hantemiruly Asylbek"
+	picture = "Portrait_KZH_Amantay_Hantemiruly_Asylbek.dds"
+	ideology = fascist_ideology
+}
+
+create_country_leader = {
+	name = "Nursultan Nazarbayev"
+	picture = "Portrait_KZH_Nursultan_Nazarbayev.dds"
+	ideology = nationalist_ideology
+}
+
+create_country_leader = {
+	name = "Nafusa Azimkhanovna"
+	picture = "Portrait_KZH_Nafusa_Azimkhanovna.dds"
+	ideology = absolute_monarchist
+}
+
+create_country_leader = {
+	name = "Serik Sultangaliev"
+	picture = "Portrait_KZH_Serik_Sultangaliev.dds"
+	ideology = national_bolshevik_ideology
+}
+
+create_country_leader = {
+	name = "Gani Qasymov"
+	picture = "Portrait_KZH_Gani_Qasymov.dds"
+	ideology = reactionary
+}
+
+create_country_leader = {
+	name = "Mukhtar Ablyazov"
+	picture = "Portrait_KZH_Mukhtar_Ablyazov.dds"
+	ideology = right_libertarian
+}
+
+create_country_leader = {
+	name = "Janbolat Mamai"
+	picture = "Portrait_KZH_Janbolat_Mamai.dds"
+	ideology = social_liberal
+}
+
+create_country_leader = {
+	name = "Zharmakhan Tuyakbay"
+	picture = "Portrait_KZH_Zharmakhan_Tuyakbay.dds"
+	ideology = new_democrat_ideology
+}
+
+create_country_leader = {
+	name = "Dariga Nazarbayeva"
+	picture = "Portrait_KZH_Dariga_Nazarbayeva.dds"
+	ideology = european_moderate_socialist
+}
+
+create_country_leader = {
+	name = "Esenbek Ukteshbayev"
+	picture = "Portrait_KZH_Esenbek_Ukteshbayev.dds"
+	ideology = trotskyist
+}
+
+create_field_marshal = {
+	name = "Mukhtar Altynbayev"
+	picture = "Portrait_KAZ_Mukhtar_Altynbayev.dds"
+	traits = { war_hero }
+	skill = 4
+	attack_skill = 4
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 3
+}
+
+create_field_marshal = {
+	name = "Saken Zhasuzakov"
+	picture = "Portrait_Saken_Zhasuzakov.dds"
+	traits = { }
+	skill = 4
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Murat Bektanov"
+	picture = "Portrait_Murat_Bektanov.dds"
+	traits = { }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Murat Maikeyev"
+	picture = "Portrait_Murat_Maikeyev.dds"
+	traits = { }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Yunus-bek Yevkurov"
+	picture = "Portrait_Yunus_bek_Yevkurov.dds"
+	traits = { }
+	skill = 3
+	attack_skill = 1
+	defense_skill = 4
+	planning_skill = 2
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Nurlan Yermekbayev"
+	picture = "Portrait_Nurlan_Yermekbayev.dds"
+	traits = { }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Kaidar Karakulov"
+	picture = "Portrait_Kaidar_Karakulov.dds"
+	traits = { desert_fox }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Dzhabrail Yamadayev"
+	picture = "Portrait_Dzhabrail_Yamadayev.dds"
+	traits = { }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 2
+}
+
+create_navy_leader = {
+	name = "Saken Bekzhanov"
+	picture = "Portrait_Saken_Bekzhanov.dds"
+	traits = { }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	coordination_skill = 1
+	maneuvering_skill = 3
+}
+
+create_navy_leader = {
+	name = "Ratmir Komratov"
+	picture = "Portrait_Ratmir_Komratov.dds"
+	traits = { }
+	skill = 2
+	attack_skill = 3
+	defense_skill = 2
+	coordination_skill = 2
+	maneuvering_skill = 2
+}
+
+create_navy_leader = {
+	name = "Zhandarbek Zhanzakov"
+	picture = "Portrait_Zhandarbek_Zhanzakov.dds"
+	traits = { }
+	skill = 2
+	attack_skill = 1
+	defense_skill = 1
+	coordination_skill = 2
+	maneuvering_skill = 2
+}

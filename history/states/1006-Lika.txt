@@ -1,0 +1,25 @@
+
+state={
+	id=1006
+	name="STATE_1006"
+	manpower = 592842
+
+	state_category = town
+
+
+	history={
+		owner = YUG
+        add_core_of = CRO
+        add_core_of = YUG
+		victory_points = { 11564 1 }
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 3
+			arms_factory = 1
+		}
+	}
+
+	provinces={
+		11564 13738 591 11901
+	}
+}

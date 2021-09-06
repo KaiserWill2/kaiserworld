@@ -1,0 +1,239 @@
+﻿capital = 206
+
+oob = "generic_2000"
+
+set_research_slots = 4
+set_convoys = 500
+set_stability = 0.8
+set_war_support = 0.3
+
+set_technology = {
+	support_weapons = 1
+	infantry_weapons = 1
+	motorised_infantry = 1 
+	tech_support = 1 
+	tech_field_hospital = 1 
+	tech_engineers = 1 
+	gwtank = 1 
+	basic_light_tank = 1 
+	gw_artillery = 1 
+	tech_mountaineers = 1
+	early_fighter = 1 
+	early_bomber = 1 
+	paratroopers = 1 
+	interwar_antiair = 1
+	interwar_antitank = 1
+}
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	set_technology = {
+		early_submarine = 1
+		basic_submarine = 1
+		early_destroyer = 1
+		early_light_cruiser = 1
+		basic_light_cruiser = 1
+		early_heavy_cruiser = 1
+		
+		
+		early_carrier = 1
+		basic_carrier = 1
+		transport = 1
+	}
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_technology = {
+		basic_naval_mines = 1
+		submarine_mine_laying = 1
+		early_ship_hull_light = 1
+		basic_ship_hull_light = 1
+		early_ship_hull_submarine = 1
+		basic_ship_hull_submarine = 1
+		early_ship_hull_cruiser = 1
+		basic_ship_hull_cruiser = 1
+		early_ship_hull_heavy = 1
+		early_ship_hull_carrier = 1
+		basic_ship_hull_carrier = 1
+		basic_battery = 1
+		basic_light_battery = 1
+		basic_medium_battery = 1
+		basic_heavy_battery = 1
+		basic_torpedo = 1
+		sonar = 1
+		basic_depth_charges = 1
+		basic_secondary_battery = 1
+		improved_secondary_battery = 1
+		basic_cruiser_armor_scheme = 1
+		basic_heavy_armor_scheme = 1
+		mtg_transport = 1
+		improved_airplane_launcher = 1
+	}
+}
+set_politics = {
+	ruling_party = communist
+	last_election = "1997.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+        fascist = 0
+		nationalist = 60
+		monarchist = 0
+		national_bolshevik = 0
+		national_conservative = 10
+		centrist = 0
+		liberal = 0
+		new_democrat = 10
+		moderate_socialist = 0
+		revolutionary_socialist = 10
+		communist = 10
+}
+
+create_country_leader = {
+	name = "Alexander Lukashenko"
+	picture = "Portrait_BLR_Alexander_Lukashenko.dds"
+	ideology = stalinist
+}
+
+create_country_leader = {
+	name = "Sergei Gaidukevich"
+	picture = "Portrait_BLR_Sergei_Gaidukevich.dds"
+	ideology = national_bolshevik_ideology
+}
+
+create_country_leader = {
+	name = "Anatol Labiedźka"
+	picture = "Portrait_BLR_Anatoly_Lebedko.dds"
+	ideology = social_liberal
+}
+
+create_country_leader = {
+	name = "Irina Veshtard"
+	picture = "Portrait_BLR_Irina_Veshtard.dds"
+	ideology = new_democrat_ideology
+}
+
+create_country_leader = {
+	name = "Nikolai Ulakhovich"
+	picture = "Portrait_BLR_Nikolai_Ulakhovich.dds"
+	ideology = ultranationalist
+}
+
+create_country_leader = {
+	name = "Źmicier Daškievič"
+	picture = "Portrait_BLR_Zmitser_Dashkevich.dds"
+	ideology = fascist_ideology
+}
+
+create_country_leader = {
+	name = "Sergey Kalyakin"
+	picture = "Portrait_BLR_Sergey_Kalyakin.dds"
+	ideology = revolutionary_socialist_ideology
+}
+
+create_country_leader = {
+	name = "Alexander Radkov"
+	picture = "Portrait_BLR_Alexander_Radkov.dds"
+	ideology = progressive
+}
+
+create_country_leader = {
+	name = "Zianon Pazniak"
+	picture = "Portrait_BLR_Zianon_Pazniak.dds"
+	ideology = reactionary
+}
+
+create_country_leader = {
+	name = "Uladzimir Nyaklyayew"
+	picture = "Portrait_BLR_Uladzimir_Nyaklyayew.dds"
+	ideology = centrist_ideology
+}
+
+create_field_marshal = {
+	name = "Andrei Ravkov"
+	picture = "Portrait_Andrei_Ravkov.dds"
+	traits = { politically_connected }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 4
+}
+
+create_field_marshal = {
+	name = "Yuri Zhadobin"
+	picture = "Portrait_Yuri_Zhadobin.dds"
+	traits = { armor_officer }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Viktor Khrenin"
+	picture = "Portrait_Viktor_Khrenin.dds"
+	traits = { }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Oleg Belokonev"
+	picture = "Portrait_Oleg_Belokonev.dds"
+	traits = { }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Stanislav Zas"
+	picture = "Portrait_Stanislav_Zas.dds"
+	traits = { }
+	skill = 2
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Sergei Potapenko"
+	picture = "Portrait_Sergei_Potapenko.dds"
+	traits = { armor_officer }
+	skill = 2
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Alexander Volfovich"
+	picture = "Portrait_Alexander_Volfovich.dds"
+	traits = { }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 1
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Vladimir Uskhopchik"
+	picture = "Portrait_Vladimir_Uskhopchik.dds"
+	traits = { }
+	skill = 1
+	attack_skill = 3
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 1
+}

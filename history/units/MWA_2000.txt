@@ -1,0 +1,124 @@
+﻿division_template = {
+	name = "Infantry Division"
+	
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+	
+	support = {
+		artillery = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+	}
+}
+
+division_template = {
+	name = "Motorized Brigade"
+	
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+	}
+}
+
+division_template = {
+	name = "Mechanized Brigade"
+	
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+	}
+}
+
+division_template = {
+	name = "Armor Brigade"
+	
+	regiments = {
+		light_armor = { x = 0 y = 0 }
+		light_armor = { x = 0 y = 1 }
+		light_armor = { x = 1 y = 0 }
+		light_armor = { x = 1 y = 1 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+	}
+}
+
+units = {
+
+	division = {
+		name = "Denver Defence Force"
+		location = 1827
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "1st Midwest Rifles"
+		location = 7780
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "2nd Midwest Rifles"
+		location = 4749
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "3rd Midwest Rifles"
+		location = 1747
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "4th Midwest Rifles"
+		location = 3719
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "5th Midwest Rifles"
+		location = 12667
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "1st Midwest Motorized"
+		location = 12024
+		division_template = "Motorized Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "6th Midwest Rifles"
+		location = 7834
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "7th Midwest Rifles"
+		location = 7852
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+}

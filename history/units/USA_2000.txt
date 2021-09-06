@@ -1,0 +1,199 @@
+﻿division_template = {
+	name = "Infantry Division"
+	
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 1 y = 3 }
+	}
+	
+	support = {
+		artillery = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+	}
+}
+
+division_template = {
+	name = "Motorized Division"
+	
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		motorized = { x = 0 y = 3 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+		motorized = { x = 1 y = 3 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		field_hospital = { x = 0 y = 1 }
+	}
+}
+
+division_template = {
+	name = "Armored Division"
+	
+	regiments = {
+		heavy_armor = { x = 0 y = 0 }
+		heavy_armor = { x = 0 y = 1 }
+		heavy_armor = { x = 0 y = 2 }
+		heavy_armor = { x = 1 y = 0 }
+		heavy_armor = { x = 1 y = 1 }
+		heavy_armor = { x = 1 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+	}
+}
+
+units = {
+
+	division = {
+		name = "Atlanta Defence Force"
+		location = 12384
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+	}
+	
+	division = {
+		name = "1st American Rifles"
+		location = 7762
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+	}
+	
+	division = {
+		name = "2nd American Rifles"
+		location = 1806
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+	}
+	
+	division = {
+		name = "3rd American Rifles"
+		location = 7202
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+	}
+	
+	division = {
+		name = "4th American Rifles"
+		location = 6696
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+	}
+	
+	division = {
+		name = "5th American Rifles"
+		location = 10586
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+	}
+	
+	division = {
+		name = "6th American Rifles"
+		location = 7628
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+	}
+	
+	division = {
+		name = "7th American Rifles"
+		location = 4464
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+	}
+
+	
+	division = {
+		name = "1st American Motorized"
+		location = 1843
+		division_template = "Motorized Division"
+		start_experience_factor = 0.2
+	}
+	
+	division = {
+		name = "2nd American Motorized"
+		location = 12735
+		division_template = "Motorized Division"
+		start_experience_factor = 0.2
+	}
+	
+	division = {
+		name = "3rd American Motorized"
+		location = 3960
+		division_template = "Motorized Division"
+		start_experience_factor = 0.2
+	}
+	
+	division = {
+		name = "4th American Motorized"
+		location = 1758
+		division_template = "Motorized Division"
+		start_experience_factor = 0.2
+	}
+	
+	division = {
+		name = "1st American Mechanized" #Washington DC
+		location = 3957
+		division_template = "Motorized Division"
+		start_experience_factor = 0.2
+	}
+	
+	division = {
+		name = "2nd American Mechanized"
+		location = 7552
+		division_template = "Motorized Division"
+		start_experience_factor = 0.2
+	}
+	
+	division = {
+		name = "3rd American Mechanized"
+		location = 7945
+		division_template = "Motorized Division"
+		start_experience_factor = 0.2
+	}
+	
+	division = {
+		name = "1st American Armored"
+		location = 12470
+		division_template = "Armored Division"
+		start_experience_factor = 0.2
+	}
+	
+	division = {
+		name = "2nd American Armored"
+		location = 7547
+		division_template = "Armored Division"
+		start_experience_factor = 0.2
+	}
+	
+	division = {
+		name = "3rd American Armored"
+		location = 10412
+		division_template = "Armored Division"
+		start_experience_factor = 0.2
+	}
+}
+
+### Air Wings###
+
+air_wings = {
+	369 = {
+		fighter_equipment_0 = {
+			owner = "USA"
+			amount = 20
+		}
+		tac_bomber_equipment_0 = {
+			owner = "USA"
+			amount = 10
+		}
+	}
+}

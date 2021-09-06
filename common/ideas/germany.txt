@@ -1,0 +1,27 @@
+ideas = {
+
+    country = {
+	    
+		idea_shield_and_sword = {
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.15
+				political_power_gain = 0.1
+				crypto_strength = 1
+				decryption_power = 10
+				
+				
+				
+				
+			}
+		}
+	}
+
+
+
+}

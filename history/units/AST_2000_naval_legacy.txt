@@ -1,0 +1,19 @@
+﻿
+units = {
+	####### NAVAL UNITS #######
+	##### AUSTRALIAN FLEET #####
+	##### Battle Force (CO: ) #####
+	### SYDNEY ###
+	fleet = {
+		name = "Royal Australian Navy"
+		naval_base = 12406 # Sydney
+		task_force = {
+			name = "Australia Battle Group"
+			location = 12406 # Sydney
+			ship = { name = "HMAS Australia" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = AST version_name = "Frigate I" } } } 
+		
+			ship = { name = "HMAS Perth" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = AST version_name = "Destroyer I" } } }
+			ship = { name = "HMAS Hobart" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = AST version_name = "Destroyer I" } } }
+		}
+	}
+}

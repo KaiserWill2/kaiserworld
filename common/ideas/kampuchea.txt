@@ -1,0 +1,26 @@
+ideas = {
+
+    country = {
+	    
+		idea_effects_of_the_khmer_rouge = {
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				MONTHLY_POPULATION = -0.01
+				industrial_capacity_factory = -0.35
+				production_speed_industrial_complex_factor = -0.3
+				production_speed_arms_factory_factor = -0.3
+				local_resources_factor = -0.2
+				
+				
+			}
+		}
+	}
+
+
+
+}

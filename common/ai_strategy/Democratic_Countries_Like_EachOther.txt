@@ -1,0 +1,88 @@
+democratic_league_membership = {
+	
+	enable = {
+	
+		NOT = { tag = CAN }
+		CAN = { is_in_faction = yes }
+		
+		OR = {		
+			tag = AST
+			tag = HAW
+			
+		}
+		
+		OR = {
+			has_democratic_government = yes
+		}
+		
+		CAN = {
+			has_democratic_government = yes
+		}
+		
+	}
+	
+	abort = {
+		OR = {
+			has_war_with = CAN
+			CAN = { is_in_faction = no }
+			
+			has_democratic_government = no
+			
+			CAN = {
+				has_democratic_government = no
+			}
+			
+			CAN = { exists = no }
+		}
+	}
+	
+	ai_strategy = {
+		type = befriend
+		id = "CAN"
+		value = 400
+	}
+	
+	
+	ai_strategy = {
+		type = alliance
+		id = "CAN"
+		value = 120
+	}
+	
+	
+}
+
+#Let these ones rest until Celestial can figure it out.
+#democratic_countries_like_each_other = {
+#	
+#	enable = {
+#	
+#		ROOT = {
+#			has_democratic_government = yes
+#		}
+#		
+#	}
+#	
+#	abort = {
+#		NOT = {
+#			ROOT = {
+#				has_democratic_government = yes
+#			}
+#		}
+#	}
+#	
+#	ai_strategy = {
+#		type = befriend
+#		id = "CAN"
+#		value = 400
+#	}
+#	
+#	
+#	ai_strategy = {
+#		type = alliance
+#		id = "CAN"
+#		value = 120
+#	}
+#	
+#	
+#}

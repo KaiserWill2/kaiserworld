@@ -1,0 +1,1825 @@
+﻿add_namespace = uar
+
+#Bassel al-Assad assassinated
+country_event = {
+	id = uar.1
+	title = uar.1.t
+	desc = uar.1.d
+	picture = bassel_assad_assassinated
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = UAR
+		date > 2010.6.1
+		date < 2010.6.30
+	}
+	
+	option = {
+		name = uar.1.o1
+		add_political_power = -50
+		set_country_flag = bassel_al_assad_is_dead
+		hidden_effect = {
+		    UAR = {
+		        country_event = { days = 5 id = uar.2 } 
+		    }
+		}
+	}
+}
+
+#Syrian branch elects bashar al assad as leader
+country_event = {
+	id = uar.2
+	title = uar.2.t
+	desc = uar.2.d
+	picture = bashar_elected
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = uar.2.o1
+		hidden_effect = {
+		    UAR = {
+		        country_event = { days = 2 id = uar.3 } 
+		    }
+		}
+	}
+}
+
+#Rumours Sharaf assassinated Bassel
+country_event = {
+	id = uar.3
+	title = uar.3.t
+	desc = uar.3.d
+	picture = sharaf_assassinated_bassel
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = uar.3.o1
+		add_popularity = {
+			ideology = revolutionary_socialist
+			popularity = -0.02
+		}
+		hidden_effect = {
+		    UAR = {
+		        country_event = { days = 4 id = uar.4 } 
+		    }
+		}
+	}
+}
+
+#Bashar al assad believes sharaf assassinated bassel
+country_event = {
+	id = uar.4
+	title = uar.4.t
+	desc = uar.4.d
+	picture = assad_believes_conspiracy
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = uar.4.o1
+		add_popularity = {
+			ideology = revolutionary_socialist
+			popularity = -0.05
+		}
+		add_political_power = -70
+		hidden_effect = {
+		    UAR = {
+		        country_event = { days = 1 id = uar.5 } 
+		    }
+		}
+	}
+}
+
+#Violence erupts in syria
+country_event = {
+	id = uar.5
+	title = uar.5.t
+	desc = uar.5.d
+	picture = violence_erupts_syria
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = uar.5.o1
+		add_political_power = -100
+		hidden_effect = {
+		    UAR = {
+		        country_event = { days = 3 id = uar.6 } 
+		    }
+		}
+	}
+}
+
+#Attempt on Sharaf's life
+country_event = {
+	id = uar.6
+	title = uar.6.t
+	desc = uar.6.d
+	picture = attempt_on_sharaf
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = uar.6.o1
+		hidden_effect = {
+		    UAR = {
+		        country_event = { days = 4 id = uar.7 } 
+		    }
+		}
+	}
+}
+
+#Bashar calls assassination attempt a false flag
+country_event = {
+	id = uar.7
+	title = uar.7.t
+	desc = uar.7.d
+	picture = assad_believes_conspiracy
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = uar.7.o1
+		add_popularity = {
+			ideology = revolutionary_socialist
+			popularity = -0.01
+		}
+		hidden_effect = {
+		    UAR = {
+		        country_event = { days = 5 id = uar.8 } 
+		    }
+		}
+	}
+}
+
+#Bashar al assad leaves party
+country_event = {
+	id = uar.8
+	title = uar.8.t
+	desc = uar.8.d
+	picture = assad_leaves_party
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = uar.8.o1
+		hidden_effect = {
+		    UAR = {
+		        country_event = { days = 3 id = uar.9 } 
+		    }
+		}
+	}
+}
+
+#Police crackdown on pro-assad protests
+country_event = {
+	id = uar.9
+	title = uar.9.t
+	desc = uar.9.d
+	picture = police_crackdown_uar
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = uar.9.o1
+		add_popularity = {
+			ideology = revolutionary_socialist
+			popularity = -0.035
+		}
+		hidden_effect = {
+		    UAR = {
+		        country_event = { days = 1 id = uar.10 } 
+		    }
+		}
+	}
+}
+
+#Bashar legalises and joins baath party
+country_event = {
+	id = uar.10
+	title = uar.10.t
+	desc = uar.10.d
+	picture = bashar_joins_baath
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = uar.10.o1
+		add_political_power = -80
+		add_popularity = {
+			ideology = national_bolshevik
+			popularity = 0.05
+		}
+		hidden_effect = {
+		    UAR = {
+		        country_event = { days = 2 id = uar.11 } 
+		    }
+		}
+	}
+}
+
+#General Mubarak places bashar under arrest
+country_event = {
+	id = uar.11
+	title = uar.11.t
+	desc = uar.11.d
+	picture = general_mubarak
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = uar.11.o1
+		add_political_power = 10
+		hidden_effect = {
+		    UAR = {
+		        country_event = { days = 1 id = uar.12 } 
+		    }
+		}
+	}
+}
+
+#Bashar escapes house arrest
+country_event = {
+	id = uar.12
+	title = uar.12.t
+	desc = uar.12.d
+	picture = bashar_escapes_house_arrest
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = uar.12.o1
+		add_political_power = -30
+		hidden_effect = {
+		    UAR = {
+		        country_event = { days = 5 id = uar.13 } 
+		    }
+		}
+		hidden_effect = {
+		    UAR = {
+		        country_event = { days = 1 id = uar.14 } 
+		    }
+		}
+	}
+}
+
+#Bashar declares independence from the UAR
+country_event = {
+	id = uar.13
+	title = uar.13.t
+	desc = uar.13.d
+	picture = bashar_declares_independence
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = uar.13.o1
+		ai_chance = {
+			factor = 100
+		}
+		add_political_power = -250
+		hidden_effect = {
+		    UAR = {
+		        country_event = { days = 1 id = uar.15 } 
+		    }
+		}
+		hidden_effect = {
+		    SYR = {
+			    transfer_state = 554 
+				transfer_state = 677 
+				transfer_state = 680 
+				transfer_state = 814 
+				transfer_state = 881
+			}
+			SYR = {
+			    set_politics = {
+	                ruling_party = national_bolshevik
+	                elections_allowed = no
+                }
+		        add_popularity = {
+			        ideology = national_bolshevik
+			        popularity = 0.3
+	            }
+			}
+		}
+		hidden_effect = {
+		    SYR = {
+			    load_oob = SYR_2000
+			}
+		}
+        hidden_effect = {
+		    UAR = {
+			    SYR = { transfer_technology = yes }
+		    }
+	    }
+	}
+	
+	option = {
+		name = uar.13.o2
+		ai_chance = {
+			factor = 0
+		}
+		add_political_power = -250
+		hidden_effect = {
+		    UAR = {
+		        country_event = { days = 1 id = uar.15 } 
+		    }
+		}
+		hidden_effect = {
+		    SYR = {
+			    transfer_state = 554 
+				transfer_state = 677 
+				transfer_state = 680 
+				transfer_state = 814 
+				transfer_state = 881
+			}
+			SYR = {
+			    set_politics = {
+	                ruling_party = national_bolshevik
+	                elections_allowed = no
+                }
+		        add_popularity = {
+			        ideology = national_bolshevik
+			        popularity = 0.3
+	            }
+			}
+		}
+		SYR = {
+            change_tag_from = UAR
+        }
+		hidden_effect = {
+		    SYR = {
+			    load_oob = SYR_2000
+			}
+		}
+        hidden_effect = {
+		    UAR = {
+			    SYR = { transfer_technology = yes }
+		    }
+	    }
+	}
+}
+
+#Mubarak killed by bodyguard
+country_event = {
+	id = uar.14
+	title = uar.14.t
+	desc = uar.14.d
+	picture = mubarak_killed
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = uar.14.o1
+		add_political_power = -5
+	}
+}
+
+#The president's decision
+country_event = {
+	id = uar.15
+	title = uar.15.t
+	desc = uar.15.d
+	picture = uar_presidents_decision
+	
+	is_triggered_only = yes
+	
+	option = {   #Declare war on syria
+		name = uar.15.o1
+		ai_chance = {
+			factor = 10
+			modifier = {
+				has_game_rule = {
+					rule = UAR_ai_behavior_civwar
+					option = UAR_END
+				}
+				factor = 0
+			}
+		}
+		add_political_power = 150
+		UAR = {
+		    declare_war_on = { target = SYR type = annex_everything }
+		}
+		set_country_flag = sharaf_invaded_syria
+		set_global_flag = sharaf_has_invaded_syria
+		hidden_effect = {
+			every_country = {
+			    news_event = {
+			        hours = 4
+			        id = news.248
+		        }
+		    }
+		}
+	}
+	
+	option = {   #Let them have independence
+		name = uar.15.o2
+		ai_chance = {
+			factor = 90
+			modifier = {
+				has_game_rule = {
+					rule = UAR_ai_behavior_civwar
+					option = UAR_ARAB_CIVIL_WAR
+				}
+				factor = 0
+			}
+		}
+		add_political_power = -150
+		set_global_flag = syria_has_gained_independence
+		hidden_effect = {
+		    UAR = {
+		        country_event = { days = 2 id = uar.77 } 
+		    }
+		}
+	}
+}
+
+#National assembly convened
+country_event = {
+	id = uar.16
+	title = uar.16.t
+	desc = uar.16.d
+	picture = uar_assembly_convened
+	
+	is_triggered_only = yes
+	
+	option = {   #Maintain nasserism
+		name = uar.16.o1
+		set_country_flag = nasserist_republic
+		ai_chance = {
+			base = 50
+			modifier = {
+				OR = {
+					has_game_rule = {
+						rule = UAR_ai_behavior
+						option = UAR_ISLAMIC_SOCIALISM
+					}
+					has_game_rule = {
+						rule = UAR_ai_behavior
+						option = UAR_SYNDICALISM
+					}
+				}
+				factor = 0
+			}
+		}
+	}
+	
+	option = {   #Islamic socialism
+		name = uar.16.o2
+		set_country_flag = islamic_socialist_republic
+		set_party_name = { ideology = revolutionary_socialist long_name = UAR_islamic_socialist_party name = UAR_islamic_socialist_party }
+		ai_chance = {
+			base = 50
+			modifier = {
+				OR = {
+					has_game_rule = {
+						rule = UAR_ai_behavior
+						option = UAR_NASSERISM
+					}
+					has_game_rule = {
+						rule = UAR_ai_behavior
+						option = UAR_SYNDICALISM
+					}
+				}
+				factor = 0
+			}
+		}
+	}
+	
+	option = {   #Syndicalism
+		name = uar.16.o3
+		set_country_flag = syndicalist_republic
+		set_party_name = { ideology = revolutionary_socialist long_name = UAR_arab_syndicalist_union name = UAR_arab_syndicalist_union }
+		ai_chance = {
+			base = 50
+			modifier = {
+				OR = {
+					has_game_rule = {
+						rule = UAR_ai_behavior
+						option = UAR_ISLAMIC_SOCIALISM
+					}
+					has_game_rule = {
+						rule = UAR_ai_behavior
+						option = UAR_NASSERISM
+					}
+				}
+				factor = 0
+			}
+		}
+	}
+}
+
+#Chief of the army
+country_event = {
+	id = uar.17
+	title = uar.17.t
+	desc = uar.17.d
+	picture = deputy_chief_of_the_army
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = UAR
+		date > 2010.2.1
+		date < 2010.2.30
+	}
+	
+	option = {   #Abdel Fattah el-Sisi
+		name = uar.17.o1
+		set_country_flag = picked_sisi
+		hidden_effect = {
+		    UAR = {
+		        country_event = { days = 46 id = uar.18 } 
+		    }
+		}
+		remove_ideas = uar_mohamed_hussein_tantawi
+		add_ideas = uar_abdel_fattah_el_sisi
+	}
+	
+	option = {   #Mahmoud Hegazy
+		name = uar.17.o2
+		set_country_flag = picked_hegazy
+		hidden_effect = {
+		    UAR = {
+		        country_event = { days = 44 id = uar.19 } 
+		    }
+		}
+		remove_ideas = uar_mohamed_hussein_tantawi
+		add_ideas = uar_mahmoud_hegazy
+		ai_chance = {
+			modifier = {
+				has_game_rule = {
+					rule = UAR_ai_behavior
+					option = UAR_HEGAZY
+				}
+				factor = 0
+			}
+		}
+	}
+	
+	option = {   #Sedki Sobhy
+		name = uar.17.o3
+		set_country_flag = picked_sobhy
+		remove_ideas = uar_mohamed_hussein_tantawi
+		add_ideas = uar_sedki_sobhy
+		ai_chance = {
+			modifier = {
+				has_game_rule = {
+					rule = UAR_ai_behavior
+					option = UAR_HEGAZY
+				}
+				factor = 0
+			}
+		}
+	}
+}
+
+#Deputy chief el sisi resigns due to scandal, replaced by hegazy just before latter leaves for rebel region
+country_event = {
+	id = uar.18
+	title = uar.18.t
+	desc = uar.18.d
+	picture = el_sisi_resigns
+	
+	is_triggered_only = yes
+	
+	option = {   
+		name = uar.18.o1
+		remove_ideas = uar_abdel_fattah_el_sisi
+		add_ideas = uar_mahmoud_hegazy
+	}
+}
+
+#Deputy chief hegazy injured beyond repair by terrorists after going to rebel region
+country_event = {
+	id = uar.19
+	title = uar.19.t
+	desc = uar.19.d
+	picture = hegazy_injured
+	
+	is_triggered_only = yes
+	
+	option = {   
+		name = uar.19.o1
+		remove_ideas = uar_mahmoud_hegazy
+		add_ideas = uar_sedki_sobhy
+	}
+}
+
+#Presidential election without bashar because didn't win in syria
+country_event = {
+	id = uar.20
+	title = uar.20.t
+	desc = uar.20.d
+	picture = uar_presidential_election
+	
+	is_triggered_only = yes
+	
+	option = {   #Hamdeen Sabahi
+		name = uar.20.o1
+		set_country_flag = elected_sabahi
+		set_politics = {
+	        ruling_party = moderate_socialist
+	        elections_allowed = no
+        }
+		add_popularity = {
+			ideology = moderate_socialist
+			popularity = 0.55
+		}
+	}
+	
+	option = {   #Hassan al-Nouri
+		name = uar.20.o2
+		set_country_flag = elected_al_nouri
+		set_politics = {
+	        ruling_party = moderate_socialist
+	        elections_allowed = no
+        }
+		add_popularity = {
+			ideology = moderate_socialist
+			popularity = 0.55
+		}
+		create_country_leader = {
+	        name = "Hassan al-Nouri"
+	        picture = "Portrait_UAR_Hassan_Al_Nouri.dds"
+	        ideology = progressive
+        }
+	}
+	
+	option = {   #Hesham Qandil
+		name = uar.20.o3
+		set_country_flag = elected_qandil
+		set_politics = {
+	        ruling_party = moderate_socialist
+	        elections_allowed = no
+        }
+		add_popularity = {
+			ideology = moderate_socialist
+			popularity = 0.55
+		}
+		create_country_leader = {
+	        name = "Hesham Qandil"
+	        picture = "Portrait_UAR_Hesham_Qandil.dds"
+	        ideology = progressive
+        }
+	}
+}
+
+#Presidential election with bashar because he won in syria
+country_event = {
+	id = uar.21
+	title = uar.21.t
+	desc = uar.21.d
+	picture = uar_presidential_election
+	
+	is_triggered_only = yes
+	
+	option = {   #Hamdeen Sabahi
+		name = uar.21.o1
+		set_country_flag = elected_sabahi
+		set_politics = {
+	        ruling_party = moderate_socialist
+	        elections_allowed = no
+        }
+		add_popularity = {
+			ideology = moderate_socialist
+			popularity = 0.55
+		}
+	}
+	
+	option = {   #Hassan al-Nouri
+		name = uar.21.o2
+		set_country_flag = elected_al_nouri
+		set_politics = {
+	        ruling_party = moderate_socialist
+	        elections_allowed = no
+        }
+		add_popularity = {
+			ideology = moderate_socialist
+			popularity = 0.55
+		}
+		create_country_leader = {
+	        name = "Hassan al-Nouri"
+	        picture = "Portrait_UAR_Hassan_Al_Nouri.dds"
+	        ideology = progressive
+        }
+	}
+	
+	option = {   #Hesham Qandil
+		name = uar.21.o3
+		set_country_flag = elected_qandil
+		set_politics = {
+	        ruling_party = moderate_socialist
+	        elections_allowed = no
+        }
+		add_popularity = {
+			ideology = moderate_socialist
+			popularity = 0.55
+		}
+		create_country_leader = {
+	        name = "Hesham Qandil"
+	        picture = "Portrait_UAR_Hesham_Qandil.dds"
+	        ideology = progressive
+        }
+	}
+	
+	option = {   #Bashar al-Assad
+		name = uar.21.o4
+		set_country_flag = elected_assad
+		set_politics = {
+	        ruling_party = moderate_socialist
+	        elections_allowed = no
+        }
+		add_popularity = {
+			ideology = moderate_socialist
+			popularity = 0.55
+		}
+		create_country_leader = {
+	        name = "Bashar al-Assad"
+	        picture = "Portrait_UAR_Bashar_Al_Assad.dds"
+	        ideology = progressive
+        }
+	}
+}
+
+#Presidential election without bashar because he won in syria but candidacy was revoked - hegazy is deputy chief
+country_event = {
+	id = uar.22
+	title = uar.22.t
+	desc = uar.22.d
+	picture = uar_presidential_election
+	
+	is_triggered_only = yes
+	
+	option = {   #Hamdeen Sabahi
+		name = uar.22.o1
+		set_country_flag = elected_sabahi
+		set_politics = {
+	        ruling_party = moderate_socialist
+	        elections_allowed = no
+        }
+		add_popularity = {
+			ideology = moderate_socialist
+			popularity = 0.55
+		}
+		ai_chance = {
+			modifier = {
+				has_game_rule = {
+					rule = UAR_ai_behavior
+					option = UAR_HEGAZY
+				}
+				factor = 0
+			}
+		}
+	}
+	
+	option = {   #Hassan al-Nouri
+		name = uar.22.o2
+		set_country_flag = elected_al_nouri
+		set_politics = {
+	        ruling_party = moderate_socialist
+	        elections_allowed = no
+        }
+		add_popularity = {
+			ideology = moderate_socialist
+			popularity = 0.55
+		}
+		create_country_leader = {
+	        name = "Hassan al-Nouri"
+	        picture = "Portrait_UAR_Hassan_Al_Nouri.dds"
+	        ideology = progressive
+		}
+		ai_chance = {
+			modifier = {
+				has_game_rule = {
+					rule = UAR_ai_behavior
+					option = UAR_HEGAZY
+				}
+				factor = 0
+			}
+		}
+	}
+	
+	option = {   #Hesham Qandil
+		name = uar.22.o3
+		set_country_flag = elected_qandil
+		set_politics = {
+	        ruling_party = moderate_socialist
+	        elections_allowed = no
+        }
+		add_popularity = {
+			ideology = moderate_socialist
+			popularity = 0.55
+		}
+		create_country_leader = {
+	        name = "Hesham Qandil"
+	        picture = "Portrait_UAR_Hesham_Qandil.dds"
+	        ideology = progressive
+		}
+		ai_chance = {
+			modifier = {
+				has_game_rule = {
+					rule = UAR_ai_behavior
+					option = UAR_HEGAZY
+				}
+				factor = 0
+			}
+		}
+	}
+	
+	option = {   #End this chaotic democracy
+		name = uar.22.o4
+		set_country_flag = hegazy_has_taken_control
+		set_politics = {
+	        ruling_party = nationalist
+	        elections_allowed = no
+        }
+		create_country_leader = {
+	        name = "Mahmoud Hegazy"
+	        picture = "Portrait_UAR_Mahmoud_Hegazy.dds"
+	        ideology = ultranationalist 
+        }
+		ai_chance = {
+			modifier = {
+				NOT = {
+					has_game_rule = {
+						rule = UAR_ai_behavior
+						option = DEFAULT
+					}
+					has_game_rule = {
+						rule = UAR_ai_behavior
+						option = UAR_HEGAZY
+					}
+				}
+				factor = 0
+			}
+		}
+	}
+}
+
+#Presidential election without bashar because he won in syria but candidacy was revoked - hegazy is not deputy chief
+country_event = {
+	id = uar.23
+	title = uar.23.t
+	desc = uar.23.d
+	picture = uar_presidential_election
+	
+	is_triggered_only = yes
+	
+	option = {   #Hamdeen Sabahi
+		name = uar.23.o1
+		set_country_flag = elected_sabahi
+		set_politics = {
+	        ruling_party = moderate_socialist
+	        elections_allowed = no
+        }
+		add_popularity = {
+			ideology = moderate_socialist
+			popularity = 0.55
+		}
+	}
+	
+	option = {   #Hassan al-Nouri
+		name = uar.23.o2
+		set_country_flag = elected_al_nouri
+		set_politics = {
+	        ruling_party = moderate_socialist
+	        elections_allowed = no
+        }
+		add_popularity = {
+			ideology = moderate_socialist
+			popularity = 0.55
+		}
+		create_country_leader = {
+	        name = "Hassan al-Nouri"
+	        picture = "Portrait_UAR_Hassan_Al_Nouri.dds"
+	        ideology = progressive
+        }
+	}
+	
+	option = {   #Hesham Qandil
+		name = uar.23.o3
+		set_country_flag = elected_qandil
+		set_politics = {
+	        ruling_party = moderate_socialist
+	        elections_allowed = no
+        }
+		add_popularity = {
+			ideology = moderate_socialist
+			popularity = 0.55
+		}
+		create_country_leader = {
+	        name = "Hesham Qandil"
+	        picture = "Portrait_UAR_Hesham_Qandil.dds"
+	        ideology = progressive
+        }
+	}
+}
+
+#Arab nations - UAR invites us into alliance
+country_event = {
+	id = uar.24
+	title = uar.24.t
+	desc = uar.24.d
+	picture = uar_flag
+	
+	is_triggered_only = yes
+	
+	option = { #Accept
+		name = uar.24.o1
+		add_ai_strategy = {
+		    type = alliance
+		    id = "UAR"
+		    value = 150
+	    }
+		UAR = {
+		    add_to_faction = ROOT
+		}
+		UAR = {
+		    country_event = { id = uar.25 }
+		}
+	}
+	
+	option = { #Refuse
+		name = uar.24.o2
+		UAR = {
+		    country_event = { id = uar.26 }
+		}
+	}
+}
+
+#Country accepts
+country_event = {
+	id = uar.25
+	title = uar.25.t
+	desc = uar.25.d
+	picture = uar_flag
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = uar.25.o1
+	}
+}
+
+#Country refuses
+country_event = {
+	id = uar.26
+	title = uar.26.t
+	desc = uar.26.d
+	picture = uar_flag
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = uar.26.o1
+	}
+}
+
+#Yemen - UAR invites us to join republic
+country_event = {
+	id = uar.27
+	title = uar.27.t
+	desc = uar.27.d
+	picture = uar_flag
+	
+	is_triggered_only = yes
+	
+	option = { #Accept
+		name = uar.27.o1
+		UAR = {
+		    country_event = { id = uar.28 }
+		}
+	}
+	
+	option = { #Refuse
+		name = uar.27.o2
+		UAR = {
+		    country_event = { id = uar.29 }
+		}
+	}
+}
+
+#Yemen accepts
+country_event = {
+	id = uar.28
+	title = uar.28.t
+	desc = uar.28.d
+	picture = uar_flag
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = uar.28.o1
+		UAR = {
+			annex_country = { 
+				target = YEM
+				transfer_troops = yes
+			}
+		}
+	}
+}
+
+#Yemen refuses
+country_event = {
+	id = uar.29
+	title = uar.29.t
+	desc = uar.29.d
+	picture = uar_flag
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = uar.29.o1
+		add_political_power = -100
+	}
+}
+
+#Iraq - UAR demands we join republic
+country_event = {
+	id = uar.30
+	title = uar.30.t
+	desc = uar.30.d
+	picture = uar_flag
+	
+	is_triggered_only = yes
+	
+	option = { #Accept
+		name = uar.30.o1
+		UAR = {
+		    country_event = { id = uar.31 }
+		}
+	}
+	
+	option = { #Refuse
+		name = uar.30.o2
+		UAR = {
+		    country_event = { id = uar.32 }
+		}
+	}
+}
+
+#Iraq accepts
+country_event = {
+	id = uar.31
+	title = uar.31.t
+	desc = uar.31.d
+	picture = uar_flag
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = uar.31.o1
+		UAR = {
+			annex_country = { 
+				target = IRQ
+				transfer_troops = yes
+			}
+		}
+	}
+}
+
+#Iraq refuses
+country_event = {
+	id = uar.32
+	title = uar.32.t
+	desc = uar.32.d
+	picture = uar_flag
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = uar.32.o1
+		add_political_power = -50 
+		UAR = {
+		    declare_war_on = { target = IRQ type = annex_everything }
+		}
+		
+	}
+}
+
+#Sudan - UAR demands North
+country_event = {
+	id = uar.33
+	title = uar.33.t
+	desc = uar.33.d
+	picture = uar_flag
+	
+	is_triggered_only = yes
+	
+	option = { #Accept
+		name = uar.33.o1
+		UAR = {
+		    country_event = { id = uar.34 }
+		}
+	}
+	
+	option = { #Refuse
+		name = uar.33.o2
+		UAR = {
+		    country_event = { id = uar.35 }
+		}
+	}
+}
+
+#Sudan accepts
+country_event = {
+	id = uar.34
+	title = uar.34.t
+	desc = uar.34.d
+	picture = uar_flag
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = uar.34.o1
+		transfer_state = 551 
+		transfer_state = 763
+		add_state_core = 551
+		add_state_core = 763
+	}
+}
+
+#Sudan refuses
+country_event = {
+	id = uar.35
+	title = uar.35.t
+	desc = uar.35.d
+	picture = uar_flag
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = uar.35.o1
+		add_political_power = -50 
+		add_state_core = 551
+		add_state_core = 763
+		create_wargoal = {
+			target = SUD
+			type = take_core_state
+		}
+	}
+}
+
+#Country - join the federation of arab republics
+country_event = {
+	id = uar.36
+	title = uar.36.t
+	desc = uar.36.d
+	picture = federation_of_arab_republics
+	
+	is_triggered_only = yes
+	
+	option = { #Accept
+		name = uar.36.o1
+		UAR = {
+		    country_event = { id = uar.37 }
+		}
+	}
+	
+	option = { #Refuse
+		name = uar.36.o2
+		UAR = {
+		    country_event = { id = uar.38 }
+		}
+	}
+}
+
+#Country accepts
+country_event = {
+	id = uar.37
+	title = uar.37.t
+	desc = uar.37.d
+	picture = federation_of_arab_republics
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = uar.37.o1
+		UAR = {
+			annex_country = { 
+				target = FROM
+				transfer_troops = yes
+			}
+		}
+		every_state = {
+			limit = {
+				is_core_of = FROM
+			}
+			add_core_of = UAR
+		}
+	}
+}
+
+#Country refuses
+country_event = {
+	id = uar.38
+	title = uar.38.t
+	desc = uar.38.d
+	picture = federation_of_arab_republics
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = uar.38.o1
+		add_political_power = -20
+		every_state = {
+			limit = {
+				is_core_of = FROM
+			}
+			add_core_of = UAR
+		}
+		create_wargoal = {
+			target = FROM
+			type = annex_everything
+		}
+	}
+}
+
+#Canada - allow uar/federation into league
+country_event = {
+	id = uar.39
+	title = uar.39.t
+	desc = uar.39.d
+	picture = uar_flag
+	
+	is_triggered_only = yes
+	
+	option = { #Accept
+		name = uar.39.o1
+		add_to_faction = UAR
+		UAR = {
+		    country_event = { id = uar.40 }
+		}
+	}
+	
+	option = { #Refuse
+		name = uar.39.o2
+		UAR = {
+		    country_event = { id = uar.41 }
+		}
+	}
+}
+
+#Canada accepts
+country_event = {
+	id = uar.40
+	title = uar.40.t
+	desc = uar.40.d
+	picture = uar_flag
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = uar.40.o1
+	}
+}
+
+#Canada refuses
+country_event = {
+	id = uar.41
+	title = uar.41.t
+	desc = uar.41.d
+	picture = uar_flag
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = uar.41.o1
+	}
+}
+
+#Syrian rebuilding process begins
+country_event = {
+	id = uar.42
+	title = uar.42.t
+	desc = uar.42.d
+	picture = rebuilding_syria
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = uar.42.o1
+	}
+}
+
+#New international airport in damascus
+country_event = {
+	id = uar.43
+	title = uar.43.t
+	desc = uar.43.d
+	picture = damascus_international_airport
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = uar.43.o1
+	}
+}
+
+#Syrian border defences
+country_event = {
+	id = uar.44
+	title = uar.44.t
+	desc = uar.44.d
+	picture = syrian_border_defences
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = uar.44.o1
+	}
+}
+
+#Syrian central bank dissolved
+country_event = {
+	id = uar.45
+	title = uar.45.t
+	desc = uar.45.d
+	picture = syrian_central_bank
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = uar.45.o1
+	}
+}
+
+#Nile river development
+country_event = {
+	id = uar.46
+	title = uar.46.t
+	desc = uar.46.d
+	picture = nile_river_development
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = uar.46.o1
+	}
+}
+
+#New Egypt proposal
+country_event = {
+	id = uar.47
+	title = uar.47.t
+	desc = uar.47.d
+	picture = new_egypt_proposal
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = uar.47.o1
+	}
+}
+
+#Electronics industry supported
+country_event = {
+	id = uar.48
+	title = uar.48.t
+	desc = uar.48.d
+	picture = electronics_industry_supported
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = uar.48.o1
+	}
+}
+
+#Assad supporters persecuted
+country_event = {
+	id = uar.49
+	title = uar.49.t
+	desc = uar.49.d
+	picture = assad_supporters_persecuted
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = uar.49.o1
+	}
+}
+
+#Assad executed
+country_event = {
+	id = uar.50
+	title = uar.50.t
+	desc = uar.50.d
+	picture = assad_executed
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = uar.50.o1
+	}
+}
+
+#Rebellious generals purged
+country_event = {
+	id = uar.51
+	title = uar.51.t
+	desc = uar.51.d
+	picture = rebellious_generals_purged
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = uar.51.o1
+	}
+}
+
+#Final campaign against syrian rebels
+country_event = {
+	id = uar.52
+	title = uar.52.t
+	desc = uar.52.d
+	picture = campaign_against_syrian_rebels
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = uar.52.o1
+	}
+}
+
+#Peace and reconciliation commission
+country_event = {
+	id = uar.53
+	title = uar.53.t
+	desc = uar.53.d
+	picture = peace_and_reconciliation_commission
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = uar.53.o1
+	}
+}
+
+#Assad freed
+country_event = {
+	id = uar.54
+	title = uar.54.t
+	desc = uar.54.d
+	picture = assad_freed
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = uar.54.o1
+	}
+}
+
+#Rebels and government meet
+country_event = {
+	id = uar.55
+	title = uar.55.t
+	desc = uar.55.d
+	picture = rebels_and_government_meet
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = uar.55.o1
+	}
+}
+
+#Baath party legalised
+country_event = {
+	id = uar.56
+	title = uar.56.t
+	desc = uar.56.d
+	picture = baath_party_legalised
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = uar.56.o1
+	}
+}
+
+#Election campaign begins in syria
+country_event = {
+	id = uar.57
+	title = uar.57.t
+	desc = uar.57.d
+	picture = uar_presidential_election
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = uar.57.o1
+	}
+}
+
+#Arab Socialists win
+country_event = {
+	id = uar.58
+	title = uar.58.t
+	desc = uar.58.d
+	picture = uar_assembly_convened
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = uar.58.o1
+	}
+}
+
+#Baath win
+country_event = {
+	id = uar.59
+	title = uar.59.t
+	desc = uar.59.d
+	picture = uar_assembly_convened
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = uar.59.o1
+	}
+}
+
+#Ahmed el-Tayeb takes control
+country_event = {
+	id = uar.60
+	title = uar.60.t
+	desc = uar.60.d
+	picture = ahmed_el_tayeb
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = uar.60.o1
+	}
+}
+
+#Arab intelligence agency
+country_event = {
+	id = uar.61
+	title = uar.61.t
+	desc = uar.61.d
+	picture = uar_assembly_convened
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = uar.61.o1
+	}
+}
+
+#National assembly dissolved
+country_event = {
+	id = uar.62
+	title = uar.62.t
+	desc = uar.62.d
+	picture = uar_assembly_convened
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = uar.62.o1
+	}
+}
+
+#Sharaf condemns imperialists
+country_event = {
+	id = uar.63
+	title = uar.63.t
+	desc = uar.63.d
+	picture = sharaf_condemns_imperialists
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = uar.63.o1
+	}
+}
+
+#National assembly condemns fundamentalism
+country_event = {
+	id = uar.64
+	title = uar.64.t
+	desc = uar.64.d
+	picture = uar_assembly_convened
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = uar.64.o1
+	}
+}
+
+#Baghdadi arrested
+country_event = {
+	id = uar.65
+	title = uar.65.t
+	desc = uar.65.d
+	picture = baghdadi_arrested
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = uar.65.o1
+	}
+}
+
+#Trade unions enter politics
+country_event = {
+	id = uar.66
+	title = uar.66.t
+	desc = uar.66.d
+	picture = uar_assembly_convened
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = uar.66.o1
+	}
+}
+
+#Arab trade syndicates assembly
+country_event = {
+	id = uar.67
+	title = uar.67.t
+	desc = uar.67.d
+	picture = uar_assembly_convened
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = uar.67.o1
+	}
+}
+
+#Assembly denounces nasserism
+country_event = {
+	id = uar.68
+	title = uar.68.t
+	desc = uar.68.d
+	picture = nasser
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = uar.68.o1
+	}
+}
+
+#Hegazy crushes opposition
+country_event = {
+	id = uar.69
+	title = uar.69.t
+	desc = uar.69.d
+	picture = hegazy_crushes_opposition
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = uar.69.o1
+	}
+}
+
+#Hegazy halts election promises
+country_event = {
+	id = uar.70
+	title = uar.70.t
+	desc = uar.70.d
+	picture = uar_presidential_election
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = uar.70.o1
+	}
+}
+
+#Sabahi allows more freedom of speech
+country_event = {
+	id = uar.71
+	title = uar.71.t
+	desc = uar.71.d
+	picture = sabahi_freedom_of_speech
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = uar.71.o1
+	}
+}
+
+#Islamic socialist republic proclaimed
+country_event = {
+	id = uar.72
+	title = uar.72.t
+	desc = uar.72.d
+	picture = islamic_socialist_republic_event
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = uar.72.o1
+	}
+}
+
+#Greater arab state
+country_event = {
+	id = uar.73
+	title = uar.73.t
+	desc = uar.73.d
+	picture = greater_arab_state
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = uar.73.o1
+	}
+}
+
+#Military pledges allegiance to islamic socialism
+country_event = {
+	id = uar.74
+	title = uar.74.t
+	desc = uar.74.d
+	picture = military_islamic_socialism
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = uar.74.o1
+	}
+}
+
+#Hegazy abolishes national assembly
+country_event = {
+	id = uar.75
+	title = uar.75.t
+	desc = uar.75.d
+	picture = uar_assembly_convened
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = uar.75.o1
+	}
+}
+
+#Order in the streets restored
+country_event = {
+	id = uar.76
+	title = uar.76.t
+	desc = uar.76.d
+	picture = uar_order_in_the_streets
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = uar.76.o1
+	}
+}
+
+#Omar Suleiman and intelligence agencies overthrow Sharaf
+country_event = {
+	id = uar.77
+	title = uar.77.t
+	desc = uar.77.d
+	picture = uar_order_in_the_streets
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = uar.77.o1
+		hidden_effect = {
+			EGY = {
+				annex_country = { target = UAR transfer_troops = yes }
+		    }
+			EGY = {
+                change_tag_from = UAR
+            }
+	    }
+		hidden_effect = {
+		    UAR = {
+			    EGY = { transfer_technology = yes }
+		    }
+	    }
+	   	hidden_effect = {
+			if = {
+				limit = {
+					NOT = {
+						has_global_flag = sharaf_has_invaded_syria
+					}
+				}
+				every_country = {
+					news_event = {
+						hours = 4
+						id = news.249
+					}
+				}
+			}
+		}
+	}
+}

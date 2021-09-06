@@ -1,0 +1,158 @@
+﻿capital = 440
+
+oob = "generic_2000"
+
+set_research_slots = 4
+set_convoys = 500
+set_stability = 0.8
+set_war_support = 0.3
+
+set_technology = {
+	support_weapons = 1
+	infantry_weapons = 1
+	motorised_infantry = 1 
+	tech_support = 1 
+	tech_field_hospital = 1 
+	tech_engineers = 1 
+	gwtank = 1 
+	basic_light_tank = 1 
+	gw_artillery = 1 
+	tech_mountaineers = 1
+	early_fighter = 1 
+	early_bomber = 1 
+	interwar_antiair = 1
+	interwar_antitank = 1
+}
+
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	set_technology = {
+		early_submarine = 1
+		basic_submarine = 1
+		early_destroyer = 1
+		early_light_cruiser = 1
+		basic_light_cruiser = 1
+		early_heavy_cruiser = 1
+		
+		
+		early_carrier = 1
+		basic_carrier = 1
+		transport = 1
+	}
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_technology = {
+		basic_naval_mines = 1
+		submarine_mine_laying = 1
+		early_ship_hull_light = 1
+		basic_ship_hull_light = 1
+		early_ship_hull_submarine = 1
+		basic_ship_hull_submarine = 1
+		early_ship_hull_cruiser = 1
+		basic_ship_hull_cruiser = 1
+		early_ship_hull_heavy = 1
+		early_ship_hull_carrier = 1
+		basic_ship_hull_carrier = 1
+		basic_battery = 1
+		basic_light_battery = 1
+		basic_medium_battery = 1
+		basic_heavy_battery = 1
+		basic_torpedo = 1
+		sonar = 1
+		basic_depth_charges = 1
+		basic_secondary_battery = 1
+		improved_secondary_battery = 1
+		basic_cruiser_armor_scheme = 1
+		basic_heavy_armor_scheme = 1
+		mtg_transport = 1
+		improved_airplane_launcher = 1
+	}
+}
+
+set_politics = {
+	ruling_party = nationalist
+	last_election = "1997.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+        fascist = 14
+		nationalist = 30
+		monarchist = 5
+		national_bolshevik = 0
+		national_conservative = 16
+		centrist = 2
+		liberal = 0
+		new_democrat = 21
+		moderate_socialist = 6
+		revolutionary_socialist = 4
+		communist = 2
+}
+
+create_country_leader = {
+	name = "Sukhdev Singh Babbar"
+	picture = "GFX_PJB_Sukhdev_Singh_Babbar.dds"
+	ideology = fascist_ideology
+}
+
+create_country_leader = {
+	name = "Simranjit Singh Mann"
+	picture = "GFX_PJB_Simranjit_Singh_Mann.dds"
+	ideology = nationalist_ideology
+}
+
+create_country_leader = {
+	name = "Beant Singh Sandhalwalia"
+	picture = "GFX_PJB_Beant_Singh_Sandhalwalia.dds"
+	ideology = absolute_monarchist
+}
+
+create_country_leader = {
+	name = "Gurmit Singh Aulakh"
+	picture = "GFX_PJB_Gurmit_Singh_Aulakh.dds"
+	ideology = national_bolshevik_ideology
+}
+
+create_country_leader = {
+	name = "Parkash Singh Badal"
+	picture = "GFX_PJB_Parkash_Singh_Badal.dds"
+	ideology = reactionary
+}
+
+create_country_leader = {
+	name = "Surjit Singh Barnala"
+	picture = "GFX_PJB_Surjit_Singh_Barnala.dds"
+	ideology = centrist_ideology
+}
+
+create_country_leader = {
+	name = "H. S. Phoolka"
+	picture = "GFX_PJB_Harvinder_Singh_Phoolka.dds"
+	ideology = social_liberal
+}
+
+create_country_leader = {
+	name = "Amarinder Singh"
+	picture = "GFX_PJB_Amarinder_Singh.dds"
+	ideology = new_democrat_ideology
+}
+
+create_country_leader = {
+	name = "Sucha Singh Chhotepur"
+	picture = "GFX_PJB_Sucha_Singh_Chhotepur.dds"
+	ideology = progressive
+}
+
+create_country_leader = {
+	name = "Jagjit Singh Anand"
+	picture = "GFX_PJB_Jagjit_Singh_Anand.dds"
+	ideology = revolutionary_socialist_ideology
+}
+
+create_country_leader = {
+	name = "Mangat Ram Pasla"
+	picture = "GFX_PJB_Mangat_Ram_Pasla.dds"
+	ideology = marxist
+}

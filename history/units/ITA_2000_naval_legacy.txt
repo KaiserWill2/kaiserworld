@@ -1,0 +1,18 @@
+﻿
+units= {
+	####### NAVAL UNITS #######
+	##### ARMATA ROSSA #####
+	##### Battle Force (CO: ) #####
+	### Anzio ###
+	fleet = {
+		name = "Armata Rossa"
+		naval_base = 11846 # Anzio
+		task_force = {
+			name = "Destroyers"
+			location = 11846 # Anzio
+			ship = { name = "Amadeo Bordiga" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ITA version_name = "Destroyer I" } } }
+			ship = { name = "Antonio Gramsci" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ITA version_name = "Destroyer I" } } }
+		
+		}
+	}
+}

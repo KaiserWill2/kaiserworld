@@ -1,0 +1,159 @@
+﻿capital = 324
+
+oob = "BHU_2000"
+
+set_research_slots = 4
+set_convoys = 500
+set_stability = 0.8
+set_war_support = 0.1
+
+set_technology = {
+	support_weapons = 1
+	infantry_weapons = 1
+	motorised_infantry = 1 
+	tech_support = 1 
+	tech_field_hospital = 1 
+	tech_engineers = 1 
+	gwtank = 1 
+	basic_light_tank = 1 
+	gw_artillery = 1 
+	tech_mountaineers = 1
+	early_fighter = 1 
+	early_bomber = 1 
+	paratroopers = 1 
+	interwar_antiair = 1
+	interwar_antitank = 1
+}
+
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	set_technology = {
+		early_submarine = 1
+		basic_submarine = 1
+		early_destroyer = 1
+		early_light_cruiser = 1
+		basic_light_cruiser = 1
+		early_heavy_cruiser = 1
+		
+		
+		early_carrier = 1
+		basic_carrier = 1
+		transport = 1
+	}
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_technology = {
+		basic_naval_mines = 1
+		submarine_mine_laying = 1
+		early_ship_hull_light = 1
+		basic_ship_hull_light = 1
+		early_ship_hull_submarine = 1
+		basic_ship_hull_submarine = 1
+		early_ship_hull_cruiser = 1
+		basic_ship_hull_cruiser = 1
+		early_ship_hull_heavy = 1
+		early_ship_hull_carrier = 1
+		basic_ship_hull_carrier = 1
+		basic_battery = 1
+		basic_light_battery = 1
+		basic_medium_battery = 1
+		basic_heavy_battery = 1
+		basic_torpedo = 1
+		sonar = 1
+		basic_depth_charges = 1
+		basic_secondary_battery = 1
+		improved_secondary_battery = 1
+		basic_cruiser_armor_scheme = 1
+		basic_heavy_armor_scheme = 1
+		mtg_transport = 1
+		improved_airplane_launcher = 1
+	}
+}
+set_politics = {
+	ruling_party = monarchist
+	last_election = "1997.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+        fascist = 0
+		nationalist = 2
+		monarchist = 80
+		national_bolshevik = 0
+		national_conservative = 0
+		centrist = 3
+		liberal = 0
+		new_democrat = 0
+		moderate_socialist = 0
+		revolutionary_socialist = 0
+		communist = 15
+}
+
+create_country_leader = {
+	name = "Tek Nath Rizal"
+	picture = "Portrait_BHU_Tek_Nath_Rizal.dds"
+	ideology = marxist
+}
+
+create_country_leader = {
+	name = "Kipchu Namgyal"
+	picture = "Portrait_BHU_Kipchu_Namgyal.dds"
+	ideology = fascist_ideology
+}
+
+create_country_leader = {
+	name = "Jigme Thinley"
+	picture = "Portrait_BHU_Jigme_Thinley.dds"
+	ideology = nationalist_ideology
+}
+
+create_country_leader = {
+	name = "Jigme Singye Wangchuck"
+	desc = "POLITICS_JIGME_SINGYE_WANGCHUCK_DESC"
+	picture = "Portrait_BHU_Jigme_Singye_Wangchuck.dds"
+	ideology = absolute_monarchist
+}
+
+create_country_leader = {
+	name = "Phanindra Nepal"
+	picture = "Portrait_BHU_Phanindra_Nepal.dds"
+	ideology = national_bolshevik_ideology
+}
+
+create_country_leader = {
+	name = "Sangay Ngedup"
+	picture = "Portrait_BHU_Sangay_Ngedup.dds"
+	ideology = reactionary
+}
+
+create_country_leader = {
+	name = "Chenkyab Dorji"
+	picture = "Portrait_BHU_Chenkyab_Dorji.dds"
+	ideology = centrist_ideology
+}
+
+create_country_leader = {
+	name = "Dorji Choden"
+	picture = "Portrait_BHU_Dorji_Choden.dds"
+	ideology = social_liberal
+}
+
+create_country_leader = {
+	name = "Sonam Tobgay"
+	picture = "Portrait_BHU_Sonam_Tobgay.dds"
+	ideology = new_democrat_ideology
+}
+
+create_country_leader = {
+	name = "R.P. Subba"
+	picture = "Portrait_BHU_RP_Subba.dds"
+	ideology = progressive
+}
+
+create_country_leader = {
+	name = "R.K. Budhathoki"
+	picture = "Portrait_BHU_RK_Budhathoki.dds"
+	ideology = revolutionary_socialist_ideology
+}

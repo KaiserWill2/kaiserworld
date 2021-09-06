@@ -1,0 +1,16 @@
+state = {
+	id = 996
+	name = "STATE_996"
+
+	history = {
+		owner = OMA
+		add_core_of = OMA
+	}
+
+	provinces = {
+		1947 2018 5049 8002 8020 13730
+	}
+	manpower = 989000
+	buildings_max_level_factor = 1.000
+	state_category = rural
+}

@@ -1,0 +1,18 @@
+state={
+	id=929
+	name="STATE_929"
+	provinces={
+		10104 13313 13321 13322 13328 13331 13334 13340 13341 13347 13348 13349 13352 13353 13358 13361 13362 13363 13364 13370 13380 13384 13386 13387 13392 13399 13401 13411 13416 13418 13430 13441 
+	}
+	state_category = town
+	history={
+		owner = LBA
+		add_core_of = LBA
+		buildings = {
+			infrastructure = 2
+		}
+
+	}
+	manpower=120000
+	buildings_max_level_factor=1.000
+}

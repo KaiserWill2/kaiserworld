@@ -1,0 +1,161 @@
+﻿capital = 559
+
+oob = "SOM_2000"
+
+set_research_slots = 4
+set_convoys = 500
+set_stability = 0.5
+set_war_support = 0.1
+
+set_country_flag = muslim_nation
+
+set_technology = {
+	support_weapons = 1
+	infantry_weapons = 1
+	motorised_infantry = 1 
+	tech_support = 1 
+	tech_field_hospital = 1 
+	tech_engineers = 1 
+	gwtank = 1 
+	basic_light_tank = 1 
+	gw_artillery = 1 
+	tech_mountaineers = 1
+	early_light_cruiser = 1
+	early_fighter = 1 
+	early_bomber = 1 
+	early_submarine = 1
+	interwar_antiair = 1
+	interwar_antitank = 1
+}
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	set_technology = {
+		early_submarine = 1
+		basic_submarine = 1
+		early_destroyer = 1
+		early_light_cruiser = 1
+		basic_light_cruiser = 1
+		early_heavy_cruiser = 1
+		
+		
+		early_carrier = 1
+		basic_carrier = 1
+		transport = 1
+	}
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_technology = {
+		basic_naval_mines = 1
+		submarine_mine_laying = 1
+		early_ship_hull_light = 1
+		basic_ship_hull_light = 1
+		early_ship_hull_submarine = 1
+		basic_ship_hull_submarine = 1
+		early_ship_hull_cruiser = 1
+		basic_ship_hull_cruiser = 1
+		early_ship_hull_heavy = 1
+		early_ship_hull_carrier = 1
+		basic_ship_hull_carrier = 1
+		basic_battery = 1
+		basic_light_battery = 1
+		basic_medium_battery = 1
+		basic_heavy_battery = 1
+		basic_torpedo = 1
+		sonar = 1
+		basic_depth_charges = 1
+		basic_secondary_battery = 1
+		improved_secondary_battery = 1
+		basic_cruiser_armor_scheme = 1
+		basic_heavy_armor_scheme = 1
+		mtg_transport = 1
+		improved_airplane_launcher = 1
+	}
+}
+set_politics = {
+	ruling_party = communist
+	last_election = "1997.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+        fascist = 0
+		nationalist = 15
+		monarchist = 0
+		national_bolshevik = 13
+		national_conservative = 12
+		centrist = 10
+		liberal = 17
+		new_democrat = 10
+		moderate_socialist = 2
+		revolutionary_socialist = 9
+		communist = 12
+}
+
+create_country_leader = {
+	name = "Mohammed Said Hersi Morgan"
+	desc = "POLITICS_MOHAMMED_MORGAN_DESC"
+	picture = "Portrait_SOM_Mohammed_Said_Hersi_Morgan.dds"
+	ideology = islamic_marxist
+}
+
+create_country_leader = {
+	name = "Sharif Sheikh Ahmed"
+	picture = "Portrait_SOM_Sharif_Sheikh_Ahmed.dds"
+	ideology = fascist_ideology
+}
+
+create_country_leader = {
+	name = "Ali Mohammed Ghedi"
+	picture = "Portrait_SOM_Ali_Mohammed_Ghedi.dds"
+	ideology = nationalist_ideology
+}
+
+create_country_leader = {
+	name = "Jama Garad Ali"
+	picture = "Portrait_SOM_Jama_Garad_Ali.dds"
+	ideology = absolute_monarchist
+}
+
+create_country_leader = {
+	name = "Hassan Abdullah Hersi al-Turki"
+	picture = "Portrait_SOM_Hassan_Abdullah_Hersi_Al_Turki.dds"
+	ideology = national_bolshevik_ideology
+}
+
+create_country_leader = {
+	name = "Hassan Sheikh Mohamud"
+	picture = "Portrait_SOM_Hassan_Sheikh_Mohamud.dds"
+	ideology = reactionary
+}
+
+create_country_leader = {
+	name = "Abdirahman Farole"
+	picture = "Portrait_SOM_Abdirahman_Farole.dds"
+	ideology = centrist_ideology
+}
+
+create_country_leader = {
+	name = "Mohamed Abdullahi Mohamed"
+	picture = "Portrait_SOM_Mohamed_Abdullahi_Mohamed.dds"
+	ideology = social_liberal
+}
+
+create_country_leader = {
+	name = "Faysal Ali Warabe"
+	picture = "Portrait_SOM_Faysal_Ali_Warabe.dds"
+	ideology = new_democrat_ideology
+}
+
+create_country_leader = {
+	name = "Ahmed Mohamed Mohamoud"
+	picture = "Portrait_SOM_Ahmed_Mohamed_Mohamoud.dds"
+	ideology = democratic_socialist
+}
+
+create_country_leader = {
+	name = "Sa'iid Isse Mohamud"
+	picture = "Portrait_SOM_Saiid_Isse_Mohamud.dds"
+	ideology = revolutionary_socialist_ideology
+}

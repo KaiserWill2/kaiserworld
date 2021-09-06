@@ -1,0 +1,129 @@
+﻿division_template = {
+	name = "Infantry Division"
+	
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+	}
+}
+
+division_template = {
+	name = "Motorized Division"
+	
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		motorized = { x = 0 y = 3 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+	}
+}
+
+
+division_template = {
+	name = "Armored Division"
+	
+	regiments = {
+		light_armor = { x = 0 y = 0 }
+		light_armor = { x = 0 y = 1 }
+		light_armor = { x = 0 y = 2 }
+		light_armor = { x = 1 y = 0 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+	}
+}
+
+units = {
+
+	division = {
+		name = "1st Syrian Army"
+		location = 4111
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "2nd Syrian Army"
+		location = 4111
+		division_template = "Motorized Division"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "3rd Syrian Army"
+		location = 12473
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+	}
+	
+	division = {
+		name = "4th Syrian Army"
+		location = 1606
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+	}
+	
+	division = {
+		name = "5th Syrian Army"
+		location = 10087
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+	}
+	
+	division = {
+		name = "6th Syrian Army"
+		location = 1088
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+	}
+	
+	division = {
+		name = "7th Syrian Army"
+		location = 4550
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+
+	division = {
+		name = "1st Syrian Recon"
+		location = 4550
+		division_template = "Motorized Division"
+		start_experience_factor = 0.3
+	}
+
+	division = {
+		name = "1st Syrian Armor"
+		location = 4111
+		division_template = "Armored Division"
+		start_experience_factor = 0.3
+	}
+
+	division = {
+		name = "Syrian Marines"
+		location = 10087
+		division_template = "Marine Division"
+		start_experience_factor = 0.3
+	}
+}
+
+### Air Wings###
+
+air_wings = {
+	677 = {
+		fighter_equipment_0 = {
+			owner = "SYR"
+			amount = 20
+		}
+		tac_bomber_equipment_0 = {
+			owner = "SYR"
+			amount = 10
+		}
+	}
+}

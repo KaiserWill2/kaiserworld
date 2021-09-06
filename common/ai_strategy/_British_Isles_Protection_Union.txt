@@ -1,0 +1,71 @@
+protection_union_membership = {
+	
+	enable = {
+	
+		NOT = { tag = ENG }
+		ENG = { is_in_faction = yes }
+		
+		OR = {		
+			tag = IRE
+			tag = ULS
+			
+		}
+		
+		OR = {
+			has_government = nationalist
+			has_government = national_conservative
+			has_government = centrist
+			has_government = liberal
+			has_government = new_democrat
+			has_government = moderate_socialist
+		}
+		
+		OR = {
+			ENG = { has_government = nationalist }
+			ENG = { has_government = national_conservative }
+			ENG = { has_government = centrist }
+			ENG = { has_government = liberal }
+			ENG = { has_government = new_democrat }
+			ENG = { has_government = moderate_socialist }
+		}
+		
+	}
+	
+	abort = {
+		OR = {
+			has_war_with = ENG
+			ENG = { is_in_faction = no }
+			OR = {
+				has_government = fascist
+				has_government = monarchist
+				has_government = communist
+				has_government = revolutionary_socialist
+				has_government = national_bolshevik
+			}
+			OR = {
+				ENG = { has_government = fascist }
+				ENG = { has_government = monarchist }
+				ENG = { has_government = communist }
+				ENG = { has_government = revolutionary_socialist }
+				ENG = { has_government = national_bolshevik }
+			}
+			ENG = { exists = no }
+			has_global_flag = uk_betrayed_us
+		}
+	}
+	
+	ai_strategy = {
+		type = befriend
+		id = "ENG"
+		value = 40
+	}
+	
+	
+	ai_strategy = {
+		type = alliance
+		id = "ENG"
+		value = 120
+	}
+	
+	
+}

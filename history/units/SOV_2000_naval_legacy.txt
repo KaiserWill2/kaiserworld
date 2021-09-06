@@ -1,0 +1,41 @@
+﻿
+units= {
+	####### NAVAL UNITS #######
+	##### RED NAVY #####
+	#####  #####
+	### Split between Leningrad and Vladviostok ###
+	fleet = {
+		name = "Baltic Fleet"
+		naval_base = 3151 # Leningrad
+		task_force = {
+			name = "Red Task Force West"
+			location = 3151 # Leningrad
+			ship = {
+				name = "Nikolai Kuznetsov" definition = carrier equipment = { carrier_1 = { amount = 1 owner = SOV version_name = "Carrier I" } }
+				air_wings = {
+					cv_fighter_equipment_0 =  { owner = "SOV" amount = 22 }
+					cv_nav_bomber_equipment_1 =  { owner = "SOV" amount = 22 }
+				}
+			}	
+			ship = { name = "Vazhnyy" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = SOV version_name = "Destroyer I" } } }
+			ship = { name = "Vinogradov" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = SOV version_name = "Destroyer I" } } }	
+		}
+	}
+	fleet = {
+		name = "Pacific Fleet"
+		naval_base = 957 # Vladviostok
+		task_force = {
+			name = "Red Fleet East"
+			location = 957 # Vladviostok
+			ship = {
+				name = "Sergey Gorshkov" definition = carrier equipment = { carrier_1 = { amount = 1 owner = SOV version_name = "Carrier I" } }
+				air_wings = {
+					cv_fighter_equipment_0 =  { owner = "SOV" amount = 22 }
+					cv_nav_bomber_equipment_1 =  { owner = "SOV" amount = 22 }
+				}
+			}	
+			ship = { name = "Besstrashnyy" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = SOV version_name = "Destroyer I" } } }
+			ship = { name = "Nastoychivyy" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = SOV version_name = "Destroyer I" } } }
+		}
+	}
+}

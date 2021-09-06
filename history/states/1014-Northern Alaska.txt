@@ -1,0 +1,28 @@
+
+state={
+	id=1014
+	name="STATE_1014"
+
+	resources = {
+		oil=270
+	}
+
+	history={
+		owner = ALA
+
+		buildings = {
+			infrastructure = 1
+
+		}
+		set_demilitarized_zone = yes
+		add_core_of = ALA
+
+	}
+
+	provinces={
+		4848 13069 1830 7855
+	}
+	manpower=9234
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+}

@@ -1,0 +1,2226 @@
+ideas = {
+	country = {
+		idea_standing_firm_commonwealth = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				nationalist_drift = -0.1
+				communist_drift = -0.1
+				fascist_drift = -0.1
+				justify_war_goal_time = 0.6
+			}
+		}
+		idea_apc_political_deadlock = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = neutrality_idea
+			modifier = {
+				political_power_gain = -0.5
+				army_morale_factor = -0.03
+				army_org_factor = -0.05
+				stability_factor = -0.035
+				war_support_factor = -0.05
+				conscription = -0.004
+				justify_war_goal_time = 1
+			}
+		}
+		idea_apc_appalling_recognition = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = appalling_recognition
+			modifier = {
+				political_power_gain = -0.1
+				trade_opinion_factor = -0.7
+			}
+		}
+		idea_apc_western_corruption = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = anti_soviet_pact
+			modifier = {
+				consumer_goods_factor = 0.01
+				production_speed_industrial_complex_factor = 0.1
+				trade_opinion_factor = -0.1
+				local_resources_factor = -0.15
+			}
+		}
+		idea_apc_building_wall = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = generic_wall_line
+			modifier = {
+				industrial_capacity_factory = -0.05
+				conscription = -0.005
+				consumer_goods_factor = 0.025
+			}
+		}
+		idea_apc_building_wall_more_secure = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = generic_wall_line
+			modifier = {
+				industrial_capacity_factory = -0.1
+				conscription = -0.005
+				consumer_goods_factor = 0.1
+			}
+		}
+		idea_apc_a_united_commonwealth = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = FRA_national_mobilization_focus
+			modifier = {
+				stability_factor = 0.05
+				political_power_gain = 0.2
+				army_morale_factor = 0.15
+			}
+		}
+		idea_apc_direct_democracy = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = generic_democratic_drift_bonus
+			modifier = {
+				political_power_gain = -0.25
+				revolutionary_socialist_drift = 0.01
+				foreign_subversive_activites = -0.4
+			}
+		}
+		idea_apc_social_unity = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = social_unity
+			modifier = {
+				stability_factor = 0.05
+				army_defence_factor = 0.02
+				justify_war_goal_time = 0.15
+			}
+		}
+		idea_apc_workers_self_management = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = workers_self_management
+			modifier = {
+				consumer_goods_factor = -0.1
+				production_speed_industrial_complex_factor = -0.2
+			}
+		}
+		idea_apc_wage_abolition = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = wage_abolition
+			modifier = {
+				stability_factor = 0.05
+				industrial_capacity_factory = 0.1
+				army_morale_factor = 0.03
+				training_time_army_factor = 0.5
+			}
+		}
+		idea_apc_union_authoritarianism = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = FRA_matignon_agreements
+			modifier = {
+				political_power_gain = 0.1
+				trade_opinion_factor = 0.2
+				conscription = 0.01
+				army_morale_factor = -0.15
+			}
+		}
+		idea_apc_gates_propaganda = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = FRA_scw_intervention_nationalists_focus
+			modifier = {
+				revolutionary_socialist_drift = 0.02
+				army_morale_factor = 0.02
+				justify_war_goal_time = -0.05
+				political_power_gain = -0.05
+			}
+		}
+		idea_apc_technology_council_supremacy = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = generic_research_bonus
+			modifier = {
+				research_speed_factor = 0.05
+				army_defence_factor = -0.1
+				army_attack_factor = -0.1
+			}
+		}
+		idea_apc_social_democracy = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = generic_morale_bonus
+			modifier = {
+				political_power_gain = 0.1
+				drift_defence_factor = -0.5
+				trade_opinion_factor = 0.1
+				production_speed_arms_factory_factor = -0.25
+			}
+		}
+		idea_apc_decreased_military_budget = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = generic_war_preparation
+			modifier = {
+				army_morale_factor = -0.02
+				army_attack_factor = -0.02
+				army_defence_factor = -0.02
+				army_org_factor = 0.1
+				consumer_goods_factor = -0.05
+				industrial_capacity_factory = 0.1
+			}
+		}
+		idea_apc_stronger_states = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = generic_reserve_divisions
+			modifier = {
+				planning_speed = 0.13
+				training_time_army_factor = -0.05
+				conscription = 0.005
+				political_power_gain = -0.5
+			}
+		}
+		idea_apc_defence_of_the_people = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = defence_of_the_people
+			modifier = {
+				decryption_power = 10
+				crypto_strength = 1
+			}
+		}
+		idea_apc_public_opinion = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = public_opinion
+			modifier = {
+				revolutionary_socialist_drift = -0.03
+				drift_defence_factor = -0.05
+				production_speed_buildings_factor = -0.1
+				political_power_gain = 0.1
+			}
+		}
+		idea_apc_anti_chomsky_sentiment = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = FRA_army_of_aggression_focus
+			modifier = {
+				moderate_socialist_drift = -0.02
+				planning_speed = 0.1
+				justify_war_goal_time = -0.2
+			}
+		}
+		idea_apc_collectivisation = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = collectivisation
+			modifier = {
+				local_resources_factor = 0.3
+				MONTHLY_POPULATION = -0.02
+				industrial_capacity_factory = 0.05
+			}
+		}
+		idea_apc_strong_president = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = soviet_german_friendship
+			modifier = {
+				political_power_gain = 0.2
+				revolutionary_socialist_drift = 0.035
+				production_speed_arms_factory_factor = 0.025
+				stability_factor = 0.05
+				war_support_factor = 0.01
+				army_morale_factor = 0.02
+			}
+		}
+		idea_apc_strong_committee = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = socialist_science_focus
+			modifier = {
+				foreign_subversive_activites = -0.2
+				crypto_strength = 1
+				army_org_factor = 0.05
+				justify_war_goal_time = -0.03
+			}
+		}
+		idea_apc_american_peace_act = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = american_peace_act
+			modifier = {
+				decryption_power = 10
+				local_resources_factor = 0.05
+			}
+		}
+		idea_apc_communist_party_ban = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = officers_purged
+			modifier = {
+				communist_drift = -0.02
+				political_power_gain = 0.1
+				stability_factor = 0.02
+				army_morale_factor = 0.035
+			}
+		}
+		idea_apc_restructured_chamber = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = SOV_scientist_defect
+			modifier = {
+				planning_speed = 0.05
+				foreign_subversive_activites = -0.1
+				industrial_capacity_factory = 0.025
+				army_attack_factor = 0.02
+			}
+		}
+		idea_apc_power_of_the_trade_councils = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = trade_council_power
+			modifier = {
+				research_speed_factor = -0.02
+				industrial_capacity_factory = 0.05
+				political_power_gain = -0.35
+				production_speed_industrial_complex_factor = 0.1
+			}
+		}
+		idea_apc_media_rights = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = media_rights
+			modifier = {
+				drift_defence_factor = -0.5
+				consumer_goods_factor = -0.03
+				conscription = 0.002
+			}
+		}
+		idea_apc_moderate_support = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = FRA_scw_intervention_republicans_focus
+			modifier = {
+				moderate_socialist_drift = 0.01
+				political_power_gain = -0.05
+				army_morale_factor = -0.02
+			}
+		}
+		idea_apc_new_england_trade_councils = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = new_england_trade_councils
+			modifier = {
+				research_speed_factor = 0.01
+				production_speed_industrial_complex_factor = 0.05
+				training_time_army_factor = -0.1
+			}
+		}
+		idea_apc_support_from_workers = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = generic_production_bonus
+			modifier = {
+				industrial_capacity_factory = 0.1
+				consumer_goods_factor = -0.05
+				army_morale_factor = 0.01
+				decryption_power = 10
+			}
+		}
+		idea_apc_donations = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = donations
+			modifier = {
+				political_power_gain = 0.2
+				foreign_subversive_activites = -0.1
+				moderate_socialist_drift = 0.005
+			}
+		}
+		idea_apc_fighting_for_a_cause = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = combined_bomber_offensive
+			modifier = {
+				conscription = 0.01
+			}
+		}
+		idea_apc_pushing_research_teams = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = air_support_focus
+			modifier = {
+				research_speed_factor = 0.05
+				political_power_gain = -0.5
+				army_org_factor = -0.05
+			}
+		}
+		idea_apc_desperate_times = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = FRA_fortification_focus
+			modifier = {
+				conscription = 0.08
+				training_time_army_factor = 0.2
+				planning_speed = -0.3
+				army_morale_factor = -0.1
+				army_org_factor = -0.05
+				political_power_gain = -0.1
+			}
+		}
+		idea_apc_first_two_year_plan = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = generic_communism_drift_bonus
+			modifier = {
+				production_speed_industrial_complex_factor = 0.1
+				industrial_capacity_factory = 0.05
+				MONTHLY_POPULATION = -0.025
+			}
+		}
+		idea_apc_second_two_year_plan = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = generic_communism_drift_bonus
+			modifier = {
+				production_speed_arms_factory_factor = 0.1
+				consumer_goods_factor = -0.15
+				MONTHLY_POPULATION = -0.03
+			}
+		}
+		idea_apc_third_two_year_plan = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = generic_communism_drift_bonus
+			modifier = {
+				production_speed_infrastructure_factor = 0.2
+				industrial_capacity_factory = -0.025
+				MONTHLY_POPULATION = -0.005
+			}
+		}
+		idea_apc_the_eternal_gear = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = generic_communism_drift_bonus
+			modifier = {
+				industrial_capacity_factory = 0.1
+				consumer_goods_factor = -0.1
+				MONTHLY_POPULATION = -0.01
+			}
+		}
+		idea_apc_political_reconciliation = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = generic_infantry_bonus
+			modifier = {
+				political_power_gain = 0.1
+				revolutionary_socialist_drift = 0.01
+				moderate_socialist_drift = 0.01
+				communist_drift = 0.01
+				stability_factor = 0.05
+			}
+		}
+		idea_apc_councils_abolished = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = generic_intel_bonus
+			modifier = {
+				research_speed_factor = 0.01
+				consumer_goods_factor = -0.025
+				training_time_army_factor = -0.1
+				planning_speed = 0.05
+			}
+		}
+		idea_apc_working_with_the_old_guard = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = generic_disjointed_gov
+			modifier = {
+				conscription = 0.0015
+				army_attack_factor = -0.05
+				production_speed_buildings_factor = 0.03
+				army_morale_factor = -0.01
+			}
+		}
+		idea_apc_new_guard_supremacy = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = generic_democratic_drift_bonus
+			modifier = {
+				justify_war_goal_time = -0.1
+				conscription = -0.0015
+				army_morale_factor = 0.1
+				revolutionary_socialist_drift = 0.01
+			}
+		}
+		idea_apc_decentralised_military = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = decentralise_military
+			modifier = {
+				training_time_army_factor = -0.15
+				army_org_factor = -0.1
+				army_morale_factor = -0.01
+				conscription = 0.001
+			}
+		}
+		idea_apc_the_great_purge = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = trotskyite_plot
+			modifier = {
+				political_power_gain = 0.5
+				stability_factor = -0.075
+				moderate_socialist_drift = -0.03
+				communist_drift = -0.03
+				army_morale_factor = 0.1
+				army_org_factor = -0.3
+				production_speed_buildings_factor = -0.2
+			}
+		}
+		idea_apc_one_commonwealth = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = generic_manpower_bonus
+			modifier = {
+				MONTHLY_POPULATION = 0.01
+				consumer_goods_factor = -0.05
+			}
+		}
+		idea_apc_victorious_commonwealth = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = generic_license_production
+			modifier = {
+				stability_factor = 0.035
+				war_support_factor = 0.02
+				justify_war_goal_time = -0.3
+				consumer_goods_factor = -0.1
+				MONTHLY_POPULATION = 0.0025
+			}
+		}
+		idea_apc_the_best_soldiers = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = idea_generic_reserve_divisions
+			modifier = {
+				army_morale_factor = 0.025
+				army_org_factor = 0.025
+				army_attack_factor = 0.05
+				army_defence_factor = -0.03
+			}
+		}
+		idea_apc_trade_council_fighters = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = generic_manpower_bonus
+			modifier = {
+				conscription = 0.01
+			}
+		}
+		idea_apc_internal_support = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = internal_support
+			modifier = {
+				revolutionary_socialist_drift = -0.01
+				army_morale_factor = -0.045
+				industrial_capacity_factory = -0.05
+				decryption_power = 10
+			}
+		}
+		idea_apc_beginning_of_a_new_era = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = generic_victors_of_ww1
+			modifier = {
+				moderate_socialist_drift = 0.004
+				army_morale_factor = 0.1
+				conscription = 0.001
+			}
+		}
+		idea_apc_workers_brigades = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = worker_brigades
+			modifier = {
+				conscription = 0.01
+				training_time_army_factor = -0.03
+				army_org_factor = -0.02
+				army_attack_factor = -0.03
+				army_defence_factor = 0.02
+			}
+		}
+		idea_apc_red_oligarchy = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = red_oligarchy
+			modifier = {
+				consumer_goods_factor = -0.1
+				political_power_gain = 0.1
+				foreign_subversive_activites = -0.2
+			}
+		}
+		idea_apc_gates_five_year_plan = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = gates_five_year_plan
+			modifier = {
+				production_speed_industrial_complex_factor = 0.1
+				production_speed_arms_factory_factor = 0.1
+				industrial_capacity_factory = 0.05
+				MONTHLY_POPULATION = -0.035
+			}
+		}
+		idea_apc_trading_prospects = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = free_trade
+			modifier = {
+				trade_opinion_factor = 0.3
+			}
+		}
+		idea_apc_defensive_measures = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = idea_AST_volunteer_defence_corps
+			modifier = {
+				production_speed_bunker_factor = 0.1
+			}
+		}
+		idea_apc_american_international = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = saf_soviet_advisers
+			modifier = {
+				political_power_gain = 0.1
+				stability_factor = 0.05
+				war_support_factor = 0.1
+			}
+		}
+	}
+	second_in_command = {
+		commonwealth_howie_hawkins = {
+			allowed = {
+				OR = {
+					original_tag = NEA
+					original_tag = AMC
+				}
+			}
+			available = {
+				OR = {
+					has_government = communist
+					has_government = revolutionary_socialist
+					has_government = moderate_socialist
+				}
+			}
+			traits = {
+				insignificant_layman
+			}
+		}
+		commonwealth_john_holdren = {
+			allowed = {
+				OR = {
+					original_tag = NEA
+				}
+			}
+			available = {
+				OR = {
+					has_government = communist
+					has_government = revolutionary_socialist
+				}
+			}
+			traits = {
+				iron_fisted_brute
+			}
+		}
+		commonwealth_germaine_greer = {
+			allowed = {
+				OR = {
+					original_tag = NEA
+				}
+			}
+			available = {
+				OR = {
+					has_government = revolutionary_socialist
+				}
+			}
+			traits = {
+				power_hungry_demagogue
+			}
+		}
+		commonwealth_bob_king = {
+			allowed = {
+				OR = {
+					original_tag = NEA
+				}
+			}
+			available = {
+				OR = {
+					has_government = revolutionary_socialist
+				}
+			}
+			traits = {
+				iron_fisted_brute
+			}
+		}
+		commonwealth_michio_kaku = {
+			allowed = {
+				OR = {
+					original_tag = NEA
+				}
+			}
+			available = {
+				OR = {
+					has_government = revolutionary_socialist
+				}
+			}
+			traits = {
+				former_scientist
+			}
+		}
+		commonwealth_peter_diamondstone = {
+			allowed = {
+				OR = {
+					original_tag = NEA
+					original_tag = AMC
+				}
+			}
+			available = {
+				OR = {
+					has_government = revolutionary_socialist
+					has_government = moderate_socialist
+				}
+			}
+			traits = {
+				silent_workhorse
+			}
+		}
+		commonwealth_ralph_nader = {
+			allowed = {
+				OR = {
+					original_tag = NEA
+					original_tag = AMC
+				}
+			}
+			available = {
+				OR = {
+					has_government = revolutionary_socialist
+					has_government = moderate_socialist
+					has_government = new_democrat
+				}
+			}
+			traits = {
+				naive_optimist
+			}
+		}
+		commonwealth_jesse_jackson = {
+			allowed = {
+				OR = {
+					original_tag = NEA
+					original_tag = AMC
+				}
+			}
+			available = {
+				OR = {
+					has_government = revolutionary_socialist
+					has_government = moderate_socialist
+					has_government = new_democrat
+				}
+			}
+			traits = {
+				compassionate_gentleman
+			}
+		}
+		commonwealth_eleanor_norton = {
+			allowed = {
+				OR = {
+					original_tag = NEA
+					original_tag = AMC
+				}
+			}
+			available = {
+				OR = {
+					has_government = revolutionary_socialist
+					has_government = moderate_socialist
+					has_government = new_democrat
+				}
+			}
+			traits = {
+				political_protege
+			}
+		}
+		commonwealth_patrick_leahy = {
+			allowed = {
+				OR = {
+					original_tag = NEA
+					original_tag = AMC
+				}
+			}
+			available = {
+				OR = {
+					has_government = moderate_socialist
+					has_government = new_democrat
+					has_government = liberal
+				}
+			}
+			traits = {
+				silent_lawyer
+			}
+		}
+		commonwealth_nina_turner = {
+			allowed = {
+				OR = {
+					original_tag = NEA
+					original_tag = AMC
+				}
+			}
+			available = {
+				OR = {
+					has_government = moderate_socialist
+				}
+			}
+			traits = {
+				political_protege
+			}
+		}
+		commonwealth_edward_markey = {
+			allowed = {
+				OR = {
+					original_tag = NEA
+					original_tag = AMC
+				}
+			}
+			available = {
+				OR = {
+					has_government = moderate_socialist
+					has_government = new_democrat
+					has_government = liberal
+				}
+			}
+			traits = {
+				silent_workhorse
+			}
+		}
+		commonwealth_sonya_sotomayor = {
+			allowed = {
+				OR = {
+					original_tag = NEA
+					original_tag = AMC
+				}
+			}
+			available = {
+				OR = {
+					has_government = moderate_socialist
+					has_government = new_democrat
+					has_government = liberal
+				}
+			}
+			traits = {
+				silent_lawyer
+			}
+		}
+		commonwealth_danny_davis = {
+			allowed = {
+				OR = {
+					original_tag = NEA
+					original_tag = AMC
+				}
+			}
+			available = {
+				OR = {
+					has_government = new_democrat
+					has_government = liberal
+					has_government = centrist
+				}
+			}
+			traits = {
+				insignificant_layman
+			}
+		}
+		commonwealth_andrew_cuomo = {
+			allowed = {
+				OR = {
+					original_tag = AMC
+				}
+			}
+			available = {
+				OR = {
+					has_government = new_democrat
+					has_government = liberal
+					has_government = centrist
+					has_government = monarchist
+				}
+			}
+			traits = {
+				politician_with_connections
+			}
+		}
+		commonwealth_thomas_menino = {
+			allowed = {
+				OR = {
+					original_tag = AMC
+				}
+			}
+			available = {
+				OR = {
+					has_government = new_democrat
+					has_government = liberal
+					has_government = centrist
+					has_government = monarchist
+				}
+			}
+			traits = {
+				insignificant_layman
+			}
+		}
+		commonwealth_joe_lieberman = {
+			allowed = {
+				OR = {
+					original_tag = NEA
+					original_tag = AMC
+				}
+			}
+			available = {
+				OR = {
+					has_government = liberal
+					has_government = centrist
+					has_government = national_conservative
+				}
+			}
+			traits = {
+				autocratic_charmer
+			}
+		}
+		commonwealth_philip_scott = {
+			allowed = {
+				OR = {
+					original_tag = NEA
+					original_tag = AMC
+				}
+			}
+			available = {
+				OR = {
+					has_government = liberal
+					has_government = centrist
+					has_government = national_conservative
+				}
+			}
+			traits = {
+				insignificant_layman
+			}
+		}
+		commonwealth_rudy_giuliani = {
+			allowed = {
+				OR = {
+					original_tag = AMC
+				}
+			}
+			available = {
+				OR = {
+					has_government = centrist
+					has_government = national_conservative
+					has_government = nationalist
+				}
+			}
+			traits = {
+				flamboyant_tough_guy
+			}
+		}
+		commonwealth_joseph_dunford = {
+			allowed = {
+				OR = {
+					original_tag = AMC
+				}
+			}
+			available = {
+				OR = {
+					has_government = moderate_socialist
+					has_government = new_democrat
+					has_government = liberal
+					has_government = centrist
+					has_government = nationalist
+				}
+			}
+			traits = {
+				autocratic_charmer
+			}
+		}
+		commonwealth_james_mcconville = {
+			allowed = {
+				OR = {
+					original_tag = AMC
+				}
+			}
+			available = {
+				OR = {
+					has_government = nationalist
+				}
+			}
+			traits = {
+				retired_general
+			}
+		}
+		commonwealth_military_triumvirate = {
+			allowed = {
+				OR = {
+					original_tag = AMC
+				}
+			}
+			available = {
+				OR = {
+					has_government = nationalist
+				}
+			}
+			traits = {
+				political_protege
+			}
+		}
+		commonwealth_charles_coloumbe = {
+			allowed = {
+				OR = {
+					original_tag = AMC
+				}
+			}
+			available = {
+				OR = {
+					has_government = monarchist
+				}
+			}
+			traits = {
+				religious_leader
+			}
+		}
+		commonwealth_sean_patrick_o_malley = {
+			allowed = {
+				OR = {
+					original_tag = AMC
+				}
+			}
+			available = {
+				OR = {
+					has_government = monarchist
+					has_government = fascist
+				}
+			}
+			traits = {
+				religious_leader
+			}
+		}
+	}
+	foreign_minister = {
+		commonwealth_charles_barron = {
+			allowed = {
+				OR = {
+					original_tag = NEA
+				}
+			}
+			available = {
+				OR = {
+					has_government = communist
+					has_government = revolutionary_socialist
+				}
+			}
+			traits = {
+				ideological_crusader
+			}
+		}
+		commonwealth_ward_churchill = {
+			allowed = {
+				OR = {
+					original_tag = NEA
+				}
+			}
+			available = {
+				OR = {
+					has_government = communist
+					has_government = revolutionary_socialist
+				}
+			}
+			traits = {
+				isolationist
+			}
+		}
+		commonwealth_chris_hedges = {
+			allowed = {
+				OR = {
+					original_tag = NEA
+				}
+			}
+			available = {
+				OR = {
+					has_government = revolutionary_socialist
+					has_government = moderate_socialist
+				}
+			}
+			traits = {
+				biased_intellectual
+			}
+		}
+		commonwealth_glenn_greenwald = {
+			allowed = {
+				OR = {
+					original_tag = NEA
+				}
+			}
+			available = {
+				OR = {
+					has_government = revolutionary_socialist
+					has_government = moderate_socialist
+					has_government = new_democrat
+				}
+			}
+			traits = {
+				international_schemer
+			}
+		}
+		commonwealth_rashida_tlaib = {
+			allowed = {
+				OR = {
+					original_tag = NEA
+				}
+			}
+			available = {
+				OR = {
+					has_government = revolutionary_socialist
+					has_government = moderate_socialist
+				}
+			}
+			traits = {
+				ideological_crusader
+			}
+		}
+		commonwealth_eric_holder = {
+			allowed = {
+				OR = {
+					original_tag = NEA
+				}
+			}
+			available = {
+				OR = {
+					has_government = revolutionary_socialist
+					has_government = moderate_socialist
+					has_government = new_democrat
+				}
+			}
+			traits = {
+				great_compromiser
+			}
+		}
+		commonwealth_al_sharpton = {
+			allowed = {
+				OR = {
+					original_tag = NEA
+					original_tag = AMC
+				}
+			}
+			available = {
+				OR = {
+					has_government = revolutionary_socialist
+					has_government = moderate_socialist
+					has_government = new_democrat
+				}
+			}
+			traits = {
+				religious_leader
+			}
+		}
+		commonwealth_cory_booker = {
+			allowed = {
+				OR = {
+					original_tag = NEA
+				}
+			}
+			available = {
+				OR = {
+					has_government = revolutionary_socialist
+					has_government = moderate_socialist
+					has_government = new_democrat
+					has_government = liberal
+					has_government = centrist
+				}
+			}
+			traits = {
+				iron_fisted_brute
+			}
+		}
+		commonwealth_howard_dean = {
+			allowed = {
+				OR = {
+					original_tag = NEA
+					original_tag = AMC
+				}
+			}
+			available = {
+				OR = {
+					has_government = moderate_socialist
+					has_government = new_democrat
+					has_government = liberal
+				}
+			}
+			traits = {
+				ideological_crusader
+			}
+		}
+		commonwealth_robert_kennedy = {
+			allowed = {
+				OR = {
+					original_tag = AMC
+				}
+			}
+			available = {
+				OR = {
+					has_government = moderate_socialist
+					has_government = new_democrat
+					has_government = monarchist	
+				}
+			}
+			traits = {
+				silent_lawyer
+			}
+		}
+		commonwealth_peter_welch = {
+			allowed = {
+				OR = {
+					original_tag = NEA
+					original_tag = AMC
+				}
+			}
+			available = {
+				OR = {
+					has_government = moderate_socialist
+					has_government = new_democrat
+					has_government = liberal
+				}
+			}
+			traits = {
+				insignificant_layman
+			}
+		}
+		commonwealth_jack_reed = {
+			allowed = {
+				OR = {
+					original_tag = NEA
+					original_tag = AMC
+				}
+			}
+			available = {
+				OR = {
+					has_government = new_democrat
+					has_government = liberal
+					has_government = centrist
+				}
+			}
+			traits = {
+				apologetic_clerk
+			}
+		}
+		commonwealth_charles_baker = {
+			allowed = {
+				OR = {
+					original_tag = NEA
+					original_tag = AMC
+				}
+			}
+			available = {
+				OR = {
+					has_government = liberal
+					has_government = centrist
+					has_government = national_conservative
+				}
+			}
+			traits = {
+				great_compromiser
+			}
+		}
+		commonwealth_alan_keyes = {
+			allowed = {
+				OR = {
+					original_tag = AMC
+				}
+			}
+			available = {
+				OR = {
+					has_government = national_conservative
+					has_government = nationalist
+					has_government = monarchist	
+				}
+			}
+			traits = {
+				ideological_crusader
+			}
+		}
+		commonwealth_john_f_campbell = {
+			allowed = {
+				OR = {
+					original_tag = AMC
+				}
+			}
+			available = {
+				OR = {
+					has_government = nationalist
+				}
+			}
+			traits = {
+				international_schemer
+			}
+		}
+		commonwealth_lee_walter_congdon = {
+			allowed = {
+				OR = {
+					original_tag = AMC
+				}
+			}
+			available = {
+				OR = {
+					has_government = nationalist
+					has_government = monarchist
+				}
+			}
+			traits = {
+				biased_intellectual
+			}
+		}
+		commonwealth_curtis_yarvin = {
+			allowed = {
+				OR = {
+					original_tag = AMC
+				}
+			}
+			available = {
+				OR = {
+					has_government = nationalist
+					has_government = monarchist
+					has_government = fascist
+				}
+			}
+			traits = {
+				ideological_crusader
+			}
+		}
+	}
+	industry_minister = {
+		commonwealth_richard_wolff = {
+			allowed = {
+				OR = {
+					original_tag = NEA
+				}
+			}
+			available = {
+				OR = {
+					has_government = communist
+					has_government = revolutionary_socialist
+					has_government = moderate_socialist
+				}
+			}
+			traits = {
+				administrative_genius
+			}
+		}
+		commonwealth_david_graeber = {
+			allowed = {
+				OR = {
+					original_tag = NEA
+				}
+			}
+			available = {
+				OR = {
+					has_government = revolutionary_socialist
+					has_government = moderate_socialist
+				}
+			}
+			traits = {
+				biased_intellectual
+			}
+		}
+		commonwealth_richard_trumka = {
+			allowed = {
+				OR = {
+					original_tag = NEA
+				}
+			}
+			available = {
+				OR = {
+					has_government = revolutionary_socialist
+					has_government = moderate_socialist
+					has_government = new_democrat
+				}
+			}
+			traits = {
+				ambitious_union_boss
+			}
+		}
+		commonwealth_tom_perez = {
+			allowed = {
+				OR = {
+					original_tag = NEA
+				}
+			}
+			available = {
+				OR = {
+					has_government = revolutionary_socialist
+					has_government = moderate_socialist
+					has_government = new_democrat
+				}
+			}
+			traits = {
+				administrative_genius
+			}
+		}
+		commonwealth_robert_reich = {
+			allowed = {
+				OR = {
+					original_tag = NEA
+					original_tag = AMC
+				}
+			}
+			available = {
+				OR = {
+					has_government = revolutionary_socialist
+					has_government = moderate_socialist
+					has_government = new_democrat
+					has_government = liberal
+				}
+			}
+			traits = {
+				extreme_regulator
+			}
+		}
+		commonwealth_neil_tyson = {
+			allowed = {
+				OR = {
+					original_tag = NEA
+				}
+			}
+			available = {
+				OR = {
+					has_government = revolutionary_socialist
+					has_government = moderate_socialist
+					has_government = new_democrat
+					has_government = liberal
+					has_government = centrist
+				}
+			}
+			traits = {
+				former_scientist
+			}
+		}
+		commonwealth_elaine_bernard = {
+			allowed = {
+				OR = {
+					original_tag = NEA
+					original_tag = AMC
+				}
+			}
+			available = {
+				OR = {
+					has_government = moderate_socialist
+					has_government = new_democrat
+					has_government = liberal
+					has_government = centrist
+				}
+			}
+			traits = {
+				ambitious_union_boss
+			}
+		}
+		commonwealth_joe_kennedy_jr = {
+			allowed = {
+				OR = {
+					original_tag = NEA
+					original_tag = AMC
+				}
+			}
+			available = {
+				OR = {
+					has_government = new_democrat
+					has_government = liberal
+					has_government = monarchist
+				}
+			}
+			traits = {
+				extreme_regulator
+			}
+		}
+		commonwealth_paul_krugman = {
+			allowed = {
+				OR = {
+					original_tag = NEA
+					original_tag = AMC
+				}
+			}
+			available = {
+				OR = {
+					has_government = new_democrat
+					has_government = liberal
+					has_government = centrist
+				}
+			}
+			traits = {
+				administrative_genius
+			}
+		}
+		commonwealth_william_weld = {
+			allowed = {
+				OR = {
+					original_tag = NEA
+					original_tag = AMC
+				}
+			}
+			available = {
+				OR = {
+					has_government = liberal
+					has_government = centrist
+					has_government = national_conservative
+				}
+			}
+			traits = {
+				libertarian_capitalist
+			}
+		}
+		commonwealth_john_engel = {
+			allowed = {
+				OR = {
+					original_tag = NEA
+					original_tag = AMC
+				}
+			}
+			available = {
+				OR = {
+					has_government = centrist
+					has_government = national_conservative
+					has_government = monarchist
+				}
+			}
+			traits = {
+				resource_industrialist
+			}
+		}
+		commonwealth_mark_rockefeller = {
+			allowed = {
+				OR = {
+					original_tag = AMC
+				}
+			}
+			available = {
+				OR = {
+					has_government = centrist
+					has_government = national_conservative
+					has_government = monarchist
+				}
+			}
+			traits = {
+				libertarian_capitalist
+			}
+		}
+		commonwealth_douglas_mcbride = {
+			allowed = {
+				OR = {
+					original_tag = AMC
+				}
+			}
+			available = {
+				OR = {
+					has_government = nationalist
+				}
+			}
+			traits = {
+				administrative_genius
+			}
+		}
+		commonwealth_paul_gottfried = {
+			allowed = {
+				OR = {
+					original_tag = AMC
+				}
+			}
+			available = {
+				OR = {
+					has_government = nationalist
+					has_government = monarchist
+					has_government = fascist
+				}
+			}
+			traits = {
+				isolationist
+			}
+		}
+	}
+	national_security_minister = {
+		commonwealth_edward_s_herman = {
+			allowed = {
+				OR = {
+					original_tag = NEA
+				}
+			}
+			available = {
+				OR = {
+					has_government = revolutionary_socialist
+				}
+			}
+			traits = {
+				silent_lawyer
+			}
+		}
+		commonwealth_john_kerry = {
+			allowed = {
+				OR = {
+					original_tag = NEA
+				}
+			}
+			available = {
+				OR = {
+					has_government = revolutionary_socialist
+				}
+			}
+			traits = {
+				compassionate_gentleman
+			}
+		}
+		commonwealth_james_p_hoffa = {
+			allowed = {
+				OR = {
+					original_tag = NEA
+				}
+			}
+			available = {
+				OR = {
+					has_government = revolutionary_socialist
+				}
+			}
+			traits = {
+				prince_of_terror
+			}
+		}
+		commonwealth_bill_mckibben = {
+			allowed = {
+				OR = {
+					original_tag = NEA
+					original_tag = AMC
+				}
+			}
+			available = {
+				OR = {
+					has_government = revolutionary_socialist
+					has_government = moderate_socialist
+					has_government = new_democrat
+					has_government = liberal
+					has_government = centrist
+				}
+			}
+			traits = {
+				compassionate_gentleman
+			}
+		}
+		commonwealth_jesus_garcia = {
+			allowed = {
+				OR = {
+					original_tag = NEA
+					original_tag = AMC
+				}
+			}
+			available = {
+				OR = {
+					has_government = revolutionary_socialist
+					has_government = moderate_socialist
+					has_government = new_democrat
+				}
+			}
+			traits = {
+				insignificant_layman
+			}
+		}
+		commonwealth_david_zuckerman = {
+			allowed = {
+				OR = {
+					original_tag = NEA
+					original_tag = AMC
+				}
+			}
+			available = {
+				OR = {
+					has_government = moderate_socialist
+					has_government = new_democrat
+					has_government = liberal
+				}
+			}
+			traits = {
+				compassionate_gentleman
+			}
+		}
+		commonwealth_harold_koh = {
+			allowed = {
+				OR = {
+					original_tag = NEA
+					original_tag = AMC
+				}
+			}
+			available = {
+				OR = {
+					has_government = moderate_socialist
+					has_government = new_democrat
+					has_government = liberal
+					has_government = centrist
+				}
+			}
+			traits = {
+				silent_lawyer
+			}
+		}
+		commonwealth_chris_dodd = {
+			allowed = {
+				OR = {
+					original_tag = NEA
+					original_tag = AMC
+				}
+			}
+			available = {
+				OR = {
+					has_government = new_democrat
+					has_government = liberal
+					has_government = centrist
+				}
+			}
+			traits = {
+				silent_lawyer
+			}
+		}
+		commonwealth_douglas_kennedy = {
+			allowed = {
+				OR = {
+					original_tag = AMC
+				}
+			}
+			available = {
+				OR = {
+					has_government = new_democrat
+					has_government = liberal
+					has_government = monarchist
+				}
+			}
+			traits = {
+				iron_fisted_brute
+			}
+		}
+		commonwealth_john_kasich = {
+			allowed = {
+				OR = {
+					original_tag = NEA
+					original_tag = AMC
+				}
+			}
+			available = {
+				OR = {
+					has_government = liberal
+					has_government = centrist
+					has_government = national_conservative
+				}
+			}
+			traits = {
+				compassionate_gentleman
+			}
+		}
+		commonwealth_gregory_g_johnson = {
+			allowed = {
+				OR = {
+					original_tag = AMC
+				}
+			}
+			available = {
+				OR = {
+					has_government = nationalist
+				}
+			}
+			traits = {
+				retired_admiral
+			}
+		}
+		commonwealth_darren_mcdew = {
+			allowed = {
+				OR = {
+					original_tag = AMC
+				}
+			}
+			available = {
+				OR = {
+					has_government = nationalist
+				}
+			}
+			traits = {
+				compassionate_gentleman
+			}
+		}
+		commonwealth_william_s_lind = {
+			allowed = {
+				OR = {
+					original_tag = AMC
+				}
+			}
+			available = {
+				OR = {
+					has_government = nationalist
+					has_government = monarchist
+				}
+			}
+			traits = {
+				efficient_sociopath
+			}
+		}
+	}
+	intelligence_minister = {
+		commonwealth_richard_ojeda = {
+			allowed = {
+				OR = {
+					original_tag = NEA
+					original_tag = AMC
+				}
+			}
+			available = {
+				OR = {
+					has_government = revolutionary_socialist
+					has_government = moderate_socialist
+					has_government = national_bolshevik
+				}
+			}
+			traits = {
+				retired_general
+			}
+		}
+		commonwealth_daniel_ellsberg = {
+			allowed = {
+				OR = {
+					original_tag = NEA
+					original_tag = AMC
+				}
+			}
+			available = {
+				OR = {
+					has_government = revolutionary_socialist
+					has_government = moderate_socialist
+					has_government = new_democrat
+					has_government = liberal
+				}
+			}
+			traits = {
+				novice_mastermind
+			}
+		}
+		commonwealth_richard_daley = {
+			allowed = {
+				OR = {
+					original_tag = NEA
+					original_tag = AMC
+				}
+			}
+			available = {
+				OR = {
+					has_government = communist
+					has_government = revolutionary_socialist
+					has_government = moderate_socialist
+					has_government = new_democrat
+					has_government = liberal
+					has_government = centrist
+					has_government = national_conservative
+				}
+			}
+			traits = {
+				politician_with_connections
+			}
+		}
+		commonwealth_rosa_delauro = {
+			allowed = {
+				OR = {
+					original_tag = NEA
+					original_tag = AMC
+				}
+			}
+			available = {
+				OR = {
+					has_government = moderate_socialist
+					has_government = new_democrat
+					has_government = liberal
+				}
+			}
+			traits = {
+				politician_with_connections
+			}
+		}
+		commonwealth_joe_sestak = {
+			allowed = {
+				OR = {
+					original_tag = NEA
+					original_tag = AMC
+				}
+			}
+			available = {
+				OR = {
+					has_government = moderate_socialist
+					has_government = new_democrat
+					has_government = liberal
+					has_government = centrist
+				}
+			}
+			traits = {
+				retired_admiral
+			}
+		}
+		commonwealth_james_comey = {
+			allowed = {
+				OR = {
+					original_tag = AMC
+				}
+			}
+			available = {
+				OR = {
+					has_government = moderate_socialist
+					has_government = new_democrat
+					has_government = liberal
+					has_government = centrist
+					has_government = national_conservative
+				}
+			}
+			traits = {
+				novice_mastermind
+			}
+		}
+		commonwealth_richard_blumenthal = {
+			allowed = {
+				OR = {
+					original_tag = NEA
+					original_tag = AMC
+				}
+			}
+			available = {
+				OR = {
+					has_government = new_democrat
+					has_government = liberal
+					has_government = centrist
+				}
+			}
+			traits = {
+				novice_mastermind
+			}
+		}
+		commonwealth_mark_fitzgerald = {
+			allowed = {
+				OR = {
+					original_tag = AMC
+				}
+			}
+			available = {
+				OR = {
+					has_government = nationalist
+					has_government = monarchist
+				}
+			}
+			traits = {
+				naval_intelligence_specialist
+			}
+		}
+		commonwealth_david_petraeus = {
+			allowed = {
+				OR = {
+					original_tag = AMC
+				}
+			}
+			available = {
+				OR = {
+					has_government = liberal
+					has_government = centrist
+					has_government = national_conservative
+					has_government = nationalist
+					has_government = monarchist
+				}
+			}
+			traits = {
+				intelligence_director
+			}
+		}
+	}
+}

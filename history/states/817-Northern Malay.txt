@@ -1,0 +1,37 @@
+state={
+	id=817
+	name="STATE_817"
+	history = { 
+		owner = SIA
+		add_core_of = SIA
+		
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 5
+			arms_factory = 1
+			dockyard = 1
+			7342 = { naval_base = 3 }
+		}
+		victory_points = { 7329 1 }
+		victory_points = { 4355 1 }
+		victory_points = { 1291 2 }
+		victory_points = { 12144 1 }
+		victory_points = { 7342 2 }
+		victory_points = { 1376 1 }
+		victory_points = { 12215 2 }
+
+	}
+	resources = {
+		rubber=175
+		steel=5
+		chromium=5
+		oil=50
+	}
+	provinces={
+		1291 1348 1364 1376 4310 4355 4384 7329 7342 10227 12144 12199 12215 
+	}
+	manpower=4500250
+	buildings_max_level_factor=1.000
+	
+	state_category = large_town
+}

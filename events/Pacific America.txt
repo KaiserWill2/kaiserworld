@@ -1,0 +1,3455 @@
+﻿add_namespace = pacific_america
+
+#Soviet World Order
+country_event = {
+	id = pacific_america.1
+	title = pacific_america.1.t
+	desc = pacific_america.1.d
+	picture = communist_ensemble
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = PCA
+		date > 2010.1.1
+		date < 2010.1.7
+	}
+	
+	option = {
+		name = pacific_america.1.o1
+	}
+}
+
+#30th party congress - approving the thirty-first budget
+country_event = {
+	id = pacific_america.2
+	title = pacific_america.2.t
+	desc = pacific_america.2.d
+	picture = thirtieth_uapr_congress
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = pacific_america.2.o1
+		add_political_power = 10
+		hidden_effect = {
+		    country_event = { days = 1 id = pacific_america.3 } 
+		}
+	}
+}
+
+#30th party congress - reorganisation of the Politburo
+country_event = {
+	id = pacific_america.3
+	title = pacific_america.3.t
+	desc = pacific_america.3.d
+	picture = thirtieth_uapr_congress
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = pacific_america.3.o1
+		add_political_power = -5
+		hidden_effect = {
+		    country_event = { days = 4 id = pacific_america.4 } 
+		}
+	}
+}
+
+#30th party congress - election of the General Secretary
+country_event = {
+	id = pacific_america.4
+	title = pacific_america.4.t
+	desc = pacific_america.4.d
+	picture = thirtieth_uapr_congress
+	
+	is_triggered_only = yes
+	
+	option = {    #Comrade Davis - Centralists
+		name = pacific_america.4.o1
+		ai_chance = {
+			base = 40
+			modifier = {
+				NOT = {
+					has_game_rule = {
+						rule = PCA_ai_behavior
+						option = DEFAULT
+					}
+					has_game_rule = {
+						rule = PCA_ai_behavior
+						option = DAVIS_WIN
+					}
+				}
+				factor = 0
+			}
+		}
+		set_country_flag = davis_elected_general_secretary
+		add_political_power = 25
+		hidden_effect = {
+		    country_event = { days = 2 id = pacific_america.5 } 
+		}
+		every_country = {
+		    limit = {
+			    NOT = {
+				    tag = PCA
+				}
+			}
+			news_event = {
+			    hours = 4
+			    id = news.245
+		    }
+		}
+	}
+	
+	option = {    #Comrade Tyner - Liberationists
+		name = pacific_america.4.o2
+		ai_chance = {
+			base = 40
+			modifier = {
+				NOT = {
+					has_game_rule = {
+						rule = PCA_ai_behavior
+						option = DEFAULT
+					}
+					has_game_rule = {
+						rule = PCA_ai_behavior
+						option = TYNER_WIN
+					}
+				}
+				factor = 0
+			}
+		}
+		set_country_flag = tyner_elected_general_secretary
+		add_political_power = 10
+		create_country_leader = {
+	        name = "Jarvis Tyner"
+	        picture = "Portrait_PCA_Jarvis_Tyner.dds"
+	        ideology = leninist 
+        }
+		hidden_effect = {
+		    country_event = { days = 2 id = pacific_america.6 } 
+		}
+		every_country = {
+		    limit = {
+			    NOT = {
+				    tag = PCA
+				}
+			}
+			news_event = {
+			    hours = 4
+			    id = news.244
+		    }
+		}
+	}
+	
+	option = {    #Comrade Foster - Unionists
+		name = pacific_america.4.o3
+		ai_chance = {
+			base = 20
+			modifier = {
+				NOT = {
+					has_game_rule = {
+						rule = PCA_ai_behavior
+						option = DEFAULT
+					}
+					has_game_rule = {
+						rule = PCA_ai_behavior
+						option = FOSTER_WIN
+					}
+				}
+				factor = 0
+			}
+		}
+		set_country_flag = foster_elected_general_secretary
+		add_political_power = -35
+		create_country_leader = {
+	        name = "John Foster"
+	        picture = "Portrait_PCA_John_Foster.dds"
+	        ideology = stalinist 
+        }
+		hidden_effect = {
+		    country_event = { days = 2 id = pacific_america.7 } 
+		}
+		every_country = {
+		    limit = {
+			    NOT = {
+				    tag = PCA
+				}
+			}
+			news_event = {
+			    hours = 4
+			    id = news.246
+		    }
+		}
+	}
+}
+
+#30th party congress closes - Centralists come out on top
+country_event = {
+	id = pacific_america.5
+	title = pacific_america.5.t
+	desc = pacific_america.5.d
+	picture = thirtieth_uapr_congress
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = pacific_america.5.o1
+	}
+}
+
+#30th party congress closes - Liberationists come out on top
+country_event = {
+	id = pacific_america.6
+	title = pacific_america.6.t
+	desc = pacific_america.6.d
+	picture = thirtieth_uapr_congress
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = pacific_america.6.o1
+	}
+}
+
+#30th party congress closes - Unionists come out on top
+country_event = {
+	id = pacific_america.7
+	title = pacific_america.7.t
+	desc = pacific_america.7.d
+	picture = thirtieth_uapr_congress
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = pacific_america.7.o1
+	}
+}
+
+#Wenatchee revolt
+country_event = {
+	id = pacific_america.8
+	title = pacific_america.8.t
+	desc = pacific_america.8.d
+	picture = wenatchee_revolt
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = PCA
+		date > 2010.9.1
+		date < 2010.9.30
+	}
+	
+	option = {
+		name = pacific_america.8.o1
+		add_political_power = -10
+		hidden_effect = {
+		    country_event = { days = 3 id = pacific_america.9 } 
+		}
+		set_country_flag = wenatchee_revolt
+	}
+}
+
+#Yakima self-immolation
+country_event = {
+	id = pacific_america.9
+	title = pacific_america.9.t
+	desc = pacific_america.9.d
+	picture = yakima_self_immolation
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = pacific_america.9.o1
+		add_political_power = -5
+		add_popularity = {
+			ideology = communist
+			popularity = -0.02
+		}
+		hidden_effect = {
+		    country_event = { days = 1 id = pacific_america.10 } 
+		}
+	}
+}
+
+
+#Hop farmers in Yakima rebel
+country_event = {
+	id = pacific_america.10
+	title = pacific_america.10.t
+	desc = pacific_america.10.d
+	picture = hop_farmers_rebel
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = pacific_america.10.o1
+		add_political_power = -20
+		hidden_effect = {
+		    country_event = { days = 2 id = pacific_america.11 } 
+		}
+	}
+}
+
+#Wenatchee revolt crushed
+country_event = {
+	id = pacific_america.11
+	title = pacific_america.11.t
+	desc = pacific_america.11.d
+	picture = hop_farmers_rebel
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = pacific_america.11.o1
+		add_political_power = 5
+		hidden_effect = {
+		    country_event = { days = 4 id = pacific_america.12 } 
+		}
+	}
+}
+
+#The great beer strike
+country_event = {
+	id = pacific_america.12
+	title = pacific_america.12.t
+	desc = pacific_america.12.d
+	picture = the_great_beer_strike
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = pacific_america.12.o1
+		add_political_power = -25 
+		add_stability = -0.075
+		add_popularity = {
+			ideology = communist
+			popularity = -0.005
+		}
+		hidden_effect = {
+		    country_event = { days = 2 id = pacific_america.13 } 
+		}
+	}
+}
+
+#Protests in Portland crushed by police
+country_event = {
+	id = pacific_america.13
+	title = pacific_america.13.t
+	desc = pacific_america.13.d
+	picture = italy_protest_crackdown
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = pacific_america.13.o1
+		add_political_power = -30
+		add_war_support = -0.03
+		add_stability = -0.01
+		add_popularity = {
+			ideology = communist
+			popularity = -0.04
+		}
+		hidden_effect = {
+		    country_event = { days = 3 id = pacific_america.14 } 
+		}
+	}
+}
+
+#Hop farmers executed
+country_event = {
+	id = pacific_america.14
+	title = pacific_america.14.t
+	desc = pacific_america.14.d
+	picture = windsors_executed
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = pacific_america.14.o1
+		add_political_power = 2
+		add_stability = -0.05
+		hidden_effect = {
+		    country_event = { days = 1 id = pacific_america.15 } 
+		}
+	}
+}
+
+#Cascadian rebels in Wenatchee forest
+country_event = {
+	id = pacific_america.15
+	title = pacific_america.15.t
+	desc = pacific_america.15.d
+	picture = cascadian_rebels_forest
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = pacific_america.15.o1
+		hidden_effect = {
+		    country_event = { days = 3 id = pacific_america.16 } 
+		}
+	}
+}
+
+#Popular Front formed
+country_event = {
+	id = pacific_america.16
+	title = pacific_america.16.t
+	desc = pacific_america.16.d
+	picture = chomsky_meets_governors
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = pacific_america.16.o1
+		hidden_effect = {
+		    country_event = { days = 2 id = pacific_america.17 } 
+		}
+	}
+}
+
+#Leavenworth occuped by popular front
+country_event = {
+	id = pacific_america.17
+	title = pacific_america.17.t
+	desc = pacific_america.17.d
+	picture = leavnworth_occupied
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = pacific_america.17.o1
+		add_political_power = -70
+		hidden_effect = {
+		    country_event = { days = 5 id = pacific_america.18 } 
+		}
+	}
+}
+
+#Cascadian leaders demand concessions
+country_event = {
+	id = pacific_america.18
+	title = pacific_america.18.t
+	desc = pacific_america.18.d
+	picture = india_communist_army_purges
+	
+	is_triggered_only = yes
+	
+	option = { #Meet the Cascadians
+		name = pacific_america.18.o1
+		ai_chance = {
+			base = 80
+			modifier = {
+				OR = {
+					has_game_rule = {
+						rule = PCA_ai_behavior_cascadia
+						option = PCA_WAR
+					}
+					has_game_rule = {
+						rule = PCA_ai_behavior_cascadia
+						option = PCA_SURRENDER
+					}
+				}
+				factor = 0
+			}
+		}
+		trigger = {
+		    has_country_flag = tyner_elected_general_secretary
+		}
+		add_political_power = -20 
+		hidden_effect = {
+		    country_event = { days = 2 id = pacific_america.19 } 
+		}
+	}
+	
+	option = { #To hell with them
+		name = pacific_america.18.o2
+		ai_chance = {
+			base = 20
+			modifier = {
+				has_game_rule = {
+					rule = PCA_ai_behavior_cascadia
+					option = PCA_PEACE
+				}
+				factor = 0
+			}
+		}
+		add_political_power = -5 
+		hidden_effect = {
+		    country_event = { days = 3 id = pacific_america.20 } 
+		}
+	}
+}
+
+#Meeting the Cascadians
+country_event = {
+	id = pacific_america.19
+	title = pacific_america.19.t
+	desc = pacific_america.19.d
+	picture = egypt_meeting
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = pacific_america.19.o1
+		set_country_flag = met_the_cascadians
+	}
+}
+
+#Cascadian forces rise throughout region
+country_event = {
+	id = pacific_america.20
+	title = pacific_america.20.t
+	desc = pacific_america.20.d
+	picture = wenatchee_revolt
+	
+	is_triggered_only = yes
+	
+	option = {   #Crush them
+		name = pacific_america.20.o1
+		ai_chance = {
+			factor = 100
+		}
+		set_country_flag = the_cascadian_war
+		set_global_flag = the_cascadian_war_global
+		CSD = {
+		    transfer_state = 970 
+			transfer_state = 971
+		}
+		hidden_effect = {
+		    PCA = {
+				country_event = {
+					days = 1
+					id = pacific_america.111
+				}
+			    CSD = { transfer_technology = yes }
+		    }
+	    }
+		hidden_effect = {
+		    CSD = {
+			    load_oob = CSD_2000
+			}
+		}
+		hidden_effect = {
+		every_country = {
+		    limit = {
+			    NOT = {
+				    tag = PCA
+				}
+			}
+			news_event = {
+			    hours = 4
+			    id = news.247
+		    }
+		}
+		}
+	}
+	
+	option = {   #Switch to Cascadia
+		name = pacific_america.20.o2
+		ai_chance = {
+			factor = 0
+		}
+		set_country_flag = the_cascadian_war
+		set_global_flag = the_cascadian_war_global
+		CSD = {
+		    transfer_state = 970 
+			transfer_state = 971
+		}
+		hidden_effect = {
+		    CSD = {
+                change_tag_from = PCA
+            }
+		}
+		hidden_effect = {
+		    PCA = {
+				country_event = {
+					days = 1
+					id = pacific_america.111
+				}
+			    CSD = { transfer_technology = yes }
+		    }
+	    }
+		hidden_effect = {
+		    CSD = {
+			    load_oob = CSD_2000
+			}
+		}
+		hidden_effect = {
+		every_country = {
+		    limit = {
+			    NOT = {
+				    tag = PCA
+				}
+			}
+			news_event = {
+			    hours = 4
+			    id = news.247
+		    }
+		}
+		}
+	}
+}
+
+#Cascadia - Offer peace to the communists
+country_event = {
+	id = pacific_america.21
+	title = pacific_america.21.t
+	desc = pacific_america.21.d
+	picture = american_peace_act
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = CSD
+		has_global_flag = the_cascadian_war_global
+		is_puppet = no
+		has_war_with = PCA
+		PCA = {
+			is_puppet = no
+		}
+		OR = {
+		    AND = {
+			    controls_state = 385 
+				controls_state = 386
+			}
+			controls_state = 378
+			PCA = {
+				surrender_progress > 0.5
+			}
+		}
+	}
+	
+	option = {  #We've got what we want
+		name = pacific_america.21.o1
+		hidden_effect = {
+		    PCA = {
+			    country_event = { days = 1 id = pacific_america.22 } 
+			}
+		}
+	}
+}
+
+#Cascadians offer peace
+country_event = {
+	id = pacific_america.22
+	title = pacific_america.22.t
+	desc = pacific_america.22.d
+	picture = american_peace_act
+	
+	is_triggered_only = yes
+	
+	option = {  #Accept
+		name = pacific_america.22.o1
+		ai_chance = {
+			factor = 100
+		}
+		add_political_power = -250
+		white_peace = CSD
+		CSD = {
+		    transfer_state = 385 
+			transfer_state = 386
+		}
+		385 = {
+		    remove_core_of = PCA
+		}
+		386 = {
+		    remove_core_of = PCA
+		}
+		970 = {
+		    remove_core_of = PCA
+		}
+		971 = {
+		    remove_core_of = PCA
+		}
+		hidden_effect = {
+		    CSD = {
+			    country_event = { days = 1 id = pacific_america.23 } 
+			}
+			PCA = {
+			    country_event = { days = 1 id = pacific_america.23 } 
+			}
+		}
+	}
+	
+	option = {  #Refuse
+		name = pacific_america.22.o2
+		ai_chance = {
+			factor = 0
+		}
+		add_political_power = -100 
+		add_war_support = -0.15
+		hidden_effect = {
+		    CSD = {
+			    country_event = { days = 1 id = pacific_america.24 } 
+			}
+		}
+	}
+}
+
+#Treaty of Seattle
+country_event = {
+	id = pacific_america.23
+	title = pacific_america.23.t
+	desc = pacific_america.23.d
+	picture = the_treaty_of_seattle
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = pacific_america.23.o1
+		set_country_flag = treaty_of_seattle
+		hidden_effect = {
+			CSD = { set_capital = 386 }
+		}
+	}
+}
+
+#Cascadia - Communists refuse treaty
+country_event = {
+	id = pacific_america.24
+	title = pacific_america.24.t
+	desc = pacific_america.24.d
+	picture = india_dem_for_ins_war
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = pacific_america.24.o1
+		add_war_support = 0.02
+		add_stability = -0.1
+		set_country_flag = peace_rejected
+	}
+}
+
+#Extraordinary congress elects La Riva as General Secretary
+country_event = {
+	id = pacific_america.25
+	title = pacific_america.25.t
+	desc = pacific_america.25.d
+	picture = gloria_la_riva_elected
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = pacific_america.25.o1
+		add_political_power = -10
+		create_country_leader = {
+	        name = "Gloria La Riva"
+	        picture = "Portrait_PCA_Gloria_La_Riva.dds"
+	        ideology = marxist
+        }
+		hidden_effect = {
+		    country_event = { days = 1 id = pacific_america.26 } 
+		}
+	}
+}
+
+#Assassination attempt on La Riva
+country_event = {
+	id = pacific_america.26
+	title = pacific_america.26.t
+	desc = pacific_america.26.d
+	picture = attempted_assassination_asma
+	
+	is_triggered_only = yes
+	
+	option = { #Fails
+		name = pacific_america.26.o1
+		ai_chance = {
+			base = 30
+			modifier = {
+				has_game_rule = {
+					rule = PCA_ai_behavior
+					option = PCA_DEMOCRACY
+				}
+				factor = 0
+			}
+		}
+		hidden_effect = {
+		    country_event = { days = 1 id = pacific_america.27 } 
+		}
+	}
+	
+	option = { #Successful
+		name = pacific_america.26.o2
+		ai_chance = {
+			base = 70
+		}
+		create_country_leader = {
+	        name = "Politburo"
+	        picture = "Portrait_PCA_Politburo.dds"
+	        ideology = stalinist
+        }
+		hidden_effect = {
+		    country_event = { days = 1 id = pacific_america.28 } 
+		}
+	}
+}
+
+#La Riva purges unloyal members of the party
+country_event = {
+	id = pacific_america.27
+	title = pacific_america.27.t
+	desc = pacific_america.27.d
+	picture = left_purged
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = pacific_america.27.o1
+		hidden_effect = {
+		    country_event = { days = 3 id = pacific_america.29 } 
+		}
+	}
+}
+
+#Politburo members suggest reform
+country_event = {
+	id = pacific_america.28
+	title = pacific_america.28.t
+	desc = pacific_america.28.d
+	picture = commonwealth_democratic_protests
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = pacific_america.28.o1
+		hidden_effect = {
+		    country_event = { days = 2 id = pacific_america.30 } 
+		}
+	}
+}
+
+#Politburo reorganised
+country_event = {
+	id = pacific_america.29
+	title = pacific_america.29.t
+	desc = pacific_america.29.d
+	picture = thirtieth_uapr_congress
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = pacific_america.29.o1
+		hidden_effect = {
+		    country_event = { days = 4 id = pacific_america.31 } 
+		}
+	}
+}
+
+#Nationwide protests
+country_event = {
+	id = pacific_america.30
+	title = pacific_america.30.t
+	desc = pacific_america.30.d
+	picture = italy_protest_crackdown
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = pacific_america.30.o1
+		add_popularity = {
+			ideology = communist
+			popularity = -0.05
+		}
+		hidden_effect = {
+		    country_event = { days = 2 id = pacific_america.32 } 
+		}
+	}
+}
+
+#Kamala Harris confirmed as Deputy Secretary
+country_event = {
+	id = pacific_america.31
+	title = pacific_america.31.t
+	desc = pacific_america.31.d
+	picture = kamala_harris_deputy_secretary
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = pacific_america.31.o1
+		hidden_effect = {
+		    country_event = { days = 1 id = pacific_america.33 } 
+		}
+	}
+}
+
+#Nevada independence party formed
+country_event = {
+	id = pacific_america.32
+	title = pacific_america.32.t
+	desc = pacific_america.32.d
+	picture = nevada_independence_party
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = pacific_america.32.o1
+		add_popularity = {
+			ideology = communist
+			popularity = -0.01
+		}
+		hidden_effect = {
+		    country_event = { days = 5 id = pacific_america.34 } 
+		}
+	}
+}
+
+#Los Angeles terror attack
+country_event = {
+	id = pacific_america.33
+	title = pacific_america.33.t
+	desc = pacific_america.33.d
+	picture = los_angeles_attack
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = pacific_america.33.o1
+		hidden_effect = {
+		    country_event = { days = 2 id = pacific_america.35 } 
+		}
+	}
+}
+
+#Politburo's decision
+country_event = {
+	id = pacific_america.34
+	title = pacific_america.34.t
+	desc = pacific_america.34.d
+	picture = thirtieth_uapr_congress
+	
+	is_triggered_only = yes
+	
+	option = {  #Resign and hold presidential elections
+		name = pacific_america.34.o1
+		ai_chance = {
+			base = 60
+			modifier = {
+				has_game_rule = {
+					rule = PCA_ai_behavior
+					option = PCA_GGL
+				}
+				factor = 0
+			}
+		}
+		create_country_leader = {
+	        name = "Transitional Government"
+	        picture = "Portrait_PCA_Transitional_Government.dds"
+	        ideology = stalinist
+        }
+		hidden_effect = {
+		    country_event = { days = 28 id = pacific_america.36 } 
+		}
+	}
+	
+	option = {  #Crackdown on nationwide protests
+		name = pacific_america.34.o2
+		ai_chance = {
+			base = 40
+			modifier = {
+				has_game_rule = {
+					rule = PCA_ai_behavior
+					option = PCA_DEMOCRACY
+				}
+				factor = 0
+			}
+		}
+		add_popularity = {
+			ideology = communist
+			popularity = -0.085
+		}
+		hidden_effect = {
+		    country_event = { days = 3 id = pacific_america.37 } 
+		}
+	}
+}
+
+#Politburo votes to remove La Riva
+country_event = {
+	id = pacific_america.35
+	title = pacific_america.35.t
+	desc = pacific_america.35.d
+	picture = gloria_la_riva_elected
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = pacific_america.35.o1
+		hidden_effect = {
+		    country_event = { days = 1 id = pacific_america.38 } 
+		}
+	}
+}
+
+#Presidential election
+country_event = {
+	id = pacific_america.36
+	title = pacific_america.36.t
+	desc = pacific_america.36.d
+	picture = windsor_general_election
+	
+	is_triggered_only = yes
+	
+	option = {    #Abel Maldonado
+		name = pacific_america.36.o1
+		ai_chance = {
+			factor = 40
+		}
+		set_politics = {
+	        ruling_party = national_conservative
+	        elections_allowed = no
+        }
+		add_popularity = {
+			ideology = national_conservative
+			popularity = 0.45
+		}
+		set_country_flag = avoided_power_struggle
+		hidden_effect = {
+		    country_event = { days = 1460 id = pacific_america.96 } 
+		}
+	}
+	
+	option = {    #Clint Eastwood
+		name = pacific_america.36.o2
+		ai_chance = {
+			factor = 40
+		}
+		set_politics = {
+	        ruling_party = centrist
+	        elections_allowed = no
+        }
+		add_popularity = {
+			ideology = centrist
+			popularity = 0.45
+		}
+		set_country_flag = avoided_power_struggle
+		hidden_effect = {
+		    country_event = { days = 1460 id = pacific_america.96 } 
+		}
+	}
+	
+	option = {    #Kevin de Leon
+		name = pacific_america.36.o3
+		ai_chance = {
+			factor = 20
+		}
+		set_politics = {
+	        ruling_party = new_democrat
+	        elections_allowed = no
+        }
+		add_popularity = {
+			ideology = new_democrat
+			popularity = 0.45
+		}
+		set_country_flag = avoided_power_struggle
+		hidden_effect = {
+		    country_event = { days = 1460 id = pacific_america.96 } 
+		}
+	}
+}
+
+#Golden Gate League coup
+country_event = {
+	id = pacific_america.37
+	title = pacific_america.37.t
+	desc = pacific_america.37.d
+	picture = poland_coup
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = pacific_america.37.o1
+		set_politics = {
+	        ruling_party = liberal
+	        elections_allowed = no
+        }
+		add_popularity = {
+			ideology = liberal
+			popularity = 0.13
+		}
+		create_country_leader = {
+	        name = "Kamala Harris"
+	        picture = "Portrait_PCA_Kamala_Harris.dds"
+	        ideology = social_liberal 
+        }
+		set_party_name = { ideology = liberal long_name = PCA_golden_gate_league name = PCA_golden_gate_league }
+		set_country_flag = golden_gate_league_coup
+		set_cosmetic_tag = PCA_GoldenGate
+	}
+}
+
+#Commanders loyal to La Riva rebel
+country_event = {
+	id = pacific_america.38
+	title = pacific_america.38.t
+	desc = pacific_america.38.d
+	picture = american_funded_rebels
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = pacific_america.38.o1
+		add_popularity = {
+			ideology = communist
+			popularity = -0.035
+		}
+		hidden_effect = {
+		    country_event = { days = 2 id = pacific_america.39 } 
+		}
+	}
+}
+
+#Battle of Los Angeles ends, La Riva killed
+country_event = {
+	id = pacific_america.39
+	title = pacific_america.39.t
+	desc = pacific_america.39.d
+	picture = david_duke_paramilitary
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = pacific_america.39.o1
+		hidden_effect = {
+		    country_event = { days = 1 id = pacific_america.40 } 
+		}
+	}
+}
+
+#Politburo dissolves, appoints Kamala Harris President
+country_event = {
+	id = pacific_america.40
+	title = pacific_america.40.t
+	desc = pacific_america.40.d
+	picture = kamala_harris_president
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = pacific_america.40.o1
+		set_politics = {
+	        ruling_party = liberal
+	        elections_allowed = no
+        }
+		add_popularity = {
+			ideology = liberal
+			popularity = 0.13
+		}
+		create_country_leader = {
+	        name = "Kamala Harris"
+	        picture = "Portrait_PCA_Kamala_Harris.dds"
+	        ideology = social_liberal 
+        }
+		set_party_name = { ideology = liberal long_name = PCA_golden_gate_league name = PCA_golden_gate_league }
+		set_country_flag = battle_of_los_angeles_won
+		set_cosmetic_tag = PCA_GoldenGate
+	}
+}
+
+#Arizona - Ultimatum from Harris
+country_event = {
+	id = pacific_america.41
+	title = pacific_america.41.t
+	desc = pacific_america.41.d
+	picture = india_com_coup_mumbai_tank
+	
+	is_triggered_only = yes
+	
+	option = { #Accept
+		name = pacific_america.41.o1
+		ai_chance = {
+			factor = 65
+		}
+		hidden_effect = {
+		    PCA = {
+			    country_event = { days = 1 id = pacific_america.42 } 
+			}
+		}
+	}
+	
+	option = { #Refuse
+		name = pacific_america.41.o2
+		ai_chance = {
+			factor = 35
+		}
+		hidden_effect = {
+		    PCA = {
+			    country_event = { days = 1 id = pacific_america.43 } 
+			}
+		}
+	}
+}
+
+#Arizona accepts ultimatum
+country_event = {
+	id = pacific_america.42
+	title = pacific_america.42.t
+	desc = pacific_america.42.d
+	picture = india_com_china_meeting
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = pacific_america.42.o1
+		PCA = {
+			annex_country = { 
+				target = ARI
+				transfer_troops = yes
+			}
+		}
+	}
+}
+
+#Arizona rejects demands
+country_event = {
+	id = pacific_america.43
+	title = pacific_america.43.t
+	desc = pacific_america.43.d
+	picture = india_com_coup_mumbai_tank
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = pacific_america.43.o1
+		add_political_power = -50 
+		create_wargoal = {
+			type = annex_everything
+			target = ARI
+		}
+	}
+}
+
+#Utah - Ultimatum from Harris
+country_event = {
+	id = pacific_america.44
+	title = pacific_america.44.t
+	desc = pacific_america.44.d
+	picture = india_com_coup_mumbai_tank
+	
+	is_triggered_only = yes
+	
+	option = { #Accept
+		name = pacific_america.44.o1
+		ai_chance = {
+			factor = 30
+		}
+		hidden_effect = {
+		    PCA = {
+			    country_event = { days = 1 id = pacific_america.45 } 
+			}
+		}
+	}
+	
+	option = { #Refuse
+		name = pacific_america.44.o2
+		ai_chance = {
+			factor = 70
+		}
+		hidden_effect = {
+		    PCA = {
+			    country_event = { days = 1 id = pacific_america.46 } 
+			}
+		}
+	}
+}
+
+#Utah accepts ultimatum
+country_event = {
+	id = pacific_america.45
+	title = pacific_america.45.t
+	desc = pacific_america.45.d
+	picture = india_com_china_meeting
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = pacific_america.45.o1
+		PCA = {
+			annex_country = { 
+				target = UTA
+				transfer_troops = yes
+			}
+		}
+	}
+}
+
+#Utah rejects demands
+country_event = {
+	id = pacific_america.46
+	title = pacific_america.46.t
+	desc = pacific_america.46.d
+	picture = india_com_coup_mumbai_tank
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = pacific_america.46.o1
+		add_political_power = -50 
+		create_wargoal = {
+			type = annex_everything
+			target = UTA
+		}
+	}
+}
+
+#Arizona - Unification with Pacific States?
+country_event = {
+	id = pacific_america.47
+	title = pacific_america.47.t
+	desc = pacific_america.47.d
+	picture = egypt_meeting
+	
+	is_triggered_only = yes
+	
+	option = { #Accept
+		name = pacific_america.47.o1
+		ai_chance = {
+			factor = 80
+		}
+		hidden_effect = {
+		    PCA = {
+			    country_event = { days = 1 id = pacific_america.48 } 
+			}
+		}
+	}
+	
+	option = { #Refuse
+		name = pacific_america.47.o2
+		ai_chance = {
+			factor = 20
+		}
+		hidden_effect = {
+		    PCA = {
+			    country_event = { days = 1 id = pacific_america.49 } 
+			}
+		}
+	}
+}
+
+#Arizona agrees to unify
+country_event = {
+	id = pacific_america.48
+	title = pacific_america.48.t
+	desc = pacific_america.48.d
+	picture = egypt_meeting
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = pacific_america.48.o1
+		PCA = {
+			annex_country = { 
+				target = ARI
+				transfer_troops = yes
+			}
+		}
+		377 = {
+		    add_core_of = PCA
+		}
+		895 = {
+		    add_core_of = PCA
+		}
+	}
+}
+
+#Arizona refuses to unify
+country_event = {
+	id = pacific_america.49
+	title = pacific_america.49.t
+	desc = pacific_america.49.d
+	picture = india_com_china_meeting
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = pacific_america.49.o1
+		add_political_power = -50 
+	}
+}
+
+#Utah - Pacific States occupies Nevada region
+country_event = {
+	id = pacific_america.50
+	title = pacific_america.50.t
+	desc = pacific_america.50.d
+	picture = private_military_corporations_syria
+	
+	is_triggered_only = yes
+	
+	option = {  #Let them take it
+		name = pacific_america.50.o1
+		ai_chance = {
+			factor = 10
+		}
+		PCA = {
+		    transfer_state = 895
+		}
+		895 = {
+		    add_core_of = PCA
+		}
+		PCA = {
+			country_event = { id = pacific_america.51 }
+		}
+	}
+	
+	option = {  #Declare war
+		name = pacific_america.50.o2
+		ai_chance = {
+			factor = 90
+		}
+		declare_war_on = { target = PCA type = annex_everything } 
+		PCA = {
+			country_event = { id = pacific_america.52 }
+		}
+	}
+}
+
+#Nevada occupied
+country_event = {
+	id = pacific_america.51
+	title = pacific_america.51.t
+	desc = pacific_america.51.d
+	picture = private_military_corporations_syria
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = pacific_america.51.o1
+		add_political_power = 20
+	}
+}
+
+#Utah declares war
+country_event = {
+	id = pacific_america.52
+	title = pacific_america.52.t
+	desc = pacific_america.52.d
+	picture = private_military_corporations_syria
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = pacific_america.52.o1
+		add_political_power = -30 
+		add_stability = -0.04
+	}
+}
+
+#Committee for the Redevelopment of Las Vegas
+country_event = {
+	id = pacific_america.53
+	title = pacific_america.53.t
+	desc = pacific_america.53.d
+	picture = central_committee_hearing
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = pacific_america.53.o1
+	}
+}
+
+#Constitutional convention after power struggle avoided
+country_event = {
+	id = pacific_america.54
+	title = pacific_america.54.t
+	desc = pacific_america.54.d
+	picture = philadelphia_constitution
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = pacific_america.54.o1
+	}
+}
+
+#Poppy campaign
+country_event = {
+	id = pacific_america.55
+	title = pacific_america.55.t
+	desc = pacific_america.55.d
+	picture = wenatchee_revolt
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = pacific_america.55.o1
+	}
+}
+
+#Congressional election held
+country_event = {
+	id = pacific_america.56
+	title = pacific_america.56.t
+	desc = pacific_america.56.d
+	picture = syndicates_leader_election
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = pacific_america.56.o1
+	}
+}
+
+#Communists executed by Harris
+country_event = {
+	id = pacific_america.57
+	title = pacific_america.57.t
+	desc = pacific_america.57.d
+	picture = nasserists_executed
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = pacific_america.57.o1
+	}
+}
+
+#GGL convention supports social liberalism
+country_event = {
+	id = pacific_america.58
+	title = pacific_america.58.t
+	desc = pacific_america.58.d
+	picture = second_syndicates_convention
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = pacific_america.58.o1
+	}
+}
+
+#Tyner eases economic dependence
+country_event = {
+	id = pacific_america.59
+	title = pacific_america.59.t
+	desc = pacific_america.59.d
+	picture = india_corruption_smog_moscow
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = pacific_america.59.o1
+	}
+}
+
+#Tyner's war speech
+country_event = {
+	id = pacific_america.60
+	title = pacific_america.60.t
+	desc = pacific_america.60.d
+	picture = emergency_party_convention
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = pacific_america.60.o1
+	}
+}
+
+#Centralists purged
+country_event = {
+	id = pacific_america.61
+	title = pacific_america.61.t
+	desc = pacific_america.61.d
+	picture = left_purged
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = pacific_america.61.o1
+	}
+}
+
+#Military swears loyalty to Tyner
+country_event = {
+	id = pacific_america.62
+	title = pacific_america.62.t
+	desc = pacific_america.62.d
+	picture = communist_ministries
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = pacific_america.62.o1
+	}
+}
+
+#Tyner's secret speech
+country_event = {
+	id = pacific_america.63
+	title = pacific_america.63.t
+	desc = pacific_america.63.d
+	picture = second_syndicates_convention
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = pacific_america.63.o1
+	}
+}
+
+#Party encourages immigration
+country_event = {
+	id = pacific_america.64
+	title = pacific_america.64.t
+	desc = pacific_america.64.d
+	picture = america_border_immigrants
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = pacific_america.64.o1
+	}
+}
+
+#Borders closed
+country_event = {
+	id = pacific_america.65
+	title = pacific_america.65.t
+	desc = pacific_america.65.d
+	picture = syrian_border_defences
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = pacific_america.65.o1
+	}
+}
+
+#32nd budget
+country_event = {
+	id = pacific_america.66
+	title = pacific_america.66.t
+	desc = pacific_america.66.d
+	picture = american_convention_decision
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = pacific_america.66.o1
+	}
+}
+
+#Tyner apologises for massacre
+country_event = {
+	id = pacific_america.67
+	title = pacific_america.67.t
+	desc = pacific_america.67.d
+	picture = police_crackdown_uar
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = pacific_america.67.o1
+	}
+}
+
+#Davis' final purge
+country_event = {
+	id = pacific_america.68
+	title = pacific_america.68.t
+	desc = pacific_america.68.d
+	picture = india_communist_army_purges
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = pacific_america.68.o1
+	}
+}
+
+#Davis' speech on women in the military
+country_event = {
+	id = pacific_america.69
+	title = pacific_america.69.t
+	desc = pacific_america.69.d
+	picture = angela_davis_women
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = pacific_america.69.o1
+	}
+}
+
+#Party begins three year plan
+country_event = {
+	id = pacific_america.70
+	title = pacific_america.70.t
+	desc = pacific_america.70.d
+	picture = emergency_party_convention
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = pacific_america.70.o1
+	}
+}
+
+#Borders closed under Davis
+country_event = {
+	id = pacific_america.71
+	title = pacific_america.71.t
+	desc = pacific_america.71.d
+	picture = syrian_border_defences
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = pacific_america.71.o1
+	}
+}
+
+#Some private ownership allowed
+country_event = {
+	id = pacific_america.72
+	title = pacific_america.72.t
+	desc = pacific_america.72.d
+	picture = american_convention_decision
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = pacific_america.72.o1
+	}
+}
+
+#Foster meets Soviets for more dependence
+country_event = {
+	id = pacific_america.73
+	title = pacific_america.73.t
+	desc = pacific_america.73.d
+	picture = india_com_sov_arb_moscow_meeting_decision
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = pacific_america.73.o1
+	}
+}
+
+#Soviet generals arrive
+country_event = {
+	id = pacific_america.74
+	title = pacific_america.74.t
+	desc = pacific_america.74.d
+	picture = soviet_military_advisors_arrive
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = pacific_america.74.o1
+	}
+}
+
+#Russophobes purged
+country_event = {
+	id = pacific_america.75
+	title = pacific_america.75.t
+	desc = pacific_america.75.d
+	picture = left_purged
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = pacific_america.75.o1
+	}
+}
+
+#Fosters' Americanism speech
+country_event = {
+	id = pacific_america.77
+	title = pacific_america.77.t
+	desc = pacific_america.77.d
+	picture = second_syndicates_convention
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = pacific_america.77.o1
+	}
+}
+
+#Columbia divided
+country_event = {
+	id = pacific_america.78
+	title = pacific_america.78.t
+	desc = pacific_america.78.d
+	picture = american_convention_decision
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = pacific_america.78.o1
+	}
+}
+
+#Rebuilding begins
+country_event = {
+	id = pacific_america.79
+	title = pacific_america.79.t
+	desc = pacific_america.79.d
+	picture = britain_warsaw_pact
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = pacific_america.79.o1
+	}
+}
+
+#Return to normalcy
+country_event = {
+	id = pacific_america.80
+	title = pacific_america.80.t
+	desc = pacific_america.80.d
+	picture = peace_and_reconciliation_commission
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = pacific_america.80.o1
+	}
+}
+
+#Gleaming reward plan voted on
+country_event = {
+	id = pacific_america.81
+	title = pacific_america.81.t
+	desc = pacific_america.81.d
+	picture = india_emergency_vote
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = pacific_america.81.o1
+	}
+}
+
+#Construction of new casinos
+country_event = {
+	id = pacific_america.82
+	title = pacific_america.82.t
+	desc = pacific_america.82.d
+	picture = new_casinos_vegas
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = pacific_america.82.o1
+	}
+}
+
+#Nevada hyperloop
+country_event = {
+	id = pacific_america.83
+	title = pacific_america.83.t
+	desc = pacific_america.83.d
+	picture = nevada_hyperloop
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = pacific_america.83.o1
+	}
+}
+
+#Vegas opens
+country_event = {
+	id = pacific_america.84
+	title = pacific_america.84.t
+	desc = pacific_america.84.d
+	picture = las_vegas_opens
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = pacific_america.84.o1
+	}
+}
+
+#Demolition begins
+country_event = {
+	id = pacific_america.85
+	title = pacific_america.85.t
+	desc = pacific_america.85.d
+	picture = vegas_demolition
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = pacific_america.85.o1
+	}
+}
+
+#last casino demolished
+country_event = {
+	id = pacific_america.86
+	title = pacific_america.86.t
+	desc = pacific_america.86.d
+	picture = vegas_demolition
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = pacific_america.86.o1
+	}
+}
+
+#Committee votes to let vegas rot
+country_event = {
+	id = pacific_america.87
+	title = pacific_america.87.t
+	desc = pacific_america.87.d
+	picture = let_vegas_rot
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = pacific_america.87.o1
+	}
+}
+
+#Residents disappear
+country_event = {
+	id = pacific_america.88
+	title = pacific_america.88.t
+	desc = pacific_america.88.d
+	picture = las_vegas_suburbs
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = pacific_america.88.o1
+	}
+}
+
+#Hoover dam restarts
+country_event = {
+	id = pacific_america.89
+	title = pacific_america.89.t
+	desc = pacific_america.89.d
+	picture = hoover_dam_restarts
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = pacific_america.89.o1
+	}
+}
+
+#Warsaw Pact tour
+country_event = {
+	id = pacific_america.90
+	title = pacific_america.90.t
+	desc = pacific_america.90.d
+	picture = warsaw_agree_to_benefits
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = pacific_america.90.o1
+	}
+}
+
+#SSRs created
+country_event = {
+	id = pacific_america.91
+	title = pacific_america.91.t
+	desc = pacific_america.91.d
+	picture = thirtieth_uapr_congress
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = pacific_america.91.o1
+	}
+}
+
+#Ranch act passes congress
+country_event = {
+	id = pacific_america.92
+	title = pacific_america.92.t
+	desc = pacific_america.92.d
+	picture = provisional_american_congress
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = pacific_america.92.o1
+	}
+}
+
+#Delegation sent to Phoenix
+country_event = {
+	id = pacific_america.93
+	title = pacific_america.93.t
+	desc = pacific_america.93.d
+	picture = chomsky_meets_generals
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = pacific_america.93.o1
+	}
+}
+
+#Gun control drastically loosened
+country_event = {
+	id = pacific_america.94
+	title = pacific_america.94.t
+	desc = pacific_america.94.d
+	picture = gun_rights_restored
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = pacific_america.94.o1
+	}
+}
+
+#Paradise Hotel heist
+country_event = {
+	id = pacific_america.95
+	title = pacific_america.95.t
+	desc = pacific_america.95.d
+	picture = paradise_hotel_heist
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = PCA
+		date > 2017.3.1
+		has_completed_focus = PCA_back_in_business_baby
+	}
+	
+	option = {
+		name = pacific_america.95.o1
+		add_political_power = -2
+	}
+}
+
+#Second Pacific States presidential election
+country_event = {
+	id = pacific_america.96
+	title = pacific_america.96.t
+	desc = pacific_america.96.d
+	picture = prime_minister_election
+	
+	is_triggered_only = yes
+	
+	option = {   #Toni Atkins 
+		name = pacific_america.96.o1
+		ai_chance = {
+			factor = 50
+		}
+		if = {
+		    limit = {
+			    NOT = {
+				    has_government = new_democrat
+				}
+			}
+			add_popularity = {
+			    ideology = new_democrat
+			    popularity = 0.43
+		    }
+		}
+		set_politics = {
+	        ruling_party = new_democrat
+	        elections_allowed = no
+        }
+		create_country_leader = {
+	        name = "Toni Atkins"
+	        picture = "Portrait_PCA_Toni_Atkins.dds"
+	        ideology = new_democrat_ideology  
+        }
+		hidden_effect = {
+		    country_event = { days = 1460 id = pacific_america.97 } 
+		}
+	}
+	
+	option = {   #Dean Heller
+		name = pacific_america.96.o2
+		ai_chance = {
+			factor = 50
+		}
+		if = {
+		    limit = {
+			    NOT = {
+				    has_government = national_conservative
+				}
+			}
+			add_popularity = {
+			    ideology = national_conservative
+			    popularity = 0.43
+		    }
+		}
+		set_politics = {
+	        ruling_party = national_conservative
+	        elections_allowed = no
+        }
+		create_country_leader = {
+	        name = "Dean Heller"
+	        picture = "Portrait_PCA_Dean_Heller.dds"
+	        ideology = american_conservative   
+        }
+		hidden_effect = {
+		    country_event = { days = 1460 id = pacific_america.97 } 
+		}
+	}
+}
+
+#Third Pacific States presidential election
+country_event = {
+	id = pacific_america.97
+	title = pacific_america.97.t
+	desc = pacific_america.97.d
+	picture = prime_minister_election
+	
+	is_triggered_only = yes
+	
+	option = {   #Kevin McCarthy
+		name = pacific_america.97.o1
+		ai_chance = {
+			factor = 40
+		}
+		if = {
+		    limit = {
+			    NOT = {
+				    has_government = national_conservative
+				}
+			}
+			add_popularity = {
+			    ideology = national_conservative
+			    popularity = 0.43
+		    }
+		}
+		set_politics = {
+	        ruling_party = national_conservative
+	        elections_allowed = no
+        }
+		create_country_leader = {
+	        name = "Kevin McCarthy"
+	        picture = "Portrait_PCA_Kevin_McCarthy.dds"
+	        ideology = american_conservative  
+        }
+		hidden_effect = {
+		    country_event = { days = 1460 id = pacific_america.98 } 
+		}
+	}
+	
+	option = {   #Doris Matsui
+		name = pacific_america.97.o2
+		ai_chance = {
+			factor = 60
+		}
+		if = {
+		    limit = {
+			    NOT = {
+				    has_government = liberal
+				}
+			}
+			add_popularity = {
+			    ideology = liberal
+			    popularity = 0.43
+		    }
+		}
+		set_politics = {
+	        ruling_party = liberal
+	        elections_allowed = no
+        }
+		create_country_leader = {
+	        name = "Doris Matsui"
+	        picture = "Portrait_PCA_Doris_Matsui.dds"
+	        ideology = social_liberal     
+        }
+		hidden_effect = {
+		    country_event = { days = 1460 id = pacific_america.98 } 
+		}
+	}
+}
+
+#Fourth Pacific States presidential election
+country_event = {
+	id = pacific_america.98
+	title = pacific_america.98.t
+	desc = pacific_america.98.d
+	picture = prime_minister_election
+	
+	is_triggered_only = yes
+	
+	option = {   #John Ensign
+		name = pacific_america.98.o1
+		ai_chance = {
+			factor = 50
+		}
+		if = {
+		    limit = {
+			    NOT = {
+				    has_government = centrist
+				}
+			}
+			add_popularity = {
+			    ideology = centrist
+			    popularity = 0.43
+		    }
+		}
+		set_politics = {
+	        ruling_party = centrist
+	        elections_allowed = no
+        }
+		create_country_leader = {
+	        name = "John Ensign"
+	        picture = "Portrait_PCA_John_Ensign.dds"
+	        ideology = centrist_ideology   
+        }
+		hidden_effect = {
+		    country_event = { days = 1460 id = pacific_america.99 } 
+		}
+	}
+	
+	option = {   #Barbara Lee
+		name = pacific_america.98.o2
+		ai_chance = {
+			factor = 50
+		}
+		if = {
+		    limit = {
+			    NOT = {
+				    has_government = moderate_socialist
+				}
+			}
+			add_popularity = {
+			    ideology = moderate_socialist
+			    popularity = 0.55
+		    }
+		}
+		set_politics = {
+	        ruling_party = moderate_socialist
+	        elections_allowed = no
+        }
+		create_country_leader = {
+	        name = "Barbara Lee"
+	        picture = "Portrait_PCA_Barbara_Lee.dds"
+	        ideology = progressive     
+        }
+		hidden_effect = {
+		    country_event = { days = 1460 id = pacific_america.99 } 
+		}
+	}
+}
+
+#Fifth Pacific States presidential election
+country_event = {
+	id = pacific_america.99
+	title = pacific_america.99.t
+	desc = pacific_america.99.d
+	picture = prime_minister_election
+	
+	is_triggered_only = yes
+	
+	option = {   #Eric Swalwell
+		name = pacific_america.99.o1
+		ai_chance = {
+			factor = 30
+		}
+		if = {
+		    limit = {
+			    NOT = {
+				    has_government = new_democrat
+				}
+			}
+			add_popularity = {
+			    ideology = new_democrat
+			    popularity = 0.30
+		    }
+		}
+		set_politics = {
+	        ruling_party = new_democrat
+	        elections_allowed = no
+        }
+		create_country_leader = {
+	        name = "Eric Swalwell"
+	        picture = "Portrait_PCA_Eric_Swalwell.dds"
+	        ideology = new_democrat_ideology    
+        }
+	}
+	
+	option = {   #Elon Musk
+		name = pacific_america.99.o2
+		ai_chance = {
+			factor = 10
+		}
+		if = {
+		    limit = {
+			    NOT = {
+				    has_government = liberal
+				}
+			}
+			add_popularity = {
+			    ideology = liberal
+			    popularity = 0.55
+		    }
+		}
+		set_politics = {
+	        ruling_party = liberal
+	        elections_allowed = no
+        }
+		create_country_leader = {
+	        name = "Elon Musk"
+	        picture = "Portrait_PCA_Elon_Musk.dds"
+	        ideology = left_libertarian      
+        }
+		set_party_name = { ideology = liberal long_name = PCA_brighter_future name = PCA_brighter_future }
+		set_country_flag = elon_musk_is_president
+	}
+	
+	option = {   #Juan Vargas
+		name = pacific_america.99.o3
+		ai_chance = {
+			factor = 20
+		}
+		if = {
+		    limit = {
+			    NOT = {
+				    has_government = liberal
+				}
+			}
+			add_popularity = {
+			    ideology = liberal
+			    popularity = 0.30
+		    }
+		}
+		set_politics = {
+	        ruling_party = liberal
+	        elections_allowed = no
+        }
+		create_country_leader = {
+	        name = "Juan Vargas"
+	        picture = "Portrait_PCA_Juan_Vargas.dds"
+	        ideology = social_liberal       
+        }
+	}
+	
+	option = {   #Mimi Walters
+		name = pacific_america.99.o4
+		ai_chance = {
+			factor = 40
+		}
+		if = {
+		    limit = {
+			    NOT = {
+				    has_government = national_conservative
+				}
+			}
+			add_popularity = {
+			    ideology = national_conservative
+			    popularity = 0.30
+		    }
+		}
+		set_politics = {
+	        ruling_party = national_conservative
+	        elections_allowed = no
+        }
+		create_country_leader = {
+	        name = "Mimi Walters"
+	        picture = "Portrait_PCA_Mimi_Walters.dds"
+	        ideology = reactionary        
+        }
+	}
+}
+
+#First GGL election
+country_event = {
+	id = pacific_america.100
+	title = pacific_america.100.t
+	desc = pacific_america.100.d
+	picture = prime_minister_election
+	
+	is_triggered_only = yes
+	
+	option = {  #Kamala Harris 
+		name = pacific_america.100.o1
+		add_popularity = {
+			ideology = liberal
+			popularity = 0.06
+		}
+		add_political_power = 10
+		hidden_effect = {
+		    country_event = { days = 1320 id = pacific_america.101 } 
+		}
+		hidden_effect = {
+		    country_event = { days = 1460 id = pacific_america.102 } 
+		}
+	}
+}
+
+#Kamala Harris steps aside
+country_event = {
+	id = pacific_america.101
+	title = pacific_america.101.t
+	desc = pacific_america.101.d
+	picture = kamala_harris_steps_aside
+	
+	is_triggered_only = yes
+	
+	option = {  
+		name = pacific_america.101.o1
+		create_country_leader = {
+	        name = "Evan Low"
+	        picture = "Portrait_PCA_Evan_Low.dds"
+	        ideology = social_liberal       
+        }
+	}
+}
+
+#Second GGL election
+country_event = {
+	id = pacific_america.102
+	title = pacific_america.102.t
+	desc = pacific_america.102.d
+	picture = prime_minister_election
+	
+	is_triggered_only = yes
+	
+	option = {  #Evan Low
+		name = pacific_america.102.o1
+		add_political_power = 25
+		hidden_effect = {
+		    country_event = { days = 1460 id = pacific_america.103 } 
+		}
+	}
+}
+
+#Third GGL election
+country_event = {
+	id = pacific_america.103
+	title = pacific_america.103.t
+	desc = pacific_america.103.d
+	picture = prime_minister_election
+	
+	is_triggered_only = yes
+	
+	option = {  #Evan Low
+		name = pacific_america.103.o1
+		add_political_power = 10
+		hidden_effect = {
+		    country_event = { days = 1450 id = pacific_america.104 } 
+		}
+		hidden_effect = {
+		    country_event = { days = 1460 id = pacific_america.105 } 
+		}
+	}
+}
+
+#Kamala Harris becomes President again
+country_event = {
+	id = pacific_america.104
+	title = pacific_america.104.t
+	desc = pacific_america.104.d
+	picture = kamala_harris_president_again
+	
+	is_triggered_only = yes
+	
+	option = {  
+		name = pacific_america.104.o1
+		create_country_leader = {
+	        name = "Kamala Harris"
+	        picture = "Portrait_PCA_Kamala_Harris.dds"
+	        ideology = social_liberal 
+        }
+	}
+}
+
+#Fourth GGL election
+country_event = {
+	id = pacific_america.105
+	title = pacific_america.105.t
+	desc = pacific_america.105.d
+	picture = prime_minister_election
+	
+	is_triggered_only = yes
+	
+	option = {  #Kamala Harris
+		name = pacific_america.105.o1
+		add_political_power = 40
+		hidden_effect = {
+		    country_event = { days = 57 id = pacific_america.106 } 
+		}
+	}
+}
+
+#President Harris assassinated
+country_event = {
+	id = pacific_america.106
+	title = pacific_america.106.t
+	desc = pacific_america.106.d
+	picture = president_harris_assassinated
+	
+	is_triggered_only = yes
+	
+	option = {  
+		name = pacific_america.106.o1
+		add_political_power = -180 
+		add_stability = -0.085 
+		create_country_leader = {
+	        name = "Evan Low"
+	        picture = "Portrait_PCA_Evan_Low.dds"
+	        ideology = social_liberal       
+        }
+		hidden_effect = {
+		    country_event = { days = 18 id = pacific_america.107 } 
+		}
+	}
+}
+
+#Low announces intentions to resign
+country_event = {
+	id = pacific_america.107
+	title = pacific_america.107.t
+	desc = pacific_america.107.d
+	picture = evan_low_resignation
+	
+	is_triggered_only = yes
+	
+	option = {  
+		name = pacific_america.107.o1
+		hidden_effect = {
+		    country_event = { days = 3 id = pacific_america.108 } 
+		}
+	}
+}
+
+#Congress elects Speaker Garcia as President
+country_event = {
+	id = pacific_america.108
+	title = pacific_america.108.t
+	desc = pacific_america.108.d
+	picture = robert_garcia_is_president
+	
+	is_triggered_only = yes
+	
+	option = {  
+		name = pacific_america.108.o1
+		create_country_leader = {
+	        name = "Robert Garcia"
+	        picture = "Portrait_PCA_Robert_Garcia.dds"
+	        ideology = social_liberal       
+        }
+	}
+}
+
+#Angela Davis dies
+country_event = {
+	id = pacific_america.109
+	title = pacific_america.109.t
+	desc = pacific_america.109.d
+	picture = bernie_dead
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = PCA
+		date > 2020.10.1
+		date < 2020.10.30
+		has_country_flag = davis_elected_general_secretary
+		has_government = communist
+	}
+	
+	option = {
+		name = pacific_america.109.o1
+		create_country_leader = {
+	        name = "Yari Osorio"
+	        picture = "Portrait_PCA_Yari_Osorio.dds"
+	        ideology = leninist       
+        }
+		add_political_power = -200 
+		add_stability = -0.045
+		hidden_effect = {
+			every_country = {
+				news_event = news.269  
+			}
+		}
+	}
+}
+
+#Jarvis Tyner dies
+country_event = {
+	id = pacific_america.110
+	title = pacific_america.110.t
+	desc = pacific_america.110.d
+	picture = bernie_dead
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = PCA
+		date > 2021.6.1
+		date < 2021.6.30
+		has_country_flag = tyner_elected_general_secretary
+		has_government = communist
+	}
+	
+	option = {
+		name = pacific_america.110.o1
+		create_country_leader = {
+	        name = "Gloria La Riva"
+	        picture = "Portrait_PCA_Gloria_La_Riva.dds"
+	        ideology = marxist       
+        }
+		add_political_power = -250
+		add_stability = -0.06
+	}
+}
+
+#Declare war on Cascadia
+country_event = {
+	id = pacific_america.111
+	title = pacific_america.111.t
+	desc = pacific_america.111.d
+	picture = cascadia_marching
+
+	is_triggered_only = yes
+
+	option = { #war
+		name = pacific_america.111.o1
+		declare_war_on = { target = CSD type = annex_everything } 
+		ai_chance = {
+			base = 100
+			modifier = {
+				has_game_rule = {
+					rule = PCA_ai_behavior_cascadia
+					option = PCA_SURRENDER
+				}
+				factor = 0
+			}
+		}
+	}
+	option = { #surrender
+		name = pacific_america.111.o2
+		add_political_power = -250
+		CSD = {
+		    transfer_state = 385 
+			transfer_state = 386
+		}
+		385 = {
+		    remove_core_of = PCA
+		}
+		386 = {
+		    remove_core_of = PCA
+		}
+		970 = {
+		    remove_core_of = PCA
+		}
+		971 = {
+		    remove_core_of = PCA
+		}
+		hidden_effect = {
+		    CSD = {
+			    country_event = { days = 1 id = pacific_america.23 } 
+			}
+			PCA = {
+			    country_event = { days = 1 id = pacific_america.23 } 
+			}
+		}
+		ai_chance = {
+			base = 100
+			modifier = {
+				NOT = {
+					has_game_rule = {
+						rule = PCA_ai_behavior_cascadia
+						option = PCA_SURRENDER
+					}
+				}
+				factor = 0
+			}
+		}
+	}
+}
+
+
+#Memorials Act
+country_event = {
+	id = pacific_america.112
+	title = pacific_america.112.t
+	desc = pacific_america.112.d
+	picture = american_museum
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = pacific_america.112.o1
+	}
+}
+
+#Comrade Shapiro tours the nation
+country_event = {
+	id = pacific_america.113
+	title = pacific_america.113.t
+	desc = pacific_america.113.d
+	picture = shapiro_tour
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = PCA
+		date > 2010.4.15
+	}
+	
+	option = {
+		name = pacific_america.113.o1
+		add_political_power = 5
+		add_popularity = {
+		    ideology = communist
+			popularity = 0.01
+		}
+	}
+}
+
+#Huey Newton’s 70th birthday speech
+country_event = {
+    id = pacific_america.114
+    title = pacific_america.114.t
+    desc = pacific_america.114.d
+    picture = huey_newton
+    
+    fire_only_once = yes
+    
+    trigger = {
+        tag = PCA
+		date > 2012.2.5
+		has_government = communist
+    }
+    
+    option = {
+        name = pacific_america.114.o1
+    }
+}
+
+#Southern Statues removed
+country_event = {
+	id = pacific_america.115
+	title = pacific_america.115.t
+	desc = pacific_america.115.d
+	picture = southern_statues
+	
+	is_triggered_only = yes
+	
+	option = {  
+		name = pacific_america.115.o1
+		hidden_effect = {
+        if = {
+            limit = {
+                    original_tag = PCA
+                }       
+			    country_event = { days = 182 id = pacific_america.116 } 
+		    }
+		}
+		hidden_effect = {
+            every_country = {
+			    news_event = {
+                    id = news.272
+                    days = 365
+				}
+            }
+		}
+	}
+}
+
+#Stone Mountain carving to be erased
+country_event = {
+    id = pacific_america.116
+    title = pacific_america.116.t
+    desc = pacific_america.116.d
+    picture = stone_mountain
+    
+    is_triggered_only = yes
+    
+    option = {
+        name = pacific_america.116.o1
+    }
+}
+
+#Lincoln Memorial to be altered
+country_event = {
+    id = pacific_america.117
+    title = pacific_america.117.t
+    desc = pacific_america.117.d
+    picture = lincoln_memorial
+    
+    is_triggered_only = yes
+    
+    option = {
+        name = pacific_america.117.o1
+    }
+}
+
+#Communist Memorial Unveiled
+country_event = {
+    id = pacific_america.118
+    title = pacific_america.118.t
+    desc = pacific_america.118.d
+    picture = communist_memorial
+    
+    is_triggered_only = yes
+    
+    option = {
+        name = pacific_america.118.o1
+    }
+}
+
+#Foster Renames Arizona
+country_event = {
+    id = pacific_america.119
+    title = pacific_america.119.t
+    desc = pacific_america.119.d
+    picture = american_communist_party
+    
+    is_triggered_only = yes
+    
+    option = {
+		name = pacific_america.119.o1
+		set_global_flag = foster_renamed_ARI
+		377 = { set_state_name = "Guevara" }
+		895 = { set_state_name = "Northern Guevara" }
+    }
+}
+
+#Foster Renames Utah
+country_event = {
+    id = pacific_america.120
+    title = pacific_america.120.t
+    desc = pacific_america.120.d
+    picture = american_communist_party
+    
+    is_triggered_only = yes
+    
+    option = {
+		name = pacific_america.120.o1
+		set_global_flag = foster_renamed_UTA
+		379 = { set_state_name = "Yazov" }
+		380 = { set_state_name = "Haywood" }
+		896 = { set_state_name = "Calderwood" }
+    }
+}
+
+#Foster Renames Lincoln
+country_event = {
+    id = pacific_america.121
+    title = pacific_america.121.t
+    desc = pacific_america.121.d
+    picture = american_communist_party
+    
+    is_triggered_only = yes
+    
+    option = {
+		name = pacific_america.121.o1
+		set_global_flag = foster_renamed_LIN
+		387 = { set_state_name = "Molotov" }
+		890 = { set_state_name = "Reed" }
+    }
+}
+
+#Foster Renames Montana
+country_event = {
+    id = pacific_america.122
+    title = pacific_america.122.t
+    desc = pacific_america.122.d
+    picture = american_communist_party
+    
+    is_triggered_only = yes
+    
+    option = {
+		name = pacific_america.122.o1
+		set_global_flag = foster_renamed_MOT
+		388 = { set_state_name = "Hoxha" }
+		1016 = { set_state_name = "Western Hoxha" }
+		381 = { set_state_name = "Ceausescu" }
+		1017 = { set_state_name = "Western Ceausescu" }
+		389 = { set_state_name = "Maurer" }
+		1018 = { set_state_name = "West Maurer" }
+    }
+}
+
+#Foster Renames Midwest Union
+country_event = {
+    id = pacific_america.123
+    title = pacific_america.123.t
+    desc = pacific_america.123.d
+    picture = american_communist_party
+    
+    is_triggered_only = yes
+    
+    option = {
+		name = pacific_america.123.o1
+		set_global_flag = foster_renamed_MWA
+		382 = { 
+			set_state_name = "Tikas"
+			set_province_name = {
+				id = 10588
+				name = "Tikas Springs"
+			}
+		}
+		383 = { 
+			set_state_name = "Kalinin"
+			set_province_name = {
+				id = 7834
+				name = "Kalinin City"
+			}
+		}
+		384 = { set_state_name = "Shabazz" }
+		390 = { set_state_name = "Luxemburg" }
+		898 = { set_state_name = "East Luxemburg" }
+    }
+}
+
+#Foster Renames Texas
+country_event = {
+    id = pacific_america.124
+    title = pacific_america.124.t
+    desc = pacific_america.124.d
+    picture = american_communist_party
+    
+    is_triggered_only = yes
+    
+    option = {
+		name = pacific_america.124.o1
+		set_global_flag = foster_renamed_TEX
+		375 = { set_state_name = "De Leon" }
+		899 = { set_state_name = "West De Leon" }
+    }
+}
+
+#Foster Renames Great Lakes Republic
+country_event = {
+    id = pacific_america.125
+    title = pacific_america.125.t
+    desc = pacific_america.125.d
+    picture = american_communist_party
+    
+    is_triggered_only = yes
+    
+    option = {
+		name = pacific_america.125.o1
+		set_global_flag = foster_renamed_GRL
+		391 = { set_state_name = "Hall" }
+		392 = { set_state_name = "Peters" }
+		394 = { set_state_name = "Anneke" }
+		891 = { set_state_name = "North Webb" }
+    }
+}
+
+#Foster Renames Illinois
+country_event = {
+    id = pacific_america.126
+    title = pacific_america.126.t
+    desc = pacific_america.126.d
+    picture = american_communist_party
+    
+    is_triggered_only = yes
+    
+    option = {
+		name = pacific_america.126.o1
+		set_global_flag = foster_renamed_ILL
+		373 = { 
+			set_state_name = "Prestes"
+			set_province_name = {
+				id = 10717
+				name = "Prestes City"
+			}
+		}
+		892 = { set_state_name = "Weinstone" }
+    }
+}
+
+#Foster Renames American Republic
+country_event = {
+    id = pacific_america.127
+    title = pacific_america.127.t
+    desc = pacific_america.127.d
+    picture = american_communist_party
+    
+    is_triggered_only = yes
+    
+    option = {
+		name = pacific_america.127.o1
+		set_global_flag = foster_renamed_USA
+		900 = { set_state_name = "East De Leon" }
+		374 = { 
+			set_state_name = "Rosenberg"
+			set_province_name = {
+				id = 5103
+				name = "Rosenberg City"
+			}
+		}
+		372 = { set_state_name = "Cleaver" }
+		371 = { set_state_name = "Newton" }
+		370 = { set_state_name = "Evers" }
+		368 = { set_state_name = "Honecker" }
+		369 = { set_state_name = "Ulbright" }
+		367 = { set_state_name = "Sankara" }
+		366 = { set_state_name = "Castro" }
+		365 = { set_state_name = "Stalin" }
+		364 = { set_state_name = "Minh" }
+		363 = { set_state_name = "Kim" }
+		362 = { set_state_name = "Davis" }
+		901 = { 
+			set_state_name = "Bellamy"
+			set_province_name = {
+				id = 3957
+				name = "Bellamy City"
+			}
+		}
+    }
+}
+
+#Foster Renames APC
+country_event = {
+    id = pacific_america.128
+    title = pacific_america.128.t
+    desc = pacific_america.128.d
+    picture = american_communist_party
+    
+    is_triggered_only = yes
+    
+    option = {
+		name = pacific_america.128.o1
+		set_global_flag = foster_renamed_NEA
+		395 = { set_state_name = "Hampton" }
+		393 = { set_state_name = "Webb" }
+		893 = { set_state_name = "Blizzard" }
+		261 = { set_state_name = "Ruthenberg" }
+		902 = { set_state_name = "North Davis" }
+		361 = { set_state_name = "Marx" }
+		360 = { set_state_name = "Reeve" }
+		359 = { set_state_name = "Lemlich" }
+		358 = { 
+			set_state_name = "Lenin"
+			set_province_name = {
+				id = 3878
+				name = "Lenin City"
+			}
+		}
+		795 = { set_state_name = "Berlinguer" }
+		357 = { set_state_name = "Liebknecht" }
+		793 = { set_state_name = "Marchais" }
+		794 = { set_state_name = "Flynn" }
+		396 = { set_state_name = "Jaruzelski" }
+		792 = { set_state_name = "Engels" }
+	}
+}
+
+#Foster Renames Mexican Territories
+country_event = {
+    id = pacific_america.129
+    title = pacific_america.129.t
+    desc = pacific_america.129.d
+    picture = american_communist_party
+    
+    is_triggered_only = yes
+    
+    option = {
+		name = pacific_america.129.o1
+		set_global_flag = foster_renamed_MEX
+		376 = { set_state_name = "Romanov" }
+		894 = { set_state_name = "Mitchell" }
+    }
+}
+
+#Foster Renames Alaska
+country_event = {
+    id = pacific_america.130
+    title = pacific_america.130.t
+    desc = pacific_america.130.d
+    picture = american_communist_party
+    
+    is_triggered_only = yes
+    
+    option = {
+		name = pacific_america.130.o1
+		set_global_flag = foster_renamed_ALA
+		463 = { set_state_name = "Malenkov" }
+		1013 = { set_state_name = "Southern Malenkov" }
+		1014 = { set_state_name = "Northern Malenkov" }
+    }
+}
+
+#Arizona named back
+country_event = {
+    id = pacific_america.131
+    title = pacific_america.131.t
+    desc = pacific_america.131.d
+    picture = american_communist_party
+    
+    is_triggered_only = yes
+    
+    option = {
+		name = pacific_america.131.o1
+		clr_global_flag = foster_renamed_ARI
+		377 = { set_state_name = "Arizona" }
+		895 = { set_state_name = "Northern Arizona" }
+    }
+}
+
+#Utah named back
+country_event = {
+    id = pacific_america.132
+    title = pacific_america.132.t
+    desc = pacific_america.132.d
+    picture = american_communist_party
+    
+    is_triggered_only = yes
+    
+    option = {
+		name = pacific_america.132.o1
+		clr_global_flag = foster_renamed_UTA
+		379 = { set_state_name = "Nevada" }
+		380 = { set_state_name = "Utah" }
+		896 = { set_state_name = "New Colorado" }
+    }
+}
+
+#Lincoln named back
+country_event = {
+    id = pacific_america.133
+    title = pacific_america.133.t
+    desc = pacific_america.133.d
+    picture = american_communist_party
+    
+    is_triggered_only = yes
+    
+    option = {
+		name = pacific_america.133.o1
+		clr_global_flag = foster_renamed_LIN
+		387 = { set_state_name = "Idaho" }
+		890 = { set_state_name = "East Cascadia" }
+    }
+}
+
+#Montana named back
+country_event = {
+    id = pacific_america.134
+    title = pacific_america.134.t
+    desc = pacific_america.134.d
+    picture = american_communist_party
+    
+    is_triggered_only = yes
+    
+    option = {
+		name = pacific_america.134.o1
+		clr_global_flag = foster_renamed_MOT
+		388 = { set_state_name = "Montana" }
+		1016 = { set_state_name = "Western Montana" }
+		381 = { set_state_name = "Wyoming" }
+		1017 = { set_state_name = "Western Wyoming" }
+		389 = { set_state_name = "North Dakota" }
+		1018 = { set_state_name = "West Dakota" }
+    }
+}
+
+#Midwest Union named back
+country_event = {
+    id = pacific_america.135
+    title = pacific_america.135.t
+    desc = pacific_america.135.d
+    picture = american_communist_party
+    
+    is_triggered_only = yes
+    
+    option = {
+		name = pacific_america.135.o1
+		clr_global_flag = foster_renamed_MWA
+		382 = { 
+			set_state_name = "Colorado"
+			set_province_name = {
+				id = 10588
+				name = "Colorado Springs"
+			}
+		}
+		383 = { 
+			set_state_name = "Kansas"
+			set_province_name = {
+				id = 7834
+				name = "West Kansas City"
+			}
+		}
+		384 = { set_state_name = "Nebraska" }
+		390 = { set_state_name = "South Dakota" }
+		898 = { set_state_name = "East Dakota" }
+    }
+}
+
+#Texas named back
+country_event = {
+    id = pacific_america.136
+    title = pacific_america.136.t
+    desc = pacific_america.136.d
+    picture = american_communist_party
+    
+    is_triggered_only = yes
+    
+    option = {
+		name = pacific_america.136.o1
+		clr_global_flag = foster_renamed_TEX
+		375 = { set_state_name = "Texas" }
+		899 = { set_state_name = "West Texas" }
+    }
+}
+
+#Great Lakes Republic named back
+country_event = {
+    id = pacific_america.137
+    title = pacific_america.137.t
+    desc = pacific_america.137.d
+    picture = american_communist_party
+    
+    is_triggered_only = yes
+    
+    option = {
+		name = pacific_america.137.o1
+		clr_global_flag = foster_renamed_GRL
+		391 = { set_state_name = "Minnesota" }
+		392 = { set_state_name = "Iowa" }
+		394 = { set_state_name = "Wisconsin" }
+		891 = { set_state_name = "North Michigan" }
+    }
+}
+
+#Illinois named back
+country_event = {
+    id = pacific_america.138
+    title = pacific_america.138.t
+    desc = pacific_america.138.d
+    picture = american_communist_party
+    
+    is_triggered_only = yes
+    
+    option = {
+		name = pacific_america.138.o1
+		clr_global_flag = foster_renamed_ILL
+		373 = { 
+			set_state_name = "Missouri"
+			set_province_name = {
+				id = 10717
+				name = "Kansas City"
+			}
+		}
+		892 = { set_state_name = "New Illinois" }
+    }
+}
+
+#American Republic named back
+country_event = {
+    id = pacific_america.139
+    title = pacific_america.139.t
+    desc = pacific_america.139.d
+    picture = american_communist_party
+    
+    is_triggered_only = yes
+    
+    option = {
+		name = pacific_america.139.o1
+		clr_global_flag = foster_renamed_USA
+		900 = { set_state_name = "East Texas" }
+		374 = { 
+			set_state_name = "Oklahoma"
+			set_province_name = {
+				id = 5103
+				name = "Oklahoma City"
+			}
+		}
+		372 = { set_state_name = "Arkansas" }
+		371 = { set_state_name = "Louisiana" }
+		370 = { set_state_name = "Mississippi" }
+		368 = { set_state_name = "Tennessee" }
+		369 = { set_state_name = "Kentucky" }
+		367 = { set_state_name = "Alabama" }
+		366 = { set_state_name = "Florida" }
+		365 = { set_state_name = "Georgia" }
+		364 = { set_state_name = "South Carolina" }
+		363 = { set_state_name = "North Carolina" }
+		362 = { set_state_name = "Virginia" }
+		901 = { 
+			set_state_name = "District of Columbia" 
+			set_province_name = {
+				id = 3957
+				name = "Washington, D.C."
+			}
+		}
+    }
+}
+
+#APC named back
+country_event = {
+    id = pacific_america.140
+    title = pacific_america.140.t
+    desc = pacific_america.140.d
+    picture = american_communist_party
+    
+    is_triggered_only = yes
+    
+    option = {
+		name = pacific_america.140.o1
+		clr_global_flag = foster_renamed_NEA
+		395 = { set_state_name = "Illinois" }
+		393 = { set_state_name = "Michigan" }
+		893 = { set_state_name = "West Virginia" }
+		261 = { set_state_name = "Ohio" }
+		902 = { set_state_name = "North Virginia" }
+		361 = { set_state_name = "Maryland" }
+		360 = { set_state_name = "Pennsylvania" }
+		359 = { set_state_name = "New Jersey" }
+		358 = { 
+			set_state_name = "New York"
+			set_province_name = {
+				id = 3878
+				name = "New York City"
+			}
+		}
+		795 = { set_state_name = "Connecticut" }
+		357 = { set_state_name = "Massachusetts" }
+		793 = { set_state_name = "Vermont" }
+		794 = { set_state_name = "New Hampshire" }
+		396 = { set_state_name = "Indiana" }
+		792 = { set_state_name = "Maine" }
+	}
+}
+
+#Mexican Territories named back
+country_event = {
+    id = pacific_america.141
+    title = pacific_america.141.t
+    desc = pacific_america.141.d
+	picture = american_communist_party
+	
+	fire_only_once = yes
+    
+    trigger = {
+		NOT = {
+			tag = PCA
+		}
+		has_global_flag = foster_renamed_MEX
+		owns_state = 376
+	}
+    
+    option = {
+		name = pacific_america.141.o1
+		clr_global_flag = foster_renamed_MEX
+		376 = { set_state_name = "New Mexico" }
+		894 = { set_state_name = "South Texas" }
+    }
+}
+
+#Alaska named back
+country_event = {
+    id = pacific_america.142
+    title = pacific_america.142.t
+    desc = pacific_america.142.d
+	picture = american_communist_party
+	
+	fire_only_once = yes
+    
+    trigger = {
+		NOT = {
+			tag = PCA
+		}
+		has_global_flag = foster_renamed_ALA
+		owns_state = 463
+	}
+    
+    option = {
+		name = pacific_america.142.o1
+		clr_global_flag = foster_renamed_ALA
+		463 = { set_state_name = "Alaska" }
+		1013 = { set_state_name = "Southern Alaska" }
+		1014 = { set_state_name = "Northern Alaska" }
+    }
+}
+
+#UAPR named back
+country_event = {
+    id = pacific_america.143
+    title = pacific_america.143.t
+    desc = pacific_america.143.d
+    picture = american_communist_party
+    
+    is_triggered_only = yes
+    
+    option = {
+		name = pacific_america.143.o1
+		clr_global_flag = foster_renamed_PCA
+		378 = { set_state_name = "California" }
+		1015 = { set_state_name = "Northern California" }
+		897 = { set_state_name = "Las Vegas" }
+		889 = { set_state_name = "Reno" }
+		385 = { set_state_name = "Oregon" }
+		386 = { set_state_name = "Washington" }
+		971 = { set_state_name = "East Oregon" }
+		970 = { set_state_name = "East Washington" }
+    }
+}
+
+#Controlled Opposition Created
+country_event = {
+    id = pacific_america.144
+    title = pacific_america.144.t
+    desc = pacific_america.144.d
+    picture = los_angeles_hall
+    
+    is_triggered_only = yes
+    
+    option = {
+		name = pacific_america.144.o1
+		
+    }
+}
+#Controlled Opposition Created
+country_event = {
+    id = pacific_america.145
+    title = pacific_america.145.t
+    desc = pacific_america.145.d
+    picture = socialism_with_american_characteristics
+
+    is_triggered_only = yes
+    
+    option = {
+		name = pacific_america.145.o1
+		
+    }
+}
+#Harris' Soviet Speech
+country_event = {
+    id = pacific_america.146
+    title = pacific_america.146.t
+    desc = pacific_america.146.d
+    picture = harris_soviet_speech
+
+    is_triggered_only = yes
+    
+    option = {
+		name = pacific_america.146.o1
+		
+    }
+}
+#Campaign Against Racism
+country_event = {
+    id = pacific_america.147
+    title = pacific_america.147.t
+    desc = pacific_america.147.d
+    picture = davis_mural
+
+    is_triggered_only = yes
+    
+    option = {
+		name = pacific_america.147.o1
+		
+    }
+}

@@ -1,0 +1,25 @@
+state={
+	id=921
+	name="STATE_921"
+	provinces={
+		1130 
+	}
+	state_category = city
+	history={
+		owner = LBA
+		add_core_of = LBA
+		victory_points = { 1130 3 }
+		buildings = {
+			infrastructure = 7
+			arms_factory = 3
+			industrial_complex = 1
+			1130 = {
+				naval_base = 6
+
+			}
+		}
+
+	}
+	manpower=120000
+	buildings_max_level_factor=1.000
+}

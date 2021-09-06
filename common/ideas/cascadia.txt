@@ -1,0 +1,1573 @@
+ideas = {
+    
+	country = {
+	    
+		idea_csd_pacifist_dominance = {
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = air_support_focus
+			
+			modifier = {
+				justify_war_goal_time = 1.5
+				stability_factor = 0.05
+				war_support_factor = -0.15
+			}
+		}
+		
+		idea_csd_local_cooperatives = {
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_communism_drift_bonus
+			
+			modifier = {
+				consumer_goods_factor = -0.03 
+				industrial_capacity_factory = 0.04
+			}
+		}
+		
+		idea_csd_communal_values = {
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_volunteer_expedition_bonus
+			
+			modifier = {
+				political_power_gain = 0.05 
+				army_morale_factor = 0.02 
+			}
+		}
+		
+		idea_csd_commitment_to_democracy = {
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_democratic_drift_bonus
+			
+			modifier = {
+				army_org_Factor = 0.03 
+				military_leader_cost_factor = -0.5
+			}
+		}
+		
+		idea_csd_universal_health_care = {
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = universal_healthcare
+			
+			modifier = {
+				production_factory_max_efficiency_factor = 0.05 
+				consumer_goods_factor = 0.04 
+				research_speed_factor = 0.04
+			}
+		}
+		
+		idea_csd_minimal_taxation = {
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = minimal_taxation
+			
+			modifier = {
+				consumer_goods_factor = 0.1 
+				research_speed_factor = 0.025
+				production_factory_start_efficiency_factor = 0.05
+			}
+		}
+		
+		idea_csd_christian_values = {
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = christian_values
+			
+			modifier = {
+				MONTHLY_POPULATION = 0.01 
+				political_power_gain = 0.1
+			}
+		}
+		
+		idea_csd_deregulation = {
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_political_support
+			
+			modifier = {
+				industrial_capacity_factory = 0.1 
+				local_resources_factor = 0.05 
+				stability_factor = -0.075
+			}
+		}
+		
+		idea_csd_limited_labor_laws = {
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_oppression
+			
+			modifier = {
+				industrial_capacity_factory = 0.15 
+				local_resources_factor = 0.1 
+				stability_factor = -0.1 
+				production_speed_industrial_complex_factor = 0.065
+			}
+		}
+		
+		idea_csd_privatised_economy = {
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_neutrality_drift_bonus
+			
+			modifier = {
+				consumer_goods_factor = -0.1 
+				industrial_capacity_factory = 0.025 
+				stability_factor = -0.035 
+				production_speed_buildings_factor = -0.2
+			}
+		}
+		
+		idea_csd_behind_every_blade = {
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_reserve_divisions
+			
+			modifier = {
+				army_core_defence_factor = 0.2 
+				army_morale_factor = 0.035
+			}
+		}
+		
+		idea_csd_tax_reform = {
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_foreign_capital
+			
+			modifier = {
+				mobilization_speed = 0.2
+			}
+		}
+		
+		idea_csd_mixed_economy = {
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_flexible_foreign_policy2
+			
+			modifier = {
+				political_power_gain = 0.2 
+				consumer_goods_factor = 0.05 
+				industrial_capacity_factory = 0.075
+			}
+		}
+		
+		idea_csd_universal_basic_income = {
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_deal_with_the_devil
+			
+			modifier = {
+				MONTHLY_POPULATION = 0.045 
+				production_factory_start_efficiency_factor = 0.05 
+				consumer_goods_factor = 0.045
+			}
+		}
+		
+		idea_csd_centralised_republic = {
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = centralised_republic
+			
+			modifier = {
+				justify_war_goal_time = -0.1 
+				military_leader_cost_factor = -0.3 
+				training_time_factor = -0.1 
+				army_org_Factor = 0.035
+			}
+		}
+		
+		idea_csd_encouraging_immigration = {
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = prc_low_popular_support3
+			
+			modifier = {
+				MONTHLY_POPULATION = 0.025 
+				stability_factor = -0.07
+				consumer_goods_factor = 0.01 
+				
+			}
+		}
+		
+		idea_csd_stines_plan = {
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = jap_supremacy_of_will
+			
+			modifier = {
+				research_speed_factor = 0.05
+				
+			}
+		}
+		
+		idea_csd_social_conservatism = {
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = FRA_scw_intervention_nationalists_focus
+			
+			modifier = {
+				MONTHLY_POPULATION = 0.01 
+				political_power_gain = 0.1
+				
+			}
+		}
+		
+		idea_csd_new_economic_process = {
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = anti_soviet_pact
+			
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.09
+				consumer_goods_factor = 0.05
+				
+			}
+		}
+		
+		idea_csd_cascadian_intelligence_service = {
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_secret_police
+			
+			modifier = {
+				decryption_power_factor = 0.05
+				crypto_strength = 0.5
+				
+			}
+		}
+		
+		idea_csd_self_sufficient_nation = {
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_agrarian_society
+			
+			modifier = {
+				trade_opinion_factor = -0.4 
+				political_power_gain = 0.3
+				local_resources_factor = 0.035
+				
+			}
+		}
+		
+		idea_csd_radical_environmentalism = {
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = FRA_army_of_aggression_focus
+			
+			modifier = {
+				production_speed_buildings_factor = -0.25
+				consumer_goods_factor = -0.1
+				
+			}
+		}
+		
+		idea_csd_rights_for_workers = {
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = worker_rights
+			
+			modifier = {
+				army_morale_factor = 0.02 
+				industry_repair_factor = 0.2
+				
+			}
+		}
+		
+		idea_csd_corporate_ties = {
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_deal_with_the_devil2
+			
+			modifier = {
+				industrial_capacity_factory = 0.035 
+				consumer_goods_factor = -0.025
+				
+			}
+		}
+		
+		idea_csd_tax_breaks = {
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_pp_unity_bonus
+			
+			modifier = {
+				consumer_goods_factor = 0.02
+				
+			}
+		}
+
+		idea_csd_radical_tax_breaks = {
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_pp_unity_bonus
+			
+			modifier = {
+				consumer_goods_factor = 0.07
+				production_speed_buildings_factor = 0.14
+			}
+		}
+
+		idea_csd_free_market_initiative = {
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = man_five_year_plan_industry
+			
+			modifier = {
+				political_power_gain = -0.15
+				production_factory_max_efficiency_factor = 0.08
+				local_resources_factor = 0.08
+			}
+		}
+		
+		idea_csd_radical_pollution_taxation = {
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = man_five_year_plan_industry
+			
+			modifier = {
+				research_speed_factor = 0.03 
+				industrial_capacity_factory = -0.05 
+				consumer_goods_factor = -0.01 
+				political_power_gain = 0.05
+				
+			}
+		}
+		
+		idea_csd_build_up_not_out = {
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_intel_bonus
+			
+			modifier = {
+				production_speed_infrastructure_factor = -0.5
+				production_speed_industrial_complex_factor = 0.085
+				
+			}
+		}
+		
+		idea_csd_prioritising_the_environment = {
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_agrarian_society
+			
+			modifier = {
+				production_speed_infrastructure_factor = -0.3 
+				army_core_defence_factor = 0.05
+				
+			}
+		}
+		
+		idea_csd_carbon_tax = {
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = man_five_year_plan_industry
+			
+			modifier = {
+				research_speed_factor = 0.02 
+				industrial_capacity_factory = -0.05 
+				consumer_goods_factor = -0.01 
+				political_power_gain = 0.05
+				
+			}
+		}
+		
+		idea_csd_decentralised_armies = {
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = chi_army_corruption2
+			
+			modifier = {
+				army_org_Factor = -0.1 
+				army_morale_factor = 0.035 
+				army_speed_factor = 0.1
+				
+			}
+		}
+		
+		idea_csd_development_priorities = {
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_build_infrastructure
+			
+			modifier = {
+				production_speed_industrial_complex_factor = 0.1 
+				production_speed_arms_factory_factor = 0.1
+				political_power_gain = -0.25
+				
+			}
+		}
+		
+		idea_csd_cascadian_nationalism = {
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_victors_of_ww1
+			
+			modifier = {
+				army_morale_factor = 0.05 
+				out_of_supply_factor = -0.3
+				
+			}
+		}
+		
+		idea_csd_protectionism = {
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_spy_intel
+			
+			modifier = {
+				trade_opinion_factor = -0.3 
+				min_export = -0.05 
+				global_building_slots_factor = 0.1
+				
+			}
+		}
+		
+		idea_csd_drug_legalisation = {
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = drug_legalisation
+			
+			modifier = {
+				industrial_capacity_factory = 0.02 
+				army_morale_factor = 0.02 
+				
+				
+				
+			}
+		}
+
+		idea_csd_foreign_economists = {
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = central_planning_egypt
+			
+			modifier = {
+				political_power_factor = -0.15
+				production_factory_max_efficiency_factor = 0.04
+				production_speed_industrial_complex_factor = 0.08
+			}
+		}
+		
+		
+	}
+	
+	second_in_command = {
+	
+		cascadia_sic_kate_brown = {
+		
+		    allowed = {
+			    original_tag = CSD
+			}
+			
+			available = {
+			    OR = {
+					has_government = nationalist
+					has_government = monarchist
+					has_government = national_conservative
+					has_government = centrist
+					has_government = liberal
+					has_government = new_democrat
+					has_government = moderate_socialist
+					has_government = revolutionary_socialist
+				}
+			}
+			
+			traits = { autocratic_charmer }			
+		}
+		
+		cascadia_sic_kevin_macdonald = {
+		
+		    allowed = {
+			    original_tag = CSD
+			}
+			
+			available = {
+			    OR = {
+					has_government = fascist
+				}
+			}
+			
+			traits = { power_hungry_demagogue }			
+		}
+		
+		cascadia_sic_jill_lannan = {
+		
+		    allowed = {
+			    original_tag = CSD
+			}
+			
+			available = {
+			    OR = {
+					has_government = nationalist
+				}
+			}
+			
+			traits = { insignificant_layman }			
+		}
+		
+		cascadia_sic_michael_stencel = {
+		
+		    allowed = {
+			    original_tag = CSD
+			}
+			
+			available = {
+			    OR = {
+					has_government = nationalist
+					has_government = fascist
+				}
+			}
+			
+			traits = { corporate_suit }			
+		}
+		
+		cascadia_sic_marc_brodine = {
+		
+		    allowed = {
+			    original_tag = CSD
+			}
+			
+			available = {
+			    OR = {
+					has_government = communist
+				}
+			}
+			
+			traits = { naive_optimist }			
+		}
+	}
+	
+	foreign_minister = {
+	
+		cascadia_fom_michael_polignano = {
+		
+		    allowed = {
+			    original_tag = CSD
+			}
+			
+			available = {
+			    OR = {
+					has_government = fascist
+				} 
+			}
+			
+			traits = { iron_fisted_brute }			
+		}
+		
+		cascadia_fom_aaron_donald_auer = {
+		
+		    allowed = {
+			    original_tag = CSD
+			}
+			
+			available = {
+			    OR = {
+					has_government = nationalist
+				} 
+			}
+			
+			traits = { ideological_crusader }			
+		}
+		
+		cascadia_fom_tim_eyman = {
+		
+		    allowed = {
+			    original_tag = CSD
+			}
+			
+			available = {
+			    OR = {
+					has_government = nationalist
+					has_government = fascist
+				} 
+			}
+			
+			traits = { international_schemer }			
+		}
+		
+		cascadia_fom_carter_ham = {
+		
+		    allowed = {
+			    original_tag = CSD
+			}
+			
+			available = {
+			    OR = {
+					has_government = nationalist
+				} 
+			}
+			
+			traits = { iron_fisted_brute }			
+		}
+		
+		cascadia_fom_diana_johnstone = {
+		
+		    allowed = {
+			    original_tag = CSD
+			}
+			
+			available = {
+			    OR = {
+					has_government = national_bolshevik
+					has_government = communist
+				} 
+			}
+			
+			traits = { biased_intellectual }			
+		}
+		
+		cascadia_fom_glenn_beck = {
+		
+		    allowed = {
+			    original_tag = CSD
+			}
+			
+			available = {
+			    OR = {
+					has_government = nationalist
+					has_government = national_conservative
+				} 
+			}
+			
+			traits = { ideological_crusader }			
+		}
+		
+		cascadia_fom_richard_burke = {
+		
+		    allowed = {
+			    original_tag = CSD
+			}
+			
+			available = {
+			    OR = {
+					has_government = centrist
+				} 
+			}
+			
+			traits = { international_schemer }			
+		}
+		
+		cascadia_fom_john_kitzhaber = {
+		
+		    allowed = {
+			    original_tag = CSD
+			}
+			
+			available = {
+			    OR = {
+					has_government = liberal
+				} 
+			}
+			
+			traits = { international_schemer }			
+		}
+		
+		cascadia_fom_denny_heck = {
+		
+		    allowed = {
+			    original_tag = CSD
+			}
+			
+			available = {
+			    OR = {
+					has_government = liberal
+				} 
+			}
+			
+			traits = { great_compromiser }			
+		}
+		
+		cascadia_fom_david_adam_smith = {
+		
+		    allowed = {
+			    original_tag = CSD
+			}
+			
+			available = {
+			    OR = {
+					has_government = new_democrat
+				} 
+			}
+			
+			traits = { apologetic_clerk }			
+		}
+		
+		cascadia_fom_suzan_delbene = {
+		
+		    allowed = {
+			    original_tag = CSD
+			}
+			
+			available = {
+			    OR = {
+					has_government = new_democrat
+					has_government = liberal
+				} 
+			}
+			
+			traits = { great_compromiser }			
+		}
+		
+		
+		cascadia_fom_william_smaldone = {
+		
+		    allowed = {
+			    original_tag = CSD
+			}
+			
+			available = {
+			    OR = {
+					has_government = moderate_socialist
+				} 
+			}
+			
+			traits = { biased_intellectual }			
+		}
+		
+		cascadia_fom_thom_hartmann = {
+		
+		    allowed = {
+			    original_tag = CSD
+			}
+			
+			available = {
+			    OR = {
+					has_government = moderate_socialist
+				} 
+			}
+			
+			traits = { great_compromiser }			
+		}
+		
+		cascadia_fom_bob_cone = {
+		
+		    allowed = {
+			    original_tag = CSD
+			}
+			
+			available = {
+			    OR = {
+					has_government = moderate_socialist
+					has_government = revolutionary_socialist
+				} 
+			}
+			
+			traits = { apologetic_clerk }			
+		}
+		
+		cascadia_fom_doug_barnes = {
+		
+		    allowed = {
+			    original_tag = CSD
+			}
+			
+			available = {
+			    OR = {
+					has_government = revolutionary_socialist
+				} 
+			}
+			
+			traits = { apologetic_clerk }			
+		}
+		
+		cascadia_fom_johanna_brenner = {
+		
+		    allowed = {
+			    original_tag = CSD
+			}
+			
+			available = {
+			    OR = {
+					has_government = revolutionary_socialist
+				} 
+			}
+			
+			traits = { biased_intellectual }			
+		}
+		
+		cascadia_fom_hank_adams = {
+		
+		    allowed = {
+			    original_tag = CSD
+			}
+			
+			available = {
+			    OR = {
+					has_government = revolutionary_socialist
+				} 
+			}
+			
+			traits = { great_compromiser }			
+		}
+	}
+	
+	industry_minister = {
+	
+		cascadia_ind_herman_baertschiger = {
+		
+		    allowed = {
+			    original_tag = CSD
+			}
+			
+			available = {
+			    OR = {
+					has_government = nationalist
+				} 
+			}
+			
+			traits = { resource_industrialist }			
+		}
+		
+		cascadia_ind_mark_schoesler = {
+		
+		    allowed = {
+			    original_tag = CSD
+			}
+			
+			available = {
+			    OR = {
+					has_government = nationalist
+				} 
+			}
+			
+			traits = { administrative_genius }			
+		}
+		
+		cascadia_ind_dan_newhouse = {
+		
+		    allowed = {
+			    original_tag = CSD
+			}
+			
+			available = {
+			    OR = {
+					has_government = national_conservative
+				} 
+			}
+			
+			traits = { administrative_genius }			
+		}
+		
+		cascadia_ind_allan_alley = {
+		
+		    allowed = {
+			    original_tag = CSD
+			}
+			
+			available = {
+			    OR = {
+					has_government = national_conservative
+				} 
+			}
+			
+			traits = { libertarian_capitalist }			
+		}
+		
+		cascadia_ind_dan_fulton = {
+		
+		    allowed = {
+			    original_tag = CSD
+			}
+			
+			available = {
+			    OR = {
+					has_government = nationalist
+					has_government = fascist
+				} 
+			}
+			
+			traits = { resource_industrialist }			
+		}
+		
+		cascadia_ind_mark_emmert = {
+		
+		    allowed = {
+			    original_tag = CSD
+			}
+			
+			available = {
+			    OR = {
+					has_government = nationalist
+					has_government = fascist
+				} 
+			}
+			
+			traits = { libertarian_capitalist }			
+		}
+		
+		cascadia_ind_bill_sizemore = {
+		
+		    allowed = {
+			    original_tag = CSD
+			}
+			
+			available = {
+			    OR = {
+					has_government = centrist
+				} 
+			}
+			
+			traits = { libertarian_capitalist }			
+		}
+		
+		cascadia_ind_rick_metsger = {
+		
+		    allowed = {
+			    original_tag = CSD
+			}
+			
+			available = {
+			    OR = {
+					has_government = liberal
+				} 
+			}
+			
+			traits = { administrative_genius }			
+		}
+		
+		cascadia_ind_pramila_jayapal = {
+		
+		    allowed = {
+			    original_tag = CSD
+			}
+			
+			available = {
+			    OR = {
+					has_government = new_democrat
+				} 
+			}
+			
+			traits = { administrative_genius }			
+		}
+		
+		cascadia_ind_peter_defazio = {
+		
+		    allowed = {
+			    original_tag = CSD
+			}
+			
+			available = {
+			    OR = {
+					has_government = new_democrat
+				} 
+			}
+			
+			traits = { extreme_regulator }			
+		}
+		
+		cascadia_ind_chris_henry = {
+		
+		    allowed = {
+			    original_tag = CSD
+			}
+			
+			available = {
+			    OR = {
+					has_government = moderate_socialist
+				} 
+			}
+			
+			traits = { resource_industrialist }			
+		}
+		
+		cascadia_ind_jordana_sardo = {
+		
+		    allowed = {
+			    original_tag = CSD
+			}
+			
+			available = {
+			    OR = {
+					has_government = revolutionary_socialist
+				} 
+			}
+			
+			traits = { administrative_genius }			
+		}
+	}
+	
+	national_security_minister = {
+	
+		cascadia_nsm_greg_johnson = {
+		
+		    allowed = {
+			    original_tag = CSD
+			}
+			
+			available = {
+			    OR = {
+					has_government = fascist
+				} 
+			}
+			
+			traits = { prince_of_terror }			
+		}
+		
+		cascadia_nsm_michael_stencel = {
+		
+		    allowed = {
+			    original_tag = CSD
+			}
+			
+			available = {
+			    OR = {
+					has_government = nationalist
+					has_government = national_conservative
+					has_government = new_democrat
+				} 
+			}
+			
+			traits = { efficient_sociopath }			
+		}
+		
+		cascadia_nsm_jay_rodne = {
+		
+		    allowed = {
+			    original_tag = CSD
+			}
+			
+			available = {
+			    OR = {
+					has_government = national_conservative
+				} 
+			}
+			
+			traits = { silent_lawyer }			
+		}
+		
+		cascadia_nsm_kim_wyman = {
+		
+		    allowed = {
+			    original_tag = CSD
+			}
+			
+			available = {
+			    OR = {
+					has_government = nationalist
+				} 
+			}
+			
+			traits = { compassionate_gentleman }			
+		}
+		
+		cascadia_nsm_dave_reichert = {
+		
+		    allowed = {
+			    original_tag = CSD
+			}
+			
+			available = {
+			    OR = {
+					has_government = nationalist
+					has_government = fascist
+				} 
+			}
+			
+			traits = { prince_of_terror }			
+		}
+		
+		cascadia_nsm_thomas_hemingway = {
+		
+		    allowed = {
+			    original_tag = CSD
+			}
+			
+			available = {
+			    OR = {
+					has_government = nationalist
+				} 
+			}
+			
+			traits = { silent_lawyer }			
+		}
+		
+		cascadia_nsm_loren_culp = {
+		
+		    allowed = {
+			    original_tag = CSD
+			}
+			
+			available = {
+			    OR = {
+					has_government = nationalist
+				} 
+			}
+			
+			traits = { isolationist }			
+		}
+		
+		cascadia_nsm_ian_epstein = {
+		
+		    allowed = {
+			    original_tag = CSD
+			}
+			
+			available = {
+			    OR = {
+					has_government = centrist
+				} 
+			}
+			
+			traits = { compassionate_gentleman }			
+		}
+		
+		cascadia_nsm_lars_hedbor = {
+		
+		    allowed = {
+			    original_tag = CSD
+			}
+			
+			available = {
+			    OR = {
+					has_government = centrist
+				} 
+			}
+			
+			traits = { silent_lawyer }			
+		}
+		
+		cascadia_nsm_ted_wheeler = {
+		
+		    allowed = {
+			    original_tag = CSD
+			}
+			
+			available = {
+			    OR = {
+					has_government = liberal
+				} 
+			}
+			
+			traits = { efficient_sociopath }			
+		}
+		
+		cascadia_nsm_jeanne_atkins = {
+		
+		    allowed = {
+			    original_tag = CSD
+			}
+			
+			available = {
+			    OR = {
+					has_government = liberal
+				} 
+			}
+			
+			traits = { silent_lawyer }			
+		}
+		
+		cascadia_nsm_earl_blumenauer = {
+		
+		    allowed = {
+			    original_tag = CSD
+			}
+			
+			available = {
+			    OR = {
+					has_government = new_democrat
+				} 
+			}
+			
+			traits = { silent_lawyer }			
+		}
+		
+		cascadia_nsm_walter_brown = {
+		
+		    allowed = {
+			    original_tag = CSD
+			}
+			
+			available = {
+			    OR = {
+					has_government = moderate_socialist
+				} 
+			}
+			
+			traits = { silent_lawyer }			
+		}
+		
+		cascadia_nsm_donald_cobain = {
+		
+		    allowed = {
+			    original_tag = CSD
+			}
+			
+			available = {
+			    OR = {
+					has_government = moderate_socialist
+					has_government = revolutionary_socialist
+				} 
+			}
+			
+			traits = { compassionate_gentleman }			
+		}
+		
+		cascadia_nsm_steve_hoffman = {
+		
+		    allowed = {
+			    original_tag = CSD
+			}
+			
+			available = {
+			    OR = {
+					has_government = revolutionary_socialist
+				} 
+			}
+			
+			traits = { isolationist }			
+		}
+		
+		cascadia_nsm_ajamu_baraka = {
+		
+		    allowed = {
+			    original_tag = CSD
+			}
+			
+			available = {
+			    OR = {
+					has_government = communist
+				} 
+			}
+			
+			traits = { isolationist }			
+		}
+	}
+	
+	intelligence_minister = {
+	
+		cascadia_inm_evan_mcmullin = {
+		
+		    allowed = {
+			    original_tag = CSD
+			}
+			
+			available = {
+			    OR = {
+					has_government = nationalist
+					has_government = national_conservative
+				}
+			}
+			
+			traits = { intelligence_director }			
+		}
+		
+		cascadia_inm_timothy_perkins = {
+		
+		    allowed = {
+			    original_tag = CSD
+			}
+			
+			available = {
+			    OR = {
+					has_government = centrist
+				}
+			}
+			
+			traits = { politician_with_connections }			
+		}
+		
+		cascadia_inm_meroe_park = {
+		
+		    allowed = {
+			    original_tag = CSD
+			}
+			
+			available = {
+			    OR = {
+					has_government = liberal
+					has_government = new_democrat
+				}
+			}
+			
+			traits = { intelligence_director }			
+		}
+		
+		cascadia_inm_mary_martin = {
+		
+		    allowed = {
+			    original_tag = CSD
+			}
+			
+			available = {
+			    OR = {
+					has_government = revolutionary_socialist
+				}
+			}
+			
+			traits = { politician_with_connections }			
+		}
+		
+		cascadia_inm_randy_engel = {
+		
+		    allowed = {
+			    original_tag = CSD
+			}
+			
+			available = {
+			    OR = {
+					has_government = fascist
+				}
+			}
+			
+			traits = { novice_mastermind }			
+		}
+		
+		cascadia_inm_gregory_todd = {
+		
+		    allowed = {
+			    original_tag = CSD
+			}
+			
+			available = {
+			    OR = {
+					has_government = nationalist
+				}
+			}
+			
+			traits = { naval_intelligence_specialist }			
+		}
+	}
+	
+	army_chief = {
+	
+		cascadia_peter_chiarelli = {
+		
+		    allowed = {
+			    original_tag = CSD
+			}
+			
+			traits = { army_chief_offensive_1 }
+		}
+
+		cascadia_carter_ham = {
+		    
+			allowed = {
+			    original_tag = CSD
+			}
+			
+			traits = { army_chief_defensive_1 }
+		}
+	}
+	
+	
+	navy_chief = {
+	
+		cascadia_gregory_bryant = {
+		
+		    allowed = {
+			    original_tag = CSD
+			}
+			
+			traits = { navy_chief_decisive_battle_2 }
+		}
+
+		cascadia_eric_olson = {
+		
+		    allowed = {
+			    original_tag = CSD
+			}
+			
+			traits = { navy_anti_submarine_2 }
+		}
+	}
+	
+	air_chief = {
+		cascadia_michael_stencel = {
+		
+		    allowed = {
+			    original_tag = CSD
+			}
+			
+			traits = { air_close_air_support_2 }
+		}
+	}
+	
+	high_command = {
+	
+		cascadia_raymond_rees = {
+		
+		    allowed = {
+			    original_tag = CSD
+			}
+			
+			traits = { army_artillery_1 }			
+		}
+		
+		cascadia_tracy_garrett = {
+		
+		    allowed = {
+			    original_tag = CSD
+			}
+			
+			traits = { army_logistics_2 }			
+		}
+
+		cascadia_gregory_todd = {
+		
+		    allowed = {
+			    original_tag = CSD
+			}
+			
+			traits = { navy_fleet_logistics_1 }			
+		}
+
+		cascadia_jill_lannan = {
+		
+		    allowed = {
+			    original_tag = CSD
+			}
+			
+			traits = { air_air_combat_training_2 }			
+		}
+	}
+}

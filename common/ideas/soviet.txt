@@ -1,0 +1,3421 @@
+ideas = {
+
+    country = {
+	    
+		idea_soviet_stagnating_economy = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.2
+				production_speed_industrial_complex_factor = -0.5
+				industrial_capacity_factory = -0.15
+				stability_factor = -0.055
+				war_support_factor = -0.02
+			}
+		}
+		
+		idea_soviet_rampant_corruption = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = generic_disjointed_gov
+			
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = -0.5
+			}
+		}
+		
+		idea_soviet_stagnating_economy2 = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = great_depression
+			
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.17
+				production_speed_industrial_complex_factor = -0.2
+				industrial_capacity_factory = -0.1
+				stability_factor = -0.035 
+				war_support_factor = -0.01
+			}
+		}
+		
+		idea_soviet_soldiers_to_factories = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = generic_manpower_bonus
+			
+			removal_cost = -1
+			
+			modifier = {
+				conscription = -0.008
+				production_speed_buildings_factor = 0.05
+				industrial_capacity_factory = 0.025
+			}
+		}
+		
+		idea_soviet_stagnating_economy_decreased_quotas = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = great_depression
+			
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.17
+				production_speed_industrial_complex_factor = -0.5
+				industrial_capacity_factory = -0.15
+				stability_factor = -0.03
+			}
+		}
+		
+		idea_soviet_republic_workers = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = generic_production_bonus
+			
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.02
+				production_speed_industrial_complex_factor = 0.25
+				consumer_goods_factor = -0.03
+			}
+		}
+		
+		idea_soviet_diverted_workforce = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = generic_production_bonus
+			
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.065
+				stability_factor = 0.025
+				conscription = 0.004
+			}
+		}
+		
+		idea_soviet_agriculture_focus = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = agriculture_focus
+			
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.1
+			}
+		}
+		
+		idea_soviet_revived_economy_increased_quotas = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = FRA_national_mobilization_focus
+			
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.1
+				production_speed_industrial_complex_factor = -0.15
+				industrial_capacity_factory = -0.05
+				stability_factor = -0.065
+			}
+		}
+		
+		idea_soviet_revived_economy_decreased_quotas = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = FRA_national_mobilization_focus
+			
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.12
+				production_speed_industrial_complex_factor = -0.3
+				industrial_capacity_factory = -0.1
+				stability_factor = 0.05
+			}
+		}
+		
+		idea_soviet_politburo_purged = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = anti_soviet_pact
+			
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = 0.5
+				stability_factor = -0.025
+				crypto_strength = 1
+			}
+		}
+		
+		idea_soviet_empowered_trade_unions = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = FRA_scw_intervention_republicans_focus
+			
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_buildings_factor = 0.1
+				political_power_gain = -0.1
+				industrial_capacity_factory = 0.03
+			}
+		}
+		
+		idea_soviet_removing_cult_of_personality = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = FRA_army_of_aggression_focus
+			
+			removal_cost = -1
+			
+			modifier = {
+				army_org_factor = 0.05
+				army_morale_factor = -0.03
+				stability_factor = -0.035
+				research_speed_factor = 0.01
+			}
+		}
+		
+		idea_soviet_united_nation = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = generic_pp_unity_bonus
+			
+			removal_cost = -1
+			
+			modifier = {
+				revolutionary_socialist_drift = 0.02
+				stability_factor = 0.02 
+				war_support_factor = 0.01
+				political_power_gain = 0.1
+				conscription = 0.005
+				consumer_goods_factor = -0.02
+			}
+		}
+		
+		idea_soviet_individuality_in_work = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = individuality_in_work
+			
+			removal_cost = -1
+			
+			modifier = {
+				industrial_capacity_factory = 0.15
+				MONTHLY_POPULATION = 0.005
+				research_speed_factor = -0.01
+			}
+		}
+		
+		idea_soviet_gorbachevs_kgb = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = nkvd_2
+			
+			removal_cost = -1
+			
+			modifier = {
+				crypto_strength = 1
+				decryption_power = 10
+				foreign_subversive_activites = -0.25
+				political_power_gain = 0.35
+			}
+		}
+		
+		idea_soviet_loyal_army = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = generic_morale_bonus
+			
+			removal_cost = -1
+			
+			modifier = {
+				army_morale_factor = 0.03
+				conscription = 0.005
+			}
+		}
+		
+		idea_soviet_agricultural_privatisation = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = agricultural_privatisation
+			
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.035
+				MONTHLY_POPULATION = 0.01
+			}
+		}
+		
+		idea_soviet_industrial_privatisation = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = generic_goods_red_bonus
+			
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_buildings_factor = 0.2 
+				research_speed_factor = 0.02
+			}
+		}
+		
+		idea_soviet_rampant_political_corruption = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = generic_disjointed_gov
+			
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = -0.3
+			}
+		}
+		
+		idea_soviet_rutskoys_unions = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = generic_communism_drift_bonus
+			
+			removal_cost = -1
+			
+			modifier = {
+				industrial_capacity_factory = 0.1
+				production_speed_industrial_complex_factor = 0.15
+				foreign_subversive_activites = -0.1
+			}
+		}
+		
+		idea_soviet_the_chinese_model = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = generic_production_bonus
+			
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.2
+				industrial_capacity_factory = 0.4
+				production_speed_industrial_complex_factor = 0.1
+				political_power_gain = -0.2
+				stability_factor = -0.1
+				foreign_subversive_activites = 0.25
+			}
+		}
+		
+		idea_soviet_free_market = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = generic_victors_of_ww1
+			
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.3
+				industrial_capacity_factory = 0.2
+				production_speed_arms_factory_factor = -0.5
+				stability_factor = -0.035
+			}
+		}
+		
+		idea_soviet_improved_living_conditions = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = welfare_state
+			
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.02 
+				political_power_gain = 0.5
+				consumer_goods_factor = 0.03
+				industrial_capacity_factory = 0.01
+				foreign_subversive_activites = -0.1
+			}
+		}
+		
+		idea_soviet_eased_tensions = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = officers_purged
+			
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.085
+				conscription = 0.005
+			}
+		}
+		
+		idea_soviet_equal_politburo = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = neutrality_idea
+			
+			removal_cost = -1
+			
+			modifier = {
+				research_speed_factor = 0.02
+				political_power_gain = 0.5
+			}
+		}
+		
+		idea_soviet_rutskoys_quotas = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = socialist_science_focus
+			
+			removal_cost = -1
+			
+			modifier = {
+				industrial_capacity_factory = 0.35
+				MONTHLY_POPULATION = -0.03
+			}
+		}
+		
+		idea_soviet_protect_the_borders = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = strategic_bombing_focus
+			
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_bunker_factor = 0.2
+			}
+		}
+		
+		idea_soviet_closed_society = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = trotskyite_plot_purged
+			
+			removal_cost = -1
+			
+			modifier = {
+				foreign_subversive_activites = -0.5
+				stability_factor = 0.02
+			}
+		}
+		
+		idea_soviet_warsaw_pact_research_treaty = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = SOV_scientist_defect
+			
+			removal_cost = -1
+			
+			modifier = {
+				research_speed_factor = 0.015
+				consumer_goods_factor = 0.02
+			}
+		}
+		
+		idea_soviet_strengthened_politburo = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = soviet_german_friendship
+			
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = 0.6
+				stability_factor = -0.02
+				army_org_factor = 0.03
+				communist_drift = 0.01
+			}
+		}
+		
+		idea_soviet_strengthened_chairman = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = nkvd_2
+			
+			removal_cost = -1
+			
+			modifier = {
+				drift_defence_factor = 0.3
+				stability_factor = 0.015
+				army_morale_factor = 0.05
+			}
+		}
+		
+		idea_soviet_zyuganovs_recovery_plan = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = economic_injections
+			
+			removal_cost = -1
+			
+			modifier = {
+				industrial_capacity_factory = 0.25
+				conscription = -0.01
+				production_speed_buildings_factor = 0.1
+			}
+		}
+		
+		idea_soviet_five_year_plan = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = five_year_plan
+			
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_buildings_factor = 0.2
+				consumer_goods_factor = -0.05
+			}
+		}
+		
+		idea_soviet_putins_kgb = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = nkvd_2
+			
+			removal_cost = -1
+			
+			modifier = {
+				foreign_subversive_activites = -0.7
+				justify_war_goal_time = -0.05
+				political_power_gain = 0.5
+				drift_defence_factor = 0.6
+			}
+		}
+		
+		idea_soviet_rapid_military_expansion = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = liberty_ships_focus
+			
+			removal_cost = -1
+			
+			modifier = {
+				training_time_army_factor = -0.1
+				production_speed_arms_factory_factor = 0.15
+				conscription = 0.005
+				industrial_capacity_factory = -0.05
+			}
+		}
+		
+		idea_soviet_total_union_control = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = trotskyite_plot
+			
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.05
+				industrial_capacity_factory = 0.2
+				production_speed_buildings_factor = 0.2
+			}
+		}
+		
+		idea_soviet_devotion_to_the_state = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = generic_communism_drift_bonus
+			
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.005 
+				war_support_factor = 0.005
+				political_power_gain = 0.5
+				army_morale_factor = 0.1
+			}
+		}
+		
+		idea_soviet_nation_in_peril = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = FRA_matignon_agreements
+			
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.2
+				political_power_gain = -1
+				army_org_factor = -0.5
+			}
+		}
+		
+		idea_soviet_military_junta = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = FRA_national_mobilization_focus
+			
+			removal_cost = -1
+			
+			modifier = {
+				army_morale_factor = 0.1
+				training_time_army_factor = -0.05
+				conscription = 0.01
+				stability_factor = -0.05
+				political_power_gain = 0.3
+			}
+		}
+		
+		idea_soviet_economic_manipulation = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = generic_goods_red_bonus
+			
+			removal_cost = -1
+			
+			modifier = {
+				communist_drift = 0.02
+				political_power_gain = -0.35
+				stability_factor = -0.05
+			}
+		}
+		
+		idea_soviet_new_air_bases = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = air_support_focus
+			
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_air_base_factor = 0.15
+			}
+		}
+		
+		idea_soviet_cheaper_weapons_production = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = FRA_army_of_aggression_focus
+			
+			removal_cost = -1
+			
+			equipment_bonus = {
+			    armor = {
+				    instant = yes
+				    maximum_speed = 0.10
+			    }
+		    }
+		}
+		
+		idea_soviet_free_thinking = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = generic_democratic_drift_bonus
+			
+			removal_cost = -1
+			
+			modifier = {
+				research_speed_factor = 0.05
+				stability_factor = -0.03
+				communist_drift = -0.02
+			}
+		}
+		
+		idea_soviet_perestroika = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = generic_goods_red_bonus
+			
+			removal_cost = -1
+			
+			modifier = {
+				industrial_capacity_factory = 0.2
+				MONTHLY_POPULATION = 0.003
+				research_speed_factor = -0.02
+				consumer_goods_factor = -0.1
+				stability_factor = 0.05
+			}
+		}
+		
+		idea_soviet_unorganised_kgb = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = generic_disjointed_gov
+			
+			removal_cost = -1
+			
+			modifier = {
+				crypto_strength = -1
+				decryption_power = 10
+				political_power_gain = 0.1
+				stability_factor = -0.06
+				foreign_subversive_activites = -0.05
+				revolutionary_socialist_drift = 0.01
+			}
+		}
+		
+		idea_soviet_gorbachevs_quotas = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = FRA_fortification_focus
+			
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.05
+				production_speed_buildings_factor = -0.1
+				stability_factor = 0.02
+				political_power_gain = 0.5
+			}
+		}
+		
+		idea_soviet_communist_oligarchy = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = communist_oligarchy
+			
+			removal_cost = -1
+			
+			modifier = {
+				industrial_capacity_factory = 0.25
+				political_power_gain = -0.3
+				production_speed_arms_factory_factor = 0.15 
+			}
+		}
+		
+		idea_soviet_reshuflled_politburo = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = FRA_scw_intervention_nationalists_focus
+			
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = 0.5
+				stability_factor = -0.045
+				army_org_factor = -0.05
+				foreign_subversive_activites = -0.25	
+			}
+		}
+		
+		idea_soviet_royal_institutions = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = royal_institution
+			
+			removal_cost = -1
+			
+			modifier = {
+				research_speed_factor = 0.04
+				political_power_gain = 0.1	
+			}
+		}
+		
+		idea_soviet_royal_prestige = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = royal_prestige
+			
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.03
+				army_morale_factor = 0.05
+				army_org_factor = 0.02
+			}
+		}
+		
+		idea_soviet_working_for_the_tsar = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = generic_production_bonus
+			
+			removal_cost = -1
+			
+			modifier = {
+				industrial_capacity_factory = 0.1
+				production_speed_buildings_factor = 0.1
+				conscription = 0.002
+			}
+		}
+		
+		idea_soviet_protecting_the_motherland = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = FRA_fortification_focus
+			
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_bunker_factor = 0.1
+				foreign_subversive_activites = -0.5
+				drift_defence_factor = 0.2
+				political_power_gain = 0.15
+				nationalist_drift = 0.01
+			}
+		}
+		
+		idea_soviet_technocratic_state = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = FRA_factory_strikes
+			
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.25
+			}
+		}
+		
+		idea_soviet_limited_liberties = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = generic_democratic_drift_bonus
+			
+			removal_cost = -1
+			
+			modifier = {
+				nationalist_drift = 0.01
+				national_conservative_drift = 0.01
+				centrist_drift = 0.01
+				liberal_drift = 0.01
+				new_democrat_drift = 0.01
+				moderate_socialist_drift = 0.01
+				stability_factor = 0.04
+				political_power_gain = 0.5
+			}
+		}
+		
+		idea_soviet_bolshevik_economy = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = generic_intel_bonus
+			
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.2
+				industrial_capacity_factory = 0.1
+				production_speed_arms_factory_factor = 0.05
+				MONTHLY_POPULATION = -0.01
+			}
+		}
+		
+		idea_soviet_rise_of_national_bolshevism = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = idea_ast_abandon_the_westminster_system_communism
+			
+			removal_cost = -1
+			
+			modifier = {
+				justify_war_goal_time = -0.25
+				national_bolshevik_drift = 0.03
+				foreign_subversive_activites = -0.1
+				army_morale_factor = 0.1
+			}
+		}
+		
+		idea_soviet_conservatism = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = FRA_scw_intervention_nationalists_focus
+			
+			removal_cost = -1
+			
+			modifier = {
+				communist_drift = 0.01
+				MONTHLY_POPULATION = 0.01
+				conscription = 0.003
+				industrial_capacity_factory = 0.04
+			}
+		}
+		
+		idea_soviet_the_final_struggle = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = the_final_struggle
+			
+			removal_cost = -1
+			
+			modifier = {
+				justify_war_goal_time = 0.15
+				political_power_gain = 0.25 
+				army_morale_factor = 0.035
+			}
+		}
+		
+		idea_soviet_peaceful_coexistence = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = generic_manpower_bonus
+			
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = 0.5
+				army_org_factor = 0.05
+				army_morale_factor = 0.01
+				consumer_goods_factor = -0.03
+				MONTHLY_POPULATION = 0.02
+				research_speed_factor = 0.02
+			}
+		}
+		
+		idea_soviet_the_tsar = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = idea_saf_ossewabrandwag_fascism
+			
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.015
+				political_power_gain = 0.2
+				justify_war_goal_time = -0.1
+				army_morale_factor = 0.1
+				drift_defence_factor = 0.15
+				consumer_goods_factor = -0.02
+				monarchist_drift = 0.05
+			}
+		}
+		
+		idea_soviet_work_monitored = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = work_monitored
+			
+			removal_cost = -1
+			
+			modifier = {
+				industrial_capacity_factory = 0.1
+			}
+		}
+		
+		idea_soviet_aggressive_foreign_policy = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = idea_tfv_can_conscription_crisis
+			
+			removal_cost = -1
+			
+			modifier = {
+				justify_war_goal_time = -0.1
+			}
+		}
+		
+		idea_soviet_realpolitik = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = international_advisors
+			
+			removal_cost = -1
+			
+			modifier = {
+				decryption_power = 10
+				drift_defence_factor = 0.1
+				political_power_gain = 0.1
+			}
+		}
+		
+		idea_soviet_peaceful_foreign_policy = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = generic_manpower_bonus
+			
+			removal_cost = -1
+			
+			modifier = {
+				local_resources_factor = 0.07
+				crypto_strength = 1
+			}
+		}
+		
+		
+	
+	}
+	
+	# TECHNOLOGY
+	tank_manufacturer = { 
+	
+		designer = yes
+		
+		morozov_design_bureau = {
+
+			picture = generic_tank_manufacturer_1
+			
+			allowed = {
+			    original_tag = SOV
+				NOT = {
+					has_available_idea_with_traits = { idea = tank_manufacturer limit = 1 }
+				}
+			}
+			
+			cost = 150
+			removal_cost = 10
+			
+			research_bonus = {
+				armor = 0.10
+			}
+			
+			traits = { tank_manufacturer }
+		}
+	}
+	
+	naval_manufacturer = { 
+	
+		designer = yes
+	
+		leningrad_admiralty_association = {
+			
+			picture = generic_naval_manufacturer_1
+
+			allowed = {
+			    original_tag = SOV
+				NOT = {
+					has_available_idea_with_traits = { idea = naval_manufacturer limit = 1 }
+				}
+			}
+			
+			cost = 150
+			removal_cost = 10
+			
+			research_bonus = {
+				naval_equipment = 0.10
+			}
+			
+			traits = { naval_manufacturer }
+		}
+	}
+
+	aircraft_manufacturer = { 
+	
+		designer = yes
+	
+		mikoyan = {
+			
+			picture = generic_air_manufacturer_1
+
+			allowed = {
+			    original_tag = SOV
+				NOT = {
+					has_available_idea_with_traits = { idea = light_aircraft_manufacturer limit = 1 }
+				}
+			}
+			
+			cost = 150
+			removal_cost = 10
+			
+			research_bonus = {
+				air_equipment = 0.10
+			}
+			
+			traits = { light_aircraft_manufacturer }
+		}
+		
+		tupolev = {
+			
+			picture = generic_air_manufacturer_3
+
+			allowed = {
+			    original_tag = SOV
+				NOT = {
+					has_available_idea_with_traits = { idea = medium_aircraft_manufacturer limit = 1 }
+				}
+			}
+			
+			cost = 150
+			removal_cost = 10
+			
+			research_bonus = {
+				air_equipment = 0.10
+			}
+			
+			traits = { medium_aircraft_manufacturer }
+		}
+		
+		antonov = {
+
+			picture = generic_air_manufacturer_2
+			
+			allowed = {
+			    original_tag = SOV
+				NOT = {
+					has_available_idea_with_traits = { idea = heavy_aircraft_manufacturer limit = 1 }
+				}
+			}
+			
+			cost = 150
+			removal_cost = 10
+			
+			research_bonus = {
+				air_equipment = 0.10
+			}
+			
+			traits = { heavy_aircraft_manufacturer }
+		}
+		
+		ilyushin = {
+			
+			picture = generic_naval_manufacturer_2
+
+			allowed = {
+			    original_tag = SOV
+				NOT = {
+					has_available_idea_with_traits = { idea = naval_aircraft_manufacturer limit = 1 }
+				}
+			}
+			
+			cost = 150
+			removal_cost = 10
+			
+			research_bonus = {
+				air_equipment = 0.10
+			}
+			
+			traits = { naval_aircraft_manufacturer }
+		}
+	}
+
+	industrial_concern = {
+	
+		novolipetsk_iron_and_steel = {
+			
+			picture = generic_industrial_concern_1
+
+			allowed = {
+			    original_tag = SOV
+				NOT = {
+					has_available_idea_with_traits = { idea = industrial_concern limit = 1 }
+				}
+			}
+			
+			cost = 150
+			removal_cost = 10
+			
+			research_bonus = {
+				industry = 0.10
+			}
+			
+			traits = { industrial_concern }
+		}
+
+		research_institute_of_fine_technology = {
+			
+			picture = generic_electronics_concern_1
+
+			allowed = {
+			    original_tag = SOV
+				NOT = {
+					has_available_idea_with_traits = { idea = electronics_concern limit = 1 }
+				}
+			}
+			
+			cost = 150
+			removal_cost = 10
+			
+			research_bonus = {
+				electronics = 0.10
+			}
+			
+			traits = { electronics_concern }
+		}
+	}
+
+	materiel_manufacturer = {
+	
+		designer = yes
+	
+		ural_automotor = {
+			
+			picture = generic_motorized_equipment_manufacturer_3
+
+			allowed = {
+			    original_tag = SOV
+				NOT = {
+					has_available_idea_with_traits = { idea = motorized_equipment_manufacturer limit = 1 }
+				}
+			}
+			
+			cost = 150
+			removal_cost = 10
+			
+			research_bonus = {
+				motorized_equipment = 0.10
+			}
+			
+			traits = { motorized_equipment_manufacturer }
+		}
+		
+		kalashnikov = {
+			
+			picture = generic_infantry_equipment_manufacturer_2
+
+			allowed = {
+			    original_tag = SOV
+				NOT = {
+					has_available_idea_with_traits = { idea = infantry_equipment_manufacturer limit = 1 }
+				}
+			}
+			
+			cost = 150
+			removal_cost = 10
+			
+			research_bonus = {
+				infantry_weapons = 0.10
+			}
+			
+			traits = { infantry_equipment_manufacturer }
+		}
+		
+		motovilikha_plants = {
+			
+			picture = generic_artillery_manufacturer_2
+
+			allowed = {
+			    original_tag = SOV
+				NOT = {
+					has_available_idea_with_traits = { idea = artillery_manufacturer limit = 1 }
+				}
+			}
+			
+			cost = 150
+			removal_cost = 10
+			
+			research_bonus = {
+				artillery = 0.10
+			}
+			
+			traits = { artillery_manufacturer }
+		}
+	}
+	
+	second_in_command = {
+	    soviet_sic_alexander_lukashenko = {
+		
+		    allowed = {
+			    original_tag = SOV
+			}
+			
+			available = {
+			    OR = {
+					has_government = communist
+					has_government = national_bolshevik
+				} 
+			}
+			
+			traits = { power_hungry_demagogue }			
+		}
+		
+		soviet_sic_vladimir_putin = {
+		
+		    allowed = {
+			    original_tag = SOV
+			}
+			
+			available = {
+			    OR = {
+					has_government = fascist
+					has_government = nationalist
+					has_government = monarchist
+					has_government = national_bolshevik
+					has_government = communist
+				} 
+			}
+			
+			traits = { power_hungry_demagogue }			
+		}
+		
+		soviet_sic_gennady_zyuganov = {
+		
+		    allowed = {
+			    original_tag = SOV
+			}
+			
+			available = {
+			    OR = {
+					has_government = communist
+				} 
+			}
+			
+			traits = { autocratic_charmer }			
+		}
+		
+		soviet_sic_viktor_tyulkin = {
+		
+		    allowed = {
+			    original_tag = SOV
+			}
+			
+			available = {
+			    OR = {
+					has_government = national_bolshevik
+				} 
+			}
+			
+			traits = { autocratic_charmer }			
+		}
+		
+		soviet_sic_volodymyr_lytvyn = {
+		
+		    allowed = {
+			    original_tag = SOV
+			}
+			
+			available = {
+			    OR = {
+					has_government = communist
+					has_government = revolutionary_socialist
+					has_government = centrist
+					has_government = liberal
+					has_government = national_conservative
+					has_government = nationalist
+				} 
+			}
+			
+			traits = { insignificant_layman }			
+		}
+		
+		soviet_sic_dmitry_medvedev = {
+		
+		    allowed = {
+			    original_tag = SOV
+			}
+			
+			available = {
+			    OR = {
+					has_government = communist
+					has_government = monarchist
+					has_government = nationalist
+					has_government = fascist
+					has_government = national_bolshevik
+					has_government = national_conservative
+				} 
+			}
+			
+			traits = { silent_workhorse }			
+		}
+		
+		soviet_sic_ivan_melnikov = {
+		
+		    allowed = {
+			    original_tag = SOV
+			}
+			
+			available = {
+			    OR = {
+					has_government = communist
+				} 
+			}
+			
+			traits = { naive_optimist }			
+		}
+		
+		soviet_sic_hienadz_buraukin = {
+		
+		    allowed = {
+			    original_tag = SOV
+			}
+			
+			available = {
+			    OR = {
+					has_government = communist
+					has_government = national_bolshevik
+					has_government = revolutionary_socialist
+				} 
+			}
+			
+			traits = { flamboyant_tough_guy }			
+		}
+		
+		soviet_sic_huseyngulu_baghirov = {
+		
+		    allowed = {
+			    original_tag = SOV
+			}
+			
+			available = {
+			    OR = {
+					has_government = communist
+				} 
+			}
+			
+			traits = { oil_baron }			
+		}
+		
+		soviet_sic_nikolay_yegorovich = {
+		
+		    allowed = {
+			    original_tag = SOV
+			}
+			
+			available = {
+			    OR = {
+					has_government = communist
+					has_government = revolutionary_socialist
+					has_government = national_bolshevik
+					has_government = nationalist 
+					has_government = fascist
+					has_government = monarchist
+					has_government = national_conservative 
+					has_government = centrist
+				} 
+			}
+			
+			traits = { retired_general }			
+		}
+		
+		soviet_sic_vladimir_masorin = {
+		
+		    allowed = {
+			    original_tag = SOV
+			}
+			
+			available = {
+			    OR = {
+					has_government = communist
+					has_government = revolutionary_socialist
+					has_government = monarchist
+					has_government = national_conservative 
+					has_government = centrist
+					has_government = liberal
+				} 
+			}
+			
+			traits = { retired_admiral }			
+		}
+		
+		soviet_sic_alexander_zelin = {
+		
+		    allowed = {
+			    original_tag = SOV
+			}
+			
+			available = {
+			    OR = {
+					has_government = communist
+					has_government = revolutionary_socialist
+					has_government = monarchist
+					has_government = national_conservative 
+				} 
+			}
+			
+			traits = { retired_air_force_general }			
+		}
+		
+		soviet_sic_petro_symonenko = {
+		
+		    allowed = {
+			    original_tag = SOV
+			}
+			
+			available = {
+			    OR = {
+					has_government = communist
+					has_government = revolutionary_socialist
+				} 
+			}
+			
+			traits = { political_protege }			
+		}
+		
+		soviet_sic_yevgeny_primakov = {
+		
+		    allowed = {
+			    original_tag = SOV
+			}
+			
+			available = {
+			    OR = {
+					has_government = communist
+					has_government = revolutionary_socialist
+					has_government = new_democrat 
+					has_government = moderate_socialist
+				} 
+			}
+			
+			traits = { ambitious_union_boss }			
+		}
+		
+		soviet_sic_anatoly_chubais = {
+		
+		    allowed = {
+			    original_tag = SOV
+			}
+			
+			available = {
+			    OR = {
+					has_government = nationalist
+					has_government = monarchist
+					has_government = centrist
+					has_government = liberal
+				} 
+			}
+			
+			traits = { corporate_suit }			
+		}
+		
+		soviet_sic_iskander_makhumudov = {
+		
+		    allowed = {
+			    original_tag = SOV
+			}
+			
+			available = {
+			    OR = {
+					has_government = new_democrat
+				} 
+			}
+			
+			traits = { corporate_suit }			
+		}
+		
+		soviet_sic_patriarch_kirill = {
+		
+		    allowed = {
+			    original_tag = SOV
+			}
+			
+			available = {
+			    OR = {
+					has_government = fascist
+					has_government = nationalist
+					has_government = monarchist
+				} 
+			}
+			
+			traits = { religious_leader }			
+		}
+		
+		soviet_sic_andrey_yuryevich_vorobyov = {
+		
+		    allowed = {
+			    original_tag = SOV
+			}
+			
+			available = {
+			    OR = {
+					has_government = national_conservative
+					has_government = centrist
+				} 
+			}
+			
+			traits = { autocratic_charmer }			
+		}
+		
+		soviet_sic_vyacheslav_nikonov = {
+		
+		    allowed = {
+			    original_tag = SOV
+			}
+			
+			available = {
+			    OR = {
+				    has_government = nationalist
+					has_government = monarchist
+					has_government = national_conservative
+					has_government = centrist
+				} 
+			}
+			
+			traits = { insignificant_layman }			
+		}
+		
+		soviet_sic_irina_yarovaya = {
+		
+		    allowed = {
+			    original_tag = SOV
+			}
+			
+			available = {
+			    OR = {
+				    has_government = fascist
+					has_government = nationalist
+					has_government = monarchist
+					has_government = national_conservative
+				} 
+			}
+			
+			traits = { silent_workhorse }			
+		}
+		
+		soviet_sic_galina_khovanskaya = {
+		
+		    allowed = {
+			    original_tag = SOV
+			}
+			
+			available = {
+			    OR = {
+				    has_government = national_conservative
+					has_government = centrist
+					has_government = liberal
+				} 
+			}
+			
+			traits = { naive_optimist }			
+		}
+		
+		soviet_sic_sergey_neverov = {
+		
+		    allowed = {
+			    original_tag = SOV
+			}
+			
+			available = {
+			    OR = {
+				    has_government = national_conservative
+				} 
+			}
+			
+			traits = { flamboyant_tough_guy }			
+		}
+		
+		soviet_sic_mikhail_khodorkovsky = {
+		
+		    allowed = {
+			    original_tag = SOV
+			}
+			
+			available = {
+			    OR = {
+				    has_government = centrist
+					has_government = liberal
+				} 
+			}
+			
+			traits = { oil_baron }			
+		}
+		
+		soviet_sic_gennady_timchenko = {
+		
+		    allowed = {
+			    original_tag = SOV
+			}
+			
+			available = {
+			    OR = {
+				    has_government = national_conservative
+					has_government = nationalist 
+					has_government = monarchist
+				} 
+			}
+			
+			traits = { oil_baron }			
+		}
+		
+		soviet_sic_vyacheslav_volodin = {
+		
+		    allowed = {
+			    original_tag = SOV
+			}
+			
+			available = {
+			    OR = {
+				    has_government = national_conservative
+				} 
+			}
+			
+			traits = { political_protege }			
+		}
+		
+		soviet_sic_boris_gryzlov = {
+		
+		    allowed = {
+			    original_tag = SOV
+			}
+			
+			available = {
+			    OR = {
+				    has_government = fascist 
+					has_government = nationalist 
+					has_government = monarchist
+					has_government = national_conservative
+				} 
+			}
+			
+			traits = { political_protege }			
+		}
+		
+		soviet_sic_arkady_rotenberg = {
+		
+		    allowed = {
+			    original_tag = SOV
+			}
+			
+			available = {
+			    OR = {
+				    has_government = national_conservative 
+					has_government = nationalist
+				} 
+			}
+			
+			traits = { corporate_suit }			
+		}
+		
+		soviet_sic_darya_mitina = {
+		
+		    allowed = {
+			    original_tag = SOV
+			}
+			
+			available = {
+			    OR = {
+				    has_government = revolutionary_socialist
+				} 
+			}
+			
+			traits = { power_hungry_demagogue }			
+		}
+		
+		soviet_sic_sergey_naryshkin = {
+		
+		    allowed = {
+			    original_tag = SOV
+			}
+			
+			available = {
+			    OR = {
+				    has_government = nationalist 
+					has_government = centrist
+				} 
+			}
+			
+			traits = { naive_optimist }			
+		}
+		
+		soviet_sic_stepan_poltorak = {
+		
+		    allowed = {
+			    original_tag = SOV
+			}
+			
+			available = {
+			    OR = {
+				    has_government = liberal 
+					has_government = new_democrat
+					has_government = moderate_socialist
+				} 
+			}
+			
+			traits = { retired_general }			
+		}
+		
+		soviet_sic_andrey_savelyev = {
+		
+		    allowed = {
+			    original_tag = SOV
+			}
+			
+			available = {
+			    OR = {
+				    has_government = fascist
+				} 
+			}
+			
+			traits = { autocratic_charmer }			
+		}
+		
+		soviet_sic_vladimir_zhirinovsky = {
+		
+		    allowed = {
+			    original_tag = SOV
+			}
+			
+			available = {
+			    OR = {
+				    has_government = nationalist
+				} 
+			}
+			
+			traits = { flamboyant_tough_guy }			
+		}
+		
+		soviet_sic_aleksandr_dugin = {
+		
+		    allowed = {
+			    original_tag = SOV
+			}
+			
+			available = {
+			    OR = {
+				    has_government = national_bolshevik
+				} 
+			}
+			
+			traits = { silent_workhorse }			
+		}
+		
+		soviet_sic_natalia_poklonskaya = {
+		
+		    allowed = {
+			    original_tag = SOV
+			}
+			
+			available = {
+			    OR = {
+				    has_government = nationalist 
+					has_government = monarchist 
+					has_government = centrist
+				} 
+			}
+			
+			traits = { political_protege }			
+		}
+		
+		soviet_sic_vladimir_lukin = {
+		
+		    allowed = {
+			    original_tag = SOV
+			}
+			
+			available = {
+			    OR = {
+				    has_government = new_democrat
+					has_government = liberal
+				} 
+			}
+			
+			traits = { silent_workhorse }			
+		}
+		
+		soviet_sic_sergey_mitrokhin = {
+		
+		    allowed = {
+			    original_tag = SOV
+			}
+			
+			available = {
+			    OR = {
+				    has_government = centrist
+					has_government = new_democrat
+				} 
+			}
+			
+			traits = { autocratic_charmer }			
+		}
+		
+		soviet_sic_sergey_mironov = {
+		
+		    allowed = {
+			    original_tag = SOV
+			}
+			
+			available = {
+			    OR = {
+				    has_government = liberal
+					has_government = moderate_socialist
+				} 
+			}
+			
+			traits = { naive_optimist }			
+		}
+		
+		soviet_sic_nikolai_levichev = {
+		
+		    allowed = {
+			    original_tag = SOV
+			}
+			
+			available = {
+			    OR = {
+				    has_government = centrist
+					has_government = liberal 
+					has_government = new_democrat
+				} 
+			}
+			
+			traits = { insignificant_layman }			
+		}
+		
+		soviet_sic_gennady_gudkov = {
+		
+		    allowed = {
+			    original_tag = SOV
+			}
+			
+			available = {
+			    OR = {
+				    has_government = national_conservative
+					has_government = centrist
+					has_government = liberal 
+					has_government = new_democrat
+					has_government = moderate_socialist
+					has_government = revolutionary_socialist
+				} 
+			}
+			
+			traits = { corporate_suit }			
+		}
+		
+		soviet_sic_alexander_rutskoy = {
+		
+		    allowed = {
+			    original_tag = SOV
+			}
+			
+			available = {
+			    OR = {
+				    has_government = communist 
+					has_government = moderate_socialist
+					has_government = new_democrat
+					has_government = liberal 
+					has_government = centrist
+					has_government = national_conservative
+					has_government = nationalist 
+					has_government = monarchist
+				} 
+			}
+			
+			traits = { silent_workhorse }			
+		}
+	}
+	
+	foreign_minister = {
+	    soviet_fom_nikolai_ryzhkov = {
+		
+		    allowed = {
+			    original_tag = SOV
+			}
+			
+			available = {
+			    OR = {
+					has_government = communist
+					has_government = revolutionary_socialist
+				} 
+			}
+			
+			traits = { biased_intellectual }			
+		}
+		
+		soviet_fom_eduard_shevardnadze = {
+		
+		    allowed = {
+			    original_tag = SOV
+			}
+			
+			available = {
+			    OR = {
+					has_government = communist
+				} 
+			}
+			
+			traits = { ideological_crusader }			
+		}
+		
+		soviet_fom_boris_pankin = {
+		
+		    allowed = {
+			    original_tag = SOV
+			}
+			
+			available = {
+			    OR = {
+					has_government = communist
+					has_government = revolutionary_socialist
+					has_government = moderate_socialist
+				} 
+			}
+			
+			traits = { apologetic_clerk }			
+		}
+		
+		soviet_fom_sergey_lavrov = {
+		
+		    allowed = {
+			    original_tag = SOV
+			}
+			
+			available = {
+			    OR = {
+					has_government = communist
+					has_government = nationalist
+					has_government = monarchist 
+					has_government = national_conservative
+				} 
+			}
+			
+			traits = { iron_fisted_brute }			
+		}
+		
+		soviet_fom_igor_ivanov = {
+		
+		    allowed = {
+			    original_tag = SOV
+			}
+			
+			available = {
+			    OR = {
+					has_government = communist
+					has_government = revolutionary_socialist
+					has_government = national_conservative
+					has_government = monarchist 
+					has_government = nationalist 
+					has_government = centrist
+				} 
+			}
+			
+			traits = { great_compromiser }			
+		}
+		
+		soviet_fom_anatoly_antonov = {
+		
+		    allowed = {
+			    original_tag = SOV
+			}
+			
+			available = {
+			    OR = {
+					has_government = communist
+					has_government = national_bolshevik
+				} 
+			}
+			
+			traits = { international_schemer }			
+		}
+		
+		soviet_fom_teimuraz_ramishvili = {
+		
+		    allowed = {
+			    original_tag = SOV
+			}
+			
+			available = {
+			    OR = {
+					has_government = nationalist
+				} 
+			}
+			
+			traits = { biased_intellectual }			
+		}
+		
+		soviet_fom_dmitry_rogozin = {
+		
+		    allowed = {
+			    original_tag = SOV
+			}
+			
+			available = {
+			    OR = {
+					has_government = national_conservative
+				} 
+			}
+			
+			traits = { ideological_crusader }			
+		}
+		
+		soviet_fom_igor_sechin = {
+		
+		    allowed = {
+			    original_tag = SOV
+			}
+			
+			available = {
+			    OR = {
+					has_government = nationalist
+				} 
+			}
+			
+			traits = { ideological_crusader }			
+		}
+		
+		soviet_fom_rashid_nurgaliyev = {
+		
+		    allowed = {
+			    original_tag = SOV
+			}
+			
+			available = {
+			    OR = {
+					has_government = national_conservative
+					has_government = centrist
+					has_government = liberal 
+					has_government = new_democrat 
+					has_government = moderate_socialist
+				} 
+			}
+			
+			traits = { apologetic_clerk }			
+		}
+		
+		soviet_fom_sergey_shoygu = {
+		
+		    allowed = {
+			    original_tag = SOV
+			}
+			
+			available = {
+			    OR = {
+					has_government = fascist
+					has_government = nationalist 
+				} 
+			}
+			
+			traits = { iron_fisted_brute }			
+		}
+		
+		soviet_fom_alexei_kudrin = {
+		
+		    allowed = {
+			    original_tag = SOV
+			}
+			
+			available = {
+			    OR = {
+					has_government = liberal
+				} 
+			}
+			
+			traits = { great_compromiser }			
+		}
+		
+		soviet_fom_andrei_karlov = {
+		
+		    allowed = {
+			    original_tag = SOV
+			}
+			
+			available = {
+			    OR = {
+					has_government = revolutionary_socialist
+				} 
+			}
+			
+			traits = { ideological_crusader }			
+		}
+		
+		soviet_fom_yuri_fedotov = {
+		
+		    allowed = {
+			    original_tag = SOV
+			}
+			
+			available = {
+			    OR = {
+					has_government = liberal 
+					has_government = new_democrat
+				} 
+			}
+			
+			traits = { international_schemer }			
+		}
+		
+		soviet_fom_aleksander_avdeyev = {
+		
+		    allowed = {
+			    original_tag = SOV
+			}
+			
+			available = {
+			    OR = {
+					has_government = nationalist
+				} 
+			}
+			
+			traits = { apologetic_clerk }			
+		}
+		
+		soviet_fom_petro_poroshenko = {
+		
+		    allowed = {
+			    original_tag = SOV
+			}
+			
+			available = {
+			    OR = {
+					has_government = centrist 
+					has_government = liberal 
+					has_government = new_democrat
+				} 
+			}
+			
+			traits = { biased_intellectual }			
+		}
+		
+		soviet_fom_nino_burjanadze = {
+		
+		    allowed = {
+			    original_tag = SOV
+			}
+			
+			available = {
+			    OR = {
+					has_government = moderate_socialist
+					has_government = new_democrat
+				} 
+			}
+			
+			traits = { ideological_crusader }			
+		}
+		
+		soviet_fom_oleksandr_yakymenko = {
+		
+		    allowed = {
+			    original_tag = SOV
+			}
+			
+			available = {
+			    OR = {
+					has_government = fascist
+				} 
+			}
+			
+			traits = { ideological_crusader }			
+		}
+		
+		soviet_fom_maxym_polyakov = {
+		
+		    allowed = {
+			    original_tag = SOV
+			}
+			
+			available = {
+			    OR = {
+					has_government = nationalist
+					has_government = monarchist 
+					has_government = national_conservative
+					has_government = centrist
+				} 
+			}
+			
+			traits = { international_schemer }			
+		}
+		
+		soviet_fom_yulia_tymoshenko = {
+		
+		    allowed = {
+			    original_tag = SOV
+			}
+			
+			available = {
+			    OR = {
+					has_government = revolutionary_socialist
+					has_government = moderate_socialist
+				} 
+			}
+			
+			traits = { iron_fisted_brute }			
+		}
+		
+		soviet_fom_sergei_gaidukevich = {
+		
+		    allowed = {
+			    original_tag = SOV
+			}
+			
+			available = {
+			    OR = {
+					has_government = fascist 
+					has_government = national_bolshevik
+					has_government = nationalist
+				} 
+			}
+			
+			traits = { apologetic_clerk }			
+		}
+		
+		soviet_fom_zakir_hasanov = {
+		
+		    allowed = {
+			    original_tag = SOV
+			}
+			
+			available = {
+			    OR = {
+					has_government = communist
+					has_government = national_bolshevik
+				} 
+			}
+			
+			traits = { biased_intellectual }			
+		}
+		
+		soviet_fom_islam_karimov = {
+		
+		    allowed = {
+			    original_tag = SOV
+			}
+			
+			available = {
+			    OR = {
+					has_government = national_bolshevik
+				} 
+			}
+			
+			traits = { ideological_crusader }			
+		}
+		
+		soviet_fom_alexander_rutskoy = {
+		
+		    allowed = {
+			    original_tag = SOV
+			}
+			
+			available = {
+			    OR = {
+					has_government = communist 
+					has_government = moderate_socialist
+					has_government = new_democrat
+					has_government = liberal 
+					has_government = centrist
+					has_government = national_conservative
+					has_government = nationalist 
+					has_government = monarchist
+				} 
+			}
+			
+			traits = { great_compromiser }			
+		}
+	}
+	
+	industry_minister = {
+	    soviet_ind_vadim_bakatin = {
+		
+		    allowed = {
+			    original_tag = SOV
+			}
+			
+			available = {
+			    OR = {
+					has_government = communist
+				} 
+			}
+			
+			traits = { administrative_genius }			
+		}
+		
+		soviet_ind_alexander_shokhin = {
+		
+		    allowed = {
+			    original_tag = SOV
+			}
+			
+			available = {
+			    OR = {
+					has_government = new_democrat
+					has_government = liberal 
+					has_government = centrist 
+					has_government = national_conservative
+					has_government = monarchist 
+					has_government = nationalist 
+					has_government = fascist
+				} 
+			}
+			
+			traits = { resource_industrialist }			
+		}
+		
+		soviet_ind_boris_titov = {
+		
+		    allowed = {
+			    original_tag = SOV
+			}
+			
+			available = {
+			    OR = {
+					has_government = national_conservative
+					has_government = centrist 
+					has_government = liberal
+				} 
+			}
+			
+			traits = { libertarian_capitalist }			
+		}
+		
+		soviet_ind_eugene_kaspersky = {
+		
+		    allowed = {
+			    original_tag = SOV
+			}
+			
+			available = {
+			    OR = {
+					has_government = national_conservative
+					has_government = centrist 
+					has_government = liberal
+				} 
+			}
+			
+			traits = { former_scientist }			
+		}
+		
+		soviet_ind_mikhail_prokhorov = {
+		
+		    allowed = {
+			    original_tag = SOV
+			}
+			
+			available = {
+			    OR = {
+					has_government = revolutionary_socialist
+					has_government = moderate_socialist
+					has_government = new_democrat
+					has_government = liberal 
+					has_government = centrist 
+					has_government = national_conservative
+					has_government = monarchist 
+					has_government = nationalist 
+					has_government = fascist
+				} 
+			}
+			
+			traits = { private_military_specialist }			
+		}
+		
+		soviet_ind_yegor_gaidar = {
+		
+		    allowed = {
+			    original_tag = SOV
+			}
+			
+			available = {
+			    OR = {
+					has_government = communist 
+					has_government = national_conservative
+					has_government = nationalist 
+				} 
+			}
+			
+			traits = { corrupt_kleptocrat }			
+		}
+		
+		soviet_ind_andrey_nechaev = {
+		
+		    allowed = {
+			    original_tag = SOV
+			}
+			
+			available = {
+			    OR = {
+					has_government = communist 
+					has_government = revolutionary_socialist
+					has_government = moderate_socialist
+					has_government = new_democrat
+					has_government = nationalist 
+					has_government = national_bolshevik
+				} 
+			}
+			
+			traits = { extreme_regulator }			
+		}
+		
+		soviet_ind_nursultan_nazarbayev = {
+		
+		    allowed = {
+			    original_tag = SOV
+			}
+			
+			available = {
+			    OR = {
+					has_government = communist 
+					has_government = national_bolshevik
+					has_government = nationalist 
+					has_government = monarchist 
+				} 
+			}
+			
+			traits = { administrative_genius }			
+		}
+		
+		soviet_ind_zurab_noghaideli = {
+		
+		    allowed = {
+			    original_tag = SOV
+			}
+			
+			available = {
+			    OR = {
+					has_government = national_conservative
+					has_government = centrist
+					has_government = liberal
+					has_government = new_democrat
+				} 
+			}
+			
+			traits = { administrative_genius }			
+		}
+		
+		soviet_ind_borys_paton = {
+		
+		    allowed = {
+			    original_tag = SOV
+			}
+			
+			available = {
+			    OR = {
+					has_government = communist 
+					has_government = revolutionary_socialist
+					has_government = moderate_socialist
+					has_government = national_bolshevik
+				} 
+			}
+			
+			traits = { former_scientist }			
+		}
+		
+		soviet_ind_anatoliy_serdyukov = {
+		
+		    allowed = {
+			    original_tag = SOV
+			}
+			
+			available = {
+			    OR = {
+					has_government = national_bolshevik
+				} 
+			}
+			
+			traits = { private_military_specialist }			
+		}
+		
+		soviet_ind_sergei_shmatko = {
+		
+		    allowed = {
+			    original_tag = SOV
+			}
+			
+			available = {
+			    OR = {
+					has_government = fascist 
+					has_government = nationalist 
+				} 
+			}
+			
+			traits = { corrupt_kleptocrat }			
+		}
+		
+		soviet_ind_dmitry_kozak = {
+		
+		    allowed = {
+			    original_tag = SOV
+			}
+			
+			available = {
+			    OR = {
+					has_government = communist 
+				} 
+			}
+			
+			traits = { resource_industrialist }			
+		}
+		
+		soviet_ind_dmitry_medvedev = {
+		
+		    allowed = {
+			    original_tag = SOV
+			}
+			
+			available = {
+			    OR = {
+					has_government = communist
+					has_government = monarchist
+					has_government = nationalist
+					has_government = fascist
+					has_government = national_bolshevik
+					has_government = national_conservative
+				} 
+			}
+			
+			traits = { administrative_genius }			
+		}
+	}
+	
+	national_security_minister = {
+	    soviet_nsm_aleksey_aleksandrov = {
+		
+		    allowed = {
+			    original_tag = SOV
+			}
+			
+			available = {
+			    OR = {
+					has_government = communist
+					has_government = fascist 
+					has_government = nationalist 
+					has_government = national_conservative
+				} 
+			}
+			
+			traits = { silent_lawyer }			
+		}
+		
+		soviet_nsm_sergei_gorkov = {
+		
+		    allowed = {
+			    original_tag = SOV
+			}
+			
+			available = {
+			    OR = {
+					has_government = centrist 
+					has_government = liberal
+					has_government = new_democrat 
+				} 
+			}
+			
+			traits = { silent_lawyer }			
+		}
+		
+		soviet_nsm_vladimir_kolokoltsev = {
+		
+		    allowed = {
+			    original_tag = SOV
+			}
+			
+			available = {
+			    OR = {
+					has_government = communist 
+					has_government = moderate_socialist
+					has_government = new_democrat
+					has_government = liberal 
+					has_government = centrist 
+					has_government = national_conservative
+				} 
+			}
+			
+			traits = { compassionate_gentleman }			
+		}
+		
+		soviet_nsm_vladimir_putin = {
+		
+		    allowed = {
+			    original_tag = SOV
+			}
+			
+			available = {
+			    OR = {
+					has_government = fascist
+					has_government = nationalist
+					has_government = monarchist
+					has_government = national_bolshevik
+					has_government = communist
+				} 
+			}
+			
+			traits = { prince_of_terror }			
+		}
+		
+		soviet_nsm_igor_sechin = {
+		
+		    allowed = {
+			    original_tag = SOV
+			}
+			
+			available = {
+			    OR = {
+					has_government = fascist
+					has_government = nationalist
+					has_government = monarchist
+					has_government = national_bolshevik
+					has_government = communist
+				} 
+			}
+			
+			traits = { efficient_sociopath }			
+		}
+		
+		soviet_nsm_sergey_sobyanin = {
+		
+		    allowed = {
+			    original_tag = SOV
+			}
+			
+			available = {
+			    OR = {
+					has_government = national_conservative
+					has_government = centrist 
+					has_government = liberal 
+					has_government = nationalist 
+					has_government = monarchist
+				} 
+			}
+			
+			traits = { isolationist }			
+		}
+		
+		soviet_nsm_bakhytzhan_sagintayev = {
+		
+		    allowed = {
+			    original_tag = SOV
+			}
+			
+			available = {
+			    OR = {
+					has_government = national_conservative
+					has_government = centrist 
+					has_government = liberal
+				} 
+			}
+			
+			traits = { efficient_sociopath }			
+		}
+		
+		soviet_nsm_gela_charkviani = {
+		
+		    allowed = {
+			    original_tag = SOV
+			}
+			
+			available = {
+			    OR = {
+					has_government = revolutionary_socialist
+				} 
+			}
+			
+			traits = { prince_of_terror }			
+		}
+		
+		soviet_nsm_yaroslav_nilov = {
+		
+		    allowed = {
+			    original_tag = SOV
+			}
+			
+			available = {
+			    OR = {
+					has_government = nationalist 
+					has_government = fascist
+				} 
+			}
+			
+			traits = { compassionate_gentleman }			
+		}
+		
+		soviet_nsm_mikhail_gorbachev = {
+		
+		    allowed = {
+			    original_tag = SOV
+			}
+			
+			available = {
+			    OR = {
+					has_government = revolutionary_socialist
+				} 
+			}
+			
+			traits = { compassionate_gentleman }			
+		}
+		
+		soviet_nsm_nikolay_vinnichenko = {
+		
+		    allowed = {
+			    original_tag = SOV
+			}
+			
+			available = {
+			    OR = {
+					has_government = national_bolshevik
+				} 
+			}
+			
+			traits = { silent_lawyer }			
+		}
+		
+		soviet_nsm_oleg_mitvol = {
+		
+		    allowed = {
+			    original_tag = SOV
+			}
+			
+			available = {
+			    OR = {
+					has_government = moderate_socialist
+				} 
+			}
+			
+			traits = { silent_lawyer }			
+		}
+		
+		soviet_nsm_yury_chaika = {
+		
+		    allowed = {
+			    original_tag = SOV
+			}
+			
+			available = {
+			    OR = {
+					has_government = national_conservative
+					has_government = centrist 
+					has_government = liberal 
+					has_government = new_democrat
+					has_government = moderate_socialist
+				} 
+			}
+			
+			traits = { efficient_sociopath }			
+		}
+	}
+	
+	intelligence_minister = {
+	    soviet_inm_vladimir_putin = {
+		
+		    allowed = {
+			    original_tag = SOV
+			}
+			
+			available = {
+			    OR = {
+					has_government = fascist
+					has_government = nationalist
+					has_government = monarchist
+					has_government = national_bolshevik
+					has_government = communist
+				} 
+			}
+			
+			traits = { intelligence_director }			
+		}
+		
+		soviet_inm_leonid_moiseyev = {
+		
+		    allowed = {
+			    original_tag = SOV
+			}
+			
+			available = {
+			    OR = {
+					has_government = communist 
+					has_government = revolutionary_socialist
+					has_government = moderate_socialist
+					has_government = new_democrat
+				} 
+			}
+			
+			traits = { novice_mastermind }			
+		}
+		
+		soviet_inm_vladimir_ivanovich_korolev = {
+		
+		    allowed = {
+			    original_tag = SOV
+			}
+			
+			available = {
+			    OR = {
+					has_government = nationalist 
+					has_government = fascist 
+					has_government = monarchist 
+					has_government = national_bolshevik
+					has_government = communist
+				} 
+			}
+			
+			traits = { naval_intelligence_specialist }			
+		}
+		
+		soviet_inm_vladimir_zhirinovsky = {
+		
+		    allowed = {
+			    original_tag = SOV
+			}
+			
+			available = {
+			    OR = {
+					has_government = nationalist
+					has_government = fascist
+				} 
+			}
+			
+			traits = { politician_with_connections }			
+		}
+		
+		soviet_inm_viktor_chirkov = {
+		
+		    allowed = {
+			    original_tag = SOV
+			}
+			
+			available = {
+			    OR = {
+					has_government = national_conservative
+					has_government = centrist 
+					has_government = liberal
+					has_government = new_democrat
+					has_government = moderate_socialist
+					has_government = revolutionary_socialist
+					has_government = communist
+				} 
+			}
+			
+			traits = { naval_intelligence_specialist }			
+		}
+		
+		soviet_inm_alexander_bortnikov = {
+		
+		    allowed = {
+			    original_tag = SOV
+			}
+			
+			available = {
+			    OR = {
+					has_government = nationalist 
+					has_government = national_conservative
+					has_government = monarchist
+				} 
+			}
+			
+			traits = { novice_mastermind }			
+		}
+		
+		soviet_inm_nikolai_patrushev = {
+		
+		    allowed = {
+			    original_tag = SOV
+			}
+			
+			available = {
+			    OR = {
+					has_government = national_conservative
+					has_government = centrist
+					has_government = liberal
+				} 
+			}
+			
+			traits = { intelligence_director }			
+		}
+		
+		soviet_inm_olga_golodets = {
+		
+		    allowed = {
+			    original_tag = SOV
+			}
+			
+			available = {
+			    OR = {
+					has_government = communist
+				} 
+			}
+			
+			traits = { politician_with_connections }			
+		}
+		
+		soviet_inm_vladimir_puchkov = {
+		
+		    allowed = {
+			    original_tag = SOV
+			}
+			
+			available = {
+			    OR = {
+				    has_government = monarchist 
+					has_government = national_conservative 
+					has_government = centrist 
+				} 
+			}
+			
+			traits = { politician_with_connections }			
+		}
+		
+		soviet_inm_ilya_ponomarev = {
+		
+		    allowed = {
+			    original_tag = SOV
+			}
+			
+			available = {
+			    OR = {
+				    has_government = centrist 
+					has_government = liberal
+				} 
+			}
+			
+			traits = { novice_mastermind }			
+		}
+	}
+	
+	army_chief = {
+		
+		soviet_valery_gerasimov = {
+		
+		    allowed = {
+			    original_tag = SOV
+			}
+			
+			traits = { army_chief_offensive_1 }
+		}
+
+		soviet_yuri_baluyevsky = {
+		    
+			allowed = {
+			    original_tag = SOV
+			}
+			
+			traits = { army_chief_defensive_1 }
+		}
+	}
+	
+	navy_chief = {		
+
+		soviet_vladimir_kuroyedov = {
+		
+		    allowed = {
+			    original_tag = SOV
+			}
+			
+			traits = { navy_chief_decisive_battle_2 }
+		}
+
+		soviet_sergei_avakyants = {
+		
+		    allowed = {
+			    original_tag = SOV
+			}
+			
+			traits = { navy_anti_submarine_2 }
+		}
+	}
+	
+	air_chief = {
+
+		soviet_tatiana_anodina = {
+		
+		    allowed = {
+			    original_tag = SOV
+			}
+			
+			traits = { air_close_air_support_2 }
+		}
+	
+		soviet_viktor_bondarev = {
+		
+		    allowed = {
+			    original_tag = SOV
+			}
+			
+			traits = { air_chief_all_weather_2 }			
+		}
+	}
+	
+	high_command = {
+
+		soviet_oleg_salyukov = {
+		
+		    allowed = {
+			    original_tag = SOV
+			}
+			
+			traits = { army_artillery_1 }			
+		}
+		
+		soviet_vladimir_chirkin = {
+		
+		    allowed = {
+			    original_tag = SOV
+			}
+			
+			traits = { army_logistics_2 }			
+		}
+
+		soviet_vladimir_masorin = {
+		
+		    allowed = {
+			    original_tag = SOV
+			}
+			
+			traits = { navy_fleet_logistics_1 }			
+		}
+
+		soviet_anatoly_kornukov = {
+		
+		    allowed = {
+			    original_tag = SOV
+			}
+			
+			traits = { air_air_combat_training_2 }			
+		}
+	}
+
+
+
+}

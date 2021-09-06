@@ -1,0 +1,542 @@
+﻿add_namespace = aswan
+
+#Lower Nile - Lower Nile and Aswan set to unify
+country_event = {
+	id = aswan.1
+	title = aswan.1.t
+	desc = aswan.1.d
+	picture = lower_nile_aswan_unify
+	
+	is_triggered_only = yes
+	
+	option = {   #Accept
+		name = aswan.1.o1
+		RAS = {
+			country_event = { id = aswan.2 }
+		}
+	}
+}
+
+#Lower Nile agrees
+country_event = {
+	id = aswan.2
+	title = aswan.2.t
+	desc = aswan.2.d
+	picture = lower_nile_aswan_unify
+	
+	is_triggered_only = yes
+	
+	option = {   
+		name = aswan.2.o1
+		if = {
+		    limit = {
+			    RAS = {
+				    is_ai = yes
+				}
+				RLN = {
+				    is_ai = yes
+				}
+			}
+			RAS = {
+			    annex_country = { 
+				    target = RLN 
+				    transfer_troops = yes
+			    }
+		    }
+		}
+		if = {
+		    limit = {
+			    RAS = {
+				    is_ai = no
+				}
+				RLN = {
+				    is_ai = yes
+				}
+			}
+			RAS = {
+			    annex_country = { 
+				    target = RLN 
+				    transfer_troops = yes
+			    }
+		    }
+		}
+		if = {
+		    limit = {
+			    RAS = {
+				    is_ai = yes
+				}
+				RLN = {
+				    is_ai = no
+				}
+			}
+			RLN = {
+			    annex_country = { 
+				    target = RAS 
+				    transfer_troops = yes
+			    }
+		    }
+		}
+	}
+}
+
+#Rebel government formed
+country_event = {
+	id = aswan.3
+	title = aswan.3.t
+	desc = aswan.3.d
+	picture = egyptian_loyalist_rebellion
+	
+	is_triggered_only = yes
+	
+	option = {   
+		name = aswan.3.o1
+	}
+}
+
+#President announces shift to left wing economics
+country_event = {
+	id = aswan.4
+	title = aswan.4.t
+	desc = aswan.4.d
+	picture = humanity_for_all_speech
+	
+	is_triggered_only = yes
+	
+	option = {   
+		name = aswan.4.o1
+	}
+}
+
+#Reactionary coup
+country_event = {
+	id = aswan.5
+	title = aswan.5.t
+	desc = aswan.5.d
+	picture = tunisia_coup
+	
+	is_triggered_only = yes
+	
+	option = {   
+		name = aswan.5.o1
+	}
+}
+
+#National Assembly established
+country_event = {
+	id = aswan.6
+	title = aswan.6.t
+	desc = aswan.6.d
+	picture = uar_assembly_convened
+	
+	is_triggered_only = yes
+	
+	option = {   
+		name = aswan.6.o1
+	}
+}
+
+#Martial law lifted
+country_event = {
+	id = aswan.7
+	title = aswan.7.t
+	desc = aswan.7.d
+	picture = private_military_corporations_syria
+	
+	is_triggered_only = yes
+	
+	option = {   
+		name = aswan.7.o1
+	}
+}
+
+#Austrian economic faction purged
+country_event = {
+	id = aswan.8
+	title = aswan.8.t
+	desc = aswan.8.d
+	picture = asma_purges_ssnp
+	
+	is_triggered_only = yes
+	
+	option = {   
+		name = aswan.8.o1
+	}
+}
+
+#Government promises large subsidies
+country_event = {
+	id = aswan.9
+	title = aswan.9.t
+	desc = aswan.9.d
+	picture = parliament_endorses_secularism_nac
+	
+	is_triggered_only = yes
+	
+	option = {   
+		name = aswan.9.o1
+	}
+}
+
+#Powers of President expanded
+country_event = {
+	id = aswan.10
+	title = aswan.10.t
+	desc = aswan.10.d
+	picture = president_meets_army_generals
+	
+	is_triggered_only = yes
+	
+	option = {   
+		name = aswan.10.o1
+	}
+}
+
+#Cabinet convenes for unification
+country_event = {
+	id = aswan.11
+	title = aswan.11.t
+	desc = aswan.11.d
+	picture = syrian_privy_council_created
+	
+	is_triggered_only = yes
+	
+	option = {   
+		name = aswan.11.o1
+	}
+}
+
+#President announces centrist economic policy
+country_event = {
+	id = aswan.12
+	title = aswan.12.t
+	desc = aswan.12.d
+	picture = humanity_for_all_speech
+	
+	is_triggered_only = yes
+	
+	option = {   
+		name = aswan.12.o1
+	}
+}
+
+#Centrist democratic coup
+country_event = {
+	id = aswan.13
+	title = aswan.13.t
+	desc = aswan.13.d
+	picture = tunisia_coup
+	
+	is_triggered_only = yes
+	
+	option = {   
+		name = aswan.13.o1
+	}
+}
+
+#Military influence weakened
+country_event = {
+	id = aswan.14
+	title = aswan.14.t
+	desc = aswan.14.d
+	picture = attempted_coup_in_cairo
+	
+	is_triggered_only = yes
+	
+	option = {   
+		name = aswan.14.o1
+	}
+}
+
+#Aswan modernisation act
+country_event = {
+	id = aswan.15
+	title = aswan.15.t
+	desc = aswan.15.d
+	picture = parliament_endorses_secularism_nac
+	
+	is_triggered_only = yes
+	
+	option = {   
+		name = aswan.15.o1
+	}
+}
+
+#Local elections
+country_event = {
+	id = aswan.16
+	title = aswan.16.t
+	desc = aswan.16.d
+	picture = lower_nile_election
+	
+	is_triggered_only = yes
+	
+	option = {   
+		name = aswan.16.o1
+	}
+}
+
+#President announces shift to right wing economics
+country_event = {
+	id = aswan.17
+	title = aswan.17.t
+	desc = aswan.17.d
+	picture = humanity_for_all_speech
+	
+	is_triggered_only = yes
+	
+	option = {   
+		name = aswan.17.o1
+	}
+}
+
+#Wave of privatisation
+country_event = {
+	id = aswan.18
+	title = aswan.18.t
+	desc = aswan.18.d
+	picture = businesses_support_welfare_state
+	
+	is_triggered_only = yes
+	
+	option = {   
+		name = aswan.18.o1
+	}
+}
+
+#Trade unions banned
+country_event = {
+	id = aswan.19
+	title = aswan.19.t
+	desc = aswan.19.d
+	picture = parliament_endorses_secularism_nac
+	
+	is_triggered_only = yes
+	
+	option = {   
+		name = aswan.19.o1
+	}
+}
+
+#Ba'ath coup
+country_event = {
+	id = aswan.20
+	title = aswan.20.t
+	desc = aswan.20.d
+	picture = tunisia_coup
+	
+	is_triggered_only = yes
+	
+	option = {   
+		name = aswan.20.o1
+	}
+}
+
+#Northern spies arrive
+country_event = {
+	id = aswan.21
+	title = aswan.21.t
+	desc = aswan.21.d
+	picture = american_executives_return
+	
+	is_triggered_only = yes
+	
+	option = {   
+		name = aswan.21.o1
+	}
+}
+
+#Samir revolution
+country_event = {
+	id = aswan.22
+	title = aswan.22.t
+	desc = aswan.22.d
+	picture = syrian_shadow_coup
+	
+	is_triggered_only = yes
+	
+	option = {   
+		name = aswan.22.o1
+	}
+}
+
+#Great purge
+country_event = {
+	id = aswan.23
+	title = aswan.23.t
+	desc = aswan.23.d
+	picture = asma_purges_ssnp
+	
+	is_triggered_only = yes
+	
+	option = {   
+		name = aswan.23.o1
+	}
+}
+
+#Religious agreement
+country_event = {
+	id = aswan.24
+	title = aswan.24.t
+	desc = aswan.24.d
+	picture = democratic_cooperation_middle_east
+	
+	is_triggered_only = yes
+	
+	option = {   
+		name = aswan.24.o1
+	}
+}
+
+#Far left purged in cabinet
+country_event = {
+	id = aswan.25
+	title = aswan.25.t
+	desc = aswan.25.d
+	picture = asma_purges_ssnp
+	
+	is_triggered_only = yes
+	
+	option = {   
+		name = aswan.25.o1
+	}
+}
+
+#President promises some democratisation
+country_event = {
+	id = aswan.26
+	title = aswan.26.t
+	desc = aswan.26.d
+	picture = parliament_endorses_secularism_nac
+	
+	is_triggered_only = yes
+	
+	option = {   
+		name = aswan.26.o1
+	}
+}
+
+#Discussing the future
+country_event = {
+	id = aswan.27
+	title = aswan.27.t
+	desc = aswan.27.d
+	picture = general_peoples_congress
+	
+	is_triggered_only = yes
+	
+	option = {   
+		name = aswan.27.o1
+	}
+}
+
+#President abolishes military cabinet
+country_event = {
+	id = aswan.28
+	title = aswan.28.t
+	desc = aswan.28.d
+	picture = syrian_privy_council_created
+	
+	is_triggered_only = yes
+	
+	option = {   
+		name = aswan.28.o1
+	}
+}
+
+#Leftists purged across country
+country_event = {
+	id = aswan.29
+	title = aswan.29.t
+	desc = aswan.29.d
+	picture = derg_arrested
+	
+	is_triggered_only = yes
+	
+	option = {   
+		name = aswan.29.o1
+	}
+}
+
+#Soviet military advisors arrive
+country_event = {
+	id = aswan.30
+	title = aswan.30.t
+	desc = aswan.30.d
+	picture = soviet_military_advisors_arrive
+	
+	is_triggered_only = yes
+	
+	option = {   
+		name = aswan.30.o1
+	}
+}
+
+#Government devotes itself to neutrality
+country_event = {
+	id = aswan.31
+	title = aswan.31.t
+	desc = aswan.31.d
+	picture = parliament_endorses_secularism_nac
+	
+	is_triggered_only = yes
+	
+	option = {   
+		name = aswan.31.o1
+	}
+}
+
+#Reunification minister
+country_event = {
+	id = aswan.32
+	title = aswan.32.t
+	desc = aswan.32.d
+	picture = syrian_privy_council_created
+	
+	is_triggered_only = yes
+	
+	option = {   
+		name = aswan.32.o1
+	}
+}
+
+#People demand reunification through whatever means
+country_event = {
+	id = aswan.33
+	title = aswan.33.t
+	desc = aswan.33.d
+	picture = nac_rally
+	
+	is_triggered_only = yes
+	
+	option = {   
+		name = aswan.33.o1
+	}
+}
+
+#Volunteers increase at rapid rate
+country_event = {
+	id = aswan.34
+	title = aswan.34.t
+	desc = aswan.34.d
+	picture = deputy_chief_of_the_army
+	
+	is_triggered_only = yes
+	
+	option = {   
+		name = aswan.34.o1
+	}
+}
+
+#People's republic constitution
+country_event = {
+	id = aswan.35
+	title = aswan.35.t
+	desc = aswan.35.d
+	picture = parliament_endorses_secularism_nac
+	
+	is_triggered_only = yes
+	
+	option = {   
+		name = aswan.35.o1
+	}
+}

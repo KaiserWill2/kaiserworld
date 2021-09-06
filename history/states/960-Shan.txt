@@ -1,0 +1,28 @@
+
+state={
+	id=960
+	name="STATE_960" # Shan 
+	manpower = 5824432
+	
+	state_category = rural
+	
+	resources = {
+		tungsten = 1
+	}
+
+	history={
+		owner = MYA
+		victory_points = {
+			1566 2 
+		}
+		buildings = {
+		infrastructure = 2	
+		}
+		
+	}
+	
+	provinces={
+		  12363 1170 1566 1607 7647 7603 2061 4210 7400 4175 7974 7909 10920  
+	}
+}
+

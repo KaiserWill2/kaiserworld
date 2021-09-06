@@ -1,0 +1,22 @@
+state={
+	id=907
+	name="STATE_907"
+	resources={
+		oil=2.000
+	}
+	provinces={
+		1062 1127 4120 7063 13560 
+	}
+	state_category = large_town
+	history={
+		owner = LBA
+		add_core_of = LBA
+		buildings = {
+			infrastructure = 3
+			arms_factory = 1
+		}
+
+	}
+	manpower=190000
+	buildings_max_level_factor=1.000
+}

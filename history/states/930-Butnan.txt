@@ -1,0 +1,21 @@
+state={
+	id=930
+	name="STATE_930"
+	resources={
+		oil=12.000
+	}
+	provinces={
+		4060 4136 7206 10120 13078 13549 13550 13551 13564 13570 13571 
+	}
+	state_category = pastoral
+	history={
+		owner = LBA
+		add_core_of = LBA
+		buildings = {
+			infrastructure = 1
+		}
+
+	}
+	manpower=150000
+	buildings_max_level_factor=1.000
+}

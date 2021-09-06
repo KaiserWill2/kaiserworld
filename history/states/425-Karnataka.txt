@@ -1,0 +1,35 @@
+
+state={
+	id=425
+	name="STATE_425" # Mysore
+	manpower = 72348200
+	
+	state_category = large_town
+	
+	resources={
+		chromium=20
+		tungsten=90
+		oil=12
+		steel=14
+	}
+
+	history={
+		owner = RAJ
+		add_core_of = RAJ
+		add_core_of = KRN
+		victory_points = {
+			8011 15
+		}
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 2
+			arms_factory = 2
+			dockyard = 1
+		}
+
+	}
+
+	provinces={
+		1412 4278 4291 4315 4344  5032 7244 7250  7395 7411 8011 8100 10190 10208 10259 10799 12105 12146 12208 12295 12734 1359 10324
+	}
+}

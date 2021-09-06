@@ -1,0 +1,234 @@
+﻿
+division_template = {
+	name = "Infantry Brigade"
+	
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+	}
+}
+division_template = {
+	name = "Mountain Brigade"
+	
+	regiments = {
+		mountaineers = { x = 0 y = 0 }
+		mountaineers = { x = 0 y = 1 }
+		mountaineers = { x = 0 y = 2 }
+		motorized = { x = 0 y = 3 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+	}
+}
+division_template = {
+	name = "Motorized Brigade"
+	
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		motorized = { x = 0 y = 3 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+	}
+	support = {
+		field_hospital = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+	}
+}
+division_template = {
+	name = "Armored Brigade"
+	
+	regiments = {
+		light_armor = { x = 0 y = 0 }
+		light_armor = { x = 0 y = 1 }
+		light_armor = { x = 0 y = 2 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+	}
+	
+	priority = 2
+}
+division_template = {
+	name = "Artillery Regiment"
+	
+	regiments = {
+		artillery_brigade = { x = 0 y = 0 }
+		artillery_brigade = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 1 y = 3 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+	}
+	
+	priority = 0
+}
+units = {
+	division = {
+		name = "1st Serbian Division"
+		location = 11586
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "1st Bosnian Division"
+		location = 11872
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "1st Slovenian Division"
+		location = 596
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "1st Croatian Division"
+		location = 3596
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "1st Montenegrin Division"
+		location = 9809
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "1st Macedonian Division"
+		location = 3882
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "Belgrade Armored Brigade"
+		location = 11586
+		division_template = "Armored Brigade"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "Bosnian National Armored Brigade"
+		location = 11872
+		division_template = "Armored Brigade"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "Croat Armor"
+		location = 591
+		division_template = "Armored Brigade"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "Montenegrin 1st Armor"
+		location = 9821
+		division_template = "Armored Brigade"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "1st Croatian Mechanised"
+		location = 3974
+		division_template = "Motorized Brigade"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "2nd Croatian Mechanised"
+		location = 11594
+		division_template = "Motorized Brigade"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "3rd Croatian Mechanised"
+		location = 3596
+		division_template = "Motorized Brigade"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "1st Bosnian Mechanised"
+		location = 9588
+		division_template = "Motorized Brigade"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "1st Serbian Mechanised"
+		location = 6998
+		division_template = "Motorized Brigade"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "2nd Serbian Mechanised"
+		location = 9756
+		division_template = "Motorized Brigade"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "3rd Serbian Mechanised"
+		location = 614
+		division_template = "Motorized Brigade"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "4th Serbian Mechanised"
+		location = 619
+		division_template = "Motorized Brigade"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "1st Montenegrin Mechanised"
+		location = 9809
+		division_template = "Motorized Brigade"
+		start_experience_factor = 0.2
+	}
+	
+	division = {
+		name = "1st Macedonian Mechanised"
+		location = 974
+		division_template = "Motorized Brigade"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "1st Slovenian Mechanised"
+		location = 11595
+		division_template = "Motorized Brigade"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "2nd Bosnian Mechanised"
+		location = 6957
+		division_template = "Motorized Brigade"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "3rd Bosnian Mechanised"
+		location = 606
+		division_template = "Motorized Brigade"
+		start_experience_factor = 0.3
+	}
+}

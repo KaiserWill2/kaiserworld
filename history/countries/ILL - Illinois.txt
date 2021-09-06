@@ -1,0 +1,270 @@
+﻿capital = 373
+
+oob = "ILL_2000"
+
+set_research_slots = 3
+set_convoys = 500
+set_stability = 0.5
+set_war_support = 0.1
+
+add_ideas = {
+	idea_america_neutrality_statelet
+}
+
+set_technology = {
+	support_weapons = 1
+	infantry_weapons = 1
+	motorised_infantry = 1 
+	tech_support = 1 
+	tech_field_hospital = 1 
+	tech_engineers = 1 
+	gwtank = 1 
+	basic_light_tank = 1 
+	gw_artillery = 1 
+	early_fighter = 1 
+	early_bomber = 1 
+	interwar_antiair = 1
+	interwar_antitank = 1
+	
+}
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	set_technology = {
+		early_submarine = 1
+		basic_submarine = 1
+		early_destroyer = 1
+		early_light_cruiser = 1
+		basic_light_cruiser = 1
+		early_heavy_cruiser = 1
+		
+		
+		early_carrier = 1
+		basic_carrier = 1
+		transport = 1
+	}
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_technology = {
+		basic_naval_mines = 1
+		submarine_mine_laying = 1
+		early_ship_hull_light = 1
+		basic_ship_hull_light = 1
+		early_ship_hull_submarine = 1
+		basic_ship_hull_submarine = 1
+		early_ship_hull_cruiser = 1
+		basic_ship_hull_cruiser = 1
+		early_ship_hull_heavy = 1
+		early_ship_hull_carrier = 1
+		basic_ship_hull_carrier = 1
+		basic_battery = 1
+		basic_light_battery = 1
+		basic_medium_battery = 1
+		basic_heavy_battery = 1
+		basic_torpedo = 1
+		sonar = 1
+		basic_depth_charges = 1
+		basic_secondary_battery = 1
+		improved_secondary_battery = 1
+		basic_cruiser_armor_scheme = 1
+		basic_heavy_armor_scheme = 1
+		mtg_transport = 1
+		improved_airplane_launcher = 1
+	}
+}
+set_politics = {
+	ruling_party = liberal
+	last_election = "1997.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+        fascist = 2
+		nationalist = 16
+		monarchist = 0
+		national_bolshevik = 0
+		national_conservative = 29
+		centrist = 6
+		liberal = 39
+		new_democrat = 4
+		moderate_socialist = 0
+		revolutionary_socialist = 0
+		communist = 4
+}
+
+create_country_leader = {
+	name = "Erich Gliebe"
+	picture = "Portrait_ILL_Erich_Gliebe.dds"
+	ideology = national_socialist
+}
+
+create_country_leader = {
+	name = "Matthew Hale"
+	picture = "Portrait_ILL_Matthew_Hale.dds"
+	ideology = national_bolshevik_ideology
+}
+
+create_country_leader = {
+	name = "Royal Chamber of Illinois"
+	picture = "Portrait_ILL_Royal_Chamber.dds"
+	ideology = absolute_monarchist
+}
+
+create_country_leader = {
+	name = "Sebastian Gorka"
+	picture = "Portrait_ILL_Sebastian_Gorka.dds"
+	ideology = nationalist_ideology
+}
+
+create_country_leader = {
+	name = "Jim Durkin"
+	picture = "Portrait_ILL_Jim_Durkin.dds"
+	ideology = american_conservative
+}
+
+create_country_leader = {
+	name = "Pat Quinn"
+	picture = "Portrait_ILL_Pat_Quinn.dds"
+	ideology = centrist_populist
+}
+
+create_country_leader = {
+	name = "Stephen Webber"
+	picture = "Portrait_ILL_Stephen_Webber.dds"
+	ideology = old_american_democrats
+}
+
+create_country_leader = {
+	name = "Martin O'Malley"
+	picture = "Portrait_ILL_Martin_Malley.dds"
+	ideology = new_democrat_ideology
+}
+
+create_country_leader = {
+	name = "Nicole Galloway"
+	picture = "Portrait_ILL_Nicole_Galloway.dds"
+	ideology = progressive
+}
+
+create_country_leader = {
+	name = "Rob Sherman"
+	picture = "Portrait_ILL_Rob_Sherman.dds"
+	ideology = revolutionary_socialist_ideology
+}
+
+create_country_leader = {
+	name = "Ron Dellums"
+	picture = "Portrait_ILL_Ron Dellums.dds"
+	ideology = american_communist
+}
+
+create_field_marshal = {
+	name = "William S. Wallace"
+	picture = "Portrait_William_S_Wallace.dds"
+	traits = {  }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "George William Casey Jr."
+	picture = "Portrait_George_William_Casey_Jr.dds"
+	traits = {  }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Frank Grass"
+	picture = "Portrait_Frank_Grass.dds"
+	traits = {  }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Corey L. Crosbie"
+	picture = "Portrait_Corey_L_Crosbie.dds"
+	traits = {  }
+	skill = 2
+	attack_skill = 3
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Gregg A. Sturdevant"
+	picture = "Portrait_Gregg_A_Sturdevant.dds"
+	traits = {  }
+	skill = 2
+	attack_skill = 1
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Lloyd Austin"
+	picture = "Portrait_Lloyd_Austin.dds"
+	traits = {  }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Michael Ferriter"
+	picture = "Portrait_Michael_Ferriter.dds"
+	traits = {  }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Robert Ferrell"
+	picture = "Portrait_Robert_Ferrell.dds"
+	traits = {  }
+	skill = 2
+	attack_skill = 1
+	defense_skill = 4
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_navy_leader = {
+	name = "Gary Roughead"
+	picture = "Portrait_Gary_Roughead.dds"
+	traits = {  }
+	skill = 2
+	attack_skill = 3
+	defense_skill = 1
+	coordination_skill = 1
+	maneuvering_skill = 2
+}
+
+create_navy_leader = {
+	name = "Timothy J. Keating"
+	picture = "Portrait_Timothy_J_Keating.dds"
+	traits = {  }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	coordination_skill = 2
+	maneuvering_skill = 1
+}

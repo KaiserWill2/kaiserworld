@@ -1,0 +1,148 @@
+﻿capital = 825
+
+oob = "QAT_2000"
+
+set_research_slots = 4
+set_convoys = 500
+set_stability = 0.9
+set_war_support = 0.1
+
+set_country_flag = was_in_british_empire
+set_country_flag = muslim_nation
+
+set_technology = {
+	support_weapons = 1
+	infantry_weapons = 1
+	motorised_infantry = 1 
+	tech_support = 1 
+	tech_field_hospital = 1 
+	tech_engineers = 1 
+	gwtank = 1 
+	basic_light_tank = 1 
+	gw_artillery = 1 
+	tech_mountaineers = 1
+	early_light_cruiser = 1
+	early_fighter = 1 
+	early_bomber = 1 
+	early_submarine = 1
+    transport = 1 
+	paratroopers = 1 
+	interwar_antiair = 1
+	interwar_antitank = 1
+}
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	set_technology = {
+		early_submarine = 1
+		basic_submarine = 1
+		early_destroyer = 1
+		early_light_cruiser = 1
+		basic_light_cruiser = 1
+		early_heavy_cruiser = 1
+		
+		
+		early_carrier = 1
+		basic_carrier = 1
+		transport = 1
+	}
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_technology = {
+		basic_naval_mines = 1
+		submarine_mine_laying = 1
+		early_ship_hull_light = 1
+		basic_ship_hull_light = 1
+		early_ship_hull_submarine = 1
+		basic_ship_hull_submarine = 1
+		early_ship_hull_cruiser = 1
+		basic_ship_hull_cruiser = 1
+		early_ship_hull_heavy = 1
+		early_ship_hull_carrier = 1
+		basic_ship_hull_carrier = 1
+		basic_battery = 1
+		basic_light_battery = 1
+		basic_medium_battery = 1
+		basic_heavy_battery = 1
+		basic_torpedo = 1
+		sonar = 1
+		basic_depth_charges = 1
+		basic_secondary_battery = 1
+		improved_secondary_battery = 1
+		basic_cruiser_armor_scheme = 1
+		basic_heavy_armor_scheme = 1
+		mtg_transport = 1
+		improved_airplane_launcher = 1
+	}
+}
+
+set_politics = {
+	ruling_party = monarchist
+	last_election = "1997.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+        fascist = 0
+		nationalist = 20
+		monarchist = 20
+		national_bolshevik = 0
+		national_conservative = 2
+		centrist = 0
+		liberal = 0
+		new_democrat = 22
+		moderate_socialist = 0
+		revolutionary_socialist = 2
+		communist = 34
+}
+
+create_country_leader = {
+	name = "Hamad bin Khalifa Al Thani"
+	picture = "Portrait_QAT_Hamad_bin_Khalifa_Al_Thani.dds"
+	ideology = absolute_monarchist
+}
+
+create_field_marshal = {
+	name = "Ghanem bin Shaheen Al Ghanem"
+	picture = "Portrait_Ghanim_bin_Shaheen_al_Ghanim.dds"
+	traits = { organisational_leader offensive_doctrine }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Mohammed bin Ali Al Ghanim Al Maadeed"
+	picture = "Portrait_Mohammed_bin_Ali_Al_Ghanim_Al_Maadeed.dds"
+	traits = { trait_engineer fortress_buster }
+	skill = 2
+	attack_skill = 3
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Abdulaziz Yousus Al Naemi"
+	picture = "Portrait_Abdulaziz_Yousus_Al_Naemi.dds"
+	traits = { commando desert_fox urban_assault_specialist }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_navy_leader = {
+	name = "Mohammed Nasser Al Mohannadi"
+	picture = "Portrait_Mohammed_Nasser_al_Mohannadi.dds"
+	traits = { blockade_runner }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	coordination_skill = 1
+	maneuvering_skill = 3
+}

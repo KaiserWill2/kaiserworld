@@ -1,0 +1,23 @@
+state={
+	id=790
+	name="STATE_790"
+	history = {
+		owner = SOV
+		add_core_of = SOV
+
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+add_core_of = AZR
+add_core_of = ARM
+		victory_points = { 6997 2 }
+	}
+	provinces={
+		6997
+	}
+	manpower=340237
+	buildings_max_level_factor=1.000
+
+	state_category = enclave
+}

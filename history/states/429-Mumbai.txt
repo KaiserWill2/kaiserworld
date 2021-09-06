@@ -1,0 +1,48 @@
+
+state={
+	id=429
+	name="STATE_429"
+	manpower = 116355600
+	state_category = megalopolis
+	
+	resources={
+		tungsten=26
+		steel=33
+		oil=2
+		aluminium=43
+	}
+
+	history={
+		owner = RAJ
+		add_core_of = RAJ
+		add_core_of = MHA
+		buildings = {
+			infrastructure = 8
+			industrial_complex = 5
+			arms_factory = 3
+			dockyard = 2
+			air_base = 2
+			1349 = {
+				naval_base = 9
+			}
+		}
+		victory_points = {
+			1349 30
+		}
+		victory_points = {
+			12182 5
+		}
+		victory_points = {
+			7619 5
+		}
+		2016.1.1 = {
+			buildings = {
+				industrial_complex = 10
+			}
+		}
+	}
+
+	provinces={
+			1349 1405 4072 4353 7013 7060 7119 7177 7232 10019 10210 10270 12142 12182 12269 5063 5019 4395 10511 12226 10311 7430 12781 7619
+	}
+}

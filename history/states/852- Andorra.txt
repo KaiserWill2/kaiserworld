@@ -1,0 +1,28 @@
+
+state={
+	id=852
+	name="STATE_852"
+	manpower = 85580
+	
+	state_category = enclave
+	
+	resources = {
+		steel=1
+	}
+
+	history={
+		owner = SPR
+		add_core_of = CAT
+		add_core_of = SPR
+		add_claim_by = FRA
+		buildings = {
+			infrastructure = 2
+		}
+		victory_points = { 13206 1 }
+	}
+
+	provinces={
+		13206 
+	}
+	
+}

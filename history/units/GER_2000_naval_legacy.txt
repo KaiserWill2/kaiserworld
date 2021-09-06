@@ -1,0 +1,25 @@
+﻿units= {
+
+	####### NAVAL UNITS #######
+	##### GERMAN FLEET #####
+	##### ROTFLOTTE #####
+	### Wilhemshaven ###
+
+	fleet = {
+		name = "RotFlotte"			
+		naval_base = 241 # Wilhemshaven
+		task_force = {
+			name = "Engels Fleet"
+			location = 241 # Dunkirk
+			ship = {
+				name = "Fredrich Engels" definition = carrier equipment = { carrier_1 = { amount = 1 owner = GER version_name = "Carrier I" } } 
+				air_wings = {
+					cv_fighter_equipment_0 =  { owner = "GER" amount = 20 }
+					cv_nav_bomber_equipment_1 =  { owner = "GER" amount = 20 }
+				}
+			}	
+			ship = { name = "Ernst Thalmann" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER version_name = "Destroyer I" } } }
+			ship = { name = "Erich Honecker" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER version_name = "Destroyer I" } } }
+		}
+	}
+}

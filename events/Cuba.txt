@@ -1,0 +1,71 @@
+add_namespace = cuba
+
+country_event = { #Cuba Siezes Guantanamo Bay
+	id = cuba.1
+	title = cuba.1.t
+	desc = cuba.1.d
+	picture = cuba_gitmo_seizure_pic
+	
+	trigger = {
+		tag = CUB
+		USA = {
+			surrender_progress > 0.8
+		}
+		NOT = {
+			CUB = {
+				OR = {
+					is_puppet = yes
+					is_subject = yes
+				}
+				OR = {
+					is_in_faction_with = USA
+				}
+			}
+		}
+	}
+	
+	fire_only_once = yes
+	
+	option = { #Retake what is rightfully ours!
+		name = cuba.1.o1
+		add_political_power = 50
+		add_stability = 0.05
+		CUB = {
+			transfer_state = 880
+		}
+		USA = {
+			hidden_effect = {
+				country_event = {
+					id = cuba.2
+					days = 2
+				}
+			}
+		}
+		ai_chance = {
+			factor = 99
+		}
+	}
+	
+	option = { #Let's not be too hasty
+		name = cuba.1.o2
+		add_war_support = -0.15
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+country_event = { #Cuba seizes Gitmo!
+	id = cuba.2
+	title = cuba.2.t
+	desc = cuba.2.d
+	picture = cuba_gitmo_military_pic
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = { #Damn Cubans!
+		name = cuba.2.o1
+		add_political_power = -5
+	}
+}

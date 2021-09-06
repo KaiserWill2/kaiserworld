@@ -1,0 +1,46 @@
+ideas = {
+
+    country = {
+		
+		idea_yug_brotherhood_and_unity = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = brotherhood_and_unity
+			
+			modifier = {
+				political_power_cost = 0.5
+				stability_factor = -0.1
+				army_org = -10
+			}
+		}
+		
+		idea_yug_yugoslav_model = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = yugoslav_model
+			
+			modifier = {
+				consumer_goods_factor = 0.2
+				industrial_capacity_factory = -0.1
+				production_speed_buildings_factor = -0.2
+				political_power_gain = 0.1
+			}
+		}
+	}
+}

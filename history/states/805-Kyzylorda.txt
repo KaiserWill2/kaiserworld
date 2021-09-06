@@ -1,0 +1,16 @@
+state={
+	id=805
+	name="STATE_805"
+	history = {
+		owner = SOV
+		add_core_of = SOV
+add_core_of = KZH
+	}
+	provinces={
+		4578 4581 4636 4638 7486 7777 10353 10366 12471
+	}
+	manpower=171437
+	buildings_max_level_factor=1.000
+
+	state_category = rural
+}

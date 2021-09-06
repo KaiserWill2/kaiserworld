@@ -1,0 +1,18 @@
+state={
+	id=925
+	name="STATE_925"
+	provinces={
+		1994 12022 13233 13236 13238 13243 13244 13245 13251 13254 13255 
+	}
+	state_category = wasteland
+	history={
+		owner = LBA
+		add_core_of = LBA
+		buildings = {
+			infrastructure = 1
+		}
+
+	}
+	manpower=8000
+	buildings_max_level_factor=1.000
+}

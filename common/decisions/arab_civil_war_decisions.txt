@@ -1,0 +1,48 @@
+arab_civil_war = {
+	crush_syria = {
+		days_mission_timeout = 365
+		selectable_mission = no
+		is_good = no
+		allowed = {
+			tag = UAR
+		}
+		available = {
+			NOT = {
+				has_war_with = SYR
+			}
+		}
+		activation = {
+			has_country_flag = sharaf_invaded_syria
+			has_war_with = SYR
+		}
+		timeout_effect = {
+			custom_effect_tooltip = crush_syria_timeout_tt
+			hidden_effect = {
+				white_peace = SYR
+				country_event = uar.77
+				every_country = {
+					news_event = news.258
+				}
+			}
+		}
+	}
+	syria_survive = {
+		days_mission_timeout = 365
+		selectable_mission = no
+		is_good = no
+		allowed = {
+			tag = SYR
+		}
+		available = {
+			NOT = {
+				has_war_with = UAR
+			}
+		}
+		activation = {
+			has_war_with = UAR
+		}
+		timeout_effect = {
+			custom_effect_tooltip = syria_survive_timeout_tt
+		}
+	}
+}

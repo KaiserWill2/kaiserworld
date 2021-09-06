@@ -1,0 +1,29 @@
+
+state={
+	id=451
+	name="STATE_451"
+	resources={
+		oil=7.000
+	}
+
+	history={
+		owner = LBA
+		victory_points = { 7082 1 }
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			arms_factory = 1
+			air_base = 6
+
+		}
+		add_core_of = LBA
+
+	}
+
+	provinces={
+		1204 4151 7082 9992 12094 
+	}
+	manpower=589000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

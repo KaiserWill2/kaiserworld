@@ -1,0 +1,25 @@
+state={
+	id=944
+	name="STATE_944"
+	provinces={
+		3772 6788 6973 
+	}
+	history={
+		owner = ITA
+		add_core_of = ITA
+		add_core_of = PIE
+		add_core_of = GEN
+		buildings = {
+			infrastructure = 9
+			industrial_complex = 2
+			arms_factory = 1
+		}
+		victory_points = {
+			6788 15
+		}
+
+	}
+	manpower=1565349
+	state_category = city
+	buildings_max_level_factor=1.000
+}

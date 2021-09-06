@@ -1,0 +1,157 @@
+﻿capital = 230
+
+oob = "generic_2000"
+
+set_research_slots = 4
+set_convoys = 500
+set_stability = 0.8
+set_war_support = 0.3
+
+set_technology = {
+	support_weapons = 1
+	infantry_weapons = 1
+	motorised_infantry = 1 
+	tech_support = 1 
+	tech_field_hospital = 1 
+	tech_engineers = 1 
+	gwtank = 1 
+	basic_light_tank = 1 
+	gw_artillery = 1 
+	tech_mountaineers = 1
+	early_fighter = 1 
+	interwar_antiair = 1
+	interwar_antitank = 1
+}
+
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	set_technology = {
+		early_submarine = 1
+		basic_submarine = 1
+		early_destroyer = 1
+		early_light_cruiser = 1
+		basic_light_cruiser = 1
+		early_heavy_cruiser = 1
+		
+		
+		early_carrier = 1
+		basic_carrier = 1
+		transport = 1
+	}
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_technology = {
+		basic_naval_mines = 1
+		submarine_mine_laying = 1
+		early_ship_hull_light = 1
+		basic_ship_hull_light = 1
+		early_ship_hull_submarine = 1
+		basic_ship_hull_submarine = 1
+		early_ship_hull_cruiser = 1
+		basic_ship_hull_cruiser = 1
+		early_ship_hull_heavy = 1
+		early_ship_hull_carrier = 1
+		basic_ship_hull_carrier = 1
+		basic_battery = 1
+		basic_light_battery = 1
+		basic_medium_battery = 1
+		basic_heavy_battery = 1
+		basic_torpedo = 1
+		sonar = 1
+		basic_depth_charges = 1
+		basic_secondary_battery = 1
+		improved_secondary_battery = 1
+		basic_cruiser_armor_scheme = 1
+		basic_heavy_armor_scheme = 1
+		mtg_transport = 1
+		improved_airplane_launcher = 1
+	}
+}
+
+set_politics = {
+	ruling_party = nationalist
+	last_election = "1997.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+        fascist = 0
+		nationalist = 26
+		monarchist = 20
+		national_bolshevik = 14
+		national_conservative = 0
+		centrist = 0
+		liberal = 0
+		new_democrat = 7
+		moderate_socialist = 0
+		revolutionary_socialist = 14
+		communist = 19
+}
+
+create_country_leader = {
+	name = "Raj Kumar Rauniyar"
+	picture = "Portrait_NEP_Raj_Kumar_Rauniyar.dds"
+	ideology = fascist_ideology
+}
+
+create_country_leader = {
+	name = "Kamal Thapa"
+	picture = "Portrait_NEP_Kamal_Thapa.dds"
+	ideology = hindutva
+}
+
+create_country_leader = {
+	name = "Birendra Bir Bikram Shah"
+	picture = "Portrait_NEP_Birendra_Bir_Bikram_Shah.dds"
+	ideology = absolute_monarchist
+}
+
+create_country_leader = {
+	name = "Pushpa Kamal Dahal"
+	picture = "Portrait_NEP_Pushpa_Kamal_Dahal.dds"
+	ideology = marxist_leninist_maoist
+}
+
+create_country_leader = {
+	name = "Ek Nath Dhakal"
+	picture = "Portrait_NEP_Ek_Nath_Dhakal.dds"
+	ideology = agrarian_conservative
+}
+
+create_country_leader = {
+	name = "Ujwal Thapa"
+	picture = "Portrait_NEP_Ujwal_Thapa.dds"
+	ideology = centrist_ideology
+}
+
+create_country_leader = {
+	name = "Surya Bahadur Thapa"
+	picture = "Portrait_NEP_Surya_Bahadur_Thapa.dds"
+	ideology = social_liberal
+}
+
+create_country_leader = {
+	name = "Sher Bahadur Deuba"
+	picture = "Portrait_NEP_Sher_Bahadur_Deuba.dds"
+	ideology = new_democrat_ideology
+}
+
+create_country_leader = {
+	name = "Upendra Yadav"
+	picture = "Portrait_NEP_Upendra_Yadav.dds"
+	ideology = democratic_socialist
+}
+
+create_country_leader = {
+	name = "C. P. Mainali"
+	picture = "Portrait_NEP_C_P_Mainali.dds"
+	ideology = revolutionary_socialist_ideology
+}
+
+create_country_leader = {
+	name = "K. P. Sharma Oli"
+	picture = "Portrait_NEP_K_P_Sharma_Oli.dds"
+	ideology = marxist
+}

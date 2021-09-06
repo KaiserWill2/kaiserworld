@@ -1,0 +1,324 @@
+﻿capital = 689
+
+oob = "JAM_2000"
+
+set_research_slots = 4
+set_convoys = 500
+set_stability = 0.8
+set_war_support = 0.3
+
+set_country_flag = was_in_british_empire
+
+set_technology = {
+	support_weapons = 1
+	infantry_weapons = 1
+	motorised_infantry = 1 
+	tech_support = 1 
+	tech_field_hospital = 1 
+	tech_engineers = 1 
+	gwtank = 1 
+	basic_light_tank = 1 
+	gw_artillery = 1 
+	tech_mountaineers = 1
+	early_fighter = 1 
+	early_bomber = 1 
+    transport = 1 
+	interwar_antiair = 1
+	interwar_antitank = 1
+}
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	set_technology = {
+		early_submarine = 1
+		basic_submarine = 1
+		early_destroyer = 1
+		early_light_cruiser = 1
+		basic_light_cruiser = 1
+		early_heavy_cruiser = 1
+		
+		
+		early_carrier = 1
+		basic_carrier = 1
+		transport = 1
+	}
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_technology = {
+		basic_naval_mines = 1
+		submarine_mine_laying = 1
+		early_ship_hull_light = 1
+		basic_ship_hull_light = 1
+		early_ship_hull_submarine = 1
+		basic_ship_hull_submarine = 1
+		early_ship_hull_cruiser = 1
+		basic_ship_hull_cruiser = 1
+		early_ship_hull_heavy = 1
+		early_ship_hull_carrier = 1
+		basic_ship_hull_carrier = 1
+		basic_battery = 1
+		basic_light_battery = 1
+		basic_medium_battery = 1
+		basic_heavy_battery = 1
+		basic_torpedo = 1
+		sonar = 1
+		basic_depth_charges = 1
+		basic_secondary_battery = 1
+		improved_secondary_battery = 1
+		basic_cruiser_armor_scheme = 1
+		basic_heavy_armor_scheme = 1
+		mtg_transport = 1
+		improved_airplane_launcher = 1
+	}
+}
+set_politics = {
+	ruling_party = centrist
+	last_election = "1997.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+        fascist = 0
+		nationalist = 3
+		monarchist = 0
+		national_bolshevik = 10
+		national_conservative = 6
+		centrist = 47
+		liberal = 24
+		new_democrat = 0
+		moderate_socialist = 0
+		revolutionary_socialist = 2
+		communist = 8
+}
+
+create_country_leader = {
+	name = "Antony Bertram Anderson"
+	picture = "Portrait_JAM_Antony_Bertram_Anderson.dds"
+	ideology = fascist_ideology
+}
+
+create_country_leader = {
+	name = "Andrew Holness"
+	picture = "Portrait_JAM_Andrew_Holness.dds"
+	ideology = nationalist_ideology
+}
+
+create_country_leader = {
+	name = "Patrick Allen"
+	picture = "Portrait_JAM_Patrick_Allen.dds"
+	ideology = absolute_monarchist
+}
+
+create_country_leader = {
+	name = "Leon Burrell"
+	picture = "Portrait_JAM_Leon_Burrell.dds"
+	ideology = national_bolshevik_ideology
+}
+
+create_country_leader = {
+	name = "Peter Townsend"
+	picture = "Portrait_JAM_Peter_Townsend.dds"
+	ideology = fiscal_conservative
+}
+
+create_country_leader = {
+	name = "Joseph Patterson"
+	picture = "Portrait_JAM_Joseph_Patterson.dds"
+	ideology = centrist_populist
+}
+
+create_country_leader = {
+	name = "Carolyn Gomes"
+	picture = "Portrait_JAM_Carolyn_Gomes.dds"
+	ideology = social_liberal
+}
+
+create_country_leader = {
+	name = "Portia Simpson-Miller"
+	picture = "Portrait_JAM_Portia_Simpson_Miller.dds"
+	ideology = new_democrat_ideology
+}
+
+create_country_leader = {
+	name = "Percival James Patterson"
+	picture = "Portrait_JAM_Percival_James_Patterson.dds"
+	ideology = democratic_socialist
+}
+
+create_country_leader = {
+	name = "Wayne Jones"
+	picture = "Portrait_JAM_Wayne_Jones.dds"
+	ideology = syndicalism
+}
+
+create_country_leader = {
+	name = "Trevor Munroe"
+	picture = "Portrait_JAM_Trevor_Munroe.dds"
+	ideology = leninist
+}
+
+create_field_marshal = {
+	name = "Rocky R. Meade"
+	picture = "Portrait_Meade.dds"
+	traits = { offensive_doctrine }
+	skill = 2
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_field_marshal = {
+	name = "Anthony Bertram Anderson"
+	picture = "Portrait_Anderson.dds"
+	traits = { old_guard organisational_leader }
+	skill = 2
+	attack_skill = 1
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 1
+}
+
+create_field_marshal = {
+	name = "David A. Cummings"
+	picture = "Portrait_Cummings.dds"
+	traits = { fast_planner }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_field_marshal = {
+	name = "Jamie Stuart Archibald Ogilvie"
+	picture = "Portrait_Ogilvie.dds"
+	traits = { thorough_planner }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_field_marshal = {
+	name = "Daniel G. Pryce"
+	picture = "Portrait_Pryce.dds"
+	traits = { defensive_doctrine }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_field_marshal = {
+	name = "Rohan Omar Hibbert"
+	picture = "Portrait_Hibbert.dds"
+	traits = { inspirational_leader }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_field_marshal = {
+	name = "Dionne N. Smalling"
+	picture = "Portrait_Smalling.dds"
+	traits = { logistics_wizard }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Maurice A. Matthews"
+	picture = "Portrait_Matthews.dds"
+	traits = { trickster }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Kirk Patrick Johnson"
+	picture = "Portrait_Kirk_Johnson.dds"
+	traits = { ranger }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Rohan F. Johnson"
+	picture = "Portrait_Rohan_Johnson.dds"
+	traits = { fortress_buster }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "David P. Chin Fong"
+	picture = "Portrait_Chin_Fong.dds"
+	traits = { trait_engineer trickster }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Roderick A. Williams"
+	picture = "Portrait_Williams.dds"
+	traits = { commando }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Martin E. Rickman"
+	picture = "Portrait_Rickman.dds"
+	traits = { trait_engineer }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Winston William Walcott"
+	picture = "Portrait_Walcott.dds"
+	traits = { urban_assault_specialist }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_navy_leader = {
+	name = "Antonette S. Wemyss-Gorman"
+	picture = "Portrait_Wemyss_Gorman.dds"
+	traits = { blockade_runner }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	coordination_skill = 1
+	maneuvering_skill = 1
+}

@@ -1,0 +1,19 @@
+state={
+	id=937
+	name="STATE_937"
+	provinces={
+		8069 13433 13435 13436 13466 13467 13470 13483 13501 
+	}
+	state_category = rural
+	history={
+		owner = LBA
+		add_core_of = LBA
+		victory_points = { 13470 1 }
+		buildings = {
+			infrastructure = 1
+		}
+
+	}
+	manpower=15801
+	buildings_max_level_factor=1.000
+}

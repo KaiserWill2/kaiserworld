@@ -1,0 +1,30 @@
+
+state={
+	id=1013
+	name="STATE_1013"
+
+	resources = {
+		steel=20
+	}
+
+	history={
+		owner = ALA
+
+		buildings = {
+			infrastructure = 2
+
+		}
+		add_core_of = ALA
+		victory_points = {
+			13203 3
+		}
+
+	}
+
+	provinces={
+		13203 13202 10707
+	}
+	manpower=11234
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

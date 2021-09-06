@@ -1,0 +1,16 @@
+state = {
+	id = 989
+	name = "STATE_989"
+
+	history = {
+		owner = UAR
+		add_core_of = UAR
+	}
+
+	provinces = {
+		13727
+	}
+	manpower = 451000
+	buildings_max_level_factor = 1.000
+	state_category = rural
+}

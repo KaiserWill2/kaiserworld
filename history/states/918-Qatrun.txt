@@ -1,0 +1,18 @@
+state={
+	id=918
+	name="STATE_918"
+	provinces={
+		13259 13264 13265 13268 13269 13270 13276 13277 13279 13283 13286 13290 13295 13297 13314 
+	}
+	state_category = rural
+	history={
+		owner = LBA
+		add_core_of = LBA
+		buildings = {
+			infrastructure = 1
+		}
+
+	}
+	manpower=70000
+	buildings_max_level_factor=1.000
+}

@@ -1,0 +1,1350 @@
+american_unification = {
+	USA_united = {
+		visible = {
+			has_country_flag = unifying_america
+			NOT = {
+				has_country_flag = the_united_states_are_back
+			}
+		}
+		available = {
+			has_integrated_NEA = yes
+			has_integrated_USA = yes
+			has_integrated_ILL = yes
+			has_integrated_GRL = yes
+			has_integrated_MWA = yes
+			has_integrated_MOT = yes
+			has_integrated_LIN = yes
+			has_integrated_UTA = yes
+			has_integrated_ARI = yes
+			has_integrated_PCA = yes
+			has_integrated_or_puppeted_TEX = yes
+		}
+		complete_effect = {
+			remove_ideas = {
+				idea_america_neutrality
+			}
+			hidden_effect = {
+				set_rule = {
+					can_join_factions = yes
+					can_create_factions = yes
+				}
+			}
+			country_event = american_unification.1
+		}
+		ai_will_do = {
+			factor = 320
+		}
+	}
+	attack_new_england = {
+		cost = 50
+		days_remove = 7
+		visible = {
+			has_country_flag = unifying_america
+			AMC = {
+				exists = yes
+				has_country_flag = treaty_of_columbus
+				NOT = {
+					has_war_with = ROOT
+				}
+				is_neighbor_of = ROOT
+			}
+			OR = {
+				NOT = {
+					tag = NEA
+				}
+				has_completed_focus = NEA_integrate_occupied_regions
+			}
+			NOT = {
+				has_wargoal_against = AMC
+			}
+		}
+		available = {
+			AMC = {
+				exists = yes
+				has_country_flag = treaty_of_columbus
+				NOT = {
+					has_war_with = ROOT
+				}
+			}
+			NOT = {
+				has_wargoal_against = AMC
+			}
+		}
+		remove_effect = {
+			create_wargoal = {
+				type = annex_everything
+				target = AMC
+			}
+		}
+		ai_will_do = {
+			factor = 60
+		}
+	}
+	question_of_west_texas = {
+		cost = 15
+		visible = {
+			has_country_flag = the_united_states_are_back
+			NOT = {
+				has_country_flag = west_texas_question_resolved
+			}
+			owns_state = 376
+			TEX = {
+				exists = yes
+				is_puppet_of = ROOT
+				owns_state = 894
+			}
+		}
+		available = {
+			owns_state = 376
+			TEX = {
+				exists = yes
+				is_puppet_of = ROOT
+				owns_state = 894
+			}
+		}
+		complete_effect = {
+			country_event = american_unification.27
+		}
+		ai_will_do = {
+			factor = 80
+		}
+	}
+	question_of_east_texas = {
+		cost = 15
+		visible = {
+			has_country_flag = the_united_states_are_back
+			NOT = {
+				has_country_flag = east_texas_question_resolved
+			}
+			owns_state = 376
+			TEX = {
+				exists = yes
+				is_puppet_of = ROOT
+				owns_state = 894
+			}
+		}
+		available = {
+			owns_state = 376
+			TEX = {
+				exists = yes
+				is_puppet_of = ROOT
+				owns_state = 894
+			}
+		}
+		complete_effect = {
+			if = {
+				limit = {
+					TEX = {
+						owns_state = 900
+					}
+				}
+				country_event = american_unification.31
+			}
+			else = {
+				country_event = american_unification.28
+			}
+		}
+		ai_will_do = {
+			factor = 80
+		}
+	}
+	question_of_texas = {
+		cost = 25
+		visible = {
+			has_country_flag = the_united_states_are_back
+			has_country_flag = west_texas_question_resolved
+			has_country_flag = east_texas_question_resolved
+			NOT = {
+				has_country_flag = texas_question_resolved
+			}
+			owns_state = 376
+			TEX = {
+				exists = yes
+				is_puppet_of = ROOT
+				owns_state = 894
+				NOT = {
+					owns_state = 899
+					owns_state = 900
+				}
+			}
+		}
+		available = {
+			TEX = {
+				exists = yes
+				is_puppet_of = ROOT
+				owns_state = 894
+				NOT = {
+					owns_state = 899
+					owns_state = 900
+				}
+			}
+		}
+		complete_effect = {
+			country_event = american_unification.26
+		}
+		ai_will_do = {
+			factor = 80
+		}
+	}
+	demand_southern_land = {
+		cost = 50
+		days_remove = 14
+		fire_only_once = yes
+		visible = {
+			has_country_flag = the_united_states_are_back
+			NOT = {
+				tag = GAU
+				OR = {
+					AND = {
+						owns_state = 376
+						owns_state = 894
+					}
+					AND = {
+						owns_state = 376
+						TEX = {
+							owns_state = 894
+						}
+					}
+				}
+			}
+		}
+		available = {
+			NOT = {
+				OR = {
+					AND = {
+						owns_state = 376
+						owns_state = 894
+					}
+					AND = {
+						owns_state = 376
+						TEX = {
+							owns_state = 894
+						}
+					}
+				}
+			}
+		}
+		remove_effect = {
+			376 = {
+				owner = {
+					if = {
+						limit = {
+							TEX = {
+								exists = no
+							}
+						}
+						country_event = american_unification.8
+					}
+					else = {
+						country_event = american_unification.23
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 40
+		}
+	}
+	integrate_southern_land = {
+		cost = 50
+		days_remove = 14
+		fire_only_once = yes
+		visible = {
+			has_country_flag = the_united_states_are_back
+			OR = {
+				AND = {
+					owns_state = 376
+					owns_state = 894
+				}
+				AND = {
+					owns_state = 376
+					TEX = {
+						owns_state = 894
+					}
+				}
+			}
+			NOT = {
+				AND = {
+					376 = { is_core_of = ROOT }
+					894 = { is_core_of = ROOT }
+				}
+				AND = {
+					376 = { is_core_of = ROOT }
+					894 = { is_core_of = TEX }
+				}
+			}
+		}
+		available = {
+			OR = {
+				AND = {
+					owns_state = 376
+					owns_state = 894
+				}
+				AND = {
+					owns_state = 376
+					TEX = {
+						owns_state = 894
+					}
+				}
+			}
+			NOT = {
+				AND = {
+					376 = { is_core_of = ROOT }
+					894 = { is_core_of = ROOT }
+				}
+				AND = {
+					376 = { is_core_of = ROOT }
+					894 = { is_core_of = TEX }
+				}
+			}
+		}
+		remove_effect = {
+			add_state_core = 376
+			if = {
+				limit = {
+					894 = {
+						owner = {
+							tag = TEX
+						}
+					}
+				}
+				add_state_core = 894
+			}
+			else = {
+				add_state_core = 894
+			}
+			if = {
+				limit = {
+					has_country_flag = foster_elected_general_secretary
+				}
+				country_event = pacific_america.129
+			}
+		}
+		ai_will_do = {
+			factor = 40
+		}
+	}
+	demand_alaska = {
+		cost = 50
+		days_remove = 14
+		fire_only_once = yes
+		visible = {
+			has_country_flag = the_united_states_are_back
+			NOT = {
+				tag = GAU
+				owns_state = 463
+			}
+		}
+		available = {
+			NOT = {
+				owns_state = 463
+				owns_state = 1013
+				owns_state = 1014
+			}
+		}
+		remove_effect = {
+			463 = {
+				owner = {
+					if = {
+						limit = {tag = ALA}
+						country_event = american_unification.11
+					}
+					else = {
+						country_event = american_unification.14
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 20
+		}
+	}
+	integrate_alaska = {
+		cost = 50
+		days_remove = 14
+		fire_only_once = yes
+		visible = {
+			has_country_flag = the_united_states_are_back
+			owns_state = 463
+			owns_state = 1013
+			owns_state = 1014
+			NOT = {
+				463 = { is_core_of = ROOT }
+				1013 = { is_core_of = ROOT }
+				1014 = { is_core_of = ROOT }
+			}
+		}
+		available = {
+			owns_state = 463
+			NOT = {
+				463 = { is_core_of = ROOT }
+				1013 = { is_core_of = ROOT }
+				1014 = { is_core_of = ROOT }
+			}
+		}
+		remove_effect = {
+			add_state_core = 463
+			add_state_core = 1013
+			add_state_core = 1014
+			if = {
+				limit = {
+					has_country_flag = foster_elected_general_secretary
+				}
+				country_event = pacific_america.130
+			}
+		}
+		ai_will_do = {
+			factor = 20
+		}
+	}
+	demand_hawaii = {
+		cost = 50
+		days_remove = 14
+		fire_only_once = yes
+		visible = {
+			has_country_flag = the_united_states_are_back
+			NOT = {
+				AND = {
+					owns_state = 629
+					owns_state = 630
+					owns_state = 631
+					owns_state = 727
+				}
+			}
+		}
+		available = {
+			NOT = {
+				AND = {
+					owns_state = 629
+					owns_state = 630
+					owns_state = 631
+					owns_state = 727
+				}
+			}
+		}
+		remove_effect = {
+			629 = {
+				owner = {
+					if = {
+						limit = {tag = HAW}
+						country_event = american_unification.17
+					}
+					else = {
+						country_event = american_unification.20
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 40
+		}
+	}
+	integrate_hawaii = {
+		cost = 50
+		days_remove = 14
+		fire_only_once = yes
+		visible = {
+			has_country_flag = the_united_states_are_back
+			AND = {
+				owns_state = 629
+				owns_state = 630
+				owns_state = 631
+				owns_state = 727
+			}
+			NOT = {
+				AND = {
+					629 = { is_core_of = ROOT }
+					630 = { is_core_of = ROOT }
+					631 = { is_core_of = ROOT }
+					727 = { is_core_of = ROOT }
+				}
+			}
+		}
+		available = {
+			AND = {
+				owns_state = 629
+				owns_state = 630
+				owns_state = 631
+				owns_state = 727
+			}
+			NOT = {
+				AND = {
+					629 = { is_core_of = ROOT }
+					630 = { is_core_of = ROOT }
+					631 = { is_core_of = ROOT }
+					727 = { is_core_of = ROOT }
+				}
+			}
+		}
+		remove_effect = {
+			add_state_core = 629
+        	add_state_core = 630
+        	add_state_core = 631
+        	add_state_core = 727
+		}
+		ai_will_do = {
+			factor = 40
+		}
+	}
+	integrate_NEA = {
+		cost = 150
+		days_remove = 50
+		visible = {
+			has_country_flag = can_core_NEA
+			NOT = {
+				AND = {
+					261 = { is_core_of = ROOT }
+					357 = { is_core_of = ROOT }
+					358 = { is_core_of = ROOT }
+					359 = { is_core_of = ROOT }
+					360 = { is_core_of = ROOT }
+					361 = { is_core_of = ROOT }
+					393 = { is_core_of = ROOT }
+					395 = { is_core_of = ROOT }
+					396 = { is_core_of = ROOT }
+					792 = { is_core_of = ROOT }
+					793 = { is_core_of = ROOT }
+					794 = { is_core_of = ROOT }
+					795 = { is_core_of = ROOT }
+					893 = { is_core_of = ROOT }
+					902 = { is_core_of = ROOT }
+				}
+			}
+		}
+		available = {
+			OR = {
+				AND = {
+					owns_state = 261
+					owns_state = 357
+					owns_state = 358
+					owns_state = 359
+					owns_state = 360
+					owns_state = 361
+					owns_state = 393
+					owns_state = 395
+					owns_state = 396
+					owns_state = 792
+					owns_state = 793
+					owns_state = 794
+					owns_state = 795
+					owns_state = 893
+					owns_state = 902
+				}
+				NEA = {
+					is_puppet_of = ROOT
+				}
+			}
+		}
+		remove_effect = {
+			if = {
+				limit = {
+					NEA = {
+						is_puppet_of = ROOT
+					}
+				}
+				annex_country = {
+					target = NEA
+					transfer_troops = no
+				}
+			}
+			add_state_core = 261
+			add_state_core = 357
+			add_state_core = 358
+			add_state_core = 359
+			add_state_core = 360
+			add_state_core = 361
+			add_state_core = 393
+			add_state_core = 395
+			add_state_core = 396
+			add_state_core = 792
+			add_state_core = 793
+			add_state_core = 794
+			add_state_core = 795
+			add_state_core = 893
+			add_state_core = 902
+			if = {
+				limit = {
+					has_country_flag = foster_elected_general_secretary
+				}
+				country_event = pacific_america.128
+			}
+			if = {
+				limit = {
+					OR = {
+						has_global_flag = foster_renamed_NEA
+						AND = {
+							has_global_flag = NEA_changed_state_names
+							NOT = {
+								tag = PCA
+							}
+						}
+					}
+				}
+				country_event = pacific_america.140
+			}
+		}
+		ai_will_do = {
+			factor = 320
+		}
+	}
+	integrate_USA = {
+		cost = 140
+		days_remove = 50
+		visible = {
+			has_country_flag = can_core_USA
+			NOT = {
+				AND = {
+					362 = { is_core_of = ROOT }
+					363 = { is_core_of = ROOT }
+					364 = { is_core_of = ROOT }
+					365 = { is_core_of = ROOT }
+					366 = { is_core_of = ROOT }
+					367 = { is_core_of = ROOT }
+					368 = { is_core_of = ROOT }
+					369 = { is_core_of = ROOT }
+					370 = { is_core_of = ROOT }
+					371 = { is_core_of = ROOT }
+					372 = { is_core_of = ROOT }
+					374 = { is_core_of = ROOT }
+					900 = { is_core_of = ROOT }
+					901 = { is_core_of = ROOT }
+				}
+			}
+		}
+		available = {
+			OR = {
+				AND = {
+					owns_state = 362
+					owns_state = 363
+					owns_state = 364
+					owns_state = 365
+					owns_state = 366
+					owns_state = 367
+					owns_state = 368
+					owns_state = 369
+					owns_state = 370
+					owns_state = 371
+					owns_state = 372
+					owns_state = 374
+					owns_state = 900
+					owns_state = 901
+				}
+				USA = {
+					is_puppet_of = ROOT
+				}
+			}
+		}
+		remove_effect = {
+			if = {
+				limit = {
+					USA = {
+						is_puppet_of = ROOT
+					}
+				}
+				annex_country = {
+					target = USA
+					transfer_troops = no
+				}
+			}
+			if = {
+				limit = {
+					PUE = {
+						is_puppet_of = ROOT
+					}
+				}
+				annex_country = {
+					target = PUE
+					transfer_troops = no
+				}
+			}
+			add_state_core = 362
+			add_state_core = 363
+			add_state_core = 364
+			add_state_core = 365
+			add_state_core = 366
+			add_state_core = 367
+			add_state_core = 368
+			add_state_core = 369
+			add_state_core = 370
+			add_state_core = 371
+			add_state_core = 372
+			add_state_core = 374
+			add_state_core = 900
+			add_state_core = 901
+			if = {
+				limit = {
+					owns_state = 686
+				}
+				add_state_core = 686
+			}
+			if = {
+				limit = {
+					owns_state = 880
+				}
+				add_state_core = 880
+			}
+			if = {
+				limit = {
+					has_country_flag = foster_elected_general_secretary
+				}
+				country_event = pacific_america.127
+			}
+			if = {
+				limit = {
+					has_global_flag = foster_renamed_USA
+				}
+				country_event = pacific_america.139
+			}
+		}
+		ai_will_do = {
+			factor = 320
+		}
+	}
+	integrate_TEX = {
+		cost = 30
+		days_remove = 30
+		visible = {
+			has_country_flag = can_core_TEX
+			NOT = {
+				AND = {
+					375 = { is_core_of = ROOT }
+					899 = { is_core_of = ROOT }
+				}
+			}
+		}
+		available = {
+			OR = {
+				AND = {
+					owns_state = 375
+					owns_state = 899
+				}
+				TEX = {
+					is_puppet_of = ROOT
+				}
+			}
+		}
+		remove_effect = {
+			if = {
+				limit = {
+					TEX = {
+						is_puppet_of = ROOT
+					}
+				}
+				annex_country = {
+					target = TEX
+					transfer_troops = no
+				}
+			}
+			add_state_core = 375
+			add_state_core = 899
+			if = { #if AR is cored but you lost core on east texas, you get the core back
+				limit = {
+					365 = { #Georgia
+						is_core_of = ROOT
+					}
+					900 = { #East Texas
+						NOT = {
+							is_core_of = ROOT
+						}
+					}
+				}
+				add_state_core = 900
+			}
+			if = {
+				limit = {
+					has_country_flag = foster_elected_general_secretary
+				}
+				country_event = pacific_america.124
+			}
+			if = {
+				limit = {
+					has_global_flag = foster_renamed_TEX
+				}
+				country_event = pacific_america.136
+			}
+		}
+		ai_will_do = {
+			factor = 320
+		}
+	}
+	integrate_ILL = {
+		cost = 30
+		days_remove = 30
+		visible = {
+			has_country_flag = can_core_ILL
+			NOT = {
+				AND = {
+					373 = { is_core_of = ROOT }
+					892 = { is_core_of = ROOT }
+				}
+			}
+		}
+		available = {
+			OR = {
+				AND = {
+					owns_state = 373
+					owns_state = 892
+				}
+				ILL = {
+					is_puppet_of = ROOT
+				}
+			}
+		}
+		remove_effect = {
+			if = {
+				limit = {
+					ILL = {
+						is_puppet_of = ROOT
+					}
+				}
+				annex_country = {
+					target = ILL
+					transfer_troops = no
+				}
+			}
+			add_state_core = 373
+			add_state_core = 892
+			if = {
+				limit = {
+					has_country_flag = foster_elected_general_secretary
+				}
+				country_event = pacific_america.126
+			}
+			if = {
+				limit = {
+					has_global_flag = foster_renamed_ILL
+				}
+				country_event = pacific_america.138
+			}
+		}
+		ai_will_do = {
+			factor = 320
+		}
+	}
+	integrate_GRL = {
+		cost = 70
+		days_remove = 30
+		visible = {
+			has_country_flag = can_core_GRL
+			NOT = {
+				AND = {
+					391 = { is_core_of = ROOT }
+					392 = { is_core_of = ROOT }
+					394 = { is_core_of = ROOT }
+					891 = { is_core_of = ROOT }
+				}
+			}
+		}
+		available = {
+			OR = {
+				AND = {
+					owns_state = 391
+					owns_state = 392
+					owns_state = 394
+					owns_state = 891
+				}
+				GRL = {
+					is_puppet_of = ROOT
+				}
+			}
+		}
+		remove_effect = {
+			if = {
+				limit = {
+					GRL = {
+						is_puppet_of = ROOT
+					}
+				}
+				annex_country = {
+					target = GRL
+					transfer_troops = no
+				}
+			}
+			add_state_core = 391
+			add_state_core = 392
+			add_state_core = 394
+			add_state_core = 891
+			if = {
+				limit = {
+					has_country_flag = foster_elected_general_secretary
+				}
+				country_event = pacific_america.125
+			}
+			if = {
+				limit = {
+					has_global_flag = foster_renamed_GRL
+				}
+				country_event = pacific_america.137
+			}
+		}
+		ai_will_do = {
+			factor = 320
+		}
+	}
+	integrate_MWA = {
+		cost = 100
+		days_remove = 30
+		visible = {
+			has_country_flag = can_core_MWA
+			NOT = {
+				has_country_flag = did_lakhota_decision
+				AND = {
+					382 = { is_core_of = ROOT }
+					383 = { is_core_of = ROOT }
+					384 = { is_core_of = ROOT }
+					390 = { is_core_of = ROOT }
+					898 = { is_core_of = ROOT }
+				}
+			}
+		}
+		available = {
+			OR = {
+				AND = {
+					owns_state = 382
+					owns_state = 383
+					owns_state = 384
+					owns_state = 390
+					owns_state = 898
+				}
+				MWA = {
+					is_puppet_of = ROOT
+				}
+			}
+		}
+		remove_effect = {
+			if = {
+				limit = {
+					MWA = {
+						is_puppet_of = ROOT
+					}
+				}
+				annex_country = {
+					target = MWA
+					transfer_troops = no
+				}
+			}
+			add_state_core = 382
+			add_state_core = 383
+			add_state_core = 384
+			add_state_core = 390
+			add_state_core = 898
+			if = {
+				limit = {
+					has_country_flag = foster_elected_general_secretary
+				}
+				country_event = pacific_america.123
+			}
+			if = {
+				limit = {
+					has_global_flag = foster_renamed_MWA
+				}
+				country_event = pacific_america.135
+			}
+		}
+		ai_will_do = {
+			factor = 320
+		}
+	}
+	integrate_MOT = {
+		cost = 45
+		days_remove = 30
+		visible = {
+			has_country_flag = can_core_MOT
+			NOT = {
+				has_country_flag = did_lakhota_decision
+				AND = {
+					381 = { is_core_of = ROOT }
+					388 = { is_core_of = ROOT }
+					389 = { is_core_of = ROOT }
+					1016 = { is_core_of = ROOT }
+					1017 = { is_core_of = ROOT }
+					1018 = { is_core_of = ROOT }
+				}
+			}
+		}
+		available = {
+			OR = {
+				AND = {
+					owns_state = 381
+					owns_state = 388
+					owns_state = 389
+					owns_state = 1016
+					owns_state = 1017
+					owns_state = 1018
+				}
+				MOT = {
+					is_puppet_of = ROOT
+				}
+			}
+		}
+		remove_effect = {
+			if = {
+				limit = {
+					MOT = {
+						is_puppet_of = ROOT
+					}
+				}
+				annex_country = {
+					target = MOT
+					transfer_troops = no
+				}
+			}
+			add_state_core = 381
+			add_state_core = 388
+			add_state_core = 389
+			add_state_core = 1016
+			add_state_core = 1017
+			add_state_core = 1018
+			if = {
+				limit = {
+					has_country_flag = foster_elected_general_secretary
+				}
+				country_event = pacific_america.122
+			}
+			if = {
+				limit = {
+					has_global_flag = foster_renamed_MOT
+				}
+				country_event = pacific_america.134
+			}
+		}
+		ai_will_do = {
+			factor = 320
+		}
+	}
+	integrate_LIN = {
+		cost = 30
+		days_remove = 30
+		visible = {
+			has_country_flag = can_core_LIN
+			NOT = {
+				AND = {
+					387 = { is_core_of = ROOT }
+					890 = { is_core_of = ROOT }
+				}
+			}
+		}
+		available = {
+			OR = {
+				AND = {
+					owns_state = 387
+					owns_state = 890
+				}
+				LIN = {
+					is_puppet_of = ROOT
+				}
+			}
+		}
+		remove_effect = {
+			if = {
+				limit = {
+					LIN = {
+						is_puppet_of = ROOT
+					}
+				}
+				annex_country = {
+					target = LIN
+					transfer_troops = no
+				}
+			}
+			add_state_core = 387
+			add_state_core = 890
+			if = {
+				limit = {
+					has_country_flag = foster_elected_general_secretary
+				}
+				country_event = pacific_america.121
+			}
+			if = {
+				limit = {
+					has_global_flag = foster_renamed_LIN
+				}
+				country_event = pacific_america.133
+			}
+		}
+		ai_will_do = {
+			factor = 320
+		}
+	}
+	integrate_UTA = {
+		cost = 45
+		days_remove = 30
+		visible = {
+			has_country_flag = can_core_UTA
+			NOT = {
+				AND = {
+					379 = { is_core_of = ROOT }
+					380 = { is_core_of = ROOT }
+					896 = { is_core_of = ROOT }
+				}
+			}
+		}
+		available = {
+			OR = {
+				AND = {
+					owns_state = 379
+					owns_state = 380
+					owns_state = 896
+				}
+				UTA = {
+					is_puppet_of = ROOT
+				}
+			}
+		}
+		remove_effect = {
+			if = {
+				limit = {
+					UTA = {
+						is_puppet_of = ROOT
+					}
+				}
+				annex_country = {
+					target = UTA
+					transfer_troops = no
+				}
+			}
+			add_state_core = 379
+			add_state_core = 380
+			add_state_core = 896
+			if = {
+				limit = {
+					has_country_flag = foster_elected_general_secretary
+				}
+				country_event = pacific_america.120
+			}
+			if = {
+				limit = {
+					has_global_flag = foster_renamed_UTA
+				}
+				country_event = pacific_america.132
+			}
+		}
+		ai_will_do = {
+			factor = 320
+		}
+	}
+	integrate_ARI = {
+		cost = 30
+		days_remove = 30
+		visible = {
+			has_country_flag = can_core_ARI
+			NOT = {
+				AND = {
+					377 = { is_core_of = ROOT }
+					895 = { is_core_of = ROOT }
+				}
+			}
+		}
+		available = {
+			OR = {
+				AND = {
+					owns_state = 377
+					owns_state = 895
+				}
+				ARI = {
+					is_puppet_of = ROOT
+				}
+			}
+		}
+		remove_effect = {
+			if = {
+				limit = {
+					ARI = {
+						is_puppet_of = ROOT
+					}
+				}
+				annex_country = {
+					target = ARI
+					transfer_troops = no
+				}
+			}
+			add_state_core = 377
+			add_state_core = 895
+			if = {
+				limit = {
+					has_country_flag = foster_elected_general_secretary
+				}
+				country_event = pacific_america.119
+			}
+			if = {
+				limit = {
+					has_global_flag = foster_renamed_ARI
+				}
+				country_event = pacific_america.131
+			}
+		}
+		ai_will_do = {
+			factor = 320
+		}
+	}
+	integrate_PCA = {
+		cost = 120
+		days_remove = 50
+		visible = {
+			has_country_flag = can_core_PCA
+			NOT = {
+				AND = {
+					378 = { is_core_of = ROOT }
+					385 = { is_core_of = ROOT }
+					386 = { is_core_of = ROOT }
+					889 = { is_core_of = ROOT }
+					897 = { is_core_of = ROOT }
+					970 = { is_core_of = ROOT }
+					971 = { is_core_of = ROOT }
+					1015 = { is_core_of = ROOT }
+				}
+			}
+		}
+		available = {
+			OR = {
+				AND = {
+					owns_state = 378
+					owns_state = 385
+					owns_state = 386
+					owns_state = 889
+					owns_state = 897
+					owns_state = 970
+					owns_state = 971
+					owns_state = 1015
+				}
+				PCA = {
+					is_puppet_of = ROOT
+				}
+			}
+		}
+		remove_effect = {
+			if = {
+				limit = {
+					PCA = {
+						is_puppet_of = ROOT
+					}
+				}
+				annex_country = {
+					target = PCA
+					transfer_troops = no
+				}
+			}
+			add_state_core = 378
+			add_state_core = 385
+			add_state_core = 386
+			add_state_core = 889
+			add_state_core = 897
+			add_state_core = 970
+			add_state_core = 971
+			add_state_core = 1015
+			if = {
+				limit = {
+					has_global_flag = foster_renamed_PCA
+				}
+				country_event = pacific_america.143
+			}
+		}
+		ai_will_do = {
+			factor = 320
+		}
+	}
+	player_remove_neutrality = {
+		visible = {
+			is_ai = no
+			has_idea = idea_america_neutrality
+			OR = {
+				tag = ILL
+				tag = GRL
+				tag = MOT
+				tag = UTA
+				tag = LIN
+				tag = ARI
+				tag = TEX
+			}
+		}
+		available = {
+			is_ai = no
+			has_idea = idea_america_neutrality
+			OR = {
+				tag = ILL
+				tag = GRL
+				tag = MOT
+				tag = UTA
+				tag = LIN
+				tag = ARI
+				tag = TEX
+			}
+		}
+		complete_effect = {
+			remove_ideas = idea_america_neutrality
+			set_rule = {
+				can_join_factions = yes
+				can_create_factions = yes
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	autonomy_for_the_american_indians = {
+		cost = 15
+		icon = eng_puppet_usa
+		visible = {
+			has_country_flag = the_united_states_are_back
+			NOT = {
+				has_country_flag = did_lakhota_decision
+			}
+			owns_state = 390
+			owns_state = 384
+			owns_state = 381
+			OR = {
+			has_government = communist
+			has_government = revolutionary_socialist
+			has_government = monarchist
+			has_government = liberal
+			has_government = moderate_socialist
+			has_government = new_democrat
+			has_government = centrist
+			has_government = national_conservative
+			}
+			LAK = {
+				exists = no
+			}
+		}
+		available = {
+			has_country_flag = the_united_states_are_back
+			owns_state = 390
+			owns_state = 384
+			owns_state = 381
+			LAK = {
+				exists = no
+			}
+		}
+		complete_effect = {
+			country_event = american_unification.30
+			set_country_flag = did_lakhota_decision
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	NTI_united = {
+		visible = {
+			OR = {
+			tag = LIN
+			tag = MOT
+			}
+			NOT = {
+				has_country_flag = NTI_has_been_formed
+			}
+		}
+		available = {
+			owns_state = 386
+			owns_state = 385
+			owns_state = 387
+			owns_state = 388
+		}
+		complete_effect = {
+			set_country_flag = NTI_has_been_formed
+			country_event = american_unification.29
+		}
+		ai_will_do = {
+			factor = 320
+		}
+	}
+}

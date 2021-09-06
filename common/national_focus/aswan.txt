@@ -1,0 +1,2386 @@
+focus_tree = {
+	id = aswan_tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 20
+			tag = RAS
+		}
+	}
+	continuous_focus_position = { x = 50 y = 2200 }
+	default = no
+	focus = {
+		id = RAS_form_the_rebel_government
+		icon = forceful_treaty
+		cost = 2
+		x = 13
+		y = 0
+		completion_reward = {
+		    add_political_power = 120
+			add_ideas = idea_ras_state_of_affairs
+			country_event = { id = aswan.3 }
+		}
+
+	}
+	focus = {
+		id = RAS_negotiate_reunification
+		icon = egypt
+		cost = 5
+		available = {
+		    OR = {
+			    AND = {
+				    RLN = {
+					    has_government = fascist 
+					}
+					RAS = {
+					    has_government = fascist 
+					}
+				}
+				AND = {
+				    RLN = {
+					    has_government = nationalist 
+					}
+					RAS = {
+					    has_government = nationalist 
+					}
+				}
+				AND = {
+				    RLN = {
+					    has_government = monarchist 
+					}
+					RAS = {
+					    has_government = monarchist 
+					}
+				}
+				AND = {
+				    RLN = {
+					    has_government = national_bolshevik 
+					}
+					RAS = {
+					    has_government = national_bolshevik 
+					}
+				}
+				AND = {
+				    RLN = {
+					    OR = {
+						    has_government = national_conservative 
+							has_government = centrist 
+							has_government = liberal 
+							has_government = new_democrat
+							has_government = moderate_socialist
+						}
+					}
+					RAS = {
+					    OR = {
+						    has_government = national_conservative 
+							has_government = centrist 
+							has_government = liberal 
+							has_government = new_democrat
+							has_government = moderate_socialist
+						}
+					}
+				}
+				AND = {
+				    RLN = {
+					    has_government = revolutionary_socialist 
+					}
+					RAS = {
+					    has_government = revolutionary_socialist 
+					}
+				}
+				AND = {
+				    RLN = {
+					    has_government = communist 
+					}
+					RAS = {
+					    has_government = communist 
+					}
+				}
+			}
+		}
+		mutually_exclusive = {
+			focus = RAS_declare_war
+		}
+		x = 28
+		y = 0
+		completion_reward = {
+		    RLN = {
+			    country_event = { id = aswan.1 }
+			}
+		}
+
+	}
+	focus = {
+		id = RAS_declare_war
+		icon = major_war
+		cost = 1
+		available = {
+		    AND = {
+			    country_exists = RLN 
+				NOT = {
+				    OR = {
+					    is_in_faction_with = RLN
+						RLN = {
+						    is_puppet_of = RAS
+						}
+					}
+				}
+			}
+			OR = {
+			    has_completed_focus = RAS_rally_the_people
+				has_completed_focus = RAS_enlist_for_your_country
+				has_completed_focus = RAS_reunification_organisation
+				has_completed_focus = RAS_military_convention
+				has_completed_focus = RAS_socialist_unification
+				has_completed_focus = RAS_the_right_path
+			}
+		}
+		mutually_exclusive = {
+			focus = RAS_negotiate_reunification
+		}
+		x = 32
+		y = 0
+		completion_reward = {
+		    create_wargoal = {
+			    type = annex_everything
+			    target = RLN
+		    }
+		}
+
+	}
+	focus = {
+		id = RAS_post_unification_worldview
+		icon = shaking_hands_1
+		cost = 2
+		available = {
+		    NOT = {
+			    country_exists = RLN
+			}
+		}
+		x = 39
+		y = 0
+		completion_reward = {
+		    446 = {
+			    add_core_of = RAS
+			}
+			813 = {
+			    add_core_of = RAS
+			}
+			447 = {
+			    add_core_of = RAS
+			}
+			452 = {
+			    add_core_of = RAS
+			}
+			453 = {
+			    add_core_of = RAS
+			}
+			969 = {
+			    add_core_of = RAS
+			}
+		}
+
+	}
+	focus = {
+		id = RAS_left_wing_economics
+		icon = communist_construction
+		cost = 2
+		prerequisite = {
+			focus = RAS_form_the_rebel_government
+		}
+		mutually_exclusive = {
+			focus = RAS_centrist_economics
+			focus = RAS_right_wing_economics
+		}
+		x = 4
+		y = 1
+		completion_reward = {
+		    add_popularity = {
+				ideology = national_bolshevik
+				popularity = 0.05
+			}
+			add_popularity = {
+				ideology = communist
+				popularity = 0.03
+			}
+			add_popularity = {
+				ideology = moderate_socialist
+				popularity = 0.02
+			}
+			country_event = { id = aswan.4 }
+		}
+
+	}
+	focus = {
+		id = RAS_welfare_state
+		icon = concessions
+		cost = 4
+		prerequisite = {
+			focus = RAS_left_wing_economics
+		}
+		x = 2
+		y = 2
+		completion_reward = {
+		    add_ideas = idea_ras_welfare_state
+		}
+
+	}
+	focus = {
+		id = RAS_nationalisation
+		icon = political_pressure
+		cost = 5
+		prerequisite = {
+			focus = RAS_left_wing_economics
+		}
+		x = 4
+		y = 3
+		completion_reward = {
+		    random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = RAS_elements_of_central_planning
+		icon = self_management
+		cost = 2
+		prerequisite = {
+			focus = RAS_left_wing_economics
+		}
+		x = 6
+		y = 2
+		completion_reward = {
+		    add_ideas = idea_ras_elements_of_central_planning
+		}
+
+	}
+	focus = {
+		id = RAS_reactionary_coup
+		icon = army_marching_light_blue
+		cost = 1
+		prerequisite = {
+			focus = RAS_welfare_state
+		}
+		prerequisite = {
+			focus = RAS_nationalisation
+		}
+		prerequisite = {
+			focus = RAS_elements_of_central_planning
+		}
+		mutually_exclusive = {
+			focus = RAS_maintain_the_course
+		}
+		x = 2
+		y = 4
+		completion_reward = {
+		    set_politics = {
+	            ruling_party = national_conservative
+	            elections_allowed = no
+            }
+			add_popularity = {
+				ideology = nationalist
+				popularity = -0.15
+			}
+			country_event = { id = aswan.5 }
+		}
+
+	}
+	focus = {
+		id = RAS_reverse_leftist_economics
+		icon = demand
+		cost = 2
+		prerequisite = {
+			focus = RAS_reactionary_coup
+		}
+		x = 1
+		y = 5
+		completion_reward = {
+		    remove_ideas = idea_ras_welfare_state
+			remove_ideas = idea_ras_elements_of_central_planning
+			add_political_power = 200
+			add_stability = 0.035
+		}
+
+	}
+	focus = {
+		id = RAS_invite_businesses
+		icon = intelligence_exchange
+		cost = 5
+		prerequisite = {
+			focus = RAS_reactionary_coup
+		}
+		x = 3
+		y = 5
+		completion_reward = {
+		    add_ideas = idea_ras_business_boom
+		}
+
+	}
+	focus = {
+		id = RAS_establish_the_national_assembly
+		icon = red_hands_shaking
+		cost = 3
+		prerequisite = {
+			focus = RAS_invite_businesses
+		}
+		x = 3
+		y = 6
+		completion_reward = {
+		    add_popularity = {
+				ideology = national_conservative
+				popularity = 0.3
+			}
+			add_popularity = {
+				ideology = centrist
+				popularity = 0.05
+			}
+			add_popularity = {
+				ideology = liberal
+				popularity = 0.03
+			}
+			add_stability = 0.035 
+			add_war_support = 0.025
+			country_event = { id = aswan.6 }
+		}
+
+	}
+	focus = {
+		id = RAS_lift_martial_law
+		icon = territory_or_war
+		cost = 1
+		prerequisite = {
+			focus = RAS_establish_the_national_assembly
+		}
+		x = 3
+		y = 7
+		completion_reward = {
+		    add_ideas = idea_ras_martial_law_lifted
+			country_event = { id = aswan.7 }
+		}
+
+	}
+	focus = {
+		id = RAS_maintain_the_course
+		icon = defence
+		cost = 2
+		prerequisite = {
+			focus = RAS_nationalisation
+		}
+		prerequisite = {
+			focus = RAS_elements_of_central_planning
+		}
+		prerequisite = {
+			focus = RAS_welfare_state
+		}
+		mutually_exclusive = {
+			focus = RAS_reactionary_coup
+		}
+		x = 6
+		y = 4
+		completion_reward = {
+		    add_popularity = {
+				ideology = nationalist
+				popularity = 0.07
+			}
+			add_political_power = 70
+			country_event = { id = aswan.8 }
+		}
+
+	}
+	focus = {
+		id = RAS_large_subsidies
+		icon = civ_factory
+		cost = 5
+		prerequisite = {
+			focus = RAS_maintain_the_course
+		}
+		x = 5
+		y = 5
+		completion_reward = {
+		    random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			country_event = { id = aswan.9 }
+		}
+
+	}
+	focus = {
+		id = RAS_military_benefits
+		icon = construct_military
+		cost = 8
+		prerequisite = {
+			focus = RAS_large_subsidies
+		}
+		x = 5
+		y = 6
+		completion_reward = {
+		    add_ideas = idea_ras_military_benefits
+		}
+
+	}
+	focus = {
+		id = RAS_industrial_advancements
+		icon = torch_industry
+		cost = 5
+		prerequisite = {
+			focus = RAS_military_benefits
+		}
+		x = 5
+		y = 7
+		completion_reward = {
+		    add_tech_bonus = {
+				name = industry_bonus
+				bonus = 0.35
+				uses = 1
+				category = industry
+			}
+		}
+
+	}
+	focus = {
+		id = RAS_progressive_politics
+		icon = ideology_fist
+		cost = 7
+		prerequisite = {
+			focus = RAS_maintain_the_course
+		}
+		x = 7
+		y = 5
+		completion_reward = {
+		    add_ideas = idea_ras_progressive_politics
+		}
+
+	}
+	focus = {
+		id = RAS_benevolent_dictatorship
+		icon = democracy
+		cost = 5
+		prerequisite = {
+			focus = RAS_progressive_politics
+		}
+		x = 7
+		y = 6
+		completion_reward = {
+		    add_ideas = idea_ras_benevolent_dictatorship
+		}
+
+	}
+	focus = {
+		id = RAS_all_encompassing_presidency
+		icon = royal_strength
+		cost = 5
+		prerequisite = {
+			focus = RAS_benevolent_dictatorship
+		}
+		x = 7
+		y = 7
+		completion_reward = {
+		    add_stability = 0.075
+			country_event = { id = aswan.10 }
+		}
+
+	}
+	focus = {
+		id = RAS_prepare_cabinet
+		icon = com_fascism
+		cost = 10
+		prerequisite = {
+			focus = RAS_industrial_advancements
+		}
+		prerequisite = {
+			focus = RAS_all_encompassing_presidency
+		}
+		x = 6
+		y = 8
+		completion_reward = {
+		    add_political_power = 200
+			country_event = { id = aswan.11 }
+		}
+
+	}
+	focus = {
+		id = RAS_centrist_economics
+		icon = neutrality
+		cost = 2
+		prerequisite = {
+			focus = RAS_form_the_rebel_government
+		}
+		mutually_exclusive = {
+			focus = RAS_left_wing_economics
+			focus = RAS_right_wing_economics
+		}
+		x = 13
+		y = 1
+		completion_reward = {
+		    add_popularity = {
+				ideology = centrist
+				popularity = 0.08
+			}
+			add_popularity = {
+				ideology = liberal
+				popularity = 0.05
+			}
+			add_popularity = {
+				ideology = national_conservative
+				popularity = 0.025
+			}
+			country_event = { id = aswan.12 }
+		}
+
+	}
+	focus = {
+		id = RAS_restrict_trade_unions
+		icon = broken_star
+		cost = 5
+		prerequisite = {
+			focus = RAS_centrist_economics
+		}
+		x = 11
+		y = 2
+		completion_reward = {
+		    random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = RAS_moderate_keynesian_economics
+		icon = focus_enforce_1990_constitution
+		cost = 5
+		prerequisite = {
+			focus = RAS_centrist_economics
+		}
+		x = 12
+		y = 3
+		completion_reward = {
+		    add_ideas = idea_ras_moderate_keynesian_economics
+		}
+
+	}
+	focus = {
+		id = RAS_domestic_development_board
+		icon = focus_trade_council_influence
+		cost = 5
+		prerequisite = {
+			focus = RAS_centrist_economics
+		}
+		x = 14
+		y = 3
+		completion_reward = {
+		    add_tech_bonus = {
+				name = construction_tech_bonus
+				bonus = 0.5
+				uses = 1
+				category = construction_tech
+			}
+		}
+
+	}
+	focus = {
+		id = RAS_corporate_dealings
+		icon = improve_relations
+		cost = 5
+		prerequisite = {
+			focus = RAS_centrist_economics
+		}
+		x = 15
+		y = 2
+		completion_reward = {
+		    add_ideas = idea_ras_corporate_dealings
+		}
+
+	}
+	focus = {
+		id = RAS_centrist_democratic_coup
+		icon = attack_allies
+		cost = 2
+		prerequisite = {
+			focus = RAS_restrict_trade_unions
+		}
+		prerequisite = {
+			focus = RAS_moderate_keynesian_economics
+		}
+		prerequisite = {
+			focus = RAS_domestic_development_board
+		}
+		prerequisite = {
+			focus = RAS_corporate_dealings
+		}
+		mutually_exclusive = {
+			focus = RAS_aswan_modernisation_act
+		}
+		x = 11
+		y = 4
+		completion_reward = {
+		    set_politics = {
+	            ruling_party = centrist
+	            elections_allowed = no
+            }
+			add_popularity = {
+				ideology = nationalist
+				popularity = -0.15
+			}
+			country_event = { id = aswan.13 }
+		}
+
+	}
+	focus = {
+		id = RAS_gradual_transition
+		icon = propaganda
+		cost = 10
+		prerequisite = {
+			focus = RAS_centrist_democratic_coup
+		}
+		x = 10
+		y = 5
+		completion_reward = {
+		    add_political_power = 120
+		}
+
+	}
+	focus = {
+		id = RAS_create_advisory_boards
+		icon = alliance
+		cost = 2
+		prerequisite = {
+			focus = RAS_centrist_democratic_coup
+		}
+		x = 11
+		y = 6
+		completion_reward = {
+		    add_ideas = idea_ras_advisory_boards
+		}
+
+	}
+	focus = {
+		id = RAS_new_generations
+		icon = generic_ideology
+		cost = 5
+		prerequisite = {
+			focus = RAS_create_advisory_boards
+		}
+		x = 11
+		y = 8
+		completion_reward = {
+		    add_ideas = idea_ras_new_generations
+		}
+
+	}
+	focus = {
+		id = RAS_moderate_social_policies
+		icon = crown_shattered
+		cost = 2
+		prerequisite = {
+			focus = RAS_centrist_democratic_coup
+		}
+		x = 12
+		y = 5
+		completion_reward = {
+		    add_ideas = idea_ras_moderate_social_policies
+		}
+
+	}
+	focus = {
+		id = RAS_weaken_military_influence
+		icon = military_salute
+		cost = 8
+		prerequisite = {
+			focus = RAS_moderate_social_policies
+		}
+		x = 12
+		y = 7
+		completion_reward = {
+		    add_ideas = idea_ras_weakened_military_influence
+			country_event = { id = aswan.14 }
+		}
+
+	}
+	focus = {
+		id = RAS_aswan_modernisation_act
+		icon = tech_sharing
+		cost = 5
+		prerequisite = {
+			focus = RAS_restrict_trade_unions
+		}
+		prerequisite = {
+			focus = RAS_moderate_keynesian_economics
+		}
+		prerequisite = {
+			focus = RAS_domestic_development_board
+		}
+		prerequisite = {
+			focus = RAS_corporate_dealings
+		}
+		mutually_exclusive = {
+			focus = RAS_centrist_democratic_coup
+		}
+		x = 15
+		y = 4
+		completion_reward = {
+		    add_popularity = {
+				ideology = nationalist
+				popularity = 0.1
+			}
+			add_tech_bonus = {
+				name = electronics_bonus
+				bonus = 0.35
+				uses = 1
+				category = electronics
+			}
+			add_tech_bonus = {
+				name = industry_bonus
+				bonus = 0.15
+				uses = 1
+				category = industry
+			}
+			country_event = { id = aswan.15 }
+		}
+
+	}
+	focus = {
+		id = RAS_pursue_democratisation
+		icon = flags_blue
+		cost = 5
+		prerequisite = {
+			focus = RAS_aswan_modernisation_act
+		}
+		x = 14
+		y = 5
+		completion_reward = {
+		    add_ideas = idea_ras_democratisation
+		}
+
+	}
+	focus = {
+		id = RAS_fossil_fuel_advancement
+		icon = oil
+		cost = 5
+		prerequisite = {
+			focus = RAS_pursue_democratisation
+		}
+		x = 14
+		y = 7
+		completion_reward = {
+		    add_ideas = idea_ras_fossil_fuel_advancement
+		}
+
+	}
+	focus = {
+		id = RAS_appease_the_people
+		icon = national_unity
+		cost = 10
+		prerequisite = {
+			focus = RAS_aswan_modernisation_act
+		}
+		x = 15
+		y = 6
+		completion_reward = {
+		    add_political_power = -200 
+			add_stability = 0.02 
+			add_war_support = 0.05
+		}
+
+	}
+	focus = {
+		id = RAS_strict_control_of_services
+		icon = political_pressure
+		cost = 8
+		prerequisite = {
+			focus = RAS_appease_the_people
+		}
+		x = 15
+		y = 8
+		completion_reward = {
+		    random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = RAS_local_elections
+		icon = focus_syria_local_elections
+		cost = 2
+		available = {
+		    has_completed_focus = RAS_pursue_democratisation
+		}
+		prerequisite = {
+			focus = RAS_aswan_modernisation_act
+		}
+		x = 16
+		y = 5
+		completion_reward = {
+		    add_popularity = {
+				ideology = nationalist
+				popularity = 0.06
+			}
+			add_popularity = {
+				ideology = centrist
+				popularity = 0.05
+			}
+			add_popularity = {
+				ideology = national_conservative
+				popularity = 0.05
+			}
+			add_popularity = {
+				ideology = liberal
+				popularity = 0.02
+			}
+		    add_ideas = idea_ras_local_elections
+			country_event = { id = aswan.16 }
+		}
+
+	}
+	focus = {
+		id = RAS_transparent_army
+		icon = small_arms
+		cost = 5
+		prerequisite = {
+			focus = RAS_local_elections
+		}
+		x = 16
+		y = 7
+		completion_reward = {
+		    add_ideas = idea_ras_transparent_army
+		}
+
+	}
+	focus = {
+		id = RAS_right_wing_economics
+		icon = torch_industry
+		cost = 2
+		prerequisite = {
+			focus = RAS_form_the_rebel_government
+		}
+		mutually_exclusive = {
+			focus = RAS_left_wing_economics
+			focus = RAS_centrist_economics
+		}
+		x = 23
+		y = 1
+		completion_reward = {
+		    add_popularity = {
+				ideology = national_conservative
+				popularity = 0.09
+			}
+			add_popularity = {
+				ideology = fascist
+				popularity = 0.02
+			}
+			add_popularity = {
+				ideology = centrist
+				popularity = 0.02
+			}
+			country_event = { id = aswan.17 }
+		}
+
+	}
+	focus = {
+		id = RAS_wave_of_privatisation
+		icon = production_2
+		cost = 3
+		prerequisite = {
+			focus = RAS_right_wing_economics
+		}
+		x = 20
+		y = 2
+		completion_reward = {
+		    add_timed_idea = { idea = idea_ras_wave_of_privatisation days = 200 } 
+			country_event = { id = aswan.18 }
+		}
+
+	}
+	focus = {
+		id = RAS_direct_corporate_influence
+		icon = consumer_goods
+		cost = 5
+		prerequisite = {
+			focus = RAS_right_wing_economics
+		}
+		x = 22
+		y = 2
+		completion_reward = {
+		    add_ideas = idea_ras_direct_corporate_influence
+		}
+
+	}
+	focus = {
+		id = RAS_ban_trade_unions
+		icon = ideology_fist
+		cost = 5
+		prerequisite = {
+			focus = RAS_right_wing_economics
+		}
+		x = 24
+		y = 2
+		completion_reward = {
+		    random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			country_event = { id = aswan.19 }
+		}
+
+	}
+	focus = {
+		id = RAS_all_for_the_free_market
+		icon = liberty_attack_2
+		cost = 5
+		prerequisite = {
+			focus = RAS_right_wing_economics
+		}
+		x = 26
+		y = 2
+		completion_reward = {
+		    add_ideas = idea_ras_all_for_the_free_market
+		}
+
+	}
+	focus = {
+		id = RAS_baathist_coup
+		icon = liberty_attack
+		cost = 1
+		prerequisite = {
+			focus = RAS_wave_of_privatisation
+		}
+		prerequisite = {
+			focus = RAS_direct_corporate_influence
+		}
+		prerequisite = {
+			focus = RAS_ban_trade_unions
+		}
+		prerequisite = {
+			focus = RAS_all_for_the_free_market
+		}
+		mutually_exclusive = {
+			focus = RAS_a_capitalist_administration
+		}
+		x = 21
+		y = 3
+		completion_reward = {
+		    set_politics = {
+	            ruling_party = national_bolshevik
+	            elections_allowed = no
+            }
+			add_popularity = {
+				ideology = nationalist
+				popularity = -0.15
+			}
+			set_party_name = { ideology = national_bolshevik long_name = RAS_baath_party_long name = RAS_baath_party }
+			country_event = { id = aswan.20 }
+		}
+
+	}
+	focus = {
+		id = RAS_bring_in_northern_spies
+		icon = smashing_flag
+		cost = 5
+		prerequisite = {
+			focus = RAS_baathist_coup
+		}
+		x = 20
+		y = 4
+		completion_reward = {
+		    army_experience = 20 
+			air_experience = 20
+			country_event = { id = aswan.21 }
+		}
+
+	}
+	focus = {
+		id = RAS_the_syrian_connection
+		icon = syria
+		cost = 5
+		prerequisite = {
+			focus = RAS_baathist_coup
+		}
+		x = 22
+		y = 4
+		completion_reward = {
+		    random_owned_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = RAS_the_samir_revolution
+		icon = against_communists
+		cost = 2
+		prerequisite = {
+			focus = RAS_bring_in_northern_spies
+		}
+		prerequisite = {
+			focus = RAS_the_syrian_connection
+		}
+		mutually_exclusive = {
+			focus = RAS_consolidate_power
+		}
+		x = 19
+		y = 5
+		completion_reward = {
+		    set_politics = {
+	            ruling_party = communist
+	            elections_allowed = no
+            }
+			add_popularity = {
+				ideology = nationalist
+				popularity = -0.06
+			}
+			add_popularity = {
+				ideology = national_bolshevik
+				popularity = -0.1
+			}
+			country_event = { id = aswan.22 }
+		}
+
+	}
+	focus = {
+		id = RAS_soviet_aid
+		icon = embrace_conservatism
+		cost = 3
+		prerequisite = {
+			focus = RAS_the_samir_revolution
+		}
+		x = 18
+		y = 6
+		completion_reward = {
+		    add_tech_bonus = {
+				name = industry_bonus
+				bonus = 0.2
+				uses = 1
+				category = industry
+			}
+			add_tech_bonus = {
+				name = infantry_weapons_bonus
+				bonus = 0.2
+				uses = 1
+				category = infantry_weapons
+			}
+			add_tech_bonus = {
+				name = computing_tech_bonus
+				bonus = 0.2
+				uses = 1
+				category = computing_tech
+			}
+			add_popularity = {
+				ideology = communist
+				popularity = 0.13
+			}
+		}
+
+	}
+	focus = {
+		id = RAS_consolidate_power
+		icon = focus_family_ties
+		cost = 5
+		prerequisite = {
+			focus = RAS_the_syrian_connection
+		}
+		prerequisite = {
+			focus = RAS_bring_in_northern_spies
+		}
+		mutually_exclusive = {
+			focus = RAS_the_samir_revolution
+		}
+		x = 23
+		y = 5
+		completion_reward = {
+		    add_popularity = {
+				ideology = national_bolshevik
+				popularity = 0.25
+			}
+			add_stability = 0.04
+		}
+
+	}
+	focus = {
+		id = RAS_assads_advisors
+		icon = focus_national_progressive_front
+		cost = 10
+		prerequisite = {
+			focus = RAS_consolidate_power
+		}
+		x = 22
+		y = 6
+		completion_reward = {
+		    remove_ideas = idea_ras_direct_corporate_influence
+			add_ideas = idea_ras_assads_advisors
+		}
+
+	}
+	focus = {
+		id = RAS_the_great_purge
+		icon = focus_power_to_the_generals
+		cost = 5
+		prerequisite = {
+			focus = RAS_assads_advisors
+		}
+		x = 22
+		y = 7
+		completion_reward = {
+		    remove_ideas = idea_ras_all_for_the_free_market
+			army_experience = 35
+			country_event = { id = aswan.23 }
+		}
+
+	}
+	focus = {
+		id = RAS_a_pure_government
+		icon = focus_syria_socialist_support
+		cost = 10
+		prerequisite = {
+			focus = RAS_the_great_purge
+		}
+		x = 22
+		y = 8
+		completion_reward = {
+		    add_stability = 0.08
+		}
+
+	}
+	focus = {
+		id = RAS_total_nationalisation
+		icon = military_factory
+		cost = 10
+		prerequisite = {
+			focus = RAS_consolidate_power
+		}
+		x = 24
+		y = 6
+		completion_reward = {
+		    remove_ideas = idea_ras_wave_of_privatisation
+			add_ideas = idea_ras_total_nationalisation
+		}
+
+	}
+	focus = {
+		id = RAS_military_above_all
+		icon = axis_helmet
+		cost = 5
+		prerequisite = {
+			focus = RAS_total_nationalisation
+		}
+		x = 24
+		y = 7
+		completion_reward = {
+		    add_ideas = idea_ras_military_above_all
+		}
+
+	}
+	focus = {
+		id = RAS_religious_agreement
+		icon = focus_syria_state_atheism
+		cost = 2
+		prerequisite = {
+			focus = RAS_military_above_all
+		}
+		x = 24
+		y = 8
+		completion_reward = {
+		    add_political_power = -100
+			add_stability = 0.05
+			add_popularity = {
+				ideology = national_bolshevik
+				popularity = 0.09
+			}
+			add_popularity = {
+				ideology = national_conservative
+				popularity = 0.07
+			}
+			add_popularity = {
+				ideology = revolutionary_socialist
+				popularity = 0.05
+			}
+			country_event = { id = aswan.24 }
+		}
+
+	}
+	focus = {
+		id = RAS_a_capitalist_administration
+		icon = focus_vice_president_mekki
+		cost = 5
+		prerequisite = {
+			focus = RAS_all_for_the_free_market
+		}
+		prerequisite = {
+			focus = RAS_ban_trade_unions
+		}
+		prerequisite = {
+			focus = RAS_direct_corporate_influence
+		}
+		prerequisite = {
+			focus = RAS_wave_of_privatisation
+		}
+		mutually_exclusive = {
+			focus = RAS_baathist_coup
+		}
+		x = 25
+		y = 3
+		completion_reward = {
+		    add_political_power = 50
+			add_popularity = {
+				ideology = nationalist
+				popularity = 0.06
+			}
+			country_event = { id = aswan.25 }
+		}
+
+	}
+	focus = {
+		id = RAS_democratic_elements
+		icon = anti_fascist
+		cost = 10
+		prerequisite = {
+			focus = RAS_a_capitalist_administration
+		}
+		mutually_exclusive = {
+			focus = RAS_capitalist_tyranny
+		}
+		x = 27
+		y = 4
+		completion_reward = {
+		    add_stability = 0.05
+			country_event = { id = aswan.26 }
+		}
+
+	}
+	focus = {
+		id = RAS_small_business_group
+		icon = ethiopia_allow_autonomy
+		cost = 3
+		prerequisite = {
+			focus = RAS_democratic_elements
+		}
+		x = 26
+		y = 5
+		completion_reward = {
+		    add_ideas = idea_ras_small_business_group
+		}
+
+	}
+	focus = {
+		id = RAS_encourage_military_enlistment
+		icon = guns_green
+		cost = 10
+		prerequisite = {
+			focus = RAS_small_business_group
+		}
+		x = 26
+		y = 6
+		completion_reward = {
+		    add_ideas = idea_ras_military_enlistment
+		}
+
+	}
+	focus = {
+		id = RAS_fund_private_projects
+		icon = construct_civilian
+		cost = 5
+		prerequisite = {
+			focus = RAS_encourage_military_enlistment
+		}
+		x = 26
+		y = 7
+		completion_reward = {
+		    random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = RAS_discuss_the_future
+		icon = putins_inauguration
+		cost = 2
+		prerequisite = {
+			focus = RAS_democratic_elements
+		}
+		x = 28
+		y = 5
+		completion_reward = {
+		    add_stability = 0.05 
+			add_tech_bonus = {
+				name = infantry_tech_bonus
+				bonus = 0.25
+				uses = 1
+				category = infantry_tech
+			}
+			add_tech_bonus = {
+				name = industry_bonus
+				bonus = 0.05
+				uses = 1
+				category = industry
+			}
+			country_event = { id = aswan.27 }
+		}
+
+	}
+	focus = {
+		id = RAS_fiscal_conservatism
+		icon = work_for_the_tsar
+		cost = 10
+		prerequisite = {
+			focus = RAS_discuss_the_future
+		}
+		x = 28
+		y = 6
+		completion_reward = {
+		    add_ideas = idea_ras_fiscal_conservatism
+		}
+
+	}
+	focus = {
+		id = RAS_balanced_labour_laws
+		icon = politburo_debate
+		cost = 10
+		prerequisite = {
+			focus = RAS_fiscal_conservatism
+		}
+		x = 28
+		y = 7
+		completion_reward = {
+		    add_ideas = idea_ras_balanced_labour_laws
+		}
+
+	}
+	focus = {
+		id = RAS_develop_egyptian_industry
+		icon = production
+		cost = 10
+		available = {
+		    NOT = {
+			    country_exists = RLN
+			}
+		}
+		prerequisite = {
+			focus = RAS_negotiate_reunification
+			focus = RAS_declare_war
+		}
+		x = 29
+		y = 1
+		completion_reward = {
+		    random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = RAS_post_unification_morale
+		icon = demand_territory
+		cost = 10
+		prerequisite = {
+			focus = RAS_develop_egyptian_industry
+		}
+		x = 29
+		y = 2
+		completion_reward = {
+		    add_ideas = idea_ras_post_unification_morale
+		}
+
+	}
+	focus = {
+		id = RAS_capitalist_tyranny
+		icon = support_monarchy
+		cost = 10
+		prerequisite = {
+			focus = RAS_a_capitalist_administration
+		}
+		mutually_exclusive = {
+			focus = RAS_democratic_elements
+		}
+		x = 31
+		y = 4
+		completion_reward = {
+		    add_political_power = 150
+			country_event = { id = aswan.28 }
+		}
+
+	}
+	focus = {
+		id = RAS_exploit_the_poor
+		icon = focus_freedom_of_demonstration
+		cost = 10
+		prerequisite = {
+			focus = RAS_capitalist_tyranny
+		}
+		x = 30
+		y = 5
+		completion_reward = {
+		    add_ideas = idea_ras_exploiting_the_poor
+		}
+
+	}
+	focus = {
+		id = RAS_aswan_military_act
+		icon = build_tank
+		cost = 2
+		prerequisite = {
+			focus = RAS_exploit_the_poor
+		}
+		x = 30
+		y = 6
+		completion_reward = {
+		    add_tech_bonus = {
+				name = land_doctrine_bonus
+				bonus = 0.5
+				uses = 1
+				category = land_doctrine
+			}
+			add_tech_bonus = {
+				name = naval_doctrine_bonus
+				bonus = 0.5
+				uses = 1
+				category = naval_doctrine
+			}
+			add_tech_bonus = {
+				name = air_doctrine_bonus
+				bonus = 0.5
+				uses = 1
+				category = air_doctrine
+			}
+		}
+
+	}
+	focus = {
+		id = RAS_purge_all_leftists
+		icon = focus_national_reorganisation_council
+		cost = 5
+		prerequisite = {
+			focus = RAS_aswan_military_act
+		}
+		x = 30
+		y = 7
+		completion_reward = {
+		    add_popularity = {
+				ideology = nationalist
+				popularity = 0.08
+			}
+			add_ideas = idea_ras_leftists_purged
+			country_event = { id = aswan.29 }
+		}
+
+	}
+	focus = {
+		id = RAS_develop_egyptian_infrastructure
+		icon = infrastructure
+		cost = 10
+		available = {
+		    NOT = {
+			    country_exists = RLN
+			}
+		}
+		prerequisite = {
+			focus = RAS_declare_war
+			focus = RAS_negotiate_reunification
+		}
+		x = 31
+		y = 1
+		completion_reward = {
+		    random_owned_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = RAS_train_for_future_wars
+		icon = position_armies
+		cost = 10
+		prerequisite = {
+			focus = RAS_develop_egyptian_infrastructure
+		}
+		x = 31
+		y = 2
+		completion_reward = {
+		    army_experience = 40 
+			air_experience = 40 
+			navy_experience = 40
+		}
+
+	}
+	focus = {
+		id = RAS_decide_their_future
+		icon = dangerous_deal
+		cost = 10
+		prerequisite = {
+			focus = RAS_capitalist_tyranny
+		}
+		x = 32
+		y = 5
+		completion_reward = {
+		    add_political_power = 250
+		}
+
+	}
+	focus = {
+		id = RAS_turn_to_corporatism
+		icon = trade
+		cost = 10
+		prerequisite = {
+			focus = RAS_decide_their_future
+		}
+		x = 32
+		y = 6
+		completion_reward = {
+		    add_ideas = idea_ras_corporatism
+		}
+
+	}
+	focus = {
+		id = RAS_military_reorganisation
+		icon = army_doctrine
+		cost = 10
+		prerequisite = {
+			focus = RAS_turn_to_corporatism
+		}
+		x = 32
+		y = 7
+		completion_reward = {
+		    add_ideas = idea_ras_military_reorganisation
+		}
+
+	}
+	focus = {
+		id = RAS_the_right_path
+		icon = guns_blue
+		cost = 10
+		prerequisite = {
+			focus = RAS_fund_private_projects
+			focus = RAS_balanced_labour_laws
+			focus = RAS_purge_all_leftists
+			focus = RAS_military_reorganisation
+		}
+		x = 29
+		y = 8
+		completion_reward = {
+		    add_ideas = idea_ras_the_right_path
+			remove_ideas = idea_ras_state_of_affairs
+		}
+
+	}
+	focus = {
+		id = RAS_soviet_allegiance
+		icon = ussr
+		cost = 2
+		available = {
+		    has_government = communist
+			SOV = {
+			    has_government = communist
+			}
+		}
+		prerequisite = {
+			focus = RAS_post_unification_worldview
+		}
+		mutually_exclusive = {
+			focus = RAS_continue_neutrality
+			focus = RAS_a_21st_century_alliance
+			focus = RAS_canadian_allegiance
+		}
+		x = 36
+		y = 1
+		completion_reward = {
+		    SOV = {
+			    country_event = { id = generic.1 }
+			}
+		}
+
+	}
+	focus = {
+		id = RAS_methods_of_dictatorship
+		icon = focus_syria_workers_self_management
+		cost = 10
+		prerequisite = {
+			focus = RAS_soviet_allegiance
+		}
+		x = 36
+		y = 2
+		completion_reward = {
+		    add_popularity = {
+				ideology = communist
+				popularity = 0.07
+			}
+			add_ideas = idea_ras_methods_of_dictatorship
+		}
+
+	}
+	focus = {
+		id = RAS_soviet_military_advisors
+		icon = focus_syria_seek_soviet_funding
+		cost = 10
+		prerequisite = {
+			focus = RAS_methods_of_dictatorship
+		}
+		x = 36
+		y = 3
+		completion_reward = {
+		    add_tech_bonus = {
+				name = armor_bonus
+				bonus = 0.2
+				uses = 1
+				category = armor
+			}
+			country_event = { id = aswan.30 }
+		}
+
+	}
+	focus = {
+		id = RAS_continue_neutrality
+		icon = neutrality
+		cost = 2
+		available = {
+		    is_in_faction = no
+		}
+		prerequisite = {
+			focus = RAS_post_unification_worldview
+		}
+		mutually_exclusive = {
+			focus = RAS_soviet_allegiance
+			focus = RAS_a_21st_century_alliance
+			focus = RAS_canadian_allegiance
+		}
+		x = 38
+		y = 1
+		completion_reward = {
+		    add_stability = 0.05
+			country_event = { id = aswan.31 }
+		}
+
+	}
+	focus = {
+		id = RAS_a_21st_century_alliance
+		icon = flags_red
+		cost = 2
+		available = {
+		    NOT = {
+			    OR = {
+				    is_in_faction_with = CAN
+					is_in_faction_with = SOV
+				}
+			}
+			is_in_faction = yes
+		}
+		prerequisite = {
+			focus = RAS_post_unification_worldview
+		}
+		mutually_exclusive = {
+			focus = RAS_soviet_allegiance
+			focus = RAS_continue_neutrality
+			focus = RAS_canadian_allegiance
+		}
+		x = 40
+		y = 1
+		completion_reward = {
+		    add_stability = 0.05
+		}
+
+	}
+	focus = {
+		id = RAS_underdog_victory
+		icon = focus_focus_on_egypt
+		cost = 10
+		prerequisite = {
+			focus = RAS_continue_neutrality
+			focus = RAS_a_21st_century_alliance
+		}
+		x = 39
+		y = 2
+		completion_reward = {
+		    add_political_power = 250
+		}
+
+	}
+	focus = {
+		id = RAS_non_aligned_movement_aid
+		icon = positive_trade_relations
+		cost = 10
+		prerequisite = {
+			focus = RAS_underdog_victory
+		}
+		x = 39
+		y = 3
+		completion_reward = {
+		    random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = RAS_privatisation
+		icon = tear_treaty
+		cost = 10
+		prerequisite = {
+			focus = RAS_reverse_leftist_economics
+		}
+		x = 1
+		y = 6
+		completion_reward = {
+		    add_ideas = idea_ras_privatisation
+		}
+
+	}
+	focus = {
+		id = RAS_austrian_economics
+		icon = flags_yellow
+		cost = 10
+		prerequisite = {
+			focus = RAS_privatisation
+		}
+		x = 1
+		y = 7
+		completion_reward = {
+		    remove_ideas = idea_ras_elements_of_central_planning
+			remove_ideas = idea_ras_privatisation
+			add_ideas = idea_ras_austrian_economics
+		}
+
+	}
+	focus = {
+		id = RAS_reunification_minister
+		icon = two_flags
+		cost = 5
+		prerequisite = {
+			focus = RAS_austrian_economics
+		}
+		prerequisite = {
+			focus = RAS_lift_martial_law
+		}
+		x = 2
+		y = 8
+		completion_reward = {
+		    add_stability = 0.08
+			country_event = { id = aswan.32 }
+		}
+
+	}
+	focus = {
+		id = RAS_rally_the_people
+		icon = focus_freedom_of_speech
+		cost = 10
+		prerequisite = {
+			focus = RAS_reunification_minister
+		}
+		x = 2
+		y = 9
+		completion_reward = {
+		    add_ideas = idea_ras_rallying_the_people
+			remove_ideas = idea_ras_state_of_affairs
+			country_event = { id = aswan.33 }
+		}
+
+	}
+	focus = {
+		id = RAS_enlist_for_your_country
+		icon = focus_spread_democracy
+		cost = 10
+		prerequisite = {
+			focus = RAS_prepare_cabinet
+		}
+		x = 6
+		y = 9
+		completion_reward = {
+		    add_ideas = idea_ras_enlist_for_your_country
+			remove_ideas = idea_ras_state_of_affairs
+			country_event = { id = aswan.34 }
+		}
+
+	}
+	focus = {
+		id = RAS_minor_subsidies
+		icon = generic_construction_2
+		cost = 10
+		prerequisite = {
+			focus = RAS_gradual_transition
+		}
+		x = 10
+		y = 7
+		completion_reward = {
+		    random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = steel_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = aluminium_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = tungsten_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = RAS_reunification_organisation
+		icon = parties
+		cost = 5
+		prerequisite = {
+			focus = RAS_minor_subsidies
+		}
+		prerequisite = {
+			focus = RAS_new_generations
+		}
+		prerequisite = {
+			focus = RAS_weaken_military_influence
+		}
+		x = 10
+		y = 9
+		completion_reward = {
+		    add_stability = 0.08
+			remove_ideas = idea_ras_state_of_affairs
+		}
+
+	}
+	focus = {
+		id = RAS_forge_our_own_way
+		icon = focus_on_agriculture
+		cost = 10
+		prerequisite = {
+			focus = RAS_new_generations
+		}
+		prerequisite = {
+			focus = RAS_weaken_military_influence
+		}
+		prerequisite = {
+			focus = RAS_minor_subsidies
+		}
+		x = 12
+		y = 9
+		completion_reward = {
+		    add_ideas = idea_ras_forge_our_own_way
+		} 
+
+	}
+	focus = {
+		id = RAS_military_convention
+		icon = navy_doctrine
+		cost = 10
+		prerequisite = {
+			focus = RAS_fossil_fuel_advancement
+		}
+		prerequisite = {
+			focus = RAS_strict_control_of_services
+		}
+		prerequisite = {
+			focus = RAS_transparent_army
+		}
+		x = 14
+		y = 9
+		completion_reward = {
+		    army_experience = 15 
+			air_experience = 5 
+			navy_experience = 5 
+			add_tech_bonus = {
+				name = land_doctrine_bonus
+				bonus = 0.25
+				uses = 1
+				category = land_doctrine
+			}
+			add_stability = 0.025
+			remove_ideas = idea_ras_state_of_affairs
+		}
+
+	}
+	focus = {
+		id = RAS_international_advisors
+		icon = improve_relations
+		cost = 10
+		prerequisite = {
+			focus = RAS_transparent_army
+		}
+		prerequisite = {
+			focus = RAS_strict_control_of_services
+		}
+		prerequisite = {
+			focus = RAS_fossil_fuel_advancement
+		}
+		x = 16
+		y = 9
+		completion_reward = {
+		    add_ideas = idea_ras_international_advisors
+		}
+
+	}
+	focus = {
+		id = RAS_peoples_republic_constitution
+		icon = focus_syria_coalition_with_communists
+		cost = 4
+		prerequisite = {
+			focus = RAS_the_samir_revolution
+		}
+		x = 20
+		y = 6
+		completion_reward = {
+		    add_stability = 0.13
+			country_event = { id = aswan.35 }
+		}
+
+	}
+	focus = {
+		id = RAS_industrial_nationalisation
+		icon = generic_construction
+		cost = 10
+		prerequisite = {
+			focus = RAS_soviet_aid
+		}
+		x = 18
+		y = 7
+		completion_reward = {
+		    add_ideas = idea_ras_industrial_nationalisation
+		}
+
+	}
+	focus = {
+		id = RAS_monthly_quotas
+		icon = focus_syria_propaganda_effort
+		cost = 10
+		prerequisite = {
+			focus = RAS_peoples_republic_constitution
+		}
+		x = 20
+		y = 7
+		completion_reward = {
+		    add_ideas = idea_ras_monthly_quotas
+		}
+
+	}
+	focus = {
+		id = RAS_scientific_revolution
+		icon = generic_research
+		cost = 10
+		prerequisite = {
+			focus = RAS_industrial_nationalisation
+		}
+		x = 18
+		y = 8
+		completion_reward = {
+		    add_ideas = idea_ras_scientific_revolution
+		}
+
+	}
+	focus = {
+		id = RAS_move_against_religion
+		icon = major_war
+		cost = 5
+		prerequisite = {
+			focus = RAS_monthly_quotas
+		}
+		x = 20
+		y = 8
+		completion_reward = {
+		    add_political_power = 100
+		}
+
+	}
+	focus = {
+		id = RAS_socialist_unification
+		icon = focus_seize_the_means
+		cost = 10
+		prerequisite = {
+			focus = RAS_scientific_revolution
+			focus = RAS_move_against_religion
+			focus = RAS_a_pure_government
+			focus = RAS_religious_agreement
+		}
+		x = 20
+		y = 9
+		completion_reward = {
+		    add_stability = 0.03 
+			add_popularity = {
+				ideology = communist
+				popularity = 0.1
+			}
+			army_experience = 25
+			remove_ideas = idea_ras_state_of_affairs
+		}
+
+	}
+	focus = {
+		id = RAS_workers_of_egypt_unite
+		icon = focus_syria_down_with_the_president
+		cost = 10
+		prerequisite = {
+			focus = RAS_a_pure_government
+			focus = RAS_religious_agreement
+			focus = RAS_move_against_religion
+			focus = RAS_scientific_revolution
+		}
+		x = 22
+		y = 9
+		completion_reward = {
+		    add_ideas = idea_ras_workers_of_egypt_unite
+		}
+
+	}
+	focus = {
+		id = RAS_post_unification_foresight
+		icon = focus_spread_democracy
+		cost = 10
+		prerequisite = {
+			focus = RAS_the_right_path
+		}
+		x = 29
+		y = 9
+		completion_reward = {
+		    add_ideas = idea_ras_post_unification_foresight
+		}
+
+	}
+	focus = {
+		id = RAS_canadian_allegiance
+		icon = canada
+		cost = 2
+		available = {
+		    OR = {
+			    has_government = national_conservative
+				has_government = centrist 
+				has_government = liberal 
+				has_government = new_democrat
+				has_government = moderate_socialist
+			}
+			CAN = {
+			    OR = {
+			        has_government = national_conservative
+				    has_government = centrist 
+				    has_government = liberal 
+				    has_government = new_democrat
+				    has_government = moderate_socialist
+			    }
+			}
+		}
+		prerequisite = {
+			focus = RAS_post_unification_worldview
+		}
+		mutually_exclusive = {
+			focus = RAS_soviet_allegiance
+			focus = RAS_continue_neutrality
+			focus = RAS_a_21st_century_alliance
+		}
+		x = 42
+		y = 1
+		completion_reward = {
+		    CAN = {
+			    country_event = { id = generic.4 }
+			}
+		}
+
+	}
+	focus = {
+		id = RAS_methods_of_democracy
+		icon = forceful_treaty
+		cost = 10
+		prerequisite = {
+			focus = RAS_canadian_allegiance
+		}
+		x = 42
+		y = 2
+		completion_reward = {
+		    add_ideas = idea_ras_methods_of_democracy
+		}
+
+	}
+	focus = {
+		id = RAS_canadian_economic_advisors
+		icon = consumer_goods
+		cost = 10
+		prerequisite = {
+			focus = RAS_methods_of_democracy
+		}
+		x = 42
+		y = 3
+		completion_reward = {
+		    add_tech_bonus = {
+				name = industry_bonus
+				bonus = 0.05
+				uses = 1
+				category = industry
+			}
+			add_tech_bonus = {
+				name = electronics_bonus
+				bonus = 0.05
+				uses = 1
+				category = electronics
+			}
+			add_tech_bonus = {
+				name = synth_resources_bonus
+				bonus = 0.05
+				uses = 1
+				category = synth_resources
+			}
+			add_tech_bonus = {
+				name = construction_tech_bonus
+				bonus = 0.05
+				uses = 1
+				category = construction_tech
+			}
+		}
+
+	}
+}

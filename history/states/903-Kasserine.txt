@@ -1,0 +1,20 @@
+state={
+	id=903
+	name="STATE_903"
+	provinces={
+		4061 13600 13601 13602 13603 13604 
+	}
+	state_category = large_town
+	manpower= 439243
+	history={
+		owner = LBA
+		add_core_of = LBA
+		add_core_of = TUN
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 2
+		}
+
+	}
+	buildings_max_level_factor=1.000
+}

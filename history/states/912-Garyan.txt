@@ -1,0 +1,19 @@
+state={
+	id=912
+	name="STATE_912"
+	provinces={
+		1189 4051 13584 
+	}
+	state_category = large_town
+	history={
+		owner = LBA
+		add_core_of = LBA
+		buildings = {
+			infrastructure = 4
+			arms_factory = 1
+		}
+
+	}
+	manpower=162000
+	buildings_max_level_factor=1.000
+}

@@ -1,0 +1,18 @@
+﻿
+units= {
+	####### NAVAL UNITS #######
+	##### Turkish Navy #####
+	##### Battle Force (CO: ) #####
+	### Istanbul ###
+	fleet = {
+		name = "Turkish Navy"
+		naval_base = 9883 # Anzio
+		task_force = {
+			name = "Gediz Attack group"
+			location = 9883 # Istanbul
+			ship = { name = "Gediz" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = TUR version_name = "Destroyer I" } } }
+			ship = { name = "Giresun" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = TUR version_name = "Destroyer I" } } }
+		
+		}
+	}
+}

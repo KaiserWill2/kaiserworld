@@ -1,0 +1,569 @@
+﻿division_template = {
+	name = "Infantry Division"
+	
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		motorized = { x = 0 y = 3 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 1 y = 3 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+		infantry = { x = 3 y = 0 }
+		infantry = { x = 3 y = 1 }
+		infantry = { x = 4 y = 0 }
+		infantry = { x = 4 y = 1 }
+		infantry = { x = 4 y = 2 }
+	}
+	
+	support = {
+		field_hospital = { x = 0 y = 0 }
+	}
+}
+
+division_template = {
+	name = "Engineer Brigade"
+	
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		cavalry = { x = 1 y = 0 }
+	}
+	
+	support = {
+		engineer = { x = 0 y = 0 }
+	}
+}
+
+division_template = {
+	name = "Militia Brigade"
+	
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+	}
+	
+	priority = 0
+}
+
+division_template = {
+	name = "Mountain Division"
+	
+	regiments = {
+		mountaineers = { x = 0 y = 0 }
+		mountaineers = { x = 0 y = 1 }
+		mountaineers = { x = 0 y = 2 }
+		mountaineers = { x = 0 y = 3 }
+		mountaineers = { x = 1 y = 0 }
+		mountaineers = { x = 1 y = 1 }
+		mountaineers = { x = 1 y = 2 }
+		mountaineers = { x = 1 y = 3 }
+		mountaineers = { x = 2 y = 0 }
+		mountaineers = { x = 2 y = 1 }
+		mountaineers = { x = 2 y = 2 }
+		mountaineers = { x = 2 y = 3 }
+	}
+	
+	support = {
+		artillery = { x = 0 y = 0 }
+	}
+}
+
+division_template = {
+	name = "Rapid Division"
+	
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		motorized = { x = 0 y = 3 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		modern_armor = { x = 2 y = 0 }
+	}
+	
+	support = {
+		field_hospital = { x = 0 y = 0 }
+		anti_air = { x = 0 y = 1 }
+		artillery = { x = 0 y = 2 }
+	}
+}
+
+division_template = {
+	name = "Armoured Division"
+	
+	regiments = {
+		modern_armor = { x = 0 y = 0 }
+		modern_armor = { x = 0 y = 1 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+	}
+	
+	support = {
+		engineer = { x = 0 y = 0 }
+	}
+}
+
+division_template = {
+	name = "Artillery Division"
+	
+	regiments = {
+		artillery_brigade = { x = 0 y = 0 }
+		artillery_brigade = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+	
+	support = {
+		engineer = { x = 0 y = 0 }
+	}
+}
+
+division_template = {
+	name = "Airborne Brigade"
+	
+	regiments = {
+		paratrooper = { x = 0 y = 0 }
+		paratrooper = { x = 0 y = 1 }
+	}
+	
+	support = {
+		field_hospital = { x = 0 y = 0 }
+	}
+}
+
+division_template = {
+	name = "Reconnaissance Brigade"
+	
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+	}
+}
+
+
+
+units = {
+	
+	division = {
+		name = "Militia Cadre"
+		location = 1159
+		division_template = "Militia Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Militia Cadre"
+		location = 1609
+		division_template = "Militia Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Infantry Cadre"
+		location = 1609
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Infantry Cadre"
+		location = 1609
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Infantry Cadre"
+		location = 1609
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Infantry Cadre"
+		location = 1609
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Militia Cadre"
+		location = 4062
+		division_template = "Militia Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Militia Cadre"
+		location = 4204
+		division_template = "Militia Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Militia Cadre"
+		location = 4245
+		division_template = "Militia Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Militia Cadre"
+		location = 4644
+		division_template = "Militia Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Militia Cadre"
+		location = 7220
+		division_template = "Militia Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Infantry Cadre"
+		location = 7220
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Infantry Cadre"
+		location = 7220
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Infantry Cadre"
+		location = 7220
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Militia Cadre"
+		location = 1444
+		division_template = "Militia Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Militia Cadre"
+		location = 7662
+		division_template = "Militia Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Militia Cadre"
+		location = 10077
+		division_template = "Militia Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Militia Cadre"
+		location = 12050
+		division_template = "Militia Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Militia Cadre"
+		location = 7565
+		division_template = "Militia Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Militia Cadre"
+		location = 10389
+		division_template = "Militia Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Infantry Cadre"
+		location = 10389
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Infantry Cadre"
+		location = 10389
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Infantry Cadre"
+		location = 10389
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Militia Cadre"
+		location = 1159
+		division_template = "Militia Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Militia Cadre"
+		location = 1609
+		division_template = "Militia Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Infantry Cadre"
+		location = 1609
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Infantry Cadre"
+		location = 1609
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Infantry Cadre"
+		location = 1609
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Infantry Cadre"
+		location = 1609
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Militia Cadre"
+		location = 4062
+		division_template = "Militia Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Militia Cadre"
+		location = 4204
+		division_template = "Militia Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Militia Cadre"
+		location = 4245
+		division_template = "Militia Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Militia Cadre"
+		location = 4644
+		division_template = "Militia Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Militia Cadre"
+		location = 7220
+		division_template = "Militia Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Infantry Cadre"
+		location = 7220
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Infantry Cadre"
+		location = 7220
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Infantry Cadre"
+		location = 7220
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Militia Cadre"
+		location = 1444
+		division_template = "Militia Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Militia Cadre"
+		location = 7662
+		division_template = "Militia Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Militia Cadre"
+		location = 10077
+		division_template = "Militia Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Militia Cadre"
+		location = 12050
+		division_template = "Militia Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Militia Cadre"
+		location = 7565
+		division_template = "Militia Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Militia Cadre"
+		location = 10389
+		division_template = "Militia Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Infantry Cadre"
+		location = 10389
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Infantry Cadre"
+		location = 10389
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Infantry Cadre"
+		location = 10389
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Militia Cadre"
+		location = 1233
+		division_template = "Militia Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Infantry Cadre"
+		location = 1233
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Infantry Cadre"
+		location = 1233
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Infantry Cadre"
+		location = 1233
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Militia Cadre"
+		location = 1159
+		division_template = "Militia Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Infantry Cadre"
+		location = 1159
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Infantry Cadre"
+		location = 1159
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Militia Cadre"
+		location = 1609
+		division_template = "Militia Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Militia Cadre"
+		location = 4062
+		division_template = "Militia Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Militia Cadre"
+		location = 4204
+		division_template = "Militia Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Militia Cadre"
+		location = 4245
+		division_template = "Militia Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Militia Cadre"
+		location = 4644
+		division_template = "Militia Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Militia Cadre"
+		location = 7220
+		division_template = "Militia Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Militia Cadre"
+		location = 1444
+		division_template = "Militia Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Militia Cadre"
+		location = 7662
+		division_template = "Militia Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Militia Cadre"
+		location = 10077
+		division_template = "Militia Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Militia Cadre"
+		location = 12050
+		division_template = "Militia Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Militia Cadre"
+		location = 7565
+		division_template = "Militia Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Militia Cadre"
+		location = 10389
+		division_template = "Militia Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Militia Cadre"
+		location = 1233
+		division_template = "Militia Brigade"
+		start_experience_factor = 0.3
+	}
+}
+
+instant_effect = {
+	
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "NAX"
+		}
+		requested_factories = 5
+		progress = 0.1
+		efficiency = 100
+		amount = 250000
+	}
+	
+}

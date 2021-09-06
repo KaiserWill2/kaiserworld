@@ -1,0 +1,31 @@
+
+state={
+	id=430
+	name="STATE_430" #East Bangladesh
+
+	history={
+		owner = RAJ
+		add_core_of = BNG
+		add_core_of = BGL
+		victory_points = {
+			11929 30
+		}
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 5
+			arms_factory = 2
+			air_base = 5
+			11968 = { naval_base = 3 }
+			11929 = { naval_base = 6 }
+		}
+
+	}
+
+	provinces={
+		1075 7634 9993 11929 11968  
+	}
+	manpower=55813724
+	buildings_max_level_factor=1.000
+	state_category=megalopolis
+}
+

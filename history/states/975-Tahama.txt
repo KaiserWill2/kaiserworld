@@ -1,0 +1,32 @@
+state = {
+	id = 975
+	name = "STATE_975"
+	manpower = 5167000
+	
+	state_category = rural
+	
+	resources = {
+		steel = 3
+	}
+	history = {
+		owner = YEM
+		buildings = {
+			infrastructure = 3
+			13615 = {
+				naval_base = 3
+			}
+			13619 = {
+				naval_base = 2
+			}
+		}
+		add_core_of = YEM
+		victory_points = { 13615 10 } #Al Hudaydah, state capital
+		victory_points = { 13619 5 } #Al Luhayyah
+		victory_points = { 13621 5 } #Maydi
+		victory_points = { 13614 5 } #Mawshij
+	}
+
+	provinces = {
+		13614 13615 13616 13617 13618 13619 13620 13621
+	}
+}

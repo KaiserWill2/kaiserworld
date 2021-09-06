@@ -1,0 +1,121 @@
+﻿division_template = {
+	name = "Infantry Brigade"
+	
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+	}
+	support = {
+		field_hospital = { x = 0 y = 0 }
+	}
+}
+division_template = {
+	name = "Rapid Deployment Brigade"
+	
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		motorized = { x = 0 y = 3 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+	}
+	support = {
+		field_hospital = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+	}
+}
+division_template = {
+	name = "Mechanized Brigade"
+	
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		motorized = { x = 0 y = 3 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+		motorized = { x = 1 y = 3 }
+		motorized = { x = 2 y = 0 }
+		motorized = { x = 2 y = 1 }
+	}
+	support = {
+		field_hospital = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+	}
+}
+division_template = {
+	name = "Armored Brigade"
+	
+	regiments = {
+		heavy_armor = { x = 0 y = 0 }
+		heavy_armor = { x = 0 y = 1 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+		motorized = { x = 1 y = 3 }
+	}
+	support = {
+		field_hospital = { x = 0 y = 0 }
+	}
+}
+division_template = {
+	name = "Artillery Regiment"
+	
+	regiments = {
+		artillery_brigade = { x = 0 y = 0 }
+		artillery_brigade = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 1 y = 3 }
+	}
+	support = {
+		field_hospital = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+	}
+}
+
+units = {
+
+	division = {
+		name = "Czech Military Academy"
+		location = 11511
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "4th Rapid Deployment Brigade"
+		location = 3585
+		division_template = "Rapid Deployment Brigade"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "7th Mechanized Brigade"
+		location = 3462
+		division_template = "Mechanized Brigade"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "Air Force Ground Support"
+		location = 3462
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "13th Artillery Regiment"
+		location = 569
+		division_template = "Artillery Regiment"
+		start_experience_factor = 0.3
+	}
+	
+}

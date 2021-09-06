@@ -1,0 +1,26 @@
+
+state={
+	id=1017
+	name="STATE_1017"
+
+	history={
+		owner = USA
+		buildings = {
+			infrastructure = 3
+			air_base = 2
+
+		}
+		add_core_of = USA
+		victory_points = {
+			10711 1 
+		}
+
+	}
+
+	provinces={
+		7814 12651 1815 10711 
+	}
+	manpower=141784
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+}

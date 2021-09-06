@@ -1,0 +1,23 @@
+state={
+	id=892
+	name="STATE_892"
+        state_category = town
+	provinces={
+		720 954 1527 1604 1655 4508 4590 6737 7611 7626 7831 10339 10393 10457 10461 11589 12305 12365 12497 12697 
+	}
+	history={
+		owner = USA
+		add_core_of = USA
+		victory_points = {
+			12697 2
+		}
+		victory_points = {
+			1527 1
+		}
+		buildings = {
+			infrastructure = 5
+		}
+	}
+	manpower=700000
+	buildings_max_level_factor=1.000
+}

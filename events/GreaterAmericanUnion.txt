@@ -1,0 +1,1205 @@
+﻿add_namespace = natbolamerica
+
+#Bernie Sanders dies
+country_event = {
+	id = natbolamerica.1
+	title = natbolamerica.1.t
+	desc = natbolamerica.1.d
+	picture = bernie_dead
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = GAU
+		date > 2017.1.1
+		date < 2017.1.20
+		has_government = national_bolshevik
+	}
+	
+	option = {
+		name = natbolamerica.1.o1
+		hidden_effect = {
+			every_country = {
+		        limit = {
+			        NOT = {
+				        tag = GAU
+				    }
+			    }
+			    news_event = {
+			        hours = 4
+			        id = news.191
+		        }
+		    }
+		}
+		create_country_leader = {
+	        name = "National People's Council"
+	        picture = "Portrait_GAU_National_Peoples_Council.dds"
+	        ideology = national_bolshevik_ideology
+        }
+		add_stability = -0.25
+		set_country_flag = bernie_sanders_is_dead
+		set_country_flag = power_struggle
+	}
+}
+
+#Emergency party convention
+country_event = {
+	id = natbolamerica.2
+	title = natbolamerica.2.t
+	desc = natbolamerica.2.d
+	picture = emergency_party_convention
+	
+	is_triggered_only = yes
+	
+	option = {    #Loyalists
+		name = natbolamerica.2.o1
+		set_country_flag = loyalists_come_out_on_top
+		ai_chance = {
+			factor = 60
+		}
+	}
+	
+	option = {    #National syndicalists
+		name = natbolamerica.2.o2
+		set_country_flag = national_syndicalists_come_out_on_top
+		add_political_power = -50
+		ai_chance = {
+			factor = 30
+		}
+	}
+	
+	option = {    #Communists
+		name = natbolamerica.2.o3
+		set_country_flag = communists_come_out_on_top
+		add_political_power = -100
+		ai_chance = {
+			factor = 10
+		}
+	}
+}
+
+#Emergency presidential election
+country_event = {
+	id = natbolamerica.3
+	title = natbolamerica.3.t
+	desc = natbolamerica.3.d
+	picture = emergency_presidential_election
+	
+	is_triggered_only = yes
+	
+	option = {    #General Robinson
+		name = natbolamerica.3.o1
+		set_country_flag = elected_general_robinson
+		add_popularity = {
+			ideology = nationalist
+			popularity = 0.45
+		}
+		ai_chance = {
+			factor = 33
+		}
+	}
+	
+	option = {    #Pastor Phelps
+		name = natbolamerica.3.o2
+		set_country_flag = elected_pastor_phelps
+		add_popularity = {
+			ideology = nationalist
+			popularity = 0.2
+		}
+		add_popularity = {
+			ideology = fascist
+			popularity = 0.1
+		}
+		add_popularity = {
+			ideology = national_conservative
+			popularity = 0.15
+		}
+		ai_chance = {
+			factor = 32
+		}
+	}
+	
+	option = {    #Madame Welch
+		name = natbolamerica.3.o3
+		set_country_flag = elected_madame_welch
+		add_popularity = {
+			ideology = centrist
+			popularity = 0.45
+		}
+		ai_chance = {
+			factor = 35
+		}
+	}
+}
+
+#Invited to league of american nations
+country_event = {
+	id = natbolamerica.4
+	title = natbolamerica.4.t
+	desc = natbolamerica.4.d
+	picture = emergency_presidential_election
+	
+	is_triggered_only = yes
+	
+	option = {    #Accept
+		name = natbolamerica.4.o1
+		add_ai_strategy = {
+		    type = alliance
+		    id = "GAU"
+		    value = 150
+	    }
+		add_ai_strategy = {
+		    type = befriend
+		    id = "GAU"
+		    value = 50
+	    }
+		GAU = {
+		    add_to_faction = ROOT
+		}
+		GAU = {
+		    country_event = { id = natbolamerica.5 }
+		} 
+		ai_chance = {
+			factor = 90
+		}
+	}
+	
+	option = {    #Refuse
+		name = natbolamerica.4.o2
+		GAU = {
+		    country_event = { id = natbolamerica.6 }
+		}
+		ai_chance = {
+			factor = 10
+		}
+	}
+}
+
+#Country accepts
+country_event = {
+	id = natbolamerica.5
+	title = natbolamerica.5.t
+	desc = natbolamerica.5.d
+	picture = emergency_presidential_election
+	
+	is_triggered_only = yes
+	
+	option = {    
+		name = natbolamerica.5.o1
+	}
+}
+
+#Country refuses
+country_event = {
+	id = natbolamerica.6
+	title = natbolamerica.6.t
+	desc = natbolamerica.6.d
+	picture = emergency_presidential_election
+	
+	is_triggered_only = yes
+	
+	option = {    
+		name = natbolamerica.6.o1
+	}
+}
+
+#Support for the war surges
+country_event = {
+	id = natbolamerica.7
+	title = natbolamerica.7.t
+	desc = natbolamerica.7.d
+	picture = war_support_surges
+	
+	is_triggered_only = yes
+	
+	option = {    
+		name = natbolamerica.7.o1
+	}
+}
+
+#Provisional congress dissolved
+country_event = {
+	id = natbolamerica.8
+	title = natbolamerica.8.t
+	desc = natbolamerica.8.d
+	picture = provisional_american_congress
+	
+	is_triggered_only = yes
+	
+	option = {    
+		name = natbolamerica.8.o1
+		hidden_effect = {
+			every_country = {
+		        limit = {
+			        NOT = {
+				        tag = GAU
+				    }
+			    }
+			    news_event = {
+			        hours = 4
+			        id = news.192
+		        }
+		    }
+		}
+	}
+}
+
+#State funeral for sanders
+country_event = {
+	id = natbolamerica.9
+	title = natbolamerica.9.t
+	desc = natbolamerica.9.d
+	picture = state_funeral_for_sanders
+	
+	is_triggered_only = yes
+	
+	option = {    
+		name = natbolamerica.9.o1
+		hidden_effect = {
+			every_country = {
+		        limit = {
+			        NOT = {
+				        tag = GAU
+				    }
+			    }
+			    news_event = {
+			        hours = 4
+			        id = news.193
+		        }
+		    }
+		}
+	}
+}
+
+#Chairman of the national people's council denounces sanders
+country_event = {
+	id = natbolamerica.10
+	title = natbolamerica.10.t
+	desc = natbolamerica.10.d
+	picture = sanders_denounced
+	
+	is_triggered_only = yes
+	
+	option = {    
+		name = natbolamerica.10.o1
+		hidden_effect = {
+			every_country = {
+		        limit = {
+			        NOT = {
+				        tag = GAU
+				    }
+			    }
+			    news_event = {
+			        hours = 4
+			        id = news.194
+		        }
+		    }
+		}
+	}
+}
+
+#Trade council leaders arrested
+country_event = {
+	id = natbolamerica.11
+	title = natbolamerica.11.t
+	desc = natbolamerica.11.d
+	picture = trade_council_arrested
+	
+	is_triggered_only = yes
+	
+	option = {    
+		name = natbolamerica.11.o1
+	}
+}
+
+#Bernie reverses the movement
+country_event = {
+	id = natbolamerica.12
+	title = natbolamerica.12.t
+	desc = natbolamerica.12.d
+	picture = sanders_reverses_movement
+	
+	is_triggered_only = yes
+	
+	option = {    
+		name = natbolamerica.12.o1
+		hidden_effect = {
+			every_country = {
+		        limit = {
+			        NOT = {
+				        tag = GAU
+				    }
+			    }
+			    news_event = {
+			        hours = 4
+			        id = news.195
+		        }
+		    }
+		}
+	}
+}
+
+#Trial of the committee
+country_event = {
+	id = natbolamerica.13
+	title = natbolamerica.13.t
+	desc = natbolamerica.13.d
+	picture = trial_of_the_committee
+	
+	is_triggered_only = yes
+	
+	option = {    
+		name = natbolamerica.13.o1
+	}
+}
+
+#Operation lake smoke
+country_event = {
+	id = natbolamerica.14
+	title = natbolamerica.14.t
+	desc = natbolamerica.14.d
+	picture = operation_lake_smoke
+	
+	is_triggered_only = yes
+	
+	option = {    
+		name = natbolamerica.14.o1
+	}
+}
+
+#Operation mountain ridge
+country_event = {
+	id = natbolamerica.15
+	title = natbolamerica.15.t
+	desc = natbolamerica.15.d
+	picture = operation_mountain_ridge
+	
+	is_triggered_only = yes
+	
+	option = {    
+		name = natbolamerica.15.o1
+	}
+}
+
+#Operation shining star
+country_event = {
+	id = natbolamerica.16
+	title = natbolamerica.16.t
+	desc = natbolamerica.16.d
+	picture = operation_shining_star
+	
+	is_triggered_only = yes
+	
+	option = {    
+		name = natbolamerica.16.o1
+	}
+}
+
+#Operation forest plain
+country_event = {
+	id = natbolamerica.17
+	title = natbolamerica.17.t
+	desc = natbolamerica.17.d
+	picture = operation_forest_plain
+	
+	is_triggered_only = yes
+	
+	option = {    
+		name = natbolamerica.17.o1
+	}
+}
+
+#Operation blue sky
+country_event = {
+	id = natbolamerica.18
+	title = natbolamerica.18.t
+	desc = natbolamerica.18.d
+	picture = operation_blue_sky
+	
+	is_triggered_only = yes
+	
+	option = {    
+		name = natbolamerica.18.o1
+	}
+}
+
+#Operation looming desert
+country_event = {
+	id = natbolamerica.19
+	title = natbolamerica.19.t
+	desc = natbolamerica.19.d
+	picture = operation_looming_desert
+	
+	is_triggered_only = yes
+	
+	option = {    
+		name = natbolamerica.19.o1
+	}
+}
+
+#Operation yellow sun
+country_event = {
+	id = natbolamerica.20
+	title = natbolamerica.20.t
+	desc = natbolamerica.20.d
+	picture = operation_yellow_sun
+	
+	is_triggered_only = yes
+	
+	option = {    
+		name = natbolamerica.20.o1
+	}
+}
+
+#Jeff Mackler sworn in as Supreme Leader
+country_event = {
+	id = natbolamerica.21
+	title = natbolamerica.21.t
+	desc = natbolamerica.21.d
+	picture = jeff_mackler
+	
+	is_triggered_only = yes
+	
+	option = {    
+		name = natbolamerica.21.o1
+		hidden_effect = {
+			every_country = {
+		        limit = {
+			        NOT = {
+				        tag = GAU
+				    }
+			    }
+			    news_event = {
+			        hours = 4
+			        id = news.196
+		        }
+		    }
+		}
+	}
+}
+
+#Leo Gerard sworn in as Supreme Leader
+country_event = {
+	id = natbolamerica.22
+	title = natbolamerica.22.t
+	desc = natbolamerica.22.d
+	picture = leo_gerard
+	
+	is_triggered_only = yes
+	
+	option = {    
+		name = natbolamerica.22.o1
+		hidden_effect = {
+			every_country = {
+		        limit = {
+			        NOT = {
+				        tag = GAU
+				    }
+			    }
+			    news_event = {
+			        hours = 4
+			        id = news.197
+		        }
+		    }
+		}
+	}
+}
+
+#Sam Webb sworn in as Supreme Leader
+country_event = {
+	id = natbolamerica.23
+	title = natbolamerica.23.t
+	desc = natbolamerica.23.d
+	picture = sam_webb
+	
+	is_triggered_only = yes
+	
+	option = {    
+		name = natbolamerica.23.o1
+		hidden_effect = {
+			every_country = {
+		        limit = {
+			        NOT = {
+				        tag = GAU
+				    }
+			    }
+			    news_event = {
+			        hours = 4
+			        id = news.198
+		        }
+		    }
+		}
+	}
+}
+
+#Inauguration of Lori Robinson
+country_event = {
+	id = natbolamerica.24
+	title = natbolamerica.24.t
+	desc = natbolamerica.24.d
+	picture = inauguration_lori_robinson
+	
+	is_triggered_only = yes
+	
+	option = {    
+		name = natbolamerica.24.o1
+		hidden_effect = {
+			every_country = {
+		        limit = {
+			        NOT = {
+				        tag = GAU
+				    }
+			    }
+			    news_event = {
+			        hours = 2
+			        id = news.199
+		        }
+		    }
+		}
+		if = {
+		    limit = {
+			    GAU = {
+				    is_ai = no
+				}
+			}
+			hidden_effect = {
+		        sound_effect = hail_to_the_chief_trigger_sound
+		    }
+		}
+	}
+}
+
+#Inauguration of Fred Phelps
+country_event = {
+	id = natbolamerica.25
+	title = natbolamerica.25.t
+	desc = natbolamerica.25.d
+	picture = inauguration_fred_phelps
+	
+	is_triggered_only = yes
+	
+	option = {    
+		name = natbolamerica.25.o1
+		hidden_effect = {
+			every_country = {
+		        limit = {
+			        NOT = {
+				        tag = GAU
+				    }
+			    }
+			    news_event = {
+			        hours = 2
+			        id = news.200
+		        }
+		    }
+		}
+		if = {
+		    limit = {
+			    GAU = {
+				    is_ai = no
+				}
+			}
+			hidden_effect = {
+		        sound_effect = hail_to_the_chief_trigger_sound
+		    }
+		}
+	}
+}
+
+#Inauguration of Laura Welch
+country_event = {
+	id = natbolamerica.26
+	title = natbolamerica.26.t
+	desc = natbolamerica.26.d
+	picture = inauguration_laura_welch
+	
+	is_triggered_only = yes
+	
+	option = {    
+		name = natbolamerica.26.o1
+		hidden_effect = {
+			every_country = {
+		        limit = {
+			        NOT = {
+				        tag = GAU
+				    }
+			    }
+			    news_event = {
+			        hours = 2
+			        id = news.201
+		        }
+		    }
+		}
+		if = {
+		    limit = {
+			    GAU = {
+				    is_ai = no
+				}
+			}
+			hidden_effect = {
+		        sound_effect = hail_to_the_chief_trigger_sound
+		    }
+		}
+	}
+}
+
+#Mike Pence converts to protestantism
+country_event = {
+	id = natbolamerica.27
+	title = natbolamerica.27.t
+	desc = natbolamerica.27.d
+	picture = mike_pence_converts
+	
+	is_triggered_only = yes
+	
+	option = {    
+		name = natbolamerica.27.o1
+	}
+}
+
+#House of Representatives created
+country_event = {
+	id = natbolamerica.28
+	title = natbolamerica.28.t
+	desc = natbolamerica.28.d
+	picture = house_of_representatives_created
+	
+	is_triggered_only = yes
+	
+	option = {    
+		name = natbolamerica.28.o1
+	}
+}
+
+#Senate created
+country_event = {
+	id = natbolamerica.29
+	title = natbolamerica.29.t
+	desc = natbolamerica.29.d
+	picture = american_senate_created
+	
+	is_triggered_only = yes
+	
+	option = {    
+		name = natbolamerica.29.o1
+	}
+}
+
+#Southern leaders executed
+country_event = {
+	id = natbolamerica.31
+	title = natbolamerica.31.t
+	desc = natbolamerica.31.d
+	picture = trial_of_the_committee
+	
+	is_triggered_only = yes
+	
+	option = {    
+		name = natbolamerica.31.o1
+	}
+}
+
+#Operation emancipation
+country_event = {
+	id = natbolamerica.32
+	title = natbolamerica.32.t
+	desc = natbolamerica.32.d
+	picture = operation_emancipation
+	
+	is_triggered_only = yes
+	
+	option = {    
+		name = natbolamerica.32.o1
+	}
+}
+
+#Operation coastal menace
+country_event = {
+	id = natbolamerica.33
+	title = natbolamerica.33.t
+	desc = natbolamerica.33.d
+	picture = operation_coastal_menace
+	
+	is_triggered_only = yes
+	
+	option = {    
+		name = natbolamerica.33.o1
+	}
+}
+
+#Operation northern lights
+country_event = {
+	id = natbolamerica.34
+	title = natbolamerica.34.t
+	desc = natbolamerica.34.d
+	picture = operation_northern_lights
+	
+	is_triggered_only = yes
+	
+	option = {    
+		name = natbolamerica.34.o1
+	}
+}
+
+#2020 presidential election
+country_event = {
+	id = natbolamerica.37
+	title = natbolamerica.37.t
+	desc = natbolamerica.37.d
+	picture = prime_minister_election
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = GAU
+		date > 2020.3.1
+		date < 2020.3.30
+		has_country_flag = elected_madame_welch
+		OR = {
+		    has_government = national_conservative
+			has_government = centrist
+			has_government = liberal 
+			has_government = new_democrat 
+			has_government = moderate_socialist
+		}
+	}
+	
+	option = {   #Al Gore - liberal - democratic party
+		name = natbolamerica.37.o1
+		set_politics = {
+	        ruling_party = liberal
+	        elections_allowed = no
+        }
+		add_popularity = {
+			ideology = liberal
+			popularity = 0.3
+		}
+		create_country_leader = {
+	        name = "Albert Gore"
+	        picture = "Portrait_GAU_Albert_Gore.dds"
+	        ideology = old_american_democrats
+        }
+		set_country_flag = gore_elected_2020
+		ai_chance = {
+			factor = 25
+		}
+		if = {
+		    limit = {
+			    GAU = {
+				    is_ai = no
+				}
+			}
+			hidden_effect = {
+		        sound_effect = hail_to_the_chief_trigger_sound
+		    }
+		}
+	}
+	
+	option = {   #Lindsey Graham - conservative - republican renewal
+		name = natbolamerica.37.o2
+		set_politics = {
+	        ruling_party = national_conservative
+	        elections_allowed = no
+        }
+		add_popularity = {
+			ideology = national_conservative
+			popularity = 0.3
+		}
+		create_country_leader = {
+	        name = "Lindsey Graham"
+	        picture = "Portrait_GAU_Lindsey_Graham.dds"
+	        ideology = american_conservative
+        }
+		set_country_flag = graham_elected_2020
+		ai_chance = {
+			factor = 25
+		}
+		if = {
+		    limit = {
+			    GAU = {
+				    is_ai = no
+				}
+			}
+			hidden_effect = {
+		        sound_effect = hail_to_the_chief_trigger_sound
+		    }
+		}
+	}
+	
+	option = {   #Kasich - centrist - democratic republican
+		name = natbolamerica.37.o3
+		set_politics = {
+	        ruling_party = centrist
+	        elections_allowed = no
+        }
+		add_popularity = {
+			ideology = centrist
+			popularity = 0.05
+		}
+		create_country_leader = {
+	        name = "John Kasich"
+	        picture = "Portrait_GAU_John_Kasich.dds"
+	        ideology = centrist_ideology
+        }
+		set_country_flag = kasich_elected_2020
+		ai_chance = {
+			factor = 50
+		}
+		if = {
+		    limit = {
+			    GAU = {
+				    is_ai = no
+				}
+			}
+			hidden_effect = {
+		        sound_effect = hail_to_the_chief_trigger_sound
+		    }
+		}
+	}
+}
+
+#2023 presidential election - President Gore
+country_event = {
+	id = natbolamerica.38
+	title = natbolamerica.38.t
+	desc = natbolamerica.38.d
+	picture = prime_minister_election
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = GAU
+		date > 2023.3.1
+		date < 2023.3.30
+		has_country_flag = gore_elected_2020
+		OR = {
+		    has_government = national_conservative
+			has_government = centrist
+			has_government = liberal 
+			has_government = new_democrat 
+			has_government = moderate_socialist
+		}
+	}
+	
+	option = {   #Al Gore - liberal - democratic party
+		name = natbolamerica.38.o1
+		add_popularity = {
+			ideology = liberal
+			popularity = 0.01
+		}
+		set_country_flag = gore_elected_2023
+		ai_chance = {
+			factor = 60
+		}
+		if = {
+		    limit = {
+			    GAU = {
+				    is_ai = no
+				}
+			}
+			hidden_effect = {
+		        sound_effect = hail_to_the_chief_trigger_sound
+		    }
+		}
+	}
+	
+	option = {   #Gary Johnson - conservative - republican renewal
+		name = natbolamerica.38.o2
+		set_politics = {
+	        ruling_party = national_conservative
+	        elections_allowed = no
+        }
+		add_popularity = {
+			ideology = national_conservative
+			popularity = 0.35
+		}
+		create_country_leader = {
+	        name = "Gary Johnson"
+	        picture = "Portrait_GAU_Gary_Johnson.dds"
+	        ideology = fiscal_conservative
+        }
+		set_country_flag = johnson_elected_2023
+		ai_chance = {
+			factor = 30
+		}
+		if = {
+		    limit = {
+			    GAU = {
+				    is_ai = no
+				}
+			}
+			hidden_effect = {
+		        sound_effect = hail_to_the_chief_trigger_sound
+		    }
+		}
+	}
+	
+	option = {   #Ross Anderson - new democrat - social democrats
+		name = natbolamerica.38.o3
+		set_politics = {
+	        ruling_party = new_democrat
+	        elections_allowed = no
+        }
+		add_popularity = {
+			ideology = new_democrat
+			popularity = 0.4
+		}
+		create_country_leader = {
+	        name = "Ross Anderson"
+	        picture = "Portrait_GAU_Ross_Anderson.dds"
+	        ideology = new_democrat_ideology
+        }
+		set_country_flag = anderson_elected_2023
+		ai_chance = {
+			factor = 10
+		}
+		if = {
+		    limit = {
+			    GAU = {
+				    is_ai = no
+				}
+			}
+			hidden_effect = {
+		        sound_effect = hail_to_the_chief_trigger_sound
+		    }
+		}
+	}
+}
+
+#2023 presidential election - President Graham
+country_event = {
+	id = natbolamerica.39
+	title = natbolamerica.39.t
+	desc = natbolamerica.39.d
+	picture = prime_minister_election
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = GAU
+		date > 2023.3.1
+		date < 2023.3.30
+		has_country_flag = graham_elected_2020
+		OR = {
+		    has_government = national_conservative
+			has_government = centrist
+			has_government = liberal 
+			has_government = new_democrat 
+			has_government = moderate_socialist
+		}
+	}
+	
+	option = {   #Lindsey Graham - conservative - republican renewal
+		name = natbolamerica.39.o1
+		set_politics = {
+	        ruling_party = national_conservative
+	        elections_allowed = no
+        }
+		add_popularity = {
+			ideology = national_conservative
+			popularity = 0.01
+		}
+		create_country_leader = {
+	        name = "Lindsey Graham"
+	        picture = "Portrait_GAU_Lindsey_Graham.dds"
+	        ideology = american_conservative
+        }
+		set_country_flag = graham_elected_2023
+		ai_chance = {
+			factor = 70
+		}
+		if = {
+		    limit = {
+			    GAU = {
+				    is_ai = no
+				}
+			}
+			hidden_effect = {
+		        sound_effect = hail_to_the_chief_trigger_sound
+		    }
+		}
+	}
+	
+	option = {   #Michelle Robinson - liberal - democratic party
+		name = natbolamerica.39.o2
+		set_politics = {
+	        ruling_party = liberal
+	        elections_allowed = no
+        }
+		create_country_leader = {
+	        name = "Michelle Robinson"
+	        picture = "Portrait_GAU_Michelle_Robinson.dds"
+	        ideology = old_american_democrats
+        }
+		add_popularity = {
+			ideology = liberal
+			popularity = 0.35
+		}
+		set_country_flag = robinson_elected_2023
+		ai_chance = {
+			factor = 25
+		}
+		if = {
+		    limit = {
+			    GAU = {
+				    is_ai = no
+				}
+			}
+			hidden_effect = {
+		        sound_effect = hail_to_the_chief_trigger_sound
+		    }
+		}
+	}
+	
+	option = {   #Xavier Becerra - new democrat - social democrats
+		name = natbolamerica.39.o3
+		set_politics = {
+	        ruling_party = new_democrat
+	        elections_allowed = no
+        }
+		add_popularity = {
+			ideology = new_democrat
+			popularity = 0.4
+		}
+		create_country_leader = {
+	        name = "Xavier Becerra"
+	        picture = "Portrait_GAU_Xavier_Becerra.dds"
+	        ideology = new_democrat_ideology
+        }
+		set_country_flag = becerra_elected_2023
+		ai_chance = {
+			factor = 5
+		}
+		if = {
+		    limit = {
+			    GAU = {
+				    is_ai = no
+				}
+			}
+			hidden_effect = {
+		        sound_effect = hail_to_the_chief_trigger_sound
+		    }
+		}
+	}
+}
+
+#2023 presidential election - President Kasich
+country_event = {
+	id = natbolamerica.40
+	title = natbolamerica.40.t
+	desc = natbolamerica.40.d
+	picture = prime_minister_election
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = GAU
+		date > 2023.3.1
+		date < 2023.3.30
+		has_country_flag = kasich_elected_2020
+		OR = {
+		    has_government = national_conservative
+			has_government = centrist
+			has_government = liberal 
+			has_government = new_democrat 
+			has_government = moderate_socialist
+		}
+	}
+	
+	option = {   #Kasich - centrist - democratic republican
+		name = natbolamerica.40.o1
+		set_politics = {
+	        ruling_party = centrist
+	        elections_allowed = no
+        }
+		add_popularity = {
+			ideology = centrist
+			popularity = 0.01
+		}
+		create_country_leader = {
+	        name = "John Kasich"
+	        picture = "Portrait_GAU_John_Kasich.dds"
+	        ideology = centrist_ideology
+        }
+		set_country_flag = kasich_elected_2023
+		ai_chance = {
+			factor = 80
+		}
+		if = {
+		    limit = {
+			    GAU = {
+				    is_ai = no
+				}
+			}
+			hidden_effect = {
+		        sound_effect = hail_to_the_chief_trigger_sound
+		    }
+		}
+	}
+	
+	option = {   #Elaine Chao - conservative - republican renewal
+		name = natbolamerica.40.o2
+		set_politics = {
+	        ruling_party = national_conservative
+	        elections_allowed = no
+        }
+		add_popularity = {
+			ideology = national_conservative
+			popularity = 0.3
+		}
+		create_country_leader = {
+	        name = "Elaine Chao"
+	        picture = "Portrait_GAU_Elaine_Chao.dds"
+	        ideology = fiscal_conservative
+        }
+		set_country_flag = chao_elected_2023
+		ai_chance = {
+			factor = 10
+		}
+		if = {
+		    limit = {
+			    GAU = {
+				    is_ai = no
+				}
+			}
+			hidden_effect = {
+		        sound_effect = hail_to_the_chief_trigger_sound
+		    }
+		}
+	}
+	
+	option = {   #Tulsi Gabbard - new democrat - social democrats
+		name = natbolamerica.40.o3
+		trigger = {
+			owns_state = 629
+		}
+		set_politics = {
+	        ruling_party = new_democrat
+	        elections_allowed = no
+        }
+		add_popularity = {
+			ideology = new_democrat
+			popularity = 0.4
+		}
+		create_country_leader = {
+	        name = "Tulsi Gabbard"
+	        picture = "Portrait_GAU_Tulsi_Gabbard.dds"
+	        ideology = new_democrat_ideology
+        }
+		set_country_flag = tulsi_elected_2023
+		ai_chance = {
+			factor = 10
+		}
+		if = {
+		    limit = {
+			    GAU = {
+				    is_ai = no
+				}
+			}
+			hidden_effect = {
+		        sound_effect = hail_to_the_chief_trigger_sound
+		    }
+		}
+	}
+}
+

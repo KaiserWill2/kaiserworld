@@ -1,0 +1,418 @@
+﻿capital = 816
+
+oob = "MAY_2000"
+
+set_research_slots = 4
+set_convoys = 500
+set_stability = 0.6
+set_war_support = 0.2
+
+set_country_flag = was_in_british_empire
+set_country_flag = muslim_nation
+
+set_technology = {
+	support_weapons = 1
+	infantry_weapons = 1
+	motorised_infantry = 1 
+	tech_support = 1 
+	tech_field_hospital = 1 
+	tech_engineers = 1 
+	gwtank = 1 
+	basic_light_tank = 1 
+	gw_artillery = 1 
+	tech_mountaineers = 1
+	early_light_cruiser = 1
+	early_fighter = 1 
+	early_bomber = 1 
+	early_submarine = 1
+    transport = 1 
+	paratroopers = 1 
+	interwar_antiair = 1
+	interwar_antitank = 1
+}
+
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	set_technology = {
+		early_submarine = 1
+		basic_submarine = 1
+		early_destroyer = 1
+		early_light_cruiser = 1
+		basic_light_cruiser = 1
+		early_heavy_cruiser = 1
+		
+		
+		early_carrier = 1
+		basic_carrier = 1
+		transport = 1
+	}
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_technology = {
+		basic_naval_mines = 1
+		submarine_mine_laying = 1
+		early_ship_hull_light = 1
+		basic_ship_hull_light = 1
+		early_ship_hull_submarine = 1
+		basic_ship_hull_submarine = 1
+		early_ship_hull_cruiser = 1
+		basic_ship_hull_cruiser = 1
+		early_ship_hull_heavy = 1
+		early_ship_hull_carrier = 1
+		basic_ship_hull_carrier = 1
+		basic_battery = 1
+		basic_light_battery = 1
+		basic_medium_battery = 1
+		basic_heavy_battery = 1
+		basic_torpedo = 1
+		sonar = 1
+		basic_depth_charges = 1
+		basic_secondary_battery = 1
+		improved_secondary_battery = 1
+		basic_cruiser_armor_scheme = 1
+		basic_heavy_armor_scheme = 1
+		mtg_transport = 1
+		improved_airplane_launcher = 1
+	}
+}
+
+set_politics = {
+	ruling_party = monarchist
+	last_election = "1997.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+        fascist = 0
+		nationalist = 9
+		monarchist = 48
+		national_bolshevik = 0
+		national_conservative = 4
+		centrist = 0
+		liberal = 10
+		new_democrat = 0
+		moderate_socialist = 5
+		revolutionary_socialist = 4
+		communist = 20
+}
+
+create_country_leader = {
+	name = "Cik Dat bin Anjang Badullah"
+	picture = "Portrait_MAY_Abdullah_CD.dds"
+	ideology = marxist
+}
+
+create_country_leader = {
+	name = "Zulkifli Abdhir"
+	picture = "Portrait_MAY_Zulkifli_Abdhir.dds"
+	ideology = fascist_ideology
+}
+
+create_country_leader = {
+	name = "Joseph Kurup"
+	picture = "Portrait_MAY_Joseph_Kurup.dds"
+	ideology = nationalist_ideology
+}
+
+create_country_leader = {
+	name = "Abdul Halim of Kedah"
+	picture = "Portrait_MAY_Abdul_Halim_of_Kedah.dds"
+	ideology = absolute_monarchist
+}
+
+create_country_leader = {
+	name = "Mohamed Razali"
+	picture = "Portrait_MAY_Mohamed_Razali.dds"
+	ideology = national_bolshevik_ideology
+}
+
+create_country_leader = {
+	name = "Abdul Taib Mahmud"
+	picture = "Portrait_MAY_Abdul_Taib_Mahmud.dds"
+	ideology = reactionary
+}
+
+create_country_leader = {
+	name = "Mahathir Mohamad"
+	picture = "Portrait_MAY_Mahathir_Mohamad.dds"
+	ideology = centrist_ideology
+}
+
+create_country_leader = {
+	name = "Wan Azizah Wan Ismail"
+	picture = "Portrait_MAY_Wan_Azizah_Wan_Ismail.dds"
+	ideology = social_liberal
+}
+
+create_country_leader = {
+	name = "Lim Kit Siang"
+	picture = "Portrait_MAY_Lim_Kit_Siang.dds"
+	ideology = new_democrat_ideology
+}
+
+create_country_leader = {
+	name = "Lim Guan Eng"
+	picture = "Portrait_MAY_Lim_Guan_Eng.dds"
+	ideology = progressive
+}
+
+create_country_leader = {
+	name = "Mohd Nasir Hashim"
+	picture = "Portrait_MAY_Mohd_Nasir_Hashim.dds"
+	ideology = revolutionary_socialist_ideology
+}
+
+create_field_marshal = {
+	name = "Raja Mohamed Bin Raja Mohamed Noor"
+	picture = "Portrait_Noor.dds"
+	traits = { old_guard organisational_leader }
+	skill = 4
+	attack_skill = 3
+	defense_skill = 4
+	planning_skill = 3
+	logistics_skill = 3
+}
+
+create_field_marshal = {
+	name = "Abdul Halim Bin Jalal"
+	picture = "Portrait_Jalal.dds"
+	traits = { fast_planner }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 1
+	planning_skill = 4
+	logistics_skill = 2
+}
+
+create_field_marshal = {
+	name = "Affendi Bin Buang"
+	picture = "Portrait_Affendi.dds"
+	traits = { thorough_planner }
+	skill = 4
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 4
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Zulkiple Bin Kassim"
+	picture = "Portrait_Zulkiple.dds"
+	traits = { panzer_leader }
+	skill = 4
+	attack_skill = 4
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Panglima Ahmad Hasbullah Bin Mohd Nawawi"
+	picture = "Portrait_Hasbullah.dds"
+	traits = { ranger }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Ackbal Bin Abdul Samad"
+	picture = "Portrait_Ackbal.dds"
+	traits = {  }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Datuk Wira Zamrose Bin Mohd Zain"
+	picture = "Portrait_Zamrose.dds"
+	traits = { fortress_buster }
+	skill = 2
+	attack_skill = 1
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Sheikh Mokhsin Bin Sheikh Hassan"
+	picture = "Portrait_Sheikh.dds"
+	traits = { trickster }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Pahlawan Mohd Razif Bin Idris"
+	picture = "Portrait_Razif.dds"
+	traits = { trait_engineer }
+	skill = 2
+	attack_skill = 1
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Pahlawan Haji Abu Sufian Bin Haji Ahmad"
+	picture = "Portrait_Sufian.dds"
+	traits = { trait_engineer }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Hayazi Bin Abdul Aziz"
+	picture = "Portrait_Hayazi.dds"
+	traits = {  }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Sultan Ibrahim"
+	picture = "Portrait_Sultan_Ibrahim.dds"
+	traits = { commando jungle_rat naval_invader }
+	skill = 4
+	attack_skill = 4
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 3
+}
+
+create_navy_leader = {
+	name = "Ahmad Kamarulzaman Bin Haji Ahmad Badaruddin"
+	picture = "Portrait_Kamarul.dds"
+	traits = { old_guard_navy superior_tactician }
+	skill = 4
+	attack_skill = 3
+	defense_skill = 4
+	coordination_skill = 3
+	maneuvering_skill = 3
+}
+
+create_navy_leader = {
+	name = "Anuwi Bin Hassan"
+	picture = "Portrait_Anuwi.dds"
+	traits = { ironside }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 4
+	coordination_skill = 3
+	maneuvering_skill = 1
+}
+
+create_navy_leader = {
+	name = "Aris Adi Tan Bin Abdullah"
+	picture = "Portrait_Aris.dds"
+	traits = { fly_swatter }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	coordination_skill = 3
+	maneuvering_skill = 1
+}
+
+create_navy_leader = {
+	name = "Mohamad Roslan Bin Mohamad Ramli"
+	picture = "Portrait_Roslan.dds"
+	traits = { air_controller }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	coordination_skill = 3
+	maneuvering_skill = 2
+}
+
+create_navy_leader = {
+	name = "Zahiruddin Putra Bin Syed Osman"
+	picture = "Portrait_Syed.dds"
+	traits = { blockade_runner }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	coordination_skill = 2
+	maneuvering_skill = 3
+}
+
+create_navy_leader = {
+	name = "Abdul Rahman Bin Ayob"
+	picture = "Portrait_Rahman.dds"
+	traits = { seawolf }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	coordination_skill = 2
+	maneuvering_skill = 1
+}
+
+create_navy_leader = {
+	name = "Jamalludin Bin Mohd Saman"
+	picture = "Portrait_Jamalludin.dds"
+	traits = { spotter }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	coordination_skill = 1
+	maneuvering_skill = 1
+}
+
+create_navy_leader = {
+	name = "Saifudin Bin Kamarudin"
+	picture = "Portrait_Saifudin.dds"
+	traits = {  }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	coordination_skill = 1
+	maneuvering_skill = 1
+}
+
+create_navy_leader = {
+	name = "Mohammed Ariff Bin Mahru"
+	picture = "Portrait_Ariff.dds"
+	traits = {  }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	coordination_skill = 1
+	maneuvering_skill = 1
+}
+
+create_navy_leader = {
+	name = "Rusli Bin Ramli"
+	picture = "Portrait_Rusli.dds"
+	traits = {  }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	coordination_skill = 1
+	maneuvering_skill = 1
+}
+
+create_navy_leader = {
+	name = "Mohd Reza Bin Mohd Sany"
+	picture = "Portrait_Reza.dds"
+	traits = {  }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	coordination_skill = 1
+	maneuvering_skill = 1
+}

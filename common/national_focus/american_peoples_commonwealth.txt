@@ -1,0 +1,4134 @@
+focus_tree = {
+	id = APC_tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 20
+			tag = NEA
+		}
+	}
+	default = no
+	continuous_focus_position = { x = 50 y = 1550 }
+	focus = {
+		id = NEA_philadelphia_constitution
+		icon = focus_philadelphia_constitution
+		cost = 5
+		x = 3
+		y = 0
+		available = {
+		    has_government = revolutionary_socialist
+		    NEA = { has_civil_war = no } 
+			has_country_flag = central_committee_has_been_dissolved
+		}
+		completion_reward = {
+			remove_ideas = idea_apc_political_deadlock
+			set_cosmetic_tag = NEA_Syndicates
+			hidden_effect = {
+			    remove_ideas = idea_apc_the_best_soldiers
+				remove_ideas = idea_apc_trade_council_fighters
+				remove_ideas = idea_apc_restructured_chamber
+			}
+			hidden_effect = {
+		    	remove_ideas = commonwealth_robert_reich
+		    	remove_ideas = commonwealth_john_kerry
+		    }
+		    add_ideas = commonwealth_david_graeber
+		    add_ideas = commonwealth_edward_s_herman
+			country_event = { id = commonwealth.78 }
+			set_country_flag = philadelphia_constitution
+		}
+
+	}
+	focus = {
+		id = NEA_detroit_constitution
+		icon = focus_detroit_constitution
+		cost = 5
+		x = 8
+		y = 0
+		available = {
+		    has_government = revolutionary_socialist
+			has_country_flag = automotive_council_is_in_control
+		}
+		completion_reward = {
+		    remove_ideas = idea_apc_political_deadlock
+		    hidden_effect = {
+		    	remove_ideas = commonwealth_germaine_greer
+		    	remove_ideas = commonwealth_john_kerry
+		    	remove_ideas = commonwealth_robert_reich
+		    }
+		    add_ideas = commonwealth_richard_trumka
+		    add_ideas = commonwealth_bob_king
+		    add_ideas = commonwealth_james_p_hoffa
+			hidden_effect = {
+			    remove_ideas = idea_apc_moderate_support
+				remove_ideas = idea_apc_donations
+				remove_ideas = idea_apc_internal_support
+			}
+			country_event = { id = commonwealth.79 }
+			set_country_flag = detroit_constitution
+		}
+
+	}
+	focus = {
+		id = NEA_new_york_constitution
+		icon = focus_new_york_constitution
+		cost = 5
+		x = 13
+		y = 0
+		available = {
+		    has_government = revolutionary_socialist
+			has_country_flag = president_gates
+		}
+		completion_reward = {
+		    remove_ideas = idea_apc_political_deadlock
+		     hidden_effect = {
+		    	remove_ideas = commonwealth_germaine_greer
+		    	remove_ideas = commonwealth_john_kerry
+		    	remove_ideas = commonwealth_robert_reich
+		    }
+		    add_ideas = commonwealth_michio_kaku
+		    add_ideas = commonwealth_bill_mckibben
+		    add_ideas = commonwealth_neil_tyson
+			hidden_effect = {
+			    remove_ideas = idea_apc_moderate_support
+				remove_ideas = idea_apc_donations
+				remove_ideas = idea_apc_internal_support
+			}
+			country_event = { id = commonwealth.80 }
+			set_country_flag = new_york_constitution
+		}
+
+	}
+	focus = {
+		id = NEA_boston_constitution
+		icon = focus_boston_constitution
+		cost = 5
+		x = 18
+		y = 0
+		available = {
+		    has_government = moderate_socialist
+			has_country_flag = bernie_is_president
+		}
+		completion_reward = {
+		    remove_ideas = idea_apc_political_deadlock
+		     hidden_effect = {
+		    	remove_ideas = commonwealth_germaine_greer
+		    	remove_ideas = commonwealth_john_kerry
+		    	remove_ideas = commonwealth_chris_hedges
+		    }
+		    add_ideas = commonwealth_sonya_sotomayor
+		    add_ideas = commonwealth_david_zuckerman
+		    add_ideas = commonwealth_howard_dean
+			country_event = { id = commonwealth.81 }
+		}
+
+	}
+	focus = {
+		id = NEA_pray_for_new_york
+		icon = focus_pray_for_new_york
+		cost = 1
+		available = {
+		    has_country_flag = five_one_has_occured
+		}
+		x = 33
+		y = 0
+		completion_reward = {
+		    add_timed_idea = {
+			    idea = idea_apc_a_united_commonwealth
+			    days = 40
+		    }
+			add_political_power = 120
+			country_event = { id = commonwealth.82 }
+		}
+
+	}
+	focus = {
+		id = NEA_american_syndicates_convention
+		icon = focus_european_communism
+		cost = 7.2
+		prerequisite = {
+			focus = NEA_philadelphia_constitution
+		}
+		x = 3
+		y = 1
+		completion_reward = {
+		    add_popularity = {
+			    ideology = revolutionary_socialist
+			    popularity = 0.035
+		    }
+			set_party_name = { ideology = revolutionary_socialist long_name = NEA_iww_anarchism_long name = NEA_iww_anarchism }
+			country_event = { id = commonwealth.19 }
+			add_political_power = 200
+		}
+
+	}
+	focus = {
+		id = NEA_direct_democracy
+		icon = focus_direct_democracy
+		cost = 7.2
+		prerequisite = {
+			focus = NEA_american_syndicates_convention
+		}
+		x = 2
+		y = 2
+		completion_reward = {
+		    add_ideas = idea_apc_direct_democracy
+			country_event = { id = commonwealth.83 }
+		}
+
+	}
+	focus = {
+		id = NEA_social_unity
+		icon = focus_freedom_of_demonstration
+		cost = 7.2
+		prerequisite = {
+			focus = NEA_direct_democracy
+		}
+		x = 2
+		y = 3
+		completion_reward = {
+		    add_ideas = idea_apc_social_unity
+		}
+
+	}
+	focus = {
+		id = NEA_support_free_association
+		icon = focus_solidarity_front_government
+		cost = 7.2
+		prerequisite = {
+			focus = NEA_social_unity
+		}
+		x = 2
+		y = 4
+		completion_reward = {
+		    add_popularity = {
+			    ideology = revolutionary_socialist
+			    popularity = 0.1
+		    }
+			add_popularity = {
+			    ideology = communist
+			    popularity = 0.025
+		    }
+			add_popularity = {
+			    ideology = moderate_socialist
+			    popularity = 0.1
+		    }
+			add_popularity = {
+			    ideology = liberal
+			    popularity = 0.025
+		    }
+			add_popularity = {
+			    ideology = national_conservative
+			    popularity = 0.05
+		    }
+			add_political_power = 100
+			country_event = { id = commonwealth.84 }
+		}
+
+	}
+	focus = {
+		id = NEA_military_for_defence
+		icon = focus_military_for_defence
+		cost = 7.2
+		prerequisite = {
+			focus = NEA_support_free_association
+		}
+		x = 1
+		y = 5
+		completion_reward = {
+		    army_experience = 5
+			air_experience = 5
+			navy_experience = 5 
+			add_tech_bonus = {
+				name = land_doctrine_bonus
+				bonus = 1
+				uses = 1
+				category = land_doctrine
+			}
+			country_event = { id = commonwealth.85 }
+		}
+
+	}
+	focus = {
+		id = NEA_workers_self_management
+		icon = focus_workers_self_management
+		cost = 7.2
+		prerequisite = {
+			focus = NEA_american_syndicates_convention
+		}
+		x = 4
+		y = 2
+		completion_reward = {
+		    add_ideas = idea_apc_workers_self_management
+		}
+
+	}
+	focus = {
+		id = NEA_slowly_abolish_wages
+		icon = focus_abolish_wages
+		cost = 7.2
+		prerequisite = {
+			focus = NEA_workers_self_management
+		}
+		x = 4
+		y = 3
+		completion_reward = {
+		    add_ideas = idea_apc_wage_abolition
+			country_event = { id = commonwealth.86 }
+		}
+
+	}
+	focus = {
+		id = NEA_economic_unity
+		icon = chinese_economy
+		cost = 7.2
+		prerequisite = {
+			focus = NEA_slowly_abolish_wages
+		}
+		x = 4
+		y = 4
+		completion_reward = {
+		    random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = NEA_industrial_plan
+		icon = perestroika
+		cost = 7.2
+		prerequisite = {
+			focus = NEA_economic_unity
+		}
+		x = 5
+		y = 5
+		completion_reward = {
+		    random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = NEA_reorganise_trade_councils
+		icon = focus_reorganise_trade_councils
+		cost = 7.2
+		prerequisite = {
+			focus = NEA_industrial_plan
+		}
+		x = 5
+		y = 6
+		completion_reward = {
+		    remove_ideas = idea_apc_western_corruption
+		}
+
+	}
+	focus = {
+		id = NEA_work_with_delegates
+		icon = politburo_debate
+		cost = 7.2
+		prerequisite = {
+			focus = NEA_reorganise_trade_councils
+		}
+		x = 5
+		y = 7
+		completion_reward = {
+		    add_resource = {	
+				type = steel 
+				amount = 3
+				state = 358
+			}
+			add_resource = {	
+				type = steel 
+				amount = 5
+				state = 360
+			}
+			add_resource = {	
+				type = steel 
+				amount = 8
+				state = 261
+			}
+			add_resource = {	
+				type = steel 
+				amount = 3
+				state = 395
+			}
+			country_event = { id = commonwealth.87 }
+		}
+
+	}
+	focus = {
+		id = NEA_a_necessary_industrial_federation
+		icon = ensure_shengo_loyalty
+		cost = 7.2
+		prerequisite = {
+			focus = NEA_work_with_delegates
+		}
+		x = 5
+		y = 8
+		completion_reward = {
+		    add_tech_bonus = {
+				name = industry_bonus
+				bonus = 1
+				uses = 1
+				category = industry
+			}
+			country_event = { id = commonwealth.88 }
+		}
+
+	}
+	focus = {
+		id = NEA_peace_in_our_time
+		icon = major_alliance
+		cost = 7.2
+		prerequisite = {
+			focus = NEA_a_necessary_industrial_federation
+		}
+		x = 5
+		y = 10
+		completion_reward = {
+		    army_experience = 10
+			add_political_power = 120
+		}
+
+	}
+	focus = {
+		id = NEA_trade_council_rule
+		icon = focus_trade_council_rule
+		cost = 7.2
+		prerequisite = {
+			focus = NEA_detroit_constitution
+		}
+		x = 8
+		y = 1
+		completion_reward = {
+		    create_country_leader = {
+	            name = "Grand Trade Council"
+	            picture = "Portrait_NEA_Grand_Trade_Council.dds"
+	            ideology = syndicalism
+            }
+			add_tech_bonus = {
+				name = industry_bonus
+				bonus = 0.5
+				uses = 1
+				category = industry
+			}
+			add_tech_bonus = {
+				name = motorized_equipment_bonus
+				bonus = 0.5
+				uses = 1
+				category = motorized_equipment
+			}
+			add_tech_bonus = {
+				name = electronics_bonus
+				bonus = 0.5
+				uses = 1
+				category = electronics
+			}
+			add_tech_bonus = {
+				name = light_air_bonus
+				bonus = 0.5
+				uses = 1
+				category = light_air
+			}
+			country_event = { id = commonwealth.89 }
+		}
+
+	}
+	focus = {
+		id = NEA_abolish_the_central_committee
+		icon = focus_abolish_the_central_committee
+		cost = 7.2
+		prerequisite = {
+			focus = NEA_trade_council_rule
+		}
+		x = 8
+		y = 2
+		completion_reward = {
+		    add_political_power = 120
+			country_event = { id = commonwealth.90 }
+		}
+
+	}
+	focus = {
+		id = NEA_union_authoritarianism
+		icon = demand
+		cost = 7.2
+		prerequisite = {
+			focus = NEA_abolish_the_central_committee
+		}
+		x = 7
+		y = 3
+		completion_reward = {
+		    add_popularity = {
+			    ideology = revolutionary_socialist
+			    popularity = 0.06
+		    }
+			add_ideas = idea_apc_union_authoritarianism
+		}
+
+	}
+	focus = {
+		id = NEA_unity_of_councils
+		icon = military_deal
+		cost = 7.2
+		prerequisite = {
+			focus = NEA_abolish_the_central_committee
+		}
+		x = 9
+		y = 3
+		completion_reward = {
+		    add_stability = 0.045
+		}
+
+	}
+	focus = {
+		id = NEA_industry_above_all
+		icon = torch_industry
+		cost = 7.2
+		prerequisite = {
+			focus = NEA_union_authoritarianism
+		}
+		prerequisite = {
+			focus = NEA_unity_of_councils
+		}
+		x = 8
+		y = 4
+		completion_reward = {
+		    random_owned_state = {
+				add_extra_state_shared_building_slots = 2
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 2
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 2
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 2
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 2
+			}
+			add_political_power = -100
+		}
+
+	}
+	focus = {
+		id = NEA_factories_for_the_workers
+		icon = support_workers
+		cost = 7.2
+		prerequisite = {
+			focus = NEA_industry_above_all
+		}
+		x = 9
+		y = 5
+		completion_reward = {
+		    random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_popularity = {
+			    ideology = revolutionary_socialist
+			    popularity = 0.04
+		    }
+			add_political_power = -50
+		}
+
+	}
+	focus = {
+		id = NEA_new_england_civilian_projects
+		icon = focus_new_england_civilian_projects
+		cost = 7.2
+		prerequisite = {
+			focus = NEA_factories_for_the_workers
+		}
+		x = 9
+		y = 6
+		completion_reward = {
+		    357 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			795 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			794 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			793 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			792 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = NEA_western_industry
+		icon = civ_factory
+		cost = 7.2
+		prerequisite = {
+			focus = NEA_new_england_civilian_projects
+		}
+		x = 9
+		y = 7
+		completion_reward = {
+		    393 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			396 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			395 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_political_power = -100
+		}
+
+	}
+	focus = {
+		id = NEA_central_industrial_zone
+		icon = construct_civilian
+		cost = 7.2
+		prerequisite = {
+			focus = NEA_western_industry
+		}
+		x = 9
+		y = 8
+		completion_reward = {
+		    261 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+			}
+			add_political_power = -80
+		}
+
+	}
+	focus = {
+		id = NEA_promote_a_new_ideology
+		icon = focus_promote_a_new_ideology
+		cost = 7.2
+		prerequisite = {
+			focus = NEA_new_york_constitution
+		}
+		x = 13
+		y = 1
+		completion_reward = {
+		    add_ideas = idea_apc_gates_propaganda
+			country_event = { id = commonwealth.91 }
+		}
+
+	}
+	focus = {
+		id = NEA_purge_moderates
+		icon = attack_allies
+		cost = 7.2
+		prerequisite = {
+			focus = NEA_promote_a_new_ideology
+		}
+		x = 12
+		y = 2
+		completion_reward = {
+		    army_experience = 5 
+			add_popularity = {
+			    ideology = moderate_socialist
+			    popularity = -0.1
+		    }
+			add_political_power = 70
+			add_stability = 0.025
+			country_event = { id = commonwealth.92 }
+		}
+
+	}
+	focus = {
+		id = NEA_weaken_trade_councils
+		icon = com_fascism
+		cost = 7.2
+		prerequisite = {
+			focus = NEA_purge_moderates
+		}
+		x = 12
+		y = 3
+		completion_reward = {
+		    add_ideas = idea_apc_technology_council_supremacy
+		}
+
+	}
+	focus = {
+		id = NEA_total_control_from_new_york
+		icon = focus_total_control_from_new_york
+		cost = 7.2
+		prerequisite = {
+			focus = NEA_promote_a_new_ideology
+		}
+		x = 14
+		y = 2
+		completion_reward = {
+		    add_stability = 0.1
+			set_capital = 358
+			country_event = { id = commonwealth.93 }
+		}
+
+	}
+	focus = {
+		id = NEA_defend_urban_areas
+		icon = defence
+		cost = 7.2
+		prerequisite = {
+			focus = NEA_total_control_from_new_york
+		}
+		x = 14
+		y = 3
+		completion_reward = {
+		    358 = {
+				add_building_construction = { type = bunker province = 3878 level = 3 instant_build = yes }
+			}
+			360 = {
+				add_building_construction = { type = bunker province = 6845 level = 3 instant_build = yes }
+			}
+			395 = {
+				add_building_construction = { type = bunker province = 9450 level = 3 instant_build = yes }
+			}
+			393 = {
+				add_building_construction = { type = bunker province = 6710 level = 3 instant_build = yes }
+			}
+		}
+
+	}
+	focus = {
+		id = NEA_technology_above_all
+		icon = tech_sharing
+		cost = 7.2
+		prerequisite = {
+			focus = NEA_weaken_trade_councils
+		}
+		prerequisite = {
+			focus = NEA_defend_urban_areas
+		}
+		x = 13
+		y = 4
+		completion_reward = {
+		    add_tech_bonus = {
+				name = electronics_bonus
+				bonus = 1
+				uses = 1
+				category = electronics
+			}
+			country_event = { id = commonwealth.94 }
+		}
+
+	}
+	focus = {
+		id = NEA_empower_the_technocracy
+		icon = focus_empower_the_technocracy
+		cost = 7.2
+		prerequisite = {
+			focus = NEA_technology_above_all
+		}
+		x = 11
+		y = 5
+		completion_reward = {
+		    add_political_power = 200
+			add_popularity = {
+			    ideology = revolutionary_socialist
+			    popularity = 0.04
+		    }
+		}
+
+	}
+	focus = {
+		id = NEA_empower_scientists
+		icon = socialist_science
+		cost = 7.2
+		prerequisite = {
+			focus = NEA_technology_above_all
+		}
+		x = 15
+		y = 5
+		completion_reward = {
+		    add_research_slot = 1
+			add_political_power = -200
+		}
+
+	}
+	focus = {
+		id = NEA_military_science_focus
+		icon = secret_weapon
+		cost = 7.2
+		prerequisite = {
+			focus = NEA_empower_scientists
+		}
+		x = 14
+		y = 6
+		completion_reward = {
+		    army_experience = 10
+			add_tech_bonus = {
+				name = land_doctrine_bonus
+				bonus = 0.5
+				uses = 1
+				category = land_doctrine
+			}
+			add_tech_bonus = {
+				name = infantry_weapons_bonus
+				bonus = 0.5
+				uses = 1
+				category = infantry_weapons
+			}
+		}
+
+	}
+	focus = {
+		id = NEA_cooperation_between_branches
+		icon = scientific_exchange
+		cost = 7.2
+		prerequisite = {
+			focus = NEA_military_science_focus
+		}
+		x = 14
+		y = 8
+		completion_reward = {
+		    air_experience = 10
+			navy_experience = 10
+			add_political_power = 25
+			add_tech_bonus = {
+				name = dd_tech_bonus
+				bonus = 0.5
+				uses = 1
+				category = dd_tech
+			}
+			add_tech_bonus = {
+				name = armor_bonus
+				bonus = 0.5
+				uses = 1
+				category = armor
+			}
+		}
+
+	}
+	focus = {
+		id = NEA_industrial_science_focus
+		icon = scottish_military_industry
+		cost = 7.2
+		prerequisite = {
+			focus = NEA_empower_scientists
+		}
+		x = 16
+		y = 6
+		completion_reward = {
+		    add_tech_bonus = {
+				name = industry_bonus
+				bonus = 1
+				uses = 1
+				category = industry
+			}
+			add_political_power = -70
+		}
+
+	}
+	focus = {
+		id = NEA_advanced_weaponry
+		icon = research_nukes
+		cost = 7.2
+		prerequisite = {
+			focus = NEA_military_science_focus
+		}
+		prerequisite = {
+			focus = NEA_industrial_science_focus
+		}
+		x = 15
+		y = 7
+		completion_reward = {
+		    add_tech_bonus = {
+				name = nuclear_bonus
+				bonus = 1
+				uses = 1
+				category = nuclear
+			}
+		}
+
+	}
+	focus = {
+		id = NEA_new_teams
+		icon = national_unity
+		cost = 7.2
+		prerequisite = {
+			focus = NEA_industrial_science_focus
+		}
+		x = 16
+		y = 8
+		completion_reward = {
+		    add_research_slot = 1
+		}
+
+	}
+	focus = {
+		id = NEA_restore_congress
+		icon = focus_restore_congress
+		cost = 7.2
+		prerequisite = {
+			focus = NEA_boston_constitution
+		}
+		x = 18
+		y = 1
+		completion_reward = {
+		    add_popularity = {
+			    ideology = moderate_socialist
+			    popularity = 0.05
+		    }
+			add_popularity = {
+			    ideology = new_democrat
+			    popularity = 0.05
+		    }
+			add_popularity = {
+			    ideology = liberal
+			    popularity = 0.05
+		    }
+			add_popularity = {
+			    ideology = centrist
+			    popularity = 0.05
+		    }
+			add_popularity = {
+			    ideology = national_conservative
+			    popularity = 0.05
+		    }
+			add_popularity = {
+			    ideology = nationalist
+			    popularity = 0.05
+		    }
+			add_political_power = 200
+			country_event = { id = commonwealth.95 }
+		}
+
+	}
+	focus = {
+		id = NEA_democratic_rule
+		icon = focus_commonwealth_democratic_rule
+		cost = 7.2
+		prerequisite = {
+			focus = NEA_restore_congress
+		}
+		x = 17
+		y = 2
+		completion_reward = {
+		    add_stability = 0.1
+			army_experience = 5
+			country_event = { id = commonwealth.96 }
+		}
+
+	}
+	focus = {
+		id = NEA_social_democracy_returns
+		icon = political_pressure
+		cost = 7.2
+		prerequisite = {
+			focus = NEA_democratic_rule
+		}
+		x = 17
+		y = 3
+		completion_reward = {
+		    remove_ideas = idea_standing_firm_commonwealth
+			add_ideas = idea_apc_social_democracy
+			country_event = { id = commonwealth.97 }
+		}
+
+	}
+	focus = {
+		id = NEA_decrease_military_budget
+		icon = license_production
+		cost = 7.2
+		prerequisite = {
+			focus = NEA_social_democracy_returns
+		}
+		x = 17
+		y = 4
+		completion_reward = {
+		    add_ideas = idea_apc_decreased_military_budget
+			country_event = { id = commonwealth.98 }
+		}
+
+	}
+	focus = {
+		id = NEA_power_to_the_states
+		icon = focus_on_agriculture
+		cost = 7.2
+		prerequisite = {
+			focus = NEA_restore_congress
+		}
+		x = 19
+		y = 2
+		completion_reward = {
+		    add_popularity = {
+			    ideology = revolutionary_socialist
+			    popularity = -0.1
+		    }
+			add_popularity = {
+			    ideology = communist
+			    popularity = -0.1
+		    }
+			add_ideas = idea_apc_stronger_states
+		}
+
+	}
+	focus = {
+		id = NEA_federal_reorganisation
+		icon = democracy
+		cost = 7.2
+		prerequisite = {
+			focus = NEA_power_to_the_states
+		}
+		x = 19
+		y = 3
+		completion_reward = {
+		    random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = NEA_welfare_nation
+		icon = ideology_fist
+		cost = 7.2
+		prerequisite = {
+			focus = NEA_federal_reorganisation
+		}
+		x = 19
+		y = 4
+		completion_reward = {
+		    add_research_slot = 1
+			add_political_power = -200
+		}
+
+	}
+	focus = {
+		id = NEA_peaceful_reconciliation
+		icon = anti_fascist
+		cost = 7.2
+		prerequisite = {
+			focus = NEA_decrease_military_budget
+		}
+		prerequisite = {
+			focus = NEA_welfare_nation
+		}
+		x = 18
+		y = 5
+		completion_reward = { 
+		    add_stability = 0.1
+            enable_unification_decisions = yes
+		}
+
+	}
+	focus = {
+		id = NEA_begin_investigation
+		icon = focus_begin_investigation
+		cost = 5
+		ai_will_do = {
+			base = 50
+			modifier = {
+				NOT = {
+					has_game_rule = {
+						rule = NEA_ai_behavior
+						option = DEFAULT
+					}
+					has_game_rule = {
+						rule = NEA_ai_behavior
+						option = CC_RULE_HOLDREN
+					}
+					has_game_rule = {
+						rule = NEA_ai_behavior
+						option = CC_RULE_NO_HOLDREN
+					}
+					has_game_rule = {
+						rule = NEA_ai_behavior
+						option = WHITE_PHOENIX_RULE
+					}
+				}
+				factor = 0
+			}
+		}
+		prerequisite = {
+			focus = NEA_pray_for_new_york
+		}
+		mutually_exclusive = {
+			focus = NEA_american_peace_act
+			focus = NEA_fire_new_york_governor
+		}
+		x = 24
+		y = 1
+		completion_reward = {
+		    add_popularity = {
+				ideology = communist
+				popularity = 0.02
+			}
+			add_popularity = {
+				ideology = nationalist
+				popularity = 0.02
+			}
+			country_event = { id = commonwealth.99 }
+		}
+
+	}
+	focus = {
+		id = NEA_reform_intelligence_agencies
+		icon = focus_reform_intelligence_agenices
+		cost = 5
+		prerequisite = {
+			focus = NEA_begin_investigation
+		}
+		x = 23
+		y = 2
+		completion_reward = {
+		    add_ideas = idea_apc_defence_of_the_people
+			country_event = { id = commonwealth.100 }
+		}
+
+	}
+	focus = {
+		id = NEA_undermine_local_media
+		icon = focus_undermine_local_media
+		cost = 5
+		prerequisite = {
+			focus = NEA_reform_intelligence_agencies
+		}
+		x = 22
+		y = 4
+		completion_reward = {
+		    add_political_power = 120
+			add_popularity = {
+				ideology = revolutionary_socialist
+				popularity = 0.03
+			}
+			add_stability = 0.01
+			country_event = { id = commonwealth.101 }
+		}
+
+	}
+	focus = {
+		id = NEA_attempt_a_media_bill
+		icon = ethiopia_allow_autonomy
+		cost = 5
+		prerequisite = {
+			focus = NEA_undermine_local_media
+		}
+		x = 22
+		y = 5
+		completion_reward = {
+		    add_political_power = -100
+			add_popularity = {
+				ideology = moderate_socialist
+				popularity = -0.12
+			}
+			country_event = { id = commonwealth.102 }
+		}
+
+	}
+	focus = {
+		id = NEA_support_from_military
+		icon = army_doctrine
+		cost = 5
+		prerequisite = {
+			focus = NEA_attempt_a_media_bill
+		}
+		x = 23
+		y = 6
+		completion_reward = {
+		    army_experience = 7
+			navy_experience = 5 
+			air_experience = 5
+			add_political_power = 100
+			country_event = { id = commonwealth.103 }
+		}
+
+	}
+	focus = {
+		id = NEA_showcase_public_opinion
+		icon = focus_showcase_public_opinion
+		cost = 5
+		prerequisite = {
+			focus = NEA_attempt_a_media_bill
+		}
+		x = 21
+		y = 6
+		completion_reward = {
+		    add_timed_idea = {
+			    idea = idea_apc_public_opinion
+			    days = 135
+		    }
+			country_event = { id = commonwealth.104 }
+		}
+
+	}
+	focus = {
+		id = NEA_transportation_watchdog
+		icon = focus_transportation_watchdog
+		cost = 5
+		prerequisite = {
+			focus = NEA_begin_investigation
+		}
+		x = 24
+		y = 3
+		completion_reward = {
+		    air_experience = 10
+			add_tech_bonus = {
+				name = air_doctrine_bonus
+				bonus = 1
+				uses = 1
+				category = air_doctrine
+			}
+			country_event = { id = commonwealth.105 }
+		}
+
+	}
+	focus = {
+		id = NEA_we_shall_rebuild
+		icon = focus_we_shall_rebuild
+		cost = 3
+		prerequisite = {
+			focus = NEA_transportation_watchdog
+		}
+		x = 24
+		y = 4
+		completion_reward = {
+		    add_tech_bonus = {
+				name = construction_tech_bonus
+				bonus = 1
+				uses = 1
+				category = construction_tech
+			}
+			add_political_power = 25 
+			country_event = { id = commonwealth.106 }
+		}
+
+	}
+	focus = {
+		id = NEA_question_the_president
+		icon = focus_question_the_president
+		cost = 5
+		prerequisite = {
+			focus = NEA_begin_investigation
+		}
+		x = 25
+		y = 2
+		completion_reward = {
+		    add_stability = -0.085
+			add_ideas = idea_apc_anti_chomsky_sentiment
+			country_event = { id = commonwealth.107 }
+		}
+
+	}
+	focus = {
+		id = NEA_exploit_western_councils
+		icon = focus_exploit_western_councils
+		cost = 5
+		prerequisite = {
+			focus = NEA_question_the_president
+		}
+		x = 26
+		y = 4
+		completion_reward = {
+		    396 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			261 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			393 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			395 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = NEA_friends_in_the_medicinal_council
+		icon = focus_friends_in_the_medicinal_council
+		cost = 3
+		prerequisite = {
+			focus = NEA_exploit_western_councils
+		}
+		x = 26
+		y = 5
+		completion_reward = {
+		    add_political_power = -250
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = hospital
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = hospital
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = NEA_further_collectivisation
+		icon = focus_commonwealth_collectivisation
+		cost = 5
+		prerequisite = {
+			focus = NEA_friends_in_the_medicinal_council
+		}
+		x = 25
+		y = 6
+		completion_reward = {
+		    random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_ideas = idea_apc_collectivisation
+		}
+
+	}
+	focus = {
+		id = NEA_drug_honeypot
+		icon = focus_drug_honeypot
+		cost = 5
+		prerequisite = {
+			focus = NEA_friends_in_the_medicinal_council
+		}
+		x = 27
+		y = 6
+		completion_reward = {
+			add_political_power = 50
+			country_event = { id = commonwealth.108 }
+		}
+
+	}
+	focus = {
+		id = NEA_impeach_president_chomsky
+		icon = focus_impeach_president_chomsky
+		cost = 7.2
+		prerequisite = {
+			focus = NEA_showcase_public_opinion
+		}
+		prerequisite = {
+			focus = NEA_support_from_military
+		}
+		prerequisite = {
+			focus = NEA_further_collectivisation
+		}
+		prerequisite = {
+			focus = NEA_drug_honeypot
+		}
+		x = 24
+		y = 7
+		completion_reward = {
+		    create_country_leader = {
+	            name = "Central Committee"
+	            picture = "Portrait_NEA_Central_Committee.dds"
+	            ideology = american_revolutionary_socialism
+            }
+			set_party_name = { ideology = revolutionary_socialist long_name = NEA_iww_authoritarian_long name = NEA_iww_authoritarian }
+			hidden_effect = {
+		        NEA = {
+		            country_event = { days = 8 id = commonwealth.25 } 
+		        }
+		    }
+		    hidden_effect = {
+		    remove_ideas = commonwealth_daniel_ellsberg
+		    remove_ideas = commonwealth_chris_hedges
+		    remove_ideas = commonwealth_germaine_greer
+		    remove_ideas = commonwealth_robert_reich
+		    }
+		    add_ideas = commonwealth_eric_holder
+		    add_ideas = commonwealth_richard_daley
+		    add_ideas = commonwealth_john_holdren
+		    add_ideas = commonwealth_tom_perez
+			add_political_power = -300
+			country_event = { id = commonwealth.109 }
+		} 
+
+	}
+	focus = {
+		id = NEA_end_of_a_civil_war
+		icon = focus_end_of_a_civil_war
+		cost = 7.2
+		prerequisite = {
+			focus = NEA_impeach_president_chomsky
+		}
+		available = {
+		    AND = {
+			    NOT = {
+				    NEA = { has_war_with = AMC } 
+				}
+				has_government = revolutionary_socialist
+			}
+		}
+		x = 27
+		y = 8
+		completion_reward = {
+		    add_political_power = 200
+			hidden_effect = {
+			    remove_ideas = idea_apc_desperate_times
+				remove_ideas = idea_apc_fighting_for_a_cause
+				remove_ideas = idea_apc_pushing_research_teams
+			}
+			country_event = { id = commonwealth.110 }
+		}
+
+	}
+	focus = {
+		id = NEA_enforce_the_1990_constitution
+		icon = focus_enforce_1990_constitution
+		cost = 7.2
+		prerequisite = {
+			focus = NEA_end_of_a_civil_war
+		}
+		x = 27
+		y = 9
+		completion_reward = {
+		    add_popularity = {
+			    ideology = revolutionary_socialist
+			    popularity = 0.045 
+		    }
+			add_stability = 0.05 
+			country_event = { id = commonwealth.50 }
+			every_state = {
+			    limit = {
+					is_core_of = AMC
+					NOT = {
+						is_owned_by = AMC
+					}
+				}
+				remove_core_of = AMC
+			}
+		}
+
+	}
+	focus = {
+		id = NEA_empower_the_president
+		icon = focus_commonwealth_president
+		cost = 2
+		ai_will_do = {
+			modifier = {
+				NOT = {
+					has_game_rule = {
+						rule = NEA_ai_behavior
+						option = DEFAULT
+					}
+					has_game_rule = {
+						rule = NEA_ai_behavior
+						option = CC_RULE_HOLDREN
+					}
+				}
+				factor = 0
+			}
+		}
+		prerequisite = {
+			focus = NEA_enforce_the_1990_constitution
+		}
+		mutually_exclusive = {
+			focus = NEA_empower_the_central_committee
+		}
+		x = 26
+		y = 10
+		completion_reward = {
+		    remove_ideas = idea_apc_political_deadlock
+			add_ideas = idea_apc_strong_president
+			create_country_leader = {
+	            name = "John Holdren"
+	            picture = "Portrait_NEA_John_Holdren.dds"
+	            ideology = american_revolutionary_socialism
+            }
+			country_event = { id = commonwealth.111 }
+		}
+
+	}
+	focus = {
+		id = NEA_empower_the_central_committee
+		icon = focus_empower_the_central_committee
+		cost = 2
+		ai_will_do = {
+			modifier = {
+				NOT = {
+					has_game_rule = {
+						rule = NEA_ai_behavior
+						option = DEFAULT
+					}
+					has_game_rule = {
+						rule = NEA_ai_behavior
+						option = CC_RULE_NO_HOLDREN
+					}
+				}
+				factor = 0
+			}
+		}
+		prerequisite = {
+			focus = NEA_enforce_the_1990_constitution
+		}
+		mutually_exclusive = {
+			focus = NEA_empower_the_president
+		}
+		x = 28
+		y = 10
+		completion_reward = {
+		    remove_ideas = idea_apc_political_deadlock
+			add_ideas = idea_apc_strong_committee
+			country_event = { id = commonwealth.112 }
+		}
+
+	}
+	focus = {
+		id = NEA_diplomatic_recognition
+		icon = two_flags
+		cost = 5
+		prerequisite = {
+			focus = NEA_empower_the_president
+			focus = NEA_empower_the_central_committee
+		}
+		x = 28
+		y = 11
+		completion_reward = {
+		    remove_ideas = idea_apc_appalling_recognition
+			country_event = { id = commonwealth.113 }
+		}
+
+	}
+	focus = {
+		id = NEA_establish_embassies
+		icon = focus_establish_embassies
+		cost = 5
+		prerequisite = {
+			focus = NEA_diplomatic_recognition
+		}
+		x = 28
+		y = 12
+		completion_reward = {
+		    every_country = {
+			    limit = {
+				    NOT = {
+					    OR = {
+						    has_government = fascist
+							has_government = nationalist
+							has_government = monarchist
+							has_government = national_bolshevik
+						}
+					}
+				}
+				add_opinion_modifier = {
+				    target = NEA
+				    modifier = recent_actions_positive
+			    }
+			}
+			add_political_power = 50
+			country_event = { id = commonwealth.114 }
+		}
+
+	}
+	focus = {
+		id = NEA_push_for_un_membership
+		icon = focus_commonwealth_un_membership
+		cost = 7.2
+		prerequisite = {
+			focus = NEA_establish_embassies
+		}
+		x = 28
+		y = 13
+		completion_reward = {
+		    add_stability = 0.04
+			country_event = { id = commonwealth.115 }
+		}
+		
+
+	}
+	focus = {
+		id = NEA_socialist_trading_network
+		icon = focus_socialist_trading_network
+		cost = 7.2
+		prerequisite = {
+			focus = NEA_push_for_un_membership
+		}
+		x = 28
+		y = 14
+		completion_reward = {
+		    every_country = {
+			    limit = {
+				    has_government = revolutionary_socialist
+				}
+				add_opinion_modifier = {
+				    target = NEA
+				    modifier = trade_influence_5
+			    }
+			}
+			country_event = { id = commonwealth.116 }
+		}
+
+	}
+	focus = {
+		id = NEA_american_peace_act
+		icon = focus_american_peace_act
+		cost = 5
+		ai_will_do = {
+			base = 50
+			modifier = {
+				NOT = {
+					has_game_rule = {
+						rule = NEA_ai_behavior
+						option = DEFAULT
+					}
+					has_game_rule = {
+						rule = NEA_ai_behavior
+						option = OLD_GUARD_RULE
+					}
+				}
+				factor = 0
+			}
+		}
+		prerequisite = {
+			focus = NEA_pray_for_new_york
+		}
+		mutually_exclusive = {
+			focus = NEA_begin_investigation
+			focus = NEA_fire_new_york_governor
+		}
+		x = 33
+		y = 1
+		completion_reward = {
+		    add_political_power = 50
+			add_popularity = {
+			    ideology = revolutionary_socialist
+			    popularity = 0.02
+		    }
+			add_ideas = idea_apc_american_peace_act
+			country_event = { id = commonwealth.117 }
+		}
+
+	}
+	focus = {
+		id = NEA_crackdown_on_committee_rebellion
+		icon = broken_star
+		cost = 5
+		prerequisite = {
+			focus = NEA_american_peace_act
+		}
+		x = 33
+		y = 2
+		completion_reward = {
+		    add_stability = 0.025
+			army_experience = 10
+			country_event = { id = commonwealth.118 }
+		}
+
+	}
+	focus = {
+		id = NEA_ban_the_communist_party
+		icon = focus_commonwealth_communist_party_ban
+		cost = 5
+		prerequisite = {
+			focus = NEA_crackdown_on_committee_rebellion
+		}
+		x = 30
+		y = 3
+		completion_reward = {
+			add_ideas = idea_apc_communist_party_ban
+			country_event = { id = commonwealth.119 }
+		}
+
+	}
+	focus = {
+		id = NEA_expand_chomskys_powers
+		icon = focus_expand_chomskys_powers
+		cost = 5
+		prerequisite = {
+			focus = NEA_crackdown_on_committee_rebellion
+		}
+		x = 32
+		y = 3
+		completion_reward = {
+		    add_political_power = 150
+			country_event = { id = commonwealth.120 }
+		}
+
+	}
+	focus = {
+		id = NEA_restructure_the_chamber
+		icon = gorbachevs_kgb
+		cost = 5
+		prerequisite = {
+			focus = NEA_ban_the_communist_party
+		}
+		prerequisite = {
+			focus = NEA_expand_chomskys_powers
+		}
+		x = 31
+		y = 4
+		completion_reward = {
+            add_popularity = {
+			    ideology = revolutionary_socialist
+			    popularity = 0.03
+		    }
+			add_popularity = {
+			    ideology = moderate_socialist
+			    popularity = 0.05
+		    }
+			add_popularity = {
+			    ideology = national_bolshevik
+			    popularity = 0.02
+		    }
+			add_ideas = idea_apc_restructured_chamber
+		}
+
+	}
+	focus = {
+		id = NEA_provoke_committee_members
+		icon = the_nationalist
+		cost = 3
+		prerequisite = {
+			focus = NEA_crackdown_on_committee_rebellion
+		}
+		x = 33
+		y = 5
+		completion_reward = {
+		    add_political_power = 50
+			country_event = { id = commonwealth.121 }
+		}
+
+	}
+	focus = {
+		id = NEA_support_moderate_governors
+		icon = focus_support_moderate_governors
+		cost = 3
+		prerequisite = {
+			focus = NEA_restructure_the_chamber
+		}
+		x = 31
+		y = 5
+		completion_reward = {
+		    793 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			396 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			795 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			359 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			261 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			country_event = { id = commonwealth.122 }
+		}
+
+	}
+	focus = {
+		id = NEA_gain_support_of_governors
+		icon = focus_gain_support_of_governors
+		cost = 5
+		prerequisite = {
+			focus = NEA_crackdown_on_committee_rebellion
+		}
+		x = 34
+		y = 3
+		completion_reward = {
+		    add_political_power = 100
+			add_popularity = {
+			    ideology = revolutionary_socialist
+			    popularity = 0.02
+		    }
+			add_popularity = {
+			    ideology = moderate_socialist
+			    popularity = 0.05
+		    }
+			add_popularity = {
+			    ideology = new_democrat
+			    popularity = 0.02
+		    }
+			country_event = { id = commonwealth.123 }
+		}
+
+	}
+	focus = {
+		id = NEA_trade_council_influence
+		icon = focus_trade_council_influence
+		cost = 5
+		prerequisite = {
+			focus = NEA_crackdown_on_committee_rebellion
+		}
+		x = 36
+		y = 3
+		completion_reward = {
+		    add_ideas = idea_apc_power_of_the_trade_councils
+		}
+
+	}
+	focus = {
+		id = NEA_old_guard_in_philadelphia
+		icon = focus_old_guard_in_philadelphia
+		cost = 3
+		prerequisite = {
+			focus = NEA_gain_support_of_governors
+		}
+		prerequisite = {
+			focus = NEA_trade_council_influence
+		}
+		x = 35
+		y = 4
+		completion_reward = {
+		    add_political_power = 100 
+			add_stability = -0.1 
+			
+		}
+
+	}
+	focus = {
+		id = NEA_ensure_local_media_rights
+		icon = propaganda
+		cost = 5
+		prerequisite = {
+			focus = NEA_old_guard_in_philadelphia
+		}
+		x = 35
+		y = 5
+		completion_reward = {
+		    add_ideas = idea_apc_media_rights
+		}
+
+	}
+	focus = {
+		id = NEA_a_broken_earpiece
+		icon = focus_temporary_democracy
+		cost = 5
+		prerequisite = {
+			focus = NEA_support_moderate_governors
+		}
+		prerequisite = {
+			focus = NEA_provoke_committee_members
+		}
+		prerequisite = {
+			focus = NEA_ensure_local_media_rights
+		}
+		x = 33
+		y = 6
+		completion_reward = {
+		    add_stability = -0.07
+			357 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			393 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			794 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			792 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = NEA_bribe_the_technology_council
+		icon = focus_bribe_technology_council
+		cost = 5
+		prerequisite = {
+			focus = NEA_trade_council_influence
+		}
+		x = 36
+		y = 6
+		completion_reward = {
+		    add_tech_bonus = {
+				name = electronics_bonus
+				bonus = 1
+				uses = 1
+				category = electronics
+			}
+		}
+
+	}
+	focus = {
+		id = NEA_fire_new_york_governor
+		icon = focus_fire_new_york_governor
+		cost = 5
+		ai_will_do = {
+			base = 50
+			modifier = {
+				NOT = {
+					has_game_rule = {
+						rule = NEA_ai_behavior
+						option = DEFAULT
+					}
+					has_game_rule = {
+						rule = NEA_ai_behavior
+						option = AUTO_COUNCIL_RULE
+					}
+					has_game_rule = {
+						rule = NEA_ai_behavior
+						option = GATES_RULE
+					}
+					has_game_rule = {
+						rule = NEA_ai_behavior
+						option = BERNIE_RULE
+					}
+				}
+				factor = 0
+			}
+		}
+		prerequisite = {
+			focus = NEA_pray_for_new_york
+		}
+		mutually_exclusive = {
+			focus = NEA_begin_investigation
+			focus = NEA_american_peace_act
+		}
+		x = 42
+		y = 1
+		completion_reward = {
+		    add_popularity = {
+			    ideology = moderate_socialist
+			    popularity = 0.025
+		    }
+			country_event = { id = commonwealth.124 }
+		}
+
+	}
+	focus = {
+		id = NEA_threaten_the_old_guard
+		icon = focus_overthrow_congress
+		cost = 5
+		prerequisite = {
+			focus = NEA_fire_new_york_governor
+		}
+		x = 42
+		y = 2
+		completion_reward = {
+		    add_political_power = 70
+		}
+
+	}
+	focus = {
+		id = NEA_bernies_speech
+		icon = focus_bernies_speech
+		cost = 5
+		prerequisite = {
+			focus = NEA_threaten_the_old_guard
+		}
+		x = 42
+		y = 3
+		completion_reward = {
+		    add_stability = 0.025 
+			add_popularity = {
+			    ideology = revolutionary_socialist
+			    popularity = -0.04
+		    }
+			country_event = { id = commonwealth.125 }
+		}
+
+	}
+	focus = {
+		id = NEA_rallying_support
+		icon = generic_ideology
+		cost = 7.2
+		prerequisite = {
+			focus = NEA_bernies_speech
+		}
+		available = {
+		    NOT = {
+			    has_country_flag = inauguration_plans_fell_through
+			}
+		}
+		x = 39
+		y = 4
+		completion_reward = {
+		    add_ideas = idea_apc_moderate_support
+			country_event = { id = commonwealth.126 }
+		}
+
+	}
+	focus = {
+		id = NEA_new_england_trade_councils
+		icon = focus_new_england_trade_councils
+		cost = 5
+		prerequisite = {
+			focus = NEA_bernies_speech
+		}
+		available = {
+		    NOT = {
+			    has_country_flag = inauguration_plans_fell_through
+			}
+		}
+		x = 41
+		y = 4
+		completion_reward = {
+		    add_ideas = idea_apc_new_england_trade_councils
+		}
+
+	}
+	focus = {
+		id = NEA_the_influence_of_boston
+		icon = focus_influence_of_boston
+		cost = 5
+		prerequisite = {
+			focus = NEA_bernies_speech
+		}
+		available = {
+		    NOT = {
+			    has_country_flag = inauguration_plans_fell_through
+			}
+		}
+		x = 43
+		y = 4
+		completion_reward = {
+		    357 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = NEA_vermont_resignation
+		icon = focus_vermont_resignation
+		cost = 5
+		prerequisite = {
+			focus = NEA_new_england_trade_councils
+		}
+		prerequisite = {
+			focus = NEA_the_influence_of_boston
+		}
+		available = {
+		    NOT = {
+			    has_country_flag = inauguration_plans_fell_through
+			}
+		}
+		x = 42
+		y = 5
+		completion_reward = {
+		    add_political_power = 100
+			add_popularity = {
+			    ideology = revolutionary_socialist
+			    popularity = -0.1
+		    }
+			country_event = { id = commonwealth.127 }
+		}
+
+	}
+	focus = {
+		id = NEA_meet_with_conservatives
+		icon = focus_commonwealth_meet_conservatives
+		cost = 5
+		prerequisite = {
+			focus = NEA_rallying_support
+		}
+		available = {
+		    NOT = {
+			    has_country_flag = inauguration_plans_fell_through
+			}
+		}
+		x = 39
+		y = 5
+		completion_reward = {
+		    add_popularity = {
+			    ideology = national_conservative
+			    popularity = 0.05
+		    }
+			add_popularity = {
+			    ideology = centrist
+			    popularity = 0.05
+		    }
+			add_popularity = {
+			    ideology = nationalist
+			    popularity = 0.05
+		    }
+			country_event = { id = commonwealth.128 }
+		}
+
+	}
+	focus = {
+		id = NEA_meet_with_communists
+		icon = focus_commonwealth_meet_communists
+		cost = 5
+		prerequisite = {
+			focus = NEA_push_for_greater_freedoms
+		}
+		available = {
+		    NOT = {
+			    has_country_flag = inauguration_plans_fell_through
+			}
+		}
+		x = 45
+		y = 5
+		completion_reward = {
+		    add_popularity = {
+			    ideology = communist
+			    popularity = 0.025
+		    }
+			country_event = { id = commonwealth.129 }
+		}
+
+	}
+	focus = {
+		id = NEA_sanders_in_the_committee
+		icon = uk_workers_revolution
+		cost = 7.2
+		prerequisite = {
+			focus = NEA_vermont_resignation
+			focus = NEA_meet_with_conservatives
+			focus = NEA_meet_with_communists
+		}
+		x = 42
+		y = 6
+		completion_reward = {
+		    add_popularity = {
+			    ideology = moderate_socialist
+			    popularity = 0.025
+		    }
+			add_political_power = 200
+			country_event = { id = commonwealth.130 }
+		}
+
+	}
+	focus = {
+		id = NEA_exploit_factional_divide
+		icon = dangerous_deal
+		cost = 7.2
+		prerequisite = {
+			focus = NEA_sanders_in_the_committee
+		}
+		x = 40
+		y = 7
+		completion_reward = {
+		    remove_ideas = idea_standing_firm_commonwealth
+			country_event = { id = commonwealth.131 }
+		}
+
+	}
+	focus = {
+		id = NEA_support_from_workers
+		icon = red_hands_shaking
+		cost = 5
+		prerequisite = {
+			focus = NEA_sanders_in_the_committee
+		}
+		x = 44
+		y = 7
+		completion_reward = {
+		    add_ideas = idea_apc_support_from_workers
+		}
+
+	}
+	focus = {
+		id = NEA_sanders_at_the_podium
+		icon = abolish_workers_party
+		cost = 5
+		prerequisite = {
+			focus = NEA_exploit_factional_divide
+		}
+		prerequisite = {
+			focus = NEA_support_from_workers
+		}
+		available = {
+		    NOT = {
+			    has_country_flag = inauguration_plans_fell_through
+			}
+		}
+		x = 42
+		y = 8
+		completion_reward = {
+		    set_party_name = { ideology = moderate_socialist long_name = NEA_socialist_party name = NEA_socialist_party }
+			country_event = { id = commonwealth.132 }
+		}
+
+	}
+	focus = {
+		id = NEA_small_donations
+		icon = neutrality
+		cost = 5
+		prerequisite = {
+			focus = NEA_support_from_workers
+		}
+		prerequisite = {
+			focus = NEA_exploit_factional_divide
+		}
+		x = 44
+		y = 8
+		completion_reward = {
+		    add_ideas = idea_apc_donations
+		}
+
+	}
+	focus = {
+		id = NEA_unite_all_americans
+		icon = united_states
+		cost = 5
+		prerequisite = {
+			focus = NEA_small_donations
+		}
+		x = 44
+		y = 9
+		completion_reward = {
+		    add_stability = 0.08
+		}
+
+	}
+	focus = {
+		id = NEA_civil_war
+		icon = state_of_america
+		cost = 1
+		prerequisite = {
+			focus = NEA_impeach_president_chomsky
+		}
+		bypass = {
+		    NEA = { has_war_with = AMC } 
+		}
+		x = 21
+		y = 8
+		completion_reward = {
+		
+		}
+
+	}
+	focus = {
+		id = NEA_communist_volunteers
+		icon = generic_marching
+		cost = 3
+		prerequisite = {
+			focus = NEA_civil_war
+		}
+		available = {
+		    NEA = { has_war_with = AMC } 
+		}
+		x = 20
+		y = 9
+		completion_reward = {
+		    add_popularity = {
+			    ideology = communist
+			    popularity = 0.1
+		    }
+			remove_ideas = idea_standing_firm_commonwealth
+			add_manpower = 25000
+			country_event = { id = commonwealth.133 }
+		}
+
+	}
+	focus = {
+		id = NEA_assassinate_the_industrial_council
+		icon = guns_blue
+		cost = 3
+		prerequisite = {
+			focus = NEA_civil_war
+		}
+		available = {
+		    NEA = { has_war_with = AMC } 
+		}
+		x = 22
+		y = 9
+		completion_reward = {
+		    add_tech_bonus = {
+				name = industry_bonus
+				bonus = 1
+				uses = 1
+				category = industry
+			}
+			add_stability = 0.02
+			country_event = { id = commonwealth.134 }
+		}
+
+	}
+	focus = {
+		id = NEA_military_industry
+		icon = military_factory
+		cost = 3
+		prerequisite = {
+			focus = NEA_assassinate_the_industrial_council
+		}
+		available = {
+		    NEA = { has_war_with = AMC } 
+		}
+		x = 22
+		y = 10
+		completion_reward = {
+		    random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = NEA_fight_for_a_cause
+		icon = major_war
+		cost = 3
+		prerequisite = {
+			focus = NEA_communist_volunteers
+		}
+		available = {
+		    NEA = { has_war_with = AMC } 
+		}
+		x = 20
+		y = 10
+		completion_reward = {
+		    add_ideas = idea_apc_fighting_for_a_cause
+		}
+
+	}
+	focus = {
+		id = NEA_defend_our_capital
+		icon = fortify_city
+		cost = 3
+		prerequisite = {
+			focus = NEA_military_industry
+		}
+		available = {
+		    NEA = { has_war_with = AMC } 
+		}
+		x = 22
+		y = 11
+		completion_reward = {
+		    360 = {
+				add_building_construction = { type = bunker province = 6845 level = 3 instant_build = yes }
+			}
+		}
+
+	}
+	focus = {
+		id = NEA_push_research_teams
+		icon = crypto_bomb
+		cost = 3
+		prerequisite = {
+			focus = NEA_fight_for_a_cause
+		}
+		available = {
+		    NEA = { has_war_with = AMC } 
+		}
+		x = 20
+		y = 11
+		completion_reward = {
+		    add_timed_idea = {
+			    idea = idea_apc_pushing_research_teams
+			    days = 100
+		    }
+		}
+
+	}
+	focus = {
+		id = NEA_desperate_times
+		icon = crown_shattered
+		cost = 5
+		prerequisite = {
+			focus = NEA_push_research_teams
+		}
+		prerequisite = {
+			focus = NEA_defend_our_capital
+		}
+		available = {
+		    NEA = { has_war_with = AMC } 
+		}
+		x = 21
+		y = 12
+		completion_reward = {
+		    add_ideas = idea_apc_desperate_times
+		}
+
+	}
+	focus = {
+		id = NEA_first_two_year_plan
+		icon = focus_north_egyptian_projects
+		cost = 7.2
+		prerequisite = {
+			focus = NEA_empower_the_president
+			focus = NEA_empower_the_central_committee
+		}
+		x = 24
+		y = 11
+		completion_reward = {
+		    add_timed_idea = {
+			    idea = idea_apc_first_two_year_plan
+			    days = 730
+		    }
+		}
+
+	}
+	focus = {
+		id = NEA_second_two_year_plan
+		icon = industry_2
+		cost = 7.2
+		prerequisite = {
+			focus = NEA_first_two_year_plan
+		}
+		available = {
+		    NOT = {
+			    has_idea = idea_apc_first_two_year_plan
+			}
+		}
+		x = 24
+		y = 12
+		completion_reward = {
+		    add_timed_idea = {
+			    idea = idea_apc_second_two_year_plan
+			    days = 730
+		    }
+		}
+
+	}
+	focus = {
+		id = NEA_third_two_year_plan
+		icon = production
+		cost = 7.2
+		prerequisite = {
+			focus = NEA_second_two_year_plan
+		}
+		available = {
+		    NOT = {
+			    has_idea = idea_apc_second_two_year_plan
+			}
+		}
+		x = 24
+		y = 13
+		completion_reward = {
+		    add_timed_idea = {
+			    idea = idea_apc_third_two_year_plan
+			    days = 730
+		    }
+		}
+
+	}
+	focus = {
+		id = NEA_the_eternal_gear
+		icon = production_2
+		cost = 7.2
+		prerequisite = {
+			focus = NEA_third_two_year_plan
+		}
+		available = {
+		    NOT = {
+			    has_idea = idea_apc_third_two_year_plan
+			}
+		}
+		x = 24
+		y = 14
+		completion_reward = {
+		    add_ideas = idea_apc_the_eternal_gear
+		}
+
+	}
+	focus = {
+		id = NEA_political_reconciliation
+		icon = democracy
+		cost = 7.2
+		prerequisite = {
+			focus = NEA_empower_the_president
+			focus = NEA_empower_the_central_committee
+		}
+		x = 26
+		y = 11
+		completion_reward = {
+		    add_timed_idea = {
+			    idea = idea_apc_political_reconciliation
+			    days = 200
+		    }
+		}
+
+	}
+	focus = {
+		id = NEA_execute_trade_council_members
+		icon = swords
+		cost = 3
+		prerequisite = {
+			focus = NEA_political_reconciliation
+		}
+		x = 26
+		y = 12
+		completion_reward = {
+		    add_stability = 0.035
+			add_political_power = 200
+			country_event = { id = commonwealth.135 }
+		}
+
+	}
+	focus = {
+		id = NEA_abolish_the_councils
+		icon = position_armies
+		cost = 3
+		prerequisite = {
+			focus = NEA_execute_trade_council_members
+		}
+		x = 26
+		y = 13
+		completion_reward = {
+		    add_ideas = idea_apc_councils_abolished
+			country_event = { id = commonwealth.136 }
+		}
+
+	}
+	focus = {
+		id = NEA_total_control
+		icon = embrace_the_revolution
+		cost = 7.2
+		prerequisite = {
+			focus = NEA_abolish_the_councils
+		}
+		x = 26
+		y = 14
+		completion_reward = {
+		    add_popularity = {
+			    ideology = revolutionary_socialist
+			    popularity = 0.07
+		    }
+		}
+
+	}
+	focus = {
+		id = NEA_appease_old_guard_leaders
+		icon = putins_inauguration
+		cost = 5
+		prerequisite = {
+			focus = NEA_empower_the_president
+			focus = NEA_empower_the_central_committee
+		}
+		mutually_exclusive = {
+			focus = NEA_remove_the_old_guard
+		}
+		x = 30
+		y = 11
+		completion_reward = {
+		    add_popularity = {
+			    ideology = moderate_socialist
+			    popularity = 0.1
+		    }
+			add_political_power = -50
+			add_ideas = idea_apc_working_with_the_old_guard
+		}
+
+	}
+	focus = {
+		id = NEA_remove_the_old_guard
+		icon = the_final_struggle
+		cost = 3
+		prerequisite = {
+			focus = NEA_empower_the_president
+			focus = NEA_empower_the_central_committee
+		}
+		mutually_exclusive = {
+			focus = NEA_appease_old_guard_leaders
+		}
+		x = 32
+		y = 11
+		completion_reward = {
+		    add_political_power = -120
+			add_ideas = idea_apc_new_guard_supremacy
+			add_popularity = {
+			    ideology = revolutionary_socialist
+			    popularity = -0.1
+		    }
+			country_event = { id = commonwealth.137 }
+		}
+
+	}
+	focus = {
+		id = NEA_decentralised_military
+		icon = small_arms
+		cost = 5
+		prerequisite = {
+			focus = NEA_appease_old_guard_leaders
+		}
+		x = 30
+		y = 12
+		completion_reward = {
+		    add_ideas = idea_apc_decentralised_military
+			add_tech_bonus = {
+				name = infantry_weapons_bonus
+				bonus = 0.5
+				uses = 1
+				category = infantry_weapons
+			}
+			add_tech_bonus = {
+				name = cat_light_armor_bonus
+				bonus = 0.5
+				uses = 1
+				category = cat_light_armor
+			}
+			add_tech_bonus = {
+				name = light_air_bonus
+				bonus = 0.5
+				uses = 1
+				category = light_air
+			}
+		}
+
+	}
+	focus = {
+		id = NEA_federation_of_states
+		icon = intelligence_exchange
+		cost = 5
+		prerequisite = {
+			focus = NEA_decentralised_military
+		}
+		x = 30
+		y = 13
+		completion_reward = {
+		    add_stability = 0.03
+			add_popularity = {
+			    ideology = revolutionary_socialist
+			    popularity = 0.04
+		    }
+			add_popularity = {
+			    ideology = moderate_socialist
+			    popularity = 0.02
+		    }
+			add_popularity = {
+			    ideology = national_conservative
+			    popularity = 0.01
+		    }
+			add_popularity = {
+			    ideology = centrist
+			    popularity = 0.01
+		    }
+		}
+
+	}
+	focus = {
+		id = NEA_maintain_some_privileges
+		icon = demand_territory
+		cost = 7.2
+		prerequisite = {
+			focus = NEA_federation_of_states
+		}
+		x = 30
+		y = 14
+		completion_reward = {
+		    add_political_power = 100
+		}
+
+	}
+	focus = {
+		id = NEA_the_great_purge
+		icon = common_african_judiciary
+		cost = 5
+		prerequisite = {
+			focus = NEA_remove_the_old_guard
+		}
+		x = 32
+		y = 12
+		completion_reward = {
+		    add_timed_idea = {
+			    idea = idea_apc_the_great_purge
+			    days = 90
+		    }
+			country_event = { id = commonwealth.138 }
+		}
+
+	}
+	focus = {
+		id = NEA_reconciliation_with_soviets
+		icon = ussr
+		cost = 5
+		prerequisite = {
+			focus = NEA_the_great_purge
+		}
+		x = 32
+		y = 13
+		completion_reward = {
+		    SOV = {
+			    add_opinion_modifier = {
+				    target = NEA
+				    modifier = declaration_of_friendship
+			    }
+			}
+		}
+
+	}
+	focus = {
+		id = NEA_one_nation
+		icon = commonwealth
+		cost = 7.2
+		prerequisite = {
+			focus = NEA_reconciliation_with_soviets
+		}
+		x = 32
+		y = 14
+		completion_reward = {
+		    add_ideas = idea_apc_one_commonwealth
+		}
+
+	}
+	focus = {
+		id = NEA_condemn_the_soviet_order
+		icon = soviet_attack
+		cost = 7.2
+		prerequisite = {
+			focus = NEA_the_eternal_gear
+			focus = NEA_total_control
+			focus = NEA_socialist_trading_network
+			focus = NEA_maintain_some_privileges
+		}
+		mutually_exclusive = {
+			focus = NEA_mutual_respect
+		}
+		available = {
+		    NOT = {
+			    has_completed_focus = NEA_reconciliation_with_soviets
+			}
+		}
+		x = 27
+		y = 15
+		completion_reward = {
+		    custom_effect_tooltip = NEA_condemn_the_soviet_order_tt
+			country_event = { id = commonwealth.139 }
+		}
+
+	}
+	focus = {
+		id = NEA_mutual_respect
+		icon = continuous_increase_nu
+		cost = 7.2
+		prerequisite = {
+			focus = NEA_one_nation
+		}
+		mutually_exclusive = {
+			focus = NEA_condemn_the_soviet_order
+		}
+		x = 29
+		y = 15
+		completion_reward = {
+		    add_stability = 0.01
+			add_political_power = -60
+		}
+
+	}
+	focus = {
+		id = NEA_american_international
+		icon = air_doctrine
+		cost = 7.2
+		prerequisite = {
+			focus = NEA_condemn_the_soviet_order
+			focus = NEA_mutual_respect
+		}
+		x = 28
+		y = 16
+		completion_reward = {
+			country_event = commonwealth.235
+			add_ideas = idea_apc_american_international
+            enable_unification_decisions = yes
+		}
+
+	}
+	focus = {
+		id = NEA_southern_reclamation
+		icon = american_republic_attack
+		cost = 2
+		prerequisite = {
+			focus = NEA_american_international
+		}
+		available = {
+			OR = {
+				is_neighbor_of = USA
+				is_neighbor_of = TEX
+				AND = {
+					USA = {
+						exists = no
+					}
+					TEX = {
+						exists = no
+					}
+				}
+			}
+		}
+		x = 25
+		y = 17
+		completion_reward = {
+		    create_wargoal = {
+			    type = annex_everything
+			    target = USA
+		    }
+			create_wargoal = {
+			    type = annex_everything
+			    target = TEX
+		    }
+		}
+
+	}
+	focus = {
+		id = NEA_northern_reclamation
+		icon = glr_attack
+		cost = 2
+		prerequisite = {
+			focus = NEA_american_international
+		}
+		available = {
+			OR = {
+				is_neighbor_of = GRL
+				is_neighbor_of = ILL
+				is_neighbor_of = MOT
+				AND = {
+					GRL = {
+						exists = no
+					}
+					ILL = {
+						exists = no
+					}
+					MOT = {
+						exists = no
+
+					}
+				}
+			}
+		}
+		x = 27
+		y = 17
+		completion_reward = {
+		    create_wargoal = {
+			    type = annex_everything
+			    target = GRL
+		    }
+			create_wargoal = {
+			    type = annex_everything
+			    target = ILL
+		    }
+			create_wargoal = {
+			    type = annex_everything
+			    target = MOT
+		    }
+		}
+
+	}
+	focus = {
+		id = NEA_western_reclamation
+		icon = midwest_attack
+		cost = 2
+		prerequisite = {
+			focus = NEA_american_international
+		}
+		available = {
+			OR = {
+				is_neighbor_of = ARI
+				is_neighbor_of = UTA
+				is_neighbor_of = LIN
+				is_neighbor_of = MWA
+				AND = {
+					ARI = {
+						exists = no
+					}
+					UTA = {
+						exists = no
+					}
+					LIN = {
+						exists = no
+					}
+					MWA = {
+						exists = no
+					}
+				}
+			}
+		}
+		x = 29
+		y = 17
+		completion_reward = {
+		    create_wargoal = {
+			    type = annex_everything
+			    target = ARI
+		    }
+			create_wargoal = {
+			    type = annex_everything
+			    target = UTA
+		    }
+			create_wargoal = {
+			    type = annex_everything
+			    target = LIN
+		    }
+			create_wargoal = {
+			    type = annex_everything
+			    target = MWA
+		    }
+		}
+
+
+	}
+	focus = {
+		id = NEA_pacific_reclamation
+		icon = uapr_attack
+		cost = 2
+		prerequisite = {
+			focus = NEA_american_international
+		}
+		available = {
+			OR = {
+				is_neighbor_of = PCA
+				is_neighbor_of = CSD
+				AND = {
+					PCA = {
+						exists = no
+					}
+					CSD = {
+						exists = no
+					}
+				}
+			}
+		}
+		x = 31
+		y = 17
+		completion_reward = {
+		    create_wargoal = {
+			    type = annex_everything
+			    target = PCA
+		    }
+            create_wargoal = {
+                type = annex_everything
+                target = CSD
+            }
+			create_wargoal = {
+			    type = annex_everything
+			    target = ALA
+		    }
+			create_wargoal = {
+			    type = annex_everything
+			    target = HAW
+		    }
+		}
+
+	}
+	focus = {
+		id = NEA_integrate_occupied_regions
+		icon = military_sphere
+		cost = 30
+		prerequisite = {
+			focus = NEA_southern_reclamation
+		}
+		prerequisite = {
+			focus = NEA_northern_reclamation
+		}
+		prerequisite = {
+			focus = NEA_western_reclamation
+		}
+		prerequisite = {
+			focus = NEA_pacific_reclamation
+		}
+		x = 28
+		y = 18
+		completion_reward = {
+		    core_USA = yes
+            core_TEX = yes
+            core_ILL = yes
+            core_GRL = yes
+            core_MWA = yes
+            core_MOT = yes
+            core_LIN = yes
+            core_UTA = yes
+            core_ARI = yes
+            core_PCA = yes
+		}
+
+	}
+	focus = {
+		id = NEA_united_american_commonwealth
+		icon = focus_a_democratic_america
+		cost = 7.2
+		prerequisite = {
+			focus = NEA_integrate_occupied_regions
+		}
+		available = {
+		    has_country_flag = the_united_states_are_back
+		}
+		x = 28
+		y = 19
+		completion_reward = {
+		    if = {
+			    limit = {
+				    has_idea = idea_apc_a_united_commonwealth
+				}
+				remove_ideas = idea_apc_a_united_commonwealth
+			}
+			add_ideas = idea_apc_victorious_commonwealth
+			if = {
+				limit = {
+					has_completed_focus = NEA_condemn_the_soviet_order
+				}
+				create_wargoal = {
+					type = puppet_wargoal_focus
+					target = SOV
+				}
+			}
+			create_faction = american_international
+		}
+
+	}
+	focus = {
+		id = NEA_bribe_the_automotive_council
+		icon = investigate_industrial_corruption
+		cost = 5
+		prerequisite = {
+			focus = NEA_ban_the_communist_party
+		}
+		x = 30
+		y = 6
+		completion_reward = {
+		    add_tech_bonus = {
+				name = motorized_equipment_bonus
+				bonus = 0.5
+				uses = 1
+				category = motorized_equipment
+			}
+			add_tech_bonus = {
+				name = cat_mechanized_equipment_bonus
+				bonus = 0.5
+				uses = 1
+				category = cat_mechanized_equipment
+			}
+		}
+
+	}
+	focus = {
+		id = NEA_dissolve_the_central_committee
+		icon = royal_institutions
+		cost = 7.2
+		prerequisite = {
+			focus = NEA_bribe_the_automotive_council
+		}
+		prerequisite = {
+			focus = NEA_a_broken_earpiece
+		}
+		prerequisite = {
+			focus = NEA_bribe_the_technology_council
+		}
+		x = 33
+		y = 7
+		completion_reward = {
+		    hidden_effect = {
+			    create_country_leader = {
+	                name = "Noam Chomsky"
+	                picture = "Portrait_NEA_Noam_Chomsky.dds"
+	                ideology = anarcho_syndicalism
+                }
+			}
+			hidden_effect = {
+		        NEA = {
+		            country_event = { days = 2 id = commonwealth.51 } 
+		        }
+		    }
+			country_event = { id = commonwealth.141 }
+		}
+
+	}
+	focus = {
+		id = NEA_may_the_best_win
+		icon = smashing_flag
+		cost = 3
+		prerequisite = {
+			focus = NEA_dissolve_the_central_committee
+		}
+		available = {
+		    NEA = { has_civil_war = yes } 
+		}
+		x = 33
+		y = 8
+		completion_reward = {
+		    add_ideas = idea_apc_the_best_soldiers
+		}
+
+	}
+	focus = {
+		id = NEA_new_military_technologies
+		icon = special_forces
+		cost = 5
+		prerequisite = {
+			focus = NEA_dissolve_the_central_committee
+		}
+		available = {
+		    NEA = { has_civil_war = yes } 
+		}
+		x = 31
+		y = 8
+		completion_reward = {
+		    add_tech_bonus = {
+				name = infantry_weapons_bonus
+				bonus = 1
+				uses = 1
+				category = infantry_weapons
+			}
+		}
+
+	}
+	focus = {
+		id = NEA_trade_council_fighters
+		icon = military_salute
+		cost = 2
+		prerequisite = {
+			focus = NEA_dissolve_the_central_committee
+		}
+		available = {
+		    NEA = { has_civil_war = yes } 
+		}
+		x = 35
+		y = 8
+		completion_reward = {
+		    add_ideas = idea_apc_trade_council_fighters
+		}
+
+	}
+	focus = {
+		id = NEA_fortress_philadelphia
+		icon = fortify_city
+		cost = 3
+		prerequisite = {
+			focus = NEA_may_the_best_win
+		}
+		available = {
+		    NEA = { has_civil_war = yes } 
+		}
+		x = 34
+		y = 9
+		completion_reward = {
+		    360 = {
+				add_building_construction = { type = bunker province = 6845 level = 9 instant_build = yes }
+			}
+		}
+
+	}
+	focus = {
+		id = NEA_fortress_new_york
+		icon = fortify_city
+		cost = 3
+		prerequisite = {
+			focus = NEA_may_the_best_win
+		}
+		available = {
+		    NEA = { has_civil_war = yes } 
+		}
+		x = 32
+		y = 9
+		completion_reward = {
+		    358 = {
+				add_building_construction = { type = bunker province = 3878 level = 9 instant_build = yes }
+			}
+		}
+
+	}
+	focus = {
+		id = NEA_push_for_greater_freedoms
+		icon = crown_chains
+		cost = 5
+		prerequisite = {
+			focus = NEA_bernies_speech
+		}
+		available = {
+		    NOT = {
+			    has_country_flag = inauguration_plans_fell_through
+			}
+		}
+		x = 45
+		y = 4
+		completion_reward = {
+		    add_popularity = {
+			    ideology = new_democrat
+			    popularity = 0.01
+		    }
+			add_popularity = {
+			    ideology = liberal
+			    popularity = 0.01
+		    }
+			add_popularity = {
+			    ideology = centrist
+			    popularity = 0.01
+		    }
+			add_popularity = {
+			    ideology = national_conservative
+			    popularity = 0.01
+		    }
+			country_event = { id = commonwealth.142 }
+		}
+
+	}
+	focus = {
+		id = NEA_new_boston_members
+		icon = low_company_tax
+		cost = 5
+		prerequisite = {
+			focus = NEA_exploit_factional_divide
+		}
+		prerequisite = {
+			focus = NEA_support_from_workers
+		}
+		x = 40
+		y = 8
+		completion_reward = {
+		    add_political_power = 70
+			country_event = { id = commonwealth.143 }
+		}
+
+	}
+	focus = {
+		id = NEA_internal_support
+		icon = laws
+		cost = 5
+		prerequisite = {
+			focus = NEA_new_boston_members
+		}
+		x = 40
+		y = 9
+		completion_reward = {
+		    add_ideas = idea_apc_internal_support
+		}
+
+	}
+	focus = {
+		id = NEA_initiate_leadership_election
+		icon = forceful_treaty
+		cost = 7.2
+		prerequisite = {
+			focus = NEA_internal_support
+		}
+		prerequisite = {
+			focus = NEA_unite_all_americans
+		}
+		x = 42
+		y = 10
+		completion_reward = {
+		    add_political_power = -250
+			add_popularity = {
+			    ideology = revolutionary_socialist
+			    popularity = 0.05
+		    }
+			add_popularity = {
+			    ideology = moderate_socialist
+			    popularity = 0.1
+		    }
+			add_timed_idea = {
+			    idea = idea_apc_beginning_of_a_new_era
+			    days = 70
+		    }
+			country_event = { id = commonwealth.144 }
+		}
+
+	}
+	focus = {
+		id = NEA_prepare_for_the_inauguration
+		icon = parties
+		cost = 12
+		prerequisite = {
+			focus = NEA_initiate_leadership_election
+		}
+		available = {
+		    NOT = {
+			    has_country_flag = inauguration_plans_fell_through
+			}
+		}
+		cancelable = no
+		x = 42
+		y = 11
+		completion_reward = {
+		    set_politics = {
+	            ruling_party = moderate_socialist
+	            elections_allowed = no
+            }
+			set_country_flag = sanders_has_been_sworn_in_as_president
+			if = {
+			    limit = {
+				    has_country_flag = waiting_for_the_inauguration
+				}
+				GAU = {
+		            country_event = { days = 1 id = commonwealth.72 } 
+		        }
+			}
+			if = {
+			    limit = {
+				    has_country_flag = the_public_will_never_know
+				}
+				GAU = {
+		            country_event = { days = 1 id = commonwealth.73 } 
+		        }
+			}
+			hidden_effect = {
+		        NEA = {
+			        GAU = { transfer_technology = yes }
+		        }
+	        }
+			hidden_effect = {
+			    GAU = {
+				    annex_country = { target = NEA transfer_troops = yes }
+				}
+				GAU = {
+                    change_tag_from = NEA
+                }
+			}
+			hidden_effect = {
+			    every_state = {
+				    limit = {
+					    is_core_of = NEA
+					}
+					add_core_of = GAU
+				}
+			}
+			hidden_effect = {
+		        GAU = {
+		            country_event = { days = 1 id = hidden.6 } 
+		        }
+		    }
+			
+		}
+
+	}
+	focus = {
+		id = NEA_fight_for_your_freedom
+		icon = generic_attack
+		cost = 7.2
+		prerequisite = {
+			focus = NEA_military_for_defence
+		}
+		x = 1
+		y = 6
+		completion_reward = {
+		    add_ideas = idea_apc_workers_brigades
+		}
+
+	}
+	focus = {
+		id = NEA_american_foreign_legion
+		icon = allies_infantry
+		cost = 7.2
+		prerequisite = {
+			focus = NEA_fight_for_your_freedom
+		}
+		x = 1
+		y = 7
+		completion_reward = {
+		    every_country = {
+			    limit = {
+				    has_government = revolutionary_socialist
+				}
+				add_opinion_modifier = {
+				    target = NEA
+				    modifier = declaration_of_friendship
+			    }
+			}
+			army_experience = 30
+		}
+
+	}
+	focus = {
+		id = NEA_technological_creativity
+		icon = generic_research
+		cost = 7.2
+		prerequisite = {
+			focus = NEA_american_foreign_legion
+		}
+		x = 1
+		y = 8
+		completion_reward = {
+		    add_research_slot = 1
+		}
+
+	}
+	focus = {
+		id = NEA_bullets_for_the_revolution
+		icon = small_arms
+		cost = 7.2
+		prerequisite = {
+			focus = NEA_industry_above_all
+		}
+		x = 7
+		y = 5
+		completion_reward = {
+		    random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = NEA_new_england_military
+		icon = artillery
+		cost = 7.2
+		prerequisite = {
+			focus = NEA_bullets_for_the_revolution
+		}
+		x = 7
+		y = 6
+		completion_reward = {
+		    357 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			792 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = NEA_western_military
+		icon = tanks
+		cost = 7.2
+		prerequisite = {
+			focus = NEA_new_england_military
+		}
+		x = 7
+		y = 7
+		completion_reward = {
+		    395 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			396 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = NEA_central_military_zone
+		icon = military_factory
+		cost = 7.2
+		prerequisite = {
+			focus = NEA_western_military
+		}
+		x = 7
+		y = 8
+		completion_reward = {
+		    261 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			893 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			army_experience = 5
+		}
+
+	}
+	focus = {
+		id = NEA_red_oligarchy
+		icon = communist_monarchy
+		cost = 7.2
+		prerequisite = {
+			focus = NEA_empower_the_technocracy
+		}
+		x = 11
+		y = 6
+		completion_reward = {
+		    add_ideas = idea_apc_red_oligarchy
+		}
+
+	}
+	focus = {
+		id = NEA_gates_five_year_plan
+		icon = five_year_plan
+		cost = 7.2
+		prerequisite = {
+			focus = NEA_red_oligarchy
+		}
+		x = 11
+		y = 7
+		completion_reward = {
+		    add_timed_idea = {
+			    idea = idea_apc_gates_five_year_plan
+			    days = 1825
+		    }
+		}
+
+	}
+	focus = {
+		id = NEA_protect_media_freedoms
+		icon = focus_freedom_of_speech
+		cost = 7.2
+		prerequisite = {
+			focus = NEA_gates_five_year_plan
+		}
+		x = 11
+		y = 8
+		completion_reward = {
+		    add_popularity = {
+			    ideology = revolutionary_socialist
+			    popularity = 0.07
+		    }
+			country_event = { id = commonwealth.148 }
+		}
+
+	}
+	focus = {
+		id = NEA_trade_with_the_world
+		icon = positive_trade_relations
+		cost = 7.2
+		prerequisite = {
+			focus = NEA_peaceful_reconciliation
+		}
+		x = 18
+		y = 6
+		completion_reward = {
+		    add_ideas = idea_apc_trading_prospects
+		}
+
+	}
+	focus = {
+		id = NEA_protect_american_workers
+		icon = work_for_the_tsar
+		cost = 7.2
+		prerequisite = {
+			focus = NEA_trade_with_the_world
+		}
+		x = 18
+		y = 7
+		completion_reward = {
+		    remove_ideas = idea_apc_western_corruption
+		}
+
+	}
+	focus = {
+		id = NEA_convene_a_unification_council
+		icon = red_hands_shaking
+		cost = 7.2
+		prerequisite = {
+			focus = NEA_protect_american_workers
+		}
+		x = 18
+		y = 8
+		completion_reward = {
+		    add_stability = 0.15
+			country_event = { id = commonwealth.149 }
+            core_USA = yes
+            core_TEX = yes
+            core_ILL = yes
+            core_GRL = yes
+            core_MWA = yes
+            core_MOT = yes
+            core_LIN = yes
+            core_UTA = yes
+            core_ARI = yes
+            core_PCA = yes
+		}
+
+	}
+	focus = {
+		id = NEA_union_of_revolutionary_nations
+		icon = two_flags
+		cost = 7.2
+		prerequisite = {
+			focus = NEA_technological_creativity
+			focus = NEA_a_necessary_industrial_federation
+		}
+		available = {
+			has_completed_focus = NEA_recognise_a_broken_america
+		}
+		x = 3
+		y = 9
+		completion_reward = {
+		    create_faction = union_of_revolutionary_nations
+			every_country = {
+			    limit = {
+				    AND = {
+					    NOT = {
+						    tag = NEA 
+						}
+						has_government = revolutionary_socialist
+					}
+				}
+				country_event = { id = commonwealth.75 }
+			}
+		}
+
+	}
+	focus = {
+		id = NEA_recognise_a_broken_america
+		icon = political_pressure
+		cost = 7.2
+		prerequisite = {
+			focus = NEA_technological_creativity
+		}
+		x = 1
+		y = 10
+		completion_reward = {
+			remove_ideas = idea_america_neutrality
+			hidden_effect = {
+				set_rule = {
+					can_join_factions = yes
+					can_create_factions = yes
+				}
+			}
+		    every_country = {
+			    limit = {
+				    AND = {
+					    OR = {
+						    tag = GRL 
+							tag = ILL 
+							tag = MWA
+							tag = MOT
+							tag = LIN 
+							tag = ARI
+							tag = UTA
+							tag = TEX
+						}
+						OR = {
+						    has_government = nationalist
+						    has_government = national_conservative
+							has_government = centrist
+							has_government = liberal
+							has_government = new_democrat
+							has_government = moderate_socialist
+							has_government = revolutionary_socialist
+						}
+					}
+				}
+				add_opinion_modifier = {
+				    target = NEA
+				    modifier = declaration_of_friendship
+			    }
+			}
+			every_country = {
+			    limit = {
+				    AND = {
+					    OR = {
+						    tag = GRL 
+							tag = ILL 
+							tag = MWA
+							tag = MOT
+							tag = LIN 
+							tag = ARI
+							tag = UTA
+							tag = TEX
+						}
+						OR = {
+						    has_government = nationalist
+						    has_government = national_conservative
+							has_government = centrist
+							has_government = liberal
+							has_government = new_democrat
+							has_government = moderate_socialist
+							has_government = revolutionary_socialist
+						}
+					}
+				}
+				add_opinion_modifier = {
+				    target = NEA
+				    modifier = trade_influence_2
+			    }
+			}
+			if = {
+			    limit = {
+				    GRL = {
+				        OR = {
+					        has_government = national_conservative
+						    has_government = centrist
+						    has_government = liberal
+						    has_government = new_democrat
+						    has_government = moderate_socialist
+						    has_government = revolutionary_socialist
+					    }
+				    }
+				}
+				give_guarantee = GRL 
+				
+			}
+			if = {
+			    limit = {
+				    ILL = {
+				        OR = {
+					        has_government = national_conservative
+						    has_government = centrist
+						    has_government = liberal
+						    has_government = new_democrat
+						    has_government = moderate_socialist
+						    has_government = revolutionary_socialist
+					    }
+				    }
+				}
+				give_guarantee = ILL
+				
+			}
+			add_stability = 0.01 
+			remove_ideas = idea_apc_appalling_recognition
+			country_event = { id = commonwealth.151 }
+		}
+
+	}
+	focus = {
+		id = NEA_support_defensive_measures
+		icon = coastal_fort
+		cost = 7.2
+		prerequisite = {
+			focus = NEA_union_of_revolutionary_nations
+		}
+		x = 3
+		y = 10
+		completion_reward = {
+		    add_ideas = idea_apc_defensive_measures
+		}
+
+	}
+	focus = {
+		id = NEA_american_socialist_pact
+		icon = focus_italian_socialist_international
+		cost = 7.2
+		prerequisite = {
+			focus = NEA_unite_a_broken_america
+		}
+		available = {
+			has_country_flag = the_united_states_are_back
+		}
+		x = 12
+		y = 11
+		completion_reward = {
+		    create_faction = american_socialist_pact
+			every_country = {
+			    limit = {
+					has_government = revolutionary_socialist
+					NOT ={
+						tag = NEA
+					}
+				}
+				country_event = { id = commonwealth.75 }
+			}
+		}
+
+	}
+	focus = {
+		id = NEA_utilise_our_might
+		icon = build_tank
+		cost = 7.2
+		prerequisite = {
+			focus = NEA_central_military_zone
+			focus = NEA_central_industrial_zone
+			focus = NEA_protect_media_freedoms
+			focus = NEA_cooperation_between_branches
+			focus = NEA_new_teams
+		}
+		x = 12
+		y = 9
+		completion_reward = {
+		    remove_ideas = idea_apc_appalling_recognition
+			enable_unification_decisions = yes
+		}
+
+	}
+	focus = {
+		id = NEA_unite_a_broken_america
+		icon = commonwealth
+		cost = 7.2
+		prerequisite = {
+			focus = NEA_utilise_our_might
+		}
+		x = 12
+		y = 10
+		completion_reward = {
+		    create_wargoal = {
+			    type = annex_everything
+			    target = GRL
+		    }
+			create_wargoal = {
+			    type = annex_everything
+			    target = ILL
+		    }
+			create_wargoal = {
+			    type = annex_everything
+			    target = MOT
+		    }
+			create_wargoal = {
+			    type = annex_everything
+			    target = LIN
+		    }
+			create_wargoal = {
+			    type = annex_everything
+			    target = USA
+		    }
+			create_wargoal = {
+			    type = annex_everything
+			    target = PCA
+		    }
+            create_wargoal = {
+                type = annex_everything
+                target = CSD
+            }
+			create_wargoal = {
+			    type = annex_everything
+			    target = MWA
+		    }
+			create_wargoal = {
+			    type = annex_everything
+			    target = UTA
+		    }
+			create_wargoal = {
+			    type = annex_everything
+			    target = ARI
+		    }
+			create_wargoal = {
+			    type = annex_everything
+			    target = TEX
+		    }
+            core_USA = yes
+            core_TEX = yes
+            core_ILL = yes
+            core_GRL = yes
+            core_MWA = yes
+            core_MOT = yes
+            core_LIN = yes
+            core_UTA = yes
+            core_ARI = yes
+            core_PCA = yes
+		}
+
+	}
+}

@@ -1,0 +1,243 @@
+﻿capital = 8
+
+oob = "LUX_2000"
+
+add_ideas = {
+    idea_eu_member
+}
+
+set_country_flag = catholic_nation
+
+set_research_slots = 4
+set_convoys = 500
+set_stability = 0.7
+set_war_support = 0.1
+
+set_technology = {
+	support_weapons = 1
+	infantry_weapons = 1
+	motorised_infantry = 1 
+	tech_support = 1 
+	tech_field_hospital = 1 
+	tech_engineers = 1 
+	gwtank = 1 
+	basic_light_tank = 1 
+	gw_artillery = 1 
+	tech_mountaineers = 1
+	early_fighter = 1 
+	early_bomber = 1 
+	basic_heavy_tank = 1 
+	interwar_antiair = 1
+	interwar_antitank = 1
+}
+
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	set_technology = {
+		early_submarine = 1
+		basic_submarine = 1
+		early_destroyer = 1
+		early_light_cruiser = 1
+		basic_light_cruiser = 1
+		early_heavy_cruiser = 1
+		
+		
+		early_carrier = 1
+		basic_carrier = 1
+		transport = 1
+	}
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_technology = {
+		basic_naval_mines = 1
+		submarine_mine_laying = 1
+		early_ship_hull_light = 1
+		basic_ship_hull_light = 1
+		early_ship_hull_submarine = 1
+		basic_ship_hull_submarine = 1
+		early_ship_hull_cruiser = 1
+		basic_ship_hull_cruiser = 1
+		early_ship_hull_heavy = 1
+		early_ship_hull_carrier = 1
+		basic_ship_hull_carrier = 1
+		basic_battery = 1
+		basic_light_battery = 1
+		basic_medium_battery = 1
+		basic_heavy_battery = 1
+		basic_torpedo = 1
+		sonar = 1
+		basic_depth_charges = 1
+		basic_secondary_battery = 1
+		improved_secondary_battery = 1
+		basic_cruiser_armor_scheme = 1
+		basic_heavy_armor_scheme = 1
+		mtg_transport = 1
+		improved_airplane_launcher = 1
+	}
+}
+
+set_politics = {
+	ruling_party = communist
+	last_election = "1997.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+        fascist = 0
+		nationalist = 10
+		monarchist = 4
+		national_bolshevik = 0
+		national_conservative = 0
+		centrist = 24
+		liberal = 0
+		new_democrat = 6
+		moderate_socialist = 0
+		revolutionary_socialist = 22
+		communist = 34
+}
+
+create_country_leader = {
+	name = "Ali Ruckert"
+	picture = "Portrait_LUX_Ali_Ruckert.dds"
+	ideology = leninist
+}
+
+create_country_leader = {
+	name = "Pierre Peters"
+	picture = "Portrait_LUX_Pierre_Peters.dds"
+	ideology = fascist_ideology
+}
+
+create_country_leader = {
+	name = "Aly Jaerling"
+	picture = "Portrait_LUX_Aly_Jaerling.dds"
+	ideology = nationalist_ideology
+}
+
+create_country_leader = {
+	name = "Henri"
+	picture = "Portrait_LUX_Grand_Duke_Henri.dds"
+	ideology = absolute_monarchist
+}
+
+create_country_leader = {
+	name = "Jean Ersfeld"
+	picture = "Portrait_LUX_Jean_Ersfeld.dds"
+	ideology = national_bolshevik_ideology
+}
+
+create_country_leader = {
+	name = "Jean Schoos"
+	picture = "Portrait_LUX_Jean_Schoos.dds"
+	ideology = reactionary
+}
+
+create_country_leader = {
+	name = "Marc Spautz"
+	picture = "Portrait_LUX_Marc_Spautz.dds"
+	ideology = centrist_ideology
+}
+
+create_country_leader = {
+	name = "Corinne Cahen"
+	picture = "Portrait_LUX_Corinne_Cahen.dds"
+	ideology = social_liberal
+}
+
+create_country_leader = {
+	name = "Francoise Folmer"
+	picture = "Portrait_LUX_Francoise_Folmer.dds"
+	ideology = new_democrat_ideology
+}
+
+create_country_leader = {
+	name = "Claude Haagen"
+	picture = "Portrait_LUX_Claude_Haagen.dds"
+	ideology = progressive
+}
+
+create_country_leader = {
+	name = "André Hoffmann"
+	picture = "Portrait_LUX_Andre_Hoffmann.dds"
+	ideology = revolutionary_socialist_ideology
+}
+
+create_field_marshal = {
+	name = "Romain Mancinelli"
+	picture = "Portrait_Romain_Mancinelli.dds"
+	traits = { old_guard organisational_leader }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_field_marshal = {
+	name = "Gaston Reisig"
+	picture = "Portrait_Gaston_Reinig.dds"
+	traits = { fast_planner }
+	skill = 2
+	attack_skill = 1
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 1
+}
+
+create_field_marshal = {
+	name = "Mario Daubenfeld"
+	picture = "Portrait_Mario_Daubenfeld.dds"
+	traits = { offensive_doctrine }
+	skill = 2
+	attack_skill = 3
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Alain Duchène"
+	picture = "Portrait Alain Duchene.dds"
+	traits = { panzer_leader }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Marc Assel"
+	picture = "Portrait_Marc_Assel.dds"
+	traits = { trickster }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Yves Kalmes"
+	picture = "Portrait_Yves_Kalmes.dds"
+	traits = { trait_engineer }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Claude Schmitz"
+	picture = "Portrait_Claude_Schmitz.dds"
+	traits = { ranger }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+

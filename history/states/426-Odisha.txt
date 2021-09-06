@@ -1,0 +1,38 @@
+
+state={
+	id=426
+	name="STATE_426" # Odisha
+	manpower = 62520121
+	
+	state_category = town
+	
+	resources={
+		steel= 25
+		chromium=36
+		aluminium=2
+	}
+
+	history={
+		owner = RAJ
+		add_core_of = RAJ
+		add_core_of = ODI
+		victory_points = {
+			10088 7 
+		}
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+			arms_factory = 1
+			dockyard = 2
+		}
+		2016.1.1 = {
+			buildings = {
+				industrial_complex = 4
+			}
+		}
+	}
+
+	provinces={
+		1059 1101 1538   4104   7090 7372  10060 10088 10116   10428  11924 11978 12063  12462  
+	}
+}

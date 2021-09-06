@@ -1,0 +1,324 @@
+﻿capital = 284
+
+oob = "NZL_2000"
+
+add_ideas = {
+    idea_admiral_winston
+}
+
+set_research_slots = 4
+set_convoys = 500
+set_stability = 0.6
+set_war_support = 0.2
+
+set_country_flag = was_in_british_empire
+
+set_technology = {
+	support_weapons = 1
+	infantry_weapons = 1
+	motorised_infantry = 1 
+	tech_support = 1 
+	tech_field_hospital = 1 
+	tech_engineers = 1 
+	gwtank = 1 
+	basic_light_tank = 1 
+	gw_artillery = 1 
+	tech_mountaineers = 1
+	early_light_cruiser = 1
+	early_fighter = 1 
+	early_bomber = 1 
+	early_submarine = 1
+    transport = 1 
+	paratroopers = 1 
+	marines = 1
+	interwar_antiair = 1
+	interwar_antitank = 1
+}
+
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	set_technology = {
+		early_submarine = 1
+		basic_submarine = 1
+		early_destroyer = 1
+		early_light_cruiser = 1
+		basic_light_cruiser = 1
+		early_heavy_cruiser = 1
+		
+		
+		early_carrier = 1
+		basic_carrier = 1
+		transport = 1
+	}
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_technology = {
+		basic_naval_mines = 1
+		submarine_mine_laying = 1
+		early_ship_hull_light = 1
+		basic_ship_hull_light = 1
+		early_ship_hull_submarine = 1
+		basic_ship_hull_submarine = 1
+		early_ship_hull_cruiser = 1
+		basic_ship_hull_cruiser = 1
+		early_ship_hull_heavy = 1
+		early_ship_hull_carrier = 1
+		basic_ship_hull_carrier = 1
+		basic_battery = 1
+		basic_light_battery = 1
+		basic_medium_battery = 1
+		basic_heavy_battery = 1
+		basic_torpedo = 1
+		sonar = 1
+		basic_depth_charges = 1
+		basic_secondary_battery = 1
+		improved_secondary_battery = 1
+		basic_cruiser_armor_scheme = 1
+		basic_heavy_armor_scheme = 1
+		mtg_transport = 1
+		improved_airplane_launcher = 1
+	}
+}
+
+set_politics = {
+	ruling_party = nationalist
+	last_election = "1997.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+        fascist = 7
+		nationalist = 70
+		monarchist = 0.25
+		national_bolshevik = 0.5
+		national_conservative = 0.5
+		centrist = 5
+		liberal = 1
+		new_democrat = 2
+		moderate_socialist = 0.75
+		revolutionary_socialist = 10
+		communist = 3
+}
+
+create_country_leader = {
+	name = "Winston Peters"
+	picture = "Portrait_NZL_Winston_Peters.dds"
+	desc = POLITICS_WINSTON_PETERS_DESC
+	ideology = ultranationalist
+}
+
+create_country_leader = {
+	name = "Kyle Chapman"
+	picture = "Portrait_NZL_Kyle_Chapman.dds"
+	ideology = fascist_ideology
+}
+
+create_country_leader = {
+	name = "Tuheitia I"
+	picture = "Portrait_NZL_Tuheitia_I.dds"
+	ideology = absolute_monarchist
+}
+
+create_country_leader = {
+	name = "Kerry Bolton"
+	picture = "Portrait_NZL_Kerry_Bolton.dds"
+	ideology = national_bolshevik_ideology
+}
+
+create_country_leader = {
+	name = "John Key"
+	picture = "Portrait_NZL_John_Key.dds"
+	ideology = fiscal_conservative
+}
+
+create_country_leader = {
+	name = "Gareth Morgan"
+	picture = "Portrait_NZL_Gareth_Morgan.dds"
+	ideology = centrist_populist
+}
+
+create_country_leader = {
+	name = "Rodney Hide"
+	picture = "Portrait_NZL_Rodney_Hide.dds"
+	ideology = social_liberal
+}
+
+create_country_leader = {
+	name = "Jacinda Ardern"
+	picture = "Portrait_NZL_Jacinda_Ardern.dds"
+	ideology = new_democrat_ideology
+}
+
+create_country_leader = {
+	name = "Russel Norman"
+	picture = "Portrait_NZL_Russel_Norman.dds"
+	ideology = progressive
+}
+
+create_country_leader = {
+	name = "Hone Harawira"
+	picture = "Portrait_NZL_Hone_Harawira.dds"
+	ideology = revolutionary_socialist_ideology
+}
+
+create_country_leader = {
+	name = "Patrick Brown"
+	picture = "Portrait_NZL_Patrick_Brown.dds"
+	ideology = marxist
+}
+
+create_field_marshal = {
+	name = "Tim Keating"
+	picture = "Portrait_Tim_Keating.dds"
+	traits = { old_guard organisational_leader }
+	skill = 3
+	attack_skill = 1
+	defense_skill = 4
+	planning_skill = 2
+	logistics_skill = 3
+}
+
+create_field_marshal = {
+	name = "Kevin Short"
+	picture = "Portrait_Kevin_Short.dds"
+	traits = { logistics_wizard }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Peter Kelly"
+	picture = "Portrait_Peter_Kelly.dds"
+	traits = { panzer_leader }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Christopher Parsons"
+	picture = "Portrait_Christopher_Parsons.dds"
+	traits = { trait_engineer }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Clive Douglas"
+	picture = "Portrait_Clive_Douglas.dds"
+	traits = {  }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Michael Shapland"
+	picture = "Portrait_Michael_Shapland.dds"
+	traits = { ranger }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Christopher Faulls"
+	picture = "Portrait_Christopher_Faulls.dds"
+	traits = { urban_assault_specialist }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Tony Davies"
+	picture = "Portrait_Tony_Davies.dds"
+	traits = { commando }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Tim Gall"
+	picture = "Portrait_Tim_Gall.dds"
+	traits = { hill_fighter }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Danny Broughton"
+	picture = "Portrait_Danny_Broughton.dds"
+	traits = {  }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_navy_leader = {
+	name = "John Martin"
+	picture = "Portrait_John_Martin.dds"
+	traits = { old_guard_navy superior_tactician }
+	skill = 2
+	attack_skill = 1
+	defense_skill = 3
+	coordination_skill = 2
+	maneuvering_skill = 1
+}
+
+create_navy_leader = {
+	name = "Wayne Dyke"
+	picture = "Portrait_Wayne_Dyke.dds"
+	traits = {  }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	coordination_skill = 1
+	maneuvering_skill = 1
+}
+
+create_navy_leader = {
+	name = "David Gibbs"
+	picture = "Portrait_David_Gibbs.dds"
+	traits = { blockade_runner }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	coordination_skill = 1
+	maneuvering_skill = 1
+}
+
+create_navy_leader = {
+	name = "Jim Gilmour"
+	picture = "Portrait_Jim_Gilmour.dds"
+	traits = { spotter }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	coordination_skill = 1
+	maneuvering_skill = 1
+}

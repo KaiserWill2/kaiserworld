@@ -1,0 +1,25 @@
+ideas = {
+
+    country = {
+	
+	    idea_mya_taw_phaya = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = neutrality_idea
+			
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.025
+			}
+		}
+		
+		
+	}
+}

@@ -1,0 +1,19 @@
+state={
+	id=915
+	name="STATE_915"
+	provinces={
+		5004 13287 13301 13308 13310 13319 13320 13329 13337 13350 13357 13359 13371 
+	}
+	state_category = wasteland
+	history={
+		owner = LBA
+		add_core_of = LBA
+		victory_points = { 13301 1 }
+		buildings = {
+			infrastructure = 2
+		}
+
+	}
+	manpower=23518
+	buildings_max_level_factor=1.000
+}

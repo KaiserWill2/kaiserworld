@@ -1,0 +1,273 @@
+﻿division_template = {
+	name = "Infantry Brigade"
+	
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+	}
+	
+	priority = 0
+}
+division_template = {
+	name = "Motorized Brigade"
+	
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 2 y = 0 }
+		motorized = { x = 2 y = 1 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+	}
+}
+
+division_template = {
+	name = "Armor Brigade"
+	
+	regiments = {
+		light_armor = { x = 0 y = 0 }
+		light_armor = { x = 0 y = 1 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+		motorized = { x = 1 y = 3 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+	}
+}
+
+division_template = {
+	name = "Paratrooper Brigade"
+	
+	regiments = {
+		paratrooper = { x = 0 y = 0 }
+		paratrooper = { x = 0 y = 1 }
+		paratrooper = { x = 0 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+	}
+	
+	priority = 2
+}
+
+division_template = {
+	name = "Marine Brigade"
+	
+	regiments = {
+		marine = { x = 0 y = 0 }
+		marine = { x = 0 y = 1 }
+		marine = { x = 0 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+	}
+	
+	priority = 2
+}
+
+units = {
+	division = {
+		name = "Baghdad Special Forces"
+		location = 2097
+		division_template = "Marine Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "1st Infantry Brigade"
+		location = 10793
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "2nd Infantry Brigade"
+		location = 10793
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "3rd Infantry Brigade"
+		location = 10793
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "4th Infantry Brigade"
+		location = 10793
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "8th Infantry Brigade"
+		location = 10793
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "9th Infantry Brigade"
+		location = 10793
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "10th Infantry Brigade"
+		location = 10793
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "11th Infantry Brigade"
+		location = 10793
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "38th Infantry Brigade"
+		location = 10793
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "39th Infantry Brigade"
+		location = 10793
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "40th Infantry Brigade"
+		location = 10793
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "41st Infantry Brigade"
+		location = 10793
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "3rd Armor Brigade"
+		location = 6826
+		division_template = "Armor Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "4th Armor Brigade"
+		location = 6826
+		division_template = "Armor Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "5th Armor Brigade"
+		location = 6826
+		division_template = "Armor Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "15th Infantry Brigade"
+		location = 6826
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "16th Infantry Brigade"
+		location = 6826
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "17th Infantry Brigade"
+		location = 6826
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "18th Infantry Brigade"
+		location = 6826
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "15th Infantry Brigade"
+		location = 6826
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "51st Mechanized Brigade"
+		location = 12726
+		division_template = "Motorized Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "52nd Mechanized Brigade"
+		location = 12726
+		division_template = "Motorized Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "53rd Mechanized Brigade"
+		location = 12726
+		division_template = "Motorized Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "54th Mechanized Brigade"
+		location = 12726
+		division_template = "Motorized Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "7th Armor Brigade"
+		location = 12726
+		division_template = "Armor Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "8th Armor Brigade"
+		location = 12726
+		division_template = "Armor Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "1st Mechanized Brigade"
+		location = 10106
+		division_template = "Motorized Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "2nd Mechanized Brigade"
+		location = 10106
+		division_template = "Motorized Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "1st Western Desert Force"
+		location = 1631
+		division_template = "Motorized Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "2nd Western Desert Force"
+		location = 12413
+		division_template = "Motorized Brigade"
+		start_experience_factor = 0.3
+	}
+}
+

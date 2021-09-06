@@ -1,0 +1,216 @@
+﻿capital = 799
+
+oob = "generic_2000"
+
+set_research_slots = 4
+set_convoys = 500
+set_stability = 0.8
+set_war_support = 0.3
+
+set_technology = {
+	support_weapons = 1
+	infantry_weapons = 1
+	motorised_infantry = 1
+	tech_support = 1
+	tech_field_hospital = 1
+	tech_engineers = 1
+	gwtank = 1
+	basic_light_tank = 1
+	gw_artillery = 1
+	tech_mountaineers = 1
+	early_fighter = 1
+	early_bomber = 1
+	interwar_antiair = 1
+	interwar_antitank = 1
+}
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	set_technology = {
+		early_submarine = 1
+		basic_submarine = 1
+		early_destroyer = 1
+		early_light_cruiser = 1
+		basic_light_cruiser = 1
+		early_heavy_cruiser = 1
+
+
+		early_carrier = 1
+		basic_carrier = 1
+		transport = 1
+	}
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_technology = {
+		basic_naval_mines = 1
+		submarine_mine_laying = 1
+		early_ship_hull_light = 1
+		basic_ship_hull_light = 1
+		early_ship_hull_submarine = 1
+		basic_ship_hull_submarine = 1
+		early_ship_hull_cruiser = 1
+		basic_ship_hull_cruiser = 1
+		early_ship_hull_heavy = 1
+		early_ship_hull_carrier = 1
+		basic_ship_hull_carrier = 1
+		basic_battery = 1
+		basic_light_battery = 1
+		basic_medium_battery = 1
+		basic_heavy_battery = 1
+		basic_torpedo = 1
+		sonar = 1
+		basic_depth_charges = 1
+		basic_secondary_battery = 1
+		improved_secondary_battery = 1
+		basic_cruiser_armor_scheme = 1
+		basic_heavy_armor_scheme = 1
+		mtg_transport = 1
+		improved_airplane_launcher = 1
+	}
+}
+set_politics = {
+	ruling_party = nationalist
+	last_election = "1997.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+        fascist = 0
+		nationalist = 60
+		monarchist = 0
+		national_bolshevik = 0
+		national_conservative = 10
+		centrist = 0
+		liberal = 0
+		new_democrat = 10
+		moderate_socialist = 0
+		revolutionary_socialist = 10
+		communist = 10
+}
+
+create_country_leader = {
+	name = "Gurbanguly Berdimuhamedow"
+	picture = "Portrait_TRM_Gurbanguly_Berdimuhamedow.dds"
+	ideology = fascist_ideology
+}
+
+create_country_leader = {
+	name = "Rasit Meredow"
+	picture = "Portrait_TRM_Rasit_Meredow.dds"
+	ideology = nationalist_ideology
+}
+
+create_country_leader = {
+	name = "Kasymguly Babaev"
+	picture = "Portrait_TRM_Kasymguly_Babaev.dds"
+	ideology = national_bolshevik_ideology
+}
+
+create_country_leader = {
+	name = "Baymyrat Hojamuhammedov"
+	picture = "Portrait_TRM_Baymyrat_Hojamuhammedov.dds"
+	ideology = fiscal_conservative
+}
+
+create_country_leader = {
+	name = "Annageldi Yazmyradov"
+	picture = "Portrait_TRM_Annageldi_Yazmyradov.dds"
+	ideology = centrist_ideology
+}
+
+create_country_leader = {
+	name = "Nurmuhammet Hanamow"
+	picture = "Portrait_TRM_Nurmuhammet_Hanamow.dds"
+	ideology = social_liberal
+}
+
+create_country_leader = {
+	name = "Awdy Kulyýew"
+	picture = "Portrait_TRM_Awdy_Kulyýew.dds"
+	ideology = new_democrat_ideology
+}
+
+create_country_leader = {
+	name = "Nikolai Levichev"
+	picture = "Portrait_TRM_Nikolai_Levichev.dds"
+	ideology = democratic_socialist
+}
+
+create_country_leader = {
+	name = "Marian Lupu"
+	picture = "Portrait_TRM_Marian_Lupu.dds"
+	ideology = revolutionary_socialist_ideology
+}
+
+create_country_leader = {
+	name = "Svetlana Savitskaya"
+	picture = "Portrait_TRM_Svetlana_Savitskaya.dds"
+	ideology = leninist
+}
+
+create_field_marshal = {
+	name = "Agageldi Mammetgeldiyev"
+	picture = "Portrait_Agageldi_Mammetgeldiyev.dds"
+	traits = { }
+	skill = 4
+	attack_skill = 4
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Isgender Mulikov"
+	picture = "Portrait_Isgender_Mulikov.dds"
+	traits = { }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Isgender Mulikov"
+	picture = "Portrait_Isgender_Mulikov.dds"
+	traits = { trait_reckless }
+	skill = 2
+	attack_skill = 1
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Akmurad Kabulov"
+	picture = "Portrait_Akmurad_Kabulov.dds"
+	traits = { }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Begench Gundogdyev"
+	picture = "Portrait_Begench_Gundogdyev.dds"
+	traits = { }
+	skill = 2
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 2
+}
+
+create_navy_leader = {
+	name = "Yaylym Berdiyev"
+	picture = "Portrait_Yaylym_Berdiyev.dds"
+	traits = { }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	coordination_skill = 1
+	maneuvering_skill = 3
+}

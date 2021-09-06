@@ -1,0 +1,50 @@
+spriteTypes = {	
+	
+	#### RED WORLD LORE ####
+	
+	spriteType = {
+		name = "GFX_decision_category_fifties"
+		texturefile = "gfx/interface/decisions/decision_category_fifties.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_decision_category_sixties"
+		texturefile = "gfx/interface/decisions/decision_category_sixties.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_decision_category_seventies"
+		texturefile = "gfx/interface/decisions/decision_category_seventies.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_decision_category_eighties"
+		texturefile = "gfx/interface/decisions/decision_category_eighties.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_decision_category_nineties"
+		texturefile = "gfx/interface/decisions/decision_category_nineties.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_decision_category_noughts"
+		texturefile = "gfx/interface/decisions/decision_category_noughts.dds"
+	}
+
+	spriteType = {
+		name = "GFX_decision_ndp"
+		texturefile = "gfx/interface/decisions/decision_ndp.dds"
+	}
+
+	spriteType = {
+		name = "GFX_decision_republicans"
+		texturefile = "gfx/interface/decisions/decision_republicans.dds"
+	}
+
+	spriteType = {
+		name = "GFX_decision_democrats"
+		texturefile = "gfx/interface/decisions/decision_democrats.dds"
+	}
+	
+}

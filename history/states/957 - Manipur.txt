@@ -1,0 +1,25 @@
+state={
+	id=957
+	name="STATE_957"
+
+	provinces={
+	1581 1553
+	}
+	state_category = rural
+	history={
+		owner = RAJ
+		add_core_of = MNP
+		victory_points = {
+			1553 	1 
+		}
+		add_core_of = RAJ
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 1
+			arms_factory = 1			
+		}
+
+	}
+	manpower=	2855794
+	buildings_max_level_factor=1.000
+}

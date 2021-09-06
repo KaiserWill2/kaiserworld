@@ -1,0 +1,172 @@
+﻿capital = 447
+
+oob = "generic_2000"
+
+#if = {
+#	limit = { has_dlc = "Man the Guns" }
+#		set_naval_oob = "RLN_2000_naval_mtg"
+#	else = {
+		set_naval_oob = "RLN_2000_naval_legacy"
+#	}
+#}
+
+set_research_slots = 4
+set_convoys = 500
+set_stability = 0.5
+set_war_support = 0.4
+
+set_country_flag = muslim_nation
+
+set_technology = {
+	support_weapons = 1
+	infantry_weapons = 1
+	motorised_infantry = 1 
+	tech_support = 1 
+	tech_field_hospital = 1 
+	tech_engineers = 1 
+	gwtank = 1 
+	basic_light_tank = 1 
+	gw_artillery = 1 
+	tech_mountaineers = 1
+	early_light_cruiser = 1
+	early_fighter = 1 
+	early_bomber = 1 
+	early_submarine = 1
+    transport = 1 
+	paratroopers = 1 
+	marines = 1
+	early_destroyer = 1 
+	interwar_antiair = 1
+	interwar_antitank = 1
+}
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	set_technology = {
+		early_submarine = 1
+		basic_submarine = 1
+		early_destroyer = 1
+		early_light_cruiser = 1
+		basic_light_cruiser = 1
+		early_heavy_cruiser = 1
+		
+		
+		early_carrier = 1
+		basic_carrier = 1
+		transport = 1
+	}
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_technology = {
+		basic_naval_mines = 1
+		submarine_mine_laying = 1
+		early_ship_hull_light = 1
+		basic_ship_hull_light = 1
+		early_ship_hull_submarine = 1
+		basic_ship_hull_submarine = 1
+		early_ship_hull_cruiser = 1
+		basic_ship_hull_cruiser = 1
+		early_ship_hull_heavy = 1
+		early_ship_hull_carrier = 1
+		basic_ship_hull_carrier = 1
+		basic_battery = 1
+		basic_light_battery = 1
+		basic_medium_battery = 1
+		basic_heavy_battery = 1
+		basic_torpedo = 1
+		sonar = 1
+		basic_depth_charges = 1
+		basic_secondary_battery = 1
+		improved_secondary_battery = 1
+		basic_cruiser_armor_scheme = 1
+		basic_heavy_armor_scheme = 1
+		mtg_transport = 1
+		improved_airplane_launcher = 1
+	}
+}
+set_politics = {
+	ruling_party = national_bolshevik
+	last_election = "1997.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+        fascist = 3
+		nationalist = 19
+		monarchist = 2
+		national_bolshevik = 15
+		national_conservative = 12
+		centrist = 0
+		liberal = 14
+		new_democrat = 5
+		moderate_socialist = 10
+		revolutionary_socialist = 6
+		communist = 14
+}
+
+create_country_leader = {
+	name = "Mansour Fadlallah Azzam"
+	picture = "Portrait_RLN_Mansour_Fadlallah_Azzam.dds"
+	ideology = baathist
+}
+
+create_country_leader = {
+	name = "Salah Adli"
+	picture = "Portrait_RLN_Salah_Adli.dds"
+	ideology = marxist
+}
+
+create_country_leader = {
+	name = "Abdul Kareem Tattan"
+	picture = "Portrait_RLN_Abdul_Kareem_Tattan.dds"
+	ideology = fascist_ideology
+}
+
+create_country_leader = {
+	name = "Sameh Fahmi"
+	picture = "Portrait_RLN_Sameh_Fahmi.dds"
+	ideology = nationalist_ideology
+}
+
+create_country_leader = {
+	name = "Fuad II"
+	picture = "Portrait_RLN_Fuad_II.dds"
+	ideology = absolute_monarchist
+}
+
+create_country_leader = {
+	name = "Mohamed Morsi"
+	picture = "Portrait_RLN_Mohamed_Morsi.dds"
+	ideology = reactionary
+}
+
+create_country_leader = {
+	name = "Ayman Nour"
+	picture = "Portrait_RLN_Ayman_Nour.dds"
+	ideology = right_libertarian
+}
+
+create_country_leader = {
+	name = "Naguib Onsi Sawiris"
+	picture = "Portrait_RLN_Naguib_Onsi_Sawiris.dds"
+	ideology = social_liberal
+}
+
+create_country_leader = {
+	name = "Amr Moussa"
+	picture = "Portrait_RLN_Amr_Moussa.dds"
+	ideology = new_democrat_ideology
+}
+
+create_country_leader = {
+	name = "Ahmed Bahaa El-Din Shaaban"
+	picture = "Portrait_RLN_Ahmed_Bahaa_El_Din_Shaaban.dds"
+	ideology = progressive
+}
+
+create_country_leader = {
+	name = "Essam Sharaf"
+	picture = "Portrait_RLN_Essam_Sharaf.dds"
+	ideology = revolutionary_socialist_ideology
+}

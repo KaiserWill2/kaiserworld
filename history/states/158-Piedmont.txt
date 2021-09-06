@@ -1,0 +1,44 @@
+
+state={
+	id=158
+	name="STATE_158"
+	resources={
+		steel=20.000
+		aluminium=10.000
+		chromium=3.000
+		tungsten=1.000
+	}
+
+	history={
+		owner = ITA
+		add_core_of = PIE
+		
+		victory_points = {
+			6780 8 
+		}
+		victory_points = {
+			776 1 
+		}
+		buildings = {
+			infrastructure = 7
+			arms_factory = 1
+			industrial_complex = 3
+			dockyard = 2
+			air_base = 8
+			11891 = {
+				naval_base = 8
+
+			}
+
+		}
+		add_core_of = ITA
+
+	}
+
+	provinces={
+		611 770 771 776 3782 6635 6780 9738 9741 11570 11721 11723 11726 11730 11891 
+	}
+	manpower=2892526
+	buildings_max_level_factor=1.000
+	state_category=metropolis
+}

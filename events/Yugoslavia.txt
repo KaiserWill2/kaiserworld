@@ -1,0 +1,77 @@
+﻿add_namespace = YUG
+
+country_event = {
+	id = YUG.1
+	title = YUG.1.t
+	desc = YUG.1.d
+	picture = presidents_meet_in_belgrade
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = YUG.1.o1
+		hidden_effect = {
+	        country_event = { days = 28 id = YUG.2 } 
+		}
+	}
+}
+country_event = {
+	id = YUG.2
+	title = YUG.2.t
+	desc = YUG.2.d
+	picture = attacks_in_kosovo
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = YUG.2.o1
+		hidden_effect = {
+		    country_event = { days = 30 id = YUG.3 } 
+		}
+	}
+}
+country_event = {
+	id = YUG.3
+	title = YUG.3.t
+	desc = YUG.3.d
+	picture = milosevic_treatment
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = YUG.3.o1
+		hidden_effect = {
+		    country_event = { days = 29 id = YUG.4 } 
+		}
+	}
+}
+country_event = {
+	id = YUG.4
+	title = YUG.4.t
+	desc = YUG.4.d
+	picture = i_hate_serbia
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = YUG.4.o1
+		create_country_leader = {
+			name = "Milutin Mrkonjić"
+			desc = "POLITICS_MILUTIN_MRKONJIC_DESC"
+			picture = "Portrait_YUG_Milutin_Mrkonjic.dds"
+#			expire = "1965.1.1"
+			ideology = titoist
+#			traits = {
+#				
+#			}
+		}
+		hidden_effect = {
+			every_country = {
+				news_event = {
+					id = news.303
+					hours = 4
+				}
+			}
+		}
+	}
+}

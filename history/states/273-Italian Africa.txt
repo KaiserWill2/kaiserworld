@@ -1,0 +1,26 @@
+
+state={
+	id=273
+	name="STATE_273"
+	resources={
+		oil=16.000
+	}
+
+	history={
+		owner = LBA
+		buildings = {
+			infrastructure = 0
+			air_base = 4
+
+		}
+		add_core_of = LBA
+
+	}
+
+	provinces={
+		10754 
+	}
+	manpower=5
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+}

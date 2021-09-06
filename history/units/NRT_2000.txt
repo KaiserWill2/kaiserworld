@@ -1,0 +1,83 @@
+﻿division_template = {
+	name = "Marine Division"
+
+	regiments = {
+		marine = { x = 0 y = 0 }
+		marine = { x = 0 y = 1 }
+		marine = { x = 0 y = 2 }
+		marine = { x = 1 y = 0 }
+		marine = { x = 1 y = 1 }
+		marine = { x = 1 y = 2 }
+	}
+}
+division_template = {
+	name = "Infantry Brigade"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+	}
+}
+division_template = {
+	name = "Motorized Brigade"
+
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+	}
+	support = {
+		field_hospital = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+	}
+}
+division_template = {
+	name = "Armored Brigade"
+
+	regiments = {
+		light_armor = { x = 0 y = 0 }
+		light_armor = { x = 0 y = 1 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+	}
+	support = {
+		field_hospital = { x = 0 y = 0 }
+	}
+}
+
+units = {
+
+	division = {
+		name = "Wellington's 1st Marine Division"
+		location = 1814
+		division_template = "Marine Division"
+		start_experience_factor = 0.3
+	  }
+	 division = {
+		name = "Christchurch's 1st Marine Division"
+		location = 2197
+		division_template = "Marine Division"
+		start_experience_factor = 0.3
+		}
+	 division = {
+ 		name = "Auckland's 1st Marine Division"
+ 		location = 4543
+ 		division_template = "Marine Division"
+ 		start_experience_factor = 0.3
+ 		}
+	 division = {
+  	name = "Auckland's 2nd Marine Division"
+  	location = 4543
+  	division_template = "Marine Division"
+  	start_experience_factor = 0.3
+  	}
+	 division = {
+   	name = "Dunedin's 1st Marine Division"
+   	location = 2211
+   	division_template = "Marine Division"
+   	start_experience_factor = 0.3
+  }
+ }
+
+

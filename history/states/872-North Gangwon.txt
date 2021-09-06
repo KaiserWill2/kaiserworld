@@ -1,0 +1,27 @@
+
+state={
+	id=872
+	name="STATE_872"
+
+	history={
+		owner = PRK
+		add_core_of = PRK
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+			dockyard = 1
+
+		}
+		victory_points = {
+			848 1 
+		}
+
+	}
+
+	provinces={
+		848 4004 6928 10083 11958 
+	}
+	manpower=3419399
+	buildings_max_level_factor=1.000
+	state_category=large_town
+}

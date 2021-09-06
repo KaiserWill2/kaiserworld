@@ -1,0 +1,194 @@
+﻿division_template = {
+	name = "Infantry Division"
+	
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 1 y = 3 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+	}
+	
+	support = {
+		artillery = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+	}
+}
+
+division_template = {
+	name = "Mountain Brigade"
+	
+	regiments = {
+		mountaineers = { x = 0 y = 0 }
+		mountaineers = { x = 0 y = 1 }
+		mountaineers = { x = 0 y = 2 }
+		mountaineers = { x = 0 y = 3 }
+	}
+	
+	support = {
+		artillery = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+	}
+}
+
+division_template = {
+	name = "Mechanized Brigade"
+	
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+	}
+}
+
+division_template = {
+	name = "Armor Brigade"
+	
+	regiments = {
+		heavy_armor = { x = 0 y = 0 }
+		heavy_armor = { x = 0 y = 1 }
+		heavy_armor = { x = 0 y = 2 }
+		heavy_armor = { x = 0 y = 3 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+	}
+}
+
+division_template = {
+	name = "Light Armored Division"
+	
+	regiments = {
+		light_armor = { x = 0 y = 0 }
+		light_armor = { x = 0 y = 1 }
+		light_armor = { x = 0 y = 2 }
+		light_armor = { x = 0 y = 3 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+	}
+}
+
+units = {
+
+	division = {
+		name = "Los Angelos Defence Force"
+		location = 9814
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "San Francisco Defence Force"
+		location = 9671
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "Seattle Defence Force"
+		location = 7315
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "1st Californian Rifles"
+		location = 10327
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "2nd Californian Rifles"
+		location = 3513
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "3rd Californian Rifles"
+		location = 3471
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "4th Californian Rifles"
+		location = 4331
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "5th Californian Rifles"
+		location = 12399
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "6th Californian Rifles"
+		location = 9713
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "7th Californian Rifles"
+		location = 4799
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "8th Californian Rifles"
+		location = 1562
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "1st Californian Mechanized"
+		location = 10242
+		division_template = "Mechanized Brigade"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "2nd Californian Mechanized"
+		location = 4727
+		division_template = "Mechanized Brigade"
+		start_experience_factor = 0.3
+	}
+}
+
+### Air Wings###
+
+air_wings = {
+	378 = {
+		fighter_equipment_0 = {
+			owner = "PCA"
+			amount = 20
+		}
+		tac_bomber_equipment_0 = {
+			owner = "PCA"
+			amount = 10
+		}
+	}
+}

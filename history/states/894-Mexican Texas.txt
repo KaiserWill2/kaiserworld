@@ -1,0 +1,19 @@
+state={
+	id=894
+	name="STATE_894"
+state_category = rural
+	provinces={
+		1927 2019 2042 4884 5061 6785 6987 12369 12782
+	}
+	history={
+		owner = USA
+		add_core_of = RIO
+		add_core_of = MEX
+		add_core_of = USA
+		buildings = {
+			infrastructure = 6
+		}
+	}
+	manpower=4000000
+	buildings_max_level_factor=1.000
+}

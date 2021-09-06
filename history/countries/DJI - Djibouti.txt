@@ -1,0 +1,215 @@
+﻿capital = 268
+
+oob = "DJI_2000"
+
+set_research_slots = 4
+set_convoys = 500
+set_stability = 0.4
+set_war_support = 0.1
+
+set_country_flag = muslim_nation
+
+set_technology = {
+	support_weapons = 1
+	infantry_weapons = 1
+	motorised_infantry = 1 
+	tech_support = 1 
+	tech_field_hospital = 1 
+	tech_engineers = 1 
+	gwtank = 1 
+	basic_light_tank = 1 
+	gw_artillery = 1 
+	tech_mountaineers = 1
+	early_light_cruiser = 1
+	early_fighter = 1 
+	early_bomber = 1 
+    transport = 1 
+	interwar_antiair = 1
+	interwar_antitank = 1
+}
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	set_technology = {
+		early_submarine = 1
+		basic_submarine = 1
+		early_destroyer = 1
+		early_light_cruiser = 1
+		basic_light_cruiser = 1
+		early_heavy_cruiser = 1
+		
+		
+		early_carrier = 1
+		basic_carrier = 1
+		transport = 1
+	}
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_technology = {
+		basic_naval_mines = 1
+		submarine_mine_laying = 1
+		early_ship_hull_light = 1
+		basic_ship_hull_light = 1
+		early_ship_hull_submarine = 1
+		basic_ship_hull_submarine = 1
+		early_ship_hull_cruiser = 1
+		basic_ship_hull_cruiser = 1
+		early_ship_hull_heavy = 1
+		early_ship_hull_carrier = 1
+		basic_ship_hull_carrier = 1
+		basic_battery = 1
+		basic_light_battery = 1
+		basic_medium_battery = 1
+		basic_heavy_battery = 1
+		basic_torpedo = 1
+		sonar = 1
+		basic_depth_charges = 1
+		basic_secondary_battery = 1
+		improved_secondary_battery = 1
+		basic_cruiser_armor_scheme = 1
+		basic_heavy_armor_scheme = 1
+		mtg_transport = 1
+		improved_airplane_launcher = 1
+	}
+}
+set_politics = {
+	ruling_party = nationalist
+	last_election = "1997.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+        fascist = 0
+		nationalist = 51
+		monarchist = 0
+		national_bolshevik = 18
+		national_conservative = 4
+		centrist = 7
+		liberal = 0
+		new_democrat = 0
+		moderate_socialist = 0
+		revolutionary_socialist = 2
+		communist = 18
+}
+
+create_country_leader = {
+	name = "Ahmed Abdi Godane"
+	picture = "Portrait_DJI_Ahmed_Godane.dds"
+	ideology = fascist_ideology
+}
+
+create_country_leader = {
+	name = "Zakaria Cheikh Ibrahim"
+	picture = "Portrait_DJI_Zakaria_Cheikh_Ibrahim.dds"
+	ideology = nationalist_ideology
+}
+
+create_country_leader = {
+	name = "Hanfere Alimirah"
+	picture = "Portrait_DJI_Hanfere_Alimirah.dds"
+	ideology = absolute_monarchist
+}
+
+create_country_leader = {
+	name = "Abdourahman Aden Cher"
+	picture = "Portrait_DJI_Abdourahman_Aden_Cher.dds"
+	ideology = national_bolshevik_ideology
+}
+
+create_country_leader = {
+	name = "Daher Ahmed Farah"
+	picture = "Portrait_DJI_Daher_Ahmed_Farah.dds"
+	ideology = fiscal_conservative
+}
+
+create_country_leader = {
+	name = "Omar Elmi Khaireh"
+	picture = "Portrait_DJI_Omar_Elmi_Khaireh.dds"
+	ideology = centrist_ideology
+}
+
+create_country_leader = {
+	name = "Aden Robleh Awaleh"
+	picture = "Portrait_DJI_Aden_Awaleh.dds"
+	ideology = social_liberal
+}
+
+create_country_leader = {
+	name = "Ali Mohammed Daoud"
+	picture = "Portrait_DJI_Ali_Mohammed_Daoud.dds"
+	ideology = new_democrat_ideology
+}
+
+create_country_leader = {
+	name = "Ibrahim Chehem Daoud"
+	picture = "Portrait_DJI_Ibrahim_Daoud.dds"
+	ideology = progressive
+}
+
+create_country_leader = {
+	name = "Ismaïl Omar Guelleh"
+	picture = "Portrait_DJI_Ismaïl_Omar_Guelleh.dds"
+	ideology = revolutionary_socialist_ideology
+}
+
+create_country_leader = {
+	name = "Mohammed Ibrahim Moussa"
+	picture = "Portrait_DJI_Mohammed_Moussa.dds"
+	ideology = leninist
+}
+
+create_field_marshal = {
+	name = "Zakaria Cheikh Ibrahim"
+	picture = "Portrait_Zakaria_Cheikh_Ibrahim.dds"
+	traits = { thorough_planner }
+	skill = 3
+	attack_skill = 1
+	defense_skill = 3
+	planning_skill = 4
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Arayta Houmed Ebile"
+	picture = "Portrait_Arayta_Houmed_Ebile.dds"
+	traits = { commando }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Osman Noor Soubagleh"
+	picture = "Portrait_Osman_Noor_Soubagleh.dds"
+	traits = { urban_assault_specialist }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 2
+}
+
+create_navy_leader = {
+	name = "Abdourahman Aden Cher"
+	picture = "Portrait_Abdourahman_Aden_Cher.dds"
+	traits = { ironside }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 4
+	coordination_skill = 2
+	maneuvering_skill = 2
+}
+
+create_navy_leader = {
+	name = "Wais O. Bogoreh"
+	picture = "Portrait_Wais_O._Bogoreh.dds"
+	traits = { blockade_runner }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	coordination_skill = 1
+	maneuvering_skill = 1
+}

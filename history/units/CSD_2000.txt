@@ -1,0 +1,122 @@
+﻿division_template = {
+	name = "Infantry Division"
+	
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+	
+}
+
+division_template = {
+	name = "Mountain Brigade"
+	
+	regiments = {
+		mountaineers = { x = 0 y = 0 }
+		mountaineers = { x = 0 y = 1 }
+		mountaineers = { x = 0 y = 2 }
+		mountaineers = { x = 0 y = 3 }
+	}
+	
+	support = {
+		artillery = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+	}
+}
+
+division_template = {
+	name = "Mechanized Brigade"
+	
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+	}
+}
+
+division_template = {
+	name = "Armor Brigade"
+	
+	regiments = {
+		heavy_armor = { x = 0 y = 0 }
+		heavy_armor = { x = 0 y = 1 }
+		heavy_armor = { x = 1 y = 0 }
+		heavy_armor = { x = 1 y = 1 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+	}
+}
+
+units = {
+
+	division = {
+		name = "1st Rebel Division"
+		location = 3471
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "2nd Rebel Division"
+		location = 4347
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "3rd Rebel Division"
+		location = 7398
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "4th Rebel Division"
+		location = 7398
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "5th Rebel Division"
+		location = 10155
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "6th Rebel Division"
+		location = 12214
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "7th Rebel Division"
+		location = 1320
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "8th Rebel Division"
+		location = 10183
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "9th Rebel Division"
+		location = 10242
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+}

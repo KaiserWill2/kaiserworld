@@ -1,0 +1,426 @@
+﻿capital = 546
+
+oob = "TNZ_2000"
+
+set_research_slots = 4
+set_convoys = 500
+set_stability = 0.7
+set_war_support = 0.1
+
+set_country_flag = was_in_british_empire
+
+set_technology = {
+	support_weapons = 1
+	infantry_weapons = 1
+	motorised_infantry = 1 
+	tech_support = 1 
+	tech_field_hospital = 1 
+	tech_engineers = 1 
+	gwtank = 1 
+	basic_light_tank = 1 
+	gw_artillery = 1 
+	tech_mountaineers = 1
+	early_light_cruiser = 1
+	early_fighter = 1 
+	early_bomber = 1 
+    transport = 1 
+	paratroopers = 1 
+	early_destroyer = 1 
+	interwar_antiair = 1
+	interwar_antitank = 1
+}
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	set_technology = {
+		early_submarine = 1
+		basic_submarine = 1
+		early_destroyer = 1
+		early_light_cruiser = 1
+		basic_light_cruiser = 1
+		early_heavy_cruiser = 1
+		
+		
+		early_carrier = 1
+		basic_carrier = 1
+		transport = 1
+	}
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_technology = {
+		basic_naval_mines = 1
+		submarine_mine_laying = 1
+		early_ship_hull_light = 1
+		basic_ship_hull_light = 1
+		early_ship_hull_submarine = 1
+		basic_ship_hull_submarine = 1
+		early_ship_hull_cruiser = 1
+		basic_ship_hull_cruiser = 1
+		early_ship_hull_heavy = 1
+		early_ship_hull_carrier = 1
+		basic_ship_hull_carrier = 1
+		basic_battery = 1
+		basic_light_battery = 1
+		basic_medium_battery = 1
+		basic_heavy_battery = 1
+		basic_torpedo = 1
+		sonar = 1
+		basic_depth_charges = 1
+		basic_secondary_battery = 1
+		improved_secondary_battery = 1
+		basic_cruiser_armor_scheme = 1
+		basic_heavy_armor_scheme = 1
+		mtg_transport = 1
+		improved_airplane_launcher = 1
+	}
+}
+set_politics = {
+	ruling_party = new_democrat
+	last_election = "1997.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+        fascist = 0
+		nationalist = 10
+		monarchist = 0
+		national_bolshevik = 0
+		national_conservative = 0
+		centrist = 0
+		liberal = 10
+		new_democrat = 50
+		moderate_socialist = 5
+		revolutionary_socialist = 5
+		communist = 20
+}
+
+create_country_leader = {
+	name = "Jakaya Kikwete"
+	picture = "Portrait_TNZ_Jakaya_Kikwete.dds"
+	ideology = new_democrat_ideology
+}
+
+create_country_leader = {
+	name = "Christopher Mtikila"
+	picture = "Portrait_TNZ_Christopher_Mtikila.dds"
+	ideology = fascist_ideology
+}
+
+create_country_leader = {
+	name = "Davis Mwamunyange"
+	picture = "Portrait_TNZ_Davis_Mwamunyange.dds"
+	ideology = nationalist_ideology
+}
+
+create_country_leader = {
+	name = "Jamshid bin Abdullah"
+	picture = "Portrait_TNZ_Jamshid_bin_Abdullah.dds"
+	ideology = absolute_monarchist
+}
+
+create_country_leader = {
+	name = "Humphrey Polepole"
+	picture = "Portrait_TNZ_Humphrey_Polepole.dds"
+	ideology = national_bolshevik_ideology
+}
+
+create_country_leader = {
+	name = "Freeman Mbowe"
+	picture = "Portrait_TNZ_Freeman_Mbowe.dds"
+	ideology = reactionary
+}
+
+create_country_leader = {
+	name = "Tundu Lissu"
+	picture = "Portrait_TNZ_Tundu_Lissu.dds"
+	ideology = centrist_ideology
+}
+
+create_country_leader = {
+	name = "Ibrahim Lipumba"
+	picture = "Portrait_TNZ_Ibrahim_Lipumba.dds"
+	ideology = social_liberal
+}
+
+create_country_leader = {
+	name = "Anna Mghwira"
+	picture = "Portrait_TNZ_Anna_Mghwira .dds"
+	ideology = progressive
+}
+
+create_country_leader = {
+	name = "Salim Ahmed Salim"
+	picture = "Portrait_TNZ_Salim_Ahmed_Salim .dds"
+	ideology = revolutionary_socialist_ideology
+}
+
+create_country_leader = {
+	name = "Ali Mohamed Shein"
+	picture = "Portrait_TNZ_Ali_Mohamed_Shein.dds"
+	ideology = leninist
+}
+
+create_field_marshal = {
+	name = "Venance Salvatory Mabeyo"
+	picture = "Portrait_Venance_Mabeyo.dds"
+	traits = { old_guard inspirational_leader }
+	skill = 4
+	attack_skill = 3
+	defense_skill = 4
+	planning_skill = 3
+	logistics_skill = 3
+}
+
+create_field_marshal = {
+	name = "Ramadhan Abdul Kimweri"
+	picture = "Portrait_Ramadhan_Kimweri.dds"
+	traits = { offensive_doctrine }
+	skill = 4
+	attack_skill = 4
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 3
+}
+
+create_field_marshal = {
+	name = "James Mwakibolwa"
+	picture = "Portrait_James_Mwakibolwa.dds"
+	traits = { fast_planner }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 4
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Gaudence Milanzi"
+	picture = "Portrait_Gaudence_Milanzi.dds"
+	traits = { trait_engineer }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Jairos Mwaseba"
+	picture = "Portrait_Jairos_Mwaseba.dds"
+	traits = { trickster jungle_rat }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Aaron Robert Lukyaa"
+	picture = "Portrait_Aaron_Robert_Lukya.dds"
+	traits = { trait_engineer }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Davis Mwamunyange"
+	picture = "Portrait_TNZ_Davis_Mwamunyange.dds"
+	traits = { urban_assault_specialist }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Samuel Albert Ndomba"
+	picture = "Portrait_Samuel_Ndomba.dds"
+	traits = {  }
+	skill = 3
+	attack_skill = 4
+	defense_skill = 1
+	planning_skill = 3
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Charles Lawrence Mkakala"
+	picture = "Portrait_Charles_Mkakala.dds"
+	traits = { ranger }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Salum Mustafa Kijuu"
+	picture = "Portrait_Salum_Kijuu.dds"
+	traits = {  }
+	skill = 2
+	attack_skill = 3
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Raphael Mugoya Muhuga"
+	picture = "Portrait_Raphael_Mugoya_Muhuga.dds"
+	traits = {  }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Jackson King Mrema"
+	picture = "Portrait_Jackson_King_Mrema.dds"
+	traits = { hill_fighter }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Sara Thomas Rwambali"
+	picture = "Portrait_Sara_Thomas_Rwambali.dds"
+	traits = {  }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Clemence Quadrates Kahama"
+	picture = "Portrait_Clemence_Kahama.dds"
+	traits = { desert_fox }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Hamis Issa Majumba"
+	picture = "Portrait_Hamis_Majumba.dds"
+	traits = { fortress_buster }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Saleh Omar Semtua"
+	picture = "Portrait_Saleh_Semtua.dds"
+	traits = {  }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Ezra Wilson Ndimgwango"
+	picture = "Portrait_Ezra_Ndimgwango.dds"
+	traits = { ranger }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Joseph Cosmas Chengelela"
+	picture = "Portrait_Joseph_Chengelela.dds"
+	traits = { jungle_rat }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Joseph Furaha Kapwani"
+	picture = "Portrait_Joseph_Furaha_Kapwani.dds"
+	traits = { naval_invader }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "William Ingram"
+	picture = "Portrait_William_Ingram.dds"
+	traits = { commando }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Michael Isamuhyo"
+	picture = "Portrait_Michael_Isamuhyo.dds"
+	traits = { urban_assault_specialist }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Paul Ignace Mella"
+	picture = "Portrait_Paul_Mella.dds"
+	traits = { panzer_leader }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Wynjones Kisamba"
+	picture = "Portrait_Wynjones_Kisamba.dds"
+	traits = { panzer_leader ranger }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_navy_leader = {
+	name = "Rogastian Shaaban Laswai"
+	picture = "Portrait_Rogastian_Laswai.dds"
+	traits = { superior_tactician }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	coordination_skill = 2
+	maneuvering_skill = 1
+}

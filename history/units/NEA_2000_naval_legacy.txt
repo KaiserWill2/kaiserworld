@@ -1,0 +1,25 @@
+﻿units= {
+
+	####### NAVAL UNITS #######
+	##### COMMONWEALTH FLEET #####
+	##### Battle Force (CO: ) #####
+	### Philadelphia ###
+
+	fleet = {
+		name = "Battle Force"			
+		naval_base = 6845 # Philadelphia
+		task_force = {
+			name = "Commonwealth Fleet"
+			location = 6845 # Philadelphia
+			ship = {
+				name = "Saul Alinsky" definition = carrier equipment = { carrier_1 = { amount = 1 owner = NEA version_name = "Carrier I" } } 
+				air_wings = {
+					cv_fighter_equipment_0 =  { owner = "NEA" amount = 20 }
+					cv_nav_bomber_equipment_1 =  { owner = "NEA" amount = 20 }
+				}
+			}	
+			ship = { name = "Malcolm X" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = NEA version_name = "Destroyer I" } } }
+			ship = { name = "Jack Reed" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = NEA version_name = "Destroyer I" } } }
+		}
+	}
+}

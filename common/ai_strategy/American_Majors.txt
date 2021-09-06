@@ -1,0 +1,191 @@
+uapr_hates_republic = {
+	
+	enable = {
+	
+		tag = PCA
+		
+		PCA = {
+			exists = yes
+		}
+		
+		USA = {
+			exists = yes
+		}
+		
+	}
+	
+	ai_strategy = {
+		type = befriend
+		id = "USA"
+		value = -400
+	}
+	
+	
+	ai_strategy = {
+		type = alliance
+		id = "USA"
+		value = -1200
+	}
+	
+	
+}
+
+republic_hates_uapr = {
+	
+	enable = {
+	
+		tag = USA
+		
+		PCA = {
+			exists = yes
+		}
+		
+		USA = {
+			exists = yes
+		}
+		
+	}
+	
+	ai_strategy = {
+		type = befriend
+		id = "PCA"
+		value = -400
+	}
+	
+	
+	ai_strategy = {
+		type = alliance
+		id = "PCA"
+		value = -1200
+	}
+	
+	
+}
+
+republic_hates_apc = {
+	
+	enable = {
+	
+		tag = USA
+		
+		NEA = {
+			exists = yes
+		}
+		
+		USA = {
+			exists = yes
+		}
+		
+	}
+	
+	ai_strategy = {
+		type = befriend
+		id = "NEA"
+		value = -400
+	}
+	
+	
+	ai_strategy = {
+		type = alliance
+		id = "NEA"
+		value = -1200
+	}
+	
+	
+}
+
+apc_hates_republic = {
+	
+	enable = {
+	
+		tag = NEA
+		
+		NEA = {
+			exists = yes
+		}
+		
+		USA = {
+			exists = yes
+		}
+		
+	}
+	
+	ai_strategy = {
+		type = befriend
+		id = "USA"
+		value = -400
+	}
+	
+	
+	ai_strategy = {
+		type = alliance
+		id = "USA"
+		value = -1200
+	}
+	
+	
+}
+
+apc_hates_uapr = {
+	
+	enable = {
+	
+		tag = NEA
+		
+		NEA = {
+			exists = yes
+		}
+		
+		PCA = {
+			exists = yes
+		}
+		
+	}
+	
+	ai_strategy = {
+		type = befriend
+		id = "PCA"
+		value = -400
+	}
+	
+	
+	ai_strategy = {
+		type = alliance
+		id = "PCA"
+		value = -1200
+	}
+	
+	
+}
+
+uapr_hates_apc = {
+	
+	enable = {
+	
+		tag = PCA
+		
+		NEA = {
+			exists = yes
+		}
+		
+		PCA = {
+			exists = yes
+		}
+		
+	}
+	
+	ai_strategy = {
+		type = befriend
+		id = "NEA"
+		value = -400
+	}
+	
+	
+	ai_strategy = {
+		type = alliance
+		id = "NEA"
+		value = -1200
+	}
+	
+	
+}

@@ -1,0 +1,40 @@
+ideas = {
+
+    country = {
+	    
+		idea_libyan_civil_war = {
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_manpower_bonus
+			
+			modifier = {
+				ai_focus_aggressive_factor = 0.5
+				land_reinforce_rate = 0.02
+				
+				
+				
+				
+			}
+		}
+		
+		idea_lba_gaddafis_fine_line = {
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = gaddafis_fine_line
+			
+			modifier = {
+				custom_modifier_tooltip = LBA_gaddafis_fine_line_tt
+				industrial_capacity_factory = -1.00
+			}
+		}
+		
+	}
+}

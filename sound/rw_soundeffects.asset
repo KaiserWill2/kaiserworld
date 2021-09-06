@@ -1,0 +1,373 @@
+soundeffect =
+{
+	name = "gates_is_doomed_sound"
+	volume = 1
+	sounds = {
+		sound = "gates_is_doomed"
+	}
+	max_audible = 1
+	max_audible_behaviour = fail
+}
+
+soundeffect =
+{
+	name = "sanders_is_doomed_sound"
+	volume = 1
+	sounds = {
+		sound = "sanders_is_doomed"
+	}
+	max_audible = 1
+	max_audible_behaviour = fail
+}
+
+soundeffect =
+{
+	name = "take_me_home_country_roads_sound"
+	volume = 1
+	sounds = {
+		sound = "take_me_home_country_roads"
+	}
+	max_audible = 1
+	max_audible_behaviour = fail
+}
+
+soundeffect =
+{
+	name = "hail_to_the_chief_trigger_sound"
+	volume = 0.8
+	sounds = {
+		sound = "hail_to_the_chief_trigger"
+	}
+	max_audible = 1
+	max_audible_behaviour = fail
+}
+
+soundeffect =
+{
+	name = "fall_of_walden_sound"
+	volume = 1
+	sounds = {
+		sound = "fall_of_walden"
+	}
+	max_audible = 1
+	max_audible_behaviour = fail
+}
+
+soundeffect =
+{
+	name = "yemen_is_burning_sound"
+	volume = 1
+	sounds = {
+		sound = "yemen_is_burning"
+	}
+	max_audible = 1
+	max_audible_behaviour = fail
+}
+
+soundeffect =
+{
+	name = "stasi_coup_sound"
+	volume = 1
+	sounds = {
+		sound = "stasi_coup"
+	}
+	max_audible = 1
+	max_audible_behaviour = fail
+}
+
+soundeffect =
+{
+	name = "holdren_america_sound"
+	volume = 1
+	sounds = {
+		sound = "holdren_america"
+	}
+	max_audible = 1
+	max_audible_behaviour = fail
+}
+
+soundeffect =
+{
+	name = "gates_america_sound"
+	volume = 1
+	sounds = {
+		sound = "gates_america"
+	}
+	max_audible = 1
+	max_audible_behaviour = fail
+}
+
+soundeffect =
+{
+	name = "trade_council_america_sound"
+	volume = 1
+	sounds = {
+		sound = "trade_council_america"
+	}
+	max_audible = 1
+	max_audible_behaviour = fail
+}
+
+soundeffect =
+{
+	name = "sotomayor_america_sound"
+	volume = 1
+	sounds = {
+		sound = "sotomayor_america"
+	}
+	max_audible = 1
+	max_audible_behaviour = fail
+}
+
+soundeffect =
+{
+	name = "dunford_america_sound"
+	volume = 1
+	sounds = {
+		sound = "dunford_america"
+	}
+	max_audible = 1
+	max_audible_behaviour = fail
+}
+
+soundeffect =
+{
+	name = "foster_america_sound"
+	volume = 1
+	sounds = {
+		sound = "foster_america"
+	}
+	max_audible = 1
+	max_audible_behaviour = fail
+}
+
+soundeffect =
+{
+	name = "jarvis_america_sound"
+	volume = 1
+	sounds = {
+		sound = "jarvis_america"
+	}
+	max_audible = 1
+	max_audible_behaviour = fail
+}
+
+soundeffect =
+{
+	name = "davis_america_sound"
+	volume = 1
+	sounds = {
+		sound = "davis_america"
+	}
+	max_audible = 1
+	max_audible_behaviour = fail
+}
+
+soundeffect =
+{
+	name = "robertson_america_sound"
+	volume = 1
+	sounds = {
+		sound = "robertson_america"
+	}
+	max_audible = 1
+	max_audible_behaviour = fail
+}
+
+soundeffect =
+{
+	name = "strom_america_sound"
+	volume = 1
+	sounds = {
+		sound = "strom_america"
+	}
+	max_audible = 1
+	max_audible_behaviour = fail
+}
+
+soundeffect =
+{
+	name = "cheney_america_sound"
+	volume = 1
+	sounds = {
+		sound = "cheney_america"
+	}
+	max_audible = 1
+	max_audible_behaviour = fail
+}
+
+soundeffect =
+{
+	name = "bernie_america_sound"
+	volume = 1
+	sounds = {
+		sound = "bernie_america"
+	}
+	max_audible = 1
+	max_audible_behaviour = fail
+}
+
+soundeffect =
+{
+	name = "npc_america_sound"
+	volume = 1
+	sounds = {
+		sound = "npc_america"
+	}
+	max_audible = 1
+	max_audible_behaviour = fail
+}
+
+soundeffect =
+{
+	name = "mackler_america_sound"
+	volume = 1
+	sounds = {
+		sound = "mackler_america"
+	}
+	max_audible = 1
+	max_audible_behaviour = fail
+}
+
+soundeffect =
+{
+	name = "webb_america_sound"
+	volume = 1
+	sounds = {
+		sound = "webb_america"
+	}
+	max_audible = 1
+	max_audible_behaviour = fail
+}
+
+soundeffect =
+{
+	name = "gerard_america_sound"
+	volume = 1
+	sounds = {
+		sound = "gerard_america"
+	}
+	max_audible = 1
+	max_audible_behaviour = fail
+}
+
+soundeffect =
+{
+	name = "robinson_america_sound"
+	volume = 1
+	sounds = {
+		sound = "robinson_america"
+	}
+	max_audible = 1
+	max_audible_behaviour = fail
+}
+
+soundeffect =
+{
+	name = "phelps_america_sound"
+	volume = 1
+	sounds = {
+		sound = "phelps_america"
+	}
+	max_audible = 1
+	max_audible_behaviour = fail
+}
+
+soundeffect =
+{
+	name = "welch_america_sound"
+	volume = 1
+	sounds = {
+		sound = "welch_america"
+	}
+	max_audible = 1
+	max_audible_behaviour = fail
+}
+
+soundeffect =
+{
+	name = "bentley_america_sound"
+	volume = 1
+	sounds = {
+		sound = "bentley_america"
+	}
+	max_audible = 1
+	max_audible_behaviour = fail
+}
+
+soundeffect =
+{
+	name = "milley_america_sound"
+	volume = 1
+	sounds = {
+		sound = "milley_america"
+	}
+	max_audible = 1
+	max_audible_behaviour = fail
+}
+
+soundeffect =
+{
+	name = "duke_america_sound"
+	volume = 1
+	sounds = {
+		sound = "duke_america"
+	}
+	max_audible = 1
+	max_audible_behaviour = fail
+}
+
+soundeffect =
+{
+	name = "ancona_america_sound"
+	volume = 1
+	sounds = {
+		sound = "ancona_america"
+	}
+	max_audible = 1
+	max_audible_behaviour = fail
+}
+
+soundeffect =
+{
+	name = "monarchy_america_sound"
+	volume = 1
+	sounds = {
+		sound = "monarchy_america"
+	}
+	max_audible = 1
+	max_audible_behaviour = fail
+}
+
+soundeffect =
+{
+	name = "rumsfeld_america_sound"
+	volume = 1
+	sounds = {
+		sound = "rumsfeld_america"
+	}
+	max_audible = 1
+	max_audible_behaviour = fail
+}
+
+soundeffect =
+{
+	name = "jeb_america_sound"
+	volume = 1
+	sounds = {
+		sound = "jeb_america"
+	}
+	max_audible = 1
+	max_audible_behaviour = fail
+}
+
+soundeffect =
+{
+	name = "corporate_america_sound"
+	volume = 1
+	sounds = {
+		sound = "corporate_america"
+	}
+	max_audible = 1
+	max_audible_behaviour = fail
+}

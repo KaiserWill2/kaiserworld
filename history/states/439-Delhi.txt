@@ -1,0 +1,36 @@
+state={
+	id=439
+	name="STATE_439"
+	
+	resources={
+		steel = 25
+		aluminium = 4
+		
+	}
+	provinces={
+	12868 2086 11955  4915
+	}
+	state_category = megalopolis
+	history={
+		owner = RAJ
+			victory_points = {
+			2086 30 
+		}
+		victory_points = {
+			4915 10 
+		}
+		add_core_of = RAJ
+		add_core_of = PJB
+		buildings = {
+			infrastructure = 9
+			
+			industrial_complex = 3
+			arms_factory = 1
+			air_base = 4
+	
+		}
+
+	}
+	manpower=			32988134
+	buildings_max_level_factor=1.000
+}

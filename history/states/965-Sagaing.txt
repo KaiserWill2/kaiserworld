@@ -1,0 +1,28 @@
+
+state={
+	id=965
+	name="STATE_965" # Sagaing
+	manpower = 5325347
+	
+	state_category = town
+	
+	resources = {
+		chromium = 4
+	}
+
+	history={
+		owner = MYA
+		victory_points = {
+			12335 1 
+		}
+		buildings = {
+		infrastructure = 3	
+		}
+		
+	}
+	
+	provinces={
+		   7469 10386 12492 12335 10486 12464 1082 4588 8063 4087 1197   
+	}
+}
+

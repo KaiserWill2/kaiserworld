@@ -1,0 +1,31 @@
+
+state={
+	id=437
+	name="STATE_437"
+	resources={
+		steel = 26
+		aluminium = 3
+		chromium = 1
+	}
+	provinces={
+	    7428 12241 10469 1579 9946 4513 12490 1622 7465  10171 12420 10401 8120  1510 7497 12375 7574 4557 12480
+	}
+	
+	state_category = rural
+	history={
+		owner = RAJ
+		victory_points = {
+			10401 5 
+		}
+		add_core_of = RAJ
+		add_core_of = CHH
+		buildings = {
+			infrastructure = 3
+			industrial_complex =1
+		}
+
+	}
+	manpower=27930000
+	buildings_max_level_factor=1.000
+}
+

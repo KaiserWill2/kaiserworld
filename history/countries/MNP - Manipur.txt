@@ -1,0 +1,158 @@
+﻿capital = 957
+
+oob = "generic_2000"
+
+set_research_slots = 4
+set_convoys = 500
+set_stability = 0.8
+set_war_support = 0.3
+
+set_technology = {
+	support_weapons = 1
+	infantry_weapons = 1
+	motorised_infantry = 1 
+	tech_support = 1 
+	tech_field_hospital = 1 
+	tech_engineers = 1 
+	gwtank = 1 
+	basic_light_tank = 1 
+	gw_artillery = 1 
+	tech_mountaineers = 1
+	early_fighter = 1 
+	early_bomber = 1 
+	interwar_antiair = 1
+	interwar_antitank = 1
+}
+
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	set_technology = {
+		early_submarine = 1
+		basic_submarine = 1
+		early_destroyer = 1
+		early_light_cruiser = 1
+		basic_light_cruiser = 1
+		early_heavy_cruiser = 1
+		
+		
+		early_carrier = 1
+		basic_carrier = 1
+		transport = 1
+	}
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_technology = {
+		basic_naval_mines = 1
+		submarine_mine_laying = 1
+		early_ship_hull_light = 1
+		basic_ship_hull_light = 1
+		early_ship_hull_submarine = 1
+		basic_ship_hull_submarine = 1
+		early_ship_hull_cruiser = 1
+		basic_ship_hull_cruiser = 1
+		early_ship_hull_heavy = 1
+		early_ship_hull_carrier = 1
+		basic_ship_hull_carrier = 1
+		basic_battery = 1
+		basic_light_battery = 1
+		basic_medium_battery = 1
+		basic_heavy_battery = 1
+		basic_torpedo = 1
+		sonar = 1
+		basic_depth_charges = 1
+		basic_secondary_battery = 1
+		improved_secondary_battery = 1
+		basic_cruiser_armor_scheme = 1
+		basic_heavy_armor_scheme = 1
+		mtg_transport = 1
+		improved_airplane_launcher = 1
+	}
+}
+
+set_politics = {
+	ruling_party = communist
+	last_election = "1997.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+        fascist = 0
+		nationalist = 26
+		monarchist = 0
+		national_bolshevik = 12
+		national_conservative = 18
+		centrist = 3
+		liberal = 0
+		new_democrat = 0
+		moderate_socialist = 5
+		revolutionary_socialist = 28
+		communist = 8
+}
+
+create_country_leader = {
+	name = "Shri Arun Kumar Sharma"
+	picture = "Portrait_MNP_Shri_Arun_Kumar_Sharma.dds"
+	ideology = fascist_ideology
+}
+
+create_country_leader = {
+	name = "Rajkumar Meghen"
+	picture = "Portrait_MNP_Rajkumar_Meghen.dds"
+	ideology = ultranationalist
+}
+
+create_country_leader = {
+	name = "Maharaja Leisemba Sanajaoba"
+	picture = "Portrait_MNP_Maharaja_Leisemba_Sanajaoba.dds"
+	ideology = absolute_monarchist
+}
+
+create_country_leader = {
+	name = "Moirangthem Rana Pratap Rana"
+	picture = "Portrait_MNP_Moirangthem_Rana_Pratap_Rana.dds"
+	ideology = marxist_leninist_maoist
+}
+
+create_country_leader = {
+	name = "Thounaojam Shyamkumar Singh"
+	picture = "Portrait_MNP_Thounaojam_Shyamkumar_Singh.dds"
+	ideology = agrarian_conservative
+}
+
+create_country_leader = {
+	name = "Soso Lorho"
+	picture = "Portrait_MNP_Soso_Lorho.dds"
+	ideology = centrist_ideology
+}
+
+create_country_leader = {
+	name = "Radhabinod Koijam"
+	picture = "Portrait_MNP_Radhabinod_Koijam.dds"
+	ideology = social_liberal
+}
+
+create_country_leader = {
+	name = "Wahengbam Nipamacha Singh"
+	picture = "Portrait_MNP_Wahengbam_Nipamacha_Singh.dds"
+	ideology = new_democrat_ideology
+}
+
+create_country_leader = {
+	name = "Brahmanand Mandal"
+	picture = "Portrait_MNP_Brahmanand_Mandal.dds"
+	ideology = democratic_socialist
+}
+
+create_country_leader = {
+	name = "Moirangthem Nara"
+	picture = "Portrait_MNP_Moirangthem_Nara.dds"
+	ideology = revolutionary_socialist_ideology
+}
+
+create_country_leader = {
+	name = "Irengbam Chaoren"
+	picture = "Portrait_MNP_Irengbam_Chaoren.dds"
+	ideology = maoist
+}

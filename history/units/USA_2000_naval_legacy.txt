@@ -1,0 +1,25 @@
+﻿
+units= {
+
+	####### NAVAL UNITS #######
+	##### ATLANTIC FLEET #####
+	##### Battle Force (CO: ) #####
+	### Norfolk ###
+	fleet = {
+		name = "United States Navy"
+		naval_base = 788
+		task_force = {
+			name = "Reagan Carrier Group"
+			location = 788 # Norfolk
+			ship = {
+			name = "USS Ronald Reagan" definition = carrier equipment = { carrier_1 = { amount = 1 owner = USA version_name = "Carrier I" } }
+			air_wings = {
+				cv_fighter_equipment_0 =  { owner = "USA" amount = 20 }
+				cv_nav_bomber_equipment_1 =  { owner = "USA" amount = 20 }
+				}
+			}	
+			ship = { name = "USS Arleigh Burke" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA version_name = "Destroyer I" } } }
+			ship = { name = "USS Cole" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA version_name = "Destroyer I" } } }
+		}
+	}
+}

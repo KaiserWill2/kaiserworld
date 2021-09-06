@@ -1,0 +1,29 @@
+
+state={
+	id=108
+	name="STATE_108"
+	resources={
+		steel=4.000
+	}
+
+	history={
+		owner = YUG
+        add_core_of = SER
+        add_core_of = YUG
+		buildings = {
+			infrastructure = 4
+			air_base = 2
+		}
+		victory_points = { 6998 2 }
+		victory_points = { 6970 1 }
+		victory_points = { 9906 1 }
+		victory_points = { 9756 1 }
+	}
+
+	provinces={
+		630 6970 6998 9602 9756 9906 11887 
+	}
+	manpower=1225977
+	buildings_max_level_factor=1.000
+	state_category=town
+}

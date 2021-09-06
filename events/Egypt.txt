@@ -1,0 +1,1653 @@
+﻿add_namespace = egypt
+
+#Egyptian presidential election
+country_event = {
+	id = egypt.1
+	title = egypt.1.t
+	desc = egypt.1.d
+	picture = egyptian_presidential_election
+	
+	is_triggered_only = yes
+	
+	option = {  #Mohamed Morsi - Islamic Republicans
+		name = egypt.1.o1
+		ai_chance = {
+			base = 50
+			modifier = {
+				NOT = {
+					has_game_rule = {
+						rule = EGY_ai_behavior
+						option = DEFAULT
+					}
+					has_game_rule = {
+						rule = EGY_ai_behavior
+						option = EGY_DEMOCRACY_MORSI
+					}
+				}
+				factor = 0
+			}
+		}
+		set_politics = {
+	        ruling_party = national_conservative
+	        elections_allowed = no
+        }
+		add_popularity = {
+			ideology = national_conservative
+			popularity = 0.42
+		}
+	}
+	
+	option = {  #Abdel Moneim Aboul Fotouh - Free Homeland
+		name = egypt.1.o2
+		ai_chance = {
+			base = 5
+			modifier = {
+				NOT = {
+					has_game_rule = {
+						rule = EGY_ai_behavior
+						option = DEFAULT
+					}
+					has_game_rule = {
+						rule = EGY_ai_behavior
+						option = EGY_DEMOCRACY_FOTOUH
+					}
+				}
+				factor = 0
+			}
+		}
+		set_politics = {
+	        ruling_party = centrist
+	        elections_allowed = no
+        }
+		add_popularity = {
+			ideology = centrist
+			popularity = 0.55
+		}
+	}
+	
+	option = {  #Naguib Sawiris - New Wafd
+		name = egypt.1.o3
+		ai_chance = {
+			base = 5
+			modifier = {
+				NOT = {
+					has_game_rule = {
+						rule = EGY_ai_behavior
+						option = DEFAULT
+					}
+					has_game_rule = {
+						rule = EGY_ai_behavior
+						option = EGY_DEMOCRACY_SAWIRIS
+					}
+					has_game_rule = {
+						rule = EGY_ai_behavior
+						option = EGY_DEMOCRACY_CALIPHATE
+					}
+				}
+				factor = 0
+			}
+		}
+		set_politics = {
+	        ruling_party = liberal
+	        elections_allowed = no
+        }
+		add_popularity = {
+			ideology = liberal
+			popularity = 0.51
+		}
+	}
+	
+	option = {  #Amr Moussa - Social Democrats
+		name = egypt.1.o4
+		ai_chance = {
+			base = 30
+			modifier = {
+				NOT = {
+					has_game_rule = {
+						rule = EGY_ai_behavior
+						option = DEFAULT
+					}
+					has_game_rule = {
+						rule = EGY_ai_behavior
+						option = EGY_DEMOCRACY_SAWIRIS
+					}
+					has_game_rule = {
+						rule = EGY_ai_behavior
+						option = EGY_DEMOCRACY_CALIPHATE
+					}
+				}
+				factor = 0
+			}
+		}
+		set_politics = {
+	        ruling_party = new_democrat
+	        elections_allowed = no
+        }
+		add_popularity = {
+			ideology = new_democrat
+			popularity = 0.58
+		}
+	}
+	
+	option = {  #Salah Adli - Communist Party
+		name = egypt.1.o5
+		ai_chance = {
+			base = 10
+			modifier = {
+				NOT = {
+					has_game_rule = {
+						rule = EGY_ai_behavior
+						option = DEFAULT
+					}
+					has_game_rule = {
+						rule = EGY_ai_behavior
+						option = EGY_DEMOCRACY_COMMUNISM
+					}
+				}
+				factor = 0
+			}
+		}
+		set_politics = {
+	        ruling_party = communist
+	        elections_allowed = no
+        }
+		add_popularity = {
+			ideology = communist
+			popularity = 0.42
+		}
+	}
+}
+
+#Radical preacher Abdul Kareem Tattan demanding downfall of government
+country_event = {
+	id = egypt.2
+	title = egypt.2.t
+	desc = egypt.2.d
+	picture = preacher_demands_downfall
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = EGY
+		OR = {
+		    has_completed_focus = EGY_welfare_programs
+			has_completed_focus = EGY_a_better_future_campaign
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 80
+	}
+	
+	option = {  
+		name = egypt.2.o1
+		hidden_effect = {
+		    country_event = { days = 4 id = egypt.3 } 
+		}
+	}
+}
+
+#Muslims flocking to new mosque
+country_event = {
+	id = egypt.3
+	title = egypt.3.t
+	desc = egypt.3.d
+	picture = muslims_flock_to_mosque
+	
+	is_triggered_only = yes
+	
+	option = {  
+		name = egypt.3.o1
+		add_political_power = -10
+		hidden_effect = {
+		    country_event = { days = 2 id = egypt.4 } 
+		}
+		add_popularity = {
+			ideology = fascist
+			popularity = 0.005
+		}
+	}
+}
+
+#Sheikh arrested
+country_event = {
+	id = egypt.4
+	title = egypt.4.t
+	desc = egypt.4.d
+	picture = sheikh_arrested
+	
+	is_triggered_only = yes
+	
+	option = {  
+		name = egypt.4.o1
+		add_political_power = -45
+		hidden_effect = {
+		    country_event = { days = 1 id = egypt.5 } 
+		}
+	}
+}
+
+#Outrage in the streets
+country_event = {
+	id = egypt.5
+	title = egypt.5.t
+	desc = egypt.5.d
+	picture = outrage_sheikh_arrest
+	
+	is_triggered_only = yes
+	
+	option = {  
+		name = egypt.5.o1
+		add_political_power = -10
+		hidden_effect = {
+		    country_event = { days = 3 id = egypt.6 } 
+		}
+		add_popularity = {
+			ideology = fascist
+			popularity = 0.0035
+		}
+	}
+}
+
+#Vice President Mohamed ElBaradei assassinated
+country_event = {
+	id = egypt.6
+	title = egypt.6.t
+	desc = egypt.6.d
+	picture = el_baradei_assassinated
+	
+	is_triggered_only = yes
+	
+	option = {  
+		name = egypt.6.o1
+		add_political_power = -20
+		hidden_effect = {
+		    country_event = { days = 1 id = egypt.7 } 
+		}
+	}
+}
+
+#Government initiates crackdown on radical Islamists
+country_event = {
+	id = egypt.7
+	title = egypt.7.t
+	desc = egypt.7.d
+	picture = egypt_islamist_crackdown
+	
+	is_triggered_only = yes
+	
+	option = {  
+		name = egypt.7.o1
+		hidden_effect = {
+		    country_event = { days = 5 id = egypt.8 } 
+		}
+	}
+}
+
+#Sheikh goes on hunger strike
+country_event = {
+	id = egypt.8
+	title = egypt.8.t
+	desc = egypt.8.d
+	picture = sheikh_hunger_strike
+	
+	is_triggered_only = yes
+	
+	option = {  
+		name = egypt.8.o1
+		hidden_effect = {
+		    country_event = { days = 2 id = egypt.9 } 
+		}
+		add_popularity = {
+			ideology = fascist
+			popularity = 0.0025
+		}
+	}
+}
+
+#Sheikh released from prison
+country_event = {
+	id = egypt.9
+	title = egypt.9.t
+	desc = egypt.9.d
+	picture = sheikh_hunger_strike
+	
+	is_triggered_only = yes
+	
+	option = {  
+		name = egypt.9.o1
+		add_political_power = -15
+		hidden_effect = {
+		    country_event = { days = 2 id = egypt.10 } 
+		}
+	}
+}
+
+#Radical preacher Ibrahim shot in Palestine
+country_event = {
+	id = egypt.10
+	title = egypt.10.t
+	desc = egypt.10.d
+	picture = ibrahim_shot_in_palestine
+	
+	is_triggered_only = yes
+	
+	option = {  
+		name = egypt.10.o1
+		hidden_effect = {
+		    country_event = { days = 2 id = egypt.11 } 
+		}
+		create_country_leader = {
+	        name = "Abdul Kareem Tattan"
+	        picture = "Portrait_EGY_Abdul_Kareem_Tattan.dds"
+	        ideology = jihadist 
+        }
+	}
+}
+
+#Sheikh declares Ibrahim a martyr of the revolution
+country_event = {
+	id = egypt.11
+	title = egypt.11.t
+	desc = egypt.11.d
+	picture = ibrahim_martyr
+	
+	is_triggered_only = yes
+	
+	option = {  
+		name = egypt.11.o1
+		hidden_effect = {
+		    country_event = { days = 3 id = egypt.12 } 
+		}
+		add_popularity = {
+			ideology = fascist
+			popularity = 0.005
+		}
+	}
+}
+
+#Documents leaked reveal Egyptian secret police assassinated Ibrahim
+country_event = {
+	id = egypt.12
+	title = egypt.12.t
+	desc = egypt.12.d
+	picture = egyptian_documents_leaked
+	
+	is_triggered_only = yes
+	
+	option = {  
+		name = egypt.12.o1
+		add_political_power = -80
+		hidden_effect = {
+		    country_event = { days = 4 id = egypt.13 } 
+		}
+		add_popularity = {
+			ideology = fascist
+			popularity = 0.05
+		}
+		add_popularity = {
+			ideology = nationalist
+			popularity = 0.05
+		}
+		add_popularity = {
+			ideology = national_conservative
+			popularity = 0.02
+		}
+		add_popularity = {
+			ideology = communist
+			popularity = 0.05
+		}
+		add_popularity = {
+			ideology = revolutionary_socialist
+			popularity = 0.01
+		}
+	}
+}
+
+#Mass protests in Cairo
+country_event = {
+	id = egypt.13
+	title = egypt.13.t
+	desc = egypt.13.d
+	picture = cairo_mass_protests
+	
+	is_triggered_only = yes
+	
+	option = {  
+		name = egypt.13.o1
+		add_political_power = -50
+		hidden_effect = {
+		    country_event = { days = 1 id = egypt.14 } 
+		}
+		add_popularity = {
+			ideology = fascist
+			popularity = 0.05
+		}
+	}
+}
+
+#Government office in Alexandria attacked
+country_event = {
+	id = egypt.14
+	title = egypt.14.t
+	desc = egypt.14.d
+	picture = alexandria_attack
+	
+	is_triggered_only = yes
+	
+	option = {  
+		name = egypt.14.o1
+		add_political_power = -5
+		hidden_effect = {
+		    country_event = { days = 2 id = egypt.15 } 
+		}
+	}
+}
+
+#New terrorist group claims responsibility
+country_event = {
+	id = egypt.15
+	title = egypt.15.t
+	desc = egypt.15.d
+	picture = alexandria_attack
+	
+	is_triggered_only = yes
+	
+	option = {  
+		name = egypt.15.o1
+		hidden_effect = {
+		    country_event = { days = 3 id = egypt.16 } 
+		}
+		add_popularity = {
+			ideology = fascist
+			popularity = 0.02
+		}
+	}
+}
+
+#Attempted military coup in Cairo fails
+country_event = {
+	id = egypt.16
+	title = egypt.16.t
+	desc = egypt.16.d
+	picture = attempted_coup_in_cairo
+	
+	is_triggered_only = yes
+	
+	option = {  
+		name = egypt.16.o1
+		add_political_power = -85
+		hidden_effect = {
+		    country_event = { days = 5 id = egypt.17 } 
+		}
+		add_popularity = {
+			ideology = nationalist
+			popularity = -0.2
+		}
+	}
+}
+
+#More than 3 million radical Muslims gathered in Alexandria
+country_event = {
+	id = egypt.17
+	title = egypt.17.t
+	desc = egypt.17.d
+	picture = muslims_alexandria
+	
+	is_triggered_only = yes
+	
+	option = {  
+		name = egypt.17.o1
+		add_political_power = -5
+		hidden_effect = {
+		    country_event = { days = 1 id = egypt.18 } 
+		}
+		add_popularity = {
+			ideology = fascist
+			popularity = 0.04
+		}
+	}
+}
+
+#Sheikh arrives in Alexandria
+country_event = {
+	id = egypt.18
+	title = egypt.18.t
+	desc = egypt.18.d
+	picture = sheikh_arrives_alexandria
+	
+	is_triggered_only = yes
+	
+	option = {  
+		name = egypt.18.o1
+		hidden_effect = {
+		    country_event = { days = 4 id = egypt.19 } 
+		}
+		add_popularity = {
+			ideology = fascist
+			popularity = 0.01
+		}
+	}
+}
+
+#Several governors declare they want autonomy from central government
+country_event = {
+	id = egypt.19
+	title = egypt.19.t
+	desc = egypt.19.d
+	picture = egyptian_governors_autonomy
+	
+	is_triggered_only = yes
+	
+	option = {  
+		name = egypt.19.o1
+		add_political_power = -70
+		hidden_effect = {
+		    country_event = { days = 1 id = egypt.20 } 
+		}
+		add_popularity = {
+			ideology = liberal
+			popularity = -0.1
+		}
+		add_popularity = {
+			ideology = new_democrat
+			popularity = -0.1
+		}
+		add_popularity = {
+			ideology = nationalist
+			popularity = -0.025
+		}
+	}
+}
+
+#Sheikh declares Caliphate in Alexandria, chaos ensues
+country_event = {
+	id = egypt.20
+	title = egypt.20.t
+	desc = egypt.20.d
+	picture = egyptian_caliphate
+	
+	is_triggered_only = yes
+	
+	option = {  #Join him
+		name = egypt.20.o1
+		ai_chance = {
+			base = 5
+			modifier = {
+				NOT = {
+					has_game_rule = {
+						rule = EGY_ai_behavior
+						option = DEFAULT
+					}
+					has_game_rule = {
+						rule = EGY_ai_behavior
+						option = EGY_DEMOCRACY_CALIPHATE
+					}
+				}
+				factor = 0
+			}
+		}
+		add_popularity = {
+			ideology = fascist
+			popularity = 0.02
+		}
+		add_political_power = -100
+		set_politics = {
+	        ruling_party = fascist
+	        elections_allowed = no
+        }
+		set_country_flag = sided_with_the_sheikh
+		set_cosmetic_tag = EGY_Caliphate
+		start_civil_war = {
+			ideology = new_democrat
+			size = 0.6
+			states = { 446 457 456 453 813  }
+			capital = 446
+		}
+		every_country = {
+			limit = {
+				OR = {
+					NOT = {
+					    has_government = fascist
+					}
+					AND = {
+					    has_government = fascist 
+						NOT = {
+						    has_country_flag = muslim_nation
+						}
+					}
+				}
+			}
+			add_opinion_modifier = {
+			    target = EGY
+				modifier = terrorist_menace
+		    }
+			add_opinion_modifier = {
+				target = EGY
+				modifier = terrorist_menace_trade
+			}
+		}
+	}
+	
+	option = {  #Crush him
+		name = egypt.20.o2
+		ai_chance = {
+			base = 95
+			modifier = {
+				NOT = {
+					has_game_rule = {
+						rule = EGY_ai_behavior
+						option = DEFAULT
+					}
+					has_game_rule = {
+						rule = EGY_ai_behavior
+						option = EGY_DEMOCRACY_SAWIRIS
+					}
+					has_game_rule = {
+						rule = EGY_ai_behavior
+						option = EGY_DEMOCRACY_MOUSSA
+					}
+				}
+				factor = 0
+			}
+		}
+		set_country_flag = sided_with_the_government
+		add_popularity = {
+			ideology = fascist
+			popularity = 0.02
+		}
+		add_political_power = -100
+		start_civil_war = {
+			ideology = fascist
+			size = 0.4
+			states = { 452 447 552 969 798  }
+			capital = 447
+		}
+	}
+}
+
+#Revolution against Thutmose V
+country_event = {
+	id = egypt.21
+	title = egypt.21.t
+	desc = egypt.21.d
+	picture = revolution_against_thutmose_v
+	
+	is_triggered_only = yes
+	
+	option = {  
+		name = egypt.21.o1
+		start_civil_war = {
+			ideology = national_conservative
+			size = 0.6
+			states = { 446 452  }
+			capital = 446
+		}
+	}
+}
+
+#Thutmose V dies
+country_event = {
+	id = egypt.22
+	title = egypt.22.t
+	desc = egypt.22.d
+	picture = thutmose_v_dies
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = EGY
+		AND = {
+		    has_completed_focus = EGY_imperial_cult
+			has_completed_focus = EGY_close_the_valley
+			has_completed_focus = EGY_the_pyramid_complex
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 350
+	}
+	
+	option = {  #Admiral Mohab Mamish
+		name = egypt.22.o1
+		ai_chance = {
+			base = 40
+			modifier = {
+				NOT = {
+					has_game_rule = {
+						rule = EGY_ai_behavior
+						option = DEFAULT
+					}
+					has_game_rule = {
+						rule = EGY_ai_behavior
+						option = EGY_MONARCHY_PHAROAH_MOHAB
+					}
+				}
+				factor = 0
+			}
+		}
+		create_country_leader = {
+	        name = "Mohab I"
+	        picture = "Portrait_EGY_Pharaoh_Mohab_Mamish.dds"
+	        ideology = absolute_monarchist 
+        }
+		set_country_flag = mohab_i_is_pharaoh
+	}
+	
+	option = {  #General Sedki Sobhy
+		name = egypt.22.o2
+		ai_chance = {
+			base = 60
+			modifier = {
+				NOT = {
+					has_game_rule = {
+						rule = EGY_ai_behavior
+						option = DEFAULT
+					}
+					has_game_rule = {
+						rule = EGY_ai_behavior
+						option = EGY_MONARCHY_PHAROAH_THUTMOSE
+					}
+				}
+				factor = 0
+			}
+		}
+		create_country_leader = {
+	        name = "Thutmose VI"
+	        picture = "Portrait_EGY_Pharaoh_Sedki_Sobhy.dds"
+	        ideology = absolute_monarchist 
+        }
+		set_country_flag = thutmose_vi_is_pharaoh
+	}
+}
+
+#Egyptian parliamentary elections
+country_event = {
+	id = egypt.23
+	title = egypt.23.t
+	desc = egypt.23.d
+	picture = egypt_parliamentary_elections
+	
+	is_triggered_only = yes
+	
+	option = {  #Traditional Kingdom
+		name = egypt.23.o1
+		ai_chance = {
+			factor = 70
+		}
+		set_politics = {
+	        ruling_party = national_conservative
+	        elections_allowed = no
+        }
+		add_popularity = {
+			ideology = national_conservative
+			popularity = 0.3
+		}
+	}
+	
+	option = {  #New Wafd
+		name = egypt.23.o2
+		ai_chance = {
+			factor = 25
+		}
+		set_politics = {
+	        ruling_party = liberal
+	        elections_allowed = no
+        }
+		add_popularity = {
+			ideology = liberal
+			popularity = 0.3
+		}
+	}
+	
+	option = {  #Social Democrats
+		name = egypt.23.o3
+		ai_chance = {
+			factor = 5
+		}
+		set_politics = {
+	        ruling_party = new_democrat
+	        elections_allowed = no
+        }
+		add_popularity = {
+			ideology = new_democrat
+			popularity = 0.3
+		}
+	}
+}
+
+#Palestine - Egypt demands Gaza
+country_event = {
+	id = egypt.24
+	title = egypt.24.t
+	desc = egypt.24.d
+	picture = egypt_demands_gaza
+	
+	is_triggered_only = yes
+	
+	option = {  #Accept
+		name = egypt.24.o1
+		ai_chance = {
+			factor = 80
+		}
+		add_political_power = -100
+		EGY = {
+		    transfer_state = 811
+		}
+		EGY = {
+			country_event = { id = egypt.25 }
+		}
+	}
+	
+	option = {  #Refuse
+		name = egypt.24.o2
+		ai_chance = {
+			factor = 20
+		}
+		add_political_power = -20 
+		add_stability = 0.03
+		EGY = {
+			country_event = { id = egypt.26 }
+		}
+	}
+}
+
+#Palestine accepts
+country_event = {
+	id = egypt.25
+	title = egypt.25.t
+	desc = egypt.25.d
+	picture = egypt_demands_gaza
+	
+	is_triggered_only = yes
+	
+	option = {  
+		name = egypt.25.o1
+	}
+}
+
+#Palestine refuses
+country_event = {
+	id = egypt.26
+	title = egypt.26.t
+	desc = egypt.26.d
+	picture = egypt_demands_gaza
+	
+	is_triggered_only = yes
+	
+	option = {  
+		name = egypt.26.o1
+	}
+}
+
+#Democratic path - join North African alliance with Egypt
+country_event = {
+	id = egypt.27
+	title = egypt.27.t
+	desc = egypt.27.d
+	picture = egypt_meeting
+	
+	is_triggered_only = yes
+	
+	option = {  #Accept
+		name = egypt.27.o1
+		ai_chance = {
+			factor = 100
+		}
+		EGY = {
+		    add_to_faction = ROOT
+		}
+		add_ai_strategy = {
+		    type = alliance
+		    id = "EGY"
+		    value = 150
+	    }
+		add_ai_strategy = {
+		    type = befriend
+		    id = "EGY"
+		    value = 50
+	    }
+		EGY = {
+			country_event = { id = egypt.28 }
+		}
+	}
+	
+	option = {  #Refuse
+		name = egypt.27.o2
+		ai_chance = {
+			factor = 0
+		}
+		EGY = {
+			country_event = { id = egypt.29 }
+		}
+	}
+}
+
+#Country accepts
+country_event = {
+	id = egypt.28
+	title = egypt.28.t
+	desc = egypt.28.d
+	picture = egypt_meeting
+	
+	is_triggered_only = yes
+	
+	option = {  
+		name = egypt.28.o1
+	}
+}
+
+#Country refuses
+country_event = {
+	id = egypt.29
+	title = egypt.29.t
+	desc = egypt.29.d
+	picture = egypt_meeting
+	
+	is_triggered_only = yes
+	
+	option = {  
+		name = egypt.29.o1
+	}
+}
+
+#Nationalist path - join regional protection front with egypt
+country_event = {
+	id = egypt.30
+	title = egypt.30.t
+	desc = egypt.30.d
+	picture = egypt_meeting
+	
+	is_triggered_only = yes
+	
+	option = {  #Accept
+		name = egypt.30.o1
+		ai_chance = {
+			factor = 80
+		}
+		EGY = {
+		    add_to_faction = ROOT
+		}
+		add_ai_strategy = {
+		    type = alliance
+		    id = "EGY"
+		    value = 150
+	    }
+		add_ai_strategy = {
+		    type = befriend
+		    id = "EGY"
+		    value = 50
+	    }
+		EGY = {
+			country_event = { id = egypt.31 }
+		}
+	}
+	
+	option = {  #Refuse
+		name = egypt.30.o2
+		ai_chance = {
+			factor = 20
+		}
+		EGY = {
+			country_event = { id = egypt.32 }
+		}
+	}
+}
+
+#Country accepts
+country_event = {
+	id = egypt.31
+	title = egypt.31.t
+	desc = egypt.31.d
+	picture = egypt_meeting
+	
+	is_triggered_only = yes
+	
+	option = {  
+		name = egypt.31.o1
+	}
+}
+
+#Country refuses
+country_event = {
+	id = egypt.32
+	title = egypt.32.t
+	desc = egypt.32.d
+	picture = egypt_meeting
+	
+	is_triggered_only = yes
+	
+	option = {  
+		name = egypt.32.o1
+	}
+}
+
+#Military leaders reject calls to step down
+country_event = {
+	id = egypt.33
+	title = egypt.33.t
+	desc = egypt.33.d
+	picture = military_rejects_calls_to_step_down
+	
+	is_triggered_only = yes
+	
+	option = {  
+		name = egypt.33.o1
+	}
+}
+
+#General Intelligence Directorate consolidates power
+country_event = {
+	id = egypt.34
+	title = egypt.34.t
+	desc = egypt.34.d
+	picture = gid_consolidates_power
+	
+	is_triggered_only = yes
+	
+	option = {  
+		name = egypt.34.o1
+	}
+}
+
+#Alexandria Summit
+country_event = {
+	id = egypt.35
+	title = egypt.35.t
+	desc = egypt.35.d
+	picture = alexandria_summit
+	
+	is_triggered_only = yes
+	
+	option = {  
+		name = egypt.35.o1
+	}
+}
+
+#Dissidents arrested
+country_event = {
+	id = egypt.36
+	title = egypt.36.t
+	desc = egypt.36.d
+	picture = egypt_dissidents_arrested
+	
+	is_triggered_only = yes
+	
+	option = {  
+		name = egypt.36.o1
+	}
+}
+
+#el-Sisi becomes VP
+country_event = {
+	id = egypt.37
+	title = egypt.37.t
+	desc = egypt.37.d
+	picture = sisi_becomes_vice_president
+	
+	is_triggered_only = yes
+	
+	option = {  
+		name = egypt.37.o1
+	}
+}
+
+#VP visits barracks
+country_event = {
+	id = egypt.38
+	title = egypt.38.t
+	desc = egypt.38.d
+	picture = vp_visits_barracks
+	
+	is_triggered_only = yes
+	
+	option = {  
+		name = egypt.38.o1
+	}
+}
+
+#VP and President merged
+country_event = {
+	id = egypt.39
+	title = egypt.39.t
+	desc = egypt.39.d
+	picture = vp_and_president_merged
+	
+	is_triggered_only = yes
+	
+	option = {  
+		name = egypt.39.o1
+	}
+}
+
+#New secret police
+country_event = {
+	id = egypt.40
+	title = egypt.40.t
+	desc = egypt.40.d
+	picture = new_secret_police_egypt
+	
+	is_triggered_only = yes
+	
+	option = {  
+		name = egypt.40.o1
+	}
+}
+
+#Mekki becomes VP
+country_event = {
+	id = egypt.41
+	title = egypt.41.t
+	desc = egypt.41.d
+	picture = mekki_becomes_vice_president
+	
+	is_triggered_only = yes
+	
+	option = {  
+		name = egypt.41.o1
+	}
+}
+
+#Military clique overthrows Suleiman, el-Sisi becomes President
+country_event = {
+	id = egypt.42
+	title = egypt.42.t
+	desc = egypt.42.d
+	picture = military_clique_overthrows_suleiman
+	
+	is_triggered_only = yes
+	
+	option = {  
+		name = egypt.42.o1
+	}
+}
+
+#Many civil liberties abolished
+country_event = {
+	id = egypt.43
+	title = egypt.43.t
+	desc = egypt.43.d
+	picture = egypt_parliamentary_elections
+	
+	is_triggered_only = yes
+	
+	option = {  
+		name = egypt.43.o1
+	}
+}
+
+#Sisi promises more economic freedoms
+country_event = {
+	id = egypt.44
+	title = egypt.44.t
+	desc = egypt.44.d
+	picture = sisi_promises_economic_freedoms
+	
+	is_triggered_only = yes
+	
+	option = {  
+		name = egypt.44.o1
+	}
+}
+
+#Second Stage begins
+country_event = {
+	id = egypt.45
+	title = egypt.45.t
+	desc = egypt.45.d
+	picture = egypt_parliamentary_elections
+	
+	is_triggered_only = yes
+	
+	option = {  
+		name = egypt.45.o1
+	}
+}
+
+#Sustainable cities planned unveiled
+country_event = {
+	id = egypt.46
+	title = egypt.46.t
+	desc = egypt.46.d
+	picture = sustainable_cities_plan
+	
+	is_triggered_only = yes
+	
+	option = {  
+		name = egypt.46.o1
+	}
+}
+
+#Crackdown on anti-Morsi protests
+country_event = {
+	id = egypt.47
+	title = egypt.47.t
+	desc = egypt.47.d
+	picture = anti_morsi_protests
+	
+	is_triggered_only = yes
+	
+	option = {  
+		name = egypt.47.o1
+	}
+}
+
+#Assembly approves radical economic reforms
+country_event = {
+	id = egypt.48
+	title = egypt.48.t
+	desc = egypt.48.d
+	picture = egypt_parliamentary_elections
+	
+	is_triggered_only = yes
+	
+	option = {  
+		name = egypt.48.o1
+	}
+}
+
+#Former leaders pardoned
+country_event = {
+	id = egypt.49
+	title = egypt.49.t
+	desc = egypt.49.d
+	picture = egypt_leaders_pardoned
+	
+	is_triggered_only = yes
+	
+	option = {  
+		name = egypt.49.o1
+	}
+}
+
+#Islamic Republic proclaimed
+country_event = {
+	id = egypt.50
+	title = egypt.50.t
+	desc = egypt.50.d
+	picture = egypt_parliamentary_elections
+	
+	is_triggered_only = yes
+	
+	option = {  
+		name = egypt.50.o1
+	}
+}
+
+#Commitment to Arab Republic reaffirmed
+country_event = {
+	id = egypt.51
+	title = egypt.51.t
+	desc = egypt.51.d
+	picture = egypt_parliamentary_elections
+	
+	is_triggered_only = yes
+	
+	option = {  
+		name = egypt.51.o1
+	}
+}
+
+#Policy of secularism continued
+country_event = {
+	id = egypt.52
+	title = egypt.52.t
+	desc = egypt.52.d
+	picture = egypt_parliamentary_elections
+	
+	is_triggered_only = yes
+	
+	option = {  
+		name = egypt.52.o1
+	}
+}
+
+#North Egypt advancement project begins
+country_event = {
+	id = egypt.53
+	title = egypt.53.t
+	desc = egypt.53.d
+	picture = egypt_parliamentary_elections
+	
+	is_triggered_only = yes
+	
+	option = {  
+		name = egypt.53.o1
+	}
+}
+
+#Caliph declares jihad 
+country_event = {
+	id = egypt.54
+	title = egypt.54.t
+	desc = egypt.54.d
+	picture = caliph_declares_jihad
+	
+	is_triggered_only = yes
+	
+	option = {  
+		name = egypt.54.o1
+	}
+}
+
+#anti communist protests crushed
+country_event = {
+	id = egypt.55
+	title = egypt.55.t
+	desc = egypt.55.d
+	picture = egypt_anti_communist_protestors_crushed
+	
+	is_triggered_only = yes
+	
+	option = {  
+		name = egypt.55.o1
+	}
+}
+
+#portrait of lenin 
+country_event = {
+	id = egypt.56
+	title = egypt.56.t
+	desc = egypt.56.d
+	picture = portrait_of_lenin
+	
+	is_triggered_only = yes
+	
+	option = {  
+		name = egypt.56.o1
+	}
+}
+
+#egyptian people's army
+country_event = {
+	id = egypt.57
+	title = egypt.57.t
+	desc = egypt.57.d
+	picture = egyptian_peoples_army
+	
+	is_triggered_only = yes
+	
+	option = {  
+		name = egypt.57.o1
+	}
+}
+
+#president grows isolated
+country_event = {
+	id = egypt.58
+	title = egypt.58.t
+	desc = egypt.58.d
+	picture = egypt_presidential_palace
+	
+	is_triggered_only = yes
+	
+	option = {  
+		name = egypt.58.o1
+	}
+}
+
+#suleiman proclaims egyptian empire
+country_event = {
+	id = egypt.59
+	title = egypt.59.t
+	desc = egypt.59.d
+	picture = suleiman_proclaims_empire
+	
+	is_triggered_only = yes
+	
+	option = {  
+		name = egypt.59.o1
+	}
+}
+
+#wonders renovated
+country_event = {
+	id = egypt.60
+	title = egypt.60.t
+	desc = egypt.60.d
+	picture = wonders_renovation
+	
+	is_triggered_only = yes
+	
+	option = {  
+		name = egypt.60.o1
+	}
+}
+
+#valley closed
+country_event = {
+	id = egypt.61
+	title = egypt.61.t
+	desc = egypt.61.d
+	picture = valley_closed
+	
+	is_triggered_only = yes
+	
+	option = {  
+		name = egypt.61.o1
+	}
+}
+
+#pyramid complex
+country_event = {
+	id = egypt.62
+	title = egypt.62.t
+	desc = egypt.62.d
+	picture = pyramid_complex
+	
+	is_triggered_only = yes
+	
+	option = {  
+		name = egypt.62.o1
+	}
+}
+
+#suleiman steps down in favour of king
+country_event = {
+	id = egypt.63
+	title = egypt.63.t
+	desc = egypt.63.d
+	picture = egypt_presidential_palace
+	
+	is_triggered_only = yes
+	
+	option = {  
+		name = egypt.63.o1
+	}
+}
+
+#king coronated as sultan
+country_event = {
+	id = egypt.64
+	title = egypt.64.t
+	desc = egypt.64.d
+	picture = king_coronated_as_sultan
+	
+	is_triggered_only = yes
+	
+	option = {  
+		name = egypt.64.o1
+	}
+}
+
+#sultan declares holy era
+country_event = {
+	id = egypt.65
+	title = egypt.65.t
+	desc = egypt.65.d
+	picture = sultan_declares_holy_era
+	
+	is_triggered_only = yes
+	
+	option = {  
+		name = egypt.65.o1
+	}
+}
+
+#kings coronation
+country_event = {
+	id = egypt.66
+	title = egypt.66.t
+	desc = egypt.66.d
+	picture = king_coronated_as_sultan
+	
+	is_triggered_only = yes
+	
+	option = {  
+		name = egypt.66.o1
+	}
+}
+
+#king appoints temporary pm
+country_event = {
+	id = egypt.67
+	title = egypt.67.t
+	desc = egypt.67.d
+	picture = egypt_parliamentary_elections
+	
+	is_triggered_only = yes
+	
+	option = {  
+		name = egypt.67.o1
+	}
+}
+
+#constitutional convention
+country_event = {
+	id = egypt.68
+	title = egypt.68.t
+	desc = egypt.68.d
+	picture = egypt_parliamentary_elections
+	
+	is_triggered_only = yes
+	
+	option = {  
+		name = egypt.68.o1
+	}
+}
+
+#civil rights restored
+country_event = {
+	id = egypt.69
+	title = egypt.69.t
+	desc = egypt.69.d
+	picture = suleiman_proclaims_empire
+	
+	is_triggered_only = yes
+	
+	option = {  
+		name = egypt.69.o1
+	}
+}
+
+#secret police abolished
+country_event = {
+	id = egypt.70
+	title = egypt.70.t
+	desc = egypt.70.d
+	picture = new_secret_police_egypt
+	
+	is_triggered_only = yes
+	
+	option = {  
+		name = egypt.70.o1
+	}
+}
+
+#direct democracy
+country_event = {
+	id = egypt.71
+	title = egypt.71.t
+	desc = egypt.71.d
+	picture = egyptian_presidential_election
+	
+	is_triggered_only = yes
+	
+	option = {  
+		name = egypt.71.o1
+	}
+}
+
+#king reads suleiman's note
+country_event = {
+	id = egypt.72
+	title = egypt.72.t
+	desc = egypt.72.d
+	picture = sultan_declares_holy_era
+	
+	is_triggered_only = yes
+	
+	option = {  
+		name = egypt.72.o1
+	}
+}
+
+#palace announces policy of secular royalism
+country_event = {
+	id = egypt.73
+	title = egypt.73.t
+	desc = egypt.73.d
+	picture = egypt_presidential_palace
+	
+	is_triggered_only = yes
+	
+	option = {  
+		name = egypt.73.o1
+	}
+}
+
+#new library of alexandria
+country_event = {
+	id = egypt.74
+	title = egypt.74.t
+	desc = egypt.74.d
+	picture = new_library_alexandria
+	
+	is_triggered_only = yes
+	
+	option = {  
+		name = egypt.74.o1
+	}
+}
+
+#assembly raises taxes
+country_event = {
+	id = egypt.75
+	title = egypt.75.t
+	desc = egypt.75.d
+	picture = suleiman_proclaims_empire
+	
+	is_triggered_only = yes
+	
+	option = {  
+		name = egypt.75.o1
+	}
+}
+
+#president declares end to islamist rebellion
+country_event = {
+	id = egypt.76
+	title = egypt.76.t
+	desc = egypt.76.d
+	picture = suleiman_proclaims_empire
+	
+	is_triggered_only = yes
+	
+	option = {  
+		name = egypt.76.o1
+	}
+}
+
+#mamish restores civil liberties
+country_event = {
+	id = egypt.77
+	title = egypt.77.t
+	desc = egypt.77.d
+	picture = suleiman_proclaims_empire
+	
+	is_triggered_only = yes
+	
+	option = {  
+		name = egypt.77.o1
+	}
+}

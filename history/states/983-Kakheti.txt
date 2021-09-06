@@ -1,0 +1,22 @@
+state = {
+	id = 983
+	name = "STATE_983"
+
+	history = {
+		owner = SOV
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			arms_factory = 2
+		}
+		add_core_of = GEO
+		add_core_of = SOV
+	}
+
+	provinces = {
+		3667 4534 4605 6436 11609 12309
+	}
+	manpower = 473166
+	buildings_max_level_factor = 1.000
+	state_category = city
+}

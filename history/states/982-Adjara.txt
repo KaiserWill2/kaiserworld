@@ -1,0 +1,30 @@
+state = {
+	id = 982
+	name = "STATE_982"
+	manpower = 457165
+
+	state_category = town
+	buildings_max_level_factor=1.000
+
+	history = {
+		owner = SOV
+		add_core_of = ADJ
+		add_core_of = SOV
+		add_core_of = GEO
+		buildings = {
+			infrastructure = 3
+			dockyard = 1
+			synthetic_refinery = 1
+			3653 = {
+				naval_base = 4
+			}
+		}
+		victory_points = {
+			3653 20
+		}
+	}
+
+	provinces = {
+		3653
+	}
+}

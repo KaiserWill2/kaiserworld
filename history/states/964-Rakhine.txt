@@ -1,0 +1,32 @@
+
+state={
+	id=964
+	name="STATE_964" # Rakhine
+	manpower = 3188807
+	
+	state_category = town
+	
+	resources = {
+		oil = 1
+	}
+
+	history={
+		owner = MYA
+		victory_points = {
+			1290 1 
+		}
+		buildings = {
+		infrastructure = 3
+		dockyard = 1	
+		12090 = {
+				naval_base = 2
+			}
+		}
+		
+	}
+	
+	provinces={
+		   3651 1014 12090   
+	}
+}
+

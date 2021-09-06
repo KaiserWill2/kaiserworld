@@ -1,0 +1,41 @@
+
+state={
+	id=232
+	name="STATE_232"
+	resources={
+		oil=26.000
+	}
+
+	history={
+		owner = SOV
+add_core_of = RUS
+		buildings = {
+			infrastructure = 4
+
+		}
+		victory_points = {
+			3672 3
+		}
+		victory_points = {
+			7624 1
+		}
+		victory_points = {
+			3668 6
+		}
+		victory_points = {
+			3682 1
+		}
+		victory_points = {
+			4463 1
+		}
+		add_core_of = SOV
+
+	}
+
+	provinces={
+		700 712 728 1450 3668 3682 3711 4463 6689 6701 6730 6748 7554 7624 9645
+	}
+	manpower=2238158
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

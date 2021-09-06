@@ -1,0 +1,50 @@
+on_actions = {
+    on_declare_war = {
+        effect = {
+            if = {
+                limit = {
+                    OR = {
+                        AND = {
+                            ROOT = { tag = GAU }
+                            FROM = { tag = USA }
+                        }
+                        AND = {
+                            ROOT = { tag = USA }
+                            FROM = { tag = GAU }
+                        }
+                    }
+                }
+                GAU = {
+                    country_event = { id = war_of_unification.1 }
+                }
+                USA = {
+                    country_event = { id = war_of_unification.2 }
+                }
+            }
+        }
+    }
+    on_capitulation = {
+        effect = {
+            if = {
+                limit = {
+                    OR = {
+                        AND = {
+                            ROOT = { tag = GAU }
+                            FROM = { tag = USA }
+                        }
+                        AND = {
+                            ROOT = { tag = USA }
+                            FROM = { tag = GAU }
+                        }
+                    }
+                }
+                GAU = {
+                    country_event = { id = war_of_unification.3 }
+                }
+                USA = {
+                    country_event = { id = war_of_unification.4 }
+                }
+            }
+        }
+    }
+}

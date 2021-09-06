@@ -1,0 +1,16 @@
+﻿
+units= {
+	####### NAVAL UNITS #######
+	##### ETHIOPIAN NAVY #####
+	##### Ethiopian Red Navy #####
+	### Asmara ###
+	fleet = {
+		name = "Ethiopian Red Navy"
+		naval_base = 12766 # Asmara
+		task_force = {
+			name = "Defense Group"
+			location = 12766 # Asmara
+			ship = { name = "Red Axum" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ETH version_name = "Destroyer I" } } }
+		}
+	}
+}

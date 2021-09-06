@@ -1,0 +1,25 @@
+﻿units= {
+
+	####### NAVAL UNITS #######
+	##### FRENCH FLEET #####
+	##### ARMADA ROUGE #####
+	### Dunkerque ###
+
+	fleet = {
+		name = "Armada Rouge"			
+		naval_base = 575 # Dunkirk
+		task_force = {
+			name = "Thorez Fleet"
+			location = 575 # Dunkirk
+			ship = {
+				name = "Maurice Thorez" definition = carrier equipment = { carrier_1 = { amount = 1 owner = FRA version_name = "Carrier I" } } 
+				air_wings = {
+					cv_fighter_equipment_0 =  { owner = "FRA" amount = 20 }
+					cv_nav_bomber_equipment_1 =  { owner = "FRA" amount = 20 }
+				}
+			}	
+			ship = { name = "Jacques Duclos" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRA version_name = "Destroyer I" } } }
+			ship = { name = "Waldeck Rochet" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRA version_name = "Destroyer I" } } }
+		}
+	}
+}

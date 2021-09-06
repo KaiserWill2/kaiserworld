@@ -1,0 +1,30 @@
+state={
+	id=952
+	name="STATE_952"
+
+	provinces={
+	1129 2076 7106 12708
+	}
+	state_category = town
+	history={
+		owner = RAJ
+		victory_points = {
+			12708 1 
+		}
+		victory_points = {
+			2076  1 
+		}
+		add_core_of = RAJ	
+		add_core_of = PJB
+		buildings = {
+			infrastructure = 7
+			industrial_complex = 1
+			arms_factory = 1
+			
+	
+		}
+
+	}
+	manpower=						6864602
+	buildings_max_level_factor=1.000
+}

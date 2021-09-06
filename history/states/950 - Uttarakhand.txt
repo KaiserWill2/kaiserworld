@@ -1,0 +1,26 @@
+
+state={
+	id=950
+	name="STATE_950"
+	history={
+		owner = RAJ
+		add_core_of = RAJ 
+		add_core_of = UTT
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 2
+			arms_factory = 1
+					}
+					}
+	provinces={
+		1898  3989 5002 5157  10021     
+			}
+
+	manpower = 10086292
+	buildings_max_level_factor=1.000
+	
+		
+	state_category = town
+	
+	
+	}

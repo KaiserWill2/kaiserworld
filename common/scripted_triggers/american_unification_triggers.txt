@@ -1,0 +1,132 @@
+has_integrated_NEA = {
+	custom_trigger_tooltip = {
+		tooltip = has_integrated_NEA_tt
+		261 = { is_core_of = ROOT }
+        357 = { is_core_of = ROOT }
+        358 = { is_core_of = ROOT }
+        359 = { is_core_of = ROOT }
+        360 = { is_core_of = ROOT }
+        361 = { is_core_of = ROOT }
+        393 = { is_core_of = ROOT }
+        395 = { is_core_of = ROOT }
+        396 = { is_core_of = ROOT }
+        792 = { is_core_of = ROOT }
+        793 = { is_core_of = ROOT }
+        794 = { is_core_of = ROOT }
+        795 = { is_core_of = ROOT }
+        893 = { is_core_of = ROOT }
+        902 = { is_core_of = ROOT }
+	}
+}
+has_integrated_USA = {
+	custom_trigger_tooltip = {
+		tooltip = has_integrated_USA_tt
+		362 = { is_core_of = ROOT }
+        363 = { is_core_of = ROOT }
+        364 = { is_core_of = ROOT }
+        365 = { is_core_of = ROOT }
+        366 = { is_core_of = ROOT }
+        367 = { is_core_of = ROOT }
+        368 = { is_core_of = ROOT }
+        369 = { is_core_of = ROOT }
+        370 = { is_core_of = ROOT }
+        371 = { is_core_of = ROOT }
+        372 = { is_core_of = ROOT }
+        374 = { is_core_of = ROOT }
+        901 = { is_core_of = ROOT }
+        OR = {
+            900 = { is_core_of = ROOT }
+            TEX = {
+                is_puppet_of = ROOT
+                owns_state = 900
+            }
+        }
+	}
+}
+has_integrated_ILL = {
+	custom_trigger_tooltip = {
+		tooltip = has_integrated_ILL_tt
+		373 = { is_core_of = ROOT }
+        892 = { is_core_of = ROOT }
+	}
+}
+has_integrated_GRL = {
+	custom_trigger_tooltip = {
+		tooltip = has_integrated_GRL_tt
+		391 = { is_core_of = ROOT }
+        392 = { is_core_of = ROOT }
+        394 = { is_core_of = ROOT }
+        891 = { is_core_of = ROOT }
+	}
+}
+has_integrated_MWA = {
+	custom_trigger_tooltip = {
+		tooltip = has_integrated_MWA_tt
+		382 = { is_core_of = ROOT }
+        383 = { is_core_of = ROOT }
+        384 = { is_core_of = ROOT }
+        390 = { is_core_of = ROOT }
+        898 = { is_core_of = ROOT }
+	}
+}
+has_integrated_MOT = {
+	custom_trigger_tooltip = {
+		tooltip = has_integrated_MOT_tt
+		381 = { is_core_of = ROOT }
+        388 = { is_core_of = ROOT }
+        389 = { is_core_of = ROOT }
+        1016 = { is_core_of = ROOT }
+        1017 = { is_core_of = ROOT }
+        1018 = { is_core_of = ROOT }
+	}
+}
+has_integrated_LIN = {
+	custom_trigger_tooltip = {
+		tooltip = has_integrated_LIN_tt
+		387 = { is_core_of = ROOT }
+        890 = { is_core_of = ROOT }
+	}
+}
+has_integrated_UTA = {
+	custom_trigger_tooltip = {
+		tooltip = has_integrated_UTA_tt
+		379 = { is_core_of = ROOT }
+        380 = { is_core_of = ROOT }
+        896 = { is_core_of = ROOT }
+	}
+}
+has_integrated_ARI = {
+	custom_trigger_tooltip = {
+		tooltip = has_integrated_ARI_tt
+		377 = { is_core_of = ROOT }
+        895 = { is_core_of = ROOT }
+	}
+}
+has_integrated_PCA = {
+	custom_trigger_tooltip = {
+		tooltip = has_integrated_PCA_tt
+		378 = { is_core_of = ROOT }
+        385 = { is_core_of = ROOT }
+        386 = { is_core_of = ROOT }
+        889 = { is_core_of = ROOT }
+        897 = { is_core_of = ROOT }
+        970 = { is_core_of = ROOT }
+        971 = { is_core_of = ROOT }
+        1015 = { is_core_of = ROOT }
+	}
+}
+has_integrated_or_puppeted_TEX = {
+	custom_trigger_tooltip = {
+		tooltip = has_integrated_or_puppeted_TEX_tt
+		OR = {
+            AND = {
+                375 = { is_core_of = ROOT }
+                899 = { is_core_of = ROOT }
+            }
+            TEX = {
+                exists = yes
+                is_puppet_of = ROOT
+            }
+        }
+	}
+}

@@ -1,0 +1,25 @@
+state={
+	id=971
+	name="STATE_971"
+	
+	history={
+		owner = USA
+		add_core_of = CSD
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			arms_factory = 1
+		}
+		add_core_of = USA
+		victory_points = {
+			4274 1
+		}
+
+	}
+	provinces={
+		1414 3471 4274 4347 7398 10151 12183 
+	}
+	manpower=1000000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

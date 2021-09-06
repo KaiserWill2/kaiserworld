@@ -1,0 +1,36 @@
+
+state={
+	id=640
+	name="STATE_640" # Upper Ayeyarwaddy
+	manpower = 10082778
+	
+	state_category = town
+	
+	resources = {
+		rubber = 1
+		steel=12
+		tungsten= 3
+		chromium=3
+		oil=11
+	}
+
+	history={
+		owner = MYA
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 2
+			air_base = 1
+		}
+		victory_points = { 1492 5 }
+		victory_points = { 10344 1 }
+		victory_points = {
+			4202 1
+		}
+		
+	}
+	
+	provinces={
+		   1492  4585     7562   4059        12404   1650 12449  7034 4019 4202 4541
+	}
+}
+

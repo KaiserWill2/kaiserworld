@@ -1,0 +1,46 @@
+
+state={
+	id=202
+	name="STATE_202"
+	manpower = 5137798
+	resources={
+		oil=14
+		aluminium=12
+	}
+	
+	state_category = city
+
+	history={
+		owner = SOV
+		add_core_of = SOV
+		victory_points = {
+			525 25
+		}
+		victory_points = {
+			504 2
+		}
+		victory_points = {
+			11557 1
+		}
+		victory_points = {
+			9568 1
+		}
+add_core_of = UKR
+		buildings = {
+			infrastructure = 5
+			arms_factory = 1
+			industrial_complex = 1
+			air_base = 8
+		}
+		1939.1.1 = {
+			buildings = {
+				arms_factory = 4
+				industrial_complex = 3
+			}
+		}
+	}
+
+	provinces={
+		489 504 525 582 3494 3543 6497 9465 9543 9568 11557 
+	}
+}

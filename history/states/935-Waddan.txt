@@ -1,0 +1,24 @@
+state={
+	id=935
+	name="STATE_935"
+	resources={
+		oil=20.000
+	}
+	provinces={
+		12866 13474 13486 13496 13506 13510 13518 13525 
+	}
+	state_category = town
+	history={
+		owner = LBA
+		add_core_of = LBA
+		victory_points = { 13474 2 }
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			arms_factory = 1
+		}
+
+	}
+	manpower=22000
+	buildings_max_level_factor=1.000
+}

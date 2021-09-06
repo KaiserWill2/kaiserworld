@@ -1,0 +1,43 @@
+state = {
+	id = 293
+	name = "STATE_293"
+	manpower = 1820200
+	
+	state_category = rural
+	
+	resources = {
+		oil = 20
+		steel = 2
+	}
+	history = {
+		owner = YEM
+		buildings = {
+			infrastructure = 3
+			arms_factory = 1
+			air_base = 4
+			industrial_complex = 1
+			13689 = {
+				naval_base = 1
+			}
+			13685 = {
+				naval_base = 2
+			}
+		}
+		#vp inspiration in the link below, probably horribly inaccurate pls dont bully
+		#https://cdn.discordapp.com/attachments/697227341499334687/729068002460434432/General20map.png
+		victory_points = { 13684 2 } #Balhaf
+		victory_points = { 13685 5 } #Mukalla, state capital
+		victory_points = { 13687 3 } #Sayhut
+		victory_points = { 13689 5 } #Al Ghaydah
+		victory_points = { 13711 2 } #Ataq
+		victory_points = { 13718 3 } #Saywun
+		victory_points = { 13719 2 } #Tarim
+		victory_points = { 13608 3 } #Faghmah
+
+		add_core_of = YEM
+	}
+
+	provinces = {
+		13683 13684 13685 13686 13687 13688 13689 13690 13691 13692 13693 13694 13695 13696 13697 13698 13699 13700 13701 13702 13703 13704 13705 13706 13707 13708 13709 13710 13711 13712 13713 13714 13715 13716 13717 13718 13719 13720 13607 13608 13609 13610 13611 13612 13613
+	}
+}

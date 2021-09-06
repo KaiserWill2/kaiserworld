@@ -1,0 +1,158 @@
+﻿capital = 422
+
+oob = "SRI_2000"
+
+set_research_slots = 4
+set_convoys = 500
+set_stability = 0.4
+set_war_support = 0.1
+
+set_country_flag = was_in_british_empire
+
+set_technology = {
+	support_weapons = 1
+	infantry_weapons = 1
+	motorised_infantry = 1 
+	tech_support = 1 
+	tech_field_hospital = 1 
+	tech_engineers = 1 
+	gwtank = 1 
+	basic_light_tank = 1 
+	gw_artillery = 1 
+	tech_mountaineers = 1
+	early_light_cruiser = 1
+	early_fighter = 1 
+	early_bomber = 1 
+	early_submarine = 1
+    transport = 1 
+	paratroopers = 1 
+	marines = 1
+	interwar_antiair = 1
+	interwar_antitank = 1
+}
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	set_technology = {
+		early_submarine = 1
+		basic_submarine = 1
+		early_destroyer = 1
+		early_light_cruiser = 1
+		basic_light_cruiser = 1
+		early_heavy_cruiser = 1
+		
+		
+		early_carrier = 1
+		basic_carrier = 1
+		transport = 1
+	}
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_technology = {
+		basic_naval_mines = 1
+		submarine_mine_laying = 1
+		early_ship_hull_light = 1
+		basic_ship_hull_light = 1
+		early_ship_hull_submarine = 1
+		basic_ship_hull_submarine = 1
+		early_ship_hull_cruiser = 1
+		basic_ship_hull_cruiser = 1
+		early_ship_hull_heavy = 1
+		early_ship_hull_carrier = 1
+		basic_ship_hull_carrier = 1
+		basic_battery = 1
+		basic_light_battery = 1
+		basic_medium_battery = 1
+		basic_heavy_battery = 1
+		basic_torpedo = 1
+		sonar = 1
+		basic_depth_charges = 1
+		basic_secondary_battery = 1
+		improved_secondary_battery = 1
+		basic_cruiser_armor_scheme = 1
+		basic_heavy_armor_scheme = 1
+		mtg_transport = 1
+		improved_airplane_launcher = 1
+	}
+}
+set_politics = {
+	ruling_party = new_democrat
+	last_election = "1997.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+        fascist = 0
+		nationalist = 8
+		monarchist = 0
+		national_bolshevik = 10
+		national_conservative = 12
+		centrist = 0
+		liberal = 2
+		new_democrat = 30
+		moderate_socialist = 0
+		revolutionary_socialist = 10
+		communist = 28
+}
+
+create_country_leader = {
+	name = "D.E.W. Gunasekera"
+	picture = "Portrait_SRI_D_E_W_Gunasekera.dds"
+	ideology = leninist
+}
+
+create_country_leader = {
+	name = "Galagoda Aththe Gnanasara"
+	picture = "Portrait_SRI_Galagoda_Aththe_Gnanasara.dds"
+	ideology = fascist_ideology
+}
+
+create_country_leader = {
+	name = "Champika Ranawaka"
+	picture = "Portrait_SRI_Champika_Ranawaka.dds"
+	ideology = nationalist_ideology
+}
+
+create_country_leader = {
+	name = "Anura Kumara Dissanayaka"
+	picture = "Portrait_SRI_Anura_Kumara_Dissanayaka.dds"
+	ideology = marxist_leninist_maoist
+}
+
+create_country_leader = {
+	name = "Sarath Fonseka"
+	picture = "Portrait_SRI_Sarath_Fonseka.dds"
+	ideology = centrist_ideology
+}
+
+create_country_leader = {
+	name = "Kamal Nissanka"
+	picture = "Portrait_SRI_Kamal_Nissanka.dds"
+	ideology = social_liberal
+}
+
+create_country_leader = {
+	name = "Maithripala Sirisena"
+	picture = "Portrait_SRI_Maithripala_Sirisena.dds"
+	ideology = new_democrat_ideology
+}
+
+create_country_leader = {
+	name = "Dinesh Gunawardena"
+	picture = "Portrait_SRI_Dinesh_Gunawardena.dds"
+	ideology = european_moderate_socialist
+}
+
+create_country_leader = {
+	name = "Ranil Wickremesinghe"
+	picture = "Portrait_SRI_Ranil_Wickremesinghe.dds"
+	ideology = european_conservative
+}
+
+create_country_leader = {
+	name = "Siritunga Jayasuriya"
+	picture = "Portrait_SRI_Siritunga_Jayasuriya.dds"
+	ideology = trotskyist
+}
+

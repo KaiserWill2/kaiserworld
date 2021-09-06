@@ -1,0 +1,158 @@
+﻿capital = 426
+
+oob = "generic_2000"
+
+set_research_slots = 4
+set_convoys = 500
+set_stability = 0.8
+set_war_support = 0.3
+
+set_technology = {
+	support_weapons = 1
+	infantry_weapons = 1
+	motorised_infantry = 1 
+	tech_support = 1 
+	tech_field_hospital = 1 
+	tech_engineers = 1 
+	gwtank = 1 
+	basic_light_tank = 1 
+	gw_artillery = 1 
+	tech_mountaineers = 1
+	early_fighter = 1 
+	early_bomber = 1 
+	interwar_antiair = 1
+	interwar_antitank = 1
+}
+
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	set_technology = {
+		early_submarine = 1
+		basic_submarine = 1
+		early_destroyer = 1
+		early_light_cruiser = 1
+		basic_light_cruiser = 1
+		early_heavy_cruiser = 1
+		
+		
+		early_carrier = 1
+		basic_carrier = 1
+		transport = 1
+	}
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_technology = {
+		basic_naval_mines = 1
+		submarine_mine_laying = 1
+		early_ship_hull_light = 1
+		basic_ship_hull_light = 1
+		early_ship_hull_submarine = 1
+		basic_ship_hull_submarine = 1
+		early_ship_hull_cruiser = 1
+		basic_ship_hull_cruiser = 1
+		early_ship_hull_heavy = 1
+		early_ship_hull_carrier = 1
+		basic_ship_hull_carrier = 1
+		basic_battery = 1
+		basic_light_battery = 1
+		basic_medium_battery = 1
+		basic_heavy_battery = 1
+		basic_torpedo = 1
+		sonar = 1
+		basic_depth_charges = 1
+		basic_secondary_battery = 1
+		improved_secondary_battery = 1
+		basic_cruiser_armor_scheme = 1
+		basic_heavy_armor_scheme = 1
+		mtg_transport = 1
+		improved_airplane_launcher = 1
+	}
+}
+
+set_politics = {
+	ruling_party = nationalist
+	last_election = "1997.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+        fascist = 0
+		nationalist = 0
+		monarchist = 0
+		national_bolshevik = 0
+		national_conservative = 15
+		centrist = 8
+		liberal = 10
+		new_democrat = 43
+		moderate_socialist = 0
+		revolutionary_socialist = 4
+		communist = 20
+}
+
+create_country_leader = {
+	name = "Subash Chouhan"
+	picture = "Portrait_ODI_Subash_Chouhan.dds"
+	ideology = fascist_ideology
+}
+
+create_country_leader = {
+	name = "Jual Oram"
+	picture = "Portrait_ODI_Jual_Oram.dds"
+	ideology = hindutva
+}
+
+create_country_leader = {
+	name = "Kanak Vardhan Singh Deo"
+	picture = "Portrait_ODI_Kanak_Vardhan_Singh_Deo.dds"
+	ideology = absolute_monarchist
+}
+
+create_country_leader = {
+	name = "Ginugu Narsimha Reddy"
+	picture = "Portrait_ODI_Ginugu_Narsimha_Reddy.dds"
+	ideology = marxist_leninist_maoist
+}
+
+create_country_leader = {
+	name = "Basanta Kumar Panda"
+	picture = "Portrait_ODI_Basanta_Kumar_Panda.dds"
+	ideology = reactionary
+}
+
+create_country_leader = {
+	name = "Naveen Patnaik"
+	picture = "Portrait_ODI_Naveen_Patnaik.dds"
+	ideology = centrist_ideology
+}
+
+create_country_leader = {
+	name = "Nabin Nanda"
+	picture = "Portrait_ODI_Nabin_Nanda.dds"
+	ideology = social_liberal
+}
+
+create_country_leader = {
+	name = "Bhupinder Singh"
+	picture = "Portrait_ODI_Bhupinder_Singh.dds"
+	ideology = new_democrat_ideology
+}
+
+create_country_leader = {
+	name = "Basanti Hembram"
+	picture = "Portrait_ODI_Basanti_Hembram.dds"
+	ideology = democratic_socialist
+}
+
+create_country_leader = {
+	name = "Adikanda Sethi"
+	picture = "Portrait_ODI_Adikanda_Sethi.dds"
+	ideology = revolutionary_socialist_ideology
+}
+
+create_country_leader = {
+	name = "Laxman Munda"
+	picture = "Portrait_ODI_Laxman_Munda.dds"
+	ideology = marxist
+}

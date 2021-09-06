@@ -1,0 +1,1518 @@
+﻿add_namespace = pui
+
+#new socialist state#
+country_event = {
+	id = pui.1
+	title = pui.1.t
+	desc = pui.1.d
+	picture = pui_new
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+		
+	
+	option = {#maintain the junta#
+		name = pui.1.o1
+		set_country_flag = flag_raj_revsoc_panag
+		add_political_power = 50
+		hidden_effect = {
+			country_event = { hours = 5 id = pui.3 }
+			country_event = { days = 300 id = pui.59 }
+		}
+	}
+	option = {#install kerjiwal#
+		name = pui.1.o2
+		hidden_effect = {
+			country_event = { days = 300 id = pui.59 }
+		}
+		set_country_flag = flag_raj_revsoc_kerjiwal
+		create_country_leader = {
+			name = "Arvind Kejriwal"
+			picture = "Portrait_PUI_Arvind_Kejriwal.dds"
+			ideology = revolutionary_socialist_ideology
+		}
+		set_party_name = {
+			ideology = revolutionary_socialist
+			long_name = PUI_aaks 
+			name = PUI_aaks
+		}
+		add_popularity = {
+			ideology = revolutionary_socialist
+			popularity = 0.02
+		}
+		hidden_effect = {
+			country_event = { hours = 5 id = pui.2 }
+		}
+	}
+}
+
+#Covenor Kerjiwal takes power#
+country_event = {
+	id = pui.2
+	title = pui.2.t
+	desc = pui.2.d
+	picture = pui_new_kejriwal
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = pui.2.o1
+	}
+}
+
+#red junta#
+country_event = {
+	id = pui.3
+	title = pui.3.t
+	desc = pui.3.d
+	picture = pui_new_junta
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = pui.3.o1
+	}
+}
+
+#red junta legitimizes power#
+country_event = {
+	id = pui.5
+	title = pui.5.t
+	desc = pui.5.d
+	picture = pui_legit_junta
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = pui.5.o1
+	}
+}
+
+#panag's ministeries#
+country_event = {
+	id = pui.6
+	title = pui.6.t
+	desc = pui.6.d
+	picture = pui_ministeries
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = pui.6.o1
+	}
+}
+
+#increased production in mizoram#
+country_event = {
+	id = pui.9
+	title = pui.9.t
+	desc = pui.9.d
+	picture = pui_mizoram_production
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+
+	option = {
+		name = pui.9.o1
+		add_political_power = -50
+		add_timed_idea = {
+			idea = idea_raj_revsoc_production_mizoram 
+			days = 400	
+		}
+	}
+}
+
+#F-INSAS programme#
+country_event = {
+	id = pui.10
+	title = pui.10.t
+	desc = pui.10.d
+	picture = pui_finsas
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = pui.10.o1
+		hidden_effect = {
+			random_list = {
+				80 = { }
+				20 = { country_event = { days = 60 id = pui.11 } }
+			}
+		}
+	}
+}
+
+#F-INSAS drain on resources#
+country_event = {
+	id = pui.11
+	title = pui.11.t
+	desc = pui.11.d
+	picture = india_official_meeting
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = pui.11.o1
+		add_ideas = idea_raj_revsoc_finsas_drain
+	}
+}
+
+#nationalisation of foreign assets#
+country_event = {
+	id = pui.13
+	title = pui.13.t
+	desc = pui.13.d
+	picture = pui_assets
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = pui.13.o1
+	}
+}
+
+
+
+#water programme#
+country_event = {
+	id = pui.15
+	title = pui.15.t
+	desc = pui.15.d
+	picture = pui_water
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = pui.15.o1
+	}
+}
+
+#collective farms#
+country_event = {
+	id = pui.16
+	title = pui.16.t
+	desc = pui.16.d
+	picture = pui_collective_farms
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = pui.16.o1
+		hidden_effect = {
+			random_list = {
+				50 = { }
+				50 = { country_event = { days = 5 id = pui.17 } }
+			}
+		}
+	}
+}
+
+#farmers protest#
+country_event = {
+	id = pui.17
+	title = pui.17.t
+	desc = pui.17.d
+	picture = pui_collective_farms_protest
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = pui.17.o1
+		add_political_power = -50
+		hidden_effect = {
+			random_list = {
+				25 = { }
+				75 = { country_event = { hours = 10 id = pui.18 } }
+			}
+		}
+	}
+}
+#troops fire into protestors#
+country_event = {
+	id = pui.18
+	title = pui.18.t
+	desc = pui.18.d
+	picture = pui_collective_farms_protest_shoot
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = pui.18.o1
+		add_political_power = -120
+	}
+}
+
+#elites to the fields#
+country_event = {
+	id = pui.19
+	title = pui.19.t
+	desc = pui.19.d
+	picture = pui_field_elites
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = pui.19.o1
+	}
+}
+#dynastic politics attacked#
+country_event = {
+	id = pui.20
+	title = pui.20.t
+	desc = pui.20.d
+	picture = pui_angry_kejriwal
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+
+	option = {
+		name = pui.20.o1
+	}
+}
+
+#prachayats empowered#
+country_event = {
+	id = pui.22
+	title = pui.22.t
+	desc = pui.22.d
+	picture = india_dem_pol_panchayat
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = pui.22.o1
+		set_cosmetic_tag = PUI_panchayat_union
+	}
+}
+
+#india proposes red compact#
+country_event = {
+	id = pui.23
+	title = pui.23.t
+	desc = pui.23.d
+	picture = pui_red_compact
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {#y#
+		name = pui.23.o1
+		ai_chance = { factor = 80 }
+		PUI = { country_event = { hours = 2 id = pui.24 } }
+		PUI = { create_faction = red_compact } 
+		PUI = { add_to_faction = MYA }
+		MYA = {
+		    add_ai_strategy = {
+		        type = alliance
+		        id = "PUI"
+		        value = 100
+	      	}
+		}
+	}
+	option = {#n#
+		name = pui.23.o2
+		ai_chance = { factor = 20 }
+		PUI= { country_event = { hours = 5 id = pui.25 } }
+	}
+}
+
+#burma accepts#
+country_event = {
+	id = pui.24
+	title = pui.24.t
+	desc = pui.24.d
+	picture = pui_red_compact_y
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = pui.24.o1
+	}
+}
+
+#burma declines#
+country_event = {
+	id = pui.25
+	title = pui.25.t
+	desc = pui.25.d
+	picture = pui_red_compact_n
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+
+	option = {
+		name = pui.25.o1
+	}
+}
+
+#india renounces askai chin#
+country_event = {
+	id = pui.26
+	title = pui.26.t
+	desc = pui.26.d
+	picture = pui_askai_chin
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = pui.26.o1
+		788 = { remove_core_of = PUI }
+	}
+}
+
+#india wishes to ease tensions (pakistan)#
+country_event = {
+	id = pui.27
+	title = pui.27.t
+	desc = pui.27.d
+	picture = pui_pak
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {#y#
+		name = pui.27.o1
+		ai_chance = { factor = 40 }
+		trigger = { NOT = { PUI = { owns_state = 441 } } }
+		add_opinion_modifier = { target = PUI modifier = declaration_of_friendship }
+		PUI = { country_event = { hours = 5 id = pui.28 } }
+	}
+	option = {#n#
+		name = pui.27.o2
+		ai_chance = { factor = 60 }
+		trigger = { NOT = { PUI = { owns_state = 441 } } }
+		PUI = { country_event = { hours = 5 id = pui.29 } }
+	}
+	option = {#demand kashmir#
+		name = pui.27.o3
+		ai_chance = { factor = 50 }
+		trigger = {  PUI = { owns_state = 441 } } 
+		PUI = { country_event = { hours = 5 id = pui.31 } }
+	}
+	option = {#demilitarize#
+		name = pui.27.o4
+		ai_chance = { factor = 40 }
+		trigger = {  PUI = { owns_state = 441 } }
+		PUI = { country_event = { hours = 5 id = pui.35 } }
+	}
+	option = {#renounce kashmir#
+		name = pui.27.o5
+		ai_chance = { factor = 10 }
+		trigger = {  PUI = { owns_state = 441 } } 
+		441 = { remove_core_of = PAK }
+		PUI = { country_event = { hours = 5 id = pui.30 } }
+		add_opinion_modifier = { target = PUI modifier = declaration_of_friendship }
+	}
+}
+
+#pakistan agrees to calm tensions#
+country_event = {
+	id = pui.28
+	title = pui.28.t
+	desc = pui.28.d
+	picture = india_kashmir_islamabad
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = pui.28.o1
+	}
+}
+
+#pakistan snubs cooperation attempts#
+country_event = {
+	id = pui.29
+	title = pui.29.t
+	desc = pui.29.d
+	picture = pui_pak_n
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = pui.29.o1
+	}
+}
+
+#pakistan renounces claim to kashmir#
+country_event = {
+	id = pui.30
+	title = pui.30.t
+	desc = pui.30.d
+	picture = india_gmon_pakistan_china
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = pui.30.o1
+	}
+}
+
+#pakistan demands kashmir#
+country_event = {
+	id = pui.31
+	title = pui.31.t
+	desc = pui.31.d
+	picture = pui_pak_kashmir
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {#y#
+		name = pui.31.o1
+		PAK = { transfer_state = 441 }
+		PAK = { country_event = { hours = 5 id = pui.33 } }
+	}
+	option = {#n#
+		name = pui.31.o2
+		PAK = { country_event = { hours = 5 id = pui.32 } }
+	}
+}
+
+#india refuses to hand over kashmir ( pakistan)#
+country_event = {
+	id = pui.32
+	title = pui.32.t
+	desc = pui.32.d
+	picture = india_356_use
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = pui.32.o1
+	}
+}
+
+#india hands over kashmir ( pakistan)#
+country_event = {
+	id = pui.33
+	title = pui.33.t
+	desc = pui.33.d
+	picture = india_kashmir_pak_ultimatum
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = pui.33.o1
+		hidden_effect = {
+			random_list = {
+				50 = { }
+				50 = { country_event = { hours  = 2 id = pui.34 } }
+			}
+		}
+	}
+}
+
+#kashmir uprising( pakistan)#
+country_event = {
+	id = pui.34
+	title = pui.34.t
+	desc = pui.34.d
+	picture = pui_pak_kashmir_revolt
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = pui.34.o1
+		KAS = { transfer_state = 441 }
+		declare_war_on = { target = KAS type = annex_everything }
+	}
+}
+
+#kashmir demilitarization proposal( pakistan)#
+country_event = {
+	id = pui.35
+	title = pui.35.t
+	desc = pui.35.d
+	picture = pui_pak_demilitarise
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {#y#
+		name = pui.35.o1
+		ai_chance = { factor = 20 }
+		428 = { set_demilitarized_zone = yes }
+		433 = { set_demilitarized_zone = yes }
+		951 = { set_demilitarized_zone = yes }
+		952 = { set_demilitarized_zone = yes }
+		441 = { set_demilitarized_zone = yes }
+		PAK = { country_event = { hours  = 2 id = pui.36 } }
+		PAK = { add_opinion_modifier = { target = PUI modifier = declaration_of_friendship } }
+	}
+	option = { # both sides plz#
+		name = pui.35.o2
+		ai_chance = { factor = 40 }
+		PAK = { country_event = { hours = 5 id = pui.38 } }
+	}
+	option = {#n#
+		name = pui.35.o3
+		ai_chance = { factor = 40 }
+		PAK = { country_event = { hours  = 2 id = pui.37 } }
+	}
+}
+
+#india demilitarizes border( pakistan)#
+country_event = {
+	id = pui.36
+	title = pui.36.t
+	desc = pui.36.d
+	picture = pui_pak_demilitarise_y
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = pui.36.o1
+	}
+}
+#india refuses( pakistan)#
+country_event = {
+	id = pui.37
+	title = pui.37.t
+	desc = pui.37.d
+	picture = india_sombre_india_gate
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = pui.37.o1
+	}
+}
+
+#india proposes both sides demilitarized( pakistan)#
+country_event = {
+	id = pui.38
+	title = pui.38.t
+	desc = pui.38.d
+	picture = pui_pak_demilitarise_both
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {#y#
+		name = pui.38.o1
+		428 = { set_demilitarized_zone = yes }
+		433 = { set_demilitarized_zone = yes }
+		951 = { set_demilitarized_zone = yes }
+		952 = { set_demilitarized_zone = yes }
+		441 = { set_demilitarized_zone = yes }
+		add_opinion_modifier = { target = PUI modifier = declaration_of_friendship }
+		443 = { set_demilitarized_zone = yes }
+		440 = { set_demilitarized_zone = yes }
+		787 = { set_demilitarized_zone = yes }
+		PUI = { country_event = { hours = 5 id = pui.39 } }
+	}
+	option = {#n#
+		name = pui.38.o2
+		PUI = { country_event = { hours = 5 id = pui.40 } }
+	}
+}
+
+#pakistan agrees#
+country_event = {
+	id = pui.39
+	title = pui.39.t
+	desc = pui.39.d
+	picture = india_kashmir_pakistan_accepts
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = pui.39.o1
+	}
+}
+
+#pakistan refuses#
+country_event = {
+	id = pui.40
+	title = pui.40.t
+	desc = pui.40.d
+	picture = india_kashmir_islamabad_smog
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = pui.40.o1
+	}
+}
+
+
+#revsoc coup thailand (thailand)#
+country_event = {
+	id = pui.42
+	title = pui.42.t
+	desc = pui.42.d
+	picture = pui_sia_coup
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {#y#
+		name = pui.42.o1
+		ai_chance = { factor = 20 }
+		set_politics = { ruling_party = revolutionary_socialist elections_allowed = no }
+		hidden_effect = {
+			PUI = { country_event = { hours = 5 id = pui.43 } }
+			every_country = {
+				limit = { is_neighbor_of = SIA }
+				country_event = { hours = 5 id = pui.43 }
+			}
+		}
+	}
+	option = {#n#
+		name = pui.42.o2
+		ai_chance = { factor = 80 }
+		hidden_effect = {
+			random_list = {
+				30 = { country_event = { hours = 20 id = pui.44 }
+					PUI = { country_event = { hours = 20 id = pui.44 } }
+					start_civil_war = { ideology = revolutionary_socialist size = 0.35 }
+				}
+				70 = { country_event = { hours = 20 id = pui.45 }
+				PUI = { country_event = { hours = 20 id = pui.45 } }}
+			}
+		}
+	}
+}
+
+#successful coup in thailand#
+country_event = {
+	id = pui.43
+	title = pui.43.t
+	desc = pui.43.d
+	picture = pui_sia_coup_y
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = pui.43.o1
+	}
+}
+
+#civil war in thailand#
+country_event = {
+	id = pui.44
+	title = pui.44.t
+	desc = pui.44.d
+	picture = pui_sia_coup_civil_war
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = pui.44.o1
+	}
+}
+
+#failed coup in thailand#
+country_event = {
+	id = pui.45
+	title = pui.45.t
+	desc = pui.45.d
+	picture = pui_sia_coup_n
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = pui.45.o1
+	}
+}
+
+#national panchayat meeting#
+country_event = {
+	id = pui.46
+	title = pui.46.t
+	desc = pui.46.d
+	picture = pui_convention
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = PUI
+		focus_progress = { focus = PUI_revsoc_national_panchayat_convention progress > 0 }
+	}
+	
+	option = {
+		name = pui.46.o1
+		hidden_effect = {
+			country_event = { days = 10 id = pui.47 }
+		}
+	}
+}
+
+#inter-pranchayat conflict# 
+country_event = {
+	id = pui.47
+	title = pui.47.t
+	desc = pui.47.d
+	picture = pui_convention1
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = { #side with gram pranchayats#
+		name = pui.47.o1
+		hidden_effect = {
+			country_event = { days = 10 id = pui.49 }
+		}
+		add_ideas = idea_raj_revsoc_gram_panchayats
+	}
+	option = { #equal importance#
+		name = pui.47.o2
+		add_ideas = idea_raj_revsoc_equal_importance
+		hidden_effect = {
+			country_event = { days = 10 id = pui.49 }
+		}
+	}
+	option = { #side with nagar pranchayats#
+		name = pui.47.o3
+		add_ideas = idea_raj_revsoc_nagar_panchayats
+		hidden_effect = {
+			country_event = { days = 10 id = pui.49 }
+		}
+		hidden_effect = {
+			random_list = {
+				60 = { }
+				40 = { country_event = { days = 5 id = pui.48 } }
+			}
+		}
+	}
+}
+
+#farmer's dissent#
+country_event = {
+	id = pui.48
+	title = pui.48.t
+	desc = pui.48.d
+	picture = pui_convention1_protest
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = pui.48.o1
+		add_political_power = -50
+	}
+}
+#dissent within the prachayats# 
+country_event = {
+	id = pui.49
+	title = pui.49.t
+	desc = pui.49.d
+	picture = pui_convention2
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = { #party members only#
+		name = pui.49.o1
+		add_popularity = {
+		    ideology = revolutionary_socialist
+		    popularity = 0.22
+		}
+        hidden_effect = {
+		    country_event = { days = 20 id = pui.51 }
+		    country_event = { days = 60 id = pui.50 }
+		}
+	}
+    option = { #red militias shall ensure loyalty#
+		name = pui.49.o2
+		add_ideas = idea_raj_revsoc_militia_pnchyt_ctrl
+		hidden_effect = {
+		    country_event = { days = 20 id = pui.51 }
+		}
+    }
+	option = { #let them dissent freely#
+		name = pui.49.o3
+		add_stability = 0.035
+		hidden_effect = {
+		    country_event = { days = 20 id = pui.51 }
+		}
+	}
+}
+
+#party membership increases#
+country_event = {
+	id = pui.50
+	title = pui.50.t
+	desc = pui.50.d
+	picture = pui_convention2_membership
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = pui.50.o1
+		add_popularity = {
+			ideology = revolutionary_socialist
+			popularity = 0.1
+		}
+		add_political_power = -25
+	}
+}
+
+#prachayat military structure# 
+country_event = {
+	id = pui.51
+	title = pui.51.t
+	desc = pui.51.d
+	picture = pui_convention3
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = { #prachayat militias#
+		name = pui.51.o1
+		add_ideas = idea_raj_revsoc_pnchyt_militias
+		hidden_effect = {
+			country_event = { days = 30 id = pui.54 }
+			random_list = {
+				70 = { }
+				30 = { country_event = { days = 70 id = pui.52 } } 
+			}
+			random_list = {
+				40 = { }
+				60 = { country_event = { days = 70 id = pui.53 } } 
+			}				
+		}
+	}
+	option = { #part time militia + smaller central#
+		name = pui.51.o2
+		hidden_effect = {
+			country_event = { days = 30 id = pui.54 }
+		}
+		army_experience = 200
+		hidden_effect = {
+			random_list = {
+				40 = { }
+				60 = { country_event = { days = 70 id = pui.53 } } 
+			}
+        }  		 
+	}
+	option = { #centralised military#
+		name = pui.51.o3
+		hidden_effect = {
+		    country_event = { days = 30 id = pui.54 }
+		}
+		add_ideas = idea_raj_revsoc_centralised_mil_pnchyt
+	}
+}
+
+#militia abuses#
+country_event = {
+	id = pui.52
+	title = pui.52.t
+	desc = pui.52.d
+	picture = pui_convention3_abuse
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = pui.52.o1
+		add_political_power = -100
+	}
+}
+
+#militia's fail to stop communal violence#
+country_event = {
+	id = pui.53
+	title = pui.53.t
+	desc = pui.53.d
+	picture = rub_ethnic_violence4
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = pui.53.o1
+		428 = {
+			damage_building = { type = industrial_complex damage = 0.6 }
+			damage_building = { type = arms_factory damage = 0.6 }
+		}
+		add_political_power = -50
+	}
+}
+
+#greater power to the prachayats?#
+country_event = {
+	id = pui.54
+	title = pui.54.t
+	desc = pui.54.d
+	picture = pui_convention4
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {#y#
+		name = pui.54.o1
+		hidden_effect = {
+			country_event = { days = 10 id = pui.55 }
+		}
+	}
+	option = { #no chance#
+		name = pui.54.o2
+	}
+}
+
+#prachayats move to replace kerjiwal with collective leadership#
+country_event = {
+	id = pui.55
+	title = pui.55.t
+	desc = pui.55.d
+	picture = pui_convention5
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {#y#
+		name = pui.55.o1
+		create_country_leader = {
+			name = "Federal Panchayat Commission"
+			picture = "Portrait_PUI_Federal_Panchayat_Commission.dds"
+			ideology = revolutionary_socialist_ideology
+		}
+	}
+	option = { #n#
+		name = pui.55.o2
+		add_political_power = -100
+		hidden_effect = {
+			country_event = { days = 20 id = pui.57 }
+		}
+	}
+}
+
+#tensions between kerjiwal and panchayats#
+country_event = {
+	id = pui.57
+	title = pui.57.t
+	desc = pui.57.d
+	picture = pui_convention5_tension
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = pui.57.o1
+		add_stability = -0.05
+		hidden_effect = {
+			country_event = { days = 30 id = pui.58 }
+		}
+	}
+}
+
+#panchayat uprisings#
+country_event = {
+	id = pui.58
+	title = pui.58.t
+	desc = pui.58.d
+	picture = pui_convention5_revolt
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = pui.58.o1
+		release = KRN
+		KRN = {
+			create_country_leader = {
+				name = "Karnatakan Panchayat Commission"
+				picture = "Portrait_PUI_Federal_Panchayat_Commission.dds"
+				ideology = revolutionary_socialist_ideology
+			}
+		}
+		release = VIS
+		VIS = {
+			create_country_leader = {
+			name = "Andhran Panchayat Commission"
+			picture = "Portrait_PUI_Federal_Panchayat_Commission.dds"
+			ideology = revolutionary_socialist_ideology
+			}
+		}
+		release = UTT
+		UTT = {
+			create_country_leader = {
+				name = "Uttarakhand Panchayat Commission"
+				picture = "Portrait_PUI_Federal_Panchayat_Commission.dds"
+				
+				ideology = revolutionary_socialist_ideology
+			}
+		}
+		release = BIH
+		BIH = { transfer_state = 949 }
+		BIH = {
+			create_country_leader = {
+				name = "Bihari Panchayat Commission"
+				picture = "Portrait_PUI_Federal_Panchayat_Commission.dds"
+				ideology = revolutionary_socialist_ideology
+			}
+		}
+		declare_war_on = { target = KRN type = annex_everything }
+		declare_war_on = { target = VIS type = annex_everything }
+		declare_war_on = { target = UTT type = annex_everything }
+		declare_war_on = { target = BIH type = annex_everything }
+	}
+}
+	
+#naxalite activites intensify#
+country_event = {
+	id = pui.59
+	title = pui.59.t
+	desc = pui.59.d
+	picture = pui_naxalites
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = pui.59.o1
+		hidden_effect = {
+			if = { 
+				limit = {  
+					has_country_flag =  flag_raj_revsoc_panag 
+					is_in_faction_with = MYA
+				}
+				country_event = { days = 55 id = pui.64 }
+			}
+			if = {
+				limit = {  
+					has_country_flag =  flag_raj_revsoc_panag 
+					NOT = { is_in_faction_with = MYA }
+				}
+				country_event = { days = 55 id = pui.65 }
+			}
+			if = { 
+				limit = { has_country_flag = flag_raj_revsoc_kerjiwal }
+				country_event = { days = 55 id = pui.68 } 
+			}
+			#random_list = {
+			#	40 = { }
+			#	60 = { country_event = { days = 50 id = pui.62 } }
+			#}
+			random_list = {
+				70 = { }
+				30 = { country_event = { days = 20 id = pui.61 } }
+			}
+		}
+		add_popularity = {
+			ideology = communist
+			popularity = 0.04
+		}
+		hidden_effect = {
+			country_event = { days = 40 id = pui.60 }
+		}
+	}
+}
+
+#convoy ambushed in the red corridor#
+country_event = {
+	id = pui.60
+	title = pui.60.t
+	desc = pui.60.d
+	picture = india_com_chinese_funding_ne_convoy
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = pui.60.o1
+		add_political_power = -70
+	}
+}
+#administrator attacked visiting village#
+country_event = {
+	id = pui.61
+	title = pui.61.t
+	desc = pui.61.d
+	picture = pui_naxalites_admin_kill
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = pui.61.o1
+		add_political_power = -50
+	}
+}
+
+#panag's office blown up whilst visiting burma#
+country_event = {
+	id = pui.64
+	title = pui.64.t
+	desc = pui.64.d
+	picture = pui_naxalites_bombing
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = pui.64.o1
+		hidden_effect = {
+			country_event = { days = 55 id = pui.68 }
+		}
+	}
+}
+
+#panag's office blown up , panag in hospital#
+country_event = {
+	id = pui.65
+	title = pui.65.t
+	desc = pui.65.d
+	picture = pui_naxalites_bombing
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {#grave news#
+		name = pui.65.o1
+		country_event = { hours = 5 id = pui.67 }
+		add_political_power = -200
+	}
+	option = {#panag pulls through#
+		name = pui.65.o2
+		country_event = { hours = 5 id = pui.66 }
+		add_political_power = -200
+	}
+}
+
+#panag pulls through, evacuated in midst of uprising#
+country_event = {
+	id = pui.66
+	title = pui.66.t
+	desc = pui.66.d
+	picture = pui_naxalites_bombing_evacuation
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = pui.66.o1
+		NAX = {
+			transfer_state = 431
+			transfer_state = 435
+			transfer_state = 789
+			transfer_state = 426
+			transfer_state = 427
+			transfer_state = 424
+			
+			transfer_state = 437
+			transfer_state = 949
+			load_oob = NAX_2000
+			949 = { add_core_of = NAX }	
+			321 = { add_core_of = NAX }
+			323 = { add_core_of = NAX }
+			423 = { add_core_of = NAX }
+			424 = { add_core_of = NAX }
+			425 = { add_core_of = NAX }
+			426 = { add_core_of = NAX }
+			427 = { add_core_of = NAX }
+			428 = { add_core_of = NAX }
+			429 = { add_core_of = NAX }
+			431 = { add_core_of = NAX }
+			432 = { add_core_of = NAX }
+			433 = { add_core_of = NAX }
+			434 = { add_core_of = NAX }
+			435 = { add_core_of = NAX }
+			436 = { add_core_of = NAX }
+			437 = { add_core_of = NAX }
+			438 = { add_core_of = NAX }
+			439 = { add_core_of = NAX }
+			441 = { add_core_of = NAX }
+			789 = { add_core_of = NAX }
+			947 = { add_core_of = NAX }
+			948 = { add_core_of = NAX }
+			949 = { add_core_of = NAX }
+			950 = { add_core_of = NAX }
+			951 = { add_core_of = NAX }
+			952 = { add_core_of = NAX }
+			953 = { add_core_of = NAX }
+			954 = { add_core_of = NAX }
+			955 = { add_core_of = NAX }
+			956 = { add_core_of = NAX }
+			957 = { add_core_of = NAX }
+		}
+		NAX = { declare_war_on = { target = PUI type = annex_everything } }
+		#if = {
+		#	limit = { has_country_flag = flag_raj_revsoc_naxalite_panchayats } 
+		#	country_event = { hours = 30 id = pui.69 }
+		#}
+	}
+}
+
+#panag dead#
+country_event = {
+	id = pui.67
+	title = pui.67.t
+	desc = pui.67.d
+	picture = pui_naxalites_bombing_dead
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {#second in command#
+		name = pui.67.o1
+		
+		add_political_power = 50
+		add_popularity = {
+			ideology = revolutionary_socialist
+			popularity = 0.05
+		}
+		create_country_leader = {
+			name = "Vijay Kumar Singh"
+			picture = "Portrait_PUI_Vijay_Kumar_Singh.dds"
+			ideology = revolutionary_socialist_ideology
+		}
+		NAX = {
+			transfer_state = 431
+			transfer_state = 435
+			transfer_state = 789
+			transfer_state = 426
+			transfer_state = 427
+			transfer_state = 424
+			transfer_state = 437
+			transfer_state = 949
+			load_oob = NAX_2000
+			949 = { add_core_of = NAX }	
+			321 = { add_core_of = NAX }
+			323 = { add_core_of = NAX }
+			423 = { add_core_of = NAX }
+			424 = { add_core_of = NAX }
+			425 = { add_core_of = NAX }
+			426 = { add_core_of = NAX }
+			427 = { add_core_of = NAX }
+			428 = { add_core_of = NAX }
+			429 = { add_core_of = NAX }
+			431 = { add_core_of = NAX }
+			432 = { add_core_of = NAX }
+			433 = { add_core_of = NAX }
+			434 = { add_core_of = NAX }
+			435 = { add_core_of = NAX }
+			436 = { add_core_of = NAX }
+			437 = { add_core_of = NAX }
+			438 = { add_core_of = NAX }
+			439 = { add_core_of = NAX }
+			441 = { add_core_of = NAX }
+			789 = { add_core_of = NAX }
+			947 = { add_core_of = NAX }
+			948 = { add_core_of = NAX }
+			949 = { add_core_of = NAX }
+			950 = { add_core_of = NAX }
+			951 = { add_core_of = NAX }
+			952 = { add_core_of = NAX }
+			953 = { add_core_of = NAX }
+			954 = { add_core_of = NAX }
+			955 = { add_core_of = NAX }
+			956 = { add_core_of = NAX }
+			957 = { add_core_of = NAX }
+		}
+		NAX = { declare_war_on = { target = PUI type = annex_everything } }
+		#if = {
+		#	limit = { has_country_flag = flag_raj_revsoc_naxalite_panchayats } 
+		#	country_event = { hours = 30 id = pui.69 }
+		#}
+	}
+	option = {#daughter#
+		name = pui.67.o2
+		add_stability = 0.02
+		create_country_leader = {
+			name = "Gulkirat Kaur Panag"
+			picture = "Portrait_PUI_Gulkirat_Kaur_Panag.dds"
+			ideology = revolutionary_socialist_ideology
+		}
+		NAX = { 
+			transfer_state = 431
+			transfer_state = 435
+			transfer_state = 789
+			transfer_state = 426
+			transfer_state = 427
+			transfer_state = 424
+			
+			transfer_state = 437
+			transfer_state = 949
+			load_oob = NAX_2000
+			949 = { add_core_of = NAX }	
+			321 = { add_core_of = NAX }
+			323 = { add_core_of = NAX }
+			423 = { add_core_of = NAX }
+			424 = { add_core_of = NAX }
+			425 = { add_core_of = NAX }
+			426 = { add_core_of = NAX }
+			427 = { add_core_of = NAX }
+			428 = { add_core_of = NAX }
+			429 = { add_core_of = NAX }
+			431 = { add_core_of = NAX }
+			432 = { add_core_of = NAX }
+			433 = { add_core_of = NAX }
+			434 = { add_core_of = NAX }
+			435 = { add_core_of = NAX }
+			436 = { add_core_of = NAX }
+			437 = { add_core_of = NAX }
+			438 = { add_core_of = NAX }
+			439 = { add_core_of = NAX }
+			441 = { add_core_of = NAX }
+			789 = { add_core_of = NAX }
+			947 = { add_core_of = NAX }
+			948 = { add_core_of = NAX }
+			949 = { add_core_of = NAX }
+			950 = { add_core_of = NAX }
+			951 = { add_core_of = NAX }
+			952 = { add_core_of = NAX }
+			953 = { add_core_of = NAX }
+			954 = { add_core_of = NAX }
+			955 = { add_core_of = NAX }
+			956 = { add_core_of = NAX }
+			957 = { add_core_of = NAX }
+		}
+		NAX = { declare_war_on = { target = PUI type = annex_everything } }
+		#if = {
+		#	limit = { has_country_flag = flag_raj_revsoc_naxalite_panchayats } 
+		#	country_event = { hours = 30 id = pui.69 }
+		#}
+	}
+}
+
+#naxalite uprising#
+country_event = {
+	id = pui.68
+	title = pui.68.t
+	desc = pui.68.d
+	picture = pui_naxalites_uprising
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = pui.68.o1
+		NAX = { 
+			transfer_state = 431
+			transfer_state = 435
+			transfer_state = 789
+			transfer_state = 426
+			transfer_state = 427
+			transfer_state = 424
+			transfer_state = 437
+			transfer_state = 949
+			load_oob = NAX_2000
+			949 = { add_core_of = NAX }	
+			321 = { add_core_of = NAX }
+			323 = { add_core_of = NAX }
+			423 = { add_core_of = NAX }
+			424 = { add_core_of = NAX }
+			425 = { add_core_of = NAX }
+			426 = { add_core_of = NAX }
+			427 = { add_core_of = NAX }
+			428 = { add_core_of = NAX }
+			429 = { add_core_of = NAX }
+			431 = { add_core_of = NAX }
+			432 = { add_core_of = NAX }
+			433 = { add_core_of = NAX }
+			434 = { add_core_of = NAX }
+			435 = { add_core_of = NAX }
+			436 = { add_core_of = NAX }
+			437 = { add_core_of = NAX }
+			438 = { add_core_of = NAX }
+			439 = { add_core_of = NAX }
+			441 = { add_core_of = NAX }
+			789 = { add_core_of = NAX }
+			947 = { add_core_of = NAX }
+			948 = { add_core_of = NAX }
+			949 = { add_core_of = NAX }
+			950 = { add_core_of = NAX }
+			951 = { add_core_of = NAX }
+			952 = { add_core_of = NAX }
+			953 = { add_core_of = NAX }
+			954 = { add_core_of = NAX }
+			955 = { add_core_of = NAX }
+			956 = { add_core_of = NAX }
+			957 = { add_core_of = NAX }
+		}
+		NAX = { declare_war_on = { target = PUI type = annex_everything } }
+		#if = {
+		#	limit = { has_country_flag = flag_raj_revsoc_naxalite_panchayats } 
+		#	country_event = { hours = 30 id = pui.69 }
+		#}
+	}
+}

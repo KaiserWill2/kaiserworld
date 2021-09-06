@@ -1,0 +1,158 @@
+﻿capital = 785
+
+oob = "generic_2000"
+
+set_research_slots = 4
+set_convoys = 500
+set_stability = 0.8
+set_war_support = 0.3
+
+set_technology = {
+	support_weapons = 1
+	infantry_weapons = 1
+	motorised_infantry = 1 
+	tech_support = 1 
+	tech_field_hospital = 1 
+	tech_engineers = 1 
+	gwtank = 1 
+	basic_light_tank = 1 
+	gw_artillery = 1 
+	tech_mountaineers = 1
+	early_fighter = 1 
+	early_bomber = 1 
+	interwar_antiair = 1
+	interwar_antitank = 1
+}
+
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	set_technology = {
+		early_submarine = 1
+		basic_submarine = 1
+		early_destroyer = 1
+		early_light_cruiser = 1
+		basic_light_cruiser = 1
+		early_heavy_cruiser = 1
+		
+		
+		early_carrier = 1
+		basic_carrier = 1
+		transport = 1
+	}
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_technology = {
+		basic_naval_mines = 1
+		submarine_mine_laying = 1
+		early_ship_hull_light = 1
+		basic_ship_hull_light = 1
+		early_ship_hull_submarine = 1
+		basic_ship_hull_submarine = 1
+		early_ship_hull_cruiser = 1
+		basic_ship_hull_cruiser = 1
+		early_ship_hull_heavy = 1
+		early_ship_hull_carrier = 1
+		basic_ship_hull_carrier = 1
+		basic_battery = 1
+		basic_light_battery = 1
+		basic_medium_battery = 1
+		basic_heavy_battery = 1
+		basic_torpedo = 1
+		sonar = 1
+		basic_depth_charges = 1
+		basic_secondary_battery = 1
+		improved_secondary_battery = 1
+		basic_cruiser_armor_scheme = 1
+		basic_heavy_armor_scheme = 1
+		mtg_transport = 1
+		improved_airplane_launcher = 1
+	}
+}
+
+set_politics = {
+	ruling_party = revolutionary_socialist
+	last_election = "1997.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+        fascist = 0
+		nationalist = 2
+		monarchist = 0
+		national_bolshevik = 21 #25
+		national_conservative = 6 #36
+		centrist = 28 #70 
+		liberal = 0
+		new_democrat = 0
+		moderate_socialist = 7 #77
+		revolutionary_socialist = 31
+		communist = 5 #30
+}
+
+create_country_leader = {
+	name = "Sylejman Selimi"
+	picture = "Portrait_KOS_Sylejman_Selimi.dds"
+	ideology = fascist_ideology
+}
+
+create_country_leader = {
+	name = "Skënder Zogu"
+	picture = "Portrait_KOS_Skender_Zogu.dds"
+	ideology = absolute_monarchist
+}
+
+create_country_leader = {
+	name = "Aleksandar Jablanović"
+	picture = "Portrait_KOS_Aleksandar_Jablanovic.dds"
+	ideology = nationalist_ideology
+}
+
+create_country_leader = {
+	name = "Ramush Haradinaj"
+	picture = "Portrait_KOS_Ramush_Haradinaj.dds"
+	ideology = national_bolshevik_ideology
+}
+
+create_country_leader = {
+	name = "Nexhat Daci"
+	picture = "Portrait_KOS_Nexhat_Daci.dds"
+	ideology = reactionary
+}
+
+create_country_leader = {
+	name = "Fatmir Sejdiu"
+	picture = "Portrait_KOS_Fatmir_Sejdiu.dds"
+	ideology = centrist_ideology
+}
+
+create_country_leader = {
+	name = "Behgjet Pacolli"
+	picture = "Portrait_KOS_Behgjet_Pacolli.dds"
+	ideology = social_liberal
+}
+
+create_country_leader = {
+	name = "Agim Çeku"
+	picture = "Portrait_KOS_Agim_Ceku.dds"
+	ideology = new_democrat_ideology
+}
+
+create_country_leader = {
+	name = "Albin Kurti"
+	picture = "Portrait_KOS_Albin_Kurti.dds"
+	ideology = european_moderate_socialist
+}
+
+create_country_leader = {
+	name = "Hashim Thaçi"
+	picture = "Portrait_KOS_Hashim_Thaci.dds"
+	ideology = revolutionary_socialist_ideology
+}
+
+create_country_leader = {
+	name = "Oliver Ivanović"
+	picture = "Portrait_KOS_Oliver_Ivanovic.dds"
+	ideology = leninist
+}

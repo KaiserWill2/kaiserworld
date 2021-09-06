@@ -1,0 +1,24 @@
+state={
+	id=946
+	name="STATE_946"
+	provinces={
+		13605 
+	}
+	history={
+		owner = ITA
+		add_core_of = ITA
+		add_core_of = NAP
+		add_core_of = AMA
+		victory_points = {
+			13605 1 
+		}
+		buildings = {
+			infrastructure = 8
+			industrial_complex = 1
+		}
+
+	}
+	manpower=6000
+	state_category = large_town
+	buildings_max_level_factor=1.000
+}

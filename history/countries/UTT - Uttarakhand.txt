@@ -1,0 +1,158 @@
+﻿capital = 950
+
+oob = "generic_2000"
+
+set_research_slots = 4
+set_convoys = 500
+set_stability = 0.8
+set_war_support = 0.3
+
+set_technology = {
+	support_weapons = 1
+	infantry_weapons = 1
+	motorised_infantry = 1 
+	tech_support = 1 
+	tech_field_hospital = 1 
+	tech_engineers = 1 
+	gwtank = 1 
+	basic_light_tank = 1 
+	gw_artillery = 1 
+	tech_mountaineers = 1
+	early_fighter = 1 
+	early_bomber = 1 
+	interwar_antiair = 1
+	interwar_antitank = 1
+}
+
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	set_technology = {
+		early_submarine = 1
+		basic_submarine = 1
+		early_destroyer = 1
+		early_light_cruiser = 1
+		basic_light_cruiser = 1
+		early_heavy_cruiser = 1
+		
+		
+		early_carrier = 1
+		basic_carrier = 1
+		transport = 1
+	}
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_technology = {
+		basic_naval_mines = 1
+		submarine_mine_laying = 1
+		early_ship_hull_light = 1
+		basic_ship_hull_light = 1
+		early_ship_hull_submarine = 1
+		basic_ship_hull_submarine = 1
+		early_ship_hull_cruiser = 1
+		basic_ship_hull_cruiser = 1
+		early_ship_hull_heavy = 1
+		early_ship_hull_carrier = 1
+		basic_ship_hull_carrier = 1
+		basic_battery = 1
+		basic_light_battery = 1
+		basic_medium_battery = 1
+		basic_heavy_battery = 1
+		basic_torpedo = 1
+		sonar = 1
+		basic_depth_charges = 1
+		basic_secondary_battery = 1
+		improved_secondary_battery = 1
+		basic_cruiser_armor_scheme = 1
+		basic_heavy_armor_scheme = 1
+		mtg_transport = 1
+		improved_airplane_launcher = 1
+	}
+}
+
+set_politics = {
+	ruling_party = new_democrat
+	last_election = "1997.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+        fascist = 20
+		nationalist = 15
+		monarchist = 0
+		national_bolshevik = 0
+		national_conservative = 21
+		centrist = 5
+		liberal = 0
+		new_democrat = 22
+		moderate_socialist = 8
+		revolutionary_socialist = 0
+		communist = 9
+}
+
+create_country_leader = {
+	name = "Pritam Singh Sekhon"
+	picture = "Portrait_UTT_Pritam_Singh_Sekhon.dds"
+	ideology = fascist_ideology
+}
+
+create_country_leader = {
+	name = "Tarun Vijay"
+	picture = "Portrait_UTT_Tarun_Vijay.dds"
+	ideology = hindutva
+}
+
+create_country_leader = {
+	name = "Manujendra Shah"
+	picture = "Portrait_UTT_Manujendra_Shah.dds"
+	ideology = absolute_monarchist
+}
+
+create_country_leader = {
+	name = "Bhagat Singh Koshyari"
+	picture = "Portrait_UTT_Bhagat_Singh_Koshyari.dds"
+	ideology = national_bolshevik_ideology
+}
+
+create_country_leader = {
+	name = "Bhuwan Chandra Khanduri"
+	picture = "Portrait_UTT_Bhuwan_Chandra_Khanduri.dds"
+	ideology = reactionary
+}
+
+create_country_leader = {
+	name = "Mantri Prasad Naithani"
+	picture = "Portrait_UTT_Mantri_Prasad_Naithani.dds"
+	ideology = centrist_ideology
+}
+
+create_country_leader = {
+	name = "Muhammad Nizamuddin"
+	picture = "Portrait_UTT_Muhammad_Nizamuddin.dds"
+	ideology = social_liberal
+}
+
+create_country_leader = {
+	name = "Vijay Bahuguna"
+	picture = "Portrait_UTT_Vijay_Bahuguna.dds"
+	ideology = new_democrat_ideology
+}
+
+create_country_leader = {
+	name = "Kashi Singh Airy"
+	picture = "Portrait_UTT_Kashi_Singh_Airy.dds"
+	ideology = democratic_socialist
+}
+
+create_country_leader = {
+	name = "Pranav Pandya"
+	picture = "Portrait_UTT_Pranav_Pandya.dds"
+	ideology = revolutionary_socialist_ideology
+}
+
+create_country_leader = {
+	name = "Sanjay Chauhan"
+	picture = "Portrait_UTT_Sanjay_Chauhan.dds"
+	ideology = marxist
+}

@@ -1,0 +1,24 @@
+﻿
+units= {
+	#Free American Fleet
+	#Boston
+	fleet = {
+		name = "Free America Fleet"
+		naval_base = 6732 # Boston
+		task_force = {
+			name = "Paine Strike Group"
+			location = 6732 # Boston
+			ship = { name = "Thomas Paine" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = AMC version_name = "Destroyer I" } } }
+			ship = { name = "Paul Revere" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = AMC version_name = "Destroyer I" } } }
+		}
+		task_force = {
+			name = "Lexington Strike Group"
+			location = 6732 # Boston
+			ship = { name = "Red Sock" definition = submarine equipment = { submarine_1 = { amount = 1 owner = AMC version_name = "Submarine I" } } }
+			ship = { name = "Son of Concord" definition = submarine equipment = { submarine_1 = { amount = 1 owner = AMC version_name = "Submarine I" } } }
+			ship = { name = "Free Spirit" definition = submarine equipment = { submarine_1 = { amount = 1 owner = AMC version_name = "Submarine I" } } }
+			ship = { name = "Tea Party" definition = submarine equipment = { submarine_1 = { amount = 1 owner = AMC version_name = "Submarine I" } } }
+			ship = { name = "Boston's Bite" definition = submarine equipment = { submarine_1 = { amount = 1 owner = AMC version_name = "Submarine I" } } }
+		}
+	}
+}

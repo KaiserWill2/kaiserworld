@@ -1,0 +1,263 @@
+﻿capital = 380
+
+oob = "UTA_2000"
+
+set_research_slots = 3
+set_convoys = 500
+set_stability = 0.9
+set_war_support = 0.2
+
+add_ideas = {
+	idea_america_neutrality_statelet
+}
+
+set_technology = {
+	support_weapons = 1
+	infantry_weapons = 1
+	motorised_infantry = 1 
+	tech_support = 1 
+	tech_field_hospital = 1 
+	tech_engineers = 1 
+	gwtank = 1 
+	basic_light_tank = 1 
+	gw_artillery = 1 
+	tech_mountaineers = 1
+	early_fighter = 1 
+	early_bomber = 1 
+	interwar_antiair = 1
+	interwar_antitank = 1
+	basic_heavy_tank = 1
+}
+
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	set_technology = {
+		early_submarine = 1
+		basic_submarine = 1
+		early_destroyer = 1
+		early_light_cruiser = 1
+		basic_light_cruiser = 1
+		early_heavy_cruiser = 1
+		
+		
+		early_carrier = 1
+		basic_carrier = 1
+		transport = 1
+	}
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_technology = {
+		basic_naval_mines = 1
+		submarine_mine_laying = 1
+		early_ship_hull_light = 1
+		basic_ship_hull_light = 1
+		early_ship_hull_submarine = 1
+		basic_ship_hull_submarine = 1
+		early_ship_hull_cruiser = 1
+		basic_ship_hull_cruiser = 1
+		early_ship_hull_heavy = 1
+		early_ship_hull_carrier = 1
+		basic_ship_hull_carrier = 1
+		basic_battery = 1
+		basic_light_battery = 1
+		basic_medium_battery = 1
+		basic_heavy_battery = 1
+		basic_torpedo = 1
+		sonar = 1
+		basic_depth_charges = 1
+		basic_secondary_battery = 1
+		improved_secondary_battery = 1
+		basic_cruiser_armor_scheme = 1
+		basic_heavy_armor_scheme = 1
+		mtg_transport = 1
+		improved_airplane_launcher = 1
+	}
+}
+
+set_politics = {
+	ruling_party = national_conservative
+	last_election = "1997.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+        fascist = 2
+		nationalist = 6
+		monarchist = 0
+		national_bolshevik = 10
+		national_conservative = 72
+		centrist = 0
+		liberal = 4
+		new_democrat = 0
+		moderate_socialist = 0
+		revolutionary_socialist = 1
+		communist = 5
+}
+
+create_country_leader = {
+	name = "Warren Jeffs"
+	picture = "Portrait_UTA_Warren_Jeffs.dds"
+	ideology = fascist_ideology
+}
+
+create_country_leader = {
+	name = "Fred Cox"
+	picture = "Portrait_UTA_Fred_Cox.dds"
+	ideology = nationalist_ideology
+}
+
+create_country_leader = {
+	name = "Thomas S. Monson"
+	picture = "Portrait_UTA_Thomas_Monson.dds"
+	ideology = absolute_monarchist
+}
+
+create_country_leader = {
+	name = "Lyndon LaRouche"
+	picture = "Portrait_UTA_Lyndon_LaRouche.dds"
+	ideology = national_bolshevik_ideology
+}
+
+create_country_leader = {
+	name = "Mike Leavitt"
+	desc = "POLITICS_MIKE_LEAVITT_DESC"
+	picture = "Portrait_UTA_Mike_Leavitt.dds"
+	ideology = american_conservative
+}
+
+create_country_leader = {
+	name = "Mark Madsen"
+	picture = "Portrait_UTA_Mark_Madsen.dds"
+	ideology = right_libertarian
+}
+
+create_country_leader = {
+	name = "Rocky Anderson"
+	picture = "Portrait_UTA_Rocky_Anderson.dds"
+	ideology = old_american_democrats
+}
+
+create_country_leader = {
+	name = "Neera Tanden"
+	picture = "Portrait_UTA_Neera_Tanden.dds"
+	ideology = new_democrat_ideology
+}
+
+create_country_leader = {
+	name = "Jane Fonda"
+	picture = "Portrait_UTA_Jane_Fonda.dds"
+	ideology = democratic_socialist
+}
+
+create_country_leader = {
+	name = "Amie Harper"
+	picture = "Portrait_UTA_Amie_Harper.dds"
+	ideology = revolutionary_socialist_ideology
+}
+
+create_country_leader = {
+	name = "Larry Holmes"
+	picture = "Portrait_UTA_Larry_Holmes.dds"
+	ideology = marxist
+}
+
+create_field_marshal = {
+	name = "John F. Mulholland Jr."
+	picture = "Portrait_John_F_Mulholland_Jr.dds"
+	traits = {  }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 4
+	planning_skill = 2
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Wilson R. Rutherford IV"
+	picture = "Portrait_Wilson_R_Rutherford_IV.dds"
+	traits = {  }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "William L. Nyland"
+	picture = "Portrait_William_L_Nyland.dds"
+	traits = {  }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Robert W. Cone"
+	picture = "Portrait_Robert_W_Cone.dds"
+	traits = {  }
+	skill = 2
+	attack_skill = 3
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Reynold N. Hoover"
+	picture = "Portrait_Reynold_N_Hoover.dds"
+	traits = {  }
+	skill = 2
+	attack_skill = 1
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Peter Pace"
+	picture = "Portrait_Peter_Pace.dds"
+	traits = {  }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Andrew Steadman"
+	picture = "Portrait_Andrew_Steadman.dds"
+	traits = {  }
+	skill = 2
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_navy_leader = {
+	name = "Bruce W. Clingan"
+	picture = "Portrait_Bruce_W_Clingan.dds"
+	traits = {  }
+	skill = 2
+	attack_skill = 1
+	defense_skill = 1
+	coordination_skill = 2
+	maneuvering_skill = 3
+}
+
+create_navy_leader = {
+	name = "Charles D. Michel"
+	picture = "Portrait_Charles_D_Michel.dds"
+	traits = {  }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	coordination_skill = 2
+	maneuvering_skill = 1
+}

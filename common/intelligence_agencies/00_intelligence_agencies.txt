@@ -1,0 +1,150 @@
+# List of names and logos for intelligence agencies
+# available trigger will determine if the logo is in the list of available logos or not
+# names is a list of names. Can be a localization entry, or the name directly. A random name will be picked from them.
+
+intelligence_agency = {
+
+	picture = GFX_intelligence_agency_logo_usa
+	names = { "Central Intelligence Agency" }
+	
+	default = { tag = USA }
+	available = { original_tag = USA }
+}
+
+intelligence_agency = {
+
+	picture = GFX_intelligence_agency_logo_usa
+	names = { "People's Defense Service" }
+	
+	default = { tag = NEA }
+	available = { original_tag = NEA }
+}
+
+intelligence_agency = {
+
+	picture = GFX_intelligence_agency_logo_usa
+	names = { "American Intelligence Bureau" }
+	
+	default = { tag = PCA }
+	available = { original_tag = PCA }
+}
+
+intelligence_agency = {
+
+	picture = GFX_intelligence_agency_logo_uk
+	names = { "Military Intelligence 6" }
+	
+	default = { tag = ENG }
+	available = { original_tag = ENG }
+}
+
+intelligence_agency = {
+
+	picture = GFX_intelligence_agency_logo_sov
+	names = { "KGB" }
+	
+	default = { tag = SOV }
+	available = { original_tag = SOV }
+}
+
+intelligence_agency = {
+	
+	picture = GFX_intelligence_agency_logo_ger
+	names = { "Stasi" }
+	
+	default = { tag = GER }
+	available = { original_tag = GER }
+}
+
+intelligence_agency = {
+	
+	picture = GFX_intelligence_agency_logo_ita
+	names = { "SISMI" }
+	
+	default = { tag = ITA }
+	available = { original_tag = ITA }
+}
+
+intelligence_agency = {
+	
+	picture = GFX_intelligence_agency_logo_generic_1
+	names = { "Rooke" }
+	
+	available = { always = yes }
+	
+	default = { always = yes } 
+}
+intelligence_agency = {
+	
+	picture = GFX_intelligence_agency_logo_generic_2
+	names = { "Tower" }
+	
+	available = { always = yes }
+	
+	default = { always = yes } 
+}
+intelligence_agency = {
+	
+	picture = GFX_intelligence_agency_logo_generic_3
+	names = { "Snake" }
+	
+	available = { always = yes }
+	
+	default = { always = yes } 
+}
+intelligence_agency = {
+	
+	picture = GFX_intelligence_agency_logo_generic_4
+	names = { "Stag" }
+	
+	available = { always = yes }
+	
+	default = { always = yes } 
+}
+intelligence_agency = {
+	
+	picture = GFX_intelligence_agency_logo_generic_5
+	names = { "Golden Lion" }
+	
+	available = { always = yes }
+	
+	default = { always = yes } 
+}
+intelligence_agency = {
+	
+	picture = GFX_intelligence_agency_logo_generic_6
+	names = { "Arrow" }
+	
+	available = { always = yes }
+	
+	default = { always = yes } 
+}
+intelligence_agency = {
+	
+	picture = GFX_intelligence_agency_logo_generic_7
+	names = { "Lion Head" }
+	
+	available = { always = yes }
+	
+	default = { always = yes } 
+}
+intelligence_agency = {
+	
+	picture = GFX_intelligence_agency_logo_generic_8
+	names = { "Golden Eagle" }
+	
+	available = { always = yes }
+	
+	default = { always = yes } 
+}
+intelligence_agency = {
+	
+	picture = GFX_intelligence_agency_logo_generic_9
+	names = { "Hammer and Sickle" }
+	
+	available = { 
+		has_government = communist
+	}
+	
+	default = { always = yes } 
+}

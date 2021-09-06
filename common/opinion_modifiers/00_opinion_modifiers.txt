@@ -1,0 +1,363 @@
+#########################################################################
+# OPINION MODIFIERS
+##########################################################################
+# value
+# min_trust
+# max_trust
+# decay
+# months/years/days = timer
+# trade = yes/no
+
+opinion_modifiers = {
+
+	hostile_status = { #special used for civil wars that are on hold and blocks faction stuff
+		value = -100
+	}
+
+	unstable_alliance = {
+		value = -10
+	}
+
+	holds_our_cores = {
+		value = -10
+	}
+	holds_our_claims = {
+		value = -5
+	}
+	claims_on_us = { 
+		value = -10
+	}
+	at_war_with_faction = {
+		value = -50
+	}
+	
+	justifying_war_goal = {
+		value = -40
+		min_trust = -10
+		days = 10
+		decay = 1
+	}
+	
+	offered_support = {
+		value = 50
+		months = 24
+	}
+
+	improve_relation = {
+		value = 0
+		months = 0
+		decay = 3
+		max_trust = 100
+	}
+	
+	guarantee = {
+		value = 5
+	}
+	
+	guarantee = {
+		target = yes
+		value = 25
+	}
+	
+	betrayed_guarantee = {
+		value = -150
+		months = 36
+	}
+	
+	at_war = {
+		value = -150
+	}
+	
+	in_faction = {
+		value = 50
+	}
+	
+	military_access = {
+		value = 30
+	}
+	
+	non_aggression_pact = {
+		value = 25
+	}
+
+	refused_help = {
+		value = -30
+		months = 36
+		decay = 1
+	}
+
+	took_stand_for_us = {
+		value = 50
+		decay = 1
+	}
+	
+	same_ruling_party = {
+		value = 10
+	}
+	
+	similar_ruling_party = {
+		value = 5
+	}
+	
+	different_party_types = {
+		value = 0
+	}
+	
+	long_term_trade_partner = {
+		value = 1
+	}
+	
+	puppet_opinion = 
+	{
+		value = 75
+	}
+
+	middle_east_expansionism = {
+		value = -30
+	}
+
+	border_conflict_reconciled = {
+		value = 40
+	}
+	
+	sanctions_relations = {
+		value = -40
+	}
+	minor_sanctions_relations = {
+		value = -20
+	}
+	
+	unprovoked_aggression = {
+		value = -50
+		months = 36
+		decay = 1
+	}
+
+	aided_industry = {
+		value = 30
+	}
+	
+	communist_collaborators = {
+		value = -125
+		months = 48
+		decay = 1
+	}
+	
+	unholy_alliance  = {
+		value = -50
+		months = 48
+		decay = 1
+	}
+
+	anti_imperialist = {
+		value = 40
+	}
+
+	destroyers_for_bases_opinion = {
+		value = 30
+	}
+	
+	raj_railway_in_kashmir = {
+		value = -10
+	}
+	raj_dem_for_cooperation = {
+		value = 5
+	}
+	raj_dem_for_ease_relations_with_china = {
+		value = 7
+	}
+	raj_dem_for_ease_relations_with_pakistan = {
+		value = 7
+	}
+	raj_ended_nuclear_tests = {
+		value = 10
+	}
+	raj_dem_for_strengthen_soviet_ties = {
+		value = 10
+	}
+	raj_warm_water_port = {
+		value = 5
+	}
+	raj_trade_deal = {
+		value = 3
+	}
+	raj_soviet_arms = {
+		value = 5
+	}
+	raj_bay_of_bengal  = {
+		value = -5
+	}
+	raj_dem_spread_democracy = {
+		value = -5
+	}
+	raj_panchsheel_treaty = {
+		value = 5
+	}
+	raj_dem_for_reduce_soviet_ties = {
+		value = -10
+	}
+	raj_ease_travel_restrictions = {
+		value = 5
+	}
+	raj_dem_for_afghan_aid = {
+		value = 10
+	}
+	raj_dem_for_china_defense_coop = {
+		value = 20
+	}
+	raj_business_visas = {
+		value = 5
+	}
+	raj_pak_denounce_kashmir_vote = {
+		value = -20
+	}
+	
+	raj_nathulu_pass_n = {
+		value = -5
+	}
+	raj_nathulu_pass_y = {
+		value = 7
+	}
+	
+	raj_soviet_loan = {
+		value = 40
+	}
+	raj_soviet_irrigation_corrupt = {
+		value = -50
+		months = 30
+		decay = 1
+	}
+	raj_bjp_border_unilateral_action = {
+		value = -10
+	}
+	
+################################################################
+ raj_bjp_bng_border_unilateral_action = {
+		value = -17
+		}
+	raj_gmon_royal_ties = {
+		value = 50
+		months = 12
+		decay = 1
+				}
+	india_soviet_advisors = {
+		value = 7
+				}
+	india_cuba_lese_majeste_dealt_peaceful  = {
+		value = 5
+				}
+	india_gmon_cuba_lodges_complaint = {
+		value = -30
+		months = 12
+		decay = 1
+				}
+	india_cuba_gmon_diplomat_charged = {
+		value = -10
+		months = 2
+		decay = 1
+				}
+	india_gmon_cuba_kidnap_caught = {
+		value = -39
+					}
+	india_gmon_cuba_kidnap_exposed = {
+		value = -100
+		months = 30
+		decay = 1
+					}
+	india_gmon_soviet_support = {
+		value = 30
+				}
+	india_gmon_kohinoor_refused = {
+		value = -15
+				}
+	india_gmon_kohinoor_returned = {
+		value = 5
+				}
+	india_com_mission_refused = {
+		value = -10
+				}
+	india_com_successful_meeting = {
+		value = 20
+		months = 5
+		decay = 1
+				}
+	diplomatic_incident = {
+		value = -10
+		months = 3
+		decay = 1
+				}
+	india_com_china_refuse_cut_pak_support = {
+		value = -20
+				}
+	cut_support = {	
+		value = -100
+				}
+	snubbed_alliance = {
+		value = -50
+		months = 50
+		decay = 1
+				}
+	india_com_ceded_dispute = {
+		value = 20
+		months = 100
+		decay = 1
+				}
+		
+	india_com_sovarb_positive = {
+		value = 10
+				}
+	supported_coup = {
+		value = -100
+		months = 24
+		decay = 1
+	}
+	india_dem_for_soviet_aid = {
+		value = 10
+			}
+	india_dem_for_tibet_exiled = {
+		value = 10
+			}
+	india_dem_for_tibet_deport_promise = {
+		value = 20
+			}
+	india_dem_for_tibet_deported = {
+		value = 30
+			}
+	india_dem_for_tibet_lama_deported = {
+		value = 25
+			}
+	india_dem_for_tibet_deport_backtrack = {
+		value = -20
+			}
+	india_dem_for_sov_criticize = {
+		value = -15
+			}
+	india_baloch_insurgent_funding_exposed = {
+		value = -20
+			}
+	
+	india_dem_for_canadian_indian_pressure = {
+		value = 8
+	}
+	india_dem_for_indonesia_spat = {
+		value = -40
+		months = 8
+		decay = 1
+	}
+	india_dem_for_sri_supporting_tamil = {
+		value = -7
+	}
+	funded_insurgents = {
+		value = -15
+	}
+	
+	colombo_plan = {
+		value = 12
+	}
+	travel_ban = {
+		value = -20
+	}
+	india_rss_contest_com_southeast = {
+		value = -20
+	}
+}	

@@ -1,0 +1,81 @@
+division_template = {
+	name = "Yemeni Republican Guard"
+	
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+}
+division_template = {
+	name = "Mechanized Guard"
+	
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+	}
+}
+units = {
+	division = {			
+		name = "Ma'rib Militia"		
+		location = 13664
+		division_template = "Yemeni Republican Guard"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {			
+		name = "Al Hazam Militia"		
+		location = 13669
+		division_template = "Yemeni Republican Guard"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+
+	}
+	division = {			
+		name = "Al Bayda Militia"		
+		location = 13660
+		division_template = "Yemeni Republican Guard"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {			
+		name = "Al Bayda Militia"		
+		location = 13667
+		division_template = "Mechanized Guard"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {			
+		name = "1st Motorized Republican Guard"		
+		location = 13679
+		division_template = "Mechanized Guard"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+
+	division = {			
+		name = "2nd Motorized Republican Guard"		
+		location = 13681
+		division_template = "Mechanized Guard"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+
+	division = {			
+		name = "3rd Infantry Republican Guard"		
+		location = 13662
+		division_template = "Yemeni Republican Guard"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {			
+		name = "4th Infantry Republican Guard"		
+		location = 13672
+		division_template = "Yemeni Republican Guard"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+}

@@ -1,0 +1,1623 @@
+ideas = {
+
+    country = {
+	    
+		idea_egy_intelligence_agency_control = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = air_war_plans_division_focus
+			
+			removal_cost = -1
+			
+			modifier = {
+				decryption_power_factor = 0.1
+			}
+		}
+		
+		idea_egy_technological_advancements = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = generic_research_bonus
+			
+			removal_cost = -1
+			
+			modifier = {
+				research_speed_factor = 0.03
+			}
+		}
+		
+		idea_egy_corporate_allegiances = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = FRA_fortification_focus
+			
+			removal_cost = -1
+			
+			modifier = {
+				local_resources_factor = 0.05
+				production_factory_start_efficiency_factor = 0.035
+			}
+		}
+		
+		idea_egy_barrack_visits = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = barrack_visits
+			
+			removal_cost = -1
+			
+			modifier = {
+				army_morale_factor = 0.05 
+				training_time_factor = -0.05
+			}
+		}
+		
+		idea_egy_naval_base_visits = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = naval_base_visits
+			
+			removal_cost = -1
+			
+			modifier = {
+				naval_coordination = 0.02 
+				naval_retreat_chance = 0.1 
+				navy_anti_air_attack_factor = 0.05
+			}
+		}
+		
+		idea_egy_fiscal_conservatism = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = FRA_matignon_agreements
+			
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.05
+				production_factory_max_efficiency_factor = 0.05 
+				political_power_gain = -0.2
+			}
+		}
+		
+		idea_egy_totalitarianism = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = FRA_scw_intervention_nationalists_focus
+			
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.07 
+				production_factory_efficiency_gain_factor = 0.05 
+				supply_consumption_factor = 0.1
+			}
+		}
+		
+		idea_egy_conscription_campaign = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = FRA_national_mobilization_focus
+			
+			removal_cost = -1
+			
+			modifier = {
+				conscription = 0.01
+			}
+		}
+		
+		idea_egy_new_secret_police = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = idea_generic_secret_police
+			
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = 0.15 
+				crypto_strength = 1 
+				justify_war_goal_time = -0.1
+			}
+		}
+		
+		idea_egy_economic_reforms = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = generic_goods_red_bonus
+			
+			removal_cost = -1
+			
+			modifier = {
+				industrial_capacity_factory = 0.065 
+			}
+		}
+		
+		idea_egy_social_liberal_influence = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = generic_democratic_drift_bonus
+			
+			removal_cost = -1
+			
+			modifier = {
+				MONTHLY_POPULATION = 0.02 
+				research_speed_factor = 0.02
+			}
+		}
+		
+		idea_egy_cult_of_personality = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = idea_generic_fascism_drift_2
+			
+			removal_cost = -1
+			
+			modifier = {
+				nationalist_drift = 0.01 
+				army_morale_factor = 0.05
+			}
+		}
+		
+		idea_egy_military_clique = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = anti_soviet_pact
+			
+			removal_cost = -1
+			
+			modifier = {
+				max_planning = 0.25 
+				army_defence_factor = 0.02
+			}
+		}
+		
+		idea_egy_sisis_secret_police = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = idea_generic_secret_police
+			
+			removal_cost = -1
+			
+			modifier = {
+				crypto_strength = 1 
+				decryption_power_factor = 0.1 
+				industry_repair_factor = 0.5
+			}
+		}
+		
+		idea_egy_greater_economic_freedoms = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = generic_goods_red_bonus
+			
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.085
+				local_resources_factor = -0.2 
+				industrial_capacity_factory = 0.03
+			}
+		}
+		
+		idea_egy_egyptian_capitalism = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = egyptian_capitalism
+			
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.1
+				local_resources_factor = -0.25
+				industrial_capacity_factory = 0.05
+				stability_factor = 0.035
+			}
+		}
+		
+		idea_egy_enforced_wage_regulations = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = FRA_scw_intervention_republicans_focus
+			
+			removal_cost = -1
+			
+			modifier = {
+				nationalist_drift = 0.02 
+				production_factory_max_efficiency_factor = 0.1
+			}
+		}
+		
+		idea_egy_new_generations_of_troops = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = idea_generic_army_war_college
+			
+			removal_cost = -1
+			
+			modifier = {
+				army_org_Factor = 0.05 
+				training_time_army_factor = -0.1 
+				political_power_gain = -0.3
+			}
+		}
+		
+		idea_egy_islamic_awakening = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = sharia_law
+			
+			removal_cost = -1
+			
+			modifier = {
+				MONTHLY_POPULATION = 0.03 
+				research_speed_factor = 0.02 
+				political_power_gain = 0.2
+			}
+		}
+		
+		idea_egy_unity_of_the_ummah = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = idea_RAJ_marginalized_muslim_community_happy
+			
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.05
+				national_conservative_drift = 0.03 
+				training_time_factor = -0.2
+			}
+		}
+		
+		idea_egy_moderate_social_policies = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = generic_democratic_drift_bonus
+			
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.045 
+				trade_opinion_factor = 0.3 
+				production_factory_start_efficiency_factor = 0.05
+			}
+		}
+		
+		idea_egy_rapid_national_development = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = rapid_national_development
+			
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_buildings_factor = 0.06
+			}
+		}
+		
+		idea_egy_islamic_traditionalism = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = islamic_traditionalism
+			
+			removal_cost = -1
+			
+			modifier = {
+				MONTHLY_POPULATION = 0.01 
+				justify_war_goal_time = -0.085
+				centrist_drift = 0.02
+				national_conservative_drift = 0.01
+			}
+		}
+		
+		idea_egy_corrupt_assembly = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = generic_pp_unity_bonus
+			
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = 0.1 
+				local_resources_factor = 0.3 
+				industrial_capacity_factory = -0.05
+				consumer_goods_factor = -0.045
+			}
+		}
+		
+		idea_egy_secularism = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = FRA_national_mobilization_focus
+			
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.05
+				liberal_drift = 0.035 
+				new_democrat_drift = 0.01 
+				moderate_socialist_drift = 0.005 
+				army_morale_factor = 0.025
+			}
+		}
+		
+		idea_egy_intellectual_governance = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = generic_research_bonus
+			
+			removal_cost = -1
+			
+			modifier = {
+				research_speed_factor = 0.04 
+				defence = -0.1 
+				offence = -0.1
+			}
+		}
+		
+		idea_egy_authoritarian_democracy = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = idea_SAF_ossewabrandwag_fascism
+			
+			removal_cost = -1
+			
+			modifier = {
+				conscription = 0.005 
+				justify_war_goal_time = -0.2 
+				political_power_gain = 0.1 
+				stability_factor = -0.05
+				war_support_factor = 0.01
+			}
+		}
+		
+		
+		idea_egy_young_minds_program = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = young_minds_program
+			
+			removal_cost = -1
+			
+			modifier = {
+				research_speed_factor = 0.02
+			}
+		}
+		
+		idea_egy_a_better_future = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = better_future
+			
+			removal_cost = -1
+			
+			modifier = {
+				trade_laws_cost_factor = -0.2
+				mobilization_laws_cost_factor = -0.2
+				economy_cost_factor = -0.2
+				trade_opinion_factor = -0.5
+			}
+		}
+		
+		idea_egy_welfare_programs = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = idea_generic_foreign_capital
+			
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.1
+				industrial_capacity_factory = 0.05
+			}
+		}
+		
+		idea_egy_sharia_law = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = sharia_law
+			
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = 0.2 
+				research_speed_factor = 0.15 
+				MONTHLY_POPULATION = 0.05
+			}
+		}
+		
+		idea_egy_jihad = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = jihad
+			
+			removal_cost = -1
+			
+			modifier = {
+				justify_war_goal_time = -0.8
+			}
+		}
+		
+		idea_egy_egyptians_conscripted = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = egyptian_conscripted
+			
+			removal_cost = -1
+			
+			modifier = {
+				conscription = 0.05 
+				research_speed_factor = 0.05 
+				army_morale_factor = -0.05
+			}
+		}
+		
+		idea_egy_opposition_crushed = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = opposition_crushed
+			
+			removal_cost = -1
+			
+			modifier = {
+				communist_drift = 0.015 
+				political_power_gain = 0.1 
+				army_org_Factor = 0.07
+			}
+		}
+		
+		idea_egy_legacy_of_lenin = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = generic_communism_drift_bonus
+			
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.035
+				defence = 0.05 
+				local_resources_factor = 0.025 
+			}
+		}
+		
+		idea_egy_centralised_nation = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = centralised_nation
+			
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_buildings_factor = 0.05 
+				production_oil_factor = 0.065
+			}
+		}
+		
+		idea_egy_egyptian_peoples_army = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = egyptian_peoples_army
+			
+			removal_cost = -1
+			
+			modifier = {
+				conscription = 0.01
+			}
+		}
+		
+		idea_egy_socialism_forever = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = socialism_forever
+			
+			removal_cost = -1
+			
+			modifier = {
+				communist_drift = 0.03 
+				consumer_goods_factor = 0.05 
+				industrial_capacity_factory = 0.1
+			}
+		}
+		
+		idea_egy_leader_worship = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = FRA_scw_intervention_nationalists_focus
+			
+			removal_cost = -1
+			
+			modifier = {
+				monarchist_drift = 0.01 
+				political_power_gain = 0.05 
+				stability_factor = 0.02 
+				war_support_factor = 0.03
+			}
+		}
+		
+		idea_egy_valley_closed = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = FRA_matignon_agreements
+			
+			removal_cost = -1
+			
+			modifier = {
+				army_morale_factor = 0.04 
+				defence = 0.1
+			}
+		}
+		
+		idea_egy_imperial_cult = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = imperial_cult
+			
+			removal_cost = -1
+			
+			modifier = {
+				monarchist_drift = 0.03 
+				stability_factor = 0.05 
+				conscription = 0.02 
+				trade_opinion_factor = -0.5
+			}
+		}
+		
+		idea_egy_a_modern_kingdom = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = modern_kingdom
+			
+			removal_cost = -1
+			
+			modifier = {
+				industrial_capacity_factory = 0.075 
+				research_speed_factor = 0.02
+			}
+		}
+		
+		idea_egy_islamic_royalism = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = idea_RAJ_marginalized_muslim_community_happy
+			
+			removal_cost = -1
+			
+			modifier = {
+				MONTHLY_POPULATION = 0.02 
+				army_core_attack_factor = 0.1
+				monarchist_drift = 0.02
+			}
+		}
+		
+		idea_egy_rights_revoked = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = generic_fascism_drift_bonus
+			
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = 0.1 
+			}
+		}
+		
+		idea_egy_defence_of_the_sultan = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = generic_manpower_bonus
+			
+			removal_cost = -1
+			
+			modifier = {
+				decryption_power_factor = 0.1 
+				crypto_strength = 1
+			}
+		}
+		
+		idea_egy_central_planning = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = central_planning_egypt
+			
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_industrial_complex_factor = 0.045 
+			}
+		}
+		
+		idea_egy_regional_development = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = regional_development
+			
+			removal_cost = -1
+			
+			modifier = {
+				conscription = 0.01 
+				defence = 0.025 
+				consumer_goods_factor = 0.05
+			}
+		}
+		
+		idea_egy_holy_era = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = idea_RAJ_marginalized_muslim_community_angry
+			
+			removal_cost = -1
+			
+			modifier = {
+				industry_repair_factor = 0.2 
+				research_speed_factor = 0.01 
+				training_time_army_factor = -0.02
+			}
+		}
+		
+		idea_egy_self_sufficiency = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = generic_morale_bonus
+			
+			removal_cost = -1
+			
+			modifier = {
+				trade_opinion_factor = -0.3 
+				local_resources_factor = 0.075
+				monarchist_drift = 0.02
+			}
+		}
+		
+		idea_egy_a_strong_sultanate = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = generic_infantry_bonus
+			
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.07
+				army_org_Factor = 0.05
+			}
+		}
+		
+		idea_egy_king_faud_ii = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = neutrality_idea
+			
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.025
+			}
+		}
+		
+		idea_egy_civil_rights = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = generic_democratic_drift_bonus
+			
+			removal_cost = -1
+			
+			modifier = {
+				MONTHLY_POPULATION = 0.005 
+				political_power_gain = -0.2 
+				justify_war_goal_time = -0.05
+			}
+		}
+		
+		idea_egy_liberalised_economy = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = anti_soviet_pact
+			
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.1 
+				industrial_capacity_factory = -0.025
+			}
+		}
+		
+		idea_egy_secret_police_abolished = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = FRA_army_of_aggression_focus
+			
+			removal_cost = -1
+			
+			modifier = {
+				army_org_Factor = -0.02 
+				army_morale_factor = 0.08
+			}
+		}
+		
+		idea_egy_soft_nationalism = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = air_support_focus
+			
+			removal_cost = -1
+			
+			modifier = {
+				justify_war_goal_time = -0.03 
+				conscription = 0.005
+				army_morale_factor = 0.01
+			}
+		}
+		
+		idea_egy_welfare_state = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = welfare_state
+			
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.075 
+				industrial_capacity_factory = 0.12
+			}
+		}
+		
+		idea_egy_democratic_secularism = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = idea_generic_deal_with_the_devil
+			
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.08
+				army_morale_factor = 0.05
+			}
+		}
+		
+		idea_egy_direct_democracy = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = idea_generic_fascism_banned
+			
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = -0.25 
+				justify_war_goal_time = 0.1 
+				production_factory_start_efficiency_factor = 0.2 
+				global_building_slots_factor = 0.1
+			}
+		}
+		
+		idea_egy_king_above_all = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = idea_generic_fascism_drift_2
+			
+			removal_cost = -1
+			
+			modifier = {
+				monarchist_drift = 0.01 
+				production_speed_arms_factory_factor = 0.05
+			}
+		}
+		
+		idea_egy_secular_royalism = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = idea_generic_flexible_foreign_policy
+			
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.025
+				monarchist_drift = 0.04 
+				research_speed_factor = 0.01
+			}
+		}
+		
+		idea_egy_industrial_corruption = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = idea_generic_industrial_concern_1
+			
+			removal_cost = -1
+			
+			modifier = {
+				industrial_capacity_factory = -0.1 
+				consumer_goods_factor = -0.1 
+			}
+		}
+		
+		idea_egy_big_brother = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = generic_spy_coup
+			
+			removal_cost = -1
+			
+			modifier = {
+				decryption_power_factor = 0.2 
+				army_morale_factor = -0.05
+			}
+		}
+		
+		idea_egy_lawful_absolutism = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = idea_generic_constitutional_guarantee
+			
+			removal_cost = -1
+			
+			modifier = {
+				conscription = 0.01
+			}
+		}
+		
+		idea_egy_mixed_economy = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = FRA_scw_intervention_republicans_focus
+			
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.03 
+				industrial_capacity_factory = 0.05 
+				production_factory_efficiency_gain_factor = 0.05 
+				production_speed_buildings_factor = -0.15
+			}
+		}
+		
+		idea_egy_air_defence_program = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = air_defense_program
+			
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_anti_air_building_factor = 0.1 
+			}
+		}
+		
+		idea_egy_standing_alone = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = socialist_science_focus
+			
+			removal_cost = -1
+			
+			modifier = {
+				communist_drift = 0.02 
+				army_morale_factor = 0.03 
+				army_org_Factor = 0.03 
+				political_power_gain = 0.1
+			}
+		}
+		
+		idea_egy_omars_propaganda = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = FRA_scw_intervention_nationalists_focus
+			
+			removal_cost = -1
+			
+			modifier = {
+				nationalist_drift = 0.05 
+				army_morale_factor = 0.02 
+				conscription = 0.002
+			}
+		}
+		
+		idea_egy_higher_taxes = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = generic_intel_bonus
+			
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.04 
+				political_power_gain = 0.1 
+				production_speed_industrial_complex_factor = 0.2
+			}
+		}
+		
+		idea_egy_civil_liberties_restored = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = generic_pp_unity_bonus
+			
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.05
+				monarchist_drift = 0.04 
+				local_resources_factor = 0.1
+			}
+		}
+		
+		idea_egy_free_economy = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = generic_goods_red_bonus
+			
+			removal_cost = -1
+			
+			modifier = {
+				industrial_capacity_factory = 0.07
+			}
+		}
+		
+		idea_egy_the_transparent_king = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = generic_disjointed_gov
+			
+			removal_cost = -1
+			
+			modifier = {
+				army_defence_factor = 0.2 
+				max_planning = 0.1 
+				political_power_gain = -0.3
+			}
+		}
+		
+		idea_egy_ground_forces_expanded = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = idea_generic_reserve_divisions
+			
+			removal_cost = -1
+			
+			modifier = {
+				army_leader_start_level = 1
+				army_core_attack_factor = 0.1
+			}
+		}
+		
+		idea_egy_new_kingdom_intelligence_agency = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = air_war_plans_division_focus
+			
+			removal_cost = -1
+			
+			modifier = {
+				research_speed_factor = 0.01 
+				decryption_power_factor = 0.1 
+				political_power_gain = -0.1 
+				monarchist_drift = 0.02
+			}
+		}
+		
+		idea_egy_the_egyptian_caliphate = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = air_war_plans_division_focus
+			
+			removal_cost = -1
+			
+			modifier = {
+				non_core_manpower = 0.01
+			}
+		}
+		
+		idea_egy_ultranationalism = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = FRA_scw_intervention_nationalists_focus
+			
+			removal_cost = -1
+			
+			modifier = {
+				out_of_supply_factor = -0.5
+			}
+		}
+		
+		idea_egy_the_push_for_more_troops = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = push_more_troops
+			
+			removal_cost = -1
+			
+			modifier = {
+				conscription = 0.008
+			}
+		}
+		
+		idea_egy_deregulated_free_market = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = anti_soviet_pact
+			
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.03
+			}
+		}
+		
+		idea_egy_traditionalism = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = generic_democratic_drift_bonus
+			
+			removal_cost = -1
+			
+			modifier = {
+				MONTHLY_POPULATION = 0.03
+			}
+		}
+		
+		idea_egy_a_progressive_egypt = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = progressive_egypt
+			
+			removal_cost = -1
+			
+			modifier = {
+				MONTHLY_POPULATION = -0.02 
+				research_speed_factor = 0.035
+			}
+		}
+		
+		idea_egy_expanded_nationalisation = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = generic_morale_bonus
+			
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_industrial_complex_factor = 0.05
+			}
+		}
+		
+		idea_egy_truly_egyptian_army = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = generic_morale_bonus
+			
+			removal_cost = -1
+			
+			modifier = {
+				army_attack_factor = 0.1
+			}
+		}
+		
+		idea_egy_trade_unions_abolished = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = officers_purged
+			
+			removal_cost = -1
+			
+			modifier = {
+				industrial_capacity_factory = 0.02
+			}
+		}
+		
+		idea_egy_an_isolationist_egypt = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = neutrality_idea
+			
+			removal_cost = -1
+			
+			modifier = {
+				send_volunteers_tension = 0.20
+				guarantee_tension = 1.0
+				ai_badass_factor = 0.01    
+				ai_get_ally_desire_factor = -100
+				political_power_gain = 0.4
+				nationalist_drift = 0.02 
+				stability_factor = 0.05 
+				army_morale_factor = 0.05
+			}
+		}
+		
+	}
+	
+
+}

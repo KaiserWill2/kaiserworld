@@ -1,0 +1,246 @@
+﻿capital = 230
+
+oob = "generic_2000"
+
+set_research_slots = 4
+set_convoys = 500
+set_stability = 0.8
+set_war_support = 0.3
+
+set_technology = {
+	support_weapons = 1
+	infantry_weapons = 1
+	motorised_infantry = 1 
+	tech_support = 1 
+	tech_field_hospital = 1 
+	tech_engineers = 1 
+	gwtank = 1 
+	basic_light_tank = 1 
+	gw_artillery = 1 
+	tech_mountaineers = 1
+	early_fighter = 1 
+	early_bomber = 1 
+	interwar_antiair = 1
+	interwar_antitank = 1
+}
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	set_technology = {
+		early_submarine = 1
+		basic_submarine = 1
+		early_destroyer = 1
+		early_light_cruiser = 1
+		basic_light_cruiser = 1
+		early_heavy_cruiser = 1
+		
+		
+		early_carrier = 1
+		basic_carrier = 1
+		transport = 1
+	}
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_technology = {
+		basic_naval_mines = 1
+		submarine_mine_laying = 1
+		early_ship_hull_light = 1
+		basic_ship_hull_light = 1
+		early_ship_hull_submarine = 1
+		basic_ship_hull_submarine = 1
+		early_ship_hull_cruiser = 1
+		basic_ship_hull_cruiser = 1
+		early_ship_hull_heavy = 1
+		early_ship_hull_carrier = 1
+		basic_ship_hull_carrier = 1
+		basic_battery = 1
+		basic_light_battery = 1
+		basic_medium_battery = 1
+		basic_heavy_battery = 1
+		basic_torpedo = 1
+		sonar = 1
+		basic_depth_charges = 1
+		basic_secondary_battery = 1
+		improved_secondary_battery = 1
+		basic_cruiser_armor_scheme = 1
+		basic_heavy_armor_scheme = 1
+		mtg_transport = 1
+		improved_airplane_launcher = 1
+	}
+}
+set_politics = {
+	ruling_party = moderate_socialist
+	last_election = "1997.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+        fascist = 0
+		nationalist = 60
+		monarchist = 0
+		national_bolshevik = 0
+		national_conservative = 10
+		centrist = 0
+		liberal = 0
+		new_democrat = 10
+		moderate_socialist = 0
+		revolutionary_socialist = 10
+		communist = 10
+}
+create_country_leader = {
+	name = "Tachat Sargsyan"
+	picture = "Portrait_ARM_Tachat_Sargsyan.dds"
+	ideology = stalinist
+}
+
+create_country_leader = {
+	name = "Armen Avetisyan"
+	picture = "Portrait_ARM_Armen_Avetisyan.dds"
+	ideology = fascist_ideology
+}
+
+create_country_leader = {
+	name = "Gagik Tsarukyan"
+	picture = "Portrait_ARM_Gagik_Tsarukyan.dds"
+	ideology = nationalist_ideology
+}
+
+create_country_leader = {
+	name = "Vazgen Safaryan"
+	picture = "Portrait_ARM_Vazgen_Safaryan.dds"
+	ideology = national_bolshevik_ideology
+}
+
+create_country_leader = {
+	name = "Serzh Sargsyan"
+	picture = "Portrait_ARM_Serzh_Sargsyan.dds"
+	ideology = european_conservative
+}
+
+create_country_leader = {
+	name = "Paruyr Hayrikyan"
+	picture = "Portrait_ARM_Paruyr_Hayrikyan.dds"
+	ideology = centrist_ideology
+}
+
+create_country_leader = {
+	name = "Edmon Marukyan"
+	picture = "Portrait_ARM_Edmon_Marukyan.dds"
+	ideology = social_liberal
+}
+
+create_country_leader = {
+	name = "Stepan Demirchyan"
+	picture = "Portrait_ARM_Stepan_Demirchyan.dds"
+	ideology = new_democrat_ideology
+}
+create_country_leader = {
+	name = "Vahan Hovhannisyan"
+	picture = "Portrait_ARM_Vahan_Hovhannisyan.dds"
+	ideology = revolutionary_socialist_ideology
+}
+create_country_leader = {
+	name = "Aram Gaspar Sargsyan"
+	picture = "Portrait_ARM_Aram_Gaspar_Sargsyan.dds"
+	ideology =  peoples_socialist_democracy
+}
+
+create_field_marshal = {
+	name = "Onik Gasparyan"
+	picture = "Portrait_Onik_Gasparyan.dds"
+	traits = { }
+	skill = 4
+	attack_skill = 4
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 2
+}
+
+create_field_marshal = {
+	name = "Seyran Ohanyan"
+	picture = "Portrait_Seyran_Ohanyan.dds"
+	traits = { politically_connected }
+	skill = 4
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "Movses Hakobyan"
+	picture = "Portrait_Movses_Hakobyan.dds"
+	traits = { }
+	skill = 4
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Artak Davtyan"
+	picture = "Portrait_Artak_Davtyan.dds"
+	traits = { }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Arkady Ter-Tadevosyan"
+	picture = "Portrait_Arkady_Ter_Tadevosyan.dds"
+	traits = { media_personality }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 3
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Andranik Piloyan"
+	picture = "Portrait_Andranik_Piloyan.dds"
+	traits = { }
+	skill = 2
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Jirayr Poghosyan"
+	picture = "Portrait_Jirayr_Poghosyan.dds"
+	traits = { }
+	skill = 2
+	attack_skill = 1
+	defense_skill = 3
+	planning_skill = 1
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Grigory Khatchaturov"
+	picture = "Portrait_Grigory_Khatchaturov.dds"
+	traits = { }
+	skill = 2
+	attack_skill = 3
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Tiran Khachatryan"
+	picture = "Portrait_Jirayr_Poghosyan.dds"
+	traits = { }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 2
+}

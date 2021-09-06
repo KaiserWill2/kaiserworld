@@ -1,0 +1,492 @@
+﻿capital = 9
+
+oob = "CZE_2000"
+
+add_ideas = {
+    idea_eu_member
+}
+
+set_research_slots = 4
+set_convoys = 500
+set_stability = 0.6
+set_war_support = 0.1
+
+set_technology = {
+	support_weapons = 1
+	infantry_weapons = 1
+	motorised_infantry = 1 
+	tech_support = 1 
+	tech_field_hospital = 1 
+	tech_engineers = 1 
+	gwtank = 1 
+	basic_light_tank = 1 
+	gw_artillery = 1 
+	tech_mountaineers = 1
+	early_fighter = 1 
+	early_bomber = 1 
+	paratroopers = 1 
+	basic_heavy_tank = 1 
+	interwar_antiair = 1
+	interwar_antitank = 1
+}
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	set_technology = {
+		early_submarine = 1
+		basic_submarine = 1
+		early_destroyer = 1
+		early_light_cruiser = 1
+		basic_light_cruiser = 1
+		early_heavy_cruiser = 1
+		
+		
+		early_carrier = 1
+		basic_carrier = 1
+		transport = 1
+	}
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_technology = {
+		basic_naval_mines = 1
+		submarine_mine_laying = 1
+		early_ship_hull_light = 1
+		basic_ship_hull_light = 1
+		early_ship_hull_submarine = 1
+		basic_ship_hull_submarine = 1
+		early_ship_hull_cruiser = 1
+		basic_ship_hull_cruiser = 1
+		early_ship_hull_heavy = 1
+		early_ship_hull_carrier = 1
+		basic_ship_hull_carrier = 1
+		basic_battery = 1
+		basic_light_battery = 1
+		basic_medium_battery = 1
+		basic_heavy_battery = 1
+		basic_torpedo = 1
+		sonar = 1
+		basic_depth_charges = 1
+		basic_secondary_battery = 1
+		improved_secondary_battery = 1
+		basic_cruiser_armor_scheme = 1
+		basic_heavy_armor_scheme = 1
+		mtg_transport = 1
+		improved_airplane_launcher = 1
+	}
+}
+set_politics = {
+	ruling_party = communist
+	last_election = "1997.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities ={
+        fascist = 0
+		nationalist = 10
+		monarchist = 0
+		national_bolshevik = 0
+		national_conservative = 0
+		centrist = 23
+		liberal = 6
+		new_democrat = 0
+		moderate_socialist = 0
+		revolutionary_socialist = 5
+		communist = 56
+}
+
+create_country_leader = {
+	name = "Marian Kotleba"
+	picture = "Portrait_CZE_Marian_Kotleba.dds"
+	ideology = fascist_ideology
+}
+
+create_country_leader = {
+	name = "Ladislav Batora"
+	picture = "Portrait_CZE_Ladislav_Batora.dds"
+	ideology = nationalist_ideology
+}
+
+create_country_leader = {
+	name = "Karel IV"
+	picture = "Portrait_CZE_Karel_Fourth.dds"
+	ideology = absolute_monarchist
+}
+
+create_country_leader = {
+	name = "Tomas Vandas"
+	picture = "Portrait_CZE_Tomas_Vandas.dds"
+	ideology = national_bolshevik_ideology
+}
+
+create_country_leader = {
+	name = "Radek John"
+	picture = "Portrait_CZE_Radek_John.dds"
+	ideology = fiscal_conservative
+}
+
+create_country_leader = {
+	name = "Petr Necas"
+	picture = "Portrait_CZE_Petr_Necas.dds"
+	ideology = centrist_ideology
+}
+
+create_country_leader = {
+	name = "Andrej Babis"
+	picture = "Portrait_CZE_Andrej_Babis.dds"
+	ideology = social_liberal
+}
+
+create_country_leader = {
+	name = "Jan Veleba"
+	picture = "Portrait_CZE_Jan_Veleba.dds"
+	ideology = new_democrat_ideology
+}
+
+create_country_leader = {
+	name = "Milos Zeman"
+	picture = "Portrait_CZE_Milos_Zeman.dds"
+	ideology = democratic_socialist
+}
+
+create_country_leader = {
+	name = "Vojtech Filip"
+	picture = "Portrait_CZE_Vojtech_Filip.dds"
+	ideology = revolutionary_socialist_ideology
+}
+
+create_country_leader = {
+	name = "Marián Čalfa"
+	picture = "Portrait_CZE_Marian_Calfa.dds"
+	ideology = leninist
+}
+
+create_field_marshal = {
+	name = "Josef Bečvář"
+	picture = "Portrait_Josef_Becvar.dds"
+	traits = { organisational_leader }
+	skill = 4
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 4
+	logistics_skill = 3
+}
+
+create_field_marshal = {
+	name = "Vlastimil Picek"
+	picture = "Portrait_Vlastimil_Picek.dds"
+	traits = { old_guard inspirational_leader }
+	skill = 4
+	attack_skill = 3
+	defense_skill = 4
+	planning_skill = 3
+	logistics_skill = 3
+}
+
+create_field_marshal = {
+	name = "Jiří Baloun"
+	picture = "Portrait_Jiri_Baloun.dds"
+	traits = { thorough_planner }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 4
+	logistics_skill = 2
+}
+
+create_field_marshal = {
+	name = "Štefan Kaleta"
+	picture = "Portrait_Stefan_Kaleta.dds"
+	traits = { offensive_doctrine }
+	skill = 2
+	attack_skill = 4
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Milan Virt"
+	picture = "Portrait_Milan_Virt.dds"
+	traits = { urban_assault_specialist }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Gabriel Kovacs"
+	picture = "Portrait_Gabriel_Kovacs.dds"
+	traits = { trait_engineer }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "František Maleninský"
+	picture = "Portrait_Frantisek_Maleninsky.dds"
+	traits = { bearer_of_artillery }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Petr Mikulenka"
+	picture = "Portrait_Petr_Mikulenka.dds"
+	traits = { trickster }
+	skill = 2
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 3
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Štefan Muránský"
+	picture = "Portrait_Stefan_Muransky.dds"
+	traits = { trait_engineer }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Jaroslav Kocián"
+	picture = "Portrait_Jaroslav_Kocian.dds"
+	traits = { trait_engineer }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Ján Gurník"
+	picture = "Portrait_Jan_Gurnik.dds"
+	traits = { panzer_leader }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Ivo Střecha"
+	picture = "Portrait_Ivo_Strecha.dds"
+	traits = { winter_specialist }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Jaromír Šebesta"
+	picture = "Portrait_Jaromir_Sebesta.dds"
+	traits = { commando }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Petr Hromek"
+	picture = "Portrait_Petr_Hromek.dds"
+	traits = {  }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Zuzana Špačková"
+	picture = "Portrait_Zuzana_Spackova.dds"
+	traits = {  }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Pavel Kříž"
+	picture = "Portrait_Pavel_Kriz.dds"
+	traits = { urban_assault_specialist }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Vratislav Beran"
+	picture = "Portrait_Vratislav_Beran.dds"
+	traits = {  }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Karel Řehka"
+	picture = "Portrait_Karel_Rehka.dds"
+	traits = { commando urban_assault_specialist }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Jaromír Alan"
+	picture = "Portrait_Jaromir_Alan.dds"
+	traits = { trickster }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Jaromír Zůna"
+	picture = "Portrait_Jaromir_Zuna.dds"
+	traits = { trait_engineer }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Jaroslav Trakal"
+	picture = "Portrait_Jaroslav_Trakal.dds"
+	traits = { trait_engineer }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "František Ridzák"
+	picture = "Portrait_Frantisek_Ridzak.dds"
+	traits = { trickster }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Zoltán Bubeník"
+	picture = "Portrait_Zoltan_Bubenik.dds"
+	traits = {  }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Josef Kopecký"
+	picture = "Portrait_Josef_Kopecky.dds"
+	traits = { ranger hill_fighter }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Roman Náhončík"
+	picture = "Portrait_Roman_Nahoncik.dds"
+	traits = { panzer_leader }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Miroslav Hlaváč"
+	picture = "Portrait_Miroslav_Hlavac.dds"
+	traits = { panzer_leader }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Jiří Adamec"
+	picture = "Portrait_Jiri_Adamec.dds"
+	traits = { commando ranger }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Pavel Lipka"
+	picture = "Portrait_Pavel_Lipka.dds"
+	traits = { ranger }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Robert Bielený"
+	picture = "Portrait_Robert_Bieleny.dds"
+	traits = { trait_engineer }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Josef Havlík"
+	picture = "Portrait_Josef_Havlik.dds"
+	traits = { trickster }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}

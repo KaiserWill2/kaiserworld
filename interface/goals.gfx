@@ -103,7 +103,230 @@ spriteTypes = {
 		name = "blair_is_watching"
 		texturefile = "gfx/interface/goals/eng/blair_is_watching.dds"			
 		}	
-
+		SpriteType = {
+		name = "shoot_to_kill"
+		texturefile = "gfx/interface/goals/eng/shoot_to_kill.dds"			
+		}	
+		SpriteType = {
+		name = "weapon_research"
+		texturefile = "gfx/interface/goals/eng/weapon_research.dds"			
+		}	
+		SpriteType = {
+		name = "funding_into_weapons"
+		texturefile = "gfx/interface/goals/eng/funding_into_weapons.dds"			
+		}	
+		SpriteType = {
+		name = "the_elite_first"
+		texturefile = "gfx/interface/goals/eng/the_elite_first.dds"			
+		}	
+		SpriteType = {
+		name = "the_blair_personality"
+		texturefile = "gfx/interface/goals/eng/the_blair_personality.dds"			
+		}				
+		SpriteType = {
+		name = "the_parade_of_war"
+		texturefile = "gfx/interface/goals/eng/the_parade_of_war.dds"			
+		}	
+		SpriteType = {
+		name = "national_service"
+		texturefile = "gfx/interface/goals/eng/national_service.dds"			
+		}				
+		SpriteType = {
+		name = "the_union_is_strong"
+		texturefile = "gfx/interface/goals/eng/the_union_is_strong.dds"			
+		}	
+		SpriteType = {
+		name = "relations_with_russia"
+		texturefile = "gfx/interface/goals/eng/relations_with_russia.dds"			
+		}				
+		SpriteType = {
+		name = "infrastructure_project"
+		texturefile = "gfx/interface/goals/eng/infrastructure_project.dds"			
+		}		
+		SpriteType = {
+		name = "england_lives"
+		texturefile = "gfx/interface/goals/eng/england_lives.dds"			
+		}				
+		SpriteType = {
+		name = "imprison_families"
+		texturefile = "gfx/interface/goals/eng/imprison_families.dds"			
+		}		
+		SpriteType = {
+		name = "Test_fire_at_the_wall"
+		texturefile = "gfx/interface/goals/eng/Test_fire_at_the_wall.dds"			
+		}		
+		SpriteType = {
+		name = "forced_labour"
+		texturefile = "gfx/interface/goals/eng/forced_labour.dds"			
+		}
+		SpriteType = {
+		name = "open_the_camps"
+		texturefile = "gfx/interface/goals/eng/open_the_camps.dds"			
+		}		
+		SpriteType = {
+		name = "removing_the_non_pure"
+		texturefile = "gfx/interface/goals/eng/removing_the_non_pure.dds"			
+		}	
+		SpriteType = {
+		name = "a_warning_to_scotland_and_wales"
+		texturefile = "gfx/interface/goals/eng/a_warning_to_scotland_and_wales.dds"			
+		}	
+		SpriteType = {
+		name = "forced_labour_in_the_union"
+		texturefile = "gfx/interface/goals/eng/forced_labour_in_the_union.dds"			
+		}	
+		SpriteType = {
+		name = "the_voice_of_unification"
+		texturefile = "gfx/interface/goals/eng/the_voice_of_unification.dds"			
+		}				
+		SpriteType = {
+		name = "totalist_spirit"
+		texturefile = "gfx/interface/goals/eng/totalist_spirit.dds"			
+		}				
+		SpriteType = {
+		name = "orders_for_england"
+		texturefile = "gfx/interface/goals/eng/orders_for_england.dds"			
+		}		
+		SpriteType = {
+		name = "branching_out_the_congress"
+		texturefile = "gfx/interface/goals/eng/branching_out_the_congress.dds"			
+		}			
+		SpriteType = {
+		name = "the_question_of_scotland"
+		texturefile = "gfx/interface/goals/eng/the_question_of_scotland.dds"			
+		}		
+		SpriteType = {
+		name = "giving_wales_a_chance"
+		texturefile = "gfx/interface/goals/eng/giving_wales_a_chance.dds"			
+		}	
+		SpriteType = {
+		name = "british_resources"
+		texturefile = "gfx/interface/goals/eng/british_resources.dds"			
+		}	
+		SpriteType = {
+		name = "the_oil_dispute"
+		texturefile = "gfx/interface/goals/eng/the_oil_dispute.dds"			
+		}	
+		SpriteType = {
+		name = "border_patrols"
+		texturefile = "gfx/interface/goals/eng/border_patrols.dds"			
+		}		
+		SpriteType = {
+		name = "claims_on_the_shetlands"
+		texturefile = "gfx/interface/goals/eng/claims_on_the_shetlands.dds"			
+		}	
+		SpriteType = {
+		name = "trade_with_wales"
+		texturefile = "gfx/interface/goals/eng/trade_with_wales.dds"			
+		}	
+		SpriteType = {
+		name = "influence_wales"
+		texturefile = "gfx/interface/goals/eng/influence_wales.dds"			
+		}							
+		SpriteType = {
+		name = "cornwall_treatment"
+		texturefile = "gfx/interface/goals/eng/cornwall_treatment.dds"			
+		}							
+		SpriteType = {
+		name = "cornwall_restistance"
+		texturefile = "gfx/interface/goals/eng/cornwall_restistance.dds"			
+		}
+		SpriteType = {
+		name = "camps_of_cornwall"
+		texturefile = "gfx/interface/goals/eng/camps_of_cornwall.dds"			
+		}		
+		SpriteType = {
+		name = "freedom_of_thought"
+		texturefile = "gfx/interface/goals/eng/freedom_of_thought.dds"			
+		}			
+		SpriteType = {
+		name = "peoples_ministry"
+		texturefile = "gfx/interface/goals/eng/peoples_ministry.dds"			
+		}		
+		SpriteType = {
+		name = "we_are_everywhere"
+		texturefile = "gfx/interface/goals/eng/we_are_everywhere.dds"			
+		}	
+		SpriteType = {
+		name = "glory_to_the_leader"
+		texturefile = "gfx/interface/goals/eng/glory_to_the_leader.dds"			
+		}										
+		SpriteType = {
+		name = "defending_the_island"
+		texturefile = "gfx/interface/goals/eng/defending_the_island.dds"			
+		}	
+		SpriteType = {
+		name = "soldiers_of_england"
+		texturefile = "gfx/interface/goals/eng/soldiers_of_england.dds"			
+		}											
+		SpriteType = {
+		name = "dispolian_enforced"
+		texturefile = "gfx/interface/goals/eng/dispolian_enforced.dds"			
+		}		
+		SpriteType = {
+		name = "3_YEAR_SERVICE"
+		texturefile = "gfx/interface/goals/eng/3_YEAR_SERVICE.dds"			
+		}	
+		SpriteType = {
+		name = "oath_of_allegiance"
+		texturefile = "gfx/interface/goals/eng/oath_of_allegiance.dds"			
+		}	
+		SpriteType = {
+		name = "loyalty_to_officers"
+		texturefile = "gfx/interface/goals/eng/loyalty_to_officers.dds"			
+		}				
+		SpriteType = {
+		name = "remember_canada"
+		texturefile = "gfx/interface/goals/eng/remember_canada.dds"			
+		}				
+		SpriteType = {
+		name = "airwings_of_england"
+		texturefile = "gfx/interface/goals/eng/airwings_of_england.dds"			
+		}	
+		SpriteType = {
+		name = "wingston_flying_plans"
+		texturefile = "gfx/interface/goals/eng/wingston_flying_plans.dds"			
+		}	
+		SpriteType = {
+		name = "flying_fortress"
+		texturefile = "gfx/interface/goals/eng/flying_fortress.dds"			
+		}	
+		SpriteType = {
+		name = "union_propaganda_dropping"
+		texturefile = "gfx/interface/goals/eng/union_propaganda_dropping.dds"			
+		}	
+		SpriteType = {
+		name = "super_sonic_research"
+		texturefile = "gfx/interface/goals/eng/super_sonic_research.dds"			
+		}	
+		SpriteType = {
+		name = "seas_of_england"
+		texturefile = "gfx/interface/goals/eng/seas_of_england.dds"			
+		}	
+		SpriteType = {
+		name = "the_north_sea"
+		texturefile = "gfx/interface/goals/eng/the_north_sea.dds"			
+		}	
+		SpriteType = {
+		name = "lindsfarne_tests"
+		texturefile = "gfx/interface/goals/eng/lindsfarne_tests.dds"			
+		}	
+		SpriteType = {
+		name = "test_drills_on_the_island"
+		texturefile = "gfx/interface/goals/eng/test_drills_on_the_island.dds"			
+		}	
+		SpriteType = {
+		name = "defence_against_france"
+		texturefile = "gfx/interface/goals/eng/defence_against_france.dds"			
+		}	
+		SpriteType = {
+		name = "protect_welsh_waters"
+		texturefile = "gfx/interface/goals/eng/protect_welsh_waters.dds"			
+		}	
+		SpriteType = {
+		name = "protect_welsh_waters"
+		texturefile = "gfx/interface/goals/eng/protect_welsh_waters.dds"			
+		}		
 
 	#### OTHER ####
 	SpriteType = {

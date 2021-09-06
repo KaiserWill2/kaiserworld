@@ -1,0 +1,56 @@
+﻿division_template = {
+	name = "RSS cadre"
+	
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		
+	}
+	
+	priority = 0
+}
+
+units = {
+
+	division = {
+		name = " RSS cadre"
+		division_template = "Militia Brigade" 
+		start_experience_factor = 0
+		location = 7273
+	}
+	
+	division = {
+		name = " RSS cadre"
+		division_template = "RSS cadre"
+		start_experience_factor = 0
+		location = 10810
+	}
+
+	division = {
+		name = " RSS cadre"
+		division_template = "RSS cadre" 
+		start_experience_factor = 0
+		location = 1898
+	}
+	division = {
+		name = " RSS cadre"
+		division_template = "Militia Brigade" 
+		start_experience_factor = 0
+		location = 7273
+	}
+	
+	division = {
+		name = " RSS cadre"
+		division_template = "RSS cadre"
+		start_experience_factor = 0
+		location = 10810
+	}
+
+	division = {
+		name = " RSS cadre"
+		division_template = "RSS cadre" 
+		start_experience_factor = 0
+		location = 1898
+	}
+}
+

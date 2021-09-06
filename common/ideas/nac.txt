@@ -1,0 +1,367 @@
+ideas = {
+
+    country = {
+	    
+		idea_nac_fertile_iraq = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = farming
+			
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.01
+			}
+		}
+		
+		idea_nac_unitary_republic = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = FRA_army_of_aggression_focus
+			
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = 0.5
+				justify_war_goal_time = -0.1 
+				military_leader_cost_factor = 0.5 
+				stability_factor = -0.045
+				war_support_factor = 0.02
+			}
+		}
+		
+		idea_nac_federation = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = air_support_focus
+			
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = -0.35 
+				stability_factor = 0.05
+				justify_war_goal_time = 0.05 
+				army_morale_factor = 0.01
+			}
+		}
+		
+		idea_nac_secularism = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = free_media
+			
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.025 
+				army_org_Factor = 0.01
+			}
+		}
+		
+		idea_nac_scientific_modernisation = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = generic_research_bonus
+			
+			removal_cost = -1
+			
+			modifier = {
+				research_speed_factor = 0.04
+			}
+		}
+		
+		idea_nac_united_armies = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = military_governance
+			
+			removal_cost = -1
+			
+			modifier = {
+				offence = 0.05
+			}
+		}
+		
+		idea_nac_economic_corruption_eliminated = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = war_economy
+			
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.025 
+				local_resources_factor = 0.1 
+			}
+		}
+		
+		idea_nac_industries_nationalised = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = support_local_factories
+			
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_industrial_complex_factor = 0.05 
+				production_speed_arms_factory_factor = 0.05
+			}
+		}
+		
+		idea_nac_limited_political_participation = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = FRA_matignon_agreements
+			
+			removal_cost = -1
+			
+			modifier = {
+				decryption_power_factor = 0.1 
+				crypto_strength = 1
+			}
+		}
+		
+		idea_nac_cult_of_personality = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = generic_morale_bonus
+			
+			removal_cost = -1
+			
+			modifier = {
+				moderate_socialist_drift = 0.03 
+				army_morale_factor = 0.005
+			}
+		}
+		
+		idea_nac_healthcare_reforms = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = socialist_healthcare
+			
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.05 
+				MONTHLY_POPULATION = 0.01
+			}
+		}
+		
+		idea_nac_working_class_education = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = workers_congress
+			
+			removal_cost = -1
+			
+			modifier = {
+				industrial_capacity_factory = 0.025
+			}
+		}
+		
+		idea_nac_military_inspiration = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = FRA_national_mobilization_focus
+			
+			removal_cost = -1
+			
+			modifier = {
+				non_core_manpower = 0.01
+			}
+		}
+		
+		idea_nac_pumping_out_weapons = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = military_industrial_complex
+			
+			removal_cost = -1
+			
+			modifier = {
+				industrial_capacity_factory = 0.012
+			}
+		}
+		
+		idea_nac_the_right_troops = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = generic_manpower_bonus
+			
+			removal_cost = -1
+			
+			modifier = {
+				training_time_factor = -0.045
+			}
+		}
+		
+		idea_nac_naval_base_construction = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = coastal_defence
+			
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_naval_base_factor = 0.1
+			}
+		}
+		
+		idea_nac_destiny_of_a_nation = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = generic_volunteer_expedition_bonus
+			
+			removal_cost = -1
+			
+			modifier = {
+				justify_war_goal_time = -0.05
+			}
+		}
+		
+		idea_nac_renewable_energy_subsidies = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			###picture = electricity_production
+			picture = trade_council_power
+			
+			removal_cost = -1
+			
+			modifier = {
+				research_speed_factor = 0.01 
+				production_factory_max_efficiency_factor = 0.05
+				political_power_gain = -0.1
+			}
+		}
+		
+		idea_nac_support_of_millions = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = generic_victors_of_ww1
+			
+			removal_cost = -1
+			
+			modifier = {
+				conscription = 0.015
+				training_time_factor = 0.075
+			}
+		}
+		
+	}
+	
+
+}

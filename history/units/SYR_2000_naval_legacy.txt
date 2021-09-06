@@ -1,0 +1,27 @@
+﻿
+units= {
+
+	####### NAVAL UNITS #######
+	##### MEDITERRANEAN FLEET #####
+	##### Battle Force (CO: ) #####
+	### Tartus ###
+	fleet = {
+		name = "Syrian Arab Fleet"
+		naval_base = 10087 # Tartus
+		task_force = {
+			name = "Syrian Liberation Fleet"
+			location = 10087 # Tartus
+			ship = { name = "Hafez Assad" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = SYR version_name = "Destroyer I" } } }
+			ship = { name = "Bashel Assad" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = SYR version_name = "Destroyer I" } } }
+
+		}
+		task_force = {
+			name = "Syrian Sub Fleet"
+			location = 10087 # Tartus
+			ship = { name = "Fertile Crescent" definition = submarine equipment = { submarine_1 = { amount = 1 owner = SYR version_name = "Submarine I" } } }
+			ship = { name = "Palmyra" definition = submarine equipment = { submarine_1 = { amount = 1 owner = SYR version_name = "Submarine I" } } }
+			ship = { name = "Assyria" definition = submarine equipment = { submarine_1 = { amount = 1 owner = SYR version_name = "Submarine I" } } }
+			ship = { name = "Pride of Assad" definition = submarine equipment = { submarine_1 = { amount = 1 owner = SYR version_name = "Submarine I" } } }
+		}
+	}
+}

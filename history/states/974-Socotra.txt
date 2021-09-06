@@ -1,0 +1,26 @@
+
+state={
+	id=974
+	name="STATE_974"
+	manpower = 54290
+	
+	state_category = rural
+	
+	resources={
+		oil=1
+	}
+	history={
+		owner = YEM
+		buildings = {
+			infrastructure = 3
+			8000 = {
+				naval_base = 1
+			}
+		}
+		add_core_of = YEM
+	}
+
+	provinces={
+		8000
+	}
+}

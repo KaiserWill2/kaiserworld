@@ -1,0 +1,25 @@
+
+state={
+	id=979
+	name="STATE_979"
+	manpower = 684300
+	
+	state_category = rural
+	
+	history = {
+		owner = YEM
+		buildings = {
+			air_base = 3
+			infrastructure = 3
+			13630 = {
+				naval_base = 7
+			}
+		}
+		add_core_of = YEM
+		victory_points = { 13630 50 } #Aden City, state capital
+	}
+
+	provinces={
+		13630
+	}
+}

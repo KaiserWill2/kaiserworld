@@ -1,0 +1,18 @@
+state={
+	id=919
+	name="STATE_919"
+	provinces={
+		10884 13367 13372 13379 13389 13393 13394 13408 13425 13431 13432 13438 13446 13447 13454 13465 13473 13481 13489 13499 13508 13509 13512 13522 
+	}
+	state_category = pastoral
+	history={
+		owner = LBA
+		add_core_of = LBA
+		buildings = {
+			infrastructure = 2
+		}
+
+	}
+	manpower=45000
+	buildings_max_level_factor=1.000
+}

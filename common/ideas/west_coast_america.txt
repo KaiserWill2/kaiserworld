@@ -1,0 +1,714 @@
+ideas = {
+
+    country = {
+	    
+		idea_standing_firm_union = {
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				revolutionary_socialist_drift = -0.1
+				nationalist_drift = -0.1
+				fascist_drift = -0.1
+				justify_war_goal_time = 0.6
+			}
+		}
+		
+		idea_cascadian_separatism = {
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = -0.5
+				stability_factor = -0.25
+			}
+		}
+		
+		idea_failing_economy = {
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = great_depression
+			
+			modifier = {
+				industrial_capacity_factory = -0.15
+				production_speed_buildings_factor = -0.1 
+				local_resources_factor = -0.2
+				stability_factor = -0.05
+				war_support_factor = -0.05
+				justify_war_goal_time = 0.75
+			}
+		}
+		
+		idea_pca_immigration = {
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = prc_low_popular_support3
+			
+			modifier = {
+				MONTHLY_POPULATION = 0.006
+				consumer_goods_factor = 0.015
+				stability_factor = -0.03
+			}
+		}
+		
+		idea_pca_quotas_maximised = {
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = man_five_year_plan_industry
+			
+			modifier = {
+				production_factory_max_efficiency_factor = 0.1 
+				army_morale_factor = -0.035
+			}
+		}
+		
+		idea_pca_border_defence = {
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_fortify_the_borders
+			
+			modifier = {
+				production_speed_bunker_factor = 0.2
+				industry_repair_factor = 0.1
+			}
+		}
+		
+		idea_pca_united_nation = {
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_pp_unity_bonus
+			
+			modifier = {
+				national_conservative_drift = 0.01 
+				centrist_drift = 0.01 
+				liberal_drift = 0.01 
+				new_democrat_drift = 0.01 
+				moderate_socialist_drift = 0.005
+				justify_war_goal_time = -0.25
+			}
+		}
+		
+		idea_pca_restoration_of_democracy = {
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_democratic_drift_bonus
+			
+			modifier = {
+				trade_opinion_factor = 0.25 
+				opinion_gain_monthly_factor = 0.15
+			}
+		}
+		
+		idea_pca_new_propaganda_machine = {
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = HUN_secret_rearmament
+			
+			modifier = {
+				army_morale_factor = 0.03 
+				offence = 0.025
+				industrial_capacity_factory = 0.045
+			}
+		}
+		
+		idea_pca_transformation_of_silicon_valley = {
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = jap_supremacy_of_technology
+			
+			modifier = {
+				research_speed_factor = 0.03
+				production_speed_arms_factory_factor = 0.05 
+				consumer_goods_factor = -0.012
+			}
+		}
+		
+		idea_pca_population_growth_policies = {
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = population_growth_policies
+			
+			modifier = {
+				MONTHLY_POPULATION = 0.01 
+			}
+		}
+		
+		idea_pca_combatting_inflation = {
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = chi_hyper_inflation3
+			
+			modifier = {
+				consumer_goods_factor = -0.05
+				production_speed_industrial_complex_factor = -0.05 
+				production_speed_arms_factory_factor = 0.02
+			}
+		}
+		
+		idea_pca_social_liberalism = {
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = ger_bulwark_against_bolshevism
+			
+			modifier = {
+				research_speed_factor = 0.045 
+				stability_factor = 0.03
+				army_morale_factor = 0.02
+				army_org_Factor = 0.02
+			}
+		}
+		
+		idea_pca_quotas_relaxed = {
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_local_self_management
+			
+			modifier = {
+				production_factory_max_efficiency_factor = -0.05 
+				consumer_goods_factor = -0.03
+				stability_factor = 0.03
+			}
+		}
+		
+		idea_pca_engaged_workers = {
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_license_production
+			
+			modifier = {
+				industrial_capacity_factory = 0.04 
+			}
+		}
+		
+		idea_pca_mixed_economy = {
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_neutrality_drift_bonus
+			
+			modifier = {
+				production_speed_buildings_factor = 0.05 
+				consumer_goods_factor = 0.05 
+				industrial_capacity_factory = 0.025
+			}
+		}
+		
+		idea_pca_effective_resource_allocation = {
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_foreign_capital
+			
+			modifier = {
+				local_resources_factor = 0.2
+			}
+		}
+		
+		idea_pca_agriculture_focus = {
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_flexible_foreign_policy2
+			
+			modifier = {
+				industrial_capacity_factory = -0.05 
+				MONTHLY_POPULATION = 0.02 
+				army_core_defence_factor = 0.25
+			}
+		}
+		
+		idea_pca_all_for_the_future_wars = {
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_license_production
+			
+			modifier = {
+				conscription = 0.015
+			}
+		}
+		
+		idea_pca_preparing_for_war = {
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_war_preparation
+			
+			modifier = {
+				production_speed_arms_factory_factor = 0.035
+				conscription = 0.0035
+			}
+		}
+		
+		idea_pca_personality_cult_demolished = {
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_deal_with_the_devil
+			
+			modifier = {
+				army_morale_factor = -0.04 
+				army_org_Factor = 0.07 
+				consumer_goods_factor = -0.025
+			}
+		}
+		
+		idea_pca_immigration_encouraged = {
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = prc_low_popular_support2
+			
+			modifier = {
+				MONTHLY_POPULATION = 0.01
+				consumer_goods_factor = 0.03 
+				industrial_capacity_factory = 0.05
+				stability_factor = -0.05
+			}
+		}
+		
+		idea_pca_centralised_state = {
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_central_management
+			
+			modifier = {
+				supply_consumption_factor = -0.05 
+				army_leader_start_level = 1
+				political_power_gain = 0.2
+			}
+		}
+		
+		idea_pca_female_recruitment_campaign = {
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_army_war_college
+			
+			modifier = {
+				conscription_factor = 0.05
+				army_morale_factor = 0.045
+			}
+		}
+		
+		idea_pca_implementing_the_three_year_plan = {
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = man_five_year_plan_industry
+			
+			modifier = {
+				political_power_gain = -0.1 
+				army_defence_factor = 0.3
+				justify_war_goal_time = 1.5
+			}
+		}
+
+
+		idea_pca_second_three_year_plan = {
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = man_five_year_plan_industry
+			
+			modifier = {
+				political_power_gain = -0.1 
+				production_speed_industrial_complex_factor = 0.2
+				production_speed_arms_factory_factor = 0.2
+			}
+		}
+		
+		idea_pca_increased_education_funding = {
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = can_patriation
+			
+			modifier = {
+				foreign_subversive_activites = -0.5 
+				military_leader_cost_factor = -0.2 
+				global_building_slots_factor = 0.1
+			}
+		}
+		
+		idea_pca_service_economy = {
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = ast_abandon_the_westminster_system
+			
+			modifier = {
+				research_speed_factor = 0.03 
+				second_in_command_cost_factor = -0.1 
+				foreign_minister_cost_factor = -0.1 
+				industry_minister_cost_factor = -0.1 
+				national_security_minister_cost_factor = -0.1 
+				intelligence_minister_cost_factor = -0.1 
+				trade_laws_cost_factor = -0.1 
+				mobilization_laws_cost_factor = -0.1
+				economy_cost_factor = -0.1
+			}
+		}
+		
+		idea_pca_leniency_towards_private_ownership = {
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_production_bonus
+			
+			modifier = {
+				consumer_goods_factor = -0.05
+			}
+		}
+		
+		idea_pca_socialisation = {
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_volunteer_expedition_bonus
+			
+			modifier = {
+				political_power_gain = -0.2 
+				production_factory_start_efficiency_factor = 0.04 
+				local_resources_factor = -0.05 
+				line_change_production_efficiency_factor = 0.1
+			}
+		}
+
+		idea_pca_art_liberalized = {
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = new_generations
+			
+			modifier = {
+				stability_factor = 0.04
+				production_factory_max_efficiency_factor = 0.06
+				drift_defence_factor = -0.15
+			}
+		}
+
+		idea_pca_tynerite_ideology = {
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = rallying_the_people
+			
+			modifier = {
+				political_power_factor = 0.15
+				conscription = 0.01
+				justify_war_goal_time = -0.25
+			}
+		}
+		
+		idea_pca_reindustrialisation = {
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_victors_of_ww1
+			
+			modifier = {
+				production_speed_industrial_complex_factor = 0.05 
+				production_speed_arms_factory_factor = 0.05 
+				consumer_goods_factor = 0.035
+			}
+		}
+		
+		idea_pca_special_economic_zones = {
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = jap_duplicate_research
+			
+			modifier = {
+				consumer_goods_factor = -0.02
+				industrial_capacity_factory = -0.03 
+				political_power_gain = -0.15 
+				communist_drift = 0.003
+			}
+		}
+		
+		idea_pca_war_propaganda = {
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = chi_war_of_resistance3
+			
+			modifier = {
+				conscription = 0.002
+			}
+		}
+		
+		idea_pca_columbian_security_force = {
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = air_war_plans_division_focus
+			
+			modifier = {
+				political_power_gain = 0.1 
+			}
+		}
+		
+		idea_pca_manning_the_defences = {
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = YUG_federal_defense_council
+			
+			modifier = {
+				production_speed_bunker_factor = 0.15
+			}
+		}
+		
+		idea_pca_back_in_business_baby = {
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = new_deal
+			
+			modifier = {
+				industrial_capacity_factory = 0.03 
+				consumer_goods_factor = -0.02 
+				army_morale_factor = 0.04
+			}
+		}
+		
+		idea_pca_vegas_manufacturing = {
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_production_bonus
+			
+			modifier = {
+				production_factory_max_efficiency_factor = 0.1 
+				industry_repair_factor = 0.15
+			}
+		}
+		
+		idea_pca_hoover_dam = {
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_build_infrastructure
+			
+			modifier = {
+				local_resources_factor = 0.05 
+				production_factory_start_efficiency_factor = 0.02 
+			}
+		}
+		
+		idea_pca_war_commissars = {
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_oppression
+			
+			modifier = {
+				army_speed_factor = 0.035 
+				planning_speed = 0.05
+			}
+		}
+		
+		idea_pca_quotas_for_the_struggle = {
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_political_support
+			
+			modifier = {
+				industrial_capacity_factory = 0.1 
+				MONTHLY_POPULATION = -0.015
+			}
+		}
+		
+		idea_pca_power_to_the_people = {
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_king_handled
+			
+			modifier = {
+				political_power_gain = -0.1 
+				stability_factor = 0.02 
+				army_morale_factor = 0.05
+			}
+		}
+		
+		idea_pca_the_ranch_act = {
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = ranch_act
+			
+			modifier = {
+				production_factory_start_efficiency_factor = -0.1
+				production_factory_max_efficiency_factor = 0.05 
+				consumer_goods_factor = -0.075
+			}
+		}
+		
+		idea_pca_rearmed_populace = {
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = chi_army_corruption3
+			
+			modifier = {
+				army_core_defence_factor = 0.1
+			}
+		}
+	}
+
+
+
+}

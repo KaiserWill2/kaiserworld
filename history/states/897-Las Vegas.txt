@@ -1,0 +1,21 @@
+state={
+	id=897
+	name="STATE_897"
+state_category = city
+	provinces={
+		4799 4816 7879 12425 
+	}
+	history={
+		owner = USA
+		add_core_of = USA
+			victory_points = {
+            4799 10
+			}
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 3
+		}
+	}
+	manpower=615000
+	buildings_max_level_factor=1.000
+}

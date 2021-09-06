@@ -1,0 +1,17 @@
+﻿
+units = {
+	#Japanese Fleet
+	#Tokyo
+	fleet = {
+		name = "Japanese Self Defense Force"
+		naval_base = 1182 # Tokyo
+		task_force = {
+			name = "Tokyo Battle Group"
+			location = 1182 # Tokyo
+			ship = { name = "Yamagiri" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = JAP version_name = "Frigate I" } } } 
+		
+			ship = { name = "Chokai" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = JAP version_name = "Destroyer I" } } }
+			ship = { name = "Yudachi" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = JAP version_name = "Destroyer I" } } }
+		}
+	}
+}

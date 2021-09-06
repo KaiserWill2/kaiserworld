@@ -1,0 +1,207 @@
+﻿add_namespace = pence
+
+#Mob rule
+country_event = {
+	id = pence.1
+	title = pence.1.t
+	desc = pence.1.d
+	picture = mob_rule
+	
+	is_triggered_only = yes
+	
+	option = {   #Appoint No Nose as head of government
+		name = pence.1.o1
+		set_country_flag = appointed_no_nose_as_head_of_government
+		ai_chance = {
+			base = 50
+			modifier = {
+				NOT = {
+					has_game_rule = {
+						rule = AMS_ai_behavior
+						option = DEFAULT
+					}
+					has_game_rule = {
+						rule = AMS_ai_behavior
+						option = AMS_MAF_NOSE
+					}
+				}
+				factor = 0
+			}
+		}
+	}
+	
+	option = {   #Appoint The Chin as head of government
+		name = pence.1.o2
+		set_country_flag = appointed_the_chin_as_head_of_government
+		ai_chance = {
+			base = 50
+			modifier = {
+				NOT = {
+					has_game_rule = {
+						rule = AMS_ai_behavior
+						option = DEFAULT
+					}
+					has_game_rule = {
+						rule = AMS_ai_behavior
+						option = AMS_MAF_CHIN
+					}
+				}
+				factor = 0
+			}
+		}
+	}
+}
+
+#Protestant coup
+country_event = {
+	id = pence.2
+	title = pence.2.t
+	desc = pence.2.d
+	picture = protestant_coup
+	
+	is_triggered_only = yes
+	
+	option = {   #Invite moderate Dick Cheney
+		name = pence.2.o1
+		set_country_flag = invited_dick_cheney
+		hidden_effect = {
+			every_country = {
+		        limit = {
+			        NOT = {
+				        tag = AMS
+				    }
+			    }
+			    news_event = {
+			        hours = 4
+			        id = news.165
+		        }
+		    }
+		}
+		ai_chance = {
+			base = 50
+			modifier = {
+				NOT = {
+					has_game_rule = {
+						rule = AMS_ai_behavior
+						option = DEFAULT
+					}
+					has_game_rule = {
+						rule = AMS_ai_behavior
+						option = AMS_PROT_MOD
+					}
+				}
+				factor = 0
+			}
+		}
+	}
+	
+	option = {   #Invite populist Pat Robertson
+		name = pence.2.o2
+		set_country_flag = invited_pat_robertson
+		hidden_effect = {
+			every_country = {
+		        limit = {
+			        NOT = {
+				        tag = AMS
+				    }
+			    }
+			    news_event = {
+			        hours = 4
+			        id = news.165
+		        }
+		    }
+		}
+		ai_chance = {
+			base = 50
+			modifier = {
+				NOT = {
+					has_game_rule = {
+						rule = AMS_ai_behavior
+						option = DEFAULT
+					}
+					has_game_rule = {
+						rule = AMS_ai_behavior
+						option = AMS_PROT_POP
+					}
+				}
+				factor = 0
+			}
+		}
+	}
+	
+	option = {   #Invite radical Kevin Strom
+		name = pence.2.o3
+		set_country_flag = invited_kevin_strom
+		hidden_effect = {
+			every_country = {
+		        limit = {
+			        NOT = {
+				        tag = AMS
+				    }
+			    }
+			    news_event = {
+			        hours = 4
+			        id = news.165
+		        }
+		    }
+		}
+		ai_chance = {
+			base = 50
+			modifier = {
+				NOT = {
+					has_game_rule = {
+						rule = AMS_ai_behavior
+						option = DEFAULT
+					}
+					has_game_rule = {
+						rule = AMS_ai_behavior
+						option = AMS_PROT_RAD
+					}
+				}
+				factor = 0
+			}
+		}
+	}
+}
+
+#American-State funded rebels
+country_event = {
+	id = pence.3
+	title = pence.3.t
+	desc = pence.3.d
+	picture = american_funded_rebels
+	
+	is_triggered_only = yes
+	
+	option = {   
+		name = pence.3.o1
+		add_timed_idea = {
+			idea = idea_ams_uprising
+		    days = 400
+		}
+	}
+}
+
+#American mafia grows in strength
+country_event = {
+	id = pence.4
+	title = pence.4.t
+	desc = pence.4.d
+	picture = american_mafia_grows
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = AMS
+		has_completed_focus = AMS_corporatist_economics
+	}
+	
+	mean_time_to_happen = {
+		days = 100
+	}
+	
+	option = {   
+		name = pence.4.o1
+		add_ideas = idea_ams_strengthened_mafia
+	}
+}

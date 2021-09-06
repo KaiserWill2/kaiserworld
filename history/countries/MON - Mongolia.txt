@@ -1,0 +1,224 @@
+﻿capital = 330
+
+oob = "MON_2000"
+
+set_research_slots = 4
+set_convoys = 500
+set_stability = 0.5
+set_war_support = 0.1
+
+set_technology = {
+	support_weapons = 1
+	infantry_weapons = 1
+	motorised_infantry = 1 
+	tech_support = 1 
+	tech_field_hospital = 1 
+	tech_engineers = 1 
+	gwtank = 1 
+	basic_light_tank = 1 
+	gw_artillery = 1 
+	tech_mountaineers = 1
+	early_fighter = 1 
+	early_bomber = 1 
+	interwar_antiair = 1
+	interwar_antitank = 1
+}
+
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	set_technology = {
+		early_submarine = 1
+		basic_submarine = 1
+		early_destroyer = 1
+		early_light_cruiser = 1
+		basic_light_cruiser = 1
+		early_heavy_cruiser = 1
+		
+		
+		early_carrier = 1
+		basic_carrier = 1
+		transport = 1
+	}
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_technology = {
+		basic_naval_mines = 1
+		submarine_mine_laying = 1
+		early_ship_hull_light = 1
+		basic_ship_hull_light = 1
+		early_ship_hull_submarine = 1
+		basic_ship_hull_submarine = 1
+		early_ship_hull_cruiser = 1
+		basic_ship_hull_cruiser = 1
+		early_ship_hull_heavy = 1
+		early_ship_hull_carrier = 1
+		basic_ship_hull_carrier = 1
+		basic_battery = 1
+		basic_light_battery = 1
+		basic_medium_battery = 1
+		basic_heavy_battery = 1
+		basic_torpedo = 1
+		sonar = 1
+		basic_depth_charges = 1
+		basic_secondary_battery = 1
+		improved_secondary_battery = 1
+		basic_cruiser_armor_scheme = 1
+		basic_heavy_armor_scheme = 1
+		mtg_transport = 1
+		improved_airplane_launcher = 1
+	}
+}
+
+set_politics = {
+	ruling_party = communist
+	last_election = "1997.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+        fascist = 0
+		nationalist = 9
+		monarchist = 0
+		national_bolshevik = 13
+		national_conservative = 4
+		centrist = 0
+		liberal = 0
+		new_democrat = 12
+		moderate_socialist = 0
+		revolutionary_socialist = 10
+		communist = 52
+}
+
+create_country_leader = {
+	name = "Damdiny Demberel"
+	picture = "Portrait_MON_Damdiny_Demberel.dds"
+	ideology = stalinist
+}
+
+create_country_leader = {
+	name = "Uranjargal"
+	picture = "Portrait_MON_Uranjargal.dds"
+	ideology = national_socialist
+}
+
+create_country_leader = {
+	name = "Jugderdemidiin Gurragchaa"
+	picture = "Portrait_MON_Jugderdemidiin_Gurragchaa.dds"
+	ideology = nationalist_ideology
+}
+
+create_country_leader = {
+	name = "Jebtsundamba Khutughtu IX"
+	picture = "Portrait_MON_Jebtsundamba_Khutughtu_Ninth.dds"
+	ideology = absolute_monarchist
+}
+
+create_country_leader = {
+	name = "Gombojavyn Zandanshatar"
+	picture = "Portrait_MON_Gombojavyn_Zandanshatar.dds"
+	ideology = national_bolshevik_ideology
+}
+
+create_country_leader = {
+	name = "Mendsaikhany Enkhsaikhan"
+	picture = "Portrait_MON_Mendsaikhany_Enkhsaikhan.dds"
+	ideology = fiscal_conservative
+}
+
+create_country_leader = {
+	name = "Tsakhiagiin Elbegdorj"
+	picture = "Portrait_MON_Tsakhiagiin_Elbegdorj.dds"
+	ideology = centrist_ideology
+}
+
+create_country_leader = {
+	name = "Sanjaasurengiin Zorig"
+	picture = "Portrait_MON_Sanjaasurengiin_Zorig.dds"
+	ideology = social_liberal
+}
+
+create_country_leader = {
+	name = "Punsalmaagiin Ochirbat"
+	picture = "Portrait_MON_Punsalmaagiin_Ochirbat.dds"
+	ideology = new_democrat_ideology
+}
+
+create_country_leader = {
+	name = "Nambaryn Enkhbayar"
+	picture = "Portrait_MON_Nambaryn_Enkhbayar.dds"
+	ideology = democratic_socialist
+}
+
+create_country_leader = {
+	name = "Badmaanyambuugiin Bat-Erdene"
+	picture = "Portrait_MON_Badmaanyambuugiin_Bat_Erdene.dds"
+	ideology = revolutionary_socialist_ideology
+}
+
+create_field_marshal = {
+	name = "Tserendejidiin Byambajav"
+	picture = "Portrait_Byambajav.dds"
+	traits = { old_guard offensive_doctrine }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 4
+	planning_skill = 2
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Dulamsürengiin Davaa"
+	picture = "Portrait_Davaa.dds"
+	traits = { panzer_leader }
+	skill = 2
+	attack_skill = 1
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Radnaabazaryn Sükhbat"
+	picture = "Portrait_Sukhbat.dds"
+	traits = { trickster }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Daribishiin Oyuunbold"
+	picture = "Portrait_Oyuunbold.dds"
+	traits = { trait_engineer }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "B. Amgalanbaatar"
+	picture = "Portrait_Amgalanbaatar.dds"
+	traits = { ranger }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "B. Ganbaatar"
+	picture = "Portrait_Ganbaatar.dds"
+	traits = { fortress_buster }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}

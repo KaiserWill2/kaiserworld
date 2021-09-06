@@ -1,0 +1,55 @@
+ideologies = {
+
+	centrist = {
+		
+		types = {
+		
+			centrist_ideology = {
+			}
+
+			right_libertarian = {
+			}
+			
+			centrist_populist = {
+			}
+
+			agrarian_centrist = {
+			}
+			
+		}
+		
+		dynamic_faction_names = {
+			"FACTION_NAME_CENTRIST_1"
+			"FACTION_NAME_CENTRIST_2"
+			"FACTION_NAME_CENTRIST_3"
+			"FACTION_NAME_CENTRIST_4"
+			"FACTION_NAME_CENTRIST_5"
+			"FACTION_NAME_CENTRIST_6"
+		}
+		
+		color = { 203 113 38 }
+		
+		war_impact_on_world_tension = 1
+		faction_impact_on_world_tension = 1
+		
+		rules = {
+			can_guarantee_other_ideologies = yes
+			can_force_government = yes
+			can_send_volunteers = yes
+			can_puppet = yes
+			can_lower_tension = yes
+		}
+		
+		modifiers = {
+			join_faction_tension = 0.5
+			civilian_intel_to_others = 10.0
+			army_intel_to_others = 10.0
+			navy_intel_to_others = 10.0
+			airforce_intel_to_others = 10.0
+		}
+
+		ai_neutral = yes
+		
+	}
+
+}

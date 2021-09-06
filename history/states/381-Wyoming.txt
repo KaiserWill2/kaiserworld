@@ -1,0 +1,26 @@
+
+state={
+	id=381
+	name="STATE_381"
+
+	history={
+		owner = USA
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+
+		}
+		add_core_of = USA
+		victory_points = {
+			4723 1 
+		}
+
+	}
+
+	provinces={
+		4610 4723 4794 4820 10640 
+	}
+	manpower=228750
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+}

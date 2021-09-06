@@ -1,0 +1,24 @@
+﻿
+units= {
+	####### NAVAL UNITS #######
+	##### PEOPLE'S FLEET #####
+	##### Battle Force (CO: ) #####
+	### Los Angeles ###
+	fleet = {
+		name = "Battle Force Newton"
+		naval_base = 9814 # Los Angeles
+		task_force = {
+			name = "Strike Group Rosenberg"
+			location = 9814 # Los Angeles
+			ship = {
+			name = "Huey Newton" definition = carrier equipment = { carrier_1 = { amount = 1 owner = PCA version_name = "Carrier I" } } 
+			air_wings = {
+				cv_fighter_equipment_0 =  { owner = "PCA" amount = 20 }
+				cv_nav_bomber_equipment_1 =  { owner = "PCA" amount = 20 }
+				}
+			}	
+			ship = { name = "Jack London" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = PCA version_name = "Destroyer I" } } }
+			ship = { name = "Bill Haywood" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = PCA version_name = "Destroyer I" } } }
+		}
+	}
+}

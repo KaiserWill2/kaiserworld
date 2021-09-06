@@ -1,0 +1,19 @@
+﻿
+units= {
+	####### NAVAL UNITS #######
+	##### UAR NAVY #####
+	##### Republican Fleet #####
+	### Alexandria ###
+	fleet = {
+		name = "Republican Fleet"
+		naval_base = 4076 # Alexandria
+		task_force = {
+			name = "United Arab Fleet"
+			location = 4076 # Alexandria
+			ship = { name = "Gamal Nasser" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = UAR version_name = "Destroyer I" } } }
+			ship = { name = "Arab Spirit" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = UAR version_name = "Destroyer I" } } }
+			ship = { name = "Pride of Egypt" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = UAR version_name = "Destroyer I" } } }
+			ship = { name = "Alexandria" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = UAR version_name = "Destroyer I" } } }
+		}
+	}
+}

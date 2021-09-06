@@ -1,0 +1,24 @@
+has_democratic_government = {
+	custom_trigger_tooltip = {
+		tooltip = RW_democratic_gov
+		OR = {
+			has_government = national_conservative 
+			has_government = centrist
+			has_government = liberal
+			has_government = new_democrat
+			has_government = moderate_socialist
+			has_government = nationalist
+			
+			###These two things are gonna be voided until I can go in and add country flags to each path that is democratic nationalist or democratic RevSoc. However right now Democratic RevSoc is removed to avoid any RevSocs 
+			####from joining.
+			#AND = {
+			#	has_government = nationalist
+			#	has_country_flag = democratic_nationalist
+			#}
+			#AND = {
+			#	has_government = revolutionary_socialist 
+			#	has_country_flag = revsoc_democratic
+			#}
+		}
+	}
+}

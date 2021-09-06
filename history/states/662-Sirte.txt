@@ -1,0 +1,26 @@
+
+state={
+	id=662
+	name="STATE_662"
+	resources={
+		oil=3.000
+	}
+
+	history={
+		owner = LBA
+		buildings = {
+			infrastructure = 4
+			air_base = 4
+
+		}
+		add_core_of = LBA
+
+	}
+
+	provinces={
+		7136 13073 
+	}
+	manpower=29000
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+}

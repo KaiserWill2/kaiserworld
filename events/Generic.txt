@@ -1,0 +1,147 @@
+﻿add_namespace = generic
+
+#Nation asks to join Warsaw Pact - USSR
+country_event = {
+	id = generic.1
+	title = generic.1.t
+	desc = generic.1.d
+	picture = red_square
+	
+	is_triggered_only = yes
+	
+	option = { #Ok
+		name = generic.1.o1
+	    ai_chance = {
+			factor = 100
+		}
+		FROM = {
+		    country_event = { days = 1 id = generic.2 } 
+		}
+		add_to_faction = FROM
+	}
+	
+	option = { #No
+		name = generic.1.o2
+	    ai_chance = {
+			factor = 0
+		}
+		add_political_power = -20
+		FROM = {
+		    country_event = { days = 1 id = generic.3 } 
+		}
+	}
+}
+
+#USSR accepts
+country_event = {
+	id = generic.2
+	title = generic.2.t
+	desc = generic.2.d
+	picture = red_square
+	
+	is_triggered_only = yes
+	
+	option = { #Ok
+		name = generic.2.o1
+	    ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+#USSR refuses
+country_event = {
+	id = generic.3
+	title = generic.3.t
+	desc = generic.3.d
+	picture = red_square
+	
+	is_triggered_only = yes
+	
+	option = { #Ok
+		name = generic.3.o1
+	    ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+#Nation asks to join Democratic League - Canada
+country_event = {
+	id = generic.4
+	title = generic.4.t
+	desc = generic.4.d
+	picture = ottawa_parliament
+	
+	is_triggered_only = yes
+	
+	option = { #Ok
+		name = generic.4.o1
+	    ai_chance = {
+			factor = 100
+		}
+		FROM = {
+		    country_event = { days = 1 id = generic.5 } 
+		}
+		add_to_faction = FROM
+	}
+	
+	option = { #No
+		name = generic.4.o2
+	    ai_chance = {
+			factor = 0
+		}
+		add_political_power = -20
+		FROM = {
+		    country_event = { days = 1 id = generic.6 } 
+		}
+	}
+}
+
+#Canada accepts
+country_event = {
+	id = generic.5
+	title = generic.5.t
+	desc = generic.5.d
+	picture = ottawa_parliament
+	
+	is_triggered_only = yes
+	
+	option = { #Ok
+		name = generic.5.o1
+	    ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+#Canada refuses
+country_event = {
+	id = generic.6
+	title = generic.6.t
+	desc = generic.6.d
+	picture = ottawa_parliament
+	
+	is_triggered_only = yes
+	
+	option = { #Ok
+		name = generic.6.o1
+	    ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+#Rising Eagle continued
+country_event = {
+	id = generic.7
+	title = generic.7.t
+	desc = generic.7.d
+	picture = rising_eagle
+	
+	is_triggered_only = yes
+	
+	option = { #Ok
+		name = generic.7.o1
+	}
+}

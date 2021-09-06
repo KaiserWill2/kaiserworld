@@ -1,0 +1,1724 @@
+focus_tree = {
+	id = lowernile_tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 20
+			tag = RLN
+		}
+	}
+	default = no
+	continuous_focus_position = { x = 50 y = 2200 }
+	focus = {
+		id = RLN_state_of_the_nation
+		icon = shaking_hands_1
+		cost = 2
+		x = 8
+		y = 0
+		completion_reward = {
+		    add_political_power = 100
+			add_ideas = idea_rln_state_of_affairs
+		}
+
+	}
+	focus = {
+		id = RLN_war_with_the_traitors
+		icon = major_war
+		cost = 5
+		available = {
+		    AND = {
+			    country_exists = RAS 
+				NOT = {
+				    OR = {
+					    is_in_faction_with = RAS
+						RAS = {
+						    is_puppet_of = RLN
+						}
+					}
+				}
+			}
+			OR = {
+			    has_completed_focus = RLN_calls_for_unification
+				has_completed_focus = RLN_council_for_war
+				has_completed_focus = RLN_national_development_projects
+				has_completed_focus = RLN_peoples_army
+				
+			}
+		}
+		mutually_exclusive = {
+			focus = RLN_peaceful_unification
+		}
+		x = 22
+		y = 0
+		completion_reward = {
+		    create_wargoal = {
+			    type = annex_everything
+			    target = RAS
+		    }
+			country_event = { id = lower_nile.8 }
+		}
+
+	}
+	focus = {
+		id = RLN_peaceful_unification
+		icon = egypt
+		cost = 5
+		available = {
+		    OR = {
+			    AND = {
+				    RLN = {
+					    has_government = fascist 
+					}
+					RAS = {
+					    has_government = fascist 
+					}
+				}
+				AND = {
+				    RLN = {
+					    has_government = nationalist 
+					}
+					RAS = {
+					    has_government = nationalist 
+					}
+				}
+				AND = {
+				    RLN = {
+					    has_government = monarchist 
+					}
+					RAS = {
+					    has_government = monarchist 
+					}
+				}
+				AND = {
+				    RLN = {
+					    has_government = national_bolshevik 
+					}
+					RAS = {
+					    has_government = national_bolshevik 
+					}
+				}
+				AND = {
+				    RLN = {
+					    OR = {
+						    has_government = national_conservative 
+							has_government = centrist 
+							has_government = liberal 
+							has_government = new_democrat
+							has_government = moderate_socialist
+						}
+					}
+					RAS = {
+					    OR = {
+						    has_government = national_conservative 
+							has_government = centrist 
+							has_government = liberal 
+							has_government = new_democrat
+							has_government = moderate_socialist
+						}
+					}
+				}
+				AND = {
+				    RLN = {
+					    has_government = revolutionary_socialist 
+					}
+					RAS = {
+					    has_government = revolutionary_socialist 
+					}
+				}
+				AND = {
+				    RLN = {
+					    has_government = communist 
+					}
+					RAS = {
+					    has_government = communist 
+					}
+				}
+			}
+		}
+		mutually_exclusive = {
+			focus = RLN_war_with_the_traitors
+		}
+		x = 27
+		y = 0
+		completion_reward = {
+		    RAS = {
+			    country_event = { id = lower_nile.1 }
+			}
+		}
+
+	}
+	focus = {
+		id = RLN_egyptians_united
+		icon = demand
+		cost = 2
+		available = {
+		    552 = {
+			    is_owned_by = RLN
+			}
+			457 = {
+			    is_owned_by = RLN
+			}
+			798 = {
+			    is_owned_by = RLN
+			}
+			456 = {
+			    is_owned_by = RLN
+			}
+		}
+		x = 35
+		y = 0
+		completion_reward = {
+		    add_stability = 0.02
+			552 = {
+			    add_core_of = RLN
+			}
+			457 = {
+			    add_core_of = RLN
+			}
+			798 = {
+			    add_core_of = RLN
+			}
+			456 = {
+			    add_core_of = RLN
+			}
+		}
+
+	}
+	focus = {
+		id = RLN_rig_the_election
+		icon = fascism_1
+		cost = 5
+		prerequisite = {
+			focus = RLN_state_of_the_nation
+		}
+		mutually_exclusive = {
+			focus = RLN_free_and_fair_elections
+		}
+		x = 4
+		y = 1
+		completion_reward = {
+		    add_popularity = {
+				ideology = national_bolshevik
+				popularity = 0.03
+			}
+			add_political_power = 75
+			country_event = { id = lower_nile.9 }
+		}
+
+	}
+	focus = {
+		id = RLN_execute_nasserists
+		icon = focus_rise_of_the_caliphate
+		cost = 10
+		prerequisite = {
+			focus = RLN_rig_the_election
+		}
+		x = 3
+		y = 2
+		completion_reward = {
+		    add_ideas = idea_rln_nasserists_executed
+			country_event = { id = lower_nile.10 }
+		}
+
+	}
+	focus = {
+		id = RLN_crush_religion
+		icon = focus_syria_state_atheism
+		cost = 10
+		prerequisite = {
+			focus = RLN_execute_nasserists
+		}
+		x = 2
+		y = 3
+		completion_reward = {
+		    add_ideas = idea_rln_religion_crushed
+		}
+
+	}
+	focus = {
+		id = RLN_abolish_private_property
+		icon = focus_demand_assads_resignation
+		cost = 10
+		prerequisite = {
+			focus = RLN_rig_the_election
+		}
+		x = 4
+		y = 3
+		completion_reward = {
+		    random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = RLN_everything_for_the_state
+		icon = focus_syria_socialist_support
+		cost = 10
+		prerequisite = {
+			focus = RLN_abolish_private_property
+		}
+		x = 4
+		y = 4
+		completion_reward = {
+		    add_ideas = idea_rln_everything_for_the_state
+		}
+
+	}
+	focus = {
+		id = RLN_kidnap_academia
+		icon = secret_weapon
+		cost = 7
+		prerequisite = {
+			focus = RLN_crush_religion
+		}
+		prerequisite = {
+			focus = RLN_everything_for_the_state
+		}
+		x = 3
+		y = 5
+		completion_reward = {
+		    add_ideas = idea_rln_academia_kidnapped
+			country_event = { id = lower_nile.11 }
+		}
+
+	}
+	focus = {
+		id = RLN_the_presidents_brigades
+		icon = socialist_science
+		cost = 5
+		prerequisite = {
+			focus = RLN_kidnap_academia
+		}
+		x = 3
+		y = 6
+		completion_reward = {
+		    add_tech_bonus = {
+				name = industry_bonus
+				bonus = 0.1
+				uses = 1
+				category = industry
+			}
+			add_tech_bonus = {
+				name = electronics_bonus
+				bonus = 0.1
+				uses = 1
+				category = electronics
+			}
+		}
+
+	}
+	focus = {
+		id = RLN_one_party_state
+		icon = royal_strength
+		cost = 10
+		prerequisite = {
+			focus = RLN_rig_the_election
+		}
+		x = 5
+		y = 2
+		completion_reward = {
+		    add_ideas = idea_rln_one_party_state
+			country_event = { id = lower_nile.12 }
+		}
+
+	}
+	focus = {
+		id = RLN_send_out_the_commissars
+		icon = communists_marching
+		cost = 10
+		prerequisite = {
+			focus = RLN_one_party_state
+		}
+		x = 6
+		y = 3
+		completion_reward = {
+		    add_ideas = idea_rln_commissars
+		}
+
+	}
+	focus = {
+		id = RLN_new_mandatory_service
+		icon = generic_marching
+		cost = 10
+		prerequisite = {
+			focus = RLN_everything_for_the_state
+		}
+		prerequisite = {
+			focus = RLN_send_out_the_commissars
+		}
+		x = 5
+		y = 5
+		completion_reward = {
+		    add_ideas = idea_rln_new_mandatory_service
+		}
+
+	}
+	focus = {
+		id = RLN_calls_for_unification
+		icon = tanks
+		cost = 10
+		prerequisite = {
+			focus = RLN_new_mandatory_service
+		}
+		x = 5
+		y = 6
+		completion_reward = {
+		    add_stability = 0.1
+			country_event = { id = lower_nile.13 }
+			remove_ideas = idea_rln_state_of_affairs
+		}
+
+	}
+	focus = {
+		id = RLN_push_for_independence
+		icon = flags_light_blue
+		cost = 10
+		available = {
+		    is_puppet_of = SYR
+		}
+		prerequisite = {
+			focus = RLN_the_presidents_brigades
+		}
+		prerequisite = {
+			focus = RLN_calls_for_unification
+		}
+		x = 4
+		y = 7
+		completion_reward = {
+		    SYR = {
+			    country_event = { id = lower_nile.3 }
+			}
+		}
+
+	}
+	focus = {
+		id = RLN_free_and_fair_elections
+		icon = focus_syria_local_elections
+		cost = 5
+		prerequisite = {
+			focus = RLN_state_of_the_nation
+		}
+		mutually_exclusive = {
+			focus = RLN_rig_the_election
+		}
+		x = 13
+		y = 1
+		completion_reward = {
+		    country_event = { days = 18 id = lower_nile.6 } 
+		}
+
+	}
+	focus = {
+		id = RLN_nationalist_party_victory
+		icon = focus_assadism
+		cost = 2
+		available = {
+		    has_country_flag = sameh_fahmi_declares_victory
+		}
+		prerequisite = {
+			focus = RLN_free_and_fair_elections
+		}
+		x = 9
+		y = 2
+		completion_reward = {
+		    add_stability = 0.045
+			country_event = { id = lower_nile.14 }
+		}
+
+	}
+	focus = {
+		id = RLN_reaffirm_ties_with_military
+		icon = military_salute
+		cost = 10
+		prerequisite = {
+			focus = RLN_nationalist_party_victory
+		}
+		x = 8
+		y = 3
+		completion_reward = {
+		    army_experience = 25 
+			air_experience = 25 
+			navy_experience = 25
+			country_event = { id = lower_nile.15 }
+		}
+
+	}
+	focus = {
+		id = RLN_maintain_corruption
+		icon = red_hands_shaking
+		cost = 10
+		prerequisite = {
+			focus = RLN_nationalist_party_victory
+		}
+		x = 10
+		y = 3
+		completion_reward = {
+		    add_ideas = idea_rln_corruption
+		}
+
+	}
+	focus = {
+		id = RLN_economic_reforms
+		icon = consumer_goods
+		cost = 10
+		prerequisite = {
+			focus = RLN_maintain_corruption
+		}
+		x = 10
+		y = 4
+		completion_reward = {
+		    add_ideas = idea_rln_economic_reforms
+		}
+
+	}
+	focus = {
+		id = RLN_decentralisation
+		icon = torch_industry
+		cost = 10
+		prerequisite = {
+			focus = RLN_economic_reforms
+		}
+		x = 10
+		y = 5
+		completion_reward = {
+		    add_ideas = idea_rln_decentralisation
+		}
+
+	}
+	focus = {
+		id = RLN_freedom_party_victory
+		icon = democracy
+		cost = 2
+		available = {
+		    has_country_flag = ayman_nour_declares_victory
+		}
+		prerequisite = {
+			focus = RLN_free_and_fair_elections
+		}
+		x = 13
+		y = 2
+		completion_reward = {
+		    add_stability = 0.045
+			country_event = { id = lower_nile.16 }
+		}
+
+	}
+	focus = {
+		id = RLN_restore_political_rights
+		icon = neutrality
+		cost = 10
+		prerequisite = {
+			focus = RLN_freedom_party_victory
+		}
+		x = 12
+		y = 3
+		completion_reward = {
+		    add_political_power = -100 
+			add_ideas = idea_rln_democracy_restored
+			country_event = { id = lower_nile.17 }
+		}
+
+	}
+	focus = {
+		id = RLN_promote_capitalist_reforms
+		icon = civ_factory
+		cost = 10
+		prerequisite = {
+			focus = RLN_restore_political_rights
+		}
+		x = 12
+		y = 4
+		completion_reward = {
+		    add_ideas = idea_rln_capitalist_reforms
+			country_event = { id = lower_nile.18 }
+		}
+
+	}
+	focus = {
+		id = RLN_trade_with_the_world
+		icon = positive_trade_relations
+		cost = 10
+		prerequisite = {
+			focus = RLN_promote_capitalist_reforms
+		}
+		x = 12
+		y = 5
+		completion_reward = {
+		    add_ideas = idea_rln_international_trading
+		}
+
+	}
+	focus = {
+		id = RLN_abolish_secret_police
+		icon = demand_territory
+		cost = 10
+		prerequisite = {
+			focus = RLN_freedom_party_victory
+		}
+		x = 14
+		y = 3
+		completion_reward = {
+		    add_stability = 0.045
+			add_popularity = {
+				ideology = centrist
+				popularity = 0.05
+			}
+			add_popularity = {
+				ideology = liberal
+				popularity = 0.02
+			}
+			add_popularity = {
+				ideology = national_conservative
+				popularity = 0.02
+			}
+			add_popularity = {
+				ideology = new_democrat
+				popularity = 0.02
+			}
+			country_event = { id = lower_nile.19 }
+		} 
+
+	}
+	focus = {
+		id = RLN_drive_out_socialism
+		icon = against_communists
+		cost = 10
+		prerequisite = {
+			focus = RLN_abolish_secret_police
+		}
+		x = 14
+		y = 4
+		completion_reward = {
+		    add_political_power = 180
+		}
+
+	}
+	focus = {
+		id = RLN_mass_privatisation
+		icon = generic_strike
+		cost = 10
+		prerequisite = {
+			focus = RLN_drive_out_socialism
+		}
+		x = 14
+		y = 5
+		completion_reward = {
+		    add_ideas = idea_rln_mass_privatisation
+		}
+
+	}
+	focus = {
+		id = RLN_true_democracy
+		icon = liberty_attack_2
+		cost = 10
+		prerequisite = {
+			focus = RLN_trade_with_the_world
+		}
+		prerequisite = {
+			focus = RLN_mass_privatisation
+		}
+		mutually_exclusive = {
+			focus = RLN_wealthy_oligarchy
+		}
+		x = 12
+		y = 6
+		completion_reward = {
+		    add_ideas = idea_rln_true_democracy
+		}
+
+	}
+	focus = {
+		id = RLN_wealthy_oligarchy
+		icon = focus_syria_soviet_funding
+		cost = 10
+		prerequisite = {
+			focus = RLN_mass_privatisation
+		}
+		prerequisite = {
+			focus = RLN_trade_with_the_world
+		}
+		mutually_exclusive = {
+			focus = RLN_true_democracy
+		}
+		x = 14
+		y = 6
+		completion_reward = {
+		    add_ideas = idea_rln_wealthy_oligarchy
+		}
+
+	}
+	focus = {
+		id = RLN_national_development_projects
+		icon = production
+		cost = 10
+		prerequisite = {
+			focus = RLN_true_democracy
+			focus = RLN_wealthy_oligarchy
+		}
+		x = 13
+		y = 7
+		completion_reward = {
+		    random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			remove_ideas = idea_rln_state_of_affairs
+		}
+
+	}
+	focus = {
+		id = RLN_workers_party_victory
+		icon = communism_3
+		cost = 2
+		available = {
+		    has_country_flag = salah_adli_declares_victory
+		}
+		prerequisite = {
+			focus = RLN_free_and_fair_elections
+		}
+		x = 17
+		y = 2
+		completion_reward = {
+		    add_stability = 0.045
+			country_event = { id = lower_nile.20 }
+		}
+
+	}
+	focus = {
+		id = RLN_extend_socialist_policies
+		icon = com_fascism
+		cost = 10
+		prerequisite = {
+			focus = RLN_workers_party_victory
+		}
+		x = 16
+		y = 3
+		completion_reward = {
+		    add_ideas = idea_rln_socialist_policies_extended
+		}
+
+	}
+	focus = {
+		id = RLN_purge_baathists
+		icon = crown_shattered
+		cost = 10
+		prerequisite = {
+			focus = RLN_extend_socialist_policies
+		}
+		x = 16
+		y = 4
+		completion_reward = {
+		    add_political_power = 150
+			add_popularity = {
+				ideology = national_bolshevik
+				popularity = -0.13
+			}
+			country_event = { id = lower_nile.21 }
+		}
+
+	}
+	focus = {
+		id = RLN_collectivisation
+		icon = national_unity
+		cost = 10
+		prerequisite = {
+			focus = RLN_purge_baathists
+		}
+		x = 16
+		y = 5
+		completion_reward = {
+		    add_ideas = idea_rln_collectivisation
+		}
+
+	}
+	focus = {
+		id = RLN_self_sufficient_economy
+		icon = self_management
+		cost = 10
+		prerequisite = {
+			focus = RLN_collectivisation
+		}
+		x = 16
+		y = 6
+		completion_reward = {
+		    add_ideas = idea_rln_self_sufficient_economy
+		}
+
+	}
+	focus = {
+		id = RLN_tear_up_the_constitution
+		icon = tear_treaty
+		cost = 10
+		prerequisite = {
+			focus = RLN_workers_party_victory
+		}
+		x = 18
+		y = 3
+		completion_reward = {
+		    add_ideas = idea_rln_political_dominance
+			country_event = { id = lower_nile.22 }
+		}
+
+	}
+	focus = {
+		id = RLN_consolidate_a_communist_state
+		icon = propaganda
+		cost = 10
+		prerequisite = {
+			focus = RLN_tear_up_the_constitution
+		}
+		x = 18
+		y = 4
+		completion_reward = {
+		    add_ideas = idea_rln_consolidating_the_state
+		}
+
+	}
+	focus = {
+		id = RLN_peoples_army
+		icon = guns_red
+		cost = 10
+		prerequisite = {
+			focus = RLN_consolidate_a_communist_state
+		}
+		x = 18
+		y = 5
+		completion_reward = {
+		    add_ideas = idea_rln_peoples_army
+			remove_ideas = idea_rln_state_of_affairs
+		}
+
+	}
+	focus = {
+		id = RLN_bring_in_the_poor
+		icon = puppet
+		cost = 10
+		prerequisite = {
+			focus = RLN_peoples_army
+		}
+		x = 18
+		y = 6
+		completion_reward = {
+		    add_ideas = idea_rln_bring_in_the_poor
+		}
+
+	}
+	focus = {
+		id = RLN_finalise_nationalisation
+		icon = military_factory
+		cost = 10
+		prerequisite = {
+			focus = RLN_self_sufficient_economy
+		}
+		prerequisite = {
+			focus = RLN_bring_in_the_poor
+		}
+		x = 17
+		y = 7
+		completion_reward = {
+		    random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = RLN_consolidate_control
+		icon = license_production
+		cost = 10
+		available = {
+		    552 = {
+			    is_owned_by = RLN
+			}
+			457 = {
+			    is_owned_by = RLN
+			}
+			798 = {
+			    is_owned_by = RLN
+			}
+			456 = {
+			    is_owned_by = RLN
+			}
+		}
+		prerequisite = {
+			focus = RLN_war_with_the_traitors
+		}
+		x = 21
+		y = 1
+		completion_reward = {
+		    add_stability = 0.04 
+			army_experience = 10
+			navy_experience = 10 
+			air_experience = 5
+		}
+
+	}
+	focus = {
+		id = RLN_conscript_more_southerners
+		icon = small_arms
+		cost = 10
+		available = {
+		    552 = {
+			    is_owned_by = RLN
+			}
+			457 = {
+			    is_owned_by = RLN
+			}
+			798 = {
+			    is_owned_by = RLN
+			}
+			456 = {
+			    is_owned_by = RLN
+			}
+		}
+		prerequisite = {
+			focus = RLN_war_with_the_traitors
+		}
+		x = 23
+		y = 1
+		completion_reward = {
+		    add_ideas = idea_rln_southern_conscription
+		}
+
+	}
+	focus = {
+		id = RLN_new_governates
+		icon = forceful_treaty
+		cost = 10
+		prerequisite = {
+			focus = RLN_consolidate_control
+		}
+		prerequisite = {
+			focus = RLN_conscript_more_southerners
+		}
+		x = 22
+		y = 2
+		completion_reward = {
+		    random_owned_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = RLN_exploit_upper_egypt
+		icon = territory_or_war
+		cost = 10
+		prerequisite = {
+			focus = RLN_new_governates
+		}
+		x = 22
+		y = 3
+		completion_reward = {
+		    add_ideas = idea_rln_exploitation_of_upper_egypt
+		}
+
+	}
+	focus = {
+		id = RLN_united_egyptian_army
+		icon = axis_helmet
+		cost = 10
+		prerequisite = {
+			focus = RLN_exploit_upper_egypt
+		}
+		x = 20
+		y = 4
+		completion_reward = {
+		    add_tech_bonus = {
+				name = land_doctrine_bonus
+				bonus = 0.35
+				uses = 1
+				category = land_doctrine
+			}
+		}
+
+	}
+	focus = {
+		id = RLN_united_egyptian_navy
+		icon = wolf_pack
+		cost = 10
+		prerequisite = {
+			focus = RLN_exploit_upper_egypt
+		}
+		x = 22
+		y = 4
+		completion_reward = {
+		    add_tech_bonus = {
+				name = naval_doctrine_bonus
+				bonus = 0.35
+				uses = 1
+				category = naval_doctrine
+			}
+		}
+
+	}
+	focus = {
+		id = RLN_united_egyptian_air_force
+		icon = red_air
+		cost = 10
+		prerequisite = {
+			focus = RLN_exploit_upper_egypt
+		}
+		x = 24
+		y = 4
+		completion_reward = {
+		    add_tech_bonus = {
+				name = air_doctrine_bonus
+				bonus = 0.35
+				uses = 1
+				category = air_doctrine
+			}
+		}
+
+	}
+	focus = {
+		id = RLN_reconciliation
+		icon = air_doctrine
+		cost = 10
+		available = {
+		    552 = {
+			    is_owned_by = RLN
+			}
+			457 = {
+			    is_owned_by = RLN
+			}
+			798 = {
+			    is_owned_by = RLN
+			}
+			456 = {
+			    is_owned_by = RLN
+			}
+		}
+		prerequisite = {
+			focus = RLN_peaceful_unification
+		}
+		x = 26
+		y = 1
+		completion_reward = {
+		    add_stability = 0.05
+		}
+
+	}
+	focus = {
+		id = RLN_merge_military_branches
+		icon = improve_relations
+		cost = 10
+		prerequisite = {
+			focus = RLN_reconciliation
+		}
+		x = 26
+		y = 2
+		completion_reward = {
+		    add_ideas = idea_rln_merged_military_branches
+			country_event = { id = lower_nile.23 }
+		}
+
+	}
+	focus = {
+		id = RLN_help_upper_egyptians
+		icon = intelligence_exchange
+		cost = 10
+		available = {
+		    552 = {
+			    is_owned_by = RLN
+			}
+			457 = {
+			    is_owned_by = RLN
+			}
+			798 = {
+			    is_owned_by = RLN
+			}
+			456 = {
+			    is_owned_by = RLN
+			}
+		}
+		prerequisite = {
+			focus = RLN_peaceful_unification
+		}
+		x = 28
+		y = 1
+		completion_reward = {
+		    add_ideas = idea_rln_helping_upper_egyptians
+		}
+
+	}
+	focus = {
+		id = RLN_restoration_of_political_representation
+		icon = ideology_fist
+		cost = 10
+		prerequisite = {
+			focus = RLN_help_upper_egyptians
+		}
+		x = 28
+		y = 2
+		completion_reward = {
+		    add_political_power = 120
+		}
+
+	}
+	focus = {
+		id = RLN_create_grand_military
+		icon = position_armies
+		cost = 10
+		prerequisite = {
+			focus = RLN_merge_military_branches
+		}
+		prerequisite = {
+			focus = RLN_restoration_of_political_representation
+		}
+		x = 27
+		y = 3
+		completion_reward = {
+		    add_ideas = idea_rln_grand_military
+		}
+
+	}
+	focus = {
+		id = RLN_invest_in_national_industry
+		icon = production_2
+		cost = 10
+		prerequisite = {
+			focus = RLN_create_grand_military
+		}
+		x = 26
+		y = 4
+		completion_reward = {
+		    random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = RLN_invest_in_national_infrastructure
+		icon = infrastructure
+		cost = 10
+		prerequisite = {
+			focus = RLN_create_grand_military
+		}
+		x = 28
+		y = 4
+		completion_reward = {
+		    random_owned_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = RLN_join_the_warsaw_pact
+		icon = focus_syria_join_the_warsaw_pact
+		cost = 10
+		available = {
+		    has_government = communist
+			SOV = {
+			    has_government = communist
+			}
+		}
+		prerequisite = {
+			focus = RLN_egyptians_united
+		}
+		mutually_exclusive = {
+			focus = RLN_egypt_alone
+			focus = RLN_the_waiting_game
+			focus = RLN_join_the_democratic_league
+		}
+		x = 32
+		y = 1
+		completion_reward = {
+		    SOV = {
+			    country_event = { id = generic.1 }
+			}
+		}
+
+	}
+	focus = {
+		id = RLN_soviet_technology
+		icon = tech_sharing
+		cost = 10
+		prerequisite = {
+			focus = RLN_join_the_warsaw_pact
+		}
+		x = 32
+		y = 2
+		completion_reward = {
+		    add_tech_bonus = {
+				name = infantry_weapons_bonus
+				bonus = 0.15
+				uses = 1
+				category = infantry_weapons
+			}
+			add_tech_bonus = {
+				name = motorized_equipment_bonus
+				bonus = 0.15
+				uses = 1
+				category = motorized_equipment
+			}
+		}
+
+	}
+	focus = {
+		id = RLN_doctrines_from_moscow
+		icon = army_doctrine
+		cost = 10
+		prerequisite = {
+			focus = RLN_soviet_technology
+		}
+		x = 32
+		y = 3
+		completion_reward = {
+		    add_tech_bonus = {
+				name = land_doctrine_bonus
+				bonus = 0.2
+				uses = 1
+				category = land_doctrine
+			}
+			country_event = { id = lower_nile.25 }
+		}
+
+	}
+	focus = {
+		id = RLN_direct_aid
+		icon = request_aid
+		cost = 10
+		prerequisite = {
+			focus = RLN_doctrines_from_moscow
+		}
+		x = 32
+		y = 4
+		completion_reward = {
+		    random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = RLN_egypt_alone
+		icon = ethiopia_allow_autonomy
+		cost = 10
+		available = {
+		    is_in_faction = no
+		}
+		prerequisite = {
+			focus = RLN_egyptians_united
+		}
+		mutually_exclusive = {
+			focus = RLN_join_the_warsaw_pact
+			focus = RLN_the_waiting_game
+			focus = RLN_join_the_democratic_league
+		}
+		x = 34
+		y = 1
+		completion_reward = {
+		    add_stability = 0.1
+		}
+
+	}
+	focus = {
+		id = RLN_the_waiting_game
+		icon = dangerous_deal
+		cost = 10
+		available = {
+		    NOT = {
+			    OR = {
+				    is_in_faction_with = CAN
+					is_in_faction_with = SOV
+				}
+			}
+			is_in_faction = yes
+		}
+		prerequisite = {
+			focus = RLN_egyptians_united
+		}
+		mutually_exclusive = {
+			focus = RLN_join_the_warsaw_pact
+			focus = RLN_egypt_alone
+			focus = RLN_join_the_democratic_league
+		}
+		x = 36
+		y = 1
+		completion_reward = {
+		    add_stability = 0.1
+		}
+
+	}
+	focus = {
+		id = RLN_high_morale
+		icon = focus_syria_down_with_the_president
+		cost = 10
+		prerequisite = {
+			focus = RLN_egypt_alone
+			focus = RLN_the_waiting_game
+		}
+		x = 35
+		y = 2
+		completion_reward = {
+		    add_ideas = idea_rln_high_morale
+		}
+
+	}
+	focus = {
+		id = RLN_organised_armies
+		icon = cavalry
+		cost = 10
+		prerequisite = {
+			focus = RLN_high_morale
+		}
+		x = 35
+		y = 3
+		completion_reward = {
+		    add_ideas = idea_rln_organised_armies
+		}
+
+	}
+	focus = {
+		id = RLN_fighting_for_a_proud_egypt
+		icon = focus_merge_the_posts
+		cost = 10
+		prerequisite = {
+			focus = RLN_organised_armies
+		}
+		x = 35
+		y = 4
+		completion_reward = {
+		    add_tech_bonus = {
+				name = infantry_tech_bonus
+				bonus = 0.25
+				uses = 1
+				category = infantry_tech
+			}
+		}
+
+	}
+	focus = {
+		id = RLN_pride_in_our_flag
+		icon = attack_allies
+		cost = 10
+		prerequisite = {
+			focus = RLN_reaffirm_ties_with_military
+		}
+		x = 8
+		y = 4
+		completion_reward = {
+		    add_ideas = idea_rln_pride_in_our_flag
+		}
+
+	}
+	focus = {
+		id = RLN_promise_welfare
+		icon = concessions
+		cost = 10
+		prerequisite = {
+			focus = RLN_pride_in_our_flag
+		}
+		x = 8
+		y = 5
+		completion_reward = {
+		    add_ideas = idea_rln_promised_welfare
+			country_event = { id = lower_nile.26 }
+		}
+
+	}
+	focus = {
+		id = RLN_regulated_capitalism
+		icon = trade
+		cost = 10
+		prerequisite = {
+			focus = RLN_promise_welfare
+		}
+		prerequisite = {
+			focus = RLN_decentralisation
+		}
+		x = 9
+		y = 6
+		completion_reward = {
+		    add_ideas = idea_rln_regulated_capitalism
+		}
+
+	}
+	focus = {
+		id = RLN_northern_ports
+		icon = navy_doctrine
+		cost = 10
+		prerequisite = {
+			focus = RLN_promise_welfare
+		}
+		prerequisite = {
+			focus = RLN_regulated_capitalism
+		}
+		x = 7
+		y = 7
+		completion_reward = {
+		    447 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+			452 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = RLN_council_for_war
+		icon = focus_syrian_border_defence
+		cost = 10
+		prerequisite = {
+			focus = RLN_regulated_capitalism
+		}
+		prerequisite = {
+			focus = RLN_decentralisation
+		}
+		x = 11
+		y = 7
+		completion_reward = {
+		    add_ideas = idea_rln_council_for_war
+			country_event = { id = lower_nile.27 }
+			remove_ideas = idea_rln_state_of_affairs
+		}
+
+	}
+	focus = {
+		id = RLN_lower_taxes
+		icon = cut_ties_to_the_usa
+		cost = 10
+		prerequisite = {
+			focus = RLN_national_development_projects
+		}
+		x = 12
+		y = 8
+		completion_reward = {
+		    add_ideas = idea_rln_lower_taxes
+		}
+
+	}
+	focus = {
+		id = RLN_minimum_wage
+		icon = support_workers
+		cost = 10
+		prerequisite = {
+			focus = RLN_national_development_projects
+		}
+		x = 14
+		y = 8
+		completion_reward = {
+		    add_ideas = idea_rln_minimum_wage
+			country_event = { id = lower_nile.28 }
+		}
+
+	}
+	focus = {
+		id = RLN_join_the_democratic_league
+		icon = canada
+		cost = 10
+		available = {
+		    OR = {
+			    has_government = national_conservative
+				has_government = centrist 
+				has_government = liberal 
+				has_government = new_democrat
+				has_government = moderate_socialist
+			}
+			CAN = {
+			    OR = {
+			        has_government = national_conservative
+				    has_government = centrist 
+				    has_government = liberal 
+				    has_government = new_democrat
+				    has_government = moderate_socialist
+			    }
+			}
+		}
+		prerequisite = {
+			focus = RLN_egyptians_united
+		}
+		mutually_exclusive = {
+			focus = RLN_join_the_warsaw_pact
+			focus = RLN_egypt_alone
+			focus = RLN_the_waiting_game
+		}
+		x = 38
+		y = 1
+		completion_reward = {
+		    CAN = {
+			    country_event = { id = generic.4 }
+			}
+		}
+
+	}
+	focus = {
+		id = RLN_canadian_expertise
+		icon = territorial_claims
+		cost = 10
+		prerequisite = {
+			focus = RLN_join_the_democratic_league
+		}
+		x = 38
+		y = 2
+		completion_reward = {
+		    add_tech_bonus = {
+				name = infantry_weapons_bonus
+				bonus = 0.4
+				uses = 1
+				category = infantry_weapons
+			}
+		}
+
+	}
+	focus = {
+		id = RLN_canadian_propaganda
+		icon = propaganda
+		cost = 10
+		prerequisite = {
+			focus = RLN_canadian_expertise
+		}
+		x = 38
+		y = 3
+		completion_reward = {
+		    add_stability = 0.035
+			add_political_power = 250
+			country_event = { id = lower_nile.29 }
+		}
+
+	}
+	focus = {
+		id = RLN_international_charities
+		icon = parties
+		cost = 10
+		prerequisite = {
+			focus = RLN_canadian_propaganda
+		}
+		x = 38
+		y = 4
+		completion_reward = {
+		    add_ideas = idea_rln_international_charities
+		}
+
+	}
+}

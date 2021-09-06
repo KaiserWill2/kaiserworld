@@ -1,0 +1,43 @@
+
+state={
+	id=627
+	name="STATE_627"
+	manpower = 6496508
+	
+	state_category = rural
+
+	history={
+		owner = PHI
+		buildings = {
+			infrastructure = 3
+			4241 = {
+				naval_base = 1
+			}
+		}
+		victory_points = {
+			4241 3 
+		}
+		victory_points = { 12158 2 }
+		victory_points = { 1421 5 }
+		victory_points = { 10243 5 }
+		victory_points = { 4266 1 }
+		victory_points = { 4427 3 }
+		victory_points = { 12116 1 }
+		victory_points = { 7284 2 }
+		victory_points = { 10328 1 }
+		victory_points = { 1379 2 }
+		victory_points = { 1293 2 }
+		victory_points = { 12188 2 }
+		victory_points = { 10214 1 }
+		victory_points = { 7360 1 }
+		victory_points = { 7417 2 }
+		victory_points = { 10300 2 }
+		victory_points = { 12217 2 }
+		victory_points = { 1407 2 }
+		add_core_of = PHI
+	}
+
+	provinces={
+		1234 1293 1379 1407 1421 4241 4266 4399 4427 7284 7360 7389 7417 7445 10184 10214 10243 10300 10328 12116 12158 12160 12188 12217 12245 12273 
+	}
+}

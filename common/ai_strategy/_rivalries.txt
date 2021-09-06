@@ -1,0 +1,199 @@
+### CHINESE SPLIT ###
+
+china_rivalry_mainland = {
+
+	enable = {
+		tag = PRC
+	}
+	
+	abort = {
+		always = no
+	}
+	
+	ai_strategy = {
+		type = antagonize
+		id = CHI
+		value = 125
+	}
+	
+	ai_strategy = {
+		type = conquer
+		id = CHI
+		value = 25
+	}
+
+}
+
+china_rivalry_taiwan = {
+
+	enable = {
+		tag = CHI
+	}
+	
+	abort = {
+		always = no
+	}
+	
+	ai_strategy = {
+		type = antagonize
+		id = PRC
+		value = 125
+	}
+	
+	ai_strategy = {
+		type = conquer
+		id = PRC
+		value = 25
+	}
+
+}
+
+### IRAN-IRAQ ###
+
+iran_rivalry_iran = {
+
+	enable = {
+		tag = PER
+	}
+	
+	abort = {
+		always = no
+	}
+	
+	ai_strategy = {
+		type = antagonize
+		id = IRQ
+		value = 125
+	}
+	
+	ai_strategy = {
+		type = conquer
+		id = IRQ
+		value = 25
+	}
+
+}
+
+iran_rivalry_iraq = {
+
+	enable = {
+		tag = IRQ
+	}
+	
+	abort = {
+		always = no
+	}
+	
+	ai_strategy = {
+		type = antagonize
+		id = PER
+		value = 125
+	}
+	
+	ai_strategy = {
+		type = conquer
+		id = PER
+		value = 25
+	}
+
+}
+
+### INDIA-PAKISTAN ###
+
+india_rivalry_india = {
+
+	enable = {
+		tag = RAJ
+	}
+	
+	abort = {
+		always = no
+	}
+	
+	ai_strategy = {
+		type = antagonize
+		id = PAK
+		value = 125
+	}
+	
+	ai_strategy = {
+		type = conquer
+		id = PAK
+		value = 25
+	}
+
+}
+
+india_rivalry_pakistan = {
+
+	enable = {
+		tag = PAK
+	}
+	
+	abort = {
+		always = no
+	}
+	
+	ai_strategy = {
+		type = antagonize
+		id = RAJ
+		value = 125
+	}
+	
+	ai_strategy = {
+		type = conquer
+		id = RAJ
+		value = 25
+	}
+
+}
+
+### UAS-OMAN ###
+
+oman_rivalry_oman = {
+
+	enable = {
+		tag = OMA
+	}
+	
+	abort = {
+		always = no
+	}
+	
+	ai_strategy = {
+		type = antagonize
+		id = UAE
+		value = 125
+	}
+	
+	ai_strategy = {
+		type = conquer
+		id = UAE
+		value = 25
+	}
+
+}
+
+oman_rivalry_uas = {
+
+	enable = {
+		tag = UAE
+	}
+	
+	abort = {
+		always = no
+	}
+	
+	ai_strategy = {
+		type = antagonize
+		id = OMA
+		value = 125
+	}
+	
+	ai_strategy = {
+		type = conquer
+		id = OMA
+		value = 25
+	}
+
+}

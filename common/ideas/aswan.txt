@@ -1,0 +1,920 @@
+ideas = {
+
+    country = {
+	    
+		idea_ras_welfare_state = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = FRA_national_mobilization_focus
+			
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.05 
+				industrial_capacity_factory = 0.05
+			}
+		}
+		
+		idea_ras_state_of_affairs = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = generic_volunteer_expedition_bonus
+			
+			removal_cost = -1
+			
+			modifier = {
+				justify_war_goal_time = 1000
+			}
+		}
+		
+		idea_ras_elements_of_central_planning = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = idea_generic_central_management
+			
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_arms_factory_factor = 0.02 
+				production_speed_industrial_complex_factor = 0.02 
+				production_speed_dockyard_factor = 0.02 
+				production_speed_infrastructure_factor = 0.02 
+			}
+		}
+		
+		idea_ras_business_boom = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = generic_goods_red_bonus
+			
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.02 
+				local_resources_factor = 0.035
+			}
+		}
+		
+		idea_ras_martial_law_lifted = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = generic_manpower_bonus
+			
+			removal_cost = -1
+			
+			modifier = {
+				army_org_Factor = 0.05 
+				political_power_gain = -0.2 
+				army_morale_factor = -0.02
+			}
+		}
+		
+		idea_ras_military_benefits = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = generic_morale_bonus
+			
+			removal_cost = -1
+			
+			modifier = {
+				training_time_army_factor = -0.1 
+				stability_factor = -0.05
+			}
+		}
+		
+		idea_ras_progressive_politics = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = generic_democratic_drift_bonus
+			
+			removal_cost = -1
+			
+			modifier = {
+				MONTHLY_POPULATION = 0.01 
+				moderate_socialist_drift = 0.02 
+				nationalist_drift = 0.02
+			}
+		}
+		
+		idea_ras_benevolent_dictatorship = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = generic_disjointed_gov
+			
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.05 
+				research_speed_factor = 0.03
+				political_power_gain = 0.2
+			}
+		}
+		
+		idea_ras_moderate_keynesian_economics = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = generic_intel_bonus
+			
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_buildings_factor = 0.03 
+				industrial_capacity_factory = 0.02 
+				consumer_goods_factor = 0.05
+			}
+		}
+		
+		idea_ras_corporate_dealings = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = generic_spy_intel
+			
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_infrastructure_factor = 0.05 
+				production_factory_start_efficiency_factor = 0.05
+			}
+		}
+		
+		idea_ras_advisory_boards = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = advisory_councils
+			
+			removal_cost = -1
+			
+			modifier = {
+				local_resources_factor = 0.1
+			}
+		}
+		
+		idea_ras_new_generations = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = new_generations
+			
+			removal_cost = -1
+			
+			modifier = {
+				research_speed_factor = 0.04
+			}
+		}
+		
+		idea_ras_moderate_social_policies = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = generic_democratic_drift_bonus
+			
+			removal_cost = -1
+			
+			modifier = {
+				centrist_drift = 0.06 
+				liberal_drift = 0.02 
+				national_conservative_drift = 0.01 
+				army_morale_factor = 0.035
+			}
+		}
+		
+		idea_ras_weakened_military_influence = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = generic_manpower_bonus
+			
+			removal_cost = -1
+			
+			modifier = {
+				military_leader_cost_factor = 0.5 
+				army_org_Factor = -0.02 
+				stability_factor = 0.05 
+				war_support_factor = -0.1
+				production_speed_industrial_complex_factor = 0.03
+			}
+		}
+		
+		idea_ras_democratisation = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = generic_volunteer_expedition_bonus
+			
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = -0.3 
+				stability_factor = 0.05
+			}
+		}
+		
+		idea_ras_fossil_fuel_advancement = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = fossil_fuel
+			
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_synthetic_refinery_factor = 0.15
+			}
+		}
+		
+		idea_ras_local_elections = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = generic_pp_unity_bonus
+			
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.045 
+				production_factory_max_efficiency_factor = 0.1
+			}
+		}
+		
+		idea_ras_transparent_army = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = generic_infantry_bonus
+			
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = -0.1 
+				army_morale_factor = 0.05 
+				army_org_Factor = 0.03 
+				supply_consumption_factor = 0.05
+			}
+		}
+		
+		idea_ras_wave_of_privatisation = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = generic_goods_red_bonus
+			
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_buildings_factor = -0.2 
+				industrial_capacity_factory = 0.1 
+				consumer_goods_factor = -0.08
+			}
+		}
+		
+		idea_ras_direct_corporate_influence = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = generic_disjointed_gov
+			
+			removal_cost = -1
+			
+			modifier = {
+				out_of_supply_factor = -0.1 
+				production_factory_max_efficiency_factor = 0.05 
+				political_power_gain = -0.2
+			}
+		}
+		
+		idea_ras_all_for_the_free_market = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = neutrality_idea
+			
+			removal_cost = -1
+			
+			modifier = {
+				army_morale_factor = 0.02 
+				consumer_goods_factor = -0.01
+				national_conservative_drift = 0.04
+				nationalist_drift = 0.07
+			}
+		}
+		
+		idea_ras_assads_advisors = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = generic_fascism_drift_bonus
+			
+			removal_cost = -1
+			
+			modifier = {
+				national_bolshevik_drift = 0.03 
+				political_power_gain = 0.25
+			}
+		}
+		
+		idea_ras_total_nationalisation = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = FRA_scw_intervention_nationalists_focus
+			
+			removal_cost = -1
+			
+			modifier = {
+				industrial_capacity_factory = 0.05 
+				production_speed_arms_factory_factor = 0.05 
+				consumer_goods_factor = 0.075
+			}
+		}
+		
+		idea_ras_military_above_all = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = FRA_scw_intervention_republicans_focus
+			
+			removal_cost = -1
+			
+			modifier = {
+				training_time_factor = -0.1
+			}
+		}
+		
+		idea_ras_small_business_group = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = FRA_fortification_focus
+			
+			removal_cost = -1
+			
+			modifier = {
+				local_resources_factor = 0.045
+			}
+		}
+		
+		idea_ras_military_enlistment = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = generic_infantry_bonus
+			
+			removal_cost = -1
+			
+			modifier = {
+				conscription_factor = 0.1
+			}
+		}
+		
+		idea_ras_fiscal_conservatism = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = generic_democratic_drift_bonus
+			
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.1
+				industrial_capacity_factory = -0.05
+			}
+		}
+		
+		idea_ras_balanced_labour_laws = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = FRA_scw_intervention_republicans_focus
+			
+			removal_cost = -1
+			
+			modifier = {
+				local_resources_factor = -0.01 
+				industry_repair_factor = -0.15 
+				political_power_gain = 0.3
+			}
+		}
+		
+		idea_ras_post_unification_morale = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = generic_morale_bonus
+			
+			removal_cost = -1
+			
+			modifier = {
+				army_morale_factor = 0.05
+			}
+		}
+		
+		idea_ras_exploiting_the_poor = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = exploit_the_poor
+			
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_buildings_factor = 0.2 
+				consumer_goods_factor = -0.15 
+				stability_factor = -0.05
+			}
+		}
+		
+		idea_ras_leftists_purged = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = leftist_purge
+			
+			removal_cost = -1
+			
+			modifier = {
+				army_org_Factor = 0.05 
+				army_morale_factor = 0.01 
+				communist_drift = -0.02 
+				revolutionary_socialist_drift = -0.02 
+				moderate_socialist_drift = -0.02 
+				new_democrat_drift = -0.02 
+				national_bolshevik_drift = -0.02 
+				conscription_factor = -0.085
+			}
+		}
+		
+		idea_ras_corporatism = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = generic_spy_coup
+			
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_industrial_complex_factor = 0.05
+				production_speed_arms_factory_factor = 0.05
+				consumer_goods_factor = -0.03 
+				industrial_capacity_factory = -0.05
+			}
+		}
+		
+		idea_ras_military_reorganisation = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = generic_victors_of_ww1
+			
+			removal_cost = -1
+			
+			modifier = {
+				army_leader_start_level = 1 
+				political_power_gain = -0.1 
+				nationalist_drift = 0.015
+			}
+		}
+		
+		idea_ras_the_right_path = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = generic_volunteer_expedition_bonus
+			
+			removal_cost = -1
+			
+			modifier = {
+				conscription = 0.005
+			}
+		}
+		
+		idea_ras_methods_of_dictatorship = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = generic_communism_drift_bonus
+			
+			removal_cost = -1
+			
+			modifier = {
+				justify_war_goal_time = -0.4
+			}
+		}
+		
+		idea_ras_privatisation = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = generic_spy_political
+			
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_buildings_factor = -0.2 
+				industrial_capacity_factory = 0.1 
+				consumer_goods_factor = -0.08
+			}
+		}
+		
+		idea_ras_austrian_economics = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = austrian_economics
+			
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_buildings_factor = -0.3 
+				industrial_capacity_factory = 0.16 
+				consumer_goods_factor = -0.12
+			}
+		}
+		
+		idea_ras_rallying_the_people = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = rallying_the_people
+			
+			removal_cost = -1
+			
+			modifier = {
+				justify_war_goal_time = -0.45
+			}
+		}
+		
+		idea_ras_enlist_for_your_country = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = enlist_for_your_country
+			
+			removal_cost = -1
+			
+			modifier = {
+				conscription = 0.01
+			}
+		}
+		
+		idea_ras_forge_our_own_way = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = forge_our_own_way
+			
+			removal_cost = -1
+			
+			modifier = {
+				justify_war_goal_time = -0.3
+			}
+		}
+		
+		idea_ras_international_advisors = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = international_advisors
+			
+			removal_cost = -1
+			
+			modifier = {
+				justify_war_goal_time = -0.4 
+				political_power_gain = 0.05 
+				consumer_goods_factor = 0.05
+			}
+		}
+		
+		idea_ras_industrial_nationalisation = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = industrial_nationalisation
+			
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_industrial_complex_factor = 0.1
+			}
+		}
+		
+		idea_ras_monthly_quotas = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = idea_generic_communist_army
+			
+			removal_cost = -1
+			
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.05
+				MONTHLY_POPULATION = -0.004
+			}
+		}
+		
+		idea_ras_scientific_revolution = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = generic_research_bonus
+			
+			removal_cost = -1
+			
+			modifier = {
+				research_speed_factor = 0.03
+			}
+		}
+		
+		idea_ras_workers_of_egypt_unite = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = home_of_the_revolution
+			
+			removal_cost = -1
+			
+			modifier = {
+				justify_war_goal_time = -0.5
+			}
+		}
+		
+		idea_ras_post_unification_foresight = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = generic_volunteer_expedition_bonus
+			
+			removal_cost = -1
+			
+			modifier = {
+				justify_war_goal_time = -0.2
+			}
+		}
+		
+		idea_ras_methods_of_democracy = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = generic_volunteer_expedition_bonus
+			
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = 0.1 
+				stability_factor = 0.025 
+				war_support_factor = 0.025
+				justify_war_goal_time = -0.1
+				enemy_justify_war_goal_time = 0.1
+			}
+		}
+		
+		
+	}
+	
+
+}

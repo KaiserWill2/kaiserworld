@@ -1,0 +1,18 @@
+state={
+	id=936
+	name="STATE_936"
+	provinces={
+		13440 13444 13455 13457 13460 13469 13479 13495 13505 13514 
+	}
+	state_category = pastoral
+	history={
+		owner = LBA
+		add_core_of = LBA
+		buildings = {
+			infrastructure = 1
+		}
+
+	}
+	manpower=10000
+	buildings_max_level_factor=1.000
+}

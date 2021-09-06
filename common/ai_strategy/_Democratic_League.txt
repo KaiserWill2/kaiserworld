@@ -1,0 +1,72 @@
+#democratic_league_membership = {
+#	
+#	enable = {
+#	
+#		NOT = { tag = CAN }
+#		CAN = { is_in_faction = yes }
+#		
+#		OR = {		
+#			tag = AST
+#			tag = HAW
+#			
+#		}
+#		
+#		OR = {
+#			has_government = nationalist
+#			has_government = national_conservative
+#			has_government = centrist
+#			has_government = liberal
+#			has_government = new_democrat
+#			has_government = moderate_socialist
+#		}
+#		
+#		OR = {
+#			CAN = { has_government = nationalist }
+#			CAN = { has_government = national_conservative }
+#			CAN = { has_government = centrist }
+#			CAN = { has_government = liberal }
+#			CAN = { has_government = new_democrat }
+#			CAN = { has_government = moderate_socialist }
+#		}
+#		
+#	}
+#	
+#	abort = {
+#		OR = {
+#			has_war_with = CAN
+#			CAN = { is_in_faction = no }
+#			OR = {
+#				has_government = fascist
+#				has_government = monarchist
+#				has_government = communist
+#				has_government = revolutionary_socialist
+#				has_government = national_bolshevik
+#			}
+#			OR = {
+#				CAN = { has_government = fascist }
+#				CAN = { has_government = monarchist }
+#				CAN = { has_government = communist }
+#				CAN = { has_government = revolutionary_socialist }
+#				CAN = { has_government = national_bolshevik }
+#			}
+#			CAN = { exists = no }
+#		}
+#	}
+#	
+#	ai_strategy = {
+#		type = befriend
+#		id = "CAN"
+#		value = 40
+#	}
+#	
+#	
+#	ai_strategy = {
+#		type = alliance
+#		id = "CAN"
+#		value = 120
+#	}
+#	
+#	
+#}
+
+#I voided this file to demonstrate that while this was here before, it is no longer needed. A higher up dev can delete the file if they wish since i ported and improved to the Democratic countries like eachother one.

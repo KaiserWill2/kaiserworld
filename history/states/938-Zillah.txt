@@ -1,0 +1,18 @@
+state={
+	id=938
+	name="STATE_938"
+	provinces={
+		13452 13458 13475 13491 13500 13507 13527 13544 13545 
+	}
+	state_category = town
+	history={
+		owner = LBA
+		add_core_of = LBA
+		buildings = {
+			infrastructure = 1
+		}
+
+	}
+	manpower=41000
+	buildings_max_level_factor=1.000
+}

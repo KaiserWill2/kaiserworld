@@ -1,0 +1,25 @@
+
+state={
+	id=959
+	name="STATE_959" # Karen Hills
+	manpower = 1860706
+	
+	state_category = town
+	
+	resources = {
+		rubber = 4
+		tungsten = 2
+	}
+
+	history={
+		owner = MYA
+		buildings = {
+		infrastructure = 4	
+		}
+	}
+	
+	provinces={
+		  12317 4654 7441  4293 12238 4408
+	}
+}
+

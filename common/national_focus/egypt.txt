@@ -1,0 +1,4092 @@
+focus_tree = {
+	id = egypt_tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 20
+			tag = EGY
+		}
+	}
+	default = no
+	continuous_focus_position = { x = 50 y = 2200 }
+	focus = {
+		id = EGY_fall_of_the_uar
+		icon = focus_end_of_the_war
+		available = {
+		    AND = {
+			    has_government = nationalist
+				is_puppet = no
+			}
+		}
+		cost = 2
+		x = 20
+		y = 0
+		completion_reward = {
+		    add_political_power = -500
+		}
+		
+
+	}
+	focus = {
+		id = EGY_egyptian_diplomacy
+		icon = focus_egyptian_diplomacy
+		cost = 10
+		available = {
+		    OR = {
+			    has_completed_focus = EGY_keep_revolution_at_bay
+				has_completed_focus = EGY_the_second_stage
+				has_completed_focus = EGY_president_morsi
+				has_completed_focus = EGY_president_aboul_fotouh
+				has_completed_focus = EGY_president_sawiris
+				has_completed_focus = EGY_president_moussa
+				has_completed_focus = EGY_crush_opposition
+				has_completed_focus = EGY_a_modern_kingdom
+				has_completed_focus = EGY_restore_the_sultan
+				has_completed_focus = EGY_parliamentary_elections
+				has_completed_focus = EGY_king_above_all
+			}
+		}
+		x = 57
+		y = 0
+		completion_reward = {
+		    add_political_power = 120
+		}
+
+	}
+	focus = {
+		id = EGY_continue_military_governance
+		icon = focus_egypt_continue_military
+		cost = 5
+		ai_will_do = {
+			base = 40
+			modifier = {
+				NOT = {
+					has_game_rule = {
+						rule = EGY_ai_behavior
+						option = DEFAULT
+					}
+					has_game_rule = {
+						rule = EGY_ai_behavior
+						option = EGY_GLOWING_MERGE
+					}
+					has_game_rule = {
+						rule = EGY_ai_behavior
+						option = EGY_GLOWING_SISI
+					}
+					has_game_rule = {
+						rule = EGY_ai_behavior
+						option = EGY_GLOWING_MEKKI
+					}
+					has_game_rule = {
+						rule = EGY_ai_behavior
+						option = EGY_SISI
+					}
+				}
+				factor = 0
+			}
+		}
+		prerequisite = {
+			focus = EGY_fall_of_the_uar
+		}
+		mutually_exclusive = {
+			focus = EGY_fresh_elections
+			focus = EGY_an_idealist_president
+		}
+		x = 6
+		y = 1
+		completion_reward = {
+		    add_popularity = {
+				ideology = nationalist
+				popularity = 0.04
+			}
+			add_stability = 0.025
+			country_event = { id = egypt.33 }
+		}
+
+	}
+	focus = {
+		id = EGY_intelligency_agency_control
+		icon = focus_intelligence_agency_control
+		cost = 5
+		ai_will_do = {
+			modifier = {
+				NOT = {
+					has_game_rule = {
+						rule = EGY_ai_behavior
+						option = DEFAULT
+					}
+					has_game_rule = {
+						rule = EGY_ai_behavior
+						option = EGY_GLOWING_MERGE
+					}
+					has_game_rule = {
+						rule = EGY_ai_behavior
+						option = EGY_GLOWING_SISI
+					}
+					has_game_rule = {
+						rule = EGY_ai_behavior
+						option = EGY_GLOWING_MEKKI
+					}
+				}
+				factor = 0
+			}
+		}
+		prerequisite = {
+			focus = EGY_continue_military_governance
+		}
+		mutually_exclusive = {
+			focus = EGY_president_el_sisi
+		}
+		x = 3
+		y = 2
+		completion_reward = {
+		    add_ideas = idea_egy_intelligence_agency_control
+			country_event = { id = egypt.34 }
+		}
+
+	}
+	focus = {
+		id = EGY_technological_advancements
+		icon = generic_research
+		cost = 10
+		prerequisite = {
+			focus = EGY_intelligency_agency_control
+		}
+		x = 2
+		y = 3
+		completion_reward = {
+		    add_ideas = idea_egy_technological_advancements
+		}
+
+	}
+	focus = {
+		id = EGY_the_alexandria_summit
+		icon = scientific_exchange
+		cost = 2
+		prerequisite = {
+			focus = EGY_technological_advancements
+		}
+		x = 1
+		y = 4
+		completion_reward = {
+		    add_stability = 0.02
+			add_tech_bonus = {
+				name = electronics_bonus
+				bonus = 0.1
+				uses = 1
+				category = electronics
+			}
+			add_tech_bonus = {
+				name = industry_bonus
+				bonus = 0.1
+				uses = 1
+				category = industry
+			}
+			country_event = { id = egypt.35 }
+		}
+
+	}
+	focus = {
+		id = EGY_keep_revolution_at_bay
+		icon = secret_weapon
+		cost = 5
+		prerequisite = {
+			focus = EGY_intelligency_agency_control
+		}
+		x = 4
+		y = 3
+		completion_reward = {
+		    add_popularity = {
+				ideology = revolutionary_socialist
+				popularity = -0.03
+			}
+			add_popularity = {
+				ideology = communist
+				popularity = -0.05
+			}
+			add_stability = 0.035
+			country_event = { id = egypt.36 }
+		}
+
+	}
+	focus = {
+		id = EGY_corporate_allegiances
+		icon = low_company_tax
+		cost = 3
+		prerequisite = {
+			focus = EGY_technological_advancements
+		}
+		prerequisite = {
+			focus = EGY_keep_revolution_at_bay
+		}
+		x = 3
+		y = 4
+		completion_reward = {
+		    add_ideas = idea_egy_corporate_allegiances
+		}
+
+	}
+	focus = {
+		id = EGY_appoint_new_high_command
+		icon = army_doctrine
+		cost = 5
+		prerequisite = {
+			focus = EGY_keep_revolution_at_bay
+		}
+		x = 5
+		y = 4
+		completion_reward = {
+		    army_experience = 10
+			navy_experience = 10 
+			air_experience = 10
+			add_political_power = 50
+			add_popularity = {
+				ideology = nationalist
+				popularity = 0.02
+			}
+		}
+
+	}
+	focus = {
+		id = EGY_vice_president_el_sisi
+		icon = focus_vice_president_el_sisi
+		cost = 2
+		ai_will_do = {
+			modifier = {
+				NOT = {
+					has_game_rule = {
+						rule = EGY_ai_behavior
+						option = DEFAULT
+					}
+					has_game_rule = {
+						rule = EGY_ai_behavior
+						option = EGY_GLOWING_SISI
+					}
+				}
+				factor = 0
+			}
+		}
+		prerequisite = {
+			focus = EGY_appoint_new_high_command
+		}
+		mutually_exclusive = {
+			focus = EGY_merge_the_posts
+			focus = EGY_vice_president_mekki
+		}
+		x = 3
+		y = 6
+		completion_reward = {
+		    set_party_name = { ideology = nationalist long_name = EGY_national_development name = EGY_national_development }
+			add_tech_bonus = {
+				name = land_doctrine_bonus
+				bonus = 0.5
+				uses = 1
+				category = land_doctrine
+			}
+			country_event = { id = egypt.37 }
+		}
+
+	}
+	focus = {
+		id = EGY_visit_barracks
+		icon = military_salute
+		cost = 10
+		prerequisite = {
+			focus = EGY_vice_president_el_sisi
+		}
+		x = 3
+		y = 7
+		completion_reward = {
+		    add_ideas = idea_egy_barrack_visits
+			country_event = { id = egypt.38 }
+		}
+
+	}
+	focus = {
+		id = EGY_visit_naval_bases
+		icon = build_navy
+		cost = 10
+		prerequisite = {
+			focus = EGY_visit_barracks
+		}
+		x = 3
+		y = 8
+		completion_reward = {
+		    add_ideas = idea_egy_naval_base_visits
+		}
+
+	}
+	focus = {
+		id = EGY_advance_the_nuclear_program
+		icon = research_nukes
+		cost = 10
+		prerequisite = {
+			focus = EGY_visit_naval_bases
+		}
+		x = 3
+		y = 9
+		completion_reward = {
+		    add_tech_bonus = {
+				name = nuclear_bonus
+				bonus = 0.35
+				uses = 1
+				category = nuclear
+			}
+		}
+
+	}
+	focus = {
+		id = EGY_fiscally_conservative_reforms
+		icon = investigate_industrial_corruption
+		cost = 10
+		prerequisite = {
+			focus = EGY_corporate_allegiances
+		}
+		x = 4
+		y = 5
+		completion_reward = {
+		    add_ideas = idea_egy_fiscal_conservatism
+		}
+
+	}
+	focus = {
+		id = EGY_merge_the_posts
+		icon = focus_merge_the_posts
+		cost = 2
+		ai_will_do = {
+			modifier = {
+				NOT = {
+					has_game_rule = {
+						rule = EGY_ai_behavior
+						option = DEFAULT
+					}
+					has_game_rule = {
+						rule = EGY_ai_behavior
+						option = EGY_GLOWING_MERGE
+					}
+				}
+				factor = 0
+			}
+		}
+		prerequisite = {
+			focus = EGY_appoint_new_high_command
+		}
+		mutually_exclusive = {
+			focus = EGY_vice_president_el_sisi
+			focus = EGY_vice_president_mekki
+		}
+		x = 5
+		y = 6
+		completion_reward = {
+		    set_party_name = { ideology = nationalist long_name = EGY_national_justice name = EGY_national_justice }
+			add_political_power = 150
+			country_event = { id = egypt.39 }
+		}
+
+	}
+	focus = {
+		id = EGY_transition_to_totalitarianism
+		icon = glasnost
+		cost = 10
+		prerequisite = {
+			focus = EGY_merge_the_posts
+		}
+		x = 5
+		y = 7
+		completion_reward = {
+		    add_ideas = idea_egy_totalitarianism
+		}
+
+	}
+	focus = {
+		id = EGY_mass_conscription
+		icon = axis_helmet
+		cost = 10
+		prerequisite = {
+			focus = EGY_transition_to_totalitarianism
+		}
+		x = 5
+		y = 8
+		completion_reward = {
+		    add_ideas = idea_egy_conscription_campaign
+		}
+
+	}
+	focus = {
+		id = EGY_a_new_secret_police
+		icon = cavalry
+		cost = 10
+		prerequisite = {
+			focus = EGY_mass_conscription
+		}
+		x = 5
+		y = 9
+		completion_reward = {
+		    add_ideas = idea_egy_new_secret_police
+			country_event = { id = egypt.40 }
+		}
+
+	}
+	focus = {
+		id = EGY_vice_president_mekki
+		icon = focus_vice_president_mekki
+		cost = 2
+		ai_will_do = {
+			modifier = {
+				NOT = {
+					has_game_rule = {
+						rule = EGY_ai_behavior
+						option = DEFAULT
+					}
+					has_game_rule = {
+						rule = EGY_ai_behavior
+						option = EGY_GLOWING_MEKKI
+					}
+				}
+				factor = 0
+			}
+		}
+		prerequisite = {
+			focus = EGY_appoint_new_high_command
+		}
+		mutually_exclusive = {
+			focus = EGY_vice_president_el_sisi
+			focus = EGY_merge_the_posts
+		}
+		x = 7
+		y = 6
+		completion_reward = {
+		    set_party_name = { ideology = nationalist long_name = EGY_national_democrats name = EGY_national_democrats }
+			add_stability = 0.02
+			country_event = { id = egypt.41 }
+		}
+
+	}
+	focus = {
+		id = EGY_more_economic_reforms
+		icon = torch_industry
+		cost = 10
+		prerequisite = {
+			focus = EGY_vice_president_mekki
+		}
+		x = 7
+		y = 7
+		completion_reward = {
+		    add_ideas = idea_egy_economic_reforms
+		}
+
+	}
+	focus = {
+		id = EGY_appoint_social_liberals
+		icon = neutrality
+		cost = 10
+		prerequisite = {
+			focus = EGY_more_economic_reforms
+		}
+		x = 7
+		y = 8
+		completion_reward = {
+		    add_popularity = {
+				ideology = centrist
+				popularity = 0.05
+			}
+			add_popularity = {
+				ideology = liberal
+				popularity = 0.05
+			}
+			add_popularity = {
+				ideology = national_conservative
+				popularity = 0.05
+			}
+			add_stability = 0.03
+			add_ideas = idea_egy_social_liberal_influence
+		}
+
+	}
+	focus = {
+		id = EGY_visit_factories
+		icon = production_2
+		cost = 10
+		prerequisite = {
+			focus = EGY_appoint_social_liberals
+		}
+		x = 7
+		y = 9
+		completion_reward = {
+		    random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_political_power = -180
+		}
+
+	}
+	focus = {
+		id = EGY_president_el_sisi
+		icon = focus_president_el_sisi
+		cost = 2
+		ai_will_do = {
+			modifier = {
+				NOT = {
+					has_game_rule = {
+						rule = EGY_ai_behavior
+						option = DEFAULT
+					}
+					has_game_rule = {
+						rule = EGY_ai_behavior
+						option = EGY_SISI
+					}
+				}
+				factor = 0
+			}
+		}
+		prerequisite = {
+			focus = EGY_continue_military_governance
+		}
+		mutually_exclusive = {
+			focus = EGY_intelligency_agency_control
+		}
+		x = 11
+		y = 2
+		completion_reward = {
+		    create_country_leader = {
+	            name = "Abdel Fattah el-Sisi"
+	            picture = "Portrait_EGY_Abdel_Fattah_El_Sisi.dds"
+	            ideology = ultranationalist 
+            }
+			army_experience = 25 
+			air_experience = 5
+			country_event = { id = egypt.42 }
+		}
+
+	}
+	focus = {
+		id = EGY_cult_of_personality
+		icon = political_pressure
+		cost = 10
+		prerequisite = {
+			focus = EGY_president_el_sisi
+		}
+		x = 9
+		y = 3
+		completion_reward = {
+		    add_ideas = idea_egy_cult_of_personality
+		}
+
+	}
+	focus = {
+		id = EGY_a_military_clique
+		icon = license_production
+		cost = 10
+		prerequisite = {
+			focus = EGY_cult_of_personality
+		}
+		x = 9
+		y = 4
+		completion_reward = {
+		    add_ideas = idea_egy_military_clique
+		}
+
+	}
+	focus = {
+		id = EGY_crush_civil_liberties
+		icon = puppet
+		cost = 2
+		prerequisite = {
+			focus = EGY_president_el_sisi
+		}
+		x = 11
+		y = 3
+		completion_reward = {
+		    add_political_power = 200
+			country_event = { id = egypt.43 }
+		}
+
+	}
+	focus = {
+		id = EGY_sisis_secret_police
+		icon = attack_allies
+		cost = 5
+		prerequisite = {
+			focus = EGY_crush_civil_liberties
+		}
+		x = 11
+		y = 4
+		completion_reward = {
+		    add_ideas = idea_egy_sisis_secret_police
+		}
+
+	}
+	focus = {
+		id = EGY_increase_economic_freedom
+		icon = major_alliance
+		cost = 5
+		prerequisite = {
+			focus = EGY_president_el_sisi
+		}
+		x = 13
+		y = 3
+		completion_reward = {
+		    add_ideas = idea_egy_greater_economic_freedoms
+			country_event = { id = egypt.44 }
+		}
+
+	}
+	focus = {
+		id = EGY_egyptian_capitalism
+		icon = intelligence_exchange
+		cost = 10
+		prerequisite = {
+			focus = EGY_increase_economic_freedom
+		}
+		x = 13
+		y = 4
+		completion_reward = {
+		    remove_ideas = idea_egy_greater_economic_freedoms
+			add_ideas = idea_egy_egyptian_capitalism
+		}
+
+	}
+	focus = {
+		id = EGY_the_second_stage
+		icon = two_flags
+		cost = 2
+		prerequisite = {
+			focus = EGY_a_military_clique
+		}
+		prerequisite = {
+			focus = EGY_sisis_secret_police
+		}
+		prerequisite = {
+			focus = EGY_egyptian_capitalism
+		}
+		x = 11
+		y = 5
+		completion_reward = {
+		    set_party_name = { ideology = nationalist long_name = EGY_egyptian_liberation name = EGY_egyptian_liberation }
+			add_stability = 0.05
+			country_event = { id = egypt.45 }
+		}
+
+	}
+	focus = {
+		id = EGY_enforce_wage_regulations
+		icon = uk_workers_revolution
+		cost = 10
+		prerequisite = {
+			focus = EGY_the_second_stage
+		}
+		x = 9
+		y = 6
+		completion_reward = {
+		    add_ideas = idea_egy_enforced_wage_regulations
+		}
+
+	}
+	focus = {
+		id = EGY_sustainable_cities
+		icon = generic_construction_2
+		cost = 10
+		prerequisite = {
+			focus = EGY_the_second_stage
+		}
+		x = 13
+		y = 6
+		completion_reward = {
+		    random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			add_political_power = -100
+			country_event = { id = egypt.46 }
+		}
+
+	}
+	focus = {
+		id = EGY_new_generations_of_troops
+		icon = small_arms
+		cost = 10
+		prerequisite = {
+			focus = EGY_sustainable_cities
+		}
+		x = 13
+		y = 7
+		completion_reward = {
+		    add_ideas = idea_egy_new_generations_of_troops
+		}
+
+	}
+	focus = {
+		id = EGY_fresh_elections
+		icon = focus_syria_local_elections
+		cost = 2
+		ai_will_do = {
+			base = 50
+			modifier = {
+				NOT = {
+					has_game_rule = {
+						rule = EGY_ai_behavior
+						option = DEFAULT
+					}
+					has_game_rule = {
+						rule = EGY_ai_behavior
+						option = EGY_DEMOCRACY_MORSI
+					}
+					has_game_rule = {
+						rule = EGY_ai_behavior
+						option = EGY_DEMOCRACY_FOTOUH
+					}
+					has_game_rule = {
+						rule = EGY_ai_behavior
+						option = EGY_DEMOCRACY_SAWIRIS
+					}
+					has_game_rule = {
+						rule = EGY_ai_behavior
+						option = EGY_DEMOCRACY_MOUSSA
+					}
+					has_game_rule = {
+						rule = EGY_ai_behavior
+						option = EGY_DEMOCRACY_MOUSSA
+					}
+					has_game_rule = {
+						rule = EGY_ai_behavior
+						option = EGY_DEMOCRACY_CALIPHATE
+					}
+					has_game_rule = {
+						rule = EGY_ai_behavior
+						option = EGY_DEMOCRACY_COMMUNISM
+					}
+				}
+				factor = 0
+			}
+		}
+		prerequisite = {
+			focus = EGY_fall_of_the_uar
+		}
+		mutually_exclusive = {
+			focus = EGY_continue_military_governance
+			focus = EGY_an_idealist_president
+		}
+		x = 20
+		y = 1
+		completion_reward = {
+		    country_event = { id = egypt.1 }
+		}
+
+	}
+	focus = {
+		id = EGY_president_morsi
+		icon = focus_president_morsi
+		cost = 10
+		available = {
+		    has_government = national_conservative
+		}
+		bypass = {
+		    has_government = national_conservative
+		}
+		prerequisite = {
+			focus = EGY_fresh_elections
+		}
+		mutually_exclusive = {
+			focus = EGY_president_aboul_fotouh
+			focus = EGY_president_sawiris
+			focus = EGY_president_moussa
+			focus = EGY_president_adli
+		}
+		x = 16
+		y = 2
+		completion_reward = {
+		
+		}
+
+	}
+	focus = {
+		id = EGY_harsh_crackdown
+		icon = smashing_flag
+		cost = 5
+		prerequisite = {
+			focus = EGY_president_morsi
+		}
+		x = 16
+		y = 3
+		completion_reward = {
+		    add_stability = 0.05
+			add_war_support = 0.04
+			country_event = { id = egypt.47 }
+		}
+
+	}
+	focus = {
+		id = EGY_islamic_awakening
+		icon = focus_syria_state_atheism
+		cost = 10
+		prerequisite = {
+			focus = EGY_harsh_crackdown
+		}
+		x = 16
+		y = 4
+		completion_reward = {
+		    add_ideas = idea_egy_islamic_awakening
+		}
+
+	}
+	focus = {
+		id = EGY_radical_economic_reforms
+		icon = self_management
+		cost = 10
+		prerequisite = {
+			focus = EGY_islamic_awakening
+		}
+		x = 16
+		y = 5
+		completion_reward = {
+		    random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			country_event = { id = egypt.48 }
+		}
+
+	}
+	focus = {
+		id = EGY_unity_of_the_ummah
+		icon = national_unity
+		cost = 10
+		prerequisite = {
+			focus = EGY_radical_economic_reforms
+		}
+		x = 16
+		y = 6
+		completion_reward = {
+		    add_ideas = idea_egy_unity_of_the_ummah
+		}
+
+	}
+	focus = {
+		id = EGY_president_aboul_fotouh
+		icon = focus_president_aboul_fotouh
+		cost = 10
+		available = {
+		    has_government = centrist
+		}
+		bypass = {
+		    has_government = centrist
+		}
+		prerequisite = {
+			focus = EGY_fresh_elections
+		}
+		mutually_exclusive = {
+			focus = EGY_president_morsi
+			focus = EGY_president_sawiris
+			focus = EGY_president_moussa
+			focus = EGY_president_adli
+		}
+		x = 18
+		y = 2
+		completion_reward = {
+		
+		}
+
+	}
+	focus = {
+		id = EGY_pardon_former_leaders
+		icon = royal_strength
+		cost = 5
+		prerequisite = {
+			focus = EGY_president_aboul_fotouh
+		}
+		x = 18
+		y = 3
+		completion_reward = {
+		    add_political_power = 100
+			add_popularity = {
+				ideology = nationalist
+				popularity = 0.02
+			}
+			add_popularity = {
+				ideology = revolutionary_socialist
+				popularity = 0.06
+			}
+			country_event = { id = egypt.49 }
+		}
+
+	}
+	focus = {
+		id = EGY_social_moderation
+		icon = democracy
+		cost = 10
+		prerequisite = {
+			focus = EGY_pardon_former_leaders
+		}
+		x = 18
+		y = 4
+		completion_reward = {
+		    add_ideas = idea_egy_moderate_social_policies
+		}
+
+	}
+	focus = {
+		id = EGY_rapid_national_development
+		icon = communist_construction
+		cost = 10
+		prerequisite = {
+			focus = EGY_social_moderation
+		}
+		x = 18
+		y = 5
+		completion_reward = {
+		    add_ideas = idea_egy_rapid_national_development
+		}
+
+	}
+	focus = {
+		id = EGY_support_islamic_traditionalism
+		icon = focus_syria_islamic_monarchy
+		cost = 10
+		prerequisite = {
+			focus = EGY_rapid_national_development
+		}
+		x = 18
+		y = 6
+		completion_reward = {
+		    add_ideas = idea_egy_islamic_traditionalism
+		}
+
+	}
+	focus = {
+		id = EGY_islamic_republic
+		icon = flags_green
+		cost = 10
+		prerequisite = {
+			focus = EGY_unity_of_the_ummah
+			focus = EGY_support_islamic_traditionalism
+		}
+		mutually_exclusive = {
+			focus = EGY_arab_republic
+		}
+		x = 16
+		y = 7
+		completion_reward = {
+		    add_political_power = 250
+			add_popularity = {
+				ideology = centrist
+				popularity = 0.1
+			}
+			add_popularity = {
+				ideology = national_conservative
+				popularity = 0.15
+			}
+			set_cosmetic_tag = EGY_IslamicRepublic
+			country_event = { id = egypt.50 }
+		}
+
+	}
+	focus = {
+		id = EGY_arab_republic
+		icon = flags_red
+		cost = 10
+		prerequisite = {
+			focus = EGY_support_islamic_traditionalism
+			focus = EGY_unity_of_the_ummah
+		}
+		mutually_exclusive = {
+			focus = EGY_islamic_republic
+		}
+		x = 18
+		y = 7
+		completion_reward = {
+		    add_stability = 0.1
+			add_popularity = {
+				ideology = liberal
+				popularity = 0.03
+			}
+			add_popularity = {
+				ideology = new_democrat
+				popularity = 0.05
+			}
+			add_popularity = {
+				ideology = moderate_socialist
+				popularity = 0.05
+			}
+			add_popularity = {
+				ideology = revolutionary_socialist
+				popularity = 0.025
+			}
+			country_event = { id = egypt.51 }
+		}
+
+	}
+	focus = {
+		id = EGY_president_sawiris
+		icon = focus_president_sawiris
+		cost = 10
+		available = {
+		    has_government = liberal
+		}
+		bypass = {
+		    has_government = liberal
+		}
+		prerequisite = {
+			focus = EGY_fresh_elections
+		}
+		mutually_exclusive = {
+			focus = EGY_president_morsi
+			focus = EGY_president_aboul_fotouh
+			focus = EGY_president_moussa
+			focus = EGY_president_adli
+		}
+		x = 20
+		y = 2
+		completion_reward = {
+		
+		}
+
+	}
+	focus = {
+		id = EGY_immediate_infrastructure_expansion
+		icon = infrastructure
+		cost = 10
+		prerequisite = {
+			focus = EGY_president_sawiris
+		}
+		x = 20
+		y = 3
+		completion_reward = {
+		    random_owned_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			add_political_power = -70
+		}
+
+	}
+	focus = {
+		id = EGY_corrupt_assembly
+		icon = parties
+		cost = 10
+		prerequisite = {
+			focus = EGY_immediate_infrastructure_expansion
+		}
+		x = 20
+		y = 4
+		completion_reward = {
+		    add_ideas = idea_egy_corrupt_assembly
+		}
+
+	}
+	focus = {
+		id = EGY_promote_secularism
+		icon = concessions
+		cost = 5
+		prerequisite = {
+			focus = EGY_corrupt_assembly
+		}
+		x = 20
+		y = 5
+		completion_reward = {
+		    add_ideas = idea_egy_secularism
+			country_event = { id = egypt.52 }
+		}
+
+	}
+	focus = {
+		id = EGY_intellectual_governance
+		icon = focus_trade_council_influence
+		cost = 10
+		prerequisite = {
+			focus = EGY_promote_secularism
+		}
+		x = 20
+		y = 6
+		completion_reward = {
+		    add_ideas = idea_egy_intellectual_governance
+		}
+
+	}
+	focus = {
+		id = EGY_president_moussa
+		icon = focus_president_moussa
+		cost = 10
+		available = {
+		    has_government = new_democrat
+		}
+		bypass = {
+		    has_government = new_democrat
+		}
+		prerequisite = {
+			focus = EGY_fresh_elections
+		}
+		mutually_exclusive = {
+			focus = EGY_president_morsi
+			focus = EGY_president_aboul_fotouh
+			focus = EGY_president_sawiris
+			focus = EGY_president_adli
+		}
+		x = 22
+		y = 2
+		completion_reward = {
+		
+		}
+
+	}
+	focus = {
+		id = EGY_authoritarian_democracy
+		icon = demand
+		cost = 10
+		prerequisite = {
+			focus = EGY_president_moussa
+		}
+		x = 22
+		y = 3
+		completion_reward = {
+		    add_ideas = idea_egy_authoritarian_democracy
+		}
+
+	}
+	focus = {
+		id = EGY_reconciliation_councils
+		icon = shaking_hands_1
+		cost = 10
+		prerequisite = {
+			focus = EGY_authoritarian_democracy
+		}
+		x = 22
+		y = 4
+		completion_reward = {
+		    add_stability = 0.05
+			add_political_power = -200
+			army_experience = 5 
+		}
+
+	}
+	focus = {
+		id = EGY_north_egypt_advancement_project
+		icon = focus_north_egyptian_projects
+		cost = 10
+		prerequisite = {
+			focus = EGY_reconciliation_councils
+		}
+		x = 22
+		y = 5
+		completion_reward = {
+		    random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			country_event = { id = egypt.53 }
+		}
+
+	}
+	focus = {
+		id = EGY_young_minds
+		icon = tech_sharing
+		cost = 10
+		prerequisite = {
+			focus = EGY_north_egypt_advancement_project
+		}
+		x = 22
+		y = 6
+		completion_reward = {
+		    add_ideas = idea_egy_young_minds_program
+		}
+
+	}
+	focus = {
+		id = EGY_a_better_future_campaign
+		icon = democracy
+		cost = 5
+		prerequisite = {
+			focus = EGY_intellectual_governance
+			focus = EGY_young_minds
+		}
+		x = 20
+		y = 7
+		completion_reward = {
+		    add_ideas = idea_egy_a_better_future
+		}
+
+	}
+	focus = {
+		id = EGY_welfare_programs
+		icon = anti_monarchy
+		cost = 10
+		prerequisite = {
+			focus = EGY_young_minds
+			focus = EGY_intellectual_governance
+		}
+		x = 22
+		y = 7
+		completion_reward = {
+		    add_ideas = idea_egy_welfare_programs
+		}
+
+	}
+	focus = {
+		id = EGY_rise_of_the_caliphate
+		icon = focus_rise_of_the_caliphate
+		cost = 10
+		available = {
+		    has_country_flag = sided_with_the_sheikh
+		}
+		bypass = {
+		    has_country_flag = sided_with_the_sheikh
+		}
+		prerequisite = {
+			focus = EGY_welfare_programs
+			focus = EGY_a_better_future_campaign
+		}
+		mutually_exclusive = {
+			focus = EGY_islamists_crushed
+		}
+		x = 22
+		y = 8
+		completion_reward = {
+		    
+		}
+
+	}
+	focus = {
+		id = EGY_sharia_law
+		icon = ideology_fist
+		cost = 10
+		prerequisite = {
+			focus = EGY_rise_of_the_caliphate
+		}
+		x = 21
+		y = 9
+		completion_reward = {
+		    add_ideas = idea_egy_sharia_law
+		}
+
+	}
+	focus = {
+		id = EGY_declare_jihad
+		icon = generic_strike
+		cost = 10
+		prerequisite = {
+			focus = EGY_rise_of_the_caliphate
+		}
+		x = 22
+		y = 10
+		completion_reward = {
+		    add_ideas = idea_egy_jihad
+			country_event = { id = egypt.54 }
+		}
+
+	}
+	focus = {
+		id = EGY_conscript_egyptians
+		icon = liberty_attack
+		cost = 10
+		prerequisite = {
+			focus = EGY_rise_of_the_caliphate
+		}
+		x = 23
+		y = 9
+		completion_reward = {
+		    add_ideas = idea_egy_egyptians_conscripted
+		}
+
+	}
+	focus = {
+		id = EGY_president_adli
+		icon = communism_1
+		cost = 10
+		available = {
+		    has_government = communist
+		}
+		bypass = {
+		    has_government = communist
+		}
+		prerequisite = {
+			focus = EGY_fresh_elections
+		}
+		mutually_exclusive = {
+			focus = EGY_president_morsi
+			focus = EGY_president_aboul_fotouh
+			focus = EGY_president_sawiris
+			focus = EGY_president_moussa
+		}
+		x = 24
+		y = 2
+		completion_reward = {
+		
+		}
+
+	}
+	focus = {
+		id = EGY_crush_opposition
+		icon = major_war
+		cost = 5
+		prerequisite = {
+			focus = EGY_president_adli
+		}
+		x = 24
+		y = 3
+		completion_reward = {
+		    add_ideas = idea_egy_opposition_crushed
+			country_event = { id = egypt.55 }
+		}
+
+	}
+	focus = {
+		id = EGY_erect_portrait_of_lenin
+		icon = focus_erect_portrait_of_lenin
+		cost = 5
+		prerequisite = {
+			focus = EGY_crush_opposition
+		}
+		x = 24
+		y = 4
+		completion_reward = {
+		    add_ideas = idea_egy_legacy_of_lenin
+			country_event = { id = egypt.56 }
+		}
+
+	}
+	focus = {
+		id = EGY_centralise_the_nation
+		icon = focus_establish_embassies
+		cost = 10
+		prerequisite = {
+			focus = EGY_erect_portrait_of_lenin
+		}
+		x = 24
+		y = 5
+		completion_reward = {
+		    add_ideas = idea_egy_centralised_nation
+		}
+
+	}
+	focus = {
+		id = EGY_egyptian_peoples_army
+		icon = guns_red
+		cost = 10
+		prerequisite = {
+			focus = EGY_centralise_the_nation
+		}
+		x = 24
+		y = 6
+		completion_reward = {
+		    add_ideas = idea_egy_egyptian_peoples_army
+			country_event = { id = egypt.57 }
+		}
+
+	}
+	focus = {
+		id = EGY_socialism_forever
+		icon = embrace_conservatism
+		cost = 10
+		prerequisite = {
+			focus = EGY_egyptian_peoples_army
+		}
+		x = 24
+		y = 7
+		completion_reward = {
+		    add_ideas = idea_egy_socialism_forever
+		}
+
+	}
+	focus = {
+		id = EGY_an_idealist_president
+		icon = forceful_treaty
+		cost = 2
+		ai_will_do = {
+			base = 20
+			modifier = {
+				NOT = {
+					has_game_rule = {
+						rule = EGY_ai_behavior
+						option = DEFAULT
+					}
+					has_game_rule = {
+						rule = EGY_ai_behavior
+						option = EGY_MONARCHY_PHAROAH_MOHAB
+					}
+					has_game_rule = {
+						rule = EGY_ai_behavior
+						option = EGY_MONARCHY_PHAROAH_THUTMOSE
+					}
+					has_game_rule = {
+						rule = EGY_ai_behavior
+						option = EGY_MONARCHY_FREEDOM
+					}
+					has_game_rule = {
+						rule = EGY_ai_behavior
+						option = EGY_MONARCHY_PUPPET
+					}
+					has_game_rule = {
+						rule = EGY_ai_behavior
+						option = EGY_MONARCHY_SULTAN
+					}
+				}
+				factor = 0
+			}
+		}
+		prerequisite = {
+			focus = EGY_fall_of_the_uar
+		}
+		mutually_exclusive = {
+			focus = EGY_continue_military_governance
+			focus = EGY_fresh_elections
+		}
+		x = 33
+		y = 1
+		completion_reward = {
+		    add_popularity = {
+				ideology = fascist
+				popularity = 0.02
+			}
+			add_popularity = {
+				ideology = monarchist
+				popularity = 0.02
+			}
+			add_popularity = {
+				ideology = nationalist
+				popularity = 0.02
+			}
+			add_political_power = 120
+			country_event = { id = egypt.58 }
+		}  
+
+	}
+	focus = {
+		id = EGY_the_new_kingdom
+		icon = fascism_2
+		cost = 5
+		ai_will_do = {
+			modifier = {
+				NOT = {
+					has_game_rule = {
+						rule = EGY_ai_behavior
+						option = DEFAULT
+					}
+					has_game_rule = {
+						rule = EGY_ai_behavior
+						option = EGY_MONARCHY_PHAROAH_MOHAB
+					}
+					has_game_rule = {
+						rule = EGY_ai_behavior
+						option = EGY_MONARCHY_PHAROAH_THUTMOSE
+					}
+				}
+				factor = 0
+			}
+		}
+		prerequisite = {
+			focus = EGY_an_idealist_president
+		}
+		mutually_exclusive = {
+			focus = EGY_the_muhammad_ali_dynasty
+		}
+		x = 29
+		y = 2
+		completion_reward = {
+		    set_cosmetic_tag = EGY_NewKingdom
+			country_event = { id = egypt.59 }
+			add_stability = -0.08
+			set_politics = {
+	            ruling_party = monarchist
+	            elections_allowed = no
+            }
+			create_country_leader = {
+	            name = "Thutmose V"
+	            picture = "Portrait_EGY_Thutmose_V.dds"
+	            ideology = absolute_monarchist 
+            }
+			set_party_name = { ideology = monarchist long_name = EGY_thirty_fourth_dynasty name = EGY_thirty_fourth_dynasty }
+			hidden_effect = {
+		        country_event = { days = 2 id = egypt.21 } 
+		    }
+		}
+
+	}
+	focus = {
+		id = EGY_worship_our_leader
+		icon = focus_assadism
+		cost = 10
+		prerequisite = {
+			focus = EGY_the_new_kingdom
+		}
+		x = 27
+		y = 3
+		completion_reward = {
+		    add_ideas = idea_egy_leader_worship
+		}
+
+	}
+	focus = {
+		id = EGY_renovate_wonders
+		icon = generic_construction
+		cost = 10
+		prerequisite = {
+			focus = EGY_the_new_kingdom
+		}
+		x = 29
+		y = 3
+		completion_reward = {
+		    random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			country_event = { id = egypt.60 }
+		}
+
+	}
+	focus = {
+		id = EGY_close_the_valley
+		icon = fortify_city
+		cost = 2
+		prerequisite = {
+			focus = EGY_renovate_wonders
+		}
+		x = 29
+		y = 4
+		completion_reward = {
+		    add_popularity = {
+				ideology = monarchist
+				popularity = 0.07
+			}
+			add_political_power = -85
+			add_ideas = idea_egy_valley_closed
+			country_event = { id = egypt.61 }
+		}
+
+	}
+	focus = {
+		id = EGY_imperial_cult
+		icon = flags_yellow
+		cost = 10
+		prerequisite = {
+			focus = EGY_worship_our_leader
+		}
+		x = 27
+		y = 4
+		completion_reward = {
+		    add_ideas = idea_egy_imperial_cult
+		}
+
+	}
+	focus = {
+		id = EGY_a_modern_kingdom
+		icon = focus_emergency_party_convention
+		cost = 5
+		prerequisite = {
+			focus = EGY_the_new_kingdom
+		}
+		x = 31
+		y = 3
+		completion_reward = {
+		    add_ideas = idea_egy_a_modern_kingdom
+		}
+
+	}
+	focus = {
+		id = EGY_the_pyramid_complex
+		icon = tech_sharing
+		cost = 10
+		prerequisite = {
+			focus = EGY_a_modern_kingdom
+		}
+		x = 31
+		y = 4
+		completion_reward = {
+		    add_tech_bonus = {
+				name = electronics_bonus
+				bonus = 0.1
+				uses = 1
+				category = electronics
+			}
+			add_tech_bonus = {
+				name = construction_tech_bonus
+				bonus = 0.15
+				uses = 1
+				category = construction_tech
+			}
+			add_political_power = 100
+			country_event = { id = egypt.62 }
+		}
+
+	}
+	focus = {
+		id = EGY_king_mamish
+		icon = anti_fascist
+		cost = 10
+		available = {
+		    has_country_flag = mohab_i_is_pharaoh
+		}
+		bypass = {
+		    has_country_flag = mohab_i_is_pharaoh
+		}
+		prerequisite = {
+			focus = EGY_imperial_cult
+		}
+		prerequisite = {
+			focus = EGY_close_the_valley
+		}
+		prerequisite = {
+			focus = EGY_the_pyramid_complex
+		}
+		mutually_exclusive = {
+			focus = EGY_king_sobhy
+		}
+		x = 28
+		y = 5
+		completion_reward = {
+		
+		}
+
+	}
+	focus = {
+		id = EGY_king_sobhy
+		icon = fascism_1
+		cost = 10
+		available = {
+		    has_country_flag = thutmose_vi_is_pharaoh
+		}
+		bypass = {
+		    has_country_flag = thutmose_vi_is_pharaoh
+		}
+		prerequisite = {
+			focus = EGY_the_pyramid_complex
+		}
+		prerequisite = {
+			focus = EGY_close_the_valley
+		}
+		prerequisite = {
+			focus = EGY_imperial_cult
+		}
+		mutually_exclusive = {
+			focus = EGY_king_mamish
+		}
+		x = 30
+		y = 5
+		completion_reward = {
+		
+		}
+
+	}
+	focus = {
+		id = EGY_the_muhammad_ali_dynasty
+		icon = support_monarchy
+		cost = 2
+		ai_will_do = {
+			modifier = {
+				NOT = {
+					has_game_rule = {
+						rule = EGY_ai_behavior
+						option = DEFAULT
+					}
+					has_game_rule = {
+						rule = EGY_ai_behavior
+						option = EGY_MONARCHY_FREEDOM
+					}
+					has_game_rule = {
+						rule = EGY_ai_behavior
+						option = EGY_MONARCHY_PUPPET
+					}
+					has_game_rule = {
+						rule = EGY_ai_behavior
+						option = EGY_MONARCHY_SULTAN
+					}
+				}
+				factor = 0
+			}
+		}
+		prerequisite = {
+			focus = EGY_an_idealist_president
+		}
+		mutually_exclusive = {
+			focus = EGY_the_new_kingdom
+		}
+		x = 39
+		y = 2
+		completion_reward = {
+		    set_politics = {
+	            ruling_party = monarchist
+	            elections_allowed = no
+            }
+			add_political_power = -50
+			country_event = { id = egypt.63 }
+		}
+
+	}
+	focus = {
+		id = EGY_restore_the_sultan
+		icon = focus_syria_down_with_the_president
+		cost = 2
+		ai_will_do = {
+			modifier = {
+				NOT = {
+					has_game_rule = {
+						rule = EGY_ai_behavior
+						option = DEFAULT
+					}
+					has_game_rule = {
+						rule = EGY_ai_behavior
+						option = EGY_MONARCHY_SULTAN
+					}
+				}
+				factor = 0
+			}
+		}
+		prerequisite = {
+			focus = EGY_the_muhammad_ali_dynasty
+		}
+		mutually_exclusive = {
+			focus = EGY_restore_the_king
+		}
+		x = 35
+		y = 3
+		completion_reward = {
+		    set_cosmetic_tag = EGY_Sultanate
+			add_stability = -0.015
+			add_political_power = 120
+			country_event = { id = egypt.64 }
+		}
+
+	}
+	focus = {
+		id = EGY_islamic_royalism
+		icon = focus_syria_islamic_monarchy
+		cost = 10
+		prerequisite = {
+			focus = EGY_restore_the_sultan
+		}
+		x = 34
+		y = 4
+		completion_reward = {
+		    add_ideas = idea_egy_islamic_royalism
+		}
+
+	}
+	focus = {
+		id = EGY_revoke_rights
+		icon = focus_alawitisation
+		cost = 3
+		prerequisite = {
+			focus = EGY_islamic_royalism
+		}
+		x = 34
+		y = 5
+		completion_reward = {
+		    add_ideas = idea_egy_rights_revoked
+			army_experience = 10
+		}
+
+	}
+	focus = {
+		id = EGY_defence_of_the_sultan
+		icon = build_tank
+		cost = 5
+		prerequisite = {
+			focus = EGY_revoke_rights
+		}
+		x = 33
+		y = 6
+		completion_reward = {
+		    add_ideas = idea_egy_defence_of_the_sultan
+		}
+
+	}
+	focus = {
+		id = EGY_central_planning
+		icon = position_armies
+		cost = 10
+		prerequisite = {
+			focus = EGY_restore_the_sultan
+		}
+		x = 36
+		y = 4
+		completion_reward = {
+		    add_ideas = idea_egy_central_planning
+		}
+
+	}
+	focus = {
+		id = EGY_regional_development
+		icon = focus_on_agriculture
+		cost = 10
+		prerequisite = {
+			focus = EGY_central_planning
+		}
+		x = 36
+		y = 5
+		completion_reward = {
+		    add_ideas = idea_egy_regional_development
+		}
+
+	}
+	focus = {
+		id = EGY_a_holy_era
+		icon = putins_inauguration
+		cost = 10
+		prerequisite = {
+			focus = EGY_revoke_rights
+		}
+		prerequisite = {
+			focus = EGY_regional_development
+		}
+		x = 35
+		y = 6
+		completion_reward = {
+		    add_ideas = idea_egy_holy_era
+			country_event = { id = egypt.65 }
+		}
+
+	}
+	focus = {
+		id = EGY_self_sufficiency
+		icon = work_for_the_tsar
+		cost = 10
+		prerequisite = {
+			focus = EGY_regional_development
+		}
+		x = 37
+		y = 6
+		completion_reward = {
+		    add_ideas = idea_egy_self_sufficiency
+		}
+
+	}
+	focus = {
+		id = EGY_focus_away_from_urban_areas
+		icon = prestige_of_the_royals
+		cost = 10
+		prerequisite = {
+			focus = EGY_a_holy_era
+			focus = EGY_self_sufficiency
+		}
+		x = 36
+		y = 7
+		completion_reward = {
+		    457 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			456 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			453 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = EGY_royal_military_positions
+		icon = focus_power_to_the_generals
+		cost = 10
+		prerequisite = {
+			focus = EGY_defence_of_the_sultan
+			focus = EGY_a_holy_era
+		}
+		x = 34
+		y = 7
+		completion_reward = {
+		    army_experience = 35 
+			navy_experience = 10 
+			air_experience = 10
+			add_political_power = 70
+		}
+
+	}
+	focus = {
+		id = EGY_stronger_as_the_sultanate
+		icon = dangerous_deal
+		cost = 5
+		prerequisite = {
+			focus = EGY_royal_military_positions
+		}
+		prerequisite = {
+			focus = EGY_focus_away_from_urban_areas
+		}
+		mutually_exclusive = {
+			focus = EGY_proclaim_a_new_caliph
+		}
+		x = 36
+		y = 8
+		completion_reward = {
+		    add_ideas = idea_egy_a_strong_sultanate
+		}
+
+	}
+	focus = {
+		id = EGY_restore_the_king
+		icon = royal_strength
+		cost = 2
+		ai_will_do = {
+			modifier = {
+				NOT = {
+					has_game_rule = {
+						rule = EGY_ai_behavior
+						option = DEFAULT
+					}
+					has_game_rule = {
+						rule = EGY_ai_behavior
+						option = EGY_MONARCHY_FREEDOM
+					}
+					has_game_rule = {
+						rule = EGY_ai_behavior
+						option = EGY_MONARCHY_PUPPET
+					}
+				}
+				factor = 0
+			}
+		}
+		prerequisite = {
+			focus = EGY_the_muhammad_ali_dynasty
+		}
+		mutually_exclusive = {
+			focus = EGY_restore_the_sultan
+		}
+		x = 44
+		y = 3
+		completion_reward = {
+		    add_popularity = {
+				ideology = monarchist
+				popularity = 0.05
+			}
+			add_stability = 0.08
+			country_event = { id = egypt.66 }
+		}
+
+	}
+	focus = {
+		id = EGY_overturn_suleimans_demands
+		icon = democracy
+		cost = 5
+		ai_will_do = {
+			modifier = {
+				NOT = {
+					has_game_rule = {
+						rule = EGY_ai_behavior
+						option = DEFAULT
+					}
+					has_game_rule = {
+						rule = EGY_ai_behavior
+						option = EGY_MONARCHY_FREEDOM
+					}
+				}
+				factor = 0
+			}
+		}
+		prerequisite = {
+			focus = EGY_restore_the_king
+		}
+		mutually_exclusive = {
+			focus = EGY_respect_suleimans_demands
+		}
+		x = 41
+		y = 4
+		completion_reward = {
+		    add_political_power = -50
+			add_popularity = {
+				ideology = nationalist
+				popularity = -0.25
+			}
+			add_popularity = {
+				ideology = monarchist
+				popularity = 0.03
+			}
+			add_popularity = {
+				ideology = national_conservative
+				popularity = 0.05
+			}
+			add_popularity = {
+				ideology = liberal
+				popularity = 0.03
+			}
+			add_popularity = {
+				ideology = new_democrat
+				popularity = 0.05
+			}
+			country_event = { id = egypt.67 }
+		}
+
+	}
+	focus = {
+		id = EGY_parliamentary_elections
+		icon = common_african_judiciary
+		cost = 1
+		prerequisite = {
+			focus = EGY_overturn_suleimans_demands
+		}
+		x = 40
+		y = 5
+		completion_reward = {
+		    set_cosmetic_tag = EGY_Kingdom
+		    set_party_name = { ideology = national_conservative long_name = EGY_traditional_kingdom name = EGY_traditional_kingdom }
+		    country_event = { id = egypt.23 }
+		}
+
+	}
+	focus = {
+		id = EGY_constitutional_convention
+		icon = focus_freedom_of_demonstration
+		cost = 5
+		prerequisite = {
+			focus = EGY_overturn_suleimans_demands
+		}
+		x = 42
+		y = 5
+		completion_reward = {
+		    add_ideas = idea_egy_king_faud_ii
+			country_event = { id = egypt.68 }
+		}
+
+	}
+	focus = {
+		id = EGY_restore_civil_rights
+		icon = focus_freedom_of_speech
+		cost = 10
+		prerequisite = {
+			focus = EGY_parliamentary_elections
+		}
+		prerequisite = {
+			focus = EGY_constitutional_convention
+		}
+		x = 41
+		y = 6
+		completion_reward = {
+		    add_ideas = idea_egy_civil_rights
+			country_event = { id = egypt.69 }
+		}
+
+	}
+	focus = {
+		id = EGY_liberalisation_of_the_economy
+		icon = focus_profits_from_republics
+		cost = 10
+		prerequisite = {
+			focus = EGY_parliamentary_elections
+		}
+		prerequisite = {
+			focus = EGY_constitutional_convention
+		}
+		x = 39
+		y = 6
+		completion_reward = {
+		    add_ideas = idea_egy_liberalised_economy
+		}
+
+	}
+	focus = {
+		id = EGY_abolish_the_secret_police
+		icon = red_hands_shaking
+		cost = 2
+		prerequisite = {
+			focus = EGY_constitutional_convention
+		}
+		prerequisite = {
+			focus = EGY_parliamentary_elections
+		}
+		x = 43
+		y = 6
+		completion_reward = {
+		    add_ideas = idea_egy_secret_police_abolished
+			country_event = { id = egypt.70 }
+		}
+
+	}
+	focus = {
+		id = EGY_liberal_years
+		icon = flags_yellow
+		cost = 10
+		available = {
+		    has_government = liberal
+		}
+		bypass = {
+		    has_government = liberal
+		}
+		prerequisite = {
+			focus = EGY_liberalisation_of_the_economy
+		}
+		prerequisite = {
+			focus = EGY_restore_civil_rights
+		}
+		prerequisite = {
+			focus = EGY_abolish_the_secret_police
+		}
+		mutually_exclusive = {
+			focus = EGY_conservative_years
+			focus = EGY_leftist_years
+		}
+		x = 41
+		y = 7
+		completion_reward = {
+		
+		}
+
+	}
+	focus = {
+		id = EGY_soft_nationalism
+		icon = defence
+		cost = 10
+		prerequisite = {
+			focus = EGY_liberal_years
+		}
+		x = 41
+		y = 8
+		completion_reward = {
+		    add_ideas = idea_egy_soft_nationalism
+		}
+
+	}
+	focus = {
+		id = EGY_leftist_years
+		icon = flags_red
+		cost = 10
+		available = {
+		    has_government = new_democrat
+		}
+		bypass = {
+		    has_government = new_democrat
+		}
+		prerequisite = {
+			focus = EGY_abolish_the_secret_police
+		}
+		prerequisite = {
+			focus = EGY_restore_civil_rights
+		}
+		prerequisite = {
+			focus = EGY_liberalisation_of_the_economy
+		}
+		mutually_exclusive = {
+			focus = EGY_conservative_years
+			focus = EGY_liberal_years
+		}
+		x = 43
+		y = 7
+		completion_reward = {
+		
+		}
+
+	}
+	focus = {
+		id = EGY_welfare_state
+		icon = concessions
+		cost = 10
+		prerequisite = {
+			focus = EGY_leftist_years
+		}
+		x = 43
+		y = 8
+		completion_reward = {
+		    add_ideas = idea_egy_welfare_state
+		}
+
+	}
+	focus = {
+		id = EGY_democratic_secularism
+		icon = focus_syrian_revolution
+		cost = 10
+		prerequisite = {
+			focus = EGY_soft_nationalism
+			focus = EGY_welfare_state
+		}
+		x = 42
+		y = 9
+		completion_reward = {
+		    add_ideas = idea_egy_democratic_secularism
+		}
+
+	}
+	focus = {
+		id = EGY_direct_democracy
+		icon = focus_syria_local_elections
+		cost = 10
+		prerequisite = {
+			focus = EGY_welfare_state
+		}
+		x = 43
+		y = 10
+		completion_reward = {
+		    add_ideas = idea_egy_direct_democracy
+			country_event = { id = egypt.71 }
+		}
+
+	}
+	focus = {
+		id = EGY_respect_suleimans_demands
+		icon = focus_demand_assads_resignation
+		cost = 5
+		ai_will_do = {
+			modifier = {
+				NOT = {
+					has_game_rule = {
+						rule = EGY_ai_behavior
+						option = DEFAULT
+					}
+					has_game_rule = {
+						rule = EGY_ai_behavior
+						option = EGY_MONARCHY_PUPPET
+					}
+				}
+				factor = 0
+			}
+		}
+		prerequisite = {
+			focus = EGY_restore_the_king
+		}
+		mutually_exclusive = {
+			focus = EGY_overturn_suleimans_demands
+		}
+		x = 47
+		y = 4
+		completion_reward = {
+		    add_political_power = 200
+			country_event = { id = egypt.72 }
+		}
+
+	}
+	focus = {
+		id = EGY_king_above_all
+		icon = empower_the_house_of_lords
+		cost = 10
+		prerequisite = {
+			focus = EGY_respect_suleimans_demands
+		}
+		x = 46
+		y = 5
+		completion_reward = {
+		    add_ideas = idea_egy_king_above_all
+		}
+
+	}
+	focus = {
+		id = EGY_secular_royalism
+		icon = generic_ideology
+		cost = 10
+		prerequisite = {
+			focus = EGY_king_above_all
+		}
+		x = 45
+		y = 6
+		completion_reward = {
+		    add_ideas = idea_egy_secular_royalism
+			country_event = { id = egypt.73 }
+		}
+
+	}
+	focus = {
+		id = EGY_industrial_corruption
+		icon = english_military_industry
+		cost = 10
+		prerequisite = {
+			focus = EGY_king_above_all
+		}
+		x = 46
+		y = 7
+		completion_reward = {
+		    add_ideas = idea_egy_industrial_corruption
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = EGY_big_brother
+		icon = uk_communist_ministries
+		cost = 10
+		prerequisite = {
+			focus = EGY_respect_suleimans_demands
+		}
+		x = 48
+		y = 5
+		completion_reward = {
+		    add_ideas = idea_egy_big_brother
+		}
+
+	}
+	focus = {
+		id = EGY_glory_to_egypt
+		icon = focus_focus_on_egypt
+		cost = 10
+		prerequisite = {
+			focus = EGY_king_above_all
+		}
+		prerequisite = {
+			focus = EGY_big_brother
+		}
+		x = 47
+		y = 6
+		completion_reward = {
+		    add_tech_bonus = {
+				name = land_doctrine_bonus
+				bonus = 0.3
+				uses = 1
+				category = land_doctrine
+			}
+			add_tech_bonus = {
+				name = naval_doctrine_bonus
+				bonus = 0.3
+				uses = 1
+				category = naval_doctrine
+			}
+			
+		}
+
+	}
+	focus = {
+		id = EGY_build_the_monuments
+		icon = generic_construction_2
+		cost = 5
+		prerequisite = {
+			focus = EGY_glory_to_egypt
+		}
+		x = 47
+		y = 8
+		completion_reward = {
+		    add_tech_bonus = {
+				name = construction_tech_bonus
+				bonus = 0.5
+				uses = 1
+				category = construction_tech
+			}
+		}
+
+	}
+	focus = {
+		id = EGY_tear_up_the_constitution
+		icon = tear_treaty
+		cost = 2
+		prerequisite = {
+			focus = EGY_big_brother
+		}
+		x = 48
+		y = 7
+		completion_reward = {
+		    add_ideas = idea_egy_lawful_absolutism
+		}
+
+	}
+	focus = {
+		id = EGY_mixed_economy
+		icon = trade
+		cost = 10
+		prerequisite = {
+			focus = EGY_big_brother
+		}
+		x = 49
+		y = 6
+		completion_reward = {
+		    add_ideas = idea_egy_mixed_economy
+		}
+
+	}
+	focus = {
+		id = EGY_arm_every_border
+		icon = start_war
+		cost = 10
+		prerequisite = {
+			focus = EGY_mixed_economy
+		}
+		x = 49
+		y = 8
+		completion_reward = {
+		    add_tech_bonus = {
+				name = infantry_tech_bonus
+				bonus = 0.1
+				uses = 1
+				category = infantry_tech
+			}
+			add_political_power = -100
+		}
+
+	}
+	focus = {
+		id = EGY_air_defence
+		icon = air_defense
+		cost = 10
+		prerequisite = {
+			focus = EGY_arm_every_border
+		}
+		x = 49
+		y = 9
+		completion_reward = {
+		    add_ideas = idea_egy_air_defence_program
+		}
+
+	}
+	focus = {
+		id = EGY_future_war_effort
+		icon = close_air_support
+		cost = 10
+		prerequisite = {
+			focus = EGY_air_defence
+		}
+		x = 48
+		y = 10
+		completion_reward = {
+		    random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = EGY_expansion
+		icon = demand
+		cost = 2
+		prerequisite = {
+			focus = EGY_egyptian_diplomacy
+		}
+		x = 53
+		y = 1
+		completion_reward = {
+		    add_political_power = 50
+		}
+
+	}
+	focus = {
+		id = EGY_claim_sudan
+		icon = major_war
+		cost = 10
+		available = {
+			has_war = no
+		    OR = {
+			    AND = {
+				    OR = {
+					    has_government = national_conservative
+						has_government = centrist 
+						has_government = liberal 
+						has_government = new_democrat
+						has_government = moderate_socialist
+					}
+					SUD = {
+					    OR = {
+						    has_government = fascist 
+							has_government = nationalist
+							has_government = monarchist 
+							has_government = national_bolshevik
+							has_government = revolutionary_socialist
+							has_government = communist
+						}
+					}
+				}
+				has_government = fascist 
+				has_government = nationalist 
+				has_government = monarchist 
+				has_government = communist
+			}
+		}
+		prerequisite = {
+			focus = EGY_expansion
+		}
+		x = 51
+		y = 2
+		completion_reward = {
+		    create_wargoal = {
+			    type = annex_everything
+			    target = SUD
+		    }
+		}
+		bypass = {
+			SUD = {
+				is_in_faction_with = ROOT
+			}
+		}
+	}
+	focus = {
+		id = EGY_demand_gaza
+		icon = forceful_treaty
+		cost = 10
+		available = {
+			has_war = no
+		}
+		prerequisite = {
+			focus = EGY_expansion
+		}
+		x = 53
+		y = 2
+		completion_reward = {
+		    PAL = {
+			    country_event = { id = egypt.24 }
+			}
+		}
+		bypass = {
+			PAL = {
+				is_in_faction_with = ROOT
+			}
+		}
+	}
+	focus = {
+		id = EGY_march_into_palestine
+		icon = palestine_attack
+		cost = 10
+		available = {
+			has_war = no
+		}
+		available = {
+		    OR = {
+			    AND = {
+				    OR = {
+					    has_government = national_conservative
+						has_government = centrist 
+						has_government = liberal 
+						has_government = new_democrat
+						has_government = moderate_socialist
+					}
+					PAL = {
+					    OR = {
+						    has_government = fascist 
+							has_government = nationalist
+							has_government = monarchist 
+							has_government = national_bolshevik
+							has_government = revolutionary_socialist
+							has_government = communist
+						}
+					}
+				}
+				has_government = fascist 
+				has_government = nationalist 
+				has_government = monarchist 
+				has_government = communist
+			}
+		}
+		prerequisite = {
+			focus = EGY_demand_gaza
+		}
+		x = 53
+		y = 3
+		completion_reward = {
+		    create_wargoal = {
+			    type = annex_everything
+			    target = PAL
+		    }
+		}
+		bypass = {
+			PAL = {
+				is_in_faction_with = ROOT
+			}
+		}
+	}
+	focus = {
+		id = EGY_claim_lebanon
+		icon = major_war
+		cost = 10
+		available = {
+			has_war = no
+		}
+		available = {
+		    OR = {
+			    has_government = fascist 
+				has_government = communist 
+				has_completed_focus = EGY_restore_the_sultan
+				has_completed_focus = EGY_merge_the_posts
+			}
+		} 
+		prerequisite = {
+			focus = EGY_march_into_palestine
+		}
+		x = 51
+		y = 4
+		completion_reward = {
+		    create_wargoal = {
+			    type = annex_everything
+			    target = LEB
+		    }
+		}
+		bypass = {
+			LEB = {
+				is_in_faction_with = ROOT
+			}
+		}
+	}
+	focus = {
+		id = EGY_claim_jordan
+		icon = jordan_attack
+		cost = 10
+		available = {
+			has_war = no
+		}
+		available = {
+		    OR = {
+			    has_government = fascist 
+				has_government = communist 
+				has_completed_focus = EGY_restore_the_sultan
+				has_completed_focus = EGY_merge_the_posts
+			}
+		} 
+		prerequisite = {
+			focus = EGY_march_into_palestine
+		}
+		x = 53
+		y = 4
+		completion_reward = {
+		    create_wargoal = {
+			    type = annex_everything
+			    target = JOR
+		    }
+		}
+		bypass = {
+			JOR = {
+				is_in_faction_with = ROOT
+			}
+		}
+	}
+	focus = {
+		id = EGY_claim_libya
+		icon = libya_attack
+		cost = 10
+		available = {
+			has_war = no
+		}
+		prerequisite = {
+			focus = EGY_expansion
+		}
+		x = 55
+		y = 2
+		completion_reward = {
+		    create_wargoal = {
+			    type = annex_everything
+			    target = LBA
+		    }
+			create_wargoal = {
+			    type = annex_everything
+			    target = RAL
+		    }
+			create_wargoal = {
+			    type = annex_everything
+			    target = ISL
+		    }
+			create_wargoal = {
+			    type = annex_everything
+			    target = FAL
+		    }
+			create_wargoal = {
+			    type = annex_everything
+			    target = ACS
+		    }
+			create_wargoal = {
+			    type = annex_everything
+			    target = GNS
+		    }
+		}
+		bypass = {
+			OR = {
+				LBA = {
+					is_in_faction_with = ROOT
+				}
+				GNS = {
+					is_in_faction_with = ROOT
+				}
+				FAL = {
+					is_in_faction_with = ROOT
+				}
+				ISL = {
+					is_in_faction_with = ROOT
+				}
+				RAL = {
+					is_in_faction_with = ROOT
+				}
+				ACS = {
+					is_in_faction_with = ROOT
+				}
+			}
+		}
+	}
+	focus = {
+		id = EGY_claim_syria
+		icon = syria_attack
+		cost = 10
+		available = {
+			has_war = no
+		}
+		available = {
+		    OR = {
+			    has_government = fascist 
+				has_government = communist 
+				has_completed_focus = EGY_restore_the_sultan
+				has_completed_focus = EGY_merge_the_posts
+			}
+		} 
+		prerequisite = {
+			focus = EGY_march_into_palestine
+		}
+		x = 55
+		y = 4
+		completion_reward = {
+		    create_wargoal = {
+			    type = annex_everything
+			    target = SYR
+		    }
+		}
+		bypass = {
+			SYR = {
+				is_in_faction_with = ROOT
+			}
+		}
+
+	}
+	focus = {
+		id = EGY_diplomacy
+		icon = improve_relations
+		cost = 2
+		prerequisite = {
+			focus = EGY_egyptian_diplomacy
+		}
+		x = 62
+		y = 1
+		completion_reward = {
+		    add_political_power = 35
+		}
+
+	}
+	focus = {
+		id = EGY_communist_policies
+		icon = communism_3
+		cost = 10
+		available = {
+		    has_government = communist
+		}
+		bypass = {
+		    has_government = communist
+		}
+		prerequisite = {
+			focus = EGY_diplomacy
+		}
+		mutually_exclusive = {
+			focus = EGY_democratic_policies
+			focus = EGY_nationalist_policies
+		}
+		x = 58
+		y = 2
+		completion_reward = {
+		
+		}
+
+	}
+	focus = {
+		id = EGY_join_the_warsaw_pact
+		icon = focus_syria_join_the_warsaw_pact
+		cost = 10
+		prerequisite = {
+			focus = EGY_communist_policies
+		}
+		mutually_exclusive = {
+			focus = EGY_go_it_alone
+		}
+		x = 57
+		y = 3
+		completion_reward = {
+		    SOV = {
+			    country_event = { days = 1 id = generic.1 } 
+			}
+		}
+
+	}
+	focus = {
+		id = EGY_go_it_alone
+		icon = focus_syria_propaganda_effort
+		cost = 10
+		available = {
+		    is_in_faction = no
+		}
+		prerequisite = {
+			focus = EGY_communist_policies
+		}
+		mutually_exclusive = {
+			focus = EGY_join_the_warsaw_pact
+		}
+		x = 59
+		y = 3
+		completion_reward = {
+		    add_ideas = idea_egy_standing_alone
+		}
+
+	}
+	focus = {
+		id = EGY_democratic_policies
+		icon = democracy
+		cost = 10
+		available = {
+		    OR = {
+			    has_government = national_conservative
+				has_government = centrist 
+				has_government = liberal 
+				has_government = new_democrat 
+				has_government = moderate_socialist
+			}
+		}
+		bypass = {
+		    OR = {
+			    has_government = national_conservative
+				has_government = centrist 
+				has_government = liberal 
+				has_government = new_democrat 
+				has_government = moderate_socialist
+			}
+		}
+		prerequisite = {
+			focus = EGY_diplomacy
+		}
+		mutually_exclusive = {
+			focus = EGY_communist_policies
+			focus = EGY_nationalist_policies
+		}
+		x = 62
+		y = 2
+		completion_reward = {
+		
+		}
+
+	}
+	focus = {
+		id = EGY_alliances_with_neighbours
+		icon = demand_territory
+		cost = 10
+		prerequisite = {
+			focus = EGY_democratic_policies
+		}
+		mutually_exclusive = {
+			focus = EGY_trade_deals_with_neighbours
+		}
+		x = 61
+		y = 3
+		completion_reward = {
+		    create_faction = north_african_alliance
+			if = {
+			    limit = {
+				    GNS = {
+					    OR = {
+						    has_government = national_conservative
+							has_government = centrist 
+							has_government = liberal 
+							has_government = new_democrat
+							has_government = moderate_socialist
+						}
+					}
+				}
+				GNS = {
+			        country_event = { days = 1 id = egypt.27 } 
+			    }
+			}
+			if = {
+			    limit = {
+				    SUD = {
+					    OR = {
+						    has_government = national_conservative
+							has_government = centrist 
+							has_government = liberal 
+							has_government = new_democrat
+							has_government = moderate_socialist
+						}
+					}
+				}
+				SUD = {
+			        country_event = { days = 1 id = egypt.27 } 
+			    }
+			}
+			if = {
+			    limit = {
+				    ALG = {
+					    OR = {
+						    has_government = national_conservative
+							has_government = centrist 
+							has_government = liberal 
+							has_government = new_democrat
+							has_government = moderate_socialist
+						}
+					}
+				}
+				ALG = {
+			        country_event = { days = 1 id = egypt.27 } 
+			    }
+			}
+			if = {
+			    limit = {
+				    MOR = {
+					    OR = {
+						    has_government = national_conservative
+							has_government = centrist 
+							has_government = liberal 
+							has_government = new_democrat
+							has_government = moderate_socialist
+						}
+					}
+				}
+				MOR = {
+			        country_event = { days = 1 id = egypt.27 } 
+			    }
+			}
+		}
+
+	}
+	focus = {
+		id = EGY_trade_deals_with_neighbours
+		icon = positive_trade_relations
+		cost = 10
+		prerequisite = {
+			focus = EGY_democratic_policies
+		}
+		mutually_exclusive = {
+			focus = EGY_alliances_with_neighbours
+		}
+		x = 63
+		y = 3
+		completion_reward = {
+		    if = {
+			    limit = {
+				    PAL = {
+					    OR = {
+						    has_government = national_conservative
+							has_government = centrist 
+							has_government = liberal 
+							has_government = new_democrat
+							has_government = moderate_socialist
+						}
+					}
+				}
+				EGY = {
+			        add_opinion_modifier = {
+			            target = PAL
+				        modifier = trade_influence_3
+		            }
+			    }
+				PAL = {
+			        add_opinion_modifier = {
+			            target = EGY
+				        modifier = trade_influence_3
+		            }
+			    }
+			}
+			if = {
+			    limit = {
+				    SUD = {
+					    OR = {
+						    has_government = national_conservative
+							has_government = centrist 
+							has_government = liberal 
+							has_government = new_democrat
+							has_government = moderate_socialist
+						}
+					}
+				}
+				EGY = {
+			        add_opinion_modifier = {
+			            target = SUD
+				        modifier = trade_influence_3
+		            }
+			    }
+				SUD = {
+			        add_opinion_modifier = {
+			            target = EGY
+				        modifier = trade_influence_3
+		            }
+			    }
+			}
+			if = {
+			    limit = {
+				    GNS = {
+					    OR = {
+						    has_government = national_conservative
+							has_government = centrist 
+							has_government = liberal 
+							has_government = new_democrat
+							has_government = moderate_socialist
+						}
+					}
+				}
+				EGY = {
+			        add_opinion_modifier = {
+			            target = GNS
+				        modifier = trade_influence_3
+		            }
+			    }
+				GNS = {
+			        add_opinion_modifier = {
+			            target = EGY
+				        modifier = trade_influence_3
+		            }
+			    }
+			}
+			if = {
+			    limit = {
+				    ALG = {
+					    OR = {
+						    has_government = national_conservative
+							has_government = centrist 
+							has_government = liberal 
+							has_government = new_democrat
+							has_government = moderate_socialist
+						}
+					}
+				}
+				EGY = {
+			        add_opinion_modifier = {
+			            target = ALG
+				        modifier = trade_influence_3
+		            }
+			    }
+				ALG = {
+			        add_opinion_modifier = {
+			            target = EGY
+				        modifier = trade_influence_3
+		            }
+			    }
+			}
+			if = {
+			    limit = {
+				    SAU = {
+					    OR = {
+						    has_government = national_conservative
+							has_government = centrist 
+							has_government = liberal 
+							has_government = new_democrat
+							has_government = moderate_socialist
+						}
+					}
+				}
+				EGY = {
+			        add_opinion_modifier = {
+			            target = SAU
+				        modifier = trade_influence_3
+		            }
+			    }
+				SAU = {
+			        add_opinion_modifier = {
+			            target = EGY
+				        modifier = trade_influence_3
+		            }
+			    }
+			}
+			if = {
+			    limit = {
+				    LEB = {
+					    OR = {
+						    has_government = national_conservative
+							has_government = centrist 
+							has_government = liberal 
+							has_government = new_democrat
+							has_government = moderate_socialist
+						}
+					}
+				}
+				EGY = {
+			        add_opinion_modifier = {
+			            target = LEB
+				        modifier = trade_influence_3
+		            }
+			    }
+				LEB = {
+			        add_opinion_modifier = {
+			            target = EGY
+				        modifier = trade_influence_3
+		            }
+			    }
+			}
+			if = {
+			    limit = {
+				    SYR = {
+					    OR = {
+						    has_government = national_conservative
+							has_government = centrist 
+							has_government = liberal 
+							has_government = new_democrat
+							has_government = moderate_socialist
+						}
+					}
+				}
+				EGY = {
+			        add_opinion_modifier = {
+			            target = SYR
+				        modifier = trade_influence_3
+		            }
+			    }
+				SYR = {
+			        add_opinion_modifier = {
+			            target = EGY
+				        modifier = trade_influence_3
+		            }
+			    }
+			}
+			if = {
+			    limit = {
+				    MOR = {
+					    OR = {
+						    has_government = national_conservative
+							has_government = centrist 
+							has_government = liberal 
+							has_government = new_democrat
+							has_government = moderate_socialist
+						}
+					}
+				}
+				EGY = {
+			        add_opinion_modifier = {
+			            target = MOR
+				        modifier = trade_influence_3
+		            }
+			    }
+				MOR = {
+			        add_opinion_modifier = {
+			            target = EGY
+				        modifier = trade_influence_3
+		            }
+			    }
+			}
+			if = {
+			    limit = {
+				    CHD = {
+					    OR = {
+						    has_government = national_conservative
+							has_government = centrist 
+							has_government = liberal 
+							has_government = new_democrat
+							has_government = moderate_socialist
+						}
+					}
+				}
+				EGY = {
+			        add_opinion_modifier = {
+			            target = CHD
+				        modifier = trade_influence_3
+		            }
+			    }
+				CHD = {
+			        add_opinion_modifier = {
+			            target = EGY
+				        modifier = trade_influence_3
+		            }
+			    }
+			}
+			if = {
+			    limit = {
+				    ETH = {
+					    OR = {
+						    has_government = national_conservative
+							has_government = centrist 
+							has_government = liberal 
+							has_government = new_democrat
+							has_government = moderate_socialist
+						}
+					}
+				}
+				EGY = {
+			        add_opinion_modifier = {
+			            target = ETH
+				        modifier = trade_influence_3
+		            }
+			    }
+				ETH = {
+			        add_opinion_modifier = {
+			            target = EGY
+				        modifier = trade_influence_3
+		            }
+			    }
+			}
+			if = {
+			    limit = {
+				    YEM = {
+					    OR = {
+						    has_government = national_conservative
+							has_government = centrist 
+							has_government = liberal 
+							has_government = new_democrat
+							has_government = moderate_socialist
+						}
+					}
+				}
+				EGY = {
+			        add_opinion_modifier = {
+			            target = YEM
+				        modifier = trade_influence_3
+		            }
+			    }
+				YEM = {
+			        add_opinion_modifier = {
+			            target = EGY
+				        modifier = trade_influence_3
+		            }
+			    }
+			}
+		}
+
+	}
+	focus = {
+		id = EGY_nationalist_policies
+		icon = fascism_2
+		cost = 1
+		available = {
+		    has_government = nationalist
+		}
+		prerequisite = {
+			focus = EGY_diplomacy
+		}
+		mutually_exclusive = {
+			focus = EGY_communist_policies
+			focus = EGY_democratic_policies
+		}
+		x = 66
+		y = 2
+		completion_reward = {
+		
+		}
+
+	}
+	focus = {
+		id = EGY_align_with_military_regimes
+		icon = generic_marching
+		cost = 10
+		prerequisite = {
+			focus = EGY_nationalist_policies
+		}
+		mutually_exclusive = {
+			focus = EGY_an_isolationist_egypt
+		}
+		x = 65
+		y = 3
+		completion_reward = {
+		    create_faction = regional_protection_front
+			if = {
+			    limit = {
+				    SUD = {
+					    has_government = nationalist
+					}
+				}
+				SUD = {
+			        country_event = { days = 1 id = egypt.30 } 
+			    }
+			}
+			if = {
+			    limit = {
+				    PAL = {
+					    has_government = nationalist
+					}
+				}
+				PAL = {
+			        country_event = { days = 1 id = egypt.30 } 
+			    }
+			}
+			if = {
+			    limit = {
+				    SAU = {
+					    has_government = nationalist
+					}
+				}
+				SAU = {
+			        country_event = { days = 1 id = egypt.30 } 
+			    }
+			}
+			if = {
+			    limit = {
+				    LEB = {
+					    has_government = nationalist
+					}
+				}
+				LEB = {
+			        country_event = { days = 1 id = egypt.30 } 
+			    }
+			}
+			if = {
+			    limit = {
+				    IRQ = {
+					    has_government = nationalist
+					}
+				}
+				IRQ = {
+			        country_event = { days = 1 id = egypt.30 } 
+			    }
+			}
+			if = {
+			    limit = {
+				    YEM = {
+					    has_government = nationalist
+					}
+				}
+				YEM = {
+			        country_event = { days = 1 id = egypt.30 } 
+			    }
+			}
+			if = {
+			    limit = {
+				    OMA = {
+					    has_government = nationalist
+					}
+				}
+				OMA = {
+			        country_event = { days = 1 id = egypt.30 } 
+			    }
+			}
+			if = {
+			    limit = {
+				    ALG = {
+					    has_government = nationalist
+					}
+				}
+				ALG = {
+			        country_event = { days = 1 id = egypt.30 } 
+			    }
+			}
+			if = {
+			    limit = {
+				    MOR = {
+					    has_government = nationalist
+					}
+				}
+				MOR = {
+			        country_event = { days = 1 id = egypt.30 } 
+			    }
+			}
+			if = {
+			    limit = {
+				    CYP = {
+					    has_government = nationalist
+					}
+				}
+				CYP = {
+			        country_event = { days = 1 id = egypt.30 } 
+			    }
+			}
+		}
+
+	}
+	focus = {
+		id = EGY_omars_propaganda
+		icon = propaganda
+		cost = 5
+		prerequisite = {
+			focus = EGY_corporate_allegiances
+		}
+		x = 2
+		y = 5
+		completion_reward = {
+		    add_ideas = idea_egy_omars_propaganda
+		}
+
+	}
+	focus = {
+		id = EGY_modern_library
+		icon = royal_institutions
+		cost = 5
+		prerequisite = {
+			focus = EGY_the_alexandria_summit
+		}
+		x = 1
+		y = 6
+		completion_reward = {
+		    add_research_slot = 1
+			country_event = { id = egypt.74 }
+		}
+
+	}
+	focus = {
+		id = EGY_national_development_projects
+		icon = manipulate_swedish_banks
+		cost = 10
+		prerequisite = {
+			focus = EGY_the_second_stage
+		}
+		x = 11
+		y = 6
+		completion_reward = {
+		    add_research_slot = 1 
+		}
+
+	}
+	focus = {
+		id = EGY_higher_taxes
+		icon = politburo_debate
+		cost = 10
+		prerequisite = {
+			focus = EGY_enforce_wage_regulations
+		}
+		x = 9
+		y = 7
+		completion_reward = {
+		    add_ideas = idea_egy_higher_taxes
+			country_event = { id = egypt.75 }
+		}
+
+	}
+	focus = {
+		id = EGY_defence_of_the_nation
+		icon = coastal_fort
+		cost = 10
+		prerequisite = {
+			focus = EGY_national_development_projects
+		}
+		x = 11
+		y = 7
+		completion_reward = {
+		    add_tech_bonus = {
+				name = infantry_tech_bonus
+				bonus = 0.3
+				uses = 1
+				category = infantry_tech
+			}
+		}
+
+	}
+	focus = {
+		id = EGY_islamists_crushed
+		icon = small_bomb
+		cost = 5
+		available = {
+		    AND = {
+			    has_country_flag = sided_with_the_government
+				has_civil_war = no
+			}
+		}
+		prerequisite = {
+			focus = EGY_a_better_future_campaign
+			focus = EGY_welfare_programs
+		}
+		mutually_exclusive = {
+			focus = EGY_rise_of_the_caliphate
+		}
+		x = 20
+		y = 8
+		completion_reward = {
+		    add_stability = 0.1 
+			add_political_power = 300
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			country_event = { id = egypt.76 }
+		}
+
+	}
+	focus = {
+		id = EGY_restore_civil_liberties
+		icon = focus_solidarity_front_government
+		cost = 10
+		prerequisite = {
+			focus = EGY_king_mamish
+		}
+		x = 28
+		y = 6
+		completion_reward = {
+		    remove_ideas = idea_egy_leader_worship
+			add_ideas = idea_egy_civil_liberties_restored
+			country_event = { id = egypt.77 }
+		}
+
+	}
+	focus = {
+		id = EGY_release_the_economy
+		icon = peace_money_development
+		cost = 10
+		prerequisite = {
+			focus = EGY_restore_civil_liberties
+		}
+		x = 28
+		y = 7
+		completion_reward = {
+		    remove_ideas = idea_egy_valley_closed
+			add_ideas = idea_egy_free_economy
+		}
+
+	}
+	focus = {
+		id = EGY_abolish_the_cult_of_personality
+		icon = focus_spread_democracy
+		cost = 10
+		prerequisite = {
+			focus = EGY_release_the_economy
+		}
+		x = 28
+		y = 8
+		completion_reward = {
+		    remove_ideas = idea_egy_imperial_cult
+			add_stability = 0.1
+			add_war_support = 0.02
+		}
+
+	}
+	focus = {
+		id = EGY_the_transparent_king
+		icon = invite_diaspora
+		cost = 10
+		prerequisite = {
+			focus = EGY_abolish_the_cult_of_personality
+		}
+		x = 28
+		y = 9
+		completion_reward = {
+		    add_ideas = idea_egy_the_transparent_king
+		}
+
+	}
+	focus = {
+		id = EGY_maintain_national_order
+		icon = focus_overthrow_congress
+		cost = 10
+		prerequisite = {
+			focus = EGY_king_sobhy
+		}
+		x = 30
+		y = 6
+		completion_reward = {
+		    add_political_power = 80
+		}
+
+	}
+	focus = {
+		id = EGY_expand_ground_forces
+		icon = tanks
+		cost = 10
+		prerequisite = {
+			focus = EGY_maintain_national_order
+		}
+		x = 30
+		y = 7
+		completion_reward = {
+		    add_ideas = idea_egy_ground_forces_expanded
+		}
+
+	}
+	focus = {
+		id = EGY_massive_projects
+		icon = power_to_the_corporations
+		cost = 10
+		prerequisite = {
+			focus = EGY_expand_ground_forces
+		}
+		x = 30
+		y = 8
+		completion_reward = {
+		    random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = EGY_new_kingdom_intelligence_agency
+		icon = power_to_the_president
+		cost = 5
+		prerequisite = {
+			focus = EGY_massive_projects
+		}
+		x = 30
+		y = 9
+		completion_reward = {
+		    add_ideas = idea_egy_new_kingdom_intelligence_agency
+		}
+
+	}
+	focus = {
+		id = EGY_proclaim_a_new_caliph
+		icon = rename_the_university
+		cost = 10
+		prerequisite = {
+			focus = EGY_royal_military_positions
+		}
+		prerequisite = {
+			focus = EGY_focus_away_from_urban_areas
+		}
+		mutually_exclusive = {
+			focus = EGY_stronger_as_the_sultanate
+		}
+		x = 34
+		y = 8
+		completion_reward = {
+		    set_cosmetic_tag = EGY_RoyalCaliphate
+			add_ideas = idea_egy_the_egyptian_caliphate
+		}
+
+	}
+	focus = {
+		id = EGY_conservative_years
+		icon = flags_blue
+		cost = 10
+		available = {
+		    has_government = national_conservative
+		}
+		bypass = {
+		    has_government = national_conservative
+		}
+		prerequisite = {
+			focus = EGY_liberalisation_of_the_economy
+		}
+		prerequisite = {
+			focus = EGY_restore_civil_rights
+		}
+		prerequisite = {
+			focus = EGY_abolish_the_secret_police
+		}
+		mutually_exclusive = {
+			focus = EGY_liberal_years
+			focus = EGY_leftist_years
+		}
+		x = 39
+		y = 7
+		completion_reward = {
+		
+		}
+
+	}
+	focus = {
+		id = EGY_ultranationalism
+		icon = the_nationalist
+		cost = 10
+		prerequisite = {
+			focus = EGY_conservative_years
+		}
+		x = 39
+		y = 8
+		completion_reward = {
+		    add_ideas = idea_egy_ultranationalism
+		}
+
+	}
+	focus = {
+		id = EGY_push_for_more_troops
+		icon = guns_blue
+		cost = 10
+		prerequisite = {
+			focus = EGY_ultranationalism
+		}
+		x = 39
+		y = 9
+		completion_reward = {
+		    add_ideas = idea_egy_the_push_for_more_troops
+		}
+
+	}
+	focus = {
+		id = EGY_deregulated_free_market
+		icon = consumer_goods
+		cost = 10
+		prerequisite = {
+			focus = EGY_push_for_more_troops
+			focus = EGY_democratic_secularism
+		}
+		x = 40
+		y = 10
+		completion_reward = {
+		    add_ideas = idea_egy_deregulated_free_market
+		}
+
+	}
+	focus = {
+		id = EGY_traditionalism
+		icon = ethiopia_allow_autonomy
+		cost = 10
+		available = {
+		    has_completed_focus = EGY_push_for_more_troops
+		}
+		prerequisite = {
+			focus = EGY_deregulated_free_market
+		}
+		x = 39
+		y = 11
+		completion_reward = {
+		    add_ideas = idea_egy_traditionalism
+		}
+
+	}
+	focus = {
+		id = EGY_a_progressive_egypt
+		icon = ensure_shengo_loyalty
+		cost = 10
+		available = {
+		    has_completed_focus = EGY_soft_nationalism
+		}
+		prerequisite = {
+			focus = EGY_democratic_secularism
+		}
+		x = 41
+		y = 11
+		completion_reward = {
+		    add_ideas = idea_egy_a_progressive_egypt
+		}
+
+	}
+	focus = {
+		id = EGY_expand_nationalisation
+		icon = establish_nationalisation_ministry
+		cost = 10
+		prerequisite = {
+			focus = EGY_direct_democracy
+		}
+		x = 43
+		y = 11
+		completion_reward = {
+		    add_ideas = idea_egy_expanded_nationalisation
+		}
+
+	}
+	focus = {
+		id = EGY_truly_egyptian_army
+		icon = state_of_america
+		cost = 10
+		prerequisite = {
+			focus = EGY_secular_royalism
+		}
+		x = 45
+		y = 8
+		completion_reward = {
+		    add_ideas = idea_egy_truly_egyptian_army
+		}
+
+	}
+	focus = {
+		id = EGY_occupy_rebellious_businesses
+		icon = sabotage_conservative_leadership
+		cost = 2
+		prerequisite = {
+			focus = EGY_truly_egyptian_army
+		}
+		x = 45
+		y = 9
+		completion_reward = {
+		    random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = EGY_abolish_trade_unions
+		icon = laws
+		cost = 5
+		prerequisite = {
+			focus = EGY_occupy_rebellious_businesses
+		}
+		x = 46
+		y = 10
+		completion_reward = {
+		    add_ideas = idea_egy_trade_unions_abolished
+		}
+
+	}
+	focus = {
+		id = EGY_an_isolationist_egypt
+		icon = focus_arab_socialist_victory
+		cost = 10
+		prerequisite = {
+			focus = EGY_nationalist_policies
+		}
+		mutually_exclusive = {
+			focus = EGY_align_with_military_regimes
+		}
+		x = 67
+		y = 3
+		completion_reward = {
+		    add_ideas = idea_egy_an_isolationist_egypt
+		}
+
+	}
+}

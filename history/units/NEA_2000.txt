@@ -1,0 +1,219 @@
+﻿division_template = {
+	name = "Infantry Division"
+	
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 1 y = 3 }
+	}
+	
+	support = {
+		artillery = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+	}
+}
+
+division_template = {
+	name = "Motorized Division"
+	
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		motorized = { x = 0 y = 3 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+		motorized = { x = 1 y = 3 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		field_hospital = { x = 0 y = 1 }
+	}
+}
+
+division_template = {
+	name = "Armored Division"
+	
+	regiments = {
+		heavy_armor = { x = 0 y = 0 }
+		heavy_armor = { x = 0 y = 1 }
+		heavy_armor = { x = 0 y = 2 }
+		heavy_armor = { x = 1 y = 0 }
+		heavy_armor = { x = 1 y = 1 }
+		heavy_armor = { x = 1 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+	}
+}
+
+units = {
+
+	division = {
+		name = "Philadelphia Defence Force"
+		location = 6845
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+	}
+	
+	division = {
+		name = "Boston Defence Force"
+		location = 6732
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+	}
+	
+	division = {
+		name = "New York Defence Force"
+		location = 3878
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+	}
+	
+	division = {
+		name = "Chicago Defence Force"
+		location = 9450
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+	}
+	
+	division = {
+		name = "Detroit Defence Force"
+		location = 6710
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+	}
+	
+	division = {
+		name = "1st Peoples Rifles"
+		location = 11635
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+	}
+	
+	division = {
+		name = "2nd Peoples Rifles"
+		location = 4527
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+	}
+	
+	division = {
+		name = "3rd Peoples Rifles"
+		location = 4437
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+	}
+	
+	division = {
+		name = "4th Peoples Rifles"
+		location = 971
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+	}
+	
+	division = {
+		name = "5th Peoples Rifles"
+		location = 7466
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+	}
+	
+	division = {
+		name = "6th Peoples Rifles"
+		location = 3823
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+	}
+	
+	division = {
+		name = "7th Peoples Rifles"
+		location = 11654
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+	}
+	
+	division = {
+		name = "8th Peoples Rifles"
+		location = 598
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+	}
+	
+	division = {
+		name = "1st Peoples Motorized"
+		location = 6890
+		division_template = "Motorized Division"
+		start_experience_factor = 0.2
+	}
+	
+	division = {
+		name = "2nd Peoples Motorized"
+		location = 6882
+		division_template = "Motorized Division"
+		start_experience_factor = 0.2
+	}
+	
+	division = {
+		name = "3rd Peoples Motorized"
+		location = 9810
+		division_template = "Motorized Division"
+		start_experience_factor = 0.2
+	}
+	
+	division = {
+		name = "4th Peoples Motorized"
+		location = 11685
+		division_template = "Motorized Division"
+		start_experience_factor = 0.2
+	}
+	
+	division = {
+		name = "1st Peoples Mechanized"
+		location = 3975
+		division_template = "Motorized Division"
+		start_experience_factor = 0.2
+	}
+	
+	division = {
+		name = "2nd Peoples Mechanized"
+		location = 702
+		division_template = "Motorized Division"
+		start_experience_factor = 0.2
+	}
+	
+	division = {
+		name = "3rd Peoples Mechanized"
+		location = 12459
+		division_template = "Motorized Division"
+		start_experience_factor = 0.2
+	}
+	
+	division = {
+		name = "4th Peoples Mechanized"
+		location = 10247
+		division_template = "Motorized Division"
+		start_experience_factor = 0.2
+	}
+}
+### Air Wings###
+
+air_wings = {
+	357 = {
+		fighter_equipment_0 = {
+			owner = "NEA"
+			amount = 20
+		}
+		tac_bomber_equipment_0 = {
+			owner = "NEA"
+			amount = 10
+		}
+	}
+}

@@ -1,0 +1,2802 @@
+ideas = {
+
+    country = {
+	
+	    idea_uar_civil_cooperation = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = air_support_focus
+			
+			removal_cost = -1
+			
+			modifier = {
+				industrial_capacity_factory = 0.01
+			}
+		}
+		
+		idea_uar_neglecting_civilian_needs = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = FRA_matignon_agreements
+			
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.03
+			}
+		}
+		
+		idea_uar_central_bank_profits = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = central_bank_profits
+			
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.01
+			}
+		}
+		
+		idea_uar_2015_plan = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = idea_generic_flexible_foreign_policy
+			
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_industrial_complex_factor = 0.045
+			}
+		}
+		
+		idea_uar_hydroelectric_scheme = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = electricity_production
+			
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.04
+			}
+		}
+		
+		idea_uar_military_industry_endeavours = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = generic_infantry_bonus
+			
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_arms_factory_factor = 0.045
+			}
+		}
+		
+		idea_uar_maximised_production = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = idea_generic_license_production
+			
+			removal_cost = -1
+			
+			modifier = {
+				industrial_capacity_factory = 0.03
+				political_power_gain = -0.15
+			}
+		}
+		
+		idea_uar_reduced_consumerism = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = generic_production_bonus
+			
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.05
+			}
+		}
+		
+		idea_uar_foreign_expertise = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = generic_research_bonus
+			
+			removal_cost = -1
+			
+			modifier = {
+				research_speed_factor = 0.025
+			}
+		}
+		
+		idea_uar_trial_of_the_criminals = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = neutrality_idea
+			
+			removal_cost = -1
+			
+			modifier = {
+				foreign_subversive_activites = -0.5 
+				revolutionary_socialist_drift = 0.01 
+				army_morale_factor = 0.15
+			}
+		}
+		
+		idea_uar_assads_generals_purged = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = generic_morale_bonus
+			
+			removal_cost = -1
+			
+			modifier = {
+				army_morale_factor = 0.05
+				army_attack_factor = 0.025 
+				army_org_factor = -0.05 
+			}
+		}
+		
+		idea_uar_syrian_rebels = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = syrian_rebels
+			
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = -0.3 
+				experience_gain_army = 0.05 
+				army_morale_factor = -0.03
+				stability_factor = -0.025
+				industrial_capacity_factory = -0.2
+			}
+		}
+		
+		idea_uar_military_discipline = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = generic_manpower_bonus
+			
+			removal_cost = -1
+			
+			modifier = {
+				defence = 0.1 
+			}
+		}
+		
+		idea_uar_common_ground = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = idea_generic_local_self_management
+			
+			removal_cost = -1
+			
+			modifier = {
+				decryption_power = 10
+			}
+		}
+		
+		idea_uar_zakat = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = generic_democratic_drift_bonus
+			
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.05
+				army_morale_factor = 0.02 
+				foreign_subversive_activites = -0.2 
+				industrial_capacity_factory = 0.03
+			}
+		}
+		
+		idea_uar_pray_for_the_leader = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = pray_for_leader
+			
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = 0.1 
+				army_defence_factor = 0.05
+			}
+		}
+		
+		idea_uar_partial_sharia_implementation = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = idea_RAJ_marginalized_muslim_community_happy
+			
+			removal_cost = -1
+			
+			modifier = {
+				MONTHLY_POPULATION = 0.005 
+				drift_defence_factor = 0.3 
+			}
+		}
+		
+		idea_uar_arab_intelligence_agency = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = the_long_lance
+			
+			removal_cost = -1
+			
+			modifier = {
+				crypto_strength = 1
+				decryption_power = 10
+			}
+		}
+		
+		idea_uar_political_offices_merged = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = officers_purged
+			
+			removal_cost = -1
+			
+			modifier = {
+				army_org_factor = 0.08
+			}
+		}
+		
+		idea_uar_social_security = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = soviet_german_friendship
+			
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.025 
+				MONTHLY_POPULATION = 0.01
+			}
+		}
+		
+		idea_uar_save_the_people = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = FRA_army_of_aggression_focus
+			
+			removal_cost = -1
+			
+			modifier = {
+				justify_war_goal_time = -0.1
+			}
+		}
+		
+		idea_uar_undemocratic_thought = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = generic_fascism_drift_bonus
+			
+			removal_cost = -1
+			
+			modifier = {
+				national_conservative_drift = -0.02
+				centrist_drift = -0.02
+				liberal_drift = -0.02
+				new_democrat_drift = -0.02
+				moderate_socialist_drift = -0.02
+				subversive_activites_upkeep  = -0.2
+			}
+		}
+		
+		idea_uar_allah_defends_our_borders = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = FRA_scw_intervention_nationalists_focus
+			
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_bunker_factor = 0.1 
+				army_core_defence_factor = 0.1
+			}
+		}
+		
+		idea_uar_cult_of_sharaf = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = FRA_national_mobilization_focus
+			
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = 0.05
+				justify_war_goal_time = -0.05
+			}
+		}
+		
+		idea_uar_holding_back_communists = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = FRA_scw_intervention_republicans_focus
+			
+			removal_cost = -1
+			
+			modifier = {
+				army_org_factor = 0.01 
+				army_morale_factor = 0.02
+			}
+		}
+		
+		idea_uar_nationalist_dictatorship = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = FRA_fortification_focus
+			
+			removal_cost = -1
+			
+			modifier = {
+				max_planning = 0.2 
+				offence = 0.05
+			}
+		}
+		
+		idea_uar_imperialist_elements_attacked = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = air_war_plans_division_focus
+			
+			removal_cost = -1
+			
+			modifier = {
+				foreign_subversive_activites = -0.5
+				crypto_strength = 1 
+			}
+		}
+		
+		idea_uar_secular_policies = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = generic_democratic_drift_bonus
+			
+			removal_cost = -1
+			
+			modifier = {
+				fascist_drift = -0.02
+				nationalist_drift = -0.01
+				monarchist_drift = -0.02
+				national_conservative_drift = -0.02 
+				conscription = 0.01
+			}
+		}
+		
+		idea_uar_strong_nation_state = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = generic_intel_bonus
+			
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.045 
+				trade_opinion_factor = 0.1 
+				enemy_justify_war_goal_time = 0.15 
+				training_time_factor = -0.05
+			}
+		}
+		
+		idea_uar_rapid_economic_development = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = rapid_development
+			
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_industrial_complex_factor = 0.1
+				industrial_capacity_factory = 0.05 
+				consumer_goods_factor = 0.05
+			}
+		}
+		
+		idea_uar_three_year_plan = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = idea_generic_flexible_foreign_policy2
+			
+			removal_cost = -1
+			
+			modifier = {
+				research_speed_factor = 0.03
+				political_power_gain = -0.1
+			}
+		}
+		
+		idea_uar_final_land_reforms = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = idea_generic_central_management
+			
+			removal_cost = -1
+			
+			modifier = {
+				local_resources_factor = 0.06
+			}
+		}
+		
+		idea_uar_self_sufficiency = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = idea_generic_agrarian_society
+			
+			removal_cost = -1
+			
+			modifier = {
+				trade_opinion_factor = -0.25 
+				production_speed_buildings_factor = 0.035 
+				supply_consumption_factor = -0.04
+			}
+		}
+		
+		idea_uar_trade_unions_in_politics = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = idea_generic_army_war_college
+			
+			removal_cost = -1
+			
+			modifier = {
+				industrial_capacity_factory = 0.03
+				consumer_goods_factor = 0.01
+			}
+		}
+		
+		idea_uar_union_leadership = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = union_leadership
+			
+			removal_cost = -1
+			
+			modifier = {
+				economy_cost_factor = -0.2 
+				industry_repair_factor = 0.3
+			}
+		}
+		
+		idea_uar_syndicalist_economic_overhaul = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = idea_generic_communist_army
+			
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_industrial_complex_factor = 0.06
+			}
+		}
+		
+		idea_uar_religious_freedoms_protected = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = neutrality_idea
+			
+			removal_cost = -1
+			
+			modifier = {
+				army_morale_factor = 0.05
+			}
+		}
+		
+		idea_uar_workers_rights = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = generic_production_bonus
+			
+			removal_cost = -1
+			
+			modifier = {
+				drift_defence_factor = -0.25 
+				production_speed_synthetic_refinery_factor = 0.01
+				production_speed_infrastructure_factor = 0.01 
+				production_speed_industrial_complex_factor = 0.02
+				production_speed_bunker_factor = 0.03
+			}
+		}
+		
+		idea_uar_increased_output = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = increased_output
+			
+			removal_cost = -1
+			
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.05
+			}
+		}
+		
+		idea_uar_halted_election_promises = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = generic_disjointed_gov
+			
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = -0.1
+				military_leader_cost_factor = -0.5 
+				army_morale_factor = 0.1
+			}
+		}
+		
+		idea_uar_low_political_freedoms = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = low_political_freedom
+			
+			removal_cost = -1
+			
+			modifier = {
+				nationalist_drift = 0.03 
+				justify_war_goal_time = -0.05
+			}
+		}
+		
+		idea_uar_welfare_state = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = idea_YUG_federal_defense_council
+			
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.05
+				industrial_capacity_factory = 0.05
+			}
+		}
+		
+		idea_uar_authoritarian_democracy = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = triumphant_will
+			
+			removal_cost = -1
+			
+			modifier = {
+				conscription = 0.02
+				political_power_gain = 0.1
+				moderate_socialist_drift = 0.02
+			}
+		}
+		
+		idea_uar_strengthened_presidency = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = vittoria_mutilata
+			
+			removal_cost = -1
+			
+			modifier = {
+				justify_war_goal_time = -0.035 
+				planning_speed = 0.2 
+				army_morale_factor = 0.02 
+				army_org_factor = 0.02
+			}
+		}
+		
+		idea_uar_freedom_in_nasserism = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = FRA_national_mobilization_focus
+			
+			removal_cost = -1
+			
+			modifier = {
+				drift_defence_factor = -0.1 
+				stability_factor = 0.1 
+				moderate_socialist_drift = 0.01 
+				nationalist_drift = -0.02 
+			}
+		}
+		
+		idea_uar_working_class_spirit = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = generic_goods_red_bonus
+			
+			removal_cost = -1
+			
+			modifier = {
+				industrial_capacity_factory = 0.04
+			}
+		}
+		
+		idea_uar_unprecedented_freedom_of_speech = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = anti_soviet_pact
+			
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.05 
+				political_power_gain = -0.35
+				research_speed_factor = 0.01
+			}
+		}
+		
+		idea_uar_production_to_the_people = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = generic_democratic_drift_bonus
+			
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_arms_factory_factor = -0.1
+				production_speed_industrial_complex_factor = 0.06
+			}
+		}
+		
+		idea_uar_foreign_investors = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = idea_generic_foreign_capital
+			
+			removal_cost = -1
+			
+			modifier = {
+				trade_opinion_factor = 0.1 
+				opinion_gain_monthly_factor = 0.15 
+				industrial_capacity_factory = 0.02
+			}
+		}
+		
+		idea_uar_economic_moderation = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = air_support_focus
+			
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.02
+			}
+		}
+		
+		idea_uar_academic_influence = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = generic_research_bonus
+			
+			removal_cost = -1
+			
+			modifier = {
+				research_speed_factor = 0.05
+			}
+		}
+		
+		idea_uar_national_development_act = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = FRA_scw_intervention_republicans_focus
+			
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = -0.3
+				production_speed_buildings_factor = 0.03
+			}
+		}
+		
+		idea_uar_rapid_production = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = FRA_scw_intervention_nationalists_focus
+			
+			removal_cost = -1
+			
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.03
+			}
+		}
+		
+		idea_uar_executive_resources_initiative = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = idea_generic_exploit_mines
+			
+			removal_cost = -1
+			
+			modifier = {
+				local_resources_factor = 0.075
+			}
+		}
+		
+		idea_uar_democratic_branches = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = generic_democratic_drift_bonus
+			
+			removal_cost = -1
+			
+			modifier = {
+				army_morale_factor = 0.02
+				army_org_factor = 0.05
+				army_core_defence_factor = 0.1
+				training_time_army_factor = 0.35
+			}
+		}
+		
+		idea_uar_unification_through_war = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = idea_generic_war_preparation
+			
+			removal_cost = -1
+			
+			modifier = {
+				justify_war_goal_time = -0.08
+			}
+		}
+		
+		idea_uar_spread_the_revolution = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = idea_generic_army_war_college
+			
+			removal_cost = -1
+			
+			modifier = {
+				justify_war_goal_time = -0.5
+				subversive_activites_upkeep = -0.5
+			}
+		}
+		
+		idea_uar_economic_injections = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = economic_injections
+			
+			removal_cost = -1
+			
+			modifier = {
+				industrial_capacity_factory = -0.6
+			}
+		}
+		
+		idea_uar_sustainable_industry_target = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = FRA_motorized_focus
+			
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.01
+				production_speed_arms_factory_factor = 0.02
+				political_power_gain = -0.25
+			}
+		}
+		
+		idea_uar_sharafs_terror = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = generic_intel_bonus
+			
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = 0.3 
+				MONTHLY_POPULATION = -0.01 
+				industrial_capacity_factory = -0.05 
+				army_morale_factor = 0.05
+			}
+		}
+		
+		idea_uar_reintegrating_syria = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = generic_disjointed_gov
+			
+			removal_cost = -1
+			
+			modifier = {
+				conscription_factor = 0.05
+				political_power_gain = -0.3
+			}
+		}
+		
+		idea_uar_farms_seized = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = FRA_matignon_agreements
+			
+			removal_cost = -1
+			
+			modifier = {
+				out_of_supply_factor = -0.1 
+			}
+		}
+		
+		idea_uar_forced_income_redistribution = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = generic_morale_bonus
+			
+			removal_cost = -1
+			
+			modifier = {
+				local_resources_factor = 0.07
+			}
+		}
+		
+		idea_uar_production_quotas = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = generic_pp_unity_bonus
+			
+			removal_cost = -1
+			
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.035
+			}
+		}
+		
+		idea_uar_strong_muslim_army = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = strong_muslim_army
+			
+			removal_cost = -1
+			
+			modifier = {
+				conscription = 0.02 
+				army_org_factor = 0.04 
+				army_morale_factor = 0.01 
+				training_time_army_factor = -0.05
+			}
+		}
+		
+		idea_uar_military_governance = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = military_governance
+			
+			removal_cost = -1
+			
+			modifier = {
+				army_org_factor = 0.05
+		        planning_speed = 0.4
+			}
+		}
+		
+		idea_uar_discipline_in_schools = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = disciplinary_education
+			
+			removal_cost = -1
+			
+			modifier = {
+				army_speed_factor = 0.035
+			}
+		}
+		
+		idea_uar_generations_of_soldiers = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = generic_pp_unity_bonus
+			
+			removal_cost = -1
+			
+			modifier = {
+				conscription = 0.01
+			}
+		}
+		
+		idea_uar_privatisation = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = generic_goods_red_bonus
+			
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.1
+				industrial_capacity_factory = 0.1 
+				nationalist_drift = 0.01
+				local_resources_factor = -0.2
+			}
+		}
+		
+		idea_uar_socio_capitalism = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = generic_goods_red_bonus
+			
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.2
+				industrial_capacity_factory = 0.2
+				nationalist_drift = 0.03
+				local_resources_factor = -0.5
+			}
+		}
+		
+		idea_uar_allowing_monopolies = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = generic_democratic_drift_bonus
+			
+			removal_cost = -1
+			
+			modifier = {
+				research_speed_factor = -0.01 
+				industry_repair_factor = 0.5 
+				equipment_conversion_speed = 0.5
+			}
+		}
+		
+		idea_uar_protectionism = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = protectionism
+			
+			removal_cost = -1
+			
+			modifier = {
+				trade_opinion_factor = -0.45
+				production_speed_buildings_factor = 0.1
+			}
+		}
+		
+		idea_uar_traditionalism = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = neutrality_idea
+			
+			removal_cost = -1
+			
+			modifier = {
+				MONTHLY_POPULATION = 0.015 
+				nationalist_drift = 0.02 
+				industrial_capacity_factory = -0.05
+			}
+		}
+		
+		idea_uar_anti_corruption_campaign = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = officers_purged
+			
+			removal_cost = -1
+			
+			modifier = {
+				local_resources_factor = 0.045
+			}
+		}
+		
+		idea_uar_expanded_state_corporations = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = idea_YUG_federal_defense_council
+			
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_arms_factory_factor = 0.03
+			}
+		}
+		
+		idea_uar_decentralised_nation = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = idea_ast_abandon_the_westminster_system
+			
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = -0.4 
+				stability_factor = -0.05 
+				production_speed_buildings_factor = -0.1 
+				conscription = 0.01
+			}
+		}
+		
+	}
+	
+	army_chief = {
+		
+		uar_sedki_sobhy = {
+		
+		    allowed = {
+			    original_tag = UAR
+			}
+			
+			traits = { army_chief_offensive_1 }
+		}
+		
+		uar_mohamed_hussein_tantawi = {
+		    
+			allowed = {
+			    original_tag = UAR
+			}
+			
+			traits = { army_chief_defensive_1 }
+		}
+
+		uar_abdel_fattah_el_sisi = {
+		    
+			allowed = {
+			    original_tag = UAR
+			}
+			
+			traits = { army_chief_defensive_1 }
+		}
+		
+		uar_mahmoud_hegazy = {
+		
+		    allowed = {
+			    original_tag = UAR
+			}
+			
+			traits = { army_chief_offensive_1 }
+		}
+	}
+
+	navy_chief = {		
+
+		uar_osama_el_gendi = {
+		
+		    allowed = {
+			    original_tag = UAR
+			}
+			
+			traits = { navy_chief_decisive_battle_2 }
+		}
+
+		uar_mohab_mamish = {
+		
+		    allowed = {
+			    original_tag = UAR
+			}
+			
+			traits = { navy_anti_submarine_2 }
+		}
+	}
+
+	air_chief = {
+
+		uar_abdul_meniem_al_toras = {
+		
+		    allowed = {
+			    original_tag = UAR
+			}
+			
+			traits = { air_close_air_support_2 }
+		}
+	
+		uar_younes_hamed = {
+		
+		    allowed = {
+			    original_tag = UAR
+			}
+			
+			traits = { air_chief_all_weather_2 }			
+		}
+	}
+
+	high_command = {
+
+		uar_mamdouh_shahin = {
+		
+		    allowed = {
+			    original_tag = UAR
+			}
+			
+			traits = { army_artillery_1 }			
+		}
+		
+		uar_hassan_al_roueini = {
+		
+		    allowed = {
+			    original_tag = UAR
+			}
+			
+			traits = { army_logistics_2 }			
+		}
+
+		uar_ahmed_khaled_hassan_saeed = {
+		
+		    allowed = {
+			    original_tag = UAR
+			}
+			
+			traits = { navy_fleet_logistics_1 }			
+		}
+
+		uar_ragaa_rabie_youssef = {
+		
+		    allowed = {
+			    original_tag = UAR
+			}
+			
+			traits = { air_air_combat_training_2 }			
+		}
+	}
+	
+	second_in_command = {
+	    uar_sic_ahmed_shafik = {
+		
+		    allowed = {
+			    original_tag = UAR
+			}
+			
+			available = {
+			    OR = {
+					has_government = revolutionary_socialist
+					has_government = moderate_socialist 
+					has_government = nationalist 
+					has_government = national_conservative
+				} 
+			}
+			
+			traits = { power_hungry_demagogue }			
+		}
+		
+		uar_sic_abdel_fattah_el_sisi = {
+		
+		    allowed = {
+			    original_tag = UAR
+			}
+			
+			available = {
+			    OR = {
+					has_government = revolutionary_socialist
+					has_government = nationalist
+				} 
+			}
+			
+			traits = { autocratic_charmer }			
+		}
+		
+		uar_sic_ahmed_nazif = {
+		
+		    allowed = {
+			    original_tag = UAR
+			}
+			
+			available = {
+			    OR = {
+					has_government = revolutionary_socialist
+					has_government = nationalist
+					has_government = national_conservative
+					has_government = moderate_socialist
+				} 
+			}
+			
+			traits = { insignificant_layman }			
+		}
+		
+		uar_sic_tarek_kamel = {
+		
+		    allowed = {
+			    original_tag = UAR
+			}
+			
+			available = {
+			    OR = {
+					has_government = revolutionary_socialist
+					has_government = moderate_socialist
+				} 
+			}
+			
+			traits = { silent_workhorse }			
+		}
+		
+		uar_sic_hesham_qandil = {
+		
+		    allowed = {
+			    original_tag = UAR
+			}
+			
+			available = {
+			    OR = {
+					has_government = revolutionary_socialist
+				} 
+			}
+			
+			traits = { naive_optimist }			
+		}
+		
+		uar_sic_omar_suleiman = {
+		
+		    allowed = {
+			    original_tag = UAR
+			}
+			
+			available = {
+			    OR = {
+					has_government = revolutionary_socialist
+					has_government = nationalist
+				} 
+			}
+			
+			traits = { flamboyant_tough_guy }			
+		}
+		
+		uar_sic_mohamed_hussein_tantawi = {
+		
+		    allowed = {
+			    original_tag = UAR
+			}
+			
+			available = {
+			    OR = {
+					has_government = revolutionary_socialist
+					has_government = nationalist
+					has_government = moderate_socialist
+				} 
+			}
+			
+			traits = { retired_general }			
+		}
+		
+		uar_sic_osama_el_gendi = {
+		
+		    allowed = {
+			    original_tag = UAR
+			}
+			
+			available = {
+			    OR = {
+					has_government = nationalist
+				} 
+			}
+			
+			traits = { retired_admiral }			
+		}
+		
+		uar_sic_abdul_meniem_al_toras = {
+		
+		    allowed = {
+			    original_tag = UAR
+			}
+			
+			available = {
+			    OR = {
+					has_government = nationalist
+					has_government = moderate_socialist
+				} 
+			}
+			
+			traits = { retired_air_force_general }			
+		}
+		
+		uar_sic_mohamed_kamel_amr = {
+		
+		    allowed = {
+			    original_tag = UAR
+			}
+			
+			available = {
+			    OR = {
+					has_government = nationalist 
+					has_government = revolutionary_socialist
+				} 
+			}
+			
+			traits = { political_protege }			
+		}
+		
+		uar_sic_nagwa_khalil = {
+		
+		    allowed = {
+			    original_tag = UAR
+			}
+			
+			available = {
+			    OR = {
+					has_government = moderate_socialist
+					has_government = revolutionary_socialist
+				} 
+			}
+			
+			traits = { ambitious_union_boss }			
+		}
+		
+		uar_sic_nassef_sawiris = {
+		
+		    allowed = {
+			    original_tag = UAR
+			}
+			
+			available = {
+			    OR = {
+					has_government = nationalist
+				} 
+			}
+			
+			traits = { corporate_suit }			
+		}
+		
+		uar_sic_mohamed_mansour = {
+		
+		    allowed = {
+			    original_tag = UAR
+			}
+			
+			available = {
+			    OR = {
+					has_government = nationalist
+					has_government = moderate_socialist
+				} 
+			}
+			
+			traits = { corporate_suit }			
+		}
+		
+		uar_sic_ahmed_el_tayeb = {
+		
+		    allowed = {
+			    original_tag = UAR
+			}
+			
+			available = {
+			    OR = {
+					has_government = moderate_socialist
+					has_government = revolutionary_socialist
+				} 
+			}
+			
+			traits = { religious_leader }			
+		}
+		
+		uar_sic_kamal_abu_eita = {
+		
+		    allowed = {
+			    original_tag = UAR
+			}
+			
+			available = {
+			    OR = {
+					has_government = revolutionary_socialist
+				} 
+			}
+			
+			traits = { ambitious_union_boss }			
+		}
+		
+		uar_sic_pope_tawadros = {
+		
+		    allowed = {
+			    original_tag = UAR
+			}
+			
+			available = {
+			    OR = {
+					has_government = moderate_socialist
+					has_government = nationalist 
+				} 
+			}
+			
+			traits = { religious_leader }			
+		}
+		
+		uar_sic_sedki_sobhi = {
+		
+		    allowed = {
+			    original_tag = UAR
+			}
+			
+			available = {
+			    OR = {
+					has_government = nationalist
+				} 
+			}
+			
+			traits = { silent_workhorse }			
+		}
+		
+		uar_sic_hisham_zazou = {
+		
+		    allowed = {
+			    original_tag = UAR
+			}
+			
+			available = {
+			    OR = {
+					has_government = nationalist
+				} 
+			}
+			
+			traits = { naive_optimist }			
+		}
+		
+		uar_sic_tarek_el_molla = {
+		
+		    allowed = {
+			    original_tag = UAR
+			}
+			
+			available = {
+			    OR = {
+					has_government = nationalist
+					has_government = moderate_socialist
+				} 
+			}
+			
+			traits = { oil_baron }			
+		}
+		
+		uar_sic_rachid_mohamed_rachid = {
+		
+		    allowed = {
+			    original_tag = UAR
+			}
+			
+			available = {
+			    OR = {
+					has_government = revolutionary_socialist
+				} 
+			}
+			
+			traits = { flamboyant_tough_guy }			
+		}
+		
+		uar_sic_habib_el_adly = {
+		
+		    allowed = {
+			    original_tag = UAR
+			}
+			
+			available = {
+			    OR = {
+					has_government = revolutionary_socialist
+				} 
+			}
+			
+			traits = { retired_general }			
+		}
+		
+		uar_sic_bashar_al_assad = {
+		
+		    allowed = {
+			    original_tag = UAR
+			}
+			
+			available = {
+			    OR = {
+					has_government = moderate_socialist
+				} 
+			}
+			
+			traits = { autocratic_charmer }			
+		}
+		
+		uar_sic_hamdeen_sabahi = {
+		
+		    allowed = {
+			    original_tag = UAR
+			}
+			
+			available = {
+			    OR = {
+					has_government = moderate_socialist
+				} 
+			}
+			
+			traits = { political_protege }			
+		}
+		
+		uar_sic_hassan_al_nouri = {
+		
+		    allowed = {
+			    original_tag = UAR
+			}
+			
+			available = {
+			    OR = {
+					has_government = moderate_socialist
+					has_government = nationalist
+				} 
+			}
+			
+			traits = { insignificant_layman }			
+		}
+		
+		uar_sic_ibrahim_al_badri = {
+		
+		    allowed = {
+			    original_tag = UAR
+			}
+			
+			available = {
+			    OR = {
+					has_government = nationalist
+				} 
+			}
+			
+			traits = { power_hungry_demagogue }			
+		}
+		
+		uar_sic_mahmoud_hegazy = {
+		
+		    allowed = {
+			    original_tag = UAR
+			}
+			
+			available = {
+			    OR = {
+					has_government = revolutionary_socialist
+				} 
+			}
+			
+			traits = { retired_general }			
+		}
+		
+		uar_sic_mohamed_morsi = {
+		
+		    allowed = {
+			    original_tag = UAR
+			}
+			
+			available = {
+			    OR = {
+					has_government = moderate_socialist
+					has_government = nationalist
+				} 
+			}
+			
+			traits = { autocratic_charmer }			
+		}
+		
+		uar_sic_ibrahim_mahlab = {
+		
+		    allowed = {
+			    original_tag = UAR
+			}
+			
+			available = {
+			    OR = {
+					has_government = revolutionary_socialist
+				} 
+			}
+			
+			traits = { silent_workhorse }			
+		}
+	}
+	
+	foreign_minister = {
+	    uar_fom_ahmed_aboul_gheit = {
+		
+		    allowed = {
+			    original_tag = UAR
+			}
+			
+			available = {
+			    OR = {
+					has_government = revolutionary_socialist
+					has_government = nationalist
+				} 
+			}
+			
+			traits = { biased_intellectual }			
+		}
+		
+		uar_fom_sameh_shoukry = {
+		
+		    allowed = {
+			    original_tag = UAR
+			}
+			
+			available = {
+			    OR = {
+					has_government = nationalist
+				} 
+			}
+			
+			traits = { ideological_crusader }			
+		}
+		
+		uar_fom_essam_sharaf = {
+		
+		    allowed = {
+			    original_tag = UAR
+			}
+			
+			available = {
+			    OR = {
+					has_government = revolutionary_socialist
+				} 
+			}
+			
+			traits = { ideological_crusader }			
+		}
+		
+		uar_fom_mohamed_abu_hamed = {
+		
+		    allowed = {
+			    original_tag = UAR
+			}
+			
+			available = {
+			    OR = {
+					has_government = revolutionary_socialist
+					has_government = moderate_socialist
+				} 
+			}
+			
+			traits = { apologetic_clerk }			
+		}
+		
+		uar_fom_mohamed_morsi = {
+		
+		    allowed = {
+			    original_tag = UAR
+			}
+			
+			available = {
+			    OR = {
+					has_government = moderate_socialist
+					has_government = nationalist
+				} 
+			}
+			
+			traits = { iron_fisted_brute }			
+		}
+		
+		uar_fom_momtaz_el_saeed = {
+		
+		    allowed = {
+			    original_tag = UAR
+			}
+			
+			available = {
+			    OR = {
+					has_government = revolutionary_socialist
+					has_government = moderate_socialist
+				} 
+			}
+			
+			traits = { great_compromiser }			
+		}
+		
+		uar_fom_bashar_al_assad = {
+		
+		    allowed = {
+			    original_tag = UAR
+			}
+			
+			available = {
+			    OR = {
+					has_government = moderate_socialist
+				} 
+			}
+			
+			traits = { international_schemer }			
+		}
+		
+		uar_fom_sameh_fahmi = {
+		
+		    allowed = {
+			    original_tag = UAR
+			}
+			
+			available = {
+			    OR = {
+					has_government = revolutionary_socialist
+				} 
+			}
+			
+			traits = { international_schemer }			
+		}
+		
+		uar_fom_samir_radwan = {
+		
+		    allowed = {
+			    original_tag = UAR
+			}
+			
+			available = {
+			    OR = {
+					has_government = nationalist
+				} 
+			}
+			
+			traits = { apologetic_clerk }			
+		}
+		
+		uar_fom_ahmed_mekki = {
+		
+		    allowed = {
+			    original_tag = UAR
+			}
+			
+			available = {
+			    OR = {
+					has_government = moderate_socialist
+				} 
+			}
+			
+			traits = { biased_intellectual }			
+		}
+		
+		uar_fom_abdel_fattah_el_sisi = {
+		
+		    allowed = {
+			    original_tag = UAR
+			}
+			
+			available = {
+			    OR = {
+					has_government = nationalist
+				} 
+			}
+			
+			traits = { international_schemer }			
+		}
+		
+		uar_fom_kamal_ganzouri = {
+		
+		    allowed = {
+			    original_tag = UAR
+			}
+			
+			available = {
+			    OR = {
+					has_government = nationalist
+				} 
+			}
+			
+			traits = { great_compromiser }			
+		}
+		
+		uar_fom_mohamed_hussein_tantawi = {
+		
+		    allowed = {
+			    original_tag = UAR
+			}
+			
+			available = {
+			    OR = {
+					has_government = nationalist
+				} 
+			}
+			
+			traits = { ideological_crusader }			
+		}
+		
+		uar_fom_hossam_badrawi = {
+		
+		    allowed = {
+			    original_tag = UAR
+			}
+			
+			available = {
+			    OR = {
+					has_government = revolutionary_socialist
+				} 
+			}
+			
+			traits = { iron_fisted_brute }			
+		}
+	}
+	
+	industry_minister = {
+	    uar_ind_laila_iskander = {
+		
+		    allowed = {
+			    original_tag = UAR
+			}
+			
+			available = {
+			    OR = {
+					has_government = revolutionary_socialist
+					has_government = moderate_socialist
+				} 
+			}
+			
+			traits = { administrative_genius }			
+		}
+		
+		uar_ind_sherif_ismail = {
+		
+		    allowed = {
+			    original_tag = UAR
+			}
+			
+			available = {
+			    OR = {
+					has_government = moderate_socialist
+					has_government = nationalist
+				} 
+			}
+			
+			traits = { resource_industrialist }			
+		}
+		
+		uar_ind_hazem_el_beblawi = {
+		
+		    allowed = {
+			    original_tag = UAR
+			}
+			
+			available = {
+			    OR = {
+					has_government = nationalist
+				} 
+			}
+			
+			traits = { libertarian_capitalist }			
+		}
+		
+		uar_ind_essam_khalil = {
+		
+		    allowed = {
+			    original_tag = UAR
+			}
+			
+			available = {
+			    OR = {
+					has_government = nationalist
+					has_government = revolutionary_socialist
+				} 
+			}
+			
+			traits = { former_scientist }			
+		}
+		
+		uar_ind_mohamed_moustafa = {
+		
+		    allowed = {
+			    original_tag = UAR
+			}
+			
+			available = {
+			    OR = {
+					has_government = nationalist
+				} 
+			}
+			
+			traits = { private_military_specialist }			
+		}
+		
+		uar_ind_onsi_sawiris = {
+		
+		    allowed = {
+			    original_tag = UAR
+			}
+			
+			available = {
+			    OR = {
+					has_government = nationalist
+					has_government = moderate_socialist
+				} 
+			}
+			
+			traits = { corrupt_kleptocrat }			
+		}
+		
+		uar_ind_ahmed_galal = {
+		
+		    allowed = {
+			    original_tag = UAR
+			}
+			
+			available = {
+			    OR = {
+					has_government = revolutionary_socialist
+					has_government = moderate_socialist
+				} 
+			}
+			
+			traits = { extreme_regulator }			
+		}
+		
+		uar_ind_faten_zahran_mohammed = {
+		
+		    allowed = {
+			    original_tag = UAR
+			}
+			
+			available = {
+			    OR = {
+					has_government = moderate_socialist
+				} 
+			}
+			
+			traits = { former_scientist }			
+		}
+		
+		uar_ind_mahmoud_balbaa = {
+		
+		    allowed = {
+			    original_tag = UAR
+			}
+			
+			available = {
+			    OR = {
+					has_government = nationalist
+				} 
+			}
+			
+			traits = { administrative_genius }			
+		}
+		
+		uar_ind_mounir_abdel_nour = {
+		
+		    allowed = {
+			    original_tag = UAR
+			}
+			
+			available = {
+			    OR = {
+					has_government = revolutionary_socialist
+				} 
+			}
+			
+			traits = { corrupt_kleptocrat }			
+		}
+	    
+	}
+	
+	national_security_minister = {
+	    uar_nsm_gamal_eid = {
+		
+		    allowed = {
+			    original_tag = UAR
+			}
+			
+			available = {
+			    OR = {
+					has_government = revolutionary_socialist
+					has_government = moderate_socialist
+				} 
+			}
+			
+			traits = { silent_lawyer }			
+		}
+		
+		uar_nsm_atef_helmy = {
+		
+		    allowed = {
+			    original_tag = UAR
+			}
+			
+			available = {
+			    OR = {
+					has_government = revolutionary_socialist
+					has_government = nationalist
+				} 
+			}
+			
+			traits = { compassionate_gentleman }			
+		}
+		
+		uar_nsm_abdel_fattah_el_sisi = {
+		
+		    allowed = {
+			    original_tag = UAR
+			}
+			
+			available = {
+			    OR = {
+					has_government = revolutionary_socialist
+					has_government = nationalist
+				} 
+			}
+			
+			traits = { prince_of_terror }			
+		}
+		
+		uar_nsm_farouk_el_okdah = {
+		
+		    allowed = {
+			    original_tag = UAR
+			}
+			
+			available = {
+			    OR = {
+					has_government = nationalist
+				} 
+			}
+			
+			traits = { efficient_sociopath }			
+		}
+		
+		uar_nsm_mahmoud_zakzouk = {
+		
+		    allowed = {
+			    original_tag = UAR
+			}
+			
+			available = {
+			    OR = {
+					has_government = revolutionary_socialist
+				} 
+			}
+			
+			traits = { isolationist }			
+		}
+		
+		uar_nsm_fahd_jassem_al_freij = {
+		
+		    allowed = {
+			    original_tag = UAR
+			}
+			
+			available = {
+			    OR = {
+					has_government = moderate_socialist
+				} 
+			}
+			
+			traits = { prince_of_terror }			
+		}
+		
+		uar_nsm_mohamed_arab = {
+		
+		    allowed = {
+			    original_tag = UAR
+			}
+			
+			available = {
+			    OR = {
+					has_government = moderate_socialist
+				} 
+			}
+			
+			traits = { compassionate_gentleman }			
+		}
+		
+		uar_nsm_taher_helmy = {
+		
+		    allowed = {
+			    original_tag = UAR
+			}
+			
+			available = {
+			    OR = {
+					has_government = nationalist
+				} 
+			}
+			
+			traits = { silent_lawyer }			
+		}
+		
+		uar_nsm_mohamed_morsi = {
+		
+		    allowed = {
+			    original_tag = UAR
+			}
+			
+			available = {
+			    OR = {
+					has_government = nationalist
+					has_government = moderate_socialist
+				} 
+			}
+			
+			traits = { isolationist }			
+		}
+		
+		uar_nsm_sedki_sobhy = {
+		
+		    allowed = {
+			    original_tag = UAR
+			}
+			
+			available = {
+			    OR = {
+					has_government = revolutionary_socialist
+					has_government = nationalist
+				} 
+			}
+			
+			traits = { efficient_sociopath }			
+		}
+	}
+	
+	intelligence_minister = {
+	    uar_inm_khaled_fawzy = {
+		
+		    allowed = {
+			    original_tag = UAR
+			}
+			
+			available = {
+			    OR = {
+					has_government = revolutionary_socialist
+					has_government = nationalist
+				} 
+			}
+			
+			traits = { intelligence_director }			
+		}
+		
+		uar_inm_mohamed_raafat_shehata = {
+		
+		    allowed = {
+			    original_tag = UAR
+			}
+			
+			available = {
+			    OR = {
+					has_government = revolutionary_socialist
+					has_government = moderate_socialist
+					has_government = nationalist
+				} 
+			}
+			
+			traits = { novice_mastermind }			
+		}
+		
+		uar_inm_ahmed_ali_fadel = {
+		
+		    allowed = {
+			    original_tag = UAR
+			}
+			
+			available = {
+			    OR = {
+					has_government = revolutionary_socialist
+					has_government = moderate_socialist
+					has_government = nationalist
+				} 
+			}
+			
+			traits = { naval_intelligence_specialist }			
+		}
+		
+		uar_inm_maged_abdelaziz = {
+		
+		    allowed = {
+			    original_tag = UAR
+			}
+			
+			available = {
+			    OR = {
+					has_government = moderate_socialist
+					has_government = nationalist
+				} 
+			}
+			
+			traits = { politician_with_connections }			
+		}
+		
+		uar_inm_youssef_boutros_ghali = {
+		
+		    allowed = {
+			    original_tag = UAR
+			}
+			
+			available = {
+			    OR = {
+					has_government = revolutionary_socialist
+				} 
+			}
+			
+			traits = { politician_with_connections }			
+		}
+		
+		uar_inm_murad_muwafi = {
+		
+		    allowed = {
+			    original_tag = UAR
+			}
+			
+			available = {
+			    OR = {
+					has_government = moderate_socialist
+				} 
+			}
+			
+			traits = { intelligence_director }			
+		}
+	}
+	
+	materiel_manufacturer = {
+			
+		designer = yes
+		
+		Maadi_factory1 = {
+			
+			picture = maadi_factory 
+			
+			allowed = {
+				original_TAG = UAR
+			}
+			
+			research_bonus = {
+				infantry_weapons = 0.10
+			}
+			
+			traits = { infantry_equipment_manufacturer }
+			
+			modifier = {
+			}
+		}
+		
+		Nasr = {
+			
+			picture = nasr
+			
+			allowed = {
+				original_TAG = UAR
+			}
+			
+
+			
+			research_bonus = {
+				motorized_equipment = 0.10
+			}
+			
+			traits = { motorized_equipment_manufacturer }
+			
+			modifier = {
+			}
+		}
+		
+		Maadi_factory2 = {
+			
+			picture = maadi_factory2
+			
+			allowed = {
+				original_TAG = UAR
+			}
+			
+			research_bonus = {
+				artillery = 0.10
+			}
+			
+			traits = { artillery_manufacturer  }
+			
+			modifier = {
+			}
+		}
+	}
+
+	naval_manufacturer = {
+
+        Alexandria_shipyard = {
+
+			picture = alexandria_shipyard
+            
+            allowed = {
+                original_tag = UAR
+            }
+			
+			research_bonus = {
+                naval_equipment = 0.10
+            }
+            
+            traits = { naval_manufacturer }
+        }
+	}
+	
+	industrial_concern = {
+				
+		Arab_industries = {
+		
+			picture = arab_industries
+			
+			allowed = {
+				original_TAG = UAR
+			}
+			
+
+			
+			research_bonus = {
+				industry = 0.10
+			}
+			
+			traits = { industrial_concern }
+			
+			modifier = {
+			}
+		}
+		
+		Egypt_tele = {
+		
+			picture = egypt_tele
+			
+			allowed = {
+				original_TAG = UAR
+			}
+			
+
+			
+			research_bonus = {
+				electronics = 0.10
+			}
+			
+			traits = { electronics_concern }
+			
+			modifier = {
+			}
+		}
+		
+	}
+	
+	tank_manufacturer = { 
+	
+		Arab_organization_for_industrialization = {
+		
+			picture = arab_organization_for_industrialization
+			
+			allowed = {
+				original_TAG = UAR
+			}
+			
+
+			
+			research_bonus = {
+				armor = 0.10
+			}
+			
+			traits = { tank_manufacturer }
+			
+			modifier = {
+			}
+		}
+	}
+
+}

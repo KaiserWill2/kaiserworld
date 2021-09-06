@@ -1,0 +1,14 @@
+ideas = {
+    country = {
+        idea_raj_post_emergency_junta_mess2 = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = 0.1
+				stability_factor = -0.1
+			}
+		}
+	}
+}

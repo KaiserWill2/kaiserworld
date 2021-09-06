@@ -1,0 +1,30 @@
+state={
+	id=814
+	name="STATE_814"
+	
+	resources = {
+		oil = 9
+	}
+	
+	history = {
+		owner = KUR
+		add_core_of = UAR
+		victory_points = { 1578 2 }	#Al-Hasakah
+		victory_points = { 1549 2 }
+		add_core_of = KUR
+		add_core_of = SYR
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+		}
+		
+	}
+	
+	state_category = rural
+	
+	provinces={
+		1549 1578 1634 10882 
+	}
+	manpower=4600250
+	buildings_max_level_factor=1.000
+}

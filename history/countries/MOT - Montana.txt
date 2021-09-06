@@ -1,0 +1,262 @@
+﻿capital = 388
+
+oob = "MOT_2000"
+
+set_research_slots = 2
+set_convoys = 500
+set_stability = 0.7
+set_war_support = 0.2
+
+add_ideas = {
+	idea_america_neutrality_statelet
+}
+
+set_technology = {
+	support_weapons = 1
+	infantry_weapons = 1
+	motorised_infantry = 1 
+	tech_support = 1 
+	tech_field_hospital = 1 
+	tech_engineers = 1 
+	gwtank = 1 
+	gw_artillery = 1 
+	tech_mountaineers = 1
+	early_fighter = 1 
+	early_bomber = 1 
+	atomic_research = 1 
+	interwar_antiair = 1
+	interwar_antitank = 1
+}
+
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	set_technology = {
+		early_submarine = 1
+		basic_submarine = 1
+		early_destroyer = 1
+		early_light_cruiser = 1
+		basic_light_cruiser = 1
+		early_heavy_cruiser = 1
+		
+		
+		early_carrier = 1
+		basic_carrier = 1
+		transport = 1
+	}
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_technology = {
+		basic_naval_mines = 1
+		submarine_mine_laying = 1
+		early_ship_hull_light = 1
+		basic_ship_hull_light = 1
+		early_ship_hull_submarine = 1
+		basic_ship_hull_submarine = 1
+		early_ship_hull_cruiser = 1
+		basic_ship_hull_cruiser = 1
+		early_ship_hull_heavy = 1
+		early_ship_hull_carrier = 1
+		basic_ship_hull_carrier = 1
+		basic_battery = 1
+		basic_light_battery = 1
+		basic_medium_battery = 1
+		basic_heavy_battery = 1
+		basic_torpedo = 1
+		sonar = 1
+		basic_depth_charges = 1
+		basic_secondary_battery = 1
+		improved_secondary_battery = 1
+		basic_cruiser_armor_scheme = 1
+		basic_heavy_armor_scheme = 1
+		mtg_transport = 1
+		improved_airplane_launcher = 1
+	}
+}
+
+set_politics = {
+	ruling_party = fascist
+	last_election = "1997.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+        fascist = 63
+		nationalist = 18
+		monarchist = 0
+		national_bolshevik = 5
+		national_conservative = 1
+		centrist = 3
+		liberal = 0
+		new_democrat = 0
+		moderate_socialist = 0
+		revolutionary_socialist = 2
+		communist = 8
+}
+
+create_country_leader = {
+	name = "Ron Kurtenbach"
+	picture = "Portrait_MOT_Ron_Kurtenbach.dds"
+	ideology = marxist
+}
+
+create_country_leader = {
+	name = "Harold Covington"
+	picture = "Portrait_MOT_Harold_Covington.dds"
+	desc = "POLITICS_HAROLD_COVINGTON_DESC"
+	ideology = fascist_ideology
+}
+
+create_country_leader = {
+	name = "Northwest Imperial Council"
+	picture = "Portrait_MOT_Northwest_Imperial_Council.dds"
+	ideology = absolute_monarchist
+}
+
+create_country_leader = {
+	name = "Ben Garrison"
+	picture = "Portrait_MOT_Ben_Garrison.dds"
+	ideology = nationalist_ideology
+}
+
+create_country_leader = {
+	name = "Craig Cobb"
+	picture = "Portrait_MOT_Craig_Cobb.dds"
+	ideology = national_bolshevik_ideology
+}
+
+create_country_leader = {
+	name = "Greg Gianforte"
+	picture = "Portrait_MOT_Greg_Gianforte.dds"
+	ideology = fiscal_conservative
+}
+
+create_country_leader = {
+	name = "Steve Daines"
+	picture = "Portrait_MOT_Steve_Daines.dds"
+	ideology = centrist_ideology
+}
+
+create_country_leader = {
+	name = "Steve Bullock"
+	picture = "Portrait_MOT_Steve_Bullock.dds"
+	ideology = social_liberal
+}
+
+create_country_leader = {
+	name = "Rob Quist"
+	picture = "Portrait_MOT_Rob_Quist.dds"
+	ideology = new_democrat_ideology
+}
+
+create_country_leader = {
+	name = "Eric Hardmeyer"
+	picture = "Portrait_MOT_Eric_Hardmeyer.dds"
+	ideology = progressive
+}
+
+create_country_leader = {
+	name = "Jello Biafra"
+	picture = "Portrait_MOT_Jello_Biafra.dds"
+	ideology = revolutionary_socialist_ideology
+}
+
+create_field_marshal = {
+	name = "James Gordon Gritz"
+	picture = "Portrait_Bo_Gritz.dds"
+	traits = { war_hero }
+	skill = 2
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_field_marshal = {
+	name = "Louis Beam"
+	picture = "Portrait_Louis_Beam.dds"
+	traits = {  }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "John Trochmann"
+	picture = "Portrait_John_Trochmann.dds"
+	traits = {  }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "LeRoy Schweitzer"
+	picture = "Portrait_LeRoy_Schweitzer.dds"
+	traits = {  }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Russell Dean Landers"
+	picture = "Portrait_Rodney_Owen_Skurdal.dds"
+	traits = {  }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Brad Bichler"
+	picture = "Portrait_Sheriff_Brad_Bichler.dds"
+	traits = {  }
+	skill = 2
+	attack_skill = 3
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Michael Burnett"
+	picture = "Portrait_Michael_Burnett.dds"
+	traits = {  }
+	skill = 1
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Christopher Salmon"
+	picture = "Portrait_Christopher_Salmon.dds"
+	traits = {  }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 3
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Anthony Peden"
+	picture = "Portrait_Anthony_Peden.dds"
+	traits = {  }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 3
+	logistics_skill = 1
+}

@@ -1,0 +1,20 @@
+state={
+	id=939
+	name="STATE_939"
+	provinces={
+		7985 13333 13360 13373 13374 13396 13397 13403 13409 13414 13426 13427 13442 13461 
+	}
+	state_category = pastoral
+	history={
+		owner = LBA
+		add_core_of = LBA
+		victory_points = { 13426 1 }
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+		}
+
+	}
+	manpower=28000
+	buildings_max_level_factor=1.000
+}

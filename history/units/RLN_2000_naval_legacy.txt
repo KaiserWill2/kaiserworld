@@ -1,0 +1,19 @@
+﻿
+units = {
+	####### NAVAL UNITS #######
+	##### NILE FLEET #####
+	##### Battle Force (CO: ) #####
+	### ALEXANDRIA ###
+	fleet = {
+		name = "Nile Republican Navy"
+		naval_base = 4076 # Alexandria
+		task_force = {
+			name = "Osiris Group"
+			location = 4076 # Alexandria
+			ship = { name = "HMAS Australia" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = RLN version_name = "Frigate I" } } } 
+		
+			ship = { name = "Osiris" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = RLN version_name = "Destroyer I" } } }
+			ship = { name = "Anubis" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = RLN version_name = "Destroyer I" } } }
+		}
+	}
+}

@@ -1,0 +1,21 @@
+state={
+	id=920
+	name="STATE_920"
+	resources={
+		oil=9.000
+	}
+	provinces={
+		1174 10037 11940 13552 13553 13554 13561 13562 13565 13568 13572 13577 13578 
+	}
+	state_category = city
+	history={
+		owner = LBA
+		add_core_of = LBA
+		buildings = {
+			infrastructure = 3
+		}
+
+	}
+	manpower=304159
+	buildings_max_level_factor=1.000
+}

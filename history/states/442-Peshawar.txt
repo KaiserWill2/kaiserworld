@@ -1,0 +1,26 @@
+
+state={
+	id=442
+	name="STATE_442"
+	manpower = 21684400
+	
+	state_category = rural
+
+	history={
+		owner = RAJ
+		add_core_of = PAK
+		add_core_of = PSH
+		victory_points = { 12717 7 } #peshawar#
+		victory_points = { 12763 3 } #Mardan#
+		buildings = {
+			infrastructure = 3
+			air_base = 3
+			industrial_complex = 2
+		}
+
+	}
+
+	provinces={
+		1978 2084 4558 4998 12717 12763 
+	}
+}

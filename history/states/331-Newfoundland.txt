@@ -1,0 +1,28 @@
+
+state={
+	id=331
+	name="STATE_331"
+	manpower = 609396
+	
+	state_category = rural
+
+	history={
+		owner = CAN
+
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 4
+			12505 = {
+				naval_base = 1
+			}
+		}
+		victory_points = {
+			12505 1
+		}
+		add_core_of = CAN
+	}
+
+	provinces={
+		7758 7788 12505 12680 12698 
+	}
+}

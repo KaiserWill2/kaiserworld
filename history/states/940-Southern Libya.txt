@@ -1,0 +1,21 @@
+state={
+	id=940
+	name="STATE_940"
+	resources={
+		oil=11.000
+	}
+	provinces={
+		13248 13260 13261 13266 13267 13273 13280 13282 13284 13289 13291 13296 13298 13300 13305 13307 13309 13311 13317 13324 13330 13335 13336 13338 13339 13346 13355 
+	}
+	state_category = rural
+	history={
+		owner = LBA
+		add_core_of = LBA
+		buildings = {
+			infrastructure = 2
+		}
+
+	}
+	manpower=49000
+	buildings_max_level_factor=1.000
+}

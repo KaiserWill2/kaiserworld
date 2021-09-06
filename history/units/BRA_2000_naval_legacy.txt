@@ -1,0 +1,18 @@
+﻿
+units= {
+	####### NAVAL UNITS #######
+	##### Brazilian Navy #####
+	##### Battle Force (CO: ) #####
+	### Rio ###
+	fleet = {
+		name = "Brazilian Navy"
+		naval_base = 11846 # Anzio
+		task_force = {
+			name = "Grupo Independencia"
+			location = 10980 # Rio
+			ship = { name = "Independencia" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = BRA version_name = "Destroyer I" } } }
+			ship = { name = "Uniao" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = BRA version_name = "Destroyer I" } } }
+		
+		}
+	}
+}

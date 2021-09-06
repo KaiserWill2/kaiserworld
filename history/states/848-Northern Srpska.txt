@@ -1,0 +1,27 @@
+state={
+	id=848
+	name="STATE_848"
+	resources={
+		aluminium=6
+		chromium=2
+	}
+	provinces={
+		6619 6983 9588 9591 11572 
+	}
+	history = {
+		owner = YUG
+		add_core_of = BOS
+		add_core_of = YUG
+		victory_points = { 6983 1 }
+		victory_points = { 11572 1 }
+		victory_points = { 9588 1 }
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+		}
+	}
+	manpower=490000
+	buildings_max_level_factor=1.000
+	
+	state_category = rural
+}

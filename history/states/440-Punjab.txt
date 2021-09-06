@@ -1,0 +1,29 @@
+
+state={
+	id=440
+	name="STATE_440"
+	manpower = 126370000
+	
+	state_category = megalopolis
+
+	history={
+		owner = RAJ
+		add_core_of = PAK
+		add_core_of = PJB
+		buildings = {
+			industrial_complex = 11
+			arms_factory = 3
+			infrastructure = 9
+		}
+		victory_points = { 10772 10 }	#Lahore
+		victory_points = { 8022 11 }		#Islamabad
+		victory_points = { 9084 10 }     #Faisalabad
+		victory_points = { 8007 5 }     #Multan
+		victory_points = { 12005 5 }	#Gujranwala
+		victory_points = { 10843 3 }	#Bahawalpur
+	}
+
+	provinces={
+		4979 8007 8022 8106 9084 10066 10139 10173 10772 10843 10887 10898 12005 12792 12822 
+	}
+}

@@ -1,0 +1,16 @@
+﻿
+units= {
+	####### NAVAL UNITS #######
+	##### ASWAN NAVY #####
+	##### ASWAN #####
+	### Halayeb ###
+	fleet = {
+		name = "Aswan Navy"
+		naval_base = 1977 # Halayeb
+		task_force = {
+			name = "Aswan Emergency Force"
+			location = 1977 # Halayeb
+			ship = { name = "Memphis" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = RAS version_name = "Destroyer I" } } }
+		}
+	}
+}

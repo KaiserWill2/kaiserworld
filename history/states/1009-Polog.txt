@@ -1,0 +1,23 @@
+
+state={
+	id=1009
+	name="STATE_1009"
+
+	history={
+		owner = YUG
+        add_core_of = MAC
+        add_core_of = YUG
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+		}
+		victory_points = { 867 1 }
+	}
+
+	provinces={
+		867 833
+	}
+	manpower=322338
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+}

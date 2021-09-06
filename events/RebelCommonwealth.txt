@@ -1,0 +1,2939 @@
+﻿add_namespace = rebel
+
+#Broker peace with Philadelphia?
+country_event = {
+	id = rebel.1
+	title = rebel.1.t
+	desc = rebel.1.d
+	picture = peace_with_philadelphia
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = AMC
+		NOT = {
+			has_country_flag = treaty_of_columbus
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 40
+	}
+	
+	option = {   #Call for peace
+		name = rebel.1.o1
+		if = {
+		    limit = {
+			    AMS = {
+				    exists = yes
+				}
+			}
+			AMS = {
+		        country_event = { id = rebel.2 }
+		    }
+		}
+		if = {
+		    limit = {
+			    NEA = {
+				    exists = yes
+				}
+			}
+			NEA = {
+		        country_event = { id = rebel.2 }
+		    }
+		}
+		ai_chance = {
+			factor = 30
+		}
+	}
+	
+	option = {   #Keep fighting
+		name = rebel.1.o2
+		set_country_flag = kept_fighting
+		ai_chance = {
+			base = 70
+			modifier = {
+				has_game_rule = {
+					rule = NEA_moderate_rebellion
+					option = TREATY_OF_COLUMBUS_RULE
+				}
+				factor = 0
+			}
+		}
+	}
+}
+
+#APC - Rebels want peace
+country_event = {
+	id = rebel.2
+	title = rebel.2.t
+	desc = rebel.2.d
+	picture = peace_with_philadelphia
+	
+	is_triggered_only = yes
+	
+	option = {   #Accept 
+		name = rebel.2.o1
+		AMC = {
+		    country_event = { id = rebel.4 }
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+	
+	option = {   #Refuse
+		name = rebel.2.o2
+		AMC = {
+		    country_event = { id = rebel.3 }
+		}
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+#Philadelphia rejects peace
+country_event = {
+	id = rebel.3
+	title = rebel.3.t
+	desc = rebel.3.d
+	picture = peace_with_philadelphia
+	
+	is_triggered_only = yes
+	
+	option = {   
+		name = rebel.3.o1
+		set_country_flag = kept_fighting
+	}
+}
+
+#Philadelphia accepts peace
+country_event = {
+	id = rebel.4
+	title = rebel.4.t
+	desc = rebel.4.d
+	picture = peace_with_philadelphia
+	
+	is_triggered_only = yes
+	
+	option = {   
+		name = rebel.4.o1
+		hidden_effect = {
+		    white_peace = NEA
+			white_peace = AMS
+		}
+		country_event = { days = 2 id = rebel.5 } 
+	}
+}
+
+#Treaty of Columbus
+country_event = {
+	id = rebel.5
+	title = rebel.5.t
+	desc = rebel.5.d
+	picture = treaty_of_columbus_picture
+	
+	is_triggered_only = yes
+	
+	option = {   
+		name = rebel.5.o1
+		hidden_effect = {
+			every_country = {
+		        limit = {
+			        NOT = {
+				        tag = AMC
+				    }
+			    }
+			    news_event = {
+			        hours = 4
+			        id = news.225
+		        }
+		    }
+		}
+		if = {
+		    limit = {
+			    AMS = {
+				    exists = yes
+				}
+			}
+			AMS = {
+		        transfer_state = 393 
+			    transfer_state = 358
+		    }
+		}
+		if = {
+		    limit = {
+			    NEA = {
+				    exists = yes
+				}
+			}
+			NEA = {
+		        transfer_state = 393 
+			    transfer_state = 358
+		    }
+		}
+		361 = {
+		    remove_core_of = AMC
+		}
+		261 = {
+		    remove_core_of = AMC
+		}
+		358 = {
+		    remove_core_of = AMC
+		}
+		359 = {
+		    remove_core_of = AMC
+		}
+		360 = {
+		    remove_core_of = AMC
+		}
+		393 = {
+		    remove_core_of = AMC
+		}
+		395 = {
+		    remove_core_of = AMC
+		}
+		396 = {
+		    remove_core_of = AMC
+		}
+		893 = {
+		    remove_core_of = AMC
+		}
+		902 = {
+		    remove_core_of = AMC
+		}
+		set_cosmetic_tag = AMC_NewEnglandProvisional
+		set_country_flag = treaty_of_columbus
+	}
+}
+
+#Constitutional convention
+country_event = {
+	id = rebel.6
+	title = rebel.6.t
+	desc = rebel.6.d
+	picture = new_england_constitutional_convention
+	
+	is_triggered_only = yes
+	
+	option = {   #Monarchy
+		name = rebel.6.o1
+		set_country_flag = convention_votes_for_a_monarchy
+	}
+	
+	option = {   #Republic
+		name = rebel.6.o2
+		set_country_flag = convention_votes_for_a_republic
+	}
+}
+
+#Which French royal line?
+country_event = {
+	id = rebel.7
+	title = rebel.7.t
+	desc = rebel.7.d
+	picture = palace_of_versailles
+	
+	is_triggered_only = yes
+	
+	option = {   #Legitimist
+		name = rebel.7.o1
+		set_cosmetic_tag = AMC_Legitimist
+		set_party_name = { ideology = monarchist long_name = AMC_Bourbon name = AMC_Bourbon }
+	    create_country_leader = {
+	        name = "Maria Marguerite"
+	        picture = "Portrait_AMC_Maria_Marguerite.dds"
+	        ideology = absolute_monarchist
+        }
+	}
+	
+	option = {   #Orleanist
+		name = rebel.7.o2
+		set_cosmetic_tag = AMC_Orleanist
+		set_party_name = { ideology = monarchist long_name = AMC_Orleans name = AMC_Orleans }
+	    create_country_leader = {
+	        name = "Eudes Thibaut Joseph Marie"
+	        picture = "Portrait_AMC_Eudes_Thibaut_Joseph_Marie.dds"
+	        ideology = absolute_monarchist
+        }
+	}
+	
+	option = {   #Bonapartist
+		name = rebel.7.o3
+		set_cosmetic_tag = AMC_Bonaparte
+		set_party_name = { ideology = monarchist long_name = AMC_Bonapartist name = AMC_Bonapartist }
+	    create_country_leader = {
+	        name = "Rene Auberjonois"
+	        picture = "Portrait_AMC_Rene_Auberjonois.dds"
+	        ideology = absolute_monarchist
+        }
+	}
+}
+
+#General election - windsors
+country_event = {
+	id = rebel.8
+	title = rebel.8.t
+	desc = rebel.8.d
+	picture = windsor_general_election
+	
+	is_triggered_only = yes
+	
+	option = {   #Conservatives
+		name = rebel.8.o1
+		set_politics = {
+	        ruling_party = national_conservative
+	        elections_allowed = no
+        }
+		add_popularity = {
+			ideology = national_conservative
+			popularity = 0.38
+		}
+		add_ideas = commonwealth_joe_lieberman
+	}
+	
+	option = {   #Liberals
+		name = rebel.8.o2
+		set_politics = {
+	        ruling_party = liberal
+	        elections_allowed = no
+        }
+		add_popularity = {
+			ideology = liberal
+			popularity = 0.38
+		}
+		add_ideas = commonwealth_andrew_cuomo
+	}
+}
+
+#Britain - new england wants bermuda
+country_event = {
+	id = rebel.9
+	title = rebel.9.t
+	desc = rebel.9.d
+	picture = bermuda_trade
+	
+	is_triggered_only = yes
+	
+	option = {   #Accept
+		name = rebel.9.o1
+		AMC = {
+			country_event = { id = rebel.10 } 
+		}
+		AMC = {
+			add_opinion_modifier = {
+				target = ENG
+				modifier = recent_actions_positive
+			}
+	    }
+		ai_chance = {
+			factor = 80
+		}
+	}
+	
+	option = {   #Refuse
+		name = rebel.9.o2
+		AMC = {
+			country_event = { id = rebel.11 } 
+		}
+		ai_chance = {
+			factor = 20
+		}
+	}
+}
+
+#Britain accepts
+country_event = {
+	id = rebel.10
+	title = rebel.10.t
+	desc = rebel.10.d
+	picture = bermuda_trade
+	
+	is_triggered_only = yes
+	
+	option = {   
+		name = rebel.10.o1
+		transfer_state = 696
+		696 = {
+		    add_core_of = AMC
+		}
+	}
+}
+
+#Britain refuses
+country_event = {
+	id = rebel.11
+	title = rebel.11.t
+	desc = rebel.11.d
+	picture = bermuda_trade
+	
+	is_triggered_only = yes
+	
+	option = {   
+		name = rebel.11.o1
+		add_political_power = -200
+	}
+}
+
+#Britain - New England invades Bermuda
+country_event = {
+	id = rebel.12
+	title = rebel.12.t
+	desc = rebel.12.d
+	picture = bermuda_trade
+	
+	is_triggered_only = yes
+	
+	option = {   #Do nothing
+		name = rebel.12.o1
+		add_political_power = -100
+		add_stability = -0.02
+		AMC = {
+			country_event = { id = rebel.13 } 
+		}
+		ai_chance = {
+			factor = 50
+		}
+	}
+	
+	option = {   #Declare war
+		name = rebel.12.o2
+		ENG = {
+		    declare_war_on = { target = AMC type = annex_everything }
+		}
+		AMC = {
+			country_event = { id = rebel.14 } 
+		}
+		ai_chance = {
+			factor = 50
+		}
+	}
+}
+
+#Britain backs down
+country_event = {
+	id = rebel.13
+	title = rebel.13.t
+	desc = rebel.13.d
+	picture = bermuda_trade
+	
+	is_triggered_only = yes
+	
+	option = {   
+		name = rebel.13.o1
+	}
+}
+
+#Britain declares war
+country_event = {
+	id = rebel.14
+	title = rebel.14.t
+	desc = rebel.14.d
+	picture = bermuda_trade
+	
+	is_triggered_only = yes
+	
+	option = {   
+		name = rebel.14.o1
+	}
+}
+
+#Which Roosevelts
+country_event = {
+	id = rebel.15
+	title = rebel.15.t
+	desc = rebel.15.d
+	picture = which_roosevelts
+	
+	is_triggered_only = yes
+	
+	option = {   #Descendants of teddy
+		name = rebel.15.o1
+		create_country_leader = {
+	        name = "Marcus Roosevelt"
+	        picture = "Portrait_AMC_Marcus_Roosevelt.dds"
+	        ideology = absolute_monarchist
+        }
+	}
+	
+	option = {   #Descendants of franklin
+		name = rebel.15.o2
+		create_country_leader = {
+	        name = "Franklin Roosevelt III"
+	        picture = "Portrait_AMC_Franklin_Roosevelt_III.dds"
+	        ideology = absolute_monarchist
+        }
+	}
+}
+
+#New york ultimatum
+country_event = {
+	id = rebel.16
+	title = rebel.16.t
+	desc = rebel.16.d
+	picture = new_york
+	
+	is_triggered_only = yes
+	
+	option = {   #Get help from Canada
+		name = rebel.16.o1
+		CAN = {
+			country_event = { id = rebel.17 } 
+		}
+		ai_chance = {
+			factor = 80
+		}
+	}
+	
+	option = {   #Go alone
+		name = rebel.16.o2
+		NEA = {
+			country_event = { id = rebel.18 } 
+		}
+		ai_chance = {
+			factor = 20
+		}
+	}
+}
+
+#Canada - new england's new york ultimatum
+country_event = {
+	id = rebel.17
+	title = rebel.17.t
+	desc = rebel.17.d
+	picture = new_york
+	
+	is_triggered_only = yes
+	
+	option = {   #We will help
+		name = rebel.17.o1
+		AMC = {
+			country_event = { id = rebel.19 } 
+		}
+		ai_chance = {
+			factor = 80
+		}
+	}
+	
+	option = {   #We won't help
+		name = rebel.17.o2
+		AMC = {
+			country_event = { id = rebel.20 } 
+		}
+		ai_chance = {
+			factor = 20
+		}
+	}
+}
+
+#Philadelphia - New England demands new york
+country_event = {
+	id = rebel.18
+	title = rebel.18.t
+	desc = rebel.18.d
+	picture = new_york
+	
+	is_triggered_only = yes
+	
+	option = {   #Accept
+		name = rebel.18.o1
+		AMC = {
+			country_event = { id = rebel.21 } 
+		}
+		ai_chance = {
+			factor = 10
+		}
+	}
+	
+	option = {   #Refuse
+		name = rebel.18.o2
+		AMC = {
+			country_event = { id = rebel.22 } 
+		}
+		ai_chance = {
+			factor = 90
+		}
+	}
+}
+
+#Canada will help us
+country_event = {
+	id = rebel.19
+	title = rebel.19.t
+	desc = rebel.19.d
+	picture = new_york
+	
+	is_triggered_only = yes
+	
+	option = {   
+		name = rebel.19.o1
+		NEA = {
+			country_event = { id = rebel.23 } 
+		}
+	}
+}
+
+#Canada won't help us
+country_event = {
+	id = rebel.20
+	title = rebel.20.t
+	desc = rebel.20.d
+	picture = new_york
+	
+	is_triggered_only = yes
+	
+	option = {   
+		name = rebel.20.o1
+		NEA = {
+			country_event = { id = rebel.24 } 
+		}
+	}
+}
+
+#Philadelphia accepts ultimatum
+country_event = {
+	id = rebel.21
+	title = rebel.21.t
+	desc = rebel.21.d
+	picture = new_york
+	
+	is_triggered_only = yes
+	
+	option = {   
+		name = rebel.21.o1
+		transfer_state = 358
+	}
+}
+
+#Philadelphia rejects ultimatum
+country_event = {
+	id = rebel.22
+	title = rebel.22.t
+	desc = rebel.22.d
+	picture = new_york
+	
+	is_triggered_only = yes
+	
+	option = {   
+		name = rebel.22.o1
+		AMC = {
+		    declare_war_on = { target = NEA type = annex_everything }
+		}
+	}
+}
+
+#Philadelphia - New England and Canada demand new york
+country_event = {
+	id = rebel.23
+	title = rebel.23.t
+	desc = rebel.23.d
+	picture = new_york
+	
+	is_triggered_only = yes
+	
+	option = {   #Accept
+		name = rebel.23.o1
+		AMC = {
+			country_event = { id = rebel.25 } 
+		}
+		ai_chance = {
+			factor = 60
+		}
+	}
+	
+	option = {   #Refuse
+		name = rebel.23.o2
+		AMC = {
+			country_event = { id = rebel.26 } 
+		}
+		CAN = {
+			country_event = { id = rebel.27 } 
+		}
+		ai_chance = {
+			factor = 40
+		}
+	}
+}
+
+#Philadelphia - New york ultimatum
+country_event = {
+	id = rebel.24
+	title = rebel.24.t
+	desc = rebel.24.d
+	picture = new_york
+	
+	is_triggered_only = yes
+	
+	option = {   #Accept
+		name = rebel.24.o1
+		AMC = {
+			country_event = { id = rebel.28 } 
+		}
+		ai_chance = {
+			factor = 10
+		}
+	}
+	
+	option = {   #Refuse
+		name = rebel.24.o2
+		AMC = {
+			country_event = { id = rebel.29 } 
+		}
+		ai_chance = {
+			factor = 90
+		}
+	}
+}
+
+#Philadelphia accepts
+country_event = {
+	id = rebel.25
+	title = rebel.25.t
+	desc = rebel.25.d
+	picture = new_york
+	
+	is_triggered_only = yes
+	
+	option = {   
+		name = rebel.25.o1
+		transfer_state = 358
+	}
+}
+
+#Philadelphia refuses
+country_event = {
+	id = rebel.26
+	title = rebel.26.t
+	desc = rebel.26.d
+	picture = new_york
+	
+	is_triggered_only = yes
+	
+	option = {   
+		name = rebel.26.o1
+		AMC = {
+		    declare_war_on = { target = NEA type = annex_everything }
+		}
+	}
+}
+
+#Canada - Philadelphia refuses
+country_event = {
+	id = rebel.27
+	title = rebel.27.t
+	desc = rebel.27.d
+	picture = new_york
+	
+	is_triggered_only = yes
+	
+	option = {   
+		name = rebel.27.o1
+		AMC = {
+		    declare_war_on = { target = NEA type = annex_everything }
+		}
+	}
+}
+
+#Philadelphia accepts 
+country_event = {
+	id = rebel.28
+	title = rebel.28.t
+	desc = rebel.28.d
+	picture = new_york
+	
+	is_triggered_only = yes
+	
+	option = {   
+		name = rebel.28.o1
+		transfer_state = 395
+	}
+}
+
+#Philadelphia refuses
+country_event = {
+	id = rebel.29
+	title = rebel.29.t
+	desc = rebel.29.d
+	picture = new_york
+	
+	is_triggered_only = yes
+	
+	option = {   
+		name = rebel.29.o1
+		AMC = {
+		    declare_war_on = { target = NEA type = annex_everything }
+		}
+	}
+}
+
+#Canada - New England demands claimed lands
+country_event = {
+	id = rebel.30
+	title = rebel.30.t
+	desc = rebel.30.d
+	picture = new_england_demands_canada
+	
+	is_triggered_only = yes
+	
+	option = {   #Accept
+		name = rebel.30.o1
+		AMC = {
+			country_event = { id = rebel.31 } 
+		}
+		ai_chance = {
+			factor = 40
+		}
+	}
+	
+	option = {   #Refuse
+		name = rebel.30.o2
+		AMC = {
+			country_event = { id = rebel.32 } 
+		}
+		ai_chance = {
+			factor = 60
+		}
+	}
+}
+
+#Canada hands over claimed lands
+country_event = {
+	id = rebel.31
+	title = rebel.31.t
+	desc = rebel.31.d
+	picture = new_england_demands_canada
+	
+	is_triggered_only = yes
+	
+	option = {   
+		name = rebel.31.o1
+		transfer_state = 465
+		transfer_state = 464
+	}
+}
+
+#Canada refuses to hand over lands
+country_event = {
+	id = rebel.32
+	title = rebel.32.t
+	desc = rebel.32.d
+	picture = new_england_demands_canada
+	
+	is_triggered_only = yes
+	
+	option = {   #Declare war
+		name = rebel.32.o1
+		AMC = {
+		    declare_war_on = { target = CAN type = puppet_wargoal_focus }
+		}
+	}
+	
+	option = {   #Back down
+		name = rebel.32.o2
+		add_political_power = -35
+	}
+}
+
+#Britain - trade Bermuda with new england
+country_event = {
+	id = rebel.33
+	title = rebel.33.t
+	desc = rebel.33.d
+	picture = bermuda_trade
+	
+	is_triggered_only = yes
+	
+	option = {   #Accept
+		name = rebel.33.o1
+		AMC = {
+			country_event = { id = rebel.34 } 
+		}
+		add_timed_idea = {
+			idea = idea_amc_payments_from_new_england
+		    days = 220
+		}
+		ai_chance = {
+			factor = 80
+		}
+	}
+	
+	option = {   #Refuse
+		name = rebel.33.o2
+		AMC = {
+			country_event = { id = rebel.35 } 
+		}
+		ai_chance = {
+			factor = 20
+		}
+	}
+}
+
+#Britain accepts
+country_event = {
+	id = rebel.34
+	title = rebel.34.t
+	desc = rebel.34.d
+	picture = bermuda_trade
+	
+	is_triggered_only = yes
+	
+	option = {   #Accept
+		name = rebel.34.o1
+		transfer_state = 696
+		add_timed_idea = {
+			idea = idea_amc_payments_to_britain
+		    days = 220
+		}
+	}
+}
+
+#Britain refuses
+country_event = {
+	id = rebel.35
+	title = rebel.35.t
+	desc = rebel.35.d
+	picture = bermuda_trade
+	
+	is_triggered_only = yes
+	
+	option = {   
+		name = rebel.35.o1
+		add_political_power = -25
+	}
+}
+
+#Canada - New England asks for protection
+country_event = {
+	id = rebel.36
+	title = rebel.36.t
+	desc = rebel.36.d
+	picture = new_england_demands_canada
+	
+	is_triggered_only = yes
+	
+	option = {   #Accept
+		name = rebel.36.o1
+		puppet = AMC
+		AMC = {
+			country_event = { id = rebel.37 } 
+		}
+		ai_chance = {
+			factor = 95
+		}
+	}
+	
+	option = {   #Refuse
+		name = rebel.36.o2
+		AMC = {
+			country_event = { id = rebel.38 } 
+		}
+		ai_chance = {
+			factor = 5
+		}
+	}
+}
+
+#Canada accepts
+country_event = {
+	id = rebel.37
+	title = rebel.37.t
+	desc = rebel.37.d
+	picture = new_england_demands_canada
+	
+	is_triggered_only = yes
+	
+	option = {   
+		name = rebel.37.o1
+	}
+}
+
+#Canada refuses
+country_event = {
+	id = rebel.38
+	title = rebel.38.t
+	desc = rebel.38.d
+	picture = new_england_demands_canada
+	
+	is_triggered_only = yes
+	
+	option = {   
+		name = rebel.38.o1
+	}
+}
+
+#American Unification Convention begins
+country_event = {
+	id = rebel.39
+	title = rebel.39.t
+	desc = rebel.39.d
+	picture = american_unification_convention_begins
+	
+	is_triggered_only = yes
+	
+	option = {   
+		name = rebel.39.o1
+		hidden_effect = {
+			every_country = {
+		        limit = {
+			        NOT = {
+				        tag = AMC
+				    }
+			    }
+			    news_event = {
+			        hours = 4
+			        id = news.226
+		        }
+		    }
+		}
+		if = {
+		    limit = {
+			    GRL = {
+				    OR = {
+					    has_government = national_conservative
+						has_government = centrist
+						has_government = liberal 
+						has_government = new_democrat
+						has_government = moderate_socialist
+					}
+				}
+			}
+			GRL = {
+			    country_event = { days = 7 id = rebel.40 } 
+			}
+			else = {
+				create_wargoal = {
+					type = annex_everything
+					target = GRL
+				}
+			}
+		}
+		if = {
+		    limit = {
+			    ILL = {
+				    OR = {
+					    has_government = national_conservative
+						has_government = centrist
+						has_government = liberal 
+						has_government = new_democrat
+						has_government = moderate_socialist
+					}
+				}
+			}
+			ILL = {
+			    country_event = { days = 6 id = rebel.43 } 
+			}
+			else = {
+				create_wargoal = {
+					type = annex_everything
+					target = ILL
+				}
+			}
+		}
+		if = {
+		    limit = {
+			    MWA = {
+				    OR = {
+					    has_government = national_conservative
+						has_government = centrist
+						has_government = liberal 
+						has_government = new_democrat
+						has_government = moderate_socialist
+					}
+				}
+			}
+			MWA = {
+			    country_event = { days = 5 id = rebel.46 } 
+			}
+			else = {
+				create_wargoal = {
+					type = annex_everything
+					target = MWA
+				}
+			}
+		}
+		if = {
+		    limit = {
+			    MOT = {
+				    OR = {
+					    has_government = national_conservative
+						has_government = centrist
+						has_government = liberal 
+						has_government = new_democrat
+						has_government = moderate_socialist
+					}
+				}
+			}
+			MOT = {
+			    country_event = { days = 7 id = rebel.49 } 
+			}
+			else = {
+				create_wargoal = {
+					type = annex_everything
+					target = MOT
+				}
+			}
+		}
+		if = {
+		    limit = {
+			    LIN = {
+				    OR = {
+					    has_government = national_conservative
+						has_government = centrist
+						has_government = liberal 
+						has_government = new_democrat
+						has_government = moderate_socialist
+					}
+				}
+			}
+			LIN = {
+			    country_event = { days = 7 id = rebel.52 } 
+			}
+			else = {
+				create_wargoal = {
+					type = annex_everything
+					target = LIN
+				}
+			}
+		}
+		if = {
+		    limit = {
+			    UTA = {
+				    OR = {
+					    has_government = national_conservative
+						has_government = centrist
+						has_government = liberal 
+						has_government = new_democrat
+						has_government = moderate_socialist
+					}
+				}
+			}
+			UTA = {
+			    country_event = { days = 15 id = rebel.55 } 
+			}
+			else = {
+				create_wargoal = {
+					type = annex_everything
+					target = UTA
+				}
+			}
+		}
+		if = {
+		    limit = {
+			    ARI = {
+				    OR = {
+					    has_government = national_conservative
+						has_government = centrist
+						has_government = liberal 
+						has_government = new_democrat
+						has_government = moderate_socialist
+					}
+				}
+			}
+			ARI = {
+			    country_event = { days = 19 id = rebel.58 } 
+			}
+			else = {
+				create_wargoal = {
+					type = annex_everything
+					target = ARI
+				}
+			}
+		}
+		if = {
+		    limit = {
+			    TEX = {
+				    OR = {
+					    has_government = national_conservative
+						has_government = centrist
+						has_government = liberal 
+						has_government = new_democrat
+						has_government = moderate_socialist
+					}
+				}
+			}
+			TEX = {
+			    country_event = { days = 20 id = rebel.61 } 
+			}
+			else = {
+				create_wargoal = {
+					type = annex_everything
+					target = TEX
+				}
+			}
+		}
+		#if = {
+		#    limit = {
+		#	    ALA = {
+		#		    OR = {
+		#			    has_government = national_conservative
+		#				has_government = centrist
+		#				has_government = liberal 
+		#				has_government = new_democrat
+		#				has_government = moderate_socialist
+		#			}
+		#		}
+		#	}
+		#	ALA = {
+		#	    country_event = { days = 25 id = rebel.64 } 
+		#	}
+		#	else = {
+		#		create_wargoal = {
+		#			type = annex_everything
+		#			target = ALA
+		#		}
+		#	}
+		#}
+		#if = {
+		#    limit = {
+		#	    HAW = {
+		#		    OR = {
+		#			    has_government = national_conservative
+		#				has_government = centrist
+		#				has_government = liberal 
+		#				has_government = new_democrat
+		#				has_government = moderate_socialist
+		#			}
+		#		}
+		#	}
+		#	HAW = {
+		#	    country_event = { days = 28 id = rebel.67 } 
+		#	}
+		#	else = {
+		#		create_wargoal = {
+		#			type = annex_everything
+		#			target = HAW
+		#		}
+		#	}
+		#}
+	}
+}
+
+#Great lakes - decision at convention
+country_event = {
+	id = rebel.40
+	title = rebel.40.t
+	desc = rebel.40.d
+	picture = american_convention_decision
+	
+	is_triggered_only = yes
+	
+	option = {   #Join
+		name = rebel.40.o1
+		AMC = {
+			country_event = { days = 5 id = rebel.41 } 
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+	
+	option = {   #Don't join
+		name = rebel.40.o2
+		AMC = {
+			country_event = { days = 5 id = rebel.42 } 
+		}
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+#Great lakes accepts
+country_event = {
+	id = rebel.41
+	title = rebel.41.t
+	desc = rebel.41.d
+	picture = convention_country_accepts
+	
+	is_triggered_only = yes
+	
+	option = {   
+		name = rebel.41.o1
+		annex_country = { target = GRL transfer_troops = yes }
+	}
+}
+
+#Great lakes refuses
+country_event = {
+	id = rebel.42
+	title = rebel.42.t
+	desc = rebel.42.d
+	picture = american_convention_decision
+	
+	is_triggered_only = yes
+	
+	option = {   
+		name = rebel.42.o1
+		create_wargoal = {
+			type = annex_everything
+			target = GRL
+		}
+	}
+}
+
+#Illinois - decision at convention
+country_event = {
+	id = rebel.43
+	title = rebel.43.t
+	desc = rebel.43.d
+	picture = american_convention_decision
+	
+	is_triggered_only = yes
+	
+	option = {   #Join
+		name = rebel.43.o1
+		AMC = {
+			country_event = { days = 8 id = rebel.44 } 
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+	
+	option = {   #Don't join
+		name = rebel.43.o2
+		AMC = {
+			country_event = { days = 8 id = rebel.45 } 
+		}
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+#Illinois accepts
+country_event = {
+	id = rebel.44
+	title = rebel.44.t
+	desc = rebel.44.d
+	picture = convention_country_accepts
+	
+	is_triggered_only = yes
+	
+	option = {   
+		name = rebel.44.o1
+		annex_country = { target = ILL transfer_troops = yes }
+	}
+}
+
+#Illinois refuses
+country_event = {
+	id = rebel.45
+	title = rebel.45.t
+	desc = rebel.45.d
+	picture = american_convention_decision
+	
+	is_triggered_only = yes
+	
+	option = {   
+		name = rebel.45.o1
+		create_wargoal = {
+			type = annex_everything
+			target = ILL
+		}
+	}
+}
+
+#Midwest - decision at convention
+country_event = {
+	id = rebel.46
+	title = rebel.46.t
+	desc = rebel.46.d
+	picture = american_convention_decision
+	
+	is_triggered_only = yes
+	
+	option = {   #Join
+		name = rebel.46.o1
+		AMC = {
+			country_event = { days = 10 id = rebel.47 } 
+		}
+		ai_chance = {
+			factor = 90
+		}
+	}
+	
+	option = {   #Don't join
+		name = rebel.46.o2
+		AMC = {
+			country_event = { days = 10 id = rebel.48 } 
+		}
+		ai_chance = {
+			factor = 10
+		}
+	}
+}
+
+#Midwest accepts
+country_event = {
+	id = rebel.47
+	title = rebel.47.t
+	desc = rebel.47.d
+	picture = convention_country_accepts
+	
+	is_triggered_only = yes
+	
+	option = {   
+		name = rebel.47.o1
+		annex_country = { target = MWA transfer_troops = yes }
+	}
+}
+
+#Midwest refuses
+country_event = {
+	id = rebel.48
+	title = rebel.48.t
+	desc = rebel.48.d
+	picture = american_convention_decision
+	
+	is_triggered_only = yes
+	
+	option = {   
+		name = rebel.48.o1
+		create_wargoal = {
+			type = annex_everything
+			target = MWA
+		}
+	}
+}
+
+#Montana - decision at convention
+country_event = {
+	id = rebel.49
+	title = rebel.49.t
+	desc = rebel.49.d
+	picture = american_convention_decision
+	
+	is_triggered_only = yes
+	
+	option = {   #Join
+		name = rebel.49.o1
+		AMC = {
+			country_event = { days = 10 id = rebel.50 } 
+		}
+		ai_chance = {
+			factor = 90
+		}
+	}
+	
+	option = {   #Don't join
+		name = rebel.49.o2
+		AMC = {
+			country_event = { days = 10 id = rebel.51 } 
+		}
+		ai_chance = {
+			factor = 10
+		}
+	}
+}
+
+#Montana accepts
+country_event = {
+	id = rebel.50
+	title = rebel.50.t
+	desc = rebel.50.d
+	picture = convention_country_accepts
+	
+	is_triggered_only = yes
+	
+	option = {   
+		name = rebel.50.o1
+		annex_country = { target = MOT transfer_troops = yes }
+	}
+}
+
+#Montana refuses
+country_event = {
+	id = rebel.51
+	title = rebel.51.t
+	desc = rebel.51.d
+	picture = american_convention_decision
+	
+	is_triggered_only = yes
+	
+	option = {   
+		name = rebel.51.o1
+		create_wargoal = {
+			type = annex_everything
+			target = MOT
+		}
+	}
+}
+
+#Lincoln - decision at convention
+country_event = {
+	id = rebel.52
+	title = rebel.52.t
+	desc = rebel.52.d
+	picture = american_convention_decision
+	
+	is_triggered_only = yes
+	
+	option = {   #Join
+		name = rebel.52.o1
+		AMC = {
+			country_event = { days = 4 id = rebel.53 } 
+		}
+		ai_chance = {
+			factor = 70
+		}
+	}
+	
+	option = {   #Don't join
+		name = rebel.52.o2
+		AMC = {
+			country_event = { days = 4 id = rebel.54 } 
+		}
+		ai_chance = {
+			factor = 30
+		}
+	}
+}
+
+#Lincoln accepts
+country_event = {
+	id = rebel.53
+	title = rebel.53.t
+	desc = rebel.53.d
+	picture = convention_country_accepts
+	
+	is_triggered_only = yes
+	
+	option = {   
+		name = rebel.53.o1
+		annex_country = { target = LIN transfer_troops = yes }
+	}
+}
+
+#Lincoln refuses
+country_event = {
+	id = rebel.54
+	title = rebel.54.t
+	desc = rebel.54.d
+	picture = american_convention_decision
+	
+	is_triggered_only = yes
+	
+	option = {   
+		name = rebel.54.o1
+		create_wargoal = {
+			type = annex_everything
+			target = LIN
+		}
+	}
+}
+
+#Utah - decision at convention
+country_event = {
+	id = rebel.55
+	title = rebel.55.t
+	desc = rebel.55.d
+	picture = american_convention_decision
+	
+	is_triggered_only = yes
+	
+	option = {   #Join
+		name = rebel.55.o1
+		AMC = {
+			country_event = { days = 9 id = rebel.56 } 
+		}
+		ai_chance = {
+			factor = 70
+		}
+	}
+	
+	option = {   #Don't join
+		name = rebel.55.o2
+		AMC = {
+			country_event = { days = 9 id = rebel.57 } 
+		}
+		ai_chance = {
+			factor = 30
+		}
+	}
+}
+
+#Utah accepts
+country_event = {
+	id = rebel.56
+	title = rebel.56.t
+	desc = rebel.56.d
+	picture = convention_country_accepts
+	
+	is_triggered_only = yes
+	
+	option = {   
+		name = rebel.56.o1
+		annex_country = { target = UTA transfer_troops = yes }
+	}
+}
+
+#Utah refuses
+country_event = {
+	id = rebel.57
+	title = rebel.57.t
+	desc = rebel.57.d
+	picture = american_convention_decision
+	
+	is_triggered_only = yes
+	
+	option = {   
+		name = rebel.57.o1
+		create_wargoal = {
+			type = annex_everything
+			target = UTA
+		}
+	}
+}
+
+#Arizona - decision at convention
+country_event = {
+	id = rebel.58
+	title = rebel.58.t
+	desc = rebel.58.d
+	picture = american_convention_decision
+	
+	is_triggered_only = yes
+	
+	option = {   #Join
+		name = rebel.58.o1
+		AMC = {
+			country_event = { days = 11 id = rebel.59 } 
+		}
+		ai_chance = {
+			factor = 95
+		}
+	}
+	
+	option = {   #Don't join
+		name = rebel.58.o2
+		AMC = {
+			country_event = { days = 11 id = rebel.60 } 
+		}
+		ai_chance = {
+			factor = 5
+		}
+	}
+}
+
+#Arizona accepts
+country_event = {
+	id = rebel.59
+	title = rebel.59.t
+	desc = rebel.59.d
+	picture = convention_country_accepts
+	
+	is_triggered_only = yes
+	
+	option = {   
+		name = rebel.59.o1
+		annex_country = { target = ARI transfer_troops = yes }
+	}
+}
+
+#Arizona refuses
+country_event = {
+	id = rebel.60
+	title = rebel.60.t
+	desc = rebel.60.d
+	picture = american_convention_decision
+	
+	is_triggered_only = yes
+	
+	option = {   
+		name = rebel.60.o1
+		create_wargoal = {
+			type = annex_everything
+			target = ARI
+		}
+	}
+}
+
+#Texas - decision at convention
+country_event = {
+	id = rebel.61
+	title = rebel.61.t
+	desc = rebel.61.d
+	picture = american_convention_decision
+	
+	is_triggered_only = yes
+	
+	option = {   #Join
+		name = rebel.61.o1
+		AMC = {
+			country_event = { days = 8 id = rebel.62 } 
+		}
+		ai_chance = {
+			factor = 30
+		}
+	}
+	
+	option = {   #Don't join
+		name = rebel.61.o2
+		AMC = {
+			country_event = { days = 8 id = rebel.63 } 
+		}
+		ai_chance = {
+			factor = 70
+		}
+	}
+}
+
+#Texas accepts
+country_event = {
+	id = rebel.62
+	title = rebel.62.t
+	desc = rebel.62.d
+	picture = convention_country_accepts
+	
+	is_triggered_only = yes
+	
+	option = {   
+		name = rebel.62.o1
+		annex_country = { target = TEX transfer_troops = yes }
+	}
+}
+
+#Texas refuses
+country_event = {
+	id = rebel.63
+	title = rebel.63.t
+	desc = rebel.63.d
+	picture = american_convention_decision
+	
+	is_triggered_only = yes
+	
+	option = {   
+		name = rebel.63.o1
+		create_wargoal = {
+			type = annex_everything
+			target = TEX
+		}
+	}
+}
+
+##Alaska - decision at convention
+#country_event = {
+#	id = rebel.64
+#	title = rebel.64.t
+#	desc = rebel.64.d
+#	picture = american_convention_decision
+#	
+#	is_triggered_only = yes
+#	
+#	option = {   #Join
+#		name = rebel.64.o1
+#		AMC = {
+#			country_event = { days = 10 id = rebel.65 } 
+#		}
+#		ai_chance = {
+#			factor = 85
+#		}
+#	}
+#	
+#	option = {   #Don't join
+#		name = rebel.64.o2
+#		AMC = {
+#			country_event = { days = 10 id = rebel.66 } 
+#		}
+#		ai_chance = {
+#			factor = 15
+#		}
+#	}
+#}
+#
+##Alaska accepts
+#country_event = {
+#	id = rebel.65
+#	title = rebel.65.t
+#	desc = rebel.65.d
+#	picture = convention_country_accepts
+#	
+#	is_triggered_only = yes
+#	
+#	option = {   
+#		name = rebel.65.o1
+#		annex_country = { target = ALA transfer_troops = yes }
+#	}
+#}
+#
+##Alaska refuses
+#country_event = {
+#	id = rebel.66
+#	title = rebel.66.t
+#	desc = rebel.66.d
+#	picture = american_convention_decision
+#	
+#	is_triggered_only = yes
+#	
+#	option = {   
+#		name = rebel.66.o1
+#		create_wargoal = {
+#			type = annex_everything
+#			target = ALA
+#		}
+#	}
+#}
+#
+##Hawaii - decision at convention
+#country_event = {
+#	id = rebel.67
+#	title = rebel.67.t
+#	desc = rebel.67.d
+#	picture = american_convention_decision
+#	
+#	is_triggered_only = yes
+#	
+#	option = {   #Join
+#		name = rebel.67.o1
+#		AMC = {
+#			country_event = { days = 11 id = rebel.68 } 
+#		}
+#		ai_chance = {
+#			factor = 50
+#		}
+#	}
+#	
+#	option = {   #Don't join
+#		name = rebel.67.o2
+#		AMC = {
+#			country_event = { days = 11 id = rebel.69 } 
+#		}
+#		ai_chance = {
+#			factor = 50
+#		}
+#	}
+#}
+#
+##Hawaii accepts
+#country_event = {
+#	id = rebel.68
+#	title = rebel.68.t
+#	desc = rebel.68.d
+#	picture = convention_country_accepts
+#	
+#	is_triggered_only = yes
+#	
+#	option = {   
+#		name = rebel.68.o1
+#		annex_country = { target = HAW transfer_troops = yes }
+#	}
+#}
+#
+##Hawaii refuses
+#country_event = {
+#	id = rebel.69
+#	title = rebel.69.t
+#	desc = rebel.69.d
+#	picture = american_convention_decision
+#	
+#	is_triggered_only = yes
+#	
+#	option = {   
+#		name = rebel.69.o1
+#		create_wargoal = {
+#			type = annex_everything
+#			target = HAW
+#		}
+#	}
+#}
+
+#President Sotomayor to step down
+country_event = {
+	id = rebel.70
+	title = rebel.70.t
+	desc = rebel.70.d
+	picture = sotomayor_steps_down
+	
+	trigger = {
+		tag = AMC
+		date > 2016.3.1
+		date < 2016.3.30
+		has_completed_focus = AMC_the_presidents_plan
+	}
+	fire_only_once = yes
+	
+	option = {   
+		name = rebel.70.o1
+		add_political_power = -5
+		add_popularity = {
+			ideology = moderate_socialist
+			popularity = -0.01
+		}
+		hidden_effect = {
+			country_event = {
+				days = 28
+				id = rebel.71
+			}
+		}
+	}
+}
+
+#Socialist Party Primaries
+country_event = {
+	id = rebel.71
+	title = rebel.71.t
+	desc = rebel.71.d
+	picture = sp_primary_2016
+
+	immediate = {
+		hidden_effect = {
+			country_event = {
+				days = 7
+				id = rebel.72
+			}
+		}
+	}
+	
+	is_triggered_only = yes
+	
+	option = {   
+		name = rebel.71.o1
+		set_country_flag = ralph_nader_2016
+	}
+
+	option = {   
+		name = rebel.71.o2
+		set_country_flag = elaine_bernard_2016
+	}
+
+	option = {   
+		name = rebel.71.o3
+		set_country_flag = russ_feingold_2016
+	}
+}
+
+#Democratic Alliance Primaries
+country_event = {
+	id = rebel.72
+	title = rebel.72.t
+	desc = rebel.72.d
+	picture = da_primary_2016
+
+	immediate = {
+		hidden_effect = {
+			country_event = {
+				days = 7
+				id = rebel.73
+			}
+		}
+	}
+	
+	is_triggered_only = yes
+	
+	option = {   
+		name = rebel.72.o1
+		set_country_flag = gina_raimondo_2016
+	}
+
+	option = {   
+		name = rebel.72.o2
+		set_country_flag = harold_koh_2016
+	}
+
+	option = {   
+		name = rebel.72.o3
+		set_country_flag = andrew_cuomo_2016
+	}
+
+	option = {   
+		name = rebel.72.o4
+		set_country_flag = paul_krugman_2016
+	}
+}
+
+#Formation of Unity for Americans
+country_event = {
+	id = rebel.73
+	title = rebel.73.t
+	desc = rebel.73.d
+	picture = ufa_formed
+	
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			country_event = {
+				days = 28
+				id = rebel.74
+			}
+		}
+	}
+	
+	option = {   
+		name = rebel.73.o1
+		set_party_name = {
+			ideology = centrist
+			long_name = "Unity for America"
+			name = "Unity for America"
+		}
+	}
+}
+
+#Unity for America Primaries
+country_event = {
+	id = rebel.74
+	title = rebel.74.t
+	desc = rebel.74.d
+	picture = ufa_primary_2016
+	
+	is_triggered_only = yes
+	
+	option = {   
+		name = rebel.74.o1
+		set_country_flag = randy_barnett_2016
+	}
+
+	option = {   
+		name = rebel.74.o2
+		set_country_flag = jim_rex_2016
+	}
+
+	option = {   
+		name = rebel.74.o3
+		set_country_flag = bill_weld_2016
+	}
+
+	option = {   
+		name = rebel.74.o4
+		set_country_flag = joe_lieberman_2016
+	}
+}
+
+#2016 General Election
+country_event = {
+	id = rebel.75
+	title = rebel.75.t
+	desc = rebel.75.d
+	picture = AMC_general_election_2016
+	
+	trigger = {
+		tag = AMC
+		date > 2016.11.1
+		date < 2016.11.30
+		has_completed_focus = AMC_the_presidents_plan
+	}
+	fire_only_once = yes
+
+	immediate = {
+		hidden_effect = {
+			if = {
+				limit = {
+					has_country_flag = ralph_nader_2016
+				}
+				create_country_leader = {
+					name = "Ralph Nader"
+					picture = "Portrait_AMC_Ralph_Nader.dds"
+					ideology = democratic_socialist
+				}
+			}
+			if = {
+				limit = {
+					has_country_flag = elaine_bernard_2016
+				}
+				create_country_leader = {
+					name = "Elaine Bernard"
+					picture = "Portrait_AMC_Elaine_Bernard.dds"
+					ideology = democratic_socialist
+				}
+			}
+			if = {
+				limit = {
+					has_country_flag = russ_feingold_2016
+				}
+				create_country_leader = {
+					name = "Russ Feingold"
+					picture = "Portrait_AMC_Russ_Feingold.dds"
+					ideology = progressive
+				}
+			}
+			if = {
+				limit = {
+					has_country_flag = harold_koh_2016
+				}
+				create_country_leader = {
+					name = "Harold Koh"
+					picture = "Portrait_AMC_Harold_Koh.dds"
+					ideology = social_liberal
+				}
+			}
+			if = {
+				limit = {
+					has_country_flag = andrew_cuomo_2016
+				}
+				create_country_leader = {
+					name = "Andrew Cuomo"
+					picture = "Portrait_AMC_Andrew_Cuomo.dds"
+					ideology = social_liberal
+				}
+			}
+			if = {
+				limit = {
+					has_country_flag = paul_krugman_2016
+				}
+				create_country_leader = {
+					name = "Paul Krugman"
+					picture = "Portrait_AMC_Paul_Krugman.dds"
+					ideology = social_liberal
+				}
+			}
+			if = {
+				limit = {
+					has_country_flag = randy_barnett_2016
+				}
+				create_country_leader = {
+					name = "Randy Barnett"
+					picture = "Portrait_AMC_Randy_Barnett.dds"
+					ideology = right_libertarian
+				}
+			}
+			if = {
+				limit = {
+					has_country_flag = jim_rex_2016
+				}
+				create_country_leader = {
+					name = "Jim Rex"
+					picture = "Portrait_AMC_Jim_Rex.dds"
+					ideology = centrist_populist
+				}
+			}
+			if = {
+				limit = {
+					has_country_flag = bill_weld_2016
+				}
+				create_country_leader = {
+					name = "Bill Weld"
+					picture = "Portrait_AMC_Bill_Weld.dds"
+					ideology = right_libertarian
+				}
+			}
+			if = {
+				limit = {
+					has_country_flag = joe_lieberman_2016
+				}
+				create_country_leader = {
+					name = "Joe Lieberman"
+					picture = "Portrait_AMC_Joe_Lieberman.dds"
+					ideology = centrist_ideology
+				}
+			}
+		}
+	}
+	
+	option = {   #Socialist Party
+		name = rebel.75.o1
+		set_politics = {
+			ruling_party = moderate_socialist
+		}
+		add_popularity = {
+			ideology = moderate_socialist
+			popularity = 0.1
+		}
+	}
+
+	option = {   #Democratic Alliance
+		name = rebel.75.o2
+		set_politics = {
+			ruling_party = liberal
+		}
+		add_popularity = {
+			ideology = liberal
+			popularity = 0.3
+		}
+	}
+
+	option = {   #Unity for America
+		name = rebel.75.o3
+		set_politics = {
+			ruling_party = centrist
+		}
+		add_popularity = {
+			ideology = centrist
+			popularity = 0.3
+		}
+	}
+}
+
+#Socialist Party National Convention
+country_event = {
+	id = rebel.76
+	title = rebel.76.t
+	desc = rebel.76.d
+	picture = sp_convention
+	
+	trigger = {
+		tag = AMC
+		date > 2021.3.1
+		date < 2021.3.30
+		has_completed_focus = AMC_the_presidents_plan
+		has_government = moderate_socialist
+	}
+	fire_only_once = yes
+
+	immediate = {
+		hidden_effect = {
+			country_event = {
+				days = 28
+				id = rebel.77
+			}
+		}
+	}
+	
+	option = {   
+		name = rebel.76.o1
+	}
+}
+
+#Democratic People's Party Primaries (SP won in 2016)
+country_event = {
+	id = rebel.77
+	title = rebel.77.t
+	desc = rebel.77.d
+	picture = dpp_primary_2021
+	
+	is_triggered_only = yes
+	
+	option = {   
+		name = rebel.77.o1
+		set_country_flag = jack_reed_2021
+	}
+
+	option = {   
+		name = rebel.77.o2
+		set_country_flag = al_sharpton_2021
+	}
+
+	option = {   
+		name = rebel.77.o3
+		set_country_flag = ed_markey_2021 #TELL YA FATHA
+	}
+}
+
+#2021 Presidential Election (ModSoc/NewDem)
+country_event = {
+	id = rebel.78
+	title = rebel.78.t
+	desc = rebel.78.d
+	picture = AMC_general_election_2021_1
+	
+	trigger = {
+		tag = AMC
+		date > 2021.11.1
+		date < 2021.11.30
+		has_completed_focus = AMC_the_presidents_plan
+		has_government = moderate_socialist
+		NOT = {
+			has_country_flag = AMC_had_2021_election
+		}
+	}
+	fire_only_once = yes
+
+	immediate = {
+		set_country_flag = AMC_had_2021_election
+		hidden_effect = {
+			if = {
+				limit = {
+					has_country_flag = jack_reed_2021
+				}
+				create_country_leader = {
+					name = "Jack Reed"
+					picture = "Portrait_AMC_Jack_Reed.dds"
+					ideology = new_democrat_ideology
+				}
+			}
+			if = {
+				limit = {
+					has_country_flag = al_sharpton_2021
+				}
+				create_country_leader = {
+					name = "Al Sharpton"
+					picture = "Portrait_AMC_Al_Sharpton.dds"
+					ideology = new_democrat_ideology
+				}
+			}
+			if = {
+				limit = {
+					has_country_flag = ed_markey_2021
+				}
+				create_country_leader = {
+					name = "Ed Markey"
+					picture = "Portrait_AMC_Ed_Markey.dds"
+					ideology = new_democrat_ideology
+				}
+			}
+		}
+	}
+	
+	option = {   #Socialist Party
+		name = rebel.78.o1
+		set_politics = {
+			ruling_party = moderate_socialist
+		}
+		add_popularity = {
+			ideology = moderate_socialist
+			popularity = 0.05
+		}
+	}
+
+	option = {   #DPP
+		name = rebel.78.o2
+		set_politics = {
+			ruling_party = new_democrat
+		}
+		add_popularity = {
+			ideology = new_democrat
+			popularity = 0.4
+		}
+	}
+}
+
+#Democratic Alliance National Convention
+country_event = {
+	id = rebel.79
+	title = rebel.79.t
+	desc = rebel.79.d
+	picture = da_convention
+	
+	trigger = {
+		tag = AMC
+		date > 2021.3.1
+		date < 2021.3.30
+		has_completed_focus = AMC_the_presidents_plan
+		has_government = liberal
+	}
+	fire_only_once = yes
+
+	immediate = {
+		hidden_effect = {
+			country_event = {
+				days = 28
+				id = rebel.80
+			}
+		}
+	}
+	
+	option = {   
+		name = rebel.79.o1
+	}
+}
+
+#Democratic People's Party Primaries (SP won in 2016)
+country_event = {
+	id = rebel.80
+	title = rebel.80.t
+	desc = rebel.80.d
+	picture = dpp_primary_2021
+	
+	is_triggered_only = yes
+	
+	option = {   
+		name = rebel.80.o1
+		set_country_flag = jack_reed_2021
+	}
+
+	option = {   
+		name = rebel.80.o2
+		set_country_flag = al_sharpton_2021
+	}
+
+	option = {   
+		name = rebel.80.o3
+		set_country_flag = ed_markey_2021 #TELL YA FATHA
+	}
+}
+
+#2021 Presidential Election (NewDem/Liberal)
+country_event = {
+	id = rebel.81
+	title = rebel.81.t
+	desc = rebel.81.d
+	picture = AMC_general_election_2021_2
+	
+	trigger = {
+		tag = AMC
+		date > 2021.11.1
+		date < 2021.11.30
+		has_completed_focus = AMC_the_presidents_plan
+		has_government = liberal
+		NOT = {
+			has_country_flag = AMC_had_2021_election
+		}
+	}
+	fire_only_once = yes
+
+	immediate = {
+		set_country_flag = AMC_had_2021_election
+		hidden_effect = {
+			if = {
+				limit = {
+					has_country_flag = jack_reed_2021
+				}
+				create_country_leader = {
+					name = "Jack Reed"
+					picture = "Portrait_AMC_Jack_Reed.dds"
+					ideology = new_democrat_ideology
+				}
+			}
+			if = {
+				limit = {
+					has_country_flag = al_sharpton_2021
+				}
+				create_country_leader = {
+					name = "Al Sharpton"
+					picture = "Portrait_AMC_Al_Sharpton.dds"
+					ideology = new_democrat_ideology
+				}
+			}
+			if = {
+				limit = {
+					has_country_flag = ed_markey_2021
+				}
+				create_country_leader = {
+					name = "Ed Markey"
+					picture = "Portrait_AMC_Ed_Markey.dds"
+					ideology = new_democrat_ideology
+				}
+			}
+		}
+	}
+	
+	option = {   #DA
+		name = rebel.81.o1
+		set_politics = {
+			ruling_party = liberal
+		}
+		add_popularity = {
+			ideology = liberal
+			popularity = 0.1
+		}
+	}
+
+	option = {   #DPP
+		name = rebel.81.o2
+		set_politics = {
+			ruling_party = new_democrat
+		}
+		add_popularity = {
+			ideology = new_democrat
+			popularity = 0.4
+		}
+	}
+}
+
+#Democratic Alliance Primaries
+country_event = {
+	id = rebel.82
+	title = rebel.82.t
+	desc = rebel.82.d
+	picture = da_primary_2021
+	
+	trigger = {
+		tag = AMC
+		date > 2021.3.1
+		date < 2021.3.30
+		has_completed_focus = AMC_the_presidents_plan
+		has_government = centrist
+	}
+	fire_only_once = yes
+
+	immediate = {
+		hidden_effect = {
+			country_event = {
+				days = 28
+				id = rebel.83
+			}
+		}
+	}
+	
+	option = {   
+		name = rebel.82.o1
+		set_country_flag = richard_blumenthal_2021
+	}
+
+	option = {   
+		name = rebel.82.o2
+		set_country_flag = eliot_spitzer_2021
+	}
+
+	option = {   
+		name = rebel.82.o3
+		set_country_flag = nancy_pelosi_2021
+	}
+}
+
+#Unity for America National Convention
+country_event = {
+	id = rebel.83
+	title = rebel.83.t
+	desc = rebel.83.d
+	picture = da_convention
+	
+	is_triggered_only = yes
+	
+	option = {   
+		name = rebel.83.o1
+	}
+}
+
+#2021 Presidential Election (Liberal/Centrist)
+country_event = {
+	id = rebel.84
+	title = rebel.84.t
+	desc = rebel.84.d
+	picture = AMC_general_election_2021_3
+	
+	trigger = {
+		tag = AMC
+		date > 2021.11.1
+		date < 2021.11.30
+		has_completed_focus = AMC_the_presidents_plan
+		has_government = centrist
+		NOT = {
+			has_country_flag = AMC_had_2021_election
+		}
+	}
+	fire_only_once = yes
+
+	immediate = {
+		set_country_flag = AMC_had_2021_election
+		hidden_effect ={
+			if = {
+				limit = {
+					has_country_flag = richard_blumenthal_2021
+				}
+				create_country_leader = {
+					name = "Richard Blumenthal"
+					picture = "Portrait_AMC_Richard_Blumenthal.dds"
+					ideology = social_liberal
+				}
+			}
+			if = {
+				limit = {
+					has_country_flag = eliot_spitzer_2021
+				}
+				create_country_leader = {
+					name = "Eliot Spitzer"
+					picture = "Portrait_AMC_Eliot_Spitzer.dds"
+					ideology = social_liberal
+				}
+			}
+			if = {
+				limit = {
+					has_country_flag = nancy_pelosi_2021
+				}
+				create_country_leader = {
+					name = "Nancy Pelosi"
+					picture = "Portrait_AMC_Nancy_Pelosi.dds"
+					ideology = social_liberal
+				}
+			}
+		}
+	}
+	
+	option = {   #UfA
+		name = rebel.84.o1
+		set_politics = {
+			ruling_party = centrist
+		}
+		add_popularity = {
+			ideology = centrist
+			popularity = 0.1
+		}
+	}
+
+	option = {   #DA
+		name = rebel.84.o2
+		set_politics = {
+			ruling_party = liberal
+		}
+		add_popularity = {
+			ideology = liberal
+			popularity = 0.4
+		}
+	}
+}
+
+#2016 Whig Leadership Convention (Windsor)
+country_event = {
+	id = rebel.85
+	title = rebel.85.t
+	desc = rebel.85.d
+	picture = amc_whig_primary
+	
+	trigger = {
+		tag = AMC
+		date > 2016.3.1
+		date < 2016.3.30
+		has_completed_focus = AMC_implement_the_westminster_system
+	}
+	fire_only_once = yes
+
+	immediate = {
+		hidden_effect = {
+			create_country_leader = {
+				name = "Susan Collins"
+				picture = "Portrait_AMC_Susan_Collins.dds"
+				ideology = centrist_ideology
+			}
+			create_country_leader = {
+				name = "Rudy Giuliani"
+				picture = "Portrait_AMC_Rudolph_Giuliani.dds"
+				ideology = reactionary
+			}
+		}
+	}
+	
+	option = {   #Susan Collins
+		name = rebel.85.o1
+		set_country_flag = susan_collins_2016
+	}
+
+	option = {   #Rudy Giuliani, God save us all
+		name = rebel.85.o2
+		set_country_flag = rudy_giuliani_2016
+	}
+}
+
+#2016 General Election (Windsor)
+country_event = {
+	id = rebel.86
+	title = rebel.86.t
+	desc = rebel.86.d
+	picture = amc_general_election_windsor_2016
+	
+	trigger = {
+		tag = AMC
+		date > 2016.11.1
+		date < 2016.11.30
+		has_completed_focus = AMC_implement_the_westminster_system
+	}
+	fire_only_once = yes
+	
+	option = {   #Democratic Alliance
+		name = rebel.86.o1
+		set_politics = {
+			ruling_party = liberal
+		}
+		add_liberal_popularity = yes
+	}
+
+	option = {   #Whigs
+		name = rebel.86.o2
+		if = {
+			limit = {
+				has_country_flag = susan_collins_2016
+			}
+			set_politics = {
+				ruling_party = centrist
+			}
+			add_centrist_popularity = yes
+		}
+		else = {
+			set_politics = {
+				ruling_party = national_conservative
+			}
+			add_natcon_popularity = yes
+		}
+	}
+}
+
+#2020 Whig Leadership Convention (Windsor)
+country_event = {
+	id = rebel.87
+	title = rebel.87.t
+	desc = rebel.87.d
+	picture = amc_whig_primary
+	
+	trigger = {
+		tag = AMC
+		date > 2020.3.1
+		date < 2020.3.30
+		has_completed_focus = AMC_implement_the_westminster_system
+	}
+	fire_only_once = yes
+
+	immediate = {
+		hidden_effect = {
+			create_country_leader = {
+				name = "Dan Carter"
+				picture = "Portrait_AMC_Dan_Carter.dds"
+				ideology = centrist_ideology
+			}
+			create_country_leader = {
+				name = "Stephen Lynch"
+				picture = "Portrait_AMC_Stephen_Lynch.dds"
+				ideology = christian_democracy
+			}
+		}
+	}
+	
+	option = {   #Stephen Lynch
+		name = rebel.87.o1
+		set_country_flag = stephen_lynch_2020
+	}
+
+	option = {   #Dan Carter
+		name = rebel.87.o2
+		set_country_flag = dan_carter_2020
+	}
+}
+
+#2020 General Election (Windsor)
+country_event = {
+	id = rebel.88
+	title = rebel.88.t
+	desc = rebel.88.d
+	picture = amc_general_election_windsor_2020
+	
+	trigger = {
+		tag = AMC
+		date > 2020.11.1
+		date < 2020.11.30
+		has_completed_focus = AMC_implement_the_westminster_system
+	}
+	fire_only_once = yes
+	
+	option = {   #Democratic Alliance
+		name = rebel.88.o1
+		set_politics = {
+			ruling_party = liberal
+		}
+		add_liberal_popularity = yes
+	}
+
+	option = {   #Whigs
+		name = rebel.88.o2
+		if = {
+			limit = {
+				has_country_flag = dan_carter_2020
+			}
+			set_politics = {
+				ruling_party = centrist
+			}
+			add_centrist_popularity = yes
+		}
+		else = {
+			set_politics = {
+				ruling_party = national_conservative
+			}
+			add_natcon_popularity = yes
+		}
+	}
+}
+
+#2016 General Election (Roosevelt)
+country_event = {
+	id = rebel.89
+	title = rebel.89.t
+	desc = rebel.89.d
+	picture = amc_general_election_roosevelt
+	
+	trigger = {
+		tag = AMC
+		date > 2016.11.1
+		date < 2016.11.30
+		has_completed_focus = AMC_roosevelt_dynasty
+	}
+	fire_only_once = yes
+	
+	option = {   #Jerry Nadler
+		name = rebel.89.o1
+		create_country_leader = {
+			name = "Jerry Nadler"
+			picture = "Portrait_AMC_Jerry_Nadler.dds"
+			ideology = new_democrat_ideology
+		}
+		set_politics = {
+			ruling_party = new_democrat
+		}
+		add_newdem_popularity = yes
+	}
+
+	option = {   #Vince McMahon
+		name = rebel.89.o2
+		create_country_leader = {
+			name = "Vince McMahon"
+			picture = "Portrait_AMC_Vince_McMahon.dds"
+			ideology = right_libertarian
+		}
+		set_politics = {
+			ruling_party = centrist
+		}
+		add_centrist_popularity = yes
+	}
+
+	option = {   #Nicole Malliotakis
+		name = rebel.89.o3
+		create_country_leader = {
+			name = "Nicole Malliotakis"
+			picture = "Portrait_AMC_Nicole_Malliotakis.dds"
+			ideology = fiscal_conservative
+		}
+		set_politics = {
+			ruling_party = national_conservative
+		}
+		add_natcon_popularity = yes
+	}
+
+	option = {   #Grace Meng
+		name = rebel.89.o4
+		create_country_leader = {
+			name = "Grace Meng"
+			picture = "Portrait_AMC_Grace_Meng.dds"
+			ideology = social_liberal
+		}
+		set_politics = {
+			ruling_party = liberal
+		}
+		add_liberal_popularity = yes
+	}
+}
+
+#2015 General Election (NE Republic)
+country_event = {
+	id = rebel.90
+	title = rebel.90.t
+	desc = rebel.90.d
+	picture = amc_general_election_republic
+	
+	trigger = {
+		tag = AMC
+		date > 2015.11.1
+		date < 2015.11.30
+		has_completed_focus = AMC_enact_immediate_economic_reforms
+	}
+	fire_only_once = yes
+	
+	option = {   #Howard Dean
+		name = rebel.90.o1
+		create_country_leader = {
+			name = "Howard Dean"
+			picture = "Portrait_AMC_Howard_Dean.dds"
+			ideology = democratic_socialist
+		}
+		set_politics = {
+			ruling_party = moderate_socialist
+		}
+		add_modsoc_popularity = yes
+	}
+
+	option = {   #Sheldon Whitehouse
+		name = rebel.90.o2
+		create_country_leader = {
+			name = "Sheldon Whitehouse"
+			picture = "Portrait_AMC_Sheldon_Whitehouse.dds"
+			ideology = new_democrat_ideology
+		}
+		set_politics = {
+			ruling_party = new_democrat
+		}
+		add_newdem_popularity = yes
+	}
+
+	option = {   #Linda McMahon
+		name = rebel.90.o3
+		create_country_leader = {
+			name = "Linda McMahon"
+			picture = "Portrait_AMC_Linda_McMahon.dds"
+			ideology = fiscal_conservative
+		}
+		set_politics = {
+			ruling_party = national_conservative
+		}
+		add_natcon_popularity = yes
+	}
+}
+
+#2016 Presidential Election (Dunford Puppet)
+country_event = {
+	id = rebel.91
+	title = rebel.91.t
+	desc = rebel.91.d
+	picture = amc_puppet_election_2016
+	
+	trigger = {
+		tag = AMC
+		date > 2016.11.1
+		date < 2016.11.30
+		has_completed_focus = AMC_figurehead_president
+	}
+	fire_only_once = yes
+
+	immediate = {
+		hidden_effect = {
+			create_country_leader = {
+				name = "Chris Dodd"
+				picture = "Portrait_AMC_Chris_Dodd.dds"
+				ideology = nationalist_ideology
+			}
+		}
+	}
+	
+	option = {   #Keep Sotomayor
+		name = rebel.91.o1
+		add_modsoc_popularity = yes
+	}
+
+	option = {   #Chris Dodd
+		name = rebel.91.o2
+		set_politics = {
+			ruling_party = nationalist
+		}
+		add_nationalist_popularity = yes
+	}
+}
+
+#2020 Presidential Election (Dunford Puppet)
+country_event = {
+	id = rebel.92
+	title = rebel.92.t
+	desc = rebel.92.d
+	picture = amc_puppet_election_2020
+	
+	trigger = {
+		tag = AMC
+		date > 2020.11.1
+		date < 2020.11.30
+		has_completed_focus = AMC_figurehead_president
+	}
+	fire_only_once = yes
+	
+	option = {   #Keep incumbent
+		name = rebel.92.o1
+		if = {
+			limit = {
+				has_government = moderate_socialist
+			}
+			add_modsoc_popularity = yes
+		}
+		else = {
+			add_nationalist_popularity = yes
+		}
+	}
+
+	option = {   #Kelly Ayotte
+		name = rebel.92.o2
+		create_country_leader = {
+			name = "Kelly Ayotte"
+			picture = "Portrait_AMC_Kelly_Ayotte.dds"
+			ideology = fiscal_conservative
+		}
+		set_politics = {
+			ruling_party = national_conservative
+		}
+		add_natcon_popularity = yes
+	}
+	option = {   #Alan Keyes
+		name = rebel.92.o3
+		create_country_leader = {
+			name = "Alan Keyes"
+			picture = "Portrait_AMC_Alan_Keyes.dds"
+			ideology = nationalist_ideology
+		}
+		set_politics = {
+			ruling_party = nationalist
+		}
+		add_nationalist_popularity = yes
+	}
+}

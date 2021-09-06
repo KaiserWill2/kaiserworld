@@ -1,0 +1,231 @@
+﻿division_template = {
+	name = "Divizione Di Infanteria"
+	
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+	}
+}
+division_template = {
+	name = "Mechanized Brigade"
+	
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		motorized = { x = 0 y = 3 }
+		motorized = { x = 0 y = 4 }
+		motorized = { x = 1 y = 0 }
+	}
+	
+	support = {
+		field_hospital = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+		artillery = { x = 0 y = 2 }
+	}
+}
+
+division_template = {
+	name = "Alpine Brigade"
+	
+	regiments = {
+		mountaineers = { x = 0 y = 0 }
+		mountaineers = { x = 0 y = 1 }
+		mountaineers = { x = 0 y = 2 }
+		mountaineers = { x = 0 y = 3 }
+		cavalry = { x = 1 y = 0 }
+		artillery_brigade = { x = 2 y = 0 }
+	}
+	
+	support = {
+		engineer = { x = 0 y = 0 }
+	}
+}
+
+division_template = {
+	name = "Cavalry Brigade"
+	
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+		cavalry = { x = 0 y = 3 }
+		motorized = { x = 1 y = 0 }
+	}
+	
+	support = {
+		engineer = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+	}
+}
+
+division_template = {
+	name = "Armored Brigade"
+	
+	regiments = {
+		heavy_armor = { x = 0 y = 0 }
+		heavy_armor = { x = 0 y = 1 }
+		heavy_armor = { x = 0 y = 2 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+	}
+	
+	support = {
+		engineer = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+	}
+	
+	priority = 2
+}
+
+division_template = {
+	name = "Parachutist Brigade"
+	
+	regiments = {
+		paratrooper = { x = 0 y = 0 }
+		paratrooper = { x = 0 y = 1 }
+		paratrooper = { x = 0 y = 2 }
+		paratrooper = { x = 0 y = 3 }
+	}
+	
+	support = {
+		field_hospital = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+		anti_tank = { x = 0 y = 2 }
+	}
+}
+
+division_template = {
+	name = "Army Special Forces Commando"
+	
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		motorized = { x = 0 y = 3 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+	}
+	
+	support = {
+		engineer = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+		anti_tank = { x = 0 y = 2 }
+		field_hospital = { x = 0 y = 3 }
+	}
+	
+	priority = 2
+}
+
+units = {
+
+	division = {
+		name = "Alpine Brigade 'Taurinense'"
+		location = 6780
+		division_template = "Alpine Brigade"
+		start_experience_factor = 0.3
+	}
+
+	division = {
+		name = "Alpine Brigade 'Julia'"
+		location = 6780
+		division_template = "Alpine Brigade"
+		start_experience_factor = 0.3
+	}
+
+	division = {
+		name = "Armored Brigade 'Ariete'"
+		location = 11584
+		division_template = "Armored Brigade"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "Cavalry Brigade 'Pozzuolo del Friuli'"
+		location = 6606
+		division_template = "Cavalry Brigade"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "Mechanized Brigade 'Sassari'"
+		location = 6606
+		division_template = "Mechanized Brigade"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "Bersaglieri Brigade 'Garibaldi'"
+		location = 819
+		division_template = "Mechanized Brigade"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "Mechanized Brigade 'Pinerolo'"
+		location = 819
+		division_template = "Mechanized Brigade"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "Mechanized Brigade 'Aosta'"
+		location = 4159
+		division_template = "Mechanized Brigade"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "Army Aviation Command"
+		location = 4159
+		division_template = "Mechanized Brigade"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "Parachutist Brigade 'Folgore'"
+		location = 11833
+		division_template = "Parachutist Brigade"
+		start_experience_factor = 0.3
+	}
+
+	division = {
+		name = "Army Special Forces Commando"
+		location = 6788
+		division_template = "Army Special Forces Commando"
+		start_experience_factor = 0.3
+	}
+
+	division = {
+		name = "Divizione Di Infanteria 'Bambini Di Borgida'"
+		location = 6780
+		division_template = "Divizione Di Infanteria"
+		start_experience_factor = 0.3
+	}
+
+	division = {
+		name = "Divizione Di Infanteria 'Bambini Di Togliatti'"
+		location = 6606
+		division_template = "Divizione Di Infanteria"
+		start_experience_factor = 0.3
+	}
+	
+}
+
+air_wings = {
+	2 = {
+		fighter_equipment_0 = {
+			owner = "ITA"
+			amount = 20
+		}
+		tac_bomber_equipment_0 = {
+			owner = "ITA"
+			amount = 10
+		}
+	}
+}

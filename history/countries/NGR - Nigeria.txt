@@ -1,0 +1,243 @@
+﻿capital = 767
+
+oob = "NGR_2000"
+
+set_research_slots = 4
+set_convoys = 500
+set_stability = 0.3
+set_war_support = 0.5
+
+set_country_flag = was_in_british_empire
+set_country_flag = muslim_nation
+
+set_technology = {
+	support_weapons = 1
+	infantry_weapons = 1
+	motorised_infantry = 1 
+	tech_support = 1 
+	tech_field_hospital = 1 
+	tech_engineers = 1 
+	gwtank = 1 
+	basic_light_tank = 1 
+	gw_artillery = 1 
+	tech_mountaineers = 1
+	early_light_cruiser = 1
+	early_fighter = 1 
+	early_bomber = 1 
+	early_submarine = 1
+    transport = 1 
+	paratroopers = 1 
+	marines = 1
+	interwar_antiair = 1
+	interwar_antitank = 1
+}
+
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	set_technology = {
+		early_submarine = 1
+		basic_submarine = 1
+		early_destroyer = 1
+		early_light_cruiser = 1
+		basic_light_cruiser = 1
+		early_heavy_cruiser = 1
+		
+		
+		early_carrier = 1
+		basic_carrier = 1
+		transport = 1
+	}
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_technology = {
+		basic_naval_mines = 1
+		submarine_mine_laying = 1
+		early_ship_hull_light = 1
+		basic_ship_hull_light = 1
+		early_ship_hull_submarine = 1
+		basic_ship_hull_submarine = 1
+		early_ship_hull_cruiser = 1
+		basic_ship_hull_cruiser = 1
+		early_ship_hull_heavy = 1
+		early_ship_hull_carrier = 1
+		basic_ship_hull_carrier = 1
+		basic_battery = 1
+		basic_light_battery = 1
+		basic_medium_battery = 1
+		basic_heavy_battery = 1
+		basic_torpedo = 1
+		sonar = 1
+		basic_depth_charges = 1
+		basic_secondary_battery = 1
+		improved_secondary_battery = 1
+		basic_cruiser_armor_scheme = 1
+		basic_heavy_armor_scheme = 1
+		mtg_transport = 1
+		improved_airplane_launcher = 1
+	}
+}
+
+set_politics = {
+	ruling_party = liberal
+	last_election = "1997.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+        fascist = 0
+		nationalist = 6
+		monarchist = 0
+		national_bolshevik = 3
+		national_conservative = 25
+		centrist = 10
+		liberal = 30
+		new_democrat = 0
+		moderate_socialist = 0
+		revolutionary_socialist = 1
+		communist = 25
+}
+
+create_field_marshal = {
+	name = "T.Y. Buratai"
+	picture = "Portrait_T_Y_Buratai.dds"
+	traits = { old_guard logistics_wizard }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 3
+}
+
+create_field_marshal = {
+	name = "K.T.J. Minimah"
+	picture = "Portrait_K_T_J_Minimah.dds"
+	traits = { inspirational_leader }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "A. Oyebade"
+	picture = "Portrait_A_Oyebade.dds"
+	traits = { jungle_rat }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "C.M. Abraham"
+	picture = "Portrait_C_M_Abraham.dds"
+	traits = { desert_fox }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "P.J. Dauke"
+	picture = "Portrait_P_J_Dauke.dds"
+	traits = { panzer_leader }
+	skill = 2
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "E.O. Udoh"
+	picture = "Portrait_E_O_Udoh.dds"
+	traits = { ranger }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "V.O. Ezugwu"
+	picture = "Portrait_V_O_Ezugwu.dds"
+	traits = { hill_fighter }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "E.B. Oyefolu"
+	picture = "Portrait_E_B_Oyefolu.dds"
+	traits = { naval_invader }
+	skill = 2
+	attack_skill = 3
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "A.B. Abubakar"
+	picture = "Portrait_A_B_Abubakar.dds"
+	traits = { commando }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "M.A. Koleoso"
+	picture = "Portrait_M_A_Koleoso.dds"
+	traits = { trickster }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "S. Abubakar"
+	picture = "Portrait_Sadiq_Abubakar.dds"
+	traits = {  }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_navy_leader = {
+	name = "I.E. Ibas"
+	picture = "Portrait_Ibok_Ete_Ekwe_Ibas.dds"
+	traits = { old_guard_navy superior_tactician }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 3
+	coordination_skill = 3
+	maneuvering_skill = 2
+}
+
+create_navy_leader = {
+	name = "U.O. Jibrin"
+	picture = "Portrait_U_O_Jibrin.dds"
+	traits = { blockade_runner }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	coordination_skill = 2
+	maneuvering_skill = 3
+}

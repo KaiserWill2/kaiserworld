@@ -1,0 +1,25 @@
+
+state={
+	id=1015
+	name="STATE_1015"
+
+
+	history={
+		owner = USA
+
+		buildings = {
+			infrastructure = 4
+			610 = {
+				naval_base = 1
+			}
+		}
+		add_core_of = USA
+
+	}
+
+	provinces={
+		6665 6482 3644 781 610 9730 6772
+	}
+	manpower=223304
+	state_category=rural
+}

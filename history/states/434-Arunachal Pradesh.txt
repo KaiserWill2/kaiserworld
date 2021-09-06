@@ -1,0 +1,29 @@
+
+state={
+	id=434
+	name="STATE_434"
+	manpower = 17250250
+	
+	state_category = pastoral
+	resources={
+		steel=45
+		tungsten=54
+	}
+
+	history={
+		owner = RAJ
+		victory_points = {
+			12730 1 
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+		}
+		add_claim_by = RAJ
+		add_claim_by = PRC
+	}
+
+	provinces={
+		 1996 10810  12730 
+	}
+}

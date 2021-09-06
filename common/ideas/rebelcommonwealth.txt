@@ -1,0 +1,1433 @@
+ideas = {
+
+    country = {
+		
+		idea_amc_secret_police = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = secret_police
+			
+			modifier = {
+				decryption_power = 10
+				foreign_subversive_activites = -0.1
+				army_defence_factor = 0.01
+				political_power_gain = 0.025
+			}
+		}
+		
+		idea_amc_benevolent_dictatorship = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = air_support_focus
+			
+			modifier = {
+				monarchist_drift = 0.02
+				army_morale_factor = 0.01
+				conscription = 0.001
+				drift_defence_factor = 0.25
+			}
+		}
+		
+		idea_amc_supporting_local_factories = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = support_local_factories
+			
+			modifier = {
+				production_speed_industrial_complex_factor = 0.07
+			}
+		}
+		
+		idea_amc_economic_freedoms = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_democratic_drift_bonus
+			
+			modifier = {
+				consumer_goods_factor = -0.025
+				political_power_gain = -0.1 
+				local_resources_factor = 0.05
+			}
+		}
+		
+		idea_amc_defend_borders = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = FRA_fortification_focus
+			
+			modifier = {
+				production_speed_bunker_factor = 0.1
+			}
+		}
+		
+		idea_amc_queen_zara = {
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.005
+			}
+		}
+		
+		idea_amc_manufacturing_economy = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_goods_red_bonus
+			
+			modifier = {
+				industrial_capacity_factory = 0.13
+			}
+		}
+		
+		idea_amc_naval_production_effort = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_navy_bonus
+			
+			modifier = {
+				production_speed_dockyard_factor = 0.05
+			}
+		}
+		
+		idea_amc_american_capitalism = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_pp_unity_bonus
+			
+			modifier = {
+				consumer_goods_factor = -0.07
+				production_speed_arms_factory_factor = 0.02
+				trade_opinion_factor = 0.1
+			}
+		}
+		
+		idea_amc_strong_democracy = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_democratic_drift_bonus
+			
+			modifier = {
+				national_conservative_drift = 0.01
+				centrist_drift = 0.01
+				liberal_drift = 0.01 
+				nationalist_drift = 0.01
+			}
+		}
+		
+		idea_amc_imperial_pride = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = imperial_pride
+			
+			modifier = {
+				justify_war_goal_time = -0.15
+				army_morale_factor = 0.02
+				army_org_factor = 0.01
+				conscription = 0.01
+			}
+		}
+		
+		idea_amc_soldiers_of_democracy = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_infantry_bonus
+			
+			modifier = {
+				training_time_army_factor = -0.05
+				army_attack_factor = 0.05
+			}
+		}
+		
+		idea_amc_military_industrial_complex = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = military_industrial_complex
+			
+			modifier = {
+				production_speed_arms_factory_factor = 0.1
+				industrial_capacity_factory = 0.04
+				political_power_gain = 0.1
+				drift_defence_factor = 0.15
+				stability_factor = -0.035
+				monarchist_drift = -0.005
+			}
+		}
+		
+		idea_amc_international_isolation = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = international_isolation
+			
+			modifier = {
+				trade_opinion_factor = -0.6
+				ai_get_ally_desire_factor = -30
+			}
+		}
+		
+		idea_amc_a_proud_army = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = proud_army
+			
+			modifier = {
+				army_morale_factor = 0.1
+			}
+		}
+		
+		idea_amc_warhawk_monarch = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = warhawk_monarch
+			
+			modifier = {
+				justify_war_goal_time = -0.35
+			}
+		}
+		
+		idea_amc_progressive_agenda = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = progressive_agenda
+			
+			modifier = {
+				justify_war_goal_time = 0.1
+				MONTHLY_POPULATION = 0.01
+				stability_factor = 0.01
+			}
+		}
+		
+		idea_amc_supporting_workers = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = support_workers
+			
+			modifier = {
+				industrial_capacity_factory = 0.05
+				production_speed_industrial_complex_factor = 0.1
+				production_speed_infrastructure_factor = 0.1
+			}
+		}
+		
+		idea_amc_the_grand_deal = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = new_deal
+			
+			modifier = {
+				consumer_goods_factor = -0.12
+				political_power_gain = -0.5
+				conscription = 0.005
+				army_morale_factor = 0.02
+				production_speed_arms_factory_factor = 0.1
+			}
+		}
+		
+		idea_amc_new_england_first = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_victors_of_ww1
+			
+			modifier = {
+				local_resources_factor = 0.2
+			}
+		}
+		
+		idea_amc_loyal_congress = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_disjointed_gov
+			
+			modifier = {
+				monarchist_drift = 0.04
+				justify_war_goal_time = -0.05
+				political_power_gain = 0.05
+				decryption_power = 10
+				crypto_strength = 1
+			}
+		}
+		
+		idea_amc_self_suffiency = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = self_sufficiency
+			
+			modifier = {
+				local_resources_factor = 0.1
+				trade_opinion_factor = -0.5
+				political_power_gain = 0.5
+			}
+		}
+		
+		idea_amc_growing_conscription = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_manpower_bonus
+			
+			modifier = {
+				conscription = 0.03
+				MONTHLY_POPULATION = -0.005
+				consumer_goods_factor = -0.01
+			}
+		}
+		
+		idea_amc_reversed_collectivisation = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = FRA_scw_intervention_nationalists_focus
+			
+			modifier = {
+				consumer_goods_factor = -0.1
+				production_speed_industrial_complex_factor = 0.05
+				industrial_capacity_factory = -0.025
+			}
+		}
+		
+		idea_amc_getting_new_england_working = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_production_bonus
+			
+			modifier = {
+				production_speed_buildings_factor = 0.035
+			}
+		}
+		
+		idea_amc_free_media = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = free_media
+			
+			modifier = {
+				drift_defence_factor = -0.4 
+				moderate_socialist_drift = 0.01
+				new_democrat_drift = 0.01
+				liberal_drift = 0.01
+				centrist_drift = 0.01 
+			    national_conservative_drift = 0.01 
+				political_power_gain = 0.1
+			}
+		}
+		
+		idea_amc_a_new_american_dream = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = FRA_national_mobilization_focus
+			
+			modifier = {
+				MONTHLY_POPULATION = 0.025
+				consumer_goods_factor = -0.025
+				industrial_capacity_factory = 0.02
+				army_morale_factor = 0.05
+			}
+		}
+		
+		idea_amc_strong_judiciary = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = neutrality_idea
+			
+			modifier = {
+				foreign_subversive_activites = -0.5
+				crypto_strength = -1
+				stability_factor = 0.015
+			}
+		}
+		
+		idea_amc_revived_resources_sector = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = revived_resources
+			
+			modifier = {
+				local_resources_factor = 0.3
+			}
+		}
+		
+		idea_amc_mass_conscription = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_infantry_bonus
+			
+			modifier = {
+				conscription = 0.025
+			}
+		}
+		
+		idea_amc_farmers_to_soliders = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_intel_bonus
+			
+			modifier = {
+				training_time_army_factor = -0.2
+			}
+		}
+		
+		idea_amc_revolutionary_propaganda = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = FRA_scw_intervention_republicans_focus
+			
+			modifier = {
+				army_morale_factor = 0.05
+			}
+		}
+		
+		idea_amc_quick_planning = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = quick_plan
+			
+			modifier = {
+				planning_speed = 0.4
+			}
+		}
+		
+		idea_amc_trade_councils_dissolved = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = trade_council_dissolve
+			
+			modifier = {
+				industrial_capacity_factory = 0.04
+				political_power_gain = 0.25
+				consumer_goods_factor = -0.05
+				revolutionary_socialist_drift = -0.02
+			}
+		}
+		
+		idea_amc_streamlined_government = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = disciplinary_education
+			
+			modifier = {
+				justify_war_goal_time = -0.05
+				army_org_factor = 0.02
+				army_attack_factor = 0.01
+				army_defence_factor = 0.01
+			}
+		}
+		
+		idea_amc_military_to_civilian_transition = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = military_to_civilian
+			
+			modifier = {
+				conversion_cost_mil_to_civ_factor = -0.5 
+			}
+		}
+		
+		idea_amc_farming = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = farming
+			
+			modifier = {
+				trade_opinion_factor = 0.25
+			}
+		}
+		
+		idea_amc_the_enemy_indoctrinated = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = low_political_freedom
+			
+			modifier = {
+				army_morale_factor = 0.02
+				training_time_army_factor = -0.035
+				revolutionary_socialist_drift = -0.04
+			}
+		}
+		
+		idea_amc_traitors_executed = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = traitors_execute
+			
+			modifier = {
+				army_org_factor = 0.02
+				stability_factor = 0.015
+				justify_war_goal_time = -0.05	
+			}
+		}
+		
+		idea_amc_controlled_judiciary = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = neutrality_idea
+			
+			modifier = {
+				foreign_subversive_activites = -0.5
+				political_power_gain = 0.2
+			}
+		}
+		
+		idea_amc_maintaining_a_war_economy = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = war_economy_AMC
+			
+			modifier = {
+				production_speed_arms_factory_factor = 0.05
+				training_time_army_factor = -0.025
+				production_speed_infrastructure_factor = 0.025
+				army_morale_factor = 0.005
+			}
+		}
+		
+		idea_amc_pushed_to_the_edge = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = pushed_to_edge
+			
+			modifier = {
+				industrial_capacity_factory = 0.1 
+				stability_factor = -0.01
+				local_resources_factor = 0.15
+				conscription = -0.001
+			}
+		}
+		
+		idea_amc_figurehead_president = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = figurehead_president
+			
+			modifier = {
+				stability_factor = 0.01 
+				war_support_factor = 0.02
+				army_morale_factor = -0.02
+				army_org_factor = 0.035
+			}
+		}
+		
+		idea_amc_american_junta = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = american_junta
+			
+			modifier = {
+				army_morale_factor = 0.05
+				political_power_gain = 0.1 
+				justify_war_goal_time = -0.2
+                stability_factor = -0.025
+			}
+		}
+		
+		idea_amc_links_to_the_church = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = hab_links_to_church
+			
+			modifier = {
+				monarchist_drift = 0.02
+				nationalist_drift = 0.01
+				national_conservative_drift = 0.01
+				army_morale_factor = 0.01 
+				MONTHLY_POPULATION = 0.015
+			}
+		}
+		
+		idea_amc_enlisting_for_the_king = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_morale_bonus
+			
+			modifier = {
+				army_core_defence_factor = 0.05
+				conscription = 0.01
+			}
+		}
+		
+		idea_amc_building_up_defences = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = building_defences
+			
+			modifier = {
+				production_speed_bunker_factor = 0.2
+			}
+		}
+		
+		idea_amc_decreased_wages = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = great_depression
+			
+			modifier = {
+				political_power_gain = 0.1
+				min_export = -0.1
+				consumer_goods_factor = -0.07
+			}
+		}
+		
+		idea_amc_neglect_popular_needs = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_goods_red_bonus
+			
+			modifier = {
+				consumer_goods_factor = -0.1
+			}
+		}
+		
+		idea_amc_god_over_science = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = FRA_matignon_agreements
+			
+			modifier = {
+				research_speed_factor = -0.15
+				max_dig_in = 0.7
+			}
+		}
+		
+		idea_amc_payments_from_new_england = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = idea_generic_foreign_capital
+			
+			modifier = {
+				industrial_capacity_factory = 0.05
+				consumer_goods_factor = -0.035
+			}
+		}
+		
+		idea_amc_payments_to_britain = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = idea_generic_foreign_capital
+			
+			modifier = {
+				industrial_capacity_factory = -0.05
+				consumer_goods_factor = 0.035
+			}
+		}
+		
+		idea_amc_welfare_monarchy = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = FRA_national_mobilization_focus
+			
+			modifier = {
+				consumer_goods_factor = 0.1
+				industrial_capacity_factory = 0.25
+				monarchist_drift = 0.03
+			}
+		}
+		
+		idea_amc_new_england_oligarchy = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = mafia_crime
+			
+			modifier = {
+				production_speed_buildings_factor = 0.045 
+				foreign_subversive_activites = -0.1
+				monarchist_drift = 0.02
+			}
+		}
+		
+		idea_amc_new_england_security_agency = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = security_agency
+			
+			modifier = {
+				crypto_strength = 1
+				decryption_power = 10 
+			}
+		}
+		
+		idea_amc_coastal_defences = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = coastal_defence
+			
+			modifier = {
+				production_speed_coastal_bunker_factor = 0.3
+			}
+		}
+		
+		idea_amc_obeying_the_leader = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = anti_soviet_pact
+			
+			modifier = {
+				nationalist_drift = 0.03
+				army_morale_factor = 0.02	
+			}
+		}
+		
+		idea_amc_soldier_generations = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = FRA_fortification_focus
+			
+			modifier = {
+				training_time_army_factor = -0.25
+				army_org_factor = 0.01
+				army_attack_factor = 0.05
+			}
+		}
+		
+		idea_amc_american_crusade = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_morale_bonus
+			
+			modifier = {
+				justify_war_goal_time = -0.4
+			}
+		}
+		
+		idea_amc_living_in_peace = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_democratic_drift_bonus
+			
+			modifier = {
+				army_core_defence_factor = 0.3
+			}
+		}
+		
+		idea_amc_growing_economy = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_volunteer_expedition_bonus
+			
+			modifier = {
+				industrial_capacity_factory = 0.05
+			}
+		}
+		
+		idea_amc_popular_support = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_victors_of_ww1
+			
+			modifier = {
+				nationalist_drift = 0.01
+				foreign_subversive_activites = -0.25
+			}
+		}
+		
+		idea_amc_construction_initiative = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_production_bonus
+			
+			modifier = {
+				production_speed_industrial_complex_factor = 0.1
+			}
+		}
+		
+		idea_amc_independent_intelligence_service = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = neutrality_idea
+			
+			modifier = {
+				crypto_strength = 1
+				decryption_power = 10
+			}
+		}
+		
+		idea_amc_friendship_with_the_church = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = friendship_with_church
+			
+			modifier = {
+				MONTHLY_POPULATION = 0.015
+			}
+		}
+		
+		idea_amc_green_mountain_boys = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_manpower_bonus
+			
+			modifier = {
+				conscription = 0.005
+			}
+		}
+		
+		idea_amc_factories_restarted = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = factories_restart
+			
+			modifier = {
+				industrial_capacity_factory = 0.02
+			}
+		}
+		
+		idea_amc_aftermath_of_the_civil_war = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = great_depression
+			
+			modifier = {
+				industrial_capacity_factory = -0.1
+				consumer_goods_factor = 0.15
+				stability_factor = -0.04 
+				war_support_factor = -0.05
+				political_power_gain = -0.1 
+				army_org_factor = -0.2
+				army_morale_factor = 0.05
+			}
+		}
+		
+		idea_amc_post_unification_issues = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = great_depression
+			
+			modifier = {
+				stability_factor = -0.05
+				war_support_factor = -0.05
+				communist_drift = 0.01
+				revolutionary_socialist_drift = 0.01
+				nationalist_drift = 0.01
+				fascist_drift = 0.01
+				national_bolshevik_drift = 0.01
+				army_org_factor = -0.1
+				training_time_army_factor = 0.25
+				industrial_capacity_factory = -0.1
+				consumer_goods_factor = 0.2
+			}
+		}
+		
+		idea_amc_american_army = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = american_army
+			
+			modifier = {
+				army_morale_factor = 0.02
+				political_power_gain = 0.05
+				army_defence_factor = 0.05
+			}
+		}
+		
+		idea_amc_fair_wage = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_democratic_drift_bonus
+			
+			modifier = {
+				industrial_capacity_factory = 0.02
+				consumer_goods_factor = 0.01
+			}
+		}
+		
+		idea_amc_working_for_your_country = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_production_bonus
+			
+			modifier = {
+				production_speed_buildings_factor = 0.1
+				industrial_capacity_factory = 0.07
+			}
+		}
+		
+		idea_amc_total_control_from_montpelier = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_intel_bonus
+			
+			modifier = {
+				foreign_subversive_activites = -0.2
+				land_reinforce_rate = 0.1
+			}
+		}
+	}
+}

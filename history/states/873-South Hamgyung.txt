@@ -1,0 +1,24 @@
+state={
+	id=873
+	name="STATE_873"
+	provinces={
+		852 3852 3904 3981 6922 11878 
+	}
+	manpower=1100000
+	buildings_max_level_factor=1.000
+	
+	history = {
+		owner = PRK
+		add_core_of = PRK
+		
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+			3981 = { naval_base = 1 }
+		}
+		
+		victory_points = { 3981 5 }
+	}
+	
+	state_category = rural
+}

@@ -1,0 +1,22 @@
+state={
+	id=766
+	name="STATE_766"
+
+	history={
+		owner = CAF
+		add_core_of = NGR
+		add_core_of = CAF
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+
+	}
+
+	provinces={
+		4997 5028 
+	}
+	manpower=3500250
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

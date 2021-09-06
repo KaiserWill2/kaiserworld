@@ -1,0 +1,4190 @@
+focus_tree = {
+	id = uapr_tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 20
+			tag = PCA
+		}
+	}
+	default = no
+	continuous_focus_position = { x = 50 y = 2200 }
+	focus = {
+		id = PCA_three_steps_to_freedom
+		icon = industry_1
+		cost = 2
+		available = {
+		    has_country_flag = tyner_elected_general_secretary
+			has_government = communist
+			NOT = {
+				has_country_flag = treaty_of_seattle
+			}
+		}
+		mutually_exclusive = {
+			focus = PCA_long_term_planning
+		}
+		x = 3
+		y = 0
+		completion_reward = {
+		    add_political_power = 55
+		}
+
+	}
+	focus = {
+		id = PCA_long_term_planning
+		icon = aluminium
+		cost = 2
+		available = {
+		    OR = {
+			    has_country_flag = davis_elected_general_secretary
+				has_country_flag = foster_elected_general_secretary
+			}
+			has_government = communist
+			NOT = {
+				has_country_flag = treaty_of_seattle
+			}
+		}
+		mutually_exclusive = {
+			focus = PCA_three_steps_to_freedom
+		}
+		x = 9
+		y = 0
+		completion_reward = {
+		    add_stability = 0.015
+			add_political_power = 10
+		}
+
+	}
+	focus = {
+		id = PCA_thirtieth_party_congress
+		icon = focus_thirtieth_party_congress
+		cost = 1
+		available = {
+			has_government = communist
+			NOT = {
+				has_country_flag = treaty_of_seattle
+			}
+		}
+		x = 21
+		y = 0
+		completion_reward = {
+		    country_event = { id = pacific_america.2 }
+		}
+
+	}
+	focus = {
+		id = PCA_cascadian_troubles
+		icon = focus_cascadian_troubles
+		cost = 2
+		available = {
+		    has_country_flag = wenatchee_revolt
+			has_government = communist
+			NOT = {
+				has_country_flag = treaty_of_seattle
+			}
+		}
+		x = 33
+		y = 0
+		completion_reward = {
+		    add_war_support = 0.045
+		}
+
+	}
+	focus = {
+		id = PCA_the_las_vegas_question
+		icon = focus_the_las_vegas_question
+		cost = 1
+		available = {
+		    owns_state = 897
+			has_government = communist
+			NOT = {
+				has_country_flag = treaty_of_seattle
+			}
+		}
+		x = 39
+		y = 0
+		completion_reward = {
+		    add_political_power = 50
+			country_event = { id = pacific_america.53 }
+		}
+
+	}
+	focus = {
+		id = PCA_foreign_policy
+		icon = focus_syria_seek_soviet_funding
+		cost = 2
+		available = {
+		    AND = {
+			    has_government = communist 
+				has_country_flag = the_united_states_are_back
+			}
+			NOT = {
+				has_country_flag = treaty_of_seattle
+			}
+		}
+		x = 48
+		y = 0
+		completion_reward = {
+		    add_stability = 0.025
+			add_political_power = 40
+		}
+
+	}
+	focus = {
+		id = PCA_humiliating_defeat
+		icon = the_final_struggle
+		cost = 2
+		available = {
+			has_country_flag = treaty_of_seattle
+		}
+		ai_will_do = {
+		factor = 50
+		}
+		x = 7
+		y = 6
+		completion_reward = {
+		    country_event = { id = pacific_america.25 }
+			remove_ideas = idea_cascadian_separatism
+			remove_ideas = idea_america_neutrality
+			hidden_effect = {
+				set_rule = {
+					can_join_factions = yes
+					can_create_factions = yes
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = PCA_californian_armament_factories
+		icon = military_factory
+		cost = 6
+		prerequisite = {
+			focus = PCA_three_steps_to_freedom
+		}
+		available = {
+			has_government = communist
+			NOT = {
+				has_country_flag = treaty_of_seattle
+			}
+		}
+		x = 1
+		y = 1
+		completion_reward = {
+		    378 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = PCA_maximise_quotas
+		icon = production_2
+		cost = 6
+		available = {
+			has_government = communist
+			NOT = {
+				has_country_flag = treaty_of_seattle
+			}
+		}
+		prerequisite = {
+			focus = PCA_three_steps_to_freedom
+		}
+		x = 3
+		y = 1
+		completion_reward = {
+		    add_ideas = idea_pca_quotas_maximised
+		}
+
+	}
+	focus = {
+		id = PCA_columbian_infrastructure_project
+		icon = infrastructure
+		cost = 6
+		available = {
+			has_government = communist
+			NOT = {
+				has_country_flag = treaty_of_seattle
+			}
+		}
+		prerequisite = {
+			focus = PCA_maximise_quotas
+		}
+		x = 1
+		y = 2
+		completion_reward = {
+		    970 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			971 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = PCA_californian_infrastrucutre_project
+		icon = infrastructure
+		cost = 6
+		available = {
+			has_government = communist
+			NOT = {
+				has_country_flag = treaty_of_seattle
+			}
+		}
+		prerequisite = {
+			focus = PCA_maximise_quotas
+		}
+		prerequisite = {
+			focus = PCA_californian_armament_factories
+		}
+		x = 3
+		y = 2
+		completion_reward = {
+		    378 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_political_power = 85
+		}
+
+	}
+	focus = {
+		id = PCA_border_defence
+		icon = focus_syrian_border_defence
+		cost = 6
+		available = {
+			has_government = communist
+			NOT = {
+				has_country_flag = treaty_of_seattle
+			}
+		}
+		prerequisite = {
+			focus = PCA_columbian_infrastructure_project
+		}
+		prerequisite = {
+			focus = PCA_californian_infrastrucutre_project
+		}
+		x = 1
+		y = 3
+		completion_reward = {
+		    add_ideas = idea_pca_border_defence
+		}
+
+	}
+	focus = {
+		id = PCA_power_struggle_avoided
+		icon = self_management
+		cost = 2
+		available = {
+		    has_country_flag = avoided_power_struggle
+		}
+		prerequisite = {
+			focus = PCA_humiliating_defeat
+		}
+		mutually_exclusive = {
+			focus = PCA_golden_gate_league
+		}
+		x = 4
+		y = 7
+		completion_reward = {
+		    add_stability = 0.04
+			add_war_support = 0.02
+			remove_ideas = idea_standing_firm_union
+		}
+
+	}
+	focus = {
+		id = PCA_constitutional_convention
+		icon = democracy
+		cost = 5
+		prerequisite = {
+			focus = PCA_power_struggle_avoided
+		}
+		x = 2
+		y = 8
+		completion_reward = {
+		    add_popularity = {
+			    ideology = communist
+			    popularity = -0.11
+		    }
+			add_political_power = 200
+			country_event = { id = pacific_america.54 }
+		}
+
+	}
+	focus = {
+		id = PCA_poppy_campaign
+		icon = focus_poppy_campaign
+		cost = 7.2
+		prerequisite = {
+			focus = PCA_constitutional_convention
+		}
+		x = 2
+		y = 9
+		completion_reward = {
+		    add_stability = 0.05 
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			country_event = { id = pacific_america.55 }
+		}
+
+	}
+	focus = {
+		id = PCA_united_nation
+		icon = propaganda
+		cost = 7.2
+		prerequisite = {
+			focus = PCA_poppy_campaign
+		}
+		x = 2
+		y = 10
+		completion_reward = {
+		    add_ideas = idea_pca_united_nation
+		}
+
+	}
+	focus = {
+		id = PCA_abolish_tyrannical_policies
+		icon = crown_shattered
+		cost = 7.2
+		prerequisite = {
+			focus = PCA_power_struggle_avoided
+		}
+		x = 4
+		y = 8
+		completion_reward = {
+		    add_ideas = idea_pca_restoration_of_democracy
+		}
+
+	}
+	focus = {
+		id = PCA_legislative_election
+		icon = focus_enforce_1990_constitution
+		cost = 2
+		prerequisite = {
+			focus = PCA_abolish_tyrannical_policies
+		}
+		x = 4
+		y = 9
+		completion_reward = {
+		    add_political_power = 75 
+			country_event = { id = pacific_america.56 }
+		}
+
+	}
+	focus = {
+		id = PCA_new_propaganda_machine
+		icon = focus_undermine_local_media
+		cost = 7.2
+		prerequisite = {
+			focus = PCA_legislative_election
+		}
+		x = 4
+		y = 10
+		completion_reward = {
+		    add_ideas = idea_pca_new_propaganda_machine
+		}
+
+	}
+	focus = {
+		id = PCA_transform_silicon_valley
+		icon = focus_trade_council_influence
+		cost = 6
+		available = {
+			has_government = communist
+			NOT = {
+				has_country_flag = treaty_of_seattle
+			}
+		}
+		prerequisite = {
+			focus = PCA_three_steps_to_freedom
+		}
+		x = 5
+		y = 1
+		completion_reward = {
+		    add_ideas = idea_pca_transformation_of_silicon_valley
+		}
+
+	}
+	focus = {
+		id = PCA_connections_to_the_world
+		icon = focus_transportation_watchdog
+		cost = 6
+		available = {
+			has_government = communist
+			NOT = {
+				has_country_flag = treaty_of_seattle
+			}
+		}
+		prerequisite = {
+			focus = PCA_transform_silicon_valley
+		}
+		prerequisite = {
+			focus = PCA_maximise_quotas
+		}
+		x = 5
+		y = 2
+		completion_reward = {
+		    random_owned_state = {
+				add_building_construction = {
+					type = air_base
+					level = 3
+					instant_build = yes
+				}
+			}
+			378 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = PCA_revive_air_bases
+		icon = red_air
+		cost = 6
+		available = {
+			has_government = communist
+			NOT = {
+				has_country_flag = treaty_of_seattle
+			}
+		}
+		prerequisite = {
+			focus = PCA_californian_infrastrucutre_project
+		}
+		prerequisite = {
+			focus = PCA_connections_to_the_world
+		}
+		x = 3
+		y = 3
+		completion_reward = {
+		    add_tech_bonus = {
+				name = light_air_bonus
+				bonus = 0.5
+				uses = 1
+				category = light_air
+			}
+			add_tech_bonus = {
+				name = computing_tech_bonus
+				bonus = 0.5
+				uses = 1
+				category = computing_tech
+			}
+		}
+
+	}
+	focus = {
+		id = PCA_fuel_of_war
+		icon = production
+		cost = 6
+		available = {
+			has_government = communist
+			NOT = {
+				has_country_flag = treaty_of_seattle
+			}
+		}
+		prerequisite = {
+			focus = PCA_californian_infrastrucutre_project
+		}
+		prerequisite = {
+			focus = PCA_columbian_infrastructure_project
+		}
+		prerequisite = {
+			focus = PCA_connections_to_the_world
+		}
+		x = 5
+		y = 3
+		completion_reward = {
+		    add_resource = { type = oil amount = 6 state = 378 }
+            add_resource = { type = steel amount = 10 state = 378 } 		
+            add_resource = { type = aluminium amount = 12 state = 970 } 		
+            add_resource = { type = aluminium amount = 10 state = 971 } 	 			
+		}
+
+	}
+	focus = {
+		id = PCA_support_population_growth
+		icon = demand_territory
+		cost = 7.2
+		available = {
+			has_government = communist
+			NOT = {
+				has_country_flag = treaty_of_seattle
+			}
+		}
+		prerequisite = {
+			focus = PCA_long_term_planning
+		}
+		x = 7
+		y = 1
+		completion_reward = {
+		    add_ideas = idea_pca_population_growth_policies
+		}
+
+	}
+	focus = {
+		id = PCA_combat_inflation
+		icon = major_war
+		cost = 7.2
+		available = {
+			has_government = communist
+			NOT = {
+				has_country_flag = treaty_of_seattle
+			}
+		}
+		prerequisite = {
+			focus = PCA_support_population_growth
+		}
+		x = 7
+		y = 2
+		completion_reward = {
+		    add_ideas = idea_pca_combatting_inflation
+		}
+
+	}
+	focus = {
+		id = PCA_technology
+		icon = socialist_science
+		cost = 7.2
+		available = {
+			has_government = communist
+			NOT = {
+				has_country_flag = treaty_of_seattle
+			}
+		}
+		prerequisite = {
+			focus = PCA_combat_inflation
+		}
+		mutually_exclusive = {
+			focus = PCA_industry
+			focus = PCA_agriculture
+		}
+		x = 7
+		y = 3
+		completion_reward = {
+		    add_tech_bonus = {
+				name = construction_tech_bonus
+				bonus = 0.5
+				uses = 1
+				category = construction_tech
+			}
+			add_tech_bonus = {
+				name = electronics_bonus
+				bonus = 0.5
+				uses = 1
+				category = electronics
+			}
+			add_tech_bonus = {
+				name = computing_tech_bonus
+				bonus = 0.5
+				uses = 1
+				category = computing_tech
+			}
+		}
+
+	}
+	focus = {
+		id = PCA_golden_gate_league
+		icon = focus_golden_gate_league
+		cost = 2
+		available = {
+		    OR = {
+			    has_country_flag = golden_gate_league_coup
+				has_country_flag = battle_of_los_angeles_won
+			}
+		}
+		prerequisite = {
+			focus = PCA_humiliating_defeat
+		}
+		mutually_exclusive = {
+			focus = PCA_power_struggle_avoided
+		}
+		x = 10
+		y = 7
+		completion_reward = {
+		    add_stability = 0.02
+			add_war_support = 0.065
+			remove_ideas = idea_standing_firm_union
+			hidden_effect = {
+		        country_event = { days = 1460 id = pacific_america.100 } 
+		    }
+		}
+
+	}
+	focus = {
+		id = PCA_execute_commie_traitors
+		icon = broken_star
+		cost = 3
+		prerequisite = {
+			focus = PCA_golden_gate_league
+		}
+		x = 8
+		y = 8
+		completion_reward = {
+		    add_popularity = {
+				ideology = communist
+				popularity = -0.1
+			}
+			add_popularity = {
+				ideology = liberal
+				popularity = 0.095
+			}
+			country_event = { id = pacific_america.57 }
+		}
+
+	}
+	focus = {
+		id = PCA_social_liberalism
+		icon = smashing_flag
+		cost = 7.2
+		prerequisite = {
+			focus = PCA_execute_commie_traitors
+		}
+		x = 8
+		y = 9
+		completion_reward = {
+		    add_ideas = idea_pca_social_liberalism
+			country_event = { id = pacific_america.58 }
+		}
+
+	}
+	focus = {
+		id = PCA_rights_respect_stability
+		icon = liberty_attack_2
+		cost = 6
+		prerequisite = {
+			focus = PCA_social_liberalism
+		}
+		x = 8
+		y = 10
+		completion_reward = {
+		    add_war_support = 0.05
+			add_political_power = 100
+			add_popularity = {
+				ideology = communist
+				popularity = -0.02
+			}
+		}
+
+	}
+	focus = {
+		id = PCA_relax_quotas
+		icon = bulwark_against_communism
+		cost = 7.2
+		available = {
+			has_government = communist
+			NOT = {
+				has_country_flag = treaty_of_seattle
+			}
+		}
+		prerequisite = {
+			focus = PCA_long_term_planning
+		}
+		x = 9
+		y = 1
+		completion_reward = {
+		    add_ideas = idea_pca_quotas_relaxed
+		}
+
+	}
+	focus = {
+		id = PCA_develop_urban_centres
+		icon = torch_industry
+		cost = 7.2
+		available = {
+			has_government = communist
+			NOT = {
+				has_country_flag = treaty_of_seattle
+			}
+		}
+		prerequisite = {
+			focus = PCA_long_term_planning
+		}
+		x = 11
+		y = 1
+		completion_reward = {
+		    random_owned_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = PCA_engaged_workers
+		icon = work_for_the_tsar
+		cost = 7.2
+		available = {
+			has_government = communist
+			NOT = {
+				has_country_flag = treaty_of_seattle
+			}
+		}
+		prerequisite = {
+			focus = PCA_relax_quotas
+		}
+		prerequisite = {
+			focus = PCA_develop_urban_centres
+		}
+		x = 9
+		y = 2
+		completion_reward = {
+		    add_ideas = idea_pca_engaged_workers
+		}
+
+	}
+	focus = {
+		id = PCA_industry
+		icon = civ_factory
+		cost = 7.2
+		available = {
+			has_government = communist
+			NOT = {
+				has_country_flag = treaty_of_seattle
+			}
+		}
+		prerequisite = {
+			focus = PCA_engaged_workers
+		}
+		mutually_exclusive = {
+			focus = PCA_technology
+			focus = PCA_agriculture
+		}
+		x = 9
+		y = 3
+		completion_reward = {
+		    add_tech_bonus = {
+				name = industry_bonus
+				bonus = 0.5
+				uses = 2
+				category = industry
+			}
+		}
+
+	}
+	focus = {
+		id = PCA_promote_a_mixed_economy
+		icon = uk_workers_revolution
+		cost = 7.2
+		prerequisite = {
+			focus = PCA_golden_gate_league
+		}
+		x = 10
+		y = 8
+		completion_reward = {
+		    add_ideas = idea_pca_mixed_economy
+			hidden_effect = {
+			    if = {
+				    limit = {
+					    has_idea = idea_pca_quotas_maximised
+					}
+					remove_ideas = idea_pca_quotas_maximised
+				}
+				if = {
+				    limit = {
+					    has_idea = idea_pca_effective_resource_allocation
+					}
+					remove_ideas = idea_pca_effective_resource_allocation
+				}
+				if = {
+				    limit = {
+					    has_idea = idea_pca_agriculture_focus
+					}
+					remove_ideas = idea_pca_agriculture_focus
+				}
+				if = {
+				    limit = {
+					    has_idea = idea_pca_centralised_state
+					}
+					remove_ideas = idea_pca_centralised_state
+				}
+				if = {
+				    limit = {
+					    has_idea = idea_pca_implementing_the_three_year_plan
+					}
+					remove_ideas = idea_pca_implementing_the_three_year_plan
+				}
+				if = {
+				    limit = {
+					    has_idea = idea_pca_increased_education_funding
+					}
+					remove_ideas = idea_pca_increased_education_funding
+				}
+				if = {
+				    limit = {
+					    has_idea = idea_pca_leniency_towards_private_ownership
+					}
+					remove_ideas = idea_pca_leniency_towards_private_ownership
+				}
+				if = {
+				    limit = {
+					    has_idea = idea_pca_socialisation
+					}
+					remove_ideas = idea_pca_socialisation
+				}
+				if = {
+				    limit = {
+					    has_idea = idea_pca_reindustrialisation
+					}
+					remove_ideas = idea_pca_reindustrialisation
+				}
+				if = {
+				    limit = {
+					    has_idea = idea_pca_special_economic_zones
+					}
+					remove_ideas = idea_pca_special_economic_zones
+				}
+				if = {
+				    limit = {
+					    has_idea = idea_pca_columbian_security_force
+					}
+					remove_ideas = idea_pca_columbian_security_force
+				}
+				if = {
+				    limit = {
+					    has_idea = idea_pca_war_propaganda
+					}
+					remove_ideas = idea_pca_war_propaganda
+				}
+				if = {
+				    limit = {
+					    has_idea = idea_pca_manning_the_defences
+					}
+					remove_ideas = idea_pca_manning_the_defences
+				}
+				if = {
+				    limit = {
+					    has_idea = idea_pca_war_commissars
+					}
+					remove_ideas = idea_pca_war_commissars
+				}
+				if = {
+				    limit = {
+					    has_idea = idea_pca_quotas_for_the_struggle
+					}
+					remove_ideas = idea_pca_quotas_for_the_struggle
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = PCA_executive_presidency
+		icon = generic_ideology
+		cost = 5
+		prerequisite = {
+			focus = PCA_promote_a_mixed_economy
+		}
+		x = 10
+		y = 9
+		completion_reward = {
+		    add_political_power = 130 
+		}
+
+	}
+	focus = {
+		id = PCA_constitutional_question
+		icon = neutrality
+		cost = 7.2
+		prerequisite = {
+			focus = PCA_executive_presidency
+		}
+		x = 10
+		y = 10
+		completion_reward = {
+		    add_stability = 0.05
+			if = {
+			    limit = {
+				    has_idea = idea_failing_economy
+				}
+				remove_ideas = idea_failing_economy
+			}
+			add_political_power = -200
+		}
+
+	}
+	focus = {
+		id = PCA_effective_resource_allocation
+		icon = steel
+		cost = 7.2
+		available = {
+			has_government = communist
+			NOT = {
+				has_country_flag = treaty_of_seattle
+			}
+		}
+		prerequisite = {
+			focus = PCA_develop_urban_centres
+		}
+		prerequisite = {
+			focus = PCA_support_population_growth
+		}
+		x = 11
+		y = 2
+		completion_reward = {
+		    add_ideas = idea_pca_effective_resource_allocation
+		}
+
+	}
+	focus = {
+		id = PCA_agriculture
+		icon = focus_on_agriculture
+		cost = 7.2
+		available = {
+			has_government = communist
+			NOT = {
+				has_country_flag = treaty_of_seattle
+			}
+		}
+		prerequisite = {
+			focus = PCA_effective_resource_allocation
+		}
+		mutually_exclusive = {
+			focus = PCA_technology
+			focus = PCA_industry
+		}
+		x = 11
+		y = 3
+		completion_reward = {
+		    add_ideas = idea_pca_agriculture_focus
+		}
+
+	}
+	focus = {
+		id = PCA_economic_improvements
+		icon = political_pressure
+		cost = 7.2
+		available = {
+			has_government = communist
+			OR = {
+				has_completed_focus = PCA_border_defence
+				has_completed_focus = PCA_revive_air_bases
+				has_completed_focus = PCA_fuel_of_war
+				AND = {
+				    has_completed_focus = PCA_combat_inflation
+					has_completed_focus = PCA_engaged_workers
+					has_completed_focus = PCA_effective_resource_allocation
+				}
+			}
+			NOT = {
+				has_country_flag = treaty_of_seattle
+			}
+		}
+		prerequisite = {
+			focus = PCA_technology
+			focus = PCA_industry
+			focus = PCA_agriculture
+			focus = PCA_fuel_of_war
+			focus = PCA_revive_air_bases
+			focus = PCA_border_defence
+		}
+		x = 6
+		y = 4
+		completion_reward = {
+		    remove_ideas = idea_failing_economy
+		} 
+
+	}
+	focus = {
+		id = PCA_rebuild_our_military
+		icon = red_gold_army
+		cost = 3
+		prerequisite = {
+			focus = PCA_golden_gate_league
+		}
+		x = 12
+		y = 8
+		completion_reward = {
+		    army_experience = 40 
+			air_experience = 40 
+			navy_experience = 40
+		}
+
+	}
+	focus = {
+		id = PCA_impenetrable_air_defence
+		icon = air_defense
+		cost = 7.2
+		prerequisite = {
+			focus = PCA_rebuild_our_military
+		}
+		x = 12
+		y = 9
+		completion_reward = {
+		    378 = {
+				add_building_construction = {
+					type = anti_air_building
+					level = 3
+					instant_build = yes
+				}
+			}
+			386 = {
+				add_building_construction = {
+					type = anti_air_building
+					level = 3
+					instant_build = yes
+				}
+			}
+			385 = {
+				add_building_construction = {
+					type = anti_air_building
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = PCA_all_for_the_future_wars
+		icon = close_air_support
+		cost = 6
+		prerequisite = {
+			focus = PCA_impenetrable_air_defence
+		}
+		x = 12
+		y = 10
+		completion_reward = {
+		    add_ideas = idea_pca_all_for_the_future_wars
+		}
+
+	}
+	focus = {
+		id = PCA_ultimatum_to_arizona
+		icon = demand
+		cost = 5
+		prerequisite = {
+			focus = PCA_rights_respect_stability
+		}
+		prerequisite = {
+			focus = PCA_constitutional_question
+		}
+		prerequisite = {
+			focus = PCA_all_for_the_future_wars
+		}
+		x = 9
+		y = 11
+		completion_reward = {
+		    ARI = {
+			    country_event = { id = pacific_america.41 }
+			}
+		}
+
+	}
+	focus = {
+		id = PCA_ultimatum_to_utah
+		icon = support_the_mormon_church
+		cost = 5
+		prerequisite = {
+			focus = PCA_all_for_the_future_wars
+		}
+		prerequisite = {
+			focus = PCA_constitutional_question
+		}
+		prerequisite = {
+			focus = PCA_rights_respect_stability
+		}
+		x = 11
+		y = 11
+		completion_reward = {
+		    UTA = {
+			    country_event = { id = pacific_america.44 }
+			}
+		}
+
+	}
+	focus = {
+		id = PCA_consolidate_our_control
+		icon = attack_allies
+		cost = 7.2
+		prerequisite = {
+			focus = PCA_ultimatum_to_arizona
+		}
+		prerequisite = {
+			focus = PCA_ultimatum_to_utah
+		}
+		x = 10
+		y = 12
+		completion_reward = {
+		    377 = {
+			    add_core_of = PCA
+			}
+			895 = {
+			    add_core_of = PCA
+			}
+			379 = {
+			    add_core_of = PCA
+			}
+			380 = {
+			    add_core_of = PCA
+			}
+			896 = {
+			    add_core_of = PCA
+			}
+		}
+
+	}
+	focus = {
+		id = PCA_comrade_tyner
+		icon = focus_comrade_tyner
+		cost = 7.2
+		available = {
+			has_country_flag = tyner_elected_general_secretary
+			has_government = communist
+			NOT = {
+				has_country_flag = treaty_of_seattle
+			}
+		}
+		bypass = {
+		    has_country_flag = tyner_elected_general_secretary
+		}
+		prerequisite = {
+			focus = PCA_thirtieth_party_congress
+		}
+		mutually_exclusive = {
+			focus = PCA_comrade_davis
+			focus = PCA_comrade_foster
+		}
+		x = 16
+		y = 1
+		completion_reward = {
+		
+		}
+
+	}
+	focus = {
+		id = PCA_ease_economic_dependence
+		icon = major_alliance
+		cost = 7.2
+		available = {
+			has_government = communist
+			NOT = {
+				has_country_flag = treaty_of_seattle
+			}
+		}
+		prerequisite = {
+			focus = PCA_comrade_tyner
+		}
+		x = 15
+		y = 2
+		completion_reward = {
+		    SOV = {
+			    add_opinion_modifier = {
+				    target = PCA
+				    modifier = drama
+			    }
+			}
+			add_political_power = 120
+			country_event = { id = pacific_america.59 }
+		}
+
+	}
+	focus = {
+		id = PCA_preparing_for_war
+		icon = military_sphere
+		cost = 5
+		available = {
+			has_government = communist
+			NOT = {
+				has_country_flag = treaty_of_seattle
+			}
+		}
+		prerequisite = {
+			focus = PCA_ease_economic_dependence
+		}
+		x = 14
+		y = 3
+		completion_reward = {
+		    add_timed_idea = {
+			    idea = idea_pca_preparing_for_war
+			    days = 365
+		    }
+			country_event = { id = pacific_america.60 }
+		}
+
+	}
+	focus = {
+		id = PCA_purge_the_centralists
+		icon = generic_strike
+		cost = 7.2
+		available = {
+			has_government = communist
+			NOT = {
+				has_country_flag = treaty_of_seattle
+			}
+		}
+		prerequisite = {
+			focus = PCA_comrade_tyner
+		}
+		x = 17
+		y = 2
+		completion_reward = {
+		    add_popularity = {
+				ideology = communist
+				popularity = 0.04
+			}
+			country_event = { id = pacific_america.61 }
+		}
+
+	}
+	focus = {
+		id = PCA_ensure_military_loyalty
+		icon = military_salute
+		cost = 7.2
+		available = {
+			has_government = communist
+			NOT = {
+				has_country_flag = treaty_of_seattle
+			}
+		}
+		prerequisite = {
+			focus = PCA_ease_economic_dependence
+		}
+		prerequisite = {
+			focus = PCA_purge_the_centralists
+		}
+		x = 16
+		y = 3
+		completion_reward = {
+		    add_stability = 0.02 
+			add_war_support = 0.03
+			country_event = { id = pacific_america.62 }
+		}
+
+	}
+	focus = {
+		id = PCA_demolish_the_personality_cult
+		icon = focus_emergency_party_convention
+		cost = 5
+		available = {
+			has_government = communist
+			NOT = {
+				has_country_flag = treaty_of_seattle
+			}
+		}
+		prerequisite = {
+			focus = PCA_purge_the_centralists
+		}
+		x = 18
+		y = 3
+		completion_reward = {
+		    add_ideas = idea_pca_personality_cult_demolished
+			country_event = { id = pacific_america.63 }
+		}
+
+	}
+	focus = {
+		id = PCA_encourage_immigration
+		icon = improve_relations
+		cost = 12
+		available = {
+			has_government = communist
+			NOT = {
+				has_country_flag = treaty_of_seattle
+			}
+		}
+		prerequisite = {
+			focus = PCA_demolish_the_personality_cult
+			focus = PCA_ensure_military_loyalty
+			focus = PCA_preparing_for_war
+		}
+		mutually_exclusive = {
+			focus = PCA_halt_immigration
+		}
+		x = 17
+		y = 4
+		completion_reward = {
+		    remove_ideas = idea_pca_immigration
+			add_ideas = idea_pca_immigration_encouraged
+			country_event = { id = pacific_america.64 }
+		}
+
+	}
+	focus = {
+		id = PCA_halt_immigration
+		icon = provoke_border_clashes
+		cost = 12
+		available = {
+			has_government = communist
+			NOT = {
+				has_country_flag = treaty_of_seattle
+			}
+		}
+		prerequisite = {
+			focus = PCA_preparing_for_war
+			focus = PCA_ensure_military_loyalty
+			focus = PCA_demolish_the_personality_cult
+		}
+		mutually_exclusive = {
+			focus = PCA_encourage_immigration
+		}
+		x = 15
+		y = 4
+		completion_reward = {
+		    remove_ideas = idea_pca_immigration
+			country_event = { id = pacific_america.65 }
+		}
+
+	}
+	focus = {
+		id = PCA_the_thirty_second_budget
+		icon = forceful_treaty
+		cost = 5
+		available = {
+		    has_government = communist
+			has_completed_focus = PCA_ease_economic_dependence
+			has_completed_focus = PCA_purge_the_centralists
+			has_completed_focus = PCA_preparing_for_war
+			has_completed_focus = PCA_ensure_military_loyalty
+			has_completed_focus = PCA_demolish_the_personality_cult
+			NOT = {
+				has_country_flag = treaty_of_seattle
+			}
+		}
+		prerequisite = {
+			focus = PCA_halt_immigration
+			focus = PCA_encourage_immigration
+		}
+		x = 16
+		y = 5
+		completion_reward = {
+		    add_political_power = 200
+			add_popularity = {
+				ideology = communist
+				popularity = 0.02
+			}
+			country_event = { id = pacific_america.66 }
+		}
+
+	}
+	focus = {
+		id = PCA_apologise_for_the_massacre
+		icon = tear_treaty
+		cost = 3
+		available = {
+			has_government = communist
+			NOT = {
+				has_country_flag = treaty_of_seattle
+			}
+		}
+		prerequisite = {
+			focus = PCA_the_thirty_second_budget
+		}
+		x = 18
+		y = 6
+		completion_reward = {
+		    add_stability = 0.04
+			country_event = { id = pacific_america.67 }
+		}
+
+	}
+	focus = {
+		id = PCA_comrade_davis
+		icon = focus_comrade_davis
+		cost = 7.2
+		available = {
+			has_country_flag = davis_elected_general_secretary
+			has_government = communist
+			NOT = {
+				has_country_flag = treaty_of_seattle
+			}
+		}
+		bypass = {
+		    has_country_flag = davis_elected_general_secretary
+		}
+		prerequisite = {
+			focus = PCA_thirtieth_party_congress
+		}
+		mutually_exclusive = {
+			focus = PCA_comrade_tyner
+			focus = PCA_comrade_foster
+		}
+		x = 21
+		y = 1
+		completion_reward = {
+		
+		}
+
+	}
+	focus = {
+		id = PCA_her_final_purge
+		icon = agrarian_socialism
+		cost = 2
+		available = {
+			has_government = communist
+			NOT = {
+				has_country_flag = treaty_of_seattle
+			}
+		}
+		prerequisite = {
+			focus = PCA_comrade_davis
+		}
+		x = 20
+		y = 2
+		completion_reward = {
+		    add_popularity = {
+				ideology = revolutionary_socialist
+				popularity = -0.05
+			}
+			add_stability = 0.015
+			add_political_power = 50
+			country_event = { id = pacific_america.68 }
+		}
+
+	}
+	focus = {
+		id = PCA_centralise_the_state
+		icon = communists_marching
+		cost = 5
+		available = {
+			has_government = communist
+			NOT = {
+				has_country_flag = treaty_of_seattle
+			}
+		}
+		prerequisite = {
+			focus = PCA_her_final_purge
+		}
+		x = 20
+		y = 3
+		completion_reward = {
+		    add_ideas = idea_pca_centralised_state
+		}
+
+	}
+	focus = {
+		id = PCA_female_recuitment_campaign
+		icon = focus_syria_woman_fighters
+		cost = 7.2
+		available = {
+			has_government = communist
+			NOT = {
+				has_country_flag = treaty_of_seattle
+			}
+		}
+		prerequisite = {
+			focus = PCA_comrade_davis
+		}
+		x = 22
+		y = 2
+		completion_reward = {
+		    add_timed_idea = {
+			    idea = idea_pca_female_recruitment_campaign
+			    days = 365
+		    }
+			country_event = { id = pacific_america.69 }
+		}
+
+	}
+	focus = {
+		id = PCA_future_development_project
+		icon = concessions
+		cost = 5
+		available = {
+			has_government = communist
+			NOT = {
+				has_country_flag = treaty_of_seattle
+			}
+		}
+		prerequisite = {
+			focus = PCA_female_recuitment_campaign
+		}
+		x = 22
+		y = 3
+		completion_reward = {
+		    378 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			889 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			385 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			386 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = PCA_three_year_plan
+		icon = focus_temporary_democracy
+		cost = 2
+		available = {
+			has_government = communist
+			NOT = {
+				has_country_flag = treaty_of_seattle
+			}
+		}
+		prerequisite = {
+			focus = PCA_centralise_the_state
+		}
+		prerequisite = {
+			focus = PCA_future_development_project
+		}
+		x = 21
+		y = 4
+		completion_reward = {
+		    add_timed_idea = {
+			    idea = idea_pca_implementing_the_three_year_plan
+			    days = 1095
+		    }
+			country_event = { id = pacific_america.70 }
+		}
+
+	}
+	focus = {
+		id = PCA_focus_on_stability
+		icon = focus_american_house_bill
+		cost = 5
+		available = {
+			has_government = communist
+			NOT = {
+				has_country_flag = treaty_of_seattle
+			}
+		}
+		prerequisite = {
+			focus = PCA_three_year_plan
+		}
+		x = 19
+		y = 5
+		completion_reward = {
+		    add_stability = 0.045
+			add_political_power = 30
+		}
+
+	}
+	focus = {
+		id = PCA_close_our_borders
+		icon = generic_marching
+		cost = 5
+		available = {
+			has_government = communist
+			NOT = {
+				has_country_flag = treaty_of_seattle
+			}
+		}
+		prerequisite = {
+			focus = PCA_three_year_plan
+		}
+		x = 21
+		y = 5
+		completion_reward = {
+		    remove_ideas = idea_pca_immigration
+			country_event = { id = pacific_america.71 }
+		}
+
+	}
+	focus = {
+		id = PCA_increase_education_funding
+		icon = military_academy
+		cost = 7.2
+		available = {
+			has_government = communist
+			NOT = {
+				has_country_flag = treaty_of_seattle
+			}
+		}
+		prerequisite = {
+			focus = PCA_three_year_plan
+		}
+		x = 23
+		y = 5
+		completion_reward = {
+		    add_ideas = idea_pca_increased_education_funding
+			add_political_power = -75
+		}
+
+	}
+	focus = {
+		id = PCA_indoctrination_effort
+		icon = GFX_friends_of_the_world_revolution
+		cost = 7.2
+		available = {
+			has_government = communist
+			NOT = {
+				has_country_flag = treaty_of_seattle
+			}
+		}
+		prerequisite = {
+			focus = PCA_close_our_borders
+		}
+		prerequisite = {
+			focus = PCA_increase_education_funding
+		}
+		x = 22
+		y = 6
+		completion_reward = {
+		    add_manpower = 15000
+		}
+
+	}
+	focus = {
+		id = PCA_crusade_against_racism
+		icon = focus_freedom_of_demonstration
+		cost = 4
+		available = {
+			has_government = communist
+			NOT = {
+				has_country_flag = treaty_of_seattle
+			}
+		}
+		prerequisite = {
+			focus = PCA_indoctrination_effort
+		}
+		x = 22
+		y = 7
+		completion_reward = {
+			add_stability = 0.06
+			add_popularity = {
+			ideology = communist
+			popularity = 0.04
+			}
+			country_event = pacific_america.147
+		}
+
+	}
+	focus = {
+		id = PCA_split_from_moscow
+		icon = against_russia
+		cost = 4
+		available = {
+			has_government = communist
+			NOT = {
+				has_country_flag = treaty_of_seattle
+			}
+		}
+		prerequisite = {
+			focus = PCA_service_economy
+		}
+		x = 20
+		y = 7
+		completion_reward = {
+			add_war_support = -0.04
+			add_political_power = 60
+			 SOV = {
+			    add_opinion_modifier = {
+				    target = PCA
+				    modifier = declaration_of_hostility
+			    }
+			}
+			country_event = pacific_america.146
+		}
+
+	}
+	focus = {
+		id = PCA_service_economy
+		icon = industry_2
+		cost = 7.2
+		available = {
+			has_government = communist
+			NOT = {
+				has_country_flag = treaty_of_seattle
+			}
+		}
+		prerequisite = {
+			focus = PCA_focus_on_stability
+		}
+		prerequisite = {
+			focus = PCA_close_our_borders
+		}
+		x = 20
+		y = 6
+		completion_reward = {
+		    add_ideas = idea_pca_service_economy
+		}
+
+	}
+	focus = {
+		id = PCA_leniency_towards_private_ownership
+		icon = communist_construction
+		cost = 4
+		available = {
+			has_government = communist
+			NOT = {
+				has_country_flag = treaty_of_seattle
+			}
+		}
+		prerequisite = {
+			focus = PCA_the_thirty_second_budget
+		}
+		x = 16
+		y = 6
+		completion_reward = {
+		    add_ideas = idea_pca_leniency_towards_private_ownership
+			country_event = { id = pacific_america.72 }
+		}
+
+	}
+	focus = {
+		id = PCA_socialisation
+		icon = focus_erect_portrait_of_lenin
+		cost = 7.2
+		available = {
+			has_government = communist
+			NOT = {
+				has_country_flag = treaty_of_seattle
+			}
+		}
+		prerequisite = {
+			focus = PCA_the_thirty_second_budget
+		}
+		x = 14
+		y = 6
+		completion_reward = {
+		    add_ideas = idea_pca_socialisation
+		}
+
+	}
+	focus = {
+		id = PCA_liberalization_of_art
+		icon = GFX_fund_art
+		cost = 5
+		available = {
+			has_government = communist
+			NOT = {
+				has_country_flag = treaty_of_seattle
+			}
+		}
+		prerequisite = {
+			focus = PCA_the_thirty_second_budget
+		}
+		x = 15
+		y = 7
+		completion_reward = {
+		add_ideas = idea_pca_art_liberalized
+		}
+
+	}
+	focus = {
+		id = PCA_legislative_popular_front
+		icon = communism_2
+		cost = 2
+		available = {
+			has_government = communist
+			NOT = {
+				has_country_flag = treaty_of_seattle
+			}
+		}
+		prerequisite = {
+			focus = PCA_the_thirty_second_budget
+		}
+		x = 17
+		y = 7
+		completion_reward = {
+		add_popularity = {
+		ideology = moderate_socialist
+		popularity = 0.02
+		}
+		add_popularity = {
+		ideology = liberal
+		popularity = 0.02
+		}
+		add_popularity = {
+		ideology = national_bolshevik
+		popularity = 0.02
+		}
+		country_event = pacific_america.144
+		}
+
+	}
+	focus = {
+		id = PCA_bill_of_rights_socialism
+		icon = bill_of_rights_socialism
+		cost = 7.2
+		available = {
+			has_government = communist
+			NOT = {
+				has_country_flag = treaty_of_seattle
+			}
+			NOT = {
+				has_idea = idea_failing_economy
+			}
+		}
+		prerequisite = {
+			focus = PCA_liberalization_of_art
+		}
+		prerequisite = {
+			focus = PCA_legislative_popular_front
+		}
+		x = 16
+		y = 8
+		completion_reward = {
+		add_ideas = idea_pca_tynerite_ideology
+		country_event = pacific_america.145
+		}
+
+	}
+	focus = {
+		id = PCA_second_three_year_plan
+		icon = second_three_year_plan
+		cost = 7.2
+		available = {
+			has_government = communist
+		    NOT = {
+			    has_idea = idea_pca_implementing_the_three_year_plan
+			}
+			NOT = {
+				has_country_flag = treaty_of_seattle
+			}
+			NOT = {
+				has_idea = idea_failing_economy
+			}
+		}
+		prerequisite = {
+			focus = PCA_split_from_moscow
+		}
+		prerequisite = {
+			focus = PCA_crusade_against_racism
+		}
+		x = 21
+		y = 8
+		completion_reward = {
+		    add_timed_idea = {
+			    idea = idea_pca_second_three_year_plan
+			    days = 1095
+		    }
+		}
+
+	}
+	focus = {
+		id = PCA_comrade_foster
+		icon = focus_comrade_foster
+		cost = 7.2
+		available = {
+			has_country_flag = foster_elected_general_secretary
+			has_government = communist
+			NOT = {
+				has_country_flag = treaty_of_seattle
+			}
+		}
+		bypass = {
+		    has_country_flag = foster_elected_general_secretary
+		}
+		prerequisite = {
+			focus = PCA_thirtieth_party_congress
+		}
+		mutually_exclusive = {
+			focus = PCA_comrade_tyner
+			focus = PCA_comrade_davis
+		}
+		x = 26
+		y = 1
+		completion_reward = {
+		
+		}
+
+	}
+	focus = {
+		id = PCA_increase_economic_dependence
+		icon = soviet_shaking_hands
+		cost = 7.2
+		available = {
+			has_government = communist
+			NOT = {
+				has_country_flag = treaty_of_seattle
+			}
+		}
+		prerequisite = {
+			focus = PCA_comrade_foster
+		}
+		x = 25
+		y = 2
+		completion_reward = {
+			SOV = {
+			    add_opinion_modifier = {
+				    target = PCA
+				    modifier = has_expressed_loyalty
+			    }
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			country_event = { id = pacific_america.73 }
+		}
+
+	}
+	focus = {
+		id = PCA_follow_the_soviet_model
+		icon = embrace_the_revolution
+		cost = 3
+		available = {
+			has_government = communist
+			NOT = {
+				has_country_flag = treaty_of_seattle
+			}
+		}
+		prerequisite = {
+			focus = PCA_comrade_foster
+		}
+		x = 27
+		y = 2
+		completion_reward = {
+		    add_political_power = 120
+		}
+
+	}
+	focus = {
+		id = PCA_invite_soviet_generals
+		icon = soviet_military
+		cost = 5
+		available = {
+			has_government = communist
+			NOT = {
+				has_country_flag = treaty_of_seattle
+			}
+		}
+		prerequisite = {
+			focus = PCA_increase_economic_dependence
+			focus = PCA_follow_the_soviet_model
+		}
+		x = 26
+		y = 3
+		completion_reward = {
+		    army_experience = 10
+			add_tech_bonus = {
+				name = land_doctrine_bonus
+				bonus = 0.5
+				uses = 1
+				category = land_doctrine
+			}
+			country_event = { id = pacific_america.74 }
+		}
+
+	}
+	focus = {
+		id = PCA_purge_russophobic_traitors
+		icon = glasnost
+		cost = 2
+		available = {
+			has_government = communist
+			NOT = {
+				has_country_flag = treaty_of_seattle
+			}
+		}
+		prerequisite = {
+			focus = PCA_increase_economic_dependence
+			focus = PCA_follow_the_soviet_model
+		}
+		x = 24
+		y = 3
+		completion_reward = {
+		    add_popularity = {
+				ideology = communist
+				popularity = -0.13
+			}
+			add_war_support = 0.05
+			country_event = { id = pacific_america.75 }
+		}
+
+	}
+	focus = {
+		id = PCA_invite_soviet_admirals
+		icon = navy_doctrine
+		cost = 5
+		available = {
+			has_government = communist
+			NOT = {
+				has_country_flag = treaty_of_seattle
+			}
+		}
+		prerequisite = {
+			focus = PCA_follow_the_soviet_model
+			focus = PCA_increase_economic_dependence
+		}
+		x = 28
+		y = 3
+		completion_reward = {
+		    navy_experience = 10
+			add_tech_bonus = {
+				name = naval_doctrine_bonus
+				bonus = 0.5
+				uses = 1
+				category = naval_doctrine
+			}
+		}
+
+	}
+	focus = {
+		id = PCA_reindustrialisation
+		icon = construct_civilian
+		cost = 7.2
+		available = {
+			has_government = communist
+			NOT = {
+				has_country_flag = treaty_of_seattle
+			}
+		}
+		prerequisite = {
+			focus = PCA_invite_soviet_admirals
+		}
+		prerequisite = {
+			focus = PCA_follow_the_soviet_model
+		}
+		prerequisite = {
+			focus = PCA_invite_soviet_generals
+		}
+		prerequisite = {
+			focus = PCA_purge_russophobic_traitors
+		}
+		x = 27
+		y = 4
+		completion_reward = {
+		    add_ideas = idea_pca_reindustrialisation
+		}
+
+	}
+	focus = {
+		id = PCA_purchase_soviet_equipment
+		icon = build_tank
+		cost = 2
+		available = {
+			has_government = communist
+			NOT = {
+				has_country_flag = treaty_of_seattle
+			}
+		}
+		prerequisite = {
+			focus = PCA_purge_russophobic_traitors
+		}
+		prerequisite = {
+			focus = PCA_invite_soviet_generals
+		}
+		prerequisite = {
+			focus = PCA_invite_soviet_admirals
+		}
+		x = 25
+		y = 4
+		completion_reward = {
+		    add_equipment_to_stockpile = { type = infantry_equipment amount = 3000 producer = PCA } 
+			add_political_power = -100
+		}
+
+	}
+	focus = {
+		id = PCA_down_with_americanism
+		icon = liberty_attack
+		cost = 5
+		available = {
+			has_government = communist
+			NOT = {
+				has_country_flag = treaty_of_seattle
+			}
+		}
+		prerequisite = {
+			focus = PCA_purchase_soviet_equipment
+		}
+		prerequisite = {
+			focus = PCA_reindustrialisation
+		}
+		x = 27
+		y = 5
+		completion_reward = {
+		    add_popularity = {
+				ideology = communist
+				popularity = -0.05
+			}
+			add_political_power = 20 
+			386 = { set_state_name = "Ballam" }
+			970 = { set_state_name = "East Ballam" }
+			385 = { set_state_name = "Burroughs" }
+			971 = { set_state_name = "East Burroughs" }
+			378 = { set_state_name = "Katayama" }
+			1015 = { set_state_name = "Northern Katayama" }
+			889 = { set_state_name = "Klonsky" }
+			897 = { set_state_name = "Foster" }
+			country_event = { id = pacific_america.77 }
+			set_global_flag = foster_renamed_PCA
+		}
+
+	}
+	focus = {
+		id = PCA_liberationist_propaganda
+		icon = red_hands_shaking
+		cost = 5
+		available = {
+			has_country_flag = met_the_cascadians
+			has_government = communist
+			NOT = {
+				has_country_flag = treaty_of_seattle
+			}
+		}
+		prerequisite = {
+			focus = PCA_cascadian_troubles
+		}
+		mutually_exclusive = {
+			focus = PCA_crush_the_cascadian_revolt
+		}
+		x = 32
+		y = 1
+		completion_reward = {
+		    add_popularity = {
+				ideology = communist
+				popularity = 0.03
+			}
+			add_stability = 0.01
+		}
+
+	}
+	focus = {
+		id = PCA_regional_developments
+		icon = consumer_goods
+		cost = 7.2
+		available = {
+			has_government = communist
+			NOT = {
+				has_country_flag = treaty_of_seattle
+			}
+		}
+		prerequisite = {
+			focus = PCA_liberationist_propaganda
+		}
+		x = 32
+		y = 2
+		completion_reward = {
+		    970 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			971 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			386 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = PCA_divide_columbia
+		icon = focus_divide_columbia
+		cost = 4
+		available = {
+			has_government = communist
+			NOT = {
+				has_country_flag = treaty_of_seattle
+			}
+		}
+		prerequisite = {
+			focus = PCA_regional_developments
+		}
+		x = 32
+		y = 3
+		completion_reward = {
+		    add_stability = 0.02 
+			add_political_power = -250
+			country_event = { id = pacific_america.78 }
+		}
+
+	}
+	focus = {
+		id = PCA_appoint_new_administrators
+		icon = democracy
+		cost = 5
+		available = {
+			has_government = communist
+			NOT = {
+				has_country_flag = treaty_of_seattle
+			}
+		}
+		prerequisite = {
+			focus = PCA_divide_columbia
+		}
+		x = 32
+		y = 4
+		completion_reward = {
+		    add_political_power = -70 
+			add_war_support = 0.02
+		}
+
+	}
+	focus = {
+		id = PCA_special_economic_zones
+		icon = common_african_judiciary
+		cost = 7.2
+		available = {
+			has_government = communist
+			NOT = {
+				has_country_flag = treaty_of_seattle
+			}
+		}
+		prerequisite = {
+			focus = PCA_appoint_new_administrators
+		}
+		x = 32
+		y = 5
+		completion_reward = {
+		    add_ideas = idea_pca_special_economic_zones
+		}
+
+	}
+	focus = {
+		id = PCA_crush_the_cascadian_revolt
+		icon = infiltration
+		cost = 3
+		available = {
+			has_country_flag = the_cascadian_war
+			has_government = communist
+			NOT = {
+				has_country_flag = treaty_of_seattle
+			}
+		}
+		prerequisite = {
+			focus = PCA_cascadian_troubles
+		}
+		mutually_exclusive = {
+			focus = PCA_liberationist_propaganda
+		}
+		x = 34
+		y = 1
+		completion_reward = {
+		    add_timed_idea = {
+			    idea = idea_pca_war_propaganda
+			    days = 120
+		    }
+		}
+
+	}
+	focus = {
+		id = PCA_post_war_reconstruction
+		icon = position_armies
+		cost = 7.2
+		available = {
+		    NOT = {
+			    country_exists = CSD
+			} 
+			has_government = communist
+			NOT = {
+				has_country_flag = treaty_of_seattle
+			}
+		}
+		prerequisite = {
+			focus = PCA_crush_the_cascadian_revolt
+		}
+		x = 34
+		y = 2
+		completion_reward = {
+		    970 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			971 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			385 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_political_power = -40
+			country_event = { id = pacific_america.79 }
+		}
+
+	}
+	focus = {
+		id = PCA_strengthen_the_republic
+		icon = cavalry
+		cost = 5
+		available = {
+			has_government = communist
+			NOT = {
+				has_country_flag = treaty_of_seattle
+			}
+		}
+		prerequisite = {
+			focus = PCA_post_war_reconstruction
+		}
+		x = 34
+		y = 3
+		completion_reward = {
+		    add_stability = 0.03
+		}
+
+	}
+	focus = {
+		id = PCA_independent_security_force
+		icon = focus_syrian_revolution
+		cost = 3
+		available = {
+			has_government = communist
+			NOT = {
+				has_country_flag = treaty_of_seattle
+			}
+		}
+		prerequisite = {
+			focus = PCA_strengthen_the_republic
+		}
+		x = 34
+		y = 4
+		completion_reward = {
+		    add_ideas = idea_pca_columbian_security_force
+		}
+
+	}
+	focus = {
+		id = PCA_man_the_defences
+		icon = focus_syria_down_with_the_president
+		cost = 5
+		available = {
+			has_government = communist
+			NOT = {
+				has_country_flag = treaty_of_seattle
+			}
+		}
+		prerequisite = {
+			focus = PCA_independent_security_force
+		}
+		x = 34
+		y = 5
+		completion_reward = {
+		    add_timed_idea = {
+			    idea = idea_pca_manning_the_defences
+			    days = 300
+		    }
+		}
+
+	}
+	focus = {
+		id = PCA_return_to_normalcy
+		icon = national_unity
+        dynamic = yes
+		cost = 5
+		available = {
+			has_government = communist
+			NOT = {
+				has_country_flag = treaty_of_seattle
+			}
+		}
+		prerequisite = {
+			focus = PCA_special_economic_zones
+			focus = PCA_man_the_defences
+		}
+		x = 33
+		y = 6
+		completion_reward = {
+		    remove_ideas = idea_cascadian_separatism
+			add_political_power = -250
+			country_event = { id = pacific_america.80 }
+		}
+
+	}
+	focus = {
+		id = PCA_gleaming_reward
+		icon = focus_gleaming_reward
+		cost = 3
+		available = {
+			has_government = communist
+			NOT = {
+				has_country_flag = treaty_of_seattle
+			}
+		}
+		prerequisite = {
+			focus = PCA_the_las_vegas_question
+		}
+		mutually_exclusive = {
+			focus = PCA_fasttrack_demolition
+			focus = PCA_let_it_rot
+		}
+		x = 37
+		y = 1
+		completion_reward = {
+		    897 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+			}
+			country_event = { id = pacific_america.81 }
+		}
+
+	}
+	focus = {
+		id = PCA_construct_new_casinos
+		icon = focus_construct_new_casinos
+		cost = 7.2
+		available = {
+			has_government = communist
+			NOT = {
+				has_country_flag = treaty_of_seattle
+			}
+		}
+		prerequisite = {
+			focus = PCA_gleaming_reward
+		}
+		x = 37
+		y = 2
+		completion_reward = {
+		    897 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			add_political_power = 15
+			country_event = { id = pacific_america.82 }
+		}
+
+	}
+	focus = {
+		id = PCA_paradise_workers_complex
+		icon = focus_develop_odisha_mines
+		cost = 3
+		available = {
+			has_government = communist
+			NOT = {
+				has_country_flag = treaty_of_seattle
+			}
+		}
+		prerequisite = {
+			focus = PCA_construct_new_casinos
+		}
+		x = 37
+		y = 3
+		completion_reward = {
+		    add_popularity = {
+				ideology = communist
+				popularity = 0.05
+			}
+		}
+
+	}
+	focus = {
+		id = PCA_nevada_hyperloop
+		icon = positive_trade_relations
+		cost = 7.2
+		available = {
+			has_government = communist
+			NOT = {
+				has_country_flag = treaty_of_seattle
+			}
+		}
+		prerequisite = {
+			focus = PCA_paradise_workers_complex
+		}
+		x = 37
+		y = 4
+		completion_reward = {
+		    897 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			889 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			378 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			889 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			country_event = { id = pacific_america.83 }
+		}
+
+	}
+	focus = {
+		id = PCA_back_in_business_baby
+		icon = focus_back_in_business_baby
+		cost = 7.2
+		available = {
+			has_government = communist
+			NOT = {
+				has_country_flag = treaty_of_seattle
+			}
+		}
+		prerequisite = {
+			focus = PCA_nevada_hyperloop
+		}
+		x = 37
+		y = 5
+		completion_reward = {
+		    add_ideas = idea_pca_back_in_business_baby
+			country_event = { id = pacific_america.84 }
+			add_victory_points = {
+				province = 4799
+				value = 10
+			}
+		}
+
+	}
+	focus = {
+		id = PCA_fasttrack_demolition
+		icon = focus_fasttrack_demolition
+		cost = 1
+		available = {
+			has_government = communist
+			NOT = {
+				has_country_flag = treaty_of_seattle
+			}
+		}
+		prerequisite = {
+			focus = PCA_the_las_vegas_question
+		}
+		mutually_exclusive = {
+			focus = PCA_gleaming_reward
+			focus = PCA_let_it_rot
+		}
+		x = 39
+		y = 1
+		completion_reward = {
+		    add_political_power = 120
+			country_event = { id = pacific_america.85 }
+		}
+
+	}
+	focus = {
+		id = PCA_all_but_stardust
+		icon = focus_all_but_stardust
+		cost = 4
+		available = {
+			has_government = communist
+			NOT = {
+				has_country_flag = treaty_of_seattle
+			}
+		}
+		prerequisite = {
+			focus = PCA_fasttrack_demolition
+		}
+		x = 39
+		y = 2
+		completion_reward = {
+		    897 = {
+				add_extra_state_shared_building_slots = 5
+			}
+			country_event = { id = pacific_america.86 }
+		}
+
+	}
+	focus = {
+		id = PCA_model_city
+		icon = ethiopia_allow_autonomy
+		cost = 7.2
+		available = {
+			has_government = communist
+			NOT = {
+				has_country_flag = treaty_of_seattle
+			}
+		}
+		prerequisite = {
+			focus = PCA_all_but_stardust
+		}
+		x = 39
+		y = 3
+		completion_reward = {
+		    897 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = PCA_reap_the_benefits
+		icon = investigate_industrial_corruption
+		cost = 3
+		available = {
+			has_government = communist
+			NOT = {
+				has_country_flag = treaty_of_seattle
+			}
+		}
+		prerequisite = {
+			focus = PCA_model_city
+		}
+		x = 39
+		y = 4
+		completion_reward = {
+		    add_stability = 0.025
+		}
+
+	}
+	focus = {
+		id = PCA_manufacturing_paradise
+		icon = putins_inauguration
+		cost = 5
+		available = {
+			has_government = communist
+			NOT = {
+				has_country_flag = treaty_of_seattle
+			}
+		}
+		prerequisite = {
+			focus = PCA_reap_the_benefits
+		}
+		x = 39
+		y = 5
+		completion_reward = {
+			add_ideas = idea_pca_vegas_manufacturing
+			add_victory_points = {
+				province = 4799
+				value = 10
+			}
+		}
+
+	}
+	focus = {
+		id = PCA_let_it_rot
+		icon = focus_let_it_rot
+		cost = 1
+		available = {
+		    OR = {
+			    has_country_flag = davis_elected_general_secretary
+				has_country_flag = tyner_elected_general_secretary
+			}
+			has_government = communist
+			NOT = {
+				has_country_flag = treaty_of_seattle
+			}
+		}
+		prerequisite = {
+			focus = PCA_the_las_vegas_question
+		}
+		mutually_exclusive = {
+			focus = PCA_gleaming_reward
+			focus = PCA_fasttrack_demolition
+		}
+		x = 41
+		y = 1
+		completion_reward = {
+		    add_war_support = 0.03
+			country_event = { id = pacific_america.87 }
+		}
+
+	}
+	focus = {
+		id = PCA_aint_that_a_kick_in_the_head
+		icon = focus_aint_that_a_kick_in_the_head
+		cost = 3
+		available = {
+			has_government = communist
+			NOT = {
+				has_country_flag = treaty_of_seattle
+			}
+		}
+		prerequisite = {
+			focus = PCA_let_it_rot
+		}
+		x = 41
+		y = 2
+		completion_reward = {
+		    897 = {
+			    add_manpower = -15000
+			}
+			add_stability = 0.025 
+			add_political_power = 250
+			country_event = { id = pacific_america.88 }
+		}
+
+	}
+	focus = {
+		id = PCA_restart_hoover_dam
+		icon = focus_hydroelectric_scheme
+		cost = 5
+		available = {
+			has_government = communist
+			NOT = {
+				has_country_flag = treaty_of_seattle
+			}
+		}
+		prerequisite = {
+			focus = PCA_aint_that_a_kick_in_the_head
+		}
+		x = 41
+		y = 3
+		completion_reward = {
+		    add_ideas = idea_pca_hoover_dam
+			country_event = { id = pacific_america.89 }
+		}
+
+	}
+	focus = {
+		id = PCA_reconnect_the_coast
+		icon = focus_nile_river_development
+		cost = 5
+		available = {
+			has_government = communist
+			NOT = {
+				has_country_flag = treaty_of_seattle
+			}
+		}
+		prerequisite = {
+			focus = PCA_restart_hoover_dam
+		}
+		x = 41
+		y = 4
+		completion_reward = {
+		    378 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = PCA_propaganda_opportunity
+		icon = focus_syria_propaganda_effort
+		cost = 4
+		available = {
+			has_government = communist
+			NOT = {
+				has_country_flag = treaty_of_seattle
+			}
+		}
+		prerequisite = {
+			focus = PCA_reconnect_the_coast
+		}
+		x = 41
+		y = 5
+		completion_reward = {
+		    add_popularity = {
+				ideology = communist
+				popularity = 0.02
+			}
+			add_stability = 0.01 
+			add_war_support = 0.05 
+			add_political_power = 80
+		}
+
+	}
+	focus = {
+		id = PCA_join_the_warsaw_pact
+		icon = focus_syria_join_the_warsaw_pact
+		cost = 7.2
+		available = {
+			has_country_flag = foster_elected_general_secretary
+			has_government = communist
+			NOT = {
+				has_country_flag = treaty_of_seattle
+			}
+		}
+		prerequisite = {
+			focus = PCA_foreign_policy
+		}
+		x = 45
+		y = 1
+		completion_reward = {
+		    SOV = {
+			    country_event = { days = 1 id = generic.1 } 
+			}
+		}
+
+	}
+	focus = {
+		id = PCA_yazov_plan
+		icon = politburo_debate
+		cost = 7.2
+		available = {
+		    NOT = {
+			    SOV = {
+				    has_country_flag = putin_elected
+				}
+			}
+			has_government = communist
+			NOT = {
+				has_country_flag = treaty_of_seattle
+			}
+		}
+		prerequisite = {
+			focus = PCA_join_the_warsaw_pact
+		}
+		x = 45
+		y = 2
+		completion_reward = {
+		    random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = PCA_trade_with_europe
+		icon = trade
+		cost = 7.2
+		prerequisite = {
+			focus = PCA_yazov_plan
+		}
+		available = {
+			has_government = communist
+			NOT = {
+				has_country_flag = treaty_of_seattle
+			}
+		}
+		x = 44
+		y = 3
+		completion_reward = {
+		    add_opinion_modifier = {
+				target = GER
+				modifier = trade_influence_1
+			}
+			add_opinion_modifier = {
+				target = ITA
+				modifier = trade_influence_1
+			}
+			add_opinion_modifier = {
+				target = BEL
+				modifier = trade_influence_1
+			}
+			add_opinion_modifier = {
+				target = HOL
+				modifier = trade_influence_1
+			}
+			add_opinion_modifier = {
+				target = ROM
+				modifier = trade_influence_1
+			}
+			add_opinion_modifier = {
+				target = BUL
+				modifier = trade_influence_1
+			}
+		}
+
+	}
+	focus = {
+		id = PCA_special_relationship
+		icon = congress_of_nations
+		cost = 7.2
+		available = {
+			has_political_power > 800
+			has_government = communist
+			NOT = {
+				has_country_flag = treaty_of_seattle
+			}
+		}
+		prerequisite = {
+			focus = PCA_yazov_plan
+		}
+		x = 46
+		y = 3
+		completion_reward = {
+		    add_stability = 0.02 
+		}
+
+	}
+	focus = {
+		id = PCA_international_war_support
+		icon = defence
+		cost = 5
+		available = {
+			has_political_power > 800
+			has_government = communist
+			NOT = {
+				has_country_flag = treaty_of_seattle
+			}
+		}
+		prerequisite = {
+			focus = PCA_special_relationship
+		}
+		prerequisite = {
+			focus = PCA_trade_with_europe
+		}
+		x = 45
+		y = 4
+		completion_reward = {
+		    add_war_support = 0.05
+		}
+
+	}
+	focus = {
+		id = PCA_the_great_american_war
+		icon = against_communists
+		cost = 7.2
+		prerequisite = {
+			focus = PCA_foreign_policy
+		}
+		available = {
+			has_government = communist
+			NOT = {
+				has_country_flag = treaty_of_seattle
+			}
+		}
+		x = 51
+		y = 1
+		completion_reward = {
+		    add_political_power = 120
+		}
+
+	}
+	focus = {
+		id = PCA_liberate_mexico
+		icon = mexico_attack
+		cost = 7.2
+		prerequisite = {
+			focus = PCA_the_great_american_war
+		}
+		available = {
+			has_government = communist
+			NOT = {
+				has_country_flag = treaty_of_seattle
+			}
+		}
+		x = 50
+		y = 2
+		completion_reward = {
+		    create_wargoal = {
+			    type = annex_everything
+			    target = MEX
+		    }
+		}
+
+	}
+	focus = {
+		id = PCA_liberate_canada
+		icon = canada_attack
+		cost = 7.2
+		prerequisite = {
+			focus = PCA_the_great_american_war
+		}
+		available = {
+			has_government = communist
+			NOT = {
+				has_country_flag = treaty_of_seattle
+			}
+		}
+		x = 52
+		y = 2
+		completion_reward = {
+		    create_wargoal = {
+			    type = annex_everything
+			    target = CAN
+		    }
+		}
+
+	}
+	focus = {
+		id = PCA_liberate_central_america
+		icon = central_america_attack
+		cost = 7.2
+		prerequisite = {
+			focus = PCA_liberate_mexico
+		}
+		prerequisite = {
+			focus = PCA_liberate_canada
+		}
+		available = {
+			has_government = communist
+			NOT = {
+				has_country_flag = treaty_of_seattle
+			}
+		}
+		x = 51
+		y = 3
+		completion_reward = {
+		    create_wargoal = {
+			    type = annex_everything
+			    target = CEA
+		    }
+			create_wargoal = {
+			    type = annex_everything
+			    target = GUA
+		    }
+			create_wargoal = {
+			    type = annex_everything
+			    target = BLZ
+		    }
+			create_wargoal = {
+			    type = annex_everything
+			    target = PAN
+		    }
+		}
+
+	}
+	focus = {
+		id = PCA_march_along_the_andes
+		icon = chile_attack
+		cost = 7.2
+		prerequisite = {
+			focus = PCA_liberate_central_america
+		}
+		available = {
+			has_government = communist
+			NOT = {
+				has_country_flag = treaty_of_seattle
+			}
+		}
+		x = 51
+		y = 4
+		completion_reward = {
+		    create_wargoal = {
+			    type = annex_everything
+			    target = COL
+		    }
+			create_wargoal = {
+			    type = annex_everything
+			    target = ECU
+		    }
+			create_wargoal = {
+			    type = annex_everything
+			    target = PRU
+		    }
+			create_wargoal = {
+			    type = annex_everything
+			    target = BOL
+		    }
+			create_wargoal = {
+			    type = annex_everything
+			    target = CHL
+		    }
+		}
+
+	}
+	focus = {
+		id = PCA_liberate_argentina
+		icon = argentina_attack
+		cost = 7.2
+		prerequisite = {
+			focus = PCA_march_along_the_andes
+		}
+		available = {
+			has_government = communist
+			NOT = {
+				has_country_flag = treaty_of_seattle
+			}
+		}
+		x = 50
+		y = 5
+		completion_reward = {
+		    create_wargoal = {
+			    type = annex_everything
+			    target = ARG
+		    }
+		}
+
+	}
+	focus = {
+		id = PCA_liberate_brazil
+		icon = brazil_attack
+		cost = 7.2
+		prerequisite = {
+			focus = PCA_march_along_the_andes
+		}
+		available = {
+			has_government = communist
+			NOT = {
+				has_country_flag = treaty_of_seattle
+			}
+		}
+		x = 52
+		y = 5
+		completion_reward = {
+		    create_wargoal = {
+			    type = annex_everything
+			    target = BRA
+		    }
+		}
+
+	}
+	focus = {
+		id = PCA_the_forgotten_nations
+		icon = venezuela_attack
+		cost = 7.2
+		prerequisite = {
+			focus = PCA_liberate_argentina
+		}
+		prerequisite = {
+			focus = PCA_liberate_brazil
+		}
+		available = {
+			has_government = communist
+			NOT = {
+				has_country_flag = treaty_of_seattle
+			}
+		}
+		x = 51
+		y = 6
+		completion_reward = {
+		    create_wargoal = {
+			    type = annex_everything
+			    target = PAR
+		    }
+			create_wargoal = {
+			    type = annex_everything
+			    target = URG
+		    }
+			create_wargoal = {
+			    type = annex_everything
+			    target = GUY
+		    }
+			create_wargoal = {
+			    type = annex_everything
+			    target = VEN
+		    }
+		}
+
+	}
+	focus = {
+		id = PCA_march_on_salt_lake
+		icon = utah_attack
+		cost = 7.2
+		prerequisite = {
+			focus = PCA_bill_of_rights_socialism
+			focus = PCA_second_three_year_plan
+			focus = PCA_the_ssrs
+		}
+		available = {
+			has_government = communist
+			OR = {
+				is_neighbor_of = UTA
+				UTA = {
+					exists = no
+				}
+			}
+		    NOT = {
+				has_country_flag = treaty_of_seattle
+			}
+		}
+		x = 19
+		y = 9
+		completion_reward = {
+		    create_wargoal = {
+			    type = annex_everything
+			    target = UTA
+		    }
+			enable_unification_decisions = yes
+            core_UTA = yes
+		}
+		
+
+	}
+	focus = {
+		id = PCA_cross_the_colorado
+		icon = arizona_attack
+		cost = 7.2
+		prerequisite = {
+			focus = PCA_bill_of_rights_socialism
+			focus = PCA_second_three_year_plan
+			focus = PCA_the_ssrs
+		}
+		available = {
+			has_government = communist
+			OR = {
+				is_neighbor_of = ARI
+				ARI = {
+					exists = no
+				}
+			}
+			NOT = {
+				has_country_flag = treaty_of_seattle
+			}
+		}
+		x = 21
+		y = 9
+		completion_reward = {
+		    create_wargoal = {
+			    type = annex_everything
+			    target = ARI
+		    }
+			enable_unification_decisions = yes
+            core_ARI = yes
+		}
+
+	}
+	focus = {
+		id = PCA_in_lincolns_name
+		icon = lincoln_attack
+		cost = 7.2
+		prerequisite = {
+			focus = PCA_bill_of_rights_socialism
+			focus = PCA_second_three_year_plan
+			focus = PCA_the_ssrs
+		}
+		available = {
+			has_government = communist
+		    OR = {
+				is_neighbor_of = LIN
+				LIN = {
+					exists = no
+				}
+			}
+			NOT = {
+				has_country_flag = treaty_of_seattle
+			}
+		}
+		x = 23
+		y = 9
+		completion_reward = {
+		    create_wargoal = {
+			    type = annex_everything
+			    target = LIN
+		    }
+			enable_unification_decisions = yes
+            core_LIN = yes
+		}
+
+	}
+	focus = {
+		id = PCA_liberate_montana
+		icon = montana_attack
+		cost = 7.2
+		prerequisite = {
+			focus = PCA_in_lincolns_name
+		}
+		available = {
+			has_government = communist
+		    OR = {
+				is_neighbor_of = MOT
+				MOT = {
+					exists = no
+				}
+			}
+			NOT = {
+				has_country_flag = treaty_of_seattle
+			}
+		}
+		x = 24
+		y = 10
+		completion_reward = {
+		    create_wargoal = {
+			    type = annex_everything
+			    target = MOT
+		    }
+            core_MOT = yes
+		}
+
+	}
+	focus = {
+		id = PCA_order_in_the_midwest
+		icon = midwest_attack
+		cost = 7.2
+		prerequisite = {
+			focus = PCA_march_on_salt_lake
+		}
+		prerequisite = {
+			focus = PCA_cross_the_colorado
+		}
+		prerequisite = {
+			focus = PCA_in_lincolns_name
+		}
+		available = {
+			has_government = communist
+		    OR = {
+				is_neighbor_of = MWA
+				MWA = {
+					exists = no
+				}
+			}
+			NOT = {
+				has_country_flag = treaty_of_seattle
+			}
+		}
+		x = 18
+		y = 10
+		completion_reward = {
+		    create_wargoal = {
+			    type = annex_everything
+			    target = MWA
+		    }
+            core_MWA = yes
+		}
+
+	}
+	focus = {
+		id = PCA_march_to_superior
+		icon = glr_attack
+		cost = 7.2
+		prerequisite = {
+			focus = PCA_order_in_the_midwest
+		}
+		prerequisite = {
+			focus = PCA_liberate_montana
+		}
+		available = {
+			has_government = communist
+		    OR = {
+				is_neighbor_of = GRL
+				GRL = {
+					exists = no
+				}
+			}
+			NOT = {
+				has_country_flag = treaty_of_seattle
+			}
+		}
+		x = 22
+		y = 11
+		completion_reward = {
+		    create_wargoal = {
+			    type = annex_everything
+			    target = GRL
+		    }
+            core_GRL = yes
+		}
+
+	}
+	focus = {
+		id = PCA_war_commissars
+		icon = GFX_commissars
+		cost = 5
+		prerequisite = {
+			focus = PCA_march_on_salt_lake
+			focus = PCA_cross_the_colorado
+			focus = PCA_in_lincolns_name
+		}
+		available = {
+			has_government = communist
+			NOT = {
+				has_country_flag = treaty_of_seattle
+			}
+		}
+		x = 21
+		y = 10
+		completion_reward = {
+		    add_timed_idea = {
+			    idea = idea_pca_war_commissars
+			    days = 250
+		    }
+		}
+
+	}
+	focus = {
+		id = PCA_liberate_illinois
+		icon = illinois_attack
+		cost = 7.2
+		prerequisite = {
+			focus = PCA_order_in_the_midwest
+		}
+		available = {
+			has_government = communist
+		    OR = {
+				is_neighbor_of = ILL
+				ILL = {
+					exists = no
+				}
+			}
+			NOT = {
+				has_country_flag = treaty_of_seattle
+			}
+		}
+		x = 20
+		y = 11
+		completion_reward = {
+		    create_wargoal = {
+			    type = annex_everything
+			    target = ILL
+		    }
+            core_ILL = yes
+		}
+
+	}
+	focus = {
+		id = PCA_liberate_texas
+		icon = texas_attack
+		cost = 7.2
+		prerequisite = {
+			focus = PCA_liberate_illinois
+		}
+		prerequisite = {
+			focus = PCA_march_to_superior
+		}
+		available = {
+			has_government = communist
+		    OR = {
+				is_neighbor_of = TEX
+				TEX = {
+					exists = no
+				}
+			}
+			NOT = {
+				has_country_flag = treaty_of_seattle
+			}
+		}
+		x = 19
+		y = 12
+		completion_reward = {
+		    create_wargoal = {
+			    type = annex_everything
+			    target = TEX
+		    }
+            core_TEX = yes
+		}
+
+	}
+	focus = {
+		id = PCA_march_to_atlanta
+		icon = american_republic_attack
+		cost = 7.2
+		prerequisite = {
+			focus = PCA_liberate_illinois
+		}
+		prerequisite = {
+			focus = PCA_march_to_superior
+		}
+		available = {
+			has_government = communist
+		    OR = {
+				is_neighbor_of = USA
+				USA = {
+					exists = no
+				}
+			}
+			NOT = {
+				has_country_flag = treaty_of_seattle
+			}
+		}
+		x = 21
+		y = 12
+		completion_reward = {
+		    create_wargoal = {
+			    type = annex_everything
+			    target = USA
+		    }
+            core_USA = yes
+		}
+
+	}
+	focus = {
+		id = PCA_march_to_philadelphia
+		icon = commonwealth_attack
+		cost = 7.2
+		prerequisite = {
+			focus = PCA_march_to_superior
+		}
+		prerequisite = {
+			focus = PCA_liberate_illinois
+		}
+		available = {
+			has_government = communist
+			OR = {
+				OR = {
+					is_neighbor_of = NEA
+					is_neighbor_of = AMC
+					is_neighbor_of = AMS
+					is_neighbor_of = GAU
+				}
+				AND = {
+					NEA = {
+						exists = no
+					}
+					AMC = {
+						exists = no
+					}
+					AMS = {
+						exists = no
+					}
+					GAU = {
+						exists = no
+					}
+				}
+			}
+			NOT = {
+				has_country_flag = treaty_of_seattle
+			}
+		}
+		x = 23
+		y = 12
+		completion_reward = {
+		    create_wargoal = {
+			    type = annex_everything
+			    target = NEA
+		    }
+            create_wargoal = {
+			    type = annex_everything
+			    target = AMC
+		    }
+            create_wargoal = {
+			    type = annex_everything
+			    target = AMS
+		    }
+            create_wargoal = {
+			    type = annex_everything
+			    target = GAU
+		    }
+            core_NEA = yes
+		}
+
+	}
+	focus = {
+		id = PCA_new_cult
+		icon = focus_syria_socialist_support
+		cost = 7.2
+		prerequisite = {
+			focus = PCA_purchase_soviet_equipment
+		}
+		prerequisite = {
+			focus = PCA_reindustrialisation
+		}
+		available = {
+			has_government = communist
+			NOT = {
+				has_country_flag = treaty_of_seattle
+			}
+		}
+		x = 25
+		y = 5
+		completion_reward = {
+		    add_war_support = 0.017
+			add_stability = 0.01
+		}
+
+	}
+	focus = {
+		id = PCA_unity_project
+		icon = focus_syria_workers_self_management
+		cost = 5
+		prerequisite = {
+			focus = PCA_new_cult
+		}
+		prerequisite = {
+			focus = PCA_down_with_americanism
+		}
+		available = {
+			has_government = communist
+			NOT = {
+				has_country_flag = treaty_of_seattle
+			}
+		}
+		x = 26
+		y = 6
+		completion_reward = {
+		    add_political_power = 100
+		}
+
+	}
+	focus = {
+		id = PCA_warsaw_pact_tour
+		icon = focus_a_new_international_airport
+		cost = 14.4
+		prerequisite = {
+			focus = PCA_unity_project
+		}
+		available = {
+			has_government = communist
+			NOT = {
+				has_country_flag = treaty_of_seattle
+			}
+		}
+		x = 24
+		y = 7
+		completion_reward = {
+		    random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			country_event = { id = pacific_america.90 }
+		}
+
+	}
+	focus = {
+		id = PCA_extraordinary_congress
+		icon = communism_3
+		cost = 5
+		prerequisite = {
+			focus = PCA_unity_project
+		}
+		available = {
+			has_government = communist
+			NOT = {
+				has_country_flag = treaty_of_seattle
+			}
+		}
+		x = 26
+		y = 7
+		completion_reward = {
+		    add_tech_bonus = {
+				name = electronics_bonus
+				bonus = 0.5
+				uses = 1
+				category = electronics
+			}
+			add_tech_bonus = {
+				name = computing_tech_bonus
+				bonus = 0.5
+				uses = 1
+				category = computing_tech
+			}
+		}
+
+	}
+	focus = {
+		id = PCA_quotas_for_the_struggle
+		icon = ideology_fist
+		cost = 7.2
+		prerequisite = {
+			focus = PCA_unity_project
+		}
+		available = {
+			has_government = communist
+			NOT = {
+				has_country_flag = treaty_of_seattle
+			}
+		}
+		x = 28
+		y = 7
+		completion_reward = {
+		    add_ideas = idea_pca_quotas_for_the_struggle
+		}
+
+	}
+	focus = {
+		id = PCA_the_ssrs
+		icon = form_the_ssrs
+		cost = 7.2
+		prerequisite = {
+			focus = PCA_warsaw_pact_tour
+		}
+		prerequisite = {
+			focus = PCA_extraordinary_congress
+		}
+		prerequisite = {
+			focus = PCA_quotas_for_the_struggle
+		}
+		available = {
+			has_government = communist
+			NOT = {
+				has_country_flag = treaty_of_seattle
+			}
+			NOT = {
+				has_idea = idea_failing_economy
+			}
+		}
+		x = 26
+		y = 8
+		completion_reward = {
+		    set_cosmetic_tag = PCA_SSR
+			add_war_support = 0.035 
+			add_stability = -0.05 
+			add_political_power = 150
+			country_event = { id = pacific_america.91 }
+		}
+
+	}
+	focus = {
+		id = PCA_dismantle_the_communist_state
+		icon = puppet
+		cost = 7.2
+		prerequisite = {
+			focus = PCA_power_struggle_avoided
+		}
+		x = 6
+		y = 8
+		completion_reward = {
+		    add_popularity = {
+				ideology = communist
+				popularity = -0.04
+			}
+			add_popularity = {
+				ideology = moderate_socialist
+				popularity = -0.02
+			}
+			add_war_support = 0.04
+			hidden_effect = {
+			    if = {
+				    limit = {
+					    has_idea = idea_pca_quotas_maximised
+					}
+					remove_ideas = idea_pca_quotas_maximised
+				}
+				if = {
+				    limit = {
+					    has_idea = idea_pca_effective_resource_allocation
+					}
+					remove_ideas = idea_pca_effective_resource_allocation
+				}
+				if = {
+				    limit = {
+					    has_idea = idea_pca_agriculture_focus
+					}
+					remove_ideas = idea_pca_agriculture_focus
+				}
+				if = {
+				    limit = {
+					    has_idea = idea_pca_centralised_state
+					}
+					remove_ideas = idea_pca_centralised_state
+				}
+				if = {
+				    limit = {
+					    has_idea = idea_pca_implementing_the_three_year_plan
+					}
+					remove_ideas = idea_pca_implementing_the_three_year_plan
+				}
+				if = {
+				    limit = {
+					    has_idea = idea_pca_increased_education_funding
+					}
+					remove_ideas = idea_pca_increased_education_funding
+				}
+				if = {
+				    limit = {
+					    has_idea = idea_pca_leniency_towards_private_ownership
+					}
+					remove_ideas = idea_pca_leniency_towards_private_ownership
+				}
+				if = {
+				    limit = {
+					    has_idea = idea_pca_socialisation
+					}
+					remove_ideas = idea_pca_socialisation
+				}
+				if = {
+				    limit = {
+					    has_idea = idea_pca_reindustrialisation
+					}
+					remove_ideas = idea_pca_reindustrialisation
+				}
+				if = {
+				    limit = {
+					    has_idea = idea_pca_special_economic_zones
+					}
+					remove_ideas = idea_pca_special_economic_zones
+				}
+				if = {
+				    limit = {
+					    has_idea = idea_pca_columbian_security_force
+					}
+					remove_ideas = idea_pca_columbian_security_force
+				}
+				if = {
+				    limit = {
+					    has_idea = idea_pca_war_propaganda
+					}
+					remove_ideas = idea_pca_war_propaganda
+				}
+				if = {
+				    limit = {
+					    has_idea = idea_pca_manning_the_defences
+					}
+					remove_ideas = idea_pca_manning_the_defences
+				}
+				if = {
+				    limit = {
+					    has_idea = idea_pca_war_commissars
+					}
+					remove_ideas = idea_pca_war_commissars
+				}
+				if = {
+				    limit = {
+					    has_idea = idea_pca_quotas_for_the_struggle
+					}
+					remove_ideas = idea_pca_quotas_for_the_struggle
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = PCA_power_to_the_people
+		icon = political_pressure
+		cost = 5
+		prerequisite = {
+			focus = PCA_dismantle_the_communist_state
+		}
+		x = 6
+		y = 9
+		completion_reward = {
+		    add_ideas = idea_pca_power_to_the_people
+		}
+
+	}
+	focus = {
+		id = PCA_the_ranch_act
+		icon = small_arms
+		cost = 7.2
+		prerequisite = {
+			focus = PCA_power_to_the_people
+		}
+		prerequisite = {
+			focus = PCA_legislative_election
+		}
+		x = 6
+		y = 10
+		completion_reward = {
+		    add_ideas = idea_pca_the_ranch_act
+			if = {
+			    limit = {
+				    has_idea = idea_failing_economy
+				}
+				remove_ideas = idea_failing_economy
+			}
+			add_political_power = -100
+			country_event = { id = pacific_america.92 }
+		}
+
+	}
+	focus = {
+		id = PCA_send_delegation_to_phoenix
+		icon = red_hands_shaking
+		cost = 3
+		prerequisite = {
+			focus = PCA_united_nation
+		}
+		prerequisite = {
+			focus = PCA_new_propaganda_machine
+		}
+		prerequisite = {
+			focus = PCA_the_ranch_act
+		}
+		x = 3
+		y = 11
+		completion_reward = {
+		    ARI = {
+			    add_opinion_modifier = {
+				    target = PCA
+				    modifier = declaration_of_friendship
+			    }
+			}
+			add_political_power = 80
+			country_event = { id = pacific_america.93 }
+		}
+
+	}
+	focus = {
+		id = PCA_unification_with_arizona
+		icon = two_flags
+		cost = 7.2
+		prerequisite = {
+			focus = PCA_send_delegation_to_phoenix
+		}
+		x = 3
+		y = 12
+		completion_reward = {
+		    ARI = {
+			    country_event = { days = 1 id = pacific_america.47 } 
+			}
+		}
+
+	}
+	focus = {
+		id = PCA_occupy_nevada
+		icon = territory_or_war
+		cost = 7.2
+		prerequisite = {
+			focus = PCA_united_nation
+		}
+		prerequisite = {
+			focus = PCA_new_propaganda_machine
+		}
+		prerequisite = {
+			focus = PCA_the_ranch_act
+		}
+		x = 5
+		y = 11
+		completion_reward = {
+		    UTA = {
+			    country_event = { id = pacific_america.50 }
+			}
+		}
+
+	}
+	focus = {
+		id = PCA_the_salt_war
+		icon = small_bomb
+		cost = 7.2
+		available = {
+		    country_exists = UTA 
+			UTA = {
+			    is_puppet = no 
+			}
+ 			NOT = {
+			    has_war_with = UTA
+			}
+		}
+		bypass = {
+		    OR = {
+			    UTA = {
+			        is_puppet = yes 
+			    }
+				UTA = { exists = no } 
+			}
+		}
+		prerequisite = {
+			focus = PCA_occupy_nevada
+		}
+		x = 5
+		y = 12
+		completion_reward = {
+		    create_wargoal = {
+			    type = annex_everything
+			    target = UTA
+			}
+			every_state = {
+				limit = {
+					is_core_of = UTA
+				}
+				add_core_of = PCA
+			}
+		}
+
+	}
+	focus = {
+		id = PCA_crush_the_mexican_menace
+		icon = mexico_attack
+		cost = 7.2
+		prerequisite = {
+			focus = PCA_unification_with_arizona
+		}
+		prerequisite = {
+			focus = PCA_the_salt_war
+		}
+		x = 4
+		y = 13
+		completion_reward = {
+		    create_wargoal = {
+			    type = annex_everything
+			    target = MEX
+		    }
+		}
+
+	}
+	focus = {
+		id = PCA_return_guns
+		icon = guns_blue
+		cost = 7.2
+		prerequisite = {
+			focus = PCA_the_ranch_act
+			focus = PCA_rights_respect_stability
+		}
+		x = 7
+		y = 11
+		completion_reward = {
+		    add_ideas = idea_pca_rearmed_populace
+			country_event = { id = pacific_america.94 }
+		}
+
+	}
+	focus = {
+		id = PCA_mexican_campaign
+		icon = mexico_attack
+		cost = 7.2
+		prerequisite = {
+			focus = PCA_consolidate_our_control
+		}
+		x = 10
+		y = 13
+		completion_reward = {
+		    create_wargoal = {
+			    type = annex_everything
+			    target = MEX
+		    }
+		}
+
+	}
+	focus = {
+		id = PCA_all_the_way_to_panama
+		icon = prestige_of_the_royals
+		cost = 7.2
+		prerequisite = {
+			focus = PCA_mexican_campaign
+		}
+		x = 10
+		y = 14
+		completion_reward = {
+		    create_wargoal = {
+			    type = annex_everything
+			    target = GUA
+		    }
+			create_wargoal = {
+			    type = annex_everything
+			    target = BLZ
+		    }
+			create_wargoal = {
+			    type = annex_everything
+			    target = CEA
+		    }
+			create_wargoal = {
+			    type = annex_everything
+			    target = PAN
+		    }
+		}
+
+	}
+}

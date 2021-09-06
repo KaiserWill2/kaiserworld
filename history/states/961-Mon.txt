@@ -1,0 +1,30 @@
+
+state={
+	id=961
+	name="STATE_961" # Chin
+	manpower = 478801
+	
+	state_category = large_town
+	
+	resources = {
+		rubber = 5
+		steel = 2
+	}
+
+	history={
+		owner = MYA
+		victory_points = {
+			1403 3 
+		}
+		buildings = {
+		industrial_complex = 1
+		infrastructure = 5	
+		}
+		
+	}
+	
+	provinces={
+		   4336 1403 12125   
+	}
+}
+

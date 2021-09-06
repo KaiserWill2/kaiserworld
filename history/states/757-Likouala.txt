@@ -1,0 +1,22 @@
+state={
+	id=757
+	name="STATE_757"
+	
+	resources = {
+		rubber = 2
+		oil = 3
+	}
+	
+	history = {
+		owner = CAF
+		add_core_of = CAF
+		add_core_of = COG
+	}
+	
+	provinces={
+		6008 
+	}
+	manpower=91100
+	state_category = wasteland
+	buildings_max_level_factor=1.000
+}

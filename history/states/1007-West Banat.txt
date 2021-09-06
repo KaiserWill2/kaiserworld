@@ -1,0 +1,22 @@
+
+state={
+	id=1007
+	name="STATE_1007"
+
+	history={
+		owner = TRN
+		add_core_of = SER
+		add_core_of = TRN
+		add_core_of = YUG
+		buildings = {
+			infrastructure = 4
+		}
+	}
+
+	provinces={
+		6643 11787 3614 614 
+	}
+	manpower=625684
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

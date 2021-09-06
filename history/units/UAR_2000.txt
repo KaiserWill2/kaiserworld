@@ -1,0 +1,195 @@
+﻿division_template = {
+	name = "Infantry Division"
+	
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+	}
+}
+
+division_template = {
+	name = "Motorized Division"
+	
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		motorized = { x = 0 y = 3 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+	}
+}
+
+division_template = {
+	name = "Armored Division"
+	
+	regiments = {
+		heavy_armor = { x = 0 y = 0 }
+		heavy_armor = { x = 0 y = 1 }
+		heavy_armor = { x = 0 y = 2 }
+		heavy_armor = { x = 0 y = 3 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+	}
+}
+
+units = {
+
+	division = {
+		name = "1st Egyptian Army"
+		location = 7011
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "3rd Egyptian Army"
+		location = 7011
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "2nd Egyptian Army"
+		location = 4076
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "4th Egyptian Army"
+		location = 9989
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "5th Egyptian Army"
+		location = 1151
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+	}
+	
+	division = {
+		name = "6th Egyptian Army"
+		location = 1977
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+	}
+	
+	division = {
+		name = "Hala'ib Defence Force"
+		location = 1977
+		division_template = "Infantry Division"
+		start_experience_factor = 0.1
+	}
+	
+	division = {
+		name = "7th Egyptian Army"
+		location = 9947
+		division_template = "Motorized Division"
+		start_experience_factor = 0.2
+	}
+	
+	division = {
+		name = "8th Egyptian Army"
+		location = 7079
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+	}
+	
+	division = {
+		name = "9th Egyptian Army"
+		location = 1071
+		division_template = "Motorized Division"
+		start_experience_factor = 0.2
+	}
+	
+	division = {
+		name = "10th Egyptian Army"
+		location = 10073
+		division_template = "Motorized Division"
+		start_experience_factor = 0.2
+	}
+	
+	division = {
+		name = "11th Egyptian Army"
+		location = 4161
+		division_template = "Motorized Division"
+		start_experience_factor = 0.2
+	}
+	
+	division = {
+		name = "12th Egyptian Army"
+		location = 10002
+		division_template = "Motorized Division"
+		start_experience_factor = 0.1
+	}
+	
+	division = {
+		name = "13th Egyptian Army"
+		location = 7188
+		division_template = "Motorized Division"
+		start_experience_factor = 0.1
+	}
+	
+	division = {
+		name = "1st Syrian Army"
+		location = 4111
+		division_template = "Infantry Division"
+		start_experience_factor = 0.1
+	}
+	
+	division = {
+		name = "2nd Syrian Army"
+		location = 12473
+		division_template = "Infantry Division"
+		start_experience_factor = 0.1
+	}
+	
+	division = {
+		name = "3rd Syrian Army"
+		location = 1088
+		division_template = "Infantry Division"
+		start_experience_factor = 0.1
+	}
+	
+	division = {
+		name = "4th Syrian Army"
+		location = 7671
+		division_template = "Infantry Division"
+		start_experience_factor = 0.1
+	}
+	
+	division = {
+		name = "5th Syrian Army"
+		location = 10383
+		division_template = "Infantry Division"
+		start_experience_factor = 0.1
+	}
+}
+
+### Air Wings###
+
+air_wings = {
+	447 = {
+		fighter_equipment_0 = {
+			owner = "UAR"
+			amount = 20
+		}
+		tac_bomber_equipment_0 = {
+			owner = "UAR"
+			amount = 10
+		}
+	}
+}

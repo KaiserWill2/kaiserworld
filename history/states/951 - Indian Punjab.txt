@@ -1,0 +1,32 @@
+state={
+	id=951
+	name="STATE_951"
+	
+	resources={
+		steel = 20
+		aluminium = 2
+		
+	}
+	provinces={
+	2032 2002 10729 
+	}
+	state_category = metropolis
+	history={
+		owner = RAJ
+		victory_points = {
+			10729 10 
+		}
+		add_core_of = RAJ
+		add_core_of = PJB
+		buildings = {
+			infrastructure = 8
+			industrial_complex = 2
+			arms_factory = 1
+			
+	
+		}
+
+	}
+	manpower=					27704236
+	buildings_max_level_factor=1.000
+}

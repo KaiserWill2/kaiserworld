@@ -1,0 +1,222 @@
+﻿capital = 405
+
+oob = "generic_2000"
+
+set_research_slots = 4
+set_convoys = 500
+set_stability = 0.8
+set_war_support = 0.3
+
+set_technology = {
+	support_weapons = 1
+	infantry_weapons = 1
+	motorised_infantry = 1
+	tech_support = 1
+	tech_field_hospital = 1
+	tech_engineers = 1
+	gwtank = 1
+	basic_light_tank = 1
+	gw_artillery = 1
+	tech_mountaineers = 1
+	early_fighter = 1
+	early_bomber = 1
+	interwar_antiair = 1
+	interwar_antitank = 1
+}
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	set_technology = {
+		early_submarine = 1
+		basic_submarine = 1
+		early_destroyer = 1
+		early_light_cruiser = 1
+		basic_light_cruiser = 1
+		early_heavy_cruiser = 1
+
+
+		early_carrier = 1
+		basic_carrier = 1
+		transport = 1
+	}
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_technology = {
+		basic_naval_mines = 1
+		submarine_mine_laying = 1
+		early_ship_hull_light = 1
+		basic_ship_hull_light = 1
+		early_ship_hull_submarine = 1
+		basic_ship_hull_submarine = 1
+		early_ship_hull_cruiser = 1
+		basic_ship_hull_cruiser = 1
+		early_ship_hull_heavy = 1
+		early_ship_hull_carrier = 1
+		basic_ship_hull_carrier = 1
+		basic_battery = 1
+		basic_light_battery = 1
+		basic_medium_battery = 1
+		basic_heavy_battery = 1
+		basic_torpedo = 1
+		sonar = 1
+		basic_depth_charges = 1
+		basic_secondary_battery = 1
+		improved_secondary_battery = 1
+		basic_cruiser_armor_scheme = 1
+		basic_heavy_armor_scheme = 1
+		mtg_transport = 1
+		improved_airplane_launcher = 1
+	}
+}
+set_politics = {
+	ruling_party = national_bolshevik
+	last_election = "1997.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+        fascist = 0
+		nationalist = 60
+		monarchist = 0
+		national_bolshevik = 0
+		national_conservative = 10
+		centrist = 0
+		liberal = 0
+		new_democrat = 10
+		moderate_socialist = 0
+		revolutionary_socialist = 10
+		communist = 10
+}
+
+create_country_leader = {
+	name = "Gulmurod Khalimov"
+	picture = "Portrait_TJI_Gulmurod_Khalimov.dds"
+	ideology = fascist_ideology
+}
+
+create_country_leader = {
+	name = "Kokhir Rasulzoda"
+	picture = "Portrait_TJI_Kokhir_Rasulzoda.dds"
+	ideology = nationalist_ideology
+}
+
+create_country_leader = {
+	name = "Tajik Regency Council"
+	picture = "Portrait_TJI_Tajik_Regency_Council.dds"
+	ideology = absolute_monarchist
+}
+
+create_country_leader = {
+	name = "Emomali Rahmon"
+	picture = "Portrait_TJI_Emomali_Rahmon.dds"
+	ideology = national_bolshevik_ideology
+}
+
+create_country_leader = {
+	name = "Muhiddin Kabiri"
+	picture = "Portrait_TJI_Muhiddin_Kabiri.dds"
+	ideology = fiscal_conservative
+}
+
+create_country_leader = {
+	name = "Amir Qaroqulov"
+	picture = "Portrait_TJI_Amir_Qaroqulov.dds"
+	ideology = centrist_ideology
+}
+
+create_country_leader = {
+	name = "Umarali Quvvatov"
+	picture = "Portrait_TJI_Umarali_Quvvatov.dds"
+	ideology = social_liberal
+}
+
+create_country_leader = {
+	name = "Rahmatullo Zoirov"
+	picture = "Portrait_TJI_Rahmatullo_Zoirov.dds"
+	ideology = new_democrat_ideology
+}
+
+create_country_leader = {
+	name = "Abdulmajid Dostiev"
+	picture = "Portrait_TJI_Abdulmajid_Dostiev.dds"
+	ideology = democratic_socialist
+}
+
+create_country_leader = {
+	name = "Abduhalim Ghafforov"
+	picture = "Portrait_TJI_Abduhalim_Ghafforov.dds"
+	ideology = revolutionary_socialist_ideology
+}
+
+create_country_leader = {
+	name = "Shodi Shabdolov"
+	picture = "Portrait_TJI_Shodi_Shabdolov.dds"
+	ideology = leninist
+}
+
+create_field_marshal = {
+	name = "Sherali Khayrulloyev"
+	picture = "Portrait_Sherali_Khayrulloyev.dds"
+	traits = { }
+	skill = 4
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 4
+}
+
+create_field_marshal = {
+	name = "Sherali Mirzo"
+	picture = "Portrait_Sherali_Mirzo.dds"
+	traits = { }
+	skill = 4
+	attack_skill = 3
+	defense_skill = 4
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Saimumin Yatim"
+	picture = "Portrait_Saimumin_Yatimov.dds"
+	traits = { career_officer }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Abduhalim Nazarzoda"
+	picture = "Portrait_Abduhalim_Nazarzoda.dds"
+	traits = { trait_reckless }
+	skill = 2
+	attack_skill = 3
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Zarif Sharifzoda"
+	picture = "Portrait_Zarif_Sharifzoda.dds"
+	traits = { }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Latif Fayziyev"
+	picture = "Portrait_Latif_Fayziyev.dds"
+	traits = { }
+	skill = 2
+	attack_skill = 1
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 3
+}

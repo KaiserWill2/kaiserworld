@@ -1,0 +1,162 @@
+﻿capital = 286
+
+oob = "CMB_2000"
+
+add_ideas = {
+    idea_effects_of_the_khmer_rouge
+}
+
+set_research_slots = 4
+set_convoys = 500
+set_stability = 0.6
+set_war_support = 0.1
+
+set_technology = {
+	support_weapons = 1
+	infantry_weapons = 1
+	motorised_infantry = 1 
+	tech_support = 1 
+	tech_field_hospital = 1 
+	tech_engineers = 1 
+	gwtank = 1 
+	basic_light_tank = 1 
+	gw_artillery = 1 
+	tech_mountaineers = 1
+	early_fighter = 1 
+	early_bomber = 1 
+	interwar_antiair = 1
+	interwar_antitank = 1
+}
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	set_technology = {
+		early_submarine = 1
+		basic_submarine = 1
+		early_destroyer = 1
+		early_light_cruiser = 1
+		basic_light_cruiser = 1
+		early_heavy_cruiser = 1
+		
+		
+		early_carrier = 1
+		basic_carrier = 1
+		transport = 1
+	}
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_technology = {
+		basic_naval_mines = 1
+		submarine_mine_laying = 1
+		early_ship_hull_light = 1
+		basic_ship_hull_light = 1
+		early_ship_hull_submarine = 1
+		basic_ship_hull_submarine = 1
+		early_ship_hull_cruiser = 1
+		basic_ship_hull_cruiser = 1
+		early_ship_hull_heavy = 1
+		early_ship_hull_carrier = 1
+		basic_ship_hull_carrier = 1
+		basic_battery = 1
+		basic_light_battery = 1
+		basic_medium_battery = 1
+		basic_heavy_battery = 1
+		basic_torpedo = 1
+		sonar = 1
+		basic_depth_charges = 1
+		basic_secondary_battery = 1
+		improved_secondary_battery = 1
+		basic_cruiser_armor_scheme = 1
+		basic_heavy_armor_scheme = 1
+		mtg_transport = 1
+		improved_airplane_launcher = 1
+	}
+}
+
+set_politics = {
+	ruling_party = communist
+	last_election = "1997.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+        fascist = 12
+		nationalist = 0
+		monarchist = 0
+		national_bolshevik = 5
+		national_conservative = 8
+		centrist = 0
+		liberal = 0
+		new_democrat = 10
+		moderate_socialist = 0
+		revolutionary_socialist = 10
+		communist = 55
+}
+
+create_country_leader = {
+	name = "Heng Samrin"
+	desc = "POLITICS_HENG_SAMRIN_DESC"
+	picture = "Portrait_CMB_Heng_Samrin.dds"
+	ideology = leninist
+}
+
+create_country_leader = {
+	name = "Norodom Ranariddh"
+	picture = "Portrait_CMB_Norodom_Ranariddh.dds"
+	ideology = fascist_ideology
+}
+
+create_country_leader = {
+	name = "Kong Korm"
+	picture = "Portrait_CMB_Kong_Korm.dds"
+	ideology = nationalist_ideology
+}
+
+create_country_leader = {
+	name = "Norodom Sihanouk"
+	picture = "Portrait_CMB_Norodom_Sihanouk.dds"
+	ideology = absolute_monarchist
+}
+
+create_country_leader = {
+	name = "Nuon Chea"
+	picture = "Portrait_CMB_Nuon_Chea.dds"
+	ideology = national_bolshevik_ideology
+}
+
+create_country_leader = {
+	name = "Kem Sokha"
+	picture = "Portrait_CMB_Kem_Sokha.dds"
+	ideology = reactionary
+}
+
+create_country_leader = {
+	name = "Sam Rainsy"
+	picture = "Portrait_CMB_Sam_Rainsy.dds"
+	ideology = centrist_populist
+}
+
+create_country_leader = {
+	name = "Tea Banh"
+	picture = "Portrait_CMB_Tea_Banh.dds"
+	ideology = social_liberal
+}
+
+create_country_leader = {
+	name = "Kem Ley"
+	picture = "Portrait_CMB_Kem_Ley.dds"
+	ideology = new_democrat_ideology
+}
+
+create_country_leader = {
+	name = "Hun Sen"
+	picture = "Portrait_CMB_Hun_Sen.dds"
+	ideology = democratic_socialist
+}
+
+create_country_leader = {
+	name = "Hor Namhong"
+	picture = "Portrait_CMB_Hor_Namhong.dds"
+	ideology = revolutionary_socialist_ideology
+}

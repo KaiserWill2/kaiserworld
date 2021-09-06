@@ -1,0 +1,589 @@
+### AMERICAN PEOPLES COMMONWEALTH ###
+
+commonwealth_war_philadelphia = {
+
+	enable = {
+		tag = NEA
+	}
+	
+	abort = {
+		always = no
+	}
+	
+	ai_strategy = {
+		type = conquer
+		id = AMC
+		value = 200
+	}
+
+}
+
+commonwealth_war_vermont = {
+
+	enable = {
+		tag = AMC
+	}
+	
+	abort = {
+		always = no
+	}
+	
+	ai_strategy = {
+		type = conquer
+		id = NEA
+		value = 200
+	}
+
+}
+
+### LIBYAN UNION ###
+
+libyan_war_union_islamists = {
+
+	enable = {
+		tag = LBA
+	}
+	
+	abort = {
+		always = no
+	}
+	
+	ai_strategy = {
+		type = conquer
+		id = ISL
+		value = 200
+	}
+
+}
+
+libyan_war_union_dems = {
+
+	enable = {
+		tag = LBA
+	}
+	
+	abort = {
+		always = no
+	}
+	
+	ai_strategy = {
+		type = conquer
+		id = GNS
+		value = 200
+	}
+
+}
+
+libyan_war_union_army = {
+
+	enable = {
+		tag = LBA
+	}
+	
+	abort = {
+		always = no
+	}
+	
+	ai_strategy = {
+		type = conquer
+		id = FAL
+		value = 200
+	}
+
+}
+
+libyan_war_union_syndicates = {
+
+	enable = {
+		tag = LBA
+	}
+	
+	abort = {
+		always = no
+	}
+	
+	ai_strategy = {
+		type = conquer
+		id = ACS
+		value = 200
+	}
+
+}
+
+libyan_war_union_commies = {
+
+	enable = {
+		tag = LBA
+	}
+	
+	abort = {
+		always = no
+	}
+	
+	ai_strategy = {
+		type = conquer
+		id = RAL
+		value = 200
+	}
+
+}
+
+### ISLAMISTS ###
+
+libyan_war_islamists_union = {
+
+	enable = {
+		tag = ISL
+	}
+	
+	abort = {
+		always = no
+	}
+	
+	ai_strategy = {
+		type = conquer
+		id = LBA
+		value = 200
+	}
+
+}
+
+libyan_war_islamists_dems = {
+
+	enable = {
+		tag = ISL
+	}
+	
+	abort = {
+		always = no
+	}
+	
+	ai_strategy = {
+		type = conquer
+		id = GNS
+		value = 200
+	}
+
+}
+
+libyan_war_islamists_army = {
+
+	enable = {
+		tag = ISL
+	}
+	
+	abort = {
+		always = no
+	}
+	
+	ai_strategy = {
+		type = conquer
+		id = FAL
+		value = 200
+	}
+
+}
+
+libyan_war_islamists_syndicates = {
+
+	enable = {
+		tag = ISL
+	}
+	
+	abort = {
+		always = no
+	}
+	
+	ai_strategy = {
+		type = conquer
+		id = ACS
+		value = 200
+	}
+
+}
+
+libyan_war_islamists_commies = {
+
+	enable = {
+		tag = ISL
+	}
+	
+	abort = {
+		always = no
+	}
+	
+	ai_strategy = {
+		type = conquer
+		id = RAL
+		value = 200
+	}
+
+}
+
+### DEMOCRATS ###
+
+libyan_war_dems_islamists = {
+
+	enable = {
+		tag = GNS
+	}
+	
+	abort = {
+		always = no
+	}
+	
+	ai_strategy = {
+		type = conquer
+		id = LBA
+		value = 200
+	}
+
+}
+
+libyan_war_dems_islamists = {
+
+	enable = {
+		tag = GNS
+	}
+	
+	abort = {
+		always = no
+	}
+	
+	ai_strategy = {
+		type = conquer
+		id = ISL
+		value = 200
+	}
+
+}
+
+libyan_war_dems_army = {
+
+	enable = {
+		tag = GNS
+	}
+	
+	abort = {
+		always = no
+	}
+	
+	ai_strategy = {
+		type = conquer
+		id = FAL
+		value = 200
+	}
+
+}
+
+libyan_war_dems_syndicates = {
+
+	enable = {
+		tag = GNS
+	}
+	
+	abort = {
+		always = no
+	}
+	
+	ai_strategy = {
+		type = conquer
+		id = ACS
+		value = 200
+	}
+
+}
+
+libyan_war_dems_commies = {
+
+	enable = {
+		tag = GNS
+	}
+	
+	abort = {
+		always = no
+	}
+	
+	ai_strategy = {
+		type = conquer
+		id = RAL
+		value = 200
+	}
+
+}
+
+### ARMY ###
+
+libyan_war_army_union = {
+
+	enable = {
+		tag = FAL
+	}
+	
+	abort = {
+		always = no
+	}
+	
+	ai_strategy = {
+		type = conquer
+		id = LBA
+		value = 200
+	}
+
+}
+
+libyan_war_army_islamists = {
+
+	enable = {
+		tag = FAL
+	}
+	
+	abort = {
+		always = no
+	}
+	
+	ai_strategy = {
+		type = conquer
+		id = ISL
+		value = 200
+	}
+
+}
+
+libyan_war_army_dems = {
+
+	enable = {
+		tag = FAL
+	}
+	
+	abort = {
+		always = no
+	}
+	
+	ai_strategy = {
+		type = conquer
+		id = GNS
+		value = 200
+	}
+
+}
+
+libyan_war_army_syndicates = {
+
+	enable = {
+		tag = FAL
+	}
+	
+	abort = {
+		always = no
+	}
+	
+	ai_strategy = {
+		type = conquer
+		id = ACS
+		value = 200
+	}
+
+}
+
+libyan_war_army_commies = {
+
+	enable = {
+		tag = FAL
+	}
+	
+	abort = {
+		always = no
+	}
+	
+	ai_strategy = {
+		type = conquer
+		id = RAL
+		value = 200
+	}
+
+}
+
+### SYNDICATES ###
+
+libyan_war_syndicates_union = {
+
+	enable = {
+		tag = ACS
+	}
+	
+	abort = {
+		always = no
+	}
+	
+	ai_strategy = {
+		type = conquer
+		id = LBA
+		value = 200
+	}
+
+}
+
+libyan_war_syndicates_islamists = {
+
+	enable = {
+		tag = ACS
+	}
+	
+	abort = {
+		always = no
+	}
+	
+	ai_strategy = {
+		type = conquer
+		id = ISL
+		value = 200
+	}
+
+}
+
+libyan_war_syndicates_dems = {
+
+	enable = {
+		tag = ACS
+	}
+	
+	abort = {
+		always = no
+	}
+	
+	ai_strategy = {
+		type = conquer
+		id = GNS
+		value = 200
+	}
+
+}
+
+libyan_war_syndicates_army = {
+
+	enable = {
+		tag = ACS
+	}
+	
+	abort = {
+		always = no
+	}
+	
+	ai_strategy = {
+		type = conquer
+		id = FAL
+		value = 200
+	}
+
+}
+
+libyan_war_syndicates_commies = {
+
+	enable = {
+		tag = ACS
+	}
+	
+	abort = {
+		always = no
+	}
+	
+	ai_strategy = {
+		type = conquer
+		id = RAL
+		value = 200
+	}
+
+}
+
+### COMMIES ###
+
+libyan_war_commies_union = {
+
+	enable = {
+		tag = RAL
+	}
+	
+	abort = {
+		always = no
+	}
+	
+	ai_strategy = {
+		type = conquer
+		id = LBA
+		value = 200
+	}
+
+}
+
+libyan_war_commies_islamists = {
+
+	enable = {
+		tag = RAL
+	}
+	
+	abort = {
+		always = no
+	}
+	
+	ai_strategy = {
+		type = conquer
+		id = ISL
+		value = 200
+	}
+
+}
+
+libyan_war_commies_dems = {
+
+	enable = {
+		tag = RAL
+	}
+	
+	abort = {
+		always = no
+	}
+	
+	ai_strategy = {
+		type = conquer
+		id = GNS
+		value = 200
+	}
+
+}
+
+libyan_war_commies_army = {
+
+	enable = {
+		tag = RAL
+	}
+	
+	abort = {
+		always = no
+	}
+	
+	ai_strategy = {
+		type = conquer
+		id = FAL
+		value = 200
+	}
+
+}
+
+libyan_war_commies_syndicates = {
+
+	enable = {
+		tag = RAL
+	}
+	
+	abort = {
+		always = no
+	}
+	
+	ai_strategy = {
+		type = conquer
+		id = ACS
+		value = 200
+	}
+
+}

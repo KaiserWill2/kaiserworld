@@ -1,0 +1,238 @@
+ideas = {
+	national_campaign = { 
+		law = yes
+		
+		support_the_conservative_party = {
+			cost = 300
+			removal_cost = -1
+			level = 5
+			
+			picture = generic_spy_intel
+			
+			available = {
+				OR = {
+				    has_government = national_conservative
+					has_government = centrist
+					has_government = liberal
+					has_government = new_democrat
+					has_government = moderate_socialist
+				}
+				NOT = {
+				   tag = USA
+					tag = ENG
+					tag = GAU
+					tag = AMC
+					tag = PCA
+					tag = MWA
+				}
+				NOT = {
+				    AND = {
+					    tag = ITA 
+						OR = {
+						    has_completed_focus = ITA_the_merchant_republic_plan
+							has_completed_focus = ITA_solidarity_front_government
+						}
+					}
+				}
+				national_conservative < 0.35
+			}
+			
+			
+			modifier = {
+				national_conservative_drift = 0.02
+			}
+			
+			cancel_if_invalid = yes
+			
+		}
+		
+		support_the_centrist_party = {
+			cost = 300
+			removal_cost = -1
+			level = 4
+			
+			available = {
+			    AND = {
+				    OR = {
+					    has_government = national_conservative
+						has_government = centrist
+						has_government = liberal
+						has_government = new_democrat
+						has_government = moderate_socialist
+					}
+					NOT = {
+					    OR = {
+						   tag = USA
+					tag = ENG
+					tag = GAU
+					tag = AMC
+					tag = PCA
+					tag = MWA
+						}
+					}
+					NOT = {
+					    AND = {
+						    tag = ITA 
+							OR = {
+							    has_completed_focus = ITA_the_merchant_republic_plan
+								has_completed_focus = ITA_solidarity_front_government
+							}
+						}
+					}
+					centrist < 0.35
+				}
+			}
+			
+			picture = generic_spy_intel
+			
+			modifier = {
+				centrist_drift = 0.02
+			}
+			
+			cancel_if_invalid = yes
+			
+		}
+		
+		support_the_liberal_party = {
+			cost = 300
+			removal_cost = -1
+			level = 3
+			
+			available = {
+			    AND = {
+				    OR = {
+					    has_government = national_conservative
+						has_government = centrist
+						has_government = liberal
+						has_government = new_democrat
+						has_government = moderate_socialist
+					}
+					NOT = {
+					    OR = {
+						    tag = USA
+					tag = ENG
+					tag = GAU
+					tag = AMC
+					tag = PCA
+					tag = MWA
+						}
+					}
+					NOT = {
+					    AND = {
+						    tag = ITA 
+							OR = {
+							    has_completed_focus = ITA_the_merchant_republic_plan
+								has_completed_focus = ITA_solidarity_front_government
+							}
+						}
+					}
+					liberal < 0.35
+				}
+			}
+			
+			picture = generic_spy_intel
+			
+			modifier = {
+				liberal_drift = 0.02
+			}
+			
+			cancel_if_invalid = yes
+			
+		}
+		
+		support_the_new_democrat_party = {
+			cost = 300
+			removal_cost = -1
+			level = 2
+			
+			available = {
+			    AND = {
+				    OR = {
+					    has_government = national_conservative
+						has_government = centrist
+						has_government = liberal
+						has_government = new_democrat
+						has_government = moderate_socialist
+					}
+					NOT = {
+					    OR = {
+						   tag = USA
+					tag = ENG
+					tag = GAU
+					tag = AMC
+					tag = PCA
+					tag = MWA
+						}
+					}
+					NOT = {
+					    AND = {
+						    tag = ITA 
+							OR = {
+							    has_completed_focus = ITA_the_merchant_republic_plan
+								has_completed_focus = ITA_solidarity_front_government
+							}
+						}
+					}
+					new_democrat < 0.35
+				}
+			}
+			
+			picture = generic_spy_intel
+			
+			modifier = {
+				new_democrat_drift = 0.02
+			}
+			
+			cancel_if_invalid = yes
+			
+		}
+		
+		support_the_moderate_socialist_party = {
+			cost = 300
+			removal_cost = -1
+			level = 1
+			
+			available = {
+			    AND = {
+				    OR = {
+					    has_government = national_conservative
+						has_government = centrist
+						has_government = liberal
+						has_government = new_democrat
+						has_government = moderate_socialist
+					}
+					NOT = {
+					    OR = {
+						    tag = USA
+					tag = ENG
+					tag = GAU
+					tag = AMC
+					tag = PCA
+					tag = MWA
+						}
+					}
+					NOT = {
+					    AND = {
+						    tag = ITA 
+							OR = {
+							    has_completed_focus = ITA_the_merchant_republic_plan
+								has_completed_focus = ITA_solidarity_front_government
+							}
+						}
+					}
+					moderate_socialist < 0.35
+				}
+			}
+			
+			picture = generic_spy_intel
+			
+			modifier = {
+				moderate_socialist_drift = 0.02
+			}
+			
+			cancel_if_invalid = yes
+			
+		}
+		
+	}
+}

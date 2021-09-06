@@ -1,0 +1,165 @@
+﻿capital = 454
+
+oob = "PAL_2000"
+
+set_research_slots = 4
+set_convoys = 500
+set_stability = 0.7
+set_war_support = 0.1
+
+set_country_flag = was_in_british_empire
+set_country_flag = muslim_nation
+
+set_technology = {
+	support_weapons = 1
+	infantry_weapons = 1
+	motorised_infantry = 1 
+	tech_support = 1 
+	tech_field_hospital = 1 
+	tech_engineers = 1 
+	gwtank = 1 
+	basic_light_tank = 1 
+	gw_artillery = 1 
+	tech_mountaineers = 1
+	early_light_cruiser = 1
+	early_fighter = 1 
+	early_bomber = 1 
+	early_submarine = 1
+    transport = 1 
+	paratroopers = 1 
+	interwar_antiair = 1
+	interwar_antitank = 1
+}
+
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	set_technology = {
+		early_submarine = 1
+		basic_submarine = 1
+		early_destroyer = 1
+		early_light_cruiser = 1
+		basic_light_cruiser = 1
+		early_heavy_cruiser = 1
+		
+		
+		early_carrier = 1
+		basic_carrier = 1
+		transport = 1
+	}
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_technology = {
+		basic_naval_mines = 1
+		submarine_mine_laying = 1
+		early_ship_hull_light = 1
+		basic_ship_hull_light = 1
+		early_ship_hull_submarine = 1
+		basic_ship_hull_submarine = 1
+		early_ship_hull_cruiser = 1
+		basic_ship_hull_cruiser = 1
+		early_ship_hull_heavy = 1
+		early_ship_hull_carrier = 1
+		basic_ship_hull_carrier = 1
+		basic_battery = 1
+		basic_light_battery = 1
+		basic_medium_battery = 1
+		basic_heavy_battery = 1
+		basic_torpedo = 1
+		sonar = 1
+		basic_depth_charges = 1
+		basic_secondary_battery = 1
+		improved_secondary_battery = 1
+		basic_cruiser_armor_scheme = 1
+		basic_heavy_armor_scheme = 1
+		mtg_transport = 1
+		improved_airplane_launcher = 1
+	}
+}
+
+set_politics = {
+	ruling_party = moderate_socialist
+	last_election = "1997.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+        fascist = 0
+		nationalist = 15
+		monarchist = 0
+		national_bolshevik = 16
+		national_conservative = 18
+		centrist = 4
+		liberal = 0
+		new_democrat = 0
+		moderate_socialist = 20
+		revolutionary_socialist = 5
+		communist = 22
+}
+
+create_country_leader = {
+	name = "Arabi Awwad"
+	picture = "Portrait_PAL_Arabi_Awwad.dds"
+	ideology = leninist
+}
+
+create_country_leader = {
+	name = "Ismail Haniyeh"
+	picture = "Portrait_PAL_Ismail_Haniyeh.dds"
+	ideology = fascist_ideology
+}
+
+create_country_leader = {
+	name = "Mahmoud Abbas"
+	picture = "Portrait_PAL_Mahmoud_Abbas.dds"
+	ideology = nationalist_ideology
+}
+
+create_country_leader = {
+	name = "Queen Rania"
+	picture = "Portrait_PAL_Queen_Rania.dds"
+	ideology = absolute_monarchist
+}
+
+create_country_leader = {
+	name = "Rakad Salem"
+	picture = "Portrait_PAL_Raked_Salem.dds"
+	ideology = baathist
+}
+
+create_country_leader = {
+	name = "Omar Hamad"
+	picture = "Portrait_PAL_Omar_Hamad.dds"
+	ideology = fiscal_conservative
+}
+
+create_country_leader = {
+	name = "Salam Fayyad"
+	picture = "Portrait_PAL_Salam_Fayyad.dds"
+	ideology = centrist_ideology
+}
+
+create_country_leader = {
+	name = "Hanan Ashrawi"
+	picture = "Portrait_PAL_Hanan_Ashrawi.dds"
+	ideology = social_liberal
+}
+
+create_country_leader = {
+	name = "Mustafa Barghouthi"
+	picture = "Portrait_PAL_Mustafa_Barghouthi.dds"
+	ideology = new_democrat_ideology
+}
+
+create_country_leader = {
+	name = "Bassam Al-Salhi"
+	picture = "Portrait_PAL_Bassam_Al_Salhi.dds"
+	ideology = democratic_socialist
+}
+
+create_country_leader = {
+	name = "Ahmed Majdalani"
+	picture = "Portrait_PAL_Ahmed_Majdalani.dds"
+	ideology = revolutionary_socialist_ideology
+}

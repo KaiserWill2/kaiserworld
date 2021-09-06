@@ -1,0 +1,296 @@
+﻿capital = 540
+
+oob = "ANG_2000"
+
+set_research_slots = 4
+set_convoys = 500
+set_stability = 0.4
+set_war_support = 0.1
+
+set_country_flag = catholic_nation
+
+set_technology = {
+	support_weapons = 1
+	infantry_weapons = 1
+	motorised_infantry = 1 
+	tech_support = 1 
+	tech_field_hospital = 1 
+	tech_engineers = 1 
+	gwtank = 1 
+	basic_light_tank = 1 
+	gw_artillery = 1 
+	tech_mountaineers = 1
+	early_light_cruiser = 1
+	early_fighter = 1 
+	early_bomber = 1 
+	early_submarine = 1
+    transport = 1 
+	interwar_antiair = 1
+	interwar_antitank = 1
+}
+
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	set_technology = {
+		early_submarine = 1
+		basic_submarine = 1
+		early_destroyer = 1
+		early_light_cruiser = 1
+		basic_light_cruiser = 1
+		early_heavy_cruiser = 1
+		
+		
+		early_carrier = 1
+		basic_carrier = 1
+		transport = 1
+	}
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_technology = {
+		basic_naval_mines = 1
+		submarine_mine_laying = 1
+		early_ship_hull_light = 1
+		basic_ship_hull_light = 1
+		early_ship_hull_submarine = 1
+		basic_ship_hull_submarine = 1
+		early_ship_hull_cruiser = 1
+		basic_ship_hull_cruiser = 1
+		early_ship_hull_heavy = 1
+		early_ship_hull_carrier = 1
+		basic_ship_hull_carrier = 1
+		basic_battery = 1
+		basic_light_battery = 1
+		basic_medium_battery = 1
+		basic_heavy_battery = 1
+		basic_torpedo = 1
+		sonar = 1
+		basic_depth_charges = 1
+		basic_secondary_battery = 1
+		improved_secondary_battery = 1
+		basic_cruiser_armor_scheme = 1
+		basic_heavy_armor_scheme = 1
+		mtg_transport = 1
+		improved_airplane_launcher = 1
+	}
+}
+
+set_politics = {
+	ruling_party = communist
+	last_election = "1997.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+        fascist = 0
+		nationalist = 5
+		monarchist = 0
+		national_bolshevik = 0
+		national_conservative = 0
+		centrist = 0
+		liberal = 0
+		new_democrat = 10
+		moderate_socialist = 0
+		revolutionary_socialist = 20
+		communist = 65
+}
+
+create_country_leader = {
+	name = "José Eduardo dos Santos"
+	desc = "POLITICS_JOSE_EDUARDO_DOS_SANTOS_DESC"
+	picture = "Portrait_ANG_Jose_Eduardo_Dos_Santos.dds"
+	ideology = marxist
+}
+
+create_country_leader = {
+	name = "Isaias Samakuva"
+	picture = "Portrait_ANG_Isaias_Samakuva.dds"
+	ideology = fascist_ideology
+}
+
+create_country_leader = {
+	name = "Geraldo Sachipengo Nunda"
+	picture = "Portrait_ANG_Geraldo_Sachipengo_Nunda.dds"
+	ideology = nationalist_ideology
+}
+
+create_country_leader = {
+	name = "Muene Mwatxissengue Wa-tembo"
+	picture = "Portrait_ANG_Muene_Mwatxissengue_Wa_tembo.dds"
+	ideology = absolute_monarchist
+}
+
+create_country_leader = {
+	name = "Jonas Savimbi"
+	picture = "Portrait_ANG_Jonas_Savimbi.dds"
+	ideology = national_bolshevik_ideology
+}
+
+create_country_leader = {
+	name = "Ngola Kabangu"
+	picture = "Portrait_ANG_Ngola_Kabangu.dds"
+	ideology = reactionary
+}
+
+create_country_leader = {
+	name = "Georges Rebelo Chicoti"
+	picture = "Portrait_ANG_Georges_Rebelo_Chicoti.dds"
+	ideology = centrist_ideology
+}
+
+create_country_leader = {
+	name = "Quintino de Moreira"
+	picture = "Portrait_ANG_Quintino_De_Moreira.dds"
+	ideology = social_liberal
+}
+
+create_country_leader = {
+	name = "Abel Chivukuvuku"
+	picture = "Portrait_ANG_Abel_Chivukuvuku.dds"
+	ideology = new_democrat_ideology
+}
+
+create_country_leader = {
+	name = "Eduardo Kuangana"
+	picture = "Portrait_ANG_Eduardo_Kuangana.dds"
+	ideology = progressive
+}
+
+create_country_leader = {
+	name = "Armando Manuel"
+	picture = "Portrait_ANG_Armando_Manuel.dds"
+	ideology = revolutionary_socialist_ideology
+}
+
+create_field_marshal = {
+	name = "Geraldo Sachipengo Nunda"
+	picture = "Portrait_Geraldo_Sachipengo_Nunda.dds"
+	traits = { old_guard inspirational_leader }
+	skill = 4
+	attack_skill = 2
+	defense_skill = 4
+	planning_skill = 4
+	logistics_skill = 4
+}
+
+create_field_marshal = {
+	name = "Francisco Lopes Gonçalves Afonso"
+	picture = "Portrait_Francisco_Goncalves.dds"
+	traits = { old_guard fast_planner }
+	skill = 4
+	attack_skill = 3
+	defense_skill = 4
+	planning_skill = 4
+	logistics_skill = 2
+}
+
+create_field_marshal = {
+	name = "Egídio Sousa Santos"
+	picture = "Portrait_Egidio_Sosa_Santos.dds"
+	traits = { offensive_doctrine }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Luis Manuel Domingos"
+	picture = "Portrait_Luis_Domingos.dds"
+	traits = { commando }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 1
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Baltazar Diogo"
+	picture = "Portrait_Baltazar_Diogo.dds"
+	traits = { ranger jungle_rat }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "Arlindo José Assis"
+	picture = "Portrait_Arlindo_Assis.dds"
+	traits = { trait_engineer }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Lúcio Goncalves do Amaral"
+	picture = "Portrait_Lucio_Goncalves_Amaral.dds"
+	traits = { fortress_buster }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Antonio dos Santos Neto"
+	picture = "Portrait_Antonio_dos_Santos_Neto.dds"
+	traits = { trickster }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Simão Wala Carlitos"
+	picture = "Portrait_Simao_Carlitos.dds"
+	traits = { panzer_leader }
+	skill = 2
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Peregrino Huambo"
+	picture = "Portrait_Peregrino_Huambo.dds"
+	traits = { hill_fighter }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 4
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_navy_leader = {
+	name = "Francisco José"
+	picture = "Portrait_Francisco_Jose.dds"
+	traits = { spotter }
+	skill = 4
+	attack_skill = 3
+	defense_skill = 3
+	coordination_skill = 3
+	maneuvering_skill = 4
+}
+
+create_navy_leader = {
+	name = "Augusto da Silva Cunha"
+	picture = "Portrait_Augusto_da_Silva.dds"
+	traits = { old_guard blockade_runner }
+	skill = 4
+	attack_skill = 2
+	defense_skill = 4
+	coordination_skill = 4
+	maneuvering_skill = 3
+}

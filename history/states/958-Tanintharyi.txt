@@ -1,0 +1,30 @@
+
+state={
+	id=958
+	name="STATE_958" # Tanintharyi
+	manpower = 1408401
+	
+	state_category = large_town
+	
+	resources = {
+		rubber = 2
+		tungsten = 5	
+	}
+
+	history={
+		owner = SIA
+		add_core_of = SIA
+		victory_points = {
+			1566 1 
+		}
+		buildings = {
+		infrastructure = 3	
+		}
+		
+	}
+	
+	provinces={
+		  7295 1315 1385 12292 1296 4275 10217  
+	}
+}
+

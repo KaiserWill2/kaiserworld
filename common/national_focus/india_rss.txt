@@ -1,0 +1,16 @@
+focus_tree = {
+	id = india_rss_tree
+	country = {
+		factor = 0
+		
+	}
+	default = no
+	
+	shared_focus = RAJ_infastructure_focus
+	shared_focus = RAJ_kashmir_focus
+	shared_focus = RAJ_ne_bjp_in_power
+	shared_focus = RAJ_mil_the_indian_lion_roars
+	shared_focus = RAJ_absolute_mon
+	shared_focus = RAJ_rss_state
+	
+	}

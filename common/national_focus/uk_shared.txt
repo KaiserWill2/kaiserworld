@@ -69,7 +69,7 @@
 	}
 	shared_focus = {
 		id = ENG_weapon_research
-		icon = GFX_ENG_weapon_research-445
+		icon = weapon_research
 		x = 0
 		y = 4
 		cost = 3
@@ -80,7 +80,7 @@
 	}
 	shared_focus = {
 		id = ENG_funding_into_weapons
-		icon = GFX_ENG_funding_into_weapons-445
+		icon = funding_into_weapons
 		x = 2
 		y = 4
 		cost = 3
@@ -113,7 +113,7 @@
 	}
 	shared_focus = {
 		id = ENG_watch_our_citizens
-		icon = GFX_ENG_watch_our_citizens-445
+		icon = watch_our_people
 		x = 4
 		y = 4
 		cost = 3
@@ -124,7 +124,7 @@
 	}
 	shared_focus = {
 		id = ENG_the_punishments
-		icon = GFX_ENG_the_punishments-445
+		icon = the_punishments
 		x = 6
 		y = 4
 		cost = 3
@@ -135,7 +135,7 @@
 	}
 	shared_focus = {
 		id = ENG_the_blair_personality
-		icon = GFX_ENG_the_blair_personality-445
+		icon = the_blair_personality
 		x = 5
 		y = 5
 		cost = 3
@@ -183,7 +183,7 @@
 	}
 	shared_focus = {
 		id = ENG_the_union_is_strong
-		icon = GFX_ENG_the_union_is_strong-445
+		icon = the_union_is_strong
 		x = 3
 		y = 8
 		cost = 4
@@ -229,7 +229,7 @@
 	}
 	shared_focus = {
 		id = ENG_diplomatic_relations_with_Russia
-		icon = GFX_ENG_diplomatic_relations_with_wales-445
+		icon = relations_with_russia
 		x = 8
 		y = 5
 		cost = 3
@@ -240,7 +240,7 @@
 	}
 	shared_focus = {
 		id = ENG_new_infrastructure_projects
-		icon = GFX_ENG_new_infrastructure_projects-445
+		icon = infrastructure_project
 		x = 10
 		y = 4
 		cost = 3
@@ -251,7 +251,7 @@
 	}
 	shared_focus = {
 		id = ENG_england_prevails
-		icon = GFX_ENG_england_prevails-445
+		icon = england_lives
 		x = 9
 		y = 6
 		cost = 3
@@ -284,7 +284,7 @@
 	}
 	shared_focus = {
 		id = ENG_shoot_to_kill
-		icon = GFX_ENG_shoot_to_kill-445
+		icon = shoot_to_kill
 		x = 12
 		y = 4
 		cost = 3
@@ -295,7 +295,7 @@
 	}
 	shared_focus = {
 		id = ENG_imprison_families
-		icon = GFX_ENG_imprison_families-445
+		icon = imprison_families
 		x = 14
 		y = 4
 		cost = 3
@@ -306,7 +306,7 @@
 	}
 	shared_focus = {
 		id = ENG_test_fire_at_wall
-		icon = GFX_ENG_test_fire_at_wall-445
+		icon = Test_fire_at_the_wall
 		x = 12
 		y = 5
 		cost = 3
@@ -317,7 +317,7 @@
 	}
 	shared_focus = {
 		id = ENG_forced_labour
-		icon = GFX_ENG_forced_labour-445
+		icon = forced_labour
 		x = 14
 		y = 5
 		cost = 3
@@ -339,7 +339,7 @@
 	}
 	shared_focus = {
 		id = ENG_imprison_the_non_pure
-		icon = GFX_ENG_imprison_the_non_pure-445
+		icon = removing_the_non_pure
 		x = 11
 		y = 7
 		cost = 3
@@ -350,7 +350,7 @@
 	}
 	shared_focus = {
 		id = ENG_send_a_warning_to_wales_and_scotland
-		icon = GFX_ENG_send_a_warning_to_wales_and_scotland-445
+		icon = a_warning_to_scotland_and_wales
 		x = 13
 		y = 7
 		cost = 3
@@ -372,7 +372,7 @@
 	}
 	shared_focus = {
 		id = ENG_the_voice_of_reunification
-		icon = GFX_ENG_the_voice_of_reunification-445
+		icon = the_voice_of_unification
 		x = 13
 		y = 9
 		cost = 3
@@ -385,7 +385,7 @@
 	}
 	shared_focus = {
 		id = ENG_the_totalist_spirit
-		icon = GFX_ENG_the_totalist_spirit-445
+		icon = totalist_spirit
 		x = 8
 		y = 9
 		cost = 3
@@ -396,7 +396,7 @@
 	}
 	shared_focus = {
 		id = ENG_The_Orders_For_England
-		icon = GFX_ENG_the_totalist_spirit-445
+		icon = orders_for_england
 		x = 8
 		y = 10
 		cost = 3
@@ -407,7 +407,7 @@
 	}
 	shared_focus = {
 		id = ENG_Branching_Out_The_Congress
-		icon = GFX_ENG_the_totalist_spirit-445
+		icon = branching_out_the_congress
 		x = 12
 		y = 11
 		cost = 3
@@ -418,7 +418,7 @@
 	}
 	shared_focus = {
 		id = ENG_Freedom_Of_Thought_Council
-		icon = GFX_ENG_the_totalist_spirit-445
+		icon = freedom_of_thought
 		x = 13
 		y = 12
 		cost = 3
@@ -429,7 +429,7 @@
 	}
 	shared_focus = {
 		id = ENG_The_Peoples_Ministry
-		icon = GFX_ENG_the_totalist_spirit-445
+		icon = peoples_ministry
 		x = 12
 		y = 13
 		cost = 3
@@ -440,7 +440,7 @@
 	}
 	shared_focus = {
 		id = ENG_We_Are_Everywhere
-		icon = GFX_ENG_the_totalist_spirit-445
+		icon = we_are_everywhere
 		x = 11
 		y = 14
 		cost = 3
@@ -462,7 +462,7 @@
 	}
 	shared_focus = {
 		id = ENG_English_Resources
-		icon = GFX_ENG_the_totalist_spirit-445
+		icon = british_resources
 		x = 4
 		y = 12
 		cost = 3
@@ -473,7 +473,7 @@
 	}
 	shared_focus = {
 		id = ENG_North_Sea_Oil_Dispute
-		icon = GFX_ENG_the_totalist_spirit-445
+		icon = the_oil_dispute
 		x = 4
 		y = 13
 		cost = 3
@@ -484,7 +484,7 @@
 	}
 	shared_focus = {
 		id = ENG_Border_Patrols
-		icon = GFX_ENG_the_totalist_spirit-445
+		icon = border_patrols
 		x = 6
 		y = 12
 		cost = 3
@@ -495,7 +495,7 @@
 	}
 	shared_focus = {
 		id = ENG_Claims_On_Shetlands
-		icon = GFX_ENG_the_totalist_spirit-445
+		icon = claims_on_the_shetlands
 		x = 6
 		y = 13
 		cost = 3
@@ -506,7 +506,7 @@
 	}
 	shared_focus = {
 		id = ENG_Giving_Wales_A_Chance
-		icon = GFX_ENG_the_totalist_spirit-445
+		icon = giving_wales_a_chance
 		x = 8
 		y = 11
 		cost = 3
@@ -517,7 +517,7 @@
 	}
 	shared_focus = {
 		id = ENG_Trade_With_Wales
-		icon = GFX_ENG_the_totalist_spirit-445
+		icon = trade_with_wales
 		x = 8
 		y = 12
 		cost = 3
@@ -528,7 +528,7 @@
 	}
 	shared_focus = {
 		id = ENG_Influence_Wales
-		icon = GFX_ENG_the_totalist_spirit-445
+		icon = influence_wales
 		x = 8
 		y = 13
 		cost = 3
@@ -539,7 +539,7 @@
 	}
 	shared_focus = {
 		id = ENG_Cornwall_Needs_Treatment
-		icon = GFX_ENG_the_totalist_spirit-445
+		icon = cornwall_treatment
 		x = 10
 		y = 11
 		cost = 3
@@ -550,7 +550,7 @@
 	}
 	shared_focus = {
 		id = ENG_The_Cornwall_Resistance 
-		icon = GFX_ENG_the_totalist_spirit-445
+		icon = cornwall_restistance
 		x = 10
 		y = 12
 		cost = 3
@@ -562,7 +562,7 @@
 
 	shared_focus = {
 		id = ENG_Cornwall_Extermination_Camps
-		icon = GFX_ENG_the_totalist_spirit-445
+		icon = camps_of_cornwall
 		x = 10
 		y = 13
 		cost = 3
@@ -573,7 +573,7 @@
 	}
 	shared_focus = {
 		id = ENG_Glory_To_Our_Dear_Leader
-		icon = GFX_ENG_the_totalist_spirit-445
+		icon = glory_to_the_leader
 		x = 7
 		y = 15
 		cost = 3
@@ -600,7 +600,7 @@
 	}
 	shared_focus = {
 		id = ENG_Defending_The_Island
-		icon = GFX_ENG_the_totalist_spirit-445
+		icon = defending_the_island
 		x = 22
 		y = 1
 		cost = 3
@@ -611,7 +611,7 @@
 	}
 	shared_focus = {
 		id = ENG_Soldiers_Of_England
-		icon = GFX_ENG_the_totalist_spirit-445
+		icon = soldiers_of_england
 		x = 18
 		y = 2
 		cost = 3
@@ -622,7 +622,7 @@
 	}
 	shared_focus = {
 		id = ENG_Discipline_Enforced
-		icon = GFX_ENG_the_totalist_spirit-445
+		icon = dispolian_enforced
 		x = 16
 		y = 3
 		cost = 3
@@ -633,7 +633,7 @@
 	}
 	shared_focus = {
 		id = ENG_3_years_Service
-		icon = GFX_ENG_the_totalist_spirit-445
+		icon = 3_YEAR_SERVICE
 		x = 18
 		y = 3
 		cost = 3
@@ -644,7 +644,7 @@
 	}
 	shared_focus = {
 		id = ENG_Oath_Of_Allegiance
-		icon = GFX_ENG_the_totalist_spirit-445
+		icon = oath_of_allegiance
 		x = 20
 		y = 3
 		cost = 3
@@ -655,7 +655,7 @@
 	}
 	shared_focus = {
 		id = ENG_Loyalty_To_Officers
-		icon = GFX_ENG_the_totalist_spirit-445
+		icon = loyalty_to_officers
 		x = 18
 		y = 4
 		cost = 3
@@ -668,7 +668,7 @@
 	}
 	shared_focus = {
 		id = ENG_Remembering_Canada
-		icon = GFX_ENG_the_totalist_spirit-445
+		icon = remember_canada
 		x = 18
 		y = 5
 		cost = 3
@@ -692,7 +692,7 @@
 	}
 	shared_focus = {
 		id = ENG_Wigston_Flying_Plans
-		icon = GFX_ENG_the_totalist_spirit-445
+		icon = wingston_flying_plans
 		x = 22
 		y = 3
 		cost = 3
@@ -703,7 +703,7 @@
 	}
 	shared_focus = {
 		id = ENG_Flying_Fortress
-		icon = GFX_ENG_the_totalist_spirit-445
+		icon = flying_fortress
 		x = 22
 		y = 4
 		cost = 3
@@ -714,7 +714,7 @@
 	}
 	shared_focus = {
 		id = ENG_Union_Propaganda_Leaflet_dropping
-		icon = GFX_ENG_the_totalist_spirit-445
+		icon = union_propaganda_dropping
 		x = 20
 		y = 5
 		cost = 3
@@ -725,7 +725,7 @@
 	}
 	shared_focus = {
 		id = ENG_Super_Sonic_Research
-		icon = GFX_ENG_the_totalist_spirit-445
+		icon = super_sonic_research
 		x = 22
 		y = 5
 		cost = 3
@@ -736,7 +736,7 @@
 	}
 	shared_focus = {
 		id = ENG_Seas_Of_England
-		icon = GFX_ENG_the_totalist_spirit-445
+		icon = seas_of_england
 		x = 26
 		y = 2
 		cost = 3
@@ -747,7 +747,7 @@
 	}
 	shared_focus = {
 		id = ENG_The_North_Sea
-		icon = GFX_ENG_the_totalist_spirit-445
+		icon = the_north_sea
 		x = 24
 		y = 3
 		cost = 3
@@ -758,7 +758,7 @@
 	}
 	shared_focus = {
 		id = ENG_Lindisfarne_Drills
-		icon = GFX_ENG_the_totalist_spirit-445
+		icon = lindsfarne_tests
 		x = 24
 		y = 4
 		cost = 3
@@ -779,7 +779,7 @@
 		prerequisite = { focus = ENG_Seas_Of_England  }
 	}	shared_focus = {
 		id = ENG_Defense_Against_France
-		icon = GFX_ENG_the_totalist_spirit-445
+		icon = defence_against_france
 		x = 26
 		y = 4
 		cost = 3
@@ -791,7 +791,7 @@
 
 	shared_focus = {
 		id = ENG_Protecting_Welsh_Waters
-		icon = GFX_ENG_the_totalist_spirit-445
+		icon = protect_welsh_waters
 		x = 28
 		y = 3
 		cost = 3
@@ -827,7 +827,7 @@
 	}
 	shared_focus = {
 		id = ENG_The_Parade
-		icon = GFX_ENG_the_totalist_spirit-445
+		icon = the_parade_of_war
 		x = 22
 		y = 6
 		cost = 3
@@ -919,7 +919,7 @@
 	}
 	shared_focus = {
 		id = ENG_The_Elite_Stay
-		icon = GFX_ENG_the_totalist_spirit-445
+		icon = the_elite_first
 		x = 22
 		y = 11
 		cost = 3
@@ -1801,7 +1801,7 @@
 	}
 	shared_focus = {
 		id = ENG_A_United_Army
-		icon = GFX_ENG_the_totalist_spirit-445
+		icon = national_service
 		x = 15
 		y = 1
 		cost = 5
@@ -1937,7 +1937,7 @@
 	}
 	shared_focus = {
 		id = ENG_Open_The_Welsh_Camps
-		icon = GFX_ENG_the_totalist_spirit-445
+		icon = open_the_camps
 		x = 14
 		y = 6
 		cost = 5

@@ -1,0 +1,30 @@
+
+state={
+	id=972
+	name="STATE_972"
+	manpower = 5149000
+	
+	state_category = rural
+	
+	resources={
+		oil=1
+	}
+	history={
+		owner = YEM
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 3
+			13622 = {
+				naval_base = 4
+			}
+		}
+		add_core_of = YEM
+		victory_points = { 13626 7 } #Ibb
+		victory_points = { 13624 10 } #Taiz
+		victory_points = { 13622 8 } #Al Mukha
+	}
+
+	provinces={
+		13622 13623 13624 13625 13626
+	}
+}

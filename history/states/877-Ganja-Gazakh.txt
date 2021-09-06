@@ -1,0 +1,30 @@
+state={
+	id=877
+	name="STATE_877"
+	provinces={
+		1539 6763 11645 11674
+	}
+	history = {
+		owner = SOV
+		add_core_of = SOV
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 2
+			arms_factory = 1
+		}
+		add_core_of = AZR
+		victory_points = {
+			11674 2
+		}
+		victory_points = {
+			11645 1
+		}
+		victory_points = {
+			6763 1
+		}
+	}
+	manpower=2279541
+	buildings_max_level_factor=1.000
+
+	state_category = town
+}

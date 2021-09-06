@@ -1,0 +1,20 @@
+state={
+	id=927
+	name="STATE_927"
+	provinces={
+		4191 13230 13231 13232 13234 13235 13237 13239 13240 13241 13242 13246 13247 13249 13250 13252 13253 13257 13258 13262 13271 
+	}
+	state_category = pastoral
+	history={
+		owner = LBA
+		add_core_of = LBA
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+			arms_factory = 1
+		}
+
+	}
+	manpower=34000
+	buildings_max_level_factor=1.000
+}

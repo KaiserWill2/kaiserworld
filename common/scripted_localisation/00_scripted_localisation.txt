@@ -1,0 +1,13 @@
+defined_text = {
+    name = GetReturnToNormalcyDesc
+    text = {
+        trigger = {
+            original_tag = PCA
+            has_country_flag = met_the_cascadians
+        }
+        localization_key = PCA_return_to_normalcy_peace_desc
+    }
+    text = {
+        localization_key = PCA_return_to_normalcy_war_desc
+    }
+}

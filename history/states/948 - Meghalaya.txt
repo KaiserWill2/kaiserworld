@@ -1,0 +1,24 @@
+state={
+	id=948
+	name="STATE_948"
+	resources={
+		chromium = 2
+		
+	}
+	provinces={
+	1497 12423
+	}
+	state_category = rural
+	history={
+		owner = RAJ
+		add_core_of = RAJ
+		add_core_of = BGL
+		buildings = {
+			infrastructure = 4
+				
+		}
+
+	}
+	manpower=		3211000
+	buildings_max_level_factor=1.000
+}

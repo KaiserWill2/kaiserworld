@@ -1,0 +1,25 @@
+﻿units= {
+
+	####### NAVAL UNITS #######
+	##### INDIAN FLEET #####
+	##### BATTLE FORCE 1 #####
+	### Mumbai ###
+
+	fleet = {
+		name = "Battle Force 1"			
+		naval_base = 1349 # Mumbai
+		task_force = {
+			name = "1st Fleet"
+			location = 1349 # Mumbai
+			ship = {
+				name = "Indira Ghandi" definition = carrier equipment = { carrier_1 = { amount = 1 owner = RAJ version_name = "Carrier I" } } 
+				air_wings = {
+					cv_fighter_equipment_0 =  { owner = "RAJ" amount = 20 }
+					cv_nav_bomber_equipment_1 =  { owner = "RAJ" amount = 20 }
+				}
+			}	
+			ship = { name = "Jawaharlal Nehru" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = RAJ version_name = "Destroyer I" } } }
+			ship = { name = "Sardarilal Nanda" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = RAJ version_name = "Destroyer I" } } }
+		}
+	}
+}

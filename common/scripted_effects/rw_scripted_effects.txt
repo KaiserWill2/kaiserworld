@@ -1,0 +1,538 @@
+add_nationalist_popularity = {
+	if = {
+		limit = {
+			nationalist < 0.05
+		}
+		add_popularity = {
+			ideology = nationalist
+			popularity = 0.50
+		}
+	}
+	else_if = {
+		limit = {
+			nationalist < 0.10
+		}
+		add_popularity = {
+			ideology = nationalist
+			popularity = 0.45
+		}
+	}
+	else_if = {
+		limit = {
+			nationalist < 0.15
+		}
+		add_popularity = {
+			ideology = nationalist
+			popularity = 0.40
+		}
+	}
+	else_if = {
+		limit = {
+			nationalist < 0.20
+		}
+		add_popularity = {
+			ideology = nationalist
+			popularity = 0.35
+		}
+	}
+	else_if = {
+		limit = {
+			nationalist < 0.25
+		}
+		add_popularity = {
+			ideology = nationalist
+			popularity = 0.30
+		}
+	}
+	else_if = {
+		limit = {
+			nationalist < 0.30
+		}
+		add_popularity = {
+			ideology = nationalist
+			popularity = 0.25
+		}
+	}
+	else_if = {
+		limit = {
+			nationalist < 0.35
+		}
+		add_popularity = {
+			ideology = nationalist
+			popularity = 0.20
+		}
+	}
+	else_if = {
+		limit = {
+			nationalist < 0.40
+		}
+		add_popularity = {
+			ideology = nationalist
+			popularity = 0.15
+		}
+	}
+	else_if = {
+		limit = {
+			nationalist < 0.45
+		}
+		add_popularity = {
+			ideology = nationalist
+			popularity = 0.10
+		}
+	}
+	else = {
+		add_popularity = {
+			ideology = nationalist
+			popularity = 0.05
+		}
+	}
+}
+add_natcon_popularity = {
+	if = {
+		limit = {
+			national_conservative < 0.05
+		}
+		add_popularity = {
+			ideology = national_conservative
+			popularity = 0.50
+		}
+	}
+	else_if = {
+		limit = {
+			national_conservative < 0.10
+		}
+		add_popularity = {
+			ideology = national_conservative
+			popularity = 0.45
+		}
+	}
+	else_if = {
+		limit = {
+			national_conservative < 0.15
+		}
+		add_popularity = {
+			ideology = national_conservative
+			popularity = 0.40
+		}
+	}
+	else_if = {
+		limit = {
+			national_conservative < 0.20
+		}
+		add_popularity = {
+			ideology = national_conservative
+			popularity = 0.35
+		}
+	}
+	else_if = {
+		limit = {
+			national_conservative < 0.25
+		}
+		add_popularity = {
+			ideology = national_conservative
+			popularity = 0.30
+		}
+	}
+	else_if = {
+		limit = {
+			national_conservative < 0.30
+		}
+		add_popularity = {
+			ideology = national_conservative
+			popularity = 0.25
+		}
+	}
+	else_if = {
+		limit = {
+			national_conservative < 0.35
+		}
+		add_popularity = {
+			ideology = national_conservative
+			popularity = 0.20
+		}
+	}
+	else_if = {
+		limit = {
+			national_conservative < 0.40
+		}
+		add_popularity = {
+			ideology = national_conservative
+			popularity = 0.15
+		}
+	}
+	else_if = {
+		limit = {
+			national_conservative < 0.45
+		}
+		add_popularity = {
+			ideology = national_conservative
+			popularity = 0.10
+		}
+	}
+	else = {
+		add_popularity = {
+			ideology = national_conservative
+			popularity = 0.05
+		}
+	}
+}
+
+add_centrist_popularity = {
+	if = {
+		limit = {
+			centrist < 0.05
+		}
+		add_popularity = {
+			ideology = centrist
+			popularity = 0.50
+		}
+	}
+	else_if = {
+		limit = {
+			centrist < 0.10
+		}
+		add_popularity = {
+			ideology = centrist
+			popularity = 0.45
+		}
+	}
+	else_if = {
+		limit = {
+			centrist < 0.15
+		}
+		add_popularity = {
+			ideology = centrist
+			popularity = 0.40
+		}
+	}
+	else_if = {
+		limit = {
+			centrist < 0.20
+		}
+		add_popularity = {
+			ideology = centrist
+			popularity = 0.35
+		}
+	}
+	else_if = {
+		limit = {
+			centrist < 0.25
+		}
+		add_popularity = {
+			ideology = centrist
+			popularity = 0.30
+		}
+	}
+	else_if = {
+		limit = {
+			centrist < 0.30
+		}
+		add_popularity = {
+			ideology = centrist
+			popularity = 0.25
+		}
+	}
+	else_if = {
+		limit = {
+			centrist < 0.35
+		}
+		add_popularity = {
+			ideology = centrist
+			popularity = 0.20
+		}
+	}
+	else_if = {
+		limit = {
+			centrist < 0.40
+		}
+		add_popularity = {
+			ideology = centrist
+			popularity = 0.15
+		}
+	}
+	else_if = {
+		limit = {
+			centrist < 0.45
+		}
+		add_popularity = {
+			ideology = centrist
+			popularity = 0.10
+		}
+	}
+	else = {
+		add_popularity = {
+			ideology = centrist
+			popularity = 0.05
+		}
+	}
+}
+
+add_liberal_popularity = {
+	if = {
+		limit = {
+			liberal < 0.05
+		}
+		add_popularity = {
+			ideology = liberal
+			popularity = 0.50
+		}
+	}
+	else_if = {
+		limit = {
+			liberal < 0.10
+		}
+		add_popularity = {
+			ideology = liberal
+			popularity = 0.45
+		}
+	}
+	else_if = {
+		limit = {
+			liberal < 0.15
+		}
+		add_popularity = {
+			ideology = liberal
+			popularity = 0.40
+		}
+	}
+	else_if = {
+		limit = {
+			liberal < 0.20
+		}
+		add_popularity = {
+			ideology = liberal
+			popularity = 0.35
+		}
+	}
+	else_if = {
+		limit = {
+			liberal < 0.25
+		}
+		add_popularity = {
+			ideology = liberal
+			popularity = 0.30
+		}
+	}
+	else_if = {
+		limit = {
+			liberal < 0.30
+		}
+		add_popularity = {
+			ideology = liberal
+			popularity = 0.25
+		}
+	}
+	else_if = {
+		limit = {
+			liberal < 0.35
+		}
+		add_popularity = {
+			ideology = liberal
+			popularity = 0.20
+		}
+	}
+	else_if = {
+		limit = {
+			liberal < 0.40
+		}
+		add_popularity = {
+			ideology = liberal
+			popularity = 0.15
+		}
+	}
+	else_if = {
+		limit = {
+			liberal < 0.45
+		}
+		add_popularity = {
+			ideology = liberal
+			popularity = 0.10
+		}
+	}
+	else = {
+		add_popularity = {
+			ideology = liberal
+			popularity = 0.05
+		}
+	}
+}
+
+add_newdem_popularity = {
+	if = {
+		limit = {
+			new_democrat < 0.05
+		}
+		add_popularity = {
+			ideology = new_democrat
+			popularity = 0.50
+		}
+	}
+	else_if = {
+		limit = {
+			new_democrat < 0.10
+		}
+		add_popularity = {
+			ideology = new_democrat
+			popularity = 0.45
+		}
+	}
+	else_if = {
+		limit = {
+			new_democrat < 0.15
+		}
+		add_popularity = {
+			ideology = new_democrat
+			popularity = 0.40
+		}
+	}
+	else_if = {
+		limit = {
+			new_democrat < 0.20
+		}
+		add_popularity = {
+			ideology = new_democrat
+			popularity = 0.35
+		}
+	}
+	else_if = {
+		limit = {
+			new_democrat < 0.25
+		}
+		add_popularity = {
+			ideology = new_democrat
+			popularity = 0.30
+		}
+	}
+	else_if = {
+		limit = {
+			new_democrat < 0.30
+		}
+		add_popularity = {
+			ideology = new_democrat
+			popularity = 0.25
+		}
+	}
+	else_if = {
+		limit = {
+			new_democrat < 0.35
+		}
+		add_popularity = {
+			ideology = new_democrat
+			popularity = 0.20
+		}
+	}
+	else_if = {
+		limit = {
+			new_democrat < 0.40
+		}
+		add_popularity = {
+			ideology = new_democrat
+			popularity = 0.15
+		}
+	}
+	else_if = {
+		limit = {
+			new_democrat < 0.45
+		}
+		add_popularity = {
+			ideology = new_democrat
+			popularity = 0.10
+		}
+	}
+	else = {
+		add_popularity = {
+			ideology = new_democrat
+			popularity = 0.05
+		}
+	}
+}
+
+add_modsoc_popularity = {
+	if = {
+		limit = {
+			moderate_socialist < 0.05
+		}
+		add_popularity = {
+			ideology = moderate_socialist
+			popularity = 0.50
+		}
+	}
+	else_if = {
+		limit = {
+			moderate_socialist < 0.10
+		}
+		add_popularity = {
+			ideology = moderate_socialist
+			popularity = 0.45
+		}
+	}
+	else_if = {
+		limit = {
+			moderate_socialist < 0.15
+		}
+		add_popularity = {
+			ideology = moderate_socialist
+			popularity = 0.40
+		}
+	}
+	else_if = {
+		limit = {
+			moderate_socialist < 0.20
+		}
+		add_popularity = {
+			ideology = moderate_socialist
+			popularity = 0.35
+		}
+	}
+	else_if = {
+		limit = {
+			moderate_socialist < 0.25
+		}
+		add_popularity = {
+			ideology = moderate_socialist
+			popularity = 0.30
+		}
+	}
+	else_if = {
+		limit = {
+			moderate_socialist < 0.30
+		}
+		add_popularity = {
+			ideology = moderate_socialist
+			popularity = 0.25
+		}
+	}
+	else_if = {
+		limit = {
+			moderate_socialist < 0.35
+		}
+		add_popularity = {
+			ideology = moderate_socialist
+			popularity = 0.20
+		}
+	}
+	else_if = {
+		limit = {
+			moderate_socialist < 0.40
+		}
+		add_popularity = {
+			ideology = moderate_socialist
+			popularity = 0.15
+		}
+	}
+	else_if = {
+		limit = {
+			moderate_socialist < 0.45
+		}
+		add_popularity = {
+			ideology = moderate_socialist
+			popularity = 0.10
+		}
+	}
+	else = {
+		add_popularity = {
+			ideology = moderate_socialist
+			popularity = 0.05
+		}
+	}
+}

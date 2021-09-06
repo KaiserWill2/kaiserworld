@@ -1,0 +1,52 @@
+category = {
+ name = "RWMusic"
+ soundeffects = {
+	gates_is_doomed_sound
+	sanders_is_doomed_sound
+	take_me_home_country_roads_sound
+	hail_to_the_chief_trigger_sound
+	fall_of_walden_sound
+	yemen_is_burning_sound
+	stasi_coup_sound
+	holdren_america_sound
+	gates_america_sound
+	trade_council_america_sound
+	sotomayor_america_sound
+	dunford_america_sound
+	foster_america_sound
+	jarvis_america_sound
+	davis_america_sound
+	robertson_america_sound
+	strom_america_sound
+	cheney_america_sound
+	bernie_america_sound
+	npc_america_sound
+	mackler_america_sound
+	webb_america_sound
+	gerard_america_sound
+	robinson_america_sound
+	phelps_america_sound
+	welch_america_sound
+	bentley_america_sound
+	milley_america_sound
+	duke_america_sound
+	ancona_america_sound
+	monarchy_america_sound
+	rumsfeld_america_sound
+	jeb_america_sound
+	corporate_america_sound
+ }
+	
+ 
+ compressor = 
+ {
+	enabled = no
+	pregain = 3.0
+	postgain = 0.0
+	ratio = 10.0
+	threshold = -15.0
+	attacktime = 0.030
+	releasetime = 1.2
+ }
+}
+

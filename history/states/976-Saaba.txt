@@ -1,0 +1,25 @@
+
+state={
+	id=976
+	name="STATE_976"
+	manpower = 791800
+	
+	state_category = rural
+	
+	resources={
+		oil=1
+	}
+	history={
+		owner = YEM
+		buildings = {
+			infrastructure = 3
+		}
+		add_core_of = YEM
+		victory_points = { 13657 10 } #Sa'dah, state capital
+		victory_points = { 13653 2 } #Huth
+	}
+
+	provinces={
+		13653 13654 13655 13656 13657 13658 13659
+	}
+}

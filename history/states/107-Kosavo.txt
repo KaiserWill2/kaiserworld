@@ -1,0 +1,34 @@
+
+state={
+	id=107
+	name="STATE_107"
+
+	history={
+		owner = YUG
+		add_core_of = SER
+		add_core_of = YUG
+		buildings = {
+			infrastructure = 6
+			arms_factory = 3
+			industrial_complex = 4
+			air_base = 5
+
+		}
+		victory_points = { 11586 18 }
+		victory_points = { 3984 1 }
+		victory_points = { 3609 1 }
+		victory_points = { 3956 1 }
+		victory_points = { 11583 1 }
+		victory_points = { 13741 1 }
+		victory_points = { 797 1 }
+		victory_points = { 6634 1 }
+
+	}
+
+	provinces={
+		797 3609 3956 3984 6634 9599 11583 11586 13741
+	}
+	manpower=5564700
+	buildings_max_level_factor=1.000
+	state_category=large_city
+}

@@ -1,0 +1,16 @@
+focus_tree = {
+	id = india_com_tree
+	country = {
+		factor = 0
+		
+	}
+	default = no
+	
+	shared_focus = RAJ_infastructure_focus
+	shared_focus = RAJ_kashmir_focus
+	shared_focus = RAJ_ne_revolution_at_the_ballot
+	shared_focus = RAJ_communist_coup
+	shared_focus = RAJ_mil_the_indian_lion_roars
+	shared_focus = RAJ_democratic_india
+	shared_focus = RAJ_dem_for_pakistan_ultimatum
+	}

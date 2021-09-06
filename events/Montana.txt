@@ -1,0 +1,142 @@
+﻿add_namespace = montana
+
+#Covington Suffers Stroke
+country_event = {
+	id = montana.1
+	title = montana.1.t
+	desc = montana.1.d
+	picture = covington_heart_attack
+	
+	trigger = {
+		tag = MOT
+		date > 2010.4.1
+		date < 2010.4.30
+	}
+
+	fire_only_once = yes
+	
+	option = {   #Call a special congress
+		name = montana.1.o1
+		add_stability = -0.03
+		add_popularity = {
+		ideology = fascist
+		popularity = -0.03
+		}
+		hidden_effect = {
+		country_event = { 
+		id = montana.2
+		days = 35
+		}
+		}
+	}
+}
+#White Freedom Alliance Congress
+country_event = {
+	id = montana.2
+	title = montana.2.t
+	desc = montana.2.d
+	picture = great_falls_capitol
+	
+	is_triggered_only = yes
+
+	
+	fire_only_once = yes
+	
+	option = {   #Louis Beam - loyal to Covington and militias
+		name = montana.2.o1
+		create_country_leader = {
+	        name = "Louis Beam"
+	        picture = "Portrait_Louis_Beam.dds"
+	        ideology = fascist_ideology
+        }
+         hidden_effect = {
+            every_country = {
+		    limit = {
+			    exists = yes
+			}
+			news_event = {
+			    hours = 4
+			    id = news.304
+		    }
+			}
+			}
+	}
+	
+	option = {   #Matthew Shea - fusion between Aryan Nations and Covington
+		name = montana.2.o2
+		create_country_leader = {
+	        name = "Matthew Shea"
+	        picture = "Portrait_MOT_Matthew_Shea.dds"
+	        ideology = national_socialist
+        }
+         hidden_effect = {
+            every_country = {
+		    limit = {
+			    exists = yes
+			}
+			news_event = {
+			    hours = 4
+			    id = news.305
+		    }
+			}
+			}
+	}
+	
+	option = {   #Morris Gulett - absolutely insane
+		name = montana.2.o3
+		create_country_leader = {
+	        name = "Morris Gulett"
+	        picture = "Portrait_MOT_Morris_Gulett.dds"
+	        ideology = national_socialist
+        }
+        
+         hidden_effect = {
+         	set_cosmetic_tag = MOT_CC
+         	set_party_name = {
+         	ideology = fascist
+         	name = MOT_aryan_nations_party
+         	long_name = MOT_aryan_nations_party_long
+         	}
+            every_country = {
+		    limit = {
+			    exists = yes
+			}
+			news_event = {
+			    hours = 4
+			    id = news.306
+		    }
+			}
+			}
+	}
+
+	option = {   #John Trochmann
+		name = montana.2.o4
+		create_country_leader = {
+	        name = "John Trochmann"
+	        picture = "Portrait_John_Trochmann.dds"
+	        ideology = fascist_ideology
+        }
+         hidden_effect = {
+         	set_cosmetic_tag = MOT_CC
+         	set_party_name = {
+         	ideology = fascist
+         	name = MOT_nationalist_party
+         	long_name = MOT_nationalist_party_long
+         	}
+         	set_party_name = {
+         	ideology = nationalist
+         	name = MOT_republican_party
+         	long_name = MOT_republican_party_long
+         	}
+            every_country = {
+		    limit = {
+			    exists = yes
+			}
+			news_event = {
+			    hours = 4
+			    id = news.307
+		    }
+			}
+			}
+	}
+}

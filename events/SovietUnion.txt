@@ -1,0 +1,3030 @@
+﻿add_namespace = soviet
+
+#Yazov Assassinated
+country_event = {
+	id = soviet.1
+	title = soviet.1.t
+	desc = soviet.1.d
+	picture = russia_man_crying
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = SOV
+		date > 2010.2.1
+		date < 2010.2.30
+	}
+
+	option = {
+		name = soviet.1.o1
+		create_country_leader = {
+	        name = "Politburo"
+	        desc = ""
+	        picture = "Portrait_SOV_Politburo.dds"
+	        ideology = stalinist
+	    }
+		add_political_power = -200
+		add_stability = -0.05
+		SOV = {
+		    country_event = { days = 2 id = soviet.2 }
+		}
+		every_country = {
+		    limit = {
+			    NOT = {
+				    tag = SOV
+				}
+			}
+			news_event = {
+			    hours = 4
+			    id = news.6
+		    }
+		}
+	}
+}
+
+#Election of the chairman
+country_event = {
+	id = soviet.2
+	title = soviet.2.t
+	desc = soviet.2.d
+	picture = soviet_politburo_meeting
+
+	is_triggered_only = yes
+
+	option = { #Vladimir Putin - hardliners
+		name = soviet.2.o1
+		create_country_leader = {
+	        name = "Vladimir Putin"
+	        desc = ""
+	        picture = "Portrait_SOV_Vladimir_Putin.dds"
+	        ideology = stalinist
+	    }
+		ai_chance = {
+			base = 30
+			modifier = {
+				NOT = {
+					has_game_rule = {
+						rule = SOV_ai_behavior
+						option = DEFAULT
+					}
+					has_game_rule = {
+						rule = SOV_ai_behavior
+						option = SOV_PUTIN_MAINTAIN
+					}
+					has_game_rule = {
+						rule = SOV_ai_behavior
+						option = SOV_PUTIN_TSAR
+					}
+					has_game_rule = {
+						rule = SOV_ai_behavior
+						option = SOV_PUTIN_JUNTA
+					}
+					has_game_rule = {
+						rule = SOV_ai_behavior
+						option = SOV_PUTIN_PRESIDENT
+					}
+					has_game_rule = {
+						rule = SOV_ai_behavior
+						option = SOV_PUTIN_IDIOT
+					}
+				}
+				factor = 0
+			}
+		}
+		hidden_effect = {
+		    if = {
+			    limit = {
+				    has_completed_focus = SOV_politburo_debate
+				}
+				complete_national_focus = SOV_putin
+			}
+		}
+		add_political_power = -50
+		set_country_flag = putin_elected
+		every_country = {
+		    limit = {
+			    NOT = {
+				    tag = SOV
+				}
+			}
+			news_event = {
+			    hours = 4
+			    id = news.7
+		    }
+		}
+	}
+
+	option = { #Gennady Zyuganov - Yazov's faction
+		name = soviet.2.o2
+		create_country_leader = {
+	        name = "Gennady Zyuganov"
+	        desc = ""
+	        picture = "Portrait_SOV_Gennady_Zyuganov.dds"
+	        ideology = leninist
+	    }
+		ai_chance = {
+			base = 55
+			modifier = {
+				NOT = {
+					has_game_rule = {
+						rule = SOV_ai_behavior
+						option = DEFAULT
+					}
+					has_game_rule = {
+						rule = SOV_ai_behavior
+						option = SOV_ZYUGANOV
+					}
+				}
+				factor = 0
+			}
+		}
+		hidden_effect = {
+		    if = {
+			    limit = {
+				    has_completed_focus = SOV_politburo_debate
+				}
+				complete_national_focus = SOV_zyuganov
+			}
+		}
+		add_political_power = 10
+		set_country_flag = zyuganov_elected
+		every_country = {
+		    limit = {
+			    NOT = {
+				    tag = SOV
+				}
+			}
+			news_event = {
+			    hours = 4
+			    id = news.8
+		    }
+		}
+	}
+
+	option = { #Alexander Rutskoy - democratic nationalists
+		name = soviet.2.o3
+		create_country_leader = {
+	        name = "Alexander Rutskoy"
+	        desc = ""
+	        picture = "Portrait_SOV_Alexander_Rutskoy.dds"
+	        ideology = stalinist
+	    }
+		hidden_effect = {
+		    if = {
+			    limit = {
+				    has_completed_focus = SOV_politburo_debate
+				}
+				complete_national_focus = SOV_rutskoy
+			}
+		}
+		ai_chance = {
+			base = 10
+			modifier = {
+				NOT = {
+					has_game_rule = {
+						rule = SOV_ai_behavior
+						option = DEFAULT
+					}
+					has_game_rule = {
+						rule = SOV_ai_behavior
+						option = SOV_RUTSKOY_ISOLATION
+					}
+					has_game_rule = {
+						rule = SOV_ai_behavior
+						option = SOV_RUTSKOY_ROMANOV
+					}
+					has_game_rule = {
+						rule = SOV_ai_behavior
+						option = SOV_RUTSKOY_AUTOCRAT
+					}
+					has_game_rule = {
+						rule = SOV_ai_behavior
+						option = SOV_RUTSKOY_NAZBOL
+					}
+				}
+				factor = 0
+			}
+		}
+		add_political_power = -50
+		set_country_flag = rutskoy_elected
+		every_country = {
+		    limit = {
+			    NOT = {
+				    tag = SOV
+				}
+			}
+			news_event = {
+			    hours = 4
+			    id = news.9
+		    }
+		}
+	}
+
+	option = { #Mikhail Gorbachev - moderates - return from exile
+		name = soviet.2.o4
+		create_country_leader = {
+	        name = "Mikhail Gorbachev"
+	        desc = ""
+	        picture = "Portrait_SOV_Mikhail_Gorbachev.dds"
+	        ideology = leninist
+	    }
+		hidden_effect = {
+		    if = {
+			    limit = {
+				    has_completed_focus = SOV_politburo_debate
+				}
+				complete_national_focus = SOV_gorbachev
+			}
+		}
+		ai_chance = {
+			base = 5
+			modifier = {
+				NOT = {
+					has_game_rule = {
+						rule = SOV_ai_behavior
+						option = DEFAULT
+					}
+					has_game_rule = {
+						rule = SOV_ai_behavior
+						option = SOV_GORBACHEV_LAZY
+					}
+					has_game_rule = {
+						rule = SOV_ai_behavior
+						option = SOV_GORBACHEV_REVSOC
+					}
+					has_game_rule = {
+						rule = SOV_ai_behavior
+						option = SOV_GORBACHEV_DEMOCRACY
+					}
+					has_game_rule = {
+						rule = SOV_ai_behavior
+						option = SOV_GORBACHEV_DISSOLVE
+					}
+				}
+				factor = 0
+			}
+		}
+		add_political_power = -100
+		set_country_flag = gorbachev_elected
+		every_country = {
+		    limit = {
+			    NOT = {
+				    tag = SOV
+				}
+			}
+			news_event = {
+			    hours = 4
+			    id = news.10
+		    }
+		}
+	}
+}
+
+#Warsaw Pact - USSR strengthens us
+country_event = {
+	id = soviet.3
+	title = soviet.3.t
+	desc = soviet.3.d
+	picture = ussr_strengthens_warsaw_pact
+
+	is_triggered_only = yes
+
+	option = {
+		name = soviet.3.o1
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = arms_factory
+				level = 2
+				instant_build = yes
+			}
+		}
+		add_political_power = 50
+		army_experience = 10
+	}
+}
+
+#India - Putin's attempted communist coup in New Delhi
+country_event = {
+	id = soviet.4
+	title = soviet.4.t
+	desc = soviet.4.d
+	picture = new_delhi_coup
+
+	is_triggered_only = yes
+
+	option = { #The coup succeeds
+		name = soviet.4.o1
+		ai_chance = {
+			factor = 10
+		}
+		set_politics = {
+	        ruling_party = communist
+	        elections_allowed = no
+        }
+		add_stability = -0.2
+		add_political_power = -10
+		every_country = {
+		    limit = {
+			    NOT = {
+				    tag = RAJ
+				}
+			}
+			news_event = {
+			    hours = 4
+			    id = news.11
+		    }
+		}
+	}
+
+	option = { #The coup fails, chance of civil war
+		name = soviet.4.o2
+		ai_chance = {
+			factor = 90
+		}
+		RAJ = {
+			add_opinion_modifier = {
+				target = SOV
+				modifier = rival
+			}
+		}
+		SOV = {
+		    country_event = { id = soviet.7 }
+		}
+		every_country = {
+		    limit = {
+			    NOT = {
+				    tag = SOV
+					tag = RAJ
+				}
+			}
+			news_event = {
+			    hours = 4
+			    id = news.12
+		    }
+		}
+		add_political_power = 50
+        random_list = {
+			65 = {
+				country_event = { id = soviet.5 }
+			}
+			35 = {
+				country_event = { id = soviet.6 }
+			}
+		}
+	}
+}
+
+#India - no civil war
+country_event = {
+	id = soviet.5
+	title = soviet.5.t
+	desc = soviet.5.d
+	picture = india_no_civil_war
+
+	is_triggered_only = yes
+
+	option = {
+		name = soviet.5.o1
+		add_political_power = 20
+		add_stability = 0.05
+	}
+}
+
+#India - civil war erupts after Putin's attempted communist coup
+country_event = {
+	id = soviet.6
+	title = soviet.6.t
+	desc = soviet.6.d
+	picture = indian_civil_war
+
+	is_triggered_only = yes
+
+	option = {
+		name = soviet.6.o1
+		start_civil_war = {
+			ideology = communist
+			size = 0.4
+			states = { 429 437 427 436 321 428 }
+			capital = 428
+		}
+
+	}
+}
+
+#Putin's communist coup in India fails
+country_event = {
+	id = soviet.7
+	title = soviet.7.t
+	desc = soviet.7.d
+	picture = putin_indian_coup_fails
+
+	is_triggered_only = yes
+
+	option = {
+		name = soviet.7.o1
+		add_political_power = -50
+	}
+}
+
+#EU members - investments from the USSR
+country_event = {
+	id = soviet.8
+	title = soviet.8.t
+	desc = soviet.8.d
+	picture = eu_investments
+
+	is_triggered_only = yes
+
+	option = {
+		name = soviet.8.o1
+		random_owned_state = {
+			   add_extra_state_shared_building_slots = 1
+			    add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+}
+
+#South American summit
+country_event = {
+	id = soviet.9
+	title = soviet.9.t
+	desc = soviet.9.d
+	picture = south_american_summit
+
+	is_triggered_only = yes
+
+	option = {  #Push for Brazil
+		name = soviet.9.o1
+		ai_chance = {
+			factor = 25
+		}
+		hidden_effect = {
+		    BRA = {
+			    country_event = { id = soviet.10 }
+			}
+		}
+		set_country_flag = push_for_brazil
+	}
+
+	option = {  #Push for Argentina
+		name = soviet.9.o2
+		ai_chance = {
+			factor = 25
+		}
+		hidden_effect = {
+		    ARG = {
+			    country_event = { id = soviet.10 }
+			}
+		}
+		set_country_flag = push_for_argentina
+	}
+
+	option = {  #Push for Colombia
+		name = soviet.9.o3
+		ai_chance = {
+			factor = 25
+		}
+		hidden_effect = {
+		    COL = {
+			    country_event = { id = soviet.10 }
+			}
+		}
+		set_country_flag = push_for_colombia
+	}
+
+	option = {  #Push for Venezuela
+		name = soviet.9.o4
+		ai_chance = {
+			factor = 25
+		}
+		hidden_effect = {
+		    VEN = {
+			    country_event = { id = soviet.10 }
+			}
+		}
+		set_country_flag = push_for_venezuela
+	}
+}
+
+#South American nations - Soviet Union engages with us
+country_event = {
+	id = soviet.10
+	title = soviet.10.t
+	desc = soviet.10.d
+	picture = south_america_ussr_engages
+
+	is_triggered_only = yes
+
+	option = {  #More trade
+		name = soviet.10.o1
+		ai_chance = {
+			factor = 40
+		}
+		hidden_effect = {
+		    SOV = {
+			    country_event = { id = soviet.11 }
+			}
+		}
+
+	}
+
+	option = {  #Ask for investment
+		name = soviet.10.o2
+		ai_chance = {
+			factor = 30
+		}
+		hidden_effect = {
+		    SOV = {
+			    country_event = { id = soviet.12 }
+			}
+		}
+	}
+
+	option = {  #Invest in the USSR
+		name = soviet.10.o3
+		ai_chance = {
+			factor = 10
+		}
+		hidden_effect = {
+		    SOV = {
+			    country_event = { id = soviet.13 }
+			}
+		}
+	}
+
+	option = {  #We have no deal
+		name = soviet.10.o4
+		ai_chance = {
+			factor = 20
+		}
+		hidden_effect = {
+		    SOV = {
+			    country_event = { id = soviet.14 }
+			}
+		}
+	}
+
+}
+
+#South American summit - Country offers more trade
+country_event = {
+	id = soviet.11
+	title = soviet.11.t
+	desc = soviet.11.d
+	picture = south_america_trade
+
+	is_triggered_only = yes
+
+	option = {
+		name = soviet.11.o1
+		if = {
+		    limit = {
+			    has_country_flag = push_for_brazil
+			}
+			BRA = {
+			    add_opinion_modifier = {
+				    target = SOV
+				    modifier = trade_influence_2
+			    }
+		    }
+		}
+		if = {
+		    limit = {
+			    has_country_flag = push_for_argentina
+			}
+			ARG = {
+			    add_opinion_modifier = {
+				    target = SOV
+				    modifier = trade_influence_2
+			    }
+		    }
+		}
+		if = {
+		    limit = {
+			    has_country_flag = push_for_colombia
+			}
+			COL = {
+			    add_opinion_modifier = {
+				    target = SOV
+				    modifier = trade_influence_2
+			    }
+		    }
+		}
+		if = {
+		    limit = {
+			    has_country_flag = push_for_venezuela
+			}
+			VEN = {
+			    add_opinion_modifier = {
+				    target = SOV
+				    modifier = trade_influence_2
+			    }
+		    }
+		}
+	}
+}
+
+#South American summit - Country asks for investment
+country_event = {
+	id = soviet.12
+	title = soviet.12.t
+	desc = soviet.12.d
+	picture = south_america_investment
+
+	is_triggered_only = yes
+
+	option = {
+		name = soviet.12.o1
+		ai_chance = {
+			factor = 70
+		}
+		if = {
+		    limit = {
+			    has_country_flag = push_for_brazil
+			}
+			BRA = {
+			    random_owned_state = {
+			        add_extra_state_shared_building_slots = 1
+			        add_building_construction = {
+				        type = industrial_complex
+				        level = 1
+				        instant_build = yes
+			        }
+		        }
+		    }
+		}
+		if = {
+		    limit = {
+			    has_country_flag = push_for_argentina
+			}
+			ARG = {
+			    random_owned_state = {
+			        add_extra_state_shared_building_slots = 1
+			        add_building_construction = {
+				        type = industrial_complex
+				        level = 1
+				        instant_build = yes
+			        }
+		        }
+		    }
+		}
+		if = {
+		    limit = {
+			    has_country_flag = push_for_colombia
+			}
+			COL = {
+			    random_owned_state = {
+			        add_extra_state_shared_building_slots = 1
+			        add_building_construction = {
+				        type = industrial_complex
+				        level = 1
+				        instant_build = yes
+			        }
+		        }
+		    }
+		}
+		if = {
+		    limit = {
+			    has_country_flag = push_for_venezuela
+			}
+			VEN = {
+			    random_owned_state = {
+			        add_extra_state_shared_building_slots = 1
+			        add_building_construction = {
+				        type = industrial_complex
+				        level = 1
+				        instant_build = yes
+			        }
+		        }
+		    }
+		}
+	}
+
+	option = {  #Reject the deal
+		name = soviet.12.o2
+		add_political_power = -5
+		ai_chance = {
+			factor = 30
+		}
+	}
+}
+
+#South American summit - country invests in ussr
+country_event = {
+	id = soviet.13
+	title = soviet.13.t
+	desc = soviet.13.d
+	picture = investment_into_ussr
+
+	is_triggered_only = yes
+
+	option = {
+		name = soviet.13.o1
+		random_owned_state = {
+			   add_extra_state_shared_building_slots = 1
+			    add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+}
+
+#South American summit - country rejects any deal
+country_event = {
+	id = soviet.14
+	title = soviet.14.t
+	desc = soviet.14.d
+	picture = south_america_talks_fail
+
+	is_triggered_only = yes
+
+	option = {
+		name = soviet.14.o1
+		add_political_power = -30
+	}
+}
+
+#Gorbachev dissolves union
+country_event = {
+	id = soviet.15
+	title = soviet.15.t
+	desc = soviet.15.d
+	picture = gorbachev_dissolves_union
+
+	is_triggered_only = yes
+
+	option = {
+		name = soviet.15.o1
+		every_country = {
+		    limit = {
+			    NOT = {
+				    tag = SOV
+				}
+			}
+			news_event = {
+			    hours = 4
+			    id = news.13
+		    }
+		}
+		hidden_effect = {
+		    EST = {
+			    transfer_state = 13
+				transfer_state = 191
+				transfer_state = 840
+			}
+			LAT = {
+			    transfer_state = 190
+				transfer_state = 12
+			}
+			LIT = {
+			    transfer_state = 189
+				transfer_state = 11
+				transfer_state = 188
+			}
+			BLR = {
+			    transfer_state = 207
+				transfer_state = 241
+				transfer_state = 206
+				transfer_state = 204
+				transfer_state = 194
+				transfer_state = 94
+				transfer_state = 95
+				transfer_state = 96
+				transfer_state = 808
+			}
+			UKR = {
+			    transfer_state = 93
+				transfer_state = 91
+				transfer_state = 89
+				transfer_state = 199
+				transfer_state = 198
+				transfer_state = 78
+				transfer_state = 192
+				transfer_state = 197
+				transfer_state = 203
+				transfer_state = 202
+				transfer_state = 201
+				transfer_state = 193
+				transfer_state = 225
+				transfer_state = 259
+				transfer_state = 221
+				transfer_state = 228
+				transfer_state = 227
+				transfer_state = 200
+				transfer_state = 137
+				transfer_state = 196
+				transfer_state = 226
+				transfer_state = 73
+				transfer_state = 857
+				transfer_state = 806
+				transfer_state = 80
+			}
+			GEO = {
+			    transfer_state = 231
+				transfer_state = 796
+				transfer_state = 797
+			}
+			AZR = {
+			    transfer_state = 229
+				transfer_state = 878
+				transfer_state = 877
+				transfer_state = 832
+				transfer_state = 790
+				transfer_state = 980
+			}
+			ARM = {
+			    transfer_state = 230
+			}
+			UZB = {
+			    transfer_state = 585
+				transfer_state = 405
+				transfer_state = 587
+				transfer_state = 821
+				transfer_state = 823
+			}
+			TRM = {
+			    transfer_state = 584
+				transfer_state = 799
+				transfer_state = 801
+				transfer_state = 802
+				transfer_state = 803
+			}
+			KYR = {
+			    transfer_state = 586
+				transfer_state = 822
+			}
+			TJI = {
+			    transfer_state = 732
+				transfer_state = 405
+
+			}
+			KZH = {
+				transfer_state = 406
+				transfer_state = 407
+				transfer_state = 402
+				transfer_state = 583
+				transfer_state = 404
+				transfer_state = 590
+				transfer_state = 588
+				transfer_state = 589
+				transfer_state = 804
+				transfer_state = 805
+			}
+		}
+		hidden_effect = {
+		    RUS = {
+		        annex_country = { target = SOV transfer_troops = yes }
+		    }
+		}
+		hidden_effect = {
+		    RUS = {
+                change_tag_from = SOV
+            }
+		}
+		hidden_effect = {
+		    RUS = {
+			    set_politics = {
+	                ruling_party = moderate_socialist
+	                elections_allowed = no
+                }
+			}
+		}
+		hidden_effect = {
+		    RUS = {
+			    add_popularity = {
+		            ideology = moderate_socialist
+			        popularity = 0.35
+		        }
+			}
+		}
+		hidden_effect = {
+		    RUS = {
+			    create_country_leader = {
+	                name = "Mikhail Gorbachev"
+	                desc = ""
+	                picture = "Portrait_RUS_Mikhail_Gorbachev.dds"
+	                ideology = democratic_socialist
+	            }
+			}
+		}
+        hidden_effect = {
+		    SOV = {
+			    EST = { transfer_technology = yes }
+                LAT = { transfer_technology = yes }
+                LIT = { transfer_technology = yes }
+                BLR = { transfer_technology = yes }
+                UKR = { transfer_technology = yes }
+                GEO = { transfer_technology = yes }
+                AZR = { transfer_technology = yes }
+                ARM = { transfer_technology = yes }
+                UZB = { transfer_technology = yes }
+                TRM = { transfer_technology = yes }
+                KYR = { transfer_technology = yes }
+                TJI = { transfer_technology = yes }
+                KZH = { transfer_technology = yes }
+                RUS = { transfer_technology = yes }
+		    }
+	    }
+	}
+}
+
+#Gorbachev purges KGB, civil war
+country_event = {
+	id = soviet.16
+	title = soviet.16.t
+	desc = soviet.16.d
+	picture = kgb_purged_civil_war
+
+	is_triggered_only = yes
+
+	option = {
+		name = soviet.16.o1
+		every_country = {
+		    limit = {
+			    NOT = {
+				    tag = SOV
+				}
+			}
+			news_event = {
+			    hours = 4
+			    id = news.14
+		    }
+		}
+		start_civil_war = {
+		    ideology = fascist
+			size = 0.3
+			states = { 202 193 203 206 204 195 232 235 234 237 236 560 657 562 561 137 229 }
+			capital = 204
+		}
+		set_country_flag = gorbachevs_union
+		hidden_effect = {
+		    every_country = {
+			    limit = {
+					original_tag = SOV
+					NOT = {
+					    has_country_flag = gorbachevs_union
+					}
+				}
+				create_country_leader = {
+	                name = "Vladimir Putin"
+	                desc = ""
+	                picture = "Portrait_SOV_Vladimir_Putin.dds"
+	                ideology = fascist_ideology
+	            }
+			}
+			every_country = {
+			    limit = {
+				    original_tag = SOV
+					NOT = {
+					    has_country_flag = gorbachevs_union
+					}
+				}
+				set_country_flag = kgb_rebellion
+			}
+		}
+	}
+}
+
+#KGB rebellion destroyed, new union can be established
+country_event = {
+	id = soviet.17
+	title = soviet.17.t
+	desc = soviet.17.d
+	picture = kgb_rebellion_destroyed
+
+	fire_only_once = yes
+
+	trigger = {
+	    tag = SOV
+		has_country_flag = gorbachevs_union
+		SOV = { has_civil_war = no }
+	}
+
+	option = {
+		name = soviet.17.o1
+		add_stability = 0.035
+		set_politics = {
+	        ruling_party = revolutionary_socialist
+	        elections_allowed = no
+        }
+		create_country_leader = {
+	        name = "Mikhail Gorbachev"
+	        desc = ""
+	        picture = "Portrait_SOV_Mikhail_Gorbachev.dds"
+	        ideology = revolutionary_socialist_ideology
+	    }
+		create_country_leader = {
+	        name = "Gennady Zyuganov"
+	        desc = ""
+	        picture = "Portrait_SOV_Gennady_Zyuganov.dds"
+	        ideology = stalinist
+	    }
+		every_country = {
+		    limit = {
+			    NOT = {
+				    tag = SOV
+				}
+			}
+			news_event = {
+			    hours = 4
+			    id = news.15
+		    }
+		}
+	}
+}
+
+#KGB endorses revolutionary socialist new union
+country_event = {
+	id = soviet.18
+	title = soviet.18.t
+	desc = soviet.18.d
+	picture = kgb_endorses_new_union
+
+	is_triggered_only = yes
+
+	option = {
+		name = soviet.18.o1
+		add_stability = -0.02
+		set_politics = {
+	        ruling_party = revolutionary_socialist
+	        elections_allowed = no
+        }
+		create_country_leader = {
+	        name = "Mikhail Gorbachev"
+	        desc = ""
+	        picture = "Portrait_SOV_Mikhail_Gorbachev.dds"
+	        ideology = revolutionary_socialist_ideology
+	    }
+		create_country_leader = {
+	        name = "Gennady Zyuganov"
+	        desc = ""
+	        picture = "Portrait_SOV_Gennady_Zyuganov.dds"
+	        ideology = stalinist
+	    }
+	}
+}
+
+#Commonwealth - revsoc USSR requests alliance
+country_event = {
+	id = soviet.19
+	title = soviet.19.t
+	desc = soviet.19.d
+	picture = commonwealth_ussr_alliance
+
+	is_triggered_only = yes
+
+	option = { #sure
+		name = soviet.19.o1
+		ai_chance = {
+			factor = 90
+		}
+		SOV = {
+		    add_to_faction = NEA
+		}
+		add_political_power = 20
+		add_stability = 0.01
+	}
+
+	option = { #no
+		name = soviet.19.o2
+		add_political_power = -20
+		ai_chance = {
+			factor = 10
+		}
+		SOV = {
+			country_event = { days = 1 id = soviet.20 }
+		}
+	}
+}
+
+#Commonwealth refuses alliance
+country_event = {
+	id = soviet.20
+	title = soviet.20.t
+	desc = soviet.20.d
+	picture = commonwealth_rejects_alliance
+
+	is_triggered_only = yes
+
+	option = { #sure
+		name = soviet.20.o1
+		add_political_power = -20
+	}
+
+}
+
+#Warsaw Pact - Gorbachev demands benefits
+country_event = {
+	id = soviet.21
+	title = soviet.21.t
+	desc = soviet.21.d
+	picture = gorbachev_demands_benefits
+
+	is_triggered_only = yes
+
+	option = { #Ok
+		name = soviet.21.o1
+		ai_chance = {
+			factor = 30
+		}
+		country_event = { days = 1 id = soviet.22 }
+		effect_tooltip = {
+		    SOV = {
+			    add_political_power = 3
+			}
+			SOV = {
+			    random_owned_state = {
+			        add_extra_state_shared_building_slots = 1
+			        add_building_construction = {
+				        type = industrial_complex
+				        level = 1
+				        instant_build = yes
+			        }
+		        }
+			}
+		}
+	}
+
+	option = { #No
+		name = soviet.21.o2
+		ai_chance = {
+			factor = 70
+		}
+		country_event = { days = 1 id = soviet.23 }
+		SOV = {
+			add_opinion_modifier = {
+				target = ROOT
+				modifier = recent_actions_negative
+			}
+		}
+		add_opinion_modifier = {
+			target = SOV
+			modifier = recent_actions_negative
+		}
+	}
+
+}
+
+#Warsaw pact country agrees to benefits
+country_event = {
+	id = soviet.22
+	title = soviet.22.t
+	desc = soviet.22.d
+	picture = warsaw_agree_to_benefits
+
+	is_triggered_only = yes
+
+	option = {
+		name = soviet.22.o1
+		add_political_power = 3
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+			    type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+
+}
+
+#Warsaw pact country refuses to benefit us
+country_event = {
+	id = soviet.23
+	title = soviet.23.t
+	desc = soviet.23.d
+	picture = warsaw_refuses_to_give_benefits
+
+	is_triggered_only = yes
+
+	option = {
+		name = soviet.23.o1
+	}
+
+}
+
+#Rutskoy's coup
+country_event = {
+	id = soviet.24
+	title = soviet.24.t
+	desc = soviet.24.d
+	picture = rutskoys_coup
+
+	is_triggered_only = yes
+
+	option = {  #Rutskoy's loyal faction gains power
+		name = soviet.24.o1
+		ai_chance = {
+			base = 60
+			modifier = {
+				NOT = {
+					has_game_rule = {
+						rule = SOV_ai_behavior
+						option = DEFAULT
+					}
+					has_game_rule = {
+						rule = SOV_ai_behavior
+						option = SOV_RUTSKOY_AUTOCRAT
+					}
+				}
+				factor = 0
+			}
+		}
+		every_country = {
+		    limit = {
+			    NOT = {
+				    tag = SOV
+				}
+			}
+			news_event = {
+			    hours = 4
+			    id = news.16
+		    }
+		}
+		set_country_flag = rutskoy_nationalists
+	}
+
+	option = {  #Monarchists return from exile
+		name = soviet.24.o2
+		ai_chance = {
+			base = 10
+			modifier = {
+				NOT = {
+					has_game_rule = {
+						rule = SOV_ai_behavior
+						option = DEFAULT
+					}
+					has_game_rule = {
+						rule = SOV_ai_behavior
+						option = SOV_RUTSKOY_ROMANOV
+					}
+				}
+				factor = 0
+			}
+		}
+		every_country = {
+		    limit = {
+			    NOT = {
+				    tag = SOV
+				}
+			}
+			news_event = {
+			    hours = 4
+			    id = news.16
+		    }
+		}
+		set_country_flag = rutskoy_monarchists
+	}
+
+	option = {  #National Bolsheviks side with Rutskoy
+		name = soviet.24.o3
+		ai_chance = {
+			base = 30
+			modifier = {
+				NOT = {
+					has_game_rule = {
+						rule = SOV_ai_behavior
+						option = DEFAULT
+					}
+					has_game_rule = {
+						rule = SOV_ai_behavior
+						option = SOV_RUTSKOY_NAZBOL
+					}
+				}
+				factor = 0
+			}
+		}
+		every_country = {
+		    limit = {
+			    NOT = {
+				    tag = SOV
+				}
+			}
+			news_event = {
+			    hours = 4
+			    id = news.16
+		    }
+		}
+		set_country_flag = rutskoy_national_bolsheviks
+	}
+
+}
+
+#National Bolsheviks force Rutskoy to resign
+country_event = {
+	id = soviet.25
+	title = soviet.25.t
+	desc = soviet.25.d
+	picture = rutskoy_forced_to_resign
+
+	is_triggered_only = yes
+
+	option = {  #And so it is
+		name = soviet.25.o1
+		add_political_power = 25
+		add_stability = 0.05
+		create_country_leader = {
+	        name = "Eduard Limonov"
+	        desc = ""
+	        picture = "Portrait_SOV_Eduard_Limonov.dds"
+	        ideology = national_bolshevik_ideology
+	    }
+		every_country = {
+		    limit = {
+			    NOT = {
+				    tag = SOV
+				}
+			}
+			news_event = {
+			    hours = 4
+			    id = news.17
+		    }
+		}
+		add_ideas = idea_soviet_rise_of_national_bolshevism
+	}
+
+}
+
+#Soviet Union collapses, Putin leads Russia
+country_event = {
+	id = soviet.26
+	title = soviet.26.t
+	desc = soviet.26.d
+	picture = putin_ussr_dissolved
+
+	is_triggered_only = yes
+
+	option = {
+		name = soviet.26.o1
+		every_country = {
+		    limit = {
+			    NOT = {
+				    tag = SOV
+				}
+			}
+			news_event = {
+			    hours = 4
+			    id = news.18
+		    }
+		}
+		hidden_effect = {
+		    EST = {
+			    transfer_state = 13
+				transfer_state = 191
+				transfer_state = 840
+			}
+			LAT = {
+			    transfer_state = 190
+				transfer_state = 12
+			}
+			LIT = {
+			    transfer_state = 189
+				transfer_state = 11
+				transfer_state = 188
+			}
+			BLR = {
+			    transfer_state = 207
+				transfer_state = 241
+				transfer_state = 206
+				transfer_state = 204
+				transfer_state = 194
+				transfer_state = 94
+				transfer_state = 95
+				transfer_state = 96
+				transfer_state = 808
+			}
+			UKR = {
+			    transfer_state = 93
+				transfer_state = 91
+				transfer_state = 89
+				transfer_state = 199
+				transfer_state = 198
+				transfer_state = 78
+				transfer_state = 192
+				transfer_state = 197
+				transfer_state = 203
+				transfer_state = 202
+				transfer_state = 201
+				transfer_state = 193
+				transfer_state = 225
+				transfer_state = 259
+				transfer_state = 221
+				transfer_state = 228
+				transfer_state = 227
+				transfer_state = 200
+				transfer_state = 137
+				transfer_state = 196
+				transfer_state = 226
+				transfer_state = 73
+				transfer_state = 857
+				transfer_state = 806
+				transfer_state = 80
+			}
+			GEO = {
+			    transfer_state = 231
+				transfer_state = 796
+				transfer_state = 797
+			}
+			AZR = {
+			    transfer_state = 229
+				transfer_state = 878
+				transfer_state = 877
+				transfer_state = 832
+				transfer_state = 790
+				transfer_state = 980
+			}
+			ARM = {
+			    transfer_state = 230
+			}
+			UZB = {
+			    transfer_state = 585
+				transfer_state = 405
+				transfer_state = 587
+				transfer_state = 821
+				transfer_state = 823
+			}
+			TRM = {
+			    transfer_state = 584
+				transfer_state = 799
+				transfer_state = 801
+				transfer_state = 802
+				transfer_state = 803
+			}
+			KYR = {
+			    transfer_state = 586
+				transfer_state = 822
+			}
+			TJI = {
+			    transfer_state = 732
+				transfer_state = 405
+			}
+			KZH = {
+				transfer_state = 406
+				transfer_state = 407
+				transfer_state = 402
+				transfer_state = 583
+				transfer_state = 404
+				transfer_state = 590
+				transfer_state = 588
+				transfer_state = 589
+				transfer_state = 804
+				transfer_state = 805
+			}
+		}
+		hidden_effect = {
+		    RUS = {
+		        annex_country = { target = SOV transfer_troops = yes }
+		    }
+		}
+		hidden_effect = {
+		    RUS = {
+                change_tag_from = SOV
+            }
+		}
+		hidden_effect = {
+		    RUS = {
+			    set_politics = {
+	                ruling_party = national_conservative
+	                elections_allowed = no
+                }
+			}
+		}
+		hidden_effect = {
+		    RUS = {
+			    add_popularity = {
+		            ideology = national_conservative
+			        popularity = 0.2
+		        }
+			}
+		}
+		hidden_effect = {
+		    RUS = {
+			    create_country_leader = {
+	                name = "Vladimir Putin"
+	                desc = ""
+	                picture = "Portrait_RUS_Vladimir_Putin.dds"
+	                ideology = reactionary
+	            }
+			}
+		}
+        hidden_effect = {
+		    SOV = {
+			    EST = { transfer_technology = yes }
+                LAT = { transfer_technology = yes }
+                LIT = { transfer_technology = yes }
+                BLR = { transfer_technology = yes }
+                UKR = { transfer_technology = yes }
+                GEO = { transfer_technology = yes }
+                AZR = { transfer_technology = yes }
+                ARM = { transfer_technology = yes }
+                UZB = { transfer_technology = yes }
+                TRM = { transfer_technology = yes }
+                KYR = { transfer_technology = yes }
+                TJI = { transfer_technology = yes }
+                KZH = { transfer_technology = yes }
+                RUS = { transfer_technology = yes }
+		    }
+	    }
+	}
+
+}
+
+#Germany - Putin stages coup
+country_event = {
+	id = soviet.27
+	title = soviet.27.t
+	desc = soviet.27.d
+	picture = german_coup
+
+	is_triggered_only = yes
+
+	option = {
+		name = soviet.27.o1
+		every_country = {
+		    limit = {
+			    NOT = {
+				    tag = GER
+					tag = SOV
+				}
+			}
+			news_event = {
+			    hours = 4
+			    id = news.19
+		    }
+		}
+		start_civil_war = {
+		    ideology = nationalist
+			size = 0.3
+			states = { 53 52 54 50 }
+			capital = 53
+		}
+	}
+
+}
+
+#Poland - Putin stages coup
+country_event = {
+	id = soviet.28
+	title = soviet.28.t
+	desc = soviet.28.d
+	picture = poland_coup
+
+	is_triggered_only = yes
+
+	option = {
+		name = soviet.28.o1
+		every_country = {
+		    limit = {
+			    NOT = {
+				    tag = SOV
+					tag = POL
+				}
+			}
+			news_event = {
+			    hours = 4
+			    id = news.20
+		    }
+		}
+		start_civil_war = {
+		    ideology = nationalist
+			size = 0.5
+			states = { 66 67 88 90 92 }
+			capital = 67
+		}
+	}
+
+}
+
+#Italy - Putin stages coup
+country_event = {
+	id = soviet.29
+	title = soviet.29.t
+	desc = soviet.29.d
+	picture = italy_coup
+
+	is_triggered_only = yes
+
+	option = {
+		name = soviet.29.o1
+		every_country = {
+		    limit = {
+			    NOT = {
+				    tag = ITA
+					tag = SOV
+				}
+			}
+			news_event = {
+			    hours = 4
+			    id = news.21
+		    }
+		}
+		start_civil_war = {
+		    ideology = nationalist
+			size = 0.3
+			states = { 158 159 160 161 }
+			capital = 160
+		}
+	}
+
+}
+
+#Sweden - monarchists with support of Putin stage coup
+country_event = {
+	id = soviet.30
+	title = soviet.30.t
+	desc = soviet.30.d
+	picture = sweden_monarchist_coup
+
+	is_triggered_only = yes
+
+	option = {
+		name = soviet.30.o1
+		every_country = {
+		    limit = {
+			    NOT = {
+				    tag = SOV
+					tag = SWE
+				}
+			}
+			news_event = {
+			    hours = 4
+			    id = news.22
+		    }
+		}
+		start_civil_war = {
+		    ideology = monarchist
+			size = 0.3
+			states = { 140 139 124 }
+			capital = 140
+		}
+	}
+
+}
+
+#Norway - monarchists with support of Putin stage coup
+country_event = {
+	id = soviet.31
+	title = soviet.31.t
+	desc = soviet.31.d
+	picture = norwegian_monarchist_coup
+
+	is_triggered_only = yes
+
+	option = {
+		name = soviet.31.o1
+		every_country = {
+		    limit = {
+			    NOT = {
+				    tag = NOR
+					tag = SOV
+				}
+			}
+			news_event = {
+			    hours = 4
+			    id = news.23
+		    }
+		}
+		start_civil_war = {
+		    ideology = monarchist
+			size = 0.3
+			states = { 142 143 }
+			capital = 142
+		}
+	}
+
+}
+
+#Denmark - monarchists with support of Putin stage coup
+country_event = {
+	id = soviet.32
+	title = soviet.32.t
+	desc = soviet.32.d
+	picture = denmark_monarchist_coup
+
+	is_triggered_only = yes
+
+	option = {
+		name = soviet.32.o1
+		every_country = {
+		    limit = {
+			    NOT = {
+				    tag = SOV
+					tag = DEN
+				}
+			}
+			news_event = {
+			    hours = 4
+			    id = news.24
+		    }
+		}
+		start_civil_war = {
+		    ideology = monarchist
+			size = 0.3
+			states = { 99 }
+			capital = 99
+		}
+	}
+
+}
+
+#Rutskoy chooses foreign policy
+country_event = {
+	id = soviet.33
+	title = soviet.33.t
+	desc = soviet.33.d
+	picture = rutskoy_foreign_policy
+
+	is_triggered_only = yes
+
+	option = {  #Warmongering
+		name = soviet.33.o1
+		ai_chance = {
+			factor = 20
+		}
+		add_ideas = idea_soviet_aggressive_foreign_policy
+	}
+
+	option = {  #Realpolitik
+		name = soviet.33.o2
+		ai_chance = {
+			factor = 20
+		}
+		add_ideas = idea_soviet_realpolitik
+	}
+
+	option = {  #Peace
+		name = soviet.33.o3
+		ai_chance = {
+			factor = 60
+		}
+		add_ideas = idea_soviet_peaceful_foreign_policy
+	}
+
+}
+
+#China - revolutionary socialist ussr demands we join their faction
+country_event = {
+	id = soviet.34
+	title = soviet.34.t
+	desc = soviet.34.d
+	picture = ussr_demands_alliance
+
+	is_triggered_only = yes
+
+	option = {  #Fine
+		name = soviet.34.o1
+		ai_chance = {
+			factor = 20
+		}
+		add_political_power = -100
+		add_stability = -0.1
+		SOV = {
+		    country_event = { days = 1 id = soviet.36 }
+		}
+	}
+
+	option = {  #Never
+		name = soviet.34.o2
+		ai_chance = {
+			factor = 80
+		}
+		add_stability = 0.05
+		add_political_power = 120
+		SOV = {
+		    country_event = { days = 1 id = soviet.35 }
+		}
+	}
+
+}
+
+#China refuses to join alliance
+country_event = {
+	id = soviet.35
+	title = soviet.35.t
+	desc = soviet.35.d
+	picture = china_alliance_deal
+
+	is_triggered_only = yes
+
+	option = {
+		name = soviet.35.o1
+		create_wargoal = {
+			type = puppet_wargoal_focus
+			target = PRC
+		}
+	}
+
+}
+
+#China accepts our offer to join alliance
+country_event = {
+	id = soviet.36
+	title = soviet.36.t
+	desc = soviet.36.d
+	picture = china_alliance_deal
+
+	is_triggered_only = yes
+
+	option = {
+		name = soviet.36.o1
+		add_to_faction = PRC
+		PRC = {
+		    add_ai_strategy = {
+		        type = alliance
+		        id = "SOV"
+		        value = 120
+	        }
+		}
+	}
+
+}
+
+#Increased oil drilling in Caspian sea
+country_event = {
+	id = soviet.37
+	title = soviet.37.t
+	desc = soviet.37.d
+	picture = caspian_sea_oil
+
+	is_triggered_only = yes
+
+	option = {
+		name = soviet.37.o1
+	}
+
+}
+
+#Government announces new interest in agriculture
+country_event = {
+	id = soviet.38
+	title = soviet.38.t
+	desc = soviet.38.d
+	picture = agriculture_focus
+
+	is_triggered_only = yes
+
+	option = {
+		name = soviet.38.o1
+	}
+
+}
+
+#Economy steps closer to growth
+country_event = {
+	id = soviet.39
+	title = soviet.39.t
+	desc = soviet.39.d
+	picture = steps_towards_growth
+
+	is_triggered_only = yes
+
+	option = {
+		name = soviet.39.o1
+	}
+
+}
+
+#Gorbachev purges Politburo
+country_event = {
+	id = soviet.40
+	title = soviet.40.t
+	desc = soviet.40.d
+	picture = gorbachev_purges_politburo
+
+	is_triggered_only = yes
+
+	option = {
+		name = soviet.40.o1
+		every_country = {
+		    limit = {
+			    NOT = {
+				    tag = SOV
+				}
+			}
+			news_event = {
+			    hours = 4
+			    id = news.25
+		    }
+		}
+	}
+
+}
+
+#Gorbachev makes deals with some separatists
+country_event = {
+	id = soviet.41
+	title = soviet.41.t
+	desc = soviet.41.d
+	picture = gorbachev_deals_with_separatists
+
+	is_triggered_only = yes
+
+	option = {
+		name = soviet.41.o1
+	}
+
+}
+
+#Gorbachev announces more reforms
+country_event = {
+	id = soviet.42
+	title = soviet.42.t
+	desc = soviet.42.d
+	picture = gorbachev_reforms
+
+	is_triggered_only = yes
+
+	option = {
+		name = soviet.42.o1
+	}
+
+}
+
+#Gorbachev crushes reformist dreams
+country_event = {
+	id = soviet.43
+	title = soviet.43.t
+	desc = soviet.43.d
+	picture = reformist_dreams_crushed
+
+	is_triggered_only = yes
+
+	option = {
+		name = soviet.43.o1
+	}
+
+}
+
+#KGB befriends Gorbachev
+country_event = {
+	id = soviet.44
+	title = soviet.44.t
+	desc = soviet.44.d
+	picture = kgb_befriends_gorbachev
+
+	is_triggered_only = yes
+
+	option = {
+		name = soviet.44.o1
+	}
+
+}
+
+#Crackdown on dissent
+country_event = {
+	id = soviet.45
+	title = soviet.45.t
+	desc = soviet.45.d
+	picture = crackdown_on_dissent
+
+	is_triggered_only = yes
+
+	option = {
+		name = soviet.45.o1
+	}
+
+}
+
+#Rutskoy pledges to reform economy
+country_event = {
+	id = soviet.46
+	title = soviet.46.t
+	desc = soviet.46.d
+	picture = rutskoys_reforms
+
+	is_triggered_only = yes
+
+	option = {
+		name = soviet.46.o1
+	}
+
+}
+
+#Rutskoy ends economic reforms
+country_event = {
+	id = soviet.47
+	title = soviet.47.t
+	desc = soviet.47.d
+	picture = rutskoys_reforms
+
+	is_triggered_only = yes
+
+	option = {
+		name = soviet.47.o1
+	}
+
+}
+
+#Rutskoy announces establishment of free market
+country_event = {
+	id = soviet.48
+	title = soviet.48.t
+	desc = soviet.48.d
+	picture = rutskoy_free_market
+
+	is_triggered_only = yes
+
+	option = {
+		name = soviet.48.o1
+		every_country = {
+		    limit = {
+			    NOT = {
+				    tag = SOV
+				}
+			}
+			news_event = {
+			    hours = 4
+			    id = news.26
+		    }
+		}
+	}
+
+}
+
+#New shift to Eurasianism
+country_event = {
+	id = soviet.49
+	title = soviet.49.t
+	desc = soviet.49.d
+	picture = eurasianism
+
+	is_triggered_only = yes
+
+	option = {
+		name = soviet.49.o1
+	}
+
+}
+
+#Baltic separatist crackdown by Rutskoy
+country_event = {
+	id = soviet.50
+	title = soviet.50.t
+	desc = soviet.50.d
+	picture = baltic_crackdown
+
+	is_triggered_only = yes
+
+	option = {
+		name = soviet.50.o1
+	}
+
+}
+
+#Rutskoy's new politburo members arrive with many more minorities
+country_event = {
+	id = soviet.51
+	title = soviet.51.t
+	desc = soviet.51.d
+	picture = rutskoys_politburo
+
+	is_triggered_only = yes
+
+	option = {
+		name = soviet.51.o1
+	}
+
+}
+
+#Rutskoy's the Union First speech
+country_event = {
+	id = soviet.52
+	title = soviet.52.t
+	desc = soviet.52.d
+	picture = the_union_first
+
+	is_triggered_only = yes
+
+	option = {
+		name = soviet.52.o1
+	}
+
+}
+
+#Zyuganov breaks up independence groups
+country_event = {
+	id = soviet.53
+	title = soviet.53.t
+	desc = soviet.53.d
+	picture = zyuganov_independence_groups
+
+	is_triggered_only = yes
+
+	option = {
+		name = soviet.53.o1
+	}
+
+}
+
+#Zyuganov announces political recovery plan
+country_event = {
+	id = soviet.54
+	title = soviet.54.t
+	desc = soviet.54.d
+	picture = revolutionary_socialist_elements
+
+	is_triggered_only = yes
+
+	option = {
+		name = soviet.54.o1
+	}
+
+}
+
+#Gorbachev assassinated by Putin
+country_event = {
+	id = soviet.55
+	title = soviet.55.t
+	desc = soviet.55.d
+	picture = gorbachev_assassinated
+
+	is_triggered_only = yes
+
+	option = {
+		name = soviet.55.o1
+		every_country = {
+		    limit = {
+			    NOT = {
+				    tag = SOV
+				}
+			}
+			news_event = {
+			    hours = 4
+			    id = news.27
+		    }
+		}
+	}
+
+}
+
+#Putin purges all reformists
+country_event = {
+	id = soviet.56
+	title = soviet.56.t
+	desc = soviet.56.d
+	picture = putin_purges_reformists
+
+	is_triggered_only = yes
+
+	option = {
+		name = soviet.56.o1
+		every_country = {
+		    limit = {
+			    NOT = {
+				    tag = SOV
+				}
+			}
+			news_event = {
+			    hours = 4
+			    id = news.28
+		    }
+		}
+	}
+
+}
+
+#Putin worries Politburo by reversing movement
+country_event = {
+	id = soviet.57
+	title = soviet.57.t
+	desc = soviet.57.d
+	picture = putin_worries_politburo
+
+	is_triggered_only = yes
+
+	option = {
+		name = soviet.57.o1
+	}
+
+}
+
+#Putin's March on Moscow
+country_event = {
+	id = soviet.58
+	title = soviet.58.t
+	desc = soviet.58.d
+	picture = march_on_moscow
+
+	is_triggered_only = yes
+
+	option = {
+		name = soviet.58.o1
+		every_country = {
+		    limit = {
+			    NOT = {
+				    tag = SOV
+				}
+			}
+			news_event = {
+			    hours = 4
+			    id = news.29
+		    }
+		}
+	}
+
+}
+
+#Putin's supreme leadership proclaimed
+country_event = {
+	id = soviet.59
+	title = soviet.59.t
+	desc = soviet.59.d
+	picture = putin_supreme_leader
+
+	is_triggered_only = yes
+
+	option = {
+		name = soviet.59.o1
+		every_country = {
+		    limit = {
+			    NOT = {
+				    tag = SOV
+				}
+			}
+			news_event = {
+			    hours = 4
+			    id = news.30
+		    }
+		}
+	}
+
+}
+
+#Military junta established
+country_event = {
+	id = soviet.60
+	title = soviet.60.t
+	desc = soviet.60.d
+	picture = military_junta_pic
+
+	is_triggered_only = yes
+
+	option = {
+		name = soviet.60.o1
+	}
+
+}
+
+#Putin inaugurated as nationalist president
+country_event = {
+	id = soviet.61
+	title = soviet.61.t
+	desc = soviet.61.d
+	picture = putin_inauguration
+
+	is_triggered_only = yes
+
+	option = {
+		name = soviet.61.o1
+		every_country = {
+		    limit = {
+			    NOT = {
+				    tag = SOV
+				}
+			}
+			news_event = {
+			    hours = 4
+			    id = news.31
+		    }
+		}
+	}
+
+}
+
+#New admirals arrive in Moscow
+country_event = {
+	id = soviet.62
+	title = soviet.62.t
+	desc = soviet.62.d
+	picture = new_admirals
+
+	is_triggered_only = yes
+
+	option = {
+		name = soviet.62.o1
+	}
+
+}
+
+#Gorbachev condemns cults of personalitiy
+country_event = {
+	id = soviet.63
+	title = soviet.63.t
+	desc = soviet.63.d
+	picture = gorbachev_condemns_cult_of_personality
+
+	is_triggered_only = yes
+
+	option = {
+		name = soviet.63.o1
+	}
+
+}
+
+#Beginning of perestroika
+country_event = {
+	id = soviet.64
+	title = soviet.64.t
+	desc = soviet.64.d
+	picture = perestroika_gorbachev
+
+	is_triggered_only = yes
+
+	option = {
+		name = soviet.64.o1
+	}
+
+}
+
+#Beginning of glasnost
+country_event = {
+	id = soviet.65
+	title = soviet.65.t
+	desc = soviet.65.d
+	picture = glasnost_gorbachev
+
+	is_triggered_only = yes
+
+	option = {
+		name = soviet.65.o1
+	}
+
+}
+
+#Advisor asks gorbachev what the hell he is doing after reading speech
+country_event = {
+	id = soviet.66
+	title = soviet.66.t
+	desc = soviet.66.d
+	picture = revolutionary_socialist_elements
+
+	is_triggered_only = yes
+
+	option = {
+		name = soviet.66.o1
+	}
+
+}
+
+#Shift to democracy
+country_event = {
+	id = soviet.67
+	title = soviet.67.t
+	desc = soviet.67.d
+	picture = shift_to_democracy
+
+	is_triggered_only = yes
+
+	option = {
+		name = soviet.67.o1
+	}
+
+}
+
+#Revolutionary socialist elements in government
+country_event = {
+	id = soviet.68
+	title = soviet.68.t
+	desc = soviet.68.d
+	picture = revolutionary_socialist_elements
+
+	is_triggered_only = yes
+
+	option = {
+		name = soviet.68.o1
+	}
+
+}
+
+#Gorbachev removed from office by more radical reformists
+country_event = {
+	id = soviet.69
+	title = soviet.69.t
+	desc = soviet.69.d
+	picture = gorbachev_removed_from_office
+
+	is_triggered_only = yes
+
+	option = {
+		name = soviet.69.o1
+		every_country = {
+		    limit = {
+			    NOT = {
+				    tag = SOV
+				}
+			}
+			news_event = {
+			    hours = 4
+			    id = news.32
+		    }
+		}
+	}
+
+}
+
+#Union of Sovereign States proclaimed
+country_event = {
+	id = soviet.70
+	title = soviet.70.t
+	desc = soviet.70.d
+	picture = union_of_sovereign_states
+
+	is_triggered_only = yes
+
+	option = {
+		name = soviet.70.o1
+		every_country = {
+		    limit = {
+			    NOT = {
+				    tag = SOV
+				}
+			}
+			news_event = {
+			    hours = 4
+			    id = news.33
+		    }
+		}
+	}
+
+}
+
+#Gorbachev purges KGB
+country_event = {
+	id = soviet.71
+	title = soviet.71.t
+	desc = soviet.71.d
+	picture = gorbachev_purges_kgb
+
+	is_triggered_only = yes
+
+	option = {
+		name = soviet.71.o1
+		every_country = {
+		    limit = {
+			    NOT = {
+				    tag = SOV
+				}
+			}
+			news_event = {
+			    hours = 4
+			    id = news.34
+		    }
+		}
+	}
+
+}
+
+#Politburo develops Eurasian sympathies
+country_event = {
+	id = soviet.72
+	title = soviet.72.t
+	desc = soviet.72.d
+	picture = eurasian_sympathies
+
+	is_triggered_only = yes
+
+	option = {
+		name = soviet.72.o1
+	}
+
+}
+
+#Conservatives voice their concerns over recent developments
+country_event = {
+	id = soviet.73
+	title = soviet.73.t
+	desc = soviet.73.d
+	picture = soviet_politburo_meeting
+
+	is_triggered_only = yes
+
+	option = {
+		name = soviet.73.o1
+	}
+
+}
+
+#Romanovs return to Russia
+country_event = {
+	id = soviet.74
+	title = soviet.74.t
+	desc = soviet.74.d
+	picture = romanovs_arrive
+
+	is_triggered_only = yes
+
+	option = {
+		name = soviet.74.o1
+		hidden_effect = {
+		    country_event = { days = 32 id = soviet.75 }
+		}
+		every_country = {
+		    limit = {
+			    NOT = {
+				    tag = SOV
+				}
+			}
+			news_event = {
+			    hours = 4
+			    id = news.35
+		    }
+		}
+	}
+
+}
+
+#Coronation of the Romanov Tsar
+country_event = {
+	id = soviet.75
+	title = soviet.75.t
+	desc = soviet.75.d
+	picture = russia_coronation
+
+	is_triggered_only = yes
+
+	option = {
+		name = soviet.75.o1
+		every_country = {
+		    limit = {
+			    NOT = {
+				    tag = SOV
+				}
+			}
+			news_event = {
+			    hours = 4
+			    id = news.36
+		    }
+		}
+	}
+
+}
+
+#Rutskoy declares himself autocrat of Eurasia
+country_event = {
+	id = soviet.76
+	title = soviet.76.t
+	desc = soviet.76.d
+	picture = rutskoy_foreign_policy
+
+	is_triggered_only = yes
+
+	option = {
+		name = soviet.76.o1
+		every_country = {
+		    limit = {
+			    NOT = {
+				    tag = SOV
+				}
+			}
+			news_event = {
+			    hours = 4
+			    id = news.37
+		    }
+		}
+	}
+
+}
+
+#National Bolsheviks pressure Rutskoy
+country_event = {
+	id = soviet.77
+	title = soviet.77.t
+	desc = soviet.77.d
+	picture = national_bolsheviks_pressure_rutskoy
+
+	is_triggered_only = yes
+
+	option = {
+		name = soviet.77.o1
+	}
+
+}
+
+#Rutskoy's military leadership purges the left
+country_event = {
+	id = soviet.78
+	title = soviet.78.t
+	desc = soviet.78.d
+	picture = left_purged
+
+	is_triggered_only = yes
+
+	option = {
+		name = soviet.78.o1
+	}
+
+}
+
+#Rutskoy's economic reforms reversed by national bolsheviks
+country_event = {
+	id = soviet.79
+	title = soviet.79.t
+	desc = soviet.79.d
+	picture = reforms_reversed_by_natbols
+
+	is_triggered_only = yes
+
+	option = {
+		name = soviet.79.o1
+	}
+
+}
+
+#Politburo overthrown by Putin
+country_event = {
+	id = soviet.80
+	title = soviet.80.t
+	desc = soviet.80.d
+	picture = march_on_moscow
+
+	is_triggered_only = yes
+
+	option = {
+		name = soviet.80.o1
+		hidden_effect = {
+		    country_event = { days = 2 id = soviet.81 }
+		}
+		every_country = {
+		    limit = {
+			    NOT = {
+				    tag = SOV
+				}
+			}
+			news_event = {
+			    hours = 4
+			    id = news.38
+		    }
+		}
+	}
+
+}
+
+#Lithuania declares independence
+country_event = {
+	id = soviet.81
+	title = soviet.81.t
+	desc = soviet.81.d
+	picture = lithuania_flag
+
+	is_triggered_only = yes
+
+	option = {
+		name = soviet.81.o1
+		hidden_effect = {
+		    country_event = { days = 3 id = soviet.82 }
+		}
+		hidden_effect = {
+		    LIT = {
+			    transfer_state = 189
+				transfer_state = 11
+				transfer_state = 188
+			}
+		}
+		every_country = {
+		    limit = {
+			    NOT = {
+				    tag = SOV
+				}
+			}
+			news_event = {
+			    hours = 4
+			    id = news.39
+		    }
+		}
+        hidden_effect = {
+		    SOV = {
+			    LIT = { transfer_technology = yes }
+		    }
+	    }
+	}
+
+}
+
+#Estonia declares independence
+country_event = {
+	id = soviet.82
+	title = soviet.82.t
+	desc = soviet.82.d
+	picture = estonia_flag
+
+	is_triggered_only = yes
+
+	option = {
+		name = soviet.82.o1
+		hidden_effect = {
+		    country_event = { days = 7 id = soviet.83 }
+		}
+		hidden_effect = {
+		    EST = {
+			    transfer_state = 840
+				transfer_state = 13
+				transfer_state = 191
+			}
+		}
+		every_country = {
+		    limit = {
+			    NOT = {
+				    tag = SOV
+				}
+			}
+			news_event = {
+			    hours = 4
+			    id = news.40
+		    }
+		}
+        hidden_effect = {
+		    SOV = {
+			    EST = { transfer_technology = yes }
+		    }
+	    }
+	}
+
+}
+
+#Georgia declares independence
+country_event = {
+	id = soviet.83
+	title = soviet.83.t
+	desc = soviet.83.d
+	picture = georgia_flag
+
+	is_triggered_only = yes
+
+	option = {
+		name = soviet.83.o1
+		hidden_effect = {
+		    country_event = { days = 1 id = soviet.84 }
+		}
+		hidden_effect = {
+		    GEO = {
+			    transfer_state = 231
+				transfer_state = 796
+				transfer_state = 797
+				transfer_state = 982
+				transfer_state = 983
+				transfer_state = 984
+			}
+		}
+		every_country = {
+		    limit = {
+			    NOT = {
+				    tag = SOV
+				}
+			}
+			news_event = {
+			    hours = 4
+			    id = news.41
+		    }
+		}
+        hidden_effect = {
+		    SOV = {
+			    GEO = { transfer_technology = yes }
+		    }
+	    }
+	}
+
+}
+
+#Turkmenistan declares independence
+country_event = {
+	id = soviet.84
+	title = soviet.84.t
+	desc = soviet.84.d
+	picture = turkmenistan_flag
+
+	is_triggered_only = yes
+
+	option = {
+		name = soviet.84.o1
+		hidden_effect = {
+		    country_event = { days = 4 id = soviet.85 }
+		}
+		hidden_effect = {
+		    TRM = {
+			    transfer_state = 584
+				transfer_state = 799
+				transfer_state = 801
+				transfer_state = 802
+				transfer_state = 803
+			}
+		}
+		every_country = {
+		    limit = {
+			    NOT = {
+				    tag = SOV
+				}
+			}
+			news_event = {
+			    hours = 4
+			    id = news.42
+		    }
+		}
+        hidden_effect = {
+		    SOV = {
+			    TRM = { transfer_technology = yes }
+		    }
+	    }
+	}
+
+}
+
+#Latvia declares independence
+country_event = {
+	id = soviet.85
+	title = soviet.85.t
+	desc = soviet.85.d
+	picture = latvia_flag
+
+	is_triggered_only = yes
+
+	option = {
+		name = soviet.85.o1
+		hidden_effect = {
+		    country_event = { days = 8 id = soviet.86 }
+		}
+		hidden_effect = {
+		    LAT = {
+			    transfer_state = 190
+				transfer_state = 12
+			}
+		}
+		every_country = {
+		    limit = {
+			    NOT = {
+				    tag = SOV
+				}
+			}
+			news_event = {
+			    hours = 4
+			    id = news.43
+		    }
+		}
+        hidden_effect = {
+		    SOV = {
+			    LAT = { transfer_technology = yes }
+		    }
+	    }
+	}
+
+}
+
+#Kazakhstan declares independence
+country_event = {
+	id = soviet.86
+	title = soviet.86.t
+	desc = soviet.86.d
+	picture = kazakhstan_flag
+
+	is_triggered_only = yes
+
+	option = {
+		name = soviet.86.o1
+		hidden_effect = {
+		    KZH = {
+				transfer_state = 406
+				transfer_state = 407
+				transfer_state = 402
+				transfer_state = 583
+				transfer_state = 404
+				transfer_state = 590
+				transfer_state = 588
+				transfer_state = 589
+				transfer_state = 804
+				transfer_state = 805
+			}
+		}
+		every_country = {
+		    limit = {
+			    NOT = {
+				    tag = SOV
+				}
+			}
+			news_event = {
+			    hours = 4
+			    id = news.44
+		    }
+		}
+        hidden_effect = {
+		    SOV = {
+			    KZH = { transfer_technology = yes }
+		    }
+	    }
+	}
+
+}
+
+#Vladimir Putin's coronation as Vladimir IV
+country_event = {
+	id = soviet.87
+	title = soviet.87.t
+	desc = soviet.87.d
+	picture = russia_coronation
+
+	is_triggered_only = yes
+
+	option = {
+		name = soviet.87.o1
+		every_country = {
+		    limit = {
+			    NOT = {
+				    tag = SOV
+				}
+			}
+			news_event = {
+			    hours = 4
+			    id = news.45
+		    }
+		}
+	}
+
+}
+
+#First Soviet election
+country_event = {
+	id = soviet.88
+	title = soviet.88.t
+	desc = soviet.88.d
+	picture = generic_election_event
+
+	is_triggered_only = yes
+
+	option = {  #Conservative leadership
+		name = soviet.88.o1
+		ai_chance = {
+			factor = 20
+		}
+		set_politics = {
+	        ruling_party = national_conservative
+	        elections_allowed = no
+        }
+		add_popularity = {
+		    ideology = national_conservative
+			popularity = 0.05
+		}
+	}
+
+	option = {  #Centrist leadership
+		name = soviet.88.o2
+		ai_chance = {
+			factor = 20
+		}
+		add_popularity = {
+		    ideology = centrist
+			popularity = 0.05
+		}
+	}
+
+	option = {  #Liberal Leadership
+		name = soviet.88.o3
+		ai_chance = {
+			factor = 20
+		}
+		set_politics = {
+	        ruling_party = liberal
+	        elections_allowed = no
+        }
+		add_popularity = {
+		    ideology = liberal
+			popularity = 0.1
+		}
+	}
+
+	option = {  #Leftist leadership
+		name = soviet.88.o4
+		ai_chance = {
+			factor = 20
+		}
+		set_politics = {
+	        ruling_party = new_democrat
+	        elections_allowed = no
+        }
+		add_popularity = {
+		    ideology = new_democrat
+			popularity = 0.1
+		}
+	}
+
+	option = {  #Progressive leadership
+		name = soviet.88.o5
+		ai_chance = {
+			factor = 20
+		}
+		set_politics = {
+	        ruling_party = moderate_socialist
+	        elections_allowed = no
+        }
+		add_popularity = {
+		    ideology = moderate_socialist
+			popularity = 0.05
+		}
+	}
+
+}

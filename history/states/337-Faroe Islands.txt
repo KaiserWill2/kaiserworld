@@ -1,0 +1,24 @@
+state=
+{
+	id=337
+	name="STATE_337"
+	manpower = 48346
+	
+	state_category = pastoral
+	
+	history=
+	{
+	    victory_points = {
+		    13003 1
+		}
+		owner = DEN
+		buildings = {
+			infrastructure = 4
+			13003 = {
+				naval_base = 1
+			}
+		}
+		add_core_of = DEN
+	}
+	provinces= { 13003 }
+}

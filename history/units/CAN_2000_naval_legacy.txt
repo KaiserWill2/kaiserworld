@@ -1,0 +1,22 @@
+﻿
+units = {
+	#Canadian Fleet
+	#Halifax
+	fleet = {
+		name = "Royal Canadian Navy"
+		naval_base = 7361 # Halifax
+		task_force = {
+			name = "Pierce Carrier Group"
+			location = 7361 # Halifax
+			ship = {
+				name = "HMS Mackenzie Pierce" definition = carrier equipment = { carrier_1 = { amount = 1 owner = CAN version_name = "Carrier I" } }
+				air_wings = {
+					cv_fighter_equipment_0 =  { owner = "CAN" amount = 22 }
+					cv_nav_bomber_equipment_1 =  { owner = "CAN" amount = 22 }
+				}
+			}	
+			ship = { name = "HMS Pierre Trudeau" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = CAN version_name = "Destroyer I" } } }
+			ship = { name = "HMS Ottowa" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = CAN version_name = "Destroyer I" } } }	
+		}
+	}
+}

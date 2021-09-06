@@ -1,0 +1,1581 @@
+focus_tree = {
+	id = american_state_tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 20
+			tag = AMS
+		}
+	}
+	default = no
+	continuous_focus_position = { x = 50 y = 1550 }
+	focus = {
+		id = AMS_tear_up_the_treaty_of_columbus
+		icon = tear_treaty
+		cost = 5
+		available = {
+		    AMC = {
+			    has_country_flag = treaty_of_columbus
+			}
+		}
+		x = 6
+		y = 0
+		completion_reward = {
+		    AMS = {
+		        declare_war_on = { target = AMC type = annex_everything }
+		    }
+		}
+
+	}
+	focus = {
+		id = AMS_glorious_victory
+		icon = demand
+		cost = 2
+		available = {
+		    AMC = {
+			    exists = no
+			}
+		}
+		x = 8
+		y = 0
+		completion_reward = {
+		    add_political_power = 40
+		}
+
+	}
+	focus = {
+		id = AMS_direct_economic_reforms
+		icon = construct_civilian
+		cost = 10
+		x = 18
+		y = 0
+		completion_reward = {
+		    add_tech_bonus = {
+				name = electronics_bonus
+				bonus = 0.15
+				uses = 1
+				category = electronics
+			}
+		}
+
+	}
+	focus = {
+		id = AMS_mob_rule
+		icon = focus_mob_rule
+		cost = 5
+		x = 26
+		y = 0
+		available = {
+		    has_country_flag = invited_the_italians_into_government 
+		}
+		completion_reward = {
+		    country_event = { id = pence.1 }
+			hidden_effect = {
+			    remove_ideas = idea_ams_justification_for_war
+				remove_ideas = idea_ams_white_christian_state
+			}
+		}
+
+	}
+	focus = {
+		id = AMS_patriots_seize_power
+		icon = focus_patriots_seize_power
+		cost = 5
+		prerequisite = {
+			focus = AMS_glorious_victory
+		}
+		x = 8
+		y = 1
+		completion_reward = {
+		    add_stability = 0.075
+		}
+
+	}
+	focus = {
+		id = AMS_president_pence_consolidates_control
+		icon = focus_president_pence_consolidates_control
+		cost = 5
+		ai_will_do = {
+			modifier = {
+				NOT = {
+					has_game_rule = {
+						rule = AMS_ai_behavior
+						option = DEFAULT
+					}
+					has_game_rule = {
+						rule = AMS_ai_behavior
+						option = AMS_PHOENIX
+					}
+					has_game_rule = {
+						rule = AMS_ai_behavior
+						option = AMS_MAF_CHIN
+					}
+					has_game_rule = {
+						rule = AMS_ai_behavior
+						option = AMS_MAF_NOSE
+					}
+				}
+				factor = 0
+			}
+		}
+		prerequisite = {
+			focus = AMS_patriots_seize_power
+		}
+		mutually_exclusive = {
+			focus = AMS_protestant_coup
+		}
+		x = 5
+		y = 2
+		completion_reward = {
+		    add_popularity = {
+			    ideology = fascist
+			    popularity = 0.05
+		    }
+		}
+
+	}
+	focus = {
+		id = AMS_corporatist_economics
+		icon = military_factory
+		cost = 10
+		prerequisite = {
+			focus = AMS_president_pence_consolidates_control
+		}
+		x = 3
+		y = 3
+		completion_reward = {
+		    add_ideas = idea_ams_corporatist_economics
+		}
+
+	}
+	focus = {
+		id = AMS_enforce_catholic_values
+		icon = focus_support_christian_values
+		cost = 10
+		prerequisite = {
+			focus = AMS_president_pence_consolidates_control
+		}
+		x = 5
+		y = 3
+		completion_reward = {
+		    add_ideas = idea_ams_catholic_values
+		}
+
+	}
+	focus = {
+		id = AMS_traditional_gender_roles
+		icon = major_alliance
+		cost = 10
+		prerequisite = {
+			focus = AMS_enforce_catholic_values
+		}
+		x = 5
+		y = 4
+		completion_reward = {
+		    add_ideas = idea_ams_traditional_gender_roles
+		}
+
+	}
+	focus = {
+		id = AMS_help_catholics_in_new_england
+		icon = focus_new_england_civilian_projects
+		cost = 10
+		prerequisite = {
+			focus = AMS_president_pence_consolidates_control
+		}
+		x = 7
+		y = 3
+		completion_reward = {
+		    793 = {
+			    add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			795 = {
+			    add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			792 = {
+			    add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			357 = {
+			    add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = AMS_justification_for_war
+		icon = forceful_treaty
+		cost = 10
+		prerequisite = {
+			focus = AMS_enforce_catholic_values
+		}
+		prerequisite = {
+			focus = AMS_help_catholics_in_new_england
+		}
+		x = 7
+		y = 4
+		completion_reward = {
+		    add_ideas = idea_ams_justification_for_war
+		}
+
+	}
+	focus = {
+		id = AMS_national_revanchism
+		icon = territory_or_war
+		cost = 10
+		prerequisite = {
+			focus = AMS_justification_for_war
+		}
+		x = 6
+		y = 5
+		completion_reward = {
+		    add_stability = 0.08 
+			add_popularity = {
+			    ideology = fascist
+			    popularity = 0.2
+		    }
+		}
+
+	}
+	focus = {
+		id = AMS_protestant_coup
+		icon = focus_overthrow_congress
+		cost = 2
+		ai_will_do = {
+			modifier = {
+				NOT = {
+					has_game_rule = {
+						rule = AMS_ai_behavior
+						option = DEFAULT
+					}
+					has_game_rule = {
+						rule = AMS_ai_behavior
+						option = AMS_PROT_MOD
+					}
+					has_game_rule = {
+						rule = AMS_ai_behavior
+						option = AMS_PROT_POP
+					}
+					has_game_rule = {
+						rule = AMS_ai_behavior
+						option = AMS_PROT_RAD
+					}
+				}
+				factor = 0
+			}
+		}
+		prerequisite = {
+			focus = AMS_patriots_seize_power
+		}
+		mutually_exclusive = {
+			focus = AMS_president_pence_consolidates_control
+		}
+		x = 11
+		y = 2
+		completion_reward = {
+		    country_event = { id = pence.2 }
+			create_country_leader = {
+	            name = "Protestant Clique"
+	            picture = "Portrait_AMS_Protestant_Clique.dds"
+	            ideology = fascist_ideology
+            }
+			set_party_name = { ideology = fascist long_name = AMS_protestant_clique name = AMS_protestant_clique }
+		}
+
+	}
+	focus = {
+		id = AMS_invited_the_moderate
+		icon = neutrality
+		cost = 5
+		prerequisite = {
+			focus = AMS_protestant_coup
+		}
+		available = {
+		    has_country_flag = invited_dick_cheney
+		}
+		x = 9
+		y = 3
+		completion_reward = {
+			create_country_leader = {
+	            name = "Richard Cheney"
+	            picture = "Portrait_AMS_Richard_Cheney.dds"
+	            ideology = ultranationalist
+            }
+			set_politics = {
+	            ruling_party = nationalist
+	            elections_allowed = no
+            }
+			add_popularity = {
+			    ideology = nationalist
+			    popularity = 0.15
+		    }
+			set_party_name = { ideology = nationalist long_name = AMS_United_Christians name = AMS_United_Christians }
+		}
+
+	}
+	focus = {
+		id = AMS_freedom_for_christians
+		icon = democracy
+		cost = 10
+		prerequisite = {
+			focus = AMS_invited_the_moderate
+		}
+		x = 9
+		y = 4
+		completion_reward = {
+		    add_ideas = idea_ams_freedom_for_christians
+		}
+
+	}
+	focus = {
+		id = AMS_power_of_the_free_market
+		icon = broken_star
+		cost = 10
+		prerequisite = {
+			focus = AMS_freedom_for_christians
+		}
+		x = 9
+		y = 5
+		completion_reward = {
+		    add_ideas = idea_ams_free_market_economy
+		}
+
+	}
+	focus = {
+		id = AMS_nationalist_ideals
+		icon = military_sphere
+		cost = 10
+		prerequisite = {
+			focus = AMS_power_of_the_free_market
+		}
+		x = 9
+		y = 6
+		completion_reward = {
+		    add_popularity = {
+			    ideology = nationalist
+			    popularity = 0.045
+		    }
+			add_political_power = 200
+		}
+
+	}
+	focus = {
+		id = AMS_inward_vision
+		icon = wolf_pack
+		cost = 10
+		prerequisite = {
+			focus = AMS_nationalist_ideals
+		}
+		x = 9
+		y = 7
+		completion_reward = {
+		    add_ideas = idea_ams_inward_vision
+		}
+
+	}
+	focus = {
+		id = AMS_invited_the_populist
+		icon = ideology_fist
+		cost = 5
+		prerequisite = {
+			focus = AMS_protestant_coup
+		}
+		available = {
+		    has_country_flag = invited_pat_robertson
+		}
+		x = 11
+		y = 3
+		completion_reward = {
+			create_country_leader = {
+	            name = "Marion Robertson"
+	            picture = "Portrait_AMS_Marion_Robertson.dds"
+	            ideology = fascist_ideology
+            }
+			add_popularity = {
+			    ideology = fascist
+			    popularity = 0.2
+		    }
+			set_party_name = { ideology = fascist long_name = AMS_PatriotFront name = AMS_PatriotFront }
+		}
+
+	}
+	focus = {
+		id = AMS_help_american_families
+		icon = traditional_values
+		cost = 10
+		prerequisite = {
+			focus = AMS_invited_the_populist
+		}
+		x = 11
+		y = 4
+		completion_reward = {
+		    add_ideas = idea_ams_helping_american_families
+		}
+
+	}
+	focus = {
+		id = AMS_christian_charity_model
+		icon = focus_fund_christian_charities
+		cost = 10
+		prerequisite = {
+			focus = AMS_help_american_families
+		}
+		x = 11
+		y = 5
+		completion_reward = {
+		    add_ideas = idea_ams_christian_charity_model
+		}
+
+	}
+	focus = {
+		id = AMS_robertson_on_the_television
+		icon = focus_undermine_local_media
+		cost = 10
+		prerequisite = {
+			focus = AMS_christian_charity_model
+		}
+		x = 11
+		y = 6
+		completion_reward = {
+		    add_popularity = {
+			    ideology = fascist
+			    popularity = 0.1
+		    }
+			add_ideas = idea_ams_robertson_on_the_television
+		}
+
+	}
+	focus = {
+		id = AMS_overwhelming_popular_support
+		icon = propaganda
+		cost = 10
+		prerequisite = {
+			focus = AMS_robertson_on_the_television
+		}
+		x = 11
+		y = 7
+		completion_reward = {
+		    add_political_power = 250
+		}
+
+	}
+	focus = {
+		id = AMS_invited_the_radical
+		icon = fascism_1
+		cost = 5
+		prerequisite = {
+			focus = AMS_protestant_coup
+		}
+		available = {
+		    has_country_flag = invited_kevin_strom
+		}
+		x = 13
+		y = 3
+		completion_reward = {
+			create_country_leader = {
+	            name = "Kevin Strom"
+	            picture = "Portrait_AMS_Kevin_Strom.dds"
+	            ideology = fascist_ideology
+            }
+			add_popularity = {
+			    ideology = fascist
+			    popularity = 0.05
+		    }
+			set_party_name = { ideology = fascist long_name = AMS_ChristianFascists name = AMS_ChristianFascists }
+		}
+
+	}
+	focus = {
+		id = AMS_blacks_cant_be_christian
+		icon = puppet
+		cost = 10
+		prerequisite = {
+			focus = AMS_invited_the_radical
+		}
+		x = 13
+		y = 4
+		completion_reward = {
+		    add_ideas = idea_ams_segregation_forever
+		}
+
+	}
+	focus = {
+		id = AMS_domination_of_politics
+		icon = demand_territory
+		cost = 10
+		prerequisite = {
+			focus = AMS_blacks_cant_be_christian
+		}
+		x = 13
+		y = 5
+		completion_reward = {
+		    add_ideas = idea_ams_domination_of_politics
+		}
+
+	}
+	focus = {
+		id = AMS_salute_strom
+		icon = military_salute
+		cost = 10
+		prerequisite = {
+			focus = AMS_domination_of_politics
+		}
+		x = 13
+		y = 6
+		completion_reward = {
+		    add_ideas = idea_ams_salute_strom
+		}
+
+	}
+	focus = {
+		id = AMS_claim_a_greater_dream
+		icon = state_of_america
+		cost = 10
+		prerequisite = {
+			focus = AMS_salute_strom
+		}
+		x = 13
+		y = 7
+		completion_reward = {
+		    enable_unification_decisions = yes
+			core_USA = yes
+            core_TEX = yes
+            core_ILL = yes
+            core_GRL = yes
+            core_MWA = yes
+            core_MOT = yes
+            core_LIN = yes
+            core_UTA = yes
+            core_ARI = yes
+            core_PCA = yes
+		    create_wargoal = {
+			    type = annex_everything
+			    target = GRL
+		    }
+			create_wargoal = {
+			    type = annex_everything
+			    target = ILL
+		    }
+			create_wargoal = {
+			    type = annex_everything
+			    target = MOT
+		    }
+			create_wargoal = {
+			    type = annex_everything
+			    target = LIN
+		    }
+			create_wargoal = {
+			    type = annex_everything
+			    target = USA
+		    }
+			create_wargoal = {
+			    type = annex_everything
+			    target = PCA
+		    }
+            create_wargoal = {
+                type = annex_everything
+                target = CSD
+            }
+			create_wargoal = {
+			    type = annex_everything
+			    target = MWA
+		    }
+			create_wargoal = {
+			    type = annex_everything
+			    target = UTA
+		    }
+			create_wargoal = {
+			    type = annex_everything
+			    target = ARI
+		    }
+			create_wargoal = {
+			    type = annex_everything
+			    target = TEX
+			}
+		}
+
+	}
+	focus = {
+		id = AMS_promote_military_industry
+		icon = construct_military
+		cost = 10
+		prerequisite = {
+			focus = AMS_direct_economic_reforms
+		}
+		x = 16
+		y = 1
+		completion_reward = {
+		    random_owned_state = {
+			    add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+			    add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = AMS_military_industry_2
+		icon = incorporate_derg_members
+		cost = 10
+		prerequisite = {
+			focus = AMS_promote_military_industry
+		}
+		x = 16
+		y = 3
+		completion_reward = {
+		    random_owned_state = {
+			    add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+			    add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = AMS_military_industry_3
+		icon = production
+		cost = 15
+		prerequisite = {
+			focus = AMS_military_industry_2
+		}
+		x = 16
+		y = 4
+		completion_reward = {
+		    random_owned_state = {
+			    add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+			    add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = AMS_military_industry_4
+		icon = industry_2
+		cost = 20
+		prerequisite = {
+			focus = AMS_military_industry_3
+		}
+		x = 16
+		y = 5
+		completion_reward = {
+		    random_owned_state = {
+			    add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+			    add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+			    add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+			    add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+			    add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+			    add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = AMS_promote_civilian_industry
+		icon = production_2
+		cost = 10
+		prerequisite = {
+			focus = AMS_direct_economic_reforms
+		}
+		x = 20
+		y = 1
+		completion_reward = {
+		    random_owned_state = {
+			    add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+			    add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = AMS_common_scientific_efforts
+		icon = tech_sharing
+		cost = 10
+		prerequisite = {
+			focus = AMS_promote_military_industry
+		}
+		prerequisite = {
+			focus = AMS_promote_civilian_industry
+		}
+		available = {
+		    OR = {
+			    has_country_flag = invited_dick_cheney
+				has_country_flag = appointed_no_nose_as_head_of_government
+				has_country_flag = appointed_the_chin_as_head_of_government
+			}
+		}
+		x = 18
+		y = 2
+		completion_reward = {
+		    add_ideas = idea_ams_common_scientific_efforts
+		}
+
+	}
+	focus = {
+		id = AMS_civilian_industry_2
+		icon = high_company_tax
+		cost = 10
+		prerequisite = {
+			focus = AMS_promote_civilian_industry
+		}
+		x = 20
+		y = 3
+		completion_reward = {
+		    random_owned_state = {
+			    add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+			    add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = AMS_civilian_industry_3
+		icon = focus_north_egyptian_projects
+		cost = 15
+		prerequisite = {
+			focus = AMS_civilian_industry_2
+		}
+		x = 20
+		y = 4
+		completion_reward = {
+		    random_owned_state = {
+			    add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+			    add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = AMS_civilian_industry_4
+		icon = industry_1
+		cost = 20
+		prerequisite = {
+			focus = AMS_civilian_industry_3
+		}
+		x = 20
+		y = 5
+		completion_reward = {
+		    random_owned_state = {
+			    add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+			    add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+			    add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+			    add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+			    add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+			    add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = AMS_no_nose
+		icon = focus_no_nose
+		cost = 2
+		prerequisite = {
+			focus = AMS_mob_rule
+		}
+		available = {
+		    has_country_flag = appointed_no_nose_as_head_of_government
+		}
+		x = 24
+		y = 1
+		completion_reward = {
+		    create_country_leader = {
+	            name = "Social Development Council"
+	            picture = "Portrait_AMS_Social_Development_Council.dds"
+	            ideology = fascist_ideology
+            }
+			add_ideas = idea_ams_john_difronzo
+			set_party_name = { ideology = fascist long_name = AMS_AmericanMafia name = AMS_AmericanMafia }
+		}
+
+	}
+	focus = {
+		id = AMS_drug_trafficking
+		icon = focus_drug_honeypot
+		cost = 2
+		prerequisite = {
+			focus = AMS_no_nose
+		}
+		x = 23
+		y = 2
+		completion_reward = {
+		    random_owned_state = {
+			    add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+			    add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+			    add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = AMS_international_loansharking
+		icon = investigate_industrial_corruption
+		cost = 10
+		prerequisite = {
+			focus = AMS_drug_trafficking
+		}
+		x = 23
+		y = 3
+		completion_reward = {
+		    add_political_power = 100
+			add_ideas = idea_ams_international_loansharking
+		}
+
+	}
+	focus = {
+		id = AMS_corrupt_military
+		icon = generic_marching
+		cost = 10
+		prerequisite = {
+			focus = AMS_international_loansharking
+		}
+		x = 23
+		y = 5
+		completion_reward = {
+		    add_popularity = {
+			    ideology = fascist
+			    popularity = 0.025
+		    }
+			add_ideas = idea_ams_corrupt_military
+		}
+
+	}
+	focus = {
+		id = AMS_human_trafficking
+		icon = focus_exploit_western_councils
+		cost = 10
+		prerequisite = {
+			focus = AMS_no_nose
+		}
+		x = 25
+		y = 2
+		completion_reward = {
+		    add_political_power = 100
+		}
+
+	}
+	focus = {
+		id = AMS_pan_american_sex_ring
+		icon = focus_gain_support_of_governors
+		cost = 15
+		prerequisite = {
+			focus = AMS_human_trafficking
+		}
+		x = 25
+		y = 3
+		completion_reward = {
+		    add_ideas = idea_ams_pan_american_sex_ring
+		}
+
+	}
+	focus = {
+		id = AMS_fund_rebels
+		icon = red_hands_shaking
+		cost = 15
+		prerequisite = {
+			focus = AMS_pan_american_sex_ring
+		}
+		prerequisite = {
+			focus = AMS_international_loansharking
+		}
+		x = 24
+		y = 4
+		completion_reward = {
+		    add_political_power = -500
+		    GRL = {
+			    country_event = { id = pence.3 }
+			}
+			ILL = {
+			    country_event = { id = pence.3 }
+			}
+			MWA = {
+			    country_event = { id = pence.3 }
+			}
+			MOT = {
+			    country_event = { id = pence.3 }
+			}
+			LIN = {
+			    country_event = { id = pence.3 }
+			}
+			TEX = {
+			    country_event = { id = pence.3 }
+			}
+			UTA = {
+			    country_event = { id = pence.3 }
+			}
+			ARI = {
+			    country_event = { id = pence.3 }
+			}
+		}
+
+	}
+	focus = {
+		id = AMS_watch_the_world_closely
+		icon = defence
+		cost = 10
+		prerequisite = {
+			focus = AMS_pan_american_sex_ring
+		}
+		x = 25
+		y = 5
+		completion_reward = {
+		    add_ideas = idea_ams_watching_the_world
+		}
+
+	}
+	focus = {
+		id = AMS_the_chin
+		icon = focus_the_chin
+		cost = 2
+		prerequisite = {
+			focus = AMS_mob_rule
+		}
+		available = {
+			has_country_flag = appointed_the_chin_as_head_of_government
+		}
+		x = 28
+		y = 1
+		completion_reward = {
+		    create_country_leader = {
+	            name = "Rudy Fratto"
+	            picture = "Portrait_AMS_Rudy_Fratto.dds"
+	            ideology = fascist_ideology
+            }
+			set_party_name = { ideology = fascist long_name = AMS_AmericanMafia name = AMS_AmericanMafia }
+		}
+
+	}
+	focus = {
+		id = AMS_seek_to_legitimise_the_outfit
+		icon = attack_allies
+		cost = 10
+		prerequisite = {
+			focus = AMS_the_chin
+		}
+		x = 27
+		y = 2
+		completion_reward = {
+		    add_political_power = 100
+			add_popularity = {
+			    ideology = fascist
+			    popularity = 0.02
+		    }
+			add_stability = 0.1
+		}
+
+	}
+	focus = {
+		id = AMS_propaganda_campaign
+		icon = propaganda
+		cost = 10
+		prerequisite = {
+			focus = AMS_seek_to_legitimise_the_outfit
+		}
+		x = 27
+		y = 3
+		completion_reward = {
+		    add_ideas = idea_ams_propaganda_campaign
+		}
+
+	}
+	focus = {
+		id = AMS_one_banner
+		icon = military_deal
+		cost = 10
+		prerequisite = {
+			focus = AMS_propaganda_campaign
+		}
+		x = 27
+		y = 4
+		completion_reward = {
+		    add_stability = 0.1 
+			add_political_power = -100 
+			add_ideas = idea_ams_one_banner
+		}
+
+	}
+	focus = {
+		id = AMS_visit_factories
+		icon = torch_industry
+		cost = 10
+		prerequisite = {
+			focus = AMS_corporatist_economics
+		}
+		prerequisite = {
+			focus = AMS_enforce_catholic_values
+		}
+		x = 3
+		y = 4
+		completion_reward = {
+		    random_owned_state = {
+			    add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+			    add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_timed_idea = {
+			    idea = idea_ams_high_workers_morale
+		        days = 50
+		    }
+		}
+
+	}
+	focus = {
+		id = AMS_america_for_whites
+		icon = self_management
+		cost = 10
+		prerequisite = {
+			focus = AMS_visit_factories
+		}
+		x = 4
+		y = 5
+		completion_reward = {
+		    add_stability = 0.03 
+			add_ideas = idea_ams_white_christian_state
+		}
+
+	}
+	focus = {
+		id = AMS_finalise_a_one_party_state
+		icon = fascism_2
+		cost = 10
+		prerequisite = {
+			focus = AMS_national_revanchism
+		}
+		x = 6
+		y = 6
+		completion_reward = {
+		    set_party_name = { ideology = fascist long_name = AMS_Gods_Will_long name = AMS_Gods_Will }
+			add_popularity = {
+			    ideology = fascist
+			    popularity = 0.07
+		    }
+			add_ideas = idea_ams_solid_government
+		}
+
+	}
+	focus = {
+		id = AMS_end_catholic_oppression
+		icon = crown_chains
+		cost = 10
+		prerequisite = {
+			focus = AMS_america_for_whites
+		}
+		x = 4
+		y = 6
+		completion_reward = {
+		    create_wargoal = {
+			    type = puppet_wargoal_focus
+			    target = SOV
+		    }
+		}
+
+	}
+	focus = {
+		id = AMS_effective_foreign_policy
+		icon = focus_commonwealth_un_membership
+		cost = 10
+		prerequisite = {
+			focus = AMS_inward_vision
+		}
+		x = 7
+		y = 8
+		completion_reward = {
+		    add_ideas = idea_ams_effective_foreign_policy
+		}
+
+	}
+	focus = {
+		id = AMS_united_nation
+		icon = united_states
+		cost = 20
+		prerequisite = {
+			focus = AMS_inward_vision
+		}
+		available = {
+		    has_completed_focus = AMS_effective_foreign_policy
+		}
+		x = 9
+		y = 8
+		completion_reward = {
+			enable_unification_decisions = yes
+			core_USA = yes
+            core_TEX = yes
+            core_ILL = yes
+            core_GRL = yes
+            core_MWA = yes
+            core_MOT = yes
+            core_LIN = yes
+            core_UTA = yes
+            core_ARI = yes
+            core_PCA = yes
+		    create_wargoal = {
+			    type = annex_everything
+			    target = GRL
+		    }
+			create_wargoal = {
+			    type = annex_everything
+			    target = ILL
+		    }
+			create_wargoal = {
+			    type = annex_everything
+			    target = MOT
+		    }
+			create_wargoal = {
+			    type = annex_everything
+			    target = LIN
+		    }
+			create_wargoal = {
+			    type = annex_everything
+			    target = USA
+		    }
+			create_wargoal = {
+			    type = annex_everything
+			    target = PCA
+		    }
+            create_wargoal = {
+                type = annex_everything
+                target = CSD
+            }
+			create_wargoal = {
+			    type = annex_everything
+			    target = MWA
+		    }
+			create_wargoal = {
+			    type = annex_everything
+			    target = UTA
+		    }
+			create_wargoal = {
+			    type = annex_everything
+			    target = ARI
+		    }
+			create_wargoal = {
+			    type = annex_everything
+			    target = TEX
+			}
+		}
+
+	}
+	focus = {
+		id = AMS_warhungry_population
+		icon = start_war
+		cost = 20
+		prerequisite = {
+			focus = AMS_overwhelming_popular_support
+		}
+		x = 11
+		y = 8
+		completion_reward = {
+		    enable_unification_decisions = yes
+			core_USA = yes
+            core_TEX = yes
+            core_ILL = yes
+            core_GRL = yes
+            core_MWA = yes
+            core_MOT = yes
+            core_LIN = yes
+            core_UTA = yes
+            core_ARI = yes
+            core_PCA = yes
+		    create_wargoal = {
+			    type = annex_everything
+			    target = GRL
+		    }
+			create_wargoal = {
+			    type = annex_everything
+			    target = ILL
+		    }
+			create_wargoal = {
+			    type = annex_everything
+			    target = MOT
+		    }
+			create_wargoal = {
+			    type = annex_everything
+			    target = LIN
+		    }
+			create_wargoal = {
+			    type = annex_everything
+			    target = USA
+		    }
+			create_wargoal = {
+			    type = annex_everything
+			    target = PCA
+		    }
+            create_wargoal = {
+                type = annex_everything
+                target = CSD
+            }
+			create_wargoal = {
+			    type = annex_everything
+			    target = MWA
+		    }
+			create_wargoal = {
+			    type = annex_everything
+			    target = UTA
+		    }
+			create_wargoal = {
+			    type = annex_everything
+			    target = ARI
+		    }
+			create_wargoal = {
+			    type = annex_everything
+			    target = TEX
+			}
+		}
+
+	}
+	focus = {
+		id = AMS_proclaim_the_holy_american_empire
+		icon = generic_ideology
+		cost = 15
+		prerequisite = {
+			focus = AMS_claim_a_greater_dream
+		}
+		available = {
+		    has_country_flag = the_united_states_are_back
+		}
+		x = 13
+		y = 8
+		completion_reward = {
+		    add_popularity = {
+			    ideology = fascist
+			    popularity = 0.1
+		    }
+			set_cosmetic_tag = AMS_Holy_American_Empire
+			hidden_effect = {
+				every_country = {
+					news_event = news.289
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = AMS_invite_the_italians_into_government
+		icon = dangerous_deal
+		cost = 5
+		ai_will_do = {
+			modifier = {
+				NOT = {
+					has_game_rule = {
+						rule = AMS_ai_behavior
+						option = DEFAULT
+					}
+					has_game_rule = {
+						rule = AMS_ai_behavior
+						option = AMS_MAF_CHIN
+					}
+					has_game_rule = {
+						rule = AMS_ai_behavior
+						option = AMS_MAF_NOSE
+					}
+				}
+				factor = 0
+			}
+		}
+		prerequisite = {
+			focus = AMS_end_catholic_oppression
+		}
+		prerequisite = {
+			focus = AMS_finalise_a_one_party_state
+		}
+		mutually_exclusive = {
+			focus = AMS_delegitimise_the_mafia
+		}
+		x = 4
+		y = 7
+		completion_reward = {
+		    set_country_flag = invited_the_italians_into_government
+			remove_ideas = idea_ams_strengthened_mafia
+		}
+
+	}
+	focus = {
+		id = AMS_delegitimise_the_mafia
+		icon = focus_end_of_a_civil_war
+		cost = 10
+		ai_will_do = {
+			modifier = {
+				NOT = {
+					has_game_rule = {
+						rule = AMS_ai_behavior
+						option = DEFAULT
+					}
+					has_game_rule = {
+						rule = AMS_ai_behavior
+						option = AMS_PHOENIX
+					}
+				}
+				factor = 0
+			}
+		}
+		prerequisite = {
+			focus = AMS_finalise_a_one_party_state
+		}
+		prerequisite = {
+			focus = AMS_end_catholic_oppression
+		}
+		mutually_exclusive = {
+			focus = AMS_invite_the_italians_into_government
+		}
+		x = 6
+		y = 7
+		completion_reward = {
+		    remove_ideas = idea_ams_strengthened_mafia
+			add_timed_idea = {
+			    idea = idea_ams_anti_mafia_campaign
+		        days = 260
+		    }
+		}
+
+	}
+	focus = {
+		id = AMS_negotiations_with_canada
+		icon = canada
+		cost = 10
+		prerequisite = {
+			focus = AMS_the_chin
+		}
+		x = 29
+		y = 2
+		completion_reward = {
+		    add_opinion_modifier = {
+				target = CAN
+				modifier = trade_influence_4
+			}
+			CAN = {
+			    add_opinion_modifier = {
+				    target = AMS
+				    modifier = trade_influence_4
+			    }
+			}
+			add_political_power = 20
+		}
+
+	}
+	focus = {
+		id = AMS_establish_profitable_trade
+		icon = positive_trade_relations
+		cost = 10
+		prerequisite = {
+			focus = AMS_negotiations_with_canada
+		}
+		x = 29
+		y = 3
+		completion_reward = {
+		    add_ideas = idea_ams_profitable_trade
+		}
+
+	}
+	focus = {
+		id = AMS_promote_agricultural_expansion
+		icon = focus_on_agriculture
+		cost = 10
+		prerequisite = {
+			focus = AMS_establish_profitable_trade
+		}
+		x = 29
+		y = 4
+		completion_reward = {
+		    add_ideas = idea_ams_agricultural_expansion
+		}
+
+	}
+}

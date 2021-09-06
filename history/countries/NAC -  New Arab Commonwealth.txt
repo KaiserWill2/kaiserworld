@@ -1,0 +1,325 @@
+﻿capital = 554
+
+
+oob = "generic_2000"
+
+
+set_research_slots = 4
+set_convoys = 500
+set_stability = 0.5
+set_war_support = 0.5
+
+set_country_flag = muslim_nation
+
+add_political_power = -350
+
+set_technology = {
+	support_weapons = 1
+	infantry_weapons = 1
+	motorised_infantry = 1 
+	tech_support = 1 
+	tech_field_hospital = 1 
+	tech_engineers = 1 
+	gwtank = 1 
+	basic_light_tank = 1 
+	gw_artillery = 1 
+	tech_mountaineers = 1
+	early_fighter = 1 
+	early_bomber = 1 
+	paratroopers = 1 
+        interwar_antiair = 1
+	interwar_antitank = 1	
+}
+
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	set_technology = {
+		early_submarine = 1
+		basic_submarine = 1
+		early_destroyer = 1
+		early_light_cruiser = 1
+		basic_light_cruiser = 1
+		early_heavy_cruiser = 1
+		
+		
+		early_carrier = 1
+		basic_carrier = 1
+		transport = 1
+	}
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_technology = {
+		basic_naval_mines = 1
+		submarine_mine_laying = 1
+		early_ship_hull_light = 1
+		basic_ship_hull_light = 1
+		early_ship_hull_submarine = 1
+		basic_ship_hull_submarine = 1
+		early_ship_hull_cruiser = 1
+		basic_ship_hull_cruiser = 1
+		early_ship_hull_heavy = 1
+		early_ship_hull_carrier = 1
+		basic_ship_hull_carrier = 1
+		basic_battery = 1
+		basic_light_battery = 1
+		basic_medium_battery = 1
+		basic_heavy_battery = 1
+		basic_torpedo = 1
+		sonar = 1
+		basic_depth_charges = 1
+		basic_secondary_battery = 1
+		improved_secondary_battery = 1
+		basic_cruiser_armor_scheme = 1
+		basic_heavy_armor_scheme = 1
+		mtg_transport = 1
+		improved_airplane_launcher = 1
+	}
+}
+
+set_politics = {
+	ruling_party = moderate_socialist
+	last_election = "1997.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+        fascist = 0
+		nationalist = 12
+		monarchist = 0
+		national_bolshevik = 0
+		national_conservative = 20
+		centrist = 0
+		liberal = 10
+		new_democrat = 6
+		moderate_socialist = 35
+		revolutionary_socialist = 10
+		communist = 7
+}
+
+create_country_leader = {
+	name = "Gamal Khalid Abdel Nasser"
+	picture = "Portrait_NAC_Gamal_Khalid_Abdel_Nasser.dds"
+	ideology = democratic_socialist
+}
+
+create_field_marshal = {
+	name = "Ali Abdullah Ayyoub"
+	picture = "Portriat_Ali_Abdullah_Ayyoub.dds"
+	traits = { fast_planner }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 2
+}
+
+create_field_marshal = {
+	name = "Suheil al-Hassan"
+	picture = "Portrait_SYR_Suheil_Al_Hassan.dds"
+	traits = { inspirational_leader }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 4
+}
+
+create_field_marshal = {
+	name = "Naim Jasem Suleiman"
+	picture = "Portriat_Naim_Jasem_Suleiman.dds"
+	traits = {  }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Aymen al-Jaber"
+	picture = "Portriat_Aymen_al-Jaber.dds"
+	traits = { naval_invader }
+	skill = 2
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 3
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Abdul Jabbar Aqidi"
+	picture = "Portriat_Abdul_Jabbar_Aqidi.dds"
+	traits = {  }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Abdul Qader Saleh"
+	picture = "Portriat_Abdul_Qader_Saleh.dds"
+	traits = {  }
+	skill = 2
+	attack_skill = 3
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Abu Issa"
+	picture = "Portriat_Abu_Issa.dds"
+	traits = {  }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Ali Mamlouk"
+	picture = "Portriat_Ali_Mamlouk.dds"
+	traits = {  }
+	skill = 2
+	attack_skill = 1
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Bashar Al-Zoubi"
+	picture = "Portriat_Bashar_Al-Zoubi.dds"
+	traits = {  }
+	skill = 2
+	attack_skill = 3
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Ammar Al-Wawi"
+	picture = "Portriat_Ammar_Al-Wawi.dds"
+	traits = {  }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Dawoud Abdellah Rajiha"
+	picture = "Portriat_Dawoud_Abdellah_Rajiha.dds"
+	traits = {  }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Fahd Jassem al-Freij"
+	picture = "Portriat_Fahd_Jassem_al-Freij.dds"
+	traits = {  }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Muhammad Suleiman"
+	picture = "Portriat_Muhammad_Suleiman.dds"
+	traits = { commando }
+	skill = 2
+	attack_skill = 4
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Talal Makhlouf"
+	picture = "Portriat_Talal_Makhlouf.dds"
+	traits = {  }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Mustafa al_Sheikh"
+	picture = "Portriat_Mustafa_al-Sheikh.dds"
+	traits = {  }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Mohammad Nayou"
+	picture = "Portriat_Mohammad_Nayou.dds"
+	traits = {  }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Hassan Saado"
+	picture = "Portriat_Hassan_Saado.dds"
+	traits = {  }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Issam Zahreddine"
+	picture = "Portriat_Issam_Zahreddine.dds"
+	traits = {  }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Manaf Tlass"
+	picture = "Portriat_Manaf_Tlass.dds"
+	traits = {  }
+	skill = 2
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_navy_leader = {
+	name = "Jawher Sulkar"
+	picture = "Portrait_Jawher_Sulkar.dds"
+	traits = { blockade_runner }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	coordination_skill = 2
+	maneuvering_skill = 2
+}

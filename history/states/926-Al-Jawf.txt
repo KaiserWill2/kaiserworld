@@ -1,0 +1,22 @@
+state={
+	id=926
+	name="STATE_926"
+	resources={
+		oil=3.000
+	}
+	provinces={
+		13256 13263 13272 13274 13275 13281 13285 13293 13294 13303 
+	}
+	state_category = town
+	history={
+		owner = LBA
+		add_core_of = LBA
+		victory_points = { 13293 1 }
+		buildings = {
+			infrastructure = 2
+		}
+
+	}
+	manpower=50000
+	buildings_max_level_factor=1.000
+}

@@ -1,0 +1,21 @@
+state={
+	id=941
+	name="STATE_941"
+	resources={
+		oil=22.000
+	}
+	provinces={
+		13356 13369 13375 13376 13377 13382 13391 13398 13404 13406 13412 13413 13443 
+	}
+	state_category = wasteland
+	history={
+		owner = LBA
+		add_core_of = LBA
+		buildings = {
+			infrastructure = 1
+		}
+
+	}
+	manpower=8000
+	buildings_max_level_factor=1.000
+}

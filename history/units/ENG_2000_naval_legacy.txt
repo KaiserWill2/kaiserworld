@@ -1,0 +1,40 @@
+﻿
+units= {
+	####### NAVAL UNITS #######
+	##### ROYAL NAVY #####
+	##### Windsor Group (CO: ) #####
+	### Bottom Text ###
+	fleet = {
+		name = "Royal Navy"
+		naval_base = 11374
+		task_force = {
+			name = "Windsor Group"
+			location = 11374
+			ship = {
+				name = "HMS Queen Elizabeth" definition = carrier equipment = { carrier_1 = { amount = 1 owner = ENG version_name = "Carrier I" } }
+				air_wings = {
+					cv_fighter_equipment_0 =  { owner = "ENG" amount = 10 }
+					cv_nav_bomber_equipment_1 =  { owner = "ENG" amount = 10 }
+				}
+			}	
+			ship = { name = "HMS Daring" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG version_name = "Destroyer I" } } }
+			ship = { name = "HMS Argyll" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG version_name = "Destroyer I" } } }
+		}
+	}
+	# Tudor Group #
+	# Cardiff #
+	fleet = {
+		name = "Tudor Fleet"
+		naval_base = 377 # Cardiff
+		task_force = {
+			name = "Sub Fleet"
+			location = 377 # Cardiff
+			ship = { name = "Sub 1" definition = submarine equipment = { submarine_1 = { amount = 1 owner = ENG version_name = "Submarine I" } } }
+			ship = { name = "Sub 2" definition = submarine equipment = { submarine_1 = { amount = 1 owner = ENG version_name = "Submarine I" } } }
+			ship = { name = "Sub 3" definition = submarine equipment = { submarine_1 = { amount = 1 owner = ENG version_name = "Submarine I" } } }
+			ship = { name = "Sub 4" definition = submarine equipment = { submarine_1 = { amount = 1 owner = ENG version_name = "Submarine I" } } }
+			ship = { name = "Sub 5" definition = submarine equipment = { submarine_1 = { amount = 1 owner = ENG version_name = "Submarine I" } } }
+		}
+	}
+}
+			

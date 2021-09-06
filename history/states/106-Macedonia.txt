@@ -1,0 +1,33 @@
+
+state={
+	id=106
+	name="STATE_106"
+	resources={
+		chromium=7
+		aluminium=11
+		tungsten=1
+	}
+
+	history={
+		owner = YUG
+        add_core_of = MAC
+        add_core_of = YUG
+		buildings = {
+			infrastructure = 7
+			industrial_complex = 3
+			air_base = 2
+		}
+		victory_points = { 3882 5 }
+		victory_points = { 11856 1 }
+		victory_points = { 11832 1 }
+		victory_points = { 3865 1 }
+
+	}
+
+	provinces={
+		907 974 3833 3865 3882 6886 11832 11856 
+	}
+	manpower=1587862
+	buildings_max_level_factor=1.000
+	state_category=large_town
+}

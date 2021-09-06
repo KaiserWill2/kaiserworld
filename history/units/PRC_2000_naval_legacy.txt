@@ -1,0 +1,25 @@
+﻿units= {
+
+	####### NAVAL UNITS #######
+	##### CHINESE FLEET #####
+	##### PEOPLE'S REPUBLIC FLEET #####
+	### Shanghai ###
+
+	fleet = {
+		name = "Fleet 1"			
+		naval_base = 7014 # Shanghai
+		task_force = {
+			name = "Group 1"
+			location = 7014 # Shanghai
+			ship = {
+				name = "Mao Zedong" definition = carrier equipment = { carrier_1 = { amount = 1 owner = PRC version_name = "Carrier I" } } 
+				air_wings = {
+					cv_fighter_equipment_0 =  { owner = "PRC" amount = 20 }
+					cv_nav_bomber_equipment_1 =  { owner = "PRC" amount = 20 }
+				}
+			}	
+			ship = { name = "Deng Xiaoping" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = PRC version_name = "Destroyer I" } } }
+			ship = { name = "Zhou Enlai" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = PRC version_name = "Destroyer I" } } }
+		}
+	}
+}
