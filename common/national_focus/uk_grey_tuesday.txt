@@ -6,64 +6,6 @@ focus_tree = {
 
 	continuous_focus_position = { x = 50 y = 3500 }
 	default = no
-	
-	focus = {
-		id = Grey_Tuesday
-		icon = open_the_camps
-		x = 5
-		y = 0
-		cost = 3
-		search_filters = {
-			FOCUS_FILTER_FRA_POLITICAL_VIOLENCE
-		}
-		completion_reward = {
-		
-	}
-}
-
-focus = {
-	id = The_day_Of_Mourning
-	icon = open_the_camps
-	x = 5
-	y = 1
-	cost = 3
-	prerequisite = { focus =  Grey_Tuesday  }
-
-	completion_reward = {
-	
-}
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+	shared_focus = ENG_Grey_Tuesday
 
 }

@@ -10,7 +10,6 @@ state=
 		owner = ALA
 add_core_of = ALA
 add_core_of = USA
-set_demilitarized_zone = yes
 		victory_points = {
 			13067 1 
 		}

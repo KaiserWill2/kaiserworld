@@ -39,10 +39,25 @@ spriteTypes = {
 	
 	
 	##England###
+	
+
+
+		
 	SpriteType = {
-		name = "blairs_iron_fist"
-		texturefile = "gfx/interface/goals/eng/blairs_iron_fist.dds"			
+		name = "watch_our_people"
+		texturefile = "gfx/interface/goals/eng/watch_our_people.dds"			
+	}	
+	
+	SpriteType = {
+		name = "the_punishments"
+		texturefile = "gfx/interface/goals/eng/the_punishments.dds"			
+	}	
+	
+	SpriteType = {
+	name = "blairs_iron_fist"
+	texturefile = "gfx/interface/goals/eng/blairs_iron_fist.dds"			
 		}	
+
 	SpriteType = {
 		name = "foots_legacy"
 		texturefile = "gfx/interface/goals/eng/foots_legacy.dds"			

@@ -9,6 +9,7 @@
 			FOCUS_FILTER_POLITICAL
 		}
 		completion_reward = {
+			add_ideas = legacy_of_foot
 			add_stability = 0.05
 		}
 	}
@@ -91,7 +92,7 @@
 	}
 	shared_focus = {
 		id = ENG_the_elite_first
-		icon = GFX_ENG_the_elite_first-445
+		icon = the_elite_first
 		x = 5
 		y = 6
 		cost = 3
@@ -146,7 +147,7 @@
 	}
 	shared_focus = {
 		id = ENG_parades_of_mass_destruction
-		icon = GFX_ENG_parades_of_mass_destruction-445
+		icon = the_parade_of_war
 		x = 1
 		y = 5
 		cost = 3
@@ -361,7 +362,7 @@
 	}
 	shared_focus = {
 		id = ENG_forced_work_in_the_union
-		icon = GFX_ENG_forced_work_in_the_union-445
+		icon = forced_labour_in_the_union
 		x = 15
 		y = 7
 		cost = 3
@@ -451,7 +452,7 @@
 	}
 	shared_focus = {
 		id = ENG_The_Scottish_Problem
-		icon = GFX_ENG_the_totalist_spirit-445
+		icon = the_question_of_scotland
 		x = 6
 		y = 11
 		cost = 3
@@ -681,7 +682,7 @@
 
 	shared_focus = {
 		id = ENG_Airwing_Of_England
-		icon = GFX_ENG_the_totalist_spirit-445
+		icon = airwings_of_england
 		x = 22
 		y = 2
 		cost = 3
@@ -769,7 +770,7 @@
 	}
 	shared_focus = {
 		id = ENG_Test_Raids_On_The_Channel_Island
-		icon = GFX_ENG_the_totalist_spirit-445
+		icon = test_drills_on_the_island
 		x = 26
 		y = 3
 		cost = 3
@@ -777,7 +778,8 @@
 			FOCUS_FILTER_POLITICAL
 		}
 		prerequisite = { focus = ENG_Seas_Of_England  }
-	}	shared_focus = {
+	}
+		shared_focus = {
 		id = ENG_Defense_Against_France
 		icon = defence_against_france
 		x = 26
@@ -802,7 +804,7 @@
 	}
 	shared_focus = {
 		id = ENG_Irish_Sea
-		icon = GFX_ENG_the_totalist_spirit-445
+		icon = irish_sea
 		x = 28
 		y = 4
 		cost = 3
@@ -827,7 +829,7 @@
 	}
 	shared_focus = {
 		id = ENG_The_Parade
-		icon = the_parade_of_war
+		icon = GFX_ENG_the_totalist_spirit-445
 		x = 22
 		y = 6
 		cost = 3
@@ -838,6 +840,10 @@
 		prerequisite = { focus = ENG_Super_Sonic_Research  }
 		prerequisite = { focus = ENG_Remembering_Canada  }
 		prerequisite = { focus = ENG_Union_Propaganda_Leaflet_dropping  }
+		completion_reward = {			
+			country_event = { id = England.4}	
+		
+		}
 	}
 	shared_focus = {
 		id = ENG_Irish_Sea
@@ -919,7 +925,7 @@
 	}
 	shared_focus = {
 		id = ENG_The_Elite_Stay
-		icon = the_elite_first
+		icon = GFX_ENG_the_totalist_spirit-445
 		x = 22
 		y = 11
 		cost = 3
@@ -1323,7 +1329,716 @@
 
 	}
 	
-	
-	
+	shared_focus = {
+		id = ENG_Grey_Tuesday
+		icon = GFX_ENG_the_totalist_spirit-445
+		x = 24
+		y = 1
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		
+	}
+	shared_focus = {
+		id = ENG_The_People_Mourn
+		icon = GFX_ENG_the_totalist_spirit-445
+		x = 22
+		y = 2
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus =  ENG_Grey_Tuesday  }
 
+	}
+	shared_focus = {
+		id = ENG_Lower_The_Flag
+		icon = GFX_ENG_the_totalist_spirit-445
+		x = 26
+		y = 2
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus =  ENG_Grey_Tuesday  }
+
+	}
+
+	shared_focus = {
+		id = ENG_Choosing_The_Leader
+		icon = GFX_ENG_the_totalist_spirit-445
+		x = 24
+		y = 3
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus =  ENG_The_People_Mourn  }
+		prerequisite = { focus =  ENG_Lower_The_Flag  }
+
+	}
+	shared_focus = {
+		id = ENG_Johnson
+		icon = GFX_ENG_the_totalist_spirit-445
+		x = 13
+		y = 4
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus =  ENG_Choosing_The_Leader  }
+
+	}
+	shared_focus = {
+		id = ENG_The_Peoples_Government
+		icon = GFX_ENG_the_totalist_spirit-445
+		x = 13
+		y = 5
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus =  ENG_Johnson  }
+
+	}
+	shared_focus = {
+		id = ENG_Welcome_New_Ideas
+		icon = GFX_ENG_the_totalist_spirit-445
+		x = 13
+		y = 6
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus =  ENG_The_Peoples_Government  }
+
+	}
+	shared_focus = {
+		id = ENG_A_New_Nation
+		icon = GFX_ENG_the_totalist_spirit-445
+		x = 13
+		y = 7
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus =  ENG_Welcome_New_Ideas  }
+
+	}
+	shared_focus = {
+		id = ENG_Calm_The_Situation_Down
+		icon = GFX_ENG_the_totalist_spirit-445
+		x = 10
+		y = 6
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus =  ENG_The_Peoples_Government  }
+
+	}
+	shared_focus = {
+		id = ENG_Install_New_Council_Leaders
+		icon = GFX_ENG_the_totalist_spirit-445
+		x = 11
+		y = 7
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus =  ENG_Calm_The_Situation_Down  }
+
+	}
+	shared_focus = {
+		id = ENG_Johnson_The_Reformer
+		icon = GFX_ENG_the_totalist_spirit-445
+		x = 16
+		y = 6
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus =  ENG_The_Peoples_Government  }
+
+	}
+	shared_focus = {
+		id = ENG_Remove_National_Service
+		icon = GFX_ENG_the_totalist_spirit-445
+		x = 15
+		y = 7
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus =  ENG_Johnson_The_Reformer  }
+
+	}
+	shared_focus = {
+		id = ENG_Johnson_Government
+		icon = GFX_ENG_the_totalist_spirit-445
+		x = 13
+		y = 8
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus =  ENG_A_New_Nation  }
+		prerequisite = { focus =  ENG_Install_New_Council_Leaders  }
+		prerequisite = { focus =  ENG_Remove_National_Service  }
+	}
+	shared_focus = {
+		id = ENG_Hudson
+		icon = GFX_ENG_the_totalist_spirit-445
+		x = 20
+		y = 4
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus =  ENG_Choosing_The_Leader  }
+
+	}
+	shared_focus = {
+		id = ENG_Shuffle_The_Congress
+		icon = GFX_ENG_the_totalist_spirit-445
+		x = 20
+		y = 5
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus =  ENG_Hudson  }
+
+	}
+	shared_focus = {
+		id = ENG_The_Loyal_Man
+		icon = GFX_ENG_the_totalist_spirit-445
+		x = 18
+		y = 6
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus =  ENG_Shuffle_The_Congress  }
+
+	}
+	shared_focus = {
+		id = ENG_Keep_To_The_Status_Quo
+		icon = GFX_ENG_the_totalist_spirit-445
+		x = 19
+		y = 7
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus =  ENG_The_Loyal_Man  }
+
+	}
+	shared_focus = {
+		id = ENG_Congress_Loyalty
+		icon = GFX_ENG_the_totalist_spirit-445
+		x = 20
+		y = 6
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus =  ENG_Shuffle_The_Congress  }
+
+	}
+	shared_focus = {
+		id = ENG_Modern_Totalism
+		icon = GFX_ENG_the_totalist_spirit-445
+		x = 22
+		y = 6
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus =  ENG_Shuffle_The_Congress  }
+
+	}
+	shared_focus = {
+		id = ENG_Stronger_Relations_With_Totalist_Nations
+		icon = GFX_ENG_the_totalist_spirit-445
+		x = 21
+		y = 7
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus =  ENG_Modern_Totalism  }
+
+	}
+	shared_focus = {
+		id = ENG_Hudson_Government
+		icon = GFX_ENG_the_totalist_spirit-445
+		x = 20
+		y = 8
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus =  ENG_Keep_To_The_Status_Quo  }
+		prerequisite = { focus =  ENG_Stronger_Relations_With_Totalist_Nations  }
+		prerequisite = { focus =  ENG_Congress_Loyalty  }
+	}
+	shared_focus = {
+		id = ENG_McDonnell 
+		icon = GFX_ENG_the_totalist_spirit-445
+		x = 27
+		y = 4
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus =  ENG_Choosing_The_Leader  }
+
+	}
+	shared_focus = {
+		id = ENG_Workers_State
+		icon = GFX_ENG_the_totalist_spirit-445
+		x = 27
+		y = 5
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus =  ENG_McDonnell }
+
+	}
+	shared_focus = {
+		id = ENG_Establish_The_Peoples_Health_Service
+		icon = GFX_ENG_the_totalist_spirit-445
+		x = 25
+		y = 6
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus =  ENG_Workers_State  }
+
+	}
+	shared_focus = {
+		id = ENG_Better_Relations_With_Scotland_And_Wales
+		icon = GFX_ENG_the_totalist_spirit-445
+		x = 26
+		y = 7
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus =  ENG_Establish_The_Peoples_Health_Service  }
+
+	}
+	shared_focus = {
+		id = ENG_The_New_Education_Service
+		icon = GFX_ENG_the_totalist_spirit-445
+		x = 27
+		y = 6
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus =  ENG_Workers_State  }
+
+	}
+	shared_focus = {
+		id = ENG_Modern_Working_Sector
+		icon = GFX_ENG_the_totalist_spirit-445
+		x = 29
+		y = 6
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus =  ENG_Workers_State  }
+
+	}
+	shared_focus = {
+		id = ENG_Socialism_Can_Work
+		icon = GFX_ENG_the_totalist_spirit-445
+		x = 28
+		y = 7
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus =  ENG_Modern_Working_Sector  }
+
+	}
+	shared_focus = {
+		id = ENG_McDonnell_Government
+		icon = GFX_ENG_the_totalist_spirit-445
+		x = 27
+		y = 8
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus =  ENG_Socialism_Can_Work  }
+		prerequisite = { focus =  ENG_The_New_Education_Service  }
+		prerequisite = { focus =  ENG_Better_Relations_With_Scotland_And_Wales  }
+	}
+	shared_focus = {
+		id = ENG_Kennedy
+		icon = GFX_ENG_the_totalist_spirit-445
+		x = 33
+		y = 4
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus =  ENG_Choosing_The_Leader  }
+
+	}
+
+	shared_focus = {
+		id = ENG_The_Iron_Fist_Stays
+		icon = GFX_ENG_the_totalist_spirit-445
+		x = 33
+		y = 5
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus =  ENG_Kennedy  }
+
+	}
+	shared_focus = {
+		id = ENG_Wales_Will_Be_Ours
+		icon = GFX_ENG_the_totalist_spirit-445
+		x = 31
+		y = 6
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus =  ENG_The_Iron_Fist_Stays  }
+
+	}
+	shared_focus = {
+		id = ENG_The_Dragon_Will_No_Longer_Roar
+		icon = GFX_ENG_the_totalist_spirit-445
+		x = 32
+		y = 7
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus =  ENG_Wales_Will_Be_Ours  }
+
+	}
+	shared_focus = {
+		id = ENG_Kill_The_Unfit
+		icon = GFX_ENG_the_totalist_spirit-445
+		x = 33
+		y = 6
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus =  ENG_The_Iron_Fist_Stays  }
+
+	}
+
+	shared_focus = {
+		id = ENG_Blair_Was_Still_Weak
+		icon = GFX_ENG_the_totalist_spirit-445
+		x = 35
+		y = 6
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus =  ENG_The_Iron_Fist_Stays  }
+
+	}
+	shared_focus = {
+		id = ENG_Labour_Camps_Are_Not_Enough
+		icon = GFX_ENG_the_totalist_spirit-445
+		x = 34
+		y = 7
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus =  ENG_Blair_Was_Still_Weak  }
+
+	}
+	shared_focus = {
+		id = ENG_Kennedys_Government
+		icon = GFX_ENG_the_totalist_spirit-445
+		x = 33
+		y = 8
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus =  ENG_The_Dragon_Will_No_Longer_Roar  }
+		prerequisite = { focus =  ENG_Labour_Camps_Are_Not_Enough  }
+		prerequisite = { focus =  ENG_Kill_The_Unfit  }
+	}
+
+	shared_focus = {
+		id = ENG_A_New_England
+		icon = GFX_ENG_the_totalist_spirit-445
+		x = 16
+		y = 0
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+	
+	}
+	shared_focus = {
+		id = ENG_Wales_Is_Finally_Back
+		icon = GFX_ENG_the_totalist_spirit-445
+		x = 13
+		y = 1
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus =  ENG_A_New_England  }
+
+	
+	}
+	shared_focus = {
+		id = ENG_A_United_Army
+		icon = GFX_ENG_the_totalist_spirit-445
+		x = 15
+		y = 1
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus =  ENG_A_New_England  }
+
+	}
+	shared_focus = {
+		id = ENG_United_By_The_People
+		icon = GFX_ENG_the_totalist_spirit-445
+		x = 17
+		y = 1
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus =  ENG_A_New_England  }
+
+	}
+	shared_focus = {
+		id = ENG_The_Rule_Of_Wales
+		icon = GFX_ENG_the_totalist_spirit-445
+		x = 19
+		y = 1
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus =  ENG_A_New_England  }
+
+	}
+	shared_focus = {
+		id = ENG_Destory_Welsh_Nationalism
+		icon = GFX_ENG_the_totalist_spirit-445
+		x = 16
+		y = 2
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus =  ENG_Wales_Is_Finally_Back  }
+		prerequisite = { focus =  ENG_A_United_Army  }
+		prerequisite = { focus =  ENG_The_Rule_Of_Wales  }
+		prerequisite = { focus =  ENG_United_By_The_People  }
+	}
+	shared_focus = {
+		id = ENG_Remove_Opposition
+		icon = GFX_ENG_the_totalist_spirit-445
+		x = 13
+		y = 3
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus =  ENG_Destory_Welsh_Nationalism  }
+
+	}
+	shared_focus = {
+		id = ENG_Transform_The_Country
+		icon = GFX_ENG_the_totalist_spirit-445
+		x = 16
+		y = 3
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus =  ENG_Destory_Welsh_Nationalism  }
+
+	}
+	shared_focus = {
+		id = ENG_Scare_Into_Work
+		icon = GFX_ENG_the_totalist_spirit-445
+		x = 19
+		y = 3
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus =  ENG_Destory_Welsh_Nationalism  }
+
+	}
+	shared_focus = {
+		id = ENG_Monitor_The_Welsh_People
+		icon = GFX_ENG_the_totalist_spirit-445
+		x = 14
+		y = 4
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus =  ENG_Remove_Opposition  }
+
+	}
+	shared_focus = {
+		id = ENG_Complete_Loyalty
+		icon = GFX_ENG_the_totalist_spirit-445
+		x = 16
+		y = 4
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus =  ENG_Transform_The_Country  }
+
+	}
+	shared_focus = {
+		id = ENG_Blair_Is_The_True_Leader
+		icon = GFX_ENG_the_totalist_spirit-445
+		x = 18
+		y = 4
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus =  ENG_Scare_Into_Work  }
+
+	}
+
+	shared_focus = {
+		id = ENG_Work_For_The_Dear_Leader
+		icon = GFX_ENG_the_totalist_spirit-445
+		x = 16
+		y = 5
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus =  ENG_Monitor_The_Welsh_People  }
+		prerequisite = { focus =  ENG_Complete_Loyalty  }
+		prerequisite = { focus =  ENG_Blair_Is_The_True_Leader  }
+	}
+	shared_focus = {
+		id = ENG_Open_The_Welsh_Camps
+		icon = GFX_ENG_the_totalist_spirit-445
+		x = 14
+		y = 6
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus =  ENG_Work_For_The_Dear_Leader  }
+
+	}
+	shared_focus = {
+		id = ENG_Ban_Any_Welsh_Symbol
+		icon = GFX_ENG_the_totalist_spirit-445
+		x = 18
+		y = 6
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus =  ENG_Work_For_The_Dear_Leader  }
+
+	}
+	shared_focus = {
+		id = ENG_Change_Of_Rules
+		icon = GFX_ENG_the_totalist_spirit-445
+		x = 16
+		y = 7
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus =  ENG_Ban_Any_Welsh_Symbol  }
+		prerequisite = { focus =  ENG_Open_The_Welsh_Camps  }
+	}
+	shared_focus = {
+		id = ENG_Totalism_In_Wales
+		icon = GFX_ENG_the_totalist_spirit-445
+		x = 13
+		y = 8
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus =  ENG_Change_Of_Rules  }
+
+	}
+	shared_focus = {
+		id = ENG_The_Welsh_Are_English
+		icon = GFX_ENG_the_totalist_spirit-445
+		x = 19
+		y = 8
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus =  ENG_Change_Of_Rules  }
+
+	}
+	shared_focus = {
+		id = ENG_Therell_Always_Be_An_England
+		icon = GFX_ENG_the_totalist_spirit-445
+		x = 14
+		y = 9
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus =  ENG_Totalism_In_Wales  }
+
+	}
+	shared_focus = {
+		id = ENG_The_Dragon_Has_Been_Put_Down
+		icon = GFX_ENG_the_totalist_spirit-445
+		x = 18
+		y = 9
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus =  ENG_The_Welsh_Are_English  }
+
+	}
+	shared_focus = {
+		id = ENG_Victory_Day
+		icon = GFX_ENG_the_totalist_spirit-445
+		x = 16
+		y = 10
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus =  ENG_Therell_Always_Be_An_England  }
+		prerequisite = { focus =  ENG_The_Dragon_Has_Been_Put_Down  }
+	}
+
+
+	
+}
 

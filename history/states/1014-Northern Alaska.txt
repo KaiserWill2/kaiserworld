@@ -14,7 +14,6 @@ state={
 			infrastructure = 1
 
 		}
-		set_demilitarized_zone = yes
 		add_core_of = ALA
 
 	}

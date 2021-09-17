@@ -4,6 +4,10 @@ spriteTypes = {
 		name = "welcome_to_the_union"
 		texturefile = "gfx/event_pictures/report_event/welcome_to_the_union.dds"
 	}
+	spriteType = {
+		name = "blair_bans_denim"
+		texturefile = "gfx/event_pictures/report_event/blair_bans_denim.dds"
+	}
 
 
 }

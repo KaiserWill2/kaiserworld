@@ -218,7 +218,7 @@
  USA_empower_unions_desc:0 "placeholder"
  
 ### ENGLAND TREE ### 
-ENG_legacy_of_foot:0 "Legacy Of Foot"
+ENG_legacy_of_foot:0 "§RLegacy Of Foot§!"
 ENG_legacy_of_foot_desc:0 "After the sudden death of Michael Foot, Tony Blair took over the role of leader of England and now wishes to continue Foot's plans but also choose how he can rule the state as well as unify Wales and Scotland."
 ENG_blairs_iron_fist:0 "Blairs Iron Fist"
 ENG_blairs_iron_fist_desc:0 "Blair has ruled England for over 15 years. He has clamped down on any unrest and forced the people to work and serve the state. Now he is ready to expand his rule and ensure total loyalty to himself."
@@ -424,6 +424,37 @@ ENG_Remove_The_Welsh_Tongue:0 "Remove The Welsh Tongue"
 ENG_Remove_The_Welsh_Tongue_desc:0 ""
 ENG_Trials_Of_Wales:0 "Trials Of Wales"
 ENG_Trials_Of_Wales_desc:0 ""
+ENG_diplomatic_relations_with_Korea:0 "Diplomatic Relations With Korea"
+ENG_diplomatic_relations_with_Korea_desc:0 ""
+ENG_diplomatic_relations_with_Russia:0 "Diplomatic Relations With Russia"
+ENG_diplomatic_relations_with_Russia_desc:0 ""
+ENG_Bring_Down_The_Flag:0 "Bring Down The Flag"
+ENG_Bring_Down_The_Flag_desc:0 ""
+ENG_Swansea_Camps:0 "Swansea Camps"
+ENG_Swansea_Camps_desc:0 ""
+ENG_Recruit_The_Welsh:0 "Recruit The Welsh"
+ENG_Recruit_The_Welsh_desc:0 ""
+ENG_Unite_The_Lands:0 "Unite The Lands"
+ENG_Unite_The_Lands_desc:0 ""
+ENG_Humiliating_Defeat:0 "Humiliating Defeat"
+ENG_Humiliating_Defeat_desc:0 ""
+ENG_Secure_Our_Borders:0 "Secure Our Borders"
+ENG_Secure_Our_Borders_desc:0 ""
+ENG_Wales_Will_Pay:0 "Wales Will Pay"
+ENG_Wales_Will_Pay_desc:0 ""
+ENG_The_Wrath_Of_Blair:0 "The Wrath Of Blair"
+ENG_The_Wrath_Of_Blair_desc:0 ""
+ENG_Punish_The_Officers:0 "Punish The Officers"
+ENG_Punish_The_Officers_desc:0 ""
+ENG_Kill_The_Ones_Who_Ran:0 "Kill The Ones Who Run"
+ENG_Kill_The_Ones_Who_Ran_desc:0 ""
+ENG_Terror:0 "Terror"
+ENG_Terror_desc:0 ""
+ENG_Grey_Tuesday:0 "Grey Tuesday"
+ENG_Grey_Tuesday_desc:0 ""
+
+
+
 
 
 
