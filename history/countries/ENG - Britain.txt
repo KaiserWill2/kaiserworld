@@ -137,64 +137,63 @@ create_country_leader = {
 
 create_country_leader = {
 	name = "Boris Johnson"
-	picture = "Portrait_ENG_George_Galloway.dds"
+	picture = "big_boris.dds"
 	ideology = revolutionary_socialist_ideology
 }
 
 
 create_country_leader = {
 	name = "John Mcdonnell"
-	picture = "Portrait_ENG_Jeremy_Corbyn.dds"
+	picture = "john_mcdonnell.dds"
 	ideology = democratic_socialist
 }
 
 create_country_leader = {
 	name = "David Miliband"
-	picture = "Portrait_ENG_Tony_Benn.dds"
+	picture = "david_milliband.dds"
 	ideology = new_democrat_ideology
 }
 	
 
 create_country_leader = {
 	name = "Vince Cable"
-	picture = "Portrait_ENG_Nick_Clegg.dds"
+	picture = "vince_cable.dds"
 	ideology = centrist_ideology
 }
 create_country_leader = {
 	name = "Keir Starmer"
-	desc = "POLITICS_DAVID_OWEN_DESC"
-	picture = "Portrait_ENG_David_Owen.dds"
+	picture = "keir_starmer.dds"
 	ideology = social_liberal
 }
 
 create_country_leader = {
 	name = "William Hague"
-	picture = "Portrait_ENG_Owen_Paterson.dds"
+	picture = "william_hague.dds"
 	ideology = european_conservative
 }
 
 
 create_country_leader = {
 	name = "Robin Tilbrook"
-	picture = "Portrait_ENG_Paul_Golding.dds"
+	picture = "robin_tilbrook.dds"
 	ideology = fascist_ideology
 }
 
 create_country_leader = {
-	name = "Gerard Batten"
-	picture = "Portrait_ENG_Nick_Griffin.dds"
+	name = "Nigel Farage"
+	picture = "Nigel_Farage_KW.dds"
 	ideology = nationalist_ideology
 }
 
 create_country_leader = {
-	name = "Stephen Cottrell"
-	picture = "Portrait_ENG_Elizabeth_Second.dds"
+	name = "Elizabeth II"
+	picture = "liz_queen.dds"
 	ideology = absolute_monarchist
 }
 
 create_country_leader = {
-	name = "Robert David Griffiths"
-	picture = "Portrait_ENG_Patrick_Harrington.dds"
+	name = "Paul Golding"
+	picture = "paul_golding.dds"
 	ideology = national_bolshevik_ideology
 }
 

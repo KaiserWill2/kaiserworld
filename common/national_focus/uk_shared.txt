@@ -9,6 +9,9 @@
 			FOCUS_FILTER_POLITICAL
 		}
 		completion_reward = {
+			country_event = {
+				id = england.4
+			}
 			add_ideas = legacy_of_foot
 			add_stability = 0.05
 		}
@@ -23,6 +26,10 @@
 			FOCUS_FILTER_POLITICAL
 		}
 		prerequisite = { focus = ENG_legacy_of_foot  }
+		completion_reward = {
+
+			add_ideas = blairs_iron_fist
+		}
 	}
 	shared_focus = {
 		id = ENG_fixing_the_budget
@@ -34,6 +41,9 @@
 			FOCUS_FILTER_CHI_INFLATION
 		}
 		prerequisite = { focus = ENG_legacy_of_foot  }
+		completion_reward = {
+			add_ideas = fixing_the_budget
+		}
 	}
 	shared_focus = {
 		id = ENG_scotland_and_wales
@@ -45,6 +55,9 @@
 			FOCUS_FILTER_ANNEXATION
 		}
 		prerequisite = { focus = ENG_legacy_of_foot  }
+		completion_reward = {
+			add_ideas = scotland_and_wales
+		}
 	}
 	shared_focus = {
 		id = ENG_putting_the_country_first
@@ -56,6 +69,10 @@
 			FOCUS_FILTER_STABILITY
 		}
 		prerequisite = { focus = ENG_blairs_iron_fist  }
+		completion_reward = {
+			add_stability = 0.05
+			add_political_power = 100
+		}
 	}
 	shared_focus = {
 		id = ENG_arming_the_nation
@@ -67,7 +84,13 @@
 			FOCUS_FILTER_MANPOWER
 		}
 		prerequisite = { focus = ENG_putting_the_country_first  }
+		completion_reward = {
+			add_timed_idea = {
+				idea = arming_the_nation
+				days = 90
+		}
 	}
+}
 	shared_focus = {
 		id = ENG_weapon_research
 		icon = weapon_research
@@ -78,6 +101,9 @@
 			FOCUS_FILTER_INDUSTRY
 		}
 		prerequisite = { focus = ENG_arming_the_nation  }
+		completion_reward = {
+			add_ideas = weapon_research
+		}
 	}
 	shared_focus = {
 		id = ENG_funding_into_weapons
@@ -89,7 +115,26 @@
 			FOCUS_FILTER_INDUSTRY
 		}
 		prerequisite = { focus = ENG_arming_the_nation  }
+		completion_reward = {
+			remove_ideas = weapon_research
+			130 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+		}
+		129 = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = arms_factory
+				level = 2
+				instant_build = yes
+			}
 	}
+	}
+}
 	shared_focus = {
 		id = ENG_the_elite_first
 		icon = the_elite_first
@@ -100,7 +145,11 @@
 			FOCUS_FILTER_STABILITY
 		}
 		prerequisite = { focus = ENG_the_blair_personality  }
+		completion_reward = {
+		add_political_power = 50
+		}
 	}
+
 	shared_focus = {
 		id = ENG_rally_the_people
 		icon = rally_the_people_UOB
@@ -111,7 +160,25 @@
 			FOCUS_FILTER_POLITICAL
 		}
 		prerequisite = { focus = ENG_putting_the_country_first  }
+		completion_reward = {
+		123 = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+		338 = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
 	}
+}
 	shared_focus = {
 		id = ENG_watch_our_citizens
 		icon = watch_our_people
@@ -122,6 +189,12 @@
 			FOCUS_FILTER_POLITICAL
 		}
 		prerequisite = { focus = ENG_rally_the_people  }
+		completion_reward = {
+			add_timed_idea = {
+				idea = watching_our_people
+				days = 200
+		}
+	}
 	}
 	shared_focus = {
 		id = ENG_the_punishments
@@ -133,6 +206,12 @@
 			FOCUS_FILTER_STABILITY
 		}
 		prerequisite = { focus = ENG_rally_the_people  }
+		completion_reward = {
+			add_timed_idea = {
+				idea = giving_out_the_punishments
+				days = 50
+		}
+	}
 	}
 	shared_focus = {
 		id = ENG_the_blair_personality
@@ -144,6 +223,9 @@
 			FOCUS_FILTER_POLITICAL
 		}
 		prerequisite = { focus = ENG_watch_our_citizens  focus = ENG_the_punishments  }
+		completion_reward = {
+			add_ideas = Blairs_personality
+		}
 	}
 	shared_focus = {
 		id = ENG_parades_of_mass_destruction
@@ -155,7 +237,13 @@
 			FOCUS_FILTER_WAR_SUPPORT
 		}
 		prerequisite = { focus = ENG_weapon_research  focus = ENG_funding_into_weapons  }
+		completion_reward = {
+		add_timed_idea = {
+			idea = The_new_weapons
+			days = 50
+		}
 	}
+}
 	shared_focus = {
 		id = ENG_the_people_must_serve
 		icon = national_service
@@ -166,6 +254,9 @@
 			FOCUS_FILTER_MANPOWER
 		}
 		prerequisite = { focus = ENG_parades_of_mass_destruction  }
+		completion_reward = {
+			add_manpower = 10000
+		}
 	}
 	shared_focus = {
 		id = ENG_the_annual_congress_of_england
@@ -192,6 +283,14 @@
 			FOCUS_FILTER_STABILITY
 		}
 		prerequisite = { focus = ENG_the_people_must_serve  focus = ENG_the_elite_first  }
+		completion_reward = {
+			add_popularity = {
+				ideology = communist
+				popularity = 0.2
+			}
+			add_political_power = 50
+			add_stability = 0.2
+		}
 	}
 	shared_focus = {
 		id = ENG_tax_the_people
@@ -203,6 +302,12 @@
 			FOCUS_FILTER_CHI_INFLATION
 		}
 		prerequisite = { focus = ENG_fixing_the_budget  }
+		completion_reward = {
+			add_timed_idea = {
+				idea = taxing_the_people
+				days = 50
+			}
+		}
 	}
 	shared_focus = {
 		id = ENG_diplomatic_relations_with_Korea
@@ -215,6 +320,14 @@
 		}
 		prerequisite = { focus = ENG_tax_the_people  }
 		mutually_exclusive = { focus = ENG_on_our_own  }
+		completion_reward = {
+			ENG = {
+				add_opinion_modifier = {
+					target = KOR
+					modifier = declaration_of_friendship
+				}
+			}	
+		}	
 	}
 	shared_focus = {
 		id = ENG_on_our_own
@@ -227,6 +340,10 @@
 		}
 		prerequisite = { focus = ENG_tax_the_people  }
 		mutually_exclusive = { focus = ENG_diplomatic_relations_with_Korea  }
+		completion_reward = {
+			add_country_leader_trait = dictator
+			add_stability = 0.05
+		}
 	}
 	shared_focus = {
 		id = ENG_diplomatic_relations_with_Russia
@@ -238,6 +355,14 @@
 			FOCUS_FILTER_STABILITY
 		}
 		prerequisite = { focus = ENG_diplomatic_relations_with_Korea  }
+		completion_reward = {
+			ENG = {
+				add_opinion_modifier = {
+					target = SOV
+					modifier = declaration_of_friendship
+				}
+			}	
+		}	
 	}
 	shared_focus = {
 		id = ENG_new_infrastructure_projects
@@ -249,6 +374,9 @@
 			FOCUS_FILTER_STABILITY
 		}
 		prerequisite = { focus = ENG_on_our_own  }
+		completion_reward = {
+			add_ideas = eng_new_infrastructure
+		}
 	}
 	shared_focus = {
 		id = ENG_england_prevails
@@ -260,6 +388,10 @@
 			FOCUS_FILTER_POLITICAL
 		}
 		prerequisite = { focus = ENG_diplomatic_relations_with_Russia  focus = ENG_new_infrastructure_projects  }
+		completion_reward = {
+			add_stability = 0.05
+			add_political_power = 100
+		}
 	}
 	shared_focus = {
 		id = ENG_secure_the_borders
@@ -271,6 +403,12 @@
 			FOCUS_FILTER_FRA_POLITICAL_VIOLENCE
 		}
 		prerequisite = { focus = ENG_scotland_and_wales  }
+		completion_reward = {
+			add_stability = 0.05
+			add_political_power = 100
+			add_war_support = 0.10
+			add_command_power = 25
+		}
 	}
 	shared_focus = {
 		id = ENG_heavy_monitoring
