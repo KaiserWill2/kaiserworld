@@ -908,7 +908,7 @@
 	}
 	shared_focus = {
 		id = ENG_Test_Raids_On_The_Channel_Island
-		icon = test_drills_on_the_island
+		icon = test_raids_on_channel_island
 		x = 26
 		y = 3
 		cost = 3
@@ -954,7 +954,7 @@
 
 	shared_focus = {
 		id = ENG_England_Stands_Ready
-		icon = GFX_ENG_the_totalist_spirit-445
+		icon = england_stands_ready
 		x = 26
 		y = 5
 		cost = 3
@@ -983,17 +983,7 @@
 		
 		}
 	}
-	shared_focus = {
-		id = ENG_Irish_Sea
-		icon = GFX_ENG_the_totalist_spirit-445
-		x = 28
-		y = 4
-		cost = 3
-		search_filters = {
-			FOCUS_FILTER_POLITICAL
-		}
-		prerequisite = { focus = ENG_Protecting_Welsh_Waters  }
-	}
+
 	shared_focus = {
 		id = ENG_The_More_Control
 		icon = GFX_ENG_the_totalist_spirit-445

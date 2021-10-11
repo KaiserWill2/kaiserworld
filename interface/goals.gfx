@@ -341,7 +341,25 @@ spriteTypes = {
 		SpriteType = {
 		name = "protect_welsh_waters"
 		texturefile = "gfx/interface/goals/eng/protect_welsh_waters.dds"			
-		}		
+		}	
+		
+		SpriteType = {
+		name = "test_raids_on_channel_island"
+		texturefile = "gfx/interface/goals/eng/test_raids_on_channel_island.dds"			
+		}	
+
+			SpriteType = {
+		name = "england_stands_ready"
+		texturefile = "gfx/interface/goals/eng/england_stands_ready.dds"			
+		}	
+
+			SpriteType = {
+		name = "irish_sea"
+		texturefile = "gfx/interface/goals/eng/irish_sea.dds"			
+		}	
+
+		
+		
 
 	#### OTHER ####
 	SpriteType = {
