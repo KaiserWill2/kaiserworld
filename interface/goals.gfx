@@ -357,9 +357,79 @@ spriteTypes = {
 		name = "irish_sea"
 		texturefile = "gfx/interface/goals/eng/irish_sea.dds"			
 		}	
+		
+		SpriteType = {
+		name = "the_parade_kw"
+		texturefile = "gfx/interface/goals/eng/the_parade_kw.dds"			
+		}
+		
+		SpriteType = {
+		name = "general_blair_watching_more_control"
+		texturefile = "gfx/interface/goals/eng/general_blair_watching_more_control.dds"			
+		}
+		
+				SpriteType = {
+		name = "death_squad_for_petty_crime"
+		texturefile = "gfx/interface/goals/eng/death_squad_for_petty_crime.dds"			
+		}
+		
+		
+		SpriteType = {
+			name = "selected_work_icon"
+			texturefile = "gfx/interface/goals/eng/selected_work_icon.dds"			
+			}
+			
+		
+		SpriteType = {
+		name = "build_up_icon"
+		texturefile = "gfx/interface/goals/eng/build_up_icon.dds"			
+		}
+		
+
+		SpriteType = {
+		name = "propaganda_through_eductation_icon"
+		texturefile = "gfx/interface/goals/eng/propaganda_through_eductation_icon.dds"			
+		}
+		
+	SpriteType = {
+		name = "work_for_general_blair"
+		texturefile = "gfx/interface/goals/eng/work_for_general_blair.dds"			
+		}
+		
+		SpriteType = {
+		name = "the_elite_stay_icon"
+		texturefile = "gfx/interface/goals/eng/the_elite_stay_icon.dds"			
+		}
+		
+		SpriteType = {
+		name = "the_children_are_the_future_icon"
+		texturefile = "gfx/interface/goals/eng/the_children_are_the_future_icon.dds"			
+		}
+		
+			SpriteType = {
+		name = "report_for_rewards_icon"
+		texturefile = "gfx/interface/goals/eng/report_for_rewards_icon.dds"			
+		}
+		
+		SpriteType = {
+		name = "building_his_palace_icon"
+		texturefile = "gfx/interface/goals/eng/building_his_palace_icon.dds"			
+		}
+		
+				
+		SpriteType = {
+		name = "england_stands_tall_icon"
+		texturefile = "gfx/interface/goals/eng/england_stands_tall_icon.dds"			
+		}
+		
 
 		
-		
+
+
+
+
+
+
 
 	#### OTHER ####
 	SpriteType = {
