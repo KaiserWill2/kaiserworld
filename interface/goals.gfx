@@ -422,14 +422,143 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/eng/england_stands_tall_icon.dds"			
 		}
 		
-
+	SpriteType = {
+		name = "shetland_weapon_testing_icon"
+		texturefile = "gfx/interface/goals/eng/shetland_weapon_testing_icon.dds"			
+		}
 		
+	SpriteType = {
+		name = "the_islands_are_english_icon"
+		texturefile = "gfx/interface/goals/eng/the_islands_are_english_icon.dds"			
+		}
+		
+			SpriteType = {
+		name = "threats_to_scotland_icon"
+		texturefile = "gfx/interface/goals/eng/threats_to_scotland_icon.dds"			
+		}
+		
+		SpriteType = {
+		name = "arm_cliffs_of_dover_icon"
+		texturefile = "gfx/interface/goals/eng/arm_cliffs_of_dover_icon.dds"			
+		}
+		
+	SpriteType = {
+		name = "the_dragon_is_the_target_icon"
+		texturefile = "gfx/interface/goals/eng/the_dragon_is_the_target_icon.dds"			
+		}
+		
+	SpriteType = {
+		name = "the_rockets_are_Ready_icon"
+		texturefile = "gfx/interface/goals/eng/the_rockets_are_Ready_icon.dds"			
+		}
+		
+			SpriteType = {
+		name = "wales_is_the_prize_icon"
+		texturefile = "gfx/interface/goals/eng/wales_is_the_prize_icon.dds"			
+		}
+		
+		SpriteType = {
+		name = "fortify_gloucester_icon"
+		texturefile = "gfx/interface/goals/eng/fortify_gloucester_icon.dds"			
+		}
+		
+				SpriteType = {
+		name = "leader_speaks_in_birmingham_icon"
+		texturefile = "gfx/interface/goals/eng/leader_speaks_in_birmingham_icon.dds"			
+		}
+		
+		SpriteType = {
+		name = "prepare_ports_at_liverpool"
+		texturefile = "gfx/interface/goals/eng/prepare_ports_at_liverpool.dds"			
+		}
+		
+			SpriteType = {
+		name = "enough_talking_icon"
+		texturefile = "gfx/interface/goals/eng/enough_talking_icon.dds"			
+		}
+		
+			SpriteType = {
+		name = "the_talks_are_useless"
+		texturefile = "gfx/interface/goals/eng/the_talks_are_useless.dds"			
+		}
+		
+				SpriteType = {
+		name = "cut_off_the_dragons_head_icon"
+		texturefile = "gfx/interface/goals/eng/cut_off_the_dragons_head_icon.dds"			
+		}
+		
+			SpriteType = {
+		name = "cardiff_pays_icon"
+		texturefile = "gfx/interface/goals/eng/cardiff_pays_icon.dds"			
+		}
+		
+		SpriteType = {
+		name = "removing_the_welsh_tongue"
+		texturefile = "gfx/interface/goals/eng/removing_the_welsh_tongue.dds"			
+		}
+		
+			SpriteType = {
+		name = "trials_of_wales_icon"
+		texturefile = "gfx/interface/goals/eng/trials_of_wales_icon.dds"			
+		}
+		
+		SpriteType = {
+		name = "take_down_the_flag_icon"
+		texturefile = "gfx/interface/goals/eng/take_down_the_flag_icon.dds"			
+		}
+		
+		SpriteType = {
+			name = "swansea_camps_icon"
+			texturefile = "gfx/interface/goals/eng/swansea_camps_icon.dds"			
+			}
+		
+	SpriteType = {
+	name = "recruit_the_welsh_icon"
+	texturefile = "gfx/interface/goals/eng/recruit_the_welsh_icon.dds"			
+	}
+
+		SpriteType = {
+	name = "uniting_the_lands_icon"
+	texturefile = "gfx/interface/goals/eng/uniting_the_lands_icon.dds"			
+	}
 
 
+		SpriteType = {
+	name = "humiliating_defeat_icon"
+	texturefile = "gfx/interface/goals/eng/humiliating_defeat_icon.dds"			
+	}
+		
+	SpriteType = {
+	name = "secure_our_borders_icon"
+	texturefile = "gfx/interface/goals/eng/secure_our_borders_icon.dds"			
+	}
 
+		SpriteType = {
+	name = "wales_will_pay_icon"
+	texturefile = "gfx/interface/goals/eng/wales_will_pay_icon.dds"			
+	}
+		
+			SpriteType = {
+	name = "wrath_of_blair_icon"
+	texturefile = "gfx/interface/goals/eng/wrath_of_blair_icon.dds"			
+	}
+		
+				SpriteType = {
+	name = "punish_the_officers_icon"
+	texturefile = "gfx/interface/goals/eng/punish_the_officers_icon.dds"			
+	}
+	
+					SpriteType = {
+	name = "killing_the_ones_who_run_icon"
+	texturefile = "gfx/interface/goals/eng/killing_the_ones_who_run_icon.dds"			
+	}
 
+						SpriteType = {
+	name = "terror_icon"
+	texturefile = "gfx/interface/goals/eng/terror_icon.dds"			
+	}
 
-
+	
 
 	#### OTHER ####
 	SpriteType = {

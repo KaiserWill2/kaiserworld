@@ -1121,7 +1121,7 @@
 	}
 	shared_focus = {
 		id = ENG_Shetland_Weapon_Testing
-		icon = GFX_ENG_the_totalist_spirit-445
+		icon = shetland_weapon_testing_icon
 		x = 35
 		y = 1
 		cost = 3
@@ -1132,7 +1132,7 @@
 	}
 	shared_focus = {
 		id = ENG_The_Islands_Are_English
-		icon = GFX_ENG_the_totalist_spirit-445
+		icon = the_islands_are_english_icon
 		x = 35
 		y = 2
 		cost = 3
@@ -1143,7 +1143,7 @@
 	}
 	shared_focus = {
 		id = ENG_Threats_To_Scotland
-		icon = GFX_ENG_the_totalist_spirit-445
+		icon = threats_to_scotland_icon
 		x = 32
 		y = 3
 		cost = 3
@@ -1154,7 +1154,7 @@
 	}
 	shared_focus = {
 		id = ENG_Arms_The_Cliffs_Of_Dover
-		icon = GFX_ENG_the_totalist_spirit-445
+		icon = arm_cliffs_of_dover_icon
 		x = 35
 		y = 3
 		cost = 3
@@ -1165,7 +1165,7 @@
 	}
 	shared_focus = {
 		id = ENG_Dragon_Is_The_Target
-		icon = GFX_ENG_the_totalist_spirit-445
+		icon = the_dragon_is_the_target_icon
 		x = 38
 		y = 3
 		cost = 3
@@ -1176,7 +1176,7 @@
 	}
 	shared_focus = {
 		id = ENG_The_Rockets_Are_Ready
-		icon = GFX_ENG_the_totalist_spirit-445
+		icon = the_rockets_are_Ready_icon
 		x = 35
 		y = 4
 		cost = 3
@@ -1189,7 +1189,7 @@
 	}
 	shared_focus = {
 		id = Wales_Is_The_Prize
-		icon = GFX_ENG_the_totalist_spirit-445
+		icon = wales_is_the_prize_icon
 		x = 35
 		y = 5
 		cost = 3
@@ -1200,7 +1200,7 @@
 	}
 	shared_focus = {
 		id = Fortify_Gloucester
-		icon = GFX_ENG_the_totalist_spirit-445
+		icon = fortify_gloucester_icon
 		x = 33
 		y = 6
 		cost = 3
@@ -1211,7 +1211,7 @@
 	}
 	shared_focus = {
 		id = The_Leader_Speaks_In_Birmingham
-		icon = GFX_ENG_the_totalist_spirit-445
+		icon = leader_speaks_in_birmingham_icon
 		x = 35
 		y = 6
 		cost = 3
@@ -1222,7 +1222,7 @@
 	}
 	shared_focus = {
 		id = ENG_Prepare_Ports_At_Liverpool
-		icon = GFX_ENG_the_totalist_spirit-445
+		icon = prepare_ports_at_liverpool
 		x = 37
 		y = 6
 		cost = 3
@@ -1233,7 +1233,7 @@
 	}
 	shared_focus = {
 		id = ENG_Enough_Talking
-		icon = GFX_ENG_the_totalist_spirit-445
+		icon = enough_talking_icon
 		x = 36
 		y = 7
 		cost = 3
@@ -1245,7 +1245,7 @@
 	}
 	shared_focus = {
 		id = ENG_The_Talks_Are_Usless
-		icon = GFX_ENG_the_totalist_spirit-445
+		icon = the_talks_are_useless
 		x = 34
 		y = 7
 		cost = 3
@@ -1257,7 +1257,7 @@
 	}
 	shared_focus = {
 		id = ENG_The_Dragons_Head
-		icon = GFX_ENG_the_totalist_spirit-445
+		icon = cut_off_the_dragons_head_icon
 		x = 35
 		y = 8
 		cost = 3
@@ -1286,7 +1286,7 @@
 	}
 	shared_focus = {
 		id = ENG_Cardiff_Pays
-		icon = GFX_ENG_the_totalist_spirit-445
+		icon = cardiff_pays_icon
 		x = 30
 		y = 10
 		cost = 3
@@ -1298,7 +1298,7 @@
 	}
 	shared_focus = {
 		id = ENG_Remove_The_Welsh_Tongue
-		icon = GFX_ENG_the_totalist_spirit-445
+		icon = removing_the_welsh_tongue
 		x = 30
 		y = 11
 		cost = 3
@@ -1309,7 +1309,7 @@
 
 	}	shared_focus = {
 		id = ENG_Trials_Of_Wales
-		icon = GFX_ENG_the_totalist_spirit-445
+		icon = trials_of_wales_icon
 		x = 31
 		y = 12
 		cost = 3
@@ -1321,7 +1321,7 @@
 	}
 	shared_focus = {
 		id = ENG_Bring_Down_The_Flag
-		icon = GFX_ENG_the_totalist_spirit-445
+		icon = take_down_the_flag_icon
 		x = 34
 		y = 10
 		cost = 3
@@ -1333,7 +1333,7 @@
 	}
 	shared_focus = {
 		id = ENG_Swansea_Camps
-		icon = GFX_ENG_the_totalist_spirit-445
+		icon = swansea_camps_icon
 		x = 34
 		y = 11
 		cost = 3
@@ -1345,7 +1345,7 @@
 	}
 	shared_focus = {
 		id = ENG_Recruit_The_Welsh
-		icon = GFX_ENG_the_totalist_spirit-445
+		icon = recruit_the_welsh_icon
 		x = 33
 		y = 12
 		cost = 3
@@ -1357,7 +1357,7 @@
 	}
 	shared_focus = {
 		id = ENG_Unite_The_Lands
-		icon = GFX_ENG_the_totalist_spirit-445
+		icon = uniting_the_lands_icon
 		x = 32
 		y = 13
 		cost = 3
@@ -1370,7 +1370,7 @@
 	}
 	shared_focus = {
 		id = ENG_Humiliating_Defeat
-		icon = GFX_ENG_the_totalist_spirit-445
+		icon = humiliating_defeat_icon
 		x = 38
 		y = 9
 		cost = 3
@@ -1386,7 +1386,7 @@
 	}
 	shared_focus = {
 		id = ENG_Secure_Our_Borders
-		icon = GFX_ENG_the_totalist_spirit-445
+		icon = secure_our_borders_icon
 		x = 40
 		y = 10
 		cost = 3
@@ -1398,7 +1398,7 @@
 	}
 	shared_focus = {
 		id = ENG_Wales_Will_Pay
-		icon = GFX_ENG_the_totalist_spirit-445
+		icon = wales_will_pay_icon
 		x = 39
 		y = 11
 		cost = 3
@@ -1410,7 +1410,7 @@
 	}
 	shared_focus = {
 		id = ENG_The_Wrath_Of_Blair
-		icon = GFX_ENG_the_totalist_spirit-445
+		icon = wrath_of_blair_icon
 		x = 38
 		y = 12
 		cost = 3
@@ -1422,7 +1422,7 @@
 	}
 	shared_focus = {
 		id = ENG_Punish_The_Officers
-		icon = GFX_ENG_the_totalist_spirit-445
+		icon = punish_the_officers_icon
 		x = 36
 		y = 10
 		cost = 3
@@ -1434,7 +1434,7 @@
 	}
 	shared_focus = {
 		id = ENG_Kill_The_Ones_Who_Ran
-		icon = GFX_ENG_the_totalist_spirit-445
+		icon = killing_the_ones_who_run_icon
 		x = 37
 		y = 11
 		cost = 3
@@ -1446,7 +1446,7 @@
 	}
 	shared_focus = {
 		id = ENG_Terror
-		icon = GFX_ENG_the_totalist_spirit-445
+		icon = terror_icon
 		x = 38
 		y = 13
 		cost = 3
