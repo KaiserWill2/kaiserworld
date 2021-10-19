@@ -1,0 +1,94 @@
+﻿
+# Neutral return states
+news_event = {
+	id = tmithc_america_news.1
+	title = tmithc_america_news.1.t
+	desc = tmithc_america_news.1.desc
+	picture = GFX_news_event_generic_sign_treaty1
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = tmithc_america_news.1.a
+		trigger = {
+			original_tag = USA
+		}
+	}
+	option = {
+		name = tmithc_america_news.1.b
+		trigger = { 
+			original_tag = AFG
+		}
+	}
+	option = {
+		name = tmithc_america_news.1.d
+		trigger = { 
+			NOT = { 
+				original_tag = USA
+				original_tag = AFG 
+			}
+		}
+	}
+}
+
+#Independence granted
+news_event = {
+	id = tmithc_america_news.2
+	title = tmithc_america_news.2.t
+	desc = tmithc_america_news.2.desc
+	picture = GFX_news_event_generic_sign_treaty1
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = tmithc_america_news.2.a
+		trigger = { 
+			NOT = { 
+				original_tag = USA
+				original_tag = GER 
+			}
+		}
+	}
+}
+
+#Independence rejected
+news_event = {
+	id = tmithc_america_news.3
+	title = tmithc_america_news.3.t
+	desc = tmithc_america_news.3.desc
+	picture = GFX_news_event_generic_sign_treaty1
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = tmithc_america_news.3.a
+		trigger = { 
+			NOT = { 
+				original_tag = USA
+				original_tag = GER 
+			}
+		}
+	}
+}
+
+#Racial Plans
+news_event = {
+	id = tmithc_america_news.4
+	title = tmithc_america_news.4.t
+	desc = tmithc_america_news.4.desc
+	picture = GFX_news_event_fascist_gathering
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = tmithc_america_news.4.a
+	}
+}

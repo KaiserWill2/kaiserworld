@@ -1,0 +1,89 @@
+add_namespace = neutral
+
+country_event = {
+	id = neutral.1
+	title = neutral.1.t
+	desc = neutral.1.d
+	picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = neutral.1.a	#sounds good
+		AFG = {
+			country_event = { days = 1 id = neutral.2 }
+			add_opinion_modifier = {
+				target = ROOT
+				modifier = large_increase
+			}
+			add_opinion_modifier = {
+				target = ROOT
+				modifier = large_increase
+			}
+		}
+		# REVISIT Balance research bonus
+		add_tech_bonus = {
+			bonus = 0.5
+			ahead_reduction = 1
+			technology = electronics
+		}
+		add_tech_bonus = {
+			bonus = 0.5
+			uses = 2
+			category = electronics
+		}
+	}
+	
+	option = {
+		name = neutral.1.b	#no way 
+		ai_chance = { factor = 0 }
+		add_political_power = -10
+		add_opinion_modifier = { target = AFG modifier = large_decrease }# no pact 
+		AFG = {
+			country_event = { days = 1 id = neutral.3 }
+		}
+	}
+}
+
+# Soviets Accept German-Soviet Treaty
+country_event = {
+	id = neutral.2
+	title = neutral.2.t
+	desc = neutral.2.d
+	picture = GFX_report_event_physics_lab_02
+
+	is_triggered_only = yes
+	
+	option = {
+		name = neutral.2.a	#bah
+		# REVISIT Balance research bonus
+		add_tech_bonus = {
+			bonus = 0.5
+			ahead_reduction = 1
+			technology = electronics
+		}
+		add_tech_bonus = {
+			bonus = 0.5
+			uses = 2
+			category = electronics
+		}
+		SOV = {
+			add_opinion_modifier = { target = AFG modifier = large_increase }
+		}
+	}
+}
+
+# Soviets Reject German-Soviet Treaty
+country_event = {
+	id = neutral.3
+	title = neutral.3.t
+	desc = neutral.3.d
+	picture = GFX_report_event_physics_lab_02
+
+	is_triggered_only = yes
+	
+	option = {
+		name = neutral.3.a
+		#add_opinion_modifier = { target = SOV modifier = large_decrease }
+	}
+}

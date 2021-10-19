@@ -1,0 +1,207 @@
+focus_tree = {
+	id = 5th_nov_coup
+	country = {
+		factor = 0
+		modifier = {
+			add = 20
+			tag = ENG
+		}
+	}
+	default = no
+	continuous_focus_position = { x = 50 y = 1550 }
+	focus = {
+		id = ENG_The_November_5th_Coup
+		icon = tear_treaty
+		cost = 5
+		x = 10
+		y = 0
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = ENG_Marital_Law
+		icon = tear_treaty
+		cost = 5
+		x = 10
+		y = 1
+		prerequisite = { focus = ENG_The_November_5th_Coup  }
+		completion_reward = {
+
+		}
+
+	}
+
+	focus = {
+		id = ENG_Disband_The_Peoples_Congress
+		icon = tear_treaty
+		cost = 5
+		x = 10
+		y = 2
+		prerequisite = { focus = ENG_Marital_Law  }
+		completion_reward = {
+
+		}
+
+	}
+
+	focus = {
+		id = ENG_Ending_School_Early
+		icon = tear_treaty
+		cost = 5
+		x = 7
+		y = 3
+		prerequisite = { focus = ENG_Disband_The_Peoples_Congress  }
+		completion_reward = {
+
+		}
+
+	}
+
+
+	focus = {
+		id = ENG_Expand_the_Camps
+		icon = tear_treaty
+		cost = 5
+		x = 8
+		y = 4
+		prerequisite = { focus = ENG_Ending_School_Early  }
+		completion_reward = {
+
+		}
+
+	}
+
+
+	focus = {
+		id = ENG_Securing_the_cities
+		icon = tear_treaty
+		cost = 5
+		x = 10
+		y = 3
+		prerequisite = { focus = ENG_Disband_The_Peoples_Congress  }
+		completion_reward = {
+
+		}
+
+	}
+ 
+
+	focus = {
+		id = ENG_Imprisoning_Politicians
+		icon = tear_treaty
+		cost = 5
+		x = 10
+		y = 4
+		prerequisite = { focus = ENG_Securing_the_cities  }
+		completion_reward = {
+
+		}
+
+	}
+ 
+	focus = {
+		id = ENG_Shoot_To_kill2
+		icon = tear_treaty
+		cost = 5
+		x = 13
+		y = 3
+		prerequisite = { focus = ENG_Disband_The_Peoples_Congress  }
+		completion_reward = {
+
+		}
+
+	}
+
+
+	focus = {
+		id = ENG_Silence_the_state_media
+		icon = tear_treaty
+		cost = 5
+		x = 12
+		y = 4
+		prerequisite = { focus = ENG_Shoot_To_kill2  }
+		completion_reward = {
+
+		}
+
+	}
+
+
+
+
+	focus = {
+		id = ENG_Prepare_for_Dissolution
+		icon = tear_treaty
+		cost = 5
+		x = 10
+		y = 5
+		prerequisite = { focus = ENG_Expand_the_Camps  }
+		prerequisite = { focus = ENG_Imprisoning_Politicians  }
+		prerequisite = { focus = ENG_Silence_the_state_media  }
+		completion_reward = {
+
+		}
+
+	}
+
+
+	focus = {
+		id = ENG_Cement_Our_Positions
+		icon = tear_treaty
+		cost = 5
+		x = 10
+		y = 6
+		prerequisite = { focus = ENG_Prepare_for_Dissolution  }
+
+	}
+
+	
+	focus = {
+		id = ENG_They_Will_come
+		icon = tear_treaty
+		cost = 5
+		x = 10
+		y = 7
+		prerequisite = { focus = ENG_Cement_Our_Positions  }
+
+	}
+
+	focus = {
+		id = ENG_And_We_Will_be_Ready
+		icon = tear_treaty
+		cost = 5
+		x = 10
+		y = 8
+		prerequisite = { focus = ENG_They_Will_come  }
+
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}	

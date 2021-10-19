@@ -558,8 +558,154 @@ spriteTypes = {
 	texturefile = "gfx/interface/goals/eng/terror_icon.dds"			
 	}
 
+	SpriteType = {
+	name = "focus_peoples_government"
+	texturefile = "gfx/interface/goals/eng/focus_peoples_government.dds"			
+	}
+
+SpriteType = {
+	name = "grey_tuesday_icon"
+	texturefile = "gfx/interface/goals/eng/grey_tuesday_icon.dds"			
+	}
+
+SpriteType = {
+	name = "day_of_mourning"
+	texturefile = "gfx/interface/goals/eng/day_of_mourning.dds"			
+	}
+
+	SpriteType = {
+	name = "lowering_the_flag_icon"
+	texturefile = "gfx/interface/goals/eng/lowering_the_flag_icon.dds"			
+	}
+
+		SpriteType = {
+	name = "a_funeral_fit_for_a_king"
+	texturefile = "gfx/interface/goals/eng/a_funeral_fit_for_a_king.dds"			
+	}
+
+			SpriteType = {
+	name = "choosing_a_replacement_icon"
+	texturefile = "gfx/interface/goals/eng/choosing_a_replacement_icon.dds"			
+	}
+	
+	SpriteType = {
+	name = "johnson_the_reformist_icon"
+	texturefile = "gfx/interface/goals/eng/johnson_the_reformist_icon.dds"			
+	}
+	
+	SpriteType = {
+	name = "hudson_the_successor_icon"
+	texturefile = "gfx/interface/goals/eng/hudson_the_successor_icon.dds"			
+	}
+	
+	SpriteType = {
+	name = "mcdonnell_the_workers_friend_icon"
+	texturefile = "gfx/interface/goals/eng/mcdonnell_the_workers_friend_icon.dds"			
+	}
+	
+		SpriteType = {
+	name = "kennedy_the_iron_right_fist_icon"
+	texturefile = "gfx/interface/goals/eng/kennedy_the_iron_right_fist_icon.dds"			
+	}
+	
+		SpriteType = {
+	name = "shutting_down_the_camps_icon"
+	texturefile = "gfx/interface/goals/eng/shutting_down_the_camps_icon.dds"			
+	}
+	
+	SpriteType = {
+		name = "an_equal_nation_icon"
+		texturefile = "gfx/interface/goals/eng/an_equal_nation_icon.dds"			
+		}
+		
+	SpriteType = {
+	name = "open_the_markets_icon"
+	texturefile = "gfx/interface/goals/eng/open_the_markets_icon.dds"			
+	}
+	
+		SpriteType = {
+	name = "open_ourselves_to_new_ideas_icon"
+	texturefile = "gfx/interface/goals/eng/open_ourselves_to_new_ideas_icon.dds"			
+	}
+	
+			SpriteType = {
+	name = "reform_the_military_icon"
+	texturefile = "gfx/interface/goals/eng/reform_the_military_icon.dds"			
+	}
+	
+		
+			SpriteType = {
+	name = "end_national_service_icon"
+	texturefile = "gfx/interface/goals/eng/end_national_service_icon.dds"			
+	}
+	
+	SpriteType = {
+	name = "brittania_reformed_icon"
+	texturefile = "gfx/interface/goals/eng/brittania_reformed_icon.dds"			
+	}
+	
+		SpriteType = {
+	name = "britannia_shrugged_icon"
+	texturefile = "gfx/interface/goals/eng/britannia_shrugged_icon.dds"			
+	}
+	
+	SpriteType = {
+		name = "Mcdonnell_gov_icon"
+		texturefile = "gfx/interface/goals/eng/Mcdonnell_gov_icon.dds"			
+		}
+		
+		SpriteType = {
+		name = "kennedy_gov_icon"
+		texturefile = "gfx/interface/goals/eng/kennedy_gov_icon.dds"			
+		}
+		
+	SpriteType = {
+	name = "restore_order_icon"
+	texturefile = "gfx/interface/goals/eng/restore_order_icon.dds"			
+	}		
+		
+		SpriteType = {
+	name = "purging_the_disloyal_icon"
+	texturefile = "gfx/interface/goals/eng/purging_the_disloyal_icon.dds"			
+	}		
+		
+			SpriteType = {
+	name = "keep_that_status_quo_icon"
+	texturefile = "gfx/interface/goals/eng/keep_that_status_quo_icon.dds"			
+	}	
+
+
+	SpriteType = {
+	name = "modernise_totalism_icon"
+	texturefile = "gfx/interface/goals/eng/modernise_totalism_icon.dds"			
+	}	
+
+	SpriteType = {
+	name = "strengthen_relations_with_other_countries"
+	texturefile = "gfx/interface/goals/eng/strengthen_relations_with_other_countries.dds"			
+	}	
+
+		SpriteType = {
+	name = "ensure_congress_loyalty_icon"
+	texturefile = "gfx/interface/goals/eng/ensure_congress_loyalty_icon.dds"			
+	}	
+
+		SpriteType = {
+	name = "shuffling_generals_icon"
+	texturefile = "gfx/interface/goals/eng/shuffling_generals_icon.dds"			
+	}	
+
+
 	
 
+
+
+
+
+
+
+
+	
 	#### OTHER ####
 	SpriteType = {
 	name = "red_gold_army"

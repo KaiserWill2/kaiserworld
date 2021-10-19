@@ -1460,7 +1460,7 @@
 
 	shared_focus = {
 		id = ENG_Grey_Tuesday
-		icon = GFX_ENG_the_totalist_spirit-445
+		icon = grey_tuesday_icon
 		x = 24
 		y = 0
 		cost = 3
@@ -1473,7 +1473,7 @@
 
 	shared_focus = {
 		id = ENG_The_Day_Of_Mourning
-		icon = GFX_ENG_the_totalist_spirit-445
+		icon = day_of_mourning
 		x = 24
 		y = 1
 		cost = 3
@@ -1486,7 +1486,7 @@
 
 	shared_focus = {
 		id = ENG_Lowering_The_Flag
-		icon = GFX_ENG_the_totalist_spirit-445
+		icon = lowering_the_flag_icon
 		x = 22
 		y = 2
 		cost = 3
@@ -1498,7 +1498,7 @@
 	}
 	shared_focus = {
 		id = ENG_A_Funeral_Fit_For_A_King
-		icon = GFX_ENG_the_totalist_spirit-445
+		icon = a_funeral_fit_for_a_king
 		x = 26
 		y = 2
 		cost = 3
@@ -1511,7 +1511,7 @@
 
 	shared_focus = {
 		id = ENG_Choosing_The_Replacement
-		icon = GFX_ENG_the_totalist_spirit-445
+		icon = choosing_a_replacement_icon
 		x = 24
 		y = 3
 		cost = 3
@@ -1525,19 +1525,27 @@
 
 	shared_focus = {
 		id = ENG_Johnson_The_Reformist
-		icon = GFX_ENG_the_totalist_spirit-445
+		icon = johnson_the_reformist_icon
 		x = 13
 		y = 4
 		cost = 3
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
+		mutually_exclusive = {
+			focus = ENG_Hudson_The_Successor
+		}
+		mutually_exclusive = {
+			focus = ENG_McDonnell_The_Workers_Friend
+		}	mutually_exclusive = {
+			focus = ENG_Kennedy_The_Irong_Right_Hand
+		}
 		prerequisite = { focus =  ENG_Choosing_The_Replacement  }
 
 	}
 	shared_focus = {
 		id = ENG_The_Peoples_Government
-		icon = GFX_ENG_the_totalist_spirit-445
+		icon = focus_peoples_government
 		x = 13
 		y = 5
 		cost = 3
@@ -1549,7 +1557,7 @@
 	}
 	shared_focus = {
 		id = ENG_Shutting_Down_The_Camps
-		icon = GFX_ENG_the_totalist_spirit-445
+		icon = shutting_down_the_camps_icon
 		x = 13
 		y = 6
 		cost = 3
@@ -1561,7 +1569,7 @@
 	}
 	shared_focus = {
 		id = ENG_A_New_Equal_Nation
-		icon = GFX_ENG_the_totalist_spirit-445
+		icon = an_equal_nation_icon
 		x = 13
 		y = 7
 		cost = 3
@@ -1573,7 +1581,7 @@
 	}
 	shared_focus = {
 		id = ENG_Opening_The_Markets
-		icon = GFX_ENG_the_totalist_spirit-445
+		icon = open_the_markets_icon
 		x = 10
 		y = 6
 		cost = 3
@@ -1585,7 +1593,7 @@
 	}
 	shared_focus = {
 		id = ENG_Open_Ourselves_To_New_Ideas
-		icon = GFX_ENG_the_totalist_spirit-445
+		icon = open_ourselves_to_new_ideas_icon
 		x = 11
 		y = 7
 		cost = 3
@@ -1597,7 +1605,7 @@
 	}
 	shared_focus = {
 		id = ENG_Reform_The_Military
-		icon = GFX_ENG_the_totalist_spirit-445
+		icon = reform_the_military_icon
 		x = 16
 		y = 6
 		cost = 3
@@ -1609,7 +1617,7 @@
 	}
 	shared_focus = {
 		id = ENG_End_National_Service
-		icon = GFX_ENG_the_totalist_spirit-445
+		icon = end_national_service_icon
 		x = 15
 		y = 7
 		cost = 3
@@ -1621,7 +1629,7 @@
 	}
 	shared_focus = {
 		id = ENG_Brittania_Reformed
-		icon = GFX_ENG_the_totalist_spirit-445
+		icon = brittania_reformed_icon
 		x = 13
 		y = 8
 		cost = 3
@@ -1634,10 +1642,18 @@
 	}
 	shared_focus = {
 		id = ENG_Hudson_The_Successor
-		icon = GFX_ENG_the_totalist_spirit-445
+		icon = hudson_the_successor_icon
 		x = 20
 		y = 4
 		cost = 3
+		mutually_exclusive = {
+			focus = ENG_Johnson_The_Reformist
+		}
+		mutually_exclusive = {
+			focus = ENG_McDonnell_The_Workers_Friend
+		}	mutually_exclusive = {
+			focus = ENG_Kennedy_The_Irong_Right_Hand
+		}
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
@@ -1646,7 +1662,7 @@
 	}
 	shared_focus = {
 		id = ENG_Restore_Order
-		icon = GFX_ENG_the_totalist_spirit-445
+		icon = restore_order_icon
 		x = 20
 		y = 5
 		cost = 3
@@ -1658,7 +1674,7 @@
 	}
 	shared_focus = {
 		id = ENG_Purging_The_Disloyal
-		icon = GFX_ENG_the_totalist_spirit-445
+		icon = purging_the_disloyal_icon
 		x = 18
 		y = 6
 		cost = 3
@@ -1670,7 +1686,7 @@
 	}
 	shared_focus = {
 		id = ENG_Enforce_To_The_Status_Quo
-		icon = GFX_ENG_the_totalist_spirit-445
+		icon = keep_that_status_quo_icon
 		x = 18
 		y = 7
 		cost = 3
@@ -1682,7 +1698,7 @@
 	}
 	shared_focus = {
 		id = ENG_Modernise_Totalism
-		icon = GFX_ENG_the_totalist_spirit-445
+		icon = modernise_totalism_icon
 		x = 20
 		y = 6
 		cost = 3
@@ -1695,7 +1711,7 @@
 
 	shared_focus = {
 		id = ENG_Strengthen_Relations_With_Other_Totalists
-		icon = GFX_ENG_the_totalist_spirit-445
+		icon = strengthen_relations_with_other_countries
 		x = 20
 		y = 7
 		cost = 3
@@ -1708,7 +1724,7 @@
 
 	shared_focus = {
 		id = ENG_Ensure_Congress_Loyalty
-		icon = GFX_ENG_the_totalist_spirit-445
+		icon = ensure_congress_loyalty_icon
 		x = 22
 		y = 6
 		cost = 3
@@ -1720,7 +1736,7 @@
 	}
 	shared_focus = {
 		id = ENG_Shuffling_Generals
-		icon = GFX_ENG_the_totalist_spirit-445
+		icon = shuffling_generals_icon
 		x = 22
 		y = 7
 		cost = 3
@@ -1732,7 +1748,7 @@
 	}
 	shared_focus = {
 		id = ENG_Britannia_Shrugged
-		icon = GFX_ENG_the_totalist_spirit-445
+		icon = britannia_shrugged_icon
 		x = 20
 		y = 8
 		cost = 3
@@ -1746,10 +1762,19 @@
 	}
 	shared_focus = {
 		id = ENG_McDonnell_The_Workers_Friend
-		icon = GFX_ENG_the_totalist_spirit-445
+		icon = mcdonnell_the_workers_friend_icon
 		x = 27
 		y = 4
 		cost = 3
+		mutually_exclusive = {
+			focus = ENG_Hudson_The_Successor
+		}
+		mutually_exclusive = {
+			focus = ENG_Johnson_The_Reformist
+		}	
+		mutually_exclusive = {
+			focus = ENG_Kennedy_The_Irong_Right_Hand
+		}
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
@@ -1844,7 +1869,7 @@
 	}
 	shared_focus = {
 		id = ENG_McDonnell_Government
-		icon = GFX_ENG_the_totalist_spirit-445
+		icon = Mcdonnell_gov_icon
 		x = 27
 		y = 8
 		cost = 3
@@ -1857,10 +1882,18 @@
 	}
 	shared_focus = {
 		id = ENG_Kennedy_The_Irong_Right_Hand
-		icon = GFX_ENG_the_totalist_spirit-445
+		icon = kennedy_the_iron_right_fist_icon
 		x = 33
 		y = 4
 		cost = 3
+		mutually_exclusive = {
+			focus = ENG_Hudson_The_Successor
+		}
+		mutually_exclusive = {
+			focus = ENG_McDonnell_The_Workers_Friend
+		}	mutually_exclusive = {
+			focus = ENG_Johnson_The_Reformist
+		}
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
@@ -1956,7 +1989,7 @@
 	}
 	shared_focus = {
 		id = ENG_Kennedys_Government
-		icon = GFX_ENG_the_totalist_spirit-445
+		icon = kennedy_gov_icon
 		x = 33
 		y = 8
 		cost = 3

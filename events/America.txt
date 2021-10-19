@@ -1,0 +1,178 @@
+add_namespace = tmithc_america
+
+#States for Guarantee
+
+country_event = {
+	id = tmithc_america.1
+	title = tmithc_america.1.t
+	desc = tmithc_america.1.d
+	picture = GFX_report_event_generic_sign_treaty3
+
+	is_triggered_only = yes
+
+	#accept
+	option = {
+		name = tmithc_america.1.a
+		#what option does
+		ai_chance = {
+			factor = 100
+		}
+		effect_tooltip = {
+			USA = { transfer_state = 387 }
+			USA = { transfer_state = 381 }
+			USA = { transfer_state = 382 }
+			USA = { transfer_state = 376 }
+		}
+		USA = {
+			country_event = { id = tmithc_america.2 days = 1 }
+		}
+	}
+
+	#decline
+	option = {
+		name = tmithc_america.1.b
+		#what option does
+		ai_chance = {
+			#factor = 50
+		}
+		USA = {
+			country_event = { id = tmithc_america.3 days = 1 }
+		}
+	}
+}
+
+
+# Acceptance event for America
+country_event = {
+	id = tmithc_america.2
+	title = tmithc_america.2.t
+	desc = tmithc_america.2.d
+	picture = GFX_report_event_generic_sign_treaty3
+
+	is_triggered_only = yes
+
+	# Great
+	option = {
+		name = tmithc_america.2.a
+		transfer_state = 387
+		transfer_state = 381
+		transfer_state = 382
+		transfer_state = 376
+		AFG = { 
+			add_opinion_modifier = { target = USA modifier = medium_increase }
+		}
+		hidden_effect = {
+			news_event = { id = tmithc_america_news.1 hours = 6 }
+		}
+	}
+}
+
+# Rejection event for America
+country_event = {
+	id = tmithc_america.3
+	title = tmithc_america.3.t
+	desc = tmithc_america.3.d
+	picture = GFX_report_event_poland_rejects
+
+	is_triggered_only = yes
+
+	# We will never let go of our claims!
+	option = {
+		name = tmithc_america.3.a
+		create_wargoal = {
+		type = take_state_focus
+		target = AFG
+		generator = { 387 381 382 376 }
+		}
+	}
+
+	# Give it up
+	option = {
+		name = tmithc_america.3.b
+	}
+}
+
+country_event = {
+	id = tmithc_america.4
+	title = tmithc_america.4.t
+	desc = tmithc_america.4.d
+	picture = GFX_report_event_german_reichstag_gathering
+
+	is_triggered_only = yes
+
+	#accept
+	option = {
+		name = tmithc_america.4.a
+		#what option does
+		ai_chance = {
+			factor = 100
+		}
+		USA = {
+			country_event = { id = tmithc_america.5 days = 1 }
+		}
+		hidden_effect = {
+			news_event = { id = tmithc_america_news.2 hours = 6 }
+		}
+	}
+
+	#decline
+	option = {
+		name = tmithc_america.4.b
+		#what option does
+		GER = { 
+			add_opinion_modifier = { target = USA modifier = large_decrease }
+		}
+		ai_chance = {
+			#factor = 0
+		}
+		USA = {
+			country_event = { id = tmithc_america.6 days = 1 }
+		}
+		hidden_effect = {
+			news_event = { id = tmithc_america_news.3 hours = 6 }
+		}
+	}
+}
+
+# Independence granted
+country_event = {
+	id = tmithc_america.5
+	title = tmithc_america.5.t
+	desc = tmithc_america.5.d
+	picture = GFX_report_event_german_reichstag_gathering
+
+	is_triggered_only = yes
+
+	# Great
+	option = {
+		name = tmithc_america.5.a
+        GER = {
+        	end_puppet = USA
+        }
+		USA = { 
+		add_opinion_modifier = { target = GER modifier = large_increase }
+		}
+	}
+}
+
+# Rejection of Independence
+country_event = {
+	id = tmithc_america.6
+	title = tmithc_america.6.t
+	desc = tmithc_america.6.d
+	picture =  GFX_report_event_german_reichstag_gathering
+
+	is_triggered_only = yes
+
+	# Give it up
+	option = {
+		name = tmithc_america.6.a
+		USA = { 
+			add_opinion_modifier = { target = GER modifier = large_decrease }
+		}
+		hidden_effect = {
+			news_event = { id = tmithc_america_news.3 hours = 6 }
+		}
+	}
+}
+

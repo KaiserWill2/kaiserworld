@@ -1,0 +1,221 @@
+focus_tree = {
+	id = Restorationist_front_Tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 20
+			tag = ENG
+		}
+	}
+	default = no
+	continuous_focus_position = { x = 50 y = 1550 }
+	focus = {
+		id = ENG_Down_With_The_Syndicalists
+		icon = tear_treaty
+		cost = 5
+		x = 10
+		y = 0
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = ENG_Reaching_Out_To_Canada
+		icon = tear_treaty
+		cost = 5
+		x = 10
+		y = 1
+		prerequisite = { focus = ENG_Down_With_The_Syndicalists  }
+		completion_reward = {
+
+		}
+
+	}
+
+	focus = {
+		id = ENG_Liberating_Northern_Camps
+		icon = tear_treaty
+		cost = 5
+		x = 7
+		y = 2
+		prerequisite = { focus = ENG_Reaching_Out_To_Canada  }
+		completion_reward = {
+
+		}
+
+	}
+
+	focus = {
+		id = ENG_Invite_Outside_Media
+		icon = tear_treaty
+		cost = 5
+		x = 7
+		y = 3
+		prerequisite = { focus = ENG_Liberating_Northern_Camps  }
+		completion_reward = {
+
+		}
+
+	}
+
+	focus = {
+		id = ENG_Converting_Civilian_Vehicles
+		icon = tear_treaty
+		cost = 5
+		x = 9
+		y = 2
+		prerequisite = { focus = ENG_Reaching_Out_To_Canada  }
+		completion_reward = {
+
+		}
+
+	}
+
+
+	focus = {
+		id = ENG_Taking_The_Enemy_Alive
+		icon = tear_treaty
+		cost = 5
+		x = 9
+		y = 3
+		prerequisite = { focus = ENG_Converting_Civilian_Vehicles  }
+		completion_reward = {
+
+		}
+
+	}
+
+	focus = {
+		id = ENG_Garnering_International_Support
+		icon = tear_treaty
+		cost = 5
+		x = 8
+		y = 4
+		prerequisite = { focus = ENG_Invite_Outside_Media  }
+		prerequisite = { focus = ENG_Taking_The_Enemy_Alive  }
+		completion_reward = {
+
+		}
+
+	}
+
+	focus = {
+		id = ENG_Moving_Hospitals_And_Schools_Underground
+		icon = tear_treaty
+		cost = 5
+		x = 8
+		y = 5
+		prerequisite = { focus = ENG_Garnering_International_Support  }
+		completion_reward = {
+
+		}
+
+	}
+
+	focus = {
+		id = ENG_Liberating_Older_Weapons
+		icon = tear_treaty
+		cost = 5
+		x = 8
+		y = 6
+		prerequisite = { focus = ENG_Moving_Hospitals_And_Schools_Underground  }
+		completion_reward = {
+
+		}
+
+	}
+
+	focus = {
+		id = ENG_A_Meeting_With_Johnson
+		icon = tear_treaty
+		cost = 5
+		x = 8
+		y = 7
+		prerequisite = { focus = ENG_Liberating_Older_Weapons  }
+		completion_reward = {
+
+		}
+
+	}
+
+
+
+	focus = {
+		id = ENG_Thisll_be_Over_By_Christmas
+		icon = tear_treaty
+		cost = 5
+		x = 11
+		y = 2
+		prerequisite = { focus = ENG_Reaching_Out_To_Canada  }
+		completion_reward = {
+
+		}
+
+	}
+
+
+	focus = {
+		id = ENG_Employ_Massive_Propaganda_Campaigns
+		icon = tear_treaty
+		cost = 5
+		x = 11
+		y = 3
+		prerequisite = { focus = ENG_Thisll_be_Over_By_Christmas  }
+		completion_reward = {
+
+		}
+
+	}
+
+	focus = {
+		id = ENG_Negotiate_With_Scotland
+		icon = tear_treaty
+		cost = 5
+		x = 13
+		y = 2
+		prerequisite = { focus = ENG_Reaching_Out_To_Canada  }
+		completion_reward = {
+
+		}
+
+	}
+
+
+	focus = {
+		id = ENG_Drafting_Rules_Of_War
+		icon = tear_treaty
+		cost = 5
+		x = 13
+		y = 3
+		prerequisite = { focus = ENG_Negotiate_With_Scotland  }
+		completion_reward = {
+
+		}
+
+	}
+
+	focus = {
+		id = ENG_Propose_Peace
+		icon = tear_treaty
+		cost = 5
+		x = 12
+		y = 4
+		prerequisite = { focus = ENG_Employ_Massive_Propaganda_Campaigns  }
+		prerequisite = { focus = ENG_Drafting_Rules_Of_War  }
+		completion_reward = {
+
+		}
+
+	}
+
+
+
+
+
+
+
+
+
+
+
+}	

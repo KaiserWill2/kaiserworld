@@ -1,0 +1,160 @@
+﻿###########################
+# Soviet Events
+###########################
+
+add_namespace = tmithc_soviet
+
+country_event = {
+	id = tmithc_soviet.1
+	title = tmithc_soviet.1.t
+	desc = tmithc_soviet.1.d
+	picture = GFX_report_event_generic_sign_treaty3
+
+	is_triggered_only = yes
+
+	#accept
+	option = {
+		name = tmithc_soviet.1.a
+		#what option does
+		ai_chance = {
+			factor = 100
+		}
+		effect_tooltip = {
+			SOV = { transfer_state = 408 }
+			SOV = { transfer_state = 409 }
+			SOV = { transfer_state = 655 }
+			SOV = { transfer_state = 657 }
+			SOV = { transfer_state = 560 }
+			SOV = { transfer_state = 562 }
+			SOV = { transfer_state = 637 }
+			SOV = { transfer_state = 644 }
+		}
+		SOV = {
+			country_event = { id = tmithc_soviet.2 days = 1 }
+		}
+	}
+
+	#decline
+	option = {
+		name = tmithc_soviet.1.b
+		#what option does
+		ai_chance = {
+			#factor = 50
+		}
+		SOV = {
+			country_event = { id = tmithc_soviet.3 days = 1 }
+		}
+	}
+}
+
+
+# Acceptance event for America
+country_event = {
+	id = tmithc_soviet.2
+	title = tmithc_soviet.2.t
+	desc = tmithc_soviet.2.d
+	picture = GFX_report_event_generic_sign_treaty3
+
+	is_triggered_only = yes
+
+	# Great
+	option = {
+		name = tmithc_soviet.2.a
+			transfer_state = 408 
+			transfer_state = 409 
+			transfer_state = 655 
+			transfer_state = 657 
+			transfer_state = 560 
+			transfer_state = 562 
+			transfer_state = 637 
+			transfer_state = 644 
+		JAP = { 
+			add_opinion_modifier = { target = SOV modifier = medium_increase }
+		}
+	}
+}
+
+# Rejection event for America
+country_event = {
+	id = tmithc_soviet.3
+	title = tmithc_soviet.3.t
+	desc = tmithc_soviet.3.d
+	picture = GFX_report_event_poland_rejects
+
+	is_triggered_only = yes
+
+	# Give it up
+	option = {
+		name = tmithc_america.3.a
+	}
+}
+
+###################
+
+country_event = {
+	id = tmithc_soviet.4
+	title = tmithc_soviet.4.t
+	desc = tmithc_soviet.4.d
+	picture = GFX_report_event_generic_sign_treaty3
+
+	is_triggered_only = yes
+
+	#accept
+	option = {
+		name = tmithc_soviet.4.a
+		#what option does
+		ai_chance = {
+			factor = 100
+		}
+		effect_tooltip = {
+			annex_country = { target = KAZ }
+		}
+		SOV = {
+			country_event = { id = tmithc_soviet.5 days = 1 }
+		}
+	}
+
+	#decline
+	option = {
+		name = tmithc_soviet.4.b
+		#what option does
+		ai_chance = {
+			#factor = 50
+		}
+		SOV = {
+			country_event = { id = tmithc_soviet.6 days = 1 }
+		}
+	}
+}
+
+country_event = {
+	id = tmithc_soviet.5
+	title = tmithc_soviet.5.t
+	desc = tmithc_soviet.5.d
+	picture = GFX_report_event_generic_sign_treaty3
+
+	is_triggered_only = yes
+
+	# Great
+	option = {
+		name = tmithc_soviet.5.a
+			annex_country = { target = KAZ }
+		GER = { 
+			add_opinion_modifier = { target = SOV modifier = medium_increase }
+		}
+	}
+}
+
+country_event = {
+	id = tmithc_soviet.6
+	title = tmithc_soviet.6.t
+	desc = tmithc_soviet.6.d
+	picture = GFX_report_event_poland_rejects
+
+	is_triggered_only = yes
+
+	# Give it up
+	option = {
+		name = tmithc_america.6.a
+	}
+}
