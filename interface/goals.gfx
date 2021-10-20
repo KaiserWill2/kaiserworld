@@ -695,8 +695,71 @@ SpriteType = {
 	texturefile = "gfx/interface/goals/eng/shuffling_generals_icon.dds"			
 	}	
 
+			SpriteType = {
+	name = "for_worker_by_worker_icon"
+	texturefile = "gfx/interface/goals/eng/for_worker_by_worker_icon.dds"			
+	}	
+
+		SpriteType = {
+	name = "peoples_health_network_icon"
+	texturefile = "gfx/interface/goals/eng/peoples_health_network_icon.dds"			
+	}	
+
+	SpriteType = {
+	name = "open_relations_with_scotland_and_Wales"
+	texturefile = "gfx/interface/goals/eng/open_relations_with_scotland_and_Wales.dds"			
+	}	
+
+	SpriteType = {
+	name = "the_new_educators_icon"
+	texturefile = "gfx/interface/goals/eng/the_new_educators_icon.dds"			
+	}	
+
+		SpriteType = {
+	name = "shuffle_the_congress_icon"
+	texturefile = "gfx/interface/goals/eng/shuffle_the_congress_icon.dds"			
+	}	
+	
+		SpriteType = {
+	name = "modernise_work_places_icon"
+	texturefile = "gfx/interface/goals/eng/modernise_work_places_icon.dds"			
+	}	
+	
+			SpriteType = {
+	name = "increase_the_workers_role_icon"
+	texturefile = "gfx/interface/goals/eng/increase_the_workers_role_icon.dds"			
+	}	
+	
+				SpriteType = {
+	name = "free_the_military_icon"
+	texturefile = "gfx/interface/goals/eng/free_the_military_icon.dds"			
+	}	
+
+				SpriteType = {
+	name = "wales_will_be_ours_icon"
+	texturefile = "gfx/interface/goals/eng/wales_will_be_ours_icon.dds"			
+	}	
+
+	SpriteType = {
+		name = "bring_the_dragons_head2_icon"
+		texturefile = "gfx/interface/goals/eng/bring_the_dragons_head2_icon.dds"			
+		}	
+	
 
 	
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
