@@ -1,0 +1,5060 @@
+﻿add_namespace = usa
+
+#Rise of the Republic
+country_event = {
+	id = usa.1
+	title = usa.1.t
+	desc = usa.1.d
+	picture = us_female_troop_saluting
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = USA
+		date > 2010.1.1
+		date < 2010.1.20
+	}
+	
+	option = {
+		name = usa.1.o1
+	}
+}
+
+#2010 Presidential Election
+country_event = {
+	id = usa.2
+	title = usa.2.t
+	desc = usa.2.d
+	picture = 2010_us_election
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = USA
+		date > 2010.11.1
+		date < 2010.11.30
+		OR = {
+		    has_government = national_conservative
+			has_government = nationalist
+			has_government = fascist
+		}
+	}
+	
+	option = { #Donald Rumsfeld - Nationalists
+		name = usa.2.o1
+		add_popularity = {
+			ideology = nationalist
+			popularity = -0.02
+		}
+		ai_chance = {
+			base = 30
+			modifier = {
+				NOT = {
+					has_game_rule = {
+						rule = USA_ai_behavior
+						option = DEFAULT
+					}
+					has_game_rule = {
+						rule = USA_ai_behavior
+						option = RUM_WIN
+					}
+				}
+				factor = 0
+			}
+		}
+		set_country_flag = donald_rumsfeld_elected
+		hidden_effect = {
+			every_country = {
+		        limit = {
+			        NOT = {
+				        tag = USA
+				    }
+			    }
+			    news_event = {
+			        hours = 4
+			        id = news.227
+		        }
+		    }
+		}
+	}
+	
+	option = { #Jeb Bush - Nationalists
+		name = usa.2.o2
+		create_country_leader = {
+	        name = "Jeb Bush"
+	        picture = "Portrait_USA_Jeb_Bush.dds"
+	        ideology = american_nationalist
+        }
+		add_popularity = {
+			ideology = nationalist
+			popularity = 0.05
+		}
+		ai_chance = {
+			base = 30
+			modifier = {
+				NOT = {
+					has_game_rule = {
+						rule = USA_ai_behavior
+						option = DEFAULT
+					}
+					has_game_rule = {
+						rule = USA_ai_behavior
+						option = JEB_WIN
+					}
+				}
+				factor = 0
+			}
+		}
+		set_country_flag = jeb_bush_elected
+		hidden_effect = {
+			every_country = {
+		        limit = {
+			        NOT = {
+				        tag = USA
+				    }
+			    }
+			    news_event = {
+			        hours = 4
+			        id = news.228
+		        }
+		    }
+		}
+	}
+	
+	option = { #David Duke - Fascists
+		name = usa.2.o3
+		set_politics = {
+	        ruling_party = fascist
+	        elections_allowed = no
+        }
+		ai_chance = {
+			base = 20
+			modifier = {
+				NOT = {
+					has_game_rule = {
+						rule = USA_ai_behavior
+						option = DEFAULT
+					}
+					has_game_rule = {
+						rule = USA_ai_behavior
+						option = DUKE_IGNORE_KKK
+					}
+					has_game_rule = {
+						rule = USA_ai_behavior
+						option = DUKE_KKK_TAKEOVER
+					}
+					has_game_rule = {
+						rule = USA_ai_behavior
+						option = DUKE_CORP_KEEP_CONTROL
+					}
+					has_game_rule = {
+						rule = USA_ai_behavior
+						option = DUKE_CORP_TAKEOVER
+					}
+					has_game_rule = {
+						rule = USA_ai_behavior
+						option = CHAOS_JUNTA_RESTORE
+					}
+					has_game_rule = {
+						rule = USA_ai_behavior
+						option = CHAOS_JUNTA_MAINTAIN
+					}
+					has_game_rule = {
+						rule = USA_ai_behavior
+						option = CHAOS_KING_ABSOLUTE
+					}
+					has_game_rule = {
+						rule = USA_ai_behavior
+						option = CHAOS_KING_DEMOCRACY
+					}
+				}
+				factor = 0
+			}
+		}
+		set_country_flag = david_duke_elected
+		hidden_effect = {
+			every_country = {
+		        limit = {
+			        NOT = {
+				        tag = USA
+				    }
+			    }
+			    news_event = {
+			        hours = 4
+			        id = news.229
+		        }
+		    }
+		}
+	}
+	
+	option = { #Robert Bentley - National Conservative
+		name = usa.2.o4
+		set_politics = {
+	        ruling_party = national_conservative
+	        elections_allowed = no
+        }
+		ai_chance = {
+			base = 20
+			modifier = {
+				NOT = {
+					has_game_rule = {
+						rule = USA_ai_behavior
+						option = DEFAULT
+					}
+					has_game_rule = {
+						rule = USA_ai_behavior
+						option = ROB_WIN_USA
+					}
+					has_game_rule = {
+						rule = USA_ai_behavior
+						option = ROB_WIN_CSA
+					}
+				}
+				factor = 0
+			}
+		}
+		set_country_flag = robert_bentley_elected
+		hidden_effect = {
+			every_country = {
+		        limit = {
+			        NOT = {
+				        tag = USA
+				    }
+			    }
+			    news_event = {
+			        hours = 4
+			        id = news.230
+		        }
+		    }
+		}
+	}
+option = { #Brandon - centrist
+		name = usa.2.o5
+		set_politics = {
+	        ruling_party = centrist
+	        elections_allowed = no
+        }
+		ai_chance = {
+			base = 20
+			modifier = {
+				factor = 0
+			}
+		}
+		set_country_flag = brandon_herrera_elected
+		hidden_effect = {
+			every_country = {
+		        limit = {
+			        NOT = {
+				        tag = USA
+				    }
+			    }
+			    news_event = {
+			        hours = 4
+			        id = news.
+		        }
+		    }
+		}
+	}
+}
+
+#2010 Congressional Elections
+country_event = {
+	id = usa.3
+	title = usa.3.t
+	desc = usa.3.d
+	picture = 2010_us_congressional_election
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = USA
+		date > 2010.12.1
+		date < 2010.12.20
+	}
+	
+	option = { #Nationalists Maintain Majority
+		name = usa.3.o1
+		add_popularity = {
+			ideology = nationalist
+			popularity = 0.02
+		}
+		ai_chance = {
+			base = 70
+			modifier = {
+				OR = {
+					has_game_rule = {
+						rule = USA_ai_behavior
+						option = DUKE_IGNORE_KKK
+					}
+					has_game_rule = {
+						rule = USA_ai_behavior
+						option = DUKE_KKK_TAKEOVER
+					}
+					has_game_rule = {
+						rule = USA_ai_behavior
+						option = DUKE_CORP_KEEP_CONTROL
+					}
+					has_game_rule = {
+						rule = USA_ai_behavior
+						option = DUKE_CORP_TAKEOVER
+					}
+				}
+				factor = 0
+			}
+		}
+		add_political_power = 25
+		set_country_flag = republicans_maintain_majority
+	}
+	
+	option = { #National Conservatives Gain Power
+		name = usa.3.o2
+		add_popularity = {
+			ideology = national_conservative
+			popularity = 0.2
+		}
+		ai_chance = {
+			base = 15
+			modifier = {
+				OR = {
+					has_game_rule = {
+						rule = USA_ai_behavior
+						option = DUKE_IGNORE_KKK
+					}
+					has_game_rule = {
+						rule = USA_ai_behavior
+						option = DUKE_KKK_TAKEOVER
+					}
+					has_game_rule = {
+						rule = USA_ai_behavior
+						option = DUKE_CORP_KEEP_CONTROL
+					}
+					has_game_rule = {
+						rule = USA_ai_behavior
+						option = DUKE_CORP_TAKEOVER
+					}
+				}
+				factor = 0
+			}
+		}
+		add_political_power = 5
+		set_country_flag = independence_union_gains_power
+	}
+	
+	option = { #Fascists Gain Power
+		name = usa.3.o3
+		add_popularity = {
+			ideology = fascist
+			popularity = 0.3
+		}
+		ai_chance = {
+			base = 15
+		}
+		add_political_power = -100
+		set_country_flag = national_renewal_gains_power
+	}
+	option = { #centrist Gain Power
+		name = usa.3.o4
+		add_popularity = {
+			ideology = centrist
+			popularity = 0.3
+		}
+		ai_chance = {
+			base = 15
+		}
+		add_political_power = -100
+		set_country_flag = centrist_gains_power
+	}
+}
+
+#The Texan Question
+country_event = {
+	id = usa.4
+	title = usa.4.t
+	desc = usa.4.d
+	picture = the_texan_question
+	
+	is_triggered_only = yes
+	
+	option = {   #State of Texas
+		name = usa.4.o1
+		set_country_flag = state_of_texas
+		ai_chance = {
+			factor = 90
+		}
+		TEX = {
+		    country_event = { id = usa.5 }
+		}
+	}
+	
+	option = {   #Republic of Texas
+		name = usa.4.o2
+		set_country_flag = republic_of_texas
+		ai_chance = {
+			factor = 10
+		}
+		TEX = {
+		    country_event = { id = usa.6 }
+		}
+	}
+}
+
+#Texas - American Republic demands we become a state
+country_event = {
+	id = usa.5
+	title = usa.5.t
+	desc = usa.5.d
+	picture = texas_state
+	
+	is_triggered_only = yes
+	
+	option = {   #We have to
+		name = usa.5.o1
+		USA = {
+		    annex_country = { target = TEX }
+		}
+		ai_chance = {
+			factor = 60
+		}
+		USA = {
+		    country_event = { id = usa.9 }
+		}
+	}
+	
+	option = {   #Never
+		name = usa.5.o2
+		complete_national_focus = TEX_texan_war_of_independence
+		USA = {
+		    declare_war_on = { target = TEX type = annex_everything }
+		}
+		ai_chance = {
+			factor = 40
+		}
+		USA = {
+		    country_event = { id = usa.7 }
+		}
+	}
+}
+
+#Texas - American Republic demands we become a satellite state
+country_event = {
+	id = usa.6
+	title = usa.6.t
+	desc = usa.6.d
+	picture = texas_puppet
+	
+	is_triggered_only = yes
+	
+	option = {   #We have to
+		name = usa.6.o1
+		complete_national_focus = TEX_submited_to_the_remnents
+		USA = {
+		    puppet = TEX
+		}
+		ai_chance = {
+			factor = 90
+		}
+		USA = {
+		    country_event = { id = usa.10 }
+		}
+	}
+	
+	option = {   #Never
+		name = usa.6.o2
+		complete_national_focus = TEX_texan_war_of_independence
+		USA = {
+		    declare_war_on = { target = TEX type = puppet_wargoal_focus }
+		}
+		ai_chance = {
+			factor = 10
+		}
+		USA = {
+		    country_event = { id = usa.8 }
+		}
+	}
+}
+
+#Texas refuses to become a state
+country_event = {
+	id = usa.7
+	title = usa.7.t
+	desc = usa.7.d
+	picture = texas_agreement
+	
+	is_triggered_only = yes
+	
+	option = {   
+		name = usa.7.o1
+		add_political_power = -15
+		add_ideas = idea_usa_texan_troubles
+	}
+	
+}
+
+#Texas refuses to become a satellite state
+country_event = {
+	id = usa.8
+	title = usa.8.t
+	desc = usa.8.d
+	picture = texas_agreement
+	
+	is_triggered_only = yes
+	
+	option = {   
+		name = usa.8.o1
+		add_political_power = -15
+		add_ideas = idea_usa_texan_troubles
+	}
+	
+}
+
+#Texas becomes a state
+country_event = {
+	id = usa.9
+	title = usa.9.t
+	desc = usa.9.d
+	picture = texas_agreement
+	
+	is_triggered_only = yes
+	
+	option = {   
+		name = usa.9.o1
+		add_ideas = idea_usa_texan_troubles
+	}
+	
+}
+
+#Texas becomes a satellite state
+country_event = {
+	id = usa.10
+	title = usa.10.t
+	desc = usa.10.d
+	picture = texas_agreement
+	
+	is_triggered_only = yes
+	
+	option = {   
+		name = usa.10.o1
+		add_ideas = idea_usa_texan_troubles
+	}
+	
+}
+
+#Texan nationalist attack
+country_event = {
+	id = usa.11
+	title = usa.11.t
+	desc = usa.11.d
+	picture = texan_nationalist_attack
+	
+	trigger = {
+		original_tag = USA
+		has_idea = idea_usa_texan_troubles
+	}
+	
+	mean_time_to_happen = {
+		days = 140
+	}
+	
+	option = { 
+		name = usa.11.o1
+	    ai_chance = {
+			factor = 100
+		}
+		random_owned_state = {
+		    remove_building = {
+				type = infrastructure
+				level = 1
+			}
+		}
+	}
+}
+
+#Texas as a state - the flag
+country_event = {
+	id = usa.12
+	title = usa.12.t
+	desc = usa.12.d
+	picture = the_flag
+	
+	is_triggered_only = yes
+	
+	option = {   #Only the Republic flag
+		name = usa.12.o1
+		ai_chance = {
+			factor = 10
+		}
+		add_political_power = 45
+		add_stability = -0.05
+		set_country_flag = flag_only_republic
+	}
+	
+	option = {   #Texan flag only for citizens
+		name = usa.12.o2
+		ai_chance = {
+			factor = 20
+		}
+		add_political_power = 15
+		add_stability = -0.035
+		set_country_flag = flag_texan_for_citizens
+	}
+	
+	option = {   #Both flags on government buildings
+		name = usa.12.o3
+		ai_chance = {
+			factor = 70
+		}
+		add_political_power = -60
+		add_stability = 0.01
+		set_country_flag = flag_both_flags
+		
+		
+		
+	}
+	
+}
+
+#Texas as a state - structure of the state
+country_event = {
+	id = usa.13
+	title = usa.13.t
+	desc = usa.13.d
+	picture = structure_of_the_state
+	
+	is_triggered_only = yes
+	
+	option = {   #Texas remains as one
+		name = usa.13.o1
+		ai_chance = {
+			factor = 90
+		}
+		add_political_power = 150
+		set_country_flag = state_one_texas
+		
+	}
+	
+	option = {   #Divide Texas
+		name = usa.13.o2
+		add_political_power = -200
+		ai_chance = {
+			factor = 10
+		}
+		375 = {
+		    add_core_of = USA
+		}
+		899 = {
+		    add_core_of = USA
+		}
+		set_country_flag = state_divided_texas
+	}
+	
+}
+
+#Texas as a state - the texan senate
+country_event = {
+	id = usa.14
+	title = usa.14.t
+	desc = usa.14.d
+	picture = texan_senate
+	
+	is_triggered_only = yes
+	
+	option = {   #Dissolve the senate
+		name = usa.14.o1
+		ai_chance = {
+			factor = 30
+		}
+		add_political_power = 150
+		add_stability = -0.05
+		set_country_flag = senate_dissolved
+	}
+	
+	option = {   #Senate becomes state legislative assembly
+		name = usa.14.o2
+		ai_chance = {
+			factor = 70
+		}
+	    add_political_power = -25
+		set_country_flag = senate_restored
+	}
+	
+}
+
+#Texan separatists rise up
+country_event = {
+	id = usa.15
+	title = usa.15.t
+	desc = usa.15.d
+	picture = texan_separatists
+	
+	is_triggered_only = yes
+	
+	option = {   
+		name = usa.15.o1
+		add_stability = -0.2
+	}
+	
+}
+
+#Texas as a republic - currency
+country_event = {
+	id = usa.16
+	title = usa.16.t
+	desc = usa.16.d
+	picture = texas_currency
+	
+	is_triggered_only = yes
+	
+	option = {   #Only the American dollar
+		name = usa.16.o1
+		ai_chance = {
+			factor = 80
+		}
+		add_stability = 0.01
+		add_timed_idea = {
+			idea = idea_usa_merging_currencies
+			days = 300
+		}
+	}
+	
+	option = {   #Two currencies
+		name = usa.16.o2
+		ai_chance = {
+			factor = 20
+		}
+		add_political_power = 25
+		add_stability = -0.035
+	}
+	
+}
+
+#Texas as a republic - the national guard
+country_event = {
+	id = usa.17
+	title = usa.17.t
+	desc = usa.17.d
+	picture = national_guard
+	
+	is_triggered_only = yes
+	
+	option = {   #Full control in texas
+		name = usa.17.o1
+		ai_chance = {
+			factor = 50
+		}
+		add_political_power = 100
+		add_timed_idea = {
+			idea = idea_usa_texan_outrage
+			days = 100
+		}
+	}
+	
+	option = {   #Power to the texan national guard
+		name = usa.17.o2
+		ai_chance = {
+			factor = 50
+		}
+		add_political_power = -135
+		add_timed_idea = {
+			idea = idea_usa_appeased_texans
+			days = 300
+		}
+	}
+	
+}
+
+#Texas as a republic - laws
+country_event = {
+	id = usa.18
+	title = usa.18.t
+	desc = usa.18.d
+	picture = texas_laws
+	
+	is_triggered_only = yes
+	
+	option = {   #American law above Texan law
+		name = usa.18.o1
+		ai_chance = {
+			factor = 30
+		}
+		TEX = {
+		    add_autonomy_ratio = { value = -0.5 localization = american_laws }
+		}
+		add_stability = -0.1
+	}
+	
+	option = {   #A new Texan constitution
+		name = usa.18.o2
+		ai_chance = {
+			factor = 60
+		}
+		TEX = {
+		    add_autonomy_ratio = { value = 0.1 localization = new_texan_constitution }
+		}
+		add_political_power = -20
+		add_stability = 0.01
+	}
+	
+	option = {   #Maintain all Texan laws
+		name = usa.18.o3
+		ai_chance = {
+			factor = 10
+		}
+		TEX = {
+		    add_autonomy_ratio = { value = 0.5 localization = texan_laws_maintained }
+		}
+		add_stability = 0.03
+	}
+	
+}
+
+#Chaotic government
+country_event = {
+	id = usa.19
+	title = usa.19.t
+	desc = usa.19.d
+	picture = chaotic_government
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = USA
+		date > 2011.1.1
+		date < 2011.1.20
+		has_country_flag = david_duke_elected
+		OR = {
+		    has_country_flag = republicans_maintain_majority
+			has_country_flag = independence_union_gains_power
+			has_country_flag = centrist_gains_power
+		}
+		
+	}
+	
+	option = { 
+		name = usa.19.o1
+		add_political_power = -75
+		set_country_flag = chaotic_government
+		 USA = {
+		        country_event = { days = 20 id = usa.172 } 
+		    }
+	}
+}
+
+#Congress and president working together
+country_event = {
+	id = usa.20
+	title = usa.20.t
+	desc = usa.20.d
+	picture = congress_working
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = USA
+		date > 2011.1.1
+		date < 2011.1.20
+		has_country_flag = david_duke_elected
+		has_country_flag = national_renewal_gains_power
+		
+	}
+	
+	option = { 
+		name = usa.20.o1
+		add_political_power = 5
+		set_country_flag = functioning_government
+	}
+}
+
+#Confederate states proclaimed
+country_event = {
+	id = usa.21
+	title = usa.21.t
+	desc = usa.21.d
+	picture = confederate_states_proclaimed
+	
+	is_triggered_only = yes
+	
+	option = {   
+		name = usa.21.o1
+		set_cosmetic_tag = CSA
+	}
+	
+}
+
+#People's Commonwealth - Confederate states offer DC for virginia
+country_event = {
+	id = usa.22
+	title = usa.22.t
+	desc = usa.22.d
+	picture = washington_deal
+	
+	is_triggered_only = yes
+	
+	option = {   #Accept the offer
+		name = usa.22.o1
+		ai_chance = {
+			factor = 60
+		}
+		USA = {
+			country_event = { id = usa.23 }
+		}
+	}
+	
+	option = {   #We don't deal with traitors
+		name = usa.22.o2
+		ai_chance = {
+			factor = 40
+		}
+		USA = {
+			country_event = { id = usa.24 }
+		}
+	}
+	
+}
+
+#Commonwealth accepts DC for Virginia offer
+country_event = {
+	id = usa.23
+	title = usa.23.t
+	desc = usa.23.d
+	picture = washington_deal
+	
+	is_triggered_only = yes
+	
+	option = {   
+		name = usa.23.o1
+		USA = {
+		    transfer_state = 902
+		}
+		902 = {
+		    add_core_of = USA
+			remove_core_of = FROM
+		}
+		FROM = {
+		    transfer_state = 901
+		}
+		901 = {
+		    add_core_of = FROM
+			remove_core_of = USA
+		}
+	}
+	
+}
+
+#Commonwealth refuses DC for Virginia offer
+country_event = {
+	id = usa.24
+	title = usa.24.t
+	desc = usa.24.d
+	picture = washington_deal
+	
+	is_triggered_only = yes
+	
+	option = {   
+		name = usa.24.o1
+		add_political_power = -25
+	}
+	
+}
+
+#Elect PM for the kingdom
+country_event = {
+	id = usa.25
+	title = usa.25.t
+	desc = usa.25.d
+	picture = prime_minister_election
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		set_country_flag = USA_monarchy_election
+		hidden_effect = {
+			set_party_name = { ideology = fascist long_name = USA_national_renewal name = USA_national_renewal }
+		}
+	}
+	
+	option = {   #Barack Obama
+		name = usa.25.o1
+		ai_chance = {
+			factor = 15
+		}
+		if = {
+			limit = {
+				has_country_leader = {
+					name = "Paul I"
+				}
+			}
+			add_ideas = idea_usa_paul_the_first
+		}
+		if = {
+			limit = {
+				has_country_leader = {
+					name = "Douglas I"
+				}
+			}
+			add_ideas = idea_usa_douglas_the_first
+		}
+		if = {
+			limit = {
+				has_country_leader = {
+					name = "William III"
+				}
+			}
+			add_ideas = idea_usa_william_the_third
+		}
+		if = {
+			limit = {
+				has_country_leader = {
+					name = "Robert I"
+				}
+			}
+			add_ideas = idea_usa_robert_the_first
+		}
+		if = {
+			limit = {
+				has_country_leader = {
+					name = "Lucian I"
+				}
+			}
+			add_ideas = idea_usa_lucian_the_first
+		}
+		add_popularity = {
+			ideology = centrist
+			popularity = 0.35
+		}
+		add_popularity = {
+			ideology = monarchist
+			popularity = 0.02
+		}
+		add_political_power = -150
+		add_stability = 0.02
+		create_country_leader = {
+	        name = "Barack Obama"
+	        picture = "Portrait_USA_Barack_Obama.dds"
+	        ideology = centrist_ideology
+		}
+		set_politics = {
+		ruling_party = centrist
+		}
+		
+		country_event = { id = usa.114 }
+		
+	}
+	
+	option = {   #Steve Bannon
+		name = usa.25.o2
+		ai_chance = {
+			factor = 20
+		}
+		if = {
+			limit = {
+				has_country_leader = {
+					name = "Paul I"
+				}
+			}
+			add_ideas = idea_usa_paul_the_first
+		}
+		if = {
+			limit = {
+				has_country_leader = {
+					name = "Douglas I"
+				}
+			}
+			add_ideas = idea_usa_douglas_the_first
+		}
+		if = {
+			limit = {
+				has_country_leader = {
+					name = "William III"
+				}
+			}
+			add_ideas = idea_usa_william_the_third
+		}
+		if = {
+			limit = {
+				has_country_leader = {
+					name = "Robert I"
+				}
+			}
+			add_ideas = idea_usa_robert_the_first
+		}
+		if = {
+			limit = {
+				has_country_leader = {
+					name = "Lucian I"
+				}
+			}
+			add_ideas = idea_usa_lucian_the_first
+		}
+		add_popularity = {
+			ideology = nationalist
+			popularity = 0.35
+		}
+		add_popularity = {
+			ideology = monarchist
+			popularity = 0.02
+		}
+		add_political_power = -50
+		create_country_leader = {
+	        name = "Steve Bannon"
+	        picture = "Portrait_USA_Steve_Bannon.dds"
+	        ideology = american_nationalist
+        }
+        set_politics = {
+		ruling_party = nationalist
+		}
+		country_event = { id = usa.115 }
+	}
+	
+	option = {   #Mike Huckabee
+		name = usa.25.o3
+		ai_chance = {
+			factor = 40
+		}
+		if = {
+			limit = {
+				has_country_leader = {
+					name = "Paul I"
+				}
+			}
+			add_ideas = idea_usa_paul_the_first
+		}
+		if = {
+			limit = {
+				has_country_leader = {
+					name = "Douglas I"
+				}
+			}
+			add_ideas = idea_usa_douglas_the_first
+		}
+		if = {
+			limit = {
+				has_country_leader = {
+					name = "William III"
+				}
+			}
+			add_ideas = idea_usa_william_the_third
+		}
+		if = {
+			limit = {
+				has_country_leader = {
+					name = "Robert I"
+				}
+			}
+			add_ideas = idea_usa_robert_the_first
+		}
+		if = {
+			limit = {
+				has_country_leader = {
+					name = "Lucian I"
+				}
+			}
+			add_ideas = idea_usa_lucian_the_first
+		}
+		add_popularity = {
+			ideology = national_conservative
+			popularity = 0.35
+		}
+		add_popularity = {
+			ideology = monarchist
+			popularity = 0.02
+		}
+		add_political_power = 100
+		add_stability = -0.08
+		create_country_leader = {
+	        name = "Mike Huckabee"
+	        picture = "Portrait_USA_Mike_Huckabee.dds"
+	        ideology = american_conservative
+        }
+        set_politics = {
+		ruling_party = national_conservative
+		}
+		country_event = { id = usa.116 }
+	}
+	
+	option = {   #Bobby Jindal
+		name = usa.25.o4
+		ai_chance = {
+			factor = 25
+		}
+		if = {
+			limit = {
+				has_country_leader = {
+					name = "Paul I"
+				}
+			}
+			add_ideas = idea_usa_paul_the_first
+		}
+		if = {
+			limit = {
+				has_country_leader = {
+					name = "Douglas I"
+				}
+			}
+			add_ideas = idea_usa_douglas_the_first
+		}
+		if = {
+			limit = {
+				has_country_leader = {
+					name = "William III"
+				}
+			}
+			add_ideas = idea_usa_william_the_third
+		}
+		if = {
+			limit = {
+				has_country_leader = {
+					name = "Robert I"
+				}
+			}
+			add_ideas = idea_usa_robert_the_first
+		}
+		if = {
+			limit = {
+				has_country_leader = {
+					name = "Lucian I"
+				}
+			}
+			add_ideas = idea_usa_lucian_the_first
+		}
+		add_popularity = {
+			ideology = national_conservative
+			popularity = 0.35
+		}
+		add_popularity = {
+			ideology = monarchist
+			popularity = 0.05
+		}
+		add_political_power = 200
+		add_stability = -0.1
+		create_country_leader = {
+	        name = "Bobby Jindal"
+	        picture = "Portrait_USA_Bobby_Jindal.dds"
+	        ideology = american_conservative
+        }
+         set_politics = {
+		ruling_party = national_conservative
+		}
+		country_event = { id = usa.117 }
+	}
+	
+}
+#EVENTS 26-47 are obsolete
+#Canada - American Republic negotiates for Alaska
+#country_event = {
+#	id = usa.26
+#	title = usa.26.t
+#	desc = usa.26.d
+#	picture = alaska
+#	
+#	is_triggered_only = yes
+#	
+#	option = {   #Just give it to them
+#		name = usa.26.o1
+#		ai_chance = {
+#			factor = 10
+#		}
+#		USA = {
+#			country_event = { id = usa.27 }
+#		}
+#	}
+#	
+#	option = {   #Alaska for Puerto Rico
+#		name = usa.26.o2
+#		ai_chance = {
+#			factor = 40
+#		}
+#		USA = {
+#			country_event = { id = usa.28 }
+#		}
+#	}
+#	
+#	option = {   #Alaska for American investment in Canada
+#		name = usa.26.o3
+#		ai_chance = {
+#			factor = 30
+#		}
+#		USA = {
+#			country_event = { id = usa.29 }
+#		}
+#	}
+#	
+#	option = {   #Alaska wants to stay with us
+#		name = usa.26.o4
+#		ai_chance = {
+#			factor = 20
+#		}
+#		USA = {
+#			country_event = { id = usa.30 }
+#		}
+#	}
+#	
+#}
+#
+##Canada gives Alaska to us
+#country_event = {
+#	id = usa.27
+#	title = usa.27.t
+#	desc = usa.27.d
+#	picture = alaska
+#	
+#	is_triggered_only = yes
+#	
+#	option = {   
+#		name = usa.27.o1
+#		ALA = {
+#			country_event = { id = usa.31 }
+#		}
+#	}
+#	
+#}
+#
+##Canada offers Alaska for puerto rico
+#country_event = {
+#	id = usa.28
+#	title = usa.28.t
+#	desc = usa.28.d
+#	picture = puerto_rico
+#	
+#	is_triggered_only = yes
+#	
+#	option = {   #Sure
+#		name = usa.28.o1
+#		ai_chance = {
+#			factor = 95
+#		}
+#		ALA = {
+#			country_event = { id = usa.32 }
+#		}
+#	}
+#	
+#	option = {   #We won't accept that
+#		name = usa.28.o2
+#		ai_chance = {
+#			factor = 5
+#		}
+#		CAN = {
+#			country_event = { id = usa.33 }
+#		}
+#	}
+#	
+#}
+#
+##Canada offers Alaska for investment into Canada
+#country_event = {
+#	id = usa.29
+#	title = usa.29.t
+#	desc = usa.29.d
+#	picture = investment_in_canada
+#	
+#	is_triggered_only = yes
+#	
+#	option = {   #Sure
+#		name = usa.29.o1
+#		ai_chance = {
+#			factor = 98
+#		}
+#		ALA = {
+#			country_event = { id = usa.34 }
+#		}
+#	}
+#	
+#	option = {   #We won't accept that
+#		name = usa.29.o2
+#		ai_chance = {
+#			factor = 2
+#		}
+#		CAN = {
+#			country_event = { id = usa.35 }
+#		}
+#	}
+#	
+#}
+#
+##Canada rejects any agreement for Alaska
+#country_event = {
+#	id = usa.30
+#	title = usa.30.t
+#	desc = usa.30.d
+#	picture = canada_rejects_agreement
+#	
+#	is_triggered_only = yes
+#	
+#	option = {   
+#		name = usa.30.o1
+#		add_political_power = -25
+#	}
+#	
+#}
+#
+##Alaska - Canada announces Alaska will be annexed by republic
+#country_event = {
+#	id = usa.31
+#	title = usa.31.t
+#	desc = usa.31.d
+#	picture = canada_rejects_agreement
+#	
+#	is_triggered_only = yes
+#	
+#	option = {   #Fight for independence
+#		name = usa.31.o1
+#		ai_chance = {
+#			factor = 20
+#		}
+#		CAN = {
+#		    end_puppet = ALA
+#		}
+#		add_opinion_modifier = {
+#			target = CAN
+#		    modifier = loyal_to_our_enemy
+#	    }
+#		CAN = {
+#		    remove_from_faction = ALA
+#		}
+#		USA = {
+#			country_event = { id = usa.36 }
+#		}
+#		CAN = {
+#			country_event = { id = usa.37 }
+#		}
+#	}
+#	
+#	option = {   #Accept
+#		name = usa.31.o2
+#		ai_chance = {
+#			factor = 80
+#		}
+#		USA = {
+#			country_event = { id = usa.38 }
+#		}
+#	}
+#	
+#}
+#
+##Alaska - Canada announces Alaska will be annexed by Republic in exchange for Puerto Rico
+#country_event = {
+#	id = usa.32
+#	title = usa.32.t
+#	desc = usa.32.d
+#	picture = canada_rejects_agreement
+#	
+#	is_triggered_only = yes
+#	
+#	option = {   #Fight for independence
+#		name = usa.32.o1
+#		ai_chance = {
+#			factor = 30
+#		}
+#		CAN = {
+#		    end_puppet = ALA
+#		}
+#		add_opinion_modifier = {
+#			target = CAN
+#		    modifier = loyal_to_our_enemy
+#	    }
+#		CAN = {
+#		    remove_from_faction = ALA
+#		}
+#		USA = {
+#			country_event = { id = usa.39 }
+#		}
+#		CAN = {
+#			country_event = { id = usa.40 }
+#		}
+#	}
+#	
+#	option = {   #Accept
+#		name = usa.32.o2
+#		ai_chance = {
+#			factor = 70
+#		}
+#		USA = {
+#			country_event = { id = usa.41 }
+#		}
+#	}
+#	
+#}
+#
+##Canada - US refuses agreement for Puerto Rico
+#country_event = {
+#	id = usa.33
+#	title = usa.33.t
+#	desc = usa.33.d
+#	picture = puerto_rico
+#	
+#	is_triggered_only = yes
+#	
+#	option = {   
+#		name = usa.33.o1
+#	}
+#	
+#}
+#
+##Alaska - Canada announces Alaska will be annexed by Republic in exchange for investment
+#country_event = {
+#	id = usa.34
+#	title = usa.34.t
+#	desc = usa.34.d
+#	picture = canada_rejects_agreement
+#	
+#	is_triggered_only = yes
+#	
+#	option = {   #Fight for independence
+#		name = usa.34.o1
+#		ai_chance = {
+#			factor = 30
+#		}
+#		CAN = {
+#		    end_puppet = ALA
+#		}
+#		add_opinion_modifier = {
+#			target = CAN
+#		    modifier = loyal_to_our_enemy
+#	    }
+#		CAN = {
+#		    remove_from_faction = ALA
+#		}
+#		USA = {
+#			country_event = { id = usa.42 }
+#		}
+#		CAN = {
+#			country_event = { id = usa.43 }
+#		}
+#	}
+#	
+#	option = {   #Accept
+#		name = usa.34.o2
+#		ai_chance = {
+#			factor = 70
+#		}
+#		USA = {
+#			country_event = { id = usa.44 }
+#		}
+#	}
+#	
+#}
+#
+##Canada - US refuses agreement for investment
+#country_event = {
+#	id = usa.35
+#	title = usa.35.t
+#	desc = usa.35.d
+#	picture = investment_in_canada
+#	
+#	is_triggered_only = yes
+#	
+#	option = {   
+#		name = usa.35.o1
+#	}
+#	
+#}
+#
+##Alaska bypasses canada-america agreement, fights for independence
+#country_event = {
+#	id = usa.36
+#	title = usa.36.t
+#	desc = usa.36.d
+#	picture = alaska_soldiers
+#	
+#	is_triggered_only = yes
+#	
+#	option = {   
+#		name = usa.36.o1
+#		ALA = {
+#		    declare_war_on = { target = USA type = annex_everything }
+#		}
+#	}
+#	
+#}
+#
+##Canada - Alaska bypasses canada-america agreement, fights for independence
+#country_event = {
+#	id = usa.37
+#	title = usa.37.t
+#	desc = usa.37.d
+#	picture = alaska_soldiers
+#	
+#	is_triggered_only = yes
+#	
+#	option = {   
+#		name = usa.37.o1
+#		add_political_power = -25
+#	}
+#	
+#}
+#
+##Alaska agrees to canada-america agreement
+#country_event = {
+#	id = usa.38
+#	title = usa.38.t
+#	desc = usa.38.d
+#	picture = alaska
+#	
+#	is_triggered_only = yes
+#	
+#	option = {   
+#		name = usa.38.o1
+#		USA = {
+#		    annex_country = { target = ALA }
+#		}
+#	}
+#	
+#}
+#
+##Alaska bypasses canada-america agreement with puerto rico, fights for independence
+#country_event = {
+#	id = usa.39
+#	title = usa.39.t
+#	desc = usa.39.d
+#	picture = alaska_soldiers
+#	
+#	is_triggered_only = yes
+#	
+#	option = {   
+#		name = usa.39.o1
+#		ALA = {
+#		    declare_war_on = { target = USA type = annex_everything }
+#		}
+#	}
+#	
+#}
+#
+##Canada - Alaska bypasses canada-america agreement with puerto rico, fights for independence
+#country_event = {
+#	id = usa.40
+#	title = usa.40.t
+#	desc = usa.40.d
+#	picture = alaska_soldiers
+#	
+#	is_triggered_only = yes
+#	
+#	option = {   
+#		name = usa.40.o1
+#		add_political_power = -25
+#	}
+#	
+#}
+#
+##Alaska agrees to canada-america agreement with puerto rico
+#country_event = {
+#	id = usa.41
+#	title = usa.41.t
+#	desc = usa.41.d
+#	picture = puerto_rico
+#	
+#	is_triggered_only = yes
+#	
+#	option = {   
+#		name = usa.41.o1
+#		USA = {
+#		    annex_country = { target = ALA }
+#		}
+#		CAN = {
+#		    transfer_state = 686
+#		}
+#	}
+#	
+#}
+#
+##Alaska bypasses canada-america agreement for investment, fights for independence
+#country_event = {
+#	id = usa.42
+#	title = usa.42.t
+#	desc = usa.42.d
+#	picture = alaska_soldiers
+#	
+#	is_triggered_only = yes
+#	
+#	option = {   
+#		name = usa.42.o1
+#		ALA = {
+#		    declare_war_on = { target = USA type = annex_everything }
+#		}
+#	}
+#	
+#}
+#
+##Canada - Alaska bypasses canada-america agreement for investment, fights for independence
+#country_event = {
+#	id = usa.43
+#	title = usa.43.t
+#	desc = usa.43.d
+#	picture = alaska_soldiers
+#	
+#	is_triggered_only = yes
+#	
+#	option = {   
+#		name = usa.43.o1
+#		add_political_power = -25
+#	}
+#	
+#}
+#
+##Alaska agrees to canada-america agreement for investment
+#country_event = {
+#	id = usa.44
+#	title = usa.44.t
+#	desc = usa.44.d
+#	picture = investment_in_canada
+#	
+#	is_triggered_only = yes
+#	
+#	option = {   
+#		name = usa.44.o1
+#		USA = {
+#		    annex_country = { target = ALA }
+#		}
+#		CAN = {
+#		    random_owned_state = {
+#			    add_extra_state_shared_building_slots = 1
+#				add_building_construction = {
+#				    type = industrial_complex
+#					level = 1
+#					instant_build = yes
+#				}
+#			}
+#			random_owned_state = {
+#			    add_extra_state_shared_building_slots = 1
+#				add_building_construction = {
+#				    type = industrial_complex
+#					level = 1
+#					instant_build = yes
+#				}
+#			}
+#			random_owned_state = {
+#			    add_extra_state_shared_building_slots = 1
+#				add_building_construction = {
+#				    type = industrial_complex
+#					level = 1
+#					instant_build = yes
+#				}
+#			}
+#			random_owned_state = {
+#			    add_extra_state_shared_building_slots = 1
+#				add_building_construction = {
+#				    type = industrial_complex
+#					level = 1
+#					instant_build = yes
+#				}
+#			}
+#			random_owned_state = {
+#			    add_extra_state_shared_building_slots = 1
+#				add_building_construction = {
+#				    type = industrial_complex
+#					level = 1
+#					instant_build = yes
+#				}
+#			}
+#			random_owned_state = {
+#			    add_extra_state_shared_building_slots = 1
+#				add_building_construction = {
+#				    type = industrial_complex
+#					level = 1
+#					instant_build = yes
+#				}
+#			}
+#			random_owned_state = {
+#			    add_extra_state_shared_building_slots = 1
+#				add_building_construction = {
+#				    type = industrial_complex
+#					level = 1
+#					instant_build = yes
+#				}
+#			}
+#			random_owned_state = {
+#			    add_extra_state_shared_building_slots = 1
+#				add_building_construction = {
+#				    type = industrial_complex
+#					level = 1
+#					instant_build = yes
+#				}
+#			}
+#		}
+#		USA = {
+#		    random_owned_state = {
+#			    add_extra_state_shared_building_slots = -1
+#				add_building_construction = {
+#				    type = industrial_complex
+#					level = 1
+#					instant_build = yes
+#				}
+#			}
+#			random_owned_state = {
+#			    add_extra_state_shared_building_slots = -1
+#				add_building_construction = {
+#				    type = industrial_complex
+#					level = 1
+#					instant_build = yes
+#				}
+#			}
+#			random_owned_state = {
+#			    add_extra_state_shared_building_slots = -1
+#				add_building_construction = {
+#				    type = industrial_complex
+#					level = 1
+#					instant_build = yes
+#				}
+#			}
+#			random_owned_state = {
+#			    add_extra_state_shared_building_slots = -1
+#				add_building_construction = {
+#				    type = industrial_complex
+#					level = 1
+#					instant_build = yes
+#				}
+#			}
+#			random_owned_state = {
+#			    add_extra_state_shared_building_slots = -1
+#				add_building_construction = {
+#				    type = industrial_complex
+#					level = 1
+#					instant_build = yes
+#				}
+#			}
+#		}
+#		
+#	}
+#	
+#}
+#
+##Mexico - American Republic demands we return land
+#country_event = {
+#	id = usa.45
+#	title = usa.45.t
+#	desc = usa.45.d
+#	picture = mexico_texas
+#	
+#	is_triggered_only = yes
+#	
+#	option = {   #Hand it over
+#		name = usa.45.o1
+#		ai_chance = {
+#			factor = 50
+#		}
+#		USA = {
+#		    country_event = { id = usa.46 }
+#		}
+#	}
+#	
+#	option = {   #Never
+#		name = usa.45.o2
+#		ai_chance = {
+#			factor = 50
+#		}
+#		USA = {  
+#		
+#		    country_event = { id = usa.47 }
+#		}
+#	}
+#	
+#}
+#
+##Mexico accepts ultimatum
+#country_event = {
+#	id = usa.46
+#	title = usa.46.t
+#	desc = usa.46.d
+#	picture = mexico_texas
+#	
+#	is_triggered_only = yes
+#	
+#	option = {   
+#		name = usa.46.o1
+#		transfer_state = 894
+#		transfer_state = 376
+#		894 = {
+#		    add_core_of = USA
+#			remove_core_of = MEX
+#		}
+#		376 = {
+#		    add_core_of = USA
+#			remove_core_of = MEX
+#		}
+#	}
+#	
+#}
+#
+##Mexico rejects ultimatum
+#country_event = {
+#	id = usa.47
+#	title = usa.47.t
+#	desc = usa.47.d
+#	picture = mexico_texas
+#	
+#	is_triggered_only = yes
+#	
+#	option = {   
+#		name = usa.47.o1
+#		create_wargoal = {
+#			type = annex_everything
+#			target = MEX
+#		}
+#	}
+#	
+#}
+
+#Illinois - republic proposes union
+country_event = {
+	id = usa.48
+	title = usa.48.t
+	desc = usa.48.d
+	picture = texas_state
+	
+	is_triggered_only = yes
+	
+	option = {   #Yes
+		name = usa.48.o1
+		ai_chance = {
+			factor = 90
+		}
+		USA = {
+			country_event = { id = usa.49 }
+		}
+	}
+	
+	option = {   #No
+		name = usa.48.o2
+		ai_chance = {
+			factor = 10
+		}
+		USA = {
+			country_event = { id = usa.50 }
+		}
+	}
+	
+}
+
+#Illinois accepts
+country_event = {
+	id = usa.49
+	title = usa.49.t
+	desc = usa.49.d
+	picture = texas_state
+	
+	is_triggered_only = yes
+	
+	option = {   
+		name = usa.49.o1
+		USA = {
+		    annex_country = { target = ILL }
+		}
+	}
+	
+}
+
+#Illinois refuses
+country_event = {
+	id = usa.50
+	title = usa.50.t
+	desc = usa.50.d
+	picture = texas_state
+	
+	is_triggered_only = yes
+	
+	option = {   
+		name = usa.50.o1
+		create_wargoal = {
+			type = annex_everything
+			target = ILL
+		}
+	}
+	
+}
+
+#Midwest - republic proposes union
+country_event = {
+	id = usa.51
+	title = usa.51.t
+	desc = usa.51.d
+	picture = texas_state
+	
+	is_triggered_only = yes
+	
+	option = {   #Yes
+		name = usa.51.o1
+		ai_chance = {
+			factor = 70
+		}
+		USA = {
+			country_event = { id = usa.52 }
+		}
+	}
+	
+	option = {   #No
+		name = usa.51.o2
+		ai_chance = {
+			factor = 30
+		}
+		USA = {
+			country_event = { id = usa.53 }
+		}
+	}
+	
+}
+
+#Midwest accepts
+country_event = {
+	id = usa.52
+	title = usa.52.t
+	desc = usa.52.d
+	picture = texas_state
+	
+	is_triggered_only = yes
+	
+	option = {   
+		name = usa.52.o1
+		USA = {
+		    annex_country = { target = MWA }
+		}
+	}
+	
+}
+
+#Midwest refuses
+country_event = {
+	id = usa.53
+	title = usa.53.t
+	desc = usa.53.d
+	picture = texas_state
+	
+	is_triggered_only = yes
+	
+	option = {   
+		name = usa.53.o1
+		create_wargoal = {
+			type = annex_everything
+			target = MWA
+		}
+	}
+	
+}
+
+#Great Lakes - republic proposes union
+country_event = {
+	id = usa.54
+	title = usa.54.t
+	desc = usa.54.d
+	picture = texas_state
+	
+	is_triggered_only = yes
+	
+	option = {   #Yes
+		name = usa.54.o1
+		ai_chance = {
+			factor = 80
+		}
+		USA = {
+			country_event = { id = usa.55 }
+		}
+	}
+	
+	option = {   #No
+		name = usa.54.o2
+		ai_chance = {
+			factor = 20
+		}
+		USA = {
+			country_event = { id = usa.56 }
+		}
+	}
+	
+}
+
+#Great Lakes accepts
+country_event = {
+	id = usa.55
+	title = usa.55.t
+	desc = usa.55.d
+	picture = texas_state
+	
+	is_triggered_only = yes
+	
+	option = {   
+		name = usa.55.o1
+		USA = {
+		    annex_country = { target = GRL }
+		}
+	}
+	
+}
+
+#Great Lakes refuses
+country_event = {
+	id = usa.56
+	title = usa.56.t
+	desc = usa.56.d
+	picture = texas_state
+	
+	is_triggered_only = yes
+	
+	option = {   
+		name = usa.56.o1
+		create_wargoal = {
+			type = annex_everything
+			target = GRL
+		}
+	}
+	
+}
+
+#Montana - republic proposes union
+country_event = {
+	id = usa.57
+	title = usa.57.t
+	desc = usa.57.d
+	picture = texas_state
+	
+	is_triggered_only = yes
+	
+	option = {   #Yes
+		name = usa.57.o1
+		ai_chance = {
+			factor = 20
+		}
+		USA = {
+			country_event = { id = usa.58 }
+		}
+	}
+	
+	option = {   #No
+		name = usa.57.o2
+		ai_chance = {
+			factor = 80
+		}
+		USA = {
+			country_event = { id = usa.59 }
+		}
+	}
+	
+}
+
+#Montana accepts
+country_event = {
+	id = usa.58
+	title = usa.58.t
+	desc = usa.58.d
+	picture = texas_state
+	
+	is_triggered_only = yes
+	
+	option = {   
+		name = usa.58.o1
+		USA = {
+		    annex_country = { target = MOT }
+		}
+		add_popularity = {
+			ideology = fascist
+			popularity = 0.1
+		}
+	}
+	
+}
+
+#Montana refuses
+country_event = {
+	id = usa.59
+	title = usa.59.t
+	desc = usa.59.d
+	picture = texas_state
+	
+	is_triggered_only = yes
+	
+	option = {   
+		name = usa.59.o1
+		create_wargoal = {
+			type = annex_everything
+			target = MOT
+		}
+	}
+	
+}
+
+#Lincoln - republic proposes union
+country_event = {
+	id = usa.60
+	title = usa.60.t
+	desc = usa.60.d
+	picture = texas_state
+	
+	is_triggered_only = yes
+	
+	option = {   #Yes
+		name = usa.60.o1
+		ai_chance = {
+			factor = 15
+		}
+		USA = {
+			country_event = { id = usa.61 }
+		}
+	}
+	
+	option = {   #No
+		name = usa.60.o2
+		ai_chance = {
+			factor = 85
+		}
+		USA = {
+			country_event = { id = usa.62 }
+		}
+	}
+	
+}
+
+#Lincoln accepts
+country_event = {
+	id = usa.61
+	title = usa.61.t
+	desc = usa.61.d
+	picture = texas_state
+	
+	is_triggered_only = yes
+	
+	option = {   
+		name = usa.61.o1
+		USA = {
+		    annex_country = { target = LIN }
+		}
+		add_popularity = {
+			ideology = national_bolshevik
+			popularity = 0.05
+		}
+	}
+	
+}
+
+#Lincoln refuses
+country_event = {
+	id = usa.62
+	title = usa.62.t
+	desc = usa.62.d
+	picture = texas_state
+	
+	is_triggered_only = yes
+	
+	option = {   
+		name = usa.62.o1
+		create_wargoal = {
+			type = annex_everything
+			target = LIN
+		}
+	}
+	
+}
+
+#Utah - republic proposes union
+country_event = {
+	id = usa.63
+	title = usa.63.t
+	desc = usa.63.d
+	picture = texas_state
+	
+	is_triggered_only = yes
+	
+	option = {   #Yes
+		name = usa.63.o1
+		ai_chance = {
+			factor = 60
+		}
+		USA = {
+			country_event = { id = usa.64 }
+		}
+	}
+	
+	option = {   #No
+		name = usa.63.o2
+		ai_chance = {
+			factor = 40
+		}
+		USA = {
+			country_event = { id = usa.65 }
+		}
+	}
+	
+}
+
+#Utah accepts
+country_event = {
+	id = usa.64
+	title = usa.64.t
+	desc = usa.64.d
+	picture = texas_state
+	
+	is_triggered_only = yes
+	
+	option = {   
+		name = usa.64.o1
+		USA = {
+		    annex_country = { target = UTA }
+		}
+	}
+	
+}
+
+#Utah refuses
+country_event = {
+	id = usa.65
+	title = usa.65.t
+	desc = usa.65.d
+	picture = texas_state
+	
+	is_triggered_only = yes
+	
+	option = {   
+		name = usa.65.o1
+		create_wargoal = {
+			type = annex_everything
+			target = UTA
+		}
+	}
+	
+}
+
+#Arizona - republic proposes union
+country_event = {
+	id = usa.66
+	title = usa.66.t
+	desc = usa.66.d
+	picture = texas_state
+	
+	is_triggered_only = yes
+	
+	option = {   #Yes
+		name = usa.66.o1
+		ai_chance = {
+			factor = 90
+		}
+		USA = {
+			country_event = { id = usa.67 }
+		}
+	}
+	
+	option = {   #No
+		name = usa.66.o2
+		ai_chance = {
+			factor = 10
+		}
+		USA = {
+			country_event = { id = usa.68 }
+		}
+	}
+	
+}
+
+#Arizona accepts
+country_event = {
+	id = usa.67
+	title = usa.67.t
+	desc = usa.67.d
+	picture = texas_state
+	
+	is_triggered_only = yes
+	
+	option = {   
+		name = usa.67.o1
+		USA = {
+		    annex_country = { target = ARI }
+		}
+	}
+	
+}
+
+#Arizona refuses
+country_event = {
+	id = usa.68
+	title = usa.68.t
+	desc = usa.68.d
+	picture = texas_state
+	
+	is_triggered_only = yes
+	
+	option = {   
+		name = usa.68.o1
+		create_wargoal = {
+			type = annex_everything
+			target = ARI
+		}
+	}
+	
+}
+
+#Alaska - republic proposes union
+#country_event = {
+#	id = usa.69
+#	title = usa.69.t
+#	desc = usa.69.d
+#	picture = texas_state
+#	
+#	is_triggered_only = yes
+#	
+#	option = {   #Yes
+#		name = usa.69.o1
+#		ai_chance = {
+#			factor = 40
+#		}
+#		USA = {
+#			country_event = { id = usa.70 }
+#		}
+#	}
+#	
+#	option = {   #No
+#		name = usa.69.o2
+#		ai_chance = {
+#			factor = 60
+#		}
+#		USA = {
+#			country_event = { id = usa.71 }
+#		}
+#	}
+#	
+#}
+
+#Alaska accepts
+country_event = {
+	id = usa.70
+	title = usa.70.t
+	desc = usa.70.d
+	picture = texas_state
+	
+	is_triggered_only = yes
+	
+	option = {   
+		name = usa.70.o1
+		USA = {
+		    annex_country = { target = ALA }
+		}
+	}
+	
+}
+
+#Alaska refuses
+country_event = {
+	id = usa.71
+	title = usa.71.t
+	desc = usa.71.d
+	picture = texas_state
+	
+	is_triggered_only = yes
+	
+	option = {   
+		name = usa.71.o1
+		create_wargoal = {
+			type = annex_everything
+			target = ALA
+		}
+	}
+	
+}
+
+#Mexico - confederates invite us to alliance
+country_event = {
+	id = usa.72
+	title = usa.72.t
+	desc = usa.72.d
+	picture = confederate_alliance
+	
+	is_triggered_only = yes
+	
+	option = {   #Accept
+		name = usa.72.o1
+		ai_chance = {
+			factor = 60
+		}
+		USA = {
+		    add_to_faction = MEX
+		}
+		MEX = {
+		    add_ai_strategy = {
+		        type = alliance
+		        id = "USA"
+		        value = 150
+	        }
+		}
+		add_ai_strategy = {
+		    type = befriend
+		    id = "USA"
+		    value = 50
+	    }
+	}
+	
+	option = {   #Refuse
+		name = usa.72.o2
+		ai_chance = {
+			factor = 40
+		}
+		USA = {
+			country_event = { id = usa.73 }
+		}
+	}
+	
+}
+
+#Mexico refuses invitation to alliance
+country_event = {
+	id = usa.73
+	title = usa.73.t
+	desc = usa.73.d
+	picture = confederate_alliance
+	
+	is_triggered_only = yes
+	
+	option = {   
+		name = usa.73.o1
+	}
+	
+}
+
+#Cuba - confederates invite us to alliance
+country_event = {
+	id = usa.74
+	title = usa.74.t
+	desc = usa.74.d
+	picture = confederate_alliance
+	
+	is_triggered_only = yes
+	
+	option = {   #Accept
+		name = usa.74.o1
+		ai_chance = {
+			factor = 80
+		}
+		USA = {
+		    add_to_faction = CUB
+		}
+		CUB = {
+		    add_ai_strategy = {
+		        type = alliance
+		        id = "USA"
+		        value = 150
+	        }
+		}
+		add_ai_strategy = {
+		    type = befriend
+		    id = "USA"
+		    value = 50
+	    }
+	}
+	
+	option = {   #Refuse
+		name = usa.74.o2
+		ai_chance = {
+			factor = 20
+		}
+		USA = {
+			country_event = { id = usa.75 }
+		}
+	}
+	
+}
+
+#Cuba refuses invitation to alliance
+country_event = {
+	id = usa.75
+	title = usa.75.t
+	desc = usa.75.d
+	picture = confederate_alliance
+	
+	is_triggered_only = yes
+	
+	option = {   
+		name = usa.75.o1
+	}
+	
+}
+
+#Jamaica - confederates invite us to alliance
+country_event = {
+	id = usa.76
+	title = usa.76.t
+	desc = usa.76.d
+	picture = confederate_alliance
+	
+	is_triggered_only = yes
+	
+	option = {   #Accept
+		name = usa.76.o1
+		ai_chance = {
+			factor = 90
+		}
+		USA = {
+		    add_to_faction = JAM
+		}
+		JAM = {
+		    add_ai_strategy = {
+		        type = alliance
+		        id = "USA"
+		        value = 150
+	        }
+		}
+		add_ai_strategy = {
+		    type = befriend
+		    id = "USA"
+		    value = 50
+	    }
+	}
+	
+	option = {   #Refuse
+		name = usa.76.o2
+		ai_chance = {
+			factor = 10
+		}
+		USA = {
+			country_event = { id = usa.77 }
+		}
+	}
+	
+}
+
+#Jamaica refuses invitation to alliance
+country_event = {
+	id = usa.77
+	title = usa.77.t
+	desc = usa.77.d
+	picture = confederate_alliance
+	
+	is_triggered_only = yes
+	
+	option = {   
+		name = usa.77.o1
+	}
+	
+}
+
+#Haiti - confederates invite us to alliance
+country_event = {
+	id = usa.78
+	title = usa.78.t
+	desc = usa.78.d
+	picture = confederate_alliance
+	
+	is_triggered_only = yes
+	
+	option = {   #Accept
+		name = usa.78.o1
+		ai_chance = {
+			factor = 50
+		}
+		USA = {
+		    add_to_faction = HAI
+		}
+		HAI = {
+		    add_ai_strategy = {
+		        type = alliance
+		        id = "USA"
+		        value = 150
+	        }
+		}
+		add_ai_strategy = {
+		    type = befriend
+		    id = "USA"
+		    value = 50
+	    }
+	}
+	
+	option = {   #Refuse
+		name = usa.78.o2
+		ai_chance = {
+			factor = 50
+		}
+		USA = {
+			country_event = { id = usa.79 }
+		}
+	}
+	
+}
+
+#Haiti refuses invitation to alliance
+country_event = {
+	id = usa.79
+	title = usa.79.t
+	desc = usa.79.d
+	picture = confederate_alliance
+	
+	is_triggered_only = yes
+	
+	option = {   
+		name = usa.79.o1
+	}
+	
+}
+
+#Dominican Republic - confederates invite us to alliance
+country_event = {
+	id = usa.80
+	title = usa.80.t
+	desc = usa.80.d
+	picture = confederate_alliance
+	
+	is_triggered_only = yes
+	
+	option = {   #Accept
+		name = usa.80.o1
+		ai_chance = {
+			factor = 70
+		}
+		USA = {
+		    add_to_faction = DOM
+		}
+		DOM = {
+		    add_ai_strategy = {
+		        type = alliance
+		        id = "USA"
+		        value = 150
+	        }
+		}
+		add_ai_strategy = {
+		    type = befriend
+		    id = "USA"
+		    value = 50
+	    }
+	}
+	
+	option = {   #Refuse
+		name = usa.80.o2
+		ai_chance = {
+			factor = 30
+		}
+		USA = {
+			country_event = { id = usa.81 }
+		}
+	}
+	
+}
+
+#Dominican Republic refuses invitation to alliance
+country_event = {
+	id = usa.81
+	title = usa.81.t
+	desc = usa.81.d
+	picture = confederate_alliance
+	
+	is_triggered_only = yes
+	
+	option = {   
+		name = usa.81.o1
+	}
+	
+}
+
+#Bahamas - confederates invite us to alliance
+country_event = {
+	id = usa.82
+	title = usa.82.t
+	desc = usa.82.d
+	picture = confederate_alliance
+	
+	is_triggered_only = yes
+	
+	option = {   #Accept
+		name = usa.82.o1
+		ai_chance = {
+			factor = 90
+		}
+		USA = {
+		    add_to_faction = BHM
+		}
+		BHM = {
+		    add_ai_strategy = {
+		        type = alliance
+		        id = "USA"
+		        value = 150
+	        }
+		}
+		add_ai_strategy = {
+		    type = befriend
+		    id = "USA"
+		    value = 50
+	    }
+	}
+	
+	option = {   #Refuse
+		name = usa.82.o2
+		ai_chance = {
+			factor = 10
+		}
+		USA = {
+			country_event = { id = usa.83 }
+		}
+	}
+	
+}
+
+#Bahamas refuses invitation to alliance
+country_event = {
+	id = usa.83
+	title = usa.83.t
+	desc = usa.83.d
+	picture = confederate_alliance
+	
+	is_triggered_only = yes
+	
+	option = {   
+		name = usa.83.o1
+	}
+	
+}
+
+#Colombia - confederates invite us to alliance
+country_event = {
+	id = usa.84
+	title = usa.84.t
+	desc = usa.84.d
+	picture = confederate_alliance
+	
+	is_triggered_only = yes
+	
+	option = {   #Accept
+		name = usa.84.o1
+		ai_chance = {
+			factor = 60
+		}
+		USA = {
+		    add_to_faction = COL
+		}
+		COL = {
+		    add_ai_strategy = {
+		        type = alliance
+		        id = "USA"
+		        value = 150
+	        }
+		}
+		add_ai_strategy = {
+		    type = befriend
+		    id = "USA"
+		    value = 50
+	    }
+	}
+	
+	option = {   #Refuse
+		name = usa.84.o2
+		ai_chance = {
+			factor = 40
+		}
+		USA = {
+			country_event = { id = usa.85 }
+		}
+	}
+	
+}
+
+#Colombia refuses invitation to alliance
+country_event = {
+	id = usa.85
+	title = usa.85.t
+	desc = usa.85.d
+	picture = confederate_alliance
+	
+	is_triggered_only = yes
+	
+	option = {   
+		name = usa.85.o1
+	}
+	
+}
+
+#Right wing values remain dominant after election
+country_event = {
+	id = usa.86
+	title = usa.86.t
+	desc = usa.86.d
+	picture = right_wing_values
+	
+	is_triggered_only = yes
+	
+	option = {   
+		name = usa.86.o1
+	}
+	
+}
+
+#President announces new economic plan for lower company taxes
+country_event = {
+	id = usa.87
+	title = usa.87.t
+	desc = usa.87.d
+	picture = economic_plan
+	
+	is_triggered_only = yes
+	
+	option = {   
+		name = usa.87.o1
+	}
+	
+}
+
+#President announces new economic plan for moderate company taxes
+country_event = {
+	id = usa.88
+	title = usa.88.t
+	desc = usa.88.d
+	picture = economic_plan
+	
+	is_triggered_only = yes
+	
+	option = {   
+		name = usa.88.o1
+	}
+	
+}
+
+#President announces new economic plan for high company taxes
+country_event = {
+	id = usa.89
+	title = usa.89.t
+	desc = usa.89.d
+	picture = economic_plan
+	
+	is_triggered_only = yes
+	
+	option = {   
+		name = usa.89.o1
+	}
+	
+}
+
+#New social programs
+country_event = {
+	id = usa.90
+	title = usa.90.t
+	desc = usa.90.d
+	picture = social_programs
+	
+	is_triggered_only = yes
+	
+	option = {   
+		name = usa.90.o1
+	}
+	
+}
+
+#Increased support for Republican party
+country_event = {
+	id = usa.91
+	title = usa.91.t
+	desc = usa.91.d
+	picture = republican_party
+	
+	is_triggered_only = yes
+	
+	option = {   
+		name = usa.91.o1
+	}
+	
+}
+
+#Congress passes Freedom Act
+country_event = {
+	id = usa.92
+	title = usa.92.t
+	desc = usa.92.d
+	picture = freedom_act
+	
+	is_triggered_only = yes
+	
+	option = {   
+		name = usa.92.o1
+	}
+	
+}
+
+#NSA reestablished
+country_event = {
+	id = usa.93
+	title = usa.93.t
+	desc = usa.93.d
+	picture = national_security_agency
+	
+	is_triggered_only = yes
+	
+	option = {   
+		name = usa.93.o1
+	}
+	
+}
+
+#New curriculum enforces Republican values
+country_event = {
+	id = usa.94
+	title = usa.94.t
+	desc = usa.94.d
+	picture = new_curriculum
+	
+	is_triggered_only = yes
+	
+	option = {   
+		name = usa.94.o1
+	}
+	
+}
+
+#Congress gets rid of most seperation of church and state
+country_event = {
+	id = usa.95
+	title = usa.95.t
+	desc = usa.95.d
+	picture = church_and_state
+	
+	is_triggered_only = yes
+	
+	option = {   
+		name = usa.95.o1
+	}
+	
+}
+
+#Independence Union's popularity spikes
+country_event = {
+	id = usa.96
+	title = usa.96.t
+	desc = usa.96.d
+	picture = independence_union
+	
+	is_triggered_only = yes
+	
+	option = {   
+		name = usa.96.o1
+	}
+	
+}
+
+#Republicans lose any power in congress due to special elections
+country_event = {
+	id = usa.97
+	title = usa.97.t
+	desc = usa.97.d
+	picture = special_congress_election
+	
+	is_triggered_only = yes
+	
+	option = {   
+		name = usa.97.o1
+	}
+	
+}
+
+#President Bentley releases damaging information about 'savior' president bush
+country_event = {
+	id = usa.98
+	title = usa.98.t
+	desc = usa.98.d
+	picture = george_bush_senior
+	
+	is_triggered_only = yes
+	
+	option = {   
+		name = usa.98.o1
+	}
+	
+}
+
+#Growing support for confederate values
+country_event = {
+	id = usa.99
+	title = usa.99.t
+	desc = usa.99.d
+	picture = confederate_states_proclaimed
+	
+	is_triggered_only = yes
+	
+	option = {   
+		name = usa.99.o1
+	}
+	
+}
+
+#Congress votes to decentralise
+country_event = {
+	id = usa.100
+	title = usa.100.t
+	desc = usa.100.d
+	picture = congress_working
+	
+	is_triggered_only = yes
+	
+	option = {   
+		name = usa.100.o1
+	}
+	
+}
+
+#Confederate constitution drafted
+country_event = {
+	id = usa.101
+	title = usa.101.t
+	desc = usa.101.d
+	picture = president_bentley_signing
+	
+	is_triggered_only = yes
+	
+	option = {   
+		name = usa.101.o1
+	}
+	
+}
+
+#President renounces Confederate claims to the former US
+country_event = {
+	id = usa.102
+	title = usa.102.t
+	desc = usa.102.d
+	picture = usa_map
+	
+	is_triggered_only = yes
+	
+	option = {   
+		name = usa.102.o1
+	}
+	
+}
+
+#Polls show lack of enthusiasm for democracy
+country_event = {
+	id = usa.103
+	title = usa.103.t
+	desc = usa.103.d
+	picture = anti_democracy_america
+	
+	is_triggered_only = yes
+	
+	option = {   
+		name = usa.103.o1
+	}
+	
+}
+
+#Military leads coup against congress and the president
+country_event = {
+	id = usa.104
+	title = usa.104.t
+	desc = usa.104.d
+	picture = american_military_coup
+	
+	is_triggered_only = yes
+	
+	option = {   
+		name = usa.104.o1
+		hidden_effect = {
+			every_country = {
+		        limit = {
+			        NOT = {
+				        tag = USA
+				    }
+			    }
+			    news_event = {
+			        hours = 4
+			        id = news.231
+		        }
+		    }
+		}
+	}
+	
+}
+
+#Military junta consolidates power
+country_event = {
+	id = usa.105
+	title = usa.105.t
+	desc = usa.105.d
+	picture = junta_consolidates_power
+	
+	is_triggered_only = yes
+	
+	option = {   
+		name = usa.105.o1
+	}
+	
+}
+
+#Martial law declared across the Republic
+country_event = {
+	id = usa.106
+	title = usa.106.t
+	desc = usa.106.d
+	picture = america_martial_law
+	
+	is_triggered_only = yes
+	
+	option = {   
+		name = usa.106.o1
+	}
+	
+}
+
+#Cult surrounding descendants of Washington grows in popularity
+country_event = {
+	id = usa.107
+	title = usa.107.t
+	desc = usa.107.d
+	picture = george_washington
+	
+	is_triggered_only = yes
+	
+	option = {   
+		name = usa.107.o1
+	}
+	
+}
+
+#Paul Emery agrees to taking charge
+country_event = {
+	id = usa.108
+	title = usa.108.t
+	desc = usa.108.d
+	picture = paul_emery_takes_charge
+	
+	is_triggered_only = yes
+	
+	option = {   
+		name = usa.108.o1
+		hidden_effect = {
+			every_country = {
+		        limit = {
+			        NOT = {
+				        tag = USA
+				    }
+			    }
+			    news_event = {
+			        hours = 4
+			        id = news.232
+		        }
+		    }
+		}
+	}
+	
+}
+
+#Congress and the King working together
+country_event = {
+	id = usa.109
+	title = usa.109.t
+	desc = usa.109.d
+	picture = congress_working
+	
+	is_triggered_only = yes
+	
+	option = {   
+		name = usa.109.o1
+	}
+	
+}
+
+#Council of Princes established
+country_event = {
+	id = usa.110
+	title = usa.110.t
+	desc = usa.110.d
+	picture = council_of_princes
+	
+	is_triggered_only = yes
+	
+	option = {   
+		name = usa.110.o1
+	}
+	
+}
+
+#Approval of Paul I grows
+country_event = {
+	id = usa.111
+	title = usa.111.t
+	desc = usa.111.d
+	picture = council_of_princes
+	
+	is_triggered_only = yes
+	
+	option = {   
+		name = usa.111.o1
+	}
+	
+}
+
+#Royal American Army established
+country_event = {
+	id = usa.112
+	title = usa.112.t
+	desc = usa.112.d
+	picture = american_military_coup
+	
+	is_triggered_only = yes
+	
+	option = {   
+		name = usa.112.o1
+	}
+	
+}
+
+#CIA director swears allegiance to the king
+country_event = {
+	id = usa.113
+	title = usa.113.t
+	desc = usa.113.d
+	picture = central_intelligence_agency
+	
+	is_triggered_only = yes
+	
+	option = {   
+		name = usa.113.o1
+	}
+	
+}
+
+#Barack Obama inaugurated as first PM
+country_event = {
+	id = usa.114
+	title = usa.114.t
+	desc = usa.114.d
+	picture = barack_obama_inauguration
+	
+	is_triggered_only = yes
+	
+	option = {   
+		name = usa.114.o1
+		hidden_effect = {
+			every_country = {
+		        limit = {
+			        NOT = {
+				        tag = USA
+				    }
+			    }
+			    news_event = {
+			        hours = 4
+			        id = news.233
+		        }
+		    }
+		}
+	}
+	
+}
+
+#Steve Bannon inaugurated as first PM
+country_event = {
+	id = usa.115
+	title = usa.115.t
+	desc = usa.115.d
+	picture = steve_bannon_inauguration
+	
+	is_triggered_only = yes
+	
+	option = {   
+		name = usa.115.o1
+		hidden_effect = {
+			every_country = {
+		        limit = {
+			        NOT = {
+				        tag = USA
+				    }
+			    }
+			    news_event = {
+			        hours = 4
+			        id = news.234
+		        }
+		    }
+		}
+	}
+	
+}
+
+#Mike Huckabee inaugurated as first PM
+country_event = {
+	id = usa.116
+	title = usa.116.t
+	desc = usa.116.d
+	picture = mike_huckabee_inauguration
+	
+	is_triggered_only = yes
+	
+	option = {   
+		name = usa.116.o1
+		hidden_effect = {
+			every_country = {
+		        limit = {
+			        NOT = {
+				        tag = USA
+				    }
+			    }
+			    news_event = {
+			        hours = 4
+			        id = news.235
+		        }
+		    }
+		}
+	}
+	
+}
+
+#Bobby Jindal inaugurated as first PM
+country_event = {
+	id = usa.117
+	title = usa.117.t
+	desc = usa.117.d
+	picture = bobby_jindal_inauguration
+	
+	is_triggered_only = yes
+	
+	option = {   
+		name = usa.117.o1
+		hidden_effect = {
+			every_country = {
+		        limit = {
+			        NOT = {
+				        tag = USA
+				    }
+			    }
+			    news_event = {
+			        hours = 4
+			        id = news.236
+		        }
+		    }
+		}
+	}
+	
+}
+
+#Duke expresses interest in corporatism
+country_event = {
+	id = usa.118
+	title = usa.118.t
+	desc = usa.118.d
+	picture = david_duke_corporatism
+	
+	is_triggered_only = yes
+	
+	option = {   
+		name = usa.118.o1
+	}
+	
+}
+
+#New congress of businessmen
+country_event = {
+	id = usa.119
+	title = usa.119.t
+	desc = usa.119.d
+	picture = congress_working
+	
+	is_triggered_only = yes
+	
+	option = {   
+		name = usa.119.o1
+	}
+	
+}
+
+#Congress passes economic revival act
+country_event = {
+	id = usa.120
+	title = usa.120.t
+	desc = usa.120.d
+	picture = congress_working
+	
+	is_triggered_only = yes
+	
+	option = {   
+		name = usa.120.o1
+	}
+	
+}
+
+#American CEOS return
+country_event = {
+	id = usa.121
+	title = usa.121.t
+	desc = usa.121.d
+	picture = american_executives_return
+	
+	is_triggered_only = yes
+	
+	option = {   
+		name = usa.121.o1
+	}
+	
+}
+
+#Congress abolishes corporate taxes
+country_event = {
+	id = usa.122
+	title = usa.122.t
+	desc = usa.122.d
+	picture = congress_working
+	
+	is_triggered_only = yes
+	
+	option = {   
+		name = usa.122.o1
+	}
+	
+}
+
+#Duke becomes figurehead leader behind congress
+country_event = {
+	id = usa.123
+	title = usa.123.t
+	desc = usa.123.d
+	picture = congress_working
+	
+	is_triggered_only = yes
+	
+	option = {   
+		name = usa.123.o1
+	}
+	
+}
+
+#Duke's approval at an all time high
+country_event = {
+	id = usa.124
+	title = usa.124.t
+	desc = usa.124.d
+	picture = david_duke_corporatism
+	
+	is_triggered_only = yes
+	
+	option = {   
+		name = usa.124.o1
+	}
+	
+}
+
+#Duke creates paramilitary
+country_event = {
+	id = usa.125
+	title = usa.125.t
+	desc = usa.125.d
+	picture = david_duke_paramilitary
+	
+	is_triggered_only = yes
+	
+	option = {   
+		name = usa.125.o1
+	}
+	
+}
+
+#Rigged congressional election
+country_event = {
+	id = usa.126
+	title = usa.126.t
+	desc = usa.126.d
+	picture = special_congress_election
+	
+	is_triggered_only = yes
+	
+	option = {   
+		name = usa.126.o1
+	}
+	
+}
+
+#Duke's megalomaniac construction projects
+country_event = {
+	id = usa.127
+	title = usa.127.t
+	desc = usa.127.d
+	picture = washington_future_buildings
+	
+	is_triggered_only = yes
+	
+	option = {   
+		name = usa.127.o1
+	}
+	
+}
+
+#KKK factions shot down
+country_event = {
+	id = usa.128
+	title = usa.128.t
+	desc = usa.128.d
+	picture = david_duke_corporatism
+	
+	is_triggered_only = yes
+	
+	option = {   
+		name = usa.128.o1
+	}
+	
+}
+
+#KKK influences Congress
+country_event = {
+	id = usa.129
+	title = usa.129.t
+	desc = usa.129.d
+	picture = kkk_influences_congress
+	
+	is_triggered_only = yes
+	
+	option = {   
+		name = usa.129.o1
+	}
+	
+}
+
+#KKK members persuade Duke to step aside
+country_event = {
+	id = usa.130
+	title = usa.130.t
+	desc = usa.130.d
+	picture = kkk_persuades_duke_step_aside
+	
+	is_triggered_only = yes
+	
+	option = {   
+		name = usa.130.o1
+	}
+	
+}
+
+#KKK overthrow congress
+country_event = {
+	id = usa.131
+	title = usa.131.t
+	desc = usa.131.d
+	picture = kkk_overthrow_congress
+	
+	is_triggered_only = yes
+	
+	option = {   
+		name = usa.131.o1
+	}
+	
+}
+
+#Segregation returns
+country_event = {
+	id = usa.132
+	title = usa.132.t
+	desc = usa.132.d
+	picture = segregation
+	
+	is_triggered_only = yes
+	
+	option = {   
+		name = usa.132.o1
+	}
+	
+}
+
+#The Wizard's speech
+country_event = {
+	id = usa.133
+	title = usa.133.t
+	desc = usa.133.d
+	picture = wizards_speech
+	
+	is_triggered_only = yes
+	
+	option = {   
+		name = usa.133.o1
+	}
+	
+}
+
+#Generic Recruitment campaign
+country_event = {
+	id = usa.134
+	title = usa.134.t
+	desc = usa.134.d
+	picture = recruitment_campaign
+	
+	is_triggered_only = yes
+	
+	option = {   
+		name = usa.134.o1
+	}
+	
+}
+
+#New American constitution
+country_event = {
+	id = usa.135
+	title = usa.135.t
+	desc = usa.135.d
+	picture = texas_laws
+	
+	is_triggered_only = yes
+	
+	option = {   
+		name = usa.135.o1
+	}
+	
+}
+
+#American army unites
+country_event = {
+	id = usa.136
+	title = usa.136.t
+	desc = usa.136.d
+	picture = recruitment_campaign
+	
+	is_triggered_only = yes
+	
+	option = {   
+		name = usa.136.o1
+	}
+	
+}
+
+#President pledges to destroy ussr
+country_event = {
+	id = usa.137
+	title = usa.137.t
+	desc = usa.137.d
+	picture = usa_vs_ussr
+	
+	is_triggered_only = yes
+	
+	option = {   
+		name = usa.137.o1
+	}
+	
+}
+
+#New Orleans summit
+country_event = {
+	id = usa.138
+	title = usa.138.t
+	desc = usa.138.d
+	picture = new_orleans
+	
+	is_triggered_only = yes
+	
+	option = {   
+		name = usa.138.o1
+	}
+	
+}
+
+#Junta dissolves congress
+country_event = {
+	id = usa.139
+	title = usa.139.t
+	desc = usa.139.d
+	picture = congress_working
+	
+	is_triggered_only = yes
+	
+	option = {   
+		name = usa.139.o1
+	}
+	
+}
+
+#Junta returns Duke to the Presidency
+country_event = {
+	id = usa.140
+	title = usa.140.t
+	desc = usa.140.d
+	picture = david_duke_returns
+	
+	is_triggered_only = yes
+	
+	option = {   
+		name = usa.140.o1
+	}
+	
+}
+
+#Junta is here to stay
+country_event = {
+	id = usa.141
+	title = usa.141.t
+	desc = usa.141.d
+	picture = junta_consolidates_power
+	
+	is_triggered_only = yes
+	
+	option = {   
+		name = usa.141.o1
+	}
+	
+}
+
+#Duke abolishes federal reserve
+country_event = {
+	id = usa.142
+	title = usa.142.t
+	desc = usa.142.d
+	picture = federal_reserve
+	
+	is_triggered_only = yes
+	
+	option = {   
+		name = usa.142.o1
+	}
+	
+}
+
+#Remaining communists purged
+country_event = {
+	id = usa.143
+	title = usa.143.t
+	desc = usa.143.d
+	picture = communists_purged_america
+	
+	is_triggered_only = yes
+	
+	option = {   
+		name = usa.143.o1
+	}
+	
+}
+
+#Duke prepares American people for total war
+country_event = {
+	id = usa.144
+	title = usa.144.t
+	desc = usa.144.d
+	picture = junta_consolidates_power
+	
+	is_triggered_only = yes
+	
+	option = {   
+		name = usa.144.o1
+        create_wargoal = {
+		    type = annex_everything
+		    target = MWA
+		}
+		create_wargoal = {
+		    type = annex_everything
+		    target = ILL
+		}
+		create_wargoal = {
+		    type = annex_everything
+		    target = UTA
+		}
+		create_wargoal = {
+		    type = annex_everything
+		    target = ARI
+		}
+        create_wargoal = {
+		    type = annex_everything
+		    target = GRL
+		}
+		create_wargoal = {
+		    type = annex_everything
+		    target = MOT
+		}
+		create_wargoal = {
+		    type = annex_everything
+		    target = LIN
+		}
+        create_wargoal = {
+		    type = annex_everything
+		    target = PCA
+		}
+        create_wargoal = {
+		    type = annex_everything
+		    target = CSD
+		}
+        create_wargoal = {
+		    type = annex_everything
+		    target = NEA
+		}
+        create_wargoal = {
+		    type = annex_everything
+		    target = AMC
+		}
+        create_wargoal = {
+		    type = annex_everything
+		    target = AMS
+		}
+        create_wargoal = {
+		    type = annex_everything
+		    target = GAU
+		}
+	}
+	
+}
+
+#2011 tornado outbreak
+country_event = {
+	id = usa.145
+	title = usa.145.t
+	desc = usa.145.d
+	picture = 2011_tornado_outbreak
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = USA
+		date > 2011.4.10
+		date < 2011.5.10
+	}
+	
+	option = {
+		name = usa.145.o1
+		add_political_power = -50
+	}
+}
+
+#2016 Louisiana floods
+country_event = {
+	id = usa.146
+	title = usa.146.t
+	desc = usa.146.d
+	picture = 2016_louisiana_floods
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = USA
+		date > 2016.8.1
+		date < 2016.8.30
+	}
+	
+	option = {
+		name = usa.146.o1
+		add_political_power = -50
+	}
+}
+
+#Statue of George HW Bush erected in Atlanta
+country_event = {
+	id = usa.147
+	title = usa.147.t
+	desc = usa.147.d
+	picture = bush_senior_statue
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = USA
+		date > 2010.6.1
+		date < 2010.6.30
+	}
+	
+	option = {
+		name = usa.147.o1
+	}
+}
+
+#Communist attack in miami
+country_event = {
+	id = usa.148
+	title = usa.148.t
+	desc = usa.148.d
+	picture = miami_communist_attack
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = USA
+		date > 2010.4.1
+		date < 2010.4.30
+	}
+	
+	option = {
+		name = usa.148.o1
+		add_stability = -0.01
+	}
+}
+
+#Immigrants coming from the midwest
+country_event = {
+	id = usa.149
+	title = usa.149.t
+	desc = usa.149.d
+	picture = america_border_immigrants
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = USA
+		date > 2011.3.1
+		date < 2011.3.30
+	}
+	
+	option = {
+		name = usa.149.o1
+	}
+}
+
+#Stock market instability
+country_event = {
+	id = usa.150
+	title = usa.150.t
+	desc = usa.150.d
+	picture = economic_plan
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = USA
+		date > 2011.7.1
+		date < 2011.7.30
+	}
+	
+	option = {
+		name = usa.150.o1
+		add_political_power = -10
+	}
+}
+
+#White House protests against 'rigged' election
+country_event = {
+	id = usa.151
+	title = usa.151.t
+	desc = usa.151.d
+	picture = white_house_protests
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = USA
+		date > 2010.10.1
+		date < 2010.10.30
+	}
+	
+	option = {
+		name = usa.151.o1
+	}
+}
+
+#Charleston church shooting
+country_event = {
+	id = usa.152
+	title = usa.152.t
+	desc = usa.152.d
+	picture = charleston_church_shooting
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = USA
+		date > 2015.6.1
+		date < 2015.6.30
+	}
+	
+	option = {
+		name = usa.152.o1
+	}
+}
+
+#Robert Bentley shot
+country_event = {
+	id = usa.153
+	title = usa.153.t
+	desc = usa.153.d
+	picture = robert_bentley_shot
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = USA
+		date > 2017.3.1
+		date < 2017.3.30
+		has_government = national_conservative
+	}
+	
+	option = {
+		name = usa.153.o1
+		hidden_effect = {
+		    USA = {
+		        country_event = { days = 7 id = usa.154 } 
+		    }
+		}
+	}
+}
+
+#Robert Bentley dies
+country_event = {
+	id = usa.154
+	title = usa.154.t
+	desc = usa.154.d
+	picture = robert_bentley_dies
+	
+	is_triggered_only = yes
+	
+	option = {   #Bypass succession, first lady becomes president
+		name = usa.154.o1
+		create_country_leader = {
+	        name = "Dianne Bentley"
+	        picture = "Portrait_USA_Dianne_Bentley.dds"
+	        ideology = american_conservative
+        }
+		set_country_flag = dianne_is_president
+	}
+	
+	option = {   #Vice President Omarosa Manigault becomes president
+		name = usa.154.o2
+		create_country_leader = {
+	        name = "Omarosa Manigault"
+	        picture = "Portrait_USA_Omarosa_Manigault.dds"
+	        ideology = fiscal_conservative
+        }
+		set_country_flag = omarosa_is_president
+	}
+}
+
+#Independence Union primaries - Dianne Bentley is President
+country_event = {
+	id = usa.155
+	title = usa.155.t
+	desc = usa.155.d
+	picture = independence_union_primaries
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = USA
+		date > 2018.5.1
+		date < 2018.5.30
+		has_country_flag = dianne_is_president
+	}
+	
+	option = {   #Dianne Bentley
+		name = usa.155.o1
+		set_country_flag = president_dianne_candidate_dianne
+	}
+	
+	option = {   #Jeff Sessions
+		name = usa.155.o2
+		set_country_flag = president_dianne_candidate_sessions
+	}
+	
+	option = {   #David Friedman
+		name = usa.155.o3
+		set_country_flag = president_dianne_candidate_friedman
+	}
+	
+	option = {   #Jimmy Carter
+		name = usa.155.o4
+		set_country_flag = president_dianne_candidate_carter
+	}
+}
+
+#Independence Union primaries - Omarosa is President
+country_event = {
+	id = usa.156
+	title = usa.156.t
+	desc = usa.156.d
+	picture = independence_union_primaries
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = USA
+		date > 2018.5.1
+		date < 2018.5.30
+		has_country_flag = omarosa_is_president
+	}
+	
+	option = {   #Omarosa Manigault
+		name = usa.156.o1
+		set_country_flag = president_omarosa_candidate_omarosa
+	}
+	
+	option = {   #Randy Neugebauer
+		name = usa.156.o2
+		set_country_flag = president_omarosa_candidate_neugebauer
+	}
+	
+	option = {   #Gerald Long
+		name = usa.156.o3
+		set_country_flag = president_omarosa_candidate_long
+	}
+	
+	option = {   #Nikki Haley
+		name = usa.156.o4
+		set_country_flag = president_omarosa_candidate_haley
+	}
+}
+
+#Democratic Party primaries
+country_event = {
+	id = usa.157
+	title = usa.157.t
+	desc = usa.157.d
+	picture = democratic_party_primaries
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = USA
+		date > 2018.4.1
+		date < 2018.4.30
+		has_government = national_conservative
+	}
+	
+	option = {   #Joe Biden
+		name = usa.157.o1
+		set_country_flag = candidate_biden
+	}
+	
+	option = {   #Loretta Lynch
+		name = usa.157.o2
+		set_country_flag = candidate_lynch
+	}
+	
+	option = {   #Tim Kaine
+		name = usa.157.o3
+		set_country_flag = candidate_kaine
+	}
+	
+	option = {   #Shelley Capito
+		name = usa.157.o4
+		set_country_flag = candidate_capito
+	}
+}
+
+#2018 election
+country_event = {
+	id = usa.158
+	title = usa.158.t
+	desc = usa.158.d
+	picture = special_congress_election
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = USA
+		date > 2018.11.1
+		date < 2018.11.30
+		has_government = national_conservative
+	}
+	
+	option = {   #Independence Union
+		name = usa.158.o1
+		add_popularity = {
+			ideology = national_conservative
+			popularity = 0.05
+		}
+		if = {
+		    limit = {
+			    has_country_flag = president_dianne_candidate_sessions
+			}
+			create_country_leader = {
+	            name = "Jeff Sessions"
+	            picture = "Portrait_USA_Jeff_Sessions.dds"
+	            ideology = american_conservative
+            }
+		}
+		if = {
+		    limit = {
+			    has_country_flag = president_dianne_candidate_friedman
+			}
+			create_country_leader = {
+	            name = "David Friedman"
+	            picture = "Portrait_USA_David_Friedman.dds"
+	            ideology = american_conservative
+            }
+		}
+		if = {
+		    limit = {
+			    has_country_flag = president_dianne_candidate_carter
+			}
+			create_country_leader = {
+	            name = "James Carter"
+	            picture = "Portrait_USA_James_Carter.dds"
+	            ideology = american_conservative
+            }
+		}
+		if = {
+		    limit = {
+			    has_country_flag = president_omarosa_candidate_neugebauer
+			}
+			create_country_leader = {
+	            name = "Robert Neugebauer"
+	            picture = "Portrait_USA_Robert_Neugebauer.dds"
+	            ideology = fiscal_conservative
+            }
+		}
+		if = {
+		    limit = {
+			    has_country_flag = president_omarosa_candidate_long
+			}
+			create_country_leader = {
+	            name = "Gerald Long"
+	            picture = "Portrait_USA_Gerald_Long.dds"
+	            ideology = fiscal_conservative
+            }
+		}
+		if = {
+		    limit = {
+			    has_country_flag = president_omarosa_candidate_haley
+			}
+			create_country_leader = {
+	            name = "Nikki Haley"
+	            picture = "Portrait_USA_Nikki_Haley.dds"
+	            ideology = fiscal_conservative
+            }
+		}
+	}
+	
+	option = {   #Democratic Party
+		name = usa.158.o2
+		set_politics = {
+	        ruling_party = liberal
+	        elections_allowed = no
+        }
+		add_popularity = {
+			ideology = liberal
+			popularity = 0.5
+		}
+		if = {
+		    limit = {
+			    has_country_flag = candidate_biden
+			}
+			create_country_leader = {
+	            name = "Joseph Biden"
+	            picture = "Portrait_USA_Joseph_Biden.dds"
+	            ideology = old_american_democrats
+            }
+		}
+		if = {
+		    limit = {
+			    has_country_flag = candidate_lynch
+			}
+			create_country_leader = {
+	            name = "Loretta Lynch"
+	            picture = "Portrait_USA_Loretta_Lynch.dds"
+	            ideology = old_american_democrats
+            }
+		}
+		if = {
+		    limit = {
+			    has_country_flag = candidate_kaine
+			}
+			create_country_leader = {
+	            name = "Timothy Kaine"
+	            picture = "Portrait_USA_Timothy_Kaine.dds"
+	            ideology = old_american_democrats
+            }
+		}
+		if = {
+		    limit = {
+			    has_country_flag = candidate_capito
+			}
+			create_country_leader = {
+	            name = "Shelley Capito"
+	            picture = "Portrait_USA_Shelley_Capito.dds"
+	            ideology = old_american_democrats
+            }
+		}
+	}
+}
+
+#Republican Party primaries - President Rumsfeld has refused to run
+country_event = {
+	id = usa.159
+	title = usa.159.t
+	desc = usa.159.d
+	picture = independence_union_primaries
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = USA
+		date > 2018.5.1
+		date < 2018.5.30
+		has_country_flag = donald_rumsfeld_elected
+	}
+	
+	option = {   #Lou Dobbs
+		name = usa.159.o1
+		set_country_flag = candidate_lou_dobbs
+	}
+	
+	option = {   #Carly Fiorina
+		name = usa.159.o2
+		set_country_flag = candidate_carly_fiorina
+	}
+	
+	option = {   #Roque De La Fuente
+		name = usa.159.o3
+		set_country_flag = candidate_de_la_fuente
+	}
+	
+	option = {   #John Walters
+		name = usa.159.o4
+		set_country_flag = candidate_walters
+	}
+}
+
+#2018 election - Lou Dobbs is Republican nominee
+country_event = {
+	id = usa.160
+	title = usa.160.t
+	desc = usa.160.d
+	picture = special_congress_election
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = USA
+		date > 2018.11.1
+		date < 2018.11.30
+		has_country_flag = candidate_lou_dobbs
+	}
+	
+	option = {   
+		name = usa.160.o1
+		create_country_leader = {
+	        name = "Lou Dobbs"
+	        picture = "Portrait_USA_Lou_Dobbs.dds"
+	        ideology = american_nationalist
+        }
+	}
+}
+
+#2018 election - Carly Fiorina is Republican nominee
+country_event = {
+	id = usa.161
+	title = usa.161.t
+	desc = usa.161.d
+	picture = special_congress_election
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = USA
+		date > 2018.11.1
+		date < 2018.11.30
+		has_country_flag = candidate_carly_fiorina
+	}
+	
+	option = {   
+		name = usa.161.o1
+		create_country_leader = {
+	        name = "Carly Fiorina"
+	        picture = "Portrait_USA_Carly_Fiorina.dds"
+	        ideology = american_nationalist
+        }
+	}
+}
+
+#2018 election - Roque De La Fuente is Republican nominee
+country_event = {
+	id = usa.162
+	title = usa.162.t
+	desc = usa.162.d
+	picture = special_congress_election
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = USA
+		date > 2018.11.1
+		date < 2018.11.30
+		has_country_flag = candidate_de_la_fuente
+	}
+	
+	option = {   
+		name = usa.162.o1
+		create_country_leader = {
+	        name = "Roque De La Fuente"
+	        picture = "Portrait_USA_Roque_De_La_Fuente.dds"
+	        ideology = american_nationalist
+        }
+	}
+}
+
+#2018 election - John Walters is Republican nominee
+country_event = {
+	id = usa.163
+	title = usa.163.t
+	desc = usa.163.d
+	picture = special_congress_election
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = USA
+		date > 2018.11.1
+		date < 2018.11.30
+		has_country_flag = candidate_walters
+	}
+	
+	option = {   
+		name = usa.163.o1
+		create_country_leader = {
+	        name = "John Walters"
+	        picture = "Portrait_USA_John_Walters.dds"
+	        ideology = american_nationalist
+        }
+	}
+}
+
+#Republican Party primaries - Jeb Bush is President
+country_event = {
+	id = usa.164
+	title = usa.164.t
+	desc = usa.164.d
+	picture = independence_union_primaries
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = USA
+		date > 2018.5.1
+		date < 2018.5.30
+		has_country_flag = jeb_bush_elected
+	}
+	
+	option = {   #Jeb Bush
+		name = usa.164.o1
+		set_country_flag = candidate_jeb_bush
+	}
+	
+	option = {   #Wayne LaPierre
+		name = usa.164.o2
+		set_country_flag = candidate_la_pierre
+	}
+}
+
+#2018 election - Bush is Republican nominee
+country_event = {
+	id = usa.165
+	title = usa.165.t
+	desc = usa.165.d
+	picture = special_congress_election
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = USA
+		date > 2018.11.1
+		date < 2018.11.30
+		has_country_flag = candidate_jeb_bush
+	}
+	
+	option = {   
+		name = usa.165.o1
+		add_popularity = {
+			ideology = nationalist
+			popularity = 0.05
+		}
+	}
+}
+
+#2018 election - La Pierre is Republican nominee
+country_event = {
+	id = usa.166
+	title = usa.166.t
+	desc = usa.166.d
+	picture = special_congress_election
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = USA
+		date > 2018.11.1
+		date < 2018.11.30
+		has_country_flag = candidate_la_pierre
+	}
+	
+	option = {   
+		name = usa.166.o1
+		create_country_leader = {
+	        name = "Wayne LaPierre"
+	        picture = "Portrait_USA_Wayne_LaPierre.dds"
+	        ideology = american_nationalist
+        }
+	}
+}
+
+#2014 - Death of Paul Emery Washington
+country_event = {
+	id = usa.167
+	title = usa.167.t
+	desc = usa.167.d
+	picture = washington_is_dead
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = USA
+		date > 2014.5.1
+		date < 2014.5.30
+		has_completed_focus = USA_a_legitimate_ruler
+	}
+	
+	option = { #Go With The Lord
+		name = usa.167.o1
+		add_stability = -0.04
+		set_country_flag = USA_washington_dead
+		if = {
+			limit = { 
+				NOT = {
+					has_country_flag = USA_monarchy_election
+				}
+			}
+			create_country_leader = {
+				name = "Council of Princes"
+				picture = "Portrait_USA_Congress_Of_Corporations.dds"
+				ideology = absolute_monarchist
+			}
+		}
+		else = {
+			remove_ideas = idea_usa_paul_the_first
+		}
+		hidden_effect = {
+		    USA = {
+		        country_event = { days = 3 id = usa.168 } 
+		    }
+			every_country = {
+				news_event = {
+					id = news.280
+				}
+			}
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+#2014 - The Stalwart
+country_event = {
+	id = usa.168
+	title = usa.168.t
+	desc = usa.168.d
+	picture = richard_refuses_throne
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = { #Really, Dick?
+		name = usa.168.o1
+		add_stability = -0.03
+		add_political_power = -30
+		hidden_effect = {
+		    USA = {
+		        country_event = { days = 3 id = usa.169 } 
+		    }
+			every_country = {
+				news_event = {
+					id = news.281
+				}
+			}
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+#2014 - Hamilton Speaks
+country_event = {
+	id = usa.169
+	title = usa.169.t
+	desc = usa.169.d
+	picture = hamilton_speaks
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = { #Excellent Point, Hamilton!
+		name = usa.169.o1
+		add_political_power = 10
+		add_popularity = {
+		ideology = monarchist
+		popularity = 0.01
+		}
+		hidden_effect = {
+		    USA = {
+		        country_event = { days = 20 id = usa.170 } 
+		    }
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+#2014 - Council of Princes' Final Verdict
+country_event = {
+	id = usa.170
+	title = usa.170.t
+	desc = usa.170.d
+	picture = council_of_princes
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = { #Hamilton
+		name = usa.170.o1
+		if = {
+			limit = { 
+				NOT = {
+					has_country_flag = USA_monarchy_election
+				}
+			}
+			create_country_leader = {
+				name = "Douglas I"
+				picture = "Portrait_USA_Douglas_Hamilton.dds"
+				ideology = absolute_monarchist
+			}
+		}
+		else = {
+			add_ideas = idea_usa_douglas_the_first
+		}
+        set_party_name = { ideology = monarchist long_name = USA_hamilton_party name = USA_hamilton_party }
+		add_popularity = {
+			ideology = monarchist
+			popularity = 0.03
+		}
+		hidden_effect = {
+			every_country = {
+				news_event = {
+					id = news.283
+				}
+			}
+		}
+		ai_chance = {
+			factor = 30
+		}
+	}
+	option = { #Washington
+		name = usa.170.o2
+		ai_chance = {
+			factor = 25
+		}
+		if = {
+			limit = { 
+				NOT = {
+					has_country_flag = USA_monarchy_election
+				}
+			}
+			create_country_leader = {
+				name = "William III"
+				picture = "Portrait_USA_Bill_Washington.dds"
+				ideology = absolute_monarchist
+			}
+		}
+		else = {
+			add_ideas = idea_usa_william_the_third
+		}
+		add_popularity = {
+			ideology = monarchist
+			popularity = 0.03
+		}
+		hidden_effect = {
+			every_country = {
+				news_event = {
+					id = news.282
+				}
+			}
+		}
+	}
+	option = { #Lee
+		name = usa.170.o3
+		ai_chance = {
+			factor = 30
+		}
+		if = {
+			limit = { 
+				NOT = {
+					has_country_flag = USA_monarchy_election
+				}
+			}
+			create_country_leader = {
+				name = "Robert I"
+				picture = "Portrait_USA_Robert_Lee.dds"
+				ideology = absolute_monarchist
+			}
+		}
+		else = {
+			add_ideas = idea_usa_robert_the_first
+		}
+        set_party_name = { ideology = monarchist long_name = USA_lee_party name = USA_lee_party }
+		add_popularity = {
+			ideology = monarchist
+			popularity = 0.03
+		}
+		hidden_effect = {
+			every_country = {
+				news_event = {
+					id = news.285
+				}
+			}
+		}
+	}
+	option = { #Truscott
+		name = usa.170.o4
+		ai_chance = {
+			factor = 15
+		}
+        if = {
+			limit = { 
+				NOT = {
+					has_country_flag = USA_monarchy_election
+				}
+			}
+			create_country_leader = {
+				name = "Lucian I"
+				picture = "Portrait_USA_Lucian_Truscott.dds"
+				ideology = absolute_monarchist
+			}
+		}
+		else = {
+			add_ideas = idea_usa_lucian_the_first
+		}
+        set_party_name = { ideology = monarchist long_name = USA_jefferson_party name = USA_jefferson_party }
+		add_popularity = {
+			ideology = monarchist
+			popularity = 0.03
+		}
+		hidden_effect = {
+			every_country = {
+				news_event = {
+					id = news.284
+				}
+			}
+		}
+	}
+}
+#Monarchists - Princes Crowned
+country_event = {
+	id = usa.171
+	title = usa.171.t
+	desc = usa.171.d
+	picture = usa_map
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = { #Ok
+		name = usa.171.o1
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+#Monarchists - Washington Cult Grows In Popularity
+country_event = {
+	id = usa.172
+	title = usa.172.t
+	desc = usa.172.d
+	picture = washington_governor_mansion
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = { #Ok
+		name = usa.172.o1
+		add_popularity = {
+		ideology = monarchist
+		popularity = 0.02
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+country_event = {
+	id = usa.173
+	immediate = { log = "[GetDateText]: [Root.GetName]: event usa.173" }
+	title = usa.173.t
+	desc =  usa.173.d
+	picture = cross
+	
+	is_triggered_only = yes
+	
+	option = {
+		name =  usa.173.a
+		log = "[GetDateText]: [This.GetName]: usa.173.a executed"
+	}
+}
+country_event = {
+	id = usa.174
+	title = usa.174.t
+	desc = usa.174.d
+	picture = steps_towards_growth
+
+	is_triggered_only = yes
+
+	option = { #kkk
+		name = usa.174.o1
+		trigger = {
+			has_completed_focus = USA_down_with_duke
+		}
+		custom_effect_tooltip = economic_plan_tt
+		hidden_effect = {
+			USA = {
+				country_event = {
+					days = 30
+					id = usa.175
+				}
+			}
+		}
+	}
+	option = { #duke
+		name = usa.174.o2
+		trigger = {
+			has_completed_focus = USA_the_president_knows_best
+		}
+		custom_effect_tooltip = economic_plan_tt
+		hidden_effect = {
+			USA = {
+				country_event = {
+					days = 30
+					id = usa.176
+				}
+			}
+		}
+	}
+	option = { #milley
+		name = usa.174.o3
+		trigger = {
+			has_completed_focus = USA_continue_military_leadership
+		}
+		custom_effect_tooltip = economic_plan_tt
+		hidden_effect = {
+			USA = {
+				country_event = {
+					days = 30
+					id = usa.177
+				}
+			}
+		}
+	}
+	option = { #monarch
+		name = usa.174.o4
+		trigger = {
+			has_completed_focus = USA_a_legitimate_ruler
+		}
+		custom_effect_tooltip = economic_plan_tt
+		hidden_effect = {
+			USA = {
+				country_event = {
+					days = 30
+					id = usa.178
+				}
+			}
+		}
+	}
+	option = { #gop/iu
+		name = usa.174.o5
+		trigger = {
+			has_completed_focus = USA_embrace_nationalist_values
+		}
+		custom_effect_tooltip = economic_plan_tt
+		hidden_effect = {
+			USA = {
+				country_event = {
+					days = 30
+					id = usa.179
+				}
+			}
+		}
+	}
+	option = { #corporatist (does nothing)
+		name = usa.174.o6
+		trigger = {
+			has_completed_focus = USA_corporatism
+		}
+	}
+}
+country_event = { #The Klan's Economic Renewal Plan
+	id = usa.175
+	title = usa.175.t
+	desc =  usa.175.d
+	picture = kkk_persuades_duke_step_aside
+	
+	is_triggered_only = yes
+	
+	option = {
+		name =  usa.175.o1
+		swap_ideas = {
+			remove_idea = idea_usa_flight_of_the_executives
+			add_idea = idea_usa_economic_renewal_kkk
+		}
+	}
+}
+country_event = { #Duke's Economic Renewal Plan
+	id = usa.176
+	title = usa.176.t
+	desc =  usa.176.d
+	picture = david_duke_corporatism
+	
+	is_triggered_only = yes
+	
+	option = {
+		name =  usa.176.o1
+		swap_ideas = {
+			remove_idea = idea_usa_flight_of_the_executives
+			add_idea = idea_usa_economic_renewal_duke
+		}
+	}
+}
+country_event = { #Milley's Economic Renewal Plan
+	id = usa.177
+	title = usa.177.t
+	desc =  usa.177.d
+	picture = american_foreign_legion
+	
+	is_triggered_only = yes
+	
+	option = {
+		name =  usa.177.o1
+		swap_ideas = {
+			remove_idea = idea_usa_flight_of_the_executives
+			add_idea = idea_usa_economic_renewal_milley
+		}
+	}
+}
+country_event = { #The Monarchy's Economic Renewal Plan
+	id = usa.178
+	title = usa.178.t
+	desc =  usa.178.d
+	picture = richard_refuses_throne
+	
+	is_triggered_only = yes
+	
+	option = {
+		name =  usa.178.o1
+		swap_ideas = {
+			remove_idea = idea_usa_flight_of_the_executives
+			add_idea = idea_usa_economic_renewal_king
+		}
+	}
+}
+country_event = { #The Republic's Economic Renewal Plan
+	id = usa.179
+	title = usa.179.t
+	desc =  usa.179.d
+	picture = federal_reserve
+	
+	is_triggered_only = yes
+	
+	option = {
+		name =  usa.179.o1
+		swap_ideas = {
+			remove_idea = idea_usa_flight_of_the_executives
+			add_idea = idea_usa_economic_renewal_gop_iu
+		}
+	}
+}
+country_event = { #The Confederacy's Economic Renewal Plan
+	id = usa.180
+	title = usa.180.t
+	desc =  usa.180.d
+	picture = confederate_alliance
+	
+	is_triggered_only = yes
+	
+	option = {
+		name =  usa.180.o1
+		swap_ideas = {
+			remove_idea = idea_usa_flight_of_the_executives
+			add_idea = idea_usa_economic_renewal_gop_iu
+		}
+	}
+}
+country_event = {
+	id = usa.181
+	title = usa.181.t
+	desc = usa.181.d
+	picture = brandon_event
+	
+	is_triggered_only = yes
+	
+	option = {   
+		name = usa.181.o1
+	}
+	
+}

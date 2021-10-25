@@ -43,3 +43,114 @@ country_event = {
 		}
 	}
 }
+
+
+country_event = {
+	id = England.4
+	title = England.4.t
+	desc = England.4.d
+	picture = legacy_of_foot_event
+	fire_only_once = yes
+	option = {
+		name = England.4.o1
+
+	}
+}
+
+country_event = {
+	id = England.5
+	title = England.5.t
+	desc = England.5.d
+	picture = blairs_iron_fist_event
+	fire_only_once = yes
+	option = {
+		name = England.5.o1
+
+	}
+}
+
+country_event = {
+	id = England.6
+	title = England.6.t
+	desc = England.6.d
+	picture = the_weapon_research_event
+	fire_only_once = yes
+	option = {
+		name = England.6.o1
+
+	}
+}
+
+country_event = {
+	id = England.7
+	title = England.7.t
+	desc = England.7.d
+	picture = T_E_Lawrence_square_event
+	fire_only_once = yes
+	option = {
+		name = England.7.o1
+
+	}
+}
+
+
+country_event = {
+	id = England.8
+	title = England.8.t
+	desc = England.8.d
+	picture = blair_and_his_loyalty
+	fire_only_once = yes
+	option = {
+		name = England.8.o1
+
+	}
+}
+
+
+country_event = {
+	id = England.9
+	title = England.9.t
+	desc = England.9.d
+	picture = blair_tv_broadcast
+	fire_only_once = yes
+	option = {
+		name = England.9.o1
+
+	}
+}
+
+country_event = {
+	id = England.10
+	title = England.10.t
+	desc = England.10.d
+	picture = fixing_the_union_economy
+	fire_only_once = yes
+	option = {
+		name = England.10.o1
+
+	}
+}
+
+country_event = {
+	id = England.11
+	title = England.11.t
+	desc = England.11.d
+	picture = blair_and_korea_diplomats
+	fire_only_once = yes
+	option = {
+		name = England.11.o1
+
+	}
+}
+
+country_event = {
+	id = England.12
+	title = England.12.t
+	desc = England.12.d
+	picture = blair_and_korea_diplomats
+	fire_only_once = yes
+	option = {
+		name = England.12.o1
+
+	}
+}

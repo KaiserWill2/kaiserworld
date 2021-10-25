@@ -9,5 +9,64 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/report_event/blair_bans_denim.dds"
 	}
 
+	spriteType = {
+		name = "legacy_of_foot_event"
+		texturefile = "gfx/event_pictures/report_event/legacy_of_foot_event.dds"
+	}
+
+
+	spriteType = {
+		name = "blairs_iron_fist_event"
+		texturefile = "gfx/event_pictures/report_event/blairs_iron_fist_event.dds"
+	}
+
+	spriteType = {
+		name = "the_weapon_research_event"
+		texturefile = "gfx/event_pictures/report_event/the_weapon_research_event.dds"
+	}
+
+	spriteType = {
+		name = "T_E_Lawrence_square_event"
+		texturefile = "gfx/event_pictures/report_event/T_E_Lawrence_square_event.dds"
+	}
+
+	spriteType = {
+		name = "blair_and_his_loyalty"
+		texturefile = "gfx/event_pictures/report_event/blair_and_his_loyalty.dds"
+	}
+
+	spriteType = {
+		name = "blair_tv_broadcast"
+		texturefile = "gfx/event_pictures/report_event/blair_tv_broadcast.dds"
+	}
+
+
+	spriteType = {
+		name = "fixing_the_union_economy"
+		texturefile = "gfx/event_pictures/report_event/fixing_the_union_economy.dds"
+	}
+
+	spriteType = {
+		name = "blair_and_korea_diplomats"
+		texturefile = "gfx/event_pictures/report_event/blair_and_korea_diplomats.dds"
+	}
+
+	
+	
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
 
 }
