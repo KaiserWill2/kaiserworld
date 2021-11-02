@@ -61,6 +61,9 @@
 		}
 		prerequisite = { focus = ENG_legacy_of_foot  }
 		completion_reward = {
+			country_event = {
+				id = england.13
+			}
 			add_ideas = scotland_and_wales
 		}
 	}
@@ -286,6 +289,11 @@
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
+		completion_reward = {
+			country_event = {
+				id = england.17
+			}
+		}
 	}
 	shared_focus = {
 		id = ENG_the_union_is_strong
@@ -376,6 +384,9 @@
 		}
 		prerequisite = { focus = ENG_diplomatic_relations_with_Korea  }
 		completion_reward = {
+			country_event = {
+				id = england.12
+			}
 			ENG = {
 				add_opinion_modifier = {
 					target = SOV
@@ -424,6 +435,9 @@
 		}
 		prerequisite = { focus = ENG_scotland_and_wales  }
 		completion_reward = {
+			country_event = {
+				id = england.14
+			}
 			add_stability = 0.05
 			add_political_power = 100
 			add_war_support = 0.10
@@ -473,6 +487,11 @@
 			FOCUS_FILTER_FRA_POLITICAL_VIOLENCE
 		}
 		prerequisite = { focus = ENG_shoot_to_kill  }
+	completion_reward = {
+	country_event = {
+		id = england.15
+	}
+	}
 	}
 	shared_focus = {
 		id = ENG_forced_labour
@@ -541,6 +560,11 @@
 		prerequisite = { focus = ENG_imprison_the_non_pure } 
 		prerequisite = { focus = ENG_send_a_warning_to_wales_and_scotland }
 		prerequisite = { focus = ENG_forced_work_in_the_union  }
+		completion_reward = {
+		country_event = {
+			id = england.16
+		}
+	}
 	}
 	shared_focus = {
 		id = ENG_the_totalist_spirit
@@ -574,6 +598,11 @@
 			FOCUS_FILTER_POLITICAL
 		}
 		prerequisite = { focus = ENG_The_Orders_For_England  }
+		completion_reward = {
+			country_event = {
+				id = england.22
+			}
+		}
 	}
 	shared_focus = {
 		id = ENG_Freedom_Of_Thought_Council
@@ -618,6 +647,11 @@
 			FOCUS_FILTER_POLITICAL
 		}
 		prerequisite = { focus = ENG_The_Orders_For_England  }
+		completion_reward = {
+			country_event = {
+				id = england.18
+			}
+		}
 	}
 	shared_focus = {
 		id = ENG_English_Resources
@@ -640,6 +674,11 @@
 			FOCUS_FILTER_POLITICAL
 		}
 		prerequisite = { focus = ENG_English_Resources  }
+		completion_reward = {
+			country_event = {
+				id = england.19
+			}
+		}
 	}
 	shared_focus = {
 		id = ENG_Border_Patrols
@@ -673,6 +712,11 @@
 			FOCUS_FILTER_POLITICAL
 		}
 		prerequisite = { focus = ENG_The_Orders_For_England  }
+		completion_reward = {
+			country_event = {
+				id = england.20
+			}
+		}
 	}
 	shared_focus = {
 		id = ENG_Trade_With_Wales
@@ -717,6 +761,11 @@
 			FOCUS_FILTER_POLITICAL
 		}
 		prerequisite = { focus = ENG_Cornwall_Needs_Treatment  }
+		completion_reward = {
+			country_event = {
+				id = england.21
+			}
+		}
 	}
 
 	shared_focus = {
@@ -744,6 +793,11 @@
 		prerequisite = { focus = ENG_Influence_Wales  }
 		prerequisite = { focus = ENG_We_Are_Everywhere  }
 		prerequisite = { focus = ENG_North_Sea_Oil_Dispute  }
+		completion_reward = {
+			country_event = {
+				id = england.23
+			}
+		}
 	}
 
 

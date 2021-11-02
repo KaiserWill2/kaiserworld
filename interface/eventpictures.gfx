@@ -52,21 +52,70 @@ spriteTypes = {
 	}
 
 	
+	spriteType = {
+		name = "russia_and_england_summit"
+		texturefile = "gfx/event_pictures/report_event/russia_and_england_summit.dds"
+	}
+
+	spriteType = {
+		name = "unite_the_borders"
+		texturefile = "gfx/event_pictures/report_event/unite_the_borders.dds"
+	}
+	
+	spriteType = {
+		name = "the_scottish_borders"
+		texturefile = "gfx/event_pictures/report_event/the_scottish_borders.dds"
+	}
+	
+	spriteType = {
+		name = "firing_at_the_wall"
+		texturefile = "gfx/event_pictures/report_event/firing_at_the_wall.dds"
+	}
+	
+	spriteType = {
+		name = "unifing_the_isle"
+		texturefile = "gfx/event_pictures/report_event/unifing_the_isle.dds"
+	}
+	
+	spriteType = {
+		name = "the_congress_of_england_Event"
+		texturefile = "gfx/event_pictures/report_event/the_congress_of_england_Event.dds"
+	}
+
+	spriteType = {
+		name = "SCOTLAND_WILL_sET_YOU_FREE"
+		texturefile = "gfx/event_pictures/report_event/SCOTLAND_WILL_sET_YOU_FREE.dds"
+	}
+
+	spriteType = {
+		name = "north_sea_oil_dis"
+		texturefile = "gfx/event_pictures/report_event/north_sea_oil_dis.dds"
+	}
+
+	spriteType = {
+		name = "come_on_wales_join"
+		texturefile = "gfx/event_pictures/report_event/come_on_wales_join.dds"
+	}
+
+	spriteType = {
+		name = "cornwall_resistance_event"
+		texturefile = "gfx/event_pictures/report_event/cornwall_resistance_event.dds"
+	}
+
+
+	spriteType = {
+		name = "councils_of_england"
+		texturefile = "gfx/event_pictures/report_event/councils_of_england.dds"
+	}
+	
+	spriteType = {
+		name = "end_of_the_congress"
+		texturefile = "gfx/event_pictures/report_event/end_of_the_congress.dds"
+	}
 	
 
 
-
 	
-
-
-
-
-
-
-
-
-
-
 
 
 }
