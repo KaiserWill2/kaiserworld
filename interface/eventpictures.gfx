@@ -113,9 +113,90 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/report_event/end_of_the_congress.dds"
 	}
 	
+	spriteType = {
+		name = "the_union_army_event"
+		texturefile = "gfx/event_pictures/report_event/the_union_army_event.dds"
+	}
+
+	spriteType = {
+		name = "fortify_the_union_event"
+		texturefile = "gfx/event_pictures/report_event/fortify_the_union_event.dds"
+	}
+	
+	spriteType = {
+		name = "the_3_year_service_event"
+		texturefile = "gfx/event_pictures/report_event/the_3_year_service_event.dds"
+	}
+	
+	spriteType = {
+		name = "remebering_canda_event"
+		texturefile = "gfx/event_pictures/report_event/remebering_canda_event.dds"
+	}
+	
+	spriteType = {
+		name = "USBR_event_airwing"
+		texturefile = "gfx/event_pictures/report_event/USBR_event_airwing.dds"
+	}
+	
+	spriteType = {
+		name = "michael_wigston_event"
+		texturefile = "gfx/event_pictures/report_event/michael_wigston_event.dds"
+	}
+	
+	spriteType = {
+		name = "the_siegh_of_scotland"
+		texturefile = "gfx/event_pictures/report_event/the_siegh_of_scotland.dds"
+	}
+
+	spriteType = {
+		name = "sonic_flight_event"
+		texturefile = "gfx/event_pictures/report_event/sonic_flight_event.dds"
+	}
+	
+	spriteType = {
+		name = "seas_of_england_event"
+		texturefile = "gfx/event_pictures/report_event/seas_of_england_event.dds"
+	}
+	
+	spriteType = {
+		name = "lindisfarne_drills_event"
+		texturefile = "gfx/event_pictures/report_event/lindisfarne_drills_event.dds"
+	}
+	
+	spriteType = {
+		name = "portsmouth_harbour_Event"
+		texturefile = "gfx/event_pictures/report_event/portsmouth_harbour_Event.dds"
+	}
+	
+	spriteType = {
+		name = "union_bridge_event"
+		texturefile = "gfx/event_pictures/report_event/union_bridge_event.dds"
+	}
+		
+	spriteType = {
+		name = "new_education_event"
+		texturefile = "gfx/event_pictures/report_event/new_education_event.dds"
+	}
+	
+	spriteType = {
+		name = "working_for_the_leader_event"
+		texturefile = "gfx/event_pictures/report_event/working_for_the_leader_event.dds"
+	}
+	
+	spriteType = {
+		name = "the_leaders_new_palace_event"
+		texturefile = "gfx/event_pictures/report_event/the_leaders_new_palace_event.dds"
+	}
+	
+	spriteType = {
+		name = "the_future_scientists_event"
+		texturefile = "gfx/event_pictures/report_event/the_future_scientists_event.dds"
+	}
+	
+	
 
 
 	
-
+	
 
 }

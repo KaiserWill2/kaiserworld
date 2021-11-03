@@ -287,3 +287,186 @@ country_event = {
 
 	}
 }
+
+country_event = {
+	id = England.24
+	title = England.24.t
+	desc = England.24.d
+	picture = the_union_army_event
+	fire_only_once = yes
+	option = {
+		name = England.24.o1
+
+	}
+}
+
+country_event = {
+	id = England.25
+	title = England.25.t
+	desc = England.25.d
+	picture = fortify_the_union_event
+	fire_only_once = yes
+	option = {
+		name = England.25.o1
+
+	}
+}
+
+country_event = {
+	id = England.26
+	title = England.26.t
+	desc = England.26.d
+	picture = the_3_year_service_event
+	fire_only_once = yes
+	option = {
+		name = England.26.o1
+
+	}
+}
+
+country_event = {
+	id = England.27
+	title = England.27.t
+	desc = England.27.d
+	picture = remebering_canda_event
+	fire_only_once = yes
+	option = {
+		name = England.27.o1
+
+	}
+}
+
+country_event = {
+	id = England.28
+	title = England.28.t
+	desc = England.28.d
+	picture = USBR_event_airwing
+	fire_only_once = yes
+	option = {
+		name = England.28.o1
+
+	}
+}
+
+country_event = {
+	id = England.29
+	title = England.29.t
+	desc = England.29.d
+	picture = michael_wigston_event
+	fire_only_once = yes
+	option = {
+		name = England.29.o1
+
+	}
+}
+
+country_event = {
+	id = England.30
+	title = England.30.t
+	desc = England.30.d
+	picture = sonic_flight_event
+	fire_only_once = yes
+	option = {
+		name = England.30.o1
+
+	}
+}
+
+
+country_event = {
+	id = England.31
+	title = England.31.t
+	desc = England.31.d
+	picture = seas_of_england_event
+	fire_only_once = yes
+	option = {
+		name = England.31.o1
+
+	}
+}
+
+country_event = {
+	id = England.32
+	title = England.32.t
+	desc = England.32.d
+	picture = lindisfarne_drills_event
+	fire_only_once = yes
+	option = {
+		name = England.32.o1
+
+	}
+}
+
+
+country_event = {
+	id = England.33
+	title = England.33.t
+	desc = England.33.d
+	picture = portsmouth_harbour_Event
+	fire_only_once = yes
+	option = {
+		name = England.33.o1
+
+	}
+}
+
+country_event = {
+	id = England.34
+	title = England.34.t
+	desc = England.34.d
+	picture = union_bridge_event
+	fire_only_once = yes
+	option = {
+		name = England.34.o1
+
+	}
+}
+
+country_event = {
+	id = England.35
+	title = England.35.t
+	desc = England.35.d
+	picture = new_education_event
+	fire_only_once = yes
+	option = {
+		name = England.35.o1
+
+	}
+}
+
+country_event = {
+	id = England.36
+	title = England.36.t
+	desc = England.36.d
+	picture = working_for_the_leader_event
+	fire_only_once = yes
+	option = {
+		name = England.36.o1
+
+	}
+}
+
+country_event = {
+	id = England.37
+	title = England.37.t
+	desc = England.37.d
+	picture = the_leaders_new_palace_event
+	fire_only_once = yes
+	option = {
+		name = England.37.o1
+
+	}
+}
+
+country_event = {
+	id = England.38
+	title = England.38.t
+	desc = England.38.d
+	picture = the_future_scientists_event
+	fire_only_once = yes
+	option = {
+		name = England.38.o1
+
+	}
+}
+

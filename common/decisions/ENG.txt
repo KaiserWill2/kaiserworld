@@ -1,0 +1,58 @@
+fifties = {
+	
+	ENG_The_Dumfries_War = {
+
+		icon = generic_scorched_earth
+
+		allowed = {
+			OR = {
+			    original_tag = ENG
+				original_tag = SCO
+				original_tag = WAL
+				original_tag = ULS
+				original_tag = MAY
+				original_tag = BOR
+			}
+		}
+
+		available = {
+			always = yes
+		}
+
+		cost = 0
+		fire_only_once = no
+		ai_will_do = {
+			factor = 0
+		}
+
+		complete_effect = {
+			country_event = { id = decision_event.1 }
+		}
+	}
+	
+}
+
+sixties = {
+	
+	
+}
+
+seventies = {
+	
+	
+}
+
+eighties = {
+	
+	
+}
+
+nineties = {
+	
+	
+}
+
+noughts = {
+	
+	
+}

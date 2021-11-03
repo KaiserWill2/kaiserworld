@@ -1,4 +1,36 @@
-﻿
+﻿add_namespace = news
+
+news_event = {	#Dumfries War
+	id = news.1
+	title = news.1.t
+	desc = news.1.d
+	picture = siegh_of_scotland
+	
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = news.1.o1
+	}
+}
+
+news_event = {	#Dumfries War
+	id = news.2
+	title = news.2.t
+	desc = news.2.d
+	picture = the_peace_treaty
+	
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = news.2.o1
+	}
+}
+
+
+
+
 # Neutral return states
 news_event = {
 	id = tmithc_america_news.1
@@ -92,3 +124,9 @@ news_event = {
 		name = tmithc_america_news.4.a
 	}
 }
+
+
+
+
+
+

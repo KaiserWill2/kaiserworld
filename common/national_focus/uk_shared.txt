@@ -810,6 +810,11 @@
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
+		completion_reward = {
+			country_event = {
+				id = england.24
+			}
+		}
 	}
 	shared_focus = {
 		id = ENG_Defending_The_Island
@@ -821,6 +826,11 @@
 			FOCUS_FILTER_POLITICAL
 		}
 		prerequisite = { focus = ENG_The_Union_Army  }
+		completion_reward = {
+			country_event = {
+				id = england.25
+			}
+		}
 	}
 	shared_focus = {
 		id = ENG_Soldiers_Of_England
@@ -854,6 +864,11 @@
 			FOCUS_FILTER_POLITICAL
 		}
 		prerequisite = { focus = ENG_Soldiers_Of_England  }
+		completion_reward = {
+			country_event = {
+				id = england.26
+			}
+		}
 	}
 	shared_focus = {
 		id = ENG_Oath_Of_Allegiance
@@ -889,6 +904,11 @@
 			FOCUS_FILTER_POLITICAL
 		}
 		prerequisite = { focus = ENG_Loyalty_To_Officers  }
+		completion_reward = {
+			country_event = {
+				id = england.27
+			}
+		}
 	}
 
 
@@ -902,6 +922,11 @@
 			FOCUS_FILTER_POLITICAL
 		}
 		prerequisite = { focus = ENG_Defending_The_Island  }
+		completion_reward = {
+			country_event = {
+				id = england.28
+			}
+		}
 	}
 	shared_focus = {
 		id = ENG_Wigston_Flying_Plans
@@ -913,6 +938,11 @@
 			FOCUS_FILTER_POLITICAL
 		}
 		prerequisite = { focus = ENG_Airwing_Of_England  }
+		completion_reward = {
+			country_event = {
+				id = england.29
+			}
+		}
 	}
 	shared_focus = {
 		id = ENG_Flying_Fortress
@@ -946,6 +976,11 @@
 			FOCUS_FILTER_POLITICAL
 		}
 		prerequisite = { focus = ENG_Flying_Fortress  }
+		completion_reward = {
+			country_event = {
+				id = england.30
+			}
+		}
 	}
 	shared_focus = {
 		id = ENG_Seas_Of_England
@@ -957,6 +992,11 @@
 			FOCUS_FILTER_POLITICAL
 		}
 		prerequisite = { focus = ENG_Defending_The_Island  }
+		completion_reward = {
+			country_event = {
+				id = england.31
+			}
+		}
 	}
 	shared_focus = {
 		id = ENG_The_North_Sea
@@ -979,6 +1019,11 @@
 			FOCUS_FILTER_POLITICAL
 		}
 		prerequisite = { focus = ENG_The_North_Sea  }
+		completion_reward = {
+			country_event = {
+				id = england.32
+			}
+		}
 	}
 	shared_focus = {
 		id = ENG_Test_Raids_On_The_Channel_Island
@@ -1038,6 +1083,11 @@
 		prerequisite = { focus = ENG_Irish_Sea  }
 		prerequisite = { focus = ENG_Defense_Against_France  }
 		prerequisite = { focus = ENG_Lindisfarne_Drills  }
+		completion_reward = {
+			country_event = {
+				id = england.33
+			}
+		}
 	}
 	shared_focus = {
 		id = ENG_The_Parade
@@ -1052,9 +1102,10 @@
 		prerequisite = { focus = ENG_Super_Sonic_Research  }
 		prerequisite = { focus = ENG_Remembering_Canada  }
 		prerequisite = { focus = ENG_Union_Propaganda_Leaflet_dropping  }
-		completion_reward = {			
-			country_event = { id = England.4}	
-		
+		completion_reward = {
+			country_event = {
+				id = england.34
+			}
 		}
 	}
 
@@ -1113,6 +1164,11 @@
 			FOCUS_FILTER_POLITICAL
 		}
 		prerequisite = { focus = ENG_Death_Squad_For_Petty_Crime  }
+		completion_reward = {
+			country_event = {
+				id = england.35
+			}
+		}
 	}
 	shared_focus = {
 		id = ENG_Work_For_The_Leader
@@ -1124,6 +1180,11 @@
 			FOCUS_FILTER_POLITICAL
 		}
 		prerequisite = { focus = ENG_Selected_work  }
+		completion_reward = {
+			country_event = {
+				id = england.36
+			}
+		}
 	}
 	shared_focus = {
 		id = ENG_The_Elite_Stay
@@ -1168,6 +1229,11 @@
 			FOCUS_FILTER_POLITICAL
 		}
 		prerequisite = { focus = ENG_Work_For_The_Leader  }
+		completion_reward = {
+			country_event = {
+				id = england.37
+			}
+		}
 	}
 	shared_focus = {
 		id = ENG_England_Stands_Tall

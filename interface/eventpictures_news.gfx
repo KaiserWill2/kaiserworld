@@ -1339,4 +1339,21 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/news_event/news_flight_of_the_eagles.dds"
 	}
 
+	
+	spriteType = {
+		name = "siegh_of_scotland"
+		texturefile = "gfx/event_pictures/news_event/siegh_of_scotland.dds"
+	}
+
+	spriteType = {
+		name = "the_peace_treaty"
+		texturefile = "gfx/event_pictures/news_event/the_peace_treaty.dds"
+	}
+
+
+
+
+
+	
+
 }

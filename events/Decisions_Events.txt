@@ -1,0 +1,16 @@
+﻿add_namespace = decision_event
+
+
+
+country_event = {
+	id = decision_event.1
+	title = decision_event.1.t
+	desc = decision_event.1.d
+	picture = the_siegh_of_scotland
+	
+	is_triggered_only = yes
+	
+	option = {   
+		name = decision_event.1.o1
+	}
+}
