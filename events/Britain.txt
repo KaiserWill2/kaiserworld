@@ -470,3 +470,172 @@ country_event = {
 	}
 }
 
+country_event = {
+	id = England.39
+	title = England.39.t
+	desc = England.39.d
+	picture = shetland_island_event
+	fire_only_once = yes
+	option = {
+		name = England.39.o1
+
+	}
+}
+
+country_event = {
+	id = England.40	
+	title = England.40.t
+	desc = England.40.d
+	picture = wales_is_prize_event
+	fire_only_once = yes
+	option = {
+		name = England.40.o1
+
+	}
+}
+
+country_event = {
+	id = England.41
+	title = England.41.t
+	desc = England.41.d
+	picture = the_talks_are_unless_event
+	fire_only_once = yes
+	option = {
+		name = England.41.o1
+
+	}
+}
+
+country_event = {
+	id = England.42
+	title = England.42.t
+	desc = England.42.d
+	picture = the_talks_fail_event
+	fire_only_once = yes
+	option = {
+		name = England.42.o1
+
+	}
+}
+
+country_event = {
+	id = England.43
+	title = England.43.t
+	desc = England.43.d
+	picture = teh_dragons_head_event
+	fire_only_once = yes
+	option = {
+		name = England.43.o1
+
+	}
+}
+
+country_event = {
+	id = England.44
+	title = England.44.t
+	desc = England.44.d
+	picture = wales_has_fallen_event
+	fire_only_once = yes
+	option = {
+		name = England.44.o1
+
+	}
+}
+
+country_event = {
+	id = England.45
+	title = England.45.t
+	desc = England.45.d
+	picture = burn_the_flag
+	fire_only_once = yes
+	option = {
+		name = England.45.o1
+
+	}
+}
+
+country_event = {
+	id = England.46
+	title = England.46.t
+	desc = England.46.d
+	picture = welsh_trials_event
+	fire_only_once = yes
+	option = {
+		name = England.46.o1
+
+	}
+}
+
+country_event = {
+	id = England.47
+	title = England.47.t
+	desc = England.47.d
+	picture = wales_and_england_united_event
+	fire_only_once = yes
+	option = {
+		name = England.47.o1
+
+	}
+}
+
+country_event = {
+	id = England.48
+	title = England.48.t
+	desc = England.48.d
+	picture = the_humliated_defeat_event
+	fire_only_once = yes
+	option = {
+		name = England.48.o1
+
+	}
+}
+
+country_event = {
+	id = England.49
+	title = England.49.t
+	desc = England.49.d
+	picture = killing_the_ones_who_run
+	fire_only_once = yes
+	option = {
+		name = England.49.o1
+
+	}
+}
+
+country_event = {
+	id = England.50
+	title = England.50.t
+	desc = England.50.d
+	picture = raiding_the_homes_event
+	fire_only_once = yes
+	option = {
+		name = England.50.o1
+
+	}
+}
+
+country_event = {
+	id = England.51
+	title = England.51.t
+	desc = England.51.d
+	picture = the_wrath_of_general_blair_event
+	fire_only_once = yes
+	option = {
+		name = England.51.o1
+
+	}
+}
+
+
+country_event = {
+	id = England.52
+	title = England.52.t
+	desc = England.52.d
+	picture = terror_event
+	fire_only_once = yes
+	option = {
+		name = England.52.o1
+
+	}
+}
+

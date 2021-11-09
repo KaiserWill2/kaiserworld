@@ -1247,6 +1247,11 @@
 		prerequisite = { focus = ENG_Build_His_Paradise  }
 		prerequisite = { focus = ENG_Report_For_Rewards  }
 		prerequisite = { focus = ENG_The_Elite_Stay  }
+		completion_reward = {
+			country_event = {
+				id = england.38
+			}
+		}
 	}
 	shared_focus = {
 		id = ENG_Rocket_Man
@@ -1269,6 +1274,11 @@
 			FOCUS_FILTER_POLITICAL
 		}
 		prerequisite = { focus = ENG_Rocket_Man  }
+		completion_reward = {
+			country_event = {
+				id = england.39
+			}
+		}
 	}
 	shared_focus = {
 		id = ENG_The_Islands_Are_English
@@ -1337,6 +1347,11 @@
 			FOCUS_FILTER_POLITICAL
 		}
 		prerequisite = { focus = ENG_The_Rockets_Are_Ready  }
+		completion_reward = {
+			country_event = {
+				id = england.40
+			}
+		}
 	}
 	shared_focus = {
 		id = Fortify_Gloucester
@@ -1382,6 +1397,12 @@
 		}
 		prerequisite = { focus = ENG_Prepare_Ports_At_Liverpool  }
 		prerequisite = { focus = The_Leader_Speaks_In_Birmingham  }
+		completion_reward = {
+			country_event = {
+				id = england.42
+			}
+		}
+
 	}
 	shared_focus = {
 		id = ENG_The_Talks_Are_Usless
@@ -1394,6 +1415,11 @@
 		}
 		prerequisite = { focus = Fortify_Gloucester  }
 		prerequisite = { focus = The_Leader_Speaks_In_Birmingham  }
+		completion_reward = {
+			country_event = {
+				id = england.41
+			}
+		}
 	}
 	shared_focus = {
 		id = ENG_The_Dragons_Head
@@ -1406,7 +1432,18 @@
 		}
 		prerequisite = { focus = ENG_The_Talks_Are_Usless  }
 		prerequisite = { focus = ENG_Enough_Talking  }
+		completion_reward = {
+			country_event = {
+				id = england.43
+			}
+
+			ENG = {
+				declare_war_on = { target = WAL type = annex_everything }
+			}
+
+		}
 	}
+
 	shared_focus = {
 		id = ENG_Wales_Is_Ours
 		icon = Wales_Is_Ours_UOB
@@ -1422,7 +1459,15 @@
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
-
+		available = {
+			owns_state = 122
+	}
+		completion_reward = {
+			country_event = {
+				id = england.44
+			}
+	
+		}
 	}
 	shared_focus = {
 		id = ENG_Cardiff_Pays
@@ -1457,7 +1502,11 @@
 			FOCUS_FILTER_POLITICAL
 		}
 		prerequisite = { focus =  ENG_Remove_The_Welsh_Tongue  }
-
+		completion_reward = {
+			country_event = {
+				id = england.46
+			}
+		}
 	}
 	shared_focus = {
 		id = ENG_Bring_Down_The_Flag
@@ -1469,7 +1518,11 @@
 			FOCUS_FILTER_POLITICAL
 		}
 		prerequisite = { focus =  ENG_Wales_Is_Ours  }
-
+		completion_reward = {
+			country_event = {
+				id = england.45
+			}
+		}
 	}
 	shared_focus = {
 		id = ENG_Swansea_Camps
@@ -1506,6 +1559,11 @@
 		}
 		prerequisite = { focus =  ENG_Recruit_The_Welsh  }
 		prerequisite = { focus =  ENG_Trials_Of_Wales  }
+		completion_reward = {
+			country_event = {
+				id = england.47
+			}
+		}
 
 	}
 	shared_focus = {
@@ -1522,6 +1580,11 @@
 		}
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
+		}
+		completion_reward = {
+			country_event = {
+				id = england.48
+			}
 		}
 	}
 	shared_focus = {
@@ -1546,6 +1609,11 @@
 			FOCUS_FILTER_POLITICAL
 		}
 		prerequisite = { focus =  ENG_Secure_Our_Borders  }
+		completion_reward = {
+			country_event = {
+				id = england.50
+			}
+		}
 
 	}
 	shared_focus = {
@@ -1559,6 +1627,12 @@
 		}
 		prerequisite = { focus =  ENG_Kill_The_Ones_Who_Ran  }
 		prerequisite = 	{ focus =  ENG_Wales_Will_Pay  }
+
+		completion_reward = {
+			country_event = {
+				id = england.51
+			}
+		}
 	}
 	shared_focus = {
 		id = ENG_Punish_The_Officers
@@ -1582,6 +1656,11 @@
 			FOCUS_FILTER_POLITICAL
 		}
 		prerequisite = { focus =  ENG_Punish_The_Officers  }
+		completion_reward = {
+			country_event = {
+				id = england.49
+			}
+		}
 
 	}
 	shared_focus = {
@@ -1594,6 +1673,12 @@
 			FOCUS_FILTER_POLITICAL
 		}
 		prerequisite = { focus =  ENG_The_Wrath_Of_Blair  }
+
+		completion_reward = {
+			country_event = {
+				id = england.52
+			}
+		}
 
 	}
 	

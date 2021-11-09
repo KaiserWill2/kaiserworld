@@ -193,10 +193,95 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/report_event/the_future_scientists_event.dds"
 	}
 	
+	spriteType = {
+		name = "shetland_island_event"
+		texturefile = "gfx/event_pictures/report_event/shetland_island_event.dds"
+	}
+
+	spriteType = {
+		name = "the_talks_are_unless_event"
+		texturefile = "gfx/event_pictures/report_event/the_talks_are_unless_event.dds"
+	}
+
+	
+	spriteType = {
+		name = "the_talks_fail_event"
+		texturefile = "gfx/event_pictures/report_event/the_talks_fail_event.dds"
+	}
+
+	spriteType = {
+		name = "teh_dragons_head_event"
+		texturefile = "gfx/event_pictures/report_event/teh_dragons_head_event.dds"
+	}
+	
+	spriteType = {
+		name = "wales_has_fallen_event"
+		texturefile = "gfx/event_pictures/report_event/wales_has_fallen_event.dds"
+	}
+	
+	spriteType = {
+		name = "burn_the_flag"
+		texturefile = "gfx/event_pictures/report_event/burn_the_flag.dds"
+	}
+	
+	spriteType = {
+		name = "welsh_trials_event"
+		texturefile = "gfx/event_pictures/report_event/welsh_trials_event.dds"
+	}
+	
+	spriteType = {
+		name = "wales_and_england_united_event"
+		texturefile = "gfx/event_pictures/report_event/wales_and_england_united_event.dds"
+	}
+
+	spriteType = {
+		name = "the_humliated_defeat_event"
+		texturefile = "gfx/event_pictures/report_event/the_humliated_defeat_event.dds"
+	}
+	
+	spriteType = {
+		name = "killing_the_ones_who_run"
+		texturefile = "gfx/event_pictures/report_event/killing_the_ones_who_run.dds"
+	}
+	
+	spriteType = {
+		name = "raiding_the_homes_event"
+		texturefile = "gfx/event_pictures/report_event/raiding_the_homes_event.dds"
+	}
+	
+	spriteType = {
+		name = "the_wrath_of_general_blair_event"
+		texturefile = "gfx/event_pictures/report_event/the_wrath_of_general_blair_event.dds"
+	}
+	
+	spriteType = {
+		name = "wales_is_prize_event"
+		texturefile = "gfx/event_pictures/report_event/wales_is_prize_event.dds"
+	}
+
+	spriteType = {
+		name = "terror_event"
+		texturefile = "gfx/event_pictures/report_event/terror_event.dds"
+	}
+	
+	
+	
+	
+	
+	
 	
 
 
-	
-	
+
+
+
+
+
+
+
+
+
+
+
 
 }
