@@ -264,23 +264,96 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/report_event/terror_event.dds"
 	}
 	
+	spriteType = {
+		name = "grey_tuesday_event"
+		texturefile = "gfx/event_pictures/report_event/grey_tuesday_event.dds"
+	}
+	
+	spriteType = {
+		name = "the_day_of_mourning_event"
+		texturefile = "gfx/event_pictures/report_event/the_day_of_mourning_event.dds"
+	}
+	
+	spriteType = {
+		name = "lowering_the_flag_event"
+		texturefile = "gfx/event_pictures/report_event/lowering_the_flag_event.dds"
+	}
+	
+	spriteType = {
+		name = "funeral_for_a_King_event"
+		texturefile = "gfx/event_pictures/report_event/funeral_for_a_King_event.dds"
+	}
+
+	spriteType = {
+		name = "choosing_a_new_replacement_event"
+		texturefile = "gfx/event_pictures/report_event/choosing_a_new_replacement_event.dds"
+	}
+	
+	spriteType = {
+		name = "boris_johnson_event"
+		texturefile = "gfx/event_pictures/report_event/boris_johnson_event.dds"
+	}
+	
+	spriteType = {
+		name = "peoples_government_event"
+		texturefile = "gfx/event_pictures/report_event/peoples_government_event.dds"
+	}
+	
+	spriteType = {
+		name = "opening_market_event"
+		texturefile = "gfx/event_pictures/report_event/opening_market_event.dds"
+	}
+	
+	spriteType = {
+		name = "shutting_the_camps_event"
+		texturefile = "gfx/event_pictures/report_event/shutting_the_camps_event.dds"
+	}
+	
+	spriteType = {
+		name = "boris_in_the_un_event"
+		texturefile = "gfx/event_pictures/report_event/boris_in_the_un_event.dds"
+	}
+	
+	spriteType = {
+		name = "congress_clensing_event"
+		texturefile = "gfx/event_pictures/report_event/congress_clensing_event.dds"
+	}
+	
+	spriteType = {
+		name = "dermots_iron_fist_event"
+		texturefile = "gfx/event_pictures/report_event/dermots_iron_fist_event.dds"
+	}
+	
+	spriteType = {
+		name = "Mcdonnell_takes_over_event"
+		texturefile = "gfx/event_pictures/report_event/Mcdonnell_takes_over_event.dds"
+	}
+	
+	spriteType = {
+		name = "peace_for_all_event"
+		texturefile = "gfx/event_pictures/report_event/peace_for_all_event.dds"
+	}
+	
+	spriteType = {
+		name = "kennedy_takes_over_event"
+		texturefile = "gfx/event_pictures/report_event/kennedy_takes_over_event.dds"
+	}
+	
+	spriteType = {
+		name = "bring_the_dragons_head_event"
+		texturefile = "gfx/event_pictures/report_event/bring_the_dragons_head_event.dds"
+	}
+
+	spriteType = {
+		name = "kennedys_government_event"
+		texturefile = "gfx/event_pictures/report_event/kennedys_government_event.dds"
+	}
+	
+
 	
 	
+
 	
-	
-	
-	
-
-
-
-
-
-
-
-
-
-
-
 
 
 

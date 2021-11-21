@@ -1563,6 +1563,7 @@
 			country_event = {
 				id = england.47
 			}
+		
 		}
 
 	}
@@ -1678,6 +1679,7 @@
 			country_event = {
 				id = england.52
 			}
+			set_country_flag = death_of_blair
 		}
 
 	}
@@ -1693,7 +1695,11 @@
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
-		
+		completion_reward = {
+			country_event = {
+				id = england.53
+			}
+		}
 	}
 
 	shared_focus = {
@@ -1706,6 +1712,11 @@
 			FOCUS_FILTER_POLITICAL
 		}
 		prerequisite = { focus =  ENG_Grey_Tuesday  }
+		completion_reward = {
+			country_event = {
+				id = england.54
+			}
+		}
 	}
 
 
@@ -1719,6 +1730,11 @@
 			FOCUS_FILTER_POLITICAL
 		}
 		prerequisite = { focus =  ENG_The_Day_Of_Mourning  }
+		completion_reward = {
+			country_event = {
+				id = england.55
+			}
+		}
 
 	}
 	shared_focus = {
@@ -1731,6 +1747,11 @@
 			FOCUS_FILTER_POLITICAL
 		}
 		prerequisite = { focus =  ENG_The_Day_Of_Mourning  }
+		completion_reward = {
+			country_event = {
+				id = england.56
+			}
+		}
 
 	}
 
@@ -1745,6 +1766,11 @@
 		}
 		prerequisite = { focus =  ENG_A_Funeral_Fit_For_A_King  }
 		prerequisite = { focus =  ENG_Lowering_The_Flag  }
+		completion_reward = {
+			country_event = {
+				id = england.57
+			}
+		}
 	}
 
 
@@ -1766,6 +1792,11 @@
 			focus = ENG_Kennedy_The_Irong_Right_Hand
 		}
 		prerequisite = { focus =  ENG_Choosing_The_Replacement  }
+		completion_reward = {
+			country_event = {
+				id = england.58
+			}
+		}
 
 	}
 	shared_focus = {
@@ -1778,7 +1809,11 @@
 			FOCUS_FILTER_POLITICAL
 		}
 		prerequisite = { focus =  ENG_Johnson_The_Reformist  }
-
+		completion_reward = {
+			country_event = {
+				id = england.61
+			}
+		}
 	}
 	shared_focus = {
 		id = ENG_Shutting_Down_The_Camps
@@ -1790,7 +1825,11 @@
 			FOCUS_FILTER_POLITICAL
 		}
 		prerequisite = { focus =  ENG_The_Peoples_Government  }
-
+		completion_reward = {
+			country_event = {
+				id = england.63
+			}
+		}
 	}
 	shared_focus = {
 		id = ENG_A_New_Equal_Nation
@@ -1814,7 +1853,11 @@
 			FOCUS_FILTER_POLITICAL
 		}
 		prerequisite = { focus =  ENG_The_Peoples_Government  }
-
+		completion_reward = {
+			country_event = {
+				id = england.62
+			}
+		}
 	}
 	shared_focus = {
 		id = ENG_Open_Ourselves_To_New_Ideas
@@ -1864,6 +1907,11 @@
 		prerequisite = { focus =  ENG_A_New_Equal_Nation  }
 		prerequisite = { focus =  ENG_Open_Ourselves_To_New_Ideas  }
 		prerequisite = { focus =  ENG_End_National_Service  }
+		completion_reward = {
+			country_event = {
+				id = england.64
+			}
+		}
 	}
 	shared_focus = {
 		id = ENG_Hudson_The_Successor
@@ -1883,6 +1931,11 @@
 			FOCUS_FILTER_POLITICAL
 		}
 		prerequisite = { focus =  ENG_Choosing_The_Replacement  }
+		completion_reward = {
+			country_event = {
+				id = england.60
+			}
+		}
 
 	}
 	shared_focus = {
@@ -1907,6 +1960,7 @@
 			FOCUS_FILTER_POLITICAL
 		}
 		prerequisite = { focus =  ENG_Restore_Order  }
+
 
 	}
 	shared_focus = {
@@ -1957,6 +2011,11 @@
 			FOCUS_FILTER_POLITICAL
 		}
 		prerequisite = { focus =  ENG_Restore_Order  }
+		completion_reward = {
+			country_event = {
+				id = england.65
+			}
+		}
 
 	}
 	shared_focus = {
@@ -1983,7 +2042,11 @@
 		prerequisite = { focus =  ENG_Enforce_To_The_Status_Quo  }
 		prerequisite = { focus =  ENG_Shuffling_Generals  }
 		prerequisite = { focus =  ENG_Strengthen_Relations_With_Other_Totalists  }
-		
+		completion_reward = {
+			country_event = {
+				id = england.66
+			}
+		}
 	}
 	shared_focus = {
 		id = ENG_McDonnell_The_Workers_Friend
@@ -2004,6 +2067,11 @@
 			FOCUS_FILTER_POLITICAL
 		}
 		prerequisite = { focus =  ENG_Choosing_The_Replacement  }
+		completion_reward = {
+			country_event = {
+				id = england.59
+			}
+		}
 
 	}
 	shared_focus = {
@@ -2040,7 +2108,11 @@
 			FOCUS_FILTER_POLITICAL
 		}
 		prerequisite = { focus =  ENG_The_Peoples_Health_Network  }
-
+		completion_reward = {
+			country_event = {
+				id = england.67
+			}
+		}
 	}
 	shared_focus = {
 		id = ENG_The_New_Educators
@@ -2104,6 +2176,11 @@
 		prerequisite = { focus =  ENG_Increase_The_Workers_Role  }
 		prerequisite = { focus =  ENG_Shuffle_The_Congress  }
 		prerequisite = { focus =  ENG_Open_Relations_With_Scotland_And_Wales  }
+		completion_reward = {
+			country_event = {
+				id = england.68
+			}
+		}
 	}
 	shared_focus = {
 		id = ENG_Kennedy_The_Irong_Right_Hand
@@ -2123,7 +2200,11 @@
 			FOCUS_FILTER_POLITICAL
 		}
 		prerequisite = { focus =  ENG_Choosing_The_Replacement  }
-
+		completion_reward = {
+			country_event = {
+				id = england.69
+			}
+		}
 	}
 
 	shared_focus = {
@@ -2138,6 +2219,20 @@
 		prerequisite = { focus =  ENG_Kennedy_The_Irong_Right_Hand  }
 
 	}
+
+	shared_focus = {
+		id = ENG_Expanding_The_Camps
+		icon = GFX_ENG_the_totalist_spirit-445
+		x = 33
+		y = 6
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus =  ENG_Free_The_Military  }
+
+	}
+
 	shared_focus = {
 		id = ENG_Wales_Will_Be_Ours
 		icon = wales_will_be_ours_icon
@@ -2160,6 +2255,11 @@
 			FOCUS_FILTER_POLITICAL
 		}
 		prerequisite = { focus =  ENG_Wales_Will_Be_Ours  }
+		completion_reward = {
+			country_event = {
+				id = england.70
+			}
+		}
 
 	}
 	shared_focus = {
@@ -2184,22 +2284,10 @@
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
-		prerequisite = { focus =  ENG_Purging_The_Unfit  }
+		prerequisite = { focus =  ENG_Expanding_The_Camps  }
 
 	}
 
-	shared_focus = {
-		id = ENG_Expanding_The_Camps
-		icon = GFX_ENG_the_totalist_spirit-445
-		x = 35
-		y = 6
-		cost = 3
-		search_filters = {
-			FOCUS_FILTER_POLITICAL
-		}
-		prerequisite = { focus =  ENG_The_Iron_Fist_Stays  }
-
-	}
 	shared_focus = {
 		id = ENG_Blair_Was_Afraid
 		icon = GFX_ENG_the_totalist_spirit-445
@@ -2209,9 +2297,10 @@
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
-		prerequisite = { focus =  ENG_Expanding_The_Camps  }
+		prerequisite = { focus =  ENG_Purging_The_Unfit  }
 
 	}
+
 	shared_focus = {
 		id = ENG_Kennedys_Government
 		icon = kennedy_gov_icon
@@ -2221,9 +2310,14 @@
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
-		prerequisite = { focus =  ENG_Bring_Me_The_Dragons_Head  }
+		prerequisite = { focus =  ENG_Bring_Me_The_Dragons_Head2  }
 		prerequisite = { focus =  ENG_Blair_Was_Afraid  }
 		prerequisite = { focus =  ENG_A_New_Cult_Of_Personality  }
+		completion_reward = {
+			country_event = {
+				id = england.71
+			}
+		}
 	}
 
 	shared_focus = {

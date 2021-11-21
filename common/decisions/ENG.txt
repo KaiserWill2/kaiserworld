@@ -1,3 +1,4 @@
+
 fifties = {
 	
 	ENG_The_Dumfries_War = {
@@ -9,9 +10,6 @@ fifties = {
 			    original_tag = ENG
 				original_tag = SCO
 				original_tag = WAL
-				original_tag = ULS
-				original_tag = MAY
-				original_tag = BOR
 			}
 		}
 
@@ -48,6 +46,32 @@ eighties = {
 }
 
 nineties = {
+
+	ENG_Welcome_To_The_Union = {
+
+		icon = generic_scorched_earth
+	
+		allowed = {
+			OR = {
+				original_tag = ENG
+			}
+		}
+	
+		available = {
+			always = yes
+		}
+	
+		cost = 0
+		fire_only_once = no
+		ai_will_do = {
+			factor = 0
+		}
+	
+		complete_effect = {
+			country_event = { id = decision_event.3 }
+		}
+	}
+	
 	
 	
 }
@@ -56,3 +80,34 @@ noughts = {
 	
 	
 }
+
+ENG_Fix_The_Union = {
+	cost = 50
+	days_remove = 121
+	icon = generic_scorched_earth
+
+	allowed = {
+		OR = {
+			original_tag = ENG
+		}
+	}
+	visible = {
+		has_country_flag = death_of_blair
+	available = {
+		always = yes
+	}
+
+	cost = 0
+	fire_only_once = no
+	ai_will_do = {
+		factor = 0
+	}
+
+	complete_effect = {
+		country_event = { id = decision_event.2 }
+	}
+}
+
+}
+
+

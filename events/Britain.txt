@@ -15,20 +15,8 @@ country_event = {
 
 	}
 }
-country_event = {
-	id = England.2
-	title = England.2.t
-	desc = England.2.d
-	picture = limited_freedoms_of_markets
-	is_triggered_only = yes
-	option = {
-		name = England.2.o1
-		 load_focus_tree = {
-			tree = british_grey_tuesday
-			keep_completed = yes
-		}
-	}
-}
+
+
 country_event = {
 	id = England.3
 	title = England.3.t
@@ -538,7 +526,19 @@ country_event = {
 	fire_only_once = yes
 	option = {
 		name = England.44.o1
-
+		release_puppet = WAL
+		WAL = {
+			create_country_leader = {
+				name = "Michael Portillo"
+				picture = "wal_michael_portillo.dds"
+				ideology = national_communist
+			}
+			set_cosmetic_tag = WAL_wales_communist
+			set_politics = {
+				ruling_party = communist
+				elections_allowed = no
+			}
+			}
 	}
 }
 
@@ -574,7 +574,9 @@ country_event = {
 	fire_only_once = yes
 	option = {
 		name = England.47.o1
-
+		ENG = {
+			annex_country = { target = WAL }
+		}
 	}
 }
 
@@ -635,7 +637,294 @@ country_event = {
 	fire_only_once = yes
 	option = {
 		name = England.52.o1
+		load_focus_tree = {
+			tree = british_grey_tuesday
+			keep_completed = yes
+		}
+	}
+}
+
+country_event = {
+	id = England.53
+	title = England.53.t
+	desc = England.53.d
+	picture = grey_tuesday_event
+	fire_only_once = yes
+	option = {
+		name = England.53.o1
 
 	}
 }
+
+country_event = {
+	id = England.54
+	title = England.54.t
+	desc = England.54.d
+	picture = the_day_of_mourning_event
+	fire_only_once = yes
+	option = {
+		name = England.54.o1
+
+	}
+}
+
+country_event = {
+	id = England.55
+	title = England.55.t
+	desc = England.55.d
+	picture = funeral_for_a_King_event
+	fire_only_once = yes
+	option = {
+		name = England.55.o1
+
+	}
+}
+
+country_event = {
+	id = England.56
+	title = England.56.t
+	desc = England.56.d
+	picture = lowering_the_flag_event
+	fire_only_once = yes
+	option = {
+		name = England.56.o1
+
+	}
+}
+
+country_event = {
+	id = England.57
+	title = England.57.t
+	desc = England.57.d
+	picture = choosing_a_new_replacement_event
+	fire_only_once = yes
+	option = {
+		name = England.57.o1
+
+	}
+}
+
+country_event = {
+	id = England.61
+	title = England.61.t
+	desc = England.61.d
+	picture = peoples_government_event
+	fire_only_once = yes
+	option = {
+		name = England.61.o1
+
+	}
+}
+
+country_event = {
+	id = England.62
+	title = England.62.t
+	desc = England.62.d
+	picture = opening_market_event
+	fire_only_once = yes
+	option = {
+		name = England.62.o1
+
+	}
+}
+
+country_event = {
+	id = England.63
+	title = England.63.t
+	desc = England.63.d
+	picture = shutting_the_camps_event
+	fire_only_once = yes
+	option = {
+		name = England.63.o1
+
+	}
+}
+
+country_event = {
+	id = England.64
+	title = England.64.t
+	desc = England.64.d
+	picture = boris_in_the_un_event
+	fire_only_once = yes
+	option = {
+		name = England.64.o1
+		set_cosmetic_tag = ENG_new_england_flag
+
+	}
+}
+
+
+
+country_event = {
+	id = England.58
+	title = England.58.t
+	desc = England.58.d
+	picture = boris_johnson_event
+	fire_only_once = yes
+	option = {
+		name = England.58.o1
+		set_cosmetic_tag = ENG_communist
+		set_politics = {
+			ruling_party = revolutionary_socialist 
+			elections_allowed = no
+		}
+		add_popularity = {
+			ideology = revolutionary_socialist 
+			popularity = 0.52
+		}
+		create_country_leader = {
+			name = "Boris Johnson"
+			picture = "big_boris.dds"
+			ideology = revolutionary_socialist_ideology
+		}
+
+	}
+}
+
+
+
+country_event = {
+	id = England.59
+	title = England.59.t
+	desc = England.59.d
+	picture = Mcdonnell_takes_over_event
+	fire_only_once = yes
+	option = {
+		name = England.59.o1
+		set_cosmetic_tag = ENG_communist
+		set_politics = {
+			ruling_party = moderate_socialist 
+			elections_allowed = no
+		}
+		add_popularity = {
+			ideology = moderate_socialist 
+			popularity = 0.52
+		}
+		create_country_leader = {
+			name = "John McDonnell"
+			picture = "john_mcdonnell.dds"
+			ideology = democratic_socialist
+		}
+
+	}
+}
+
+country_event = {
+	id = England.60
+	title = England.60.t
+	desc = England.60.d
+	picture = dermot_hudson_takes_over_event
+	fire_only_once = yes
+	option = {
+		name = England.60.o1
+		set_cosmetic_tag = ENG_communist
+		create_country_leader = {
+			name = "Dermot Hudson"
+			picture = "dermot_hudson.dds"
+			ideology = marxist
+		}
+
+	}
+}
+
+country_event = {
+	id = England.65
+	title = England.65.t
+	desc = England.65.d
+	picture = congress_clensing_event
+	fire_only_once = yes
+	option = {
+		name = England.65.o1
+
+
+	}
+}
+
+country_event = {
+	id = England.66
+	title = England.66.t
+	desc = England.66.d
+	picture = dermots_iron_fist_event
+	fire_only_once = yes
+	option = {
+		name = England.66.o1
+		set_cosmetic_tag = ENG_hudson_takes_over
+
+	}
+}
+
+country_event = {
+	id = England.67
+	title = England.67.t
+	desc = England.67.d
+	picture = peace_for_all_event
+	fire_only_once = yes
+	option = {
+		name = England.67.o1
+
+
+	}
+}
+
+country_event = {
+	id = England.68
+	title = England.68.t
+	desc = England.68.d
+	picture = peace_for_all_event
+	fire_only_once = yes
+	option = {
+		name = England.68.o1
+		set_cosmetic_tag = ENG_mcdonnell_rule
+
+	}
+}
+
+
+country_event = {
+	id = England.69
+	title = England.69.t
+	desc = England.69.d
+	picture = kennedy_takes_over_event
+	fire_only_once = yes
+	option = {
+		name = England.69.o1
+		set_cosmetic_tag = ENG_communist
+		create_country_leader = {
+			name = "Charles Kennedy"
+			picture = "charles_kennedy.dds"
+			ideology = marxist
+		}
+
+	}
+}
+
+country_event = {
+	id = England.70
+	title = England.70.t
+	desc = England.70.d
+	picture = bring_the_dragons_head_event
+	fire_only_once = yes
+	option = {
+		name = England.70.o1
+
+
+	}
+}
+
+country_event = {
+	id = England.71
+	title = England.71.t
+	desc = England.71.d
+	picture = kennedys_government_event
+	fire_only_once = yes
+	option = {
+		name = England.71.o1
+		set_cosmetic_tag = ENG_communist_kennedy
+
+	}
+}
+
+
+
+
 

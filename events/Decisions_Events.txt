@@ -1,7 +1,7 @@
 ﻿add_namespace = decision_event
 
 
-
+#scotland siegh
 country_event = {
 	id = decision_event.1
 	title = decision_event.1.t
@@ -12,5 +12,34 @@ country_event = {
 	
 	option = {   
 		name = decision_event.1.o1
+	}
+}
+
+#stablise country
+country_event = {
+	id = decision_event.2
+	title = decision_event.2.t
+	desc = decision_event.2.d
+	picture = the_siegh_of_scotland
+	
+	is_triggered_only = yes
+	
+	option = {   
+		name = decision_event.2.o1
+	}
+}
+
+
+#stablise country
+country_event = {
+	id = decision_event.3
+	title = decision_event.3.t
+	desc = decision_event.3.d
+	picture = welcome_to_the_union
+	
+	is_triggered_only = yes
+	
+	option = {   
+		name = decision_event.3.o1
 	}
 }

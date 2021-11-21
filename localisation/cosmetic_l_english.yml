@@ -2119,6 +2119,25 @@
  ENG_england_moderate_socialist_ADJ:0 "English"
  ENG_england_revolutionary_socialist_ADJ:0 "English"
  ENG_england_communist_ADJ:0 "English"
+
+ENG_new_england_flag:0 "Republic Of England"
+ENG_new_england_flag_DEF:0 "Republic Of England"
+ENG_new_england_flag_ADJ:0 "Republic Of England"
+
+ENG_hudson_takes_over:0 "U.S.B.R"
+ENG_hudson_takes_over_DEF:0 "U.S.B.R"
+ENG_hudson_takes_over_ADJ:0 "U.S.B.R"
+
+
+ENG_mcdonnell_rule:0 "Union Of England"
+ENG_mcdonnell_rule_DEF:0 "Union Of England"
+ENG_mcdonnell_rule_ADJ:0 "Union Of England"
+
+
+ WAL_wales_communist:0 "Union Of Wales"
+ WAL_wales_communist_DEF:0 "Union Of Wales"
+ WAL_wales_communist_ADJ:0 "Union Of Wales"
+
  MWA_clark_nationalist:0 "American Reclamation Authority"
  MWA_clark_nationalist_DEF:0 "the American Reclamation Authority"
  MWA_clark_nationalist_ADJ:0 "Midwestern"

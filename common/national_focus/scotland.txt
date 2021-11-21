@@ -11,7 +11,7 @@ focus_tree = {
 	continuous_focus_position = { x = 50 y = 1550 }
 	focus = {
 		id = SCO_The_Kingdom_Of_Scotland
-		icon = tear_treaty
+		icon = kingdom_of_scotland_icon
 		cost = 5
 		x = 17
 		y = 0
@@ -22,7 +22,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SCO_The_Nation
-		icon = tear_treaty
+		icon = the_nation_icon
 		cost = 5
 		x = 17
 		y = 1
@@ -313,19 +313,7 @@ focus_tree = {
 		}
 
 	}
-	focus = {
-		id = SCO_Anti_Missile_Silos 
-		icon = tear_treaty
-		cost = 5
-		x = 23
-		y = 5
-		prerequisite = { focus = SCO_The_Youth_Service  }
-		prerequisite = { focus = SCO_Arm_North_Berwick  }
-		completion_reward = {
 
-		}
-
-	}
 	focus = {
 		id = SCO_Protect_Our_Lands
 		icon = tear_treaty
@@ -671,7 +659,7 @@ focus_tree = {
 
 	}
 	focus = {
-		id = SCO_The_Question_Of_Solidarity_Movement?
+		id = SCO_The_Question_Of_Solidarity_Movement
 		icon = tear_treaty
 		cost = 5
 		x = 48
@@ -688,7 +676,7 @@ focus_tree = {
 		cost = 5
 		x = 47
 		y = 5
-		prerequisite = { focus = SCO_The_Question_Of_Solidarity_Movement?  }
+		prerequisite = { focus = SCO_The_Question_Of_Solidarity_Movement  }
 		completion_reward = {
 
 		}

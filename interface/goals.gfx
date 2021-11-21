@@ -750,11 +750,20 @@ SpriteType = {
 
 
 
+		#SCOTLAND#
+		SpriteType = {
+			name = "kingdom_of_scotland_icon"
+			texturefile = "gfx/interface/goals/sco/kingdom_of_scotland_icon.dds"			
+		}	
+		
+		SpriteType = {
+			name = "the_nation_icon"
+			texturefile = "gfx/interface/goals/sco/the_nation_icon.dds"			
+		}	
+		
 
 
-
-
-
+		
 
 
 
