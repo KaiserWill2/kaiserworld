@@ -156,29 +156,11 @@ division_template = {
 
 units = {
 	
-	division = {
-		name = "Duke of Lancaster Regiment"
-		location = 6103
-		division_template = "Infantry Division"
-		start_experience_factor = 0.3
-	}
+	
+	
 	
 	division = {
-		name = "Princess of Wales Regiment"
-		location = 6103
-		division_template = "Infantry Division"
-		start_experience_factor = 0.3
-	}
-	
-	division = {
-		name = "Royal Gurkha Rifles Regiment"
-		location = 11064
-		division_template = "Infantry Division"
-		start_experience_factor = 0.3
-	}
-	
-	division = {
-		name = "22nd SAS Regiment"
+		name = "Red Group 4"
 		location = 6103
 		division_template = "Infantry Division"
 		start_experience_factor = 0.8
@@ -240,33 +222,7 @@ units = {
 		start_experience_factor = 0.3
 	}
 	
-	division = {
-		name = "8th Infantry Division"
-		location = 9392
-		division_template = "Infantry Division"
-		start_experience_factor = 0.3
-	}
 	
-	division = {
-		name = "11th Infantry Division"
-		location = 377
-		division_template = "Infantry Division"
-		start_experience_factor = 0.3
-	}
-	
-	division = {
-		name = "38th (Irish) Infantry Division"
-		location = 3379
-		division_template = "Infantry Division"
-		start_experience_factor = 0.3
-	}
-	
-	division = {
-		name = "42nd Infantry Division"
-		location = 9392
-		division_template = "Infantry Division"
-		start_experience_factor = 0.3
-	}
 	
 	division = {
 		name = "51st Infantry Division"

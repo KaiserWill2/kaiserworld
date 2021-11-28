@@ -43,3 +43,18 @@ country_event = {
 		name = decision_event.3.o1
 	}
 }
+
+
+#stablise country
+country_event = {
+	id = decision_event.4
+	title = decision_event.4.t
+	desc = decision_event.4.d
+	picture = the_peoples_palace_decsion
+	
+	is_triggered_only = yes
+	
+	option = {   
+		name = decision_event.4.o1
+	}
+}

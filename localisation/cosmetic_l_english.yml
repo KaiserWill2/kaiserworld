@@ -2133,6 +2133,10 @@ ENG_mcdonnell_rule:0 "Union Of England"
 ENG_mcdonnell_rule_DEF:0 "Union Of England"
 ENG_mcdonnell_rule_ADJ:0 "Union Of England"
 
+ENG_communist_kennedy:0 "U.S.B.R"
+ENG_communist_kennedy_DEF:0 "U.S.B.R"
+ENG_communist_kennedy_ADJ:0 "U.S.B.R"
+
 
  WAL_wales_communist:0 "Union Of Wales"
  WAL_wales_communist_DEF:0 "Union Of Wales"

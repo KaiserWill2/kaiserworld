@@ -266,6 +266,96 @@ ideas = {
 		}
 
 
+		imprison_the_family = {
+			allowed = {
+				always = no
+			}
+			
+			
+			removal_cost = -1
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				stability_weekly = -0.002
+
+			
+			}
+		}
+
+		ENG_forcing_labour = {
+			allowed = {
+				always = no
+			}
+			
+			
+			removal_cost = -1
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				stability_factor = 0.10
+				non_core_manpower = 0.02
+				production_factory_start_efficiency_factor = 0.1
+				production_factory_max_efficiency_factor = -0.05
+
+			
+			}
+		}
+
+		open_the_camps = {
+			allowed = {
+				always = no
+			}
+			
+			
+			removal_cost = -1
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				production_speed_buildings_factor = 0.10
+				resistance_damage_to_garrison = 0.15
+
+			
+			}
+		}
+		
+		Cornwall_extermination_Camp = {
+			allowed = {
+				always = no
+			}
+			
+			
+			removal_cost = -1
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				production_speed_buildings_factor = 0.20
+				resistance_damage_to_garrison = 0.25
+
+			
+			}
+		}
+		
+
+
+
+
+
+
+
+
+
 
 
 

@@ -514,7 +514,7 @@ country_event = {
 	fire_only_once = yes
 	option = {
 		name = England.43.o1
-
+	
 	}
 }
 
@@ -572,11 +572,15 @@ country_event = {
 	desc = England.47.d
 	picture = wales_and_england_united_event
 	fire_only_once = yes
+	
 	option = {
 		name = England.47.o1
-		ENG = {
-			annex_country = { target = WAL }
-		}
+		load_focus_tree = {
+			tree = british_new_england
+			keep_completed = no	
+		}		
+
+
 	}
 }
 

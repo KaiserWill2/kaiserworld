@@ -745,10 +745,67 @@ SpriteType = {
 		texturefile = "gfx/interface/goals/eng/bring_the_dragons_head2_icon.dds"			
 		}	
 	
-
+	SpriteType = {
+		name = "a_new_england_icon"
+		texturefile = "gfx/interface/goals/eng/a_new_england_icon.dds"			
+		}	
 	
+	SpriteType = {
+	name = "wales_is_finally_back_icon"
+	texturefile = "gfx/interface/goals/eng/wales_is_finally_back_icon.dds"			
+	}	
+	
+				SpriteType = {
+	name = "a_united_army_icon"
+	texturefile = "gfx/interface/goals/eng/a_united_army_icon.dds"			
+	}	
 
-
+					SpriteType = {
+	name = "united_for_the_people_icon"
+	texturefile = "gfx/interface/goals/eng/united_for_the_people_icon.dds"			
+	}	
+	
+						SpriteType = {
+	name = "destory_the_borders_icon"
+	texturefile = "gfx/interface/goals/eng/destory_the_borders_icon.dds"			
+	}	
+	
+						SpriteType = {
+	name = "looking_north_icon"
+	texturefile = "gfx/interface/goals/eng/looking_north_icon.dds"			
+	}	
+	
+	SpriteType = {
+	name = "selling_to_scottish_reds_icon"
+	texturefile = "gfx/interface/goals/eng/selling_to_scottish_reds_icon.dds"			
+	}
+	
+		SpriteType = {
+	name = "begin_propaganda_campaign_icon"
+	texturefile = "gfx/interface/goals/eng/begin_propaganda_campaign_icon.dds"			
+	}
+	
+			SpriteType = {
+	name = "increase_chances_of_riot_icon"
+	texturefile = "gfx/interface/goals/eng/increase_chances_of_riot_icon.dds"			
+	}
+	
+			SpriteType = {
+	name = "talks_with_the_king_icon"
+	texturefile = "gfx/interface/goals/eng/talks_with_the_king_icon.dds"			
+	}
+	
+			SpriteType = {
+	name = "use_scottish_weakness_icon"
+	texturefile = "gfx/interface/goals/eng/use_scottish_weakness_icon.dds"			
+	}
+	
+			SpriteType = {
+	name = "establish_better_connections_icon"
+	texturefile = "gfx/interface/goals/eng/establish_better_connections_icon.dds"			
+	}
+	
+	
 
 		#SCOTLAND#
 		SpriteType = {

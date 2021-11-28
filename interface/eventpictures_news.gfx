@@ -1350,9 +1350,13 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/news_event/the_peace_treaty.dds"
 	}
 
+	spriteType = {
+		name = "the_peoples_palace_decsion"
+		texturefile = "gfx/event_pictures/news_event/the_peoples_palace_decsion.dds"
+	}
 
 
-
+	
 
 	
 

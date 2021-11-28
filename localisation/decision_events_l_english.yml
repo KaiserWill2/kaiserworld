@@ -12,3 +12,7 @@ l_english:
  decision_event.3.t:0 "Welcome To The Union"
  decision_event.3.d:0 "In the old days of the union Michael Foot lead the state until 1995 where he suffered from a stroke and passed away. Not long after the Hardliner brute who was in second command of the union, Anthony Charles Lynton Blair became leader. Within the first year of his rule England dramatically changed. From the year 2000-2005 Blair increased the isolationist nation preventing outside news leaking in. Blair also ensures total loyalty to him imprisoning anyone who speaks out against his rule. England is ruled with an iron fist and is ready for any war to break out with the population under strict law its unlikely anything is to change soon in the union.."
  decision_event.3.o1:0 "The Hermit Kingdom"
+
+ decision_event.4.t:0 "The Peoples Palace"
+ decision_event.4.d:0 "The Peoples Palace is the home of the current leader in the U.S.B.R. What used to be Buckingham Palace lay deserted and empty until the 1950s when T.E Lawrence ordered the Palace to be refurbished to fit the image of the union. Once complete, the war hero moved his home into the Palace and kept watchful eyes over the city of London. Now with Tony Blair in control, parts of the palace are being rebuilt to hold solid gold statues of the leader and small missile silos ready to fire at targets who may try to attack his home.  "
+ decision_event.4.o1:0 "The Royal Palace No More"

@@ -16,9 +16,9 @@ fifties = {
 		available = {
 			always = yes
 		}
-
+	
 		cost = 0
-		fire_only_once = no
+		fire_only_once = yes
 		ai_will_do = {
 			factor = 0
 		}
@@ -27,7 +27,42 @@ fifties = {
 			country_event = { id = decision_event.1 }
 		}
 	}
+
+
+
+
+
 	
+	ENG_The_Peoples_Palace = {
+
+		icon = generic_scorched_earth
+	
+		allowed = {
+			OR = {
+				original_tag = ENG
+			}
+		}
+
+		available = {
+			always = yes
+		}
+		cost = 0
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 0
+		}     
+		complete_effect = {
+	country_event = { id = decision_event.4 }
+		}       
+   }
+		
+	
+
+
+
+
+
+
 }
 
 sixties = {
@@ -62,7 +97,7 @@ nineties = {
 		}
 	
 		cost = 0
-		fire_only_once = no
+		fire_only_once = yes
 		ai_will_do = {
 			factor = 0
 		}
@@ -77,37 +112,17 @@ nineties = {
 }
 
 noughts = {
+
+
+
+
+
 	
 	
 }
 
-ENG_Fix_The_Union = {
-	cost = 50
-	days_remove = 121
-	icon = generic_scorched_earth
 
-	allowed = {
-		OR = {
-			original_tag = ENG
-		}
-	}
-	visible = {
-		has_country_flag = death_of_blair
-	available = {
-		always = yes
-	}
 
-	cost = 0
-	fire_only_once = no
-	ai_will_do = {
-		factor = 0
-	}
 
-	complete_effect = {
-		country_event = { id = decision_event.2 }
-	}
-}
-
-}
 
 
