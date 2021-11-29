@@ -347,22 +347,138 @@ ideas = {
 			}
 		}
 		
+		Oath_Of_Allegiance = {
+			allowed = {
+				always = no
+			}
+			
+			
+			removal_cost = -1
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				MONTHLY_POPULATION = 0.1
+				war_support_factor = 0.25
+				research_speed_factor = 0.15
+				poverty_monthly_rate = 0.08
+				academic_base_monthly_rate = -2
+				industrial_expertise_monthly_rate = -2
+
+			
+			}
+		}
+				
+		idea_target_wales = {
+			allowed = {
+				always = no
+			}
+			
+			
+			removal_cost = -1
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				army_speed_factor = -0.05
+				supply_consumption_factor = 0.15
+				army_morale_factor = -0.05
+					conscription_factor = -0.1
+
+			
+			}
+		}
+		
+		opening_the_union_market = {
+			allowed = {
+				always = no
+			}
+			
+			
+			removal_cost = -1
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				consumer_goods_factor = 0.1
+				industrial_capacity_factory = 0.25
+				research_speed_factor = 0.03
+				trade_opinion_factor = 0.5
+
+			
+			}
+		}
+		
+		reform_the_military = {
+			allowed = {
+				always = no
+			}
+			
+			
+			removal_cost = -1
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				army_morale_factor = 0.035
+				army_org_factor = 0.2
+				training_time_army_factor = -0.1	
+				conscription = 0.03
+			
+			}
+		}
+
+		modern_totalism = {
+			allowed = {
+				always = no
+			}
+			
+			
+			removal_cost = -1
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				political_power_gain = 0.05
+				communist_drift = 0.02
+				decryption_power = 10
+			}
+		}
+
+		Better_Relations = {
+			allowed = {
+				always = no
+			}
+			
+			
+			removal_cost = -1
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				political_power_gain = 0.1
+				foreign_subversive_activites = -0.25
+				trade_opinion_factor = 0.5
+			}
+		}
 
 
 
 
 
 
-
-
-
-
-
-
-
-
-	}
-	
 	
 	# TECHNOLOGY
 	tank_manufacturer = { 
@@ -1609,6 +1725,22 @@ ideas = {
 			traits = { politician_with_connections }			
 		}
 	}
+
+
+		
+
+
+
+
+
+
+
+
+
+
+	}
+	
+
 
 
 

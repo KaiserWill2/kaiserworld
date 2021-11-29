@@ -695,7 +695,7 @@
 		}
 		prerequisite = { focus = ENG_Branching_Out_The_Congress  }
 		completion_reward = {
-
+			add_political_power = 50
 		}
 	}
 	shared_focus = {
@@ -709,7 +709,7 @@
 		}
 		prerequisite = { focus = ENG_Freedom_Of_Thought_Council  }
 		completion_reward = {
-
+			add_political_power = 50
 		}
 	}
 	shared_focus = {
@@ -723,7 +723,8 @@
 		}
 		prerequisite = { focus = ENG_The_Peoples_Ministry  }
 		completion_reward = {
-
+			add_stability = 0.20
+			add_political_power = 50
 		}
 	}
 	shared_focus = {
@@ -981,7 +982,12 @@
 		}
 		prerequisite = { focus = ENG_Defending_The_Island  }
 		completion_reward = {
-
+			army_experience = 25
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 100
+				producer = ENG
+			}
 		}
 	}
 	shared_focus = {
@@ -995,7 +1001,7 @@
 		}
 		prerequisite = { focus = ENG_Soldiers_Of_England  }
 		completion_reward = {
-
+			add_stability = 0.25
 		}
 	}
 	shared_focus = {
@@ -1025,7 +1031,11 @@
 		}
 		prerequisite = { focus = ENG_Soldiers_Of_England  }
 		completion_reward = {
-
+			army_experience = 10
+			add_timed_idea = {
+				idea = Oath_Of_Allegiance
+				days = 90
+		}
 		}
 	}
 	shared_focus = {
@@ -1041,7 +1051,7 @@
 		prerequisite = { focus = ENG_Discipline_Enforced  }
 		prerequisite = { focus = ENG_Oath_Of_Allegiance  }
 		completion_reward = {
-
+			add_manpower = 2500
 		}
 	}
 	shared_focus = {
@@ -1105,7 +1115,7 @@
 		}
 		prerequisite = { focus = ENG_Wigston_Flying_Plans  }
 		completion_reward = {
-
+			air_experience = 40
 		}
 	}
 	shared_focus = {
@@ -1119,7 +1129,7 @@
 		}
 		prerequisite = { focus = ENG_Flying_Fortress  }
 		completion_reward = {
-
+			add_political_power = 100
 		}
 	}
 	shared_focus = {
@@ -1133,6 +1143,12 @@
 		}
 		prerequisite = { focus = ENG_Flying_Fortress  }
 		completion_reward = {
+			add_research_slot = 1
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = radar_tech
+			}
 			country_event = {
 				id = england.30
 			}
@@ -1165,7 +1181,9 @@
 		}
 		prerequisite = { focus = ENG_Seas_Of_England  }
 		completion_reward = {
-
+			navy_experience = 20
+			add_stability = 0.025
+			add_command_power = 20
 		}
 	}
 	shared_focus = {
@@ -1194,6 +1212,11 @@
 			FOCUS_FILTER_POLITICAL
 		}
 		prerequisite = { focus = ENG_Seas_Of_England  }
+		completion_reward = {
+			navy_experience = 20
+			add_political_power = 30
+			
+		}
 	}
 		shared_focus = {
 		id = ENG_Defense_Against_France
@@ -1205,6 +1228,15 @@
 			FOCUS_FILTER_POLITICAL
 		}
 		prerequisite = { focus = ENG_Test_Raids_On_The_Channel_Island  }
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = naval_air
+			}
+			air_experience = 20
+			navy_experience = 20
+		}
 	}
 
 	shared_focus = {
@@ -1217,6 +1249,14 @@
 			FOCUS_FILTER_POLITICAL
 		}
 		prerequisite = { focus = ENG_Seas_Of_England  }
+		completion_reward = {
+			add_tech_bonus = {
+				name = naval_doctrine_bonus
+				bonus = 0.3
+				uses = 2
+				category = naval_doctrine
+			}
+		}
 	}
 	shared_focus = {
 		id = ENG_Irish_Sea
@@ -1228,6 +1268,14 @@
 			FOCUS_FILTER_POLITICAL
 		}
 		prerequisite = { focus = ENG_Protecting_Welsh_Waters  }
+		completion_reward = {
+			add_tech_bonus = {
+				name = naval_doctrine_bonus
+				bonus = 0.5
+				uses = 2
+				category = submarine_doctrine
+			}
+		}
 	}
 
 	shared_focus = {
@@ -1278,6 +1326,10 @@
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
+		completion_reward = {
+			add_command_power = 30
+			add_political_power = 50
+		}
 	}
 	shared_focus = {
 		id = ENG_Death_Squad_For_Petty_Crime
@@ -1289,6 +1341,9 @@
 			FOCUS_FILTER_POLITICAL
 		}
 		prerequisite = { focus = ENG_The_More_Control  }
+		completion_reward = {
+		add_political_power = 20
+		}
 	}
 
 	shared_focus = {
@@ -1301,6 +1356,22 @@
 			FOCUS_FILTER_POLITICAL
 		}
 		prerequisite = { focus = ENG_Death_Squad_For_Petty_Crime  }
+		completion_reward = {
+			128 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+			}
+			129 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
 	}
 	shared_focus = {
 		id = ENG_Build_Up
@@ -1312,6 +1383,23 @@
 			FOCUS_FILTER_POLITICAL
 		}
 		prerequisite = { focus = ENG_Death_Squad_For_Petty_Crime  }
+		completion_reward = {
+			130 = {
+				add_extra_state_shared_building_slots = 2
+			}
+			132 = {
+				add_extra_state_shared_building_slots = 2
+			}
+			131 = {
+				add_extra_state_shared_building_slots = 2
+			}
+			126 = {
+				add_extra_state_shared_building_slots = 2
+			}
+			127 = {
+				add_extra_state_shared_building_slots = 2
+			}
+		}
 	}
 	shared_focus = {
 		id = ENG_Propaganda_Through_Education
@@ -1355,6 +1443,10 @@
 			FOCUS_FILTER_POLITICAL
 		}
 		prerequisite = { focus = ENG_Build_Up  }
+		completion_reward = {
+			add_stability = 0.10
+			add_command_power = 10
+		}
 	}
 	shared_focus = {
 		id = ENG_The_Children_Are_The_Future
@@ -1366,6 +1458,9 @@
 			FOCUS_FILTER_POLITICAL
 		}
 		prerequisite = { focus = ENG_Propaganda_Through_Education  }
+		completion_reward = {
+
+		}
 	}
 	shared_focus = {
 		id = ENG_Report_For_Rewards
@@ -1377,6 +1472,9 @@
 			FOCUS_FILTER_POLITICAL
 		}
 		prerequisite = { focus = ENG_The_Children_Are_The_Future  }
+		completion_reward = {
+
+		}
 	}
 	shared_focus = {
 		id = ENG_Build_His_Paradise
@@ -1416,21 +1514,19 @@
 	shared_focus = {
 		id = ENG_Rocket_Man
 		icon = rocket_man
-		allow_branch = {
-			has_country_flag = ENG_rockets_away
-		}
 		x = 35
 		y = 0
 		cost = 3
-		allow_branch = {
-			has_country_flag = ENG_rockets_away
-		}
+		#allow_branch = {
+		#	has_country_flag = ENG_rockets_away
+		#}
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
 		available = {
 		}
 		completion_reward = {
+			add_research_slot = 2
 		}
 	}
 	shared_focus = {
@@ -1459,7 +1555,10 @@
 			FOCUS_FILTER_POLITICAL
 		}
 		prerequisite = { focus = ENG_Shetland_Weapon_Testing  }
+		completion_reward = {
+			add_political_power = 50
 	}
+}
 	shared_focus = {
 		id = ENG_Threats_To_Scotland
 		icon = threats_to_scotland_icon
@@ -1470,6 +1569,14 @@
 			FOCUS_FILTER_POLITICAL
 		}
 		prerequisite = { focus = ENG_The_Islands_Are_English  }
+		completion_reward = {
+			ENG = {
+				add_opinion_modifier = {
+					target = SCO
+					modifier = declaration_of_hostility
+				}
+			}
+		}
 	}
 	shared_focus = {
 		id = ENG_Arms_The_Cliffs_Of_Dover
@@ -1481,6 +1588,17 @@
 			FOCUS_FILTER_POLITICAL
 		}
 		prerequisite = { focus = ENG_The_Islands_Are_English  }
+		completion_reward = {
+			add_political_power = 100
+			navy_experience = 25
+			army_experience = 5
+			add_tech_bonus = {
+				name = naval_doctrine_bonus
+				bonus = 1
+				uses = 1
+				category = naval_doctrine
+			}
+		}
 	}
 	shared_focus = {
 		id = ENG_Dragon_Is_The_Target
@@ -1492,6 +1610,12 @@
 			FOCUS_FILTER_POLITICAL
 		}
 		prerequisite = { focus = ENG_The_Islands_Are_English  }
+		completion_reward = {
+			add_timed_idea = {
+				idea = idea_target_wales
+				days = 30
+			}
+		}
 	}
 	shared_focus = {
 		id = ENG_The_Rockets_Are_Ready
@@ -1505,6 +1629,13 @@
 		prerequisite = { focus = ENG_Dragon_Is_The_Target  }
 		prerequisite = { focus = ENG_Arms_The_Cliffs_Of_Dover  }
 		prerequisite = { focus = ENG_Threats_To_Scotland  }
+		completion_reward = {
+			add_tech_bonus = {
+    			bonus = 0.5
+    			uses = 3
+    			category = rocketry
+			}
+		}
 	}
 	shared_focus = {
 		id = Wales_Is_The_Prize
@@ -1532,6 +1663,20 @@
 			FOCUS_FILTER_POLITICAL
 		}
 		prerequisite = { focus = Wales_Is_The_Prize  }
+		completion_reward = {
+			add_building_construction = {
+				type = bunker
+				level = 3
+				province = 338
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				level = 3
+				province = 339
+				instant_build = yes
+			}
+		}
 	}
 	shared_focus = {
 		id = The_Leader_Speaks_In_Birmingham
@@ -1543,6 +1688,9 @@
 			FOCUS_FILTER_POLITICAL
 		}
 		prerequisite = { focus = Wales_Is_The_Prize  }
+		completion_reward = {
+			add_political_power = 50
+		}
 	}
 	shared_focus = {
 		id = ENG_Prepare_Ports_At_Liverpool
@@ -1554,6 +1702,16 @@
 			FOCUS_FILTER_POLITICAL
 		}
 		prerequisite = { focus = Wales_Is_The_Prize  }
+		completion_reward = {
+			132 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
 	}
 	shared_focus = {
 		id = ENG_Enough_Talking
@@ -1621,21 +1779,16 @@
 		mutually_exclusive = {
 			focus = ENG_Humiliating_Defeat
 		}
-		available = {
-			has_completed_focus = ENG_The_Dragons_Head
-		}
-		available = {
-			has_country_flag = wales_is_ours_dec
-		 }
+	
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
 		available = {
 			owns_state = 122
 	}
-	allow_branch = {
-		has_country_flag = ENG_rockets_away
-	}
+	#allow_branch = {
+	#	has_country_flag = ENG_rockets_away
+	#}
 		completion_reward = {
 			country_event = {
 			
@@ -1655,8 +1808,15 @@
 			FOCUS_FILTER_POLITICAL
 		}
 		prerequisite = { focus =  ENG_Wales_Is_Ours  }
+		completion_reward = {
+			add_stability = 0.15
+			WAL = {
+				add_stability = -0.50
+				}
+			}
+		}
 
-	}
+	
 	shared_focus = {
 		id = ENG_Remove_The_Welsh_Tongue
 		icon = removing_the_welsh_tongue
@@ -1667,6 +1827,12 @@
 			FOCUS_FILTER_POLITICAL
 		}
 		prerequisite = { focus =  ENG_Cardiff_Pays  }
+		completion_reward = {
+			WAL = {
+				add_stability = -0.10
+				add_political_power = -50
+				}
+		}
 
 	}	shared_focus = {
 		id = ENG_Trials_Of_Wales
@@ -1710,6 +1876,18 @@
 			FOCUS_FILTER_POLITICAL
 		}
 		prerequisite = { focus =  ENG_Bring_Down_The_Flag  }
+		completion_reward = {
+			add_tech_bonus = {
+				name = assembly_bonus
+				bonus = 0.5
+				uses = 2
+				technology = improved_machine_tools	
+				technology = advanced_machine_tools
+				technology = assembly_line_production
+				technology = flexible_line
+				technology = streamlined_line
+			}
+		}
 
 	}
 	shared_focus = {
@@ -1722,6 +1900,9 @@
 			FOCUS_FILTER_POLITICAL
 		}
 		prerequisite = { focus =  ENG_Swansea_Camps  }
+		completion_reward = {
+			add_manpower = 10000
+		}
 
 	}
 	shared_focus = {
@@ -1758,9 +1939,9 @@
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
-		allow_branch = {
-			has_completed_focus = ENG_England_Stands_Tall
-		}
+		#allow_branch = {
+		#	has_completed_focus = ENG_England_Stands_Tall
+		#}
 		completion_reward = {
 			country_event = {
 				id = england.48
@@ -1777,6 +1958,14 @@
 			FOCUS_FILTER_POLITICAL
 		}
 		prerequisite = { focus =  ENG_Humiliating_Defeat  }
+		completion_reward = {
+			add_building_construction = {
+				type = bunker
+				level = 3
+				province = 230
+				instant_build = yes
+			}
+		}
 
 	}
 	shared_focus = {
@@ -1824,7 +2013,10 @@
 			FOCUS_FILTER_POLITICAL
 		}
 		prerequisite = { focus =  ENG_Humiliating_Defeat  }
-
+		completion_reward = {
+		add_stability = -0.35
+		add_command_power = -100
+		}
 	}
 	shared_focus = {
 		id = ENG_Kill_The_Ones_Who_Ran
@@ -1875,6 +2067,7 @@
 			FOCUS_FILTER_POLITICAL
 		}
 		completion_reward = {
+			add_political_power = -50
 			country_event = {
 				id = england.53
 			}
@@ -1892,6 +2085,7 @@
 		}
 		prerequisite = { focus =  ENG_Grey_Tuesday  }
 		completion_reward = {
+			add_stability = -0.2
 			country_event = {
 				id = england.54
 			}
@@ -1976,6 +2170,7 @@
 		}
 		prerequisite = { focus =  ENG_Choosing_The_Replacement  }
 		completion_reward = {
+			add_political_power = 100
 			country_event = {
 				id = england.58
 			}
@@ -1993,6 +2188,7 @@
 		}
 		prerequisite = { focus =  ENG_Johnson_The_Reformist  }
 		completion_reward = {
+			add_stability = 0.10
 			country_event = {
 				id = england.61
 			}
@@ -2024,7 +2220,9 @@
 			FOCUS_FILTER_POLITICAL
 		}
 		prerequisite = { focus =  ENG_Shutting_Down_The_Camps  }
-
+		completion_reward = {
+			add_political_power = 40
+		}
 	}
 	shared_focus = {
 		id = ENG_Opening_The_Markets
@@ -2037,6 +2235,10 @@
 		}
 		prerequisite = { focus =  ENG_The_Peoples_Government  }
 		completion_reward = {
+			add_timed_idea = {
+				idea = opening_the_union_market
+				days = 90
+		}
 			country_event = {
 				id = england.62
 			}
@@ -2064,7 +2266,12 @@
 			FOCUS_FILTER_POLITICAL
 		}
 		prerequisite = { focus =  ENG_The_Peoples_Government  }
-
+		completion_reward = {
+			add_timed_idea = {
+				idea = reform_the_military
+				days = 90
+		}
+	}
 	}
 	shared_focus = {
 		id = ENG_End_National_Service
@@ -2076,7 +2283,9 @@
 			FOCUS_FILTER_POLITICAL
 		}
 		prerequisite = { focus =  ENG_Reform_The_Military  }
-
+		completion_reward = {
+			add_stability = 0.10
+		}
 	}
 	shared_focus = {
 		id = ENG_Brittania_Reformed
@@ -2115,6 +2324,7 @@
 		}
 		prerequisite = { focus =  ENG_Choosing_The_Replacement  }
 		completion_reward = {
+			add_political_power = 40
 			country_event = {
 				id = england.60
 			}
@@ -2131,7 +2341,9 @@
 			FOCUS_FILTER_POLITICAL
 		}
 		prerequisite = { focus =  ENG_Hudson_The_Successor  }
-
+		completion_reward = {
+		add_stability = 0.30
+		}
 	}
 	shared_focus = {
 		id = ENG_Purging_The_Disloyal
@@ -2143,8 +2355,10 @@
 			FOCUS_FILTER_POLITICAL
 		}
 		prerequisite = { focus =  ENG_Restore_Order  }
-
-
+		completion_reward = {
+			manpower = -20000
+			add_political_power = 30
+		}
 	}
 	shared_focus = {
 		id = ENG_Enforce_To_The_Status_Quo
@@ -2156,7 +2370,7 @@
 			FOCUS_FILTER_POLITICAL
 		}
 		prerequisite = { focus =  ENG_Purging_The_Disloyal  }
-
+		add_stability = 0.10
 	}
 	shared_focus = {
 		id = ENG_Modernise_Totalism
@@ -2168,7 +2382,10 @@
 			FOCUS_FILTER_POLITICAL
 		}
 		prerequisite = { focus =  ENG_Restore_Order  }
-
+		add_timed_idea = {
+			idea = modern_totalism
+			days = 90
+	}
 	}
 
 	shared_focus = {
@@ -2181,7 +2398,10 @@
 			FOCUS_FILTER_POLITICAL
 		}
 		prerequisite = { focus =  ENG_Modernise_Totalism  }
-
+		add_timed_idea = {
+			idea = Better_Relations
+			days = 150
+	}
 	}
 
 	shared_focus = {
@@ -2211,7 +2431,9 @@
 			FOCUS_FILTER_POLITICAL
 		}
 		prerequisite = { focus =  ENG_Ensure_Congress_Loyalty  }
-
+		completion_reward = {
+			add_command_power = 50
+		}
 	}
 	shared_focus = {
 		id = ENG_Britannia_Shrugged

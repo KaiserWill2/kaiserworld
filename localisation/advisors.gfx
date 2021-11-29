@@ -1,0 +1,10 @@
+spriteTypes = {	
+
+	
+	spriteType = {
+		name = "GFX_idea_advisor1_african_2d"
+		texturefile = "gfx/interface/ideas/advisors/africa/african_advisor1.dds"
+	}
+
+
+}
