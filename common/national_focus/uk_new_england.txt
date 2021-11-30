@@ -17,6 +17,9 @@ focus_tree = {
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
+		completion_reward = {
+
+		}
 	
 	}
 	focus = {
@@ -29,6 +32,9 @@ focus_tree = {
 			FOCUS_FILTER_POLITICAL
 		}
 		prerequisite = { focus =  ENG_A_New_England  }
+		completion_reward = {
+
+		}
 
 	
 	}
@@ -42,6 +48,9 @@ focus_tree = {
 			FOCUS_FILTER_POLITICAL
 		}
 		prerequisite = { focus =  ENG_A_New_England  }
+		completion_reward = {
+
+		}
 
 	}
 	focus = {
@@ -54,6 +63,9 @@ focus_tree = {
 			FOCUS_FILTER_POLITICAL
 		}
 		prerequisite = { focus =  ENG_A_New_England  }
+		completion_reward = {
+
+		}
 
 	}
 	focus = {
@@ -66,6 +78,9 @@ focus_tree = {
 			FOCUS_FILTER_POLITICAL
 		}
 		prerequisite = { focus =  ENG_A_New_England  }
+		completion_reward = {
+
+		}
 
 	}
 	focus = {
@@ -81,6 +96,9 @@ focus_tree = {
 		prerequisite = { focus =  ENG_A_United_Army  }
 		prerequisite = { focus =  ENG_Destory_The_Borders  }
 		prerequisite = { focus =  ENG_United_By_The_People  }
+		completion_reward = {
+
+		}
 	}
 
 	focus = {
@@ -93,6 +111,9 @@ focus_tree = {
 			FOCUS_FILTER_POLITICAL
 		}
 		prerequisite = { focus =  ENG_Looking_North  }
+		completion_reward = {
+
+		}
 
 	}
 
@@ -106,6 +127,9 @@ focus_tree = {
 			FOCUS_FILTER_POLITICAL
 		}
 		prerequisite = { focus =  ENG_Sell_Weapons_To_Scottish_Reds  }
+		completion_reward = {
+
+		}
 
 	}
 
@@ -119,6 +143,9 @@ focus_tree = {
 			FOCUS_FILTER_POLITICAL
 		}
 		prerequisite = { focus =  ENG_Begin_Propaganda_Campaigns_In_Scotland  }
+		completion_reward = {
+
+		}
 
 	}
 
@@ -132,6 +159,9 @@ focus_tree = {
 			FOCUS_FILTER_POLITICAL
 		}
 		prerequisite = { focus =  ENG_Begin_Propaganda_Campaigns_In_Scotland  }
+		completion_reward = {
+
+		}
 
 	}
 
@@ -146,6 +176,9 @@ focus_tree = {
 		}
 		prerequisite = { focus =  ENG_Bad_Mouth_The_King  }
 		prerequisite = { focus =  ENG_Increase_Chances_Of_Riots  }
+		completion_reward = {
+
+		}
 
 	}
 
@@ -163,11 +196,14 @@ focus_tree = {
 		prerequisite = { focus =  ENG_A_United_Army  }
 		prerequisite = { focus =  ENG_Destory_The_Borders  }
 		prerequisite = { focus =  ENG_United_By_The_People  }
+		completion_reward = {
+
+		}
 	}
 
 	focus = {
 		id = ENG_The_RED_Meetings
-		icon = GFX_ENG_the_totalist_spirit-445
+		icon = the_RED_Meetings_icon
 		x = 18
 		y = 3
 		cost = 5
@@ -175,12 +211,14 @@ focus_tree = {
 			FOCUS_FILTER_POLITICAL
 		}
 		prerequisite = { focus =  ENG_Establish_Better_Connections  }
+		completion_reward = {
 
+		}
 	}
 
 	focus = {
 		id = ENG_The_Military_Exercises_Together
-		icon = GFX_ENG_the_totalist_spirit-445
+		icon = military_exercises_together_icon
 		x = 17
 		y = 4
 		cost = 5
@@ -188,12 +226,14 @@ focus_tree = {
 			FOCUS_FILTER_POLITICAL
 		}
 		prerequisite = { focus =  ENG_The_RED_Meetings  }
+		completion_reward = {
 
+		}
 	}
 
 	focus = {
 		id = ENG_Economic_Support
-		icon = GFX_ENG_the_totalist_spirit-445
+		icon = economic_support_icon
 		x = 19
 		y = 4
 		cost = 5
@@ -201,12 +241,14 @@ focus_tree = {
 			FOCUS_FILTER_POLITICAL
 		}
 		prerequisite = { focus =  ENG_The_RED_Meetings  }
+		completion_reward = {
 
+		}
 	}
 
 	focus = {
 		id = ENG_Russian_Investment
-		icon = GFX_ENG_the_totalist_spirit-445
+		icon = russian_investment_icon
 		x = 20
 		y = 5
 		cost = 5
@@ -214,12 +256,14 @@ focus_tree = {
 			FOCUS_FILTER_POLITICAL
 		}
 		prerequisite = { focus =  ENG_Economic_Support  }
+		completion_reward = {
 
+		}
 	}
 
 	focus = {
 		id = ENG_Korean_Infrastructure
-		icon = GFX_ENG_the_totalist_spirit-445
+		icon = korean_investment_icon
 		x = 20
 		y = 6
 		cost = 5
@@ -227,13 +271,15 @@ focus_tree = {
 			FOCUS_FILTER_POLITICAL
 		}
 		prerequisite = { focus =  ENG_Russian_Investment  }
+		completion_reward = {
 
+		}
 	}
 
 
 	focus = {
 		id = ENG_Establish_The_Third_Internationale
-		icon = GFX_ENG_the_totalist_spirit-445
+		icon = establish_the_third_internationale_icon
 		x = 18
 		y = 5
 		cost = 5
@@ -242,12 +288,14 @@ focus_tree = {
 		}
 		prerequisite = { focus =  ENG_The_Military_Exercises_Together  }
 		prerequisite = { focus =  ENG_Economic_Support  }
+		completion_reward = {
 
+		}
 	}
 
 	focus = {
 		id = ENG_Begin_Plans_To_Tackle_Our_Enemies
-		icon = GFX_ENG_the_totalist_spirit-445
+		icon = begin_plans_to_take_eneimes_icon
 		x = 18
 		y = 6
 		cost = 5
@@ -255,7 +303,9 @@ focus_tree = {
 			FOCUS_FILTER_POLITICAL
 		}
 		prerequisite = { focus =  ENG_Establish_The_Third_Internationale  }
+		completion_reward = {
 
+		}
 	}
 
 
@@ -268,7 +318,9 @@ focus_tree = {
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
-	
+		completion_reward = {
+
+		}
 	}
 
 
@@ -282,7 +334,9 @@ focus_tree = {
 
 		}
 		prerequisite = { focus =  ENG_The_English_Famine  }
+		completion_reward = {
 
+		}
 	
 	}
 
@@ -296,7 +350,9 @@ focus_tree = {
 
 		}
 		prerequisite = { focus =  ENG_The_English_Famine  }
+		completion_reward = {
 
+		}
 	
 	}
 
@@ -311,10 +367,60 @@ focus_tree = {
 		}
 		prerequisite = { focus =  ENG_Keep_Foreign_Economic_Support  }
 		prerequisite = { focus =  ENG_Accept_Red_Cross_Donations  }
+		completion_reward = {
 
+		}
 	
 	}
 
+	focus = {
+		id = ENG_There_Are_No_Problems
+		icon = GFX_ENG_the_totalist_spirit-445
+		x = 29
+		y = 3
+		cost = 5
+		search_filters = {
+
+		}
+		prerequisite = { focus =  ENG_Order_Harsh_Quotas  }
+		completion_reward = {
+
+		}
+	
+	}
+
+	focus = {
+		id = ENG_Arrest_Those_Asking_Questions
+		icon = GFX_ENG_the_totalist_spirit-445
+		x = 31
+		y = 3
+		cost = 5
+		search_filters = {
+
+		}
+		prerequisite = { focus =  ENG_Order_Harsh_Quotas  }
+		completion_reward = {
+
+		}
+	
+	}
+
+	focus = {
+		id = ENG_Ask_For_Alliance_Support
+		icon = GFX_ENG_the_totalist_spirit-445
+		x = 30
+		y = 4
+		cost = 5
+		search_filters = {
+
+		}
+		prerequisite = { focus =  ENG_There_Are_No_Problems  }
+		prerequisite = { focus =  ENG_Arrest_Those_Asking_Questions  }
+		completion_reward = {
+
+		}
+	
+	}
 
 	focus = {
 		id = ENG_The_Union_Of_Britain
@@ -322,8 +428,12 @@ focus_tree = {
 		x = 25
 		y = 8
 		cost = 5
-		search_filters = {
-		
+		available = {
+			has_completed_focus = ENG_The_Union_Of_Britain
+		}
+
+		completion_reward = {
+
 		}
 
 
@@ -339,9 +449,149 @@ focus_tree = {
 		search_filters = {
 		}
 		prerequisite = { focus =  ENG_The_Union_Of_Britain  }
+		completion_reward = {
 
+		}
 
 	}
+
+	focus = {
+		id = ENG_Welsh_Resource_Collecting
+		icon = GFX_ENG_the_totalist_spirit-445
+		x = 19
+		y = 10
+		cost = 5
+		search_filters = {
+		}
+		prerequisite = { focus =  ENG_Prepare_For_Production  }
+		completion_reward = {
+
+		}
+
+	}
+
+	focus = {
+		id = ENG_Boost_Production_For_The_Union
+		icon = GFX_ENG_the_totalist_spirit-445
+		x = 19
+		y = 11
+		cost = 5
+		search_filters = {
+		}
+		prerequisite = { focus =  ENG_Welsh_Resource_Collecting  }
+		completion_reward = {
+
+		}
+
+	}
+
+	focus = {
+		id = ENG_Feed_The_English
+		icon = GFX_ENG_the_totalist_spirit-445
+		x = 19
+		y = 12
+		cost = 5
+		search_filters = {
+		}
+		prerequisite = { focus =  ENG_Boost_Production_For_The_Union  }
+		completion_reward = {
+
+		}
+
+	}
+
+	focus = {
+		id = ENG_English_Are_The_New_Elite
+		icon = GFX_ENG_the_totalist_spirit-445
+		x = 19
+		y = 13
+		cost = 5
+		search_filters = {
+		}
+		prerequisite = { focus =  ENG_Feed_The_English  }
+		completion_reward = {
+
+		}
+
+	}
+
+	focus = {
+		id = ENG_Rebuild_Scottish_Industry
+		icon = GFX_ENG_the_totalist_spirit-445
+		x = 21
+		y = 10
+		cost = 5
+		search_filters = {
+		}
+		prerequisite = { focus =  ENG_Prepare_For_Production  }
+		completion_reward = {
+
+		}
+
+	}
+
+	focus = {
+		id = ENG_Begin_Nuclear_Research
+		icon = GFX_ENG_the_totalist_spirit-445
+		x = 21
+		y = 11
+		cost = 5
+		search_filters = {
+		}
+		prerequisite = { focus =  ENG_Rebuild_Scottish_Industry  }
+		completion_reward = {
+
+		}
+
+	}
+
+	focus = {
+		id = ENG_Order_The_WMD
+		icon = GFX_ENG_the_totalist_spirit-445
+		x = 21
+		y = 12
+		cost = 5
+		search_filters = {
+		}
+		prerequisite = { focus =  ENG_Begin_Nuclear_Research  }
+		completion_reward = {
+
+		}
+
+	}
+
+	focus = {
+		id = ENG_Order_The_Shetland_Test
+		icon = GFX_ENG_the_totalist_spirit-445
+		x = 21
+		y = 13
+		cost = 5
+		search_filters = {
+		}
+		prerequisite = { focus =  ENG_Order_The_WMD  }
+		completion_reward = {
+
+		}
+
+	}
+
+	focus = {
+		id = ENG_The_Industry_Of_Tomorrow
+		icon = GFX_ENG_the_totalist_spirit-445
+		x = 20
+		y = 14
+		cost = 5
+		search_filters = {
+		}
+		prerequisite = { focus =  ENG_Order_The_Shetland_Test  }
+		prerequisite = { focus =  ENG_English_Are_The_New_Elite  }
+
+		completion_reward = {
+
+		}
+
+	}
+
 
 
 	focus = {
@@ -353,9 +603,134 @@ focus_tree = {
 		search_filters = {
 		}
 		prerequisite = { focus =  ENG_The_Union_Of_Britain  }
+		completion_reward = {
 
+		}
 
 	}
+
+	focus = {
+		id = ENG_Uniting_The_Lands
+		icon = GFX_ENG_the_totalist_spirit-445
+		x = 25
+		y = 10
+		cost = 5
+		search_filters = {
+		}
+		prerequisite = { focus =  ENG_Prepare_For_The_United_Congress  }
+		completion_reward = {
+
+		}
+
+	}
+
+	focus = {
+		id = ENG_Crack_Down_On_Scottish_Rebels
+		icon = GFX_ENG_the_totalist_spirit-445
+		x = 24
+		y = 11
+		cost = 5
+		search_filters = {
+		}
+		prerequisite = { focus =  ENG_Uniting_The_Lands  }
+		completion_reward = {
+
+		}
+
+	}
+
+	focus = {
+		id = ENG_Remodel_Edinburgh_Castle
+		icon = GFX_ENG_the_totalist_spirit-445
+		x = 24
+		y = 12
+		cost = 5
+		search_filters = {
+		}
+		prerequisite = { focus =  ENG_Crack_Down_On_Scottish_Rebels  }
+		completion_reward = {
+
+		}
+
+	}
+
+	focus = {
+		id = ENG_Execute_The_Royals
+		icon = GFX_ENG_the_totalist_spirit-445
+		x = 24
+		y = 13
+		cost = 5
+		search_filters = {
+		}
+		prerequisite = { focus =  ENG_Remodel_Edinburgh_Castle  }
+		completion_reward = {
+
+		}
+
+	}
+
+	focus = {
+		id = ENG_Wales_The_Arms_Industry
+		icon = GFX_ENG_the_totalist_spirit-445
+		x = 26
+		y = 11
+		cost = 5
+		search_filters = {
+		}
+		prerequisite = { focus =  ENG_Uniting_The_Lands  }
+		completion_reward = {
+
+		}
+
+	}
+
+	focus = {
+		id = ENG_Duel_English_And_Welsh_Industry
+		icon = GFX_ENG_the_totalist_spirit-445
+		x = 26
+		y = 12
+		cost = 5
+		search_filters = {
+		}
+		prerequisite = { focus =  ENG_Wales_The_Arms_Industry  }
+		completion_reward = {
+
+		}
+
+	}
+
+	focus = {
+		id = ENG_Harvest_Scottish_Land
+		icon = GFX_ENG_the_totalist_spirit-445
+		x = 26
+		y = 13
+		cost = 5
+		search_filters = {
+		}
+		prerequisite = { focus =  ENG_Duel_English_And_Welsh_Industry  }
+		completion_reward = {
+
+		}
+
+	}
+
+	focus = {
+		id = ENG_Only_England
+		icon = GFX_ENG_the_totalist_spirit-445
+		x = 25
+		y = 14
+		cost = 5
+		search_filters = {
+		}
+		prerequisite = { focus =  ENG_Harvest_Scottish_Land  }
+		prerequisite = { focus =  ENG_Execute_The_Royals  }
+
+		completion_reward = {
+
+		}
+
+	}
+
 
 	focus = {
 		id = ENG_The_United_Armed_Forces
@@ -366,16 +741,150 @@ focus_tree = {
 		search_filters = {
 		}
 		prerequisite = { focus =  ENG_The_Union_Of_Britain  }
+		completion_reward = {
 
+		}
+
+	}
+
+	focus = {
+		id = ENG_Offer_To_Scottish_Generals
+		icon = GFX_ENG_the_totalist_spirit-445
+		x = 28
+		y = 10
+		cost = 5
+		search_filters = {
+		}
+		prerequisite = { focus =  ENG_The_United_Armed_Forces  }
+		completion_reward = {
+
+		}
+
+	}
+
+	focus = {
+		id = ENG_Promote_English_Generals
+		icon = GFX_ENG_the_totalist_spirit-445
+		x = 30
+		y = 10
+		cost = 5
+		search_filters = {
+		}
+		prerequisite = { focus =  ENG_The_United_Armed_Forces  }
+		completion_reward = {
+
+		}
+
+	}
+
+	focus = {
+		id = ENG_Ingegrate_Welsh_Militia
+		icon = GFX_ENG_the_totalist_spirit-445
+		x = 32
+		y = 10
+		cost = 5
+		search_filters = {
+		}
+		prerequisite = { focus =  ENG_The_United_Armed_Forces  }
+		completion_reward = {
+
+		}
+
+	}
+
+	focus = {
+		id = ENG_New_Training_Methods
+		icon = GFX_ENG_the_totalist_spirit-445
+		x = 31
+		y = 11
+		cost = 5
+		search_filters = {
+		}
+		prerequisite = { focus =  ENG_Offer_To_Scottish_Generals  }
+		prerequisite = { focus =  ENG_Promote_English_Generals  }
+		prerequisite = { focus =  ENG_Ingegrate_Welsh_Militia  }
+		completion_reward = {
+
+		}
 
 	}
 
 
 
+	focus = {
+		id = ENG_Blueprints_For_Better_Equipment
+		icon = GFX_ENG_the_totalist_spirit-445
+		x = 29
+		y = 11
+		cost = 5
+		search_filters = {
+		}
+		prerequisite = { focus =  ENG_Offer_To_Scottish_Generals  }
+		prerequisite = { focus =  ENG_Promote_English_Generals  }
+		prerequisite = { focus =  ENG_Ingegrate_Welsh_Militia  }
+		completion_reward = {
+
+		}
+
+	}
 
 
+	focus = {
+		id = ENG_Prepare_For_The_Invasion_Of_France
+		icon = GFX_ENG_the_totalist_spirit-445
+		x = 30
+		y = 12
+		cost = 5
+		search_filters = {
+		}
+		prerequisite = { focus =  ENG_New_Training_Methods  }
+		prerequisite = { focus =  ENG_Blueprints_For_Better_Equipment  }
 
+		completion_reward = {
 
+		}
+
+	}
+
+	focus = {
+		id = ENG_Supply_Totalist_Groups_In_France
+		icon = GFX_ENG_the_totalist_spirit-445
+		x = 30
+		y = 13
+		cost = 5
+		search_filters = {
+		}
+		prerequisite = { focus =  ENG_Prepare_For_The_Invasion_Of_France  }
+
+		completion_reward = {
+
+		}
+
+	}
+
+	focus = {
+		id = ENG_Order_The_Civil_War
+		icon = GFX_ENG_the_totalist_spirit-445
+		x = 30
+		y = 14
+		cost = 5
+		available = {
+			has_completed_focus = ENG_The_Industry_Of_Tomorrow
+		}
+
+		available = {
+			has_completed_focus = ENG_Only_England
+		}
+
+		search_filters = {
+		}
+		prerequisite = { focus =  ENG_Supply_Totalist_Groups_In_France  }
+
+		completion_reward = {
+
+		}
+
+	}
 
 
 

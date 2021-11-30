@@ -474,9 +474,89 @@ ideas = {
 			}
 		}
 
+		Peoples_Health_Network = {
+			allowed = {
+				always = no
+			}
+			
+			
+			removal_cost = -1
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				MONTHLY_POPULATION = 0.01
+				consumer_goods_factor = 0.02
+				industrial_capacity_factory = 0.05
+			}
+		}
+
+		Modern_Work_Places = {
+			allowed = {
+				always = no
+			}
+			
+			
+			removal_cost = -1
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				local_resources_factor = 0.03
+				consumer_goods_factor = -0.05
+				production_speed_bunker_factor = 0.1
+			}
+		}
+
+		expanding_the_camps = {
+			allowed = {
+				always = no
+			}
+			
+			
+			removal_cost = -1
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				production_speed_infrastructure_factor = 0.2
+				trade_opinion_factor = -0.3
+				industrial_capacity_factory = 0.1
+				conscription = -0.04
+				fascist_drift = 0.035
+				political_power_gain = 0.5
+			}
+		}
+		
+
+		Free_The_Military = {
+			allowed = {
+				always = no
+			}
+			
+			
+			removal_cost = -1
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				army_morale_factor = -0.03
+				research_speed_factor = 0.02
+				conscription = -0.04
+				political_power_gain = 0.5
+			}
+		}
 
 
-
+		
 
 
 	

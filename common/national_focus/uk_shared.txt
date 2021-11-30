@@ -2370,7 +2370,9 @@
 			FOCUS_FILTER_POLITICAL
 		}
 		prerequisite = { focus =  ENG_Purging_The_Disloyal  }
+		completion_reward = {
 		add_stability = 0.10
+		}
 	}
 	shared_focus = {
 		id = ENG_Modernise_Totalism
@@ -2382,9 +2384,11 @@
 			FOCUS_FILTER_POLITICAL
 		}
 		prerequisite = { focus =  ENG_Restore_Order  }
+		completion_reward = {
 		add_timed_idea = {
 			idea = modern_totalism
 			days = 90
+		}
 	}
 	}
 
@@ -2398,9 +2402,11 @@
 			FOCUS_FILTER_POLITICAL
 		}
 		prerequisite = { focus =  ENG_Modernise_Totalism  }
+		completion_reward = {
 		add_timed_idea = {
 			idea = Better_Relations
 			days = 150
+		}
 	}
 	}
 
@@ -2489,7 +2495,9 @@
 			FOCUS_FILTER_POLITICAL
 		}
 		prerequisite = { focus =  ENG_McDonnell_The_Workers_Friend }
-
+		completion_reward = {
+		add_stability = 0.25
+		}
 	}
 	shared_focus = {
 		id = ENG_The_Peoples_Health_Network
@@ -2501,7 +2509,9 @@
 			FOCUS_FILTER_POLITICAL
 		}
 		prerequisite = { focus =  ENG_For_The_Worker_By_The_Worker  }
-
+		completion_reward = {
+			add_ideas = Peoples_Health_Network
+	}
 	}
 	shared_focus = {
 		id = ENG_Open_Relations_With_Scotland_And_Wales
@@ -2529,7 +2539,9 @@
 			FOCUS_FILTER_POLITICAL
 		}
 		prerequisite = { focus =  ENG_For_The_Worker_By_The_Worker  }
-
+		completion_reward = {
+			add_political_power = 100
+		}
 	}
 
 	shared_focus = {
@@ -2542,7 +2554,9 @@
 			FOCUS_FILTER_POLITICAL
 		}
 		prerequisite = { focus =  ENG_The_New_Educators  }
-
+		completion_reward = {
+		add_command_power = 100
+		}
 	}
 
 	shared_focus = {
@@ -2555,7 +2569,12 @@
 			FOCUS_FILTER_POLITICAL
 		}
 		prerequisite = { focus =  ENG_For_The_Worker_By_The_Worker  }
-
+		completion_reward = {
+			add_timed_idea = {
+				idea = Modern_Work_Places
+				days = 100
+		}
+		}
 	}
 	shared_focus = {
 		id = ENG_Increase_The_Workers_Role
@@ -2567,6 +2586,10 @@
 			FOCUS_FILTER_POLITICAL
 		}
 		prerequisite = { focus =  ENG_Modernise_Work_Places  }
+		completion_reward = {
+			add_stability = 0.2
+			add_political_power = 20
+		}
 
 	}
 	shared_focus = {
@@ -2622,6 +2645,12 @@
 			FOCUS_FILTER_POLITICAL
 		}
 		prerequisite = { focus =  ENG_Kennedy_The_Irong_Right_Hand  }
+		completion_reward = {
+			add_timed_idea = {
+				idea = Free_The_Military
+				days = 50
+		}
+		}
 
 	}
 
@@ -2635,7 +2664,12 @@
 			FOCUS_FILTER_POLITICAL
 		}
 		prerequisite = { focus =  ENG_Free_The_Military  }
-
+		completion_reward = {
+			add_timed_idea = {
+				idea = expanding_the_camps
+				days = 90
+		}
+		}
 	}
 
 	shared_focus = {
@@ -2648,7 +2682,9 @@
 			FOCUS_FILTER_POLITICAL
 		}
 		prerequisite = { focus =  ENG_Free_The_Military  }
-
+		completion_reward = {
+			add_manpower = 10000
+		}
 	}
 	shared_focus = {
 		id = ENG_Bring_Me_The_Dragons_Head2
@@ -2677,7 +2713,10 @@
 			FOCUS_FILTER_POLITICAL
 		}
 		prerequisite = { focus =  ENG_Free_The_Military  }
-
+		completion_reward = {
+			add_political_power = 50
+			add_stability = -0.30
+		}
 	}
 
 	shared_focus = {
@@ -2690,7 +2729,9 @@
 			FOCUS_FILTER_POLITICAL
 		}
 		prerequisite = { focus =  ENG_Expanding_The_Camps  }
-
+		completion_reward = {
+			add_political_power = 50
+		}
 	}
 
 	shared_focus = {
@@ -2703,6 +2744,9 @@
 			FOCUS_FILTER_POLITICAL
 		}
 		prerequisite = { focus =  ENG_Purging_The_Unfit  }
+		completion_reward = {
+			add_command_power = 50
+		}
 
 	}
 

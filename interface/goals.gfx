@@ -39,9 +39,43 @@ spriteTypes = {
 	
 	
 	##England###
+
 	
+	
+	SpriteType = {
+		name = "korean_investment_icon"
+		texturefile = "gfx/interface/goals/eng/korean_investment_icon.dds"			
+	}
 
+	SpriteType = {
+		name = "russian_investment_icon"
+		texturefile = "gfx/interface/goals/eng/russian_investment_icon.dds"			
+	}
 
+	SpriteType = {
+		name = "begin_plans_to_take_eneimes_icon"
+		texturefile = "gfx/interface/goals/eng/begin_plans_to_take_eneimes_icon.dds"			
+	}
+
+	SpriteType = {
+		name = "establish_the_third_internationale_icon"
+		texturefile = "gfx/interface/goals/eng/establish_the_third_internationale_icon.dds"			
+	}
+
+	SpriteType = {
+		name = "economic_support_icon"
+		texturefile = "gfx/interface/goals/eng/economic_support_icon.dds"			
+	}
+
+	SpriteType = {
+		name = "military_exercises_together_icon"
+		texturefile = "gfx/interface/goals/eng/military_exercises_together_icon.dds"			
+	}
+
+	SpriteType = {
+		name = "the_RED_Meetings_icon"
+		texturefile = "gfx/interface/goals/eng/the_RED_Meetings_icon.dds"			
+	}	
 		
 	SpriteType = {
 		name = "watch_our_people"
