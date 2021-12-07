@@ -57,7 +57,6 @@
 		y = 1
 		cost = 3
 		search_filters = {
-			FOCUS_FILTER_ANNEXATION
 		}
 		prerequisite = { focus = ENG_legacy_of_foot  }
 		completion_reward = {
@@ -1760,9 +1759,7 @@
 		prerequisite = { focus = ENG_The_Talks_Are_Usless  }
 		prerequisite = { focus = ENG_Enough_Talking  }
 		completion_reward = {
-			ENG = {
-				declare_war_on = { target = WAL type = annex_everything }
-			}
+	
 			country_event = {
 				id = england.43
 			}
@@ -1786,9 +1783,6 @@
 		available = {
 			owns_state = 122
 	}
-	#allow_branch = {
-	#	has_country_flag = ENG_rockets_away
-	#}
 		completion_reward = {
 			country_event = {
 			

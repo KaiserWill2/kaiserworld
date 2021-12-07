@@ -41,7 +41,133 @@ spriteTypes = {
 	##England###
 
 	
+	SpriteType = {
+		name = "dublin_exchange_icon"
+		texturefile = "gfx/interface/goals/eng/dublin_exchange_icon.dds"			
+	}	
 	
+	SpriteType = {
+		name = "the_UN_meeting_icon"
+		texturefile = "gfx/interface/goals/eng/the_UN_meeting_icon.dds"			
+	}	
+
+	SpriteType = {
+		name = "a_new_beginning_for_england_icon"
+		texturefile = "gfx/interface/goals/eng/a_new_beginning_for_england_icon.dds"			
+	}	
+	
+	SpriteType = {
+		name = "rebuild_london_icon"
+		texturefile = "gfx/interface/goals/eng/rebuild_london_icon.dds"			
+	}
+	
+	SpriteType = {
+		name = "encourage_public_spending_icon"
+		texturefile = "gfx/interface/goals/eng/encourage_public_spending_icon.dds"			
+	}
+	
+	SpriteType = {
+		name = "rebuild_the_economy_icon"
+		texturefile = "gfx/interface/goals/eng/rebuild_the_economy_icon.dds"			
+	}
+
+	SpriteType = {
+		name = "grants_for_Business_startup_icon"
+		texturefile = "gfx/interface/goals/eng/grants_for_Business_startup_icon.dds"			
+	}
+	
+	
+	SpriteType = {
+		name = "limit_unions_icon"
+		texturefile = "gfx/interface/goals/eng/limit_unions_icon.dds"			
+	}	
+	
+	SpriteType = {
+		name = "limiteD_free_business_icon"
+		texturefile = "gfx/interface/goals/eng/limiteD_free_business_icon.dds"			
+	}	
+
+
+	SpriteType = {
+		name = "liberal_reforms_icon"
+		texturefile = "gfx/interface/goals/eng/liberal_reforms_icon.dds"			
+	}	
+
+	SpriteType = {
+		name = "national_living_wage_icon"
+		texturefile = "gfx/interface/goals/eng/national_living_wage_icon.dds"			
+	}	
+	
+	SpriteType = {
+		name = "affordable_housing_icon"
+		texturefile = "gfx/interface/goals/eng/affordable_housing_icon.dds"			
+	}	
+	
+
+	SpriteType = {
+		name = "introduce_national_healthcare_icon"
+		texturefile = "gfx/interface/goals/eng/introduce_national_healthcare_icon.dds"			
+	}	
+	
+	SpriteType = {
+		name = "welfare_to_heal_the_nation_icon"
+		texturefile = "gfx/interface/goals/eng/welfare_to_heal_the_nation_icon.dds"			
+	}	
+
+
+	SpriteType = {
+		name = "rights_of_the_people_icon"
+		texturefile = "gfx/interface/goals/eng/rights_of_the_people_icon.dds"			
+	}	
+
+
+	SpriteType = {
+		name = "create_congress_councils_in_districts_icon"
+		texturefile = "gfx/interface/goals/eng/create_congress_councils_in_districts_icon.dds"			
+	}	
+
+	SpriteType = {
+		name = "rebuild_from_ground_up_icon"
+		texturefile = "gfx/interface/goals/eng/rebuild_from_ground_up_icon.dds"			
+	}	
+
+	SpriteType = {
+		name = "remodel_schools_for_everyone_icon"
+		texturefile = "gfx/interface/goals/eng/remodel_schools_for_everyone_icon.dds"			
+	}
+
+	SpriteType = {
+		name = "better_housing_for_poor_icon"
+		texturefile = "gfx/interface/goals/eng/better_housing_for_poor_icon.dds"			
+	}
+
+	
+	SpriteType = {
+		name = "removing_selected_work_icon"
+		texturefile = "gfx/interface/goals/eng/removing_selected_work_icon.dds"			
+	}
+
+
+	SpriteType = {
+		name = "rebuild_cornwall_icon"
+		texturefile = "gfx/interface/goals/eng/rebuild_cornwall_icon.dds"			
+	}
+
+	SpriteType = {
+		name = "remove_totalist_ideology_icon"
+		texturefile = "gfx/interface/goals/eng/remove_totalist_ideology_icon.dds"			
+	}
+
+	SpriteType = {
+		name = "end_blair_personality_icon"
+		texturefile = "gfx/interface/goals/eng/end_blair_personality_icon.dds"			
+	}
+
+	SpriteType = {
+		name = "boris_reforms_keep_going_icon"
+		texturefile = "gfx/interface/goals/eng/boris_reforms_keep_going_icon.dds"			
+	}
+
 	SpriteType = {
 		name = "korean_investment_icon"
 		texturefile = "gfx/interface/goals/eng/korean_investment_icon.dds"			

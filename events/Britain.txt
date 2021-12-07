@@ -514,7 +514,8 @@ country_event = {
 	fire_only_once = yes
 	option = {
 		name = England.43.o1
-	
+			declare_war_on = { target = WAL type = annex_everything }
+		
 	}
 }
 
@@ -528,17 +529,18 @@ country_event = {
 		name = England.44.o1
 		release_puppet = WAL
 		WAL = {
-			create_country_leader = {
-				name = "Michael Portillo"
-				picture = "wal_michael_portillo.dds"
-				ideology = national_communist
-			}
-			set_cosmetic_tag = WAL_wales_communist
 			set_politics = {
 				ruling_party = communist
 				elections_allowed = no
 			}
+			create_country_leader = {
+				name = "Michael Portillo"
+				picture = "wal_michael_portillo.dds"
+				ideology = marxist
 			}
+			set_cosmetic_tag = WAL_wales_communist
+		
+		}
 	}
 }
 
@@ -929,6 +931,19 @@ country_event = {
 }
 
 
-
+country_event = {
+	id = England.72
+	title = England.72.t
+	desc = England.72.d
+	picture = limited_freedoms_of_markets
+	is_triggered_only = yes
+	option = {
+		name = England.72.o1
+		 load_focus_tree = {
+			tree = Johnson_stabilised_focus
+			keep_completed = yes
+		}
+	}
+}
 
 
