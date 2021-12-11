@@ -131,8 +131,8 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "John Leahy"
-	picture = "Portrait_IRE_John_Leahy.dds"
+	name = "Michael Martin"
+	picture = "Portrait_IRE_michael_martin_irish_leader.dds"
 	ideology = fiscal_conservative
 }
 

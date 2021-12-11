@@ -2131,16 +2131,12 @@
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
-		set_country_flag = Get_A_Leader
+		set_country_flag =  choosing_the_replacement_flag
 		prerequisite = { focus =  ENG_A_Funeral_Fit_For_A_King  }
 		prerequisite = { focus =  ENG_Lowering_The_Flag  }
 		completion_reward = {
 			activate_targeted_decision = { target = ENG decision = ENG_Stablise_The_Nation }
-
-			country_event = {
-				id = england.57
-			
-			}
+						
 		}
 	}
 
@@ -2154,6 +2150,9 @@
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
+		available = {
+			has_country_flag = A_Leader_Has_Been_Chosen
+			}
 		mutually_exclusive = {
 			focus = ENG_Hudson_The_Successor
 		}
@@ -2305,6 +2304,9 @@
 		x = 20
 		y = 4
 		cost = 3
+		available = {
+			has_country_flag = A_Leader_Has_Been_Chosen
+			}
 		mutually_exclusive = {
 			focus = ENG_Johnson_The_Reformist
 		}
@@ -2459,6 +2461,9 @@
 		x = 27
 		y = 4
 		cost = 3
+		available = {
+			has_country_flag = A_Leader_Has_Been_Chosen
+			}
 		mutually_exclusive = {
 			focus = ENG_Hudson_The_Successor
 		}
@@ -2610,6 +2615,11 @@
 		x = 33
 		y = 4
 		cost = 3
+
+		available = {
+		has_country_flag = A_Leader_Has_Been_Chosen
+		}
+		
 		mutually_exclusive = {
 			focus = ENG_Hudson_The_Successor
 		}

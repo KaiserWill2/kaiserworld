@@ -39,8 +39,10 @@ spriteTypes = {
 	
 	
 	##England###
-
 	
+
+
+
 	SpriteType = {
 		name = "dublin_exchange_icon"
 		texturefile = "gfx/interface/goals/eng/dublin_exchange_icon.dds"			
@@ -980,10 +982,20 @@ SpriteType = {
 		
 
 
-		
+	### IRELAND ####
 
+	SpriteType = {
+		name = "stabilse_ireland_icon"
+		texturefile = "gfx/interface/goals/ireland/stabilse_ireland_icon.dds"			
+	}	
+	
+	SpriteType = {
+		name = "reassure_business_icon"
+		texturefile = "gfx/interface/goals/ireland/reassure_business_icon.dds"			
+	}	
+	
 
-
+	
 
 
 

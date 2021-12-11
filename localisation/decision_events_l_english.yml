@@ -16,3 +16,7 @@ l_english:
  decision_event.4.t:0 "The Peoples Palace"
  decision_event.4.d:0 "The Peoples Palace is the home of the current leader in the U.S.B.R. What used to be Buckingham Palace lay deserted and empty until the 1950s when T.E Lawrence ordered the Palace to be refurbished to fit the image of the union. Once complete, the war hero moved his home into the Palace and kept watchful eyes over the city of London. Now with Tony Blair in control, parts of the palace are being rebuilt to hold solid gold statues of the leader and small missile silos ready to fire at targets who may try to attack his home.  "
  decision_event.4.o1:0 "The Royal Palace No More"
+
+ decision_event.5.t:0 "The Military Takes Over"
+ decision_event.5.d:0 "The congress has failed to choose a leader due to infighting between each branch, in a sudden moment the amry generals stromed into a meeting between the 4 leaders and ordered the arrest. The army general has placed himself incontrol of the union and has now the army has complete control of the U.S.B.R"
+ decision_event.5.o1:0 "Oh Dear Lord.."

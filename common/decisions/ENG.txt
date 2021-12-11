@@ -35,13 +35,14 @@ fifties = {
 	
 	ENG_The_Peoples_Palace = {
 
-		icon = generic_scorched_earth
+		icon = generic_army_support
 	
 		allowed = {
 			OR = {
 				original_tag = ENG
 			}
 		}
+
 
 		available = {
 			always = yes
@@ -83,8 +84,8 @@ eighties = {
 nineties = {
 
 	ENG_Welcome_To_The_Union = {
-
-		icon = generic_scorched_earth
+	
+		icon = generic_nationalism
 	
 		allowed = {
 			OR = {
@@ -94,8 +95,7 @@ nineties = {
 	
 		available = {
 			always = yes
-		}
-	
+	}
 		cost = 0
 		fire_only_once = yes
 		ai_will_do = {
@@ -106,20 +106,62 @@ nineties = {
 			country_event = { id = decision_event.3 }
 		}
 	}
-	
-	
-	
+		
 }
 
 noughts = {
 
+	ENG_Stablise_The_Nation = {
 
+		icon = generic_scorched_earth
+		is_good = no
 
-
-
+	   
+	   Available = {
+		has_stability > 0.55
+		has_political_power > 110
+		}
+			activation = {
+				has_country_flag = choosing_the_replacement_flag
+		}
 	
-	
+		selectable_mission = yes
+		days_mission_timeout = 100
+
+		fire_only_once = yes
+
+
+		timeout_effect = {    
+			country_event = { id = decision_event.5 }                  
+			load_focus_tree = {
+				tree = 5th_nov_coup
+				keep_completed = yes
+			}             
+   }
+		complete_effect = {
+			country_event = {
+				id = england.57
+			}
+			set_country_flag =  A_Leader_Has_Been_Chosen
+		add_political_power = 100
+		}
+	}
+
+
+
+
+
+
+
+
+
+
+
 }
+
+
+
+
 
 
 

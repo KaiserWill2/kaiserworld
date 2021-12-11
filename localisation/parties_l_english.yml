@@ -271,17 +271,21 @@
  BEN_revolutionary_socialist_party:0 "International Revolution"
  BEN_communist_party:0 "People's Party"
  BEN_communist_party_long:0 "People's Revolutionary Party of Benin"
+
  IRE_fascist_party:0 "Identity Ireland"
- IRE_nationalist_party:0 "Republican Revival"
- IRE_monarchist_party:0 "New Kingdom Front"
+ IRE_nationalist_party:0 "Irish Nationalist Party"
+ IRE_monarchist_party:0 "New Irish Kingdom"
  IRE_national_bolshevik_party:0 "Saoradh"
- IRE_national_conservative_party:0 "Renua Ireland"
- IRE_centrist_party:0 "Fianna Fáil"
- IRE_liberal_party:0 "Fine Gael"
- IRE_new_democrat_party:0 "Labour Party"
- IRE_moderate_socialist_party:0 "Solidarity Movement"
- IRE_revolutionary_socialist_party:0 "Communist Party"
- IRE_communist_party:0 "Workers' Party"
+ IRE_national_conservative_party:0 "Fianna Fáil"
+ IRE_centrist_party:0 "Fine Gael"
+ IRE_liberal_party:0 "Social Democratic And Labour Party"
+ IRE_new_democrat_party:0 "Sinn Féin"
+ IRE_moderate_socialist_party:0 "Peoples Irish Party"
+ IRE_revolutionary_socialist_party:0 "The Workers Party"
+ IRE_communist_party:0 "Irish Totalist Collective Party"
+
+
+
  ULS_fascist_party:0 "Protestant Coalition"
  ULS_nationalist_party:0 "Democratic Unionist Party"
  ULS_monarchist_party:0 "Coalition for Royalism"
@@ -293,6 +297,9 @@
  ULS_moderate_socialist_party:0 "Sinn Féin"
  ULS_revolutionary_socialist_party:0 "Communist Party"
  ULS_communist_party:0 "Eirígí"
+
+
+
  SCO_fascist_party:0 "National Front"
  SCO_nationalist_party:0 "Christian Party"
  SCO_monarchist_party:0 "House of Stuart"

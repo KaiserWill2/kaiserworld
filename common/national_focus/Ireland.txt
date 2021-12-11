@@ -1,0 +1,365 @@
+focus_tree = {
+	id = Ireland_Focus_Tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 20
+			tag = ENG
+		}
+	}
+	default = no
+	continuous_focus_position = { x = 50 y = 1550 }
+	focus = {
+		id = IRE_Stabilise_Ireland
+		icon = stabilse_ireland_icon
+		cost = 5
+		x = 11
+		y = 0
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = IRE_Reassure_Businessess
+		icon = reassure_business_icon
+		cost = 5
+		x = 8
+		y = 1
+		prerequisite = { focus = IRE_Stabilise_Ireland  }
+		completion_reward = {
+
+		}
+
+	}
+
+	focus = {
+		id = IRE_Take_Part_Ownership_Of_Failing_Businesses
+		icon = end_blair_personality_icon
+		cost = 5
+		x = 6
+		y = 2
+		prerequisite = { focus = IRE_Reassure_Businessess  }
+		completion_reward = {
+
+		}
+
+	}
+
+	focus = {
+		id = IRE_Encourage_Buying_Local
+		icon = end_blair_personality_icon
+		cost = 5
+		x = 7
+		y = 3
+		prerequisite = { focus = IRE_Take_Part_Ownership_Of_Failing_Businesses  }
+		completion_reward = {
+
+		}
+
+	}
+
+	focus = {
+		id = IRE_Cut_Taxes_For_Companies
+		icon = end_blair_personality_icon
+		cost = 5
+		x = 10
+		y = 2
+		prerequisite = { focus = IRE_Reassure_Businessess  }
+		completion_reward = {
+
+		}
+
+	}
+
+	focus = {
+		id = IRE_Attract_Investors
+		icon = end_blair_personality_icon
+		cost = 5
+		x = 9
+		y = 3
+		prerequisite = { focus = IRE_Cut_Taxes_For_Companies  }
+		completion_reward = {
+
+		}
+
+	}
+
+
+	focus = {
+		id = IRE_Better_Trade_Routes
+		icon = end_blair_personality_icon
+		cost = 5
+		x = 8
+		y = 4
+		prerequisite = { focus = IRE_Encourage_Buying_Local  }
+		prerequisite = { focus = IRE_Attract_Investors  }
+
+		completion_reward = {
+
+		}
+
+	}
+
+
+	focus = {
+		id = IRE_Introduce_Austerity_Measures
+		icon = end_blair_personality_icon
+		cost = 5
+		x = 14
+		y = 1
+		prerequisite = { focus = IRE_Stabilise_Ireland  }
+		completion_reward = {
+
+		}
+
+	}
+
+	focus = {
+		id = IRE_Cut_Welfare_Spending
+		icon = end_blair_personality_icon
+		cost = 5
+		x = 12
+		y = 2
+		prerequisite = { focus = IRE_Introduce_Austerity_Measures  }
+		completion_reward = {
+
+		}
+
+	}
+
+
+
+	focus = {
+		id = IRE_Cut_Public_Spending
+		icon = end_blair_personality_icon
+		cost = 5
+		x = 13
+		y = 3
+		prerequisite = { focus = IRE_Cut_Welfare_Spending  }
+		completion_reward = {
+
+		}
+
+	}
+
+	focus = {
+		id = IRE_Higher_Income_Tax
+		icon = end_blair_personality_icon
+		cost = 5
+		x = 16
+		y = 2
+		prerequisite = { focus = IRE_Introduce_Austerity_Measures  }
+		completion_reward = {
+
+		}
+
+	}
+
+
+	focus = {
+		id = IRE_Sell_Public_Assests
+		icon = end_blair_personality_icon
+		cost = 5
+		x = 15
+		y = 3
+		prerequisite = { focus = IRE_Higher_Income_Tax  }
+		completion_reward = {
+
+		}
+
+	}
+
+
+	focus = {
+		id = IRE_Encourage_Privatisation
+		icon = end_blair_personality_icon
+		cost = 5
+		x = 14
+		y = 4
+		prerequisite = { focus = IRE_Cut_Public_Spending  }
+		prerequisite = { focus = IRE_Sell_Public_Assests  }
+
+		completion_reward = {
+
+		}
+
+	}
+
+
+	focus = {
+		id = IRE_The_Next_Stage_Of_The_Plan
+		icon = end_blair_personality_icon
+		cost = 5
+		x = 11
+		y = 5
+		prerequisite = { focus = IRE_Better_Trade_Routes  }
+		prerequisite = { focus = IRE_Encourage_Privatisation  }
+
+		completion_reward = {
+
+		}
+
+	}
+
+
+
+	focus = {
+		id = IRE_Celtic_Relations
+		icon = end_blair_personality_icon
+		cost = 5
+		x = 7
+		y = 6
+		prerequisite = { focus = IRE_The_Next_Stage_Of_The_Plan  }
+		completion_reward = {
+
+		}
+
+	}
+
+	focus = {
+		id = IRE_The_Dragon_And_The_Clover
+		icon = end_blair_personality_icon
+		cost = 5
+		x = 5
+		y = 7
+		prerequisite = { focus = IRE_Celtic_Relations  }
+		completion_reward = {
+
+		}
+
+	}
+
+	focus = {
+		id = IRE_The_Thistle_And_The_Clover
+		icon = end_blair_personality_icon
+		cost = 5
+		x = 9
+		y = 7
+		prerequisite = { focus = IRE_Celtic_Relations  }
+		completion_reward = {
+
+		}
+
+	}
+
+
+	focus = {
+		id = IRE_Celtic_Economoic_Aid
+		icon = end_blair_personality_icon
+		cost = 5
+		x = 7
+		y = 8
+		prerequisite = { focus = IRE_The_Dragon_And_The_Clover  }
+		prerequisite = { focus = IRE_The_Thistle_And_The_Clover  }
+
+		completion_reward = {
+
+		}
+
+	}
+
+	focus = {
+		id = IRE_Establish_A_Celtic_Economic_Zone
+		icon = end_blair_personality_icon
+		cost = 5
+		x = 7
+		y = 9
+		prerequisite = { focus = IRE_Celtic_Economoic_Aid  }
+
+		completion_reward = {
+
+		}
+
+	}
+
+
+
+	focus = {
+		id = IRE_A_Meeting_In_The_Dail
+		icon = end_blair_personality_icon
+		cost = 5
+		x = 15
+		y = 6
+		prerequisite = { focus = IRE_The_Next_Stage_Of_The_Plan  }
+		completion_reward = {
+
+		}
+
+	}
+
+
+	focus = {
+		id = IRE_Ask_For_Sinn_Fein_Support
+		icon = end_blair_personality_icon
+		cost = 5
+		x = 13
+		y = 7
+		prerequisite = { focus = IRE_A_Meeting_In_The_Dail  }
+		completion_reward = {
+
+		}
+
+	}
+
+
+	focus = {
+		id = IRE_Ask_For_SDLP_Support
+		icon = end_blair_personality_icon
+		cost = 5
+		x = 15
+		y = 7
+		prerequisite = { focus = IRE_A_Meeting_In_The_Dail  }
+		completion_reward = {
+
+		}
+
+	}
+
+	focus = {
+		id = IRE_Ask_For_Fine_Gael_Support
+		icon = end_blair_personality_icon
+		cost = 5
+		x = 17
+		y = 7
+		prerequisite = { focus = IRE_A_Meeting_In_The_Dail  }
+		completion_reward = {
+
+		}
+
+	}
+
+
+	focus = {
+		id = IRE_Attempt_To_Pass_The_Bill
+		icon = end_blair_personality_icon
+		cost = 5
+		x = 15
+		y = 8
+		prerequisite = { focus = IRE_Ask_For_Sinn_Fein_Support  }
+		prerequisite = { focus = IRE_Ask_For_SDLP_Support  }
+		prerequisite = { focus = IRE_Ask_For_Fine_Gael_Support  }
+		completion_reward = {
+
+		}
+
+	}
+
+
+	focus = {
+		id = IRE_Let_The_People_Decide
+		icon = end_blair_personality_icon
+		cost = 5
+		x = 15
+		y = 9
+		prerequisite = { focus = IRE_Attempt_To_Pass_The_Bill  }
+		completion_reward = {
+
+		}
+
+	}
+
+
+
+
+}

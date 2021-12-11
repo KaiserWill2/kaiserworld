@@ -19,6 +19,8 @@
 
 
  ### HISTORY DECISIONS ###
+
+
  fifties:0 "History of the 1950s"
  sixties:0 "History of the 1960s"
  seventies:0 "History of the 1970s"
@@ -35,3 +37,5 @@ ENG_Fix_The_Union:0 "Taking Wales!"
 ENG_Stablise_The_Nation:0 "Stablise The Nation"
 
 ENG_The_Peoples_Palace:0 "The Peoples Palace"
+
+ Fate_Of_The_Union:0 "Fate Of The Union"
