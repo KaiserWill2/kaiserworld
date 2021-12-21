@@ -177,10 +177,30 @@ focus_tree = {
 		prerequisite = { focus =  ENG_Bad_Mouth_The_King  }
 		prerequisite = { focus =  ENG_Increase_Chances_Of_Riots  }
 		completion_reward = {
+			
 
+			SCO = {
+			start_civil_war = {
+				ideology = communist
+				size = 0.8
+				transfer_state = 136
+				transfer_state = 121
+				set_cosmetic_tag = SCO_Totalist_state
+				add_manpower = 50000
+				add_command_power = 50
+				create_country_leader = {
+					name = "Colin Fox"
+					picture = "colin_fox.dds"
+					ideology = marxist
+				}
+				
+			}
+			
+			}
+		}
 		}
 
-	}
+	
 
 
 	focus = {
@@ -311,7 +331,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_The_English_Famine
-		icon = GFX_ENG_the_totalist_spirit-445
+		icon = the_english_famine_icon
 		x = 30
 		y = 0
 		cost = 5
@@ -326,7 +346,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_Accept_Red_Cross_Donations
-		icon = GFX_ENG_the_totalist_spirit-445
+		icon = accept_red_cross_donations_icon
 		x = 28
 		y = 1
 		cost = 5
@@ -342,7 +362,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_Keep_Foreign_Economic_Support
-		icon = GFX_ENG_the_totalist_spirit-445
+		icon = keep_foreign_economic_suppport_icon
 		x = 32
 		y = 1
 		cost = 5
@@ -358,7 +378,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_Order_Harsh_Quotas
-		icon = GFX_ENG_the_totalist_spirit-445
+		icon = order_harsh_quotas_icon
 		x = 30
 		y = 2
 		cost = 5
@@ -375,7 +395,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_There_Are_No_Problems
-		icon = GFX_ENG_the_totalist_spirit-445
+		icon = there_are_no_problems_icon
 		x = 29
 		y = 3
 		cost = 5
@@ -391,7 +411,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_Arrest_Those_Asking_Questions
-		icon = GFX_ENG_the_totalist_spirit-445
+		icon = arrest_those_Asking_questions_icon
 		x = 31
 		y = 3
 		cost = 5
@@ -407,7 +427,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_Ask_For_Alliance_Support
-		icon = GFX_ENG_the_totalist_spirit-445
+		icon = ask_for_allied_support_icon
 		x = 30
 		y = 4
 		cost = 5
@@ -424,15 +444,33 @@ focus_tree = {
 
 	focus = {
 		id = ENG_The_Union_Of_Britain
-		icon = GFX_ENG_the_totalist_spirit-445
+		icon = the_union_of_britain_icon
 		x = 25
 		y = 8
 		cost = 5
 		available = {
-			has_completed_focus = ENG_The_Union_Of_Britain
+			has_completed_focus = ENG_Use_Scottish_Weakness
+			has_completed_focus = ENG_Begin_Plans_To_Tackle_Our_Enemies
+			has_completed_focus = ENG_Korean_Infrastructure
+
+			owns_state = 121
+			owns_state = 133
+			owns_state = 136
+			owns_state = 120
+
+			
+
 		}
 
 		completion_reward = {
+
+			create_country_leader = {
+				name = "Supreme Leader General Blair"
+				picture = "blair_leader_two.dds"
+				ideology = marxist
+			}
+
+			
 
 		}
 
@@ -442,7 +480,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_Prepare_For_Production
-		icon = GFX_ENG_the_totalist_spirit-445
+		icon = prepare_for_production_icon
 		x = 20
 		y = 9
 		cost = 5
@@ -457,7 +495,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_Welsh_Resource_Collecting
-		icon = GFX_ENG_the_totalist_spirit-445
+		icon = welsh_resource_collecting_icon
 		x = 19
 		y = 10
 		cost = 5
@@ -472,7 +510,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_Boost_Production_For_The_Union
-		icon = GFX_ENG_the_totalist_spirit-445
+		icon = boost_production_in_union_icon
 		x = 19
 		y = 11
 		cost = 5
@@ -487,7 +525,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_Feed_The_English
-		icon = GFX_ENG_the_totalist_spirit-445
+		icon = feed_the_english_icon
 		x = 19
 		y = 12
 		cost = 5
@@ -502,7 +540,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_English_Are_The_New_Elite
-		icon = GFX_ENG_the_totalist_spirit-445
+		icon = english_are_new_elite_icon
 		x = 19
 		y = 13
 		cost = 5
@@ -517,7 +555,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_Rebuild_Scottish_Industry
-		icon = GFX_ENG_the_totalist_spirit-445
+		icon = rebuild_scottish_industry_icon
 		x = 21
 		y = 10
 		cost = 5
@@ -532,7 +570,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_Begin_Nuclear_Research
-		icon = GFX_ENG_the_totalist_spirit-445
+		icon = begin_nuclear_research_icon
 		x = 21
 		y = 11
 		cost = 5
@@ -547,7 +585,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_Order_The_WMD
-		icon = GFX_ENG_the_totalist_spirit-445
+		icon = order_the_WMD_icon
 		x = 21
 		y = 12
 		cost = 5
@@ -562,7 +600,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_Order_The_Shetland_Test
-		icon = GFX_ENG_the_totalist_spirit-445
+		icon = order_the_shetland_test_icon
 		x = 21
 		y = 13
 		cost = 5
@@ -577,7 +615,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_The_Industry_Of_Tomorrow
-		icon = GFX_ENG_the_totalist_spirit-445
+		icon = industry_of_tomorrow_icon
 		x = 20
 		y = 14
 		cost = 5
@@ -596,7 +634,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_Prepare_For_The_United_Congress
-		icon = GFX_ENG_the_totalist_spirit-445
+		icon = prepare_for_the_united_congress_icon
 		x = 25
 		y = 9
 		cost = 5
@@ -611,7 +649,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_Uniting_The_Lands
-		icon = GFX_ENG_the_totalist_spirit-445
+		icon = uniting_the_lands_icon2_icon
 		x = 25
 		y = 10
 		cost = 5
@@ -626,7 +664,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_Crack_Down_On_Scottish_Rebels
-		icon = GFX_ENG_the_totalist_spirit-445
+		icon = crack_down_on_scottish_rebels_icon
 		x = 24
 		y = 11
 		cost = 5
@@ -641,7 +679,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_Remodel_Edinburgh_Castle
-		icon = GFX_ENG_the_totalist_spirit-445
+		icon = remodel_edinburgh_castle_icon
 		x = 24
 		y = 12
 		cost = 5
@@ -656,7 +694,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_Execute_The_Royals
-		icon = GFX_ENG_the_totalist_spirit-445
+		icon = execute_the_royals_icon
 		x = 24
 		y = 13
 		cost = 5
@@ -671,7 +709,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_Wales_The_Arms_Industry
-		icon = GFX_ENG_the_totalist_spirit-445
+		icon = wales_the_arms_industry_icon
 		x = 26
 		y = 11
 		cost = 5
@@ -686,7 +724,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_Duel_English_And_Welsh_Industry
-		icon = GFX_ENG_the_totalist_spirit-445
+		icon = english_and_welsh_industry_icon
 		x = 26
 		y = 12
 		cost = 5
@@ -700,8 +738,8 @@ focus_tree = {
 	}
 
 	focus = {
-		id = ENG_Harvest_Scottish_Land
-		icon = GFX_ENG_the_totalist_spirit-445
+		id = ENG_Harvest_Scottish_And_Welsh_Land
+		icon = harvest_scot_and_wels_land_icon
 		x = 26
 		y = 13
 		cost = 5
@@ -716,13 +754,13 @@ focus_tree = {
 
 	focus = {
 		id = ENG_Only_England
-		icon = GFX_ENG_the_totalist_spirit-445
+		icon = only_england_icon
 		x = 25
 		y = 14
 		cost = 5
 		search_filters = {
 		}
-		prerequisite = { focus =  ENG_Harvest_Scottish_Land  }
+		prerequisite = { focus =  ENG_Harvest_Scottish_And_Welsh_Land  }
 		prerequisite = { focus =  ENG_Execute_The_Royals  }
 
 		completion_reward = {
@@ -734,7 +772,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_The_United_Armed_Forces
-		icon = GFX_ENG_the_totalist_spirit-445
+		icon = the_united_armed_forces_icon
 		x = 30
 		y = 9
 		cost = 5
@@ -749,7 +787,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_Offer_To_Scottish_Generals
-		icon = GFX_ENG_the_totalist_spirit-445
+		icon = offer_to_scottish_generals_icon
 		x = 28
 		y = 10
 		cost = 5
@@ -764,7 +802,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_Promote_English_Generals
-		icon = GFX_ENG_the_totalist_spirit-445
+		icon = promote_english_generals_icon
 		x = 30
 		y = 10
 		cost = 5
@@ -778,8 +816,8 @@ focus_tree = {
 	}
 
 	focus = {
-		id = ENG_Ingegrate_Welsh_Militia
-		icon = GFX_ENG_the_totalist_spirit-445
+		id = ENG_Integrate_Welsh_Militia
+		icon = integrate_welsh_milita_icon
 		x = 32
 		y = 10
 		cost = 5
@@ -794,7 +832,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_New_Training_Methods
-		icon = GFX_ENG_the_totalist_spirit-445
+		icon = new_training_methods_icon
 		x = 31
 		y = 11
 		cost = 5
@@ -802,7 +840,7 @@ focus_tree = {
 		}
 		prerequisite = { focus =  ENG_Offer_To_Scottish_Generals  }
 		prerequisite = { focus =  ENG_Promote_English_Generals  }
-		prerequisite = { focus =  ENG_Ingegrate_Welsh_Militia  }
+		prerequisite = { focus =  ENG_Integrate_Welsh_Militia  }
 		completion_reward = {
 
 		}
@@ -813,7 +851,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_Blueprints_For_Better_Equipment
-		icon = GFX_ENG_the_totalist_spirit-445
+		icon = blueprints_for_better_equipment_icon
 		x = 29
 		y = 11
 		cost = 5
@@ -831,7 +869,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_Prepare_For_The_Invasion_Of_France
-		icon = GFX_ENG_the_totalist_spirit-445
+		icon = prepare_for_the_invasion_of_france_icon
 		x = 30
 		y = 12
 		cost = 5
@@ -848,7 +886,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_Supply_Totalist_Groups_In_France
-		icon = GFX_ENG_the_totalist_spirit-445
+		icon = supply_french_totalists_icon
 		x = 30
 		y = 13
 		cost = 5
@@ -864,7 +902,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_Order_The_Civil_War
-		icon = GFX_ENG_the_totalist_spirit-445
+		icon = order_the_civil_war_icon
 		x = 30
 		y = 14
 		cost = 5

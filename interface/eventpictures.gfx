@@ -349,10 +349,14 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/report_event/kennedys_government_event.dds"
 	}
 	
-
+	spriteType = {
+		name = "boris_and_his_cola_event"
+		texturefile = "gfx/event_pictures/report_event/boris_and_his_cola_event.dds"
+	}
 	
 	
-
+	
+	
 	
 
 

@@ -11,30 +11,31 @@ focus_tree = {
 	continuous_focus_position = { x = 50 y = 1550 }
 	focus = {
 		id = ENG_The_November_5th_Coup
-		icon = tear_treaty
+		icon = 5th_nov_icon
 		cost = 5
 		x = 10
 		y = 0
 		completion_reward = {
-
+			set_cosmetic_tag = ENG_the_military_takes_over
+			add_stability = -0.15
 		}
 	}
 	focus = {
 		id = ENG_Marital_Law
-		icon = tear_treaty
+		icon = martial_law_icon
 		cost = 5
 		x = 10
 		y = 1
 		prerequisite = { focus = ENG_The_November_5th_Coup  }
 		completion_reward = {
-
+			add_stability = -0.10
 		}
 
 	}
 
 	focus = {
 		id = ENG_Disband_The_Peoples_Congress
-		icon = tear_treaty
+		icon = disband_the_peoples_congress_icon
 		cost = 5
 		x = 10
 		y = 2
@@ -47,13 +48,13 @@ focus_tree = {
 
 	focus = {
 		id = ENG_Ending_School_Early
-		icon = tear_treaty
+		icon = ending_school_early_icon
 		cost = 5
 		x = 7
 		y = 3
 		prerequisite = { focus = ENG_Disband_The_Peoples_Congress  }
 		completion_reward = {
-
+			add_stability = -0.15
 		}
 
 	}
@@ -61,7 +62,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_Expand_the_Camps
-		icon = tear_treaty
+		icon = expanding_the_camps_icon
 		cost = 5
 		x = 8
 		y = 4
@@ -75,7 +76,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_Securing_the_cities
-		icon = tear_treaty
+		icon = securing_the_cities_icon
 		cost = 5
 		x = 10
 		y = 3
@@ -89,7 +90,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_Imprisoning_Politicians
-		icon = tear_treaty
+		icon = imprison_politicians_icon
 		cost = 5
 		x = 10
 		y = 4
@@ -102,13 +103,13 @@ focus_tree = {
  
 	focus = {
 		id = ENG_Shoot_To_kill2
-		icon = tear_treaty
+		icon = shoot_to_kill_2_icon
 		cost = 5
 		x = 13
 		y = 3
 		prerequisite = { focus = ENG_Disband_The_Peoples_Congress  }
 		completion_reward = {
-
+			add_stability = -0.20
 		}
 
 	}
@@ -116,7 +117,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_Silence_the_state_media
-		icon = tear_treaty
+		icon = silence_the_state_media_icon
 		cost = 5
 		x = 12
 		y = 4

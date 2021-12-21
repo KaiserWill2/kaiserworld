@@ -947,3 +947,15 @@ country_event = {
 }
 
 
+country_event = {
+	id = England.73
+	title = England.73.t
+	desc = England.73.d
+	picture = boris_and_his_cola_event
+	is_triggered_only = yes
+	option = {
+		name = England.73.o1
+
+	}
+}
+

@@ -2138,6 +2138,17 @@ ENG_communist_kennedy_DEF:0 "U.S.B.R"
 ENG_communist_kennedy_ADJ:0 "U.S.B.R"
 
 
+ENG_the_military_takes_over:0 "English Military Administration"
+ENG_the_military_takes_over_DEF:0 "English Military Administration"
+ENG_the_military_takes_over_ADJ:0 "English Military Administration"
+
+
+
+SCO_Totalist_state:0 "The Union Of Scotland"
+SCO_Totalist_state_DEF:0 "The Union Of Scotland"
+SCO_Totalist_state_ADJ:0 "The Union Of Scotland"
+
+
  WAL_wales_communist:0 "Union Of Wales"
  WAL_wales_communist_DEF:0 "Union Of Wales"
  WAL_wales_communist_ADJ:0 "Union Of Wales"

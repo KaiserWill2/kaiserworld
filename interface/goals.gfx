@@ -40,8 +40,239 @@ spriteTypes = {
 	
 	##England###
 	
+	SpriteType = {
+		name = "ask_for_allied_support_icon"
+		texturefile = "gfx/interface/goals/eng/ask_for_allied_support_icon.dds"			
+	}
+
+	SpriteType = {
+		name = "arrest_those_Asking_questions_icon"
+		texturefile = "gfx/interface/goals/eng/arrest_those_Asking_questions_icon.dds"			
+	}
+	
+	SpriteType = {
+		name = "there_are_no_problems_icon"
+		texturefile = "gfx/interface/goals/eng/there_are_no_problems_icon.dds"			
+	}	
+	
+	SpriteType = {
+		name = "order_harsh_quotas_icon"
+		texturefile = "gfx/interface/goals/eng/order_harsh_quotas_icon.dds"			
+	}	
+	
+	SpriteType = {
+		name = "keep_foreign_economic_suppport_icon"
+		texturefile = "gfx/interface/goals/eng/keep_foreign_economic_suppport_icon.dds"			
+	}
+	
+	SpriteType = {
+		name = "accept_red_cross_donations_icon"
+		texturefile = "gfx/interface/goals/eng/accept_red_cross_donations_icon.dds"			
+	}
+	
+	SpriteType = {
+		name = "the_english_famine_icon"
+		texturefile = "gfx/interface/goals/eng/the_english_famine_icon.dds"			
+	}
+	
+	SpriteType = {
+		name = "order_the_civil_war_icon"
+		texturefile = "gfx/interface/goals/eng/order_the_civil_war_icon.dds"			
+	}
+	
+	SpriteType = {
+		name = "supply_french_totalists_icon"
+		texturefile = "gfx/interface/goals/eng/supply_french_totalists_icon.dds"			
+	}
+	
+	SpriteType = {
+		name = "prepare_for_the_invasion_of_france_icon"
+		texturefile = "gfx/interface/goals/eng/prepare_for_the_invasion_of_france_icon.dds"			
+	}
+	
+	SpriteType = {
+		name = "new_training_methods_icon"
+		texturefile = "gfx/interface/goals/eng/new_training_methods_icon.dds"			
+	}
+
+	SpriteType = {
+		name = "blueprints_for_better_equipment_icon"
+		texturefile = "gfx/interface/goals/eng/blueprints_for_better_equipment_icon.dds"			
+	}
+	
+	SpriteType = {
+		name = "integrate_welsh_milita_icon"
+		texturefile = "gfx/interface/goals/eng/integrate_welsh_milita_icon.dds"			
+	}
+	
+	
+	SpriteType = {
+		name = "promote_english_generals_icon"
+		texturefile = "gfx/interface/goals/eng/promote_english_generals_icon.dds"			
+	}
+	
+	SpriteType = {
+		name = "offer_to_scottish_generals_icon"
+		texturefile = "gfx/interface/goals/eng/offer_to_scottish_generals_icon.dds"			
+	}
+
+	
+	SpriteType = {
+		name = "the_united_armed_forces_icon"
+		texturefile = "gfx/interface/goals/eng/the_united_armed_forces_icon.dds"			
+	}
+
+	SpriteType = {
+		name = "only_england_icon"
+		texturefile = "gfx/interface/goals/eng/only_england_icon.dds"			
+	}
+
+	SpriteType = {
+		name = "harvest_scot_and_wels_land_icon"
+		texturefile = "gfx/interface/goals/eng/harvest_scot_and_wels_land_icon.dds"			
+	}
+	
+	
+	SpriteType = {
+		name = "english_and_welsh_industry_icon"
+		texturefile = "gfx/interface/goals/eng/english_and_welsh_industry_icon.dds"			
+	}
+	
+
+	SpriteType = {
+		name = "wales_the_arms_industry_icon"
+		texturefile = "gfx/interface/goals/eng/wales_the_arms_industry_icon.dds"			
+	}
+	
+	SpriteType = {
+		name = "execute_the_royals_icon"
+		texturefile = "gfx/interface/goals/eng/execute_the_royals_icon.dds"			
+	}
+	
+	
+	SpriteType = {
+		name = "remodel_edinburgh_castle_icon"
+		texturefile = "gfx/interface/goals/eng/remodel_edinburgh_castle_icon.dds"			
+	}
+	
+	SpriteType = {
+		name = "crack_down_on_scottish_rebels_icon"
+		texturefile = "gfx/interface/goals/eng/crack_down_on_scottish_rebels_icon.dds"			
+	}
+	
+	
+	SpriteType = {
+		name = "uniting_the_lands_icon2_icon"
+		texturefile = "gfx/interface/goals/eng/uniting_the_lands_icon2_icon.dds"			
+	}
+	
+	
+	SpriteType = {
+		name = "prepare_for_the_united_congress_icon"
+		texturefile = "gfx/interface/goals/eng/prepare_for_the_united_congress_icon.dds"			
+	}
+	
+	SpriteType = {
+		name = "order_the_shetland_test_icon"
+		texturefile = "gfx/interface/goals/eng/order_the_shetland_test_icon.dds"			
+	}
+	
+	SpriteType = {
+		name = "industry_of_tomorrow_icon"
+		texturefile = "gfx/interface/goals/eng/industry_of_tomorrow_icon.dds"			
+	}
+	
+	SpriteType = {
+		name = "english_are_new_elite_icon"
+		texturefile = "gfx/interface/goals/eng/english_are_new_elite_icon.dds"			
+	}
+	
+	SpriteType = {
+		name = "begin_nuclear_research_icon"
+		texturefile = "gfx/interface/goals/eng/begin_nuclear_research_icon.dds"			
+	}
 
 
+	SpriteType = {
+		name = "order_the_WMD_icon"
+		texturefile = "gfx/interface/goals/eng/order_the_WMD_icon.dds"			
+	}
+
+	SpriteType = {
+		name = "feed_the_english_icon"
+		texturefile = "gfx/interface/goals/eng/feed_the_english_icon.dds"			
+	}
+	
+	SpriteType = {
+		name = "boost_production_in_union_icon"
+		texturefile = "gfx/interface/goals/eng/boost_production_in_union_icon.dds"			
+	}
+	
+	
+	SpriteType = {
+		name = "rebuild_scottish_industry_icon"
+		texturefile = "gfx/interface/goals/eng/rebuild_scottish_industry_icon.dds"			
+	}
+	
+	SpriteType = {
+		name = "welsh_resource_collecting_icon"
+		texturefile = "gfx/interface/goals/eng/welsh_resource_collecting_icon.dds"			
+	}
+
+	SpriteType = {
+		name = "prepare_for_production_icon"
+		texturefile = "gfx/interface/goals/eng/prepare_for_production_icon.dds"			
+	}
+
+	SpriteType = {
+		name = "the_union_of_britain_icon"
+		texturefile = "gfx/interface/goals/eng/the_union_of_britain_icon.dds"			
+	}
+
+	SpriteType = {
+		name = "silence_the_state_media_icon"
+		texturefile = "gfx/interface/goals/eng/silence_the_state_media_icon.dds"			
+	}
+	
+	SpriteType = {
+		name = "shoot_to_kill_2_icon"
+		texturefile = "gfx/interface/goals/eng/shoot_to_kill_2_icon.dds"			
+	}
+	
+	SpriteType = {
+		name = "imprison_politicians_icon"
+		texturefile = "gfx/interface/goals/eng/imprison_politicians_icon.dds"			
+	}
+	
+	SpriteType = {
+		name = "securing_the_cities_icon"
+		texturefile = "gfx/interface/goals/eng/securing_the_cities_icon.dds"			
+	}
+
+	SpriteType = {
+		name = "expanding_the_camps_icon"
+		texturefile = "gfx/interface/goals/eng/expanding_the_camps_icon.dds"			
+	}
+	
+	SpriteType = {
+		name = "ending_school_early_icon"
+		texturefile = "gfx/interface/goals/eng/ending_school_early_icon.dds"			
+	}
+	
+	SpriteType = {
+		name = "disband_the_peoples_congress_icon"
+		texturefile = "gfx/interface/goals/eng/disband_the_peoples_congress_icon.dds"			
+	}
+	
+	SpriteType = {
+		name = "martial_law_icon"
+		texturefile = "gfx/interface/goals/eng/martial_law_icon.dds"			
+	}
+	
+	SpriteType = {
+		name = "5th_nov_icon"
+		texturefile = "gfx/interface/goals/eng/5th_nov_icon.dds"			
+	}	
 
 	SpriteType = {
 		name = "dublin_exchange_icon"

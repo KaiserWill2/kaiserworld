@@ -6533,6 +6533,12 @@
  SCO_moderate_socialist_ADJ:0 "Scottish"
  SCO_revolutionary_socialist_ADJ:0 "Scottish"
  SCO_communist_ADJ:0 "Scottish"
+
+CSC_communist:0 "Union Of Scotland"
+CSC_communist_DEF:0 "Union Of Scotland"
+CSC_communist_ADJ:0 "Union Of Scotland"
+
+
  WAL_fascist:0 "Wales"
  WAL_fascist_DEF:0 "the Welsh Social Republic"
  WAL_nationalist:0 "Wales"

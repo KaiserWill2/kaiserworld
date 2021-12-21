@@ -2,7 +2,7 @@
 
 oob = "ENG_2000"
 
-load_focus_tree = british_grey_tuesday
+load_focus_tree = british_new_england
 
 
 if = {
