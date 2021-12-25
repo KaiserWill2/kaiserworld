@@ -1,4 +1,4 @@
-
+#Union of Socialist British Republics
 	shared_focus = {
 		id = ENG_legacy_of_foot
 		icon = foots_legacy

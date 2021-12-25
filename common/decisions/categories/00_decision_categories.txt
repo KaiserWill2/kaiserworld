@@ -11,6 +11,23 @@ arab_civil_war = {
         }
     }
 }
+
+thirties{
+	icon = decision_category_thirties
+
+	allowed = {
+		always = yes
+	}
+}
+
+forties= {
+	icon = decision_category_forties
+
+	allowed = {
+		always = yes
+	}
+}
+
 fifties = {
 	icon = fifties
 

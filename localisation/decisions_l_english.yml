@@ -19,14 +19,19 @@
 
 
  ### HISTORY DECISIONS ###
-
-
+ thirties:0 "History of the 1930s"
+ forties:0 "History of the 1940s"
  fifties:0 "History of the 1950s"
  sixties:0 "History of the 1960s"
  seventies:0 "History of the 1970s"
  eighties:0 "History of the 1980s"
  nineties:0 "History of the 1990s"
  noughts:0 "History of the 2000s"
+
+
+ ENG_A_History_of_the_Second_Weltkrieg:0 "A History of the Second Weltkrieg (Part 1)§!"
+
+ ENG_A_History_of_the_Second_Weltkrieg2:0 "A History of the Second Weltkrieg (Part 2)§!"
 
  ENG_The_Dumfries_War:0 "The Dumfries War§!"
 

@@ -98,6 +98,67 @@ spriteTypes = {
 		name = "GFX_idea_the_failed_economy"
 		texturefile = "gfx/interface/ideas/ENG/the_failed_economy.dds"
 	}
+
+
+
+	#England Advisor
+
+	spriteType = {
+		name = "GFX_idea_britain_Charles_Kennedy"
+		texturefile = "gfx/interface/ideas/advisors/britain/britain_Charles_Kennedy.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_britain_Boris_Johnson"
+		texturefile = "gfx/interface/ideas/advisors/britain/britain_Boris_Johnson.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_britain_John_McDonnell"
+		texturefile = "gfx/interface/ideas/advisors/britain/britain_John_McDonnell.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_britain_fom_dermot_hudson"
+		texturefile = "gfx/interface/ideas/advisors/britain/britain_fom_dermot_hudson.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_britain_Jeremy_Corbyn"
+		texturefile = "gfx/interface/ideas/advisors/britain/britain_Jeremy_Corbyn.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_britain_Jacob_Rees_Mogg"
+		texturefile = "gfx/interface/ideas/advisors/britain/britain_Jacob_Rees_Mogg.dds"
+	}
+
+	
+	spriteType = {
+		name = "GFX_idea_britain_ind_ella_rule"
+		texturefile = "gfx/interface/ideas/advisors/britain/britain_ind_ella_rule.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_britain_Owen_Paterson"
+		texturefile = "gfx/interface/ideas/advisors/britain/britain_Owen_Paterson.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_britain_Piers_Corbyn"
+		texturefile = "gfx/interface/ideas/advisors/britain/britain_Piers_Corbyn.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_britain_Jonathan_Ashworth"
+		texturefile = "gfx/interface/ideas/advisors/britain/britain_Jonathan_Ashworth.dds"
+	}
+
+
+
+	
+
+	
 	###Unsorted
 	spriteType = {
 		name = "GFX_idea_idea_eu_member"
@@ -265,8 +326,8 @@ spriteTypes = {
 	}
 	#### BRITISH COMPANIES AND ADVISORS ####
 	spriteType = {
-		name = "GFX_idea_bae_systems"
-		texturefile = "gfx/interface/ideas/companies/bae_systems.dds"
+		name = "GFX_idea_union_motors"
+		texturefile = "gfx/interface/ideas/companies/union_motors.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_vickers_shipbulding_and_engineering"

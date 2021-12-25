@@ -80,4 +80,1274 @@ ideas = {
 			}
 		}
 	}	
+
+	
+
+
+
+
+
+
+
+	# TECHNOLOGY
+	tank_manufacturer = { 
+	
+		designer = yes
+		
+		union_motors = {
+			
+			allowed = {
+			    original_tag = ENG
+				NOT = {
+					has_available_idea_with_traits = { idea = tank_manufacturer limit = 1 }
+				}
+			}
+			
+			cost = 150
+			removal_cost = 10
+			
+			research_bonus = {
+				armor = 0.10
+			}
+			
+			traits = { tank_manufacturer }
+		}
+	}
+	
+	naval_manufacturer = { 
+	
+		designer = yes
+	
+		vickers_shipbulding_and_engineering = {
+			
+			picture = generic_naval_manufacturer_1
+
+			allowed = {
+			    original_tag = ENG
+				NOT = {
+					has_available_idea_with_traits = { idea = naval_manufacturer limit = 1 }
+				}
+			}
+			
+			cost = 150
+			removal_cost = 10
+			
+			research_bonus = {
+				naval_equipment = 0.10
+			}
+			
+			traits = { naval_manufacturer }
+		}
+	}
+
+	aircraft_manufacturer = { 
+	
+		designer = yes
+	
+		britten_norman = {
+			
+			picture = generic_air_manufacturer_1
+
+			allowed = {
+			    original_tag = ENG
+				NOT = {
+					has_available_idea_with_traits = { idea = light_aircraft_manufacturer limit = 1 }
+				}
+			}
+			
+			cost = 150
+			removal_cost = 10
+			
+			research_bonus = {
+				air_equipment = 0.10
+			}
+			
+			traits = { light_aircraft_manufacturer }
+		}
+		
+		british_aerospace = {
+			
+			picture = generic_air_manufacturer_3
+
+			allowed = {
+			    original_tag = ENG
+				NOT = {
+					has_available_idea_with_traits = { idea = medium_aircraft_manufacturer limit = 1 }
+				}
+			}
+			
+			cost = 150
+			removal_cost = 10
+			
+			research_bonus = {
+				air_equipment = 0.10
+			}
+			
+			traits = { medium_aircraft_manufacturer }
+		}
+		
+		rolls_royce = {
+
+			picture = generic_air_manufacturer_2
+			
+			allowed = {
+			    original_tag = ENG
+				NOT = {
+					has_available_idea_with_traits = { idea = heavy_aircraft_manufacturer limit = 1 }
+				}
+			}
+			
+			cost = 150
+			removal_cost = 10
+			
+			research_bonus = {
+				air_equipment = 0.10
+			}
+			
+			traits = { heavy_aircraft_manufacturer }
+		}
+		
+		westland = {
+			
+			picture = generic_naval_manufacturer_2
+
+			allowed = {
+			    original_tag = ENG
+				NOT = {
+					has_available_idea_with_traits = { idea = naval_aircraft_manufacturer limit = 1 }
+				}
+			}
+			
+			cost = 150
+			removal_cost = 10
+			
+			research_bonus = {
+				air_equipment = 0.10
+			}
+			
+			traits = { naval_aircraft_manufacturer }
+		}
+	}
+
+	industrial_concern = {
+	
+		rio_tinto = {
+			
+			picture = generic_industrial_concern_1
+
+			allowed = {
+			    original_tag = ENG
+				NOT = {
+					has_available_idea_with_traits = { idea = industrial_concern limit = 1 }
+				}
+			}
+			
+			cost = 150
+			removal_cost = 10
+			
+			research_bonus = {
+				industry = 0.10
+			}
+			
+			traits = { industrial_concern }
+		}
+
+		marconi_electronic_systems = {
+			
+			picture = generic_electronics_concern_1
+
+			allowed = {
+			    original_tag = ENG
+				NOT = {
+					has_available_idea_with_traits = { idea = electronics_concern limit = 1 }
+				}
+			}
+			
+			cost = 150
+			removal_cost = 10
+			
+			research_bonus = {
+				electronics = 0.10
+			}
+			
+			traits = { electronics_concern }
+		}
+	}
+
+	materiel_manufacturer = {
+	
+		designer = yes
+	
+		land_rover = {
+			
+			picture = generic_motorized_equipment_manufacturer_3
+
+			allowed = {
+			    original_tag = ENG
+				NOT = {
+					has_available_idea_with_traits = { idea = motorized_equipment_manufacturer limit = 1 }
+				}
+			}
+			
+			cost = 150
+			removal_cost = 10
+			
+			research_bonus = {
+				motorized_equipment = 0.10
+			}
+			
+			traits = { motorized_equipment_manufacturer }
+		}
+		
+		royal_ordnance = {
+			
+			picture = generic_infantry_equipment_manufacturer_2
+
+			allowed = {
+			    original_tag = ENG
+				NOT = {
+					has_available_idea_with_traits = { idea = infantry_equipment_manufacturer limit = 1 }
+				}
+			}
+			
+			cost = 150
+			removal_cost = 10
+			
+			research_bonus = {
+				infantry_weapons = 0.10
+			}
+			
+			traits = { infantry_equipment_manufacturer }
+		}
+		
+		thales_air_defence = {
+			
+			picture = generic_artillery_manufacturer_2
+
+			allowed = {
+			    original_tag = ENG
+				NOT = {
+					has_available_idea_with_traits = { idea = artillery_manufacturer limit = 1 }
+				}
+			}
+			
+			cost = 150
+			removal_cost = 10
+			
+			research_bonus = {
+				artillery = 0.10
+			}
+			
+			traits = { artillery_manufacturer }
+		}
+	}
+	
+	second_in_command = {
+		britain_sic_nick_griffin = {
+		
+		    allowed = {
+			    original_tag = ENG
+			}
+			
+			available = {
+			    OR = {
+					has_government = fascist
+				} 
+			}
+			
+			traits = { flamboyant_tough_guy }			
+		}
+		
+		britain_sic_jayda_fransen = {
+		
+		    allowed = {
+			    original_tag = ENG
+			}
+			
+			available = {
+			    OR = {
+					has_government = fascist
+				} 
+			}
+			
+			traits = { power_hungry_demagogue }			
+		}
+		
+		britain_sic_adam_walker = {
+		
+		    allowed = {
+			    original_tag = ENG
+			}
+			
+			available = {
+			    OR = {
+					has_government = nationalist
+				} 
+			}
+			
+			traits = { flamboyant_tough_guy }			
+		}
+		
+		britain_sic_jacob_reesmogg = {
+		
+		    allowed = {
+			    original_tag = ENG
+			}
+			
+			available = {
+			    OR = {
+					has_government = monarchist
+				} 
+			}
+			
+			traits = { autocratic_charmer }			
+		}
+		
+		britain_sic_nigel_farage = {
+		
+		    allowed = {
+			    original_tag = ENG
+			}
+			
+			available = {
+			    OR = {
+					has_government = national_conservative
+				}
+				NOT = {
+					has_country_leader = {
+						name = "Nigel Farage"
+						ruling_only = yes
+					}
+				}
+			}
+			
+			traits = { power_hungry_demagogue }
+		}
+		
+		britain_sic_michael_gove = {
+		
+		    allowed = {
+			    original_tag = ENG
+			}
+			
+			available = {
+			    OR = {
+					has_government = national_conservative
+				} 
+			}
+			
+			traits = { silent_workhorse }			
+		}
+		
+		britain_sic_simon_hughes = {
+		
+		    allowed = {
+			    original_tag = ENG
+			}
+			
+			available = {
+			    OR = {
+					has_government = centrist
+				} 
+			}
+			
+			traits = { power_hungry_demagogue }			
+		}
+		
+		britain_sic_shirley_williams = {
+		
+		    allowed = {
+			    original_tag = ENG
+			}
+			
+			available = {
+			    OR = {
+					has_government = liberal
+				}
+				NOT = {
+					has_country_leader = {
+						name = "Shirley Williams"
+						ruling_only = yes
+					}
+				}
+				NOT = {
+					has_country_flag = britain_shirley_williams_retirement
+				}
+			}
+			
+			traits = { insignificant_layman }			
+		}
+		
+		britain_sic_gordon_brown = {
+		
+		    allowed = {
+			    original_tag = ENG
+			}
+			
+			available = {
+			    OR = {
+					has_government = liberal
+				} 
+			}
+			
+			traits = { silent_workhorse }			
+		}
+		
+		britain_sic_jo_cox = {
+		
+		    allowed = {
+			    original_tag = ENG
+			}
+			
+			available = {
+			    OR = {
+					has_government = new_democrat
+				}
+				NOT = {
+					has_country_leader = {
+						name = "Jo Cox"
+						ruling_only = yes
+					}
+				}
+			}
+			
+			traits = { naive_optimist }			
+		}
+		
+		britain_sic_angela_eagle = {
+		
+		    allowed = {
+			    original_tag = ENG
+			}
+			
+			available = {
+			    OR = {
+					has_government = new_democrat
+				} 
+			}
+			
+			traits = { naive_optimist }			
+		}
+		
+		britain_sic_ken_livingstone = {
+		
+		    allowed = {
+			    original_tag = ENG
+			}
+			
+			available = {
+			    OR = {
+					has_government = moderate_socialist
+					has_government = revolutionary_socialist
+				} 
+			}
+			
+			traits = { flamboyant_tough_guy }			
+		}
+		
+		britain_sic_len_mccluskey = {
+		
+		    allowed = {
+			    original_tag = ENG
+			}
+			
+			available = {
+			    OR = {
+					has_government = revolutionary_socialist
+				}
+				NOT = {
+					has_country_leader = {
+						name = "Len McCluskey"
+						ruling_only = yes
+					}
+				}
+			}
+			
+			traits = { ambitious_union_boss }			
+		}
+		
+		britain_sic_gail_cartmail = {
+		
+		    allowed = {
+			    original_tag = ENG
+			}
+			
+			available = {
+			    OR = {
+					has_government = revolutionary_socialist
+				}
+			}
+			
+			traits = { political_protege }			
+		}
+		
+		britain_sic_george_monboit = {
+		
+		    allowed = {
+			    original_tag = ENG
+			}
+			
+			available = {
+			    OR = {
+					has_government = revolutionary_socialist
+				}
+			}
+			
+			traits = { insignificant_layman }			
+		}
+		
+		britain_John_McDonnell = {
+		
+		    allowed = {
+			    original_tag = ENG
+			}
+			
+			available = {
+			    OR = {
+					has_government = communist
+				}
+			}
+			
+			traits = { ambitious_union_boss }			
+		}
+		
+		britain_Charles_Kennedy = {
+		
+		    allowed = {
+			    original_tag = ENG
+			}
+
+
+			available = {
+			    OR = {
+					has_government = communist
+				}
+			}
+			
+			traits = { power_hungry_demagogue }			
+		}
+		
+		britain_Boris_Johnson = {
+		
+		    allowed = {
+			    original_tag = ENG
+			}
+			
+			available = {
+			    OR = {
+					has_government = moderate_socialist
+					has_government = revolutionary_socialist
+					has_government = communist
+				}
+			}
+			
+			traits = { silent_workhorse }			
+		}
+		
+	}
+	
+	foreign_minister = {
+	
+		britain_fom_dominic_cummings = {
+		
+		    allowed = {
+			    original_tag = ENG
+			}
+			
+			available = {
+			    OR = {
+					has_government = fascist
+				} 
+			}
+			
+			traits = { international_schemer }			
+		}
+		
+		britain_fom_michael_mclaughlin = {
+		
+		    allowed = {
+			    original_tag = ENG
+			}
+			
+			available = {
+			    OR = {
+					has_government = fascist
+				} 
+			}
+			
+			traits = { international_schemer }			
+		}
+		
+		britain_fom_arthur_kemp = {
+		
+		    allowed = {
+			    original_tag = ENG
+			}
+			
+			available = {
+			    OR = {
+					has_government = nationalist
+				} 
+			}
+			
+			traits = { iron_fisted_brute }			
+		}
+		
+		britain_fom_nigel_farage = {
+		
+		    allowed = {
+			    original_tag = ENG
+			}
+			
+			available = {
+			    OR = {
+					has_government = monarchist
+				} 
+			}
+			
+			traits = { ideological_crusader }			
+		}
+		
+		britain_fom_damian_green = {
+		
+		    allowed = {
+			    original_tag = ENG
+			}
+			
+			available = {
+			    OR = {
+					has_government = national_conservative
+				} 
+			}
+			
+			traits = { apologetic_clerk }			
+		}
+		
+		britain_fom_jeremy_browne = {
+		
+		    allowed = {
+			    original_tag = ENG
+			}
+			
+			available = {
+			    OR = {
+					has_government = centrist
+				} 
+			}
+			
+			traits = { ideological_crusader }			
+		}
+		
+		britain_fom_mike_gapes = {
+		
+		    allowed = {
+			    original_tag = ENG
+			}
+			
+			available = {
+			    OR = {
+					has_government = liberal
+				} 
+			}
+			
+			traits = { apologetic_clerk }			
+		}
+		
+		britain_fom_keir_starmer = {
+		
+		    allowed = {
+			    original_tag = ENG
+			}
+			
+			available = {
+			    OR = {
+					has_government = new_democrat
+				} 
+			}
+			
+			traits = { great_compromiser }			
+		}
+		
+		britain_fom_margaret_beckett = {
+		
+		    allowed = {
+			    original_tag = ENG
+			}
+			
+			available = {
+			    OR = {
+					has_government = moderate_socialist
+				} 
+			}
+			
+			traits = { ideological_crusader }			
+		}
+		
+		britain_fom_lindsey_german = {
+		
+		    allowed = {
+			    original_tag = ENG
+			}
+			
+			available = {
+			    OR = {
+					has_government = revolutionary_socialist
+				}
+				NOT = {
+					has_country_leader = {
+						name = "Lindsey German"
+						ruling_only = yes
+					}
+				}
+			}
+			
+			traits = { apologetic_clerk }			
+		}
+		
+		britain_fom_martin_smith = {
+		
+		    allowed = {
+			    original_tag = ENG
+			}
+			
+			available = {
+			    OR = {
+					has_government = revolutionary_socialist
+				} 
+			}
+			
+			traits = { apologetic_clerk }			
+		}
+		
+		britain_fom_arshad_ali = {
+		
+		    allowed = {
+			    original_tag = ENG
+			}
+			
+			available = {
+			    OR = {
+					has_government = revolutionary_socialist
+				} 
+			}
+			
+			traits = { great_compromiser }			
+		}
+		
+		britain_Jeremy_Corbyn = {
+		
+		    allowed = {
+			    original_tag = ENG
+			}
+			
+			available = {
+			    OR = {
+					has_government = moderate_socialist
+					has_government = revolutionary_socialist
+					has_government = communist
+				} 
+			}
+			
+			traits = { ideological_crusader }			
+		}
+		
+		britain_fom_dermot_hudson = {
+		
+		    allowed = {
+			    original_tag = ENG
+			}
+			
+			available = {
+			    OR = {
+					has_government = communist
+				} 
+			}
+			
+			traits = { biased_intellectual }			
+		}
+	}
+	
+	industry_minister = {
+		
+		britain_ind_anthony_bamford = {
+		
+		    allowed = {
+			    original_tag = ENG
+			}
+			
+			available = {
+			    OR = {
+					has_government = fascist
+				} 
+			}
+			
+			traits = { corrupt_kleptocrat }			
+		}
+		
+		britain_ind_max_mosley = {
+		
+		    allowed = {
+			    original_tag = ENG
+			}
+			
+			available = {
+			    OR = {
+					has_government = fascist
+				} 
+			}
+			
+			traits = { resource_industrialist }			
+		}
+				
+		britain_ind_jim_dowson = {
+		
+		    allowed = {
+			    original_tag = ENG
+			}
+			
+			available = {
+			    OR = {
+					has_government = nationalist
+				} 
+			}
+			
+			traits = { corrupt_kleptocrat }			
+		}
+		
+		britain_ind_rupert_murdoch = {
+		
+		    allowed = {
+			    original_tag = ENG
+			}
+			
+			available = {
+			    OR = {
+					has_government = monarchist
+				} 
+			}
+			
+			traits = { libertarian_capitalist }			
+		}
+		
+		britain_ind_philip_hammond = {
+		
+		    allowed = {
+			    original_tag = ENG
+			}
+			
+			available = {
+			    OR = {
+					has_government = national_conservative
+				} 
+			}
+			
+			traits = { extreme_regulator }			
+		}
+		
+		britain_ind_david_laws = {
+		
+		    allowed = {
+			    original_tag = ENG
+			}
+			
+			available = {
+			    OR = {
+					has_government = centrist
+				} 
+			}
+			
+			traits = { libertarian_capitalist }			
+		}
+		
+		britain_ind_kenneth_clarke = {
+		
+		    allowed = {
+			    original_tag = ENG
+			}
+			
+			available = {
+			    OR = {
+					has_government = liberal
+				} 
+			}
+			
+			traits = { administrative_genius }			
+		}
+		
+		britain_ind_andy_burnham = {
+		
+		    allowed = {
+			    original_tag = ENG
+			}
+			
+			available = {
+			    OR = {
+					has_government = new_democrat
+				} 
+			}
+			
+			traits = { extreme_regulator }			
+		}
+		
+		britain_ind_john_mcdonnell = {
+		
+		    allowed = {
+			    original_tag = ENG
+			}
+			
+			available = {
+			    OR = {
+					has_government = moderate_socialist
+					has_government = revolutionary_socialist
+					has_government = communist
+				}
+				NOT = {
+					has_country_leader = {
+						name = "John McDonnell"
+						ruling_only = yes
+					}
+				}
+			}
+			
+			traits = { administrative_genius }			
+		}
+		
+		britain_ind_paul_cockshott = {
+		
+		    allowed = {
+			    original_tag = ENG
+			}
+			
+			available = {
+			    OR = {
+					has_government = revolutionary_socialist
+				} 
+			}
+			
+			traits = { former_scientist }			
+		}
+		
+		britain_Jacob_Rees_Mogg = {
+		
+		    allowed = {
+			    original_tag = ENG
+			}
+			
+			available = {
+			    OR = {
+					has_government = moderate_socialist
+					has_government = communist
+				} 
+			}
+			
+			traits = { resource_industrialist }			
+		}
+		
+		britain_ind_ella_rule = {
+		
+		    allowed = {
+			    original_tag = ENG
+			}
+			
+			available = {
+			    OR = {
+					has_government = moderate_socialist
+					has_government = revolutionary_socialist
+					has_government = communist
+				} 
+			}
+			
+			traits = { extreme_regulator }			
+		}
+	}
+	
+	national_security_minister = {
+	
+		britain_nsm_ben_wallace = {
+		
+		    allowed = {
+			    original_tag = ENG
+			}
+			
+			available = {
+			    OR = {
+					has_government = fascist
+				} 
+			}
+			
+			traits = { isolationist }			
+		}
+		
+		britain_nsm_mark_collett = {
+		
+		    allowed = {
+			    original_tag = ENG
+			}
+			
+			available = {
+			    OR = {
+					has_government = fascist
+				} 
+			}
+			
+			traits = { efficient_sociopath }			
+		}
+		
+		britain_nsm_tommy_robinson = {
+		
+		    allowed = {
+			    original_tag = ENG
+			}
+			
+			available = {
+			    OR = {
+					has_government = nationalist
+				} 
+			}
+			
+			traits = { prince_of_terror }			
+		}
+		
+		britain_nsm_princess_anne = {
+		
+		    allowed = {
+			    original_tag = ENG
+			}
+			
+			available = {
+			    OR = {
+					has_government = monarchist
+				} 
+			}
+			
+			traits = { compassionate_gentleman }			
+		}
+		
+		britain_nsm_amber_rudd = {
+		
+		    allowed = {
+			    original_tag = ENG
+			}
+			
+			available = {
+			    OR = {
+					has_government = national_conservative
+				} 
+			}
+			
+			traits = { silent_lawyer }			
+		}
+		
+		britain_nsm_nick_harvey = {
+		
+		    allowed = {
+			    original_tag = ENG
+			}
+			
+			available = {
+			    OR = {
+					has_government = centrist
+				} 
+			}
+			
+			traits = { compassionate_gentleman }			
+		}
+		
+		britain_nsm_chris_leslie = {
+		
+		    allowed = {
+			    original_tag = ENG
+			}
+			
+			available = {
+			    OR = {
+					has_government = liberal
+				} 
+			}
+			
+			traits = { compassionate_gentleman }			
+		}
+		
+		britain_nsm_peter_mandelson = {
+		
+		    allowed = {
+			    original_tag = ENG
+			}
+			
+			available = {
+			    OR = {
+					has_government = new_democrat
+				} 
+			}
+			
+			traits = { prince_of_terror }			
+		}
+		
+		britain_nsm_clive_lewis = {
+		
+		    allowed = {
+			    original_tag = ENG
+			}
+			
+			available = {
+			    OR = {
+					has_government = moderate_socialist
+				} 
+			}
+			
+			traits = { silent_lawyer }			
+		}
+		
+		britain_nsm_frank_sweeney = {
+		
+		    allowed = {
+			    original_tag = ENG
+			}
+			
+			available = {
+			    OR = {
+					has_government = revolutionary_socialist
+				} 
+			}
+			
+			traits = { compassionate_gentleman }			
+		}
+		
+		britain_nsm_victoria_brittain = {
+		
+		    allowed = {
+			    original_tag = ENG
+			}
+			
+			available = {
+			    OR = {
+					has_government = revolutionary_socialist
+				} 
+			}
+			
+			traits = { silent_lawyer }			
+		}
+		
+		britain_Owen_Paterson = {
+		
+		    allowed = {
+			    original_tag = ENG
+			}
+			
+			available = {
+			    OR = {
+					has_government = communist
+				} 
+			}
+			
+			traits = { efficient_sociopath }			
+		}
+		
+		britain_Piers_Corbyn = {
+		
+		    allowed = {
+			    original_tag = ENG
+			}
+			
+			available = {
+			    OR = {
+					has_government = moderate_socialist
+					has_government = revolutionary_socialist
+					has_government = communist
+				} 
+			}
+			
+			traits = { prince_of_terror }			
+		}
+	}
+	
+	intelligence_minister = {
+	
+		britain_inm_mikko_vehvilainen = {
+		
+		    allowed = {
+			    original_tag = ENG
+			}
+			
+			available = {
+			    OR = {
+					has_government = fascist
+				}
+			}
+			
+			traits = { novice_mastermind }			
+		}
+		
+		britain_inm_andrew_brons = {
+		
+		    allowed = {
+			    original_tag = ENG
+			}
+			
+			available = {
+			    OR = {
+					has_government = nationalist
+				}
+			}
+			
+			traits = { novice_mastermind }			
+		}
+		
+		britain_inm_john_sawers = {
+		
+		    allowed = {
+			    original_tag = ENG
+			}
+			
+			available = {
+			    OR = {
+					has_government = fascist
+					has_government = monarchist
+					has_government = national_conservative
+					has_government = centrist
+					has_government = liberal
+					has_government = new_democrat
+					has_government = moderate_socialist
+				}
+			}
+			
+			traits = { intelligence_director }			
+		}
+		
+		britain_inm_china_mieville = {
+		
+		    allowed = {
+			    original_tag = ENG
+			}
+			
+			available = {
+			    OR = {
+					has_government = revolutionary_socialist
+				}
+			}
+			
+			traits = { novice_mastermind }			
+		}
+		
+		britain_Jonathan_Ashworth = {
+		
+		    allowed = {
+			    original_tag = ENG
+			}
+			
+			available = {
+			    OR = {
+					has_government = moderate_socialist
+					has_government = revolutionary_socialist
+					has_government = communist
+				}
+			}
+			
+			traits = { politician_with_connections }			
+		}
+	}
+
+
+
+
 }

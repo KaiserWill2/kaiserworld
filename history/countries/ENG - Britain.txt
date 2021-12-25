@@ -18,6 +18,12 @@ add_ideas = {
 	idea_war_ready
 	idea_north_sea_oil
 	idea_the_failed_economy
+	britain_Charles_Kennedy
+	britain_Jacob_Rees_Mogg
+	britain_fom_dermot_hudson
+	britain_Owen_Paterson
+	britain_Jonathan_Ashworth
+	
 }
 
 set_research_slots = 4

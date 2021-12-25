@@ -1,3 +1,64 @@
+thirties = {
+
+	ENG_A_History_of_the_Second_Weltkrieg = {
+
+		icon = generic_scorched_earth
+
+		allowed = {
+			OR = {
+			    original_tag = ENG
+				original_tag = SCO
+				original_tag = WAL
+			}
+		}
+
+		available = {
+			always = yes
+		}
+	
+		cost = 0
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 0
+		}
+
+		complete_effect = {
+			country_event = { id = decision_event.6 }
+		}
+	}
+
+}
+
+forties = {
+
+	ENG_A_History_of_the_Second_Weltkrieg2 = {
+
+		icon = generic_scorched_earth
+
+		allowed = {
+			OR = {
+			    original_tag = ENG
+				original_tag = SCO
+				original_tag = WAL
+			}
+		}
+
+		available = {
+			always = yes
+		}
+	
+		cost = 0
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 0
+		}
+
+		complete_effect = {
+			country_event = { id = decision_event.7 }
+		}
+	}
+
+}
 
 fifties = {
 	

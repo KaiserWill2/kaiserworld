@@ -72,3 +72,31 @@ country_event = {
 		name = decision_event.5.o1
 	}
 }
+
+#stablise country
+country_event = {
+	id = decision_event.6
+	title = decision_event.6.t
+	desc = decision_event.6.d
+	picture = the_peoples_palace_decsion
+	
+	is_triggered_only = yes
+	
+	option = {   
+		name = decision_event.6.o1
+	}
+}
+
+#stablise country
+country_event = {
+	id = decision_event.7
+	title = decision_event.7.t
+	desc = decision_event.7.d
+	picture = the_peoples_palace_decsion
+	
+	is_triggered_only = yes
+	
+	option = {   
+		name = decision_event.7.o1
+	}
+}
