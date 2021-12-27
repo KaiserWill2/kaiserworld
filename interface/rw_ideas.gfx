@@ -160,6 +160,12 @@ spriteTypes = {
 
 	
 	###Unsorted
+	
+	spriteType = {
+		name = "GFX_idea_UN_Member_idea"
+		texturefile = "gfx/interface/ideas/UN_Member_idea.dds"
+	}
+
 	spriteType = {
 		name = "GFX_idea_idea_eu_member"
 		texturefile = "gfx/interface/ideas/eu_member.dds"

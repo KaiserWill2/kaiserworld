@@ -514,7 +514,7 @@ country_event = {
 	fire_only_once = yes
 	option = {
 		name = England.43.o1
-			declare_war_on = { target = WAL type = annex_everything }
+		#	declare_war_on = { target = WAL type = annex_everything }
 		
 	}
 }

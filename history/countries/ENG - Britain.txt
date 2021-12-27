@@ -2,7 +2,7 @@
 
 oob = "ENG_2000"
 
-load_focus_tree = british_new_england
+load_focus_tree = british_future_of_union
 
 
 if = {

@@ -1,6 +1,6 @@
 ﻿capital = 16
 
-oob = "FRA_2000"
+oob = "generic_2000"
 
 if = {
 	limit = { has_dlc = "Man the Guns" }
@@ -11,7 +11,7 @@ if = {
 }
 
 add_ideas = {
-    idea_eu_member
+    UN_Member_idea
 }
 
 set_research_slots = 4

@@ -1,0 +1,24 @@
+ideas = {
+
+		country = {
+			
+			UN_Member_idea= {
+				allowed = {
+					always = no
+				}
+				
+				removal_cost = -1
+	
+				picture = UN_Member_idea
+				
+				modifier = {
+				
+					political_power_gain = 0.3
+				
+							
+					
+				}
+			}
+		}		
+
+}

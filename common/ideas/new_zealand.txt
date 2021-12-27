@@ -1,26 +1,24 @@
 ideas = {
 
-    country = {
-
-		idea_admiral_winston = {
-			allowed = {
-				always = no
+		country = {
+			
+			UN_Member_idea= {
+				allowed = {
+					always = no
+				}
+				
+				removal_cost = -1
+	
+				picture = UN_Member_idea
+				
+				modifier = {
+				
+					political_power_gain = 0.3
+				
+							
+					
+				}
 			}
-
-			removal_cost = -1
-
-			modifier = {
-				stability_factor = -0.06
-				navy_max_range_factor = 0.25
-        experience_gain_navy_factor = 0.25
-
-
-
-
-			}
-		}
-	}
-
-
+		}		
 
 }

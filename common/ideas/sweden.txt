@@ -1,22 +1,24 @@
 ideas = {
 
-    country = {
-	    
-		idea_carl_xvi_gustaf = {
-			allowed = {
-				always = no
-			}
+		country = {
 			
-			removal_cost = -1
-			
-			modifier = {
-				stability_factor = 0.025
+			UN_Member_idea= {
+				allowed = {
+					always = no
+				}
 				
+				removal_cost = -1
+	
+				picture = UN_Member_idea
 				
+				modifier = {
+				
+					political_power_gain = 0.3
+				
+							
+					
+				}
 			}
-		}
-	}
-
-
+		}		
 
 }

@@ -12,12 +12,24 @@ arab_civil_war = {
     }
 }
 
+History_Of_The_War = {
+	icon = History_Of_The_War
+
+	allowed = {
+		always = yes
+	}
+
+}
+
 thirties{
+
 	icon = decision_category_thirties
 
 	allowed = {
 		always = yes
 	}
+
+
 }
 
 forties= {
