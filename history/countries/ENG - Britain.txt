@@ -2,7 +2,7 @@
 
 oob = "ENG_2000"
 
-load_focus_tree = british_future_of_union
+load_focus_Tree = british_Kennedy_Tree
 
 
 if = {
@@ -17,6 +17,7 @@ add_ideas = {
 	idea_memories_of_Michael_foot
 	idea_war_ready
 	idea_north_sea_oil
+	idea_New_Hadrians_Wall
 	idea_the_failed_economy
 	britain_Charles_Kennedy
 	britain_Jacob_Rees_Mogg

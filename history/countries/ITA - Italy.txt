@@ -11,11 +11,8 @@ if = {
 }
 
 add_ideas = {
-    idea_eu_member
-	idea_ita_mafia_issue
-	idea_ita_seamless_society
+    UN_Member_idea
 }
-
 set_research_slots = 4
 set_convoys = 500
 set_stability = 0.8

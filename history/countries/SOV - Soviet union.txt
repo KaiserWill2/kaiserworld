@@ -2,6 +2,10 @@
 
 oob = "SOV_2000"
 
+add_ideas = {
+    UN_Member_idea
+}
+
 if = {
 	limit = { has_dlc = "Man the Guns" }
 		set_naval_oob = "SOV_2000_naval_mtg"

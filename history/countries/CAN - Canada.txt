@@ -19,13 +19,8 @@ set_country_flag = was_in_british_empire
 set_country_flag = catholic_nation
 
 add_ideas = {
-    canada_sic_stephen_harper
-	canada_fom_robert_nicholson
-	canada_ind_bernard_valcourt
-	canada_nsm_christopher_alexander
-	canada_inm_david_vigneault
+    UN_Member_idea
 }
-
 
 set_technology = {
 	early_submarine = 1

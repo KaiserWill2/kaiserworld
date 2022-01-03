@@ -1469,6 +1469,8 @@ idea_usa_legacy_of_second_acw:0 "Legacy of the Second American Civil War"
 idea_usa_legacy_of_second_acw_desc:0 "scary time, don't repeat it, placeholder"
 
 ##UK##
+idea_New_Hadrians_Wall:0 "The New Hadrians Wall"
+idea_New_Hadrians_Wall_desc:0 "Hadrian’s Wall was built by the Romans to stop the Scottish barbarians from attacking England and did a good job until the Romans left and the wall collapsed. It was left in ruins until Scotland became an independent state and the U.S.B.R threatened to take the state back, since then the wall was rebuilt as a temporary second border in case the real Scottish border was taken. The border is heavily defended with many guard towers and high powered weaponry ready to fire at the Scots if they try to take England."
 idea_memories_of_Michael_foot:0 "Memories Of Michael Foot"
 idea_memories_of_Michael_foot_desc:0 "Michael foot was voted into power by the Totalist congress. Foot ruled England with an iron fist but was also respected by the people as he came across compassionate by helping the poor into housing and funding into education and social services around the England, he also modernised the union army and began research into nuclear weapons. He ruled from 10th dec 1980 after Mosley’s death in 9th dec 1980. Foot was leader until 1995 where he suffered from a stroke and passed away."
 idea_war_ready:0 "The Army Stands Ready"
@@ -1536,4 +1538,4 @@ expanding_the_camps_desc:0 ""
 
 #OTHER#
 UN_Member_idea:0 "UN Member"
-UN_Member_idea:0 "The United Nations is an organization aiming to maintain international peace and security, develop friendly relations among nations. Although not as strong and powerful compared to our timeline, the UN can still unite nations together in times of instability and order sanctions against nations who may pose a threat to the world."
+UN_Member_idea_desc:0 "The United Nations is an organization aiming to maintain international peace and security, develop friendly relations among nations. Although not as strong and powerful compared to our timeline, the UN can still unite nations together in times of instability and order sanctions against nations who may pose a threat to the world."

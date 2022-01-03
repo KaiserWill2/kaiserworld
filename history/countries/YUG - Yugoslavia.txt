@@ -2,6 +2,10 @@
 
 oob = "YUG_2000"
 
+add_ideas = {
+    UN_Member_idea
+}
+
 set_research_slots = 4
 set_convoys = 500
 set_stability = 0.4

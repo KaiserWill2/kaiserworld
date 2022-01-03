@@ -3,6 +3,10 @@
 oob = "POL_2000"
 
 add_ideas = {
+    UN_Member_idea
+}
+
+add_ideas = {
     idea_pol_king_alexander
     idea_pol_german_influence
     idea_pol_watch_bug

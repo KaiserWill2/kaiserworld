@@ -82,7 +82,25 @@ ideas = {
 	}	
 
 	
+	country = {
+			
+		idea_New_Hadrians_Wall = {
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
 
+			picture = hadrians_wall_idea
+			
+			modifier = {
+				army_defence_factor = 0.2
+				dig_in_speed_factor = 0.2
+				planning_speed = 0.2
+				
+			}
+		}
+	}	
 
 
 

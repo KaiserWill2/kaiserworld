@@ -3,7 +3,7 @@
 oob = "LUX_2000"
 
 add_ideas = {
-    idea_eu_member
+    UN_Member_idea
 }
 
 set_country_flag = catholic_nation

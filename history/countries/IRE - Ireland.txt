@@ -3,7 +3,7 @@
 oob = "IRE_2000"
 
 add_ideas = {
-    idea_bastion_of_european_democracy
+    UN_Member_idea
 }
 
 set_research_slots = 4

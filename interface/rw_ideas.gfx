@@ -99,7 +99,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/ENG/the_failed_economy.dds"
 	}
 
-
+	spriteType = {
+		name = "GFX_idea_hadrians_wall_idea"
+		texturefile = "gfx/interface/ideas/ENG/hadrians_wall_idea.dds"
+	}
 
 	#England Advisor
 

@@ -23,7 +23,10 @@ add_ideas = {
 	usa_cornel_west
 	usa_andrew_bacevich
 	usa_barbara_lee
+ UN_Member_idea
 }
+
+
 
 set_research_slots = 4
 set_convoys = 500

@@ -1,5 +1,5 @@
-focus_tree = {
-	id = Ireland_Focus_Tree
+#focus_tree = {
+	#id = Ireland_Focus_Tree
 	country = {
 		factor = 0
 		modifier = {

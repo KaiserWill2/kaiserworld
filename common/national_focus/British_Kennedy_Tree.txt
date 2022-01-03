@@ -1,0 +1,2323 @@
+focus_tree = {
+	id = british_Kennedy_Tree
+	country = {
+		factor = 0
+	}
+
+	continuous_focus_position = { x = 50 y = 3500 }
+	default = no
+
+	focus = {
+		id = ENG_A_Night_To_Remember
+		icon = a_new_england_icon
+		x = 10
+		y = 0
+		cost = 5
+	
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		completion_reward = {
+
+		}
+	
+	}
+	focus = {
+		id = ENG_Destory_The_Blairism
+		icon = wales_is_finally_back_icon
+		x = 5
+		y = 1
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus =  ENG_A_Night_To_Remember  }
+		completion_reward = {
+
+		}
+	
+	}
+
+	focus = {
+		id = ENG_Kennedy_The_Real_Leader
+		icon = wales_is_finally_back_icon
+		x = 3
+		y = 2
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus =  ENG_Destory_The_Blairism  }
+		completion_reward = {
+
+		}
+	
+	}
+
+	focus = {
+		id = ENG_Destroy_The_Peoples_Palace
+		icon = wales_is_finally_back_icon
+		x = 4
+		y = 3
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus =  ENG_Kennedy_The_Real_Leader  }
+		completion_reward = {
+
+		}
+	
+	}
+
+	focus = {
+		id = ENG_Kill_The_Blair_Fandom
+		icon = wales_is_finally_back_icon
+		x = 7
+		y = 2
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus =  ENG_Destory_The_Blairism  }
+		completion_reward = {
+
+		}
+	
+	}
+
+	focus = {
+		id = ENG_A_New_Kennedy_Square
+		icon = wales_is_finally_back_icon
+		x = 6
+		y = 3
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus =  ENG_Kill_The_Blair_Fandom  }
+		completion_reward = {
+
+		}
+	
+	}
+
+	focus = {
+		id = ENG_Kennedy_Will_Lead_Us
+		icon = wales_is_finally_back_icon
+		x = 5
+		y = 4
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus =  ENG_A_New_Kennedy_Square  }
+		prerequisite = { focus =  ENG_Destroy_The_Peoples_Palace  }
+
+		completion_reward = {
+
+		}
+	
+	}
+
+
+	focus = {
+		id = ENG_Time_To_Get_To_Work
+		icon = wales_is_finally_back_icon
+		x = 15
+		y = 1
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus =  ENG_A_Night_To_Remember  }
+		completion_reward = {
+
+		}
+	
+	}
+
+	focus = {
+		id = ENG_Another_Go_At_The_Dragon
+		icon = wales_is_finally_back_icon
+		x = 13
+		y = 2
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus =  ENG_Time_To_Get_To_Work  }
+		completion_reward = {
+
+		}
+	
+	}
+
+	focus = {
+		id = ENG_Order_The_Attack
+		icon = wales_is_finally_back_icon
+		x = 14
+		y = 3
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus =  ENG_Another_Go_At_The_Dragon  }
+		completion_reward = {
+
+		}
+	
+	}
+
+	focus = {
+		id = ENG_The_People_Must_Learn
+		icon = wales_is_finally_back_icon
+		x = 17
+		y = 2
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus =  ENG_Time_To_Get_To_Work  }
+		completion_reward = {
+
+		}
+	
+	}
+
+	focus = {
+		id = ENG_No_Second_Chances
+		icon = wales_is_finally_back_icon
+		x = 16
+		y = 3
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus =  ENG_The_People_Must_Learn  }
+		completion_reward = {
+
+		}
+	
+	}
+
+	focus = {
+		id = ENG_Wales_Has_Been_Taken
+		icon = wales_is_finally_back_icon
+		x = 15
+		y = 4
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus =  ENG_No_Second_Chances  }
+		prerequisite = { focus =  ENG_Order_The_Attack  }
+
+		completion_reward = {
+
+		}
+	
+	}
+
+
+	focus = {
+		id = ENG_Slit_The_Welsh_Throats
+		icon = a_new_england_icon
+		x = 10
+		y = 6
+		cost = 5
+	
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		completion_reward = {
+
+		}
+	
+	}
+
+	focus = {
+		id = ENG_Order_Mass_Arrests
+		icon = wales_is_finally_back_icon
+		x = 8
+		y = 7
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus =  ENG_Slit_The_Welsh_Throats  }
+		completion_reward = {
+
+		}
+	
+	}
+
+	focus = {
+		id = ENG_Hunt_For_Gethin_Gruffydd
+		icon = wales_is_finally_back_icon
+		x = 8
+		y = 8
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus =  ENG_Order_Mass_Arrests  }
+		completion_reward = {
+
+		}
+	
+	}
+
+	focus = {
+		id = ENG_Appoint_Michael_As_Leader_Of_Puppet_State
+		icon = wales_is_finally_back_icon
+		x = 8
+		y = 9
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus =  ENG_Hunt_For_Gethin_Gruffydd  }
+		completion_reward = {
+
+		}
+	
+	}
+
+	focus = {
+		id = ENG_Take_The_Food
+		icon = wales_is_finally_back_icon
+		x = 10
+		y = 7
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus =  ENG_Slit_The_Welsh_Throats  }
+		completion_reward = {
+
+		}
+	
+	}
+
+	focus = {
+		id = ENG_Starve_The_Non_Pure
+		icon = wales_is_finally_back_icon
+		x = 10
+		y = 8
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus =  ENG_Take_The_Food  }
+		completion_reward = {
+
+		}
+	
+	}
+
+	focus = {
+		id = ENG_Let_Our_People_Grow_Strong
+		icon = wales_is_finally_back_icon
+		x = 10
+		y = 9
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus =  ENG_Starve_The_Non_Pure  }
+		completion_reward = {
+
+		}
+	
+	}
+
+	focus = {
+		id = ENG_Destroy_The_Cities
+		icon = wales_is_finally_back_icon
+		x = 12
+		y = 7
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus =  ENG_Slit_The_Welsh_Throats  }
+		completion_reward = {
+
+		}
+	
+	}
+
+	focus = {
+		id = ENG_No_More_Welsh_Icons
+		icon = wales_is_finally_back_icon
+		x = 12
+		y = 8
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus =  ENG_Destroy_The_Cities  }
+		completion_reward = {
+
+		}
+	
+	}
+
+	focus = {
+		id = ENG_Send_The_Welsh_To_The_Work_Camps
+		icon = wales_is_finally_back_icon
+		x = 12
+		y = 9
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus =  ENG_No_More_Welsh_Icons  }
+		completion_reward = {
+
+		}
+	
+	}
+
+
+	focus = {
+		id = ENG_A_Bigger_State
+		icon = wales_is_finally_back_icon
+		x = 10
+		y = 10
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus =  ENG_Appoint_Michael_As_Leader_Of_Puppet_State  }
+		prerequisite = { focus =  ENG_Let_Our_People_Grow_Strong  }
+		prerequisite = { focus =  ENG_Send_The_Welsh_To_The_Work_Camps  }
+		completion_reward = {
+
+		}
+	
+	}
+
+	focus = {
+		id = ENG_The_Past_Leaders_Couldnt_Do_What_I_Did
+		icon = wales_is_finally_back_icon
+		x = 10
+		y = 11
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus =  ENG_A_Bigger_State  }
+		completion_reward = {
+
+		}
+	
+	}
+
+	focus = {
+		id = ENG_Prepare_For_Scottish_Exetermination
+		icon = wales_is_finally_back_icon
+		x = 6
+		y = 12
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus =  ENG_The_Past_Leaders_Couldnt_Do_What_I_Did  }
+		completion_reward = {
+
+		}
+	
+	}
+
+	focus = {
+		id = ENG_Train_For_Highland_Warfare
+		icon = wales_is_finally_back_icon
+		x = 5
+		y = 13
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus =  ENG_Prepare_For_Scottish_Exetermination  }
+		completion_reward = {
+
+		}
+	
+	}
+
+	focus = {
+		id = ENG_Prepare_To_Defund_The_Union
+		icon = wales_is_finally_back_icon
+		x = 5
+		y = 14
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus =  ENG_Train_For_Highland_Warfare  }
+		completion_reward = {
+
+		}
+	
+	}
+
+	focus = {
+		id = ENG_A_Easier_Plan_For_Scotland
+		icon = wales_is_finally_back_icon
+		x = 5
+		y = 15
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus =  ENG_Prepare_To_Defund_The_Union  }
+		completion_reward = {
+
+		}
+	
+	}
+
+
+	focus = {
+		id = ENG_A_Message_To_The_King
+		icon = wales_is_finally_back_icon
+		x = 7
+		y = 13
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus =  ENG_Prepare_For_Scottish_Exetermination  }
+		completion_reward = {
+
+		}
+	
+	}
+
+	focus = {
+		id = ENG_A_Refusal_Will_Cost_You_Dearly
+		icon = wales_is_finally_back_icon
+		x = 7
+		y = 14
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus =  ENG_A_Message_To_The_King  }
+		completion_reward = {
+
+		}
+	
+	}
+
+	focus = {
+		id = ENG_Kidnap_The_Kings_Daughter
+		icon = wales_is_finally_back_icon
+		x = 7
+		y = 15
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus =  ENG_A_Refusal_Will_Cost_You_Dearly  }
+		completion_reward = {
+
+		}
+	
+	}
+
+	focus = {
+		id = ENG_Killing_His_Blodline
+		icon = wales_is_finally_back_icon
+		x = 6
+		y = 16
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus =  ENG_A_Easier_Plan_For_Scotland  }
+		prerequisite = { focus =  ENG_Kidnap_The_Kings_Daughter  }
+		completion_reward = {
+
+		}
+	
+	}
+	
+	focus = {
+		id = ENG_Wait_For_The_Scottish_Reaction
+		icon = wales_is_finally_back_icon
+		x = 6
+		y = 17
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus =  ENG_Killing_His_Blodline  }
+		completion_reward = {
+
+		}
+	
+	}
+
+	focus = {
+		id = ENG_A_New_Union_To_Rule
+		icon = wales_is_finally_back_icon
+		x = 10
+		y = 12
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus =  ENG_The_Past_Leaders_Couldnt_Do_What_I_Did  }
+		completion_reward = {
+
+		}
+	
+	}
+
+
+	focus = {
+		id = ENG_Harvest_Welsh_Resources
+		icon = wales_is_finally_back_icon
+		x = 9
+		y = 13
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus =  ENG_A_New_Union_To_Rule  }
+		completion_reward = {
+
+		}
+	
+	}
+
+	focus = {
+		id = ENG_Feed_The_Elite
+		icon = wales_is_finally_back_icon
+		x = 9
+		y = 14
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus =  ENG_Harvest_Welsh_Resources  }
+		completion_reward = {
+
+		}
+	
+	}
+
+	focus = {
+		id = ENG_Grow_The_Kennedy_Fandom
+		icon = wales_is_finally_back_icon
+		x = 9
+		y = 15
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus =  ENG_Feed_The_Elite  }
+		completion_reward = {
+
+		}
+	
+	}
+
+	focus = {
+		id = ENG_A_New_3_Year_Plan
+		icon = wales_is_finally_back_icon
+		x = 11
+		y = 13
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus =  ENG_A_New_Union_To_Rule  }
+		completion_reward = {
+
+		}
+	
+	}
+
+	focus = {
+		id = ENG_Restrict_The_Peoples_Freedom
+		icon = wales_is_finally_back_icon
+		x = 11
+		y = 14
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus =  ENG_A_New_3_Year_Plan  }
+		completion_reward = {
+
+		}
+	
+	}
+
+	focus = {
+		id = ENG_Ban_Social_Gatherings
+		icon = wales_is_finally_back_icon
+		x = 11
+		y = 15
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus =  ENG_Restrict_The_Peoples_Freedom  }
+		completion_reward = {
+
+		}
+	
+	}
+
+	focus = {
+		id = ENG_The_Iron_Fist_Strikes_Harder
+		icon = wales_is_finally_back_icon
+		x = 10
+		y = 16
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus =  ENG_Ban_Social_Gatherings  }
+		prerequisite = { focus =  ENG_Grow_The_Kennedy_Fandom  }
+		completion_reward = {
+
+		}
+	
+	}
+
+	focus = {
+		id = ENG_Rebuild_The_Army
+		icon = wales_is_finally_back_icon
+		x = 14
+		y = 12
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus =  ENG_The_Past_Leaders_Couldnt_Do_What_I_Did  }
+		completion_reward = {
+
+		}
+	
+	}
+
+	focus = {
+		id = ENG_Invest_In_More_Military_Production
+		icon = wales_is_finally_back_icon
+		x = 13
+		y = 13
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus =  ENG_Rebuild_The_Army  }
+		completion_reward = {
+
+		}
+	
+	}
+
+	focus = {
+		id = ENG_New_Generals_For_The_Army
+		icon = wales_is_finally_back_icon
+		x = 13
+		y = 14
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus =  ENG_Invest_In_More_Military_Production  }
+		completion_reward = {
+
+		}
+	
+	}
+
+	focus = {
+		id = ENG_Invest_In_New_Military_Research
+		icon = wales_is_finally_back_icon
+		x = 13
+		y = 15
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus =  ENG_New_Generals_For_The_Army  }
+		completion_reward = {
+
+		}
+	
+	}
+
+	focus = {
+		id = ENG_Create_Military_Schools
+		icon = wales_is_finally_back_icon
+		x = 15
+		y = 13
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus =  ENG_Rebuild_The_Army  }
+		completion_reward = {
+
+		}
+	
+	}
+
+	focus = {
+		id = ENG_Be_A_Hero_Fight_For_Your_Union
+		icon = wales_is_finally_back_icon
+		x = 15
+		y = 14
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus =  ENG_Create_Military_Schools  }
+		completion_reward = {
+
+		}
+	
+	}
+
+	focus = {
+		id = ENG_Create_The_Peoples_Defence_Academy
+		icon = wales_is_finally_back_icon
+		x = 15
+		y = 15
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus =  ENG_Be_A_Hero_Fight_For_Your_Union  }
+		completion_reward = {
+
+		}
+	
+	}
+
+	focus = {
+		id = ENG_A_Stronger_Well_Built_Army
+		icon = wales_is_finally_back_icon
+		x = 14
+		y = 16
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus =  ENG_Create_The_Peoples_Defence_Academy  }
+		prerequisite = { focus =  ENG_Invest_In_New_Military_Research  }
+		completion_reward = {
+
+		}
+	
+	}
+
+
+	focus = {
+		id = ENG_The_Irish_Suprise
+		icon = a_new_england_icon
+		x = 30
+		y = 0
+		cost = 5
+	
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		completion_reward = {
+
+		}
+	
+	}
+
+	focus = {
+		id = ENG_Order_The_Soldiers_To_Split_Up
+		icon = wales_is_finally_back_icon
+		x = 28
+		y = 1
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus =  ENG_The_Irish_Suprise  }
+		completion_reward = {
+
+		}
+	
+	}
+
+	focus = {
+		id = ENG_Defend_The_State_Of_Wales
+		icon = wales_is_finally_back_icon
+		x = 30
+		y = 1
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus =  ENG_The_Irish_Suprise  }
+		completion_reward = {
+
+		}
+	
+	}
+
+	focus = {
+		id = ENG_Retreat_From_St_Davids
+		icon = wales_is_finally_back_icon
+		x = 29
+		y = 2
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus =  ENG_Order_The_Soldiers_To_Split_Up  }
+		prerequisite = { focus =  ENG_Defend_The_State_Of_Wales  }
+		completion_reward = {
+
+		}
+	
+	}
+
+	focus = {
+		id = ENG_The_Battle_Of_Swansea
+		icon = wales_is_finally_back_icon
+		x = 29
+		y = 3
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus =  ENG_Retreat_From_St_Davids  }
+		completion_reward = {
+
+		}
+	
+	}
+
+	focus = {
+		id = ENG_Execute_Welsh_Prisoners
+		icon = wales_is_finally_back_icon
+		x = 28
+		y = 4
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus =  ENG_The_Battle_Of_Swansea  }
+		completion_reward = {
+
+		}
+	
+	}
+
+	focus = {
+		id = ENG_Prepare_A_Nuclear_Strike_On_Ireland
+		icon = wales_is_finally_back_icon
+		x = 30
+		y = 4
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus =  ENG_The_Battle_Of_Swansea  }
+		completion_reward = {
+
+		}
+	
+	}
+
+	focus = {
+		id = ENG_Germany_Says_No
+		icon = wales_is_finally_back_icon
+		x = 29
+		y = 5
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus =  ENG_Execute_Welsh_Prisoners  }
+		prerequisite = { focus =  ENG_Prepare_A_Nuclear_Strike_On_Ireland  }
+		completion_reward = {
+
+		}
+	
+	}
+
+	focus = {
+		id = ENG_UN_Debates_Intervention
+		icon = wales_is_finally_back_icon
+		x = 29
+		y = 6
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		available = {
+			has_completed_focus = ENG_A_Stale_War
+		}
+		prerequisite = { focus =  ENG_Germany_Says_No  }
+		completion_reward = {
+
+		}
+	
+	}
+
+
+
+	focus = {
+		id = ENG_Order_The_Attack_On_Scotland
+		icon = wales_is_finally_back_icon
+		x = 33
+		y = 1
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus =  ENG_The_Irish_Suprise  }
+		completion_reward = {
+
+		}
+	
+	}
+
+	focus = {
+		id = ENG_Order_Attacks_From_The_Sky
+		icon = wales_is_finally_back_icon
+		x = 33
+		y = 2
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus =  ENG_Order_The_Attack_On_Scotland  }
+		completion_reward = {
+
+		}
+	
+	}
+
+	focus = {
+		id = ENG_Defend_The_Borders_Of_Berwick
+		icon = wales_is_finally_back_icon
+		x = 33
+		y = 3
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus =  ENG_Order_Attacks_From_The_Sky  }
+		completion_reward = {
+
+		}
+	
+	}
+
+	focus = {
+		id = ENG_A_Stale_War
+		icon = wales_is_finally_back_icon
+		x = 33
+		y = 4
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus =  ENG_Defend_The_Borders_Of_Berwick  }
+		completion_reward = {
+
+		}
+	
+	}
+
+	focus = {
+		id = ENG_Enough_Is_Enough
+		icon = wales_is_finally_back_icon
+		x = 26
+		y = 7
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		mutually_exclusive = {
+			focus = ENG_Not_Today_But_Sanctions_Will_Work
+		}
+		prerequisite = { focus =  ENG_UN_Debates_Intervention  }
+		completion_reward = {
+
+		}
+	
+	}
+
+	focus = {
+		id = ENG_UN_Invades_Channel
+		icon = wales_is_finally_back_icon
+		x = 24
+		y = 8
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus =  ENG_Enough_Is_Enough  }
+		completion_reward = {
+
+		}
+	
+	}
+
+	focus = {
+		id = ENG_Pull_Out_Of_Wales
+		icon = wales_is_finally_back_icon
+		x = 28
+		y = 8
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus =  ENG_Enough_Is_Enough  }
+		completion_reward = {
+
+		}
+	
+	}
+
+	focus = {
+		id = ENG_Order_The_Protection_Of_London
+		icon = wales_is_finally_back_icon
+		x = 26
+		y = 9
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus =  ENG_UN_Invades_Channel  }
+		prerequisite = { focus =  ENG_Pull_Out_Of_Wales  }
+		completion_reward = {
+
+		}
+	
+	}
+
+
+	focus = {
+		id = ENG_Not_Today_But_Sanctions_Will_Work
+		icon = wales_is_finally_back_icon
+		x = 33
+		y = 7
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		mutually_exclusive = {
+			focus = ENG_Enough_Is_Enough
+		}
+		prerequisite = { focus =  ENG_UN_Debates_Intervention  }
+		completion_reward = {
+
+		}
+	
+	}
+
+
+	focus = {
+		id = ENG_Defending_The_Welsh_Border
+		icon = wales_is_finally_back_icon
+		x = 32
+		y = 8
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus =  ENG_Not_Today_But_Sanctions_Will_Work  }
+		completion_reward = {
+
+		}
+	
+	}
+
+	focus = {
+		id = ENG_Advance_Into_Scotland
+		icon = wales_is_finally_back_icon
+		x = 34
+		y = 8
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus =  ENG_Not_Today_But_Sanctions_Will_Work  }
+		completion_reward = {
+
+		}
+	
+	}
+
+	focus = {
+		id = ENG_Push_Back_The_Bastards
+		icon = wales_is_finally_back_icon
+		x = 33
+		y = 9
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus =  ENG_Defending_The_Welsh_Border  }
+		prerequisite = { focus =  ENG_Advance_Into_Scotland  }
+		completion_reward = {
+
+		}
+	
+	}
+
+	focus = {
+		id = ENG_Push_Onwards
+		icon = wales_is_finally_back_icon
+		x = 30
+		y = 10
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		mutually_exclusive = {
+			focus = ENG_Abandon_The_Border
+		}
+		prerequisite = { focus =  ENG_Push_Back_The_Bastards  }
+		completion_reward = {
+
+		}
+	
+	}
+
+	focus = {
+		id = ENG_Taking_Edinburgh
+		icon = wales_is_finally_back_icon
+		x = 29
+		y = 11
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus =  ENG_Push_Onwards  }
+		completion_reward = {
+
+		}
+	
+	}
+
+	focus = {
+		id = ENG_The_New_WMD_On_Irish
+		icon = wales_is_finally_back_icon
+		x = 31
+		y = 11
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus =  ENG_Push_Onwards  }
+		completion_reward = {
+
+		}
+	
+	}
+
+	focus = {
+		id = ENG_A_Turning_Point
+		icon = wales_is_finally_back_icon
+		x = 30
+		y = 12
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus =  ENG_Taking_Edinburgh  }
+		prerequisite = { focus =  ENG_The_New_WMD_On_Irish  }
+
+		completion_reward = {
+
+		}
+	
+	}
+
+	focus = {
+		id = ENG_Edinburgh_Is_Ours
+		icon = wales_is_finally_back_icon
+		x = 30
+		y = 13
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ENG_A_Turning_Point }
+
+		completion_reward = {
+
+		}
+	
+	}
+
+	focus = {
+		id = ENG_Capture_The_Rest_Of_Scotland
+		icon = wales_is_finally_back_icon
+		x = 29
+		y = 14
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ENG_Edinburgh_Is_Ours }
+
+		completion_reward = {
+
+		}
+	
+	}
+
+	focus = {
+		id = ENG_Destroy_The_Wallace_Monument
+		icon = wales_is_finally_back_icon
+		x = 31
+		y = 14
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ENG_Edinburgh_Is_Ours }
+
+		completion_reward = {
+
+		}
+	
+	}
+
+	focus = {
+		id = ENG_Taking_The_Highlands
+		icon = wales_is_finally_back_icon
+		x = 30
+		y = 15
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ENG_Destroy_The_Wallace_Monument }
+		prerequisite = { focus = ENG_Capture_The_Rest_Of_Scotland }
+
+		completion_reward = {
+
+		}
+	
+	}
+
+	focus = {
+		id = ENG_The_Scottish_Throne_Is_Ours
+		icon = wales_is_finally_back_icon
+		x = 30
+		y = 16
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ENG_Taking_The_Highlands }
+
+		completion_reward = {
+
+		}
+	
+	}
+
+
+	focus = {
+		id = ENG_Execute_Scottish_Targets
+		icon = wales_is_finally_back_icon
+		x = 29
+		y = 17
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ENG_The_Scottish_Throne_Is_Ours }
+
+		completion_reward = {
+
+		}
+	
+	}
+
+	focus = {
+		id = ENG_End_The_Scottish_Identity
+		icon = wales_is_finally_back_icon
+		x = 31
+		y = 17
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ENG_The_Scottish_Throne_Is_Ours }
+
+		completion_reward = {
+
+		}
+	
+	}
+
+	focus = {
+		id = ENG_Scotland_No_More
+		icon = wales_is_finally_back_icon
+		x = 30
+		y = 18
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ENG_Execute_Scottish_Targets }
+		prerequisite = { focus = ENG_End_The_Scottish_Identity }
+		completion_reward = {
+
+		}
+	
+	}
+
+
+
+
+
+
+
+	focus = {
+		id = ENG_Taking_Back_The_Welsh_Cities
+		icon = wales_is_finally_back_icon
+		x = 26
+		y = 13
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ENG_A_Turning_Point }
+
+		completion_reward = {
+
+		}
+	
+	}
+
+	focus = {
+		id = ENG_Cardiff_In_Kennedys_Hands
+		icon = wales_is_finally_back_icon
+		x = 25
+		y = 14
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ENG_Taking_Back_The_Welsh_Cities }
+
+		completion_reward = {
+
+		}
+	
+	}
+
+	focus = {
+		id = ENG_Taking_Newtown
+		icon = wales_is_finally_back_icon
+		x = 25
+		y = 15
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ENG_Cardiff_In_Kennedys_Hands }
+
+		completion_reward = {
+
+		}
+	
+	}
+
+	focus = {
+		id = ENG_Swansea_For_Our_Navy
+		icon = wales_is_finally_back_icon
+		x = 27
+		y = 14
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ENG_Taking_Back_The_Welsh_Cities }
+
+		completion_reward = {
+
+		}
+	
+	}
+
+	focus = {
+		id = ENG_Destroy_St_Davids
+		icon = wales_is_finally_back_icon
+		x = 27
+		y = 15
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ENG_Swansea_For_Our_Navy }
+
+		completion_reward = {
+
+		}
+	
+	}
+
+	focus = {
+		id = ENG_Prepare_For_The_Welsh_Surrender
+		icon = wales_is_finally_back_icon
+		x = 26
+		y = 16
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ENG_Taking_Newtown }
+		prerequisite = { focus = ENG_Destroy_St_Davids }
+		completion_reward = {
+
+		}
+	
+	}
+
+	
+	focus = {
+		id = ENG_Prepare_For_The_Irish_Invasion
+		icon = wales_is_finally_back_icon
+		x = 25
+		y = 17
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ENG_Prepare_For_The_Welsh_Surrender }
+		completion_reward = {
+
+		}
+	
+	}
+
+	focus = {
+		id = ENG_Threaten_The_Irish_For_Involvement
+		icon = wales_is_finally_back_icon
+		x = 25
+		y = 18
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ENG_Prepare_For_The_Irish_Invasion }
+		completion_reward = {
+
+		}
+	
+	}
+
+	focus = {
+		id = ENG_We_Want_Reparations
+		icon = wales_is_finally_back_icon
+		x = 25
+		y = 19
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ENG_Threaten_The_Irish_For_Involvement }
+		completion_reward = {
+
+		}
+	
+	}
+
+	focus = {
+		id = ENG_Guard_Northern_Ireland
+		icon = wales_is_finally_back_icon
+		x = 24
+		y = 20
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		mutually_exclusive = {
+			focus = ENG_Leave_The_State
+		}
+		prerequisite = { focus = ENG_We_Want_Reparations }
+		completion_reward = {
+
+		}
+	
+	}
+
+	focus = {
+		id = ENG_Leave_The_State
+		icon = wales_is_finally_back_icon
+		x = 26
+		y = 20
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		mutually_exclusive = {
+			focus = ENG_Guard_Northern_Ireland
+		}
+		prerequisite = { focus = ENG_We_Want_Reparations }
+		completion_reward = {
+
+		}
+	
+	}
+
+
+	focus = {
+		id = ENG_Sit_Down_With_Ireland
+		icon = wales_is_finally_back_icon
+		x = 27
+		y = 17
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ENG_Prepare_For_The_Welsh_Surrender }
+		completion_reward = {
+
+		}
+	
+	}
+
+	focus = {
+		id = ENG_We_Take_Wales_You_Stay_Out
+		icon = wales_is_finally_back_icon
+		x = 27
+		y = 18
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ENG_Sit_Down_With_Ireland }
+		completion_reward = {
+
+		}
+	
+	}
+
+	focus = {
+		id = ENG_The_Irish_Cowards
+		icon = wales_is_finally_back_icon
+		x = 28
+		y = 19
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ENG_We_Take_Wales_You_Stay_Out }
+		completion_reward = {
+
+		}
+	
+	}
+
+	focus = {
+		id = ENG_Prepare_For_The_Unification
+		icon = wales_is_finally_back_icon
+		x = 29
+		y = 20
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ENG_The_Irish_Cowards }
+		prerequisite = { focus = ENG_Scotland_No_More }
+		completion_reward = {
+
+		}
+	
+	}
+
+
+
+
+	focus = {
+		id = ENG_Abandon_The_Border
+		icon = wales_is_finally_back_icon
+		x = 36
+		y = 10
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		mutually_exclusive = {
+			focus = ENG_Push_Onwards
+		}
+		prerequisite = { focus =  ENG_Push_Back_The_Bastards  }
+		completion_reward = {
+
+		}
+	
+	}
+
+
+	focus = {
+		id = ENG_Defend_the_New_Hadrians_Wall
+		icon = wales_is_finally_back_icon
+		x = 35
+		y = 11
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus =  ENG_Abandon_The_Border  }
+		completion_reward = {
+
+		}
+	
+	}
+
+	focus = {
+		id = ENG_Standing_In_The_Midlands
+		icon = wales_is_finally_back_icon
+		x = 37
+		y = 11
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus =  ENG_Abandon_The_Border  }
+		completion_reward = {
+
+		}
+	
+	}
+
+	focus = {
+		id = ENG_The_North_Is_Lost
+		icon = wales_is_finally_back_icon
+		x = 36
+		y = 12
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus =  ENG_Defend_the_New_Hadrians_Wall  }
+		prerequisite = { focus =  ENG_Standing_In_The_Midlands  }
+		completion_reward = {
+
+		}
+	
+	}
+
+	focus = {
+		id = ENG_Protecting_The_South_Of_England
+		icon = wales_is_finally_back_icon
+		x = 36
+		y = 13
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus =  ENG_Defend_the_New_Hadrians_Wall  }
+		completion_reward = {
+
+		}
+	
+	}
+
+	focus = {
+		id = ENG_Sit_Down_With_Scotland
+		icon = wales_is_finally_back_icon
+		x = 34
+		y = 14
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		mutually_exclusive = {
+			focus = ENG_We_Fight_On
+		}
+		prerequisite = { focus =  ENG_Protecting_The_South_Of_England  }
+		completion_reward = {
+
+		}
+	
+	}
+
+	focus = {
+		id = ENG_The_Isolated_South
+		icon = wales_is_finally_back_icon
+		x = 33
+		y = 15
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus =  ENG_Sit_Down_With_Scotland  }
+		completion_reward = {
+
+		}
+	
+	}
+
+	focus = {
+		id = ENG_The_Union_Of_Southern_England
+		icon = wales_is_finally_back_icon
+		x = 33
+		y = 16
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus =  ENG_The_Isolated_South  }
+		completion_reward = {
+
+		}
+	
+	}
+
+	focus = {
+		id = ENG_A_Free_Northern_England
+		icon = wales_is_finally_back_icon
+		x = 35
+		y = 15
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus =  ENG_Sit_Down_With_Scotland  }
+		completion_reward = {
+
+		}
+	
+	}
+
+	focus = {
+		id = ENG_The_Kingdom_Of_Northumbria
+		icon = wales_is_finally_back_icon
+		x = 35
+		y = 16
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus =  ENG_Sit_Down_With_Scotland  }
+		completion_reward = {
+
+		}
+	
+	}
+
+	focus = {
+		id = ENG_We_Fight_On
+		icon = wales_is_finally_back_icon
+		x = 38
+		y = 14
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		mutually_exclusive = {
+			focus = ENG_Sit_Down_With_Scotland
+		}
+		prerequisite = { focus =  ENG_Protecting_The_South_Of_England  }
+		completion_reward = {
+
+		}
+	
+	}
+
+	focus = {
+		id = ENG_Our_Last_Men_Stand_For_Kennedy
+		icon = wales_is_finally_back_icon
+		x = 38
+		y = 15
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus =  ENG_We_Fight_On  }
+		completion_reward = {
+
+		}
+	
+	}
+
+	focus = {
+		id = ENG_The_Battle_Of_Cable_Street
+		icon = wales_is_finally_back_icon
+		x = 38
+		y = 16
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus =  ENG_Our_Last_Men_Stand_For_Kennedy  }
+		completion_reward = {
+
+		}
+	
+	}
+
+	focus = {
+		id = ENG_Kennedys_Last_Stand
+		icon = wales_is_finally_back_icon
+		x = 38
+		y = 17
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus =  ENG_The_Battle_Of_Cable_Street  }
+		completion_reward = {
+
+		}
+	
+	}
+
+	focus = {
+		id = ENG_The_Devil_Has_Fallen
+		icon = wales_is_finally_back_icon
+		x = 38
+		y = 18
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus =  ENG_Kennedys_Last_Stand  }
+		completion_reward = {
+
+		}
+	
+	}
+
+
+	focus = {
+		id = ENG_The_UN_In_The_USBR
+		icon = a_new_england_icon
+		x = 43
+		y = 0
+		cost = 5
+	
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		completion_reward = {
+
+		}
+	
+	}
+
+	focus = {
+		id = ENG_Defend_The_Scottish_Border
+		icon = wales_is_finally_back_icon
+		x = 41
+		y = 1
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus =  ENG_The_UN_In_The_USBR  }
+		completion_reward = {
+
+		}
+	
+	}
+
+
+
+	focus = {
+		id = ENG_Fight_On_The_Cliffs_Of_Dover
+		icon = wales_is_finally_back_icon
+		x = 45
+		y = 1
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus =  ENG_The_UN_In_The_USBR  }
+		completion_reward = {
+
+		}
+	
+	}
+
+	focus = {
+		id = ENG_A_Challenge_From_Canada
+		icon = wales_is_finally_back_icon
+		x = 43
+		y = 2
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus =  ENG_Defend_The_Scottish_Border  }
+		prerequisite = { focus =  ENG_Fight_On_The_Cliffs_Of_Dover  }
+		completion_reward = {
+
+		}
+	
+	}
+
+	focus = {
+		id = ENG_The_Three_Way_War
+		icon = wales_is_finally_back_icon
+		x = 43
+		y = 3
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus =  ENG_A_Challenge_From_Canada  }
+		completion_reward = {
+
+		}
+	
+	}
+
+	focus = {
+		id = ENG_Fight_The_Scottish_Advancement
+		icon = wales_is_finally_back_icon
+		x = 40
+		y = 4
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus =  ENG_The_Three_Way_War  }
+		completion_reward = {
+
+		}
+	
+	}
+
+	focus = {
+		id = ENG_Talks_For_A_Ceasefire
+		icon = wales_is_finally_back_icon
+		x = 40
+		y = 5
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus =  ENG_Fight_The_Scottish_Advancement  }
+		completion_reward = {
+
+		}
+	
+	}
+
+	focus = {
+		id = ENG_Scotland_Will_Regret_Their_Option
+		icon = wales_is_finally_back_icon
+		x = 40
+		y = 6
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus =  ENG_Talks_For_A_Ceasefire  }
+		completion_reward = {
+
+		}
+	
+	}
+
+	focus = {
+		id = ENG_Retreat_To_The_Midlands
+		icon = wales_is_finally_back_icon
+		x = 40
+		y = 7
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus =  ENG_Scotland_Will_Regret_Their_Option  }
+		completion_reward = {
+
+		}
+	
+	}
+
+	focus = {
+		id = ENG_Prevent_The_UN_Beach_Landings
+		icon = wales_is_finally_back_icon
+		x = 43
+		y = 4
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus =  ENG_The_Three_Way_War  }
+		completion_reward = {
+
+		}
+	
+	}
+
+	focus = {
+		id = ENG_Prevent_The_UN_Advancement_Into_Kent
+		icon = wales_is_finally_back_icon
+		x = 43
+		y = 5
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus =  ENG_Prevent_The_UN_Beach_Landings  }
+		completion_reward = {
+
+		}
+	
+	}
+
+	focus = {
+		id = ENG_Fighting_In_Cumbria
+		icon = wales_is_finally_back_icon
+		x = 46
+		y = 4
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus =  ENG_The_Three_Way_War  }
+		completion_reward = {
+
+		}
+	
+	}
+
+	focus = {
+		id = ENG_Cumbria_Was_Never_A_Favourite
+		icon = wales_is_finally_back_icon
+		x = 46
+		y = 5
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus =  ENG_Fighting_In_Cumbria  }
+		completion_reward = {
+
+		}
+	
+	}
+
+	focus = {
+		id = ENG_Focus_On_England
+		icon = wales_is_finally_back_icon
+		x = 45
+		y = 6
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus =  ENG_Prevent_The_UN_Advancement_Into_Kent  }
+		prerequisite = { focus =  ENG_Cumbria_Was_Never_A_Favourite  }
+
+		completion_reward = {
+
+		}
+	
+	}
+
+	focus = {
+		id = ENG_We_Maybe_Surrounded_But_We_Will_Live
+		icon = wales_is_finally_back_icon
+		x = 45
+		y = 7
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus =  ENG_Prevent_The_UN_Advancement_Into_Kent  }
+		completion_reward = {
+
+		}
+	
+	}
+
+	focus = {
+		id = ENG_The_Southern_Union_Of_England
+		icon = wales_is_finally_back_icon
+		x = 43
+		y = 8
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus =  ENG_We_Maybe_Surrounded_But_We_Will_Live  }
+		prerequisite = { focus =  ENG_Retreat_To_The_Midlands  }
+
+		completion_reward = {
+
+		}
+	
+	}
+
+	focus = {
+		id = ENG_The_UN_Reaches_Out
+		icon = wales_is_finally_back_icon
+		x = 43
+		y = 9
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus =  ENG_The_Southern_Union_Of_England  }
+
+		completion_reward = {
+
+		}
+	
+	}
+
+	focus = {
+		id = ENG_If_I_Fall_England_Falls
+		icon = wales_is_finally_back_icon
+		x = 45
+		y = 10
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus =  ENG_The_UN_Reaches_Out  }
+		mutually_exclusive = {
+			focus = ENG_We_Accept
+		}
+		completion_reward = {
+
+		}
+	
+	}
+
+
+	focus = {
+		id = ENG_A_Fight_To_The_Death
+		icon = wales_is_finally_back_icon
+		x = 45
+		y = 11
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus =  ENG_If_I_Fall_England_Falls  }
+
+		completion_reward = {
+
+		}
+	
+	}
+
+	focus = {
+		id = ENG_Defend_Kennedys_Palace
+		icon = wales_is_finally_back_icon
+		x = 44
+		y = 12
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus =  ENG_A_Fight_To_The_Death  }
+
+		completion_reward = {
+
+		}
+	
+	}
+
+	focus = {
+		id = ENG_Russia_Has_Betrayed_Us
+		icon = wales_is_finally_back_icon
+		x = 46
+		y = 12
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus =  ENG_A_Fight_To_The_Death  }
+
+		completion_reward = {
+
+		}
+	
+	}
+
+	focus = {
+		id = ENG_The_Palace_Has_Fallen
+		icon = wales_is_finally_back_icon
+		x = 45
+		y = 13
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus =  ENG_Defend_Kennedys_Palace  }
+		prerequisite = { focus =  ENG_Russia_Has_Betrayed_Us  }
+		completion_reward = {
+
+		}
+	
+	}
+
+
+	focus = {
+		id = ENG_We_Accept
+		icon = wales_is_finally_back_icon
+		x = 41
+		y = 10
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		mutually_exclusive = {
+			focus = ENG_If_I_Fall_England_Falls
+		}
+		prerequisite = { focus =  ENG_The_UN_Reaches_Out  }
+
+		completion_reward = {
+
+		}
+	
+	}
+
+	focus = {
+		id = ENG_The_Arrest_Of_Kennedy
+		icon = wales_is_finally_back_icon
+		x = 41
+		y = 11
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus =  ENG_We_Accept  }
+
+		completion_reward = {
+
+		}
+	
+	}
+
+	focus = {
+		id = ENG_The_End_Of_Totalist_England
+		icon = wales_is_finally_back_icon
+		x = 41
+		y = 12
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus =  ENG_The_Arrest_Of_Kennedy  }
+
+		completion_reward = {
+
+		}
+	
+	}
+
+}

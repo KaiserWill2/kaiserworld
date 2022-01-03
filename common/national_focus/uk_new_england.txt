@@ -35,9 +35,9 @@ focus_tree = {
 		completion_reward = {
 
 		}
-
 	
 	}
+	
 	focus = {
 		id = ENG_A_United_Army
 		icon = a_united_army_icon

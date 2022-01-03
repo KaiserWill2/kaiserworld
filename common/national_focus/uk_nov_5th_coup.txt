@@ -18,6 +18,11 @@ focus_tree = {
 		completion_reward = {
 			set_cosmetic_tag = ENG_the_military_takes_over
 			add_stability = -0.15
+			create_country_leader = {
+				name = "General Administration"
+				picture = "general_admin.dds"
+				ideology = marxist
+			}
 		}
 	}
 	focus = {
