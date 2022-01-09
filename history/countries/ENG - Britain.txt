@@ -2,7 +2,7 @@
 
 oob = "ENG_2000"
 
-load_focus_Tree = british_Kennedy_Tree
+load_focus_tree = british_Kennedy_Tree
 
 
 if = {

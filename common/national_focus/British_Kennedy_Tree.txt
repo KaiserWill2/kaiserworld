@@ -9,7 +9,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_A_Night_To_Remember
-		icon = a_new_england_icon
+		icon = a_night_to_remember_icon
 		x = 10
 		y = 0
 		cost = 5
@@ -18,13 +18,18 @@ focus_tree = {
 			FOCUS_FILTER_POLITICAL
 		}
 		completion_reward = {
-
+			set_cosmetic_tag = ENG_communist
+			create_country_leader = {
+				name = "Charles Kennedy"
+				picture = "charles_kennedy_two.dds"
+				ideology = marxist
+			}
 		}
 	
 	}
 	focus = {
 		id = ENG_Destory_The_Blairism
-		icon = wales_is_finally_back_icon
+		icon = destroy_blairism_icon
 		x = 5
 		y = 1
 		cost = 5
@@ -40,7 +45,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_Kennedy_The_Real_Leader
-		icon = wales_is_finally_back_icon
+		icon = kennedy_the_real_leader_icon
 		x = 3
 		y = 2
 		cost = 5
@@ -56,7 +61,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_Destroy_The_Peoples_Palace
-		icon = wales_is_finally_back_icon
+		icon = destroy_the_peoples_palace_icon
 		x = 4
 		y = 3
 		cost = 5
@@ -72,7 +77,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_Kill_The_Blair_Fandom
-		icon = wales_is_finally_back_icon
+		icon = kill_the_blair_fandom_icon
 		x = 7
 		y = 2
 		cost = 5
@@ -88,7 +93,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_A_New_Kennedy_Square
-		icon = wales_is_finally_back_icon
+		icon = a_new_kennedy_square_icon
 		x = 6
 		y = 3
 		cost = 5
@@ -104,7 +109,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_Kennedy_Will_Lead_Us
-		icon = wales_is_finally_back_icon
+		icon = kennedy_will_lead_us_icon
 		x = 5
 		y = 4
 		cost = 5
@@ -123,7 +128,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_Time_To_Get_To_Work
-		icon = wales_is_finally_back_icon
+		icon = tiem_to_get_To_work_icon
 		x = 15
 		y = 1
 		cost = 5
@@ -139,7 +144,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_Another_Go_At_The_Dragon
-		icon = wales_is_finally_back_icon
+		icon = another_go_at_The_dragon_icon
 		x = 13
 		y = 2
 		cost = 5
@@ -155,7 +160,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_Order_The_Attack
-		icon = wales_is_finally_back_icon
+		icon = order_the_attack_icon
 		x = 14
 		y = 3
 		cost = 5
@@ -171,7 +176,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_The_People_Must_Learn
-		icon = wales_is_finally_back_icon
+		icon = the_people_must_learn_icon
 		x = 17
 		y = 2
 		cost = 5
@@ -187,7 +192,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_No_Second_Chances
-		icon = wales_is_finally_back_icon
+		icon = no_second_chances_icon
 		x = 16
 		y = 3
 		cost = 5
@@ -203,7 +208,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_Wales_Has_Been_Taken
-		icon = wales_is_finally_back_icon
+		icon = wales_has_been_taken_icon
 		x = 15
 		y = 4
 		cost = 5
@@ -222,7 +227,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_Slit_The_Welsh_Throats
-		icon = a_new_england_icon
+		icon = slit_the_welsh_throats_icons
 		x = 10
 		y = 6
 		cost = 5
@@ -238,7 +243,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_Order_Mass_Arrests
-		icon = wales_is_finally_back_icon
+		icon = order_mass_arrests_icon
 		x = 8
 		y = 7
 		cost = 5
@@ -254,7 +259,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_Hunt_For_Gethin_Gruffydd
-		icon = wales_is_finally_back_icon
+		icon = wheres_gethin_icon
 		x = 8
 		y = 8
 		cost = 5
@@ -270,7 +275,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_Appoint_Michael_As_Leader_Of_Puppet_State
-		icon = wales_is_finally_back_icon
+		icon = appoint_michael_as_leader
 		x = 8
 		y = 9
 		cost = 5
@@ -286,7 +291,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_Take_The_Food
-		icon = wales_is_finally_back_icon
+		icon = take_the_food_icon
 		x = 10
 		y = 7
 		cost = 5
@@ -302,7 +307,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_Starve_The_Non_Pure
-		icon = wales_is_finally_back_icon
+		icon = starve_the_non_pure_race_icon
 		x = 10
 		y = 8
 		cost = 5
@@ -318,7 +323,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_Let_Our_People_Grow_Strong
-		icon = wales_is_finally_back_icon
+		icon = let_our_people_grow_strong_icon
 		x = 10
 		y = 9
 		cost = 5
@@ -556,7 +561,8 @@ focus_tree = {
 		}
 		prerequisite = { focus =  ENG_Killing_His_Blodline  }
 		completion_reward = {
-
+			set_country_flag = ENG_the_scottish_reaction_flag
+			mark_focus_tree_layout_dirty = yes
 		}
 	
 	}
@@ -827,7 +833,13 @@ focus_tree = {
 		x = 30
 		y = 0
 		cost = 5
-	
+		#trigger = {
+		#	has_country_flag = ENG_the_scottish_reaction_flag
+	#	}
+		#allow_branch = {
+		#	has_country_flag = ENG_the_scottish_reaction_flag
+		#	ENG_the_scottish_reaction_flag = yes
+	#	}
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
@@ -1099,7 +1111,8 @@ focus_tree = {
 		prerequisite = { focus =  ENG_UN_Invades_Channel  }
 		prerequisite = { focus =  ENG_Pull_Out_Of_Wales  }
 		completion_reward = {
-
+			set_country_flag = ENG_the_UN_in_ENG
+			mark_focus_tree_layout_dirty = yes
 		}
 	
 	}
@@ -1903,7 +1916,13 @@ focus_tree = {
 		x = 43
 		y = 0
 		cost = 5
-	
+			#trigger = {
+		#	has_country_flag = ENG_the_UN_in_ENG
+	#	}
+		#allow_branch = {
+		#	has_country_flag = ENG_the_UN_in_ENG
+		#	ENG_the_UN_in_ENG = yes
+	#	}
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}

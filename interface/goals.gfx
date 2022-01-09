@@ -40,6 +40,115 @@ spriteTypes = {
 	
 	##England###
 	
+	
+
+	SpriteType = {
+		name = "let_our_people_grow_strong_icon"
+		texturefile = "gfx/interface/goals/eng/let_our_people_grow_strong_icon.dds"			
+	}
+	
+	SpriteType = {
+		name = "starve_the_non_pure_race_icon"
+		texturefile = "gfx/interface/goals/eng/starve_the_non_pure_race_icon.dds"			
+	}
+
+	SpriteType = {
+		name = "take_the_food_icon"
+		texturefile = "gfx/interface/goals/eng/take_the_food_icon.dds"			
+	}
+	
+	SpriteType = {
+		name = "appoint_michael_as_leader"
+		texturefile = "gfx/interface/goals/eng/appoint_michael_as_leader.dds"			
+	}
+
+	SpriteType = {
+		name = "wheres_gethin_icon"
+		texturefile = "gfx/interface/goals/eng/wheres_gethin_icon.dds"			
+	}
+	
+	SpriteType = {
+		name = "order_mass_arrests_icon"
+		texturefile = "gfx/interface/goals/eng/order_mass_arrests_icon.dds"			
+	}
+	
+	SpriteType = {
+		name = "slit_the_welsh_throats_icons"
+		texturefile = "gfx/interface/goals/eng/slit_the_welsh_throats_icons.dds"			
+	}
+	
+	SpriteType = {
+		name = "slit_the_welsh_throats_icons"
+		texturefile = "gfx/interface/goals/eng/slit_the_welsh_throats_icons.dds"			
+	}
+		
+	SpriteType = {
+		name = "wales_has_been_taken_icon"
+		texturefile = "gfx/interface/goals/eng/wales_has_been_taken_icon.dds"			
+	}
+	
+	
+	SpriteType = {
+		name = "no_second_chances_icon"
+		texturefile = "gfx/interface/goals/eng/no_second_chances_icon.dds"			
+	}
+	
+	SpriteType = {
+		name = "order_the_attack_icon"
+		texturefile = "gfx/interface/goals/eng/order_the_attack_icon.dds"			
+	}
+
+	SpriteType = {
+		name = "the_people_must_learn_icon"
+		texturefile = "gfx/interface/goals/eng/the_people_must_learn_icon.dds"			
+	}
+	
+	SpriteType = {
+		name = "another_go_at_The_dragon_icon"
+		texturefile = "gfx/interface/goals/eng/another_go_at_The_dragon_icon.dds"			
+	}
+	
+	SpriteType = {
+		name = "tiem_to_get_To_work_icon"
+		texturefile = "gfx/interface/goals/eng/tiem_to_get_To_work_icon.dds"			
+	}
+	
+	SpriteType = {
+		name = "kennedy_will_lead_us_icon"
+		texturefile = "gfx/interface/goals/eng/kennedy_will_lead_us_icon.dds"			
+	}
+	
+	SpriteType = {
+		name = "a_new_kennedy_square_icon"
+		texturefile = "gfx/interface/goals/eng/a_new_kennedy_square_icon.dds"			
+	}
+	
+	SpriteType = {
+		name = "destroy_the_peoples_palace_icon"
+		texturefile = "gfx/interface/goals/eng/destroy_the_peoples_palace_icon.dds"			
+	}
+	
+	SpriteType = {
+		name = "kill_the_blair_fandom_icon"
+		texturefile = "gfx/interface/goals/eng/kill_the_blair_fandom_icon.dds"			
+	}
+	
+
+	SpriteType = {
+		name = "kennedy_the_real_leader_icon"
+		texturefile = "gfx/interface/goals/eng/kennedy_the_real_leader_icon.dds"			
+	}
+	
+	SpriteType = {
+		name = "destroy_blairism_icon"
+		texturefile = "gfx/interface/goals/eng/destroy_blairism_icon.dds"			
+	}
+
+	SpriteType = {
+		name = "a_night_to_remember_icon"
+		texturefile = "gfx/interface/goals/eng/a_night_to_remember_icon.dds"			
+	}
+
 	SpriteType = {
 		name = "ask_for_allied_support_icon"
 		texturefile = "gfx/interface/goals/eng/ask_for_allied_support_icon.dds"			

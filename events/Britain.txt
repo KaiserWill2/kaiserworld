@@ -453,6 +453,7 @@ country_event = {
 	picture = the_future_scientists_event
 	fire_only_once = yes
 	option = {
+		set_country_flag = ENG_rockets_away
 		name = England.38.o1
 
 	}
@@ -896,7 +897,7 @@ country_event = {
 		name = England.69.o1
 		set_cosmetic_tag = ENG_communist
 		create_country_leader = {
-			name = "Charles Kennedy"
+			name = "General Charles Kennedy"
 			picture = "charles_kennedy.dds"
 			ideology = marxist
 		}
