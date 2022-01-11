@@ -39,7 +39,131 @@ spriteTypes = {
 	
 	
 	##England###
+	
+	SpriteType = {
+		name = "un_debates_intervention_icon"
+		texturefile = "gfx/interface/goals/eng/un_debates_intervention_icon.dds"			
+	}
+	
+	
+	SpriteType = {
+		name = "germany_says_no_icon"
+		texturefile = "gfx/interface/goals/eng/germany_says_no_icon.dds"			
+	}
+	
+	SpriteType = {
+		name = "order_nuke_strike_on_ireland_icon"
+		texturefile = "gfx/interface/goals/eng/order_nuke_strike_on_ireland_icon.dds"			
+	}
+	
+	SpriteType = {
+		name = "execute_welsh_prisoners_icon"
+		texturefile = "gfx/interface/goals/eng/execute_welsh_prisoners_icon.dds"			
+	}
+	
+	SpriteType = {
+		name = "the_battle_of_swansea_icon"
+		texturefile = "gfx/interface/goals/eng/the_battle_of_swansea_icon.dds"			
+	}
+	
+	SpriteType = {
+		name = "retreat_from_st_davids_icon"
+		texturefile = "gfx/interface/goals/eng/retreat_from_st_davids_icon.dds"			
+	}
 
+	SpriteType = {
+		name = "a_stale_warl_icon"
+		texturefile = "gfx/interface/goals/eng/a_stale_warl_icon.dds"			
+	}
+	
+	SpriteType = {
+		name = "defend_the_borders_of_berwick_icon"
+		texturefile = "gfx/interface/goals/eng/defend_the_borders_of_berwick_icon.dds"			
+	}
+	
+	SpriteType = {
+		name = "order_attacks_from_sky_icon"
+		texturefile = "gfx/interface/goals/eng/order_attacks_from_sky_icon.dds"			
+	}
+	
+	SpriteType = {
+		name = "order_the_attack_on_scotland_icon"
+		texturefile = "gfx/interface/goals/eng/order_the_attack_on_scotland_icon.dds"			
+	}
+	
+	SpriteType = {
+		name = "defend_the_state_of_wales_icon"
+		texturefile = "gfx/interface/goals/eng/defend_the_state_of_wales_icon.dds"			
+	}
+	
+	SpriteType = {
+		name = "order_soldiers_to_split_up_icon"
+		texturefile = "gfx/interface/goals/eng/order_soldiers_to_split_up_icon.dds"			
+	}
+	
+	SpriteType = {
+		name = "the_irish_suprise_icon"
+		texturefile = "gfx/interface/goals/eng/the_irish_suprise_icon.dds"			
+	}
+	
+	SpriteType = {
+		name = "a_stronger_well_built_army_icon"
+		texturefile = "gfx/interface/goals/eng/a_stronger_well_built_army_icon.dds"			
+	}
+	
+	SpriteType = {
+		name = "the_peopleS_defence_acmedy_icon"
+		texturefile = "gfx/interface/goals/eng/the_peopleS_defence_acmedy_icon.dds"			
+	}
+	
+	
+	SpriteType = {
+		name = "hero_fight_for_the_union_icon"
+		texturefile = "gfx/interface/goals/eng/hero_fight_for_the_union_icon.dds"			
+	}
+	
+	SpriteType = {
+		name = "army_factory_production_factory_icon"
+		texturefile = "gfx/interface/goals/eng/army_factory_production_factory_icon.dds"			
+	}
+	
+	SpriteType = {
+		name = "invest_in_military_research_icon"
+		texturefile = "gfx/interface/goals/eng/invest_in_military_research_icon.dds"			
+	}
+	
+	
+	SpriteType = {
+		name = "new_generals_for_army_icon"
+		texturefile = "gfx/interface/goals/eng/new_generals_for_army_icon.dds"			
+	}
+	
+	SpriteType = {
+		name = "invest_in_military_icon"
+		texturefile = "gfx/interface/goals/eng/invest_in_military_icon.dds"			
+	}
+	
+	SpriteType = {
+		name = "rebuild_the_army_icon"
+		texturefile = "gfx/interface/goals/eng/rebuild_the_army_icon.dds"			
+	}
+	
+	SpriteType = {
+		name = "iron_fist_strikes_hard_icon"
+		texturefile = "gfx/interface/goals/eng/iron_fist_strikes_hard_icon.dds"			
+	}
+	
+	
+	SpriteType = {
+		name = "ban_social_gatherings_icon"
+		texturefile = "gfx/interface/goals/eng/ban_social_gatherings_icon.dds"			
+	}
+	
+	
+	SpriteType = {
+		name = "restrict_peoples_freedom_icon"
+		texturefile = "gfx/interface/goals/eng/restrict_peoples_freedom_icon.dds"			
+	}
 	
 	SpriteType = {
 		name = "3_year_plan_icon"
