@@ -39,8 +39,105 @@ spriteTypes = {
 	
 	
 	##England###
+
+	
+	SpriteType = {
+		name = "3_year_plan_icon"
+		texturefile = "gfx/interface/goals/eng/3_year_plan_icon.dds"			
+	}
+	
+	SpriteType = {
+		name = "grow_the_kennedy_fandom_icon"
+		texturefile = "gfx/interface/goals/eng/grow_the_kennedy_fandom_icon.dds"			
+	}
+	
+	SpriteType = {
+		name = "feed_the_elite_icon"
+		texturefile = "gfx/interface/goals/eng/feed_the_elite_icon.dds"			
+	}
+	
+	SpriteType = {
+		name = "harvest_welsh_lands_icon"
+		texturefile = "gfx/interface/goals/eng/harvest_welsh_lands_icon.dds"			
+	}
+	
+	SpriteType = {
+		name = "a_new_union_to_rule_icon"
+		texturefile = "gfx/interface/goals/eng/a_new_union_to_rule_icon.dds"			
+	}
 	
 	
+	SpriteType = {
+		name = "wait_for_scottish_reaction_icon"
+		texturefile = "gfx/interface/goals/eng/wait_for_scottish_reaction_icon.dds"			
+	}
+	
+	SpriteType = {
+		name = "killing_his_bloodline_icon"
+		texturefile = "gfx/interface/goals/eng/killing_his_bloodline_icon.dds"			
+	}
+
+	
+	SpriteType = {
+		name = "kidnap_the_king_daughter_icon"
+		texturefile = "gfx/interface/goals/eng/kidnap_the_king_daughter_icon.dds"			
+	}
+
+	SpriteType = {
+		name = "a_refusal_that_will_Cost_you_icon"
+		texturefile = "gfx/interface/goals/eng/a_refusal_that_will_Cost_you_icon.dds"			
+	}
+	
+	SpriteType = {
+		name = "a_message_to_the_king_icon"
+		texturefile = "gfx/interface/goals/eng/a_message_to_the_king_icon.dds"			
+	}
+	
+	SpriteType = {
+		name = "an_easier_plan_for_scotland_icon"
+		texturefile = "gfx/interface/goals/eng/an_easier_plan_for_scotland_icon.dds"			
+	}
+	
+	SpriteType = {
+		name = "prepare_to_defend_union_icon"
+		texturefile = "gfx/interface/goals/eng/prepare_to_defend_union_icon.dds"			
+	}
+	
+	SpriteType = {
+		name = "train_for_highland_war_icon"
+		texturefile = "gfx/interface/goals/eng/train_for_highland_war_icon.dds"			
+	}
+	
+	SpriteType = {
+		name = "prepare_for_scottish_exetermination_icon"
+		texturefile = "gfx/interface/goals/eng/prepare_for_scottish_exetermination_icon.dds"			
+	}
+	
+	SpriteType = {
+		name = "past_leaders_couldnt_do_what_i_did_icon"
+		texturefile = "gfx/interface/goals/eng/past_leaders_couldnt_do_what_i_did_icon.dds"			
+	}
+
+	SpriteType = {
+		name = "a_bigger_state_icon"
+		texturefile = "gfx/interface/goals/eng/a_bigger_state_icon.dds"			
+	}
+	
+	
+	SpriteType = {
+		name = "send_welsh_to_work_camp_icon"
+		texturefile = "gfx/interface/goals/eng/send_welsh_to_work_camp_icon.dds"			
+	}
+	
+	SpriteType = {
+		name = "no_welsh_icons_icon"
+		texturefile = "gfx/interface/goals/eng/no_welsh_icons_icon.dds"			
+	}
+	
+	SpriteType = {
+		name = "destroy_the_cities_icon"
+		texturefile = "gfx/interface/goals/eng/destroy_the_cities_icon.dds"			
+	}
 
 	SpriteType = {
 		name = "let_our_people_grow_strong_icon"
