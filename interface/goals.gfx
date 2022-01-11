@@ -41,6 +41,27 @@ spriteTypes = {
 	##England###
 	
 	SpriteType = {
+		name = "order_the_protection_of_london_icon"
+		texturefile = "gfx/interface/goals/eng/order_the_protection_of_london_icon.dds"			
+	}
+	
+	
+	SpriteType = {
+		name = "pull_out_of_wales_icon"
+		texturefile = "gfx/interface/goals/eng/pull_out_of_wales_icon.dds"			
+	}
+	
+	SpriteType = {
+		name = "UN_Invades_channel_icon"
+		texturefile = "gfx/interface/goals/eng/UN_Invades_channel_icon.dds"			
+	}
+	
+	SpriteType = {
+		name = "enough_is_enough_icon"
+		texturefile = "gfx/interface/goals/eng/enough_is_enough_icon.dds"			
+	}
+	
+	SpriteType = {
 		name = "un_debates_intervention_icon"
 		texturefile = "gfx/interface/goals/eng/un_debates_intervention_icon.dds"			
 	}

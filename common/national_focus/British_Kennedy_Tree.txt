@@ -1053,7 +1053,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_Enough_Is_Enough
-		icon = wales_is_finally_back_icon
+		icon = enough_is_enough_icon
 		x = 26
 		y = 7
 		cost = 5
@@ -1072,7 +1072,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_UN_Invades_Channel
-		icon = wales_is_finally_back_icon
+		icon = UN_Invades_channel_icon
 		x = 24
 		y = 8
 		cost = 5
@@ -1088,7 +1088,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_Pull_Out_Of_Wales
-		icon = wales_is_finally_back_icon
+		icon = pull_out_of_wales_icon
 		x = 28
 		y = 8
 		cost = 5
@@ -1104,7 +1104,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_Order_The_Protection_Of_London
-		icon = wales_is_finally_back_icon
+		icon = order_the_protection_of_london_icon
 		x = 26
 		y = 9
 		cost = 5
