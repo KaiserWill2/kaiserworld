@@ -1123,7 +1123,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_Not_Today_But_Sanctions_Will_Work
-		icon = wales_is_finally_back_icon
+		icon = not_today_but_sactions_will_work_icon
 		x = 33
 		y = 7
 		cost = 5

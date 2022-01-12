@@ -927,7 +927,10 @@ country_event = {
 	option = {
 		name = England.71.o1
 		set_cosmetic_tag = ENG_communist_kennedy
-
+		load_focus_tree = {
+			tree = british_Kennedy_Tree
+			keep_completed = yes
+		}
 	}
 }
 
