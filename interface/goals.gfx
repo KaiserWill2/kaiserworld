@@ -39,6 +39,55 @@ spriteTypes = {
 	
 	
 	##England###
+
+	SpriteType = {
+		name = "not_today_but_sactions_will_work_icon"
+		texturefile = "gfx/interface/goals/eng/not_today_but_sactions_will_work_icon.dds"			
+	}
+
+
+	
+	
+	SpriteType = {
+		name = "abandon_the_border_icon"
+		texturefile = "gfx/interface/goals/eng/abandon_the_border_icon.dds"			
+	}
+
+	
+	SpriteType = {
+		name = "a_turning_point_icon"
+		texturefile = "gfx/interface/goals/eng/a_turning_point_icon.dds"			
+	}
+
+	SpriteType = {
+		name = "new_WMD_on_irish_icon"
+		texturefile = "gfx/interface/goals/eng/new_WMD_on_irish_icon.dds"			
+	}
+	
+	SpriteType = {
+		name = "taking_edinburgh_icon"
+		texturefile = "gfx/interface/goals/eng/taking_edinburgh_icon.dds"			
+	}
+	
+	SpriteType = {
+		name = "push_onwards_icon"
+		texturefile = "gfx/interface/goals/eng/push_onwards_icon.dds"			
+	}
+	
+	SpriteType = {
+		name = "push_the_bastards_back_icon"
+		texturefile = "gfx/interface/goals/eng/push_the_bastards_back_icon.dds"			
+	}
+	
+	SpriteType = {
+		name = "advance_into_scotland_icon"
+		texturefile = "gfx/interface/goals/eng/advance_into_scotland_icon.dds"			
+	}
+	
+	SpriteType = {
+		name = "defending_welsh_border_icon"
+		texturefile = "gfx/interface/goals/eng/defending_welsh_border_icon.dds"			
+	}
 	
 	SpriteType = {
 		name = "order_the_protection_of_london_icon"
