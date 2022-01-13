@@ -41,6 +41,28 @@ spriteTypes = {
 	##England###
 	
 	SpriteType = {
+		name = "and_we_will_be_ready_icon"
+		texturefile = "gfx/interface/goals/eng/and_we_will_be_ready_icon.dds"			
+	}
+	
+	
+	SpriteType = {
+		name = "they_will_come_icon"
+		texturefile = "gfx/interface/goals/eng/they_will_come_icon.dds"			
+	}
+	
+	SpriteType = {
+		name = "cement_our_postion_iocn"
+		texturefile = "gfx/interface/goals/eng/cement_our_postion_iocn.dds"			
+	}
+	
+
+	SpriteType = {
+		name = "prepare_for_dissolution_icon"
+		texturefile = "gfx/interface/goals/eng/prepare_for_dissolution_icon.dds"			
+	}
+	
+	SpriteType = {
 		name = "prepare_for_unification_icon"
 		texturefile = "gfx/interface/goals/eng/prepare_for_unification_icon.dds"			
 	}

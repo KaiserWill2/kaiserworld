@@ -2,7 +2,7 @@
 
 oob = "ENG_2000"
 
-load_focus_tree = Johnson_stabilised_focus
+load_focus_tree = 5th_nov_coup
 
 
 if = {

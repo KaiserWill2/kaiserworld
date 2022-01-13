@@ -138,7 +138,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_Prepare_for_Dissolution
-		icon = tear_treaty
+		icon = prepare_for_dissolution_icon
 		cost = 5
 		x = 10
 		y = 5
@@ -154,7 +154,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_Cement_Our_Positions
-		icon = tear_treaty
+		icon = cement_our_postion_iocn
 		cost = 5
 		x = 10
 		y = 6
@@ -165,7 +165,7 @@ focus_tree = {
 	
 	focus = {
 		id = ENG_They_Will_come
-		icon = tear_treaty
+		icon = they_will_come_icon
 		cost = 5
 		x = 10
 		y = 7
@@ -175,7 +175,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_And_We_Will_be_Ready
-		icon = tear_treaty
+		icon = and_we_will_be_ready_icon
 		cost = 5
 		x = 10
 		y = 8
