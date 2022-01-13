@@ -18,7 +18,7 @@ focus_tree = {
 			FOCUS_FILTER_POLITICAL
 		}
 		completion_reward = {
-			set_cosmetic_tag = ENG_communist
+
 			create_country_leader = {
 				name = "Charles Kennedy"
 				picture = "charles_kennedy_two.dds"

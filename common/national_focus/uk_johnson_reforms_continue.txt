@@ -316,7 +316,8 @@ focus_tree = {
 		prerequisite = { focus = ENG_Introduce_Liberal_Reforms  }
 
 		completion_reward = {
-
+			set_country_flag = ENG_a_un_meeting
+			mark_focus_tree_layout_dirty = yes	
 		}
 
 	}
@@ -328,6 +329,13 @@ focus_tree = {
 		cost = 5
 		x = 23
 		y = 0
+		trigger = {
+			has_country_flag = ENG_a_un_meeting
+		}
+		allow_branch = {
+			has_country_flag = ENG_a_un_meeting
+			ENG_a_un_meeting = yes
+		}
 		completion_reward = {
 
 		}
@@ -349,7 +357,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_The_Cardiff_Agreement
-		icon = tear_treaty
+		icon = the_cardiff_agreement_icon
 		cost = 5
 		x = 22
 		y = 2
@@ -363,7 +371,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_The_Peace_Border
-		icon = tear_treaty
+		icon = the_peace_border_icon
 		cost = 5
 		x = 24
 		y = 2
@@ -377,7 +385,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_The_King_Agrees
-		icon = tear_treaty
+		icon = the_king_agrees_icon
 		cost = 5
 		x = 23
 		y = 3
@@ -392,7 +400,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_Moving_Forward
-		icon = tear_treaty
+		icon = moving_forward_icon
 		cost = 5
 		x = 23
 		y = 4
@@ -406,7 +414,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_Remove_Borders_Between_States
-		icon = tear_treaty
+		icon = remove_the_borders_icon
 		cost = 5
 		x = 22
 		y = 5
@@ -421,7 +429,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_Open_The_Gates
-		icon = tear_treaty
+		icon = open_borde_gates_icon
 		cost = 5
 		x = 24
 		y = 5
@@ -435,7 +443,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_Welcome_The_Britons
-		icon = tear_treaty
+		icon = welcome_the_britons_icon
 		cost = 5
 		x = 23
 		y = 6
@@ -449,7 +457,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_Prepare_For_Unification
-		icon = tear_treaty
+		icon = prepare_for_unification_icon
 		cost = 5
 		x = 23
 		y = 7

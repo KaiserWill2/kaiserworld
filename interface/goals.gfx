@@ -39,14 +39,54 @@ spriteTypes = {
 	
 	
 	##England###
+	
+	SpriteType = {
+		name = "prepare_for_unification_icon"
+		texturefile = "gfx/interface/goals/eng/prepare_for_unification_icon.dds"			
+	}
+	
+	
+	SpriteType = {
+		name = "welcome_the_britons_icon"
+		texturefile = "gfx/interface/goals/eng/welcome_the_britons_icon.dds"			
+	}
+	
+	SpriteType = {
+		name = "open_borde_gates_icon"
+		texturefile = "gfx/interface/goals/eng/open_borde_gates_icon.dds"			
+	}
+	
+	
+	SpriteType = {
+		name = "remove_the_borders_icon"
+		texturefile = "gfx/interface/goals/eng/remove_the_borders_icon.dds"			
+	}
+	
+	SpriteType = {
+		name = "moving_forward_icon"
+		texturefile = "gfx/interface/goals/eng/moving_forward_icon.dds"			
+	}
+	
+	SpriteType = {
+		name = "the_king_agrees_icon"
+		texturefile = "gfx/interface/goals/eng/the_king_agrees_icon.dds"			
+	}
+	
+	SpriteType = {
+		name = "the_peace_border_icon"
+		texturefile = "gfx/interface/goals/eng/the_peace_border_icon.dds"			
+	}
+
+	
+	SpriteType = {
+		name = "the_cardiff_agreement_icon"
+		texturefile = "gfx/interface/goals/eng/the_cardiff_agreement_icon.dds"			
+	}
 
 	SpriteType = {
 		name = "not_today_but_sactions_will_work_icon"
 		texturefile = "gfx/interface/goals/eng/not_today_but_sactions_will_work_icon.dds"			
 	}
-
-
-	
 	
 	SpriteType = {
 		name = "abandon_the_border_icon"
