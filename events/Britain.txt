@@ -963,3 +963,102 @@ country_event = {
 	}
 }
 
+country_event = {
+	id = England.74
+	title = England.74.t
+	desc = England.74.d
+	picture = a_night_to_remember_event
+	is_triggered_only = yes
+	option = {
+		name = England.74.o1
+		create_country_leader = {
+			name = "Charles Kennedy"
+			picture = "charles_kennedy_two.dds"
+			ideology = marxist
+		}
+	}
+}
+
+country_event = {
+	id = England.75
+	title = England.75.t
+	desc = England.75.d
+	picture = kennedy_real_leader_event
+	is_triggered_only = yes
+	option = {
+		name = England.75.o1
+
+	}
+}
+
+country_event = {
+	id = England.76
+	title = England.76.t
+	desc = England.76.d
+	picture = the_new_kennedy_fandom_event
+	is_triggered_only = yes
+	option = {
+		name = England.76.o1
+
+	}
+}
+
+country_event = {
+	id = England.77
+	title = England.77.t
+	desc = England.77.d
+	picture = first_kennedy_broadcast_event
+	is_triggered_only = yes
+	option = {
+		name = England.77.o1
+
+	}
+}
+
+country_event = {
+	id = England.78
+	title = England.78.t
+	desc = England.78.d
+	picture = time_to_get_to_work_event
+	is_triggered_only = yes
+	option = {
+		name = England.78.o1
+
+	}
+}
+
+country_event = {
+	id = England.79
+	title = England.79.t
+	desc = England.79.d
+	picture = people_must_learn_event
+	is_triggered_only = yes
+	option = {
+		name = England.79.o1
+
+	}
+}
+
+country_event = {
+	id = England.80
+	title = England.80.t
+	desc = England.80.d
+	picture = wales_taken_event
+	is_triggered_only = yes
+	option = {
+		name = England.80.o1
+
+	}
+}
+
+country_event = {
+	id = England.81
+	title = England.81.t
+	desc = England.81.d
+	picture = end_the_welsh_games_event
+	is_triggered_only = yes
+	option = {
+		name = England.81.o1
+
+	}
+}

@@ -354,10 +354,51 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/report_event/boris_and_his_cola_event.dds"
 	}
 	
+	spriteType = {
+		name = "a_night_to_remember_event"
+		texturefile = "gfx/event_pictures/report_event/a_night_to_remember_event.dds"
+	}
+	
+	spriteType = {
+		name = "kennedy_real_leader_event"
+		texturefile = "gfx/event_pictures/report_event/kennedy_real_leader_event.dds"
+	}
+	
+	spriteType = {
+		name = "the_new_kennedy_fandom_event"
+		texturefile = "gfx/event_pictures/report_event/the_new_kennedy_fandom_event.dds"
+	}
+
+	spriteType = {
+		name = "first_kennedy_broadcast_event"
+		texturefile = "gfx/event_pictures/report_event/first_kennedy_broadcast_event.dds"
+	}
+	
+	spriteType = {
+		name = "time_to_get_to_work_event"
+		texturefile = "gfx/event_pictures/report_event/time_to_get_to_work_event.dds"
+	}
+	
+	spriteType = {
+		name = "people_must_learn_event"
+		texturefile = "gfx/event_pictures/report_event/people_must_learn_event.dds"
+	}
+	
+	spriteType = {
+		name = "wales_taken_event"
+		texturefile = "gfx/event_pictures/report_event/wales_taken_event.dds"
+	}
+
+	spriteType = {
+		name = "end_the_welsh_games_event"
+		texturefile = "gfx/event_pictures/report_event/end_the_welsh_games_event.dds"
+	}
 	
 	
 	
-	
+
+
+
 
 
 

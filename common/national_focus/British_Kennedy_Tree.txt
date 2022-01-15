@@ -18,12 +18,10 @@ focus_tree = {
 			FOCUS_FILTER_POLITICAL
 		}
 		completion_reward = {
-
-			create_country_leader = {
-				name = "Charles Kennedy"
-				picture = "charles_kennedy_two.dds"
-				ideology = marxist
+			country_event = {
+				id = england.74
 			}
+
 		}
 	
 	}
@@ -54,7 +52,9 @@ focus_tree = {
 		}
 		prerequisite = { focus =  ENG_Destory_The_Blairism  }
 		completion_reward = {
-
+			country_event = {
+				id = england.75
+			}
 		}
 	
 	}
@@ -86,7 +86,9 @@ focus_tree = {
 		}
 		prerequisite = { focus =  ENG_Destory_The_Blairism  }
 		completion_reward = {
-
+			country_event = {
+				id = england.76
+			}
 		}
 	
 	}
@@ -120,7 +122,9 @@ focus_tree = {
 		prerequisite = { focus =  ENG_Destroy_The_Peoples_Palace  }
 
 		completion_reward = {
-
+			country_event = {
+				id = england.77
+			}
 		}
 	
 	}
@@ -137,7 +141,9 @@ focus_tree = {
 		}
 		prerequisite = { focus =  ENG_A_Night_To_Remember  }
 		completion_reward = {
-
+			country_event = {
+				id = england.78
+			}
 		}
 	
 	}
@@ -185,7 +191,9 @@ focus_tree = {
 		}
 		prerequisite = { focus =  ENG_Time_To_Get_To_Work  }
 		completion_reward = {
-
+			country_event = {
+				id = england.79
+			}
 		}
 	
 	}
@@ -219,7 +227,9 @@ focus_tree = {
 		prerequisite = { focus =  ENG_Order_The_Attack  }
 
 		completion_reward = {
-
+			country_event = {
+				id = england.80
+			}
 		}
 	
 	}
@@ -236,7 +246,9 @@ focus_tree = {
 			FOCUS_FILTER_POLITICAL
 		}
 		completion_reward = {
-
+			country_event = {
+				id = england.81
+			}
 		}
 	
 	}

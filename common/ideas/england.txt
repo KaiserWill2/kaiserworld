@@ -768,7 +768,7 @@ ideas = {
 				} 
 			}
 			
-			traits = { libertarian_capitalist }			
+			traits = { administrative_genius }			
 		}
 		
 		Britain_rebecca_long_bailey = {
