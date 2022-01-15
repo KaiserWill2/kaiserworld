@@ -190,8 +190,8 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Nigel Farage"
-	picture = "Nigel_Farage_KW.dds"
+	name = "George Galloway"
+	picture = george_galloway_KW.dds"
 	ideology = nationalist_ideology
 }
 

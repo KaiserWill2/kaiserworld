@@ -157,10 +157,197 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/advisors/britain/britain_Jonathan_Ashworth.dds"
 	}
 
+	spriteType = {
+		name = "GFX_idea_britain_Theresa_May"
+		texturefile = "gfx/interface/ideas/advisors/britain/britain_Theresa_May.dds"
+	}
 
+	spriteType = {
+		name = "GFX_idea_britain_Chris_Whitty"
+		texturefile = "gfx/interface/ideas/advisors/britain/britain_Chris_Whitty.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_britain_kenneth_clarke"
+		texturefile = "gfx/interface/ideas/advisors/britain/britain_kenneth_clarke.dds"
+	}
 
+	spriteType = {
+		name = "GFX_idea_britain_Jeremy_Hunt"
+		texturefile = "gfx/interface/ideas/advisors/britain/britain_Jeremy_Hunt.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_britain_John_Prescott"
+		texturefile = "gfx/interface/ideas/advisors/britain/britain_John_Prescott.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_britain_Matt_Hancock"
+		texturefile = "gfx/interface/ideas/advisors/britain/britain_Matt_Hancock.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_britain_liz_trust"
+		texturefile = "gfx/interface/ideas/advisors/britain/britain_liz_trust.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_britain_philip_hammond"
+		texturefile = "gfx/interface/ideas/advisors/britain/britain_philip_hammond.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_britain_David_cameron"
+		texturefile = "gfx/interface/ideas/advisors/britain/britain_David_cameron.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_britain_nick_clegg"
+		texturefile = "gfx/interface/ideas/advisors/britain/britain_nick_clegg.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_britain_ed_balls"
+		texturefile = "gfx/interface/ideas/advisors/britain/britain_ed_balls.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_britain_michael_gove"
+		texturefile = "gfx/interface/ideas/advisors/britain/britain_michael_gove.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_britain_christopher_eccleston"
+		texturefile = "gfx/interface/ideas/advisors/britain/britain_christopher_eccleston.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_britain_russel_brand"
+		texturefile = "gfx/interface/ideas/advisors/britain/britain_russel_brand.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_britain_katie_hopkins"
+		texturefile = "gfx/interface/ideas/advisors/britain/britain_katie_hopkins.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_britain_owen_jones"
+		texturefile = "gfx/interface/ideas/advisors/britain/britain_owen_jones.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_britain_alan_sugar"
+		texturefile = "gfx/interface/ideas/advisors/britain/britain_alan_sugar.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_britain_tim_farron"
+		texturefile = "gfx/interface/ideas/advisors/britain/britain_tim_farron.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_britain_david_lammy"
+		texturefile = "gfx/interface/ideas/advisors/britain/britain_david_lammy.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_Britain_Angela_Rayner"
+		texturefile = "gfx/interface/ideas/advisors/britain/Britain_Angela_Rayner.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_Britain_Kate_Hoey"
+		texturefile = "gfx/interface/ideas/advisors/britain/Britain_Kate_Hoey.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_Britain_Patrick_Stewart"
+		texturefile = "gfx/interface/ideas/advisors/britain/Britain_Patrick_Stewart.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_Britain_Rupert_Murdoch"
+		texturefile = "gfx/interface/ideas/advisors/britain/Britain_Rupert_Murdoch.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_Britain_rebecca_long_bailey"
+		texturefile = "gfx/interface/ideas/advisors/britain/Britain_rebecca_long_bailey.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_britain_Bill_Nighy"
+		texturefile = "gfx/interface/ideas/advisors/britain/britain_Bill_Nighy.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_Britain_Margaret_Beckett"
+		texturefile = "gfx/interface/ideas/advisors/britain/Britain_Margaret_Beckett.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_britain_john_hurt"
+		texturefile = "gfx/interface/ideas/advisors/britain/britain_john_hurt.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_britain_rory_stewart"
+		texturefile = "gfx/interface/ideas/advisors/britain/britain_rory_stewart.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_britain_ben_kingsley"
+		texturefile = "gfx/interface/ideas/advisors/britain/britain_ben_kingsley.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_britain_Amber_Rudd"
+		texturefile = "gfx/interface/ideas/advisors/britain/britain_Amber_Rudd.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_britain_michael_caine"
+		texturefile = "gfx/interface/ideas/advisors/britain/britain_michael_caine.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_Britain_Nadine_Dorries"
+		texturefile = "gfx/interface/ideas/advisors/britain/Britain_Nadine_Dorries.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_britain_ian_duncan_smith"
+		texturefile = "gfx/interface/ideas/advisors/britain/britain_ian_duncan_smith.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_britain_john_bercow"
+		texturefile = "gfx/interface/ideas/advisors/britain/britain_john_bercow.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_britain_rowan_atkinson"
+		texturefile = "gfx/interface/ideas/advisors/britain/britain_rowan_atkinson.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_britain_george_osborne"
+		texturefile = "gfx/interface/ideas/advisors/britain/britain_george_osborne.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_Britain_Esther_Mcvey"
+		texturefile = "gfx/interface/ideas/advisors/britain/Britain_Esther_Mcvey.dds"
+	}
 	
 
+	spriteType = {
+		name = "GFX_idea_britain_Simon_Pegg"
+		texturefile = "gfx/interface/ideas/advisors/britain/britain_Simon_Pegg.dds"
+	}
+	
 	
 	###Unsorted
 	

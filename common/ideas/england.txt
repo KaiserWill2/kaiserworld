@@ -361,22 +361,7 @@ ideas = {
 	}
 	
 	second_in_command = {
-		britain_sic_nick_griffin = {
-		
-		    allowed = {
-			    original_tag = ENG
-			}
-			
-			available = {
-			    OR = {
-					has_government = fascist
-				} 
-			}
-			
-			traits = { flamboyant_tough_guy }			
-		}
-		
-		britain_sic_jayda_fransen = {
+		britain_liz_trust = {
 		
 		    allowed = {
 			    original_tag = ENG
@@ -391,7 +376,9 @@ ideas = {
 			traits = { power_hungry_demagogue }			
 		}
 		
-		britain_sic_adam_walker = {
+
+		
+		britain_philip_hammond = {
 		
 		    allowed = {
 			    original_tag = ENG
@@ -406,7 +393,7 @@ ideas = {
 			traits = { flamboyant_tough_guy }			
 		}
 		
-		britain_sic_jacob_reesmogg = {
+		britain_David_cameron = {
 		
 		    allowed = {
 			    original_tag = ENG
@@ -421,7 +408,7 @@ ideas = {
 			traits = { autocratic_charmer }			
 		}
 		
-		britain_sic_nigel_farage = {
+		britain_nick_clegg = {
 		
 		    allowed = {
 			    original_tag = ENG
@@ -431,33 +418,15 @@ ideas = {
 			    OR = {
 					has_government = national_conservative
 				}
-				NOT = {
-					has_country_leader = {
-						name = "Nigel Farage"
-						ruling_only = yes
-					}
-				}
+
 			}
 			
 			traits = { power_hungry_demagogue }
 		}
 		
-		britain_sic_michael_gove = {
+
 		
-		    allowed = {
-			    original_tag = ENG
-			}
-			
-			available = {
-			    OR = {
-					has_government = national_conservative
-				} 
-			}
-			
-			traits = { silent_workhorse }			
-		}
-		
-		britain_sic_simon_hughes = {
+		britain_ed_balls = {
 		
 		    allowed = {
 			    original_tag = ENG
@@ -472,7 +441,7 @@ ideas = {
 			traits = { power_hungry_demagogue }			
 		}
 		
-		britain_sic_shirley_williams = {
+		britain_michael_gove = {
 		
 		    allowed = {
 			    original_tag = ENG
@@ -495,23 +464,9 @@ ideas = {
 			
 			traits = { insignificant_layman }			
 		}
+
 		
-		britain_sic_gordon_brown = {
-		
-		    allowed = {
-			    original_tag = ENG
-			}
-			
-			available = {
-			    OR = {
-					has_government = liberal
-				} 
-			}
-			
-			traits = { silent_workhorse }			
-		}
-		
-		britain_sic_jo_cox = {
+		britain_christopher_eccleston = {
 		
 		    allowed = {
 			    original_tag = ENG
@@ -521,113 +476,14 @@ ideas = {
 			    OR = {
 					has_government = new_democrat
 				}
-				NOT = {
-					has_country_leader = {
-						name = "Jo Cox"
-						ruling_only = yes
-					}
-				}
+
 			}
 			
 			traits = { naive_optimist }			
 		}
 		
-		britain_sic_angela_eagle = {
 		
-		    allowed = {
-			    original_tag = ENG
-			}
-			
-			available = {
-			    OR = {
-					has_government = new_democrat
-				} 
-			}
-			
-			traits = { naive_optimist }			
-		}
-		
-		britain_sic_ken_livingstone = {
-		
-		    allowed = {
-			    original_tag = ENG
-			}
-			
-			available = {
-			    OR = {
-					has_government = moderate_socialist
-					has_government = revolutionary_socialist
-				} 
-			}
-			
-			traits = { flamboyant_tough_guy }			
-		}
-		
-		britain_sic_len_mccluskey = {
-		
-		    allowed = {
-			    original_tag = ENG
-			}
-			
-			available = {
-			    OR = {
-					has_government = revolutionary_socialist
-				}
-				NOT = {
-					has_country_leader = {
-						name = "Len McCluskey"
-						ruling_only = yes
-					}
-				}
-			}
-			
-			traits = { ambitious_union_boss }			
-		}
-		
-		britain_sic_gail_cartmail = {
-		
-		    allowed = {
-			    original_tag = ENG
-			}
-			
-			available = {
-			    OR = {
-					has_government = revolutionary_socialist
-				}
-			}
-			
-			traits = { political_protege }			
-		}
-		
-		britain_sic_george_monboit = {
-		
-		    allowed = {
-			    original_tag = ENG
-			}
-			
-			available = {
-			    OR = {
-					has_government = revolutionary_socialist
-				}
-			}
-			
-			traits = { insignificant_layman }			
-		}
-		
-		britain_John_McDonnell = {
-		
-		    allowed = {
-			    original_tag = ENG
-			}
-			
-			available = {
-			    OR = {
-					has_government = communist
-				}
-			}
-			
-			traits = { ambitious_union_boss }			
-		}
+
 		
 		britain_Charles_Kennedy = {
 		
@@ -639,6 +495,12 @@ ideas = {
 			available = {
 			    OR = {
 					has_government = communist
+				}
+			}
+			NOT = {
+				has_country_leader = {
+					name = "Charles Kennedy"
+					ruling_only = yes
 				}
 			}
 			
@@ -666,7 +528,7 @@ ideas = {
 	
 	foreign_minister = {
 	
-		britain_fom_dominic_cummings = {
+		britain_russel_brand = {
 		
 		    allowed = {
 			    original_tag = ENG
@@ -681,22 +543,8 @@ ideas = {
 			traits = { international_schemer }			
 		}
 		
-		britain_fom_michael_mclaughlin = {
 		
-		    allowed = {
-			    original_tag = ENG
-			}
-			
-			available = {
-			    OR = {
-					has_government = fascist
-				} 
-			}
-			
-			traits = { international_schemer }			
-		}
-		
-		britain_fom_arthur_kemp = {
+		britain_katie_hopkins = {
 		
 		    allowed = {
 			    original_tag = ENG
@@ -711,7 +559,7 @@ ideas = {
 			traits = { iron_fisted_brute }			
 		}
 		
-		britain_fom_nigel_farage = {
+		britain_owen_jones = {
 		
 		    allowed = {
 			    original_tag = ENG
@@ -726,7 +574,7 @@ ideas = {
 			traits = { ideological_crusader }			
 		}
 		
-		britain_fom_damian_green = {
+		britain_alan_sugar = {
 		
 		    allowed = {
 			    original_tag = ENG
@@ -741,7 +589,7 @@ ideas = {
 			traits = { apologetic_clerk }			
 		}
 		
-		britain_fom_jeremy_browne = {
+		britain_tim_farron = {
 		
 		    allowed = {
 			    original_tag = ENG
@@ -756,7 +604,7 @@ ideas = {
 			traits = { ideological_crusader }			
 		}
 		
-		britain_fom_mike_gapes = {
+		britain_david_lammy = {
 		
 		    allowed = {
 			    original_tag = ENG
@@ -771,7 +619,7 @@ ideas = {
 			traits = { apologetic_clerk }			
 		}
 		
-		britain_fom_keir_starmer = {
+		Britain_Angela_Rayner = {
 		
 		    allowed = {
 			    original_tag = ENG
@@ -785,8 +633,41 @@ ideas = {
 			
 			traits = { great_compromiser }			
 		}
+
 		
-		britain_fom_margaret_beckett = {
+		britain_John_Prescott = {
+		
+		    allowed = {
+			    original_tag = ENG
+			}
+			
+			available = {
+			    OR = {
+					has_government = revolutionary_socialist
+				}
+
+			}
+			
+			traits = { apologetic_clerk }			
+		}
+		
+		britain_Theresa_May = {
+		
+		    allowed = {
+			    original_tag = ENG
+			}
+			
+			available = {
+			    OR = {
+					has_government = revolutionary_socialist
+					has_government = communist
+				} 
+			}
+			
+			traits = { apologetic_clerk }			
+		}
+		
+		britain_kenneth_clarke = {
 		
 		    allowed = {
 			    original_tag = ENG
@@ -795,57 +676,9 @@ ideas = {
 			available = {
 			    OR = {
 					has_government = moderate_socialist
-				} 
-			}
-			
-			traits = { ideological_crusader }			
-		}
-		
-		britain_fom_lindsey_german = {
-		
-		    allowed = {
-			    original_tag = ENG
-			}
-			
-			available = {
-			    OR = {
 					has_government = revolutionary_socialist
-				}
-				NOT = {
-					has_country_leader = {
-						name = "Lindsey German"
-						ruling_only = yes
-					}
-				}
-			}
-			
-			traits = { apologetic_clerk }			
-		}
-		
-		britain_fom_martin_smith = {
-		
-		    allowed = {
-			    original_tag = ENG
-			}
-			
-			available = {
-			    OR = {
-					has_government = revolutionary_socialist
-				} 
-			}
-			
-			traits = { apologetic_clerk }			
-		}
-		
-		britain_fom_arshad_ali = {
-		
-		    allowed = {
-			    original_tag = ENG
-			}
-			
-			available = {
-			    OR = {
-					has_government = revolutionary_socialist
+					has_government = communist
+
 				} 
 			}
 			
@@ -862,7 +695,7 @@ ideas = {
 			    OR = {
 					has_government = moderate_socialist
 					has_government = revolutionary_socialist
-					has_government = communist
+
 				} 
 			}
 			
@@ -880,6 +713,12 @@ ideas = {
 					has_government = communist
 				} 
 			}
+			NOT = {
+				has_country_leader = {
+					name = "Dermot Hudson"
+					ruling_only = yes
+				}
+			}
 			
 			traits = { biased_intellectual }			
 		}
@@ -887,7 +726,7 @@ ideas = {
 	
 	industry_minister = {
 		
-		britain_ind_anthony_bamford = {
+		Britain_Kate_Hoey = {
 		
 		    allowed = {
 			    original_tag = ENG
@@ -901,23 +740,8 @@ ideas = {
 			
 			traits = { corrupt_kleptocrat }			
 		}
-		
-		britain_ind_max_mosley = {
-		
-		    allowed = {
-			    original_tag = ENG
-			}
-			
-			available = {
-			    OR = {
-					has_government = fascist
-				} 
-			}
-			
-			traits = { resource_industrialist }			
-		}
-				
-		britain_ind_jim_dowson = {
+	
+		Britain_Patrick_Stewart = {
 		
 		    allowed = {
 			    original_tag = ENG
@@ -932,7 +756,7 @@ ideas = {
 			traits = { corrupt_kleptocrat }			
 		}
 		
-		britain_ind_rupert_murdoch = {
+		Britain_Rupert_Murdoch = {
 		
 		    allowed = {
 			    original_tag = ENG
@@ -947,7 +771,7 @@ ideas = {
 			traits = { libertarian_capitalist }			
 		}
 		
-		britain_ind_philip_hammond = {
+		Britain_rebecca_long_bailey = {
 		
 		    allowed = {
 			    original_tag = ENG
@@ -962,7 +786,7 @@ ideas = {
 			traits = { extreme_regulator }			
 		}
 		
-		britain_ind_david_laws = {
+		britain_Bill_Nighy = {
 		
 		    allowed = {
 			    original_tag = ENG
@@ -977,7 +801,7 @@ ideas = {
 			traits = { libertarian_capitalist }			
 		}
 		
-		britain_ind_kenneth_clarke = {
+		Britain_Margaret_Beckett = {
 		
 		    allowed = {
 			    original_tag = ENG
@@ -992,7 +816,7 @@ ideas = {
 			traits = { administrative_genius }			
 		}
 		
-		britain_ind_andy_burnham = {
+		britain_john_hurt = {
 		
 		    allowed = {
 			    original_tag = ENG
@@ -1007,30 +831,9 @@ ideas = {
 			traits = { extreme_regulator }			
 		}
 		
-		britain_ind_john_mcdonnell = {
+
 		
-		    allowed = {
-			    original_tag = ENG
-			}
-			
-			available = {
-			    OR = {
-					has_government = moderate_socialist
-					has_government = revolutionary_socialist
-					has_government = communist
-				}
-				NOT = {
-					has_country_leader = {
-						name = "John McDonnell"
-						ruling_only = yes
-					}
-				}
-			}
-			
-			traits = { administrative_genius }			
-		}
-		
-		britain_ind_paul_cockshott = {
+		britain_Chris_Whitty = {
 		
 		    allowed = {
 			    original_tag = ENG
@@ -1081,7 +884,7 @@ ideas = {
 	
 	national_security_minister = {
 	
-		britain_nsm_ben_wallace = {
+		britain_rory_stewart = {
 		
 		    allowed = {
 			    original_tag = ENG
@@ -1096,7 +899,7 @@ ideas = {
 			traits = { isolationist }			
 		}
 		
-		britain_nsm_mark_collett = {
+		britain_ben_kingsley = {
 		
 		    allowed = {
 			    original_tag = ENG
@@ -1111,7 +914,7 @@ ideas = {
 			traits = { efficient_sociopath }			
 		}
 		
-		britain_nsm_tommy_robinson = {
+		britain_Amber_Rudd = {
 		
 		    allowed = {
 			    original_tag = ENG
@@ -1126,7 +929,7 @@ ideas = {
 			traits = { prince_of_terror }			
 		}
 		
-		britain_nsm_princess_anne = {
+		britain_michael_caine = {
 		
 		    allowed = {
 			    original_tag = ENG
@@ -1141,7 +944,7 @@ ideas = {
 			traits = { compassionate_gentleman }			
 		}
 		
-		britain_nsm_amber_rudd = {
+		Britain_Nadine_Dorries = {
 		
 		    allowed = {
 			    original_tag = ENG
@@ -1156,7 +959,7 @@ ideas = {
 			traits = { silent_lawyer }			
 		}
 		
-		britain_nsm_nick_harvey = {
+		britain_ian_duncan_smith = {
 		
 		    allowed = {
 			    original_tag = ENG
@@ -1171,7 +974,7 @@ ideas = {
 			traits = { compassionate_gentleman }			
 		}
 		
-		britain_nsm_chris_leslie = {
+		britain_john_bercow = {
 		
 		    allowed = {
 			    original_tag = ENG
@@ -1186,7 +989,7 @@ ideas = {
 			traits = { compassionate_gentleman }			
 		}
 		
-		britain_nsm_peter_mandelson = {
+		britain_rowan_atkinson = {
 		
 		    allowed = {
 			    original_tag = ENG
@@ -1198,10 +1001,11 @@ ideas = {
 				} 
 			}
 			
-			traits = { prince_of_terror }			
+			traits = { compassionate_gentleman }			
 		}
 		
-		britain_nsm_clive_lewis = {
+		
+		britain_Jeremy_Hunt = {
 		
 		    allowed = {
 			    original_tag = ENG
@@ -1210,36 +1014,8 @@ ideas = {
 			available = {
 			    OR = {
 					has_government = moderate_socialist
-				} 
-			}
-			
-			traits = { silent_lawyer }			
-		}
-		
-		britain_nsm_frank_sweeney = {
-		
-		    allowed = {
-			    original_tag = ENG
-			}
-			
-			available = {
-			    OR = {
 					has_government = revolutionary_socialist
-				} 
-			}
-			
-			traits = { compassionate_gentleman }			
-		}
-		
-		britain_nsm_victoria_brittain = {
-		
-		    allowed = {
-			    original_tag = ENG
-			}
-			
-			available = {
-			    OR = {
-					has_government = revolutionary_socialist
+					has_government = communist
 				} 
 			}
 			
@@ -1254,6 +1030,8 @@ ideas = {
 			
 			available = {
 			    OR = {
+					has_government = moderate_socialist
+					has_government = revolutionary_socialist
 					has_government = communist
 				} 
 			}
@@ -1281,7 +1059,7 @@ ideas = {
 	
 	intelligence_minister = {
 	
-		britain_inm_mikko_vehvilainen = {
+		britain_george_osborne = {
 		
 		    allowed = {
 			    original_tag = ENG
@@ -1296,7 +1074,7 @@ ideas = {
 			traits = { novice_mastermind }			
 		}
 		
-		britain_inm_andrew_brons = {
+		Britain_Esther_Mcvey = {
 		
 		    allowed = {
 			    original_tag = ENG
@@ -1311,7 +1089,7 @@ ideas = {
 			traits = { novice_mastermind }			
 		}
 		
-		britain_inm_john_sawers = {
+		britain_Simon_Pegg = {
 		
 		    allowed = {
 			    original_tag = ENG
@@ -1332,7 +1110,7 @@ ideas = {
 			traits = { intelligence_director }			
 		}
 		
-		britain_inm_china_mieville = {
+		britain_Matt_Hancock = {
 		
 		    allowed = {
 			    original_tag = ENG
@@ -1340,8 +1118,9 @@ ideas = {
 			
 			available = {
 			    OR = {
+					has_government = moderate_socialist
 					has_government = revolutionary_socialist
-				}
+					has_government = communist				}
 			}
 			
 			traits = { novice_mastermind }			
