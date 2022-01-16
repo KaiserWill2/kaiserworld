@@ -280,7 +280,9 @@ focus_tree = {
 		}
 		prerequisite = { focus =  ENG_Order_Mass_Arrests  }
 		completion_reward = {
-
+			country_event = {
+				id = england.82
+			}
 		}
 	
 	}
@@ -296,7 +298,9 @@ focus_tree = {
 		}
 		prerequisite = { focus =  ENG_Hunt_For_Gethin_Gruffydd  }
 		completion_reward = {
-
+			country_event = {
+				id = england.83
+			}
 		}
 	
 	}
@@ -360,7 +364,9 @@ focus_tree = {
 		}
 		prerequisite = { focus =  ENG_Slit_The_Welsh_Throats  }
 		completion_reward = {
-
+			country_event = {
+				id = england.84
+			}
 		}
 	
 	}
@@ -411,7 +417,9 @@ focus_tree = {
 		prerequisite = { focus =  ENG_Let_Our_People_Grow_Strong  }
 		prerequisite = { focus =  ENG_Send_The_Welsh_To_The_Work_Camps  }
 		completion_reward = {
-
+			country_event = {
+				id = england.85
+			}
 		}
 	
 	}
@@ -427,7 +435,9 @@ focus_tree = {
 		}
 		prerequisite = { focus =  ENG_A_Bigger_State  }
 		completion_reward = {
-
+			country_event = {
+				id = england.86
+			}
 		}
 	
 	}
@@ -459,7 +469,9 @@ focus_tree = {
 		}
 		prerequisite = { focus =  ENG_Prepare_For_Scottish_Exetermination  }
 		completion_reward = {
-
+			country_event = {
+				id = england.95
+			}
 		}
 	
 	}
@@ -508,7 +520,9 @@ focus_tree = {
 		}
 		prerequisite = { focus =  ENG_Prepare_For_Scottish_Exetermination  }
 		completion_reward = {
-
+			country_event = {
+				id = england.96
+			}
 		}
 	
 	}
@@ -540,7 +554,9 @@ focus_tree = {
 		}
 		prerequisite = { focus =  ENG_A_Refusal_Will_Cost_You_Dearly  }
 		completion_reward = {
-
+			country_event = {
+				id = england.97
+			}
 		}
 	
 	}
@@ -557,7 +573,9 @@ focus_tree = {
 		prerequisite = { focus =  ENG_A_Easier_Plan_For_Scotland  }
 		prerequisite = { focus =  ENG_Kidnap_The_Kings_Daughter  }
 		completion_reward = {
-
+			country_event = {
+				id = england.98
+			}
 		}
 	
 	}
@@ -571,8 +589,15 @@ focus_tree = {
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
+		available = {
+			has_completed_focus = ENG_The_Iron_Fist_Strikes_Harder
+			has_completed_focus = ENG_A_Stronger_Well_Built_Army
+		}
 		prerequisite = { focus =  ENG_Killing_His_Blodline  }
 		completion_reward = {
+			country_event = {
+				id = england.99
+			}
 			set_country_flag = ENG_the_scottish_reaction_flag
 			mark_focus_tree_layout_dirty = yes
 		}
@@ -590,7 +615,9 @@ focus_tree = {
 		}
 		prerequisite = { focus =  ENG_The_Past_Leaders_Couldnt_Do_What_I_Did  }
 		completion_reward = {
-
+			country_event = {
+				id = england.87
+			}
 		}
 	
 	}
@@ -623,7 +650,9 @@ focus_tree = {
 		}
 		prerequisite = { focus =  ENG_Harvest_Welsh_Resources  }
 		completion_reward = {
-
+			country_event = {
+				id = england.88
+			}
 		}
 	
 	}
@@ -639,7 +668,9 @@ focus_tree = {
 		}
 		prerequisite = { focus =  ENG_Feed_The_Elite  }
 		completion_reward = {
-
+			country_event = {
+				id = england.89
+			}
 		}
 	
 	}
@@ -704,7 +735,9 @@ focus_tree = {
 		prerequisite = { focus =  ENG_Ban_Social_Gatherings  }
 		prerequisite = { focus =  ENG_Grow_The_Kennedy_Fandom  }
 		completion_reward = {
-
+			country_event = {
+				id = england.90
+			}
 		}
 	
 	}
@@ -720,7 +753,9 @@ focus_tree = {
 		}
 		prerequisite = { focus =  ENG_The_Past_Leaders_Couldnt_Do_What_I_Did  }
 		completion_reward = {
-
+			country_event = {
+				id = england.91
+			}
 		}
 	
 	}
@@ -784,7 +819,9 @@ focus_tree = {
 		}
 		prerequisite = { focus =  ENG_Rebuild_The_Army  }
 		completion_reward = {
-
+			country_event = {
+				id = england.92
+			}
 		}
 	
 	}
@@ -800,7 +837,9 @@ focus_tree = {
 		}
 		prerequisite = { focus =  ENG_Create_Military_Schools  }
 		completion_reward = {
-
+			country_event = {
+				id = england.93
+			}
 		}
 	
 	}
@@ -833,7 +872,9 @@ focus_tree = {
 		prerequisite = { focus =  ENG_Create_The_Peoples_Defence_Academy  }
 		prerequisite = { focus =  ENG_Invest_In_New_Military_Research  }
 		completion_reward = {
-
+			country_event = {
+				id = england.94
+			}
 		}
 	
 	}
@@ -859,7 +900,9 @@ focus_tree = {
 			FOCUS_FILTER_POLITICAL
 		}
 		completion_reward = {
-
+			country_event = {
+				id = england.100
+			}
 		}
 	
 	}
@@ -891,7 +934,9 @@ focus_tree = {
 		}
 		prerequisite = { focus =  ENG_The_Irish_Suprise  }
 		completion_reward = {
-
+			country_event = {
+				id = england.103
+			}
 		}
 	
 	}
@@ -973,7 +1018,9 @@ focus_tree = {
 		prerequisite = { focus =  ENG_Execute_Welsh_Prisoners  }
 		prerequisite = { focus =  ENG_Prepare_A_Nuclear_Strike_On_Ireland  }
 		completion_reward = {
-
+			country_event = {
+				id = england.104
+			}
 		}
 	
 	}
@@ -1010,7 +1057,9 @@ focus_tree = {
 		}
 		prerequisite = { focus =  ENG_The_Irish_Suprise  }
 		completion_reward = {
-
+			country_event = {
+				id = england.101
+			}
 		}
 	
 	}
@@ -1058,7 +1107,9 @@ focus_tree = {
 		}
 		prerequisite = { focus =  ENG_Defend_The_Borders_Of_Berwick  }
 		completion_reward = {
-
+			country_event = {
+				id = england.102
+			}
 		}
 	
 	}
@@ -1077,7 +1128,9 @@ focus_tree = {
 		}
 		prerequisite = { focus =  ENG_UN_Debates_Intervention  }
 		completion_reward = {
-
+			country_event = {
+				id = england.105
+			}
 		}
 	
 	}
@@ -1126,6 +1179,9 @@ focus_tree = {
 		prerequisite = { focus =  ENG_UN_Invades_Channel  }
 		prerequisite = { focus =  ENG_Pull_Out_Of_Wales  }
 		completion_reward = {
+			country_event = {
+				id = england.106
+			}
 			set_country_flag = ENG_the_UN_in_ENG
 			mark_focus_tree_layout_dirty = yes
 		}
@@ -1147,7 +1203,9 @@ focus_tree = {
 		}
 		prerequisite = { focus =  ENG_UN_Debates_Intervention  }
 		completion_reward = {
-
+			country_event = {
+				id = england.107
+			}
 		}
 	
 	}
@@ -1197,7 +1255,9 @@ focus_tree = {
 		prerequisite = { focus =  ENG_Defending_The_Welsh_Border  }
 		prerequisite = { focus =  ENG_Advance_Into_Scotland  }
 		completion_reward = {
-
+			country_event = {
+				id = england.108
+			}
 		}
 	
 	}
@@ -1216,7 +1276,9 @@ focus_tree = {
 		}
 		prerequisite = { focus =  ENG_Push_Back_The_Bastards  }
 		completion_reward = {
-
+			country_event = {
+				id = england.109
+			}
 		}
 	
 	}
@@ -1232,10 +1294,13 @@ focus_tree = {
 		}
 		prerequisite = { focus =  ENG_Push_Onwards  }
 		completion_reward = {
-
+			country_event = {
+				id = england.110
+			}
 		}
-	
 	}
+	
+	
 
 	focus = {
 		id = ENG_The_New_WMD_On_Irish
@@ -1266,7 +1331,9 @@ focus_tree = {
 		prerequisite = { focus =  ENG_The_New_WMD_On_Irish  }
 
 		completion_reward = {
-
+			country_event = {
+				id = england.111
+			}
 		}
 	
 	}
@@ -1352,7 +1419,9 @@ focus_tree = {
 		prerequisite = { focus = ENG_Taking_The_Highlands }
 
 		completion_reward = {
-
+			country_event = {
+				id = england.115
+			}
 		}
 	
 	}
@@ -1370,7 +1439,7 @@ focus_tree = {
 		prerequisite = { focus = ENG_The_Scottish_Throne_Is_Ours }
 
 		completion_reward = {
-
+	
 		}
 	
 	}
@@ -1512,7 +1581,9 @@ focus_tree = {
 		prerequisite = { focus = ENG_Taking_Newtown }
 		prerequisite = { focus = ENG_Destroy_St_Davids }
 		completion_reward = {
-
+			country_event = {
+				id = england.112
+			}
 		}
 	
 	}
@@ -1545,7 +1616,9 @@ focus_tree = {
 		}
 		prerequisite = { focus = ENG_Prepare_For_The_Irish_Invasion }
 		completion_reward = {
-
+			country_event = {
+				id = england.113
+			}
 		}
 	
 	}
@@ -1561,7 +1634,9 @@ focus_tree = {
 		}
 		prerequisite = { focus = ENG_Threaten_The_Irish_For_Involvement }
 		completion_reward = {
-
+			country_event = {
+				id = england.114
+			}
 		}
 	
 	}
@@ -1665,7 +1740,9 @@ focus_tree = {
 		prerequisite = { focus = ENG_The_Irish_Cowards }
 		prerequisite = { focus = ENG_Scotland_No_More }
 		completion_reward = {
-
+			country_event = {
+				id = england.116
+			}
 		}
 	
 	}
@@ -1687,7 +1764,9 @@ focus_tree = {
 		}
 		prerequisite = { focus =  ENG_Push_Back_The_Bastards  }
 		completion_reward = {
-
+			country_event = {
+				id = england.117
+			}
 		}
 	
 	}
@@ -1751,9 +1830,11 @@ focus_tree = {
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
-		prerequisite = { focus =  ENG_Defend_the_New_Hadrians_Wall  }
+		prerequisite = { focus =  ENG_The_North_Is_Lost  }
 		completion_reward = {
-
+			country_event = {
+				id = england.118
+			}
 		}
 	
 	}
@@ -1772,7 +1853,9 @@ focus_tree = {
 		}
 		prerequisite = { focus =  ENG_Protecting_The_South_Of_England  }
 		completion_reward = {
-
+			country_event = {
+				id = england.119
+			}
 		}
 	
 	}
@@ -1788,7 +1871,9 @@ focus_tree = {
 		}
 		prerequisite = { focus =  ENG_Sit_Down_With_Scotland  }
 		completion_reward = {
-
+			country_event = {
+				id = england.120
+			}
 		}
 	
 	}
@@ -1820,7 +1905,9 @@ focus_tree = {
 		}
 		prerequisite = { focus =  ENG_Sit_Down_With_Scotland  }
 		completion_reward = {
-
+			country_event = {
+				id = england.121
+			}
 		}
 	
 	}
@@ -1855,7 +1942,9 @@ focus_tree = {
 		}
 		prerequisite = { focus =  ENG_Protecting_The_South_Of_England  }
 		completion_reward = {
-
+			country_event = {
+				id = england.122
+			}
 		}
 	
 	}
@@ -1903,7 +1992,9 @@ focus_tree = {
 		}
 		prerequisite = { focus =  ENG_The_Battle_Of_Cable_Street  }
 		completion_reward = {
-
+			country_event = {
+				id = england.123
+			}
 		}
 	
 	}
@@ -1919,7 +2010,9 @@ focus_tree = {
 		}
 		prerequisite = { focus =  ENG_Kennedys_Last_Stand  }
 		completion_reward = {
-
+			country_event = {
+				id = england.124
+			}
 		}
 	
 	}
@@ -1993,7 +2086,9 @@ focus_tree = {
 		prerequisite = { focus =  ENG_Defend_The_Scottish_Border  }
 		prerequisite = { focus =  ENG_Fight_On_The_Cliffs_Of_Dover  }
 		completion_reward = {
-
+			country_event = {
+				id = england.125
+			}
 		}
 	
 	}
@@ -2041,7 +2136,9 @@ focus_tree = {
 		}
 		prerequisite = { focus =  ENG_Fight_The_Scottish_Advancement  }
 		completion_reward = {
-
+			country_event = {
+				id = england.126
+			}
 		}
 	
 	}
@@ -2189,7 +2286,9 @@ focus_tree = {
 		prerequisite = { focus =  ENG_Retreat_To_The_Midlands  }
 
 		completion_reward = {
-
+			country_event = {
+				id = england.128
+			}
 		}
 	
 	}
@@ -2206,7 +2305,9 @@ focus_tree = {
 		prerequisite = { focus =  ENG_The_Southern_Union_Of_England  }
 
 		completion_reward = {
-
+			country_event = {
+				id = england.129
+			}
 		}
 	
 	}
@@ -2260,7 +2361,9 @@ focus_tree = {
 		prerequisite = { focus =  ENG_A_Fight_To_The_Death  }
 
 		completion_reward = {
-
+			country_event = {
+				id = england.132
+			}
 		}
 	
 	}
@@ -2294,7 +2397,9 @@ focus_tree = {
 		prerequisite = { focus =  ENG_Defend_Kennedys_Palace  }
 		prerequisite = { focus =  ENG_Russia_Has_Betrayed_Us  }
 		completion_reward = {
-
+			country_event = {
+				id = england.133
+			}
 		}
 	
 	}
@@ -2332,7 +2437,9 @@ focus_tree = {
 		prerequisite = { focus =  ENG_We_Accept  }
 
 		completion_reward = {
-
+			country_event = {
+				id = england.130
+			}
 		}
 	
 	}
@@ -2349,7 +2456,9 @@ focus_tree = {
 		prerequisite = { focus =  ENG_The_Arrest_Of_Kennedy  }
 
 		completion_reward = {
-
+			country_event = {
+				id = england.131
+			}
 		}
 	
 	}

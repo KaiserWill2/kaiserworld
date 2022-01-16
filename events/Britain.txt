@@ -1062,3 +1062,629 @@ country_event = {
 
 	}
 }
+
+country_event = {
+	id = England.82
+	title = England.82.t
+	desc = England.82.d
+	picture = hunt_for_gethin_Event
+	is_triggered_only = yes
+	option = {
+		name = England.82.o1
+
+	}
+}
+
+country_event = {
+	id = England.83
+	title = England.83.t
+	desc = England.83.d
+	picture = Portillo_takes_over_event
+	is_triggered_only = yes
+	option = {
+		name = England.83.o1
+
+	}
+}
+
+country_event = {
+	id = England.84
+	title = England.84.t
+	desc = England.84.d
+	picture = wales_destory_city_event
+	is_triggered_only = yes
+	option = {
+		name = England.84.o1
+
+	}
+}
+
+country_event = {
+	id = England.85
+	title = England.85.t
+	desc = England.85.d
+	picture = the_biggeR_state_event
+	is_triggered_only = yes
+	option = {
+		name = England.85.o1
+
+	}
+}
+
+country_event = {
+	id = England.86
+	title = England.86.t
+	desc = England.86.d
+	picture = kennedy_talks_about_himself_event
+	is_triggered_only = yes
+	option = {
+		name = England.86.o1
+
+	}
+}
+
+country_event = {
+	id = England.87
+	title = England.87.t
+	desc = England.87.d
+	picture = better_stronger_english_event
+	is_triggered_only = yes
+	option = {
+		name = England.87.o1
+
+	}
+}
+
+country_event = {
+	id = England.88
+	title = England.88.t
+	desc = England.88.d
+	picture = giving_back_to_the_elite_event
+	is_triggered_only = yes
+	option = {
+		name = England.88.o1
+
+	}
+}
+
+country_event = {
+	id = England.89
+	title = England.89.t
+	desc = England.89.d
+	picture = the_new_kennedy_photos
+	is_triggered_only = yes
+	option = {
+		name = England.89.o1
+
+	}
+}
+
+country_event = {
+	id = England.90
+	title = England.90.t
+	desc = England.90.d
+	picture = kennedys_iron_fist_event
+	is_triggered_only = yes
+	option = {
+		name = England.90.o1
+
+	}
+}
+
+country_event = {
+	id = England.91
+	title = England.91.t
+	desc = England.91.d
+	picture = rebuilding_the_army_event
+	is_triggered_only = yes
+	option = {
+		name = England.91.o1
+
+	}
+}
+
+country_event = {
+	id = England.92
+	title = England.92.t
+	desc = England.92.d
+	picture = new_military_education_event
+	is_triggered_only = yes
+	option = {
+		name = England.92.o1
+
+	}
+}
+
+country_event = {
+	id = England.93
+	title = England.93.t
+	desc = England.93.d
+	picture = rise_up_people_event
+	is_triggered_only = yes
+	option = {
+		name = England.93.o1
+
+	}
+}
+
+country_event = {
+	id = England.94
+	title = England.94.t
+	desc = England.94.d
+	picture = the_peoples_new_well_built_army_event
+	is_triggered_only = yes
+	option = {
+		name = England.94.o1
+
+	}
+}
+
+country_event = {
+	id = England.95
+	title = England.95.t
+	desc = England.95.d
+	picture = highland_training_event
+	is_triggered_only = yes
+	option = {
+		name = England.95.o1
+
+	}
+}
+
+country_event = {
+	id = England.96
+	title = England.96.t
+	desc = England.96.d
+	picture = a_message_to_the_king_Event
+	is_triggered_only = yes
+	option = {
+		name = England.96.o1
+
+	}
+}
+
+country_event = {
+	id = England.97
+	title = England.97.t
+	desc = England.97.d
+	picture = kidnapping_kings_daughter_event
+	is_triggered_only = yes
+	option = {
+		name = England.97.o1
+
+	}
+}
+
+country_event = {
+	id = England.98
+	title = England.98.t
+	desc = England.98.d
+	picture = killing_the_bloodline_event
+	is_triggered_only = yes
+	option = {
+		name = England.98.o1
+
+	}
+}
+
+country_event = {
+	id = England.99
+	title = England.99.t
+	desc = England.99.d
+	picture = waiting_for_scottish_reaction_event
+	is_triggered_only = yes
+	option = {
+		name = England.99.o1
+
+	}
+}
+
+country_event = {
+	id = England.100
+	title = England.100.t
+	desc = England.100.d
+	picture = the_irish_surprise_event
+	is_triggered_only = yes
+	option = {
+		name = England.100.o1
+
+	}
+}
+
+country_event = {
+	id = England.101
+	title = England.101.t
+	desc = England.101.d
+	picture = prepare_for_scotland_attacks_event
+	is_triggered_only = yes
+	option = {
+		name = England.101.o1
+
+	}
+}
+
+country_event = {
+	id = England.102
+	title = England.102.t
+	desc = England.102.d
+	picture = the_stale_war_event
+	is_triggered_only = yes
+	option = {
+		name = England.102.o1
+
+	}
+}
+
+country_event = {
+	id = England.103
+	title = England.103.t
+	desc = England.103.d
+	picture = preotecting_welsh_beaches_event
+	is_triggered_only = yes
+	option = {
+		name = England.103.o1
+
+	}
+}
+
+country_event = {
+	id = England.104
+	title = England.104.t
+	desc = England.104.d
+	picture = failed_nuke_launch_event
+	is_triggered_only = yes
+	option = {
+		name = England.104.o1
+
+	}
+}
+
+country_event = {
+	id = England.105
+	title = England.105.t
+	desc = England.105.d
+	picture = enough_is_enough_event
+	is_triggered_only = yes
+	option = {
+		name = England.105.o1
+
+	}
+}
+
+country_event = {
+	id = England.106
+	title = England.106.t
+	desc = England.106.d
+	picture = protection_of_london_event
+	is_triggered_only = yes
+	option = {
+		name = England.106.o1
+
+	}
+}
+
+country_event = {
+	id = England.107
+	title = England.107.t
+	desc = England.107.d
+	picture = voting_fails_event
+	is_triggered_only = yes
+	option = {
+		name = England.107.o1
+
+	}
+}
+
+country_event = {
+	id = England.108
+	title = England.108.t
+	desc = England.108.d
+	picture = taking_more_ground_event
+	is_triggered_only = yes
+	option = {
+		name = England.108.o1
+
+	}
+}
+
+country_event = {
+	id = England.109
+	title = England.109.t
+	desc = England.109.d
+	picture = moving_foward_event
+	is_triggered_only = yes
+	option = {
+		name = England.109.o1
+
+	}
+}
+
+country_event = {
+	id = England.110
+	title = England.110.t
+	desc = England.110.d
+	picture = taking_edinburgh_event
+	is_triggered_only = yes
+	option = {
+		name = England.110.o1
+
+	}
+}
+
+country_event = {
+	id = England.111
+	title = England.111.t
+	desc = England.111.d
+	picture = the_turning_point_event
+	is_triggered_only = yes
+	option = {
+		name = England.111.o1
+
+	}
+}
+
+country_event = {
+	id = England.112
+	title = England.112.t
+	desc = England.112.d
+	picture = waiting_for_welsh_surrender_event
+	is_triggered_only = yes
+	option = {
+		name = England.112.o1
+
+	}
+}
+
+country_event = {
+	id = England.113
+	title = England.113.t
+	desc = England.113.d
+	picture = threaten_the_irish_event
+	is_triggered_only = yes
+	option = {
+		name = England.113.o1
+
+	}
+}
+
+country_event = {
+	id = England.114
+	title = England.114.t
+	desc = England.114.d
+	picture = we_want_reparations_event
+	is_triggered_only = yes
+	option = {
+		name = England.114.o1
+
+	}
+}
+
+country_event = {
+	id = England.115
+	title = England.115.t
+	desc = England.115.d
+	picture = claiming_the_scottish_throne_event
+	is_triggered_only = yes
+	option = {
+		name = England.115.o1
+
+	}
+}
+
+country_event = {
+	id = England.116
+	title = England.116.t
+	desc = England.116.d
+	picture = perpare_for_unifcation_event
+	is_triggered_only = yes
+	option = {
+		name = England.116.o1
+
+	}
+}
+
+country_event = {
+	id = England.117
+	title = England.117.t
+	desc = England.117.d
+	picture = scotland_takes_land_event
+	is_triggered_only = yes
+	option = {
+		name = England.117.o1
+
+	}
+}
+
+country_event = {
+	id = England.118
+	title = England.118.t
+	desc = England.118.d
+	picture = protecting_the_south_event
+	is_triggered_only = yes
+	option = {
+		name = England.118.o1
+
+	}
+}
+
+country_event = {
+	id = England.119
+	title = England.119.t
+	desc = England.119.d
+	picture = meeting_with_scotland_event
+	is_triggered_only = yes
+	option = {
+		name = England.119.o1
+
+	}
+}
+
+country_event = {
+	id = England.120
+	title = England.120.t
+	desc = England.120.d
+	picture = isolated_south_england_event
+	is_triggered_only = yes
+	option = {
+		name = England.120.o1
+
+	}
+}
+
+country_event = {
+	id = England.121
+	title = England.121.t
+	desc = England.121.d
+	picture = kingdom_of_northumberland_event
+	is_triggered_only = yes
+	option = {
+		name = England.121.o1
+
+	}
+}
+
+country_event = {
+	id = England.122
+	title = England.122.t
+	desc = England.122.d
+	picture = keeping_the_war_going_Event
+	is_triggered_only = yes
+	option = {
+		name = England.122.o1
+
+	}
+}
+
+country_event = {
+	id = England.123
+	title = England.123.t
+	desc = England.123.d
+	picture = kennedys_last_stand_event
+	is_triggered_only = yes
+	option = {
+		name = England.123.o1
+
+	}
+}
+
+country_event = {
+	id = England.124
+	title = England.124.t
+	desc = England.124.d
+	picture = a_new_flag_is_raised_event
+	is_triggered_only = yes
+	option = {
+		name = England.124.o1
+
+	}
+}
+
+country_event = {
+	id = England.125
+	title = England.125.t
+	desc = England.125.d
+	picture = canada_makes_a_target_event
+	is_triggered_only = yes
+	option = {
+		name = England.125.o1
+
+	}
+}
+
+country_event = {
+	id = England.126
+	title = England.126.t
+	desc = England.126.d
+	picture = talks_for_a_ceasefire_event
+	is_triggered_only = yes
+	option = {
+		name = England.126.o1
+
+	}
+}
+
+country_event = {
+	id = England.127
+	title = England.127.t
+	desc = England.127.d
+	picture = cumbria_landings_event
+	is_triggered_only = yes
+	option = {
+		name = England.127.o1
+
+	}
+}
+
+country_event = {
+	id = England.128
+	title = England.128.t
+	desc = England.128.d
+	picture = southern_union_event
+	is_triggered_only = yes
+	option = {
+		name = England.128.o1
+
+	}
+}
+
+country_event = {
+	id = England.129
+	title = England.129.t
+	desc = England.129.d
+	picture = the_UN_Reaches_out_event
+	is_triggered_only = yes
+	option = {
+		name = England.129.o1
+
+	}
+}
+
+country_event = {
+	id = England.130
+	title = England.130.t
+	desc = England.130.d
+	picture = the_war_meeting_event
+	is_triggered_only = yes
+	option = {
+		name = England.130.o1
+
+	}
+}
+
+country_event = {
+	id = England.131
+	title = England.131.t
+	desc = England.131.d
+	picture = canada_takes_over_event
+	is_triggered_only = yes
+	option = {
+		name = England.131.o1
+
+	}
+}
+
+
+country_event = {
+	id = England.132
+	title = England.132.t
+	desc = England.132.d
+	picture = defending_the_castle_event
+	is_triggered_only = yes
+	option = {
+		name = England.132.o1
+
+	}
+}
+
+country_event = {
+	id = England.133
+	title = England.132.t
+	desc = England.132.d
+	picture = the_palace_has_fallen_event
+	is_triggered_only = yes
+	option = {
+		name = England.132.o1
+
+	}
+}
+
