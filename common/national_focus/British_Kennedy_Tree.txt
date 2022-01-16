@@ -2266,7 +2266,7 @@ focus_tree = {
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
-		prerequisite = { focus =  ENG_Prevent_The_UN_Advancement_Into_Kent  }
+		prerequisite = { focus =  ENG_Focus_On_England  }
 		completion_reward = {
 
 		}
