@@ -1889,7 +1889,7 @@ focus_tree = {
 		}
 		prerequisite = { focus =  ENG_The_Isolated_South  }
 		completion_reward = {
-
+			set_cosmetic_tag = ENG_south_england_union
 		}
 	
 	}
@@ -1921,7 +1921,7 @@ focus_tree = {
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
-		prerequisite = { focus =  ENG_Sit_Down_With_Scotland  }
+		prerequisite = { focus =  ENG_A_Free_Northern_England  }
 		completion_reward = {
 
 		}

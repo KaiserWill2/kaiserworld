@@ -16,7 +16,9 @@ focus_tree = {
 		x = 10
 		y = 0
 		completion_reward = {
-
+			country_event = {
+				id = england.135
+			}
 		}
 	}
 	focus = {
@@ -27,7 +29,9 @@ focus_tree = {
 		y = 1
 		prerequisite = { focus = ENG_Continue_the_Johnson_Reforms  }
 		completion_reward = {
-
+			country_event = {
+				id = england.136
+			}
 		}
 
 	}
@@ -41,7 +45,9 @@ focus_tree = {
 		y = 2
 		prerequisite = { focus = ENG_Abolish_Blairs_Personality_Cult  }
 		completion_reward = {
-
+			country_event = {
+				id = england.137
+			}
 		}
 
 	}
@@ -113,7 +119,9 @@ focus_tree = {
 		prerequisite = { focus = ENG_Better_Housing_For_The_Poor  }
 
 		completion_reward = {
-
+			country_event = {
+				id = england.138
+			}
 		}
 
 	}
@@ -141,7 +149,9 @@ focus_tree = {
 		prerequisite = { focus = ENG_Create_Congress_Councils_In_Districts  }
 
 		completion_reward = {
-
+			country_event = {
+				id = england.141
+			}
 		}
 
 	}
@@ -169,7 +179,9 @@ focus_tree = {
 		prerequisite = { focus = ENG_Rights_For_The_People  }
 
 		completion_reward = {
-
+			country_event = {
+				id = england.142
+			}
 		}
 
 	}
@@ -212,7 +224,9 @@ focus_tree = {
 		prerequisite = { focus = ENG_Introduce_National_Living_Wage  }
 
 		completion_reward = {
-
+			country_event = {
+				id = england.143
+			}
 		}
 
 	}
@@ -257,7 +271,9 @@ focus_tree = {
 		prerequisite = { focus = ENG_Allow_Limited_Private_Businesses  }
 
 		completion_reward = {
-
+			country_event = {
+				id = england.139
+			}
 		}
 
 	}
@@ -300,7 +316,9 @@ focus_tree = {
 		prerequisite = { focus = ENG_Encourage_Public_Spending  }
 
 		completion_reward = {
-
+			country_event = {
+				id = england.140
+			}
 		}
 
 	}
@@ -316,6 +334,9 @@ focus_tree = {
 		prerequisite = { focus = ENG_Introduce_Liberal_Reforms  }
 
 		completion_reward = {
+			country_event = {
+				id = england.144
+			}
 			set_country_flag = ENG_a_un_meeting
 			mark_focus_tree_layout_dirty = yes	
 		}
@@ -337,7 +358,9 @@ focus_tree = {
 			ENG_a_un_meeting = yes
 		}
 		completion_reward = {
-
+			country_event = {
+				id = england.134
+			}
 		}
 	}
 
@@ -350,7 +373,9 @@ focus_tree = {
 		prerequisite = { focus = ENG_The_UN_Meeting  }
 
 		completion_reward = {
-
+			country_event = {
+				id = england.145
+			}
 		}
 
 	}
@@ -364,7 +389,9 @@ focus_tree = {
 		prerequisite = { focus = ENG_The_Dublin_Exchange  }
 
 		completion_reward = {
-
+			country_event = {
+				id = england.146
+			}
 		}
 
 	}
@@ -378,7 +405,9 @@ focus_tree = {
 		prerequisite = { focus = ENG_The_Dublin_Exchange  }
 
 		completion_reward = {
-
+			country_event = {
+				id = england.147
+			}
 		}
 
 	}

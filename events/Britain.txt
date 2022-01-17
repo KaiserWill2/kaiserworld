@@ -1540,6 +1540,18 @@ country_event = {
 	option = {
 		name = England.121.o1
 
+		NOF = {			
+			create_country_leader = {
+				name = "Rowan Atkinson"
+				desc = "POLITICS_Rowan_Atkinson_DESC"
+				picture = "Rowan_Atkinson.dds"
+				ideology = new_democrat_ideology 
+			}
+
+			transfer_state = 130
+			transfer_state = 131
+			transfer_state = 132
+		}
 	}
 }
 
@@ -1678,13 +1690,168 @@ country_event = {
 
 country_event = {
 	id = England.133
-	title = England.132.t
-	desc = England.132.d
+	title = England.133.t
+	desc = England.133.d
 	picture = the_palace_has_fallen_event
 	is_triggered_only = yes
 	option = {
-		name = England.132.o1
+		name = England.133.o1
 
 	}
 }
 
+country_event = {
+	id = England.134
+	title = England.134.t
+	desc = England.134.d
+	picture = johnson_at_the_UN_event
+	is_triggered_only = yes
+	option = {
+		name = England.134.o1
+
+	}
+}
+
+country_event = {
+	id = England.135
+	title = England.135.t
+	desc = England.135.d
+	picture = boris_reforms_continue_event
+	is_triggered_only = yes
+	option = {
+		name = England.135.o1
+
+	}
+}
+
+country_event = {
+	id = England.136
+	title = England.136.t
+	desc = England.136.d
+	picture = ending_blair_fandom_event
+	is_triggered_only = yes
+	option = {
+		name = England.136.o1
+
+	}
+}
+
+country_event = {
+	id = England.137
+	title = England.137.t
+	desc = England.137.d
+	picture = end_totalism_evnet
+	is_triggered_only = yes
+	option = {
+		name = England.137.o1
+
+	}
+}
+
+country_event = {
+	id = England.138
+	title = England.138.t
+	desc = England.138.d
+	picture = build_back_better_event
+	is_triggered_only = yes
+	option = {
+		name = England.138.o1
+
+	}
+}
+
+country_event = {
+	id = England.139
+	title = England.139.t
+	desc = England.139.d
+	picture = build_back_better_event
+	is_triggered_only = yes
+	option = {
+		name = England.139.o1
+
+	}
+}
+
+country_event = {
+	id = England.140
+	title = England.140.t
+	desc = England.140.d
+	picture = old_london_event
+	is_triggered_only = yes
+	option = {
+		name = England.140.o1
+
+	}
+}
+
+country_event = {
+	id = England.141
+	title = England.141.t
+	desc = England.141.d
+	picture = rights_for_people_event
+	is_triggered_only = yes
+	option = {
+		name = England.141.o1
+
+	}
+}
+
+country_event = {
+	id = England.142
+	title = England.142.t
+	desc = England.142.d
+	picture = the_new_nhs_event
+	is_triggered_only = yes
+	option = {
+		name = England.142.o1
+
+	}
+}
+
+country_event = {
+	id = England.143
+	title = England.143.t
+	desc = England.143.d
+	picture = liberal_reforms_events
+	is_triggered_only = yes
+	option = {
+		name = England.143.o1
+
+	}
+}
+
+country_event = {
+	id = England.144
+	title = England.144.t
+	desc = England.144.d
+	picture = a_new_beginning_event
+	is_triggered_only = yes
+	option = {
+		name = England.144.o1
+
+	}
+}
+
+country_event = {
+	id = England.145
+	title = England.145.t
+	desc = England.145.d
+	picture = meeting_with_welsh_Event
+	is_triggered_only = yes
+	option = {
+		name = England.145.o1
+
+	}
+}
+
+country_event = {
+	id = England.146
+	title = England.146.t
+	desc = England.146.d
+	picture = new_cardiff_agreement_Event
+	is_triggered_only = yes
+	option = {
+		name = England.146.o1
+
+	}
+}

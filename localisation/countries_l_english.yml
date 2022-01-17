@@ -6538,6 +6538,11 @@ CSC_communist:0 "Union Of Scotland"
 CSC_communist_DEF:0 "Union Of Scotland"
 CSC_communist_ADJ:0 "Union Of Scotland"
 
+NOF_new_democrat:0 "Kingdom Of Northumbria"
+NOF_new_democrat_DEF:0 "Kingdom Of Northumbria"
+NOF_new_democrat_ADJ:0 "Kingdom Of Northumbria"
+
+
 
  WAL_fascist:0 "Wales"
  WAL_fascist_DEF:0 "the Welsh Social Republic"

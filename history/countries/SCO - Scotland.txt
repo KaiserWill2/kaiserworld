@@ -136,6 +136,13 @@ create_country_leader = {
 }
 
 create_country_leader = {
+	name = "Gordon Brown"
+	desc = "POLITICS_Alex_Salmond_DESC"
+	picture = "Portrait_SCO_Alex_Salmond.dds"
+	ideology = european_conservative
+}
+
+create_country_leader = {
 	name = "Gordon Wilson"
 	picture = "Portrait_SCO_Gordon_Wilson.dds"
 	ideology = centrist_ideology

@@ -659,6 +659,66 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/report_event/the_palace_has_fallen_event.dds"
 	}
 	
+	spriteType = {
+		name = "johnson_at_the_UN_event"
+		texturefile = "gfx/event_pictures/report_event/johnson_at_the_UN_event.dds"
+	}
 	
+	spriteType = {
+		name = "boris_reforms_continue_event"
+		texturefile = "gfx/event_pictures/report_event/boris_reforms_continue_event.dds"
+	}
 
+	spriteType = {
+		name = "ending_blair_fandom_event"
+		texturefile = "gfx/event_pictures/report_event/ending_blair_fandom_event.dds"
+	}
+
+	spriteType = {
+		name = "end_totalism_evnet"
+		texturefile = "gfx/event_pictures/report_event/end_totalism_evnet.dds"
+	}
+
+	spriteType = {
+		name = "build_back_better_event"
+		texturefile = "gfx/event_pictures/report_event/build_back_better_event.dds"
+	}
+	
+	spriteType = {
+		name = "old_london_event"
+		texturefile = "gfx/event_pictures/report_event/old_london_event.dds"
+	}
+	
+	spriteType = {
+		name = "rights_for_people_event"
+		texturefile = "gfx/event_pictures/report_event/rights_for_people_event.dds"
+	}
+
+	spriteType = {
+		name = "the_new_nhs_event"
+		texturefile = "gfx/event_pictures/report_event/the_new_nhs_event.dds"
+	}
+	
+	spriteType = {
+		name = "liberal_reforms_events"
+		texturefile = "gfx/event_pictures/report_event/liberal_reforms_events.dds"
+	}
+
+	spriteType = {
+		name = "a_new_beginning_event"
+		texturefile = "gfx/event_pictures/report_event/a_new_beginning_event.dds"
+	}
+	
+	spriteType = {
+		name = "meeting_with_welsh_Event"
+		texturefile = "gfx/event_pictures/report_event/meeting_with_welsh_Event.dds"
+	}
+	
+	spriteType = {
+		name = "new_cardiff_agreement_Event"
+		texturefile = "gfx/event_pictures/report_event/new_cardiff_agreement_Event.dds"
+	}
+
+	
+	
 }

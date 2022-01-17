@@ -1,0 +1,601 @@
+capital = 131
+
+oob = "generic_2000"
+
+#add_ideas = {
+#
+#}
+
+set_research_slots = 4
+set_convoys = 1000
+set_stability = 0.8
+set_war_support = 0.2
+
+
+if = {
+	limit = { has_dlc = "Man the Guns" }
+		set_naval_oob = "ENG_2000_naval_mtg"
+	else = {
+		set_naval_oob = "ENG_2000_naval_legacy"
+	}
+}
+
+set_research_slots = 4
+set_convoys = 1000
+set_stability = 0.8
+set_war_support = 0.2
+
+set_technology = {
+	early_submarine = 1
+	basic_submarine = 1
+	early_destroyer = 1
+	early_light_cruiser = 1
+	basic_light_cruiser = 1
+	early_heavy_cruiser = 1
+	early_carrier = 1
+	basic_carrier = 1
+	support_weapons = 1
+	infantry_weapons = 1
+	motorised_infantry = 1 
+	tech_support = 1 
+	tech_field_hospital = 1 
+	tech_engineers = 1 
+	gwtank = 1 
+	basic_light_tank = 1 
+	gw_artillery = 1 
+	tech_mountaineers = 1
+	early_fighter = 1
+	cv_early_fighter = 1
+	
+	fighter1 = 1
+	
+	naval_bomber1 = 1
+	
+	cv_naval_bomber1 = 1 
+	early_bomber = 1 
+	paratroopers = 1 
+	marines = 1
+	basic_heavy_tank = 1 
+	atomic_research = 1 
+	nuclear_reactor = 1 
+	nukes = 1
+	interwar_antiair = 1
+	interwar_antitank = 1
+}
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	set_technology = {
+		early_submarine = 1
+		basic_submarine = 1
+		early_destroyer = 1
+		early_light_cruiser = 1
+		basic_light_cruiser = 1
+		early_heavy_cruiser = 1
+		
+		
+		early_carrier = 1
+		basic_carrier = 1
+		transport = 1
+	}
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_technology = {
+		basic_naval_mines = 1
+		submarine_mine_laying = 1
+		early_ship_hull_light = 1
+		basic_ship_hull_light = 1
+		early_ship_hull_submarine = 1
+		basic_ship_hull_submarine = 1
+		early_ship_hull_cruiser = 1
+		basic_ship_hull_cruiser = 1
+		early_ship_hull_heavy = 1
+		early_ship_hull_carrier = 1
+		basic_ship_hull_carrier = 1
+		basic_battery = 1
+		basic_light_battery = 1
+		basic_medium_battery = 1
+		basic_heavy_battery = 1
+		basic_torpedo = 1
+		sonar = 1
+		basic_depth_charges = 1
+		basic_secondary_battery = 1
+		improved_secondary_battery = 1
+		basic_cruiser_armor_scheme = 1
+		basic_heavy_armor_scheme = 1
+		mtg_transport = 1
+		improved_airplane_launcher = 1
+	}
+}
+
+set_politics = {
+	ruling_party = new_democrat
+	last_election = "1997.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+
+        fascist = 0
+		nationalist = 4
+		monarchist = 0
+		national_bolshevik = 0
+		national_conservative = 5
+		centrist = 0
+		liberal = 4
+		new_democrat = 79
+		moderate_socialist = 0
+		revolutionary_socialist = 8 
+		communist = 0
+}
+add_equipment_to_stockpile = {
+	type = infantry_equipment_0
+	amount = 1000
+	producer = SCO
+}
+
+add_equipment_to_stockpile = {
+	type = anti_tank_equipment_1
+	amount = 500
+	producer = SCO
+}
+
+add_equipment_to_stockpile = {
+	type = motorized_equipment_1
+	amount = 300
+	producer = SCO
+}
+
+add_equipment_to_stockpile = {
+	type = support_equipment_1
+	amount = 400
+	producer = SCO
+}
+
+add_equipment_to_stockpile = {
+	type = artillery_equipment_1
+	amount = 500
+	producer = SCO
+}
+
+create_country_leader = {
+	name = "Alex Salmond"
+	desc = "POLITICS_Alex_Salmond_DESC"
+	picture = "Portrait_SCO_Alex_Salmond.dds"
+	ideology = nationalist_ideology
+}
+
+create_country_leader = {
+	name = "David Owen"
+	desc = "POLITICS_DAVID_OWEN_DESC"
+	picture = "Portrait_ENG_David_Owen.dds"
+	ideology = social_liberal
+}
+
+create_country_leader = {
+	name = "Owen Paterson"
+	picture = "Portrait_ENG_Owen_Paterson.dds"
+	ideology = european_conservative
+}
+
+create_country_leader = {
+	name = "Robert Griffiths"
+	picture = "Portrait_ENG_Robert_Griffiths.dds"
+	ideology = marxist
+}
+
+create_country_leader = {
+	name = "Paul Golding"
+	picture = "Portrait_ENG_Paul_Golding.dds"
+	ideology = fascist_ideology
+}
+
+
+create_country_leader = {
+	name = "Elizabeth II"
+	picture = "Portrait_ENG_Elizabeth_Second.dds"
+	ideology = absolute_monarchist
+}
+
+create_country_leader = {
+	name = "Patrick Harrington"
+	picture = "Portrait_ENG_Patrick_Harrington.dds"
+	ideology = national_bolshevik_ideology
+}
+
+create_country_leader = {
+	name = "Nick Clegg"
+	picture = "Portrait_ENG_Nick_Clegg.dds"
+	ideology = centrist_ideology
+}
+
+create_country_leader = {
+	name = "Rowan Atkinson"
+	picture = Rowan_Atkinson.dds"
+	ideology = new_democrat_ideology
+}
+
+
+create_country_leader = {
+	name = "George Galloway"
+	picture = "Portrait_ENG_George_Galloway.dds"
+	ideology = revolutionary_socialist_ideology
+}
+
+create_navy_leader = {
+    name = "Edmund Walter Anstice"
+    picture = "Sir_Edmund_Walter_Anstice.dds"
+    traits = { air_controller }
+    skill = 4
+	id = 685
+	attack_skill = 4
+	defense_skill = 2
+	maneuvering_skill = 3
+	coordination_skill = 4
+}
+
+create_field_marshal = {
+	name = "Douglas Wimberley"
+	picture = "Douglas_Wimberly.dds"
+	traits = {old_guard war_hero }
+
+	skill = 3
+	id = 675
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Bernard Gordon Lennox"
+	picture = "Bernard_Charles_Gordon_Lennox.dds"
+	traits = {combined_arms_expert panzer_leader }
+	skill = 2
+	id = 676
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Ronald Bramwell-Davis"
+	picture = "Ronald_Bramwell-Davis.dds"
+	traits = {skilled_staffer }
+	skill = 2
+	id = 677
+	attack_skill = 1
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Henry Leask"
+	picture = "Henry_Leask.dds"
+	traits = {paratrooper commando }
+	skill = 2
+	id = 678
+	attack_skill = 3
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Bill Speakman"
+	picture = "Bill_Speakman.dds"
+	traits = { }
+	skill = 1
+	id = 679
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Eric Miles"
+	picture = "Eric_Grant_Miles.dds"
+	traits = {old_guard }
+	skill = 3
+	id = 680
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Bernard Fergusson"
+	picture = "Bernard_Fergusson.dds"
+	traits = { }
+	skill = 2
+	id = 681
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Lorne Maclaine Campbell"
+	picture = "Lorne_MacLaine_Campbell.dds"
+	traits = {old_guard }
+	skill = 3
+	id = 682
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Derek Boileau Lang"
+	picture = Sir_Derek_Lang.dds
+	traits = {infantry_expert infantry_leader }
+	skill = 3
+	id = 683
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Alexander Boswell"
+	picture = "Alexander_Boswell.dds"
+	traits = {armor_officer panzer_expert panzer_leader }
+	skill = 2
+	id = 684
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_country_leader = {
+	name = "Robert Mcintyre"
+	desc = "POLITICS_ROBERT_MCINTYRE_DESC"
+	picture = "Robert_Mcintyre.dds"
+	expire = "1975.1.1"
+	ideology = social_liberal_subtype
+	traits = {
+	}
+}
+
+#create_country_leader = {
+#	name = "John MacCormick"
+#	desc = "POLITICS_JOHN_MACCORMICK_DESC"
+#	picture = "Portrait_JohnMacCormick.dds"
+#	expire = "1975.1.1"
+#	ideology = social_liberal_subtype
+#	traits = {
+#	}
+#}
+
+
+create_country_leader = {
+	name = "William Wolfe"
+	desc = "POLITICS_WILLIAM_WOLFE_DESC"
+	picture = "Portrait_SCO_William_Wolfe.dds"
+	expire = "1975.1.1"
+	ideology = social_democrat_subtype
+	traits = {
+	}
+}
+
+#create_country_leader = {
+#	name = "Willie Ross"
+#	desc = "POLITICS_WILLIE_ROSS_DESC"
+#	picture = "Willie_Ross.dds"
+#	expire = "1975.1.1"
+#	ideology = social_democrat_subtype
+#	traits = {
+#	}
+#}
+
+create_country_leader = {
+	name = "Priscilla Buchan"
+	desc = "POLITICS_PRISCILLA_BUCHAN_DESC"
+	picture = "Priscilla_Buchan.dds"
+	expire = "1975.1.1"
+	ideology = social_conservative_subtype
+	traits = {
+	}
+}
+
+add_opinion_modifier = { target = GER modifier = embargo }
+
+
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_technology = {
+		early_ship_hull_very_light = 1
+	    basic_ship_hull_very_light = 1 
+	    early_ship_hull_more_light = 1
+	    basic_ship_hull_more_light = 1
+	    early_ship_hull_light = 1
+	    basic_ship_hull_light = 1
+	    basic_depth_charges = 1
+	    sonar = 1
+	    early_ship_hull_submarine = 1
+    	basic_battery = 1
+    	basic_secondary_battery = 1
+	    basic_torpedo = 1
+	    mtg_transport = 1
+	    basic_naval_mines = 1
+	    improved_naval_mines = 1
+	    submarine_mine_laying = 1
+	    basic_ship_hull_submarine = 1
+	}
+	set_naval_oob = "SCO_1962_naval"
+}
+
+if = {
+	limit = {
+		NOT = {
+			has_dlc = "Man the Guns"
+		}
+	}
+	set_naval_oob = "SCO_1962_naval_non_mtg"
+}
+
+
+
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+
+	create_equipment_variant = {
+		name = "Illustrious Class"
+		type = ship_hull_carrier_1
+		name_group = GER_DD_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_deck_slot_1 = ship_deck_space
+			fixed_ship_deck_slot_2 = ship_deck_space
+			fixed_ship_anti_air_slot = ship_anti_air_3
+			fixed_ship_radar_slot = ship_radar_3
+			fixed_ship_engine_slot = carrier_ship_engine_2
+			fixed_ship_secondaries_slot = ship_secondaries_2
+			front_1_custom_slot = ship_deck_space
+    	}
+	}
+
+	create_equipment_variant = {
+		name = "Unicorn Class"
+		type = ship_hull_carrier_1
+		name_group = GER_DD_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_deck_slot_1 = ship_deck_space
+			fixed_ship_deck_slot_2 = ship_deck_space
+			fixed_ship_anti_air_slot = ship_anti_air_3
+			fixed_ship_radar_slot = ship_radar_3
+			fixed_ship_engine_slot = carrier_ship_engine_2
+			fixed_ship_secondaries_slot = ship_secondaries_2
+			front_1_custom_slot = ship_deck_space
+
+    	}
+	}
+
+	create_equipment_variant = {
+		name = "County Class"
+		type = heavy_cruiser_2
+		name_group = GER_DD_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_medium_battery_2
+			fixed_ship_anti_air_slot = ship_anti_air_3
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_2
+			fixed_ship_radar_slot = ship_radar_2
+			fixed_ship_engine_slot = cruiser_ship_engine_2
+			fixed_ship_secondaries_slot = ship_secondaries_2
+			fixed_ship_armor_slot = ship_armor_cruiser_2
+			mid_1_custom_slot = ship_secondaries_2
+			front_1_custom_slot = ship_anti_air_3
+			mid_2_custom_slot = ship_anti_air_3
+			rear_1_custom_slot = ship_medium_battery_2
+			rear_2_custom_slot = ship_anti_air_3
+
+    	}
+	}
+
+	create_equipment_variant = {
+		name = "Fiji Class"
+		type = light_cruiser_3
+		name_group = GER_DD_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_medium_battery_3
+			fixed_ship_anti_air_slot = ship_anti_air_3
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_3
+			fixed_ship_radar_slot = ship_radar_3
+			fixed_ship_engine_slot = cruiser_ship_engine_2
+			fixed_ship_secondaries_slot = ship_secondaries_2
+			fixed_ship_armor_slot = ship_armor_cruiser_2
+			front_1_custom_slot = ship_light_medium_battery_3
+			mid_1_custom_slot = ship_secondaries_2
+			#mid_2_custom_slot = ship_anti_air_3
+			rear_1_custom_slot = ship_light_medium_battery_3
+    	}
+	}
+
+
+	create_equipment_variant = {
+		name = "Minotaur Class"
+		type = light_cruiser_3
+		name_group = GER_DD_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_medium_battery_3
+			fixed_ship_anti_air_slot = ship_anti_air_3
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_3
+			fixed_ship_radar_slot = ship_radar_3
+			fixed_ship_engine_slot = cruiser_ship_engine_2
+			fixed_ship_secondaries_slot = ship_secondaries_2
+			fixed_ship_armor_slot = ship_armor_cruiser_2
+			front_1_custom_slot = ship_light_medium_battery_3
+			mid_1_custom_slot = ship_torpedo_3
+			#mid_2_custom_slot = ship_anti_air_3
+			rear_1_custom_slot = ship_light_medium_battery_3
+    	}
+	}
+
+
+	create_equipment_variant = {
+		name = "Uganda Class"
+		type = light_cruiser_4
+		name_group = GER_DD_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_medium_battery_4
+			fixed_ship_anti_air_slot = ship_anti_air_3
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_3
+			fixed_ship_radar_slot = ship_radar_3
+			fixed_ship_engine_slot = cruiser_ship_engine_2
+			fixed_ship_secondaries_slot = ship_secondaries_2
+			fixed_ship_armor_slot = ship_armor_cruiser_2
+			front_1_custom_slot = ship_light_medium_battery_3
+			mid_1_custom_slot = ship_torpedo_3
+			#mid_2_custom_slot = ship_anti_air_3
+			rear_1_custom_slot = ship_light_medium_battery_2
+    	}
+	}
+
+
+	create_equipment_variant = {
+		name = "WW2 Era Destroyer"
+		type = ship_hull_light_1
+		name_group = ENG_DD_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_2
+			fixed_ship_anti_air_slot = ship_anti_air_3
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_2
+			fixed_ship_radar_slot = ship_radar_2
+			fixed_ship_engine_slot = light_ship_engine_1
+			fixed_ship_torpedo_slot = ship_torpedo_2
+			mid_1_custom_slot = ship_anti_air_3
+			rear_1_custom_slot = ship_light_battery_2
+    	}
+	}
+
+	create_equipment_variant = {
+		name = "S Class"
+		type = ship_hull_submarine_2
+		name_group = GER_SS_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_engine_slot = light_ship_engine_2
+			fixed_ship_torpedo_slot = ship_torpedo_sub_2
+			rear_1_custom_slot = ship_torpedo_sub_2
+    	}
+	}
+}
