@@ -422,7 +422,9 @@ focus_tree = {
 		prerequisite = { focus = ENG_The_Peace_Border  }
 
 		completion_reward = {
-
+			country_event = {
+				id = england.148
+			}
 		}
 
 	}
@@ -492,7 +494,9 @@ focus_tree = {
 		y = 7
 		prerequisite = { focus = ENG_Welcome_The_Britons  }
 		completion_reward = {
-
+			country_event = {
+				id = england.149
+			}
 		}
 
 	}

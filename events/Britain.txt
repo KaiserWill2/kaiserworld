@@ -1855,3 +1855,99 @@ country_event = {
 
 	}
 }
+
+
+country_event = {
+	id = England.147
+	title = England.147.t
+	desc = England.147.d
+	picture = peace_border_event
+	is_triggered_only = yes
+	option = {
+		name = England.147.o1
+
+	}
+}
+
+
+
+country_event = {
+	id = England.148
+	title = England.148.t
+	desc = England.148.d
+	picture = king_meets_boris_event
+	is_triggered_only = yes
+	option = {
+		name = England.148.o1
+
+	}
+}
+
+country_event = {
+	id = England.149
+	title = England.149.t
+	desc = England.149.d
+	picture = talks_for_unification_event
+	is_triggered_only = yes
+	option = {
+		name = England.149.o1
+
+	}
+}
+
+country_event = {
+	id = England.150
+	title = England.150.t
+	desc = England.150.d
+	picture = talks_for_unification_event
+	is_triggered_only = yes
+	option = {
+		name = England.150.o1
+
+	}
+}
+
+country_event = {
+	id = England.151
+	title = England.151.t
+	desc = England.151.d
+	picture = talks_for_unification_event
+	is_triggered_only = yes
+	option = {
+		name = England.151.o1
+
+	}
+}
+
+country_event = {
+	id = England.152
+	title = England.152.t
+	desc = England.152.d
+	picture = talks_for_unification_event
+	is_triggered_only = yes
+	option = {
+		name = England.152.o1
+		NOF = {			
+			set_politics = {
+				ruling_party = nationalist
+				elections_allowed = no
+			}
+			create_country_leader = {
+				name = "Council Of Restoration"
+				picture = "general_admin.dds"
+				ideology = nationalist_ideology
+			}
+
+			set_cosmetic_tag = ENG_Northern_Restoration_Front
+			transfer_state = 130
+			transfer_state = 131
+			transfer_state = 132
+
+
+		}
+	}
+}
+
+
+
+

@@ -16,6 +16,7 @@ focus_tree = {
 		x = 10
 		y = 0
 		completion_reward = {
+
 			set_cosmetic_tag = ENG_the_military_takes_over
 			add_stability = -0.15
 			create_country_leader = {
@@ -33,6 +34,9 @@ focus_tree = {
 		y = 1
 		prerequisite = { focus = ENG_The_November_5th_Coup  }
 		completion_reward = {
+			country_event = {
+				id = england.150
+			}
 			add_stability = -0.10
 		}
 
@@ -46,7 +50,9 @@ focus_tree = {
 		y = 2
 		prerequisite = { focus = ENG_Marital_Law  }
 		completion_reward = {
-
+			country_event = {
+				id = england.151
+			}
 		}
 
 	}
@@ -159,6 +165,9 @@ focus_tree = {
 		x = 10
 		y = 6
 		prerequisite = { focus = ENG_Prepare_for_Dissolution  }
+		completion_reward = {
+
+		}
 
 	}
 
@@ -170,7 +179,12 @@ focus_tree = {
 		x = 10
 		y = 7
 		prerequisite = { focus = ENG_Cement_Our_Positions  }
-
+		completion_reward = {
+			country_event = {
+				id = england.152
+			}
+		}
+	
 	}
 
 	focus = {
@@ -180,6 +194,9 @@ focus_tree = {
 		x = 10
 		y = 8
 		prerequisite = { focus = ENG_They_Will_come  }
+		completion_reward = {
+
+		}
 
 	}
 

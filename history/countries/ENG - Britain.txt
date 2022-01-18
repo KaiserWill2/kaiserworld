@@ -191,7 +191,7 @@ create_country_leader = {
 
 create_country_leader = {
 	name = "George Galloway"
-	picture = george_galloway_KW.dds"
+	picture = "george_galloway_KW.dds"
 	ideology = nationalist_ideology
 }
 
@@ -206,4 +206,3 @@ create_country_leader = {
 	picture = "paul_golding.dds"
 	ideology = national_bolshevik_ideology
 }
-

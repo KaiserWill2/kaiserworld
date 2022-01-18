@@ -719,6 +719,25 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/report_event/new_cardiff_agreement_Event.dds"
 	}
 
+	spriteType = {
+		name = "peace_border_event"
+		texturefile = "gfx/event_pictures/report_event/peace_border_event.dds"
+	}
+
+	spriteType = {
+		name = "king_meets_boris_event"
+		texturefile = "gfx/event_pictures/report_event/king_meets_boris_event.dds"
+	}
+	
+	spriteType = {
+		name = "isle_of_mann_event"
+		texturefile = "gfx/event_pictures/report_event/isle_of_mann_event.dds"
+	}
+
+	spriteType = {
+		name = "talks_for_unification_event"
+		texturefile = "gfx/event_pictures/report_event/talks_for_unification_event.dds"
+	}
 	
 	
 }
