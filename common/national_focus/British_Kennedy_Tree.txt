@@ -1340,7 +1340,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_Edinburgh_Is_Ours
-		icon = wales_is_finally_back_icon
+		icon = edinburgh_is_ours_icon
 		x = 30
 		y = 13
 		cost = 5
@@ -1357,7 +1357,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_Capture_The_Rest_Of_Scotland
-		icon = wales_is_finally_back_icon
+		icon = capture_the_rest_of_scotland_icon
 		x = 29
 		y = 14
 		cost = 5
@@ -1374,7 +1374,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_Destroy_The_Wallace_Monument
-		icon = wales_is_finally_back_icon
+		icon = destroy_wallace_monument_icon
 		x = 31
 		y = 14
 		cost = 5
@@ -1391,7 +1391,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_Taking_The_Highlands
-		icon = wales_is_finally_back_icon
+		icon = taking_the_highlands_icon
 		x = 30
 		y = 15
 		cost = 5
@@ -1409,7 +1409,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_The_Scottish_Throne_Is_Ours
-		icon = wales_is_finally_back_icon
+		icon = the_scottish_throne_is_ours_icon
 		x = 30
 		y = 16
 		cost = 5
@@ -1446,7 +1446,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_End_The_Scottish_Identity
-		icon = wales_is_finally_back_icon
+		icon = what_is_scotland_icon
 		x = 31
 		y = 17
 		cost = 5

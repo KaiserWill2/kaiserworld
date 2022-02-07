@@ -1806,21 +1806,17 @@
 			has_country_flag = ENG_Go_For_Wales
 			ENG_Go_For_Wales = yes
 		}
-		search_filters = {
-			FOCUS_FILTER_POLITICAL
-		}
+
 		available = {
 			owns_state = 122
 	}
 		completion_reward = {
-			country_event = {
-			
+			country_event = {			
 				id = england.44
 			}
-	
-	
 		}
 	}
+	
 	shared_focus = {
 		id = ENG_Cardiff_Pays
 		icon = cardiff_pays_icon
@@ -2694,7 +2690,7 @@
 
 	shared_focus = {
 		id = ENG_Expanding_The_Camps
-		icon = GFX_ENG_the_totalist_spirit-445
+		icon = expanding_the_camps_kennedy_icon
 		x = 33
 		y = 6
 		cost = 3
@@ -2743,7 +2739,7 @@
 	}
 	shared_focus = {
 		id = ENG_Purging_The_Unfit
-		icon = GFX_ENG_the_totalist_spirit-445
+		icon = purge_the_unfit_kennedy_icon
 		x = 35
 		y = 6
 		cost = 3

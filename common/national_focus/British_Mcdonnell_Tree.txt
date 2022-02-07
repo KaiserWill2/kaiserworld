@@ -1,0 +1,436 @@
+focus_tree = {
+	id = british_McDonnell_Tree
+	country = {
+		factor = 0
+	}
+
+	continuous_focus_position = { x = 50 y = 3500 }
+	default = no
+
+	focus = {
+		id = ENG_Restore_Order_To_The_Land
+		icon = a_night_to_remember_icon
+		x = 10
+		y = 0
+		cost = 5
+	
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		completion_reward = {
+			country_event = {
+				id = england.74
+			}
+
+		}
+	
+	}
+	focus = {
+		id = ENG_A_Meeting_With_Wales
+		icon = destroy_blairism_icon
+		x = 10
+		y = 1
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus =  ENG_Restore_Order_To_The_Land  }
+		completion_reward = {
+
+		}
+	
+	}
+
+	focus = {
+		id = ENG_Fix_The_Past
+		icon = destroy_blairism_icon
+		x = 10
+		y = 2
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus =  ENG_A_Meeting_With_Wales  }
+		completion_reward = {
+
+		}
+	
+	}
+
+	focus = {
+		id = ENG_A_Defensive_Military
+		icon = destroy_blairism_icon
+		x = 16
+		y = 3
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus =  ENG_Fix_The_Past  }
+		completion_reward = {
+
+		}
+	
+	}
+
+	focus = {
+		id = ENG_Defending_The_Union
+		icon = destroy_blairism_icon
+		x = 15
+		y = 4
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus =  ENG_A_Defensive_Military  }
+		completion_reward = {
+
+		}
+	
+	}
+
+	focus = {
+		id = ENG_Remove_Armed_Borders
+		icon = destroy_blairism_icon
+		x = 15
+		y = 5
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus =  ENG_Defending_The_Union  }
+		completion_reward = {
+
+		}
+	
+	}
+
+	focus = {
+		id = ENG_No_More_Goals_To_Take_The_Celts
+		icon = destroy_blairism_icon
+		x = 15
+		y = 6
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus =  ENG_Remove_Armed_Borders  }
+		completion_reward = {
+
+		}
+	
+	}
+
+	focus = {
+		id = ENG_Change_Attitudes
+		icon = destroy_blairism_icon
+		x = 17
+		y = 4
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus =  ENG_A_Defensive_Military  }
+		completion_reward = {
+
+		}
+	
+	}
+
+	focus = {
+		id = ENG_Invest_In_Defensive_Weaponry
+		icon = destroy_blairism_icon
+		x = 17
+		y = 5
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus =  ENG_Change_Attitudes  }
+		completion_reward = {
+
+		}
+	
+	}
+
+	focus = {
+		id = ENG_Remove_Navy_From_English_Channel
+		icon = destroy_blairism_icon
+		x = 17
+		y = 6
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus =  ENG_Invest_In_Defensive_Weaponry  }
+		completion_reward = {
+
+		}
+	
+	}
+
+	focus = {
+		id = ENG_A_Time_Of_Peace_And_Cooperatiation
+		icon = destroy_blairism_icon
+		x = 16
+		y = 7
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus =  ENG_Remove_Navy_From_English_Channel  }
+		prerequisite = { focus =  ENG_No_More_Goals_To_Take_The_Celts  }
+
+		completion_reward = {
+
+		}
+	
+	}
+
+
+	focus = {
+		id = ENG_Reset_The_Laws_Of_The_Land
+		icon = destroy_blairism_icon
+		x = 10
+		y = 3
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus =  ENG_Fix_The_Past  }
+		completion_reward = {
+
+		}
+	
+	}
+
+	focus = {
+		id = ENG_Remove_The_Blair_Personality
+		icon = destroy_blairism_icon
+		x = 8
+		y = 4
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus =  ENG_Reset_The_Laws_Of_The_Land  }
+		completion_reward = {
+
+		}
+	
+	}
+
+	focus = {
+		id = ENG_End_Totalism
+		icon = destroy_blairism_icon
+		x = 10
+		y = 4
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus =  ENG_Reset_The_Laws_Of_The_Land  }
+		completion_reward = {
+
+		}
+	
+	}
+
+	focus = {
+		id = ENG_New_Housing_Programs
+		icon = destroy_blairism_icon
+		x = 12
+		y = 4
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus =  ENG_Reset_The_Laws_Of_The_Land  }
+		completion_reward = {
+
+		}
+	
+	}
+
+	focus = {
+		id = ENG_Feed_The_Poor
+		icon = destroy_blairism_icon
+		x = 9
+		y = 5
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus =  ENG_Remove_The_Blair_Personality  }
+		prerequisite = { focus =  ENG_End_Totalism  }
+
+		completion_reward = {
+
+		}
+	
+	}
+
+	focus = {
+		id = ENG_Invest_In_New_Social_And_Transport_Programs
+		icon = destroy_blairism_icon
+		x = 11
+		y = 5
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus =  ENG_New_Housing_Programs  }
+		prerequisite = { focus =  ENG_End_Totalism  }
+
+		completion_reward = {
+
+		}
+	
+	}
+
+	focus = {
+		id = ENG_Welcome_New_Socialism
+		icon = destroy_blairism_icon
+		x = 10
+		y = 6
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus =  ENG_Feed_The_Poor  }
+		prerequisite = { focus =  ENG_Invest_In_New_Social_And_Transport_Programs  }
+
+		completion_reward = {
+
+		}
+	
+	}
+
+
+	focus = {
+		id = ENG_A_Failed_Economy
+		icon = destroy_blairism_icon
+		x = 3
+		y = 3
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus =  ENG_Fix_The_Past  }
+		completion_reward = {
+
+		}
+	
+	}
+
+	focus = {
+		id = ENG_Invest_In_New_Farming_Materials
+		icon = destroy_blairism_icon
+		x = 1
+		y = 4
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus =  ENG_A_Failed_Economy  }
+		completion_reward = {
+
+		}
+	
+	}
+
+	focus = {
+		id = ENG_Convert_Military_Factories
+		icon = destroy_blairism_icon
+		x = 3
+		y = 4
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus =  ENG_A_Failed_Economy  }
+		completion_reward = {
+
+		}
+	
+	}
+
+	focus = {
+		id = ENG_Allow_Limited_Owned_Businesses
+		icon = destroy_blairism_icon
+		x = 5
+		y = 4
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus =  ENG_A_Failed_Economy  }
+		completion_reward = {
+
+		}
+	
+	}
+
+	focus = {
+		id = ENG_Allow_Restricted_Investment_From_Nations
+		icon = destroy_blairism_icon
+		x = 2
+		y = 5
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus =  ENG_Convert_Military_Factories  }
+		prerequisite = { focus =  ENG_Invest_In_New_Farming_Materials  }
+
+		completion_reward = {
+
+		}
+	
+	}
+
+	focus = {
+		id = ENG_Allow_Oil_Trade
+		icon = destroy_blairism_icon
+		x = 4
+		y = 5
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus =  ENG_Convert_Military_Factories  }
+		prerequisite = { focus =  ENG_Allow_Limited_Owned_Businesses  }
+
+		completion_reward = {
+
+		}
+	
+	}
+
+	focus = {
+		id = ENG_The_Peoples_Economy
+		icon = destroy_blairism_icon
+		x = 3
+		y = 6
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus =  ENG_Allow_Restricted_Investment_From_Nations  }
+		prerequisite = { focus =  ENG_Allow_Oil_Trade  }
+
+		completion_reward = {
+
+		}
+	
+	}
+
+
+
+
+
+
+
+
+
+}

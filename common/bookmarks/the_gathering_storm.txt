@@ -56,10 +56,16 @@ bookmarks = {
 			history = "ENG_RED_WORLD_DESC"
 			ideology = communist
 			ideas = {
-				
+				idea_memories_of_Michael_foot
+				idea_war_ready
+				idea_north_sea_oil
+				idea_the_failed_economy
+				idea_New_Hadrians_Wall
 			}
 			focuses = {
-				
+				ENG_legacy_of_foot
+				ENG_Johnson_The_Reformist
+				ENG_the_annual_congress_of_england
 			}
 		}
 		"JAP"={

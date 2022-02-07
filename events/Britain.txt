@@ -520,30 +520,29 @@ country_event = {
 	}
 }
 
-country_event = {
-	id = England.44
-	title = England.44.t
-	desc = England.44.d
-	picture = wales_has_fallen_event
-	fire_only_once = yes
-	option = {
-		name = England.44.o1
-		release_puppet = WAL
-		WAL = {
-			set_politics = {
-				ruling_party = communist
-				elections_allowed = no
-			}
-			create_country_leader = {
-				name = "Michael Portillo"
-				picture = "wal_michael_portillo.dds"
-				ideology = marxist
-			}
-			set_cosmetic_tag = WAL_wales_communist
-		
-		}
-	}
-}
+#country_event = {
+#	id = England.44
+#	title = England.44.t
+#	desc = England.44.d
+#	picture = wales_has_fallen_event
+#	fire_only_once = yes
+#	option = {
+#		name = England.44.o1
+#		release_puppet = WAL
+#		WAL = {
+#			set_politics = {
+#				ruling_party = communist
+#				elections_allowed = no
+#			}
+#			create_country_leader = {
+#				name = "Michael Portillo"
+#				picture = "wal_michael_portillo.dds"
+#				ideology = marxist
+#			}
+#			set_cosmetic_tag = WAL_wales_communist		
+#		}
+#	}
+#}
 
 country_event = {
 	id = England.45
@@ -882,7 +881,10 @@ country_event = {
 	option = {
 		name = England.68.o1
 		set_cosmetic_tag = ENG_mcdonnell_rule
-
+		load_focus_tree = {
+			tree = british_McDonnell_Tree
+			keep_completed = yes
+		}
 	}
 }
 
@@ -905,6 +907,7 @@ country_event = {
 	}
 }
 
+
 country_event = {
 	id = England.70
 	title = England.70.t
@@ -917,6 +920,9 @@ country_event = {
 
 	}
 }
+
+
+
 
 country_event = {
 	id = England.71
@@ -1947,6 +1953,71 @@ country_event = {
 		}
 	}
 }
+
+country_event = {
+	id = England.153
+	title = England.153.t
+	desc = England.153.d
+	picture = talks_for_unification_event
+	is_triggered_only = yes
+	option = {
+		name = England.153.o1
+		EAG = {			
+		
+			set_cosmetic_tag = ENG_EAG
+			set_politics = {
+				ruling_party = revolutionary_socialist 
+				elections_allowed = no
+			}
+			create_country_leader = {
+				name = "Boris Johnson"
+				picture = "big_boris.dds"
+				ideology = revolutionary_socialist_ideology
+			}
+
+			transfer_state = 125
+
+		}
+
+		EMI = {			
+		
+			set_cosmetic_tag = ENG_EMI
+			set_politics = {
+				ruling_party = communist 
+				elections_allowed = no
+			}
+			create_country_leader = {
+				name = "General Charles Kennedy"
+				picture = "charles_kennedy.dds"
+				ideology = marxist
+			}
+
+			transfer_state = 129
+
+		}
+
+		COW = {			
+		
+			set_cosmetic_tag = ENG_COW
+			set_politics = {
+				ruling_party = moderate_socialist 
+				elections_allowed = no
+			}
+			create_country_leader = {
+				name = "John McDonnell"
+				picture = "john_mcdonnell.dds"
+				ideology = democratic_socialist
+			}
+
+			transfer_state = 123
+
+		}
+
+
+
+	}
+}
+
 
 
 

@@ -40,6 +40,49 @@ spriteTypes = {
 	
 	##England###
 	
+	
+	SpriteType = {
+		name = "purge_the_unfit_kennedy_icon"
+		texturefile = "gfx/interface/goals/eng/purge_the_unfit_kennedy_icon.dds"			
+	}
+	
+	
+	SpriteType = {
+		name = "expanding_the_camps_kennedy_icon"
+		texturefile = "gfx/interface/goals/eng/expanding_the_camps_kennedy_icon.dds"			
+	}
+
+	SpriteType = {
+		name = "what_is_scotland_icon"
+		texturefile = "gfx/interface/goals/eng/what_is_scotland_icon.dds"			
+	}
+	
+	SpriteType = {
+		name = "the_scottish_throne_is_ours_icon"
+		texturefile = "gfx/interface/goals/eng/the_scottish_throne_is_ours_icon.dds"			
+	}
+
+	SpriteType = {
+		name = "destroy_wallace_monument_icon"
+		texturefile = "gfx/interface/goals/eng/destroy_wallace_monument_icon.dds"			
+	}
+	
+	SpriteType = {
+		name = "taking_the_highlands_icon"
+		texturefile = "gfx/interface/goals/eng/taking_the_highlands_icon.dds"			
+	}
+
+	SpriteType = {
+		name = "capture_the_rest_of_scotland_icon"
+		texturefile = "gfx/interface/goals/eng/capture_the_rest_of_scotland_icon.dds"			
+	}
+	
+
+	SpriteType = {
+		name = "edinburgh_is_ours_icon"
+		texturefile = "gfx/interface/goals/eng/edinburgh_is_ours_icon.dds"			
+	}
+
 	SpriteType = {
 		name = "and_we_will_be_ready_icon"
 		texturefile = "gfx/interface/goals/eng/and_we_will_be_ready_icon.dds"			

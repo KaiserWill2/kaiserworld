@@ -195,7 +195,9 @@ focus_tree = {
 		y = 8
 		prerequisite = { focus = ENG_They_Will_come  }
 		completion_reward = {
-
+			country_event = {
+				id = england.153
+			}
 		}
 
 	}

@@ -6542,7 +6542,17 @@ NOF_new_democrat:0 "Kingdom Of Northumbria"
 NOF_new_democrat_DEF:0 "Kingdom Of Northumbria"
 NOF_new_democrat_ADJ:0 "Kingdom Of Northumbria"
 
+ENG_EAG:0 "Johnsonite Front"
+ENG_EAG_DEF:0 "Johnsonite Front"
+ENG_EAG_ADJ:0 "Johnsonite Front"
 
+ENG_EMI:0 "Union Of England"
+ENG_EMI_DEF:0 "Union Of England"
+ENG_EMI_ADJ:0 "Union Of England"
+
+ENG_COW:0 "Syndicalist Republic of England"
+ENG_COW_DEF:0 "Syndicalist Republic of England"
+ENG_COW_ADJ:0 "Syndicalist Republic of England"
 
  WAL_fascist:0 "Wales"
  WAL_fascist_DEF:0 "the Welsh Social Republic"

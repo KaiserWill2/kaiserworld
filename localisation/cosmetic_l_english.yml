@@ -2150,6 +2150,13 @@ ENG_Northern_Restoration_Front:0 "Restoration Front"
 ENG_Northern_Restoration_Front_DEF:0 "Restoration Front"
 ENG_Northern_Restoration_Front_ADJ:0 "Restoration Front"
 
+ENG_EAG:0 "Johnsonite Front"
+ENG_EAG_DEF:0 "Johnsonite Front"
+ENG_EAG_ADJ:0 "Johnsonite Front"
+
+ENG_COW:0 "Syndicalist Republic of England"
+ENG_COW_DEF:0 "Syndicalist Republic of England"
+ENG_COW_ADJ:0 "Syndicalist Republic of England"
 
 
 ENG_south_england_union:0 "Union Of Southern England"
@@ -2164,6 +2171,9 @@ SCO_Totalist_state_ADJ:0 "The Union Of Scotland"
  WAL_wales_communist:0 "Union Of Wales"
  WAL_wales_communist_DEF:0 "Union Of Wales"
  WAL_wales_communist_ADJ:0 "Union Of Wales"
+
+
+
 
  MWA_clark_nationalist:0 "American Reclamation Authority"
  MWA_clark_nationalist_DEF:0 "the American Reclamation Authority"
