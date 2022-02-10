@@ -34,7 +34,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SCO_The_Maple_Leaf
-		icon = tear_treaty
+		icon = canada_and_scotland_icon
 		cost = 5
 		x = 15
 		y = 2
@@ -46,7 +46,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SCO_Working_With_Canadian_Businesses
-		icon = tear_treaty
+		icon = working_with_canadian_businesses_icon
 		cost = 5
 		x = 14
 		y = 3
@@ -58,7 +58,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SCO_The_New_Trade_Route
-		icon = tear_treaty
+		icon = the_new_trade_route_scotland_icon
 		cost = 5
 		x = 14
 		y = 4
@@ -365,7 +365,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SCO_The_People
-		icon = tear_treaty
+		icon = the_people_scotland_icon
 		cost = 5
 		x = 10
 		y = 1
@@ -377,7 +377,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SCO_Fighting_Poverty
-		icon = tear_treaty
+		icon = fighting_poverty_sco_icon
 		cost = 5
 		x = 8	
 		y = 2
@@ -389,7 +389,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SCO_Service_To_The_People
-		icon = tear_treaty
+		icon = service_to_the_people_icon
 		cost = 5
 		x = 8	
 		y = 3
@@ -401,32 +401,33 @@ focus_tree = {
 	}
 	focus = {
 		id = SCO_Accept_English_Refugees
-		icon = tear_treaty
+		icon = accept_english_refugees_icon
 		cost = 5
 		x = 10	
 		y = 3
 		prerequisite = { focus = SCO_The_People  }
 		completion_reward = {
 		}
+	}
+
+	focus = {
+		id = SCO_Scottish_Education
+		icon = scottish_education_icon
+		cost = 5
+		x = 9	
+		y = 4
+		prerequisite = { focus = SCO_Service_To_The_People  }
+		prerequisite = { focus = SCO_Accept_English_Refugees  }
+		completion_reward = {
+
 		}
-		focus = {
-			id = SCO_Scottish_Education
-			icon = tear_treaty
-			cost = 5
-			x = 9	
-			y = 4
-			prerequisite = { focus = SCO_Service_To_The_People  }
-			prerequisite = { focus = SCO_Accept_English_Refugees  }
-			completion_reward = {
-	
-			}
-	
-		}
+
+	}
 
 	
 	focus = {
 		id = SCO_Better_Welfare
-		icon = tear_treaty
+		icon = better_welfare_scotland_icon
 		cost = 5
 		x = 12
 		y = 2
@@ -438,7 +439,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SCO_Scotland_For_All
-		icon = tear_treaty
+		icon = scotladn_for_all_icon
 		cost = 5
 		x = 12
 		y = 3
@@ -450,7 +451,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SCO_New_Jobs_sector
-		icon = tear_treaty
+		icon = new_job_sector_scotland_icon
 		cost = 5
 		x = 11
 		y = 4
@@ -463,7 +464,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SCO_Highland_Resources
-		icon = tear_treaty
+		icon = highland_resources_scotland_icon
 		cost = 5
 		x = 10
 		y = 5

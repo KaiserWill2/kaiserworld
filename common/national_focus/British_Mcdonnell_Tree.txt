@@ -9,7 +9,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_Restore_Order_To_The_Land
-		icon = a_night_to_remember_icon
+		icon = restore_order_to_the_land_icon
 		x = 10
 		y = 0
 		cost = 5
@@ -27,7 +27,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ENG_A_Meeting_With_Wales
-		icon = destroy_blairism_icon
+		icon = a_meeting_in_wales_icon
 		x = 10
 		y = 1
 		cost = 5
@@ -43,7 +43,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_Fix_The_Past
-		icon = destroy_blairism_icon
+		icon = fixing_the_past_icon
 		x = 10
 		y = 2
 		cost = 5
@@ -59,7 +59,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_A_Defensive_Military
-		icon = destroy_blairism_icon
+		icon = a_defensive_military_icon
 		x = 16
 		y = 3
 		cost = 5
@@ -75,7 +75,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_Defending_The_Union
-		icon = destroy_blairism_icon
+		icon = defending_the_union_icon
 		x = 15
 		y = 4
 		cost = 5
@@ -91,7 +91,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_Remove_Armed_Borders
-		icon = destroy_blairism_icon
+		icon = remove_armed_borders_icon
 		x = 15
 		y = 5
 		cost = 5
@@ -107,7 +107,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_No_More_Goals_To_Take_The_Celts
-		icon = destroy_blairism_icon
+		icon = no_more_goals_to_celts_icon
 		x = 15
 		y = 6
 		cost = 5
@@ -123,7 +123,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_Change_Attitudes
-		icon = destroy_blairism_icon
+		icon = change_attitudes_icon
 		x = 17
 		y = 4
 		cost = 5
@@ -139,7 +139,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_Invest_In_Defensive_Weaponry
-		icon = destroy_blairism_icon
+		icon = invest_in_defensive_weaponry
 		x = 17
 		y = 5
 		cost = 5
@@ -155,7 +155,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_Remove_Navy_From_English_Channel
-		icon = destroy_blairism_icon
+		icon = remove_english_navy_from_channel_icon
 		x = 17
 		y = 6
 		cost = 5
@@ -171,7 +171,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_A_Time_Of_Peace_And_Cooperatiation
-		icon = destroy_blairism_icon
+		icon = time_of_peace_and_working_together_icon
 		x = 16
 		y = 7
 		cost = 5
@@ -190,7 +190,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_Reset_The_Laws_Of_The_Land
-		icon = destroy_blairism_icon
+		icon = reset_laws_of_the_land_icon
 		x = 10
 		y = 3
 		cost = 5
@@ -222,7 +222,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_End_Totalism
-		icon = destroy_blairism_icon
+		icon = remove_totalist_ideology_icon
 		x = 10
 		y = 4
 		cost = 5
@@ -238,7 +238,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_New_Housing_Programs
-		icon = destroy_blairism_icon
+		icon = new_housing_progrma_icon
 		x = 12
 		y = 4
 		cost = 5
@@ -254,7 +254,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_Feed_The_Poor
-		icon = destroy_blairism_icon
+		icon = feed_the_poor_icon
 		x = 9
 		y = 5
 		cost = 5
@@ -272,7 +272,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_Invest_In_New_Social_And_Transport_Programs
-		icon = destroy_blairism_icon
+		icon = new_social_transport_programs_icons
 		x = 11
 		y = 5
 		cost = 5
@@ -290,7 +290,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_Welcome_New_Socialism
-		icon = destroy_blairism_icon
+		icon = new_socialism_mcdonnell_icon
 		x = 10
 		y = 6
 		cost = 5
@@ -309,7 +309,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_A_Failed_Economy
-		icon = destroy_blairism_icon
+		icon = a_failed_economy_icon
 		x = 3
 		y = 3
 		cost = 5
@@ -325,7 +325,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_Invest_In_New_Farming_Materials
-		icon = destroy_blairism_icon
+		icon = new_farming_materials_icon
 		x = 1
 		y = 4
 		cost = 5
@@ -341,7 +341,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_Convert_Military_Factories
-		icon = destroy_blairism_icon
+		icon = convert_military_factories_icon
 		x = 3
 		y = 4
 		cost = 5
@@ -357,7 +357,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_Allow_Limited_Owned_Businesses
-		icon = destroy_blairism_icon
+		icon = limited_owned_business_icon
 		x = 5
 		y = 4
 		cost = 5
@@ -373,7 +373,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_Allow_Restricted_Investment_From_Nations
-		icon = destroy_blairism_icon
+		icon = restricted_investment_from_nations_icon
 		x = 2
 		y = 5
 		cost = 5
@@ -391,7 +391,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_Allow_Oil_Trade
-		icon = destroy_blairism_icon
+		icon = allow_oil_treade_icon
 		x = 4
 		y = 5
 		cost = 5
@@ -409,7 +409,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_The_Peoples_Economy
-		icon = destroy_blairism_icon
+		icon = the_peoples_economy_icon
 		x = 3
 		y = 6
 		cost = 5

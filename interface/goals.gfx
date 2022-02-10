@@ -39,7 +39,130 @@ spriteTypes = {
 	
 	
 	##England###
+
 	
+
+	
+	SpriteType = {
+		name = "new_socialism_mcdonnell_icon"
+		texturefile = "gfx/interface/goals/eng/new_socialism_mcdonnell_icon.dds"			
+	}
+	
+	SpriteType = {
+		name = "new_social_transport_programs_icons"
+		texturefile = "gfx/interface/goals/eng/new_social_transport_programs_icons.dds"			
+	}
+	
+	SpriteType = {
+		name = "feed_the_poor_icon"
+		texturefile = "gfx/interface/goals/eng/feed_the_poor_icon.dds"			
+	}
+	
+	SpriteType = {
+		name = "new_housing_progrma_icon"
+		texturefile = "gfx/interface/goals/eng/new_housing_progrma_icon.dds"			
+	}
+	
+	SpriteType = {
+		name = "the_peoples_economy_icon"
+		texturefile = "gfx/interface/goals/eng/the_peoples_economy_icon.dds"			
+	}
+
+	SpriteType = {
+		name = "allow_oil_treade_icon"
+		texturefile = "gfx/interface/goals/eng/allow_oil_treade_icon.dds"			
+	}
+	
+
+	SpriteType = {
+		name = "restricted_investment_from_nations_icon"
+		texturefile = "gfx/interface/goals/eng/restricted_investment_from_nations_icon.dds"			
+	}
+	
+	SpriteType = {
+		name = "limited_owned_business_icon"
+		texturefile = "gfx/interface/goals/eng/limited_owned_business_icon.dds"			
+	}
+	
+	SpriteType = {
+		name = "convert_military_factories_icon"
+		texturefile = "gfx/interface/goals/eng/convert_military_factories_icon.dds"			
+	}
+	
+
+	SpriteType = {
+		name = "new_farming_materials_icon"
+		texturefile = "gfx/interface/goals/eng/new_farming_materials_icon.dds"			
+	}
+	
+	SpriteType = {
+		name = "a_failed_economy_icon"
+		texturefile = "gfx/interface/goals/eng/a_failed_economy_icon.dds"			
+	}
+
+	SpriteType = {
+		name = "reset_laws_of_the_land_icon"
+		texturefile = "gfx/interface/goals/eng/reset_laws_of_the_land_icon.dds"			
+	}
+
+	
+	SpriteType = {
+		name = "time_of_peace_and_working_together_icon"
+		texturefile = "gfx/interface/goals/eng/time_of_peace_and_working_together_icon.dds"			
+	}
+
+	SpriteType = {
+		name = "remove_english_navy_from_channel_icon"
+		texturefile = "gfx/interface/goals/eng/remove_english_navy_from_channel_icon.dds"			
+	}
+
+	SpriteType = {
+		name = "invest_in_defensive_weaponry"
+		texturefile = "gfx/interface/goals/eng/invest_in_defensive_weaponry.dds"			
+	}
+	
+	SpriteType = {
+		name = "change_attitudes_icon"
+		texturefile = "gfx/interface/goals/eng/change_attitudes_icon.dds"			
+	}
+
+	SpriteType = {
+		name = "no_more_goals_to_celts_icon"
+		texturefile = "gfx/interface/goals/eng/no_more_goals_to_celts_icon.dds"			
+	}
+	
+
+	SpriteType = {
+		name = "remove_armed_borders_icon"
+		texturefile = "gfx/interface/goals/eng/remove_armed_borders_icon.dds"			
+	}
+	
+	
+	SpriteType = {
+		name = "defending_the_union_icon"
+		texturefile = "gfx/interface/goals/eng/defending_the_union_icon.dds"			
+	}
+	
+	
+	SpriteType = {
+		name = "a_defensive_military_icon"
+		texturefile = "gfx/interface/goals/eng/a_defensive_military_icon.dds"			
+	}
+	
+	SpriteType = {
+		name = "fixing_the_past_icon"
+		texturefile = "gfx/interface/goals/eng/fixing_the_past_icon.dds"			
+	}
+
+	SpriteType = {
+		name = "a_meeting_in_wales_icon"
+		texturefile = "gfx/interface/goals/eng/a_meeting_in_wales_icon.dds"			
+	}
+
+	SpriteType = {
+		name = "restore_order_to_the_land_icon"
+		texturefile = "gfx/interface/goals/eng/restore_order_to_the_land_icon.dds"			
+	}
 	
 	SpriteType = {
 		name = "purge_the_unfit_kennedy_icon"
@@ -1706,6 +1829,67 @@ SpriteType = {
 	
 
 		#SCOTLAND#
+		
+		SpriteType = {
+			name = "the_new_trade_route_scotland_icon"
+			texturefile = "gfx/interface/goals/sco/the_new_trade_route_scotland_icon.dds"			
+		}
+		
+		SpriteType = {
+			name = "working_with_canadian_businesses_icon"
+			texturefile = "gfx/interface/goals/sco/working_with_canadian_businesses_icon.dds"			
+		}
+		
+		SpriteType = {
+			name = "canada_and_scotland_icon"
+			texturefile = "gfx/interface/goals/sco/canada_and_scotland_icon.dds"			
+		}
+		
+		SpriteType = {
+			name = "highland_resources_scotland_icon"
+			texturefile = "gfx/interface/goals/sco/highland_resources_scotland_icon.dds"			
+		}
+
+		SpriteType = {
+			name = "new_job_sector_scotland_icon"
+			texturefile = "gfx/interface/goals/sco/new_job_sector_scotland_icon.dds"			
+		}
+
+		SpriteType = {
+			name = "scottish_education_icon"
+			texturefile = "gfx/interface/goals/sco/scottish_education_icon.dds"			
+		}
+
+		SpriteType = {
+			name = "scotladn_for_all_icon"
+			texturefile = "gfx/interface/goals/sco/scotladn_for_all_icon.dds"			
+		}
+		
+		SpriteType = {
+			name = "better_welfare_scotland_icon"
+			texturefile = "gfx/interface/goals/sco/better_welfare_scotland_icon.dds"			
+		}
+
+		SpriteType = {
+			name = "accept_english_refugees_icon"
+			texturefile = "gfx/interface/goals/sco/accept_english_refugees_icon.dds"			
+		}
+
+		SpriteType = {
+			name = "service_to_the_people_icon"
+			texturefile = "gfx/interface/goals/sco/service_to_the_people_icon.dds"			
+		}
+		
+		SpriteType = {
+			name = "fighting_poverty_sco_icon"
+			texturefile = "gfx/interface/goals/sco/fighting_poverty_sco_icon.dds"			
+		}
+		
+		SpriteType = {
+			name = "the_people_scotland_icon"
+			texturefile = "gfx/interface/goals/sco/the_people_scotland_icon.dds"			
+		}
+
 		SpriteType = {
 			name = "kingdom_of_scotland_icon"
 			texturefile = "gfx/interface/goals/sco/kingdom_of_scotland_icon.dds"			
