@@ -1831,6 +1831,80 @@ SpriteType = {
 		#SCOTLAND#
 		
 		SpriteType = {
+			name = "the_scottish_borders_icon"
+			texturefile = "gfx/interface/goals/sco/the_scottish_borders_icon.dds"			
+		}
+		
+		SpriteType = {
+			name = "the_army_sco_icon"
+			texturefile = "gfx/interface/goals/sco/the_army_sco_icon.dds"			
+		}
+		
+		SpriteType = {
+			name = "shared_culture_icon_sco"
+			texturefile = "gfx/interface/goals/sco/shared_culture_icon_sco.dds"			
+		}
+		
+		SpriteType = {
+			name = "old_times_friends_icon"
+			texturefile = "gfx/interface/goals/sco/old_times_friends_icon.dds"			
+		}
+
+		
+		SpriteType = {
+			name = "irihs_partnership_icon"
+			texturefile = "gfx/interface/goals/sco/irihs_partnership_icon.dds"			
+		}
+
+		SpriteType = {
+			name = "bernie_and_francis_icon"
+			texturefile = "gfx/interface/goals/sco/bernie_and_francis_icon.dds"			
+		}
+		
+		SpriteType = {
+			name = "the_socialist_friend_icon"
+			texturefile = "gfx/interface/goals/sco/the_socialist_friend_icon.dds"			
+		}
+
+		SpriteType = {
+			name = "the_stars_and_scotland_icon"
+			texturefile = "gfx/interface/goals/sco/the_stars_and_scotland_icon.dds"			
+		}
+		
+		SpriteType = {
+			name = "new_international_ghub_icon"
+			texturefile = "gfx/interface/goals/sco/new_international_ghub_icon.dds"			
+		}
+		
+		SpriteType = {
+			name = "weapons_trade_pact_icon"
+			texturefile = "gfx/interface/goals/sco/weapons_trade_pact_icon.dds"			
+		}
+		
+		
+		SpriteType = {
+			name = "the_bernie_direction_icon"
+			texturefile = "gfx/interface/goals/sco/the_bernie_direction_icon.dds"			
+		}
+		
+		SpriteType = {
+			name = "a_new_partnership_icon"
+			texturefile = "gfx/interface/goals/sco/a_new_partnership_icon.dds"			
+		}
+
+
+		SpriteType = {
+			name = "canada_weapon_factory_icon"
+			texturefile = "gfx/interface/goals/sco/canada_weapon_factory_icon.dds"			
+		}
+
+		
+		SpriteType = {
+			name = "security_partnership_sco_icon"
+			texturefile = "gfx/interface/goals/sco/security_partnership_sco_icon.dds"			
+		}
+
+		SpriteType = {
 			name = "the_new_trade_route_scotland_icon"
 			texturefile = "gfx/interface/goals/sco/the_new_trade_route_scotland_icon.dds"			
 		}

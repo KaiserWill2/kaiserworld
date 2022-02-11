@@ -70,7 +70,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SCO_Security_Partnership
-		icon = tear_treaty
+		icon = security_partnership_sco_icon
 		cost = 5
 		x = 16
 		y = 3
@@ -82,7 +82,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SCO_Canada_Weapon_Factory
-		icon = tear_treaty
+		icon = canada_weapon_factory_icon
 		cost = 5
 		x = 16
 		y = 4
@@ -94,7 +94,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SCO_A_New_Partnership
-		icon = tear_treaty
+		icon = a_new_partnership_icon
 		cost = 5
 		x = 15
 		y = 5
@@ -108,7 +108,7 @@ focus_tree = {
 
 	focus = {
 		id = SCO_The_Bernie_Direction
-		icon = tear_treaty
+		icon = the_bernie_direction_icon
 		cost = 5
 		x = 19
 		y = 2
@@ -120,7 +120,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SCO_Weapons_Trade_Pact
-		icon = tear_treaty
+		icon = weapons_trade_pact_icon
 		cost = 5
 		x = 18
 		y = 3
@@ -132,7 +132,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SCO_The_New_International_Hub
-		icon = tear_treaty
+		icon = new_international_ghub_icon
 		cost = 5
 		x = 18
 		y = 4
@@ -144,7 +144,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SCO_The_Stars_And_Scotland
-		icon = tear_treaty
+		icon = the_stars_and_scotland_icon
 		cost = 5
 		x = 20
 		y = 3
@@ -156,7 +156,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SCO_The_Socialist_Friend
-		icon = tear_treaty
+		icon = the_socialist_friend_icon
 		cost = 5
 		x = 20
 		y = 4
@@ -168,7 +168,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SCO_Bernie_And_Francis
-		icon = tear_treaty
+		icon = bernie_and_francis_icon
 		cost = 5
 		x = 19
 		y = 5
@@ -181,7 +181,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SCO_The_Irish_Partnership
-		icon = tear_treaty
+		icon = irihs_partnership_icon
 		cost = 5
 		x = 17
 		y = 6
@@ -194,7 +194,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SCO_Old_Time_Friends
-		icon = tear_treaty
+		icon = old_times_friends_icon
 		cost = 5
 		x = 15
 		y = 7
@@ -206,7 +206,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SCO_Shared_Culture
-		icon = tear_treaty
+		icon = shared_culture_icon_sco
 		cost = 5
 		x = 19
 		y = 7
@@ -218,7 +218,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SCO_The_Army
-		icon = tear_treaty
+		icon = the_army_sco_icon
 		cost = 5
 		x = 24
 		y = 1
@@ -230,7 +230,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SCO_The_Scottish_Borders
-		icon = tear_treaty
+		icon = the_scottish_borders_icon
 		cost = 5
 		x = 22
 		y = 2
