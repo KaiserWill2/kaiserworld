@@ -351,8 +351,8 @@ focus_tree = {
 
 	}
 	focus = {
-		id = SCO_L
-		icon = tear_treaty
+		id = SCO_Defending_Scotland
+		icon = defending_scotland_icon
 		cost = 5
 		x = 25
 		y = 5
