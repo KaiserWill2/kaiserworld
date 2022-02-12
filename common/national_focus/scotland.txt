@@ -242,7 +242,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SCO_Rebuild_Hadrians_Wall
-		icon = tear_treaty
+		icon = rebuild_hadrians_wall_icon
 		cost = 5
 		x = 22
 		y = 3
@@ -254,7 +254,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SCO_Arm_North_Berwick
-		icon = tear_treaty
+		icon = arm_north_berwick_icon
 		cost = 5
 		x = 22
 		y = 4
@@ -266,7 +266,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SCO_Anti_Missile_Silos 
-		icon = tear_treaty
+		icon = anti_missile_silo_icons
 		cost = 5
 		x = 23
 		y = 5
@@ -279,7 +279,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SCO_Flexible_Army
-		icon = tear_treaty
+		icon = flexible_army_icon
 		cost = 5
 		x = 24
 		y = 2
@@ -291,7 +291,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SCO_3_Years_Service
-		icon = tear_treaty
+		icon = 3_years_service_icon
 		cost = 5
 		x = 24
 		y = 3
@@ -303,7 +303,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SCO_The_Youth_Service
-		icon = tear_treaty
+		icon = the_youth_service_icon
 		cost = 5
 		x = 24
 		y = 4
@@ -316,7 +316,7 @@ focus_tree = {
 
 	focus = {
 		id = SCO_Protect_Our_Lands
-		icon = tear_treaty
+		icon = protect_our_land_icon
 		cost = 5
 		x = 26
 		y = 2
@@ -328,7 +328,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SCO_Promote_Scottish_Values_To_Union_Soldiers
-		icon = tear_treaty
+		icon = promote_scottish_values_to_soldiers_icon
 		cost = 5
 		x = 26
 		y = 3
@@ -340,7 +340,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SCO_Leaflet_Dropping
-		icon = tear_treaty
+		icon = leaflet_dropping_sco_icon
 		cost = 5
 		x = 26
 		y = 4
@@ -478,7 +478,7 @@ focus_tree = {
 
 	focus = {
 		id = SCO_Kingdom_Elections
-		icon = tear_treaty
+		icon = scottish_kingdom_elections_icon
 		cost = 5
 		x = 35
 		y = 0
@@ -489,7 +489,19 @@ focus_tree = {
 	}
 	focus = {
 		id = SCO_For_True_Scots
-		icon = tear_treaty
+		icon = for_true_scots_icon
+		cost = 5
+		x = 39
+		y = 1
+		prerequisite = { focus = SCO_Kingdom_Elections  }
+		completion_reward = {
+
+		}
+
+	}
+	focus = {
+		id = SCO_A_New_Direction
+		icon = scotland_new_direction_icon
 		cost = 5
 		x = 30
 		y = 1
@@ -500,8 +512,8 @@ focus_tree = {
 
 	}
 	focus = {
-		id = SCO_A_New_Direction
-		icon = tear_treaty
+		id = SCO_Liberalise_Scotland
+		icon = liberalise_scotland_icon
 		cost = 5
 		x = 33
 		y = 1
@@ -512,8 +524,8 @@ focus_tree = {
 
 	}
 	focus = {
-		id = SCO_Liberalise_Scotland
-		icon = tear_treaty
+		id = SCO_The_New_Plan
+		icon = sco_the_new_plan_icon
 		cost = 5
 		x = 36
 		y = 1
@@ -523,36 +535,13 @@ focus_tree = {
 		}
 
 	}
-	focus = {
-		id = SCO_The_New_Plan
-		icon = tear_treaty
-		cost = 5
-		x = 39
-		y = 1
-		prerequisite = { focus = SCO_Kingdom_Elections  }
-		completion_reward = {
-
-		}
-
-	}
-
-
-
-
-
-
-
-
-
-
-
 
 
 
 
 	focus = {
 		id = SCO_The_King_Is_In_His_Counting_House
-		icon = tear_treaty
+		icon = the_king_in_counting_house_icon
 		cost = 5
 		x = 45
 		y = 0
@@ -563,7 +552,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SCO_The_Welsh_Appointment 
-		icon = tear_treaty
+		icon = the_welsh_appointment_icon
 		cost = 5
 		x = 45
 		y = 1
@@ -575,7 +564,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SCO_The_Dragon_And_The_Bagpipes 
-		icon = tear_treaty
+		icon = the_dragon_and_bagpipes_icon
 		cost = 5
 		x = 43
 		y = 2
@@ -587,7 +576,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SCO_A_Shot_Heard_From_The_Highlands
-		icon = tear_treaty
+		icon = a_shot_heard_from_the_mountains_icon
 		cost = 5
 		x = 45
 		y = 2
@@ -599,7 +588,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SCO_The_Coup
-		icon = tear_treaty
+		icon = the_coup_icon
 		cost = 5
 		x = 47
 		y = 2
@@ -611,7 +600,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SCO_Shared_Parliament
-		icon = tear_treaty
+		icon = shared_parliament_icon
 		cost = 5
 		x = 44
 		y = 3
@@ -624,7 +613,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SCO_New_Economy_Plan
-		icon = tear_treaty
+		icon = new_economy_plan_icon
 		cost = 5
 		x = 42
 		y = 4
@@ -636,7 +625,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SCO_A_New_National_Language
-		icon = tear_treaty
+		icon = a_new_national_lanuage_icon
 		cost = 5
 		x = 43
 		y = 5
@@ -648,7 +637,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SCO_Arrest_Far_Left_Members
-		icon = tear_treaty
+		icon = arrest_for_left_members_icon
 		cost = 5
 		x = 46
 		y = 3
@@ -661,7 +650,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SCO_The_Question_Of_Solidarity_Movement
-		icon = tear_treaty
+		icon = question_of_solidarity_movement_icon
 		cost = 5
 		x = 48
 		y = 4
@@ -673,7 +662,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SCO_A_New_Republic
-		icon = tear_treaty
+		icon = new_republic_icon
 		cost = 5
 		x = 47
 		y = 5
@@ -685,7 +674,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SCO_Our_German_Friends
-		icon = tear_treaty
+		icon = our_german_friends_icon
 		cost = 5
 		x = 45
 		y = 6
@@ -698,7 +687,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SCO_The_English_Leaks
-		icon = tear_treaty
+		icon = the_english_leaks_icon
 		cost = 5
 		x = 45
 		y = 7

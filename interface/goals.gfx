@@ -1831,6 +1831,147 @@ SpriteType = {
 		#SCOTLAND#
 		
 		SpriteType = {
+			name = "the_english_leaks_icon"
+			texturefile = "gfx/interface/goals/sco/the_english_leaks_icon.dds"			
+		}	
+
+		SpriteType = {
+			name = "our_german_friends_icon"
+			texturefile = "gfx/interface/goals/sco/our_german_friends_icon.dds"			
+		}	
+		
+		SpriteType = {
+			name = "new_republic_icon"
+			texturefile = "gfx/interface/goals/sco/new_republic_icon.dds"			
+		}	
+
+		SpriteType = {
+			name = "question_of_solidarity_movement_icon"
+			texturefile = "gfx/interface/goals/sco/question_of_solidarity_movement_icon.dds"			
+		}	
+
+		SpriteType = {
+			name = "arrest_for_left_members_icon"
+			texturefile = "gfx/interface/goals/sco/arrest_for_left_members_icon.dds"			
+		}	
+		
+		SpriteType = {
+			name = "a_new_national_lanuage_icon"
+			texturefile = "gfx/interface/goals/sco/a_new_national_lanuage_icon.dds"			
+		}		
+		
+		SpriteType = {
+			name = "new_economy_plan_icon"
+			texturefile = "gfx/interface/goals/sco/new_economy_plan_icon.dds"			
+		}		
+		
+		
+		SpriteType = {
+			name = "shared_parliament_icon"
+			texturefile = "gfx/interface/goals/sco/shared_parliament_icon.dds"			
+		}		
+		
+		SpriteType = {
+			name = "the_coup_icon"
+			texturefile = "gfx/interface/goals/sco/the_coup_icon.dds"			
+		}		
+		
+		SpriteType = {
+			name = "a_shot_heard_from_the_mountains_icon"
+			texturefile = "gfx/interface/goals/sco/a_shot_heard_from_the_mountains_icon.dds"			
+		}		
+
+		
+		SpriteType = {
+			name = "the_dragon_and_bagpipes_icon"
+			texturefile = "gfx/interface/goals/sco/the_dragon_and_bagpipes_icon.dds"			
+		}		
+
+		SpriteType = {
+			name = "the_welsh_appointment_icon"
+			texturefile = "gfx/interface/goals/sco/the_welsh_appointment_icon.dds"			
+		}
+		
+		SpriteType = {
+			name = "the_king_in_counting_house_icon"
+			texturefile = "gfx/interface/goals/sco/the_king_in_counting_house_icon.dds"			
+		}
+		
+		SpriteType = {
+			name = "for_true_scots_icon"
+			texturefile = "gfx/interface/goals/sco/for_true_scots_icon.dds"			
+		}
+		
+
+		SpriteType = {
+			name = "sco_the_new_plan_icon"
+			texturefile = "gfx/interface/goals/sco/sco_the_new_plan_icon.dds"			
+		}
+		
+		SpriteType = {
+			name = "liberalise_scotland_icon"
+			texturefile = "gfx/interface/goals/sco/liberalise_scotland_icon.dds"			
+		}
+
+		SpriteType = {
+			name = "scotland_new_direction_icon"
+			texturefile = "gfx/interface/goals/sco/scotland_new_direction_icon.dds"			
+		}
+		
+
+		SpriteType = {
+			name = "scottish_kingdom_elections_icon"
+			texturefile = "gfx/interface/goals/sco/scottish_kingdom_elections_icon.dds"			
+		}
+		
+		
+		SpriteType = {
+			name = "anti_missile_silo_icons"
+			texturefile = "gfx/interface/goals/sco/anti_missile_silo_icons.dds"			
+		}
+		
+		SpriteType = {
+			name = "leaflet_dropping_sco_icon"
+			texturefile = "gfx/interface/goals/sco/leaflet_dropping_sco_icon.dds"			
+		}
+
+		SpriteType = {
+			name = "promote_scottish_values_to_soldiers_icon"
+			texturefile = "gfx/interface/goals/sco/promote_scottish_values_to_soldiers_icon.dds"			
+		}
+		
+		SpriteType = {
+			name = "protect_our_land_icon"
+			texturefile = "gfx/interface/goals/sco/protect_our_land_icon.dds"			
+		}
+		
+		
+		SpriteType = {
+			name = "the_youth_service_icon"
+			texturefile = "gfx/interface/goals/sco/the_youth_service_icon.dds"			
+		}
+		
+		SpriteType = {
+			name = "3_years_service_icon"
+			texturefile = "gfx/interface/goals/sco/3_years_service_icon.dds"			
+		}
+		
+		SpriteType = {
+			name = "flexible_army_icon"
+			texturefile = "gfx/interface/goals/sco/flexible_army_icon.dds"			
+		}
+		
+		SpriteType = {
+			name = "arm_north_berwick_icon"
+			texturefile = "gfx/interface/goals/sco/arm_north_berwick_icon.dds"			
+		}
+		
+		SpriteType = {
+			name = "rebuild_hadrians_wall_icon"
+			texturefile = "gfx/interface/goals/sco/rebuild_hadrians_wall_icon.dds"			
+		}
+		
+		SpriteType = {
 			name = "the_scottish_borders_icon"
 			texturefile = "gfx/interface/goals/sco/the_scottish_borders_icon.dds"			
 		}

@@ -99,21 +99,17 @@ set_popularities = {
 		communist = 10
 }
 
-create_country_leader = {
-	name = "Willie Clarke"
-	picture = "Portrait_SCO_Willie_Clarke.dds"
-	ideology = leninist
-}
+
 
 create_country_leader = {
 	name = "Bruce Ogilvie"
-	picture = "Portrait_SCO_Bruce_Ogilvie.dds"
+	picture = "Bruce_Ogilvie_kw_leader.dds"
 	ideology = fascist_ideology
 }
 
 create_country_leader = {
-	name = "Jim Fairlie"
-	picture = "Portrait_SCO_Jim_Fairlie.dds"
+	name = "John Swinney"
+	picture = "john_swinney_kw.dds"
 	ideology = nationalist_ideology
 }
 
@@ -124,50 +120,44 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Matt Lygate"
-	picture = "Portrait_SCO_Matt_Lygate.dds"
+	name = "George Hargreaves"
+	picture = "george_hargreaves_kw.dds"
 	ideology = national_bolshevik_ideology
 }
 
-create_country_leader = {
-	name = "Winnie Ewing"
-	picture = "Portrait_SCO_Winnie_Ewing.dds"
-	ideology = reactionary
-}
 
 create_country_leader = {
 	name = "Gordon Brown"
-	desc = "POLITICS_Alex_Salmond_DESC"
-	picture = "Portrait_SCO_Alex_Salmond.dds"
+	picture = "gordon_Brown_kw_leader.dds"
 	ideology = european_conservative
 }
 
 create_country_leader = {
-	name = "Gordon Wilson"
-	picture = "Portrait_SCO_Gordon_Wilson.dds"
+	name = "John Thurso"
+	picture = "john_thurso_kw_leader.dds"
 	ideology = centrist_ideology
 }
 
 create_country_leader = {
-	name = "Robin Harper"
-	picture = "Portrait_SCO_Robin_Harper.dds"
+	name = "Ian Blackford"
+	picture = "ian_blackford_leader_kw.dds"
 	ideology = social_liberal
 }
 
 create_country_leader = {
 	name = "Nicola Sturgeon"
-	picture = "Portrait_SCO_Nicola_Sturgeon.dds"
+	picture = "nicola_sturgeon_kw_leader.dds"
 	ideology = new_democrat_ideology
 }
 
 create_country_leader = {
 	name = "Colin Fox"
 	picture = "Portrait_SCO_Colin_Fox.dds"
-	ideology = democratic_socialist
+	ideology = marxist
 }
 
 create_country_leader = {
 	name = "Alex Salmond"
-	picture = "Portrait_SCO_Alex_Salmond.dds"
+	picture = "alex_salmond_kw.dds"
 	ideology = revolutionary_socialist_ideology
 }
