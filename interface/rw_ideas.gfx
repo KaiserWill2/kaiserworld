@@ -347,8 +347,84 @@ spriteTypes = {
 		name = "GFX_idea_britain_Simon_Pegg"
 		texturefile = "gfx/interface/ideas/advisors/britain/britain_Simon_Pegg.dds"
 	}
+
+	spriteType = {
+		name = "GFX_idea_scotland_gordon_brown"
+		texturefile = "gfx/interface/ideas/advisors/scotland/scotland_gordon_brown.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_scotland_Pete_Wishart"
+		texturefile = "gfx/interface/ideas/advisors/scotland/scotland_Pete_Wishart.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_scotland_Angus_Robertson"
+		texturefile = "gfx/interface/ideas/advisors/scotland/scotland_Angus_Robertson.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_scotland_Keith_Brown"
+		texturefile = "gfx/interface/ideas/advisors/scotland/scotland_Keith_Brown.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_scotland_John_Alexander"
+		texturefile = "gfx/interface/ideas/advisors/scotland/scotland_John_Alexander.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_scotland_Humza_Yousaf"
+		texturefile = "gfx/interface/ideas/advisors/scotland/scotland_Humza_Yousaf.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_scotland_Anas_Sarwar"
+		texturefile = "gfx/interface/ideas/advisors/scotland/scotland_Anas_Sarwar.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_scotland_Alyn_Smith"
+		texturefile = "gfx/interface/ideas/advisors/scotland/scotland_Alyn_Smith.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_scotland_Chris_Law"
+		texturefile = "gfx/interface/ideas/advisors/scotland/scotland_Chris_Law.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_Scotland_Carol_Monaghan"
+		texturefile = "gfx/interface/ideas/advisors/scotland/Scotland_Carol_Monaghan.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_scotland_Mhairi_Black"
+		texturefile = "gfx/interface/ideas/advisors/scotland/scotland_Mhairi_Black.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_scotland_David_Linden"
+		texturefile = "gfx/interface/ideas/advisors/scotland/scotland_David_Linden.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_scotland_david_tennent"
+		texturefile = "gfx/interface/ideas/advisors/scotland/scotland_david_tennent.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_scotland_gordon_ramsey"
+		texturefile = "gfx/interface/ideas/advisors/scotland/scotland_gordon_ramsey.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_scotland_james_mcavoy"
+		texturefile = "gfx/interface/ideas/advisors/scotland/scotland_james_mcavoy.dds"
+	}
 	
 	
+
 	###Unsorted
 	
 	spriteType = {

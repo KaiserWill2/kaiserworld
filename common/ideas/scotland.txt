@@ -21,4 +21,988 @@ ideas = {
 			}
 		}		
 
+
+	# TECHNOLOGY
+	tank_manufacturer = { 
+	
+		designer = yes
+		
+		union_motors = {
+			
+			allowed = {
+			    original_tag = SCO
+				NOT = {
+					has_available_idea_with_traits = { idea = tank_manufacturer limit = 1 }
+				}
+			}
+			
+			cost = 150
+			removal_cost = 10
+			
+			research_bonus = {
+				armor = 0.10
+			}
+			
+			traits = { tank_manufacturer }
+		}
+	}
+	
+	naval_manufacturer = { 
+	
+		designer = yes
+	
+		vickers_shipbulding_and_SCOineering = {
+			
+			picture = generic_naval_manufacturer_1
+
+			allowed = {
+			    original_tag = SCO
+				NOT = {
+					has_available_idea_with_traits = { idea = naval_manufacturer limit = 1 }
+				}
+			}
+			
+			cost = 150
+			removal_cost = 10
+			
+			research_bonus = {
+				naval_equipment = 0.10
+			}
+			
+			traits = { naval_manufacturer }
+		}
+	}
+
+	aircraft_manufacturer = { 
+	
+		designer = yes
+	
+		britten_norman = {
+			
+			picture = generic_air_manufacturer_1
+
+			allowed = {
+			    original_tag = SCO
+				NOT = {
+					has_available_idea_with_traits = { idea = light_aircraft_manufacturer limit = 1 }
+				}
+			}
+			
+			cost = 150
+			removal_cost = 10
+			
+			research_bonus = {
+				air_equipment = 0.10
+			}
+			
+			traits = { light_aircraft_manufacturer }
+		}
+		
+		british_aerospace = {
+			
+			picture = generic_air_manufacturer_3
+
+			allowed = {
+			    original_tag = SCO
+				NOT = {
+					has_available_idea_with_traits = { idea = medium_aircraft_manufacturer limit = 1 }
+				}
+			}
+			
+			cost = 150
+			removal_cost = 10
+			
+			research_bonus = {
+				air_equipment = 0.10
+			}
+			
+			traits = { medium_aircraft_manufacturer }
+		}
+		
+		rolls_royce = {
+
+			picture = generic_air_manufacturer_2
+			
+			allowed = {
+			    original_tag = SCO
+				NOT = {
+					has_available_idea_with_traits = { idea = heavy_aircraft_manufacturer limit = 1 }
+				}
+			}
+			
+			cost = 150
+			removal_cost = 10
+			
+			research_bonus = {
+				air_equipment = 0.10
+			}
+			
+			traits = { heavy_aircraft_manufacturer }
+		}
+		
+		westland = {
+			
+			picture = generic_naval_manufacturer_2
+
+			allowed = {
+			    original_tag = SCO
+				NOT = {
+					has_available_idea_with_traits = { idea = naval_aircraft_manufacturer limit = 1 }
+				}
+			}
+			
+			cost = 150
+			removal_cost = 10
+			
+			research_bonus = {
+				air_equipment = 0.10
+			}
+			
+			traits = { naval_aircraft_manufacturer }
+		}
+	}
+
+	industrial_concern = {
+	
+		rio_tinto = {
+			
+			picture = generic_industrial_concern_1
+
+			allowed = {
+			    original_tag = SCO
+				NOT = {
+					has_available_idea_with_traits = { idea = industrial_concern limit = 1 }
+				}
+			}
+			
+			cost = 150
+			removal_cost = 10
+			
+			research_bonus = {
+				industry = 0.10
+			}
+			
+			traits = { industrial_concern }
+		}
+
+		marconi_electronic_systems = {
+			
+			picture = generic_electronics_concern_1
+
+			allowed = {
+			    original_tag = SCO
+				NOT = {
+					has_available_idea_with_traits = { idea = electronics_concern limit = 1 }
+				}
+			}
+			
+			cost = 150
+			removal_cost = 10
+			
+			research_bonus = {
+				electronics = 0.10
+			}
+			
+			traits = { electronics_concern }
+		}
+	}
+
+	materiel_manufacturer = {
+	
+		designer = yes
+	
+		land_rover = {
+			
+			picture = generic_motorized_equipment_manufacturer_3
+
+			allowed = {
+			    original_tag = SCO
+				NOT = {
+					has_available_idea_with_traits = { idea = motorized_equipment_manufacturer limit = 1 }
+				}
+			}
+			
+			cost = 150
+			removal_cost = 10
+			
+			research_bonus = {
+				motorized_equipment = 0.10
+			}
+			
+			traits = { motorized_equipment_manufacturer }
+		}
+		
+		royal_ordnance = {
+			
+			picture = generic_infantry_equipment_manufacturer_2
+
+			allowed = {
+			    original_tag = SCO
+				NOT = {
+					has_available_idea_with_traits = { idea = infantry_equipment_manufacturer limit = 1 }
+				}
+			}
+			
+			cost = 150
+			removal_cost = 10
+			
+			research_bonus = {
+				infantry_weapons = 0.10
+			}
+			
+			traits = { infantry_equipment_manufacturer }
+		}
+		
+		thales_air_defence = {
+			
+			picture = generic_artillery_manufacturer_2
+
+			allowed = {
+			    original_tag = SCO
+				NOT = {
+					has_available_idea_with_traits = { idea = artillery_manufacturer limit = 1 }
+				}
+			}
+			
+			cost = 150
+			removal_cost = 10
+			
+			research_bonus = {
+				artillery = 0.10
+			}
+			
+			traits = { artillery_manufacturer }
+		}
+	}
+	
+	second_in_command = {
+		scotland_Pete_Wishart = {
+		
+		    allowed = {
+			    original_tag = SCO
+			}
+			
+			available = {
+			    OR = {
+					has_government = fascist
+				} 
+			}
+			
+			traits = { power_hungry_demagogue }			
+		}
+		
+
+		
+		scotland_Angus_Robertson = {
+		
+		    allowed = {
+			    original_tag = SCO
+			}
+			
+			available = {
+			    OR = {
+					has_government = nationalist
+				} 
+			}
+			
+			traits = { flamboyant_tough_guy }			
+		}
+		
+		scotland_gordon_brown = {
+		
+		    allowed = {
+			    original_tag = SCO
+			}
+			
+			available = {
+			    OR = {
+					has_government = monarchist
+					has_government = national_conservative
+
+					NOT = {
+						has_country_leader = {
+							name = "Gordon Brown"
+							ruling_only = yes
+						}
+					}
+				} 
+			}
+			
+			traits = { autocratic_charmer }			
+		}
+		
+		
+
+		
+		scotland_Keith_Brown = {
+		
+		    allowed = {
+			    original_tag = SCO
+			}
+			
+			available = {
+			    OR = {
+					has_government = centrist
+				} 
+			}
+			
+			traits = { power_hungry_demagogue }			
+		}
+		
+		scotland_John_Alexander = {
+		
+		    allowed = {
+			    original_tag = SCO
+			}
+			
+			available = {
+			    OR = {
+					has_government = liberal
+	
+			}
+			
+			traits = { insignificant_layman }			
+		}
+	}
+
+		
+		scotland_Humza_Yousaf = {
+		
+		    allowed = {
+			    original_tag = SCO
+			}
+			
+			available = {
+			    OR = {
+					has_government = new_democrat
+				}
+
+			}
+			
+			traits = { naive_optimist }			
+		}
+		
+		
+		scotland_Anas_Sarwar = {
+		
+		    allowed = {
+			    original_tag = SCO
+			}
+
+
+			available = {
+			    OR = {
+					has_government = communist
+					has_government = moderate_socialist
+					has_government = revolutionary_socialist
+				}
+			}
+
+			
+			traits = { silent_workhorse }	
+		}
+		
+	}
+
+	
+	foreign_minister = {
+	
+		scotland_Alyn_Smith = {
+		
+		    allowed = {
+			    original_tag = SCO
+			}
+			
+			available = {
+			    OR = {
+					has_government = fascist
+				} 
+			}
+			
+			traits = { international_schemer }			
+		}
+		
+		
+		scotland_Chris_Law = {
+		
+		    allowed = {
+			    original_tag = SCO
+			}
+			
+			available = {
+			    OR = {
+					has_government = nationalist
+				} 
+			}
+			
+			traits = { iron_fisted_brute }			
+		}
+		
+		Scotland_Carol_Monaghan = {
+		
+		    allowed = {
+			    original_tag = SCO
+			}
+			
+			available = {
+			    OR = {
+					has_government = monarchist
+					has_government = national_conservative
+				} 
+			}
+			
+			traits = { ideological_crusader }			
+		}
+		
+		
+		scotland_Mhairi_Black = {
+		
+		    allowed = {
+			    original_tag = SCO
+			}
+			
+			available = {
+			    OR = {
+					has_government = centrist
+				} 
+			}
+			
+			traits = { ideological_crusader }			
+		}
+		
+		scotland_David_Linden = {
+		
+		    allowed = {
+			    original_tag = SCO
+			}
+			
+			available = {
+			    OR = {
+					has_government = liberal
+				} 
+			}
+			
+			traits = { apologetic_clerk }			
+		}
+		
+		scotland_david_tennent = {
+		
+		    allowed = {
+			    original_tag = SCO
+			}
+			
+			available = {
+			    OR = {
+					has_government = new_democrat
+				} 
+			}
+			
+			traits = { great_compromiser }			
+		}
+
+		
+		scotland_gordon_ramsey = {
+		
+		    allowed = {
+			    original_tag = SCO
+			}
+			
+			available = {
+			    OR = {
+					has_government = revolutionary_socialist
+					has_government = moderate_socialist
+				}
+
+			}
+			
+			traits = { apologetic_clerk }			
+		}
+
+		
+		scotland_james_mcavoy = {
+		
+		    allowed = {
+			    original_tag = SCO
+			}
+			
+			available = {
+			    OR = {
+					has_government = moderate_socialist
+					has_government = revolutionary_socialist
+					has_government = communist
+
+				} 
+			}
+			
+			traits = { great_compromiser }			
+		}
+	}	
+		
+
+	industry_minister = {
+		
+		Britain_Kate_Hoey = {
+		
+		    allowed = {
+			    original_tag = SCO
+			}
+			
+			available = {
+			    OR = {
+					has_government = fascist
+				} 
+			}
+			
+			traits = { corrupt_kleptocrat }			
+		}
+	
+		Britain_Patrick_Stewart = {
+		
+		    allowed = {
+			    original_tag = SCO
+			}
+			
+			available = {
+			    OR = {
+					has_government = nationalist
+				} 
+			}
+			
+			traits = { corrupt_kleptocrat }			
+		}
+		
+		Britain_Rupert_Murdoch = {
+		
+		    allowed = {
+			    original_tag = SCO
+			}
+			
+			available = {
+			    OR = {
+					has_government = monarchist
+				} 
+			}
+			
+			traits = { administrative_genius }			
+		}
+		
+		Britain_rebecca_long_bailey = {
+		
+		    allowed = {
+			    original_tag = SCO
+			}
+			
+			available = {
+			    OR = {
+					has_government = national_conservative
+				} 
+			}
+			
+			traits = { extreme_regulator }			
+		}
+		
+		britain_Bill_Nighy = {
+		
+		    allowed = {
+			    original_tag = SCO
+			}
+			
+			available = {
+			    OR = {
+					has_government = centrist
+				} 
+			}
+			
+			traits = { libertarian_capitalist }			
+		}
+		
+		Britain_Margaret_Beckett = {
+		
+		    allowed = {
+			    original_tag = SCO
+			}
+			
+			available = {
+			    OR = {
+					has_government = liberal
+				} 
+			}
+			
+			traits = { administrative_genius }			
+		}
+		
+		britain_john_hurt = {
+		
+		    allowed = {
+			    original_tag = SCO
+			}
+			
+			available = {
+			    OR = {
+					has_government = new_democrat
+				} 
+			}
+			
+			traits = { extreme_regulator }			
+		}
+		
+
+		
+		britain_Chris_Whitty = {
+		
+		    allowed = {
+			    original_tag = SCO
+			}
+			
+			available = {
+			    OR = {
+					has_government = revolutionary_socialist
+				} 
+			}
+			
+			traits = { former_scientist }			
+		}
+		
+		britain_Jacob_Rees_Mogg = {
+		
+		    allowed = {
+			    original_tag = SCO
+			}
+			
+			available = {
+			    OR = {
+					has_government = moderate_socialist
+					has_government = communist
+				} 
+			}
+			
+			traits = { resource_industrialist }			
+		}
+		
+		britain_ind_ella_rule = {
+		
+		    allowed = {
+			    original_tag = SCO
+			}
+			
+			available = {
+			    OR = {
+					has_government = moderate_socialist
+					has_government = revolutionary_socialist
+					has_government = communist
+				} 
+			}
+			
+			traits = { extreme_regulator }			
+		}
+	}
+	
+	national_security_minister = {
+	
+		britain_rory_stewart = {
+		
+		    allowed = {
+			    original_tag = SCO
+			}
+			
+			available = {
+			    OR = {
+					has_government = fascist
+				} 
+			}
+			
+			traits = { isolationist }			
+		}
+		
+		britain_ben_kingsley = {
+		
+		    allowed = {
+			    original_tag = SCO
+			}
+			
+			available = {
+			    OR = {
+					has_government = fascist
+				} 
+			}
+			
+			traits = { efficient_sociopath }			
+		}
+		
+		britain_Amber_Rudd = {
+		
+		    allowed = {
+			    original_tag = SCO
+			}
+			
+			available = {
+			    OR = {
+					has_government = nationalist
+				} 
+			}
+			
+			traits = { prince_of_terror }			
+		}
+		
+		britain_michael_caine = {
+		
+		    allowed = {
+			    original_tag = SCO
+			}
+			
+			available = {
+			    OR = {
+					has_government = monarchist
+				} 
+			}
+			
+			traits = { compassionate_gentleman }			
+		}
+		
+		Britain_Nadine_Dorries = {
+		
+		    allowed = {
+			    original_tag = SCO
+			}
+			
+			available = {
+			    OR = {
+					has_government = national_conservative
+				} 
+			}
+			
+			traits = { silent_lawyer }			
+		}
+		
+		britain_ian_duncan_smith = {
+		
+		    allowed = {
+			    original_tag = SCO
+			}
+			
+			available = {
+			    OR = {
+					has_government = centrist
+				} 
+			}
+			
+			traits = { compassionate_gentleman }			
+		}
+		
+		britain_john_bercow = {
+		
+		    allowed = {
+			    original_tag = SCO
+			}
+			
+			available = {
+			    OR = {
+					has_government = liberal
+				} 
+			}
+			
+			traits = { compassionate_gentleman }			
+		}
+		
+		britain_rowan_atkinson = {
+		
+		    allowed = {
+			    original_tag = SCO
+			}
+			
+			available = {
+			    OR = {
+					has_government = new_democrat
+				} 
+			}
+			
+			traits = { compassionate_gentleman }			
+		}
+		
+		
+		britain_Jeremy_Hunt = {
+		
+		    allowed = {
+			    original_tag = SCO
+			}
+			
+			available = {
+			    OR = {
+					has_government = moderate_socialist
+					has_government = revolutionary_socialist
+					has_government = communist
+				} 
+			}
+			
+			traits = { silent_lawyer }			
+		}
+		
+		britain_Owen_Paterson = {
+		
+		    allowed = {
+			    original_tag = SCO
+			}
+			
+			available = {
+			    OR = {
+					has_government = moderate_socialist
+					has_government = revolutionary_socialist
+					has_government = communist
+				} 
+			}
+			
+			traits = { efficient_sociopath }			
+		}
+		
+		britain_Piers_Corbyn = {
+		
+		    allowed = {
+			    original_tag = SCO
+			}
+			
+			available = {
+			    OR = {
+					has_government = moderate_socialist
+					has_government = revolutionary_socialist
+					has_government = communist
+				} 
+			}
+			
+			traits = { prince_of_terror }			
+		}
+	}
+	
+	intelligence_minister = {
+	
+		britain_george_osborne = {
+		
+		    allowed = {
+			    original_tag = SCO
+			}
+			
+			available = {
+			    OR = {
+					has_government = fascist
+				}
+			}
+			
+			traits = { novice_mastermind }			
+		}
+		
+		Britain_Esther_Mcvey = {
+		
+		    allowed = {
+			    original_tag = SCO
+			}
+			
+			available = {
+			    OR = {
+					has_government = nationalist
+				}
+			}
+			
+			traits = { novice_mastermind }			
+		}
+		
+		britain_Simon_Pegg = {
+		
+		    allowed = {
+			    original_tag = SCO
+			}
+			
+			available = {
+			    OR = {
+					has_government = fascist
+					has_government = monarchist
+					has_government = national_conservative
+					has_government = centrist
+					has_government = liberal
+					has_government = new_democrat
+					has_government = moderate_socialist
+				}
+			}
+			
+			traits = { intelligence_director }			
+		}
+		
+		britain_Matt_Hancock = {
+		
+		    allowed = {
+			    original_tag = SCO
+			}
+			
+			available = {
+			    OR = {
+					has_government = moderate_socialist
+					has_government = revolutionary_socialist
+					has_government = communist				}
+			}
+			
+			traits = { novice_mastermind }			
+		}
+		
+		britain_Jonathan_Ashworth = {
+		
+		    allowed = {
+			    original_tag = SCO
+			}
+			
+			available = {
+			    OR = {
+					has_government = moderate_socialist
+					has_government = revolutionary_socialist
+					has_government = communist
+				}
+			}
+			
+			traits = { politician_with_connections }			
+		}
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }

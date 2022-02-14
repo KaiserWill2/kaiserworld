@@ -1,10 +1,13 @@
 ﻿l_english:
+
  cabinet:0 "Cabinet"
+ prime_minister:0 "Prime Minister"
  second_in_command:0 "Second in Command"
  foreign_minister:0 "Foreign Minister"
  industry_minister:0 "Industry Minister"
  national_security_minister:0 "National Security Minister"
  intelligence_minister:0 "Intelligence Minister"
+
  soviet_sic_alexander_lukashenko:0 "Alexander Lukashenko"
  soviet_sic_vladimir_putin:0 "Vladimir Putin"
  soviet_sic_gennady_zyuganov:0 "Gennady Zyuganov"
@@ -500,3 +503,21 @@ britain_rowan_atkinson:0 "Rowan Atkinson"
 britain_george_osborne:0 "George Osborne"
 Britain_Esther_Mcvey:0 "Esther Mcvey"
 britain_Simon_Pegg:0 "Simon Pegg"
+
+#SCOTLAND##
+scotland_gordon_brown:0 "Gordon Brown"
+scotland_Pete_Wishart:0 "Pete Wishart"
+scotland_Angus_Robertson:0 "Angus Robertson"
+scotland_Keith_Brown:0 "Keith Brown"
+scotland_John_Alexander:0 "John Alexander"
+scotland_Humza_Yousaf:0 "Humza Yousaf"
+scotland_Anas_Sarwar:0 "Anas Sarwar"
+scotland_Alyn_Smith:0 "Alyn Smith"
+scotland_Chris_Law:0 "Chris Law"
+Scotland_Carol_Monaghan:0 "Carol Monaghan"
+scotland_Mhairi_Black:0 "Mhairi Black"
+scotland_David_Linden:0 "David Linden"
+scotland_david_tennent:0 "David Tennent"
+scotland_gordon_ramsey:0 "Gordon Ramsey"
+scotland_james_mcavoy:0 "James Mcavoy"
+

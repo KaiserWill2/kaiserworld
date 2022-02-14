@@ -451,12 +451,7 @@ ideas = {
 			    OR = {
 					has_government = liberal
 				}
-				NOT = {
-					has_country_leader = {
-						name = "Shirley Williams"
-						ruling_only = yes
-					}
-				}
+
 				NOT = {
 					has_country_flag = britain_shirley_williams_retirement
 				}
