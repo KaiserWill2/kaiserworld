@@ -541,7 +541,7 @@ ideas = {
 
 	industry_minister = {
 		
-		Britain_Kate_Hoey = {
+		Scotland_Jackson_Carlaw = {
 		
 		    allowed = {
 			    original_tag = SCO
@@ -556,7 +556,7 @@ ideas = {
 			traits = { corrupt_kleptocrat }			
 		}
 	
-		Britain_Patrick_Stewart = {
+		Scotland_Ruth_Davidson	= {
 		
 		    allowed = {
 			    original_tag = SCO
@@ -571,7 +571,7 @@ ideas = {
 			traits = { corrupt_kleptocrat }			
 		}
 		
-		Britain_Rupert_Murdoch = {
+		Scotland_David_McLetchie = {
 		
 		    allowed = {
 			    original_tag = SCO
@@ -586,7 +586,7 @@ ideas = {
 			traits = { administrative_genius }			
 		}
 		
-		Britain_rebecca_long_bailey = {
+		Scotland_Douglas_Ross = {
 		
 		    allowed = {
 			    original_tag = SCO
@@ -601,7 +601,7 @@ ideas = {
 			traits = { extreme_regulator }			
 		}
 		
-		britain_Bill_Nighy = {
+		Scotland_Wendy_Chamberlain	= {
 		
 		    allowed = {
 			    original_tag = SCO
@@ -616,7 +616,7 @@ ideas = {
 			traits = { libertarian_capitalist }			
 		}
 		
-		Britain_Margaret_Beckett = {
+		Scotland_Gerard_Butler = {
 		
 		    allowed = {
 			    original_tag = SCO
@@ -631,7 +631,7 @@ ideas = {
 			traits = { administrative_genius }			
 		}
 		
-		britain_john_hurt = {
+		scotland_ewan_mcgregor = {
 		
 		    allowed = {
 			    original_tag = SCO
@@ -647,23 +647,9 @@ ideas = {
 		}
 		
 
+
 		
-		britain_Chris_Whitty = {
-		
-		    allowed = {
-			    original_tag = SCO
-			}
-			
-			available = {
-			    OR = {
-					has_government = revolutionary_socialist
-				} 
-			}
-			
-			traits = { former_scientist }			
-		}
-		
-		britain_Jacob_Rees_Mogg = {
+		scotland_Jo_Swinson	= {
 		
 		    allowed = {
 			    original_tag = SCO
@@ -672,14 +658,14 @@ ideas = {
 			available = {
 			    OR = {
 					has_government = moderate_socialist
-					has_government = communist
+					has_government = revolutionary_socialist
 				} 
 			}
 			
 			traits = { resource_industrialist }			
 		}
 		
-		britain_ind_ella_rule = {
+		scotland_Wilf_Stevenson = {
 		
 		    allowed = {
 			    original_tag = SCO
@@ -699,22 +685,7 @@ ideas = {
 	
 	national_security_minister = {
 	
-		britain_rory_stewart = {
-		
-		    allowed = {
-			    original_tag = SCO
-			}
-			
-			available = {
-			    OR = {
-					has_government = fascist
-				} 
-			}
-			
-			traits = { isolationist }			
-		}
-		
-		britain_ben_kingsley = {
+		scotland_Adam_Busby = {
 		
 		    allowed = {
 			    original_tag = SCO
@@ -729,7 +700,8 @@ ideas = {
 			traits = { efficient_sociopath }			
 		}
 		
-		britain_Amber_Rudd = {
+		
+		scotland_Mark_Griffin = {
 		
 		    allowed = {
 			    original_tag = SCO
@@ -744,7 +716,7 @@ ideas = {
 			traits = { prince_of_terror }			
 		}
 		
-		britain_michael_caine = {
+		scotland_Annie_Wells = {
 		
 		    allowed = {
 			    original_tag = SCO
@@ -756,10 +728,10 @@ ideas = {
 				} 
 			}
 			
-			traits = { compassionate_gentleman }			
+			traits = { silent_lawyer }			
 		}
 		
-		Britain_Nadine_Dorries = {
+		scotland_Norman_Lamont	= {
 		
 		    allowed = {
 			    original_tag = SCO
@@ -771,10 +743,10 @@ ideas = {
 				} 
 			}
 			
-			traits = { silent_lawyer }			
+			traits = { resource_industrialist }			
 		}
 		
-		britain_ian_duncan_smith = {
+		scotland_Tavish_Scott = {
 		
 		    allowed = {
 			    original_tag = SCO
@@ -789,7 +761,7 @@ ideas = {
 			traits = { compassionate_gentleman }			
 		}
 		
-		britain_john_bercow = {
+		scotland_Sheila_Ritchie	 = {
 		
 		    allowed = {
 			    original_tag = SCO
@@ -801,10 +773,10 @@ ideas = {
 				} 
 			}
 			
-			traits = { compassionate_gentleman }			
+			traits = { extreme_regulator }			
 		}
 		
-		britain_rowan_atkinson = {
+		scotland_Carol_Mochan	= {
 		
 		    allowed = {
 			    original_tag = SCO
@@ -820,24 +792,7 @@ ideas = {
 		}
 		
 		
-		britain_Jeremy_Hunt = {
-		
-		    allowed = {
-			    original_tag = SCO
-			}
-			
-			available = {
-			    OR = {
-					has_government = moderate_socialist
-					has_government = revolutionary_socialist
-					has_government = communist
-				} 
-			}
-			
-			traits = { silent_lawyer }			
-		}
-		
-		britain_Owen_Paterson = {
+		scotland_Paul_OKane = {
 		
 		    allowed = {
 			    original_tag = SCO
@@ -853,28 +808,11 @@ ideas = {
 			
 			traits = { efficient_sociopath }			
 		}
-		
-		britain_Piers_Corbyn = {
-		
-		    allowed = {
-			    original_tag = SCO
-			}
-			
-			available = {
-			    OR = {
-					has_government = moderate_socialist
-					has_government = revolutionary_socialist
-					has_government = communist
-				} 
-			}
-			
-			traits = { prince_of_terror }			
-		}
 	}
 	
 	intelligence_minister = {
 	
-		britain_george_osborne = {
+		scotland_Ian_Livingston = {
 		
 		    allowed = {
 			    original_tag = SCO
@@ -889,7 +827,7 @@ ideas = {
 			traits = { novice_mastermind }			
 		}
 		
-		Britain_Esther_Mcvey = {
+		scotland_Nicholas_Fairfax = {
 		
 		    allowed = {
 			    original_tag = SCO
@@ -904,7 +842,7 @@ ideas = {
 			traits = { novice_mastermind }			
 		}
 		
-		britain_Simon_Pegg = {
+		scotland_peter_Capaldi = {
 		
 		    allowed = {
 			    original_tag = SCO
@@ -925,7 +863,7 @@ ideas = {
 			traits = { intelligence_director }			
 		}
 		
-		britain_Matt_Hancock = {
+		scotland_Daniel_Johnson = {
 		
 		    allowed = {
 			    original_tag = SCO
@@ -940,68 +878,10 @@ ideas = {
 			
 			traits = { novice_mastermind }			
 		}
-		
-		britain_Jonathan_Ashworth = {
-		
-		    allowed = {
-			    original_tag = SCO
-			}
-			
-			available = {
-			    OR = {
-					has_government = moderate_socialist
-					has_government = revolutionary_socialist
-					has_government = communist
-				}
-			}
-			
-			traits = { politician_with_connections }			
-		}
+
 	}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+	
 
 
 

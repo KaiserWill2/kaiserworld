@@ -39,8 +39,39 @@ spriteTypes = {
 	
 	
 	##England###
+	
+	SpriteType = {
+		name = "strike_down_a_satellite_icon"
+		texturefile = "gfx/interface/goals/eng/strike_down_a_satellite_icon.dds"			
+	}
+	
+	
+	SpriteType = {
+		name = "the_test_flight_icon"
+		texturefile = "gfx/interface/goals/eng/the_test_flight_icon.dds"			
+	}
+	
+	SpriteType = {
+		name = "build_the_first_union_rocket_icon"
+		texturefile = "gfx/interface/goals/eng/build_the_first_union_rocket_icon.dds"			
+	}
+
+
+	SpriteType = {
+		name = "challenge_other_nations_icon"
+		texturefile = "gfx/interface/goals/eng/challenge_other_nations_icon.dds"			
+	}
+
+	SpriteType = {
+		name = "compete_with_the_rest_of_the_world_icon"
+		texturefile = "gfx/interface/goals/eng/compete_with_the_rest_of_the_world_icon.dds"			
+	}
 
 	
+	SpriteType = {
+		name = "the_future_of_the_union_icon"
+		texturefile = "gfx/interface/goals/eng/the_future_of_the_union_icon.dds"			
+	}
 
 	
 	SpriteType = {

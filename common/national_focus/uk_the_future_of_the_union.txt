@@ -9,7 +9,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_The_Future_Of_The_Union
-		icon = a_new_england_icon
+		icon = the_future_of_the_union_icon
 		x = 15
 		y = 0
 		cost = 5
@@ -24,7 +24,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ENG_Begin_To_Compete_With_The_World
-		icon = wales_is_finally_back_icon
+		icon = compete_with_the_rest_of_the_world_icon
 		x = 15
 		y = 1
 		cost = 5
@@ -41,7 +41,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_Challenge_Other_Nations
-		icon = wales_is_finally_back_icon
+		icon = challenge_other_nations_icon
 		x = 11
 		y = 2
 		cost = 5
@@ -59,7 +59,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_Build_The_First_Union_Rocket
-		icon = wales_is_finally_back_icon
+		icon = build_the_first_union_rocket_icon
 		x = 10
 		y = 3
 		cost = 5
@@ -76,7 +76,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_The_Flight_Test
-		icon = wales_is_finally_back_icon
+		icon = the_test_flight_icon
 		x = 10
 		y = 4
 		cost = 5
@@ -93,7 +93,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_Strike_Down_A_Satellite
-		icon = wales_is_finally_back_icon
+		icon = strike_down_a_satellite_icon
 		x = 10
 		y = 5
 		cost = 5
