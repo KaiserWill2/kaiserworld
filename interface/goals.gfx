@@ -39,6 +39,39 @@ spriteTypes = {
 	
 	
 	##England###
+
+	
+	SpriteType = {
+		name = "a_plan_to_take_our_old_state_icon"
+		texturefile = "gfx/interface/goals/eng/a_plan_to_take_our_old_state_icon.dds"			
+	}
+	
+	SpriteType = {
+		name = "claims_on_northern_ireland_icon"
+		texturefile = "gfx/interface/goals/eng/claims_on_northern_ireland_icon.dds"			
+	}
+	
+	SpriteType = {
+		name = "no_one_stops_blair_iocn"
+		texturefile = "gfx/interface/goals/eng/no_one_stops_blair_iocn.dds"			
+	}
+	
+	SpriteType = {
+		name = "we_have_the_power_now_canada_icon"
+		texturefile = "gfx/interface/goals/eng/we_have_the_power_now_canada_icon.dds"			
+	}
+	
+	SpriteType = {
+		name = "threats_to_empire_of_america_icon"
+		texturefile = "gfx/interface/goals/eng/threats_to_empire_of_america_icon.dds"			
+	}
+	
+		
+	SpriteType = {
+		name = "move_weapons_to_barbados_icon"
+		texturefile = "gfx/interface/goals/eng/move_weapons_to_barbados_icon.dds"			
+	}
+	
 	
 	SpriteType = {
 		name = "strike_down_a_satellite_icon"
@@ -2151,6 +2184,110 @@ SpriteType = {
 			texturefile = "gfx/interface/goals/sco/the_nation_icon.dds"			
 		}	
 		
+
+
+	### WALES ####
+	
+	SpriteType = {
+		name = "train_the_teens_icon"
+		texturefile = "gfx/interface/goals/wal/train_the_teens_icon.dds"			
+	}	
+
+	SpriteType = {
+		name = "blind_the_young_icon"
+		texturefile = "gfx/interface/goals/wal/blind_the_young_icon.dds"			
+	}	
+	
+	SpriteType = {
+		name = "welsh_education_icon"
+		texturefile = "gfx/interface/goals/wal/welsh_education_icon.dds"			
+	}	
+
+	SpriteType = {
+		name = "defend_our_nationalism_icon"
+		texturefile = "gfx/interface/goals/wal/defend_our_nationalism_icon.dds"			
+	}	
+
+	SpriteType = {
+		name = "ban_the_strikeS_icon"
+		texturefile = "gfx/interface/goals/wal/ban_the_strikeS_icon.dds"			
+	}	
+	
+	SpriteType = {
+		name = "speak_with_the_unions_icon"
+		texturefile = "gfx/interface/goals/wal/speak_with_the_unions_icon.dds"			
+	}	
+
+	SpriteType = {
+		name = "the_planned_strikes_icon"
+		texturefile = "gfx/interface/goals/wal/the_planned_strikes_icon.dds"			
+	}	
+	
+	
+	SpriteType = {
+		name = "remove_safety_law_icon"
+		texturefile = "gfx/interface/goals/wal/remove_safety_law_icon.dds"			
+	}	
+	
+	
+	SpriteType = {
+		name = "wal_the_new_bill_icon"
+		texturefile = "gfx/interface/goals/wal/wal_the_new_bill_icon.dds"			
+	}	
+	
+	SpriteType = {
+		name = "5_year_automation_plan_icon"
+		texturefile = "gfx/interface/goals/wal/5_year_automation_plan_icon.dds"			
+	}	
+
+	SpriteType = {
+		name = "rebuild_steel_industry_icon"
+		texturefile = "gfx/interface/goals/wal/rebuild_steel_industry_icon.dds"			
+	}	
+	
+	SpriteType = {
+		name = "stop_irish_trade_icon"
+		texturefile = "gfx/interface/goals/wal/stop_irish_trade_icon.dds"			
+	}	
+	
+	SpriteType = {
+		name = "we_need_scottish_power_icon"
+		texturefile = "gfx/interface/goals/wal/we_need_scottish_power_icon.dds"			
+	}	
+	
+	SpriteType = {
+		name = "The_coal_shortage_icon"
+		texturefile = "gfx/interface/goals/wal/The_coal_shortage_icon.dds"			
+	}	
+	
+	SpriteType = {
+		name = "expand_mining_operations_icon"
+		texturefile = "gfx/interface/goals/wal/expand_mining_operations_icon.dds"			
+	}	
+	
+	SpriteType = {
+		name = "expand_the_industry_icon"
+		texturefile = "gfx/interface/goals/wal/expand_the_industry_icon.dds"			
+	}	
+
+
+	SpriteType = {
+		name = "welsh_freedom_icon"
+		texturefile = "gfx/interface/goals/wal/welsh_freedom_icon.dds"			
+	}	
+
+	
+	SpriteType = {
+		name = "addressing_wales_icon"
+		texturefile = "gfx/interface/goals/wal/addressing_wales_icon.dds"			
+	}	
+
+
+	SpriteType = {
+		name = "rise_of_the_dragon_icon"
+		texturefile = "gfx/interface/goals/wal/rise_of_the_dragon_icon.dds"			
+	}	
+
 
 
 	### IRELAND ####

@@ -110,7 +110,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_Move_Weapons_To_Barbados
-		icon = wales_is_finally_back_icon
+		icon = move_weapons_to_barbados_icon
 		x = 12
 		y = 3
 		cost = 5
@@ -128,7 +128,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_Threats_To_Empire_Of_America
-		icon = wales_is_finally_back_icon
+		icon = threats_to_empire_of_america_icon
 		x = 12
 		y = 4
 		cost = 5
@@ -145,7 +145,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_We_Have_Power_Now_Canada
-		icon = wales_is_finally_back_icon
+		icon = we_have_the_power_now_canada_icon
 		x = 12
 		y = 5
 		cost = 5
@@ -163,7 +163,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_No_One_Stops_Blair
-		icon = wales_is_finally_back_icon
+		icon = no_one_stops_blair_iocn
 		x = 11
 		y = 6
 		cost = 5
@@ -182,7 +182,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_Claims_To_Northern_Ireland
-		icon = wales_is_finally_back_icon
+		icon = claims_on_northern_ireland_icon
 		x = 15
 		y = 2
 		cost = 5
@@ -199,7 +199,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_A_Plan_To_Take_Our_Old_State_Back
-		icon = wales_is_finally_back_icon
+		icon = a_plan_to_take_our_old_state_icon
 		x = 15
 		y = 3
 		cost = 5

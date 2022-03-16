@@ -2168,6 +2168,11 @@ SCO_Totalist_state_DEF:0 "The Union Of Scotland"
 SCO_Totalist_state_ADJ:0 "The Union Of Scotland"
 
 
+WAL_fascist:0 "National State Of Wales"
+WAL_fascist_DEF:0 "National State Of Wales"
+WAL_fascist_ADJ:0 "National State Of Wales"
+
+
  WAL_wales_communist:0 "Union Of Wales"
  WAL_wales_communist_DEF:0 "Union Of Wales"
  WAL_wales_communist_ADJ:0 "Union Of Wales"

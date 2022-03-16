@@ -739,5 +739,73 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/report_event/talks_for_unification_event.dds"
 	}
 	
+
+	spriteType = {
+		name = "scotland_the_brave_event"
+		texturefile = "gfx/event_pictures/report_event/scotland_the_brave_event.dds"
+	}
+	
+	spriteType = {
+		name = "english_refugees_event"
+		texturefile = "gfx/event_pictures/report_event/english_refugees_event.dds"
+	}
+	
+	spriteType = {
+		name = "francis_changes_direction_event"
+		texturefile = "gfx/event_pictures/report_event/francis_changes_direction_event.dds"
+	}
+
+	spriteType = {
+		name = "scottish_welfare_event"
+		texturefile = "gfx/event_pictures/report_event/scottish_welfare_event.dds"
+	}
+
+	spriteType = {
+		name = "scottish_job_industry_event"
+		texturefile = "gfx/event_pictures/report_event/scottish_job_industry_event.dds"
+	}
+	
+	spriteType = {
+		name = "highland_resources_event"
+		texturefile = "gfx/event_pictures/report_event/highland_resources_event.dds"
+	}
+
+	spriteType = {
+		name = "the_nation_event"
+		texturefile = "gfx/event_pictures/report_event/the_nation_event.dds"
+	}
+
+	spriteType = {
+		name = "scotland_and_canada_event"
+		texturefile = "gfx/event_pictures/report_event/scotland_and_canada_event.dds"
+	}
+
+	spriteType = {
+		name = "scottish_intelligence_agency_event"
+		texturefile = "gfx/event_pictures/report_event/scottish_intelligence_agency_event.dds"
+	}
+
+	spriteType = {
+		name = "bernie_and_scotland_event"
+		texturefile = "gfx/event_pictures/report_event/bernie_and_scotland_event.dds"
+	}
+
+
+	spriteType = {
+		name = "socialist_scotland_event"
+		texturefile = "gfx/event_pictures/report_event/socialist_scotland_event.dds"
+	}
+	
+	spriteType = {
+		name = "francis_and_bernie_event"
+		texturefile = "gfx/event_pictures/report_event/francis_and_bernie_event.dds"
+	}
+	
+	spriteType = {
+		name = "scotland_and_ireland_event"
+		texturefile = "gfx/event_pictures/report_event/scotland_and_ireland_event.dds"
+	}
+	
+	
 	
 }

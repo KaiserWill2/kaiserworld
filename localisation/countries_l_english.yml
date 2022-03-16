@@ -6554,8 +6554,13 @@ ENG_COW:0 "Syndicalist Republic of England"
 ENG_COW_DEF:0 "Syndicalist Republic of England"
 ENG_COW_ADJ:0 "Syndicalist Republic of England"
 
- WAL_fascist:0 "Wales"
- WAL_fascist_DEF:0 "the Welsh Social Republic"
+
+
+
+
+
+WAL_fascist:0 "National State Of Wales"
+WAL_fascist_DEF:0 "National State Of Wales"
  WAL_nationalist:0 "Wales"
  WAL_nationalist_DEF:0 "Wales"
  WAL_monarchist:0 "Principality of Wales"
@@ -6587,6 +6592,11 @@ ENG_COW_ADJ:0 "Syndicalist Republic of England"
  WAL_moderate_socialist_ADJ:0 "Welsh"
  WAL_revolutionary_socialist_ADJ:0 "Welsh"
  WAL_communist_ADJ:0 "Welsh"
+
+
+
+
+
  SLO_fascist:0 "Slovak State"
  SLO_fascist_DEF:0 "The Slovak State"
  SLO_nationalist:0 "Slovak State"

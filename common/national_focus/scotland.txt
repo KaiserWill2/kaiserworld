@@ -16,7 +16,9 @@ focus_tree = {
 		x = 17
 		y = 0
 		completion_reward = {
-
+			country_event = {
+				id = Scotland.1
+			}
 		}
 
 	}
@@ -28,7 +30,9 @@ focus_tree = {
 		y = 1
 		prerequisite = { focus = SCO_The_Kingdom_Of_Scotland  }
 		completion_reward = {
-
+			country_event = {
+				id = Scotland.7
+			}
 		}
 
 	}
@@ -40,7 +44,9 @@ focus_tree = {
 		y = 2
 		prerequisite = { focus = SCO_The_Nation  }
 		completion_reward = {
-
+			country_event = {
+				id = Scotland.8
+			}
 		}
 
 	}
@@ -76,7 +82,9 @@ focus_tree = {
 		y = 3
 		prerequisite = { focus = SCO_The_Maple_Leaf  }
 		completion_reward = {
-
+			country_event = {
+				id = Scotland.9
+			}
 		}
 
 	}
@@ -114,7 +122,9 @@ focus_tree = {
 		y = 2
 		prerequisite = { focus = SCO_The_Nation  }
 		completion_reward = {
-
+			country_event = {
+				id = Scotland.10
+			}
 		}
 
 	}
@@ -162,7 +172,9 @@ focus_tree = {
 		y = 4
 		prerequisite = { focus = SCO_The_Stars_And_Scotland  }
 		completion_reward = {
-
+			country_event = {
+				id = Scotland.11
+			}
 		}
 
 	}
@@ -175,7 +187,9 @@ focus_tree = {
 		prerequisite = { focus = SCO_The_New_International_Hub  }
 		prerequisite = { focus = SCO_The_Socialist_Friend  }
 		completion_reward = {
-
+			country_event = {
+				id = Scotland.12
+			}
 		}
 
 	}
@@ -188,7 +202,9 @@ focus_tree = {
 		prerequisite = { focus = SCO_Bernie_And_Francis  }
 		prerequisite = { focus = SCO_A_New_Partnership  }
 		completion_reward = {
-
+			country_event = {
+				id = Scotland.13
+			}
 		}
 
 	}
@@ -395,7 +411,9 @@ focus_tree = {
 		y = 3
 		prerequisite = { focus = SCO_Fighting_Poverty  }
 		completion_reward = {
-
+			country_event = {
+				id = Scotland.3
+			}
 		}
 
 	}
@@ -407,6 +425,9 @@ focus_tree = {
 		y = 3
 		prerequisite = { focus = SCO_The_People  }
 		completion_reward = {
+			country_event = {
+				id = Scotland.2
+			}
 		}
 	}
 
@@ -433,7 +454,9 @@ focus_tree = {
 		y = 2
 		prerequisite = { focus = SCO_The_People  }
 		completion_reward = {
-
+			country_event = {
+				id = Scotland.4
+			}
 		}
 
 	}
@@ -458,7 +481,9 @@ focus_tree = {
 		prerequisite = { focus = SCO_Scotland_For_All  }
 		prerequisite = { focus = SCO_Accept_English_Refugees  }
 		completion_reward = {
-
+			country_event = {
+				id = Scotland.5
+			}
 		}
 
 	}
@@ -471,7 +496,9 @@ focus_tree = {
 		prerequisite = { focus = SCO_Scottish_Education  }
 		prerequisite = { focus = SCO_New_Jobs_sector  }
 		completion_reward = {
-
+			country_event = {
+				id = Scotland.6
+			}
 		}
 
 	}
