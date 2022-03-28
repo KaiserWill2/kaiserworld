@@ -1429,7 +1429,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_Execute_Scottish_Targets
-		icon = wales_is_finally_back_icon
+		icon = execute_scottish_targets_icon
 		x = 29
 		y = 17
 		cost = 5
@@ -1463,7 +1463,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_Scotland_No_More
-		icon = wales_is_finally_back_icon
+		icon = scotland_no_more_icon
 		x = 30
 		y = 18
 		cost = 5
@@ -1486,7 +1486,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_Taking_Back_The_Welsh_Cities
-		icon = wales_is_finally_back_icon
+		icon = taking_back_welsh_cities_icon
 		x = 26
 		y = 13
 		cost = 5
@@ -1503,7 +1503,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_Cardiff_In_Kennedys_Hands
-		icon = wales_is_finally_back_icon
+		icon = cardiff_in_kennedys_hands_icon
 		x = 25
 		y = 14
 		cost = 5
@@ -1520,7 +1520,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_Taking_Newtown
-		icon = wales_is_finally_back_icon
+		icon = taking_newton_icon
 		x = 25
 		y = 15
 		cost = 5
@@ -1537,7 +1537,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_Swansea_For_Our_Navy
-		icon = wales_is_finally_back_icon
+		icon = swansea_for_our_navy_icon
 		x = 27
 		y = 14
 		cost = 5
@@ -1554,7 +1554,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_Destroy_St_Davids
-		icon = wales_is_finally_back_icon
+		icon = destroy_st_davids_icon
 		x = 27
 		y = 15
 		cost = 5
@@ -1571,7 +1571,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_Prepare_For_The_Welsh_Surrender
-		icon = wales_is_finally_back_icon
+		icon = perpare_for_Welsh_surrender_icon
 		x = 26
 		y = 16
 		cost = 5
@@ -1591,7 +1591,7 @@ focus_tree = {
 	
 	focus = {
 		id = ENG_Prepare_For_The_Irish_Invasion
-		icon = wales_is_finally_back_icon
+		icon = prepare_for_irish_invasion_icon
 		x = 25
 		y = 17
 		cost = 5
@@ -1607,7 +1607,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_Threaten_The_Irish_For_Involvement
-		icon = wales_is_finally_back_icon
+		icon = threathen_the_irish_involvement_icon
 		x = 25
 		y = 18
 		cost = 5
@@ -1625,7 +1625,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_We_Want_Reparations
-		icon = wales_is_finally_back_icon
+		icon = we_want_reparations_icon
 		x = 25
 		y = 19
 		cost = 5
@@ -1643,7 +1643,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_Guard_Northern_Ireland
-		icon = wales_is_finally_back_icon
+		icon = guard_northern_ireland_icon
 		x = 24
 		y = 20
 		cost = 5
@@ -1662,7 +1662,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_Leave_The_State
-		icon = wales_is_finally_back_icon
+		icon = leave_the_state_icon
 		x = 26
 		y = 20
 		cost = 5
@@ -1682,7 +1682,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_Sit_Down_With_Ireland
-		icon = wales_is_finally_back_icon
+		icon = sit_down_with_ireland_icon
 		x = 27
 		y = 17
 		cost = 5
@@ -1698,7 +1698,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_We_Take_Wales_You_Stay_Out
-		icon = wales_is_finally_back_icon
+		icon = take_wales_you_stay_out_icon
 		x = 27
 		y = 18
 		cost = 5
@@ -1714,7 +1714,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_The_Irish_Cowards
-		icon = wales_is_finally_back_icon
+		icon = the_irish_cowards_icon
 		x = 28
 		y = 19
 		cost = 5
@@ -1730,7 +1730,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_Prepare_For_The_Unification
-		icon = wales_is_finally_back_icon
+		icon = preparing_for_unifcation_icon
 		x = 29
 		y = 20
 		cost = 5
@@ -1774,7 +1774,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_Defend_the_New_Hadrians_Wall
-		icon = wales_is_finally_back_icon
+		icon = Defend_the_New_Hadrians_Wall_icon
 		x = 35
 		y = 11
 		cost = 5
@@ -1790,7 +1790,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_Standing_In_The_Midlands
-		icon = wales_is_finally_back_icon
+		icon = Standing_In_The_Midlands_icon
 		x = 37
 		y = 11
 		cost = 5
@@ -1806,7 +1806,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_The_North_Is_Lost
-		icon = wales_is_finally_back_icon
+		icon = the_north_is_lost_icon
 		x = 36
 		y = 12
 		cost = 5
@@ -1823,7 +1823,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_Protecting_The_South_Of_England
-		icon = wales_is_finally_back_icon
+		icon = south_of_england_icon
 		x = 36
 		y = 13
 		cost = 5
@@ -1841,7 +1841,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_Sit_Down_With_Scotland
-		icon = wales_is_finally_back_icon
+		icon = sit_down_with_scotland_icon
 		x = 34
 		y = 14
 		cost = 5
@@ -1862,7 +1862,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_The_Isolated_South
-		icon = wales_is_finally_back_icon
+		icon = the_isolated_south_icon
 		x = 33
 		y = 15
 		cost = 5
@@ -1880,7 +1880,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_The_Union_Of_Southern_England
-		icon = wales_is_finally_back_icon
+		icon = the_union_of_southern_englnad_icon
 		x = 33
 		y = 16
 		cost = 5
@@ -1896,7 +1896,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_A_Free_Northern_England
-		icon = wales_is_finally_back_icon
+		icon = a_free_northern_england_icon
 		x = 35
 		y = 15
 		cost = 5
@@ -1914,7 +1914,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_The_Kingdom_Of_Northumbria
-		icon = wales_is_finally_back_icon
+		icon = kingdom_of_northumbria_icon
 		x = 35
 		y = 16
 		cost = 5
@@ -1930,7 +1930,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_We_Fight_On
-		icon = wales_is_finally_back_icon
+		icon = we_fight_on_icon
 		x = 38
 		y = 14
 		cost = 5
@@ -1951,7 +1951,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_Our_Last_Men_Stand_For_Kennedy
-		icon = wales_is_finally_back_icon
+		icon = last_men_stand_for_kennedy_icon
 		x = 38
 		y = 15
 		cost = 5
@@ -1967,7 +1967,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_The_Battle_Of_Cable_Street
-		icon = wales_is_finally_back_icon
+		icon = the_battle_of_cable_street_icon
 		x = 38
 		y = 16
 		cost = 5
@@ -1983,7 +1983,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_Kennedys_Last_Stand
-		icon = wales_is_finally_back_icon
+		icon = kennedys_last_stand_icon
 		x = 38
 		y = 17
 		cost = 5
@@ -2001,7 +2001,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_The_Devil_Has_Fallen
-		icon = wales_is_finally_back_icon
+		icon = the_devil_has_fallen_icon
 		x = 38
 		y = 18
 		cost = 5
@@ -2020,7 +2020,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_The_UN_In_The_USBR
-		icon = a_new_england_icon
+		icon = the_un_in_the_usbr_icon
 		x = 43
 		y = 0
 		cost = 5
@@ -2042,7 +2042,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_Defend_The_Scottish_Border
-		icon = wales_is_finally_back_icon
+		icon = defend_the_scottish_border_icon
 		x = 41
 		y = 1
 		cost = 5
@@ -2060,7 +2060,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_Fight_On_The_Cliffs_Of_Dover
-		icon = wales_is_finally_back_icon
+		icon = fight_on_The_cliffs_of_dover_icon
 		x = 45
 		y = 1
 		cost = 5
@@ -2076,7 +2076,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_A_Challenge_From_Canada
-		icon = wales_is_finally_back_icon
+		icon = a_challenge_from_Canada_icon
 		x = 43
 		y = 2
 		cost = 5
@@ -2095,7 +2095,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_The_Three_Way_War
-		icon = wales_is_finally_back_icon
+		icon = the_three_way_war_icon
 		x = 43
 		y = 3
 		cost = 5
@@ -2111,7 +2111,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_Fight_The_Scottish_Advancement
-		icon = wales_is_finally_back_icon
+		icon = fight_the_scottish_advancement_icon
 		x = 40
 		y = 4
 		cost = 5
@@ -2127,7 +2127,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_Talks_For_A_Ceasefire
-		icon = wales_is_finally_back_icon
+		icon = talks_for_a_ceasefire_icon
 		x = 40
 		y = 5
 		cost = 5
@@ -2145,7 +2145,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_Scotland_Will_Regret_Their_Option
-		icon = wales_is_finally_back_icon
+		icon = scotland_will_regret_their_option_icon
 		x = 40
 		y = 6
 		cost = 5
@@ -2161,7 +2161,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_Retreat_To_The_Midlands
-		icon = wales_is_finally_back_icon
+		icon = retreat_to_the_midlands_icon
 		x = 40
 		y = 7
 		cost = 5
@@ -2177,7 +2177,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_Prevent_The_UN_Beach_Landings
-		icon = wales_is_finally_back_icon
+		icon = prevent_the_un_beach_landings_icon
 		x = 43
 		y = 4
 		cost = 5
@@ -2193,7 +2193,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_Prevent_The_UN_Advancement_Into_Kent
-		icon = wales_is_finally_back_icon
+		icon = prevent_teh_un_advancement_into_kent_icon
 		x = 43
 		y = 5
 		cost = 5
@@ -2209,7 +2209,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_Fighting_In_Cumbria
-		icon = wales_is_finally_back_icon
+		icon = fighting_in_cumbria_icon
 		x = 46
 		y = 4
 		cost = 5
@@ -2225,7 +2225,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_Cumbria_Was_Never_A_Favourite
-		icon = wales_is_finally_back_icon
+		icon = cumbria_was_never_a_favourite_icon
 		x = 46
 		y = 5
 		cost = 5

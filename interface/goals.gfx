@@ -39,7 +39,231 @@ spriteTypes = {
 	
 	
 	##England###
+	
+	SpriteType = {
+		name = "cumbria_was_never_a_favourite_icon"
+		texturefile = "gfx/interface/goals/eng/cumbria_was_never_a_favourite_icon.dds"			
+	}
+	
+	SpriteType = {
+		name = "fighting_in_cumbria_icon"
+		texturefile = "gfx/interface/goals/eng/fighting_in_cumbria_icon.dds"			
+	}
+	
+	SpriteType = {
+		name = "prevent_teh_un_advancement_into_kent_icon"
+		texturefile = "gfx/interface/goals/eng/prevent_teh_un_advancement_into_kent_icon.dds"			
+	}
+	
+	SpriteType = {
+		name = "prevent_the_un_beach_landings_icon"
+		texturefile = "gfx/interface/goals/eng/prevent_the_un_beach_landings_icon.dds"			
+	}
+	
+	SpriteType = {
+		name = "retreat_to_the_midlands_icon"
+		texturefile = "gfx/interface/goals/eng/retreat_to_the_midlands_icon.dds"			
+	}
+	
+	SpriteType = {
+		name = "scotland_will_regret_their_option_icon"
+		texturefile = "gfx/interface/goals/eng/scotland_will_regret_their_option_icon.dds"			
+	}
+	
+	
+	SpriteType = {
+		name = "talks_for_a_ceasefire_icon"
+		texturefile = "gfx/interface/goals/eng/talks_for_a_ceasefire_icon.dds"			
+	}
+	
+	SpriteType = {
+		name = "fight_the_scottish_advancement_icon"
+		texturefile = "gfx/interface/goals/eng/fight_the_scottish_advancement_icon.dds"			
+	}
 
+	SpriteType = {
+		name = "the_three_way_war_icon"
+		texturefile = "gfx/interface/goals/eng/the_three_way_war_icon.dds"			
+	}
+	
+	SpriteType = {
+		name = "a_challenge_from_Canada_icon"
+		texturefile = "gfx/interface/goals/eng/a_challenge_from_Canada_icon.dds"			
+	}
+	
+	
+	SpriteType = {
+		name = "fight_on_The_cliffs_of_dover_icon"
+		texturefile = "gfx/interface/goals/eng/fight_on_The_cliffs_of_dover_icon.dds"			
+	}
+	
+	SpriteType = {
+		name = "defend_the_scottish_border_icon"
+		texturefile = "gfx/interface/goals/eng/defend_the_scottish_border_icon.dds"			
+	}
+
+	SpriteType = {
+		name = "the_un_in_the_usbr_icon"
+		texturefile = "gfx/interface/goals/eng/the_un_in_the_usbr_icon.dds"			
+	}
+	
+	SpriteType = {
+		name = "the_devil_has_fallen_icon"
+		texturefile = "gfx/interface/goals/eng/the_devil_has_fallen_icon.dds"			
+	}
+
+	SpriteType = {
+		name = "kennedys_last_stand_icon"
+		texturefile = "gfx/interface/goals/eng/kennedys_last_stand_icon.dds"			
+	}
+	
+	SpriteType = {
+		name = "the_battle_of_cable_street_icon"
+		texturefile = "gfx/interface/goals/eng/the_battle_of_cable_street_icon.dds"			
+	}
+
+	
+	SpriteType = {
+		name = "last_men_stand_for_kennedy_icon"
+		texturefile = "gfx/interface/goals/eng/last_men_stand_for_kennedy_icon.dds"			
+	}
+
+	SpriteType = {
+		name = "we_fight_on_icon"
+		texturefile = "gfx/interface/goals/eng/we_fight_on_icon.dds"			
+	}
+	
+	SpriteType = {
+		name = "kingdom_of_northumbria_icon"
+		texturefile = "gfx/interface/goals/eng/kingdom_of_northumbria_icon.dds"			
+	}
+	
+	SpriteType = {
+		name = "a_free_northern_england_icon"
+		texturefile = "gfx/interface/goals/eng/a_free_northern_england_icon.dds"			
+	}
+
+	
+	SpriteType = {
+		name = "the_union_of_southern_englnad_icon"
+		texturefile = "gfx/interface/goals/eng/the_union_of_southern_englnad_icon.dds"			
+	}
+
+	SpriteType = {
+		name = "the_isolated_south_icon"
+		texturefile = "gfx/interface/goals/eng/the_isolated_south_icon.dds"			
+	}
+	
+	SpriteType = {
+		name = "sit_down_with_scotland_icon"
+		texturefile = "gfx/interface/goals/eng/sit_down_with_scotland_icon.dds"			
+	}
+
+	SpriteType = {
+		name = "south_of_england_icon"
+		texturefile = "gfx/interface/goals/eng/south_of_england_icon.dds"			
+	}
+	
+	SpriteType = {
+		name = "the_north_is_lost_icon"
+		texturefile = "gfx/interface/goals/eng/the_north_is_lost_icon.dds"			
+	}
+	
+	SpriteType = {
+		name = "Standing_In_The_Midlands_icon"
+		texturefile = "gfx/interface/goals/eng/Standing_In_The_Midlands_icon.dds"			
+	}
+	
+	SpriteType = {
+		name = "Defend_the_New_Hadrians_Wall_icon"
+		texturefile = "gfx/interface/goals/eng/Defend_the_New_Hadrians_Wall_icon.dds"			
+	}
+	
+	SpriteType = {
+		name = "preparing_for_unifcation_icon"
+		texturefile = "gfx/interface/goals/eng/preparing_for_unifcation_icon.dds"			
+	}
+	
+	SpriteType = {
+		name = "the_irish_cowards_icon"
+		texturefile = "gfx/interface/goals/eng/the_irish_cowards_icon.dds"			
+	}
+	
+	SpriteType = {
+		name = "take_wales_you_stay_out_icon"
+		texturefile = "gfx/interface/goals/eng/take_wales_you_stay_out_icon.dds"			
+	}
+	
+	SpriteType = {
+		name = "sit_down_with_ireland_icon"
+		texturefile = "gfx/interface/goals/eng/sit_down_with_ireland_icon.dds"			
+	}
+	
+	SpriteType = {
+		name = "leave_the_state_icon"
+		texturefile = "gfx/interface/goals/eng/leave_the_state_icon.dds"			
+	}
+	
+	SpriteType = {
+		name = "guard_northern_ireland_icon"
+		texturefile = "gfx/interface/goals/eng/guard_northern_ireland_icon.dds"			
+	}
+
+	SpriteType = {
+		name = "we_want_reparations_icon"
+		texturefile = "gfx/interface/goals/eng/we_want_reparations_icon.dds"			
+	}
+	
+	SpriteType = {
+		name = "threathen_the_irish_involvement_icon"
+		texturefile = "gfx/interface/goals/eng/threathen_the_irish_involvement_icon.dds"			
+	}
+	
+	SpriteType = {
+		name = "prepare_for_irish_invasion_icon"
+		texturefile = "gfx/interface/goals/eng/prepare_for_irish_invasion_icon.dds"			
+	}
+
+	SpriteType = {
+		name = "perpare_for_Welsh_surrender_icon"
+		texturefile = "gfx/interface/goals/eng/perpare_for_Welsh_surrender_icon.dds"			
+	}
+	
+	SpriteType = {
+		name = "destroy_st_davids_icon"
+		texturefile = "gfx/interface/goals/eng/destroy_st_davids_icon.dds"			
+	}
+	
+	SpriteType = {
+		name = "swansea_for_our_navy_icon"
+		texturefile = "gfx/interface/goals/eng/swansea_for_our_navy_icon.dds"			
+	}
+	
+	SpriteType = {
+		name = "taking_newton_icon"
+		texturefile = "gfx/interface/goals/eng/taking_newton_icon.dds"			
+	}
+
+	SpriteType = {
+		name = "cardiff_in_kennedys_hands_icon"
+		texturefile = "gfx/interface/goals/eng/cardiff_in_kennedys_hands_icon.dds"			
+	}
+	
+	SpriteType = {
+		name = "taking_back_welsh_cities_icon"
+		texturefile = "gfx/interface/goals/eng/taking_back_welsh_cities_icon.dds"			
+	}
+
+	SpriteType = {
+		name = "scotland_no_more_icon"
+		texturefile = "gfx/interface/goals/eng/scotland_no_more_icon.dds"			
+	}
+	
+	
+	SpriteType = {
+		name = "execute_scottish_targets_icon"
+		texturefile = "gfx/interface/goals/eng/execute_scottish_targets_icon.dds"			
+	}
 	
 	SpriteType = {
 		name = "a_plan_to_take_our_old_state_icon"
