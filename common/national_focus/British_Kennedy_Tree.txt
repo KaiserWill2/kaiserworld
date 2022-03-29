@@ -1446,7 +1446,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_End_The_Scottish_Identity
-		icon = what_is_scotland_icon
+		icon = ENG_End_The_Scottish_identity_icon
 		x = 31
 		y = 17
 		cost = 5
@@ -1463,7 +1463,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_Scotland_No_More
-		icon = scotland_no_more_icon
+		icon = ENG_Scotland_No_More_icon
 		x = 30
 		y = 18
 		cost = 5
@@ -2241,7 +2241,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_Focus_On_England
-		icon = wales_is_finally_back_icon
+		icon = focus_on_england_icon
 		x = 45
 		y = 6
 		cost = 5
@@ -2259,7 +2259,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_We_Maybe_Surrounded_But_We_Will_Live
-		icon = wales_is_finally_back_icon
+		icon = we_maybe_surrounded_but_we_will_win_icon
 		x = 45
 		y = 7
 		cost = 5
@@ -2275,7 +2275,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_The_Southern_Union_Of_England
-		icon = wales_is_finally_back_icon
+		icon = union_of_southern_england_icon
 		x = 43
 		y = 8
 		cost = 5
@@ -2295,7 +2295,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_The_UN_Reaches_Out
-		icon = wales_is_finally_back_icon
+		icon = the_un_reaches_out_icon
 		x = 43
 		y = 9
 		cost = 5
@@ -2314,7 +2314,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_If_I_Fall_England_Falls
-		icon = wales_is_finally_back_icon
+		icon = if_fall_england_falls_icon
 		x = 45
 		y = 10
 		cost = 5
@@ -2334,7 +2334,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_A_Fight_To_The_Death
-		icon = wales_is_finally_back_icon
+		icon = a_fight_to_the_death_icon
 		x = 45
 		y = 11
 		cost = 5
@@ -2351,7 +2351,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_Defend_Kennedys_Palace
-		icon = wales_is_finally_back_icon
+		icon = defend_kennedys_palace_icon
 		x = 44
 		y = 12
 		cost = 5
@@ -2370,7 +2370,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_Russia_Has_Betrayed_Us
-		icon = wales_is_finally_back_icon
+		icon = russia_has_betrayed_us_icon
 		x = 46
 		y = 12
 		cost = 5
@@ -2407,7 +2407,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_We_Accept
-		icon = wales_is_finally_back_icon
+		icon = we_accept_icon
 		x = 41
 		y = 10
 		cost = 5
@@ -2427,7 +2427,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_The_Arrest_Of_Kennedy
-		icon = wales_is_finally_back_icon
+		icon = the_arrest_of_kennedy_icon
 		x = 41
 		y = 11
 		cost = 5
@@ -2446,7 +2446,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_The_End_Of_Totalist_England
-		icon = wales_is_finally_back_icon
+		icon = end_of_totalist_england_icon
 		x = 41
 		y = 12
 		cost = 5

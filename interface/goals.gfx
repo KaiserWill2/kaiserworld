@@ -41,6 +41,71 @@ spriteTypes = {
 	##England###
 	
 	SpriteType = {
+		name = "russia_has_betrayed_us_icon_icon"
+		texturefile = "gfx/interface/goals/eng/russia_has_betrayed_us_icon.dds"			
+	}
+	
+	SpriteType = {
+		name = "defend_kennedys_palace_icon"
+		texturefile = "gfx/interface/goals/eng/defend_kennedys_palace_icon.dds"			
+	}
+	
+	SpriteType = {
+		name = "a_fight_to_the_death_icon"
+		texturefile = "gfx/interface/goals/eng/a_fight_to_the_death_icon.dds"			
+	}
+
+	SpriteType = {
+		name = "if_fall_england_falls_icon"
+		texturefile = "gfx/interface/goals/eng/if_fall_england_falls_icon.dds"			
+	}
+	
+	SpriteType = {
+		name = "end_of_totalist_england_icon"
+		texturefile = "gfx/interface/goals/eng/end_of_totalist_england_icon.dds"			
+	}
+	
+	SpriteType = {
+		name = "the_arrest_of_kennedy_icon"
+		texturefile = "gfx/interface/goals/eng/the_arrest_of_kennedy_icon.dds"			
+	}
+	
+	SpriteType = {
+		name = "we_accept_icon"
+		texturefile = "gfx/interface/goals/eng/we_accept_icon.dds"			
+	}
+	
+	SpriteType = {
+		name = "the_un_reaches_out_icon"
+		texturefile = "gfx/interface/goals/eng/the_un_reaches_out_icon.dds"			
+	}
+
+	SpriteType = {
+		name = "union_of_southern_england_icon"
+		texturefile = "gfx/interface/goals/eng/union_of_southern_england_icon.dds"			
+	}
+	
+	SpriteType = {
+		name = "we_maybe_surrounded_but_we_will_win_icon"
+		texturefile = "gfx/interface/goals/eng/we_maybe_surrounded_but_we_will_win_icon.dds"			
+	}
+	
+	SpriteType = {
+		name = "focus_on_england_icon"
+		texturefile = "gfx/interface/goals/eng/focus_on_england_icon.dds"			
+	}
+	
+	SpriteType = {
+		name = "ENG_Scotland_No_More_icon"
+		texturefile = "gfx/interface/goals/eng/ENG_Scotland_No_More_icon.dds"			
+	}
+	
+	SpriteType = {
+		name = "ENG_End_The_Scottish_identity_icon"
+		texturefile = "gfx/interface/goals/eng/ENG_End_The_Scottish_identity_icon.dds"			
+	}
+	
+	SpriteType = {
 		name = "cumbria_was_never_a_favourite_icon"
 		texturefile = "gfx/interface/goals/eng/cumbria_was_never_a_favourite_icon.dds"			
 	}
