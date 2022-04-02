@@ -1,0 +1,216 @@
+focus_tree = {
+	id = United_Kingdom_Of_Northumbria_Tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 20
+			tag = ENG
+		}
+	}
+	default = no
+	continuous_focus_position = { x = 50 y = 1550 }
+	focus = {
+		id = NOF_The_End_Of_6th_English_Civil_War
+		icon = tear_treaty
+		cost = 5
+		x = 10
+		y = 0
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = NOF_We_Won_But_Were_Not_That_Strong
+		icon = tear_treaty
+		cost = 5
+		x = 10
+		y = 1
+		prerequisite = { focus = NOF_The_End_Of_6th_English_Civil_War  }
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = NOF_We_Won_But_Were_Not_That_Strong
+		icon = tear_treaty
+		cost = 5
+		x = 10
+		y = 1
+		prerequisite = { focus = NOF_The_End_Of_6th_English_Civil_War  }
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = NOF_Look_For_International_Protection
+		icon = tear_treaty
+		cost = 5
+		x = 10
+		y = 2
+		prerequisite = { focus = NOF_We_Won_But_Were_Not_That_Strong  }
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = NOF_Reach_Out_To_The_Canadians
+		icon = tear_treaty
+		cost = 5
+		x = 7
+		y = 3
+		prerequisite = { focus = NOF_Look_For_International_Protection  }
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = NOF_Welcome_The_Royal_Family_Back
+		icon = tear_treaty
+		cost = 5
+		x = 7
+		y = 4
+		prerequisite = { focus = NOF_Reach_Out_To_The_Canadians  }
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = NOF_Canadian_Funds_English_Business
+		icon = tear_treaty
+		cost = 5
+		x = 7
+		y = 5
+		prerequisite = { focus = NOF_Welcome_The_Royal_Family_Back  }
+		completion_reward = {
+
+		}
+	}
+
+
+	focus = {
+		id = NOF_Resettling_Refugee_Populations
+		icon = tear_treaty
+		cost = 5
+		x = 7
+		y = 6
+		prerequisite = { focus = NOF_Canadian_Funds_English_Business  }
+		completion_reward = {
+
+		}
+	}
+
+
+	focus = {
+		id = NOF_With_Canada_Well_Bring_Democracy_Back_To_The_Isle
+		icon = tear_treaty
+		cost = 5
+		x = 7
+		y = 8
+		prerequisite = { focus = NOF_Resettling_Refugee_Populations  }
+		completion_reward = {
+
+		}
+	}
+
+
+	focus = {
+		id = NOF_Weeks_Help_From_Our_Scottish_Neighbours
+		icon = tear_treaty
+		cost = 5
+		x = 10
+		y = 3
+		prerequisite = { focus = NOF_Look_For_International_Protection  }
+		completion_reward = {
+
+		}
+	}
+
+
+	focus = {
+		id = NOF_The_Treaty_Of_Inverness
+		icon = tear_treaty
+		cost = 5
+		x = 10
+		y = 4
+		prerequisite = { focus = NOF_Weeks_Help_From_Our_Scottish_Neighbours  }
+		completion_reward = {
+
+		}
+	}
+
+
+	focus = {
+		id = NOF_Dismantling_The_Wall
+		icon = tear_treaty
+		cost = 5
+		x = 10
+		y = 5
+		prerequisite = { focus = NOF_The_Treaty_Of_Inverness  }
+		completion_reward = {
+
+		}
+	}
+
+
+	focus = {
+		id = NOF_Building_A_Northumbrian_Identity
+		icon = tear_treaty
+		cost = 5
+		x = 10
+		y = 6
+		prerequisite = { focus = NOF_Dismantling_The_Wall  }
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = NOF_Under_The_Saltire_Well_Survive
+		icon = tear_treaty
+		cost = 5
+		x = 10
+		y = 8
+		prerequisite = { focus = NOF_Dismantling_The_Wall  }
+		completion_reward = {
+
+		}
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
