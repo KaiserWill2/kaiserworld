@@ -1,0 +1,284 @@
+focus_tree = {
+	id = Hudson_Tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 20
+			tag = ENG
+		}
+	}
+	default = no
+	continuous_focus_position = { x = 50 y = 1550 }
+	focus = {
+		id = ENG_I_WILL_CARRY_THE_TORCH_OF_BLAIR
+		icon = tear_treaty
+		cost = 5
+		x = 10
+		y = 0
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = ENG_HE_WAS_A_GOD_NOT_JUST_A_GENERAL
+		icon = tear_treaty
+		cost = 5
+		x = 10
+		y = 1
+		prerequisite = { focus = ENG_I_WILL_CARRY_THE_TORCH_OF_BLAIR  }
+		completion_reward = {
+
+		}
+	}
+
+
+	focus = {
+		id = ENG_Establish_The_Temple_Of_Blair
+		icon = tear_treaty
+		cost = 5
+		x = 10
+		y = 2
+		prerequisite = { focus = ENG_HE_WAS_A_GOD_NOT_JUST_A_GENERAL  }
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = ENG_The_Torch_Of_Blairism_Shall_Never_Go_Out
+		icon = tear_treaty
+		cost = 5
+		x = 7
+		y = 3
+		prerequisite = { focus = ENG_Establish_The_Temple_Of_Blair  }
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = ENG_The_Welsh_Will_Regret_What_They_Have_Done
+		icon = tear_treaty
+		cost = 5
+		x = 15
+		y = 3
+		prerequisite = { focus = ENG_Establish_The_Temple_Of_Blair  }
+		completion_reward = {
+
+		}
+	}
+
+
+	focus = {
+		id = ENG_We_Will_Return_With_Fire_And_Fury
+		icon = tear_treaty
+		cost = 5
+		x = 15
+		y = 4
+		prerequisite = { focus = ENG_The_Welsh_Will_Regret_What_They_Have_Done  }
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = ENG_A_Stronger_Border
+		icon = tear_treaty
+		cost = 5
+		x = 14
+		y = 5
+		prerequisite = { focus = ENG_We_Will_Return_With_Fire_And_Fury  }
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = ENG_Exercises_On_The_Border
+		icon = tear_treaty
+		cost = 5
+		x = 16
+		y = 5
+		prerequisite = { focus = ENG_We_Will_Return_With_Fire_And_Fury  }
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = ENG_Anti_Welsh_Propaganda
+		icon = tear_treaty
+		cost = 5
+		x = 15
+		y = 6
+		prerequisite = { focus = ENG_A_Stronger_Border  }
+		prerequisite = { focus = ENG_Exercises_On_The_Border  }
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = ENG_A_New_Religion
+		icon = tear_treaty
+		cost = 5
+		x = 10
+		y = 3
+		prerequisite = { focus = ENG_Establish_The_Temple_Of_Blair  }
+		completion_reward = {
+
+		}
+	}
+
+
+	focus = {
+		id = ENG_The_Ideology_Of_Blairism_Shall_Live_On
+		icon = tear_treaty
+		cost = 5
+		x = 9
+		y = 5
+		prerequisite = { focus = ENG_A_New_Religion  }
+		prerequisite = { focus = ENG_The_Torch_Of_Blairism_Shall_Never_Go_Out  }
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = ENG_A_National_Holiday
+		icon = tear_treaty
+		cost = 5
+		x = 7
+		y = 6
+		prerequisite = { focus = ENG_The_Ideology_Of_Blairism_Shall_Live_On  }
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = ENG_Gold_New_Statues
+		icon = tear_treaty
+		cost = 5
+		x = 9
+		y = 6
+		prerequisite = { focus = ENG_The_Ideology_Of_Blairism_Shall_Live_On  }
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = ENG_Create_A_Dream
+		icon = tear_treaty
+		cost = 5
+		x = 11
+		y = 6
+		prerequisite = { focus = ENG_The_Ideology_Of_Blairism_Shall_Live_On  }
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = ENG_Reorganise_The_Schools
+		icon = tear_treaty
+		cost = 5
+		x = 8
+		y = 7
+		prerequisite = { focus = ENG_Create_A_Dream  }
+		prerequisite = { focus = ENG_Gold_New_Statues  }
+		prerequisite = { focus = ENG_A_National_Holiday  }
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = ENG_Rename_Totalism
+		icon = tear_treaty
+		cost = 5
+		x = 10
+		y = 7
+		prerequisite = { focus = ENG_Create_A_Dream  }
+		prerequisite = { focus = ENG_Gold_New_Statues  }
+		prerequisite = { focus = ENG_A_National_Holiday  }
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = ENG_For_Our_Leader
+		icon = tear_treaty
+		cost = 5
+		x = 9
+		y = 8
+		prerequisite = { focus = ENG_Rename_Totalism  }
+		prerequisite = { focus = ENG_Reorganise_The_Schools  }	
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = ENG_Hudsons_Turn
+		icon = tear_treaty
+		cost = 5
+		x = 9
+		y = 9
+		prerequisite = { focus = ENG_For_Our_Leader  }
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = ENG_Reorganise_Industry
+		icon = tear_treaty
+		cost = 5
+		x = 7
+		y = 10
+		prerequisite = { focus = ENG_Hudsons_Turn  }
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = ENG_A_Plan_For_The_Military
+		icon = tear_treaty
+		cost = 5
+		x = 9
+		y = 10
+		prerequisite = { focus = ENG_Hudsons_Turn  }
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = ENG_Policy_131
+		icon = tear_treaty
+		cost = 5
+		x = 11
+		y = 10
+		prerequisite = { focus = ENG_Hudsons_Turn  }
+		completion_reward = {
+
+		}
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

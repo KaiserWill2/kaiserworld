@@ -41,6 +41,11 @@ spriteTypes = {
 	##England###
 	
 	SpriteType = {
+		name = "the_palace_has_fallen_icon"
+		texturefile = "gfx/interface/goals/eng/the_palace_has_fallen_icon.dds"			
+	}
+	
+	SpriteType = {
 		name = "russia_has_betrayed_us_icon_icon"
 		texturefile = "gfx/interface/goals/eng/russia_has_betrayed_us_icon.dds"			
 	}
