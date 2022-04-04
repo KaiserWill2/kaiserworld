@@ -11,7 +11,7 @@ focus_tree = {
 	continuous_focus_position = { x = 50 y = 1550 }
 	focus = {
 		id = ENG_I_WILL_CARRY_THE_TORCH_OF_BLAIR
-		icon = tear_treaty
+		icon = i_will_carry_torch_icon
 		cost = 5
 		x = 10
 		y = 0
@@ -21,7 +21,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ENG_HE_WAS_A_GOD_NOT_JUST_A_GENERAL
-		icon = tear_treaty
+		icon = he_was_a_god_not_just_a_general_icon
 		cost = 5
 		x = 10
 		y = 1
@@ -34,7 +34,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_Establish_The_Temple_Of_Blair
-		icon = tear_treaty
+		icon = temple_of_blair_icon
 		cost = 5
 		x = 10
 		y = 2
@@ -46,7 +46,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_The_Torch_Of_Blairism_Shall_Never_Go_Out
-		icon = tear_treaty
+		icon = the_torch_of_blair_never_go_out_icon
 		cost = 5
 		x = 7
 		y = 3
@@ -58,7 +58,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_The_Welsh_Will_Regret_What_They_Have_Done
-		icon = tear_treaty
+		icon = the_welsh_will_Regret_what_they_did_icon
 		cost = 5
 		x = 15
 		y = 3
@@ -71,7 +71,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_We_Will_Return_With_Fire_And_Fury
-		icon = tear_treaty
+		icon = we_will_return_with_fire_and_fury_icon
 		cost = 5
 		x = 15
 		y = 4
@@ -83,7 +83,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_A_Stronger_Border
-		icon = tear_treaty
+		icon = a_stronger_border_icon
 		cost = 5
 		x = 14
 		y = 5
@@ -95,7 +95,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_Exercises_On_The_Border
-		icon = tear_treaty
+		icon = exercises_on_the_border_icon
 		cost = 5
 		x = 16
 		y = 5
@@ -107,7 +107,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_Anti_Welsh_Propaganda
-		icon = tear_treaty
+		icon = anti_welsh_propaganda_icon
 		cost = 5
 		x = 15
 		y = 6
@@ -120,7 +120,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_A_New_Religion
-		icon = tear_treaty
+		icon = a_new_religion_icon
 		cost = 5
 		x = 10
 		y = 3
@@ -133,7 +133,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_The_Ideology_Of_Blairism_Shall_Live_On
-		icon = tear_treaty
+		icon = ideology_of_blairism_lives_on_icon
 		cost = 5
 		x = 9
 		y = 5
@@ -146,7 +146,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_A_National_Holiday
-		icon = tear_treaty
+		icon = national_holiday_icon
 		cost = 5
 		x = 7
 		y = 6
@@ -158,7 +158,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_Gold_New_Statues
-		icon = tear_treaty
+		icon = gold_new_statues_icon
 		cost = 5
 		x = 9
 		y = 6
@@ -170,7 +170,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_Create_A_Dream
-		icon = tear_treaty
+		icon = create_a_dream_icon
 		cost = 5
 		x = 11
 		y = 6
@@ -182,7 +182,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_Reorganise_The_Schools
-		icon = tear_treaty
+		icon = reorganise_the_schools_icon
 		cost = 5
 		x = 8
 		y = 7
@@ -196,7 +196,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_Rename_Totalism
-		icon = tear_treaty
+		icon = rename_totalism_icon
 		cost = 5
 		x = 10
 		y = 7
@@ -210,7 +210,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_For_Our_Leader
-		icon = tear_treaty
+		icon = for_our_leader_icon
 		cost = 5
 		x = 9
 		y = 8
@@ -223,7 +223,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_Hudsons_Turn
-		icon = tear_treaty
+		icon = hudson_turn_icon
 		cost = 5
 		x = 9
 		y = 9
@@ -235,7 +235,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_Reorganise_Industry
-		icon = tear_treaty
+		icon = reorganise_the_industry_icon
 		cost = 5
 		x = 7
 		y = 10
@@ -247,7 +247,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_A_Plan_For_The_Military
-		icon = tear_treaty
+		icon = a_plan_for_the_military_icon
 		cost = 5
 		x = 9
 		y = 10
@@ -259,7 +259,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_Policy_131
-		icon = tear_treaty
+		icon = policy_131_icon
 		cost = 5
 		x = 11
 		y = 10

@@ -183,13 +183,66 @@ focus_tree = {
 
 
 
+	focus = {
+		id = NOF_An_Offer_To_The_Germans
+		icon = tear_treaty
+		cost = 5
+		x = 13
+		y = 3
+		prerequisite = { focus = NOF_Look_For_International_Protection  }
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = NOF_Joining_Mittle_Europa
+		icon = tear_treaty
+		cost = 5
+		x = 13
+		y = 4
+		prerequisite = { focus = NOF_An_Offer_To_The_Germans  }
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = NOF_A_Delegation_to_the_Kaiserreich 
+		icon = tear_treaty
+		cost = 5
+		x = 13
+		y = 5
+		prerequisite = { focus = NOF_Joining_Mittle_Europa  }
+		completion_reward = {
+
+		}
+	}
 
 
+	focus = {
+		id = NOF_The_Limits_Of_German_Influence
+		icon = tear_treaty
+		cost = 5
+		x = 13
+		y = 6
+		prerequisite = { focus = NOF_A_Delegation_to_the_Kaiserreich  }
+		completion_reward = {
 
+		}
+	}
 
+	focus = {
+		id = NOF_Un_Das_English_Reich
+		icon = tear_treaty
+		cost = 5
+		x = 13
+		y = 8
+		prerequisite = { focus = NOF_The_Limits_Of_German_Influence  }
+		completion_reward = {
 
-
-
+		}
+	}
 
 
 

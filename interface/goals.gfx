@@ -41,6 +41,114 @@ spriteTypes = {
 	##England###
 	
 	SpriteType = {
+		name = "policy_131_icon"
+		texturefile = "gfx/interface/goals/eng/policy_131_icon.dds"			
+	}
+
+	SpriteType = {
+		name = "a_plan_for_the_military_icon"
+		texturefile = "gfx/interface/goals/eng/a_plan_for_the_military_icon.dds"			
+	}
+	
+	SpriteType = {
+		name = "reorganise_the_industry_icon"
+		texturefile = "gfx/interface/goals/eng/reorganise_the_industry_icon.dds"			
+	}
+
+	SpriteType = {
+		name = "hudson_turn_icon"
+		texturefile = "gfx/interface/goals/eng/hudson_turn_icon.dds"			
+	}
+
+	SpriteType = {
+		name = "for_our_leader_icon"
+		texturefile = "gfx/interface/goals/eng/for_our_leader_icon.dds"			
+	}
+
+	SpriteType = {
+		name = "rename_totalism_icon"
+		texturefile = "gfx/interface/goals/eng/rename_totalism_icon.dds"			
+	}
+	
+	SpriteType = {
+		name = "reorganise_the_schools_icon"
+		texturefile = "gfx/interface/goals/eng/reorganise_the_schools_icon.dds"			
+	}
+	
+	
+	SpriteType = {
+		name = "create_a_dream_icon"
+		texturefile = "gfx/interface/goals/eng/create_a_dream_icon.dds"			
+	}
+	
+	SpriteType = {
+		name = "gold_new_statues_icon"
+		texturefile = "gfx/interface/goals/eng/gold_new_statues_icon.dds"			
+	}
+	
+	SpriteType = {
+		name = "national_holiday_icon"
+		texturefile = "gfx/interface/goals/eng/national_holiday_icon.dds"			
+	}
+	
+	SpriteType = {
+		name = "ideology_of_blairism_lives_on_icon"
+		texturefile = "gfx/interface/goals/eng/ideology_of_blairism_lives_on_icon.dds"			
+	}
+	
+	
+	SpriteType = {
+		name = "anti_welsh_propaganda_icon"
+		texturefile = "gfx/interface/goals/eng/anti_welsh_propaganda_icon.dds"			
+	}
+	
+	SpriteType = {
+		name = "exercises_on_the_border_icon"
+		texturefile = "gfx/interface/goals/eng/exercises_on_the_border_icon.dds"			
+	}
+	
+	SpriteType = {
+		name = "a_stronger_border_icon"
+		texturefile = "gfx/interface/goals/eng/a_stronger_border_icon.dds"			
+	}
+	
+	
+	SpriteType = {
+		name = "we_will_return_with_fire_and_fury_icon"
+		texturefile = "gfx/interface/goals/eng/we_will_return_with_fire_and_fury_icon.dds"			
+	}
+	
+	SpriteType = {
+		name = "the_welsh_will_Regret_what_they_did_icon"
+		texturefile = "gfx/interface/goals/eng/the_welsh_will_Regret_what_they_did_icon.dds"			
+	}
+	
+	SpriteType = {
+		name = "a_new_religion_icon"
+		texturefile = "gfx/interface/goals/eng/a_new_religion_icon.dds"			
+	}
+	
+	SpriteType = {
+		name = "the_torch_of_blair_never_go_out_icon"
+		texturefile = "gfx/interface/goals/eng/the_torch_of_blair_never_go_out_icon.dds"			
+	}
+	
+	SpriteType = {
+		name = "temple_of_blair_icon"
+		texturefile = "gfx/interface/goals/eng/temple_of_blair_icon.dds"			
+	}
+	
+	SpriteType = {
+		name = "he_was_a_god_not_just_a_general_icon"
+		texturefile = "gfx/interface/goals/eng/he_was_a_god_not_just_a_general_icon.dds"			
+	}
+	
+	SpriteType = {
+		name = "i_will_carry_torch_icon"
+		texturefile = "gfx/interface/goals/eng/i_will_carry_torch_icon.dds"			
+	}
+	
+	SpriteType = {
 		name = "the_palace_has_fallen_icon"
 		texturefile = "gfx/interface/goals/eng/the_palace_has_fallen_icon.dds"			
 	}

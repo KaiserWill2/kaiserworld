@@ -829,6 +829,10 @@ country_event = {
 			picture = "dermot_hudson.dds"
 			ideology = marxist
 		}
+		load_focus_tree = {
+			tree = Hudson_Tree
+			keep_completed = yes
+		}
 
 	}
 }
