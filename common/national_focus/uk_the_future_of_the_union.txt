@@ -215,7 +215,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_Move_The_Military_To_Stranraer
-		icon = wales_is_finally_back_icon
+		icon = move_the_military_to_stranraer_icon
 		x = 15
 		y = 4
 		cost = 5
@@ -231,7 +231,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_Order_The_Irish_To_Leave_The_North
-		icon = wales_is_finally_back_icon
+		icon = order_the_irish_to_leave_icon
 		x = 14
 		y = 5
 		cost = 5
@@ -247,7 +247,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_Ignore_The_UN_Threats
-		icon = wales_is_finally_back_icon
+		icon = ignore_the_un_threats_icon
 		x = 16
 		y = 5
 		cost = 5
@@ -263,7 +263,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_The_Last_Night_Of_Peace
-		icon = wales_is_finally_back_icon
+		icon = then_last_night_of_peace_icon
 		x = 15
 		y = 6
 		cost = 5
@@ -281,7 +281,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_The_Eternal_Leader
-		icon = wales_is_finally_back_icon
+		icon = the_eternal_leader_icon
 		x = 19
 		y = 2
 		cost = 5

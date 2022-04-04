@@ -41,6 +41,31 @@ spriteTypes = {
 	##England###
 	
 	SpriteType = {
+		name = "the_eternal_leader_icon"
+		texturefile = "gfx/interface/goals/eng/the_eternal_leader_icon.dds"			
+	}
+	
+	SpriteType = {
+		name = "then_last_night_of_peace_icon"
+		texturefile = "gfx/interface/goals/eng/then_last_night_of_peace_icon.dds"			
+	}
+	
+	SpriteType = {
+		name = "ignore_the_un_threats_icon"
+		texturefile = "gfx/interface/goals/eng/ignore_the_un_threats_icon.dds"			
+	}
+	
+	SpriteType = {
+		name = "order_the_irish_to_leave_icon"
+		texturefile = "gfx/interface/goals/eng/order_the_irish_to_leave_icon.dds"			
+	}
+	
+	SpriteType = {
+		name = "move_the_military_to_stranraer_icon"
+		texturefile = "gfx/interface/goals/eng/move_the_military_to_stranraer_icon.dds"			
+	}
+	
+	SpriteType = {
 		name = "policy_131_icon"
 		texturefile = "gfx/interface/goals/eng/policy_131_icon.dds"			
 	}
