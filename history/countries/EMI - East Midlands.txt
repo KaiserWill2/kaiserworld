@@ -81,7 +81,7 @@ set_politics = {
 }
 
 set_popularities = {
-        fascist = 100
+        fascist = 0
 		nationalist = 0
 		monarchist = 0
 		national_bolshevik = 0
@@ -91,7 +91,7 @@ set_popularities = {
 		new_democrat = 0
 		moderate_socialist = 0
 		revolutionary_socialist = 0
-		communist = 0
+		communist = 100
 }
 
 create_country_leader = {

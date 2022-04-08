@@ -83,13 +83,13 @@ set_popularities = {
         fascist = 0
 		nationalist = 0
 		monarchist = 0
-		national_bolshevik = 38
+		national_bolshevik = 0
 		national_conservative = 22
 		centrist = 9
 		liberal = 6
 		new_democrat = 1
-		moderate_socialist = 18
-		revolutionary_socialist = 0
+		moderate_socialist = 38
+		revolutionary_socialist = 18
 		communist = 6
 }
 

@@ -41,6 +41,114 @@ spriteTypes = {
 	##England###
 	
 	SpriteType = {
+		name = "american_and_canadian_pleas_icon"
+		texturefile = "gfx/interface/goals/eng/american_and_canadian_pleas_icon.dds"			
+	}
+	
+	SpriteType = {
+		name = "north_sea_target_practice_icon"
+		texturefile = "gfx/interface/goals/eng/north_sea_target_practice_icon.dds"			
+	}
+	
+	SpriteType = {
+		name = "protect_scottish_waters_icon"
+		texturefile = "gfx/interface/goals/eng/protect_scottish_waters_icon.dds"			
+	}
+	
+	SpriteType = {
+		name = "forts_along_irish_border_icon"
+		texturefile = "gfx/interface/goals/eng/forts_along_irish_border_icon.dds"			
+	}
+	
+	
+	SpriteType = {
+		name = "civilian_factories_into_army_factories_icon"
+		texturefile = "gfx/interface/goals/eng/civilian_factories_into_army_factories_icon.dds"			
+	}
+	
+	SpriteType = {
+		name = "order_young_to_take_up_arms_icon"
+		texturefile = "gfx/interface/goals/eng/order_young_to_take_up_arms_icon.dds"			
+	}
+	
+	SpriteType = {
+		name = "order_defence_against_france_icon"
+		texturefile = "gfx/interface/goals/eng/order_defence_against_france_icon.dds"			
+	}
+	
+	SpriteType = {
+		name = "time_to_take_the_clover_icon"
+		texturefile = "gfx/interface/goals/eng/time_to_take_the_clover_icon.dds"			
+	}
+	
+	SpriteType = {
+		name = "usbr_fail_assassination_icon"
+		texturefile = "gfx/interface/goals/eng/usbr_fail_assassination_icon.dds"			
+	}
+	
+	SpriteType = {
+		name = "refuse_to_listen_to_un_and_alllies_icon"
+		texturefile = "gfx/interface/goals/eng/refuse_to_listen_to_un_and_alllies_icon.dds"			
+	}
+	
+	SpriteType = {
+		name = "the_republic_will_fall_icon"
+		texturefile = "gfx/interface/goals/eng/the_republic_will_fall_icon.dds"			
+	}
+	
+	SpriteType = {
+		name = "refuse_to_Stand_down_icon"
+		texturefile = "gfx/interface/goals/eng/refuse_to_Stand_down_icon.dds"			
+	}
+	
+	
+	SpriteType = {
+		name = "meeting_the_irish_icon"
+		texturefile = "gfx/interface/goals/eng/meeting_the_irish_icon.dds"			
+	}
+	
+	SpriteType = {
+		name = "irish_must_stand_down_icon"
+		texturefile = "gfx/interface/goals/eng/irish_must_stand_down_icon.dds"			
+	}
+	
+	SpriteType = {
+		name = "operation_nightsky_icon"
+		texturefile = "gfx/interface/goals/eng/operation_nightsky_icon.dds"			
+	}
+	
+	SpriteType = {
+		name = "a_message_about_the_future_icon"
+		texturefile = "gfx/interface/goals/eng/a_message_about_the_future_icon.dds"			
+	}
+	
+	SpriteType = {
+		name = "a_night_with_blair_icon"
+		texturefile = "gfx/interface/goals/eng/a_night_with_blair_icon.dds"			
+	}
+	
+	SpriteType = {
+		name = "scottish_and_welsh_labour_service_icon"
+		texturefile = "gfx/interface/goals/eng/scottish_and_welsh_labour_service_icon.dds"			
+	}
+	
+	SpriteType = {
+		name = "the_new_energy_program_icon"
+		texturefile = "gfx/interface/goals/eng/the_new_energy_program_icon.dds"			
+	}
+	
+	SpriteType = {
+		name = "execute_scottish_leftovers_icon"
+		texturefile = "gfx/interface/goals/eng/execute_scottish_leftovers_icon.dds"			
+	}
+	
+	SpriteType = {
+		name = "build_the_peoples_stadium_icon"
+		texturefile = "gfx/interface/goals/eng/build_the_peoples_stadium_icon.dds"			
+	}
+	
+	
+	SpriteType = {
 		name = "the_eternal_leader_icon"
 		texturefile = "gfx/interface/goals/eng/the_eternal_leader_icon.dds"			
 	}

@@ -1946,6 +1946,10 @@ country_event = {
 				name = "Council Of Restoration"
 				picture = "general_admin.dds"
 				ideology = nationalist_ideology
+				add_popularity = {
+					ideology = nationalist_ideology
+					popularity = 100
+				}
 			}
 
 			set_cosmetic_tag = ENG_Northern_Restoration_Front
@@ -2022,7 +2026,24 @@ country_event = {
 	}
 }
 
+country_event = {
+	id = England.154
+	title = England.154.t
+	desc = England.154.d
+	picture = talks_for_unification_event
+	is_triggered_only = yes
+	option = {
+		name = England.154.o1
+
+	}
+}
 
 
 
+
+
+
+
+
+}
 

@@ -298,7 +298,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_Build_The_Peoples_Stadium
-		icon = wales_is_finally_back_icon
+		icon = build_the_peoples_stadium_icon
 		x = 17
 		y = 3
 		cost = 5
@@ -315,7 +315,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_The_New_Energy_Program
-		icon = wales_is_finally_back_icon
+		icon = the_new_energy_program_icon
 		x = 18
 		y = 4
 		cost = 5
@@ -333,7 +333,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_Execute_The_Scottish_Leftovers
-		icon = wales_is_finally_back_icon
+		icon = execute_scottish_leftovers_icon
 		x = 21
 		y = 3
 		cost = 5
@@ -351,7 +351,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_Scottish_And_Welsh_Labour_Service
-		icon = wales_is_finally_back_icon
+		icon = scottish_and_welsh_labour_service_icon
 		x = 20
 		y = 4
 		cost = 5
@@ -368,7 +368,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_A_Night_With_Blair
-		icon = wales_is_finally_back_icon
+		icon = a_message_about_the_future_icon
 		x = 19
 		y = 5
 		cost = 5
@@ -387,7 +387,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_A_Message_About_The_Future
-		icon = wales_is_finally_back_icon
+		icon = a_message_about_the_future_icon
 		x = 19
 		y = 6
 		cost = 5
@@ -406,7 +406,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_Operation_Nightsky
-		icon = wales_is_finally_back_icon
+		icon = operation_nightsky_icon
 		x = 15
 		y = 9
 		cost = 5
@@ -422,7 +422,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_The_Irish_Must_Stand_Down
-		icon = wales_is_finally_back_icon
+		icon = irish_must_stand_down_icon
 		x = 15
 		y = 10
 		cost = 5
@@ -440,7 +440,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_Meet_WIth_Irish_Leaders
-		icon = wales_is_finally_back_icon
+		icon = meeting_the_irish_icon
 		x = 14
 		y = 11
 		cost = 5
@@ -459,7 +459,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_Refuse_To_Stand_Down
-		icon = wales_is_finally_back_icon
+		icon = refuse_to_Stand_down_icon
 		x = 16
 		y = 11
 		cost = 5
@@ -478,7 +478,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_Then_The_Republic_Will_Fall
-		icon = wales_is_finally_back_icon
+		icon = the_republic_will_fall_icon
 		x = 15
 		y = 12
 		cost = 5
@@ -497,7 +497,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_Refuse_To_Listen_To_UN_And_Allies
-		icon = wales_is_finally_back_icon
+		icon = refuse_to_listen_to_un_and_alllies_icon
 		x = 15
 		y = 13
 		cost = 5
@@ -515,7 +515,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_U.S.B.R_Assassination_Attempt_Failure
-		icon = wales_is_finally_back_icon
+		icon = usbr_fail_assassination_icon
 		x = 15
 		y = 14
 		cost = 5
@@ -532,7 +532,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_Time_To_Take_The_Clover
-		icon = wales_is_finally_back_icon
+		icon = time_to_take_the_clover_icon
 		x = 15
 		y = 15
 		cost = 5
@@ -549,7 +549,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_Order_The_Defences_Against_French
-		icon = wales_is_finally_back_icon
+		icon = order_defence_against_france_icon
 		x = 13
 		y = 16
 		cost = 5
@@ -567,7 +567,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_Order_The_Young_To_Take_Up_Arms
-		icon = wales_is_finally_back_icon
+		icon = order_young_to_take_up_arms_icon
 		x = 13
 		y = 17
 		cost = 5
@@ -584,7 +584,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_Civilian_Factories_Into_Army_Factories
-		icon = wales_is_finally_back_icon
+		icon = civilian_factories_into_army_factories_icon
 		x = 13
 		y = 18
 		cost = 5
@@ -601,7 +601,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_Forts_Along_Irish_Beaches
-		icon = wales_is_finally_back_icon
+		icon = forts_along_irish_border_icon
 		x = 15
 		y = 16
 		cost = 5
@@ -618,7 +618,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_Protect_Scottish_Waters
-		icon = wales_is_finally_back_icon
+		icon = protect_scottish_waters_icon
 		x = 15
 		y = 17
 		cost = 5
@@ -635,7 +635,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_North_Sea_Target_Practice
-		icon = wales_is_finally_back_icon
+		icon = north_sea_target_practice_icon
 		x = 15
 		y = 18
 		cost = 5
@@ -652,7 +652,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_Ignore_The_american_And_Canadian_Pleas
-		icon = wales_is_finally_back_icon
+		icon = american_and_canadian_pleas_icon
 		x = 17
 		y = 16
 		cost = 5

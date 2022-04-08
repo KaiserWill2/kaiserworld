@@ -177,9 +177,12 @@ focus_tree = {
 		prerequisite = { focus =  ENG_Bad_Mouth_The_King  }
 		prerequisite = { focus =  ENG_Increase_Chances_Of_Riots  }
 		completion_reward = {
-			
+			country_event = {
+				id = england.154
+			}
 
 			SCO = {
+				
 			start_civil_war = {
 				ideology = communist
 				size = 0.8
@@ -193,12 +196,16 @@ focus_tree = {
 					picture = "colin_fox.dds"
 					ideology = marxist
 				}
-				
-			}
 			
+					}
 			}
+			ENG = {
+				declare_war_on = { target = SCO type = annex_everything }
+			}
+
+
 		}
-		}
+	}
 
 	
 
@@ -309,7 +316,13 @@ focus_tree = {
 		prerequisite = { focus =  ENG_The_Military_Exercises_Together  }
 		prerequisite = { focus =  ENG_Economic_Support  }
 		completion_reward = {
-
+			ENG = {
+				create_faction = "The Third Internationale"
+				add_to_faction = ENG
+				add_to_faction = SOV
+				add_to_faction = KOR
+				
+			}
 		}
 	}
 
@@ -449,27 +462,27 @@ focus_tree = {
 		y = 8
 		cost = 5
 		available = {
+			
 			has_completed_focus = ENG_Use_Scottish_Weakness
 			has_completed_focus = ENG_Begin_Plans_To_Tackle_Our_Enemies
 			has_completed_focus = ENG_Korean_Infrastructure
 
-			owns_state = 121
-			owns_state = 133
-			owns_state = 136
-			owns_state = 120
-
-			
 
 		}
 
 		completion_reward = {
-
+			set_cosmetic_tag = ENG_New_Union_England
 			create_country_leader = {
 				name = "Supreme Leader General Blair"
 				picture = "blair_leader_two.dds"
 				ideology = marxist
 			}
-
+			ENG = {
+				transfer_state = 136
+				transfer_state = 121
+				transfer_state = 133
+				transfer_state = 120
+				}
 			
 
 		}
@@ -919,7 +932,18 @@ focus_tree = {
 		prerequisite = { focus =  ENG_Supply_Totalist_Groups_In_France  }
 
 		completion_reward = {
-
+			FRA = {
+				
+				start_civil_war = {
+					ideology = communist
+					create_country_leader = {
+						name = "Fabien Roussel"
+						picture = "colin_fox.dds"
+						ideology = marxist
+					}
+				
+						}
+				}
 		}
 
 	}
