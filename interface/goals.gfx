@@ -41,6 +41,22 @@ spriteTypes = {
 	##England###
 	
 	SpriteType = {
+		name = "the_third_weltkrieg_icon"
+		texturefile = "gfx/interface/goals/eng/the_third_weltkrieg_icon.dds"			
+	}
+	
+	SpriteType = {
+		name = "time_to_kill_democracy_icon"
+		texturefile = "gfx/interface/goals/eng/time_to_kill_democracy_icon.dds"			
+	}
+	
+	
+	SpriteType = {
+		name = "we_are_serious_icon"
+		texturefile = "gfx/interface/goals/eng/we_are_serious_icon.dds"			
+	}
+	
+	SpriteType = {
 		name = "american_and_canadian_pleas_icon"
 		texturefile = "gfx/interface/goals/eng/american_and_canadian_pleas_icon.dds"			
 	}

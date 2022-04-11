@@ -18,6 +18,8 @@ focus_tree = {
 			FOCUS_FILTER_POLITICAL
 		}
 		completion_reward = {
+			add_command_power = 10
+			add_stability = 0.05
 			country_event = {
 				id = england.74
 			}
@@ -36,7 +38,7 @@ focus_tree = {
 		}
 		prerequisite = { focus =  ENG_A_Night_To_Remember  }
 		completion_reward = {
-
+			add_ideas = Removal_Of_Blair
 		}
 	
 	}
@@ -70,7 +72,7 @@ focus_tree = {
 		}
 		prerequisite = { focus =  ENG_Kennedy_The_Real_Leader  }
 		completion_reward = {
-
+			add_ideas = Remove_The_Peoples_Palace
 		}
 	
 	}
@@ -104,7 +106,7 @@ focus_tree = {
 		}
 		prerequisite = { focus =  ENG_Kill_The_Blair_Fandom  }
 		completion_reward = {
-
+			add_political_power = 20
 		}
 	
 	}
@@ -122,6 +124,7 @@ focus_tree = {
 		prerequisite = { focus =  ENG_Destroy_The_Peoples_Palace  }
 
 		completion_reward = {
+			add_country_leader_trait = dictator
 			country_event = {
 				id = england.77
 			}
@@ -159,6 +162,7 @@ focus_tree = {
 		}
 		prerequisite = { focus =  ENG_Time_To_Get_To_Work  }
 		completion_reward = {
+			add_ideas = Prepare_For_Wales
 
 		}
 	
@@ -264,6 +268,7 @@ focus_tree = {
 		}
 		prerequisite = { focus =  ENG_Slit_The_Welsh_Throats  }
 		completion_reward = {
+			add_ideas = Mass_Arrests
 
 		}
 	
@@ -316,6 +321,7 @@ focus_tree = {
 		}
 		prerequisite = { focus =  ENG_Slit_The_Welsh_Throats  }
 		completion_reward = {
+			add_ideas = Taking_The_Food
 
 		}
 	
@@ -332,7 +338,7 @@ focus_tree = {
 		}
 		prerequisite = { focus =  ENG_Take_The_Food  }
 		completion_reward = {
-
+			add_stability = -0.10
 		}
 	
 	}
@@ -348,6 +354,7 @@ focus_tree = {
 		}
 		prerequisite = { focus =  ENG_Starve_The_Non_Pure  }
 		completion_reward = {
+			add_political_power = 50
 
 		}
 	
@@ -382,7 +389,8 @@ focus_tree = {
 		}
 		prerequisite = { focus =  ENG_Destroy_The_Cities  }
 		completion_reward = {
-
+			add_political_power = 50
+			
 		}
 	
 	}
@@ -1350,7 +1358,9 @@ focus_tree = {
 		prerequisite = { focus = ENG_A_Turning_Point }
 
 		completion_reward = {
-
+			ENG = {
+				transfer_state = 121
+			}
 		}
 	
 	}
@@ -1367,7 +1377,9 @@ focus_tree = {
 		prerequisite = { focus = ENG_Edinburgh_Is_Ours }
 
 		completion_reward = {
-
+			ENG = {
+				transfer_state = 133
+			}
 		}
 	
 	}
@@ -1402,7 +1414,11 @@ focus_tree = {
 		prerequisite = { focus = ENG_Capture_The_Rest_Of_Scotland }
 
 		completion_reward = {
+			ENG = {
+				transfer_state = 136
+				transfer_state = 120
 
+			}
 		}
 	
 	}
@@ -1655,7 +1671,10 @@ focus_tree = {
 		}
 		prerequisite = { focus = ENG_We_Want_Reparations }
 		completion_reward = {
+			ENG = {
+				transfer_state = 119
 
+			}
 		}
 	
 	}
@@ -1816,7 +1835,11 @@ focus_tree = {
 		prerequisite = { focus =  ENG_Defend_the_New_Hadrians_Wall  }
 		prerequisite = { focus =  ENG_Standing_In_The_Midlands  }
 		completion_reward = {
-
+			SCO = {
+				transfer_state = 131
+				transfer_state = 130
+				transfer_state = 132
+			}
 		}
 	
 	}
@@ -1832,6 +1855,10 @@ focus_tree = {
 		}
 		prerequisite = { focus =  ENG_The_North_Is_Lost  }
 		completion_reward = {
+			SCO = {
+				transfer_state = 129
+				transfer_state = 128
+			}
 			country_event = {
 				id = england.118
 			}
@@ -2397,6 +2424,18 @@ focus_tree = {
 		prerequisite = { focus =  ENG_Defend_Kennedys_Palace  }
 		prerequisite = { focus =  ENG_Russia_Has_Betrayed_Us  }
 		completion_reward = {
+			SCO = {
+				transfer_state = 131
+				transfer_state = 130
+				transfer_state = 132
+			}
+			IRE = {
+				transfer_state = 129
+
+			}
+			CAN = {
+			transfer_state = 128
+			}
 			country_event = {
 				id = england.133
 			}
@@ -2420,7 +2459,19 @@ focus_tree = {
 		prerequisite = { focus =  ENG_The_UN_Reaches_Out  }
 
 		completion_reward = {
+			SCO = {
+				transfer_state = 131
+				transfer_state = 130
+				transfer_state = 132
+			}
+			IRE = {
+				transfer_state = 129
 
+			}
+			CAN = {
+			transfer_state = 128
+			}
+			
 		}
 	
 	}

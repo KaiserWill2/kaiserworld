@@ -669,7 +669,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_We_Are_Serious
-		icon = wales_is_finally_back_icon
+		icon = we_are_serious_icon
 		x = 17
 		y = 17
 		cost = 5
@@ -687,7 +687,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_Time_To_Kill_Democracy
-		icon = wales_is_finally_back_icon
+		icon = time_to_kill_democracy_icon
 		x = 17
 		y = 18
 		cost = 5
@@ -704,7 +704,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_The_Third_Weltkrieg
-		icon = wales_is_finally_back_icon
+		icon = the_third_weltkrieg_icon
 		x = 15
 		y = 19
 		cost = 5

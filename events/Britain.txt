@@ -755,7 +755,10 @@ country_event = {
 	option = {
 		name = England.64.o1
 		set_cosmetic_tag = ENG_new_england_flag
-
+		load_focus_tree = {
+			tree = Johnson_stabilised_focus
+			keep_completed = yes
+		}
 	}
 }
 
@@ -783,6 +786,7 @@ country_event = {
 			picture = "big_boris.dds"
 			ideology = revolutionary_socialist_ideology
 		}
+
 
 	}
 }
@@ -1057,7 +1061,20 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = England.80.o1
-
+		ENG = {
+			puppet = WAL
+		}
+		WAL = {
+			set_politics = {
+			ruling_party = communist
+			elections_allowed = no
+			}
+			create_country_leader = {
+			name = "Union Army Control"
+			picture = "general_admin.dds"
+			ideology = marxist
+			}
+		}
 	}
 }
 
@@ -1093,7 +1110,22 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = England.83.o1
-
+		set_politics = {
+			ruling_party = new_democrat
+			elections_allowed = no
+		}
+		WAL = {
+			set_politics = {
+			ruling_party = communist
+			elections_allowed = no
+			}
+			create_country_leader = {
+			name = "Michael Portillo"
+			picture = "wal_michael_portillo.dds"
+			ideology = marxist
+			}
+		set_cosmetic_tag = WAL_wales_communist		
+			}
 	}
 }
 
@@ -1117,7 +1149,9 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = England.85.o1
-
+		SCO = {
+			transfer_state = 122
+		}
 	}
 }
 

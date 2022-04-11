@@ -1,5 +1,104 @@
 ideas = {
 
+	country = {
+
+	idea_memories_of_Michael_foot = {
+		allowed = {
+			always = no
+		}
+		
+		removal_cost = -1
+
+		picture = memories_of_Michael_foot
+		
+		modifier = {
+			stability_factor = 0.05
+			political_power_gain = 0.3
+			communist_drift = 0.02
+					
+			
+		}
+	}
+
+
+	
+idea_war_ready= {
+	allowed = {
+		always = no
+	}
+	
+	removal_cost = -1
+
+	picture = war_ready
+	
+	modifier = {
+		conscription = 0.020
+		army_morale_factor = 0.02
+		army_core_defence_factor = 0.2
+				
+		
+	}
+}
+
+
+
+idea_north_sea_oil= {
+	allowed = {
+		always = no
+	}
+	
+	removal_cost = -1
+
+	picture = north_sea_oil
+	
+	modifier = {
+		fuel_gain_factor_from_states = 0.75
+		max_fuel_factor = 0.4
+		production_speed_synthetic_refinery_factor = 0.2
+		
+	}
+}
+	
+
+	
+idea_the_failed_economy= {
+	allowed = {
+		always = no
+	}
+	
+	removal_cost = -1
+
+	picture = the_failed_economy
+	
+	modifier = {
+		production_factory_max_efficiency_factor = -0.02
+		production_speed_arms_factory_factor = -0.03
+		
+	}
+}
+	
+
+
+	
+idea_New_Hadrians_Wall = {
+	allowed = {
+		always = no
+	}
+	
+	removal_cost = -1
+
+	picture = hadrians_wall_idea
+	
+	modifier = {
+		army_defence_factor = 0.2
+		dig_in_speed_factor = 0.2
+		planning_speed = 0.2
+		
+	}
+}
+}		
+
+
     country = {
 	    
 		legacy_of_foot = {
@@ -555,9 +654,85 @@ ideas = {
 			}
 		}
 
+			
+			Removal_Of_Blair= {
+				allowed = {
+					always = no
+				}
+				
+				removal_cost = -1
+	
 
+				
+				modifier = {
+					political_power_gain = 0.20
+					stability_factor = 0.10
+					war_support_factor = 0.10
+					
+				}
+			}
 		
+			Remove_The_Peoples_Palace = {
+				allowed = {
+					always = no
+				}
+				
+				removal_cost = -1
+	
+				modifier = {
+					root_out_resistance_effectiveness_factor = 0.5
+					resistance_target = -0.5
+					resistance_growth = -0.3
+					
+				}
+			}
+			
+			Prepare_For_Wales = {
+				allowed = {
+					always = no
+				}
+				
+				removal_cost = -1
+	
+				modifier = {
+					political_power_gain = 0.2
+					army_morale_factor = 0.025
+					conscription = 0.01
+					
+				}
+			}
+			
+			
+		Mass_Arrests = {
+				allowed = {
+					always = no
+				}
+				
+				removal_cost = -1
+	
+				modifier = {
+				root_out_resistance_effectiveness_factor = 0.5
+				resistance_target = -0.5
+				resistance_growth = -0.3
+					
+				}
+			}
 
+		Taking_The_Food = {
+				allowed = {
+					always = no
+				}
+				
+				removal_cost = -1
+	
+				modifier = {
+				local_resources_factor = 0.2
+				consumer_goods_factor = 0.05
+
+					
+				}
+			}
+			
 
 	
 	# TECHNOLOGY
