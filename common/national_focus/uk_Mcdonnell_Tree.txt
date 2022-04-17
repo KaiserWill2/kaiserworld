@@ -1,5 +1,5 @@
 focus_tree = {
-	id = british_McDonnell_Tree
+	id = uk_McDonnell_Tree
 	country = {
 		factor = 0
 	}

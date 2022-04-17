@@ -2290,6 +2290,7 @@
 		}
 		prerequisite = { focus =  ENG_The_Peoples_Government  }
 		completion_reward = {
+			add_stability = 0.10
 			add_timed_idea = {
 				idea = reform_the_military
 				days = 90
@@ -2368,7 +2369,7 @@
 		}
 		prerequisite = { focus =  ENG_Hudson_The_Successor  }
 		completion_reward = {
-		add_stability = 0.30
+		add_stability = -0.30
 		}
 	}
 	shared_focus = {

@@ -730,7 +730,11 @@ country_event = {
 	fire_only_once = yes
 	option = {
 		name = England.62.o1
-
+		hidden_effect = {
+			ENG = {
+				country_event = { days = 5 id = britain.73 } 
+			}
+		}
 	}
 }
 

@@ -1,5 +1,5 @@
 focus_tree = {
-	id = british_Kennedy_Tree
+	id = uk_Kennedy_Tree
 	country = {
 		factor = 0
 	}

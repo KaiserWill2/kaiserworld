@@ -1,5 +1,5 @@
 focus_tree = {
-	id = Johnson_stabilised_focus
+	id = uk_Johnson_stabilised_focus
 	country = {
 		factor = 0
 		modifier = {
