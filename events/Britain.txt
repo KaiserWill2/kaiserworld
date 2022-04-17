@@ -756,7 +756,7 @@ country_event = {
 		name = England.64.o1
 		set_cosmetic_tag = ENG_new_england_flag
 		load_focus_tree = {
-			tree = Johnson_stabilised_focus
+			tree = uk_johnson_reforms_continue
 			keep_completed = yes
 		}
 	}
@@ -834,7 +834,7 @@ country_event = {
 			ideology = marxist
 		}
 		load_focus_tree = {
-			tree = Hudson_Tree
+			tree = uk_Hudson_Tree
 			keep_completed = yes
 		}
 
@@ -890,7 +890,7 @@ country_event = {
 		name = England.68.o1
 		set_cosmetic_tag = ENG_mcdonnell_rule
 		load_focus_tree = {
-			tree = british_McDonnell_Tree
+			tree = uk_Mcdonnell_Tree
 			keep_completed = yes
 		}
 	}
@@ -942,7 +942,7 @@ country_event = {
 		name = England.71.o1
 		set_cosmetic_tag = ENG_communist_kennedy
 		load_focus_tree = {
-			tree = british_Kennedy_Tree
+			tree = uk_Kennedy_Tree
 			keep_completed = yes
 		}
 	}
@@ -958,7 +958,7 @@ country_event = {
 	option = {
 		name = England.72.o1
 		 load_focus_tree = {
-			tree = Johnson_stabilised_focus
+			tree = uk_johnson_reforms_continue
 			keep_completed = yes
 		}
 	}
