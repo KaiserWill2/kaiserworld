@@ -1441,7 +1441,7 @@ ideas = {
 			modifier = {
 				liberal_drift = 0.01
 				new_democrat_drift = 0.01
-				moderate_socialist_drift = 0.01
+				moderate_socialist_drift = 0.03
 			}
 		}
 		idea_usa_senate = {
@@ -1456,6 +1456,21 @@ ideas = {
 			modifier = {
 				liberal_drift = 0.01
 				new_democrat_drift = 0.01
+				moderate_socialist_drift = 0.02
+			}
+		}
+		idea_usa_us_supreme_court = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = us_supreme_court
+			
+			modifier = {
+				stability_factor = 0.05
+				liberal_drift = 0.01
 				moderate_socialist_drift = 0.01
 			}
 		}
@@ -1600,6 +1615,7 @@ ideas = {
 
 
 			modifier = {
+				stability_factor = -0.65
 				industrial_capacity_factory = -0.50
 				consumer_goods_factor = 0.30
 				political_power_gain = -0.2
@@ -1618,6 +1634,7 @@ ideas = {
 
 
 			modifier = {
+				stability_factor = -0.35
 				industrial_capacity_factory = -0.40
 				consumer_goods_factor = 0.25
 				political_power_gain = -0.2

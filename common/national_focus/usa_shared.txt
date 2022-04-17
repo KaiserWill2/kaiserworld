@@ -16,7 +16,7 @@
 	#bernie africa
 	shared_focus = {
 		id = USA_dealing_with_africa
-		icon = focus_deal_with_africa
+		icon = focus_african_explosion
 		cost = 1
 		available = {
 		    has_country_flag = africa_civil_war
@@ -38,7 +38,7 @@
 	#legitiment goverment supported
 	shared_focus = {
 		id = USA_support_the_legitimist
-		icon = focus_dealing_with_alaska
+		icon = focus_support_kabila_government
 		cost = 1
 		available = {
 		    has_country_flag = legitiment_goverment_supported
@@ -60,7 +60,7 @@
 	}
 	shared_focus = {
 		id = USA_offer_military_aid
-		icon = focus_dealing_with_alaska
+		icon = focus_offer_military
 		cost = 1
 		available = {
 		    has_country_flag = legitiment_goverment_supported
@@ -78,7 +78,7 @@
 	}
 	shared_focus = {
 		id = USA_send_military_advisors
-		icon = focus_dealing_with_alaska
+		icon = focus_send_advisors
 		cost = 1
 		available = {
 		    has_country_flag = legitiment_goverment_supported
@@ -97,7 +97,7 @@
 
 	shared_focus = {
 		id = USA_send_an_expedition
-		icon = focus_dealing_with_alaska
+		icon = focus_send_troops
 		cost = 1
 		available = {
 		    has_country_flag = legitiment_goverment_supported
@@ -116,7 +116,7 @@
 	#rebel goverment supported
 	shared_focus = {
 		id = USA_support_the_rebels
-		icon = focus_dealing_with_alaska
+		icon = focus_support_biya_government
 		cost = 1
 		available = {
 		    has_country_flag = rebels_supported
@@ -138,7 +138,7 @@
 	}
 	shared_focus = {
 		id = USA_send_military_equipment
-		icon = focus_dealing_with_alaska
+		icon = focus_send_shit
 		cost = 1
 		available = {
 		    has_country_flag = rebels_supported
@@ -156,7 +156,7 @@
 	}
 	shared_focus = {
 		id = USA_train_the_rebels
-		icon = focus_dealing_with_alaska
+		icon = focus_work_with_army
 		cost = 1
 		available = {
 		    has_country_flag = rebels_supported
@@ -174,7 +174,7 @@
 	}
 	shared_focus = {
 		id = USA_send_volunteers
-		icon = focus_dealing_with_alaska
+		icon = focus_send_volunteers
 		cost = 1
 		available = {
 		    has_country_flag = rebels_supported
@@ -193,7 +193,7 @@
 	#direct intervention
 	shared_focus = {
 		id = USA_directly_intervene
-		icon = focus_dealing_with_alaska
+		icon = focus_obama_choice
 		cost = 1
 		available = {
 		    has_country_flag = directly_intervene
@@ -215,7 +215,7 @@
 	}
 	shared_focus = {
 		id = USA_secure_a_fob
-		icon = focus_dealing_with_alaska
+		icon = focus_get_land
 		cost = 1
 		available = {
 		    has_country_flag = directly_intervene
@@ -233,7 +233,7 @@
 	}
 	shared_focus = {
 		id = USA_begin_drone_strikes
-		icon = focus_dealing_with_alaska
+		icon = focus_peace_bombs
 		cost = 1
 		available = {
 		    has_country_flag = directly_intervene
@@ -251,7 +251,7 @@
 	}
 	shared_focus = {
 		id = USA_topple_the_goverment
-		icon = focus_dealing_with_alaska
+		icon = focus_invade_africa
 		cost = 1
 		available = {
 		    has_country_flag = directly_intervene
@@ -312,7 +312,7 @@
 	}
 	shared_focus = {
 		id = USA_ready_the_navy
-		icon = focus
+		icon = focus_prepare_navy
 		cost = 1
 		available = {
 		    has_country_flag = operation_alaskan_freedom
@@ -331,7 +331,7 @@
 	}
 	shared_focus = {
 		id = USA_prepare_the_marines
-		icon = focus
+		icon = focus_ready_marines
 		cost = 1
 		available = {
 		    has_country_flag = operation_alaskan_freedom
@@ -350,7 +350,7 @@
 	}
 	shared_focus = {
 		id = USA_commence_alaskan_freedom
-		icon = focus
+		icon = focus_invade_alaska
 		cost = 1
 		available = {
 		    has_country_flag = operation_alaskan_freedom
@@ -370,7 +370,7 @@
 	#reapproach alaska 
 	shared_focus = {
 		id = USA_reapproach_alaska
-		icon = focus_reapproach_alaska
+		icon = focus_peace_alaska
 		cost = 5
 		prerequisite = {
 			focus = USA_dealing_with_alaska
@@ -392,7 +392,7 @@
 	}
 	shared_focus = {
 		id = USA_call_for_ceasefire
-		icon = focus
+		icon = focus_call_for_peace
 		cost = 1
 		available = {
 		    has_country_flag = reapproach_alaska
@@ -411,7 +411,7 @@
 	}
 	shared_focus = {
 		id = USA_begin_negotiations
-		icon = focus
+		icon = focus_frozen_debate
 		cost = 1
 		available = {
 		    has_country_flag = reapproach_alaska
@@ -430,7 +430,7 @@
 	}
 	shared_focus = {
 		id = USA_fresh_elections
-		icon = focus
+		icon = focus_free_election
 		cost = 1
 		available = {
 		    has_country_flag = reapproach_alaska
@@ -450,7 +450,7 @@
 	#withdraw from alaska
 	shared_focus = {
 		id = USA_withdraw_from_alaska
-		icon = focus
+		icon = focus_peace_with_honor
 		cost = 5
 		prerequisite = {
 			focus = USA_dealing_with_alaska
@@ -472,7 +472,7 @@
 	}
 	shared_focus = {
 		id = USA_recall_the_garrison
-		icon = focus
+		icon = focus_recall_army
 		cost = 1
 		available = {
 		    has_country_flag = withdraw_from_alaska
@@ -491,7 +491,7 @@
 	}
 	shared_focus = {
 		id = USA_evacuate_civilians
-		icon = focus
+		icon = focus_recall_americans
 		cost = 1
 		available = {
 		    has_country_flag = withdraw_from_alaska
@@ -510,7 +510,7 @@
 	}
 	shared_focus = {
 		id = USA_pull_out_the_consulate
-		icon = focus
+		icon = focus_recall_governor
 		cost = 1
 		available = {
 		    has_country_flag = withdraw_from_alaska
@@ -531,7 +531,7 @@
 	#bernie recession
 	shared_focus = {
 		id = USA_dealing_with_the_recession
-		icon = federal_intervention
+		icon = focus_dealing_with_the_recession
 		cost = 7
 		prerequisite = {
 			focus = USA_prime_minister_bernie
@@ -550,7 +550,7 @@
 	}
 	shared_focus = {
 		id = USA_cut_military_spending
-		icon = focus_cut_war_funding
+		icon = focus_defund_military
 		cost = 7
 		prerequisite = {
 			focus = USA_dealing_with_the_recession
@@ -567,7 +567,7 @@
 
 	shared_focus = {
 		id = USA_tax_the_rich
-		icon = focus_tax_the_rich
+		icon = focus_rich_taxes
 		cost = 7
 		prerequisite = {
 			focus = USA_cut_military_spending
@@ -584,7 +584,7 @@
 
 	shared_focus = {
 		id = USA_increase_banking_regulations
-		icon = focus_regulate_banks
+		icon = focus_not_too_big
 		cost = 7
 		prerequisite = {
 			focus = USA_cut_military_spending
@@ -600,7 +600,7 @@
 	}
 	shared_focus = {
 		id = USA_break_the_bankers
-		icon = focus_break_the_banks
+		icon = focus_break_bank
 		cost = 7
 		prerequisite = {
 			focus = USA_increase_banking_regulations
@@ -617,7 +617,7 @@
 	}
 	shared_focus = {
 		id = USA_subsidized_healthcare
-		icon = focus
+		icon = focus_better_healthcare
 		cost = 7
 		prerequisite = {
 			focus = USA_tax_the_rich
@@ -636,7 +636,7 @@
 
 	shared_focus = {
 		id = USA_regulate_wallstreet
-		icon = focus
+		icon = focus_fuck_wallstreet
 		cost = 7
 		prerequisite = {
 			focus = USA_increase_banking_regulations
@@ -657,7 +657,7 @@
 	}
 	shared_focus = {
 		id = USA_help_the_working_class
-		icon = focus
+		icon = focus_help_workers
 		cost = 7
 		prerequisite = {
 			focus = USA_regulate_wallstreet
@@ -674,7 +674,7 @@
 	}
 	shared_focus = {
 		id = USA_subsidized_college
-		icon = focus
+		icon = focus_subsidize_college
 		cost = 7
 		prerequisite = {
 			focus = USA_subsidized_healthcare
@@ -693,7 +693,7 @@
 
 	shared_focus = {
 		id = USA_federal_job_guarantee
-		icon = focus
+		icon = focus_federal_jobs
 		cost = 7
 		prerequisite = {
 			focus = USA_regulate_wallstreet
@@ -711,7 +711,7 @@
 	}
 	shared_focus = {
 		id = USA_empower_unions
-		icon = focus
+		icon = focus_empower_unions
 		cost = 7
 		prerequisite = {
 			focus = USA_federal_job_guarantee
