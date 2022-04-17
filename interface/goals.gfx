@@ -8864,10 +8864,6 @@ SpriteType = {
 	texturefile = "gfx/interface/goals/usa/focus_dealing_with_alaska.dds"			
 	}
 	SpriteType = {
-	name = "focus_operation_alaska_freedom"
-	texturefile = "gfx/interface/goals/usa/focus_operation_alskan_freedom.dds"			
-	}
-	SpriteType = {
 	name = "focus_operation_snow_storm"
 	texturefile = "gfx/interface/goals/usa/focus_operation_snow_storm.dds"			
 	}
@@ -8886,5 +8882,153 @@ SpriteType = {
 	SpriteType = {
 	name = "focus_tax_the_rich"
 	texturefile = "gfx/interface/goals/usa/focus_tax_the_rich.dds"			
+	}
+	SpriteType = {
+	name = "focus_dealing_with_the_recession"
+	texturefile = "gfx/interface/goals/usa/focus_dealing_with_the_recession.dds"			
+	}
+	SpriteType = {
+	name = "focus_african_explosion"
+	texturefile = "gfx/interface/goals/usa/focus_african_explosion.dds"			
+	}
+	SpriteType = {
+	name = "focus_support_kabila_government"
+	texturefile = "gfx/interface/goals/usa/focus_support_kabila_government.dds"			
+	}
+	SpriteType = {
+	name = "focus_support_biya_government"
+	texturefile = "gfx/interface/goals/usa/focus_support_biya_government.dds"			
+	}
+	SpriteType = {
+	name = "focus_obama_choice"
+	texturefile = "gfx/interface/goals/usa/focus_obama_choice.dds"			
+	}
+	SpriteType = {
+	name = "focus_peace_with_honor"
+	texturefile = "gfx/interface/goals/usa/focus_peace_with_honor.dds"			
+	}
+	SpriteType = {
+	name = "focus_recall_army"
+	texturefile = "gfx/interface/goals/usa/focus_recall_army.dds"			
+	}
+	SpriteType = {
+	name = "focus_recall_americans"
+	texturefile = "gfx/interface/goals/usa/focus_recall_americans.dds"			
+	}
+	SpriteType = {
+	name = "focus_recall_governor"
+	texturefile = "gfx/interface/goals/usa/focus_recall_governor.dds"			
+	}
+	SpriteType = {
+	name = "focus_peace_with_honor"
+	texturefile = "gfx/interface/goals/usa/focus_peace_with_honor.dds"			
+	}
+	SpriteType = {
+	name = "focus_peace_alaska"
+	texturefile = "gfx/interface/goals/usa/focus_peace_alaska.dds"			
+	}
+	SpriteType = {
+	name = "focus_call_for_peace"
+	texturefile = "gfx/interface/goals/usa/focus_call_for_peace.dds"			
+	}
+	SpriteType = {
+	name = "focus_frozen_debate"
+	texturefile = "gfx/interface/goals/usa/focus_frozen_debate.dds"			
+	}
+	SpriteType = {
+	name = "focus_free_election"
+	texturefile = "gfx/interface/goals/usa/focus_free_election.dds"			
+	}
+	SpriteType = {
+	name = "focus_operation_alaska_freedom"
+	texturefile = "gfx/interface/goals/usa/focus_operation_alskan_freedom.dds"			
+	}
+	SpriteType = {
+	name = "focus_prepare_navy"
+	texturefile = "gfx/interface/goals/usa/focus_prepare_navy.dds"			
+	}
+	SpriteType = {
+	name = "focus_ready_marines"
+	texturefile = "gfx/interface/goals/usa/focus_ready_marines.dds"			
+	}
+	SpriteType = {
+	name = "focus_invade_alaska"
+	texturefile = "gfx/interface/goals/usa/focus_invade_alaska.dds"			
+	}
+	SpriteType = {
+	name = "focus_offer_military"
+	texturefile = "gfx/interface/goals/usa/focus_offer_military.dds"			
+	}
+	SpriteType = {
+	name = "focus_send_advisors"
+	texturefile = "gfx/interface/goals/usa/focus_send_advisors.dds"			
+	}
+	SpriteType = {
+	name = "focus_send_troops"
+	texturefile = "gfx/interface/goals/usa/focus_send_troops.dds"			
+	}
+	SpriteType = {
+	name = "focus_send_shit"
+	texturefile = "gfx/interface/goals/usa/focus_send_shit.dds"			
+	}
+	SpriteType = {
+	name = "focus_work_with_army"
+	texturefile = "gfx/interface/goals/usa/focus_work_with_army.dds"			
+	}
+	SpriteType = {
+	name = "focus_send_volunteers"
+	texturefile = "gfx/interface/goals/usa/focus_send_volunteers.dds"			
+	}
+	SpriteType = {
+	name = "focus_get_land"
+	texturefile = "gfx/interface/goals/usa/focus_get_land.dds"			
+	}
+	SpriteType = {
+	name = "focus_peace_bombs"
+	texturefile = "gfx/interface/goals/usa/focus_peace_bombs.dds"			
+	}
+	SpriteType = {
+	name = "focus_invade_africa"
+	texturefile = "gfx/interface/goals/usa/focus_invade_africa.dds"			
+	}
+	SpriteType = {
+	name = "focus_defund_military"
+	texturefile = "gfx/interface/goals/usa/focus_defund_military.dds"			
+	}
+	SpriteType = {
+	name = "focus_rich_taxes"
+	texturefile = "gfx/interface/goals/usa/focus_rich_taxes.dds"			
+	}
+	SpriteType = {
+	name = "focus_not_too_big"
+	texturefile = "gfx/interface/goals/usa/focus_not_too_big.dds"			
+	}
+	SpriteType = {
+	name = "focus_break_bank"
+	texturefile = "gfx/interface/goals/usa/focus_break_bank.dds"			
+	}
+	SpriteType = {
+	name = "focus_better_healthcare"
+	texturefile = "gfx/interface/goals/usa/focus_better_healthcare.dds"			
+	}
+	SpriteType = {
+	name = "focus_fuck_wallstreet"
+	texturefile = "gfx/interface/goals/usa/focus_fuck_wallstreet.dds"			
+	}
+	SpriteType = {
+	name = "focus_help_workers"
+	texturefile = "gfx/interface/goals/usa/focus_help_workers.dds"			
+	}
+	SpriteType = {
+	name = "focus_subsidize_college"
+	texturefile = "gfx/interface/goals/usa/focus_subsidize_college.dds"			
+	}
+	SpriteType = {
+	name = "focus_federal_jobs"
+	texturefile = "gfx/interface/goals/usa/focus_federal_jobs.dds"			
+	}
+	SpriteType = {
+	name = "focus_empower_unions"
+	texturefile = "gfx/interface/goals/usa/focus_empower_unions.dds"			
 	}
 }
