@@ -203,7 +203,7 @@ focus_tree = {
 	}
 	focus = {
 		id = WAL_The_Welsh_Workers_Rights
-		icon = tear_treaty
+		icon = the_welsh_workers_rights
 		cost = 5
 		x = 25
 		y = 4
@@ -215,7 +215,7 @@ focus_tree = {
 	}
 	focus = {
 		id = WAL_Take_Over_The_Factories
-		icon = tear_treaty
+		icon = take_over_the_factories_icon
 		cost = 5
 		x = 25
 		y = 5
@@ -263,7 +263,7 @@ focus_tree = {
 	}
 	focus = {
 		id = WAL_The_Future_Lives_On
-		icon = tear_treaty
+		icon = the_future_lives_on_icon
 		cost = 5
 		x = 24
 		y = 7
@@ -275,7 +275,7 @@ focus_tree = {
 	}
 	focus = {
 		id = WAL_New_Nationalism
-		icon = tear_treaty
+		icon = new_nationalism_icon
 		cost = 5
 		x = 27
 		y = 4
@@ -287,7 +287,7 @@ focus_tree = {
 	}
 	focus = {
 		id = WAL_Reformed_Welfare
-		icon = tear_treaty
+		icon = reformed_welfare_icon
 		cost = 5
 		x = 27
 		y = 5
@@ -299,7 +299,7 @@ focus_tree = {
 	}
 	focus = {
 		id = WAL_New_Tax
-		icon = tear_treaty
+		icon = new_tax_icon
 		cost = 5
 		x = 26
 		y = 6
@@ -311,7 +311,7 @@ focus_tree = {
 	}
 	focus = {
 		id = WAL_No_To_The_Left
-		icon = tear_treaty
+		icon = no_to_The_left_icon
 		cost = 5
 		x = 26
 		y = 7
@@ -611,7 +611,7 @@ focus_tree = {
 	}
 
 	focus = {
-		id = WAL_Welsh_Labour
+		id = WAL_Coalition_Government
 		icon = tear_treaty
 		cost = 5
 		x = 42
@@ -631,7 +631,7 @@ focus_tree = {
 		cost = 5
 		x = 42
 		y = 7
-		prerequisite = { focus = WAL_Welsh_Labour  }
+		prerequisite = { focus = WAL_Coalition_Government  }
 		completion_reward = {
 
 		}
