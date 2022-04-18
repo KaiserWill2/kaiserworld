@@ -3,7 +3,639 @@ ideas = {
 		country = {
 
 
-
+	    
+			legacy_of_foot = {
+				allowed = {
+					always = no
+				}
+				
+				
+				removal_cost = -1
+				
+				allowed_civil_war = {
+					always = yes
+				}
+				
+				modifier = {
+					mobilization_speed = 0.5
+					conscription_factor = 0.1
+					war_support_factor = 0.15
+					economy_cost_factor = 0.55
+					trade_laws_cost_factor = 0.55
+					MONTHLY_POPULATION = 0.1
+					army_morale_factor = 0.1
+					non_core_manpower = -0.05
+					trade_opinion_factor = -0.35
+					production_factory_start_efficiency_factor = -0.05
+					political_power_factor = -0.10
+				}
+			}
+	
+			blairs_iron_fist = {
+				allowed = {
+					always = no
+				}
+				
+				
+				removal_cost = -1
+				
+				allowed_civil_war = {
+					always = yes
+				}
+				
+				modifier = {
+					production_speed_arms_factory_factor = 0.1
+					industrial_capacity_factory = 0.05
+					political_power_gain = 0.05
+				}
+			}
+	
+			fixing_the_budget = {
+				allowed = {
+					always = no
+				}
+				
+				
+				removal_cost = -1
+				
+				allowed_civil_war = {
+					always = yes
+				}
+				
+				modifier = {
+					consumer_goods_factor = 0.35
+					production_speed_industrial_complex_factor = -0.4
+					production_speed_arms_factory_factor = -0.4
+					conversion_cost_civ_to_mil_factor= 0.4
+					conversion_cost_mil_to_civ_factor = 0.4
+					generate_wargoal_tension = 1.00
+					join_faction_tension = 0.20
+					send_volunteers_tension = 0.20
+					guarantee_tension = 0.5
+				}
+			}
+	
+			scotland_and_wales = {
+				allowed = {
+					always = no
+				}
+				
+				
+				removal_cost = -1
+				
+				allowed_civil_war = {
+					always = yes
+				}
+				
+				modifier = {
+					stability_factor = -0.25
+					industrial_capacity_factory = 0.1
+					production_factory_max_efficiency_factor = 0.1
+					war_support_factor = 0.25
+				}
+			}
+	
+			arming_the_nation = {
+				allowed = {
+					always = no
+				}
+				
+				
+				removal_cost = -1
+				
+				allowed_civil_war = {
+					always = yes
+				}
+				
+				modifier = {
+					army_attack_factor = -0.33
+					army_defence_factor = -0.33
+					attrition = 0.2 
+					mobilization_speed = -0.2
+					training_time_army_factor = 0.9
+					conscription = 0.01
+					experience_gain_army_factor = -1.0
+					military_leader_cost_factor = 1.0
+				}
+			}
+	
+			weapon_research = {
+				allowed = {
+					always = no
+				}
+				
+				
+				removal_cost = -1
+				
+				allowed_civil_war = {
+					always = yes
+				}
+				
+				modifier = {
+					production_speed_arms_factory_factor = 0.1
+				
+				}
+			}
+	
+	
+	
+			watching_our_people = {
+				allowed = {
+					always = no
+				}
+				
+				
+				removal_cost = -1
+				
+				allowed_civil_war = {
+					always = yes
+				}
+				
+				modifier = {
+					root_out_resistance_effectiveness_factor = 0.5
+					resistance_target = -0.5
+					resistance_growth = -0.3
+				
+				}
+			}
+	
+			giving_out_the_punishments = {
+				allowed = {
+					always = no
+				}
+				
+				
+				removal_cost = -1
+				
+				allowed_civil_war = {
+					always = yes
+				}
+				
+				modifier = {
+					production_speed_buildings_factor = 0.15
+					consumer_goods_factor = -0.05
+					resistance_damage_to_garrison = 0.05
+					stability_factor = -0.10
+				
+				}
+			}
+	
+			Blairs_personality = {
+				allowed = {
+					always = no
+				}
+				
+				
+				removal_cost = -1
+				
+				allowed_civil_war = {
+					always = yes
+				}
+				
+				modifier = {
+					political_power_gain = 0.20
+					stability_factor = 0.10
+					war_support_factor = 0.10
+				
+				}
+			}
+	
+			The_new_weapons = {
+				allowed = {
+					always = no
+				}
+				
+				
+				removal_cost = -1
+				
+				allowed_civil_war = {
+					always = yes
+				}
+				
+				modifier = {
+					war_support_factor = 0.05
+					drift_defence_factor = 0.2
+					army_attack_factor = 0.2
+					army_morale_factor = 0.2
+					army_defence_factor = 0.1
+					army_speed_factor = 0.1
+				
+				}
+			}
+	
+			taxing_the_people = {
+				allowed = {
+					always = no
+				}
+				
+				
+				removal_cost = -1
+				
+				allowed_civil_war = {
+					always = yes
+				}
+				
+				modifier = {
+					consumer_goods_factor = -0.12
+					stability_weekly = -0.002
+					industrial_capacity_factory = 0.08
+					min_export = -0.05 
+					production_speed_buildings_factor = -0.05
+				
+				}
+			}
+	
+			eng_new_infrastructure = {
+				allowed = {
+					always = no
+				}
+				
+				
+				removal_cost = -1
+				
+				allowed_civil_war = {
+					always = yes
+				}
+				
+				modifier = {
+					consumer_goods_factor = -0.05
+					production_speed_arms_factory_factor = 0.10
+					production_factory_efficiency_gain_factor = 0.10
+					industrial_capacity_factory = 0.20
+					industrial_capacity_dockyard = 0.20
+				
+				}
+			}
+	
+	
+			imprison_the_family = {
+				allowed = {
+					always = no
+				}
+				
+				
+				removal_cost = -1
+				
+				allowed_civil_war = {
+					always = yes
+				}
+				
+				modifier = {
+					stability_weekly = -0.002
+	
+				
+				}
+			}
+	
+			ENG_forcing_labour = {
+				allowed = {
+					always = no
+				}
+				
+				
+				removal_cost = -1
+				
+				allowed_civil_war = {
+					always = yes
+				}
+				
+				modifier = {
+					stability_factor = 0.10
+					non_core_manpower = 0.02
+					production_factory_start_efficiency_factor = 0.1
+					production_factory_max_efficiency_factor = -0.05
+	
+				
+				}
+			}
+	
+			open_the_camps = {
+				allowed = {
+					always = no
+				}
+				
+				
+				removal_cost = -1
+				
+				allowed_civil_war = {
+					always = yes
+				}
+				
+				modifier = {
+					production_speed_buildings_factor = 0.10
+					resistance_damage_to_garrison = 0.15
+	
+				
+				}
+			}
+			
+			Cornwall_extermination_Camp = {
+				allowed = {
+					always = no
+				}
+				
+				
+				removal_cost = -1
+				
+				allowed_civil_war = {
+					always = yes
+				}
+				
+				modifier = {
+					production_speed_buildings_factor = 0.20
+					resistance_damage_to_garrison = 0.25
+	
+				
+				}
+			}
+			
+			Oath_Of_Allegiance = {
+				allowed = {
+					always = no
+				}
+				
+				
+				removal_cost = -1
+				
+				allowed_civil_war = {
+					always = yes
+				}
+				
+				modifier = {
+					MONTHLY_POPULATION = 0.1
+					war_support_factor = 0.25
+					research_speed_factor = 0.15
+					poverty_monthly_rate = 0.08
+					academic_base_monthly_rate = -2
+					industrial_expertise_monthly_rate = -2
+	
+				
+				}
+			}
+					
+			idea_target_wales = {
+				allowed = {
+					always = no
+				}
+				
+				
+				removal_cost = -1
+				
+				allowed_civil_war = {
+					always = yes
+				}
+				
+				modifier = {
+					army_speed_factor = -0.05
+					supply_consumption_factor = 0.15
+					army_morale_factor = -0.05
+						conscription_factor = -0.1
+	
+				
+				}
+			}
+			
+			opening_the_union_market = {
+				allowed = {
+					always = no
+				}
+				
+				
+				removal_cost = -1
+				
+				allowed_civil_war = {
+					always = yes
+				}
+				
+				modifier = {
+					consumer_goods_factor = 0.1
+					industrial_capacity_factory = 0.25
+					research_speed_factor = 0.03
+					trade_opinion_factor = 0.5
+	
+				
+				}
+			}
+			
+			reform_the_military = {
+				allowed = {
+					always = no
+				}
+				
+				
+				removal_cost = -1
+				
+				allowed_civil_war = {
+					always = yes
+				}
+				
+				modifier = {
+					army_morale_factor = 0.035
+					army_org_factor = 0.2
+					training_time_army_factor = -0.1	
+					conscription = 0.03
+				
+				}
+			}
+	
+			modern_totalism = {
+				allowed = {
+					always = no
+				}
+				
+				
+				removal_cost = -1
+				
+				allowed_civil_war = {
+					always = yes
+				}
+				
+				modifier = {
+					political_power_gain = 0.05
+					communist_drift = 0.02
+					decryption_power = 10
+				}
+			}
+	
+			Better_Relations = {
+				allowed = {
+					always = no
+				}
+				
+				
+				removal_cost = -1
+				
+				allowed_civil_war = {
+					always = yes
+				}
+				
+				modifier = {
+					political_power_gain = 0.1
+					foreign_subversive_activites = -0.25
+					trade_opinion_factor = 0.5
+				}
+			}
+	
+			Peoples_Health_Network = {
+				allowed = {
+					always = no
+				}
+				
+				
+				removal_cost = -1
+				
+				allowed_civil_war = {
+					always = yes
+				}
+				
+				modifier = {
+					MONTHLY_POPULATION = 0.01
+					consumer_goods_factor = 0.02
+					industrial_capacity_factory = 0.05
+				}
+			}
+	
+			Modern_Work_Places = {
+				allowed = {
+					always = no
+				}
+				
+				
+				removal_cost = -1
+				
+				allowed_civil_war = {
+					always = yes
+				}
+				
+				modifier = {
+					local_resources_factor = 0.03
+					consumer_goods_factor = -0.05
+					production_speed_bunker_factor = 0.1
+				}
+			}
+	
+			expanding_the_camps = {
+				allowed = {
+					always = no
+				}
+				
+				
+				removal_cost = -1
+				
+				allowed_civil_war = {
+					always = yes
+				}
+				
+				modifier = {
+					production_speed_infrastructure_factor = 0.2
+					trade_opinion_factor = -0.3
+					industrial_capacity_factory = 0.1
+					conscription = -0.04
+					fascist_drift = 0.035
+					political_power_gain = 0.5
+				}
+			}
+			
+	
+			Free_The_Military = {
+				allowed = {
+					always = no
+				}
+				
+				
+				removal_cost = -1
+				
+				allowed_civil_war = {
+					always = yes
+				}
+				
+				modifier = {
+					army_morale_factor = -0.03
+					research_speed_factor = 0.02
+					conscription = -0.04
+					political_power_gain = 0.5
+				}
+			}
+	
+				
+				Removal_Of_Blair= {
+					allowed = {
+						always = no
+					}
+					
+					removal_cost = -1
+		
+	
+					
+					modifier = {
+						political_power_gain = 0.20
+						stability_factor = 0.10
+						war_support_factor = 0.10
+						
+					}
+				}
+			
+				Remove_The_Peoples_Palace = {
+					allowed = {
+						always = no
+					}
+					
+					removal_cost = -1
+		
+					modifier = {
+						root_out_resistance_effectiveness_factor = 0.5
+						resistance_target = -0.5
+						resistance_growth = -0.3
+						
+					}
+				}
+				
+				Prepare_For_Wales = {
+					allowed = {
+						always = no
+					}
+					
+					removal_cost = -1
+		
+					modifier = {
+						political_power_gain = 0.2
+						army_morale_factor = 0.025
+						conscription = 0.01
+						
+					}
+				}
+				
+				
+			Mass_Arrests = {
+					allowed = {
+						always = no
+					}
+					
+					removal_cost = -1
+		
+					modifier = {
+					root_out_resistance_effectiveness_factor = 0.5
+					resistance_target = -0.5
+					resistance_growth = -0.3
+						
+					}
+				}
+	
+			Taking_The_Food = {
+					allowed = {
+						always = no
+					}
+					
+					removal_cost = -1
+		
+					modifier = {
+					local_resources_factor = 0.2
+					consumer_goods_factor = 0.05
+	
+						
+					}
+			}
+		}
 
 
 	# TECHNOLOGY
