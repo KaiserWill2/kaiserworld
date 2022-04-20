@@ -559,9 +559,21 @@ focus_tree = {
 		prerequisite = { focus = WAL_Chamber_Election  }
 		completion_reward = {
 
+			set_cosmetic_tag = WAL_fascist_new
+
+			create_country_leader = {
+				name = "Owain Williams"
+				picture = "Owain_Williams_wal.dds"
+				ideology = fascist
+			}
+			set_politics = {
+				ruling_party = fascist 
+				elections_allowed = no
+			}
 		}
 
 	}
+
 	focus = {
 		id = WAL_Ban_The_English_Language
 		icon = ban_english_language_icon

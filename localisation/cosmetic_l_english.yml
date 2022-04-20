@@ -2182,6 +2182,9 @@ WAL_fascist_ADJ:0 "National State Of Wales"
  WAL_wales_communist_ADJ:0 "Union Of Wales"
 
 
+WAL_fascist_new:0 "National State Of Wales"
+WAL_fascist_new_DEF:0 "National State Of Wales"
+WAL_fascist_new_ADJ:0 "National State Of Wales"
 
 
  MWA_clark_nationalist:0 "American Reclamation Authority"

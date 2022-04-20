@@ -80,7 +80,7 @@ set_politics = {
 }
 
 set_popularities = {
-        fascist = 55
+       		 fascist = 55
 		nationalist = 5
 		monarchist = 0
 		national_bolshevik = 0
