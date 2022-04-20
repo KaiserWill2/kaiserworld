@@ -439,12 +439,23 @@ focus_tree = {
 
 
 
+
 	focus = {
 		id = WAL_Celtic_Congress
 		icon = the_celtic_congress_icon
 		cost = 5
 		x = 40
 		y = 0
+
+		has_completed_focus = WAL_Ban_English_Refugees
+		has_completed_focus = WAL_No_To_The_Left
+		has_completed_focus = WAL_The_Future_Lives_On
+		has_completed_focus = WAL_The_Future_Lives_On
+		has_completed_focus = WAL_Ban_The_Strike
+		has_completed_focus = WAL_Remove_Safety_Laws
+		has_completed_focus = WAL_No_More_trade_With_Ireland
+		has_completed_focus = WAL_We_Need_Scottish_Power	
+		
 		completion_reward = {
 
 		}
@@ -543,7 +554,7 @@ focus_tree = {
 		x = 38
 		y = 6
 		mutually_exclusive = {
-			focus = WAL_Welsh_Labour
+			focus = WAL_Coalition_Government
 		}
 		prerequisite = { focus = WAL_Chamber_Election  }
 		completion_reward = {
