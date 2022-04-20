@@ -2740,6 +2740,114 @@ SpriteType = {
 	### WALES ####
 	
 	SpriteType = {
+		name = "emergency_talks_icon"
+		texturefile = "gfx/interface/goals/wal/emergency_talks_icon.dds"			
+	}	
+
+	SpriteType = {
+		name = "coalition_government_icon"
+		texturefile = "gfx/interface/goals/wal/coalition_government_icon.dds"			
+	}	
+	
+	SpriteType = {
+		name = "ban_english_language_icon"
+		texturefile = "gfx/interface/goals/wal/ban_english_language_icon.dds"			
+	}	
+
+	SpriteType = {
+		name = "nationals_elected_icon"
+		texturefile = "gfx/interface/goals/wal/nationals_elected_icon.dds"			
+	}	
+	
+	
+	SpriteType = {
+		name = "chamber_elections_icon"
+		texturefile = "gfx/interface/goals/wal/chamber_elections_icon.dds"			
+	}	
+	
+	
+	SpriteType = {
+		name = "the_party_takes_charge_icon"
+		texturefile = "gfx/interface/goals/wal/the_party_takes_charge_icon.dds"			
+	}	
+	
+	SpriteType = {
+		name = "the_people_want_to_vote_icon"
+		texturefile = "gfx/interface/goals/wal/the_people_want_to_vote_icon.dds"			
+	}	
+
+	SpriteType = {
+		name = "vote_of_no_confidence_icon"
+		texturefile = "gfx/interface/goals/wal/vote_of_no_confidence_icon.dds"			
+	}	
+
+	SpriteType = {
+		name = "the_power_struggle_icon"
+		texturefile = "gfx/interface/goals/wal/the_power_struggle_icon.dds"			
+	}	
+	
+	SpriteType = {
+		name = "meeting__with_the_irish_icon"
+		texturefile = "gfx/interface/goals/wal/meeting__with_the_irish_icon.dds"			
+	}	
+
+	
+	SpriteType = {
+		name = "meeting_with_scottish_royalty_icon"
+		texturefile = "gfx/interface/goals/wal/meeting_with_scottish_royalty_icon.dds"			
+	}	
+
+	SpriteType = {
+		name = "the_celtic_congress_icon"
+		texturefile = "gfx/interface/goals/wal/the_celtic_congress_icon.dds"			
+	}	
+
+	SpriteType = {
+		name = "ban_english_refugees_icon"
+		texturefile = "gfx/interface/goals/wal/ban_english_refugees_icon.dds"			
+	}	
+	
+	SpriteType = {
+		name = "reject_the_blair_project_icon"
+		texturefile = "gfx/interface/goals/wal/reject_the_blair_project_icon.dds"			
+	}	
+	
+	SpriteType = {
+		name = "new_scottish_route_cion"
+		texturefile = "gfx/interface/goals/wal/new_scottish_route_cion.dds"			
+	}	
+
+	SpriteType = {
+		name = "ban_trade_with_usbr_icon"
+		texturefile = "gfx/interface/goals/wal/ban_trade_with_usbr_icon.dds"			
+	}	
+	
+	SpriteType = {
+		name = "wales_is_alive_and_well_icon"
+		texturefile = "gfx/interface/goals/wal/wales_is_alive_and_well_icon.dds"			
+	}	
+
+	SpriteType = {
+		name = "protect_the_wall_icon"
+		texturefile = "gfx/interface/goals/wal/protect_the_wall_icon.dds"			
+	}	
+	
+	SpriteType = {
+		name = "the_welsh_militias_icon"
+		texturefile = "gfx/interface/goals/wal/the_welsh_militias_icon.dds"			
+	}	
+
+	SpriteType = {
+		name = "welsh_military_funding_icon"
+		texturefile = "gfx/interface/goals/wal/welsh_military_funding_icon.dds"			
+	}	
+
+	SpriteType = {
+		name = "awaken_the_dragon_icon"
+		texturefile = "gfx/interface/goals/wal/awaken_the_dragon_icon.dds"			
+	}	
+	
+	SpriteType = {
 		name = "no_to_The_left_icon"
 		texturefile = "gfx/interface/goals/wal/no_to_The_left_icon.dds"			
 	}	
