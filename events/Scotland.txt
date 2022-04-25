@@ -157,8 +157,119 @@ country_event = {
 }
 
 
+country_event = {
+	id = Scotland.14
+	title = Scotland.14.t
+	desc = Scotland.14.d
+	picture = scotland_and_ireland_agreement_event
+	fire_only_once = yes
+	option = {
+		name = Scotland.14.o1
+
+	}
+}
+
+country_event = {
+	id = Scotland.15
+	title = Scotland.15.t
+	desc = Scotland.15.d
+	picture = the_king_in_his_counting_house_event
+	fire_only_once = yes
+	option = {
+		name = Scotland.15.o1
+
+	}
+}
 
 
+country_event = {
+	id = Scotland.16
+	title = Scotland.16.t
+	desc = Scotland.16.d
+	picture = the_welsh_appointment_event
+	fire_only_once = yes
+	option = {
+		name = Scotland.16.o1
+
+	}
+}
+
+country_event = {
+	id = Scotland.17
+	title = Scotland.17.t
+	desc = Scotland.17.d
+	picture = the_scottish_coup_event
+	fire_only_once = yes
+	option = {
+		name = Scotland.17.o1
+		SCO = {
+			country_event = { days = 5 id = Scotland.18 } 
+		}
+	}
+}
+
+
+country_event = {
+	id = Scotland.18
+	title = Scotland.18.t
+	desc = Scotland.18.d
+	picture = the_Agreement_event
+	fire_only_once = yes
+	option = {
+		name = Scotland.18.o1
+	
+	}
+}
+
+
+country_event = {
+	id = Scotland.19
+	title = Scotland.19.t
+	desc = Scotland.19.d
+	picture = the_shared_parliament_event
+	fire_only_once = yes
+	option = {
+		name = Scotland.19.o1
+	
+	}
+}
+
+country_event = {
+	id = Scotland.20
+	title = Scotland.20.t
+	desc = Scotland.20.d
+	picture = arresting_far_left_event
+	fire_only_once = yes
+	option = {
+		name = Scotland.20.o1
+	
+	}
+}
+
+country_event = {
+	id = Scotland.21
+	title = Scotland.21.t
+	desc = Scotland.21.d
+	picture = solidarity_movement_event
+	fire_only_once = yes
+	option = {
+		name = Scotland.21.o1
+	
+	}
+}
+
+
+country_event = {
+	id = Scotland.22
+	title = Scotland.22.t
+	desc = Scotland.22.d
+	picture = scotlands_soldiers_stand_ready_Event
+	fire_only_once = yes
+	option = {
+		name = Scotland.22.o1
+	
+	}
+}
 
 
 

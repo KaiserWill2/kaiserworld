@@ -216,7 +216,9 @@ focus_tree = {
 		y = 7
 		prerequisite = { focus = SCO_The_Irish_Partnership  }
 		completion_reward = {
-
+			country_event = {
+				id = Scotland.14
+			}
 		}
 
 	}
@@ -573,6 +575,9 @@ focus_tree = {
 		x = 45
 		y = 0
 		completion_reward = {
+			country_event = {
+				id = Scotland.15
+			}
 
 		}
 
@@ -585,7 +590,9 @@ focus_tree = {
 		y = 1
 		prerequisite = { focus = SCO_The_King_Is_In_His_Counting_House  }
 		completion_reward = {
-
+			country_event = {
+				id = Scotland.16
+			}
 		}
 
 	}
@@ -621,10 +628,14 @@ focus_tree = {
 		y = 2
 		prerequisite = { focus = SCO_The_Welsh_Appointment  }
 		completion_reward = {
-
+			country_event = {
+				id = Scotland.17
+	
+			}
 		}
 
 	}
+
 	focus = {
 		id = SCO_Shared_Parliament
 		icon = shared_parliament_icon
@@ -634,7 +645,10 @@ focus_tree = {
 		prerequisite = { focus = SCO_The_Dragon_And_The_Bagpipes  }
 		prerequisite = { focus = SCO_A_Shot_Heard_From_The_Highlands  }
 		completion_reward = {
-
+			country_event = {
+				id = Scotland.19
+	
+			}
 		}
 
 	}
@@ -671,7 +685,10 @@ focus_tree = {
 		prerequisite = { focus = SCO_A_Shot_Heard_From_The_Highlands  }
 		prerequisite = { focus = SCO_The_Coup  }
 		completion_reward = {
-
+			country_event = {
+				id = Scotland.20
+	
+			}
 		}
 
 	}
@@ -683,7 +700,10 @@ focus_tree = {
 		y = 4
 		prerequisite = { focus = SCO_Arrest_Far_Left_Members  }
 		completion_reward = {
-
+			country_event = {
+				id = Scotland.21
+	
+			}
 		}
 
 	}
@@ -720,7 +740,10 @@ focus_tree = {
 		y = 7
 		prerequisite = { focus = SCO_Our_German_Friends }
 		completion_reward = {
-
+			country_event = {
+				id = Scotland.22
+	
+			}
 		}
 
 	}

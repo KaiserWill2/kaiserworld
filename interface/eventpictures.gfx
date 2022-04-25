@@ -806,6 +806,61 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/report_event/scotland_and_ireland_event.dds"
 	}
 	
+	spriteType = {
+		name = "scotland_and_ireland_event"
+		texturefile = "gfx/event_pictures/report_event/scotland_and_ireland_event.dds"
+	}
+	
+	spriteType = {
+		name = "scotland_and_ireland_agreement_event"
+		texturefile = "gfx/event_pictures/report_event/scotland_and_ireland_agreement_event.dds"
+	}
+	
+	spriteType = {
+		name = "the_king_in_his_counting_house_event"
+		texturefile = "gfx/event_pictures/report_event/the_king_in_his_counting_house_event.dds"
+	}
+
+	spriteType = {
+		name = "the_welsh_appointment_event"
+		texturefile = "gfx/event_pictures/report_event/the_welsh_appointment_event.dds"
+	}
+	
+	spriteType = {
+		name = "the_scottish_coup_event"
+		texturefile = "gfx/event_pictures/report_event/the_scottish_coup_event.dds"
+	}
+	
+	spriteType = {
+		name = "the_Agreement_event"
+		texturefile = "gfx/event_pictures/report_event/the_Agreement_event.dds"
+	}
+	
+	spriteType = {
+		name = "the_shared_parliament_event"
+		texturefile = "gfx/event_pictures/report_event/the_shared_parliament_event.dds"
+	}
+
+	spriteType = {
+		name = "arresting_far_left_event"
+		texturefile = "gfx/event_pictures/report_event/arresting_far_left_event.dds"
+	}
+
+	spriteType = {
+		name = "solidarity_movement_event"
+		texturefile = "gfx/event_pictures/report_event/solidarity_movement_event.dds"
+	}
+	
+	spriteType = {
+		name = "scotlands_soldiers_stand_ready_Event"
+		texturefile = "gfx/event_pictures/report_event/scotlands_soldiers_stand_ready_Event.dds"
+	}
+	
+	
+
+
+
+
 	
 	
 }

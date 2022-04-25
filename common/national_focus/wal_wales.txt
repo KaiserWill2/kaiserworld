@@ -564,7 +564,7 @@ focus_tree = {
 			create_country_leader = {
 				name = "Owain Williams"
 				picture = "Owain_Williams_wal.dds"
-				ideology = fascist
+				ideology = fascist_ideology
 			}
 			set_politics = {
 				ruling_party = fascist 
