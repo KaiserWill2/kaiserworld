@@ -106,87 +106,87 @@ spriteTypes = {
 
 	##Russia##
 	SpriteType = {
-		name = "SOVi_New_year_message"
+		name = "SOV_New_year_message"
 		texturefile = "gfx/interface/goals/soviet/SOV_New_Year_message.dds"			
 	}
 	SpriteType = {
-		name = "SOVi_look_at_the_gossovet"
+		name = "SOV_look_at_the_gossovet"
 		texturefile = "gfx/interface/goals/soviet/SOV_Gossovet.dds"			
 	}
 	SpriteType = {
-		name = "SOVi_Is_the_ROVS_a_treat"
+		name = "SOV_Is_the_ROVS_a_treat"
 		texturefile = "gfx/interface/goals/soviet/SOV_ROVS_conspiracy.dds"			
 	}
 	SpriteType = {
-		name = "SOVi_Belief_in_Bakov"
+		name = "SOV_Belief_in_Bakov"
 		texturefile = "gfx/interface/goals/soviet/SOV_Bakov.dds"			
 	}
 	SpriteType = {
-		name = "SOVi_Gorbachev_must_know_his_place"
+		name = "SOV_Gorbachev_must_know_his_place"
 		texturefile = "gfx/interface/goals/soviet/SOV_Gorby.dds"			
 	}
 	SpriteType = {
-		name = "SOVi_Renew_ministry_of_communications"
+		name = "SOV_Renew_ministry_of_communications"
 		texturefile = "gfx/interface/goals/soviet/SOV_Minsv.dds"			
 	}
 	SpriteType = {
-		name = "SOVi_Into_the_modernity"
+		name = "SOV_Into_the_modernity"
 		texturefile = "gfx/interface/goals/soviet/SOV_Into_the_modernity.dds"			
 	}
 	SpriteType = {
-		name = "SOVi_Embrace_web_2_0"
+		name = "SOV_Embrace_web_2_0"
 		texturefile = "gfx/interface/goals/soviet/SOV_Web2.dds"			
 	}
 	SpriteType = {
-		name = "SOVi_Upgrade_the_glonass"
+		name = "SOV_Upgrade_the_glonass"
 		texturefile = "gfx/interface/goals/soviet/SOV_glonass.dds"			
 	}
 	SpriteType = {
-		name = "SOVi_dont_let_the_industry_collapse"
+		name = "SOV_dont_let_the_industry_collapse"
 		texturefile = "gfx/interface/goals/soviet/SOV_industrial_help.dds"			
 	}
 	SpriteType = {
-		name = "SOVi_the_Russian_spirit"
+		name = "SOV_the_Russian_spirit"
 		texturefile = "gfx/interface/goals/soviet/SOV_Russian_culture.dds"			
 	}
 	SpriteType = {
-		name = "SOVi_higher_and_higher_and_higher"
+		name = "SOV_higher_and_higher_and_higher"
 		texturefile = "gfx/interface/goals/soviet/SOV_higher.dds"			
 	}
 	SpriteType = {
-		name = "SOVi_fight_the_Gazprom_influence"
+		name = "SOV_fight_the_Gazprom_influence"
 		texturefile = "gfx/interface/goals/soviet/SOV_break_gazprom.dds"			
 	}
 	SpriteType = {
-		name = "SOVi_restore_bunking_system"
+		name = "SOV_restore_bunking_system"
 		texturefile = "gfx/interface/goals/soviet/SOV_sberkassy.dds"			
 	}
 	SpriteType = {
-		name = "SOVi_The_oil_crisis_is_over"
+		name = "SOV_The_oil_crisis_is_over"
 		texturefile = "gfx/interface/goals/soviet/SOV_oil_crisis.dds"			
 	}
 	SpriteType = {
-		name = "SOVi_There_is_the_smell_of_Rus"
+		name = "SOV_There_is_the_smell_of_Rus"
 		texturefile = "gfx/interface/goals/soviet/SOV_Russian_spirit.dds"			
 	}
 	SpriteType = {
-		name = "SOVi_the_muscle_diplomacy"
+		name = "SOV_the_muscle_diplomacy"
 		texturefile = "gfx/interface/goals/soviet/SOV_Vityaz_diplomacy.dds"			
 	}
 	SpriteType = {
-		name = "SOVi_Threaten_Poland"
+		name = "SOV_Threaten_Poland"
 		texturefile = "gfx/interface/goals/soviet/SOV_Polska_not_so_strong.dds"			
 	}
 	SpriteType = {
-		name = "SOVi_Druzhba_2010"
+		name = "SOV_Druzhba_2010"
 		texturefile = "gfx/interface/goals/soviet/SOV_Friendship.dds"			
 	}
 	SpriteType = {
-		name = "SOVi_Rearm_pacific_fleet"
+		name = "SOV_Rearm_pacific_fleet"
 		texturefile = "gfx/interface/goals/soviet/SOV_pacific_fleet.dds"			
 	}
 	SpriteType = {
-		name = "SOVi_to_the_Bright_future"
+		name = "SOV_to_the_Bright_future"
 		texturefile = "gfx/interface/goals/soviet/SOV_Nright_future.dds"			
 	}
 	#### OTHER ####
